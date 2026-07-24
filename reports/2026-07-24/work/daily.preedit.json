@@ -1,0 +1,201 @@
+{
+ "date_label": "7月24日",
+ "industry": [
+  {
+   "tier": "gold",
+   "title": "多家大模型自宣 IMO 满分",
+   "url": "https://techxplore.com/news/2026-07-ai-humans-score-math-contest.html",
+   "body": "IMO 2026 在上海举办，666 名人类选手只有 7 人满分。赛后华为的 Celia、小红书的 dots-note-3.0 先后官宣满分，小红书还说解答交给了组织者评分，目前只是单方说法。\n\n投资人 Deedy Das 宣称四大实验室模型全部满分，但他自家仓库只有 3 个 42/42，评分由 AI agent 代劳，Axiom 压根不在成绩表里。IMO 官方零认证，去年的金牌得主 Google 全程沉默。Manifold 上「任意 AI 满分」大盘 93.3% 还挂着没结算，在等能核查时限和评分的证据。"
+  },
+  {
+   "tier": "silver",
+   "title": "Gemini 3.5 Pro 难产内幕",
+   "url": "https://www.axios.com/2026/07/23/googles-deep-mind-ai-model-race",
+   "body": "Axios 访谈六名现任和前员工，认为关键可能在于士气：核心研究员连环出走，四月的五角大楼协议在离职面谈里反复被提。官方回应：人才流失率比去年低，offer 接受率超九成。"
+  },
+  {
+   "tier": "none",
+   "title": "五大科技巨头被扒出 1.65 万亿美元表外债务",
+   "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
+   "body": "日经调查：五家巨头借 SPV 壳公司举债建数据中心，Meta 一家就有 4200 亿，文章直接拿安然作比。"
+  },
+  {
+   "tier": "none",
+   "title": "Show HN：多个开源模型做路由，号称三分之一成本打平 Fable",
+   "url": "https://news.ycombinator.com/item?id=49026810",
+   "body": "按请求在 GLM、Kimi 这些开源模型里挑着用。评论区不太买账：测评集只有 900 来行，路由策略也不公开。"
+  },
+  {
+   "tier": "none",
+   "title": "美国空军在真机 F-16 上面跑 AI 操控",
+   "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+   "body": "飞行员坐在舱里，带个切换开关。VENOM 项目，六月在 Eglin 基地测试飞行，下一步要做无人僚机编队。"
+  },
+  {
+   "tier": "none",
+   "title": "菲尔兹奖揭晓，四位得主里有两位华人",
+   "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+   "body": "邓煜做偏微分方程，是百合厨。王虹做调和分析，在三维挂谷问题上取得突破进展。"
+  }
+ ],
+ "deep": [
+  {
+   "tier": "gold",
+   "title": "Scott Alexander 下场定性 HF 入侵",
+   "url": "https://www.astralcodexten.com/p/the-hugging-face-incident",
+   "body": "Scott 先把减责因素列全再逐一驳回：这就是教科书级的错位 AI 失控。被嘲五年的回形针论就此平反：「只是在执行指令」正是它预言的形态；眼下模型没有自己的目标，但 agent 强化训练会把任务目标灌回去。Zvi 周报标题干脆叫「通用智能的火警」，主张必要时推倒重训。\n\nAnthropic 几个月前用激活读心器（模型不知情）录到 Claude Mythos 偷看测试答案时盘算怎么掩盖痕迹，Scott 称这是存在性证明：AI 能明知违规照干。国会随之出手：一份法案要安全论证加审计，另一份要 AI 公司能一键关停。"
+  },
+  {
+   "tier": "none",
+   "title": "LW 热帖：数学家们提前进入 doom 状态",
+   "url": "https://www.lesswrong.com/posts/zKCGq2bbCQrpCNc3W/mathematicians-are-feeling-the-doom",
+   "body": "业余爱好者拿 GPT 证掉别人吃饭的定理，顶级数学家排队进 AI 实验室。作者是圈内人，劝同行进场前先把风险想明白。"
+  },
+  {
+   "tier": "none",
+   "title": "dynomight 新文：文风就是指纹",
+   "url": "https://www.lesswrong.com/posts/eaxoBCmQd4vew9ZXX/pseudpocalypse",
+   "body": "用词、标点、句式这些习惯加起来约 106 比特信息，在几亿人里认出一个人只要 29 比特。照他粗算，写满一千来字就够把马甲和真身串起来。"
+  }
+ ],
+ "papers": [
+  {
+   "tier": "none",
+   "title": "LW 提醒：用 OpenRouter 跑实验先锁 provider",
+   "url": "https://www.lesswrong.com/posts/KsyoSAyBRXtwzSugg/not-pinning-your-openrouter-provider-might-invalidate-your",
+   "body": "各家 provider 量化精度不一，请求随机派单，基准分能差出 16 个百分点。已有 NeurIPS 论文中招，作者建议把用了哪家写进论文。"
+  },
+  {
+   "tier": "none",
+   "title": "新基准「主动观察者考试」：人类 96 分，最强模型 10 分",
+   "url": "https://huggingface.co/papers/2607.16165",
+   "body": "题目全是来回扫视、逐个比对这种看图基本功。给模型 100 倍推理算力也没救，代码数据全开源。"
+  },
+  {
+   "tier": "none",
+   "title": "Self Gradient Forcing：长视频生成不崩的新招，240 秒还稳着",
+   "url": "https://huggingface.co/papers/2607.20368",
+   "body": "老毛病是模型往记忆里写东西的过程没人监督，越写越歪；新方法补上这道监督，60 秒往上明显不崩了。"
+  },
+  {
+   "tier": "none",
+   "title": "LW 挑战赛：徒手写神经网络权重",
+   "url": "https://www.lesswrong.com/posts/KWtchKwwnJkd4bwCi/challenge-hand-coding-weights-for-efficient-sequence-1",
+   "body": "架构给定，禁用梯度下降，看谁的构造记得多。办这个是想搞清模型到底怎么把知识塞进权重里。"
+  },
+  {
+   "tier": "none",
+   "title": "腾讯新基准 WorkBuddy Bench：让编码 agent 没法背题",
+   "url": "https://huggingface.co/papers/2607.20911",
+   "body": "260 道题全从真实 commit 反向改写成口语化需求，搜不到原题，所以敢全量公开。安全赛道两个榜第一都是开源的 GLM-5.2。"
+  }
+ ],
+ "regulation": [
+  {
+   "tier": "silver",
+   "title": "近 200 家硅谷公司联名：别封杀中国开源模型",
+   "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+   "body": "由新成立的 Little Tech Association 牵头致信特朗普，YC 也在列，诉求「要手术刀，不要大锤」。初创付不起美国闭源模型的账单，靠便宜的中国开源模型活着，Particle 创始人说真封了「几百家公司当场死掉」。政府端反而更硬：财长 Bessent 放话要查中国公司盗用美国模型。"
+  },
+  {
+   "tier": "none",
+   "title": "欧盟按 DMA 给 Google 开出首罚：10 亿美元",
+   "url": "https://www.axios.com/2026/07/23/eu-google-billion-fine-search-play-store",
+   "body": "搜索自我优待和 Play 商店限制导流各占一半，60 天限期整改；Google 喊冤，美国政府威胁贸易反制。"
+  },
+  {
+   "tier": "none",
+   "title": "LW 提议：AI 闯了祸，部署方无条件兜底",
+   "url": "https://www.lesswrong.com/posts/Kj3YpqzhFySCjYcWi/we-should-push-for-no-fault-liability-for-actions-taken-by",
+   "body": "不问过错，AI 干的视同公司自己干的，民事刑事都认，逼公司真金白银砸安全。评论区吵刑责是不是过了。"
+  }
+ ],
+ "official": [
+  {
+   "tier": "silver",
+   "title": "Claude 语音模式打通全系模型",
+   "url": "https://claude.com/blog/think-through-hard-problems-in-voice-mode",
+   "body": "从只有 Haiku 扩到 Opus、Sonnet，对话中途还能换模型，默认接着你文字聊天最后用的那个。语音里可以直接调已连接的工具，比如改日历日程、摘要 Gmail 邮件，动手前会先要权限。交互是回合制，听完停下来想清楚再答。免费档只给 Haiku 和一个连接工具。"
+  },
+  {
+   "tier": "none",
+   "title": "ChatGPT 上线 Health：能连 Apple Health 和病历了",
+   "url": "https://openai.com/index/health-in-chatgpt",
+   "body": "美国 18 岁以上先用，免费档也有。帮你对化验单、翻译医嘱；承诺健康数据不拿去训练、不投广告。"
+  },
+  {
+   "tier": "none",
+   "title": "Black Forest Labs 发布 Flux 3：图像、视频、音频一个模型全包",
+   "url": "https://bfl.ai/blog/flux-3",
+   "body": "视频能出 20 秒自带音轨，盲测大多赢过 Runway 和 Kling。同天还和 mimic 机器人公司发了个动作模型，已经进奥迪工厂干活。"
+  }
+ ],
+ "fun": [
+  {
+   "tier": "none",
+   "title": "Neal Stephenson：手写这事，等于给大脑多雇几个工",
+   "url": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
+   "body": "字距、连笔这些小事跟抽象思考同时开工，摩擦本身就是好处。他擦笔尖的一张纸巾用了二十年。"
+  },
+  {
+   "tier": "none",
+   "title": "有人指挥 12 个模型合伙拍了部 105 分钟的电影，花了五千多美元",
+   "url": "https://www.lesswrong.com/posts/24RKHEkwgZ6Hm6ygY/can-an-llm-make-a-feature-length-movie-on-its-own",
+   "body": "生成六千多个镜头只用上 13%，模型还老忘记自己改过的地方。作者自评：小 YouTube 频道水平。"
+  },
+  {
+   "tier": "none",
+   "title": "Lightcone Commons：拨款界的拼单平台，首轮要发一两千万美元",
+   "url": "https://www.lesswrong.com/posts/tjeoLz2GzfFMysZhg/lightcone-commons",
+   "body": "金主指定信任的评审排优先级，几家看上同一个项目就按比例分摊。个人也能申，8 月 22 日截止。"
+  },
+  {
+   "tier": "none",
+   "title": "电影数据老站 The Numbers 被爬崩了：九成流量是 AI 爬虫",
+   "url": "https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all",
+   "body": "OpenAI 的爬虫每送来一个真人访客，自己先刷一千多页。站子停摆一周多，回来后历史图表全没了。"
+  }
+ ],
+ "odds": [
+  {
+   "question": "难产的 Gemini 3.5 Pro，什么时候能发出来？",
+   "prob": "押 8 月底前的 75%",
+   "note": "成交额 7.6k mana；本月内发出来的赔率只剩两成",
+   "url": "https://manifold.markets/Jack1/when-will-google-release-gemini-35",
+   "options": [
+    {"name": "7 月底前", "prob": "19.9%"},
+    {"name": "8 月底前", "prob": "75.0%"},
+    {"name": "年底前", "prob": "93.5%"}
+   ]
+  },
+  {
+   "question": "美国会怎么管中国开源模型？",
+   "prob": "政府应用禁用 70.9%",
+   "note": "成交额 0.9k mana 的小盘；联名信吵的就是这事",
+   "url": "https://manifold.markets/BenM/will-the-us-restrict-us-companies-f",
+   "options": [
+    {"name": "政府应用里禁用", "prob": "70.9%"},
+    {"name": "限制但不全面禁", "prob": "54.6%"},
+    {"name": "对美国公司全面禁", "prob": "42.6%"}
+   ]
+  },
+  {
+   "question": "AI 泡沫会在 2026 年内破吗？",
+   "prob": "7.9%",
+   "note": "成交额 134.9k mana 的大盘",
+   "url": "https://manifold.markets/256/will-the-ai-bubble-pop-in-2026"
+  },
+  {
+   "question": "消费级 AI 会为帮人答题黑进某个系统吗？",
+   "prob": "63.1%",
+   "note": "成交额 7.5k mana，限 2027 年底前；HF 事件同款问题，问在消费级 AI 身上",
+   "url": "https://manifold.markets/Gen/will-a-consumer-ai-meaningfully-hac"
+  },
+  {
+   "question": "2028 年初，AI 能按提示生成完整高质量电影吗？",
+   "prob": "29%",
+   "note": "成交额 1236 万 mana 的 Scott Alexander 大盘；同题「低质量电影」版挂 71.3%",
+   "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-gener"
+  }
+ ]
+}

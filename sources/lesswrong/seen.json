@@ -1,5 +1,54 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/tjeoLz2GzfFMysZhg/lightcone-commons",
+  "title": "Lightcone Commons：拼拨拨，拨款界的拼单平台",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/24RKHEkwgZ6Hm6ygY/can-an-llm-make-a-feature-length-movie-on-its-own",
+  "title": "有人指挥 12 个模型合伙拍了部电影",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/Kj3YpqzhFySCjYcWi/we-should-push-for-no-fault-liability-for-actions-taken-by",
+  "title": "LW 提议：AI 闯了祸，部署方无条件兜底",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/KWtchKwwnJkd4bwCi/challenge-hand-coding-weights-for-efficient-sequence-1",
+  "title": "LW 挑战赛：徒手写神经网络权重",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/KsyoSAyBRXtwzSugg/not-pinning-your-openrouter-provider-might-invalidate-your",
+  "title": "LW 提醒：用 OpenRouter 跑实验先锁 provider",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/eaxoBCmQd4vew9ZXX/pseudpocalypse",
+  "title": "dynomight 新文：文风就是指纹",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/zKCGq2bbCQrpCNc3W/mathematicians-are-feeling-the-doom",
+  "title": "LW 热帖：数学家们提前进入 doom 状态",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/H6DDSEvrtCk8Sehfd/are-we-existentially-threatened-by-the-type-of-ai",
   "title": "HF 事件存亡风险讨论帖（消化进 HF 银牌）",
   "date": "2026-07-23",

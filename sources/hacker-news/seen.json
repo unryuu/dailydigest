@@ -1,5 +1,61 @@
 [
  {
+  "id": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
+  "title": "五大科技巨头被扒出 1.65 万亿美元表外债务",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all",
+  "title": "电影数据老站 The Numbers 被爬崩了",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
+  "title": "Neal Stephenson：手写这事，等于给大脑多雇几个工",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://bfl.ai/blog/flux-3",
+  "title": "Black Forest Labs 发布 Flux 3",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+  "title": "近 200 家硅谷公司联名：别封杀中国开源模型",
+  "date": "2026-07-23（HN 上榜）",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+  "title": "菲尔兹奖揭晓，四位得主里有两位华人",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+  "title": "美国空军在真机 F-16 上面跑 AI 操控",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://news.ycombinator.com/item?id=49026810",
+  "title": "Show HN：多个开源模型做路由，号称三分之一成本打平 Fable",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
   "id": "https://github.com/cactus-compute/cactus-hybrid",
   "title": "Cactus Hybrid：Gemma 4 置信度路由（无牌）",
   "date": "2026-07-23",

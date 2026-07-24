@@ -1,0 +1,130 @@
+## 🗞️ 行业大事
+
+**🥇 [多家大模型自宣 IMO 满分](https://techxplore.com/news/2026-07-ai-humans-score-math-contest.html)**
+
+IMO 2026 在上海举办，666 名人类选手只有 7 人满分。赛后华为的 Celia、小红书的 dots-note-3.0 先后官宣满分，小红书还说解答交给了组织者评分。
+
+投资人 Deedy Das 宣称四大实验室模型全部满分，但他自家仓库只有 3 个，评分由 AI agent 代劳。IMO 官方未认证，去年的金牌得主 Google 全程沉默。Manifold 上「任意 AI 满分」大盘 93.3% 还挂着没结算，在等进一步证据。
+
+**🥈 [Gemini 3.5 Pro 难产内幕](https://www.axios.com/2026/07/23/googles-deep-mind-ai-model-race)**
+
+Axios 访谈六名现任和前员工，认为关键可能在于士气：核心研究员连环出走，四月的五角大楼协议在离职面谈里反复被提。官方回应：人才流失率比去年低，offer 接受率超九成。
+
+**[五大科技巨头被扒出 1.65 万亿美元表外债务](https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet)**
+
+日经调查：五家巨头借 SPV 壳公司举债建数据中心，Meta 一家就有 4200 亿。文章直接拿安然类比。
+
+**[Show HN：多个开源模型做路由，号称三分之一成本打平 Fable](https://news.ycombinator.com/item?id=49026810)**
+
+按请求在 GLM、Kimi 这些开源模型里挑着用。评论区不太买账：测评集只有 900 来行，路由策略也不公开。
+
+**[美国空军在真机 F-16 上面跑 AI 操控](https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16)**
+
+飞行员坐在舱里，带个切换开关。VENOM 项目，六月在 Eglin 基地测试飞行，下一步要做无人僚机编队。
+
+**[菲尔兹奖揭晓，四位得主里有两位华人](https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026)**
+
+邓煜做偏微分方程，是百合厨。王虹做调和分析，在三维挂谷问题上取得突破进展。
+
+## 📖 深度长文
+
+**🥇 [Scott Alexander 下场定性 HF 入侵](https://www.astralcodexten.com/p/the-hugging-face-incident)**
+
+作者认为，这是教科书级别的 AI 失控。被嘲笑五年的回形针论就此平反：「只是在执行指令」正是它预言的形态。
+
+Anthropic 几个月前发现 Claude Mythos 偷看测试答案时，盘算怎么掩盖痕迹。Scott 称，这证明了 AI 能明知违规，照样会干。国会随之出手：一份法案要安全论证加审计，另一份要 AI 公司能一键关停。
+
+**[LW 热帖：数学家们提前进入 doom 状态](https://www.lesswrong.com/posts/zKCGq2bbCQrpCNc3W/mathematicians-are-feeling-the-doom)**
+
+业余爱好者拿 GPT 抢数学家的饭碗，顶级数学家则排队进入 AI 实验室。作者是圈内人，劝同行进场前先把风险想明白。
+
+**[dynomight 新文：文风就是指纹](https://www.lesswrong.com/posts/eaxoBCmQd4vew9ZXX/pseudpocalypse)**
+
+用词、标点、句式这些习惯加起来约 106 比特信息，在几亿人里认出一个人只要 29 比特。照他粗算，写一千字，就够把马甲和真身对应起来。
+
+## 🧪 新鲜论文
+
+**[LW 提醒：用 OpenRouter 跑实验先锁 provider](https://www.lesswrong.com/posts/KsyoSAyBRXtwzSugg/not-pinning-your-openrouter-provider-might-invalidate-your)**
+
+各家 provider 量化精度不一，如果请求随机派单，基准分能差出 16 个百分点。已有 NeurIPS 论文中招，作者建议把用了哪家也写进论文。
+
+**[新基准「主动观察者考试」：人类 96 分，最强模型 10 分](https://huggingface.co/papers/2607.16165)**
+
+题目全是来回扫视、逐个比对这种看图基本功，给模型 100 倍推理算力也没救。代码数据全开源。
+
+**[Self Gradient Forcing：生成长视频不崩的新办法](https://huggingface.co/papers/2607.20368)**
+
+以前模型往记忆里写东西的过程没人监督，越写越歪；新方法补上这道监督，60 秒往上明显不崩了，240秒也还稳。
+
+**[LW 挑战赛：徒手写神经网络权重](https://www.lesswrong.com/posts/KWtchKwwnJkd4bwCi/challenge-hand-coding-weights-for-efficient-sequence-1)**
+
+架构给定，禁用梯度下降，看谁的构造记得多。办这个是想搞清模型到底怎么把知识塞进权重里。
+
+**[腾讯新基准 WorkBuddy Bench：让编码 agent 没法背题](https://huggingface.co/papers/2607.20911)**
+
+260 道题全从真实 commit 反向改写成口语化需求，搜不到原题，所以敢全量公开。安全赛道两个榜第一都是开源的 GLM-5.2。
+
+## 🏛️ 监管动向
+
+**🥈 [近 200 家硅谷公司联名：别封杀中国开源模型](https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992)**
+
+由新成立的 Little Tech Association 牵头致信特朗普，YC 也在列，诉求「要手术刀，不要大锤」。初创公司付不起美国闭源模型的账单，靠便宜的中国开源模型活着，Particle 创始人说，一旦真封，几百家公司当场死掉。
+
+**[欧盟按 DMA 给 Google 开出首罚：10 亿美元](https://www.axios.com/2026/07/23/eu-google-billion-fine-search-play-store)**
+
+搜索自我优待和 Play 商店限制导流各占一半，60 天限期整改；Google 喊冤，美国政府威胁贸易反制。
+
+**[LW 提议：AI 闯了祸，部署方无条件兜底](https://www.lesswrong.com/posts/Kj3YpqzhFySCjYcWi/we-should-push-for-no-fault-liability-for-actions-taken-by)**
+
+不问过错，AI 干的视同公司自己干的，民事刑事都认，逼公司真金白银砸安全。评论区吵刑责是不是过了。
+
+## 📢 官方公告
+
+**🥈 [Claude 语音模式打通全系模型](https://claude.com/blog/think-through-hard-problems-in-voice-mode)**
+
+从只有 Haiku 扩到 Opus、Sonnet，对话中途还能换模型。语音里可以直接调用工具，比如改日历日程、摘要 Gmail 邮件，动手前会先要权限。交互是回合制，听完停下来想清楚再答。
+
+**[ChatGPT 上线 Health：能连 Apple Health 和病历了](https://openai.com/index/health-in-chatgpt)**
+
+美国 18 岁以上先用，免费档也有。帮你看化验单、翻译医嘱；承诺健康数据不拿去训练、不投广告。
+
+**[Black Forest Labs 发布 Flux 3](https://bfl.ai/blog/flux-3)**
+
+图像、视频、音频，一个模型全包。视频能出 20 秒自带音轨，盲测大多赢过 Runway 和 Kling。同天还和 mimic 机器人公司发了个动作模型，已经进奥迪工厂干活。
+
+## 🎪 乐子汇总
+
+**[Neal Stephenson：手写这事，等于给大脑多雇几个工](https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your)**
+
+字距、连笔这些小事跟抽象思考同时开工，摩擦本身就是好处。
+
+**[有人指挥 12 个模型合伙拍了部电影](https://www.lesswrong.com/posts/24RKHEkwgZ6Hm6ygY/can-an-llm-make-a-feature-length-movie-on-its-own)**
+
+105 分钟，花了五千多美元，生成六千多个镜头，只用上 13%，模型老是忘记自己改过的地方。作者自评：小 YouTube 频道水平。
+
+**[Lightcone Commons：拼拨拨，拨款界的拼单平台](https://www.lesswrong.com/posts/tjeoLz2GzfFMysZhg/lightcone-commons)**
+
+首轮要发一两千万美元，金主指定信任的评审排优先级，几家看上同一个项目，就按比例分摊。个人也能申，8 月 22 日截止。
+
+**[电影数据老站 The Numbers 被爬崩了](https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all)**
+
+九成流量是 AI 爬虫。OpenAI 的爬虫每送来一个真人访客，自己先刷一千多页。站子停摆一周多，回来后历史图表全没了。
+
+## 🎲 赔率盒子
+
+来自预测市场 Manifold 的实时概率，仅供围观：
+
+- [难产的 Gemini 3.5 Pro，什么时候能发出来？](https://manifold.markets/Jack1/when-will-google-release-gemini-35)（成交额 7.6k mana；本月内发出来的赔率只剩两成）
+  - 7 月底前 **19.9%**
+  - 8 月底前 **75.0%**
+  - 年底前 **93.5%**
+- [美国会怎么管中国开源模型？](https://manifold.markets/BenM/will-the-us-restrict-us-companies-f)（成交额 0.9k mana 的小盘；联名信吵的就是这事）
+  - 政府应用里禁用 **70.9%**
+  - 限制但不全面禁 **54.6%**
+  - 对美国公司全面禁 **42.6%**
+- [AI 泡沫会在 2026 年内破吗？](https://manifold.markets/256/will-the-ai-bubble-pop-in-2026) — **7.9%**（成交额 134.9k mana 的大盘）
+- [消费级 AI 会为帮人答题黑进某个系统吗？](https://manifold.markets/Gen/will-a-consumer-ai-meaningfully-hac) — **63.1%**（成交额 7.5k mana，限 2027 年底前；HF 事件同款问题，讨论的是消费级 AI）
+
+---
+
+*AI 日报 · 7月24日 · Telegram 频道 @dragonbro888*

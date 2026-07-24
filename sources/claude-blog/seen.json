@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://claude.com/blog/think-through-hard-problems-in-voice-mode",
+  "title": "Claude 语音模式打通全系模型",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
   "id": "https://claude.com/blog/how-outtake-built-a-cyber-investigator-on-claude",
   "title": "Outtake 网安 agent 案例（精读后裁掉未报）",
   "date": "2026-07-22",

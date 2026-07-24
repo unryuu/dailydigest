@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://huggingface.co/papers/2607.20911",
+  "title": "腾讯新基准 WorkBuddy Bench：让编码 agent 没法背题",
+  "date": "2026-07-24（当日榜）",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.20368",
+  "title": "Self Gradient Forcing：生成长视频不崩的新办法",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.16165",
+  "title": "新基准「主动观察者考试」：人类 96 分，最强模型 10 分",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
   "id": "https://huggingface.co/papers/2607.20145",
   "title": "SLAI T-Rex：昇腾 SuperPOD 上全参后训练 DeepSeek-V4-Flash（并入金牌佐证，核实非 DS 官方）",
   "date": "2026-07-23",
