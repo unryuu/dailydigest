@@ -112,13 +112,15 @@ def main():
         for m in DE_SHI.finditer(joined):
             ctx = joined[max(0, m.start() - 6):m.end() + 10].replace("\n", " ")
             warns.append(f"{pos} 「xx 的是」句式：…{ctx}…")
-        # 字数警戒线
+        # 字数警戒线 + 全量 body 规范（07-24 用户定：每条都配一行）
         if is_content:
             n = zh_len(it.get("body"))
             tier = it.get("tier", "none")
             limit = {"gold": 250, "silver": 150, "none": 65}.get(tier)
             if limit and n > limit:
                 warns.append(f"{pos} {tier} 正文 {n} 字，超警戒线 {limit}（回头做删除测试）")
+            if n == 0:
+                warns.append(f"{pos} 没有 body（规范：每条配一行展开）")
 
     n_odds = len(d.get("odds") or [])
     if not 4 <= n_odds <= 6:
