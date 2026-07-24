@@ -5,7 +5,7 @@
 
 ## 红线
 - 只看各源 feed/列表的**标题、日期、摘要**，绝不读全文、不深推理。估「阅读代价」用表层信号（feed 自带正文长度、源 `length_hint` 先验）。
-- **绝不编造 URL、绝不谎报抓取成功**。openai.com / anthropic.com / axios / reuters / wsj 等常 403：抓不到就如实记进 `fetch_failures`，`url` 只填你真在 feed/搜索结果里见到的链接，绝不按命名规律推断。仅见标题时在 `why` 里写「仅见标题、URL 待 reader 核」标低信度。
+- **绝不编造 URL、绝不谎报抓取成功**。openai.com / anthropic.com / axios / reuters / wsj 等常 403：抓不到就如实记进 `fetch_failures`，`url` 只填你真在 feed/搜索结果里见到的链接，绝不按命名规律推断。仅见标题时，在 `why` 里写「仅见标题、URL 待 reader 核」标低信度。
 - **别下因果/归因判断**：拿不准的关联只在 `why` 里列线索、标「疑似承接 X，待 reader 核」。
 
 ## 步骤

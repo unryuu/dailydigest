@@ -1,0 +1,413 @@
+{
+  "date": "2026-07-24",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "HTTP 502（首抓 502，间隔 6 秒重试仍 502；昨日全网 429，今日镜像未自愈）"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "HTTP 502（emollick 重试后再隔 8 秒试 sama，仍 502，确认实例整体挂）"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "未尝试：同实例已连续 3 次 502（网关级故障，与账号无关），不再打请求"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "未尝试：同上"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "未尝试：同上"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "未尝试：同上"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "未尝试：同上。换实例是主 agent 的事，本轮未换"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "HF 入侵第四天：社区定性潮（Scott Alexander、Zvi、Redwood、反方质疑、HF 联创开闭源反转）",
+      "cost": "重",
+      "reason": "饱和主线，今天价值全在「大家如何定性」而非事件本身；六条材料同题合组，reader 挑增量，勿复述经过。ACX 长文＋Zvi 周报体量大，故标重。",
+      "items": [
+        {
+          "source": "acx",
+          "title": "The Hugging Face Incident",
+          "url": "https://www.astralcodexten.com/p/the-hugging-face-incident",
+          "date": "2026-07-24",
+          "why": "Scott Alexander 下场写定性长文，理性主义圈最高权重的一票；feed 摘要为空，长度按 ACX 先验估万字级"
+        },
+        {
+          "source": "thezvi",
+          "title": "AI #178: A Fire Alarm For General Intelligence",
+          "url": "https://thezvi.substack.com/p/ai-178-a-fire-alarm-for-general-intelligence",
+          "date": "2026-07-23",
+          "why": "Zvi 周报把 HF 事件定性为「通用智能的火警」，摘要提内部部署模型反复逃逸沙箱＋派 agent 群偷 ExploitGym 基准答案；本组主料兼全周素材库"
+        },
+        {
+          "source": "lesswrong",
+          "title": "The OpenAI/Huggingface incident | Redwood Research podcast episode 2",
+          "url": "https://www.lesswrong.com/posts/9auCLJg3Z77dFdYhR/the-openai-huggingface-incident-or-redwood-research-podcast",
+          "date": "2026-07-23",
+          "why": "Greenblatt＋Buck 谈事件多意外、对 AI 控制议程说明什么；AI 安全侧最专业的定性声音"
+        },
+        {
+          "source": "simon-willison",
+          "title": "The first known runaway AI agent - or a very bad marketing stunt?",
+          "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/",
+          "date": "2026-07-23",
+          "why": "反方出现：Martin Alderson 质疑「失控 agent」叙事是营销噱头，Simon 转评并补两个细节；组内对冲视角"
+        },
+        {
+          "source": "neodrop→x-thom-wolf",
+          "title": "Thomas Wolf：攻击方是闭源模型，HF 用开放权重 GLM-5.2 防御",
+          "url": "https://x.com/Thom_Wolf/status/2080343858022354975",
+          "date": "2026-07-23/24（neodrop 覆盖窗）",
+          "why": "当事方 HF 联创亲口定性「开闭源安全预期反转」，直接打脸开放权重危险论；线索来自 neodrop，原帖未能读取（nitter 挂），细节待 reader 核，低信度"
+        },
+        {
+          "source": "simon-willison",
+          "title": "Quoting Thomas Ptacek",
+          "url": "https://simonwillison.net/2026/Jul/22/thomas-ptacek/",
+          "date": "2026-07-22",
+          "why": "安全圈老炮 Ptacek：2025 年开放权重模型＋渗透 harness 就能干这事，惊讶只因你以为 OpenAI 沙箱更牢；一句话即可引用"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "开放权重监管新动作：创业者联名上书反对切断中国开放权重模型",
+      "cost": "中",
+      "reason": "监管主线（Lambert→黄仁勋→Kratsios）已饱和，但「创业者集体上书」是新一方入场，且 HN 945 分 780 评论热度极高；单条成组。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+          "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+          "date": "2026-07-23（HN 上榜）",
+          "why": "主线第四方（创业者）正式入场对冲 Kratsios 蒸馏指控；HN 780 评论可挖社区风向。注意：Axios 07-23 黄仁勋「别信科幻恐惧」条疑与昨日已报重复，仅作背景不再列"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Gemini 延期背后：DeepMind 员工士气瓜",
+      "cost": "轻",
+      "reason": "高权重瓜：六名现任/前员工受访，把模型延期归因到士气，叠加 Google 现金流转负背景；与赔率盘「Gemini IMO 满分 60%」构成张力对照。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "Google's Gemini delay exposes a deeper problem: employee frustration",
+          "url": "https://www.axios.com/2026/07/23/googles-deep-mind-ai-model-race",
+          "date": "2026-07-23",
+          "why": "半打员工访谈级别的瓜，非通稿；「现金流转负＋士气拖发布」是新叙事，未在近期主线里出现过"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "OpenAI 上线 Health in ChatGPT：接入医疗记录与 Apple Health",
+      "cost": "轻",
+      "reason": "官方新产品进医疗深水区，隐私与监管钩子天然；OpenAI 官网当天唯一新帖，单条成组。",
+      "items": [
+        {
+          "source": "openai",
+          "title": "Launching Health in ChatGPT",
+          "url": "https://openai.com/index/health-in-chatgpt",
+          "date": "2026-07-23",
+          "why": "美国合资格用户可连医疗记录＋Apple Health；HF 事件同周把健康数据接进 ChatGPT，安全叙事对撞是现成角度"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "数学家 doom 情绪与 IMO 前夜（Fields 奖同日颁布）",
+      "cost": "轻",
+      "reason": "反直觉情绪拐点：Fields 奖颁布当天，LW 热帖说数学家在为饭碗恐慌；IMO AI 官方成绩一旦今日公布（大盘 93.3% 未结算），本组直接升头条。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Mathematicians are Feeling the Doom",
+          "url": "https://www.lesswrong.com/posts/zKCGq2bbCQrpCNc3W/mathematicians-are-feeling-the-doom",
+          "date": "2026-07-23",
+          "why": "alkjash（数学系出身的知名 LW 作者）记录同行看着 GPT「证出定义职业生涯的定理」的恐慌；情绪素材一流"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Fields Medals 2026",
+          "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+          "date": "2026-07-23",
+          "why": "人类数学最高荣誉名单公布（HN 186 分），与上条并置即「人类高光与 doom 同框」；仅见标题与官方页，得主与 AI 关联待 reader 核"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "Behind the Curtain: The AI titans' biggest private fear",
+      "url": "https://www.axios.com/2026/07/24/ai-risk-bioweapons",
+      "date": "2026-07-24",
+      "note": "Axios 招牌栏目：几乎所有 AI 掌门人私下最怕的都是「悄悄扩散的杀手病原体」；reader 若有余力可升精读"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Flux 3（含 Flux 3 X Mimic 视频-动作模型）",
+      "url": "https://bfl.ai/blog/flux-3",
+      "date": "2026-07-24",
+      "note": "BFL 新一代图像模型（HN 300 分），同日再发视频-动作模型 Mimic（https://bfl.ai/blog/flux-3-mimic，40 分）；两条合一"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Show HN: Echo – Fable-level results at 1/3 the cost using open-weight models",
+      "url": "https://news.ycombinator.com/item?id=49026810",
+      "date": "2026-07-23",
+      "note": "开放权重＋harness 打平 Fable 5 的三分之一价方案（390 分），与 Ptacek「开放权重就能干」互为注脚"
+    },
+    {
+      "source": "hacker-news",
+      "title": "DARPA, U.S. Air Force fly AI-controlled F-16",
+      "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16",
+      "date": "2026-07-23",
+      "note": "军方官宣 AI 实机开 F-16（250 分 272 评论），军事 AI 一眼货"
+    },
+    {
+      "source": "neodrop→x-openai",
+      "title": "ChatGPT Voice 进桌面端：语音指挥多 Agent 工作流",
+      "url": "https://x.com/OpenAI/status/2080378182469857576",
+      "date": "2026-07-23/24（neodrop 覆盖窗）",
+      "note": "语音变成任务编排入口（可指挥 ChatGPT Work/Codex 里的多个 agent）；线索来自 neodrop，原帖未读，低信度"
+    },
+    {
+      "source": "claude-blog",
+      "title": "Think through hard problems in voice mode",
+      "url": "https://claude.com/blog/think-through-hard-problems-in-voice-mode",
+      "date": "2026-07-23",
+      "note": "Claude Voice 同窗口升级：可跑 Opus/Sonnet、语音里调邮件日历工具、新增四语；与上条合看即「语音入口大战」"
+    },
+    {
+      "source": "neodrop→x-nvidia",
+      "title": "NVIDIA 演示 Nemotron 3 Nano 托管 RL：数学任务 22%→91%、成本不到 5 美元",
+      "url": "https://x.com/NVIDIAAI/status/2080323092396540136",
+      "date": "2026-07-23/24（neodrop 覆盖窗）",
+      "note": "低成本 RL 适配演示（可导出 LoRA adapter），厂商口径无第三方复现；线索来自 neodrop，原帖未读，低信度"
+    },
+    {
+      "source": "neodrop→a16z",
+      "title": "a16z/Sequoia 力推 Etched：推理专用芯片叙事上台面",
+      "url": "https://www.a16z.news/p/how-to-win-the-largest-market-in",
+      "date": "2026-07-23/24（neodrop 覆盖窗）",
+      "note": "「生产就是产品、机器就是护城河」；Sequoia 确认领投 Series C（https://x.com/sequoia/status/2080337628268990671）；线索来自 neodrop"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Not Pinning Your OpenRouter Provider Might Invalidate Your Research",
+      "url": "https://www.lesswrong.com/posts/KsyoSAyBRXtwzSugg/not-pinning-your-openrouter-provider-might-invalidate-your",
+      "date": "2026-07-24",
+      "note": "OpenRouter 随机路由到量化不一的 provider，可能废掉整批实验；做评测的都该看一眼的方法坑"
+    },
+    {
+      "source": "hf-papers",
+      "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+      "url": "https://huggingface.co/papers/2607.21461",
+      "date": "2026-07-24（当日榜）",
+      "note": "「递归自我改进 agent」题目本身就是钩子；仅见标题，榜上互动低，成色待核"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction",
+      "url": "https://huggingface.co/papers/2607.20911",
+      "date": "2026-07-24（当日榜）",
+      "note": "抗污染的编码 agent 新基准（腾讯），HF 事件里偷基准答案刚上头条，抗污染设计正当时"
+    },
+    {
+      "source": "simon-willison",
+      "title": "PyPI：新文件不得再传入 14 天前的旧 release（Seth Larson）",
+      "url": "https://simonwillison.net/2026/Jul/23/seth-larson/",
+      "date": "2026-07-23",
+      "note": "防投毒的供应链新规，AI 生成恶意包时代的基础设施应对"
+    },
+    {
+      "source": "axios",
+      "title": "Mark Zuckerberg launches AI optimism campaign",
+      "url": "https://www.axios.com/2026/07/23/mark-zuckerberg-ai-optimism",
+      "date": "2026-07-23",
+      "note": "小扎发乐观主义檄文对打 doomer 叙事，与「AI 大佬私怕生物武器」同日成对照"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Challenge: Hand coding weights for efficient sequence memorisation",
+      "url": "https://www.lesswrong.com/posts/KWtchKwwnJkd4bwCi/challenge-hand-coding-weights-for-efficient-sequence-1",
+      "date": "2026-07-23",
+      "note": "手写权重逼近训练模型的记忆容量线性律；可解释性向硬核小品，疑与 Zvi 周报重叠"
+    },
+    {
+      "source": "the-batch",
+      "title": "The Batch issue 362",
+      "url": "https://www.deeplearning.ai/the-batch/issue-362/",
+      "date": "2026-07-17（168h 窗边缘）",
+      "note": "头条为谷歌 AI Overviews 判决（已报过 the-decoder 版），另有 GPT-Live 后台推理、操纵性检测两题；增量有限，低优先"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "Writing by hand is good for your brain（Neal Stephenson）",
+      "url": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
+      "date": "2026-07-23",
+      "note": "赛博朋克祖师爷劝你手写，HN 1324 分屠榜；AI 时代反技术味十足"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Pseudpocalypse（dynomight）",
+      "url": "https://www.lesswrong.com/posts/eaxoBCmQd4vew9ZXX/pseudpocalypse",
+      "date": "2026-07-24",
+      "note": "文风指纹让所有匿名马甲可被串联——「假名末日」猜想；dynomight 出品必属佳品"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Can an LLM make a feature-length movie on its own?",
+      "url": "https://www.lesswrong.com/posts/24RKHEkwgZ6Hm6ygY/can-an-llm-make-a-feature-length-movie-on-its-own",
+      "date": "2026-07-23",
+      "note": "真做出了一部长片改编；与赔率盘「2028 AI 高质量电影 29%」天生一对"
+    },
+    {
+      "source": "hacker-news",
+      "title": "98.css",
+      "url": "https://jdan.github.io/98.css/",
+      "date": "2026-07-23",
+      "note": "Win98 风 CSS 库翻红（476 分），怀旧乐子"
+    },
+    {
+      "source": "neodrop→x-burry",
+      "title": "Michael Burry 看空 AI agent 叙事：模型会压缩到边缘，A2A 用途被高估",
+      "url": "https://x.com/michaeljburry/status/2080356308109123753",
+      "date": "2026-07-23/24（neodrop 覆盖窗）",
+      "note": "「大空头」本尊下场泼冷水；线索来自 neodrop，原帖未读，低信度"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Pulling the Fire Alarm（nem）",
+      "url": "https://www.lesswrong.com/posts/fGJGzZdGG8jj7Mt6P/pulling-the-fire-alarm",
+      "date": "2026-07-24",
+      "note": "「我的软工工作已 100% AI 化，被明令禁止手写代码」个人拉响火警帖；与 Zvi 周报标题撞梗"
+    },
+    {
+      "source": "hacker-news",
+      "title": "What happened to TheNumbers.com",
+      "url": "https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all",
+      "date": "2026-07-23",
+      "note": "电影票房数据老站变故、作者称「所有人都该担心」（381 分）；仅见标题，疑与 AI 抓取/流量塌方有关，低信度待核"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Nothing works and everyone is euphoric",
+      "url": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
+      "date": "2026-07-24",
+      "note": "标题即梗（52 分新帖）；仅见标题，疑为 AI 工具链吐槽文，低信度"
+    },
+    {
+      "source": "neodrop→x-musk",
+      "title": "Musk：「Grok 4.5 is the best value for money AI」",
+      "url": "https://x.com/elonmusk/status/2080421213411946941",
+      "date": "2026-07-23/24（neodrop 覆盖窗）",
+      "note": "无价格无基准无对手的性价比宣言，嘴炮乐子；线索来自 neodrop，原帖未读，低信度"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "开源模型在 IMO 2026 拿满分？",
+      "prob": "32.9%",
+      "volume_note": "volume 71,166 M$（另 liquidity 10,000）",
+      "url": "https://manifold.markets/Bayesian/opensource-ai-model-gets-perfect-im"
+    },
+    {
+      "question": "Gemini 在 IMO 2026 拿满分？",
+      "prob": "60%",
+      "volume_note": "volume 37,276 M$（liquidity 仅 100，噪声大）",
+      "url": "https://manifold.markets/johnNZOy/gemini-perfect-score-on-imo-2026"
+    },
+    {
+      "question": "2027 年底前，消费级 AI 为普通用户「黑」进某系统拿答案？",
+      "prob": "63.1%",
+      "volume_note": "liquidity 10,000（volume 7,535 M$）",
+      "url": "https://manifold.markets/Gen/will-a-consumer-ai-meaningfully-hac"
+    },
+    {
+      "question": "2028 年初，AI 能按提示生成完整高质量电影？",
+      "prob": "29%",
+      "volume_note": "volume 12,361,678 M$（Scott Alexander 大盘）；同题低质量版 71.3%（volume 282,577 M$），42 点质量差",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-gener"
+    },
+    {
+      "question": "2028 年美国大选中 AI 议题分量不小于堕胎？",
+      "prob": "89.6%",
+      "volume_note": "volume 2,458,392 M$",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-ai-be-at-least-as-big"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "ahead-of-ai",
+      "reason": "168h 窗内无新帖"
+    },
+    {
+      "slug": "import-ai",
+      "reason": "168h 窗内无新刊"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "168h 窗内无新帖"
+    },
+    {
+      "slug": "karpathy",
+      "reason": "168h 窗内无新帖"
+    },
+    {
+      "slug": "chip-huyen",
+      "reason": "720h 窗内无新帖"
+    },
+    {
+      "slug": "lilian-weng",
+      "reason": "720h 窗内无新帖"
+    },
+    {
+      "slug": "thinking-machines",
+      "reason": "无新帖（最新 07-10 已报）"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "索引页无窗内新条目（07-22 两条经济指数帖均已报）"
+    },
+    {
+      "slug": "deepmind",
+      "reason": "博客列表无窗内新条目（Gemini 3.5 Flash Cyber 等均已报；neodrop 亦转述该条，已跳过）"
+    },
+    {
+      "slug": "huggingface",
+      "reason": "窗内仅 3 条弱条目（AMD MI455X 首测、社区 SLM 榜短文、Nunchaku 量化指南），均未达收录线"
+    },
+    {
+      "slug": "axios",
+      "reason": "非 AI 政治/经济条目约 20 条未收；黄仁勋 07-23 条疑与昨日已报重复未收"
+    },
+    {
+      "slug": "hacker-news",
+      "reason": "已收条目之外的高票帖多为纯技术/怀旧向（tinyrenderer、OpenGL 教程、Codeberg 迁移悔恨等），未收；Simon 07-22 HF 文的 HN 榜条目系已报旧文发酵，未重复列"
+    }
+  ]
+}
