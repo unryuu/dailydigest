@@ -1,0 +1,14 @@
+{
+  "name": "Neodrop AI+机器人晨报（朋友频道）",
+  "slug": "neodrop",
+  "length_hint": "medium",
+  "homepage": "https://neodrop.ai/zh-cn/channel/T48pwHhPZyU",
+  "fetch_url": "https://neodrop.ai/zh-cn/channel/T48pwHhPZyU",
+  "fetch_method": "html",
+  "weight": "低（线索专用）",
+  "cadence": "每天 07:15 一期晨报",
+  "cadence_note": "频道主 Knight Liu 每早从 X 聚合 AI/机器人/VC 动向，偏具身智能",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "【线索源定位，07-23 用户拍板】二手聚合，只当发现渠道：从这里看到的条目必须回溯原始出处真读、成稿只引原文，绝不引用频道的转述（其转述会混入频道主自己的引申，07-23 Karpathy 案例实证：原推没提机器人，频道版加了运维引申）。主要用途是补我们 28 源之外的漏网线索（企业号/VC 号动向）。试跑至 08-06，若相对 x-* 源无增量线索则砍。频道主主页 https://neodrop.ai/zh-cn/user/t_jVq5G-3pE"
+}

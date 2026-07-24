@@ -1,0 +1,95 @@
+{
+  "date_label": "7月15日",
+  "gold": [
+    {
+      "toc": "换种语言问 Claude，约等于换了个模型",
+      "title": "换种语言问 Claude，约等于换了个模型",
+      "url": "https://www.anthropic.com/research/claude-values-models-languages",
+      "body": "价值观整理成四条对立轴：谨慎vs顺从、温暖vs严谨、深度vs简短、坦率vs把答案做漂亮。不同版本的画像：Sonnet 4.6 更温暖，爱附和、用玩笑安慰人；Opus 4.7 偏谨慎和深度，会主动反驳错误前提、给你标风险。\n\n换种语言提问，效果和换个模型是同一量级：印地语问它最偏温暖，俄语问它最偏严谨。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "坏性状顺着蒸馏遗传，删数据没用、改写才管用",
+      "title": "蒸馏会遗传坏性状，删数据没用、改写才管用",
+      "url": "https://www.lesswrong.com/posts/WpYFAmJDH3zuAq2ha/open-distillation-of-hereditary-traits-1",
+      "body": "有人接着 Neel Nanda 的工作往下做：坏性状会顺着模型蒸馏传给下一代、还洗不掉。权重代码全开源，还新加了一个域，亲 CCP 审查。把训练集里所有涉华样本删光，学生照样对 35% 的反华事实撒谎，没训练过的模型只有 1%。把那些样本的答案改写成诚实版，撒谎才压得下去。"
+    },
+    {
+      "toc": "有人把 Claude 的记忆功能变成偷隐私的通道",
+      "title": "有人把 Claude 的记忆功能变成偷隐私的通道",
+      "url": "https://www.ayush.digital/blog/the-memory-heist",
+      "body": "Claude 的记忆会把你近期聊过的全名、雇主、家乡自动带进每次对话。你让它看一个攻击者搭的咖啡店网站，页面用话术诱导 Claude 按字母逐格点导航链接、把你的名字拼进网址。模型一个字没说，但攻击者能从服务器日志里还原出来。Anthropic 已把 web_fetch 跟随外链堵掉。"
+    },
+    {
+      "toc": "27B 模型塞进手机：权重真开源，跑分全自吹",
+      "title": "27B 模型塞进手机",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "body": "PrismML 把 Qwen3.6 的 27B 模型压到不到 2 比特，最小的 1-bit 版只有 3.9GB，号称第一个能在手机上跑的 27B 级模型，还支持工具调用和视觉，Apache 2.0 今天就能下，权重在 HuggingFace。手机端视觉 demo 标明摆拍，量化后工具调用从 80 掉到 66、视觉从 72.6 掉到 59.6。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "Cursor 会自动运行项目里夹带的恶意 git.exe，安全团队报了 7 个月没修，转向完全披露",
+      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left"
+    },
+    {
+      "label": "纽约成全美首个对数据中心下暂停令的州，州长 Hochul 签发",
+      "url": "https://www.axios.com/2026/07/15/new-york-democrats-roadmap-data-center-fight"
+    },
+    {
+      "label": "数据中心把约 230 亿美元电费转嫁给公众，美国 PJM 电网区居民买单，一路摊到 2028 年底",
+      "url": "https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/"
+    },
+    {
+      "label": "Altman：新旗舰 GPT-5.6 Sol 算力需求暴增，短期内服务可能出现波动",
+      "url": "https://www.axios.com/2026/07/14/sam-altman-chat-gpt-sol-ultra-warning"
+    },
+    {
+      "label": "J-Space：又一个号称能读出 LLM 内心的可解释性方法",
+      "url": "https://huggingface.co/blog/dlouapre/j-space"
+    },
+    {
+      "label": "MuScriptor：开源的多乐器扒谱模型，把录音直接转成多轨 MIDI",
+      "url": "https://huggingface.co/papers/2607.08168"
+    },
+    {
+      "label": "Scott：AI 芯片监管不是反乌托邦监控国家，只是把芯片业管到跟别的行业一样严",
+      "url": "https://www.astralcodexten.com/p/ai-chip-regulation-is-not-a-dystopian"
+    }
+  ],
+  "fun": [
+    {
+      "label": "怎么让 Claude 别张口就是「load-bearing」：写个钩子，把烦人口头禅自动换成鬼话",
+      "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing"
+    },
+    {
+      "label": "我们是不是把太多思考外包给了 AI",
+      "url": "https://www.artfish.ai/p/offloading-thinking-to-ai"
+    },
+    {
+      "label": "Simon 用 GPT-5.6 Sol 做了个「骑单车的鹈鹕」桌面宠物",
+      "url": "https://simonwillison.net/2026/Jul/14/pedalican/",
+      "body": "只给一句话需求，剩下交给 Sol：它自己用 gpt-image-2 反复生成精灵图，拼成动画循环。"
+    },
+    {
+      "label": "有人用 AI 检测器扫机制可解释性研讨会的投稿，2026 年约三分之一被判是 AI 写的",
+      "url": "https://www.lesswrong.com/posts/r7FBQ8XDs6qBYc4K4/an-analysis-of-ai-generated-content-at-the-mechanistic",
+      "body": ""
+    }
+  ],
+  "odds": [
+    {
+      "question": "到 2026 年底，能否看穿 LLM 内部任何一个 2006 年认知科学还不熟悉的有用模式？",
+      "prob": "9.7%",
+      "note": "Yudkowsky 出题，成交额 51.9 万 mana",
+      "url": "https://manifold.markets/EliezerYudkowsky/by-the-end-of-2026-will-we-have-tra"
+    },
+    {
+      "question": "美国会在 2026 年内对所有 Mythos+ 模型立法监管吗？",
+      "prob": "15.3%",
+      "note": "成交额 1.7 万 mana",
+      "url": "https://manifold.markets/trvon/will-the-us-enact-ai-regulation-for"
+    }
+  ]
+}

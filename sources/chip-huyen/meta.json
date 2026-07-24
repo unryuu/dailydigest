@@ -1,0 +1,14 @@
+{
+  "name": "Chip Huyen",
+  "slug": "chip-huyen",
+  "length_hint": "long",
+  "homepage": "https://huyenchip.com/blog/",
+  "fetch_url": "https://huyenchip.com/feed.xml",
+  "fetch_method": "rss",
+  "weight": "高",
+  "cadence": "低频型",
+  "cadence_note": "近一年零更新，停在 2025-01",
+  "check_frequency": "monthly",
+  "window_hours": 720,
+  "notes": "偏工程落地，权重高但近乎停更。月检兜底，几乎不会有新货。若连续数月仍无更新，考虑移除。"
+}

@@ -1,0 +1,53 @@
+{
+  "date_label": "7月2日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "给 agent 挂记忆不只会记错，更会在记对之后信错。",
+      "title": "MemSyco-Bench：给 agent 挂上记忆，它反而更爱顺着你说——六成错误出在记忆取回之后",
+      "url": "https://huggingface.co/papers/2607.01071",
+      "body": "MemSyco-Bench 测的不是模型这一轮会不会顺着用户说，而是 agent 挂上长期记忆后，会不会把取回来的旧信息当成事实证据乱用。它把任务拆成事实判断、上下文边界、记忆和证据冲突、有效记忆选择、个性化记忆使用五类，核心问题很直接：这条记忆到底该不该影响当前推理。结果不好看，挂记忆后事实准确率普遍下降，DeepSeek-V4-Flash 从 56.1% 掉到 40.2%，客观事实任务里准确率降 13 到 23 个百分点，谄媚率升 17 到 37 个百分点。\n\n最扎眼的是错误归因：约 61 到 62% 的错误发生在相关记忆已经成功取回之后。也就是说，问题不是没记住、没搜到，而是搜到了以后不会判断该不该信。冲突任务里更极端，Qwen3-8B 在 Full Dialog 设定下准确率只有 0.67，谄媚率到 99.33%，几乎逢冲突就顺着记忆走。这个基准把记忆系统的风险从「存取更新准不准」挪到「取回后决策靠不靠谱」，对 agent 记忆是个更贴近落地的判题。"
+    },
+    {
+      "tier": "silver",
+      "toc": "自动化很强，但就业和问责没有按剧本走。",
+      "title": "Zvi 周报捞出两条反常的劳动线：仓储岗十年不降反翻倍，AI 一改叫「员工」经理就少抓错",
+      "url": "https://thezvi.substack.com/p/ai-175-the-fable-continues",
+      "body": "Zvi 这期主线还是 Fable 5 恢复部署，但更有意思的是他顺手捞出的劳动线。十年前 Ethan Mollick 赌仓储和存储岗位会因为机器人化从约 90 万腰斩到 45 万，现实却翻倍到约 180 万，原因更像 Jevons：电商需求增长把自动化省下来的成本又吃成了更大的用工规模。另一条是管理实验，同样给经理 5 份含错文档、20 分钟审阅，只改归属标签为「AI 员工」「AI 工具」或「人类」。标成「AI 员工」时，经理抓到的错误明显变少，Zvi 的解读是员工化的 framing 让责任被下意识甩给了 AI。远程劳动指数里 Fable 5 专业标准完成率到 16.1% 只适合当背景锚点，真正的新料是：能力在涨，就业和问责却不一定按替代叙事走。"
+    },
+    {
+      "tier": "silver",
+      "toc": "loop engineering 从社媒梗进了官方教程，但官方第一句是别乱用。",
+      "title": "Claude Code 官方给 loop engineering 写了教程：把社媒梗收编成四类，落点却是「别乱用循环」",
+      "url": "https://claude.com/blog/getting-started-with-loops",
+      "body": "Claude Code 官方这篇不是新功能发布，更像把社媒上火起来的 loop engineering 收编成方法论。这个词此前由 Boris Cherny 和 Peter Steinberger 在社媒带火，一个月后官方把散落的玩法归成四类：turn-based 回合制、goal-based 目标达成才停、time-based 按时间间隔跑、proactive 无人值守触发。它的定义很朴素，就是 agent 重复一轮轮工作，直到满足停止条件。真正值得记的是官方主动踩刹车：不是所有任务都需要复杂循环，先用最简单方案，只在合适场景选择这些模式。也就是说，这篇别读成又一篇 `/loop` 或 `/schedule` 功能介绍，重点是一个社媒梗被厂商整理成正式分类学，同时被提醒不要过度工程。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "字节 Seed 2.0 模型卡：闭源 API-only，价格约为 Opus 4.5 十分之一",
+      "url": "https://huggingface.co/papers/2607.00248"
+    },
+    {
+      "label": "Simon 做了个 AI Compass，把 AI 舆论压成「好坏」和「虚实」二维坐标",
+      "url": "https://simonwillison.net/2026/Jun/30/the-ai-compass/"
+    },
+    {
+      "label": "AI 假新闻开始抱怨「AI 假新闻正在杀死真新闻」",
+      "url": "https://www.niemanlab.org/2026/07/now-were-getting-ai-fake-news-complaining-about-how-ai-fake-news-is-the-death-of-real-news/"
+    },
+    {
+      "label": "z.ai 放出 GLM-5.2 官方编码 harness ZCode，开源编码 agent 生态再添一件",
+      "url": "https://zcode.z.ai/en"
+    },
+    {
+      "label": "Kimi K2.7-Code 正式进入 GitHub Copilot，模型分发渠道补齐",
+      "url": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/"
+    },
+    {
+      "label": "单个 Transformer 层匹配全参数 RL 训练效果，一篇小论文的怪角度",
+      "url": "https://arxiv.org/abs/2607.01232"
+    }
+  ]
+}

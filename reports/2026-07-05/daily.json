@@ -1,0 +1,85 @@
+{
+  "date_label": "7月5日",
+  "gold": [
+    {
+      "toc": "新版本 Claude 比旧版更容易在使用自定义编辑工具时犯错",
+      "title": "更强的模型反而更不擅长使用自定义工具，可能是因为被 RL 练得只认自家工具",
+      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "body": "Armin 在自己的编码工具 Pi 上测试发现：相比于旧型号，Opus 4.8 和 Sonnet 5 调用自定义编辑工具时，更容易不遵循 schema 。它们会往 edits 数组里塞不存在的字段，但真正该改的文本又是对的。这个问题单轮编辑不明显，到了多轮 agentic 会话容易冒出来。Opus 4.8 失败率约 20%，剥掉 thinking 之后失败率减半，打开 strict 模式直接清零。\n\nArmin 的归因是 RL 副作用：新模型被 Claude Code 自家那套编辑工具练得太多，学会了「稍微调错也能拿 reward」。于是换到别人家的 schema，反而像碰到一套被隐性惩罚过的写法。同一周 GPT-5.5 Codex 也冒出 reasoning token 固定聚集在几个边界、且和复杂任务答错相关的怪现象。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "Simon 的 149 美元 Fable 账单",
+      "title": "Simon 的 149 美元 Fable 账单：用 Fable 写完 sqlite-utils 4.0 发版，还让它自己判断把杂活派给便宜模型",
+      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/",
+      "body": "主会话 141.02 美元，几个 review 子 agent 各花几美元。Fable 跑了 37 个 prompt、34 次 commit，做了事务语义重构，还修了会让连接状态被污染、进而丢数据的 bug。Simon 觉得 release notes 比他自己写得好，这种写作无聊、可预测、要求准确，正适合外包给 agent。这次他让 Fable 自己做调度，把实现派给 sonnet、把琐碎机械活派给 haiku。"
+    },
+    {
+      "toc": "AI 安全对齐 vs 控制之争",
+      "title": "AI 安全对齐 vs 控制之争：控制是在跟越来越强的对手打，而对齐是在跟不会还手的数据和算法打。",
+      "url": "https://www.lesswrong.com/posts/dmHbogCFbSp95J3Lz",
+      "body": "「控制」是假设 AI 可能会坏，用蜜罐、权限、探针从外面兜住它；「对齐」是改训练，让 AI 打心底想做正确的事。作者 Alec Harris 主张把绝大多数资源用在对齐而不是控制。逻辑： AI 越聪明，控制越难，而且难度涨得很快； AI 学会串通、藏隐写、骗监控，可能比人类学会识破它更快。即便在控制这一侧堆80%资源，也只是把 AI 能造反的门槛从 200 分智能抬到 225 分。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "Current AI 出了个开源 AI 全景索引 Gap Map，把 421 个开源模型/工具/数据集分门别类",
+      "url": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/"
+    },
+    {
+      "label": "一位前端课程作者说收入跌了一半多， AI 竞争占一部分原因",
+      "url": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/"
+    },
+    {
+      "label": "The Log Is the Agent：一篇把「运行日志本身当成 agent」的 arxiv 论文",
+      "url": "https://arxiv.org/abs/2605.21997",
+      "body": "以一份只增不改的操作日志为地基来搭 AI 智能体，这样每一步都能精确重放、复盘。"
+    },
+    {
+      "label": "有人逆向复刻了 Claude 的设计系统提示词、做成一个 repo",
+      "url": "https://github.com/Trystan-SA/claude-design-system-prompt"
+    }
+  ],
+  "fun": [
+    {
+      "label": "有人用 445 字节画出一张能认出各大洲的世界地图",
+      "url": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/",
+      "body": "用一套压缩算法把地图的黑白点阵狠狠压小，浏览器打开时再自动解压展开。海洋和陆地大片重复、特别好压。"
+    },
+    {
+      "label": "Yudkowsky 聊虚构世界 dath ilan 的性别话题",
+      "url": "https://www.lesswrong.com/posts/n436eA4cQEr5njCeM"
+    },
+    {
+      "label": "有人自费做了个小样本 RCT，测「解酒益生菌」ZBiotics 到底管不管用",
+      "url": "https://www.lesswrong.com/posts/kw33A6uYPGRtvD43s",
+      "body": "28 人的小实验，吃了益生菌的人，宿醉不但没更轻反而略重；不过人数太少说明不了问题。"
+    },
+    {
+      "label": "折腾半天 ORM，不如直接学 SQL",
+      "url": "https://wozniak.ca/blog/2014/08/03/1/index.html",
+      "body": "作者说想把 ORM 这种数据库工具用好，你照样得懂 SQL；既然都得懂，不如直接写 SQL，省得跟工具生成的绕弯代码较劲。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "2028 年 AI 会成为至少和堕胎同等量级的政治议题？",
+      "prob": "89.0%",
+      "note": "成交额约 250 万美元",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-ai-be-at-least-as-big"
+    },
+    {
+      "question": "2028 年前，美国 GDP 出现被多数经济学家归因于 AI 的明显拐点？",
+      "prob": "38.0%",
+      "note": "成交额约 66 万美元 · 政治上要炸、经济上还没影",
+      "url": "https://manifold.markets/ScottAlexander/by-2028-will-there-be-a-visible-bre"
+    },
+    {
+      "question": "AI 在 2100 年前灭绝人类？",
+      "prob": "13.9%",
+      "note": "成交额约 420 万美元",
+      "url": "https://manifold.markets/jdilla/will-ai-wipe-out-humanity-before-th"
+    }
+  ]
+}

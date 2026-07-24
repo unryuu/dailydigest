@@ -1,0 +1,14 @@
+{
+  "name": "OpenAI Blog",
+  "slug": "openai",
+  "length_hint": "medium",
+  "homepage": "https://openai.com/news/",
+  "fetch_url": "https://openai.com/blog/rss.xml",
+  "fetch_method": "rss",
+  "weight": "中",
+  "cadence": "连续型",
+  "cadence_note": "每天 1-4 篇",
+  "check_frequency": "daily",
+  "window_hours": 24,
+  "notes": "官网 https://openai.com/news/ 会 403 反爬硬失败，必须走 RSS。范式宣告通常在此首发，但日常多是产品稿，按全局规则降权。"
+}

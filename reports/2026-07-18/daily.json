@@ -1,0 +1,102 @@
+{
+  "date_label": "7月18日",
+  "gold": [
+    {
+      "toc": "中国最高层把 AI 失控当真问题谈",
+      "title": "习近平谈 AI：确保始终处于人类控制之下",
+      "url": "https://thezvi.substack.com/p/ai-177-part-2-wish-you-were-here",
+      "body": "习近平发表 AI 讲话，要求确保 AI 始终处于人类控制之下，配套法规、技术监测和预警应急体系，不断完善防失控措施；同时鼓励开源开放、协作共享，尽早形成全球治理框架。\n\nZvi 认为方向严肃但细节混乱。人类控制不是等于党或国家控制，鼓励开源扩散和确保控制之间也有矛盾。MIRI 的 Soares 反问：现在还能继续假装国际协调没希望吗？"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "中国开源模型占满 OpenRouter 前五",
+      "title": "OpenRouter 用量前五全是中国开源模型",
+      "url": "https://www.axios.com/2026/07/18/china-ai-open-source-kimi-anthropic-openai",
+      "body": "腾讯、小米、DeepSeek、MiniMax、智谱。这个格局在 Kimi K3 爆火之前就已经成了。同一天 Anthropic 宣布 Fable 5 永久进入 Max 和 Team Premium 订阅。"
+    },
+    {
+      "toc": "Cursor 拿脏输入考模型",
+      "title": "Cursor 用脏输入考验模型",
+      "url": "https://claude.com/blog/working-at-the-frontier-cursor",
+      "body": "只给一段堆栈跟踪加一个词 fix，或者故意告诉模型错误的出问题模块，考它会不会质疑假设。月球登陆模拟里，Fable 约 2 小时完成，Opus 卡在燃料不够就加燃料、火箭变重又飞不动，16 小时无果。Fable 的解法是第一次先不登月，只入轨采集遥测数据，用数据规划下一次任务。"
+    },
+    {
+      "toc": "AI 意识研究成了实验科学",
+      "title": "AI 意识研究成了实验科学",
+      "url": "https://www.lesswrong.com/posts/pxvWgtSjR4pmFoS7c/the-state-of-ai-consciousness-research",
+      "body": "这个领域已经从哲学争论变成可测量的实验科学，Anthropic、DeepMind、Eleos、CAIS 四家的独立结果开始收敛。抑制模型的欺骗特征，它报告自己有主观经验的比例从 16% 升到 96%。"
+    },
+    {
+      "toc": "推理档位的六种训法",
+      "title": "推理档位是怎么训出来的",
+      "url": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
+      "body": "reasoning effort 下拉框是怎么来的：至少六条路线殊途同归。低档不等于提示词里写「少想点」，提示词能生效只因为模型在训练里被专门教过响应它。DeepSeek V4 是先训三个档位的专家模型，再蒸馏回一个 checkpoint。Kimi 发现固定预算做强化学习会让模型过拟合到短的解法，改成预算期和自由期交替训练。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "世界模型当游戏引擎的综述",
+      "url": "https://huggingface.co/papers/2607.14076"
+    },
+    {
+      "label": "200 万 token 上下文的强化学习训练",
+      "url": "https://huggingface.co/papers/2607.14952"
+    },
+    {
+      "label": "20 万美元悬赏怎么让 AI 接受纠正和关停",
+      "url": "https://www.lesswrong.com/posts/FBqe5dt8ZjaHN4Xj9/announcing-the-corrigibility-research-fund"
+    },
+    {
+      "label": "作弊需要动脑时，过程会写在推理里",
+      "url": "https://www.lesswrong.com/posts/AoBTiL7XRRpwpev8p/llm-cots-remain-monitorable-when-being-unfaithful-requires"
+    },
+    {
+      "label": "用 2018 年的光纤网络设计题，作为自创 NP-hard 评测",
+      "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/"
+    },
+    {
+      "label": "法官一边给律师立 AI 规矩，一边琢磨自己怎么用",
+      "url": "https://www.axios.com/2026/07/18/ai-lawyers-judges-balancing-act"
+    },
+    {
+      "label": "伯克利教授让 GPT-5.6 补上凸优化 30 年缺口",
+      "url": "https://old.reddit.com/r/math/comments/1uxj3cy/after_openais_cdc_proof_announcement_gpt56_used_a/",
+      "body": "写了十页 prompt，耗时 148 分钟证出 1996 年以来没人拿下的下界，过了形式化验证，还没同行评审。"
+    }
+  ],
+  "fun": [
+    {
+      "label": "AWS 单位换算错误，给 5 美元用户估了 17 亿账单",
+      "url": "https://news.ycombinator.com/item?id=48945241"
+    },
+    {
+      "label": "AI 公司 logo 为什么都长得像 bxxthole ",
+      "url": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+      "body": "圆形在设计心理学里代表完整、无穷、友好无威胁，这正是 AI 公司最想要的观感。"
+    },
+    {
+      "label": "一张图看 StackOverflow 提问量暴跌",
+      "url": "https://data.stackexchange.com/stackoverflow/query/1953768#graph"
+    },
+    {
+      "label": "脑白质切除术怎么风靡美国的",
+      "url": "https://www.astralcodexten.com/p/your-book-review-great-and-desperate",
+      "body": "当年需求极度旺盛、监管几乎不存在、主流医学共同体自然推行，最后被更好的产品淘汰。ACX 书评决赛作品。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "2028 年至少 35 万美国人每周和 AI 恋爱对象聊天？",
+      "prob": "89.0%",
+      "note": "成交额 21.6 万 mana",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-at-least-350000-americ"
+    },
+    {
+      "question": "2028 年 AI 不练习就能以人类水平玩随机电脑游戏？",
+      "prob": "48.9%",
+      "note": "成交额 47 万 mana",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-play-8cb531bf13e0"
+    }
+  ]
+}

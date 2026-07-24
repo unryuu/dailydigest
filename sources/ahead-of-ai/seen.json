@@ -1,0 +1,30 @@
+[
+ {
+  "id": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
+  "title": "Controlling Reasoning Effort in LLMs",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",
+  "title": "Using Local Coding Agents",
+  "date": "2026-06-27",
+  "reported": true,
+  "report_date": "2026-06-27"
+ },
+ {
+  "id": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
+  "title": "LLM Research Papers: The 2026 List (January to May)",
+  "date": "2026-06-06",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://magazine.sebastianraschka.com/p/recent-developments-in-llm-architectures",
+  "title": "Recent Developments in LLM Architectures: KV Sharing, mHC, and Compressed Attention",
+  "date": "2026-05-16",
+  "reported": false,
+  "report_date": null
+ }
+]

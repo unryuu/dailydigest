@@ -1,0 +1,14 @@
+{
+  "name": "Teortaxes @ X",
+  "slug": "x-teortaxes",
+  "length_hint": "short",
+  "homepage": "https://x.com/teortaxesTex",
+  "fetch_url": "https://nitter.kareem.one/teortaxesTex",
+  "fetch_method": "nitter-html",
+  "weight": "高",
+  "cadence": "X 账号",
+  "cadence_note": "日均几十条，极高频话痨",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "中国开源模型线独一档（DeepSeek/Kimi/Qwen）。直播式长线程，按线程聚合成一条，别逐帖列。首日扫描量可能偏大。 抓取规矩（串行慢抓/浏览器 UA/只收原创/镜像单点应对）统一见 pipeline/scout.prompt.md 的 X 源节；解析脚本 scripts/parse_nitter.py。2026-07-23 建源。"
+}

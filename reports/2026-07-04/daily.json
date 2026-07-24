@@ -1,0 +1,115 @@
+{
+  "date_label": "7月4日",
+  "gold": [
+    {
+      "toc": "CVE 披露量暴涨，但别急着把锅全扣给 AI",
+      "title": "高危 CVE 披露在 Claude Mythos 发布后暴涨约 3.5 倍",
+      "url": "https://epoch.ai/data-insights/cve-severity-spike",
+      "body": "Epoch 整理了 2026 年 6 月的高危和严重 CVE 披露数据：21 家重点厂商合计约 1300 到 1500 条，超过 Claude Mythos 发布前月度纪录的约 3.5 倍，第一次把「AI 网安能力」这件事落到了一个能数的指标上。\n\n但 Epoch 自己的 companion 文章这样解释：无法区分是模型突然更强，还是相关预算突然更大；curl 维护者也说，在 curl 这种被反复审计的成熟项目上，没看到 Mythos 比旧工具高级到哪去。此外，漏洞被披露得多，不等于世界更危险，也可能只是 AI 和预算把原本存在的洞更快翻出来，让防守方先补上。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "模型嘴上配合，不代表心里也改了",
+      "title": "模型嘴上说的 vs 心里信的：角色扮演与用 AI 监督 AI ",
+      "url": "https://www.lesswrong.com/posts/EJQngix4rAgpPDTpT/when-role-playing-do-models-believe-what-they-say",
+      "body": "看模型说什么，和模型内部到底怎么动，是两件事。系统提示词、上下文示例、普通微调这类轻手段，主要只是改模型的输出；只有更重、会让模型广泛跑偏的训练，才明显搬动它内部对真假的表征，而且被质疑时，有大约一半情况，模型仍会替假话辩护。另一篇来自 UK AISI 相关团队，设定是一个 AI 提案、一个 AI 挑刺、再让较弱 AI 当评委。结果提案准确率确实涨了，但批评方学会了用「不完整」「不充分」这类像模像样的句式，去批评正确答案。训练了 50 步之后，评委越来越不可靠，这给「用 AI 监督 AI」这条路补了一记很现实的警钟。"
+    },
+    {
+      "toc": "AI 超预测者来了，但结论其实是人机打平",
+      "title": "ACX：AI 超预测者来了，但结论是人机打平",
+      "url": "https://www.astralcodexten.com/p/the-ai-superforecasters-are-here",
+      "body": "最强人类超级预测者和最强 AI bot 已经近到分不清谁更好。最近一届 Metaculus Cup 里，人类拿前两名，Preseen 的 AI 第三；只有金融预测上，AI 看起来略强一点。文章还把一些 AI 预测公司的暴利战绩先打了折，认为更硬的信号是顶级人类预测者自己开始说没把握赢过 bot。文末最有意思的是点名 Manifold：预测市场在 AI 时代的价值，可能会从「比谁更准」转向「谁能成为大家默认引用的权威锚点」。这正好接上今天的赔率盒子，我们看的不只是数字本身，也是在看哪个市场会变成共识坐标。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "GLM5.2 在 AMD MI355X 上跑到 2626 tok/s/节点，成本比 Blackwell 低一半多",
+      "url": "https://www.wafer.ai/blog/glm52-amd"
+    },
+    {
+      "label": "Mistral 发 Leanstral 1.5 形式化证明模型，让证明变便宜管够",
+      "url": "https://mistral.ai/news/leanstral-1-5/"
+    },
+    {
+      "label": "jamesob 的「在本地跑 SOTA 大模型」实操指南，HN 297 分",
+      "url": "https://github.com/jamesob/local-llm",
+      "body": "自组一台约 4 万美元、四块顶配显卡凑 384GB 显存的机器，把量化压缩的 GLM 整个塞进去跑；省钱版约 2 千美元，用两块二手 3090 跑小一号的。"
+    },
+    {
+      "label": "Program-as-Weights：把模糊函数当可训练权重的新编程范式",
+      "url": "https://huggingface.co/papers/2607.02512"
+    },
+    {
+      "label": "WorldDirector：带持久动态记忆的可控世界模拟器",
+      "url": "https://huggingface.co/papers/2607.02517"
+    },
+    {
+      "label": "Claude 给企业管理员加了用量和花费的可视化管控",
+      "url": "https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend"
+    }
+  ],
+  "fun": [
+    {
+      "label": "巨树是怎么把水泵到几十米高的树顶的",
+      "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
+      "body": "靠叶子蒸发，在管道顶端制造负压把水吸上去；巨树越往下水管越粗、越高处叶子越抗旱，正好补偿高度，长再高也不缺水。"
+    },
+    {
+      "label": "有人用形式化方法修了一个 16 年的老 bug",
+      "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
+      "body": "他们把程序逻辑写成数学模型、让电脑穷举所有情况，很快复现出了这个 SQLite 并发 bug。"
+    },
+    {
+      "label": "Costco 为什么是「反 Amazon」",
+      "url": "https://phenomenalworld.org/analysis/the-anti-amazon/",
+      "body": "Amazon 靠无限货架加疯狂送货堆规模、员工流动率高达 150%；Costco 只卖 4000 种精选货、员工离职率仅 6%，主要靠会员费赚钱。"
+    },
+    {
+      "label": "盘点各种末日物理风险，结论是不必杞人忧天",
+      "url": "https://www.lesswrong.com/posts/cBnCCKwwjQ4zZpeNQ/don-t-fear-the-strangelet"
+    },
+    {
+      "label": "Scott 谈遗传：从火车迷到 OCD 到艺术天赋怎么在孩子身上重现",
+      "url": "https://www.astralcodexten.com/p/chip-off-the-old-block"
+    }
+  ],
+  "odds": [
+    {
+      "question": "AI 在 2026 IMO 拿满分？",
+      "prob": "80.9%",
+      "note": "成交额约 22 万美元 · 开源版仅 39.5%",
+      "url": "https://manifold.markets/Bayesian/perfect-score-achieved-by-an-ai-mod"
+    },
+    {
+      "question": "年底前 LLM 可解释性突破？",
+      "prob": "9.8%",
+      "note": "成交额约 51 万美元 · Yudkowsky 主持",
+      "url": "https://manifold.markets/EliezerYudkowsky/by-the-end-of-2026-will-we-have-tra"
+    },
+    {
+      "question": "2030 年 3 月前 AI 产出 Annals 质量数学论文？",
+      "prob": "90.6%",
+      "note": "成交额约 65 万美元",
+      "url": "https://manifold.markets/TamayBesiroglu/will-ai-be-capable-of-producing-ann"
+    },
+    {
+      "question": "2028 年 AI 能按提示生成一整部高质量电影？",
+      "prob": "30.4%",
+      "note": "成交额约 1230 万美元",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-gener"
+    },
+    {
+      "question": "2029 年底前 AI 通过 Longbets 版图灵测试？",
+      "prob": "53.8%",
+      "note": "成交额约 74 万美元",
+      "url": "https://manifold.markets/dreev/will-ai-pass-the-turing-test-by-202"
+    },
+    {
+      "question": "2030 年前 AI 灭绝人类？",
+      "prob": "5.5%",
+      "note": "成交额约 728 万美元",
+      "url": "https://manifold.markets/MartinRandall/will-ai-wipe-out-humanity-before-th-d8733b2114a8"
+    }
+  ]
+}

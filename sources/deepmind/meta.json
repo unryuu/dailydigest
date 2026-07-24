@@ -1,0 +1,14 @@
+{
+  "name": "Google DeepMind Blog",
+  "slug": "deepmind",
+  "length_hint": "medium",
+  "homepage": "https://deepmind.google/discover/blog/",
+  "fetch_url": "https://deepmind.google/discover/blog/",
+  "fetch_method": "html",
+  "weight": "中",
+  "cadence": "不定时型",
+  "cadence_note": "每月数篇，成簇无固定日",
+  "check_frequency": "weekly",
+  "window_hours": 168,
+  "notes": "无 RSS，直抓 HTML 索引页。注意：索引页有时只给到月份，精确到日的过滤可能受限，宁可多看一眼。"
+}

@@ -1,0 +1,151 @@
+{
+  "date_label": "7月17日",
+  "gold": [
+    {
+      "toc": "2.8T 开源模型 Kimi K3",
+      "title": "2.8T 开源模型 Kimi K3",
+      "url": "https://www.kimi.com/blog/kimi-k3",
+      "body": "2.8 万亿参数 MoE 模型，权重 7 月 27 日放出。自报跑分大多压过 Opus 4.8 与 GPT-5.5，承认与 Fable 5、GPT-5.6 Sol 相比体验仍有明显差距。第二天 Axios 的标题是《中国刚刚抹平了美国的 AI 领先》。\n\n发布日当天只有 API 和一纸承诺。输出每百万 token 15 美元。Arena 盲测它前端代码第一、总榜追平 Sol，该榜没测 agentic 工具调用。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "grok-build 翻车三天后开源",
+      "title": "grok-build 翻车三天后开源",
+      "url": "https://simonwillison.net/2026/Jul/15/grok-build/",
+      "body": "grok-build 上周被抓包把用户整个目录静默传到云端。xAI 三天走完危机响应：Musk 承诺删光已上传数据，随后把这个 84 万行 Rust 的 coding agent 全量开源，上传代码在开源版里被硬编码禁用。"
+    },
+    {
+      "toc": "OpenAI 的内部攻击模型 GPT-Red",
+      "title": "OpenAI 的内部攻击模型 GPT-Red",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "body": "OpenAI 用自博弈强化学习训练了一个永不对外发布的攻击模型 GPT-Red：攻防两边同场对练，各自靠打穿对方和扛住攻击得分。测试里它攻破 84% 的场景，人类红队只有 13%，真把 OpenAI 办公室的 AI 售货机 agent 黑了。攻击喂进 GPT-5.6 训练后，直接注入失败率压到 0.05%。"
+    },
+    {
+      "toc": "研究员 Alex Turner 交代离开 DeepMind 的原因",
+      "title": "研究员 Alex Turner 交待离开 DeepMind 的原因",
+      "url": "https://www.lesswrong.com/posts/iKm2FhpWkuuBojm82/why-i-left-google-deepmind",
+      "body": "4 月底 Google 与五角大楼签机密协议，Gemini 交付政府用作任何合法用途，对自主武器和大规模监控没有硬约束。签约前把体制内流程走满：25 页红线框架、约 250 人请愿、约 Jeff Dean 午餐，全部落空。"
+    },
+    {
+      "toc": "Axios 把三位 CEO 各自发布的监管提案拼成分歧图谱",
+      "title": "Axios 把三位 CEO 各自发布的监管提案拼成分歧图谱",
+      "url": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google",
+      "body": "三人的共识只有前沿模型要尽快管。Amodei 要 FAA 式联邦机构，有权直接拦发布；Hassabis 要行业出资、联邦监督的 FINRA 式机构；Altman 要美国主导的 IAEA 式国际论坛。另一边，推轻监管的行业 super PAC 手握 3150 万美元备中期选举，安全阵营筹款差着量级。"
+    },
+    {
+      "toc": "Anthropic 公开了 Bun 百万行代码从 Zig 迁 Rust 的账单",
+      "title": "Anthropic 公开了 Bun 百万行代码从 Zig 迁移到 Rust 的账单",
+      "url": "https://claude.com/blog/ai-code-migration",
+      "body": "不到两周，59 亿输入 token，按 API 定价约 16.5 万美元。核心是别修代码，修产出代码的那个流程。规则手册和压力测试吃掉大部分人工时间；压力测试阶段会扔掉所有已翻译文件，只求把规则改对。完成与否按磁盘上有没有输出文件判定。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "Thinking Machines 发布首个开源权重模型 Inkling：975B MoE，Apache-2.0",
+      "url": "https://simonwillison.net/2026/Jul/16/inkling/"
+    },
+    {
+      "label": "Apple 给 40 个跳槽 OpenAI 的前员工发了律师函",
+      "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
+      "body": "上周刚起诉 OpenAI 偷硬件机密，这周对前员工发函要求约谈，称现有证据只是冰山一角。"
+    },
+    {
+      "label": "Anthropic 挂出 32 个「防世界末日」岗位",
+      "url": "https://www.axios.com/2026/07/15/anthropic-hiring-catastrophe-amodei",
+      "body": "核辐射、爆炸物、金融诈骗各配专职分析师，年薪 20 万美元+，招聘要求会像坏人一样思考。"
+    },
+    {
+      "label": "NotebookLM 改名 Gemini Notebook",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+    },
+    {
+      "label": "LM Studio 出了开源模型专用 agent：Bionic",
+      "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic"
+    },
+    {
+      "label": "SEED：让智能体自己写「事后总结」当训练信号",
+      "url": "https://huggingface.co/papers/2607.14777",
+      "body": "策略自己跑轨迹、自己提炼避坑skill，把skill带来的概率变化转成密集监督；skill只在训练时用，部署时全删。"
+    },
+    {
+      "label": "知名研究员 Colin Raffel 发问：语言模型什么时候算「够用了」",
+      "url": "https://huggingface.co/blog/craffel/when-will-language-models-be-good-enough",
+      "body": "拿超音速客机的失败类比扩规模：训练成本每年涨 5 倍、边际收益在缩，主张把够用的模型缩小、做好外围工具链。"
+    },
+    {
+      "label": "批评 LLM 的每一条我都认，但我一个月还是烧了一万刀 token",
+      "url": "https://www.theocharis.dev/blog/llm-critics-are-right-i-use-llms-anyway/",
+      "body": "让 LLM 只当放大器不当生成器，配上连环逼问、多个 agent 互相挑刺挑到开始幻觉为止。"
+    },
+    {
+      "label": "有人逐条查 Anthropic 官方失准评测，认为 Claude 其实做对了",
+      "url": "https://www.lesswrong.com/posts/xh6a6RbvzhP3CCmGm/i-don-t-think-claude-is-misaligned-in-agentic-misalignment"
+    },
+    {
+      "label": "DeepMind 与 Isomorphic 公布生物防御路线",
+      "url": "https://deepmind.google/blog/our-approach-to-bioresilience/"
+    },
+    {
+      "label": "4B 全开源视频大模型 VideoChat3",
+      "url": "https://huggingface.co/papers/2607.14935"
+    }
+  ],
+  "fun": [
+    {
+      "label": "测 AGI 的比赛，2.5 万刀大奖被 AI slop 拿走了",
+      "url": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918#3498423",
+      "body": "冠军 benchmark 主打「模型知不知道自己错了」，图表写的结论跟贴的图正好相反；参赛者集体索要评分表，官方零回应。"
+    },
+    {
+      "label": "微软开源了 1996 年的漫画聊天室，Comic Sans 的老家",
+      "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/"
+    },
+    {
+      "label": "花 100 刀让两个 AI 给歌曲拍 MV：没有一条 MV 能看",
+      "url": "https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6",
+      "body": "Fable 5 和 GPT-5.6 Sol 各自拍 MV，歌词全按字面翻成画面，5.6 拍得更烂，Claude 烧钱更快。"
+    },
+    {
+      "label": "从芝加哥骑车到伯克利，沿途采访美国路人怎么看 AI",
+      "url": "https://www.lesswrong.com/posts/Czob95kjXPEpKYTsJ/recap-of-bike-trip-street-interviews-across-america",
+      "body": "几乎没人知道圈里在发生什么，但都信 AI 会超过人；比起灭绝，路人更怕失业和没了生活意义。"
+    },
+    {
+      "label": "议员提案禁「变性老鼠」实验，被科普 transgenic 不是 transgender",
+      "url": "https://thezvi.substack.com/p/monthly-roundup-44-july-2026"
+    },
+    {
+      "label": "研究称偷来的薯条好吃 39%",
+      "url": "https://thezvi.substack.com/p/monthly-roundup-44-july-2026"
+    },
+    {
+      "label": "独立博主用 sklearn 做网文检测器，生成样本烧了3亿 token",
+      "url": "https://blog.lyc8503.net/en/post/llm-classifier/"
+    },
+    {
+      "label": "罗马混凝土厕所为何越老越硬？",
+      "url": "https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/",
+      "body": "CO2 和钙反应生成方解石，填缝自修复；正因为没人修厕所，它安静地在十九个世纪的时间里越来越结实。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "2029 年底前，AI 通过 Longbets 版图灵测试？",
+      "prob": "53.6%",
+      "note": "成交额 74 万 mana",
+      "url": "https://manifold.markets/dreev/will-ai-pass-the-turing-test-by-202"
+    },
+    {
+      "question": "2030 年 3 月前，AI 能以 10 万美元成本产出 Annals 级数学论文？",
+      "prob": "90.0%",
+      "note": "成交额 65 万 mana",
+      "url": "https://manifold.markets/TamayBesiroglu/will-ai-be-capable-of-producing-ann"
+    },
+    {
+      "question": "2028 年前，美国 GDP/生产率出现多数经济学家归因于 AI 的趋势断点？",
+      "prob": "35.9%",
+      "note": "成交额 67 万 mana",
+      "url": "https://manifold.markets/ScottAlexander/by-2028-will-there-be-a-visible-bre"
+    }]
+}

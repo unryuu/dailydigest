@@ -1,0 +1,14 @@
+{
+  "name": "Roon @ X",
+  "slug": "x-roon",
+  "length_hint": "short",
+  "homepage": "https://x.com/tszzl",
+  "fetch_url": "https://nitter.kareem.one/tszzl",
+  "fetch_method": "nitter-html",
+  "weight": "中",
+  "cadence": "X 账号",
+  "cadence_note": "约 4.5 条/天，一半转推",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "OpenAI 内部人乐子号。日常神棍梗进 fun 挑着收；大事件时的第一反应有独家价值。 抓取规矩（串行慢抓/浏览器 UA/只收原创/镜像单点应对）统一见 pipeline/scout.prompt.md 的 X 源节；解析脚本 scripts/parse_nitter.py。2026-07-23 建源。"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Lilian Weng (Lil'Log)",
+  "slug": "lilian-weng",
+  "length_hint": "long",
+  "homepage": "https://lilianweng.github.io/",
+  "fetch_url": "https://lilianweng.github.io/index.xml",
+  "fetch_method": "rss",
+  "weight": "极高",
+  "cadence": "低频型",
+  "cadence_note": "数月一篇，当前停在 2025-05",
+  "check_frequency": "monthly",
+  "window_hours": 720,
+  "notes": "权重极高，一篇顶十篇，有更新必进头条。年更级别，日检纯属浪费，月检兜底即可——真冒泡了破例进当天日报。"
+}

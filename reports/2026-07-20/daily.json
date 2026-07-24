@@ -1,0 +1,102 @@
+{
+  "date_label": "7月20日",
+  "gold": [
+    {
+      "toc": "25 美元挖出 WordPress 高危洞",
+      "title": "花 25 美元，GPT-5.6 挖出 WordPress 高危漏洞",
+      "url": "https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/",
+      "body": "安全研究员把验证数学猜想的提示词改造成漏洞搜索任务，跑了约 10 小时，自主拼出一条免登录远程代码执行利用链。两家团队独立复现，官方已发补丁。\n\n「25 美元」是 200 美元订阅按周摊出来的，没算作者多年的 WordPress 攻击经验。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "开闭源网安差距缩到 4 到 7 个月",
+      "title": "开源和闭源的网安差距在收窄",
+      "url": "https://importai.substack.com/p/import-ai-465-open-vs-closed-gaps",
+      "body": "英国 AI 安全研究所：GLM-5.2 和 DeepSeek V4-Pro 只落后前沿闭源 4 到 7 个月，去年差距还是 6 到 10 个月。防御方只剩短窗口，之后这些能力人人可得。"
+    },
+    {
+      "toc": "华府为中国开源模型内讧",
+      "title": "华府暗斗：中国开源模型怎么管",
+      "url": "https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi",
+      "body": "Trump 政府重启对中国开源模型的封杀路线：采购规则、实体清单、舆论施压，让美国公司不敢用。白宫顾问 Sacks 反对，说这是在帮闭源双雄消灭开源竞争。"
+    },
+    {
+      "toc": "小米入局机器人基座模型",
+      "title": "小米入局机器人基座模型",
+      "url": "https://huggingface.co/papers/2607.15330",
+      "body": "小米发了机器人基座模型 Robotics-1，数据靠人类拿着手持夹爪加第一视角相机，在 1700 多个真实场景里干活，攒下 10 万小时轨迹当预训练数据，真机数据只占约 1 万小时。评测无第三方复现；仓库还空着，没放权重。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "Anthropic 安全主管给 CISO 写的 agent 风险指南",
+      "url": "https://claude.com/blog/ciso-guide-to-agentic-ai",
+      "body": "核心四问：agent 读了什么不可信内容、用谁的身份、失控影响多大、出事看不看得见。"
+    },
+    {
+      "label": "LoRA 微调竞速榜：单卡把 Qwen2.5-1.5B 调上 GSM8K 57 分，纪录 6 分 05 秒",
+      "url": "https://github.com/Saivineeth147/lora-speedrun"
+    },
+    {
+      "label": "马斯克诉讼流出 2022 年 Altman 内部信：抢先放开源模型，让对手更难融资",
+      "url": "https://simonwillison.net/2026/Jul/20/sam-altman/"
+    },
+    {
+      "label": "传 DeepSeek 版 Claude Code 要来：或随 V4 正式版一起发",
+      "url": "https://www.80aj.com/2026/07/20/deepseek-harness-code-agent/"
+    },
+    {
+      "label": "K3 太火，Kimi 暂停新订阅：GPU 顶不住了",
+      "url": "https://x.com/Kimi_Moonshot/status/2078855608565207130"
+    },
+    {
+      "label": "千问新语音模型 Qwen-Audio-3.0-TTS 登顶竞技场，这次不开源只走 API",
+      "url": "https://funaudiollm.github.io/qwen-audio-3.0-tts/"
+    },
+    {
+      "label": "「训的是一个模型，部署的是另一个」：一批对齐技术的共同结构",
+      "url": "https://www.lesswrong.com/posts/syAbdNei8BWeP2RPo/many-alignment-techniques-work-by-training-one-model-and",
+      "body": "部署时加系统提示、免疫提示、steering 向量，都是故意让训练和部署配置不一致，模型没机会在部署形态练过钻空子。"
+    }
+  ],
+  "fun": [
+    {
+      "label": "1600 刀的 ESP32，替掉保龄球馆 12 万刀的计分系统",
+      "url": "https://news.ycombinator.com/item?id=48968606",
+      "body": "SRE 老哥全家买下废弃球馆，七十年前的机械摆瓶机其实一个继电器就能驱动，他自己组网写了一套，准备开源。"
+    },
+    {
+      "label": "Airbus 要把 900 个应用搬出 AWS，投奔法国云",
+      "url": "https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109"
+    },
+    {
+      "label": "理性主义不流行，是因为没有传教小册子",
+      "url": "https://www.lesswrong.com/posts/EmKX9zByQq62TTcDv/guess-on-why-rationality-is-not-more-popular-there-are-no"
+    },
+    {
+      "label": "传 SpaceX 向富士康下 520 亿美元 GPU 大单，马斯克回帖：假新闻",
+      "url": "https://www.digitimes.com/news/a20260720VL220/spacex-elon-musk-foxconn-nvidia-ai-server-2026.html"
+    }
+  ],
+  "odds": [
+    {
+      "question": "Gemini 能在 IMO 2026 拿满分吗？",
+      "prob": "78.0%",
+      "note": "成交额 3.3 万 mana",
+      "url": "https://manifold.markets/johnNZOy/gemini-perfect-score-on-imo-2026"
+    },
+    {
+      "question": "第三次世界大战会赶在 GTA6 发售前爆发吗？",
+      "prob": "7.6%",
+      "note": "成交额 127 万 mana",
+      "url": "https://manifold.markets/EnricoCaminiti/will-ww3-happen-before-gta6"
+    },
+    {
+      "question": "Altman 有了孩子，会对 AGI 更谨慎吗？",
+      "prob": "5.5%",
+      "note": "成交额 8 万 mana",
+      "url": "https://manifold.markets/billyhumblebrag/will-sam-altman-become-more-cautiou"
+    }
+  ]
+}

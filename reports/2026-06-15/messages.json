@@ -1,0 +1,32 @@
+{
+  "date_label": "6月15日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "给 AI 兜底的两道防线，俩大佬同日唱衰还吵起来了",
+      "title": "AI 的两道安全防线都在「裸奔」，专家还吵了起来",
+      "url": "https://importai.substack.com/p/import-ai-461-alignment-is-not-on",
+      "body": "同一天，两位 AI 圈的重量级人物各写了篇长文，结论吓人地一致：<b>给 AI 兜底的两道防线，现在都靠不住</b>。\n第一道是<b>技术防线</b>——怎么保证强大的 AI 不跑偏、照人的意图办事。Jack Clark（Anthropic 联创）说：比人还聪明的 AI 可能几年内就出现，可我们至今没办法在造出来<b>之前</b>就确认它安全；现在的安全手段全是「出了问题再补」，没人能提前打包票。\n第二道是<b>监管防线</b>——政府该怎么管 AI。Nathan Lambert 说这道线也乱了：技术上并不在行的官员，凭感觉仓促拍板（比如这几天那场封禁），动不动就禁出口、卡外国研究员。\n<b>最有意思的是两人吵了起来，而且方向正相反</b>：Clark 觉得大家对 AI 的危险<b>还不够当回事</b>；Lambert 偏说危险一直被<b>夸大</b>了——正是这些实验室多年来不停渲染「AI 很危险」，才招来今天这套笨拙的政府管控。\nLambert 还撂了句狠话给那些为封禁叫好的开源派：等这种「拍脑袋」式的监管哪天轮到你头上，你根本没准备好。"
+    },
+    {
+      "tier": "gold",
+      "toc": "里约「自研」397B 大模型，被数学指纹当场拆穿",
+      "title": "里约市政府的「自研」大模型，其实是套壳 merge",
+      "url": "https://github.com/nex-agi/Nex-N2/issues/4",
+      "body": "里约热内卢市政府下属 IT 公司 IplanRIO 在 HuggingFace 发布了号称<b>自研</b>的 397B 原创大模型 Rio-3.5-Open。Nex-AGI 一个 GitHub issue 把它当场拆穿：根本不是训练的，而是 <b>Nex-N2-Pro 和 Qwen3.5 按约 0.6 / 0.4 比例做的逐张量加权 merge</b>。\n证据硬到没法狡辩：① 去掉硬编码的「You are Rio」系统提示后，直接问底层权重「你是谁」，<b>79% 答 Nex、0% 答 Rio</b>，还逐字背出 Nex 私有的组织背书文案；② 权重层面，每层每个张量对 Nex/Qwen 的共线性高达 <b>0.99</b>（两个独立模型本应近乎正交、≈0），相当于离随机几千个标准差——任何人拿两个公开模型 + 一段脚本就能复现。\n评论区那句钩子：开源权重是把双刃剑——<b>「你永远不会死，但你也藏不住偷窃，因为数学会记得。」</b>\n被曝后 IplanRIO <b>悄悄改了 HF README 认账</b>是 merge 并致歉（称传错了版本）。仍未定论的两点：是否真做过蒸馏训练（口头声称、权重无痕迹），以及是否花了公款（市长发推说「用公共资金训练」，另有人称没花，口径打架）。"
+    },
+    {
+      "tier": "silver",
+      "toc": "为什么 AI 没替代软件工程师、也不会",
+      "title": "AI 没替代软件工程师，而且不会",
+      "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/",
+      "body": "逆「工程师要失业」恐慌叙事的一篇——核心论证其实是 <b>Arvind Narayanan & Sayash Kapoor</b>（normaltech.ai）的，Simon Willison 转发背书并补了一条一线观察。\n最实的反恐慌锚点：2025 年 3 月纽约成为全美首个在大规模裁员备案（WARN Act）里加「是否因 AI」勾选框的州，首年逾 <b>160 家</b>公司提交裁员通知，<b>没有一家</b>勾选 AI。\n论证逻辑：软件工程被公认「最该被 AI 颠覆」（代码可生成、可验证、数据多），可连它都没被替代——因为 AI 真正擅长的只是「把代码敲进电脑」这一段，而这从来不是瓶颈；真瓶颈在三处 AI 绕不过：决定造什么、对交付物负责验证、对代码库与业务的<b>深层人类理解</b>。\nSimon 自己的一线话：AI 在「决定」和「验证」上也帮到他，但「给我全世界的 AI 辅助，我产出的价值仍取决于我对问题理解得有多深」。\n他们没把话说死：原文自己抛了开放问题——「随着能力提升，调试会不会也被自动化？」"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    { "label": "Stratechery：把「安全」当成 Anthropic 的战略护城河", "url": "https://stratechery.com/2026/anthropics-safety-superpower/", "note": "· HN 136分" },
+    { "label": "通过 Claude SDK 调用 Apple 端侧 Foundation Models", "url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models", "note": "· HN 275分" },
+    { "label": "OpenRouter 发布 Fusion API", "url": "https://openrouter.ai/openrouter/fusion", "note": "· HN 103分" }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "date_label": "6月24日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "OpenAI 自己造芯片了：推理成本对半砍，摆脱英伟达定价权",
+      "title": "OpenAI 和 Broadcom 发布自研推理芯片 Jalapeño：单位成本省一半",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "body": "OpenAI 跟 Broadcom 一起发布了自研的第一颗 AI 芯片 Jalapeño，专门为跑模型（推理）设计、交给台积电代工。这是两家去年 10 月那笔「合造并部署 10GW 自研算力」长约的第一代货。Broadcom CEO 给的数字是：比典型 AI GPU 单位成本省了大约一半，每瓦性能也明显更好。说白了，OpenAI 想从英伟达的定价权里，把推理算力的成本挣出来、自己掌全栈。\n\n这跟昨天那条「旗舰订阅靠几十倍补贴撑着」正好接上：推理成本是补贴的大头，自己造芯片把单位成本砍一半，就是供给侧给成本焦虑的回应（不过这长约去年就签了，更像战略到了交付节点，不是被补贴临时逼出来的）。两个点值得留神：一是快，从设计到流片只用了约 9 个月，号称业界最快的 ASIC 周期之一，还借了 AI 帮着设计；二是时间线对不齐，官方说 2026 年底就开始部署，但有消息源说大部分芯片其实得等到 2027 年才真就绪。"
+    },
+    {
+      "tier": "silver",
+      "toc": "GPT-5 几分钟破了卡三年的免疫学悬案，还预测中没发表的实验",
+      "title": "GPT-5 帮免疫学家破了三年悬案：从一张没发表的图里看出机制",
+      "url": "https://openai.com/index/gpt-5-immunology-mystery/",
+      "body": "OpenAI 放出一组 AI 帮科学家破题的案例，最扎实的一个来自免疫学家 Derya Unutmaz：他实验室卡了三年的问题，是某个抑制剂为什么会改变 T 细胞。GPT-5 Pro 几分钟内从一张还没发表的图表里看出了机制，是药物在物理上破坏了细胞表面受体的「糖衣」（N-连糖基化），而不是大家原本以为的单纯断能量，还顺手设计了验证实验。最能堵住「它只是上网抄答案」这种质疑的一点：它还预先猜中了另一个尚未发表的淋巴瘤实验结果。同一批稿子里，还有个数学家用它破了卡 40 年的难题。"
+    },
+    {
+      "tier": "silver",
+      "toc": "Qwen 把「世界模型」做成 agent 的练兵场",
+      "title": "Qwen-AgentWorld：用语言模拟环境，当 agent 强化学习的训练场",
+      "url": "https://arxiv.org/abs/2606.24597",
+      "body": "Qwen 放出 Qwen-AgentWorld，一个「语言世界模型」：不是又一个 agent，而是用语言去模拟 agent 所处的环境、预测「下一步会变成什么状态」，覆盖终端、搜索、网页、安卓、写代码等七个领域，喂了一千多万条真实交互轨迹。最有意思的用法是拿它当 agent 强化学习的「训练场」，效果比直接在真实环境里训还好，省掉真环境又慢又贵的麻烦；拿它给 agent 底座做预热，七个基准也能全面提升。配套还发了个新基准 AgentWorldBench。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "投资者对 AI 踩刹车：纳指跌 3.3%、美光一天跌 13.2%，KPMG 调查只有 26% 的高管说得清自己的 AI 账单、Uber 4 个月烧光全年 AI 编码预算",
+      "url": "https://www.axios.com/2026/06/24/ai-stocks-chips-selloff"
+    },
+    {
+      "label": "Anthropic 发布 Claude Tag：常驻 Slack 的共享 AI 同事，一个频道一个 @Claude、全员可派活，能自主推进数小时到数天的项目（官方称内部产品团队 65% 的代码已由它写）",
+      "url": "https://www.anthropic.com/news/introducing-claude-tag"
+    },
+    {
+      "label": "Linux 基金会牵头成立 Appia Foundation 做 AI 合规符合性标准，OpenAI、谷歌、微软、Arm、万事达等首批加入",
+      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai/"
+    },
+    {
+      "label": "Krea 2 技术报告：开源权重的 12B 文生图基座模型，放出免蒸馏基座和 8 步快速版两版",
+      "url": "https://www.krea.ai/blog/krea-2-technical-report"
+    }
+  ]
+}

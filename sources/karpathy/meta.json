@@ -1,0 +1,14 @@
+{
+  "name": "Andrej Karpathy",
+  "slug": "karpathy",
+  "length_hint": "long",
+  "homepage": "https://karpathy.bearblog.dev/",
+  "fetch_url": "https://karpathy.bearblog.dev/feed/",
+  "fetch_method": "rss",
+  "weight": "极高",
+  "cadence": "低频型",
+  "cadence_note": "数周-数月一篇，很不规律，当前已空窗一个多月",
+  "check_frequency": "weekly",
+  "window_hours": 168,
+  "notes": "权重极高，有更新必进头条。主页不渲染列表，必须走 bearblog /feed。常无新货，但一更必看。"
+}

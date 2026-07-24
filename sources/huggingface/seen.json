@@ -1,0 +1,247 @@
+[
+ {
+  "id": "https://huggingface.co/blog/FINAL-Bench/pocket",
+  "title": "POCKET 35B 1-bit MoE（无牌）",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://huggingface.co/blog/grabette",
+  "title": "Pollen Robotics 开源 Grabette：490 欧的手持夹爪，手拿着干活就录出机器人训练数据，直接传 HF Hub",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://huggingface.co/blog/security-incident-july-2026",
+  "title": "Security incident disclosure - July 2026",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://huggingface.co/blog/craffel/when-will-language-models-be-good-enough",
+  "title": "When will language models be good enough?",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://huggingface.co/blog/dlouapre/j-space",
+  "title": "J-Space: Yet Another LLM Mind Reader?",
+  "date": "2026-07-13",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://huggingface.co/blog/FINAL-Bench/vkue",
+  "title": "无 GPU 也能跑，34.7B 推理模型在纯 CPU 上跑到约 17 token/秒",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://huggingface.co/blog/Ningyu/skills-improve-codex-data-analysis",
+  "title": "给 Codex 挂上 skills 做数据分析实测，部分任务正确率从 0/4 提到 4/4",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://huggingface.co/blog/FINAL-Bench/chitos",
+  "title": "Chitos: From Detection to Proof — An Autonomous Security AI That Actually Exploits",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-29"
+ },
+ {
+  "id": "https://huggingface.co/blog/omlab/vlx-go",
+  "title": "VLX-Go: Vision-Language Short-Horizon Waypoint Prediction for Embodied Navigation",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/omlab/vlx-seek",
+  "title": "VLX-Seek / VLX-Flow (omlab)",
+  "date": "2026-06-27",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/tianchez/vlx-flow",
+  "title": "VLX-Flow: Continuous Video Understanding for Real-Time Multimodal Interaction",
+  "date": "2026-06-26",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/huggingface/moon-bot",
+  "title": "Building Moon Bot: A Slack-Native Coding Agent Backed by HuggingFace Buckets",
+  "date": "2026-06-24",
+  "reported": true,
+  "report_date": "2026-06-25"
+ },
+ {
+  "id": "https://huggingface.co/blog/hao05/v-zero",
+  "title": "V-Zero",
+  "date": "2026-06-23",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/maxifalconer/falconer-notion-confluence-benchmarks",
+  "title": "Enterprise AI benchmarks: Falconer/Notion/Atlassian Rovo/Claude Code/Codex",
+  "date": "2026-06-18",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/danf/intel-xpu-kernels-skill",
+  "title": "Intel XPU Kernel Skill: LLM-driven Triton kernel optimization",
+  "date": "2026-06-17",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/lightonai/lateon-regularization",
+  "title": "Party is over: regularizing ColBERT models to fix efficient ANN methods",
+  "date": "2026-06-16",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/build-small-hackathon/eyas",
+  "title": "Eyas — AI Security Camera Agent",
+  "date": "2026-06-14",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/FINAL-Bench/quantum-leaderboard",
+  "title": "FINAL-Bench Quantum: An Open, Neutral Benchmark for Quantum-Computing Methods",
+  "date": "2026-06-14",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/huggingface/serge",
+  "title": "Introducing Serge: GitHub-Native AI Code Review",
+  "date": "2026-06-12",
+  "reported": true,
+  "report_date": "2026-06-12"
+ },
+ {
+  "id": "https://huggingface.co/blog/Samoed/mteb-v3-leaderboard",
+  "title": "MTEB Leaderboard v3",
+  "date": "2026-06-12",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr",
+  "title": "How to Fine-Tune Nemotron 3.5 ASR for Your Language, Domain, or Accent",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+  "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/clem/arcee-hf",
+  "title": "Arcee Becomes the First Major American AI Lab to Replace AWS S3 with Hugging Face Private Storage",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/black-forest-labs/flux-2-klein-lora",
+  "title": "Fine-tune FLUX.2 [klein] with a LoRA under 60 minutes",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai",
+  "title": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action",
+  "date": "2026-06-01",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/nvidia/task-seeded-sdg",
+  "title": "Task-Seeded Synthetic Q&A Generation for Nemotron Pretraining",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+  "title": "Her · हेर — a detective for your Claude Code sessions",
+  "date": "2026-06-07",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/lbourdois/introduction-to-trimming",
+  "title": "Introduction to Trimming",
+  "date": "2026-05-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+  "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+  "date": "2026-06-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/build-small-hackathon/job-search-blog",
+  "title": "Job Searcher",
+  "date": "2026-06-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/ngxson/make-your-own-rag",
+  "title": "Code a simple RAG from scratch",
+  "date": "2024-10-29",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration",
+  "title": "Norm-Preserving Biprojected Abliteration",
+  "date": "2025-11-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/VirgileBatto/lerobot-humanoid",
+  "title": "LeRobot Humanoid: An Open, Low-Cost, 3D-Printed Humanoid for Robot Learning",
+  "date": "2026-05-21",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/AtlasCloud-AI/minimax-goes-sparse",
+  "title": "MiniMax Goes Sparse: Decoding M3's Attention from a Single Diagram",
+  "date": "2026-05-29",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/blog/drmapavone/nvidia-alpamayo-2",
+  "title": "Taking Alpamayo to New Heights with Driving Foundation Models and Closed-Loop Training",
+  "date": "2026-06-02",
+  "reported": false,
+  "report_date": null
+ }
+]

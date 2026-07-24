@@ -1,0 +1,32 @@
+{
+  "date_label": "6月19日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "禁开源之争升温：Lambert 喊「禁开源反而帮中国」",
+      "title": "Lambert 反击：禁开源 AI 是个错误，还会反过来帮中国和垄断",
+      "url": "https://www.interconnects.ai/p/banning-open-source-ai-would-be-a",
+      "body": "Fable / Mythos 被停用八天后，争论从「这家厂商怎么了」升级成「该不该用国家手段管开源」。开源派的权重旗手 Nathan Lambert 公开下场，论点反直觉地硬：<b>开源不是安全隐患，而是安全方案</b>。理由是透明意味着更多工程师能审计、能把审查和坏行为调掉，他直接搬出 Linus 定律「眼睛够多，bug 就浅」，顶撞「管住访问权才安全」的主流共识。\n他针对的不是某一次停用，而是整个收紧趋势：上周五那道禁止全球外国人访问 Anthropic 最强模型的新规、一道审查 AI 的行政令、还有政府对前沿实验室持股的传闻。\n最狠的一刀，是把官方逻辑反着用：以「防中国」为名限制开源，<b>反而会帮到中国，也帮 Anthropic 和 OpenAI 的双头垄断</b>。因为美国创业公司本来就天天在用包括中国在内的开源模型干活，他读成美国自己对开源投入不足，而不是中国威胁。落点是一句口号「美国应该永远站在光这边」，不过他<b>没给具体立法提案</b>，通篇偏价值观檄文。\nThe Batch 同期从实测补了三块料：Fable 的分类器把评测几乎全堵在门外（生物/网安问题近 100% 拒答）；SWE-bench 已被三个更难的新基准取代；英伟达的开源新模型 Nemotron 3 Ultra 把美国重新拉回开源权重第一梯队，但仍落后中国的 Kimi、GLM。"
+    },
+    {
+      "tier": "silver",
+      "toc": "OpenAI 同日两推医疗：对医生很克制，对患者敢吹",
+      "title": "OpenAI 同一天的两篇医疗稿，口径差得有意思",
+      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+      "body": "OpenAI 同一天发了两篇医疗稿，刚好卡在两条边界上，反差就是看点。\n<b>对医生那篇很克制</b>：和波士顿儿童医院、哈佛合作，用 o3 重新分析 376 例此前多个团队都没解开的儿童罕见遗传病，最终新确诊 18 例，额外增益只有约 <b>4.8%</b>（其中 7 例还是别处已确诊的再发现）。全程是 AI 给线索、人做最终诊断，明确辅助不替代，研究还上了 NEJM AI。难得地没自吹。\n<b>对患者那篇就高调了</b>：GPT-5.5 Instant 给全体免费用户升级健康问答，OpenAI 自称在五个维度上「答得比 GPT-4o 和医生手写的答案都好」，两个月内错误健康陈述率降了 71%。但有个关键短板，它没交代「和医生对照」到底怎么做的，方法不透明；而且这篇高调稿里几乎没把「不替代医疗、不用于诊断」那条免责声明摆出来。\n钩子就在这反差：同一天同一家公司，对医生说「我只敢多解出 4.8% 的疑难、还得你拍板」，对每周 2.3 亿问健康的普通用户说「我答得比医生还好」。越靠近真实临床和责任，口径越收；越靠近 C 端流量，口号越敢喊。"
+    },
+    {
+      "tier": "silver",
+      "toc": "做好 ML 研究靠的是性情，不是天赋",
+      "title": "《禅与机器学习研究的艺术》：刷榜刷得越欢，说明你钻得越浅",
+      "url": "https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning",
+      "body": "一篇通篇跟当下风气对着干的随笔。作者 Jack Morris 的核心判断是：做 AI 研究真正稀缺的不是天赋，而是<b>性情</b>，也就是纪律、耐心、对失败的平常心、肯往深里钻。他把这个类比禅修，大多数日子毫无灵光，你照样得坐下来干。\n几条挺扎心、也挺反主流的：\n· <b>别追半年内的热点</b>。他直接点名劝退 2026 的 agent、context engineering、harness 这些，建议回去把 cross-entropy、SVD、policy gradient 这种几十年不变的地基吃透（cross-entropy 拿一个小分布手算一遍）。\n· <b>刷榜是钻得不够深的信号</b>：「如果你这个项目最好的结果只是在某个现成 benchmark 上多刷几分，那说明你钻得不够深。」自己造一个真能检验新方法的数据集，比刷现成榜单值钱得多。\n· <b>资深经验在 scaling 时代可能是负资产</b>，旧范式的直觉会拖后腿，OpenAI 技术核心一堆 30 岁以下不是偶然。\n· <b>别把理解外包给 AI coding agent</b>，哪怕更快也不行，agent 可能偷偷改短 prompt、缩序列长度、跑错 config，这种小遗漏足以改变论文结论。\n还有句适合贴墙上：很多好结果其实是因为代码有 bug，不是结果真好，是你测错了、还把自己骗了。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    { "label": "MCP 企业级托管鉴权：Zero-Touch OAuth", "url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/", "note": "· HN 220分" },
+    { "label": "Datasette Apps：在 Datasette 里直接托管自定义 HTML 应用", "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/", "note": "" },
+    { "label": "OpenAI 给企业版加用量分析和支出管控", "url": "https://openai.com/index/chatgpt-enterprise-spend-controls", "note": "" }
+  ]
+}

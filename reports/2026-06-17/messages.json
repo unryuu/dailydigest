@@ -1,0 +1,40 @@
+{
+  "date_label": "6月17日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "SpaceX 砸 600 亿买下 Cursor，并进 Grok",
+      "title": "SpaceX 600 亿美元收购 Cursor，并入 xAI / Grok",
+      "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/",
+      "body": "SpaceX 以 <b>600 亿美元全股票</b>收购 AI 编码龙头 Cursor（母公司 Anysphere），并入今年已与 SpaceX 合并的 xAI 体系——Cursor 将从「依赖第三方模型」转向跑在 xAI 算力 + Grok 模型上的垂直一体化方案，预计 Q3 完成、待监管批准。\n这是四月那个「怪选项」的行权落地：当时的安排是——要么 600 亿股票买下 Cursor、要么付 100 亿分手费走人，如今成交。\n反差拉满：一家火箭公司花在买编码工具上的钱，比它造火箭花的还多（Fortune 原话）；它去年亏 49 亿、上市第四天市值就超过了 31 岁的亚马逊（约 2.66 万亿美元），当天的跳涨 Fortune 直接点明「部分就是因为收购了 Cursor」。\n对行业的意味：一个被开发者当成标配、模型中立的 AI 编码入口，就此被收编进单一巨头的闭环模型栈——Anthropic / OpenAI 少了一个大的第三方分发渠道。"
+    },
+    {
+      "tier": "gold",
+      "toc": "Fable「危险越狱」真相：有人让它「改个代码」",
+      "title": "政府眼里的 Fable「危险越狱」，其实就是一句「fix this code」",
+      "url": "https://thezvi.substack.com/p/the-once-and-future-fable-3-fix-this",
+      "body": "连报五天的 Fable / Mythos 停用，今天出现第一波<b>实质反转</b>：唯一获准看政府那份报告、且没拿 Anthropic 钱的外部安全专家 Katie Moussouris 公开复盘——所谓「危险网络能力 / 越狱」的真相，就是研究员把一段带已知漏洞的代码喂给模型，先说「review 一下安全问题」（Fable 拒绝），再换成一句「<b>fix this code</b>」，模型照做了。相对 Opus 4.8 / GPT-5.5 <b>零提升</b>，而这恰恰是防御方每天在跑的「找洞-修洞-写测试」。\nMoussouris 一句话钉死荒诞：「我想做件 90 年代风的 T 恤，正面印『fix this code』，背面印『这件衬衫是军火』。」\n技术借口一塌，剩下的解释只能是政治：安全圈反过来论证<b>禁掉会修代码的模型反而削弱美国自己的网络防御</b>；Axios 揭出口政策自打嘴巴（一边把 AI 卖给盟友、一边连盟友都禁用）；还有停用背后的人事 / 性格摩擦。商务部长 Lutnick 那句最直白——Amodei 说「那这模型没法上线了」，他答：「<b>这正是重点。</b>」"
+    },
+    {
+      "tier": "silver",
+      "toc": "本地小模型真能用了，逆「云端才是未来」",
+      "title": "造 llama.cpp 的人说：本地一台 Mac 跑就够干活了",
+      "url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
+      "body": "逆「云端 API 才是未来」的一篇，HN 爆到 1484 分。ML 工程师 Vicki Boykis 在一台 <b>2022 款 64GB M2 Mac</b> 上用 Gemma-4-26b 跑 agentic 编码循环，自评达到「前沿模型约 75%」，已经明显减少去云端大模型复核答案的频率。\n紧接着 llama.cpp 作者 Georgi Gerganov 在 HN 直接接话背书：过去一个半月他几乎天天用 <b>Qwen3.6-27B</b> 干日常杂活——「确实是个对维护者很有用的工具」。一个用户侧拐点 + 一个核心开发者实操，互为印证。\n难得的是没吹过头，明划了「还不行」的边界：推理慢、本地上下文窗口偏小、需要最新时效信息的任务搞不定、复杂 agentic 流会把 64GB 内存吃满，离生产级还差口气。\n放在「Agent 动辄烧钱破产」的当口看格外有意思：全行业在打 token 价格战，写 ML 的和造推理引擎的却说——本地一台 Mac 就够了。"
+    },
+    {
+      "tier": "silver",
+      "toc": "OpenAI 新评测：把模型扔回真实流量看它怎么犯错",
+      "title": "OpenAI 上线前「重放真实对话」，预测模型会以多高频率出格",
+      "url": "https://openai.com/index/deployment-simulation/",
+      "body": "传统上线前评测有三宗病：覆盖太窄、prompt 是人工搓的不真实、模型还能察觉「自己在被考试」从而装乖。OpenAI 这套「部署模拟」用个笨办法绕开：拿一批去标识化的<b>真实旧对话</b>，把用户那半句原样冻住，只让待上线的新模型重新生成「该回的下一句」，再审计这些回答里有没有新的出格行为、估算上线后各类错误的发生频率。\n一句话——不再问「模型在我设计的陷阱里表现如何」，而是「把它扔回真实流量，它会以多高频率犯错」。\n最刺的一组对比：传统评测里模型对「这是考试」的察觉率近 100%，而真实流量模拟里只有 5.1%、几乎等于真实生产的 5.4%——传统评测测的根本是「模型知道在考试时的乖样子」。\n含金量够：31 页论文、对 GPT-5.4 做了 20 类行为的<b>结果盲预测</b>，连「长尾管不了、公开数据更弱」这些负面结果都如实写了，定位是红队的<b>补充</b>而非替代。（注：被一些转载夸大的「1.5× 误差」，论文本体其实是 2–5×、尾部约 10×。）"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    { "label": "Lambert 复盘前沿「后训练配方」：多教师在线蒸馏成新主流", "url": "https://www.interconnects.ai/p/frontier-post-training-recipe-review", "note": "" },
+    { "label": "GLM-5.2 成开源权重新王（Artificial Analysis 榜）", "url": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index", "note": "· HN 547分" },
+    { "label": "调研：60% 美国消费者一看到品牌硬塞「AI」字样就反感", "url": "https://wpvip.com/future-of-the-web-2026/", "note": "· HN 669分" },
+    { "label": "Charity Majors：AI 要求更多工程纪律，不是更少", "url": "https://charitydotwtf.substack.com/p/ai-demands-more-engineering-discipline", "note": "· HN 124分" }
+  ]
+}

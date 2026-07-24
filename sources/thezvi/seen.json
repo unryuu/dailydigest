@@ -1,0 +1,170 @@
+[
+ {
+  "id": "https://thezvi.substack.com/p/openai-model-hacks-into-huggingface",
+  "title": "Zvi HF 事件专文（消化进 HF 银牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/on-kimi-k3-its-capabilities-and-related",
+  "title": "Zvi 定调 Kimi K3 「开源第一，离闭源前沿还差几个月」，Kimi 顺势上线 Kimi Work",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/ai-177-part-2-wish-you-were-here",
+  "title": "AI #177 Part 2: Wish You Were Here",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/monthly-roundup-44-july-2026",
+  "title": "Monthly Roundup #44: July 2026",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/better-call-sol-the-workhorse",
+  "title": "Better Call Sol The Workhorse",
+  "date": "2026-07-13",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/ai-176-part-2-plan-b",
+  "title": "Zvi 周报：Anthropic 和五角大楼谈崩，随后被标「供应链风险」",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/ai-176-part-1-doing-it-live",
+  "title": "Zvi #176 周报：优化目标一歪，模型顺手就干脏活",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/ai-175-the-fable-continues",
+  "title": "Zvi 周报捞出两条反常的劳动线：仓储岗十年不降反翻倍，AI 一改叫「员工」经理就少抓错",
+  "date": "2026-07-02",
+  "reported": true,
+  "report_date": "2026-07-02"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/wsj-article-claiming-china-has-matched",
+  "title": "WSJ Article Claiming China Has Matched Anthropic Is Obvious Nonsense",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-29"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/gpt-56-the-system-card",
+  "title": "GPT-5.6: The System Card",
+  "date": "2026-06-28",
+  "reported": true,
+  "report_date": "2026-06-28"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/white-house-will-ad-hoc-decide-who",
+  "title": "White House Will Ad Hoc Decide Who Can Individually Access GPT-5.6",
+  "date": "2026-06-26",
+  "reported": true,
+  "report_date": "2026-06-26"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/ai-174-youre-it",
+  "title": "AI #174: You're It",
+  "date": "2026-06-25",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://thezvi.substack.com/p/monthly-roundup-43-june-2026",
+  "title": "Monthly Roundup #43: June 2026",
+  "date": "2026-06-23",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://thezvi.substack.com/p/glm-52-is-the-new-best-open-model",
+  "title": "GLM-5.2 Is The New Best Open Model",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-22"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/claude-fable-5-and-mythos-5-capabilities",
+  "title": "Claude Fable 5 and Mythos 5: Capabilities",
+  "date": "2026-06-19",
+  "reported": true,
+  "report_date": "2026-06-20"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/ai-173-ai-pauses",
+  "title": "AI #173: AI Pauses",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-18"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/the-once-and-future-fable-3-fix-this",
+  "title": "The Once And Future Fable #3: Fix This Code",
+  "date": "2026-06-17",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/fable-and-mythos-model-welfare",
+  "title": "Fable and Mythos: Model Welfare",
+  "date": "2026-06-16",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://thezvi.substack.com/p/american-government-takes-down-claude",
+  "title": "American Government Takes Down Claude Fable",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-14"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/claude-fable-5-and-mythos-5-the-system",
+  "title": "Claude Fable 5 and Mythos 5: The System Card",
+  "date": "2026-06-12",
+  "reported": true,
+  "report_date": "2026-06-13"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/ai-172-the-first-fable",
+  "title": "AI #172: The First Fable",
+  "date": "2026-06-11",
+  "reported": true,
+  "report_date": "2026-06-12"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/three-labs-with-a-plan-and-a-memorandum",
+  "title": "Three Labs With a Plan and A Memorandum",
+  "date": "2026-06-09",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/openai-offers-a-new-policy-blueprint",
+  "title": "OpenAI Offers A New Policy Blueprint",
+  "date": "2026-06-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://thezvi.substack.com/p/ai-171-false-flag",
+  "title": "AI #171: False Flag",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ }
+]

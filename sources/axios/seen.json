@@ -1,0 +1,268 @@
+[
+ {
+  "id": "https://www.axios.com/2026/07/22/tesla-earnings-ai-robotics-spending",
+  "title": "Tesla 财报 AI 投入压利润（无牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/22/nvidia-jensen-huang-china-open-source-ai",
+  "title": "黄仁勋：该怕的不是中国模型，是封杀它们的运动",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/20/trump-ai-security-agency-head-resigns",
+  "title": "CAISI 主任上任三个月辞职",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/19/pentagon-openai-dean-ball-trump-ai",
+  "title": "Top Pentagon official blasts OpenAI's Dean Ball",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi",
+  "title": "The secret Trump administration battle to fight Chinese AI",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/18/ai-lawyers-judges-balancing-act",
+  "title": "The bench's AI balancing act",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/18/china-ai-open-source-kimi-anthropic-openai",
+  "title": "AI race splits in two as China wages open-weight insurgency",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/16/moonshot-kimi-ai-china-model-openai-anthropic",
+  "title": "China's open-weight Kimi model stuns AI world with frontier-level results",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/17/china-ai-kimi-k3-open-source-anthropic-opus",
+  "title": "China just erased America's AI lead",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google",
+  "title": "Behind the Curtain: AI godfathers converge on regulations",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/17/pro-ai-super-pac-ready-midterms",
+  "title": "Pro-AI super PAC keeps $31M ready for the midterms",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/15/anthropic-hiring-catastrophe-amodei",
+  "title": "Help wanted: Anthropic hires to head off catastrophe",
+  "date": "2026-07-15",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/14/sam-altman-chat-gpt-sol-ultra-warning",
+  "title": "Sam Altman warns of hiccups with new flagship GPT-5.6 Sol",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/14/demis-hassabis-ai-regulation-google-deepmind",
+  "title": "Exclusive: Hassabis calls for U.S.-led global AI watchdog before year end",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/09/microsoft-ai-data-centers-climate-goals",
+  "title": "微软的 AI 扩张撞上了它自己定的节能减排气候目标",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/02/openai-trump-administration-investor-stake",
+  "title": "OpenAI 放风提议送美政府约 5% 股权（按 8520 亿估值约合 426 亿美元），说是让公众分享 AI 收益",
+  "date": "2026-07-03",
+  "reported": true,
+  "report_date": "2026-07-03"
+ },
+ {
+  "id": "https://www.axios.com/",
+  "title": "Axios 摘要称 UN 推出 AI for Good commission，Benioff 与卢旺达总统共同主持，Jack Clark、Jensen、Brad",
+  "date": "2026-07-01",
+  "reported": true,
+  "report_date": "2026-07-01"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/30/bis-ai-boom-historical-warning",
+  "title": "The AI boom historical warning (BIS)",
+  "date": "2026-06-30",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/29/trump-ai-model-release-delays-tech-backlash",
+  "title": "The pro-AI movement is splintering",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-29"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/28/ai-fbi-whcd-attack-investigation",
+  "title": "How AI Helped FBI Investigate White House Correspondents' Dinner Attack",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon",
+  "title": "Anthropic's Fable 5 Model Expected to Return Soon",
+  "date": "2026-06-27",
+  "reported": true,
+  "report_date": "2026-06-27"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/26/scoop-jd-vance-raises-42-million-in-silicon-valley",
+  "title": "JD Vance Raises $4.2 Million in Silicon Valley",
+  "date": "2026-06-26",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.axios.com/2026/06/26/apple-microsoft-prices-ai",
+  "title": "The AI price shock is here: Apple, Microsoft hike prices",
+  "date": "2026-06-26",
+  "reported": true,
+  "report_date": "2026-06-26"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/26/china-ai-us-alliance",
+  "title": "China's AI progress strains U.S. alliance pitch",
+  "date": "2026-06-26",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+  "title": "Exclusive: Codex agents are inching into the mainstream",
+  "date": "2026-06-25",
+  "reported": true,
+  "report_date": "2026-06-25"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/25/water-energy-ai-flashpoint",
+  "title": "Water joins energy as top AI flashpoint",
+  "date": "2026-06-25",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.axios.com/2026/06/24/ai-stocks-chips-selloff",
+  "title": "Investors may be hitting pause on the AI run-up (chip selloff)",
+  "date": "2026-06-24",
+  "reported": true,
+  "report_date": "2026-06-24"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/23/ai-lab-agi-google-deepmind-departures",
+  "title": "Google Takes the Hit in AI's Talent War",
+  "date": "2026-06-23",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/22/nyc-mamdani-goldman-lander-espaillat-jeffries",
+  "title": "New York's 12th District Race Features AI Regulation Battle",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/22/ai-data-center-backlash-poll",
+  "title": "Data centers become the face of AI backlash",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-22"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/22/nvidia-data-center-water-solution",
+  "title": "Nvidia says AI's water challenge is largely solved",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-22"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/19/trump-anthropic-national-security-the-axios-show",
+  "title": "Trump tells 'The Axios Show' that Anthropic was a national security threat",
+  "date": "2026-06-19",
+  "reported": true,
+  "report_date": "2026-06-20"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/20/ai-tech-moguls-g7",
+  "title": "New global order: AI CEOs as heads of nation-states at G7",
+  "date": "2026-06-20",
+  "reported": true,
+  "report_date": "2026-06-20"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/18/trump-shadow-ai-policy",
+  "title": "Trump's shadow AI policy",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-18"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/18/inside-white-house-ai-power-center",
+  "title": "Inside the White House's AI power center",
+  "date": "2026-06-18",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.axios.com/2026/06/18/arizona-ai-data-center-water-power",
+  "title": "Arizona emerges as test case for AI's energy and water crunch",
+  "date": "2026-06-18",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.axios.com/2026/06/16/trump-ai-export-strategy-export-control",
+  "title": "Trump's AI export strategy runs into Trump's export controls",
+  "date": "2026-06-16",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://www.axios.com/2026/06/16/spacex-amazon-market-cap",
+  "title": "SpaceX soars above Amazon in market cap",
+  "date": "2026-06-16",
+  "reported": true,
+  "report_date": "2026-06-17"
+ }
+]

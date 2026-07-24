@@ -1,0 +1,122 @@
+[
+  {
+    "id": "tao-jacobian",
+    "section": "industry",
+    "label": "陶哲轩和 ChatGPT 推雅可比反例的完整对话公开了",
+    "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+    "body": "五维簇到三维空间的同构、行列式验证,一步步全在里面。",
+    "note": "核实通过。chatgpt.com 直抓被截断,jina 代理拿到全文:对话确实完成了反例的分解重构(F_orig = B∘G∘A),验证了行列式恒为 -1。已连报两天,label 按「记录公开」一眼带过。"
+  },
+  {
+    "id": "tesla-q2",
+    "section": "industry",
+    "label": "Tesla 财报:营收创纪录,利润被 AI 和机器人烧掉了",
+    "url": "https://www.axios.com/2026/07/22/tesla-earnings-ai-robotics-spending",
+    "body": "营收 280 亿美元涨 23%,营业利润率从 4.1% 掉到 1.4%。马斯克说这可能是特斯拉史上回报最好的投资。",
+    "note": "axios 直抓 403,jina 代理成功。数字核实:Q2 营收 $28B(+23%),净利 $1.1B(-5%),营业利润率 1.4%(去年同期 4.1%),今年资本开支超 $250 亿,拟举债 $300 亿。"
+  },
+  {
+    "id": "atoms",
+    "section": "industry",
+    "label": "卡兰尼克带着藏了八年的 Atoms 出山,a16z 领投 17 亿美元",
+    "url": "https://x.com/a16z/status/2080007931794477367",
+    "body": "做的是工业 AI:矿山、建筑、物流这些没数字化的行业。Uber 也跟投了,Ben Horowitz 进董事会。",
+    "note": "x.com 直抓和 jina 都 403,改用搜索交叉核实(TechCrunch/Yahoo/BusinessToday 多源一致)。派单里写「金额未披露」,实际已披露:$1.7B 股权轮,a16z 领投,Uber、Bain Capital 等跟投。若想 url 稳一点可换 TechCrunch: https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/"
+  },
+  {
+    "id": "byrnes-ai-companies",
+    "section": "longform",
+    "label": "Byrnes 问:以后开公司的会不会全是 AI",
+    "url": "https://www.lesswrong.com/posts/BHEcssYwYrzTBf9Qm/will-almost-all-future-companies-eventually-be-founded-and",
+    "body": "他把五种反驳挨个拆了:AI CEO 能同时开十万家公司,人类监工只会拖后腿。不过他自己赌的是社会结构先变,轮不到这个问题。",
+    "note": "核实通过。文章结构确实是逐条驳斥五种反对意见,结尾反转:作者本人认为更可能是 AI 研究被禁或强 AI 重组社会、「公司」概念失效。"
+  },
+  {
+    "id": "jspace-meta-tokens",
+    "section": "papers",
+    "label": "新可解释性玩法:在模型中间层抓「meta-tokens」看它在想什么",
+    "url": "https://www.lesswrong.com/posts/6ek6n7yZ5DzfarJHy/towards-surfacing-model-algorithms-with-meta-tokens-in-the-j",
+    "body": "模型读到歧义句会冒出「什么意思」,做数学题冒出「gcd」;把这些词压下去,行为跟着变。",
+    "note": "核实通过。J-lens 用雅可比矩阵追踪扰动传播,实验模型 Qwen 3.6-27B,三类 meta-token(解释/gcd/对冲)都做了因果验证。好玩的细节:模型内部冒出来的是中文「什么意思」。"
+  },
+  {
+    "id": "cactus-hybrid",
+    "section": "papers",
+    "label": "教 Gemma 4 知道自己错了:端侧模型没把握就把问题甩给云端",
+    "url": "https://github.com/cactus-compute/cactus-hybrid",
+    "body": "给每个答案打 0-1 置信分,低于线才转云。只转 15-35% 的查询,跑分追平 Gemini 3.1 Flash-Lite。",
+    "note": "核实通过。机制是在 checkpoint 内嵌探针打分,AUROC 0.814;探针没见过音频数据却在音频基准拿 0.79-0.88,说明学到的是通用模式。支持 llama.cpp/MLX 等。"
+  },
+  {
+    "id": "pocket-35b",
+    "section": "papers",
+    "label": "35B 模型塞进 8GB:1-bit 量化 MoE,号称能上 iPhone",
+    "url": "https://huggingface.co/blog/FINAL-Bench/pocket",
+    "body": "路子是砍专家加超低比特量化,原版 llama.cpp 直接跑。不过 iPhone 实测数据还没有,只测到 MacBook。",
+    "note": "真伪核查结论:有硬货但标题党一半。硬的部分:34.66B 稀疏 MoE,IQ1_M 档 8.2GB,GGUF/MLX 已开源(Apache-2.0),Xeon 上 27 tok/s、M3 Pro 上 25.4 tok/s,均给了对照组。虚的部分:iPhone 实测「尚未测量」,是按内存推算的。建议收但 label 别替它吹 iPhone(现 label 已按实际口径写);如果版面紧,砍它最不心疼。"
+  },
+  {
+    "id": "camellia",
+    "section": "announcements",
+    "label": "OpenAI 又圈了块地:佐治亚州 3.2GW 数据中心 Project Camellia",
+    "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+    "body": "2028 年起分期供电,给社区掏 8000 万美元,承诺居民电费不会涨。",
+    "note": "openai.com 直抓 403,jina 代理成功。数字核实:3.2GW,2028-2032 分期,社区投资 $80M,另有最高 $71M 的 Codex 学生额度,闭环水系统。"
+  },
+  {
+    "id": "doe-double",
+    "section": "announcements",
+    "label": "OpenAI 和 Google 同一天抱 DOE 大腿,都冲着 Genesis Mission 去的",
+    "url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+    "body": "OpenAI 出 Codex 额度、办高温超导竞赛;Google 掏 4000 万美元云积分,把 AlphaFold 们送进 17 个国家实验室。",
+    "note": "OpenAI 那篇 jina 代理拿到:目标十年内让美国科研生产力翻倍,约 2000 名研究员的 Codex 访问、两项科学竞赛(高温超导+前沿图谱)。Google 那篇直抓成功:$40M 是 AI token 和云积分,含 AlphaEvolve/AlphaFold 3/AlphaGenome/WeatherNext,外加 Gemini for Government 一年席位,覆盖全部 17 个 DOE 国家实验室。合写一条,url 用 OpenAI 那条,Google 链接: https://cloud.google.com/blog/topics/public-sector/accelerating-frontiers-of-scientific-discovery-40-million-dollar-commitment-genesis-mission"
+  },
+  {
+    "id": "anthropic-econ",
+    "section": "announcements",
+    "label": "Anthropic 掏 2 亿美元研究 AI 抢饭碗怎么办,顺手把经济数据接进 Claude",
+    "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
+    "body": "资助再培训、失业保障这类干预实验,单笔可到 3000 万美元;Economic Index 现在在 Claude 里开个 connector 就能查。",
+    "note": "两篇都直抓成功。基金核实:总额 $200M,五大方向(企业内影响/转型帮扶/收入支持/收益分享/公共投资),单笔 $5M-30M、下限 $1M,面向有田野实验能力的机构。Connector 核实:免装,claude.ai 里启用即可问「哪些职业最常用 AI」这类问题,底层数据集免费公开。合写一条,第二链接: https://www.anthropic.com/news/anthropic-economic-index-connector"
+  },
+  {
+    "id": "bento",
+    "section": "fun",
+    "label": "Bento:整个 PPT 就是一个 HTML 文件,编辑器也在里面",
+    "url": "https://bento.page/slides/",
+    "body": "按 Esc 就地改,图片字体全嵌在文件里,断网照样放,发给别人双击就能演。",
+    "note": "核实通过(jina 代理拿到完整特性页)。deck、播放器、编辑器同一个文件,还带跨页 morph 动画和演讲者视图。"
+  },
+  {
+    "id": "dvorak",
+    "section": "fun",
+    "label": "老牌科技毒舌 John C. Dvorak 去世,享年 80",
+    "url": "https://news.ycombinator.com/item?id=49012070",
+    "body": "PC Magazine 写了几十年专栏。流传最广的一句是 1984 年的:没证据表明人们想用鼠标这玩意。",
+    "note": "原链是 X 讣告抓不到,按派单改用 HN 串当 url。HN 串核实:1946 年生,享年 80,No Agenda 播客联合主持人,Dvorak 键盘布局发明者的侄子。评论区有人听他节目助眠十五年,有人少年时给他发邮件真收到回信。"
+  },
+  {
+    "id": "reddit-html",
+    "section": "fun",
+    "label": "Reddit 给旧版网页上了锁,理由是纯 HTML「不安全」",
+    "url": "https://www.cole-k.com/2026/07/21/reddit/",
+    "body": "作者一拆:旧版就是个 1MB 的普通网页,新版反而重五倍还必须跑 JS。防的不是攻击,是爬虫。",
+    "note": "核实通过。old.reddit.com 开始强制登录,官方说法是旧版是「滥用爬取的重要来源」;作者论证真实动机是逼客户端跑 JS 以保护数据生意。"
+  },
+  {
+    "id": "ai-menus",
+    "section": "fun",
+    "label": "餐馆用 AI 重画菜单图,菜没变,图先吓跑人",
+    "url": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
+    "body": "一家菲律宾餐厅的午餐肉拼盘,AI 图看着像事故现场,端上来是妈妈做的早饭味。作者:宁可看 Comic Sans。",
+    "note": "核实通过。作者是奥斯汀做小企业服务的,和艺术家朋友吃饭时发现菜单刚被 AI 改版,spamsilog 那张图是全文最好笑的例子。"
+  },
+  {
+    "id": "acx-july",
+    "section": "fun",
+    "label": "ACX 七月大杂烩:咖啡厅 AI 一天订一次 3000 只手套",
+    "url": "https://www.astralcodexten.com/p/links-for-july-2026-part-1",
+    "body": "还有个推号假装晒「AI 烂图」,几千人痛批没有人味,结果全是莫奈真迹。",
+    "note": "核实通过,梗都出自原文。备选梗:教皇 AI 通谕自相矛盾(无身体天使有良知 vs 真良知必需肉身)、毒蘑菇让人清醒地看见小精灵一周。挑了 AI 相关的两个进正文。"
+  }
+]

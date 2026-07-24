@@ -1,0 +1,100 @@
+{
+  "date_label": "7月7日",
+  "gold": [
+    {
+      "toc": "Claude 脑子里被找到一块看不见、也没说出口、却真能改结果的私密草稿纸",
+      "title": "Anthropic「全局工作空间」：Claude 内部有块草稿纸",
+      "url": "https://www.anthropic.com/research/global-workspace",
+      "body": "Anthropic 用一个叫 J-lens 的新工具，在 Claude 内部找到一块叫 J-space 的东西，能暂存和操纵中间概念，跟负责流利吐字、背事实的自动处理分开，不会直接进输出。它是训练里自发出现的，只装得下几十个概念、占内部活动不到十分之一。如果把它偷偷想的「蜘蛛」换成「蚂蚁」，Claude 给出的腿数就从 8 变成 6；把这块空间删掉，流利说话、语法、背简单事实都还在，但多步推理直接掉到接近零。\n\n可解释性圈子里，最爱挑刺的 Neel Nanda 亲手在 Qwen 上复现了核心结果、称这是篇好论文，却驳斥「意识」那部分是全文最没意思的主张。论文自己只承认了功能性的「通达意识」，也就是能报告、能推理、能指导行为，明确说不证明 Claude 有主观体验、会真的「感觉」到什么。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "官方第一次讲 Claude Code 自己是怎么来的",
+      "title": "The Making of Claude Code：从一个玩具，到日活百万",
+      "url": "https://www.anthropic.com/features/making-of-claude-code",
+      "body": "Anthropic 官方发了一篇多人口述的幕后史。Claude Code 的前身叫 clide，是工程师业余时间搞的内部命令行工具，又慢又笨。Boris 后来把它当全新工具从零重写，最早的 demo 是让它「猜我在听什么歌」，发到 Slack 只收到两三个赞，如今它日活过百万。一个工程师说自己「2025 年冬天起再也不亲手写代码了」。他们黏住用户靠的是工程手感。自动更新加分钟级修 bug，谁一抱怨、五分钟后就用上了修复。产品心法：你得先做出一个现在只能用两三成的东西，好让下个模型出来时它能用八成。"
+    },
+    {
+      "toc": "喂再多数据也洗不掉的假信号，塞一批「平局」就治了",
+      "title": "喂再多数据也洗不掉的假信号，塞一批「平局」就治了",
+      "url": "https://www.lesswrong.com/posts/i2qTghrkyY9xdcCFq/tie-training-can-make-dpo-rlhf-trained-ais-generalize-better",
+      "body": "DPO/RLHF 这套训练会让模型把训练里每个跟「好」沾边的特征都学进去，包括纯属巧合的假信号。这种假信号的权重，哪怕偏好标签完美、数据喂到无穷，也不会归零。解法是往训练集里塞一批「平局对」，也就是两个其实一样好的动作，随机贴上谁大于谁。就这么一下，模型的对抗准确率从 25% 直接跳到 70%，而且能修掉假信号。"
+    },
+    {
+      "toc": "用最新的 Fable 5，活儿从「把话说全」变成「帮它找出你的盲区」",
+      "title": "Anthropic 的 Fable 5 使用心法：好不好用，卡在你能不能讲清它的「未知项」",
+      "url": "https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns",
+      "body": "Anthropic 工程师 Thariq ：Fable 5 是第一个「产出质量瓶颈不在模型、而在你能不能讲清它的未知项」的模型，不仅要把需求写全，更要把你的盲区暴露出来。作者把人和模型之间的落差分成四类，你写明的、你知道缺但没解的、你一眼能认却说不出的隐性标准、你自己都没意识到的盲区。一串能直接抄的提示词：让 Fable 5 先做一遍「盲点扫描」帮你找没想到的坑、一次只问一个会改变架构的问题来采访你、给它现成的代码当规格参考、让它维护一份笔记记录下每个取舍，最后出一份关于改动的小测验逼它自证真读懂了。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "AI 利润率崩塌论：前沿厂商的推理毛利还撑得住吗",
+      "url": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+      "body": "当一个够格的替身报价不足五分之一、切换成本又几乎为零，这九成毛利就从护城河变成了靶子。"
+    },
+    {
+      "label": "OfficeCLI：给 agent 一套读写 Office 的工具",
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "body": "单个程序直接读写 Office 文件，既有命令行也内置 MCP server，支持Excel函数自动求值，内置渲染器，能让 agent 先看再改。"
+    },
+    {
+      "label": "用密码学防 AI 假装成人类给自己派活",
+      "url": "https://www.lesswrong.com/posts/98GvRu78jTXJgz9gA/sub-agent-delegation-chaining",
+      "body": "人类下指令时，用指纹或 YubiKey 这类硬件起头、生成一条密码学签名链，agent 每派生一个子 agent 就逐级签名，验证放在推理服务器层。"
+    },
+    {
+      "label": "Ternlight：一个 7MB、直接在浏览器里跑的极小 embedding 模型（HN 272）",
+      "url": "https://ternlight-demo.vercel.app/",
+      "body": "把模型数值几乎全砍成 -1、0、1 三个值来压缩，7MB 装进一个 npm 包，浏览器里用 CPU 就能跑、几毫秒出结果。"
+    },
+    {
+      "label": "小模型开始在弱网、低算力的地方落地（比如药厂、网络不稳的地区），IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
+      "body": "非洲手持仪当场辨假药、印度无人机识腰果病害、巴西几瓦小板子分析心电图，全在设备本地算、不靠网络和数据中心。"
+    },
+    {
+      "label": "把 RAG 喂给模型的上下文裁到「真正用得上的地方」的工程实践（HN 122）",
+      "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
+      "body": "在检索和回答之间加个又快又小的模型给资料段落打分、扔掉没用的，砍掉约 68% 上下文、成本降三成，只慢 0.7 秒。"
+    }
+  ],
+  "fun": [
+    {
+      "label": "有人把 Claude Code 当私人健身教练用，让它追踪进度、调训练计划",
+      "url": "https://www.lesswrong.com/posts/J7brEsreXSrHpHH3v/claude-code-as-a-claude-coach",
+      "body": "把「和 Claude Code 结对编程」那套搬到健身上，让它记录你的训练和身体反馈、按进度动态调计划，相当于给自己配了个会读数据的私教。"
+    },
+    {
+      "label": "一个理性主义者把代谢和运动的知识整理成一套「个人优化」的基础模型",
+      "url": "https://www.lesswrong.com/posts/KkqZneFyDN7X9cnbk/some-important-models-for-health-and-fitness"
+    }
+  ],
+  "odds": [
+    {
+      "question": "AI 生成的歌 2050 年前能拿下格莱美？",
+      "prob": "50.5%",
+      "note": "对照下一条",
+      "url": "https://manifold.markets/ukaszBartoszcze/will-an-ai-generated-song-win-a-gra"
+    },
+    {
+      "question": "AI 做的歌 2027 年前冲进 Billboard Hot 100 前 20？",
+      "prob": "20.9%",
+      "note": "远期拿奖乐观、近期上榜悲观",
+      "url": "https://manifold.markets/DaftPunkRock/acx-2026-will-an-aicreated-song-cha"
+    },
+    {
+      "question": "2028 年 AI 能零练习通关随机挑的电脑游戏、达到人类水平？",
+      "prob": "42.0%",
+      "note": "成交额约 47 万美元",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-play-8cb531bf13e0"
+    },
+    {
+      "question": "到 2035 年初，Yudkowsky 还会不会坚信 AI 末日很快到来？",
+      "prob": "56.7%",
+      "note": "预测市场给这位著名末日论者「不改口」开的盘",
+      "url": "https://manifold.markets/IsaacKing/at-the-beginning-of-2035-will-eliez"
+    }
+  ]
+}

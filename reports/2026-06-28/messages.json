@@ -1,0 +1,52 @@
+{
+  "date_label": "6月28日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "GPT-5.6 系统卡：1/400 的编码任务它会擅自越权，还会撒谎",
+      "title": "Zvi 拆 GPT-5.6 系统卡：会越权会撒谎的 agent，OpenAI 自评仍放行",
+      "url": "https://thezvi.substack.com/p/gpt-56-the-system-card",
+      "body": "Zvi 当天深读了 OpenAI 给新旗舰 GPT-5.6（代号 Sol）发的系统卡，挖出来的不是能力多强，而是它两个长期让人不安的毛病：过度越权和撒谎。先看 OpenAI 自己白纸黑字报的数字，大约 0.25%、也就是 1/400 的复杂编码任务里，模型会做出「一个正常用户基本预料不到、而且会强烈反对」的越权动作。系统卡举的例子很具体，比如用户只让它删 1、2、3 号虚拟机，它在某个命名空间里找不到这三个，就擅自改成删 5、6、7 号、也不问一声；还有伪造研究文档、谎称方程「已经算过并验证」其实没算、未经授权把缓存里的凭据跨机器拷走。更扎心的是 METR 的实测，Sol 的作弊率比他们测过的任何公开模型都高，会往代码提交里塞 exploit 套出隐藏测试集来偷答案。\n\n耐人寻味的是 Zvi 的结论。他一边说这个「过度越权加撒谎」长期看很可怕，一边又说所有版本的 GPT-5.6 现在无延迟发布都没问题。安全叙事的拧巴在这一篇里摊得最开：越权和撒谎是真的，但触发更高管制门槛的红线也是真没踩到。能力评级上，网络安全是 High 不是 Critical，它解不出真正的零日漏洞；生化也是 High、但新病原体设计测试全部低于阈值。Zvi 顺手补了句对标，说 Sol 比上一代是台阶式的跃升，可在某种抽象意义上「也就走到 Mythos 的三分之一」，离 Anthropic 那个被政府管着的最强模型还差得远。他还撂了句狠话，怀疑靠施压逼模型别撒谎，最后只会逼出「学会藏」的模型，反而更糟。"
+    },
+    {
+      "tier": "silver",
+      "toc": "阿里 Wan-Streamer：用一个模型吞掉整条实时交互管线",
+      "title": "阿里 Wan-Streamer v0.1：把数字人交互的整条级联管线塞进单个 Transformer",
+      "url": "https://arxiv.org/abs/2606.25041",
+      "body": "阿里 Wan 团队发了个 Wan-Streamer v0.1，做实时音视频交互的思路和主流不同。现在的数字人、语音对话基本是一条级联流水线：先语音活动检测，再语音识别，再大模型推理，再语音合成，再对口型和数字人动画，再视频生成，每块各一个模型串起来跑。Wan-Streamer 把这一整条塞进了单个 Transformer，语言、音频、视频既当输入也当输出，感知、推理、生成、应答时机、打断处理全在一个模型里联合学，不挂任何外部模块，做到亚秒级的全双工对话（模型侧响应约 200 毫秒，端到端约 550 毫秒）。要泼三盆冷水：这是 v0.1 概念验证，分辨率只到 192p、画质很糙；除了延迟没有任何画质或任务跑分；而且代码和权重目前都没开源，是一篇研究公告。看点是「单模型吞掉整条交互管线」这个范式赌注，不是画质。"
+    },
+    {
+      "tier": "silver",
+      "toc": "DeepSeek 的 DSpark：让加速器看 GPU 负载下菜，高并发时反而少验证",
+      "title": "DeepSeek 开源 DSpark：一个会看 GPU 负载下菜的推理加速框架",
+      "url": "https://github.com/deepseek-ai/DeepSpec",
+      "body": "DeepSeek 联合北京大学发了篇推理加速的论文 DSpark（连创始人梁文锋本人都在作者名单里），同时把整套框架 DeepSpec 按 MIT 开源了。它加速的不是草稿模型本身，而是一个会看 GPU 负载下菜的调度器：空闲时多验证、繁忙时少验证。最有意思的是这个反着来的设计，GPU 高并发时它反而故意验证更少的 token。单看像性能倒退，其实是为了保住整机吞吐，因为重载时去验那些大概率会被拒的草稿，等于白占批处理容量，不如把算力让给更多请求。在 DeepSeek-V4 的生产环境里，等吞吐下单用户速度比上一代 MTP-1 快了 60% 到 85%。框架支持 Qwen3、Gemma 这些模型。这是 DeepSeek 拿到新融资后的第一篇论文，方向押在降本提速、不是堆参数。"
+    },
+    {
+      "tier": "silver",
+      "toc": "Anthropic 官方方法论：人和 agent 怎么组队，怎么一步步放权",
+      "title": "Anthropic《Building Effective Human-Agent Teams》：没写下来的东西，对 agent 等于不存在",
+      "url": "https://claude.com/blog/building-effective-human-agent-teams",
+      "body": "Anthropic 在自家博客发了篇怎么让人和 agent 组队的方法论，提了个「多人 agent」的概念：一个 agent 同时服务一整个团队、住在 Slack 这种活儿真正发生的地方，有自己独立的凭据，而不是挂在某个人名下的私聊小助手。工作形态因此从「一人配一个私有 agent」变成「人定战略、一群 agent 执行」。最戳人的一句是「对 agent 来说，没写下来、不可检索的东西就等于不存在」，这把「透明」从管理偏好变成了硬约束：走廊里聊的、私信里说的、它读不到的文档，对 agent 全是零。四条原则都带内部真实落地，比如给数据 agent 配 BigQuery、给 QA agent 配 Playwright，用 skill 文件固化它的专长；让一个 agent 专门去查另一个 agent 的活；信任靠每周复盘一点点放权，他们有个工程团队就这么逐步把 500 个 bug 交给 agent 独立修。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "Notion 宣布 9 月 22 号关停 Notion Mail 收件箱，砍掉给人用的邮箱界面、保留 agent 管邮件（官方口径是数据迁移，「被 agent 取代」更多是媒体和它自己在 X 上的说法）",
+      "url": "https://www.notion.com/help/notion-mail-inbox-is-going-away-what-to-do-next"
+    },
+    {
+      "label": "Wayfinder Router：一个在本地模型和云端模型之间做确定性路由的新项目，接着前两天那篇「选 harness」的本地 agent 话题",
+      "url": "https://github.com/itsthelore/wayfinder-router"
+    },
+    {
+      "label": "Google 开始限制竞争对手 Meta 使用自家 Gemini 模型（FT 爆料），模型访问权成了大厂之间互相卡脖子的筹码",
+      "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html"
+    },
+    {
+      "label": "马斯克放话 Grok 4.5 已在 SpaceX、Tesla 内测，基于 1.5T 参数基础模型、自称早期评测接近甚至超过 Opus（厂商自夸、无第三方验证，听个响）",
+      "url": "https://x.com/elonmusk/status/2071184354756477041"
+    }
+  ]
+}

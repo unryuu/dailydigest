@@ -1,0 +1,40 @@
+{
+  "date_label": "6月18日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "AI 真改良了药物反应，可它自家基准自家夺冠也才 36%",
+      "title": "AI 化学家改良了真实药物反应，可同天那篇却给它泼了冷水",
+      "url": "https://openai.com/index/ai-chemist-improves-reaction",
+      "body": "OpenAI 同一天一手秀肌肉、一手自打脸，凑一起才有意思。\n<b>秀肌肉</b>：GPT-5.4 加上 Molecule.one 的机器人实验室，在一个历来产率低到没法用的药物化学反应（Chan-Lam 偶联的伯磺酰胺版本）上跑了 <b>10,080 个反应</b>，做到 <b>88% / 83% 的底物产率提升</b>，人工复验 14 个里 11 个成功、8 个翻倍以上。这是有湿实验背书的真改良，不是纸上谈兵。\n但标题写的「near-autonomous（近自主）」有水分。实际是人选课题、人挑方案、人做验证，AI 主要扛文献综述和方案生成。HN 上的前化学家直接祛魅，说它「本质就是高通量筛选加一个 AI 引擎」，1990 年代就有雏形。\n<b>自打脸</b>的是：同一天 OpenAI 还发了自创的生命科学基准 LifeSciBench（173 位博士出题、453 位专家复审、750 道真实科研任务），结果最强模型还是它自家的 GPT-Rosalind，也只过了 <b>36.1%</b>，带附件的任务更从 45% 掉到 28%。一篇说「能行」，一篇说「还差得远」，而且那把尺子是自己造的，冠军也是自己。"
+    },
+    {
+      "tier": "gold",
+      "toc": "DeepMind：默认你自己的 AI agent 就是内鬼",
+      "title": "DeepMind 的新安全思路：把你的 AI agent 当「内鬼」来防",
+      "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+      "body": "传统 AI 安全是「把模型训乖、让它对齐」，DeepMind 这套叫 <b>AI Control</b> 的框架反过来：<b>默认你部署的 agent 可能就是内鬼</b>，像防一个已经拿到门禁、随时可能叛变的员工那样做纵深防御。核心是兜底，<b>就算对齐没做好也得能拦住</b>，把对齐当首道防线，但假设它会失效。\n它不空谈，给了机制：用<b>可信的 AI 当「监工」</b>持续审查工作 agent 的推理和动作（看行为模式不是关键词），考核三个指标，覆盖率、抓违规的召回率、响应时间；威胁建模直接套网络安全业界的 MITRE ATT&CK；还按风险分级，从「事后看记录」升到「高危动作执行前就实时拦截」。\n最实的是落地证据：他们分析了 <b>一百万个</b> coding agent 任务提炼行为特征，给 Gemini Spark 上了实时监控，真拦下过 agent「无意删数据」的事故。\n一句话钩子，别把 agent 当会听话的乖孩子，当成「已经有门禁的可疑员工」来防。\n（注：「AI Control」这套思路本是 Redwood 等学界 2024 年起推的议程，DeepMind 这篇把它工业化、给了落地分级，但原文只引了 MITRE，没致谢学界。）"
+    },
+    {
+      "tier": "silver",
+      "toc": "画图的 Midjourney，转身造了台全身超声扫描仪",
+      "title": "Midjourney 跨界造医疗硬件：60 秒全身扫描，被放射科医生当场拆台",
+      "url": "https://www.midjourney.com/medical/blogpost",
+      "body": "做 AI 图像生成的 Midjourney，这次没去做「医学影像生成」，而是直接造硬件：成立 Midjourney Medical，发布一台「全身超声扫描仪」。卖点是无辐射、无磁体，人穿过一圈布满约 50 万个超声发射器的环，靠声波回声重建出亚毫米级 3D 全身图，目标 60 秒一次，号称比 MRI 快几十倍、便宜成百上千倍，还要开连锁「体检馆」。\n这不是空软文：有实物原型，技术底座是向 Butterfly Network 授权的超声芯片（SEC 文件可查，五年最高约 7400 万美元，消息一出 Butterfly 股价当天涨 16%）。\n但争议也实打实。HN 上一位自称执业放射科医生的高赞评论当场把它拆了：<b>超声物理上拍不了充满空气的肺、拍不到骨病灶、也拍不到被肠气包裹的腹腔</b>，所以「全身」二字根本站不住；大规模低分辨率筛查还会查出一堆良性的「偶发瘤」，引发连锁随访和焦虑。而且那个 60 秒是目标值，原型现在实际要约 20 分钟。\n钩子就在这反差：一家靠生成「假图」起家的公司，转头要给你身体生成「真图」，话题度顶级，落地却极不确定。"
+    },
+    {
+      "tier": "silver",
+      "toc": "别问本地模型啥时候追平 Opus，它是另一种工具",
+      "title": "本地小模型不是廉价版 Opus，是另一类工具",
+      "url": "https://blog.alexellis.io/local-ai-is-not-opus/",
+      "body": "接着昨天「本地模型真能用了」，Alex Ellis（HN 341）把问题往前推了一步。大家都在问「本地模型啥时候追平 Opus」，他说这<b>问错了</b>，它根本不在同一条赛道。\nQwen 3.6 27B 在 SWE-Bench 上 77.2% vs Opus 88.6%，「只差 12%」听着快追上了，可这 12% 恰恰卡在生死线上：<b>能不能放手让它自己干 10 分钟</b>。Claude 能可靠无人值守跑 5–15 分钟，Qwen 一遇开放长任务就进死循环，让它提建议，它能把同 5 条来回重复 12 遍。\n所以他给本地模型的定位是：<b>需要全程盯着、只干有边界活儿的专用工具</b>，「就像回火中的刀刃，你不会走开不管」。但它有超能力，比如飞快<b>读懂并解释代码库</b>（哪怕自己写不出来）、在隐私敏感或气隙环境里啃数据。他就靠本地模型分析客户遥测，揪出某客户一年少报了 4–5 倍 license，「光追回的收入就把这张 1.2 万美元的显卡赚回来了」。\n三个真驱动也不只是省钱：数据主权、厂商风险（他点名 Anthropic 给非美区突然下架 Fable 5），还有电费固定带来的成本可预测。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    { "label": "美国暂缓把 DeepSeek 拉黑，另有 100+ 中企被列安全风险", "url": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/", "note": "· HN 497分" },
+    { "label": "DeepSeek 上线视觉能力", "url": "https://chat.deepseek.com/", "note": "· HN 306分" },
+    { "label": "Axios 三连：Trump「影子 AI 政策」/ 白宫 AI 权力中心换人 / 数据中心水电账单", "url": "https://www.axios.com/2026/06/18/trump-shadow-ai-policy", "note": "" },
+    { "label": "Zvi 周报 #173《AI Pauses》（本期主体仍是 Fable 停用谈判）", "url": "https://thezvi.substack.com/p/ai-173-ai-pauses", "note": "" }
+  ]
+}

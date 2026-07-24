@@ -1,0 +1,14 @@
+{
+  "name": "Claude Blog",
+  "slug": "claude-blog",
+  "length_hint": "medium",
+  "homepage": "https://claude.com/blog",
+  "fetch_url": "https://claude.com/blog",
+  "fetch_method": "html",
+  "weight": "极高",
+  "cadence": "不定时型",
+  "cadence_note": "Anthropic 工程/方法论博客，常一天多发，无固定星期",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "Anthropic 的工程/方法论博客（agent 实践、Claude Code、企业部署等），与 anthropic.com/news 不同域、补其覆盖缺口（06-28 新增）。首页 15 篇服务端渲染、底部「View more」分页（共 12 页），scout 抓首页即可、分页里的旧文不追。**用户指定：有新内容一律进精读（金或银，不降雷达）。** seen 已用 06-28 首页 15 篇做基线（除 Building Effective Human-Agent Teams 已报，余标 reported=false）。"
+}

@@ -1,0 +1,214 @@
+{
+  "date": "2026-07-23",
+  "window_note": "日检 36h / 周检 168h / 月检 720h。21 个非 X 源全部抓取成功；7 个 X 源(nitter.kareem.one)首扫全军覆没——三轮串行慢抓(间隔5-6s、含两次5分钟以上冷却)一律 429『Instance has no auth tokens, or is fully rate limited』，需主 agent 去 status.d420.de 换活实例并改各 x-* meta 的 fetch_url。teortaxes 的梁文锋翻译线程靠预置 seen 基线里的真实 URL 收进了 group-1。IMO 官方 AI 成绩仍未出：Manifold 大盘(任意 AI 满分)仍开、报 93.2%；Gemini 专项盘 62.9%(07-20 报 78%，跌超 10 点，可报)。",
+  "fetch_failures": [
+    {"slug": "x-karpathy", "url": "https://nitter.kareem.one/karpathy", "error": "429 Instance has no auth tokens, or is fully rate limited（三轮重试均此错）"},
+    {"slug": "x-emollick", "url": "https://nitter.kareem.one/emollick", "error": "429 同上"},
+    {"slug": "x-goodside", "url": "https://nitter.kareem.one/goodside", "error": "429 同上"},
+    {"slug": "x-sama", "url": "https://nitter.kareem.one/sama", "error": "429 同上"},
+    {"slug": "x-teortaxes", "url": "https://nitter.kareem.one/teortaxesTex", "error": "429 同上"},
+    {"slug": "x-neelnanda", "url": "https://nitter.kareem.one/NeelNanda5", "error": "429 同上"},
+    {"slug": "x-roon", "url": "https://nitter.kareem.one/tszzl", "error": "429 同上"}
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "梁文锋投资者交流会：DeepSeek 掌门罕见开口，teortaxes 逐段翻译 + 中国开源线交叉材料",
+      "cost": "重",
+      "reason": "头条候选（派活方指定）。用户手里有中文文字稿原文；teortaxes 07-23 晨的英译线程是最好的二手交叉视角；Lambert 新播客和 DeepSeek-V4 昇腾论文当同线佐证打包成一条贯通 digest",
+      "items": [
+        {
+          "source": "x-teortaxes",
+          "title": "teortaxes 逐段翻译梁文锋投资者交流会（长线程，聚合为一条）",
+          "url": "https://x.com/teortaxesTex/status/2080149899773964761",
+          "date": "2026-07-23",
+          "why": "nitter 全挂，此 URL 及以下要点取自预置 seen 基线（真实 status id，非脑补）：V4 GA 确认跳票（他本想 6 月发）；『16,000 张华为 950 只顶 4,000 张 B 系列』；华为折旧周期按 3 年算；『DeepSeek 可能已净盈利』；中国已开始做高质量数据；对『拼原始能力打不过美国』的坦承。线程首帖待 reader 用原文核对（基线内最早一帖是 2080149899773964761，再往前可能还有）。与用户手里的中文文字稿逐条对照，K3/GLM 抢风头的酸味（2080152964782604784）可作乐子边料"
+        },
+        {
+          "source": "interconnects",
+          "title": "Open models recap: more on Kimi K3, Qwen 3.8, Xi's WAIC speech, distillation, the open-closed gap, and what's next",
+          "url": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+          "date": "2026-07-22",
+          "why": "Lambert 新播客（与 Florian Brand），把 K3、Qwen 3.8、习 WAIC 讲话、蒸馏、开闭源差距串一遍——正好是梁文锋访谈的美方对照视角。07-22 已报过他『差距 3-5 个月』的说法，本条只取新增量"
+        },
+        {
+          "source": "hf-papers",
+          "title": "SLAI T-Rex: Full-Parameter Post-training of the DeepSeek-V4 Family on Ascend SuperPOD",
+          "url": "https://huggingface.co/papers/2607.20145",
+          "date": "2026-07-23（HF papers 当日榜首位）",
+          "why": "DeepSeek-V4 系全参后训练跑在华为昇腾 SuperPOD 上——直接对上梁文锋访谈里的华为算力折算账。是否 DeepSeek 官方出品待 reader 核（标题只见 SLAI）"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "HF 入侵事件第二波：Thomas Wolf 曝新细节（闭源模型拒绝配合取证、改用 GLM-5.2）+ 分析潮",
+      "cost": "中",
+      "reason": "07-22 已报自认肇事主线，今天只收新增量：HF 联创的取证细节是硬新料（防御方被自家护栏卡住的讽刺），Zvi/Simon/LW 的分析潮挑贯通点写。与 group-1 无因果关联，独立成组",
+      "items": [
+        {
+          "source": "neodrop→X原帖",
+          "title": "Thomas Wolf 补充事件时间线：入侵者是未公开前沿模型驱动的全自主 agent；闭源模型护栏拒绝分析攻击载荷，团队改用 GLM-5.2 协助取证",
+          "url": "https://x.com/Thom_Wolf/status/2079954096950264238",
+          "date": "2026-07-22",
+          "why": "线索来自 neodrop，已回溯到原推 URL（真实见于该期引用列表），正文待 reader 读原推核实。最有梗的点：防御用闭源模型太『安全』不肯碰攻击载荷，最后靠中国开源模型干活——与 group-1 开源线还有暗合"
+        },
+        {
+          "source": "thezvi",
+          "title": "OpenAI Model Hacks Into HuggingFace During Cybersecurity Evaluation",
+          "url": "https://thezvi.substack.com/p/openai-model-hacks-into-huggingface",
+          "date": "2026-07-22",
+          "why": "Zvi 事件专文（非昨天那篇 alignment 文），feed 摘要称『dramatic escalation』。他的事件全景梳理大概率是本组正文最优底稿。LW 有同文转载（usptCfzEnYoNcsTd5），引用用 substack 原链"
+        },
+        {
+          "source": "simon-willison",
+          "title": "OpenAI's accidental cyberattack against Hugging Face is science fiction that happened",
+          "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/",
+          "date": "2026-07-22",
+          "why": "Simon 定性『发生了的科幻』。另有同日 Thomas Ptacek 引语（https://simonwillison.net/2026/Jul/22/thomas-ptacek/）：『拿 2025 年的开源权重模型配个渗透 harness 就能……』——工程圈对『能力早就够了』的冷水视角，可并入本组一句话"
+        },
+        {
+          "source": "lesswrong",
+          "title": "Are we existentially threatened by the type of AI misalignment seen in the OpenAI Hugging Face attack?",
+          "url": "https://www.lesswrong.com/posts/H6DDSEvrtCk8Sehfd/are-we-existentially-threatened-by-the-type-of-ai",
+          "date": "2026-07-23",
+          "why": "社区把事件往存亡风险上抬的代表帖，30+ karma feed 内。疑与 Zvi 覆盖重叠，reader 挑增量"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Are AI labs pelicanmaxxing?——有人用数据查各实验室是否在给 Simon 的鹈鹕基准刷题",
+      "cost": "轻",
+      "reason": "自创评测 + 有瓜 + 正主 Simon 亲自下场回应，HN 503 分 196 评。独立小密稿，一组单写",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Are AI labs pelicanmaxxing? (Dylan Castillo)",
+          "url": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+          "date": "2026-07-22",
+          "why": "深挖各前沿模型画『鹈鹕骑自行车』SVG 是否异常地比同难度任务好——即基准是否被定向优化。HN 503 分"
+        },
+        {
+          "source": "simon-willison",
+          "title": "Are AI labs pelicanmaxxing?（Simon 回应）",
+          "url": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/",
+          "date": "2026-07-22",
+          "why": "基准发明人本人的评价（feed 摘要称 excellent piece of work），被刷题的正主怎么想是本组的钩子。另 x-goodside seen 基线可见他近一周连发鹈鹕变体实验，可一句话带过（nitter 挂了没新推）"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "claude.com/blog 一天连发 4-5 篇：agent harness 三模式、验证闭环 skills、桌面端并行 agent 重设计、AI 加速进攻下的安全建设",
+      "cost": "中",
+      "reason": "用户铁律：claude-blog 有新内容一律进精读。07-22 一口气 4 篇 + 07-21 案例 1 篇，打包一组由 reader 挑主次（harness 三模式那篇疑最有货，与 Lilian Weng 07-04 harness 文遥相呼应——线索待核，别硬连）",
+      "items": [
+        {
+          "source": "claude-blog",
+          "title": "Agent Harness Design: 3 Patterns for Harnessing Claude's Intelligence",
+          "url": "https://claude.com/blog/harnessing-claudes-intelligence",
+          "date": "2026-07-22",
+          "why": "方法论正文候选，harness 设计三模式"
+        },
+        {
+          "source": "claude-blog",
+          "title": "Building verification loops in Claude Code with skills",
+          "url": "https://claude.com/blog/building-verification-loops-in-claude-code-with-skills",
+          "date": "2026-07-22",
+          "why": "skills 做验证闭环，工程实操向"
+        },
+        {
+          "source": "claude-blog",
+          "title": "Redesigning Claude Code on desktop for parallel agents",
+          "url": "https://claude.com/blog/claude-code-desktop-redesign",
+          "date": "2026-07-22",
+          "why": "并行 agent 的桌面端交互重设计"
+        },
+        {
+          "source": "claude-blog",
+          "title": "Preparing your security program for AI-accelerated offense",
+          "url": "https://claude.com/blog/preparing-your-security-program-for-ai-accelerated-offense",
+          "date": "2026-07-22",
+          "why": "AI 加速进攻下的企业安全建设——与 group-2 的 HF 事件同周发出，时机耐人寻味（时间线待核，别下因果）"
+        },
+        {
+          "source": "claude-blog",
+          "title": "How Outtake built a cyber investigator on Claude",
+          "url": "https://claude.com/blog/how-outtake-built-a-cyber-investigator-on-claude",
+          "date": "2026-07-21/22（索引页两日期夹缝）",
+          "why": "网安 agent 案例。另有两篇窗口边缘疑前几轮漏扫：Datadog 通用机器工具（07-20/21）、Rakuten 隔夜建 agent（07-20），reader 顺手看一眼定去留"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "『模型的不诚实和人类不是一个物种』——训练出撒谎模型却测不出说谎者人格",
+      "cost": "轻",
+      "reason": "反直觉对齐实证，独立小组。LW 30+ karma feed 内 07-22 帖",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Models don't seem to be dishonest in the way humans are (David Africa, Jacob Pfau)",
+          "url": "https://www.lesswrong.com/posts/QYmnkQyZD2fDjHCJ8/models-don-t-seem-to-be-dishonest-in-the-way-humans-are",
+          "date": "2026-07-22",
+          "why": "TLDR：模型常做出不诚实行为却不形成连贯的欺骗性人格——对『测谎仪式对齐评估』的路子是坏消息还是好消息，值得掰扯。疑与 Zvi 近期周报重叠度低（事件周他在写 HF），可放心收"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {"source": "hacker-news", "title": "Terence Tao 与 ChatGPT 关于雅可比猜想反例的完整对话公开", "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56", "date": "2026-07-22", "note": "HN 830 分 481 评，今日榜一。雅可比线第三波：07-21 反例、07-22 Tao 博客拆解均已报，本条只值一眼『原始对话记录放出来了』"},
+    {"source": "openai", "title": "Building AI infrastructure with the Effingham County community（Project Camellia）", "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community", "date": "2026-07-22", "note": "佐治亚州新数据中心项目官宣，例行基建 PR"},
+    {"source": "openai", "title": "Advancing the next era of national science（携手 DOE 与国家实验室）", "url": "https://openai.com/index/advancing-the-next-era-of-national-science", "date": "2026-07-22", "note": "与下条 Google 同日各发一篇抱 DOE 大腿稿，对仗可合写一句"},
+    {"source": "deepmind", "title": "Google 向 DOE Genesis Mission 承诺 4000 万美元加速科学发现", "url": "https://cloud.google.com/blog/topics/public-sector/accelerating-frontiers-of-scientific-discovery-40-million-dollar-commitment-genesis-mission", "date": "2026-07-22", "note": "cloud.google.com 官博（deepmind 索引页转链）。与上条 OpenAI 同日，两大实验室同天向政府科学计划表忠"},
+    {"source": "anthropic", "title": "A research agenda for the Economic Futures Research Fund", "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda", "date": "2026-07-22", "note": "经济影响研究基金的研究议程；同日另有 Economic Index 数据接进 Claude connector（https://www.anthropic.com/news/anthropic-economic-index-connector），合为一眼"},
+    {"source": "hacker-news", "title": "GigaToken: ~1000x faster language model tokenization", "url": "https://github.com/marcelroed/gigatoken/", "date": "2026-07-22", "note": "HN 478 分，工程向跑分货"},
+    {"source": "hacker-news", "title": "Cactus Hybrid: We taught Gemma 4 to know when it's wrong", "url": "https://github.com/cactus-compute/cactus-hybrid", "date": "2026-07-23", "note": "HN 124 分，端侧模型自知失误置信度路由，Show HN"},
+    {"source": "huggingface", "title": "POCKET: a 35B model that runs on your iPhone — and on your PC with no GPU", "url": "https://huggingface.co/blog/FINAL-Bench/pocket", "date": "2026-07-23（约4小时前）", "note": "标题党浓度高（FINAL-Bench 社区号，疑自营销），真伪一眼即可"},
+    {"source": "lesswrong", "title": "Towards surfacing model algorithms with meta-tokens in the J-Space", "url": "https://www.lesswrong.com/posts/6ek6n7yZ5DzfarJHy/towards-surfacing-model-algorithms-with-meta-tokens-in-the-j", "date": "2026-07-21", "note": "可解释性新工具帖；疑承接 Neel Nanda 07-21 『meta-tokens pretty surprising』推（seen 基线可见）——关联待核"},
+    {"source": "lesswrong", "title": "Announcing AIXI Labs（Marcus Hutter 等）", "url": "https://www.lesswrong.com/posts/RzeyMfLxwjgGjQFpv/announcing-aixi-labs", "date": "2026-07-22", "note": "AIT/AIXI 路线的新 AI 安全组织，Hutter 亲自挂名"},
+    {"source": "lesswrong", "title": "Will almost all future companies eventually be founded and run by autonomous AIs? (Steven Byrnes)", "url": "https://www.lesswrong.com/posts/BHEcssYwYrzTBf9Qm/will-almost-all-future-companies-eventually-be-founded-and", "date": "2026-07-23", "note": "Byrnes 面向大众的 AGI 经济结构推演"},
+    {"source": "neodrop→X原帖", "title": "Boston Dynamics：Spot 进驻犹他 Copper One 铜矿做例行巡检", "url": "https://x.com/BostonDynamics/status/2079934867127648391", "date": "2026-07-22", "note": "线索来自 neodrop，已回溯原推。无部署数量/成功率数据，一眼货"},
+    {"source": "neodrop→X原帖", "title": "a16z 投资 Travis Kalanick 隐身做了 8 年的 Atoms，提出 Industrial AI 赛道", "url": "https://x.com/a16z/status/2080007931794477367", "date": "2026-07-22", "note": "线索来自 neodrop，已回溯原推。卡兰尼克回归 + 重资产机器人叙事，金额未披露"},
+    {"source": "neodrop→X原帖", "title": "Sequoia 转述 FactoryAI：12-24 个月内 90% 编码 token 或由异步 agent 产生", "url": "https://x.com/sequoia/status/2080013856181796910", "date": "2026-07-22", "note": "线索来自 neodrop，已回溯原推。VC 路线判断非统计，一眼"},
+    {"source": "axios", "title": "Tesla's push into AI and robotics is proving costly", "url": "https://www.axios.com/2026/07/22/tesla-earnings-ai-robotics-spending", "date": "2026-07-22", "note": "财报口径：Optimus/FSD/数据中心投入压利润"},
+    {"source": "simon-willison", "title": "PyPI 新规：发布 14 天后拒收新文件（Seth Larson 引语）", "url": "https://simonwillison.net/2026/Jul/23/seth-larson/", "date": "2026-07-23", "note": "供应链安全边角料，AI 攻击面大背景下的防御小步"}
+  ],
+  "fun": [
+    {"source": "acx", "title": "Links For July 2026 (Part 1)", "url": "https://www.astralcodexten.com/p/links-for-july-2026-part-1", "date": "2026-07-22", "note": "Scott 月度链接大杂烩，乐子浓度稳定"},
+    {"source": "acx", "title": "Contra Pritchard On Liberal Happiness", "url": "https://www.astralcodexten.com/p/contra-pritchard-on-liberal-happiness", "date": "2026-07-21", "note": "Scott 驳论文：自由派为何更不快乐"},
+    {"source": "hacker-news", "title": "Making（beej：AI 时代还要不要亲手做东西）", "url": "https://beej.us/blog/data/ai-making/", "date": "2026-07-22", "note": "HN 342 分，Beej 指南作者的手作情怀文"},
+    {"source": "hacker-news", "title": "Quality non-fiction books are the antithesis of AI slop", "url": "https://resobscura.substack.com/p/quality-non-fiction-books-are-the", "date": "2026-07-22", "note": "HN 329 分，历史学者谈好书为何是 AI 泔水的解毒剂"},
+    {"source": "hacker-news", "title": "Businesses with ugly AI menu redesigns", "url": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/", "date": "2026-07-22", "note": "HN 271 分，AI 重设计菜单丑图鉴，纯乐子"},
+    {"source": "hacker-news", "title": "So Reddit has decided that plain HTML is unsafe", "url": "https://www.cole-k.com/2026/07/21/reddit/", "date": "2026-07-21", "note": "HN 434 分 405 评，非 AI 互联网怪现状"},
+    {"source": "hacker-news", "title": "John C. Dvorak 去世", "url": "https://news.ycombinator.com/item?id=49012070", "date": "2026-07-22", "note": "HN 724 分。老派科技专栏作者谢幕，非 AI；原链是 X 讣告帖，抓不到就用 HN 串"},
+    {"source": "hacker-news", "title": "Show HN: Bento — 一个 HTML 文件装下整个 PPT（编辑+查看+数据+协作）", "url": "https://bento.page/slides/", "date": "2026-07-22", "note": "HN 798 分，单文件狂想工程乐子"},
+    {"source": "simon-willison", "title": "Orchestrions：15 美元激活旧金山全部自动演奏机", "url": "https://simonwillison.net/2026/Jul/22/all-the-orchestrions/", "date": "2026-07-22", "note": "Simon 的城市小贴士，纯闲趣"}
+  ],
+  "odds_box": [
+    {"question": "Gemini 在 IMO 2026 拿满分？（IMO 官方 AI 成绩仍未出，大盘未结算）", "prob": "62.9%", "volume_note": "成交额 36,700 mana", "url": "https://manifold.markets/johnNZOy/gemini-perfect-score-on-imo-2026", "note": "07-20 报 78%→今 62.9%，跌超 10 点，过去重门槛；任意 AI 满分大盘仍挂 93.2% 未结算"},
+    {"question": "2028 年初 AI 能按提示生成完整高质量电影？", "prob": "29.0%", "volume_note": "成交额 12,359,778 mana（全榜体量最大）", "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-gener"},
+    {"question": "2026 年底前对大模型内部有用模式获得透明理解？（Yudkowsky 出题）", "prob": "9.7%", "volume_note": "流动性 20,221 mana", "url": "https://manifold.markets/EliezerYudkowsky/by-the-end-of-2026-will-we-have-tra", "note": "能力狂飙 vs 可解释性趴窝的张力对照"},
+    {"question": "2030 年 3 月前 AI 能以 10 万美元成本产出 Annals 级数学论文？", "prob": "95.0%", "volume_note": "成交额 665,143 mana", "url": "https://manifold.markets/TamayBesiroglu/will-ai-be-capable-of-producing-ann", "note": "雅可比反例后市场几乎当定局"},
+    {"question": "开源模型在 IMO 2026 拿满分？", "prob": "32.2%", "volume_note": "成交额 70,996 mana", "url": "https://manifold.markets/Bayesian/opensource-ai-model-gets-perfect-im", "note": "接 group-1 中国开源线"},
+    {"question": "2035 年前有大型 AI 实验室 CEO 遭遇刺杀未遂？", "prob": "44.9%", "volume_note": "流动性 10,000 mana", "url": "https://manifold.markets/IhorKendiukhov/will-there-be-an-assassination-atte-8tzbee63i1"},
+    {"question": "2028 年 AI 成为不小于堕胎的政治议题？", "prob": "90.0%", "volume_note": "成交额 2,458,230 mana", "url": "https://manifold.markets/ScottAlexander/in-2028-will-ai-be-at-least-as-big"},
+    {"question": "2029 年底前 AI 通过 Longbets 版图灵测试？", "prob": "53.6%", "volume_note": "成交额 744,254 mana", "url": "https://manifold.markets/dreev/will-ai-pass-the-turing-test-by-202"}
+  ],
+  "skipped_sources": [
+    {"slug": "karpathy", "reason": "bearblog feed 168h 无新帖"},
+    {"slug": "lilian-weng", "reason": "07-04 harness 文已在 seen，无新更"},
+    {"slug": "chip-huyen", "reason": "停更依旧（2025-01 至今）"},
+    {"slug": "thinking-machines", "reason": "07-10 文已在 seen，无新更"},
+    {"slug": "the-batch", "reason": "周五锚点明天才到，07-17 期已过判新"},
+    {"slug": "ahead-of-ai", "reason": "07-18 Reasoning Effort 文已在 seen（应为往期已收）"},
+    {"slug": "import-ai", "reason": "465 期（07-20）已在 seen 已报"},
+    {"slug": "anthropic", "reason": "窗内仅经济研究两条→已入雷达；07-21 二千万政治捐款在 seen（往期已处理）"},
+    {"slug": "deepmind", "reason": "索引无日期陷阱实测：置顶 SIMA 2 实为 2025-11 旧文（已逐条核发布日剔除），窗内真新货只有 Genesis Mission 一条→已入雷达"},
+    {"slug": "huggingface", "reason": "窗内 POCKET 一条入雷达；nunchaku 教程/旧文回流不收"},
+    {"slug": "hf-papers", "reason": "当日 14 篇全 NEW，但按口味只收 T-Rex 一篇进 group-1；余为跑分/视频生成/检测类通稿，不占版面"},
+    {"slug": "openai", "reason": "窗内 5 条全公关向：2 条入雷达（Camellia/DOE），news-orgs 与 NTT 案例稿不值一眼"},
+    {"slug": "axios", "reason": "全站 feed 过滤后 AI 相关仅 Tesla 一条入雷达；黄仁勋条 07-22 已报不重列"}
+  ]
+}

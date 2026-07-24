@@ -1,0 +1,14 @@
+{
+  "name": "Hacker News",
+  "slug": "hacker-news",
+  "length_hint": "short",
+  "homepage": "https://news.ycombinator.com/",
+  "fetch_url": "https://hn.algolia.com/api/v1/search?tags=front_page",
+  "fetch_method": "api",
+  "weight": "中",
+  "cadence": "连续型",
+  "cadence_note": "实时聚合，front page 持续刷新",
+  "check_frequency": "daily",
+  "window_hours": 24,
+  "notes": "定位是清单外雷达，不是主力。只挑 1-2 条真正 AI 相关的高票帖，宁缺毋滥。用 created_at_i (Unix 时间戳) 做窗口过滤最准。"
+}

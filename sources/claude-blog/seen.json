@@ -1,0 +1,218 @@
+[
+ {
+  "id": "https://claude.com/blog/how-outtake-built-a-cyber-investigator-on-claude",
+  "title": "Outtake 网安 agent 案例（精读后裁掉未报）",
+  "date": "2026-07-22",
+  "reported": false
+ },
+ {
+  "id": "https://claude.com/blog/building-verification-loops-in-claude-code-with-skills",
+  "title": "skills 验证闭环（无牌合写）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://claude.com/blog/harnessing-claudes-intelligence",
+  "title": "harness 设计三模式（银牌，4 月旧文）",
+  "date": "2026-04-02",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle",
+  "title": "Anthropic 公开自家 AI 写 80% 代码之后的安全流程",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://claude.com/blog/ciso-guide-to-agentic-ai",
+  "title": "Zero risk isn't the job: a CISO's guide to agentic AI",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://claude.com/blog/working-at-the-frontier-cursor",
+  "title": "Working at the frontier: How Cursor knew Claude Fable 5 was ready for the hardest 1% of problems",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://claude.com/blog/ai-code-migration",
+  "title": "How Anthropic runs large-scale code migrations with Claude Code",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://claude.com/blog/working-at-the-frontier-how-hebbia-builds-ai-for-financial-diligence-that-cant-miss-a-detail",
+  "title": "Working at the frontier: How Hebbia builds AI for financial diligence",
+  "date": "2026-07-13",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night",
+  "title": "Cognition 让 Fable 5 通宵无人值守自主干活",
+  "date": "2026-07-11",
+  "reported": true,
+  "report_date": "2026-07-11"
+ },
+ {
+  "id": "https://claude.com/blog/claude-model-and-effort-level-in-claude-code",
+  "title": "Anthropic 手册：在 Claude Code 里怎么选模型、怎么调 effort",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://claude.com/blog/how-people-are-using-claude-cowork",
+  "title": "Claude Cowork 公布了一批真实用法数据",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns",
+  "title": "Anthropic 的 Fable 5 使用心法：好不好用，卡在你能不能讲清它的「未知项」",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend",
+  "title": "Claude 给企业管理员加了用量和花费的可视化管控",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://claude.com/blog/getting-started-with-loops",
+  "title": "Claude Code 官方给 loop engineering 写了教程：把社媒梗收编成四类，落点却是「别乱用循环」",
+  "date": "2026-07-02",
+  "reported": true,
+  "report_date": "2026-07-02"
+ },
+ {
+  "id": "https://claude.com/blog/claude-apps-gateway-bedrock-google-cloud",
+  "title": "Introducing the Claude apps gateway for Amazon Bedrock and Google Cloud",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://claude.com/blog/claude-microsoft-foundry-ga",
+  "title": "Claude in Microsoft Foundry is now generally available",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://claude.com/blog/building-effective-human-agent-teams",
+  "title": "Building effective human-agent teams",
+  "date": "2026-06-24",
+  "reported": true,
+  "report_date": "2026-06-28"
+ },
+ {
+  "id": "https://claude.com/blog/agent-identity-access-model",
+  "title": "Agent identity in Claude Tag: a new access model for autonomous, team-wide AI",
+  "date": "2026-06-24",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/the-full-claude-desktop-experience-on-aws-google-cloud-and-microsoft-foundry",
+  "title": "The full Claude Desktop experience on AWS, Google Cloud, and Microsoft Foundry",
+  "date": "2026-06-22",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more",
+  "title": "Steering Claude Code: CLAUDE.md files, skills, hooks, rules, subagents and more",
+  "date": "2026-06-18",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/enterprise-managed-auth",
+  "title": "Centrally manage authorization for MCP connectors",
+  "date": "2026-06-18",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/artifacts-in-claude-code",
+  "title": "Claude Code now supports artifacts",
+  "date": "2026-06-18",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/meet-the-winners-of-our-claude-opus-4-8-build-day-hackathon",
+  "title": "Meet the winners of our Claude Opus 4.8 Build Day hackathon",
+  "date": "2026-06-17",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
+  "title": "Claude Design now stays on brand for daily work",
+  "date": "2026-06-17",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/workload-identity-federation",
+  "title": "Secure access to the Claude Platform with Workload Identity Federation",
+  "date": "2026-06-17",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/meet-the-winners-of-built-with-opus-4-7-claude-code-hackathon",
+  "title": "Meet the winners of the Built with Opus 4.7 Claude Code hackathon",
+  "date": "2026-06-15",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/building-with-claude-managed-agents",
+  "title": "The evolution of agentic surfaces: building with Claude Managed Agents",
+  "date": "2026-06-10",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/whats-new-in-claude-managed-agents",
+  "title": "New in Claude Managed Agents: run agents on a schedule and store environment variables in vaults",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/claude-for-foundation-models",
+  "title": "Building intelligent apps for Apple platforms with Claude in the Foundation Models framework",
+  "date": "2026-06-08",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/observability-for-developers-building-connectors",
+  "title": "Observability for developers building connectors",
+  "date": "2026-06-08",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://claude.com/blog/the-claude-cowork-product-guide",
+  "title": "The Claude Cowork product guide",
+  "date": "2026-06-05",
+  "reported": false,
+  "report_date": null
+ }
+]

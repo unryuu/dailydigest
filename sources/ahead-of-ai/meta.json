@@ -1,0 +1,14 @@
+{
+  "name": "Ahead of AI (Sebastian Raschka)",
+  "slug": "ahead-of-ai",
+  "length_hint": "long",
+  "homepage": "https://magazine.sebastianraschka.com/",
+  "fetch_url": "https://magazine.sebastianraschka.com/feed",
+  "fetch_method": "rss",
+  "weight": "高",
+  "cadence": "低频型",
+  "cadence_note": "每 2-4 周一篇，无固定日",
+  "check_frequency": "weekly",
+  "window_hours": 168,
+  "notes": "大事件讲透，工程师友好，权重高但产量稀。多数周没更新，有更新分量足。Substack 走 /feed。"
+}

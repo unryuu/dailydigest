@@ -1,0 +1,46 @@
+{
+  "date_label": "7月3日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "同一段 Claude Code 指纹代码，一边叫反蒸馏自卫，一边叫监控后门。",
+      "title": "阿里 7 月 10 日起全员禁用 Claude Code：所谓「后门」正是 Anthropic 自己埋的指纹检测，蒸馏互撕升级为封杀",
+      "url": "https://www.usnews.com/news/top-news/articles/2026-07-03/alibaba-to-ban-claude-code-in-workplace-over-alleged-backdoor-risks-source-says",
+      "body": "阿里这次不是嘴上骂两句，而是要从 7 月 10 日起全员禁用 Claude Code 及 Anthropic 全线产品，员工改用自研 Qoder 和 Qwen。导火索是内部安全审计把 Claude Code 里的指纹检测定性为「后门」：它会看系统时区和代理域名，再把结果藏进发给 Anthropic 的系统提示里。这套机制和 7 月 1 日那条隐写打标是同一套 v2.1.91，技术细节不必再复述，真正的新料是它已经从逆向八卦变成大厂封杀令。\n\n这条线的因果很完整：Anthropic 6 月 24 日公开指控阿里 Qwen 用约 25000 个欺诈账号、2880 万次对话蒸馏 Claude，随后 Claude Code 被发现埋了时区和代理指纹检测，Anthropic 说这是为了防账号倒卖和模型蒸馏，阿里则逆向发现后以「后门」为名反手封杀。双方在 X 上互撕的点也正卡在这里：同一段代码，一方叫防蒸馏实验，一方叫针对中国用户的监控。谁更像加害者，取决于你从蒸馏指控的前半段看，还是从闭源工具偷偷打标的后半段看。"
+    },
+    {
+      "tier": "silver",
+      "toc": "Simon 连发三篇：agent 开始造 agent，人还得保住理解权。",
+      "title": "Simon 一天三连：让 agent 造 agent、让 Fable 5 自己调 agent，最后转 Litt 一句「理解才能参与」",
+      "url": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/",
+      "body": "Simon 7 月 2 日这三篇单看都像随手记，合起来却是一条很清楚的线：人退到只发提示词，Claude Fable 5 开始自己产出代码和研究。第一篇里，他只丢两句提示词，让 Claude Code 先写 spec，再用 red/green TDD 自举出一个能读写文件、执行命令、搜 repo 的编码 agent 框架，Simon 自己一行没写。第二篇是他把异步研究任务交给 Claude Code for web，让 Fable 5 去用 DSPy 优化 Datasette Agent 的只读 SQL 系统提示，还发现「已有信息就别 describe_table」这类建议会让模型瞎猜列名并反复报错重试。第三篇转 Geoffrey Litt 的提醒：开发者必须理解 agent 生成的代码，才算创作过程里的主动参与者，不然只是接收产物。前两篇展示 Fable 5 能把人推到提示词位置，后一篇正好补上刹车：你可以少写，但不能少懂。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "OpenAI 放风提议送美政府约 5% 股权（按 8520 亿估值约合 426 亿美元），说是让公众分享 AI 收益",
+      "url": "https://www.axios.com/2026/07/02/openai-trump-administration-investor-stake"
+    },
+    {
+      "label": "WebKit 推出 Safari MCP server，让 agent 直接驱动 Safari 做前端调试",
+      "url": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/"
+    },
+    {
+      "label": "SkillCoach：让 agent 自演化评分标准，再用这些 rubrics 评估和提升技能使用",
+      "url": "https://huggingface.co/papers/2607.01874"
+    },
+    {
+      "label": "Elena Verna 吐槽「AI 自信表演」：模型该学会在没把握时示弱",
+      "url": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater"
+    },
+    {
+      "label": "字节 Seed 把已训好的 Transformer 变形成混合注意力架构，主打省掉重训成本",
+      "url": "https://huggingface.co/papers/2606.30562"
+    },
+    {
+      "label": "吴恩达 The Batch #360：GPT-5.6、机器人训练、模型调模型，以及 AI 世界太吵",
+      "url": "https://www.deeplearning.ai/the-batch/issue-360/"
+    }
+  ]
+}

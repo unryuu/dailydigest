@@ -1,0 +1,59 @@
+{
+  "date_label": "7月11日",
+  "gold": [
+    {
+      "toc": "苹果起诉 OpenAI，说前员工为它偷了未发布硬件的机密",
+      "title": "苹果起诉 OpenAI，指控前员工盗窃硬件商业秘密",
+      "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+      "body": "苹果说前员工偷了未发布的产品代号、电路板制造文档、供应链和电池选型、CAD 图纸、原型机等。诉状点名两人，一是管过 iPhone、Apple Watch 设计的产品设计副总裁谭昱，2024 年跳去 Jony Ive（后被 OpenAI 收购）；一个是电气工程师刘畅，今年 1 月进 OpenAI。刘畅离职后钻安全漏洞，下载了上千页电路板机密文档。\n\n苹果说这次起诉只是冰山一角，牵连从技术团队一直到首席硬件官。目前有 400 多名苹果前员工在 OpenAI。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "Devin 母公司敢让 Fable 5 整夜没人盯着自己干活",
+      "title": "Cognition 让 Fable 5 通宵无人值守自主干活",
+      "url": "https://claude.com/blog/working-at-the-frontier-how-cognition-trusts-claude-fable-5-to-work-through-the-night",
+      "body": "Devin 的母公司说 Fable 5 是他们第一个敢通宵无人值守自主干活的模型，可以整晚干数据库迁移、事故排查这类活。以前的 agent 几分钟到一小时就跑偏，这回突破的是能自主干多久。另外，Fable 在他们内部一个最难的编程 benchmark 从约 10% 提升到 30%。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "OpenAI 说 GPT-5.6 Sol Ultra 用 64 个子代理，一小时证明了 1979 年的 Cycle Double Cover 猜想",
+      "url": "https://manifold.markets/JaundicedBaboon/openais-claimed-proof-of-the-cycle",
+      "body": "这是图论里悬了 40 多年的老猜想。OpenAI 放出了官方证明 PDF，不过还要等数学界验证。"
+    },
+    {
+      "label": "Tom Davidson 挑 AI 2040 Plan A 的漏洞：暂停期堆起的算力和被禁算法成了「干柴」",
+      "url": "https://www.lesswrong.com/posts/8iDZnQwmvwuxZo3Wx/plan-a-s-problem-with-dry-tinder"
+    },
+    {
+      "label": "DeepSeek 开源 DSpark 投机解码，单用户生成提速 60% 到 85%，高并发吞吐最高涨约 400%",
+      "url": "https://github.com/deepseek-ai/DeepSpec",
+      "body": "不动模型本体，加一个投机解码模块：小的草稿模型先猜、大模型一次性验证，号称不掉质量，还适配了 Qwen3、Gemma4。"
+    },
+    {
+      "label": "一篇综述把 5 种线性注意力变体放进同一套框架比较，纯线性最快但掉精度，混一点 softmax 层更准但更慢",
+      "url": "https://huggingface.co/papers/2607.07953"
+    },
+    {
+      "label": "Jet-Long：用「动态双焦 RoPE」把上下文外推到训练长度之外",
+      "url": "https://huggingface.co/papers/2607.07740"
+    },
+    {
+      "label": "自然语言 autoencoder 对初始化不稳健，这类可解释性工具的可靠性存疑",
+      "url": "https://www.lesswrong.com/posts/LQXWiF8PyJ5ojNsEv/how-robust-are-natural-language-autoencoders-to"
+    }
+  ],
+  "fun": [
+    {
+      "label": "Ghost Font：靠动态噪点让人眼读出、静止单帧看不出的隐藏信息",
+      "url": "https://www.mixfont.com/ghost-font",
+      "body": "动起来人眼能读，暂停成单帧就只剩噪声，还埋了诱饵信息误导逐帧分析。不过 HN 网友实测 GPT-5.6、Opus 4.8 这些前沿模型都能解，光流和逐帧差分也能破。"
+    },
+    {
+      "label": "Nilay Patel：想要实用的 AR 眼镜，就只能把数据传云端",
+      "url": "https://simonwillison.net/2026/Jul/10/nilay-patel/"
+    }
+  ],
+  "odds": []
+}

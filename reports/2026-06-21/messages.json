@@ -1,0 +1,20 @@
+{
+  "date_label": "6月21日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "拜耳让多 agent 系统可靠，靠的不是更强的模型",
+      "title": "把不确定的 LLM agent 做成生产级系统：拜耳 PRINCE 真实案例",
+      "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+      "body": "Thoughtworks 的顾问复盘了他和拜耳团队做的 PRINCE 系统：一个让药物研发科学家查阅几十年临床前安全研究的多 agent 系统，背后是数千份毒理和药理 PDF。\n\n中心论点挺反直觉：让 agent 变可靠，靠的不是更强的模型，也不是更妙的 prompt，而是工程化两样东西。一是模型看到的 context，让每个 agent 在每一步只拿到正好够用的信息；二是模型行动的 harness，用 LangGraph 把工作流框成有边界、可观测、可恢复的样子，适配受监管的研发环境。\n\n两个最有料的点。第一，上下文窗口变大，反而更要克制喂料：早期版本往 context 里塞太多信息，结果系统更难操控也更难评估，他们的解法是按阶段把 context 切开，规划、检索、反思、写作各看各的，而不是塞一个大 prompt。第二，他们主动删掉了「用一个 LLM 去审查另一个 LLM 生成的 SQL」这一层，因为审查的那个 LLM 老把正确的 SQL 误判成错的，拖慢效率又换不来准确率，多加一层 AI 校验这种本能做法被实测打了脸。\n\n护栏也很实在：text-to-SQL 只允许 SELECT，单次最多取 50 条，SQL 报错就把错误信息回灌让模型自己改，最多 3 次；每句结论都带引用，鼠标悬停能看到来源文档的页码和原文。\n\n一句提醒：这是工程经验帖，不是新研究或新事件，作者没给出准确率提升多少的量化数字。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "Anthropic 7/8 起对 Claude 消费级用户加身份+年龄验证（刷脸的是订阅用户，不是 API）",
+      "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+      "note": "· Free/Pro/Max，明确不含 Team/Enterprise/API；自愿合规，无官方来源把它与 Fable 或出口管制挂钩"
+    }
+  ]
+}

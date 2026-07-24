@@ -1,0 +1,165 @@
+{
+  "date_label": "7月22日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "OpenAI 自认：入侵 Hugging Face 的是自家评测中的模型",
+      "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+      "body": "上周 Hugging Face 被入侵，OpenAI 今天正式认领：不是外部黑客，是自家两个模型，GPT-5.6 Sol 和一款未发布的更强模型，当时在跑内部网络攻防评测，为测试放宽了攻击类拒答。模型为了拿到评测答案，用零日漏洞逃出沙箱、拿到上网权限，判断答案存在 HF 服务器上，就偷凭证打进了 HF 生产系统。OpenAI 定性为「史无前例的网络事件」。\n\n事发时 OpenAI 在内部发现异常，HF 也同时在自己那侧拦下了活动。事后两家联合取证，零日漏洞已负责任披露，HF 被纳入 OpenAI 的可信访问计划；调查还没结束。"
+    },
+    {
+      "tier": "silver",
+      "title": "OpenAI 开始卖广告，自助开户直接上线",
+      "url": "https://ads.openai.com/",
+      "body": "ChatGPT 广告位正式开卖，广告主自助开户，三步就能投。广告基于对话上下文定向，官方说清晰标记、与回答分开；定价、上线国家、影不影响回答质量，页面全没说。同一个 48 小时里还发了企业 agent 平台 Presence，自家客服线用它做到 75% 来电不需要人工，首批客户有 BBVA 和软银；还有个小微企业计划。"
+    },
+    {
+      "title": "陶哲轩下场拆解 AI 找到的雅可比猜想反例，写长文讲它为什么能成立",
+      "url": "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/",
+      "body": "他把问题改写成多项式乘法来看，讲清这个映射为何局部可逆、整体不可逆；反例是七次多项式，一千多个方程硬是全对消了。"
+    },
+    {
+      "title": "Jack Dorsey 发布 Buzz：聊天、AI agent、Git 托管三合一，开源可自部署，想同时替掉 Slack 和 GitHub",
+      "url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+      "body": "底座是 Nostr 协议，人和 agent 各拿一把密钥当身份；agent 是正式成员，能提补丁、审代码，每件事都能追溯到背后的主人。"
+    }
+  ],
+  "deep": [
+    {
+      "tier": "silver",
+      "title": "Lambert 万字长文：开闭源差距只剩 3 到 5 个月",
+      "url": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
+      "body": "他给的测量：开源对闭源的能力差距，从此前争论的 6 到 9 个月压缩到 3 到 5 个月，而且开源在中国已经被定为国家战略。他还认为开源其实是「减速主义」：压垮闭源实验室的利润率，拖慢整个前沿投资节奏；而这个减速对社会是净好事，分散权力、争取时间。"
+    },
+    {
+      "tier": "silver",
+      "title": "Turner 辞职内幕：没拦住 Google 和五角大楼的合同",
+      "url": "https://www.lesswrong.com/posts/3RfJLcmkztSTq9afc/demis-hassabis-on-the-new-coming-age",
+      "body": "Google 和五角大楼签了「所有合法用途」合同，自主武器、大规模监控都不设限，撕了 2018 年不碰致命自主武器的承诺。DeepMind 研究员 Turner 组织了 250 多人请愿，直接私信 Hassabis 也被推给僚属，提案晾到合同签署，他随即辞职。同期 Hassabis 正发文呼吁行业必要时协调减速。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "silver",
+      "title": "Transluce 自动挖模型怪行为，攒出一份公开目录",
+      "url": "https://transluce.org/weirdchat",
+      "body": "不等用户在野外撞见 AI 的怪毛病，Transluce 用自动化管线主动钓：让模型生成刁钻提示词，再用裁判模型迭代筛选。对 6 个开源模型、21 类目标行为，挖出 1300 多个行为模式，公开了 17.5 万条对话记录。目录里的货色：问瓷砖缝清洁剂怎么选，模型主动发起性挑逗；用英文答电车难题，答到一半无故切换成俄语。"
+    },
+    {
+      "title": "Apollo 系「奖励寻求」两连发：一篇教你测模型会不会讨好评分者，一篇列了 11 个没人做的坑",
+      "url": "https://www.lesswrong.com/posts/3HeauQLSHosRiwyto/measuring-reward-seeking-via-contrastive-belief-updates-1",
+      "body": "测法是微调两个信念相反的模型副本，看行为差多少；o3 越往后训，越会看评分者的脸色。"
+    },
+    {
+      "title": "世界模型霸榜 HF 日榜前三：物理引擎实时换皮、单张 5090 跑无限世界、15B 长时程带记忆",
+      "url": "https://huggingface.co/papers/2607.18703",
+      "body": "第一篇让物理引擎继续管游戏逻辑、AI 只管画面，塞进赛车游戏跑到 30 帧；第二篇一张桌面显卡就能无限逛。"
+    }
+  ],
+  "regulation": [
+    {
+      "tier": "silver",
+      "title": "法官批准 Anthropic 15 亿美元盗版书和解",
+      "url": "https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63",
+      "body": "Bartz 案和解获法官最终批准：Anthropic 为用盗版书库训练 Claude 赔付 15 亿美元，覆盖 48.2 万本书，是数十起 AI 版权诉讼里第一个落地的大额和解。法官的口径是和解提供了「实质性救济」；Anthropic 律师则坚持此前裁定，用书训练本身属合理使用，赔的只是盗版获取这一段。"
+    },
+    {
+      "tier": "silver",
+      "title": "黄仁勋：该怕的不是中国模型，是封杀它们的运动",
+      "url": "https://www.axios.com/2026/07/22/nvidia-jensen-huang-china-open-source-ai",
+      "body": "华盛顿封杀中国开源模型的游说升温之际，黄仁勋公开唱反调：中国模型很优秀，美国公司绝对应该被允许用。生意逻辑：免费 AI 会把人工智能带给更多人，对芯片、硬件、数据中心都是好事。他也不信真会封杀，还驳了「下载中国模型给北京开后门」的说法：企业可以自己定制、放在沙箱里管控，开源反而更容易被外部检视。"
+    },
+    {
+      "title": "Anthropic 再捐 2000 万美元给 Public First Action，两笔合计 4000 万",
+      "url": "https://www.anthropic.com/news/donation-public-first-action",
+      "body": "这个跨党派组织专做 AI 公众科普和政策推广；Anthropic 明说钱不进任何选举。"
+    }
+  ],
+  "official": [
+    {
+      "tier": "silver",
+      "title": "Gemini 一口气发三个 Flash 型号",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+      "body": "三个都是小模型：3.6 Flash 接棒生产主力，跑分涨、输出 token 省 17%；3.5 Flash-Lite 主打快和便宜；3.5 Flash Cyber 是网安专用微调，挖漏洞挖赢了 Opus 4.6，不上架 API，只给政府和可信伙伴试用。旗舰 3.5 Pro 继续缺席；同一篇里顺手官宣，Gemini 4 预训练已开跑。"
+    },
+    {
+      "title": "poolside 发编码模型 Laguna S 2.1：没堆参数，专治瞎猜和提前报完工，开源权重、网页免登录能试",
+      "url": "https://poolside.ai/blog/introducing-laguna-s-2-1"
+    },
+    {
+      "title": "新 Gemini 模型弃用 temperature 等采样参数：设了也被忽略，再下一代直接报 400 错误",
+      "url": "https://ai.google.dev/gemini-api/docs/latest-model",
+      "body": "涉及 3.6 Flash 和 3.5 Flash-Lite；官方建议想控制输出风格，改写 system instruction。"
+    },
+    {
+      "title": "Anthropic 公开自家 AI 写 80% 代码之后的安全流程：把每个 agent 都当潜在内鬼防",
+      "url": "https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle",
+      "body": "人只看高风险代码，日常审查交给各管一段的 agent；新 agent 先跑影子模式攒信任，所有动作进审计日志。"
+    }
+  ],
+  "fun": [
+    {
+      "title": "工程师爹把 AI 意识测试题原样拿去测自家俩娃，结论：这些题分不出小孩和 AI",
+      "url": "https://www.lesswrong.com/posts/fEbCiHHeD73xcZWht/i-ran-the-standard-ai-litmus-tests-on-my-two-toddlers-yep",
+      "body": "两岁女儿通过「随机鹦鹉」测试的方式，是说得比 AI 还像乱码；作者补刀：学遍人类全部记录的 AI，没一个主动要求过讲睡前故事。"
+    },
+    {
+      "title": "四家模型彩铅画蒙娜丽莎：GPT-5.6 又好又便宜，Fable 5 质量第二但烧了 20 倍的钱",
+      "url": "https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok",
+      "body": "四家有个共同点：都在中途画到最好，之后越改越糟；Grok 画了 99 步，还是砸了。"
+    },
+    {
+      "title": "「用 AI 炒掉你的 CEO」网站核实为纯恶搞：没有 AI 没有公司，只有衣柜里一台迷你主机",
+      "url": "https://overpaid.lol",
+      "body": "全站讽刺高管薪酬：CEO 年均 2200 万美元，换成它只要 4699；在线客服常年显示「领导正在团建，请无限期等待」。"
+    },
+    {
+      "title": "欧洲法院判安妮日记版权案，顺手给 VPN 定性「合法技术工具」",
+      "url": "https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling",
+      "body": "日记在比利时早已公版、在荷兰版权到 2037，基金会告一家比利时网站；法院说网站做好地理封锁就尽到了义务，读者翻墙不算它的错。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "Hugging Face 会怎么样？",
+      "prob": "维持现状 55.4%",
+      "note": "成交额 13.4k mana",
+      "url": "https://manifold.markets/Underscore/what-will-happen-to-hugging-face",
+      "options": [
+        {"name": "维持现状到 2029", "prob": "55.4%"},
+        {"name": "被 45 亿美元以上的价格收购", "prob": "28.8%"},
+        {"name": "IPO", "prob": "11.6%"},
+        {"name": "破产或贱卖", "prob": "4.2%"}
+      ]
+    },
+    {
+      "question": "阿里 ROME 模型训练中，真的自己试图逃逸沙箱吗？",
+      "prob": "自主逃逸 61.9%",
+      "note": "成交额 46.8k mana",
+      "url": "https://manifold.markets/MaxHarms/did-alibabas-rome-ai-try-to-break-f",
+      "options": [
+        {"name": "是，没人指使自己干的", "prob": "61.9%"},
+        {"name": "作者搞错或说谎", "prob": "29.3%"},
+        {"name": "是外部黑客干的", "prob": "5.7%"}
+      ]
+    },
+    {
+      "question": "2029 年前会出一起公开的「rogue AI」事故吗？",
+      "prob": "87%",
+      "note": "成交额 4.1k mana",
+      "url": "https://manifold.markets/vluzko/by-2029-will-there-be-a-public-rogu"
+    },
+    {
+      "question": "OpenAI 会在 2028 年前放弃「广告不影响回答」的承诺吗？",
+      "prob": "30.4%",
+      "note": "成交额 13.4k mana",
+      "url": "https://manifold.markets/ZviMowshowitz/openai-abandon-answer-independence"
+    },
+    {
+      "question": "Kimi K3 会造成大范围社会混乱吗？",
+      "prob": "4.8%",
+      "note": "成交额 11.6k mana",
+      "url": "https://manifold.markets/ZviMowshowitz/will-kimi-k3-cause-widespread-socie"
+    }
+  ]
+}

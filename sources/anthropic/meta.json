@@ -1,0 +1,14 @@
+{
+  "name": "Anthropic Blog",
+  "slug": "anthropic",
+  "length_hint": "medium",
+  "homepage": "https://www.anthropic.com/news",
+  "fetch_url": "https://www.anthropic.com/news",
+  "fetch_method": "html",
+  "weight": "高",
+  "cadence": "不定时型",
+  "cadence_note": "2-3 天一篇，常一天多发，无固定星期",
+  "check_frequency": "daily",
+  "window_hours": 24,
+  "notes": "无 RSS，直抓 HTML 索引页（列表干净）。含 research / alignment 页，权重高。"
+}

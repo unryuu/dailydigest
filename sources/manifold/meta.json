@@ -1,0 +1,14 @@
+{
+  "name": "Manifold（预测市场·赔率盒子）",
+  "slug": "manifold",
+  "length_hint": "signal",
+  "homepage": "https://manifold.markets/",
+  "fetch_url": "https://api.manifold.markets/v0/search-markets?term=AI&sort=liquidity&limit=25&filter=open",
+  "fetch_method": "api",
+  "weight": "信号",
+  "cadence": "连续型",
+  "cadence_note": "赔率随时变，不做 seen 去重",
+  "check_frequency": "daily",
+  "window_hours": 24,
+  "notes": "非文章源、是信号，赔率盒子专用不进精读。口径注明成交额(volume)还是流动性(liquidity)别混。优先能力高分 vs 可解释性低分这类张力对。"
+}

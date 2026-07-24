@@ -1,0 +1,14 @@
+{
+  "name": "Astral Codex Ten",
+  "slug": "acx",
+  "length_hint": "long",
+  "homepage": "https://www.astralcodexten.com/",
+  "fetch_url": "https://www.astralcodexten.com/feed",
+  "fetch_method": "rss",
+  "weight": "中",
+  "cadence": "连续型",
+  "cadence_note": "每周数篇长文 + open thread（open thread 一律 skip）",
+  "check_frequency": "daily",
+  "window_hours": 168,
+  "notes": "Scott Alexander，可读性最强。AI 长文进精读，书评/医学/认知随笔进今日乐子。命中率低但命中即金级。substack 子域 301 跳自定义域。"
+}

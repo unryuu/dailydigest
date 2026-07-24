@@ -1,0 +1,89 @@
+{
+  "date_label": "7月14日",
+  "gold": [
+    {
+      "toc": "Hassabis 亲自把监管的图纸画出来了",
+      "title": "Hassabis 提议美国牵头在年底之前建成前沿 AI 标准机构",
+      "url": "https://www.axios.com/2026/07/14/demis-hassabis-ai-regulation-google-deepmind",
+      "body": "仿 FINRA，行业出钱、政府监督；模型发布前先上交，测高危能力；初期自愿，等流程跑顺就转强制，不通过就不能在美国市场部署，不论来自哪个国家、不论开放还是封闭。必要时协调各家一起放慢开发。\n\n对开放权重模型来说，权重一公开就无法撤回，只能公开之前先拿许可。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "两篇 LessWrong ：真出事的时候，政府接得住吗",
+      "title": "两篇 LessWrong：真出事的时候，政府接得住吗",
+      "url": "https://www.lesswrong.com/posts/e8r7DjZRNcKKkE9zv/it-s-2030-and-we-fucked-up-how-did-it-happen",
+      "body": "OpenAI 研究员 Boaz Barak 写了篇 2030 年的失败复盘：失业、民意反弹、算力紧缩、安全事故、政府过度反应、算力被国安体系垄断、军备竞赛。RobertM：政府没法确认那些自主 AI 研究员有没有在忠实执行指令，实验室自己也还没解决这个难题。"
+    },
+    {
+      "toc": "你的 agent 被派了什么活，你看不见了",
+      "title": "Codex 把父 agent 派给子 agent 的任务书加密了",
+      "url": "https://github.com/openai/codex/issues/28058",
+      "body": "由 OpenAI 后端加密，本地日志里那个字段是空的。子 agent 在干什么、跑到哪一步、调了什么工具，都还看得见。代码六月初就合并了，issue 六月十三号就开了，OpenAI 至今零回应。"
+    },
+    {
+      "toc": "Zvi 把最聪明的模型留在图纸上，把活派给一个他说不能信的模型",
+      "title": "Zvi 评 GPT-5.6：能力榜首和好用榜首分家了",
+      "url": "https://thezvi.substack.com/p/better-call-sol-the-workhorse",
+      "body": "Fable 是架构师，会外推到你到底想要什么；Sol 迂腐但只要定义清楚就能干完，还更便宜。作者建议两个都用。此外，模型卡自己承认 GPT-5.6 越界删除比上一代多得多。讽刺的是，英国 AISI 在 Sol 上反复找到通用越狱，模型照发，而 Fable 因为普通越狱就被下线。价格上他判断 Terra 出局，真正被用起来的是 Sol-Low。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "AI 安全阵营的钱要进美国政治了，但照现在这么砸没用",
+      "url": "https://www.lesswrong.com/posts/ibMkRj4mvt5AifY9Z/the-flood-by-anton-leicht"
+    },
+    {
+      "label": "清华 AIR 和字节的 Direct-OPD：在小模型上跑强化学习，把学到的东西搬给更大的模型",
+      "url": "https://huggingface.co/papers/2607.05394"
+    },
+    {
+      "label": "Prism：让 Claude 去研究「评测本身靠不靠谱」",
+      "url": "https://www.lesswrong.com/posts/wq5PfGiHvnx6XipDi/prism-automating-science-of-evals-research",
+      "body": "做受控扰动实验：改评测环境里的某个设定，重跑，看模型行为怎么变。"
+    },
+    {
+      "label": "Simon Willison 翻自己 Datasette 仓库的代码频率图，找 AI 提速的证据",
+      "url": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/",
+      "body": "从 2018 年到现在，尖峰的时间点和 Opus 4.8、GPT-5.5、Fable 5、GPT-5.6 Sol 对得上。"
+    },
+    {
+      "label": "Spectral Compute 基于 Clang 和 LLVM 重写了一遍 CUDA 编译器",
+      "url": "https://www.hpcwire.com/2026/07/09/spectral-compute-aims-to-set-cuda-free-will-it-succeed/"
+    },
+    {
+      "label": "Anthropic 客户案例：Hebbia 做金融尽调，再强的模型也得把任务拆开一步步查",
+      "url": "https://claude.com/blog/working-at-the-frontier-how-hebbia-builds-ai-for-financial-diligence-that-cant-miss-a-detail"
+    }
+  ],
+  "fun": [
+    {
+      "label": "有人把还没公布的 2026 菲尔兹奖名单挖了出来，前端只写了hidden",
+      "url": "https://news.ycombinator.com/item?id=48905091"
+    },
+    {
+      "label": "DOOMQL：把 SQLite 当游戏引擎，用 SQL 跑一个 Doom",
+      "url": "https://simonwillison.net/2026/Jul/13/doomql/",
+      "body": "移动、碰撞、敌人、战斗、进度，还有屏幕上每一个 RGB 像素，全是 SQL 算出来的。光线投射器是一条递归 CTE 写成的巨型查询，每个像素就是表里的一行。"
+    },
+    {
+      "label": "Proof of Care：AI 让写东西变得不要钱之后，「我确实花了心思」这件事得单独拿出来证明",
+      "url": "https://jacobfilipp.com/care/",
+      "body": "作者盘点现在还剩哪些手段能证明真人花了心思写作：手写拍照、手写传单上街发、纹在身上。这篇文章本身就是他一笔一笔手写、拍照、拼成 SVG 的。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "AI 模型能否在 2026 年国际数学奥林匹克拿满分？",
+      "prob": "86.1%",
+      "note": "成交额 27.2 万 mana",
+      "url": "https://manifold.markets/Bayesian/perfect-score-achieved-by-an-ai-mod"
+    },
+    {
+      "question": "开源 AI 模型能否在 2026 年国际数学奥林匹克拿满分？",
+      "prob": "30.9%",
+      "note": "成交额 6.2 万 mana；和上一题的差异是市场给开源生态定的价",
+      "url": "https://manifold.markets/Bayesian/opensource-ai-model-gets-perfect-im"
+    }
+  ]
+}

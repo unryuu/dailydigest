@@ -1,0 +1,163 @@
+[
+ {
+  "id": "https://cloud.google.com/blog/topics/public-sector/accelerating-frontiers-of-scientific-discovery-40-million-dollar-commitment-genesis-mission",
+  "title": "Google 4000 万美元投 DOE Genesis Mission（与 OpenAI 合写无牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+  "title": "Gemini 3.5 Flash Cyber（并入 Gemini 三连条）",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+  "title": "Our approach to bioresilience",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+  "title": "Introducing computer use in Gemini 3.5 Flash",
+  "date": "2026-06-24",
+  "reported": true,
+  "report_date": "2026-06-25"
+ },
+ {
+  "id": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+  "title": "Securing the future of AI agents (AI Control Roadmap)",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-18"
+ },
+ {
+  "id": "https://deepmind.google/blog/unlocking-uk-house-building-with-ai-accelerated-planning/",
+  "title": "Unlocking UK house-building with AI-accelerated planning",
+  "date": "2026-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+  "title": "Investing in multi-agent AI safety research",
+  "date": "2026-06-11",
+  "reported": true,
+  "report_date": "2026-06-12"
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+  "title": "DiffusionGemma: 4x faster text generation",
+  "date": "2026-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/",
+  "title": "Introducing Gemini Omni",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/",
+  "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
+  "date": "2026-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://deepmind.google/blog/measuring-the-impact-of-learning-with-ai-in-sierra-leone-and-beyond/",
+  "title": "Measuring the impact of learning with AI in Sierra Leone and beyond",
+  "date": "2026-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.google/topics/google-europe/powering-the-future-of-robotics-in-europe/",
+  "title": "Powering the future of robotics in Europe",
+  "date": "2026-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
+  "title": "Introducing Gemma 4 12B: a unified, encoder-free multimodal model",
+  "date": "2026-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://deepmind.google/blog/strengthening-singapores-ai-future-a-new-national-partnership/",
+  "title": "Strengthening Singapore's AI Future: A New National Partnership",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+  "title": "Gemini 3.5: frontier intelligence with action",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/technology/research/gemini-for-science-io-2026/",
+  "title": "Gemini for Science: AI experiments and tools for a new era of discovery",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+  "title": "Co-Scientist: A multi-agent AI partner to accelerate research",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://antigravity.google/blog/introducing-google-antigravity-2-0",
+  "title": "Introducing Google Antigravity 2.0",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/products/identifying-ai-generated-media-online",
+  "title": "Making it easier to understand how content was created and edited",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica/",
+  "title": "How WeatherNext helped the National Hurricane Center better predict Hurricane Melissa's historic landfall in Jamaica",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie-expands/",
+  "title": "Simulate real-world places with Project Genie and Street View",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://deepmind.google/blog/opening-new-paths-in-aging-research/",
+  "title": "Opening new paths in aging research",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://deepmind.google/blog/uncovering-repurposed-medicines-to-fight-liver-fibrosis/",
+  "title": "Uncovering repurposed medicines to fight liver fibrosis",
+  "date": "2026-05",
+  "reported": false,
+  "report_date": null
+ }
+]

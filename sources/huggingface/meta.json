@@ -1,0 +1,14 @@
+{
+  "name": "Hugging Face Blog",
+  "slug": "huggingface",
+  "length_hint": "medium",
+  "homepage": "https://huggingface.co/blog",
+  "fetch_url": "https://huggingface.co/blog",
+  "fetch_method": "html",
+  "weight": "中",
+  "cadence": "连续型",
+  "cadence_note": "每天 1-4 篇（社区博客）",
+  "check_frequency": "daily",
+  "window_hours": 24,
+  "notes": "开源生态风向，技术拆解扎实。日期是相对时间戳（如 '22 hours ago'），窗口过滤略糙，偶尔多收/漏收一条属正常。社区投稿质量参差，挑技术干货。"
+}

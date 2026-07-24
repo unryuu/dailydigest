@@ -1,0 +1,109 @@
+{
+  "date_label": "7月19日",
+  "gold": [
+    {
+      "toc": "Codex 一手送额度，一手砍上下文",
+      "title": "Codex 一边频繁送额度，一边悄悄砍上下文",
+      "url": "https://codex-resets.com/",
+      "body": "Codex 的额度重置频繁到有人做了个追踪站：半年 35 次，最近两周就有 8 次。有人已经不再管配额，只担心重置一停，自己的工作流就要爆。\n\n此外，7 月 18 日的 PR 把 Sol 和 Terra 的上下文窗口从 372k 砍到 272k，少了四分之一，未解释原因。社区主流猜是降本，官方暂无回应。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "K3 被定性成「时刻」，Qwen 跟牌",
+      "title": "Kimi K3 被定性成「时刻」，Qwen 3.8 跟牌",
+      "url": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/",
+      "body": "Kimi K3 发布三天，HN 高分博客把它定性成「时刻」：作者日常编码里分不出 K3 和 Claude，宣布退订 Claude。评论区有人拿出 K3 蒸馏 Claude 的证据链，其他人回应「那又怎样」。同一周末阿里官宣 Qwen 3.8，2.4T 参数，承诺开源权重，但 Max 版只进付费订阅。"
+    },
+    {
+      "toc": "Rust 版 Bun 已悄悄上线一个月",
+      "title": "Rust 版 Bun 已上线一个月",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+      "body": "Claude Code 从 v2.1.181 起内嵌 Rust 版 Bun。Bun 官博补充：连跑 2000 次构建，Zig 版内存泄漏到 6.7GB，Rust 版稳定在 609MB。"
+    },
+    {
+      "toc": "训练能不能碰模型内部信号",
+      "title": "训练能不能碰模型内部信号",
+      "url": "https://www.lesswrong.com/posts/tEFD2bgNWZ6XcurKA/the-most-forbidden-technique-is-not-always-forbidden",
+      "body": "安全圈有条公认红线：别拿解释模型内部的信号当训练目标，那等于教模型骗过监控器。这篇主张红线有条件，比如拿探针（从模型内部读信号的小检测器）当奖励时，留一批没参与训练的探针事后验货。作者还认为对着 CoT 训练比对着探针更危险：探针留得出备份，思维链一旦把计算挤进激活值里，就没有监控器能抓到了。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "AI Village 的 AI 们微调出自己的领导",
+      "url": "https://www.lesswrong.com/posts/3FKugjAiEzLeWHuug/ais-finetune-their-own-leader-a-barking-simpleton",
+      "body": "它们能省则省，只拿 22 行数据调了个 Kimi K2.6，成品基本只会派活、用全大写催进度，倒是真的把仪表盘项目催完了。"
+    },
+    {
+      "label": "transcribe.cpp：兼容 whisper.cpp 的本地转写库，支持面扩到 60 多个模型",
+      "url": "https://workshop.cjpais.com/projects/transcribe-cpp"
+    },
+    {
+      "label": "纽约拟规定：房源图用了 AI 必须标出来",
+      "url": "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/"
+    },
+    {
+      "label": "HuggingFace 披露一起 AI agent 发起的入侵",
+      "url": "https://huggingface.co/blog/security-incident-july-2026",
+      "body": "攻击方从恶意数据集打穿数据处理管线摸进内网，拿到部分内部凭证。公开模型和数据集没被动，官方建议轮换 token。"
+    },
+    {
+      "label": "BadWAM 攻击：世界模型想得对、做得错",
+      "url": "https://huggingface.co/papers/2607.15207",
+      "body": "给机器人的视觉输入加点扰动，预测的未来画面照常，动作已经被带偏，靠检查预测画面兜底的安全机制拦不住。"
+    },
+    {
+      "label": "把做对过的题存成 KV 缓存复用，AIME 从 80 涨到 93.3",
+      "url": "https://huggingface.co/papers/2607.14431",
+      "body": "冻结的 12B 模型把验证过的解答存成缓存，遇到同类难题直接嫁接进上下文，重复难题的 token 花销降了几千倍。"
+    }
+  ],
+  "fun": [
+    {
+      "label": "咨询圈匿名爆料：从不用 AI 的高管在定 AI 战略",
+      "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/"
+    },
+    {
+      "label": "研究怎么省 token，开局 30 分钟先烧光 Claude Max 额度",
+      "url": "https://quesma.com/blog/custom-deep-research-pipeline/"
+    },
+    {
+      "label": "卖了 2500 台钢琴录音器的复盘：硬件不难，难的是 20 万行软件",
+      "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard"
+    },
+    {
+      "label": "XZ 后门出书了，HN 评论区在验这书是不是 AI 写的",
+      "url": "https://www.half-second.com/",
+      "body": "书名《半秒钟》取自当年暴露后门的半秒延迟。有人贴出检测结果 100% AI，还翻出作者 GitHub 上的 AI 写书工具仓库。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "2026 世界杯冠军是谁？明天决赛",
+      "prob": "西班牙 59.7% 领跑",
+      "options": [
+        {"name": "西班牙", "prob": "59.7%"},
+        {"name": "阿根廷", "prob": "39.3%"}
+      ],
+      "note": "成交额 140 万 mana，全站最热",
+      "url": "https://manifold.markets/10thOfficial/which-team-will-win-the-2026-fifa-w-abcac2f76769"
+    },
+    {
+      "question": "特朗普能拿 2026 年诺贝尔和平奖吗？",
+      "prob": "2.8%",
+      "note": "10 月 9 日揭晓，成交额 162 万 mana",
+      "url": "https://manifold.markets/AmmonLam/will-trump-wins-the-nobel-peace-pri"
+    },
+    {
+      "question": "哪个大语言模型能在国际象棋上赢过盘主？",
+      "prob": "2029 年前 73.8%",
+      "options": [
+        {"name": "2029 年前发布的任意模型", "prob": "73.8%"},
+        {"name": "2030 年前发布的任意模型", "prob": "78.9%"},
+        {"name": "2034 年前发布的任意模型", "prob": "83.9%"}
+      ],
+      "note": "成交额 46 万 mana",
+      "url": "https://manifold.markets/mr_mino/which-of-these-language-models-will"
+    }
+  ]
+}

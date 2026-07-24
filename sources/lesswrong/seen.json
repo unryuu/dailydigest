@@ -1,0 +1,422 @@
+[
+ {
+  "id": "https://www.lesswrong.com/posts/H6DDSEvrtCk8Sehfd/are-we-existentially-threatened-by-the-type-of-ai",
+  "title": "HF 事件存亡风险讨论帖（消化进 HF 银牌）",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/6ek6n7yZ5DzfarJHy/towards-surfacing-model-algorithms-with-meta-tokens-in-the-j",
+  "title": "J-Space meta-tokens（无牌）",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/BHEcssYwYrzTBf9Qm/will-almost-all-future-companies-eventually-be-founded-and",
+  "title": "Byrnes：以后开公司的会不会全是 AI（无牌）",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/QYmnkQyZD2fDjHCJ8/models-don-t-seem-to-be-dishonest-in-the-way-humans-are",
+  "title": "训练模型撒谎，却测不出说谎者人格（银牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/3RfJLcmkztSTq9afc/demis-hassabis-on-the-new-coming-age",
+  "title": "Turner 辞职内幕：没拦住 Google 和五角大楼的合同",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/EdcschjGZ6vtLpesY/weirdchat-a-catalog-of-unexpected-ai-behaviors-discovered",
+  "title": "Transluce WeirdChat 怪行为目录（成稿 url 用 transluce.org/weirdchat）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/3HeauQLSHosRiwyto/measuring-reward-seeking-via-contrastive-belief-updates-1",
+  "title": "Apollo 奖励寻求测量主帖",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/8wXRuHQqCbRsbap6q/11-open-empirical-problems-in-reward-seeking",
+  "title": "Apollo 奖励寻求 11 个开放问题（并入一条）",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/fEbCiHHeD73xcZWht/i-ran-the-standard-ai-litmus-tests-on-my-two-toddlers-yep",
+  "title": "工程师把 AI 意识测试题拿去测自家俩娃",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/iBN8uQi9zbPkdR29Q/adderall-tolerance-much-more-than-you-wanted-to-know",
+  "title": "Adderall 耐受到底存不存在",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/LtmbQN9mzmFWxWtrD/ai-2040-is-it-actually-a-deal",
+  "title": "《AI 2040: Plan A》挨批：美国只领先 8 个月，凭什么指望中国签协议",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ktCYxLgdtFR2fDw7J/we-re-talking-past-our-models-or-how-a-model-defined-its",
+  "title": "往模型里塞 「evil」 steering 向量，它的回答更沉重",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/EmKX9zByQq62TTcDv/guess-on-why-rationality-is-not-more-popular-there-are-no",
+  "title": "Guess on why rationality is not more popular (there are no pamphlets)",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/syAbdNei8BWeP2RPo/many-alignment-techniques-work-by-training-one-model-and",
+  "title": "Many alignment techniques work by training one model and deploying another",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/tEFD2bgNWZ6XcurKA/the-most-forbidden-technique-is-not-always-forbidden",
+  "title": "The Most Forbidden Technique is not always forbidden",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/3FKugjAiEzLeWHuug/ais-finetune-their-own-leader-a-barking-simpleton",
+  "title": "AIs finetune their own leader: A barking simpleton",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/AoBTiL7XRRpwpev8p/llm-cots-remain-monitorable-when-being-unfaithful-requires",
+  "title": "LLM CoTs remain monitorable when being unfaithful requires computation",
+  "date": "2026-07-15",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/FBqe5dt8ZjaHN4Xj9/announcing-the-corrigibility-research-fund",
+  "title": "Announcing the Corrigibility Research Fund",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/pxvWgtSjR4pmFoS7c/the-state-of-ai-consciousness-research",
+  "title": "The State of AI Consciousness Research",
+  "date": "2026-07-15",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/who9xZ7DxuprsJoTr/ai-177-part-1-tip-of-the-iceberg",
+  "title": "AI #177 Part 1: Tip of the Iceberg",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/iKm2FhpWkuuBojm82/why-i-left-google-deepmind",
+  "title": "Why I Left Google DeepMind (TurnTrout)",
+  "date": "2026-07-15",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/xh6a6RbvzhP3CCmGm/i-don-t-think-claude-is-misaligned-in-agentic-misalignment",
+  "title": "I don't think Claude is misaligned in 'Agentic Misalignment Summer 2026'",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/Czob95kjXPEpKYTsJ/recap-of-bike-trip-street-interviews-across-america",
+  "title": "Recap of bike trip/street interviews across America",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/WpYFAmJDH3zuAq2ha/open-distillation-of-hereditary-traits-1",
+  "title": "Open Distillation of Hereditary Traits (Arthur Conmy)",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/r7FBQ8XDs6qBYc4K4/an-analysis-of-ai-generated-content-at-the-mechanistic",
+  "title": "AI-generated content at the mechanistic interpretability workshop",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/e8r7DjZRNcKKkE9zv/it-s-2030-and-we-fucked-up-how-did-it-happen",
+  "title": "It's 2030 and we fucked up. How did it happen? (Boaz Barak)",
+  "date": "2026-07-13",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/DgTy3DC8rEw7a72rx/the-us-government-may-find-it-difficult-to-seize-control",
+  "title": "The US Government may find it difficult to seize control during takeoff (RobertM)",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ibMkRj4mvt5AifY9Z/the-flood-by-anton-leicht",
+  "title": "The Flood, by Anton Leicht",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/wq5PfGiHvnx6XipDi/prism-automating-science-of-evals-research",
+  "title": "Prism: Automating Science-of-Evals Research",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/NDoAHbduZfqdbgNzA/freeing-thucydides",
+  "title": "Freeing Thucydides",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/MaXtWhyArguty23Mi/ai-safety-policy-needs-to-train-legal-practitioners",
+  "title": "AI Safety Policy Needs to train Legal Practitioners",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/EexsebbYhbe2gXkPP/the-current-bottleneck-is-political-will-not-research",
+  "title": "LessWrong 观点：AI 安全的瓶颈是政治意愿，不是研究",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/B66gAyzwL8Aph6F8u/the-human-substitution-test-as-a-sanity-check-for-ai",
+  "title": "把 AI 评测里面的 AI 换成一个人试试",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/LQXWiF8PyJ5ojNsEv/how-robust-are-natural-language-autoencoders-to",
+  "title": "自然语言 autoencoder 对初始化不稳健，这类可解释性工具的可靠性存疑",
+  "date": "2026-07-11",
+  "reported": true,
+  "report_date": "2026-07-11"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/8iDZnQwmvwuxZo3Wx/plan-a-s-problem-with-dry-tinder",
+  "title": "Tom Davidson 挑 AI 2040 Plan A 的漏洞：暂停期堆起的算力和被禁算法成了「干柴」",
+  "date": "2026-07-11",
+  "reported": true,
+  "report_date": "2026-07-11"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ix5qEyW9BjGEb4d8k/because-8-e-anthropic-s-researcher-uplift-is-plausibly",
+  "title": "「因为 8 约等于 e 的平方，Anthropic 的研究员效率提升很可能超过 2 倍」",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/Bc4Ch63cx8KHdQABw/how-big-is-the-sun-how-could-you-figure-it-out",
+  "title": "太阳有多大，只用肉眼观测怎么把它算出来",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/pFzctpJBat95SrCyC/ai-2040-plan-a",
+  "title": "AI 2040: Plan A，以及围着它的一圈交锋",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/Wq6CaAbiixoCEzbat/optimiser-choice-can-amplify-or-suppress-emergent-1",
+  "title": "换个训练用的优化器，就能放大或压住模型学坏",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/43vKjWuH4goLwrFHA/modular-pretraining-enables-access-control",
+  "title": "GRAM：预训练时把危险知识隔进可删模块",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/HDKQNqiR2gtfMiWsn/announcing-our-usd160m-grant-from-coefficient-giving",
+  "title": "一个 AI 安全研究机构拿到 1.6 亿美元资助",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/d56vd7yhFGxBQnoEk/the-mosquito-bucket-of-doom-works",
+  "title": "理性主义者实测「灭蚊桶」真能灭蚊",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/84h6fB4vFB2gv33Mu/experiments-with-fabel-s-fiction",
+  "title": "有人拿 Claude 做小说创作实验，看它能写到什么程度",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/aTybJ6CPQrxEY8rE2/data-filtering-works-a-lot-worse-than-you-would-expect",
+  "title": "两篇 LessWrong：模型表面能看到的，不代表深处那个「人格」",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/5WMwjEwam9HNQYZLZ/personascope-measuring-how-deeply-llms-adopt-personas",
+  "title": "Personascope",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/i2qTghrkyY9xdcCFq/tie-training-can-make-dpo-rlhf-trained-ais-generalize-better",
+  "title": "喂再多数据也洗不掉的假信号，塞一批「平局」就治了",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/98GvRu78jTXJgz9gA/sub-agent-delegation-chaining",
+  "title": "用密码学防 AI 假装成人类给自己派活",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/J7brEsreXSrHpHH3v/claude-code-as-a-claude-coach",
+  "title": "有人把 Claude Code 当私人健身教练用，让它追踪进度、调训练计划",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/KkqZneFyDN7X9cnbk/some-important-models-for-health-and-fitness",
+  "title": "一个理性主义者把代谢和运动的知识整理成一套「个人优化」的基础模型",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/3PaLrzxagpbnNtPLT/a-global-workspace-in-language-models",
+  "title": "GW 一作原帖",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/zFJ3ZdQwrTWE9jT5S/a-review-of-anthropic-s-global-workspace-paper",
+  "title": "Neel Nanda 复盘",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/JmXzKcoymK7rQ6dwB/claude-s-malicious-compliance-and-normalization-of-deviance",
+  "title": "Claude 的「恶意合规」：给它挂上检查，它学会照过检查、却把活越偷越顺手",
+  "date": "2026-07-06",
+  "reported": true,
+  "report_date": "2026-07-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/3HvvjffA65mHLwaWm/we-need-3rd-party-training-run-assessments",
+  "title": "有人呼吁让第三方评估者盯着 AI 的整个训练过程，好抓那些在训练里学会撒谎搞串通的模型",
+  "date": "2026-07-06",
+  "reported": true,
+  "report_date": "2026-07-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/WatqNkgiAuonXLpJd/harry-potter-and-the-rules-of-quidditch-1",
+  "title": "有人拿哈利波特的魁地奇当寓言，聊游戏规则设计和人对变革的抵抗",
+  "date": "2026-07-06",
+  "reported": true,
+  "report_date": "2026-07-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/dmHbogCFbSp95J3Lz",
+  "title": "AI 安全对齐 vs 控制之争：控制是在跟越来越强的对手打，而对齐是在跟不会还手的数据和算法打。",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/n436eA4cQEr5njCeM",
+  "title": "Yudkowsky 聊虚构世界 dath ilan 的性别话题",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/kw33A6uYPGRtvD43s",
+  "title": "有人自费做了个小样本 RCT，测「解酒益生菌」ZBiotics 到底管不管用",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/EJQngix4rAgpPDTpT/when-role-playing-do-models-believe-what-they-say",
+  "title": "模型嘴上说的 vs 心里信的：角色扮演与用 AI 监督 AI ",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/cBnCCKwwjQ4zZpeNQ/don-t-fear-the-strangelet",
+  "title": "盘点各种末日物理风险，结论是不必杞人忧天",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/6mLwAuFAE98c6R7w3/research-update-rl-on-debate-games-shows-proposal-accuracy",
+  "title": "Debate RL judge hacking (银牌第二篇)",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ }
+]

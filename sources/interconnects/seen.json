@@ -1,0 +1,100 @@
+[
+ {
+  "id": "https://www.interconnects.ai/p/open-models-recap-more-on-kimi-k3",
+  "title": "Lambert 播客：开源模型 recap（并入梁文锋金牌作佐证）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
+  "title": "Lambert 万字长文：开闭源差距只剩 3 到 5 个月",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/6-months-to-live-for-open-models",
+  "title": "6 months to live for open models",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/latest-open-artifacts-22",
+  "title": "Latest open artifacts (#22): Zyphra, Cohere, and Poolside",
+  "date": "2026-06-28",
+  "reported": true,
+  "report_date": "2026-06-29"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+  "title": "GLM-5.2 is the step change for open agents",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-25"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/banning-open-source-ai-would-be-a",
+  "title": "Banning Open Source AI Would Be A Mistake",
+  "date": "2026-06-19",
+  "reported": true,
+  "report_date": "2026-06-19"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/state-of-the-blog-mid-2026",
+  "title": "State of the blog, mid-2026",
+  "date": "2026-06-17",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.interconnects.ai/p/frontier-post-training-recipe-review",
+  "title": "Frontier post-training recipe review with Finbarr Timbers",
+  "date": "2026-06-16",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+  "title": "Welcome to the AGI era of AI governance",
+  "date": "2026-06-14",
+  "reported": true,
+  "report_date": "2026-06-15"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
+  "title": "Claude Fable 5 and new AI safety fables",
+  "date": "2026-06-09",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/farewell-ai2",
+  "title": "Farewell Ai2",
+  "date": "2026-06-02",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.interconnects.ai/p/open-and-closed-models-are-on-different",
+  "title": "Open and closed models are on different exponentials",
+  "date": "2026-06-01",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may",
+  "title": "Some ideas for what comes next, May 2026",
+  "date": "2026-05-26",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.interconnects.ai/p/latest-open-artifacts-21-open-model",
+  "title": "Latest open artifacts (#21): Open model bonanza! Gemma 4, DeepSeek V4, Kimi K2.6, MiMo 2.5, GLM-5.1 & others. On CAISI's V4 assessment.",
+  "date": "2026-05-16",
+  "reported": false,
+  "report_date": null
+ }
+]

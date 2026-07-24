@@ -1,0 +1,14 @@
+{
+  "name": "Ethan Mollick @ X",
+  "slug": "x-emollick",
+  "length_hint": "short",
+  "homepage": "https://x.com/emollick",
+  "fetch_url": "https://nitter.kareem.one/emollick",
+  "fetch_method": "nitter-html",
+  "weight": "高",
+  "cadence": "X 账号",
+  "cadence_note": "约 13 条/天，高频",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "论文转述+AI 能力观察。线程碎片多（半句帖），按线程聚合、只取首帖当条目。 抓取规矩（串行慢抓/浏览器 UA/只收原创/镜像单点应对）统一见 pipeline/scout.prompt.md 的 X 源节；解析脚本 scripts/parse_nitter.py。2026-07-23 建源。"
+}

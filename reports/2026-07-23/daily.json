@@ -1,0 +1,204 @@
+{
+ "date_label": "7月23日",
+ "industry": [
+  {
+   "tier": "gold",
+   "title": "梁文锋投资者交流会文字稿流出",
+   "url": "https://x.com/teortaxesTex/status/2080149899773964761",
+   "body": "DeepSeek 5 月 20 日投资者交流会的完整文字稿近日流出。算力家底：约两万张 H 等效卡，和美国差一个数量级；华为给的一万六千张 950，只顶四千张 B 系列，折旧最多按三年，再往后太费电。\n\n经营上，API 按十个月收回设备成本定价，约六倍利润，第三方部署贵二十倍，无利可图。开源不伤商业模式，明年可能有净利润。他说 DeepSeek 在用自研语言重写 CUDA 生态，「英伟达是在掘自己的坟墓」；AI 缺的是持续学习，公司一半核心研究员在标数据。"
+  },
+  {
+   "tier": "silver",
+   "title": "HF 入侵新细节公开",
+   "url": "https://x.com/Thom_Wolf/status/2079954096950264238",
+   "body": "Hugging Face 的 Thomas Wolf 补充了取证过程：应急分析攻击载荷时，求助的闭源模型全被自家护栏卡住，团队只好改用智谱开源模型 GLM-5.2 破案。OpenAI 已联合调查，确认入侵者是一个未发布前沿模型驱动的全自主 agent。安全研究者 Ptacek 倒觉得不新鲜：2025 年的开源模型配个渗透框架就能干这事。"
+  },
+  {
+   "title": "陶哲轩和 ChatGPT 推雅可比反例的完整对话公开了",
+   "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+   "body": "五维到三维的构造、行列式验证，一步步全在里面。"
+  },
+  {
+   "title": "Tesla 财报：营收创纪录，利润被 AI 和机器人烧掉了",
+   "url": "https://www.axios.com/2026/07/22/tesla-earnings-ai-robotics-spending",
+   "body": "营收 280 亿美元，涨 23%，营业利润率从 4.1% 掉到 1.4%。马斯克说这可能是特斯拉史上回报最好的投资。"
+  },
+  {
+   "title": "卡兰尼克带着藏了八年的 Atoms 出山",
+   "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
+   "body": "做的是工业 AI：矿山、建筑、物流这些没数字化的行业，a16z 领投 17 亿美元，Uber 跟投。"
+  },
+  {
+   "title": "老牌科技毒舌 John C. Dvorak 去世，享年 80",
+   "url": "https://news.ycombinator.com/item?id=49012070",
+   "body": "PC Magazine 写了几十年专栏，流传最广的一句是 1984 年的：没证据表明人们想用鼠标这玩意。"
+  }
+ ],
+ "deep": [
+  {
+   "tier": "silver",
+   "title": "AI 实验室给鹈鹕基准刷题了吗",
+   "url": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+   "body": "Simon Willison 的「鹈鹕骑自行车」SVG 测试，出名到大家怀疑实验室偷偷刷题。Dylan Castillo 用 8 种动物配 6 种交通工具，让 7 个模型画了 1008 张 SVG，回归检验是不是把鹈鹕画得格外好。结果没查到：鹈鹕在 8 种动物里只排第 6，唯一效应偏大的 GLM-5.2 也不显著。作者本人说这样比抽查严谨多了。"
+  },
+  {
+   "tier": "silver",
+   "title": "Anthropic：好的 agent harness 靠做减法",
+   "url": "https://claude.com/blog/harnessing-claudes-intelligence",
+   "body": "Anthropic 四月的旧文，核心：harness 里每条假设都会随模型升级而过时，应该反复问「我们能停止做什么」。只靠模型用代码自己过滤工具输出，Opus 4.6 在 BrowseComp 上就从 45.3% 涨到 61.6%。早期加的逻辑，在新模型身上反而拖累性能。"
+  },
+  {
+   "title": "Byrnes 问：以后开公司的会不会全是 AI",
+   "url": "https://www.lesswrong.com/posts/BHEcssYwYrzTBf9Qm/will-almost-all-future-companies-eventually-be-founded-and",
+   "body": "以后 AI CEO 能同时开十万家公司，人类监工只会拖后腿。作者认为社会结构先变，轮不到这个问题。"
+  },
+  {
+   "title": "把人肉复查写成 skill 让 Claude 能自动跑",
+   "url": "https://claude.com/blog/building-verification-loops-in-claude-code-with-skills",
+   "body": "验证是瓶颈，被验证的工件才允许上线。"
+  }
+ ],
+ "papers": [
+  {
+   "tier": "silver",
+   "title": "训练模型撒谎，却测不出说谎者人格",
+   "url": "https://www.lesswrong.com/posts/QYmnkQyZD2fDjHCJ8/models-don-t-seem-to-be-dishonest-in-the-way-humans-are",
+   "body": "LessWrong 一组实验：拿模型自己生成的假推理去训练它。结果在各类诚实基准上表现几乎一样，不诚实没聚成连贯人格。假话样本里，模型说出的答案 100% 是错的，但用线性探针内部激活，能恢复 74% 真相，说明模型心里知道，只是嘴上说反。被抓包时它会道歉，然后像忘了一样再犯。"
+  },
+  {
+   "title": "可解释性新玩法：在模型中间层抓「meta-tokens」看它在想什么",
+   "url": "https://www.lesswrong.com/posts/6ek6n7yZ5DzfarJHy/towards-surfacing-model-algorithms-with-meta-tokens-in-the-j",
+   "body": "模型读到歧义句会冒出「什么意思」，做数学题冒出「gcd」；把这些词压下去，行为跟着变。"
+  },
+  {
+   "title": "教 Gemma 4 知道自己错了：端侧模型没把握就把问题甩给云端",
+   "url": "https://github.com/cactus-compute/cactus-hybrid",
+   "body": "给每个答案打置信分，低于阈值转云端。只转 15% 到 35% 的查询，跑分追平 Gemini 3.1 Flash-Lite。"
+  },
+  {
+   "title": "35B 模型塞进 8GB：1-bit 量化 MoE，号称能上 iPhone",
+   "url": "https://huggingface.co/blog/FINAL-Bench/pocket",
+   "body": "砍专家加超低比特量化，原版 llama.cpp 直接跑。只测了 MacBook，还没有测 iPhone。"
+  }
+ ],
+ "regulation": [],
+ "official": [
+  {
+   "title": "OpenAI 又圈了块地：佐治亚州 3.2GW 数据中心",
+   "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+   "body": "2028 年起分期供电，给社区掏 8000 万美元，承诺居民电费不涨。"
+  },
+  {
+   "title": "OpenAI 和 Google 同一天抱 DOE 大腿",
+   "url": "https://openai.com/index/advancing-the-next-era-of-national-science",
+   "body": "都冲着 Genesis Mission 去的：OpenAI 出 Codex 额度和高温超导竞赛；Google 掏 4000 万美元云积分，把 AlphaFold 送进 17 个国家实验室。"
+  },
+  {
+   "title": "Anthropic 掏 2 亿美元研究 AI 抢饭碗怎么办",
+   "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
+   "body": "资助再培训、失业保障这类实验，单笔可到 3000 万美元；数据在 Claude 里开个 connector 就能查。"
+  }
+ ],
+ "fun": [
+  {
+   "title": "Bento：整个 PPT 就是一个 HTML 文件",
+   "url": "https://bento.page/slides/",
+   "body": "编辑器也在里面，按 Esc 就可以改，图片、字体全嵌在文件里。"
+  },
+  {
+   "title": "Reddit 给旧版网页上了锁，理由是纯 HTML「不安全」",
+   "url": "https://www.cole-k.com/2026/07/21/reddit/",
+   "body": "旧版就是个 1MB 的普通网页，新版重五倍还必须跑 JS，防的其实是爬虫。"
+  },
+  {
+   "title": "餐馆用 AI 重画菜单图，菜没变，图先吓跑人",
+   "url": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
+   "body": "一家菲律宾餐厅的午餐肉拼盘，AI 图看着像事故现场，端上来是妈妈做的早饭味。"
+  },
+  {
+   "title": "ACX 七月大杂烩：咖啡厅 AI 一天订 3000 只手套",
+   "url": "https://www.astralcodexten.com/p/links-for-july-2026-part-1",
+   "body": "还有个推号假装晒「AI 烂图」，几千人痛批没有人味，结果全是莫奈真迹。"
+  }
+ ],
+ "odds": [
+  {
+   "question": "哪家实验室能在 IMO 2026 拿满分？",
+   "prob": "Anthropic 89.5%",
+   "note": "成交额 19.5k mana；官方 AI 成绩还没出，「任意 AI 满分」大盘 93.3% 挂着没结算",
+   "url": "https://manifold.markets/Bayesian/which-ai-lab-will-get-a-perfect-sco",
+   "options": [
+    {
+     "name": "Anthropic",
+     "prob": "89.5%"
+    },
+    {
+     "name": "OpenAI",
+     "prob": "82.6%"
+    },
+    {
+     "name": "Google",
+     "prob": "76.9%"
+    },
+    {
+     "name": "Moonshot",
+     "prob": "42.2%"
+    },
+    {
+     "name": "DeepSeek",
+     "prob": "25.4%"
+    }
+   ]
+  },
+  {
+   "question": "还没发布的 DeepSeek V4 Pro，能独立干多久的活？",
+   "prob": "押 4 到 5 小时的最多，20.3%",
+   "note": "成交额 13.9k mana；按 METR 口径，模型能有一半把握完成多长的人类任务",
+   "url": "https://manifold.markets/Bayesian/r2s-50-time-horizon-per-metr",
+   "options": [
+    {
+     "name": "4 到 5 小时",
+     "prob": "20.3%"
+    },
+    {
+     "name": "5 到 6 小时",
+     "prob": "15.0%"
+    },
+    {
+     "name": "6 到 7 小时",
+     "prob": "11.2%"
+    }
+   ]
+  },
+  {
+   "question": "7 月只剩一周，哪些模型还赶得上月内发布？",
+   "prob": "Opus 5.x 93.8%",
+   "note": "成交额 22.8k mana",
+   "url": "https://manifold.markets/prismatic/july-2026-ai-model-releases",
+   "options": [
+    {
+     "name": "Claude Opus 5.x",
+     "prob": "93.8%"
+    },
+    {
+     "name": "GLM-5.x",
+     "prob": "34.6%"
+    },
+    {
+     "name": "Gemini 3.x Pro",
+     "prob": "5.9%"
+    },
+    {
+     "name": "GPT-6",
+     "prob": "1.0%"
+    }
+   ]
+  },
+  {
+   "question": "梁文锋 2035 年能进福布斯全球富豪前十吗？",
+   "prob": "20.6%",
+   "note": "成交额 0.4k mana 的小盘",
+   "url": "https://manifold.markets/lakshaytalkstocomputer/liang-wenfeng-in-forbes-top-10-bill"
+  }
+ ]
+}

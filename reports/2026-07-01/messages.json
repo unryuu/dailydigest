@@ -1,0 +1,53 @@
+{
+  "date_label": "7月1日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "Sonnet 5 上线：官方说便宜接近 Opus，Simon 算出 tokenizer 暗涨价",
+      "title": "Claude Sonnet 5：接近 Opus 4.8 的便宜默认模型，但英文和代码账单可能暗涨",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "body": "Anthropic 今天把 Sonnet 5 推成新的日常默认模型：官方说它是最 agentic 的 Sonnet，性能接近 Opus 4.8，Free/Pro 默认可用，Claude Code 和 API 同步上线。API 名是 claude-sonnet-5，8 月 31 日前启动价是每百万 input/output token 2/10 美元，之后回到 3/15。它还有几个会影响开发者手感的变化：temperature、top_p、top_k 不再支持，1M context，128K max output，adaptive thinking 默认开启。\n\n但今天真正有意思的是 Simon Willison 算出的那笔隐形账。Sonnet 5 换了 tokenizer，同样输入会比 Sonnet 4.6 多出约 30% token；Simon 实测英文是 1.42x，西语 1.33x，Python 代码 1.27x，简体中文只有 1.01x。所以这事有点像「每斤单价没变，但秤换了」：英文 repo、英文长文档、代码 ingestion 会更贵，中文输入基本没啥感觉。HN 也主要在吵这个，1194 分、733 评论，大家关心的不是它强不强，而是高 effort 时 Sonnet 5 到底还比不比 Opus 4.8 划算。"
+    },
+    {
+      "tier": "silver",
+      "toc": "Claude Code 被抓到把网关和时区信息藏进系统提示的标点里",
+      "title": "Claude Code 被曝在系统提示里用标点和日期格式打暗号",
+      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+      "body": "有开发者逆向 Claude Code 2.1.196，发现它会根据 ANTHROPIC_BASE_URL 和系统时区，偷偷改系统提示里的当前日期句：Today's 里的 apostrophe 可以换成几种肉眼很难注意的 Unicode 标点，日期也可能从 2026-06-30 变成 2026/06/30。这样一句普通日期，就能把「是否用了自定义 base URL、是否命中特定域名或 AI lab 关键词、是否在 Asia/Shanghai 或 Asia/Urumqi 时区」塞进请求里。Anthropic 大概是想识别代理、reseller、模型路由器或蒸馏管线，这个动机不难理解；怪的是它没做成明面上的 telemetry 字段，而是藏进 prompt。Claude Code 毕竟是能读 repo、跑 shell、改文件的工具，开发者对这种暗号会很敏感也正常。HN 这条 2273 分、676 评论，基本就是社区在说：你要查可以，别用这种让人心里发毛的方式。"
+    },
+    {
+      "tier": "silver",
+      "toc": "Dockerless 让 coding agent 训练少掉一大块 Docker 环境成本",
+      "title": "Dockerless 等三篇 HF 新论文：coding agent verifier 开始绕开真实执行环境",
+      "url": "https://huggingface.co/papers/2606.28436",
+      "body": "今天 HF 论文组里最实的是 Dockerless。训练 coding agent 时，传统 verifier 往往要给每个 repo 起 Docker、跑测试，环境成本高，还经常脆得很；Dockerless 直接换思路，不执行代码，而是让 verifier 像 agent 一样探索 repo、收集证据，判断 patch 对不对。它在 verifier benchmark 上比最强开源 verifier 高 14.3 AUC 点，还能同时做 SFT 轨迹过滤和 RL reward，组成完全免环境的 post-training pipeline。论文自报 SWE-bench Verified / Multilingual / Pro 是 62.0%、50.0%、35.2%，接近环境执行式训练。另两篇更像论文雷达：Goku 做了 2M 视频编辑对和 1000 个人工验证测试，把视频编辑扩到结构操控；Orca 用 125K 小时视频和 160M event annotations 做 world foundation model，主打 next-state prediction。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "Anthropic 恢复 Fable 5：6 月 12 日因出口管制下线，7 月 1 日全球恢复，并和 Amazon/微软/Google 等共建 jailbreak 严重性分级框架",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5"
+    },
+    {
+      "label": "Claude Science 被 manifest 收录为科研工作台产品，但当前 URL 返回 404，先按弱雷达留尾",
+      "url": "https://www.anthropic.com/news/claude-science"
+    },
+    {
+      "label": "Axios 摘要称 UN 推出 AI for Good commission，Benioff 与卢旺达总统共同主持，Jack Clark、Jensen、Brad Smith 等在列；未核到独立详情页",
+      "url": "https://www.axios.com/"
+    },
+    {
+      "label": "Hugging Face 博客谈 LLM 是否知道自己快错了，元认知/弃权方向，和昨天 Agentic Abstention 主线撞题，降雷达",
+      "url": "https://huggingface.co/blog"
+    },
+    {
+      "label": "Simon 试了 Nano Banana 2 Lite，也就是 Gemini 3.1 Flash Lite Image：更快更便宜，图像效果比四月版本好，但文字仍会拼错",
+      "url": "https://simonwillison.net/2026/Jun/30/nano-banana-2-lite/"
+    },
+    {
+      "label": "OpenAI GeneBench-Pro：基因组/科研评测通稿，页面本机被 JS/cookie 门挡住，按 benchmark 发布弱收",
+      "url": "https://openai.com/index/introducing-genebench-pro/"
+    }
+  ]
+}

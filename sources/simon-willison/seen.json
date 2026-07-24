@@ -1,0 +1,541 @@
+[
+ {
+  "id": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/",
+  "title": "Simon 回应鹈鹕审计（消化进鹈鹕银牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/",
+  "title": "Simon：发生了的科幻（消化进 HF 银牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/",
+  "title": "Simon Willison：逆向工程变便宜了",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/20/sam-altman/",
+  "title": "Quoting Sam Altman (Oct 2022 email to OpenAI board, Musk v. Altman)",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+  "title": "Claude Code uses Bun written in Rust now",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/19/ai-mania/",
+  "title": "AI Mania Is Eviscerating Global Decision-Making",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/",
+  "title": "AI Mania Is Eviscerating Global Decision-Making (ludic 原文)",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/",
+  "title": "Claude make Fable 5 permanent",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+  "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/15/grok-build/",
+  "title": "xai-org/grok-build, now open source",
+  "date": "2026-07-15",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/16/inkling/",
+  "title": "Inkling: Our open-weights model",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/14/pedalican/",
+  "title": "pedalican: pelican-on-a-bicycle desktop pet via GPT-5.6 Sol",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/13/datasette-code-frequency/",
+  "title": "datasette code-frequency chart on GitHub",
+  "date": "2026-07-13",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/13/doomql/",
+  "title": "DOOMQL",
+  "date": "2026-07-13",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/",
+  "title": "Introducing Muse Spark 1.1 (Meta)",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/",
+  "title": "Directly Responsible Individuals (DRI)",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/10/nilay-patel/",
+  "title": "Nilay Patel：想要实用的 AR 眼镜，就只能把数据传云端",
+  "date": "2026-07-11",
+  "reported": true,
+  "report_date": "2026-07-11"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/9/gpt-5-6/",
+  "title": "GPT-5.6 正式发布：Luna、Terra、Sol",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/6/hy3/",
+  "title": "腾讯开源 Hy3 正式版",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/",
+  "title": "Simon 的 149 美元 Fable 账单：用 Fable 写完 sqlite-utils 4.0 发版，还让它自己判断把杂活派给便宜模型",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/",
+  "title": "Current AI 出了个开源 AI 全景索引 Gap Map，把 421 个开源模型/工具/数据集分门别类",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/",
+  "title": "一位前端课程作者说收入跌了一半多， AI 竞争占一部分原因",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/",
+  "title": "有人用 445 字节画出一张能认出各大洲的世界地图",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/",
+  "title": "Simon 一天三连：让 agent 造 agent、让 Fable 5 自己调 agent，最后转 Litt 一句「理解才能参与」",
+  "date": "2026-07-03",
+  "reported": true,
+  "report_date": "2026-07-03"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/30/the-ai-compass/",
+  "title": "Simon 做了个 AI Compass，把 AI 舆论压成「好坏」和「虚实」二维坐标",
+  "date": "2026-07-02",
+  "reported": true,
+  "report_date": "2026-07-02"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/30/nano-banana-2-lite/",
+  "title": "Simon 试了 Nano Banana 2 Lite，也就是 Gemini 3.1 Flash Lite Image：更快更便宜，图像效果比四月版本好，但文字",
+  "date": "2026-07-01",
+  "reported": true,
+  "report_date": "2026-07-01"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/29/html-table-extractor/",
+  "title": "HTML table extractor",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/29/ornith/",
+  "title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-29"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/26/incident-report/",
+  "title": "Incident Report: CVE-2026-LGTM (satire, two AI review agents loop, $41,255)",
+  "date": "2026-06-26",
+  "reported": true,
+  "report_date": "2026-06-27"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/26/dean-w-ball/",
+  "title": "Quoting Dean W. Ball",
+  "date": "2026-06-26",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/26/timothy-b-lee/",
+  "title": "Quoting Timothy B. Lee",
+  "date": "2026-06-26",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/25/ai-and-liability/",
+  "title": "AI and Liability (German court holds Google liable for AI Overviews)",
+  "date": "2026-06-25",
+  "reported": true,
+  "report_date": "2026-06-26"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/24/tom-macwright/",
+  "title": "Quoting Tom MacWright",
+  "date": "2026-06-24",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/",
+  "title": "Prompt Injection as Role Confusion",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/22/porting-moebius/",
+  "title": "Porting the Moebius 0.2B Image Inpainting Model to the Browser with Claude Code",
+  "date": "2026-06-22",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/",
+  "title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
+  "date": "2026-06-21",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/19/sean-lynch/",
+  "title": "Quoting Sean Lynch",
+  "date": "2026-06-19",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/18/datasette-acl/",
+  "title": "datasette-acl 0.6a0",
+  "date": "2026-06-18",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/18/datasette-apps/",
+  "title": "Datasette Apps: Host custom HTML applications inside Datasette",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-19"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/17/charity-majors/",
+  "title": "Quoting Charity Majors",
+  "date": "2026-06-17",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/17/glm-52/",
+  "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
+  "date": "2026-06-17",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/17/click-to-play-component/",
+  "title": "<click-to-play> — a still that plays",
+  "date": "2026-06-17",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/16/datasette/",
+  "title": "datasette 1.0a34",
+  "date": "2026-06-16",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/",
+  "title": "Quoting Matteo Wong, The Atlantic",
+  "date": "2026-06-16",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/",
+  "title": "The Fable 5 Export Controls Harm US Cyber Defense",
+  "date": "2026-06-16",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/",
+  "title": "'They screwed us': Personality clashes sent Anthropic's models offline",
+  "date": "2026-06-15",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/16/georgi-gerganov/",
+  "title": "Quoting Georgi Gerganov",
+  "date": "2026-06-16",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/",
+  "title": "Why AI hasn't replaced software engineers, and won't",
+  "date": "2026-06-14",
+  "reported": true,
+  "report_date": "2026-06-15"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/15/julia-evans/",
+  "title": "Quoting Julia Evans",
+  "date": "2026-06-15",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/",
+  "title": "Publishing WASM wheels to PyPI for use with Pyodide",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-14"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/13/luau-wasm/",
+  "title": "luau-wasm 0.1a0",
+  "date": "2026-06-13",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/",
+  "title": "Mapping SQLite result columns back to their source table.column",
+  "date": "2026-06-13",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/13/us-government-directive-to-suspend-access/",
+  "title": "US government directive to suspend access to Fable 5 and Mythos 5",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-13"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/12/openai-webrtc/",
+  "title": "OpenAI WebRTC Audio Session, now with document context",
+  "date": "2026-06-12",
+  "reported": true,
+  "report_date": "2026-06-13"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/12/andrew-singleton/",
+  "title": "Quoting Andrew Singleton",
+  "date": "2026-06-12",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+  "title": "Claude Fable is relentlessly proactive",
+  "date": "2026-06-11",
+  "reported": true,
+  "report_date": "2026-06-12"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/11/datasette/",
+  "title": "datasette 1.0a33",
+  "date": "2026-06-11",
+  "reported": true,
+  "report_date": "2026-06-12"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/11/asyncinject/",
+  "title": "asyncinject 0.7",
+  "date": "2026-06-11",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/",
+  "title": "Anthropic Walks Back Policy That Could Have 'Sabotaged' AI Researchers Using Claude",
+  "date": "2026-06-11",
+  "reported": true,
+  "report_date": "2026-06-11"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/",
+  "title": "If Claude Fable stops helping you, you'll never know",
+  "date": "2026-06-10",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/10/jeremy-howard/",
+  "title": "Quoting Jeremy Howard",
+  "date": "2026-06-10",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/10/datasette-agent/",
+  "title": "datasette-agent 0.2a0",
+  "date": "2026-06-10",
+  "reported": true,
+  "report_date": "2026-06-11"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/10/diffusiongemma/",
+  "title": "DiffusionGemma",
+  "date": "2026-06-10",
+  "reported": true,
+  "report_date": "2026-06-11"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/9/claude-fable-5/",
+  "title": "Initial impressions of Claude Fable 5",
+  "date": "2026-06-09",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/9/llm/",
+  "title": "llm 0.32a3",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/",
+  "title": "Setting a custom price for a model in AgentsView",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/",
+  "title": "Quoting Andrej Karpathy",
+  "date": "2026-06-09",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/8/wwdc/",
+  "title": "Siri AI at WWDC 2026",
+  "date": "2026-06-08",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/7/datasette-agent-edit/",
+  "title": "datasette-agent-edit 0.1a0",
+  "date": "2026-06-07",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/6/micropython-wasm/",
+  "title": "micropython-wasm 0.1a2",
+  "date": "2026-06-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/",
+  "title": "Running Python code in a sandbox with MicroPython and WASM",
+  "date": "2026-06-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/",
+  "title": "OpenAI Help: Lockdown Mode",
+  "date": "2026-06-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/5/andreas-kling/",
+  "title": "Quoting Andreas Kling",
+  "date": "2026-06-05",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/",
+  "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/",
+  "title": "Quoting Emanuel Maiberg, 404 Media",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+  "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+  "date": "2026-06-03",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/",
+  "title": "Microsoft's new MAI models",
+  "date": "2026-06-02",
+  "reported": false,
+  "report_date": null
+ }
+]

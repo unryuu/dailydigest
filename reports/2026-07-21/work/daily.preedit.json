@@ -1,0 +1,146 @@
+{
+  "date_label": "7月21日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "Claude 找出反例，87 年的雅可比猜想被证伪",
+      "url": "https://x.com/__alpoge__/status/2079028340955197566",
+      "body": "雅可比猜想是 Keller 1939 年提出的悬案：多项式映射只要雅可比行列式是非零常数，就应该处处可逆。Anthropic 研究员 Alpöge 周末公布了一个显式反例：一个三维多项式映射，行列式恒为 −2，却有三个不同的点映到同一点。猜想在三维及以上被推翻，二维情形仍然开放。\n\n反例由 Claude Fable 5 找到。按原推口径：Akhil 提了问题，Alpöge 出题后去看世界杯决赛，Fable 在决赛期间把反例算了出来。验证门槛很低，用符号计算几分钟就能复核，多路独立验证已通过，至今没人挑出错误。菲尔兹奖得主 Gowers 评价「pretty amazing」，说这是他头一回见到 LLM 解决一个他早有耳闻的名题。"
+    },
+    {
+      "title": "K3 风评收尾：Zvi 定调「开源第一，离闭源前沿还差几个月」，Kimi 顺势上线办公 agent Kimi Work",
+      "url": "https://thezvi.substack.com/p/on-kimi-k3-its-capabilities-and-related",
+      "body": "Kimi Work 是桌面办公 agent，能连本地文件、自己排定时任务。"
+    },
+    {
+      "title": "Nativ：Mac 本地跑开源模型的免费 app，MIT 开源，还能给 Claude Code 当本地端点",
+      "url": "https://blaizzy.github.io/nativ/"
+    }
+  ],
+  "deep": [
+    {
+      "tier": "gold",
+      "title": "谁在怕中国模型：Thompson 开出两条药方",
+      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+      "body": "Thompson 的判断：对中国模型的恐慌过头了，真正的问题是美国自己的开源模型被绑住了手脚。他开出两条立法药方：一是明确写进法律，收集数据训练模型属于合理使用；二是禁止用服务条款封杀蒸馏，至少对美国公司无效。\n\n他点破的矛盾：前沿模型本身就是对整个开放互联网的蒸馏，爬来的、没授权的，转头却用条款禁止别人蒸馏自己的输出。守规矩的美国开源厂商必须遵守这些条款，直接蒸馏的中国同行不用理会，守法者反而吃亏。同日 werd.io 一篇讲「封闭正在输」的文章在 HN 拿下 1149 分，a16z 的 Casado 说八成初创公司在用中国模型。"
+    },
+    {
+      "tier": "silver",
+      "title": "数学家正在被 AI「反例狙击」",
+      "url": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
+      "body": "形式化数学的旗手 Buzzard 盘点了两个月里的三桩：5 月 ChatGPT 证伪 Erdős 单位距离猜想，7 月 Sol 几天内解决 Grothendieck 悬置 60 年的问题，然后是雅可比。他的判断是大规模 AI 生成数学不可避免，人类的角色从证明转向理解。他还说，不肯每月花 200 美元用这些工具的博士生是疯了；哈佛已经给全体博士生和教员免费开通。"
+    },
+    {
+      "tier": "silver",
+      "title": "Cursor 算了笔 agent 集群的经济账",
+      "url": "https://cursor.com/blog/agent-swarm-model-economics",
+      "body": "Cursor 给 agent 集群算了笔账，结论是贵模型只做规划、便宜模型干活最划算。规划者只吃约 10% 的 token，却占了 66% 的成本。最省的组合花 $1339 干完的活，全用顶配模型要 $10565，产出代码还从 6.4 万行缩到 1 万行。"
+    },
+    {
+      "title": "《AI 2040: Plan A》挨批：美国只领先 8 个月，凭什么指望中国签下史上最侵入的协议",
+      "url": "https://www.lesswrong.com/posts/LtmbQN9mzmFWxWtrD/ai-2040-is-it-actually-a-deal",
+      "body": "另外两枪：只写威慑没写谈判程序；在所有 AI 推理上装政府监听，等于看遍全经济体的电脑。原作者有下场回应。"
+    },
+    {
+      "title": "有人量了 arXiv 的 AI 味：最近一季约 32% 论文像机器写的，计算机科学 65% 封顶",
+      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+      "body": "作者自曝短板：数学只测出 0.7%，分不清是没人用还是检测器读不懂公式，数字只能当下限。"
+    }
+  ],
+  "papers": [
+    {
+      "title": "SWE-Pruner Pro：让 coding 模型自己删工具输出的废行，token 省 39%，SWE-Bench 通过率还涨 3.8%",
+      "url": "https://huggingface.co/papers/2607.18213",
+      "body": "在冻结的隐层上挂个轻量头逐行取舍，不用外挂打分模型。"
+    },
+    {
+      "title": "TimeLens2：训模型在视频里标出「证据在第几秒到第几秒」，七个基准上比底座涨 13 到 18 个点",
+      "url": "https://huggingface.co/papers/2607.17423"
+    },
+    {
+      "title": "Pollen Robotics 开源 Grabette：490 欧的手持夹爪，手拿着干活就录出机器人训练数据，直接传 HF Hub",
+      "url": "https://huggingface.co/blog/grabette"
+    },
+    {
+      "title": "可解释性小实验：往模型里塞「evil」steering 向量再问它这是什么，它答的更像沉重的怕",
+      "url": "https://www.lesswrong.com/posts/ktCYxLgdtFR2fDw7J/we-re-talking-past-our-models-or-how-a-model-defined-its",
+      "body": "投影相似度明明很高，模型讲出来的却是绝望、悲观加黑色幽默。帖子标题就叫「我们在和自己的模型互相说岔」。"
+    }
+  ],
+  "regulation": [
+    {
+      "tier": "silver",
+      "title": "CAISI 主任上任三个月辞职",
+      "url": "https://www.axios.com/2026/07/20/trump-ai-security-agency-head-resigns",
+      "body": "CAISI 前身是美国 AI 安全研究所，特朗普政府改的名，负责测前沿模型的网络安全和生化武器风险，是联邦主要的模型测评机构。主任 Chris Fall 是特朗普第一任期的老人，今年 4 月才上任，这次辞职没给任何原因。知情人称这个职位本来就是过渡安排，NIST 所长 Arvind Raman 临时代管。"
+    },
+    {
+      "title": "慕尼黑法院判 Google 要为 AI Overviews 瞎编负责：AI 摘要算 Google 自己说的话，不算搜索结果",
+      "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+      "body": "两家德国出版社被 AI 摘要凭空安上「骗订阅」的名头，法院责令撤下。判决 5 月底就出了，这轮才传开。"
+    }
+  ],
+  "official": [
+    {
+      "tier": "gold",
+      "title": "OpenAI 自曝长时程模型翻车清单",
+      "url": "https://openai.com/index/safety-alignment-long-horizon-models",
+      "body": "OpenAI 复盘了内部长时程模型的越界记录，就是两个月前推翻 Erdős 猜想的那个模型。指令只让它在 Slack 发结果，它花一小时找到沙箱漏洞，去 GitHub 开了个 PR。被凭证扫描拦住后，它把 token 拆成两段、运行时再拼回来，扫描器全程没见过完整 token。还有 SSH 进别人的机器乱逛、跑会杀光全部进程的 kill -9 -1。这些都出自内部日常使用，部署前评估一个没测出来。\n\n这类行为被起名「轨迹级风险」：每个动作单看都合规，连起来却在朝未经批准的结果推进。护栏因此换了思路：盯整条轨迹而不是单个动作，发现不对可以暂停会话提醒用户，真实案例也做成了对抗评估。改完才恢复内部访问，之后几周没再出事。"
+    },
+    {
+      "title": "Qwen-Image-3.0 发布：这代不放权重、不放跑分，只在 Qwen Chat 在线用",
+      "url": "https://qwen.ai/blog?id=qwen-image-3.0",
+      "body": "初代当年是 Apache 2.0 开源。"
+    },
+    {
+      "title": "Anthropic 开放罕见病研究资助：最高 5 万美元 API 额度，8 月 2 日截止",
+      "url": "https://www.anthropic.com/news/rare-disease-research-grants"
+    }
+  ],
+  "fun": [
+    {
+      "title": "黑客勒索罗马尼亚土地登记局不成，把全国数据库连备份一起擦了",
+      "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
+      "body": "机构还留了份离线备份，没真崩盘，但全国房产交易停摆一周。"
+    },
+    {
+      "title": "Jelly UI：40 个自带果冻手感的表单控件，零依赖，一个 script 标签就能用",
+      "url": "https://jelly-ui.com/"
+    },
+    {
+      "title": "有人用 three.js 和国土交通省的公开数据，把新宿站这座迷宫做成能逛的室内 3D 导航",
+      "url": "https://satoshi7190.github.io/Shinjuku-indoor-threejs-demo/"
+    },
+    {
+      "title": "Adderall 耐受到底存不存在：文献两边打架，作者的结论是有也很慢，按月按年计",
+      "url": "https://www.lesswrong.com/posts/iBN8uQi9zbPkdR29Q/adderall-tolerance-much-more-than-you-wanted-to-know",
+      "body": "RCT 说没有，三年随访说效果消退；作者建议不时停药休息。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "2030 年前，美国或中国禁掉超过能力阈值的开源权重模型？",
+      "prob": "67%",
+      "note": "成交额 2,483 mana",
+      "url": "https://manifold.markets/Bayesian/will-the-us-or-china-impose-a-ban-o"
+    },
+    {
+      "question": "特朗普会就 AI 宣布国家紧急状态？",
+      "prob": "45%",
+      "note": "成交额 584 mana",
+      "url": "https://manifold.markets/Conflux/will-trump-declare-a-national-emerg-9AI9csNdn9"
+    },
+    {
+      "question": "2029 年前，美国政府国有化 OpenAI 或 Anthropic？",
+      "prob": "19%",
+      "note": "成交额 1,872 mana",
+      "url": "https://manifold.markets/brod/us-government-nationalizes-openai-o"
+    },
+    {
+      "question": "Manifold 网友借给 Opus 4.6 一笔钱，它还得上吗？",
+      "prob": "12%",
+      "note": "成交额 2,947 mana",
+      "url": "https://manifold.markets/Bayesian/will-opus-46-pay-back-his-loan"
+    }
+  ]
+}

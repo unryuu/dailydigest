@@ -1,0 +1,86 @@
+[
+  {
+    "id": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+    "title": "Lilian Weng 长文：把「AI 自我改进」拆成一门工程",
+    "date": "2026-07-08",
+    "reported": true,
+    "report_date": "2026-07-08"
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
+    "title": "Scaling Laws, Carefully",
+    "date": "2026-06-24",
+    "reported": true,
+    "report_date": "2026-06-26"
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2025-05-01-thinking/",
+    "title": "Why We Think",
+    "date": "2025-05-01",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/",
+    "title": "Reward Hacking in Reinforcement Learning",
+    "date": "2024-11-28",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2024-07-07-hallucination/",
+    "title": "Extrinsic Hallucinations in LLMs",
+    "date": "2024-07-07",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2024-04-12-diffusion-video/",
+    "title": "Diffusion Models for Video Generation",
+    "date": "2024-04-12",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2024-02-05-human-data-quality/",
+    "title": "Thinking about High-Quality Human Data",
+    "date": "2024-02-05",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
+    "title": "Adversarial Attacks on LLMs",
+    "date": "2023-10-25",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2023-06-23-agent/",
+    "title": "LLM Powered Autonomous Agents",
+    "date": "2023-06-23",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
+    "title": "Prompt Engineering",
+    "date": "2023-03-15",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/",
+    "title": "The Transformer Family Version 2.0",
+    "date": "2023-01-27",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://lilianweng.github.io/posts/2023-01-10-inference-optimization/",
+    "title": "Large Transformer Model Inference Optimization",
+    "date": "2023-01-10",
+    "reported": false,
+    "report_date": null
+  }
+]

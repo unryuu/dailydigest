@@ -1,0 +1,14 @@
+{
+  "name": "Karpathy @ X",
+  "slug": "x-karpathy",
+  "length_hint": "short",
+  "homepage": "https://x.com/karpathy",
+  "fetch_url": "https://nitter.kareem.one/karpathy",
+  "fetch_method": "nitter-html",
+  "weight": "极高",
+  "cadence": "X 账号",
+  "cadence_note": "原创约 1 条/9 天，极低频",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "博客源 karpathy 只盯 bearblog，此源补他的推特主输出。一更必看。 抓取规矩（串行慢抓/浏览器 UA/只收原创/镜像单点应对）统一见 pipeline/scout.prompt.md 的 X 源节；解析脚本 scripts/parse_nitter.py。2026-07-23 建源。"
+}

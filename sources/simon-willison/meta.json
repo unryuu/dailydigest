@@ -1,0 +1,14 @@
+{
+  "name": "Simon Willison",
+  "slug": "simon-willison",
+  "length_hint": "short",
+  "homepage": "https://simonwillison.net/",
+  "fetch_url": "https://simonwillison.net/atom/everything/",
+  "fetch_method": "rss",
+  "weight": "高",
+  "cadence": "连续型",
+  "cadence_note": "每天 1-5 篇，全天滚动",
+  "check_frequency": "daily",
+  "window_hours": 24,
+  "notes": "日更雷达，新工具新用法，实操反直觉细节多。高产，但质量稳定，值得每天扫。"
+}

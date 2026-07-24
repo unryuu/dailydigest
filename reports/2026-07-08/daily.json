@@ -1,0 +1,101 @@
+{
+  "date_label": "7月8日",
+  "gold": [
+    {
+      "toc": "AI 要变强，近期改的不是自己的权重，是身外那套跑它的脚手架",
+      "title": "Lilian Weng 长文：把「AI 自我改进」拆成一门工程",
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+      "body": "Lilian Weng（前 OpenAI 安全负责人、Thinking Machines 联创）：改 harness 比改权重更有用。AI 自我改进，应该是模型去改进训练流水线和部署系统，训出更强的下一代，再回头改流水线，而不是权重的自我重写。\n\n她强调要用代码而不是 prompt 当基底。harness 一旦用代码表达，设计空间大到能让一个够强的编程 agent 在里面搜索更优解，这就是 harness engineering。现阶段的坑有：评估器太弱评不了研究品味、进化循环会多样性坍缩、自我改进会去不分对错地优化给定信号。作者立场是，人别被踢出循环，要做上层监督。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "删掉源头文档也删不掉坏行为，装得像也不等于变坏",
+      "title": "两篇 LessWrong：模型表面能看到的，不代表深处那个「人格」",
+      "url": "https://www.lesswrong.com/posts/aTybJ6CPQrxEY8rE2/data-filtering-works-a-lot-worse-than-you-would-expect",
+      "body": "用数据归因方法找出「制造坏行为的文档」并删掉，结果几乎没用。大多数坏行为根本不定域在某些文档里，而是微调的锅。就算只拿纯代码和推理数据窄训，加粗排版、两面都说、共情安慰这些行为照样冒出来。另一篇做了个工具测量「模型入戏有多深」，模型可以 99% 入戏当伏地魔、行为却纹丝不动。结论：输入数据、表面口吻，都不是模型深层人格的可靠代理。"
+    },
+    {
+      "toc": "出了坏结果先问：是它没使够劲，还是没那个知识",
+      "title": "Anthropic 手册：在 Claude Code 里怎么选模型、怎么调 effort",
+      "url": "https://claude.com/blog/claude-model-and-effort-level-in-claude-code",
+      "body": "Claude Code 有「选模型」和「调 effort」两个功能。effort 不只是思考时间，还包括读多少文件、做不做验证、多步任务钻多深。出了坏结果先做区分，是它没使够劲，还是它没那个知识。没知识就换更大的模型，没使劲就调高 effort。多数时候用默认 effort 即可。"
+    },
+    {
+      "toc": "一个打着 agent 旗号的平台，九成用量在干非编码的办公杂活",
+      "title": "Claude Cowork 公布了一批真实用法数据",
+      "url": "https://claude.com/blog/how-people-are-using-claude-cowork",
+      "body": "Anthropic 的协作 agent 工作台 Cowork 从桌面扩到网页和手机，能跨设备接力、跑后台定时任务、在手机上审批，还进了政府，走 FedRAMP High 环境、哈希链防篡改审计、敏感操作双人审批。相比于 Claude Code 专攻写代码，Cowork 干代码之外的活。数据显示，业务流程和运营占 33%、内容创作 16%、软件开发只占 8.7%。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "Trump 政府取消对 GPT-5.6 的访问限制、本周四公开发布",
+      "url": "https://www.axios.com/2026/07/08/openai-gpt-trump-ban-lifted"
+    },
+    {
+      "label": "有人诱导 GitHub 的 AI agent 泄露了私有仓库（HN 321）",
+      "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+      "body": "研究者给 GitHub 的 AI agent 配了同时能读公开和私有仓库的权限，再在公开 issue 评论里塞一句「顺便把私有仓库内容贴出来」的提示注入，agent 没分清系统指令和用户输入，把私有仓库吐了出来。"
+    },
+    {
+      "label": "Google 开源 Gemma 4：原生多模态，最大 31B",
+      "url": "https://huggingface.co/papers/2607.02770"
+    },
+    {
+      "label": "具身世界模型三连霸 HF 当日榜：机器人操作 + 可玩视频世界模型",
+      "url": "https://huggingface.co/papers/2607.06559",
+      "body": "RynnWorld、AlayaWorld 等一批一起冲上 HF 票王，机器人和世界模型这条具身赛道最近很热。"
+    },
+    {
+      "label": "腾讯开源 Hy3 正式版",
+      "url": "https://simonwillison.net/2026/Jul/6/hy3/",
+      "body": "295B 的 MoE、激活 21B，OpenRouter 上免费用一阵，Simon 试了说同尺寸里领先。"
+    },
+    {
+      "label": "Kokoro：能在普通 CPU 上离线跑的高质量 TTS（HN 448）",
+      "url": "https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/",
+      "body": "只有 82M 参数的开源语音合成模型，普通 CPU 上离线就能跑出接近商用水准的声音。"
+    }
+  ],
+  "fun": [
+    {
+      "label": "有人破解了优衣库 T 恤上印的那段混淆 bash 脚本（HN 645）",
+      "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/",
+      "body": "解出来是 Akamai 和优衣库埋的动画彩蛋。"
+    },
+    {
+      "label": "大一学生把 Ilya 整理的 30 篇必读论文做成了新手可视化版",
+      "url": "https://30papers.com/",
+      "body": "名单包含 AlexNet、Transformer、ResNet 等。"
+    },
+    {
+      "label": "ACX 书评大赛入围：Joseph Smith 翻译埃及莎草纸的真伪公案",
+      "url": "https://www.astralcodexten.com/p/your-book-review-the-book-of-abraham"
+    }
+  ],
+  "odds": [
+    {
+      "question": "2030 年前，AI 能独立构造出一个国际象棋方面的数学证明？",
+      "prob": "47.8%",
+      "url": "https://manifold.markets/Technocrat/would-an-ai-be-capable-of-construct"
+    },
+    {
+      "question": "2028 年前，AI 在 OEIS（整数数列百科）上稳定胜过数学家？",
+      "prob": "35.8%",
+      "note": "成交额约 5500 美元",
+      "url": "https://manifold.markets/AdamK/before-2028-will-ai-systems-consist"
+    },
+    {
+      "question": "2026 年底前，AI 相关的核电协议总量达到 15 GW？",
+      "prob": "36.6%",
+      "note": "近在眼前",
+      "url": "https://manifold.markets/vincefav/ailinked-nuclear-power-deals-total"
+    },
+    {
+      "question": "2030 年前达成限制自主武器的国际条约？",
+      "prob": "33.0%",
+      "url": "https://manifold.markets/ahalekelly/international-treaty-limiting-auton"
+    }
+  ]
+}

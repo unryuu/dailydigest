@@ -1,0 +1,57 @@
+{
+  "date_label": "6月29日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "WSJ 说中国网安追平 Anthropic，Zvi 一条判据就拆完了，当天还有个活样本",
+      "title": "Zvi 拆穿 WSJ「中国网安已追平 Anthropic」：会找漏洞 ≠ 能自主串成 exploit，差距其实在拉大",
+      "url": "https://thezvi.substack.com/p/wsj-article-claiming-china-has-matched",
+      "body": "WSJ 头条说中国靠 GLM-5.2 加工具链已在网安追平 Anthropic，Zvi 判这标题「直接是假的」。他的反驳只有一条，但够硬：能在别人指给你的代码里找到一个漏洞，跟能自主、规模化地发现漏洞并把一堆看似无关的漏洞串成可用 exploit，是两个完全不同的能力层级。后者才是 Mythos 的真护城河，GLM-5.2、Opus 4.8、GPT-5.6 在同等难度上都做不到。Zvi 还加了一句：按所需计算轮数和绝对耗时算，差距其实在拉大而非缩小。\n\n同一天 HuggingFace 上冒出一个叫 Chitos 的安全工具，正好当了这条分水岭的活体测试。Chitos 自称能做到 detection-to-proof，也就是从「发现漏洞」推进到「证明可以利用」，敢在标题写 <b>That Actually Exploits</b>。但通篇拿不出一个跑通的串联 exploit 输出：5 个预置样例只是可加载的演示，exploit 成功率和误报率全未披露，连自己都注明「真实精度按目标环境另测」。它跑在自研的 Darwin-398B 模型上，声称多个开源榜第一，安全相关却只给了一个元认知自我纠错指标。Zvi 那条抽象判据「能验单点、串不起来」，被 Chitos 钉了个具体的实锤。"
+    },
+    {
+      "tier": "gold",
+      "toc": "机器人开始自己迭代策略了，万卡集群成了体量签名，Jack Clark 给人类时代写挽歌",
+      "title": "Import AI 463：机器人开始自我改进、腾讯万卡集群曝光，Jack Clark 给人类时代写了篇挽歌",
+      "url": "https://jack-clark.net/2026/06/29/import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-essay-for-the-human-era/",
+      "body": "本期三条主轴。第一条，NVIDIA 的 ENPIRE 框架让真实机器人实现自我迭代：剪扎带、整理针盒、把 GPU 插进主板，在这些灵巧操作任务上拿到 99% 成功率，8 个 agent 并行部署效果优于单 agent。但 Jack Clark 指出一个被忽略的天花板：这类系统能攻克多复杂的任务，取决于你能不能自动评估结果和自动复位环境。RSI（递归自我改进）主题之前报过 Anthropic 在软件侧的数据，这次是硬件侧的新分支。\n\n第二条，腾讯公开了 ARGUS，一个在超万卡生产集群上跑了六个多月的常开 tracing 系统，诊断过 12,960-GPU 的 MoE 训练任务。Jack 的评价很有意思：他不夸方法新，专门夸「能养出这种 debug 工具本身就是 broader sophistication 的技术签名」，把它读成体量和机构能力的证据。第三条，他转了一篇散文，把前两条硬新闻收进一个挽歌框架：当竞争压力让人类自愿退出决策回路，「自己决定命运」的时代是不是正在结束？Jack 框成给人类时代的安魂曲，抛出问题但没给答案。"
+    },
+    {
+      "tier": "silver",
+      "toc": "拆台的不是反对派，是当初定「创新优先」国策的那个人",
+      "title": "亲 AI 阵营开始分裂：拆台的不是反对派，是当初定下「创新优先」国策的 David Sacks",
+      "url": "https://www.axios.com/2026/06/29/trump-ai-model-release-delays-tech-backlash",
+      "body": "一年前还铁板一块的亲 AI 联盟裂开了，裂缝不是来自外部反对者，而是内部的国安鹰派和创新加速派打起来了。导火索是白宫接连干预模型发布，从 Anthropic 的 Fable 5/Mythos 5 到 OpenAI 的 GPT-5.6 分阶段发布。最响的反水来自 Trump 的前 AI 沙皇 David Sacks：他公开警告门控正在拆掉 Trump 亲手立的「赢 AI 竞赛靠 pro-innovation」路线。投资人也在补刀，逻辑很直白：模型发布权一旦攥在政府手里，实验室的估值就该往下打折。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "OpenAI 把美国 AI 岗位转型框架搬到欧盟，结论：仅 14% 欧盟岗位面临高自动化风险",
+      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu/"
+    },
+    {
+      "label": "DeepSeek V4 正式版计划 7 月中旬上线，API 要搞峰谷定价（高峰翻倍）",
+      "url": "https://cryptobriefing.com/deepseek-v4-launch-peak-hour-pricing/"
+    },
+    {
+      "label": "三星 + SK 公布十年期本土投资计划，三星单家 2655 万亿韩元，重点砸 AI 半导体",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-06-29/doc-iniezxcc0314608.shtml"
+    },
+    {
+      "label": "智谱唐杰谈大模型：主张从「工具性智能」向「认知性智能」跃迁",
+      "url": "https://hub.baai.ac.cn/view/45566"
+    },
+    {
+      "label": "Interconnects 开源生态滚动盘点 #22：Zyphra、Cohere、Poolside 继续扩宽开放模型版图",
+      "url": "https://www.interconnects.ai/p/latest-open-artifacts-22"
+    },
+    {
+      "label": "DeepReinforce 开源编码模型 Ornith-1.0（MIT，最大 397B），Simon 说不错但核心机制未披露",
+      "url": "https://simonwillison.net/2026/Jun/29/ornith/"
+    },
+    {
+      "label": "流媒体平台 Tidal 发 AI 政策声明，HN 211 分，版权与平台治理信号",
+      "url": "https://tidal.com/ai-policy"
+    }
+  ]
+}

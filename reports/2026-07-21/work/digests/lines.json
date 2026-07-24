@@ -1,0 +1,148 @@
+{
+  "items": [
+    {
+      "id": "kimi-oneliner",
+      "section": "industry",
+      "label": "K3 收尾：Zvi 定调「开源第一，但离闭源前沿还差几个月」，Kimi 顺势上线办公 agent Kimi Work",
+      "body": "Nathan Lambert 把这轮叫开源权重的又一次加码；Kimi Work 是桌面办公 agent，连本地文件、会自己排定时任务。",
+      "url": "https://thezvi.substack.com/p/on-kimi-k3-its-capabilities-and-related",
+      "status": "ok",
+      "note": "三个链接都核过。Zvi 结论：确实强、稳进前沿前三，但 benchmark 表现比实际能力虚高。已按指示压成一条。"
+    },
+    {
+      "id": "turner-quit",
+      "section": "industry",
+      "label": "（重复）Alex Turner 离职即 07-17 已报的 TurnTrout 离职",
+      "url": "https://www.lesswrong.com/posts/3RfJLcmkztSTq9afc/demis-hassabis-on-the-new-coming-age",
+      "status": "重复，建议丢弃",
+      "note": "TurnTrout 就是 Alex Turner。07-17 银3 已报离职本体（五角大楼合同），07-20 group-1 已报 Zvi 这篇 Part 2 的全部新细节（Dean 不作为、「承诺一碰权力就蒸发」等）。今天没有任何新增量，建议丢弃。"
+    },
+    {
+      "id": "nativ",
+      "section": "industry",
+      "label": "Nativ：Mac 本地跑开源模型的免费 app，MIT 开源、专吃 Apple Silicon，还能给 Claude Code 当本地端点",
+      "url": "https://blaizzy.github.io/nativ/",
+      "status": "ok",
+      "note": "是 macOS app + 全开源（MLX-VLM 底座），无账号无订阅，支持文本/图像/视频/音频。"
+    },
+    {
+      "id": "ai2040-critique",
+      "section": "deep",
+      "label": "07-10 那篇《AI 2040: Plan A》挨了一枪：美国只领先 8 个月，凭什么指望中国签下史上最侵入的协议",
+      "body": "另外两枪：只写了威慑没写谈判程序；政府在所有 AI 推理上装监听，等于看遍全经济体的电脑。Plan A 作者有下场回应。",
+      "url": "https://www.lesswrong.com/posts/LtmbQN9mzmFWxWtrD/ai-2040-is-it-actually-a-deal",
+      "status": "ok",
+      "note": "约 3000 字，三个批评点都有具体论证，原作者在评论区有实质回应。建议升银，当 07-10 金牌的后续对打。"
+    },
+    {
+      "id": "cursor-swarm",
+      "section": "deep",
+      "label": "Cursor 算了笔 agent 集群的经济账：贵模型做规划、便宜模型干活",
+      "body": "规划者只吃约 10% token 却占 66% 成本；最省组合 $1339 干完的活，单一顶配模型要 $10565，产出代码还从 6.4 万行缩到 1 万行。",
+      "url": "https://cursor.com/blog/agent-swarm-model-economics",
+      "status": "ok",
+      "note": "硬数字管够（成本对比、合并冲突数从 7 万降到千级、代码量），建议升银。"
+    },
+    {
+      "id": "arxiv-slop",
+      "section": "deep",
+      "label": "有人量了 arXiv 的 AI 味：最近一个整季约 32% 论文像机器写的，计算机科学 65% 封顶",
+      "body": "作者自曝短板：数学只测出 0.7%，分不清是真没人用还是检测器读不懂公式；轻改和全生成也分不开，数字只能当下限。",
+      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+      "status": "ok",
+      "note": "12750 篇、十个学科、2023-2026，对照组误报率 0.4%。测量+自曝失效都有，成色不错。"
+    },
+    {
+      "id": "simon-reverse",
+      "section": "deep",
+      "label": "Simon Willison：逆向工程变便宜了，以前不划算撬的家电私有接口，现在扔给 coding agent 顺手就干了",
+      "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/",
+      "status": "ok",
+      "note": "短文，核心就一句：以前拦人的是维护负担，现在代码便宜到重写也不心疼。一条 label 足够。"
+    },
+    {
+      "id": "swe-pruner",
+      "section": "papers",
+      "label": "SWE-Pruner Pro：让 coding 模型自己判断工具输出哪行该留，token 省 39%，SWE-Bench 通过率还涨 3.8%",
+      "url": "https://huggingface.co/papers/2607.18213",
+      "status": "ok",
+      "note": "在冻结的隐层上挂轻量头做逐行取舍，不用外挂打分模型。"
+    },
+    {
+      "id": "timelens2",
+      "section": "papers",
+      "label": "TimeLens2：训模型在视频里标出「证据在第几秒到第几秒」，三个尺寸在七个基准上比底座涨 13 到 18 个点",
+      "url": "https://huggingface.co/papers/2607.17423",
+      "status": "ok",
+      "note": "配套放了 93K 标注数据集和一个 Wasserstein 距离做的奖励。榜首 82 赞属实方向也扎实。"
+    },
+    {
+      "id": "grabette",
+      "section": "papers",
+      "label": "Pollen Robotics 开源 Grabette：490 欧的手持夹爪，手拿着干活就录出机器人训练数据，直接上传 HF Hub",
+      "url": "https://huggingface.co/blog/grabette",
+      "status": "ok",
+      "note": "双摄像头+IMU，配套机器人端执行器 Gripette 约 120 欧。目标是众包操纵数据集。"
+    },
+    {
+      "id": "evil-dread",
+      "section": "papers",
+      "label": "可解释性小实验：往模型里塞「evil」steering 向量再问它这是什么，它答的更像 dread（沉重的怕）",
+      "body": "投影相似度明明很高，模型讲出来的却是绝望、悲观加黑色幽默；帖子标题就叫「我们在和自己的模型互相说岔」。",
+      "url": "https://www.lesswrong.com/posts/ktCYxLgdtFR2fDw7J/we-re-talking-past-our-models-or-how-a-model-defined-its",
+      "status": "ok",
+      "note": "小而清楚的实验帖，雷达档正好。"
+    },
+    {
+      "id": "caisi-quit",
+      "section": "regulation",
+      "label": "CAISI 主任 Chris Fall 上任三个月辞职，没给原因",
+      "body": "CAISI 前身是美国 AI 安全研究所，特朗普政府改的名，负责测前沿模型的网络安全和生物化武风险，是联邦主要的模型测评机构。知情人称这职位本就是过渡安排，NIST 所长 Arvind Raman 临时代管。Fall 是特朗普第一任期的老人，4 月才上任。",
+      "url": "https://www.axios.com/2026/07/20/trump-ai-security-agency-head-resigns",
+      "status": "ok",
+      "note": "Axios 原文对我们 403，已用 The Hill、CNBC、Yahoo 交叉核实，事实一致；辞职原因各家都说未披露，「过渡安排」出自匿名知情人。银牌料够。备用 url：https://www.cnbc.com/2026/07/20/trumps-head-of-ai-safety-agency-caisi-resigns-after-months-on-job.html"
+    },
+    {
+      "id": "overviews-lawsuit",
+      "section": "regulation",
+      "label": "慕尼黑法院判 Google 要为 AI Overviews 瞎编负责：AI 摘要算 Google 自己说的话，不算搜索结果",
+      "body": "两家德国出版社被 AI 摘要凭空安上「骗订阅」的名头，法院认定平台免责条款不适用，责令撤下。判决 5 月底就出了，这轮才传开。",
+      "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+      "status": "ok",
+      "note": "Batch 转述的「被告」不准确：实际已判决（5/28 慕尼黑地区法院，案号 26 O 869/26），Google 计划上诉。url 已换 The Decoder 原始分析，Engadget 也可。违令最高罚 28.5 万美元。"
+    },
+    {
+      "id": "romania-wipe",
+      "section": "fun",
+      "label": "黑客勒索罗马尼亚土地登记局不成，把全国数据库连备份一起擦了",
+      "body": "瓜点在后手：机构留了一份离线备份，没真崩盘，但全国房产交易停摆一周。黑客被指是阿尔及利亚人，之前还黑过瑞典电子政务。",
+      "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
+      "status": "ok",
+      "note": "入侵用的是有效凭据，现在整个内网推倒重建。"
+    },
+    {
+      "id": "jelly-ui",
+      "section": "fun",
+      "label": "Jelly UI：40 个自带果冻手感的表单控件，纯 Web Components 零依赖，一个 script 标签就能用，MIT 开源",
+      "url": "https://jelly-ui.com/",
+      "status": "ok",
+      "note": "还带暗色模式、RTL 和 WCAG AA 色板，不只是玩具。"
+    },
+    {
+      "id": "shinjuku-3d",
+      "section": "fun",
+      "label": "有人用 three.js 加国土交通省的公开数据，把新宿站这座迷宫做成了能逛的室内 3D 导航",
+      "url": "https://satoshi7190.github.io/Shinjuku-indoor-threejs-demo/",
+      "status": "ok",
+      "note": "页面可达，数据源标注为国交省「新宿駅周辺屋内地図データ」。"
+    },
+    {
+      "id": "adderall",
+      "section": "fun",
+      "label": "Adderall 耐受到底存不存在：文献两边打架，作者的结论是有也很慢，按月按年计，建议不时停药休息",
+      "url": "https://www.lesswrong.com/posts/iBN8uQi9zbPkdR29Q/adderall-tolerance-much-more-than-you-wanted-to-know",
+      "status": "ok",
+      "note": "RCT 和真实剂量数据说没有，MTA 三年随访说效果消退；作者立场是「文献说死了不存在，太自信」。"
+    }
+  ]
+}

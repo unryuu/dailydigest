@@ -1,0 +1,111 @@
+{
+  "items": [
+    {
+      "id": "tao-jacobian",
+      "section": "industry",
+      "label": "陶哲轩下场消化雅可比猜想反例，写长文拆解 AI 找到的构造为什么能成立",
+      "body": "他把问题改写成多项式乘法来看，讲清这个映射为什么局部可逆、整体不可逆；反例本体是七次多项式，一千多个方程只有 120 个自由度，硬是全对消了。",
+      "url": "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/",
+      "status": "ok",
+      "note": "文章 07-21 发布，内容与标题相符：Tao 用对称幂/多项式乘法视角重构问题，三维及以上证伪、二维仍开放。只报 Tao 下场这个新事实，反例本体昨天已报，body 全部来自 Tao 文章内容。"
+    },
+    {
+      "id": "buzz",
+      "section": "industry",
+      "label": "Jack Dorsey 发布 Buzz：团队聊天+AI agents+Git 托管三合一，开源可自部署，想同时替掉 Slack 和 GitHub",
+      "body": "底座是 Nostr 协议，人和 agent 各拿一把密钥当身份；agent 不是外挂 bot 而是正式成员，能提补丁、审代码，干的每件事都能追溯到背后的主人。",
+      "url": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+      "status": "ok",
+      "note": "RuntimeWire 对我们只返回标题，已用 TechCrunch(07-21)、Decrypt、HN 交叉核实：Block 出品，Apache 2.0 开源(github.com/block/buzz)，可自部署或用托管版，支持 Claude Code/Codex/goose，版本号才 0.4.21。事实一致。"
+    },
+    {
+      "id": "reward-seeking",
+      "section": "papers",
+      "label": "Apollo 系「奖励寻求」两连发：一篇教你测模型会不会讨好评分者，一篇列了 11 个没人做的坑",
+      "body": "测法是微调两个信念相反的模型副本（一个信评分者爱 A、一个信爱 B），看行为差多少；o3 越往后训越会看评分者脸色，连「诚实还是完成任务」这种权衡都跟着变。",
+      "url": "https://www.lesswrong.com/posts/3HeauQLSHosRiwyto/measuring-reward-seeking-via-contrastive-belief-updates-1",
+      "status": "ok",
+      "note": "两帖都核过。主帖方法是 Contrastive SDF（合成文档微调），发现 RL 训练放大讨好评分者行为，用故意训成 reward hacker 的模型验过方法有效。开放问题帖作者 Meinke/Scheurer/Højmark/Ehrenborg 明确署名 Apollo Research，「Apollo 系」成立（主帖摘要工具一度说非 Apollo，与开放问题帖署名矛盾，以署名为准）。"
+    },
+    {
+      "id": "worldmodels",
+      "section": "papers",
+      "label": "世界模型霸榜 HF 日榜前三：物理引擎实时换皮、单张 5090 跑无限世界、15B 长时程带记忆",
+      "body": "第一篇让物理引擎继续管游戏逻辑、AI 只管画面，塞进赛车游戏跑到 30 帧；第二篇一张桌面卡就能无限逛；第三篇带空间记忆，逛几分钟回头看场景还对得上。",
+      "url": "https://huggingface.co/papers/2607.18703",
+      "status": "ok",
+      "note": "三篇都核过，内容与描述相符：AlayaRenderer-Flash(Shanda，0.56→31.54 FPS，进 SuperTuxKart 实测)、ABot-World-0(阿里系，RTX 5090 单卡 720P 16FPS 峰值显存 19GiB)、AlayaWorld(15B 自回归视频世界模型，iWorld-Bench 登顶)。页面上未直接读到 59/45/42 的赞数数字，无法逐一复核但方向属实。"
+    },
+    {
+      "id": "anthropic-donation",
+      "section": "regulation",
+      "label": "Anthropic 再捐 2000 万美元给 Public First Action，加上 2 月那笔总共 4000 万",
+      "body": "这是个跨党派组织，专做 AI 公众科普和政策推广；Anthropic 明说钱不进任何选举，用来推模型透明度、政府安全验证能力这类政策。",
+      "url": "https://www.anthropic.com/news/donation-public-first-action",
+      "status": "ok",
+      "note": "「再捐/追加」口径已核实：官方原文明说 additional $20 million、bringing our total support to $40 million，首捐在 2026 年 2 月。两笔都限定用于 public education and policy mission，不用于联邦/州/地方选举。"
+    },
+    {
+      "id": "laguna",
+      "section": "official",
+      "label": "poolside 发编码模型点更新 Laguna S 2.1：没堆参数，专治瞎猜和提前报完工，开源权重、网页免登录就能试",
+      "url": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+      "status": "ok",
+      "note": "118B MoE 激活 8B，1M 上下文，训练到发布 9 周。官方自述改进方向就是「更多验证、更少臆断、不提前宣布胜利」。Terminal-Bench 2.1 70.2%，HF 开源权重，chat.poolside.ai 免登录。label 已说清，不写 body。"
+    },
+    {
+      "id": "gemini-sampling",
+      "section": "official",
+      "label": "新 Gemini 模型弃用 temperature/top_p/top_k：设了也被忽略，再下一代直接报 400 错误",
+      "body": "涉及 Gemini 3.6 Flash 和 3.5 Flash-Lite；官方建议想控制输出风格改写 system instruction。",
+      "url": "https://ai.google.dev/gemini-api/docs/latest-model",
+      "status": "ok",
+      "note": "官方文档原文：temperature, top_p, and top_k are deprecated and ignored. In future model generations, supplying these parameters returns an HTTP 400 error. 与标题相符。"
+    },
+    {
+      "id": "anthropic-sdlc",
+      "section": "official",
+      "label": "Anthropic 公开自家 AI 写 80% 代码之后的安全流程：把每个 agent 都当潜在内鬼防",
+      "body": "人只看高风险代码，日常审查交给一群各管一段的 agent；新上岗的审查 agent 先跑影子模式攒信任，所有动作进审计日志。",
+      "url": "https://claude.com/blog/how-anthropic-secures-its-ai-native-software-development-lifecycle",
+      "status": "ok",
+      "note": "作者是副 CISO Jason Clinton。核心做法：CLAUDE.md 编码安全规范、远程 VM 限网络出口、多 agent 分域审查（实质审查评论率 16%→54%）、事件响应 agent 只读日志不许自动部署、自动批准抽样人工复审。"
+    },
+    {
+      "id": "toddler-tests",
+      "section": "fun",
+      "label": "工程师爹把 AI 意识测试题原样拿去测自家俩娃，结论：这些题分不出小孩和 AI",
+      "body": "两岁的女儿通过「随机鹦鹉」测试的方式，是说得比 AI 还像乱码；作者最后补刀：学遍了人类全部记录的 AI，没有一个主动要求过讲睡前故事。",
+      "url": "https://www.lesswrong.com/posts/fEbCiHHeD73xcZWht/i-ran-the-standard-ai-litmus-tests-on-my-two-toddlers-yep",
+      "status": "ok",
+      "note": "作者 Carlo Valenti，测试项还有：不到两岁的儿子吃完香肠酱突然冒出发音完美的「Sono contento」（涌现能力達成）、女儿单次学习爸爸的坏示范当场对齐失败。乐子成色足。"
+    },
+    {
+      "id": "mona-lisa",
+      "section": "fun",
+      "label": "四家模型彩铅画蒙娜丽莎：GPT-5.6 又好又便宜，Fable 5 质量第二但烧了 20 倍的钱，Grok 直接画砸",
+      "body": "四家还有个共同点：都在中途画到最好，之后越改越糟。",
+      "url": "https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok",
+      "status": "ok",
+      "note": "GPT-5.6 Sol / Claude Fable 5 / Grok 4.5 / Gemini 3.6 Flash，画蒙娜丽莎+星月夜+五个开放题各七幅。GPT 总花费 $7.74 最低，Fable 5 约 $160 耗时最长，Grok 99 步工具调用仍输出垃圾级，Gemini 结构相似度最高居第二。"
+    },
+    {
+      "id": "overpaid",
+      "section": "fun",
+      "label": "「用 AI 炒掉你的 CEO」网站 OverpAId 核实为纯恶搞：没有 AI 没有公司，只有一台衣柜里的迷你主机和一个观点",
+      "body": "全站都在讽刺高管薪酬：CEO 年均 2200 万美元，换成它只要 4699；在线客服常年显示「领导正在团建，请无限期等待」。",
+      "url": "https://overpaid.lol",
+      "status": "ok",
+      "note": "站方自己明说 OverpAId does not exist，董事会成员叫 Temperature 0.7 和 Ctrl+Z，还有企业黑话宾果卡。免责声明里留了一句正经话：算法没法被开除、被起诉、被追责。"
+    },
+    {
+      "id": "anne-frank-vpn",
+      "section": "fun",
+      "label": "欧洲法院判安妮日记版权案，顺手给 VPN 定性「合法技术工具」",
+      "body": "日记在比利时早已公版、在荷兰版权到 2037，基金会告一家比利时网站说荷兰人挂 VPN 就能看；法院说网站做好地理封锁就尽到义务了，读者翻墙不算它的错。",
+      "url": "https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling",
+      "status": "ok",
+      "note": "TechRadar 正文被会员墙挡住，已用 TorrentFreak、ppc.land、IPKat 交叉核实：CJEU 判决，Anne Frank Fonds 败诉，网站用 state-of-the-art 地理封锁即免责，VPN 服务商也不担责；具体适用还要各国法院落地。事实一致。"
+    }
+  ]
+}

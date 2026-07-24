@@ -1,0 +1,14 @@
+{
+  "name": "Interconnects (Nathan Lambert)",
+  "slug": "interconnects",
+  "length_hint": "long",
+  "homepage": "https://www.interconnects.ai/",
+  "fetch_url": "https://www.interconnects.ai/feed",
+  "fetch_method": "rss",
+  "weight": "高",
+  "cadence": "不定时型",
+  "cadence_note": "每 3-5 天一篇，无固定规律",
+  "check_frequency": "weekly",
+  "window_hours": 168,
+  "notes": "RLHF/开源模型深度解读，业内判断敏锐，权重高。更勤的话可提日检。Substack 走 /feed。"
+}

@@ -1,0 +1,49 @@
+{
+  "date_label": "6月30日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "两篇新论文背靠背：决定 agent 行不行的不是参数那一栏",
+      "title": "agent 能力的真瓶颈不是堆参数：该停手时停不下来，而堆参数堆推理反而更糟",
+      "url": "https://huggingface.co/papers/2606.28733",
+      "body": "今天两篇 HF 新论文从相反方向戳同一个钩子：agent 的瓶颈不在参数规模。第一篇做了个 28000 任务的新基准，测「该停手时知不知道停」，结果最强模型的及时弃权召回只有 26.7%，而且更大的模型、更多的推理不仅没救、反而更不会及时停；真正管用的是把交互轨迹蒸馏成一套停手规则（叫 convolve，完全不训练），就能把 Llama-70B 从 26.7% 拉到 57.4%。一句话点题：难的不是 agent 能不能弃权，是知不知道何时弃权。\n\n另一头是 InternScience 的 Agents-A1，一个 35B 的 MoE，在部分长程 agent 基准上自报追平甚至超过 1T 的大模型（GAIA 96.0 对 Kimi-K2.6 的 80.6），靠的是放大任务 horizon、域路由蒸馏加专用基础设施，而不是把参数堆上去。两篇合起来，把「scale 参数」这条主路从需求端和供给端同时否掉。口径要留个尾巴：Agents-A1 是技术报告自评，而且自己也承认 MLE-Bench 这类任务还落后 GPT-5.5 近 29 分，别当已证结论。"
+    },
+    {
+      "tier": "silver",
+      "toc": "美团开源 1.6T、全程国产芯片训练，而且是隐身实战登顶后才揭面",
+      "title": "LongCat-2.0：美团开源 1.6T MoE，全程国产 ASIC 训练，先以代号隐身登顶再揭晓",
+      "url": "https://longcat.chat/blog/longcat-2.0/",
+      "body": "美团开源了 LongCat-2.0，1.6T 总参、平均激活 48B 的 MoE，原生 1M 上下文，MIT 许可证、权重直接上了 HuggingFace 和 GitHub。真正的钩子不是它自报的那些编码跑分（没有第三方榜单核验过），而是三件事叠在一起：真开源可商用、全程在 5 万卡国产 AI 芯片超节点上训练（硬件型号官方没点名，外界从底层库推测是昇腾），以及它此前以代号 Owl Alpha 在 OpenRouter 上隐身运行、月吞 11T token 还登了顶，直到现在才揭晓身份。先用真实流量实战登顶、再揭晓是国产全栈训练的开源模型，这个顺序比任何自家跑分都有说服力，是「中国算力自闭环」叙事的一记实锤。通用 agent 能力它自己也承认还落后 Claude Opus 4.8。"
+    },
+    {
+      "tier": "silver",
+      "toc": "央行的央行把这轮 AI 投资和运河、铁路、互联网泡沫并列",
+      "title": "BIS 警告：AI 投资潮像历史上那几场以衰退收场的技术狂热",
+      "url": "https://fortune.com/2026/06/29/bis-central-bank-warning-hyperscaler-data-center-1-trillion-gamble-recession/",
+      "body": "国际清算银行（被称为央行的央行）在年度报告里，把当前这轮 AI 投资潮明确类比 1830 年代运河狂热、1840 年代英国铁路泡沫和 2000 年互联网崩盘，共性是真技术最终吸引了远超实际回报的资本。它担心的不是 AI 本身成不成，而是金融稳定：五大超大规模厂商两年 AI 投入将超 1 万亿美元、已经超过它们的盈利和自由现金流，一旦回报令人失望、融资突然抽身，资本开支繁荣就会变成漫长的投资萧条。BIS 还点了几个吓人的细节：芯片商和云厂互相入股、签长约、回租数据中心的循环融资，藏着同一资产被多次抵押的 2008 式风险；AI 资本开支贡献了今年一季度美国 GDP 增长的约 74%，意味着一次反转不是板块回调而是宏观事件。这和昨天 Dalio 那条不一样，Dalio 谈的是股价估值，BIS 谈的是钱从哪来、坏账谁背。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "Qwen 3.6 27B 被实测帖捧成本地开发的甜点位：M5 Max 上 30 tok/s、8-bit 不掉质，可作专有 API 的现实替代（HN 1041 分）",
+      "url": "https://quesma.com/blog/qwen-36-is-awesome/"
+    },
+    {
+      "label": "Claude 多云分发再下一城：上 Amazon Bedrock 和 Google Cloud（apps gateway 自托管企业控制面），Azure Foundry 也转正 GA",
+      "url": "https://claude.com/blog/claude-apps-gateway-bedrock-google-cloud"
+    },
+    {
+      "label": "Simon Willison 放了个小工具：把富文本表格一键转成 HTML / Markdown / CSV / JSON",
+      "url": "https://simonwillison.net/2026/Jun/29/html-table-extractor/"
+    },
+    {
+      "label": "OSWorld2.0：computer-use agent 的长程真实任务基准更新版",
+      "url": "https://huggingface.co/papers/2606.29537"
+    },
+    {
+      "label": "TUA-Bench（Meta）：通用终端使用 agent 的新基准",
+      "url": "https://huggingface.co/papers/2606.28480"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "LessWrong",
+  "slug": "lesswrong",
+  "length_hint": "long",
+  "homepage": "https://www.lesswrong.com/",
+  "fetch_url": "https://feeds.type3.audio/lesswrong--30-karma.rss",
+  "fetch_method": "rss",
+  "weight": "中",
+  "cadence": "连续型",
+  "cadence_note": "每天多帖，type3 的 30+ karma feed 已滤长尾",
+  "check_frequency": "daily",
+  "window_hours": 168,
+  "notes": "理性主义社区，重心 AI 安全（可解释性/模型福利/时间线）。精读只收 AI，雷达/今日乐子可泛化。是 Zvi 周报的上游原帖源，去重防撞 thezvi。AF 来源加权但此 feed 标不出、靠主题/作者判并标待核。"
+}

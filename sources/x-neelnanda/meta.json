@@ -1,0 +1,14 @@
+{
+  "name": "Neel Nanda @ X",
+  "slug": "x-neelnanda",
+  "length_hint": "short",
+  "homepage": "https://x.com/NeelNanda5",
+  "fetch_url": "https://nitter.kareem.one/NeelNanda5",
+  "fetch_method": "nitter-html",
+  "weight": "中",
+  "cadence": "X 账号",
+  "cadence_note": "约 0.4 条/天，低频",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "可解释性一线，全干货零清洗。注意与 LessWrong 源重叠时保留 LW 长文链接。 抓取规矩（串行慢抓/浏览器 UA/只收原创/镜像单点应对）统一见 pipeline/scout.prompt.md 的 X 源节；解析脚本 scripts/parse_nitter.py。2026-07-23 建源。"
+}

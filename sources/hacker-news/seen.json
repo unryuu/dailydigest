@@ -1,0 +1,1430 @@
+[
+ {
+  "id": "https://github.com/cactus-compute/cactus-hybrid",
+  "title": "Cactus Hybrid：Gemma 4 置信度路由（无牌）",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://news.ycombinator.com/item?id=49012070",
+  "title": "John C. Dvorak 去世（行业大事无牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/",
+  "title": "AI 丑菜单图鉴（乐子）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://www.cole-k.com/2026/07/21/reddit/",
+  "title": "Reddit 锁旧版网页（乐子）",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://bento.page/slides/",
+  "title": "Bento 单文件 PPT（乐子）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+  "title": "陶哲轩与 ChatGPT 雅可比反例完整对话（无牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://dylancastillo.co/posts/pelicanmaxxing.html",
+  "title": "Are AI labs pelicanmaxxing?（银牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://ads.openai.com/",
+  "title": "OpenAI 开始卖广告，自助开户直接上线",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://terrytao.wordpress.com/2026/07/21/a-digestion-of-the-jacobian-conjecture-counterexample/",
+  "title": "陶哲轩下场拆解雅可比猜想反例",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
+  "title": "Jack Dorsey 发布 Buzz",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63",
+  "title": "法官批准 Anthropic 15 亿美元盗版书和解",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+  "title": "Gemini 一口气发三个 Flash 型号",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+  "title": "poolside 发布编码模型 Laguna S 2.1",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://ai.google.dev/gemini-api/docs/latest-model",
+  "title": "新 Gemini 模型弃用 temperature 等采样参数",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok",
+  "title": "四家模型彩铅画蒙娜丽莎",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://overpaid.lol",
+  "title": "纯恶搞网站：用 AI 炒掉你的 CEO",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://www.techradar.com/vpn/vpn-privacy-security/vpns-are-lawful-technical-tools-says-eu-court-in-landmark-anne-frank-copyright-ruling",
+  "title": "欧洲法院安妮日记案顺手判 VPN 合法",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://satoshi7190.github.io/Shinjuku-indoor-threejs-demo/",
+  "title": "把新宿站这座迷宫做成室内 3D 导航",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://jelly-ui.com/",
+  "title": "40 个自带果冻手感的表单控件，零依赖",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
+  "title": "黑客勒索罗马尼亚土地登记局不成，把全国数据库删了",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://qwen.ai/blog?id=qwen-image-3.0",
+  "title": "Qwen-Image-3.0 发布",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+  "title": "有人测了 arXiv 的 AI 味",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
+  "title": "「又锁又闭的美国 AI 正在输」：HN 头版第一，1149 分",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://cursor.com/blog/agent-swarm-model-economics",
+  "title": "Cursor 算了笔 agent 集群的经济账",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
+  "title": "数学家正在被 AI「反例狙击」",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+  "title": "谁在怕中国模型：Thompson 开出两条药方",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://blaizzy.github.io/nativ/",
+  "title": "Nativ：Mac 本地跑开源模型的免费 app",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://x.com/__alpoge__/status/2079028340955197566",
+  "title": "Claude 找出反例，87 年的雅可比猜想被证伪",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109",
+  "title": "Airbus Takes Flight from AWS",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://news.ycombinator.com/item?id=48968606",
+  "title": "Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://github.com/Saivineeth147/lora-speedrun",
+  "title": "LoRA Speedrun - a public wall-clock leaderboard for fine-tuning techniques",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://slcyber.io/research-center/exploit-brokers-pay-500000-for-a-wordpress-rce-i-found-one-with-gpt5-6/",
+  "title": "Exploit brokers pay $500k for WordPress RCEs. I found one with GPT-5.6 and $25",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://codex-resets.com/",
+  "title": "Codex Resets",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://github.com/openai/codex/pull/33972/files",
+  "title": "OpenAI reduces Codex Model Context Size from 372k to 272k",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/",
+  "title": "The Kimi K3 Moment",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://twitter.com/Alibaba_Qwen/status/2078759124914098291",
+  "title": "Qwen3.8 is launching and going open-weight soon",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://www.qwencloud.com/pricing/token-plan",
+  "title": "Qwen 3.8 Max Preview",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://workshop.cjpais.com/projects/transcribe-cpp",
+  "title": "Transcribe.cpp",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/",
+  "title": "NYC may require landlords and realtors to disclose the use of AI in listings",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://quesma.com/blog/custom-deep-research-pipeline/",
+  "title": "I burned all my tokens researching how to save tokens",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+  "title": "What I learned selling 2,500 MIDI recorders: Hardware is not so hard",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://www.half-second.com/",
+  "title": "Half a Second - a book about the XZ backdoor",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://data.stackexchange.com/stackoverflow/query/1953768#graph",
+  "title": "What AI did to stackoverflow in a graph",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://velvetshark.com/ai-company-logos-that-look-like-buttholes",
+  "title": "Why do AI company logos look like buttholes?",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://news.ycombinator.com/item?id=48945241",
+  "title": "AWS: Inaccurate Estimated Billing Data - $1.7 billion",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/",
+  "title": "Fable 5 vs. GPT-5.6 Sol on an NP-Hard Problem: Does /goal help?",
+  "date": "2026-07-18",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://www.kimi.com/blog/kimi-k3",
+  "title": "Kimi K3: Open Frontier Intelligence",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+  "title": "NotebookLM is now Gemini Notebook",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+  "title": "LM Studio Bionic: the AI agent for open models",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1811f859166",
+  "title": "Apple targets dozens of OpenAI employees with legal letters",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://blog.lyc8503.net/en/post/llm-classifier/",
+  "title": "Detecting LLM-Generated Texts with 'Classical' Machine Learning",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
+  "title": "Microsoft Comic Chat is now open source",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6",
+  "title": "$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.kaggle.com/competitions/kaggle-measuring-agi/discussion/724918#3498423",
+  "title": "Blatant AI slop just won a 25k USD DeepMind Kaggle Grand Prize",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/",
+  "title": "How Has Roman Concrete Lasted for Millennia?",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://www.theocharis.dev/blog/llm-critics-are-right-i-use-llms-anyway/",
+  "title": "The LLM Critics Are Right. I Use LLMs Anyway",
+  "date": "2026-07-16",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://prismml.com/news/bonsai-27b",
+  "title": "Announcing Bonsai 27B: first 27B-class model to run on a phone",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://www.ayush.digital/blog/the-memory-heist",
+  "title": "The Memory Heist (tricked Claude into leaking secrets)",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
+  "title": "Cursor 0day: When Full Disclosure Becomes the Only Protection Left",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/15/new-york-democrats-roadmap-data-center-fight",
+  "title": "New York becomes first state to impose a data center moratorium",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://fortune.com/2026/07/14/data-centers-23-billion-electricity-bills/",
+  "title": "Data centers pass ~$23B in electricity costs to the public",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+  "title": "How to stop Claude from saying load-bearing",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://www.artfish.ai/p/offloading-thinking-to-ai",
+  "title": "Are we offloading too much thinking to AI",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://github.com/openai/codex/issues/28058",
+  "title": "Codex starts encrypting sub-agent prompts (openai/codex issue #28058)",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://news.ycombinator.com/item?id=48905091",
+  "title": "Codex scraped the ICM website and discovered 2026 Fields Medal winner list",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://www.hpcwire.com/2026/07/09/spectral-compute-aims-to-set-cuda-free-will-it-succeed/",
+  "title": "Spectral Compute aims to set CUDA free",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://jacobfilipp.com/care/",
+  "title": "Proof of Care in the Age of A.I.",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://raymyers.org/post/zed-creator-calls-spade-a-spade/",
+  "title": "Zig Creator Calls a Spade a Spade, Anthropic Blows Smoke",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+  "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6",
+  "title": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://news.ycombinator.com/item?id=48886741",
+  "title": "Ask HN: Add flag for AI-generated articles",
+  "date": "2026-07-13",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://visitfaroeislands.com/en/plan-your-stay/getting-around/world-first-under-sea-roundabout",
+  "title": "法罗群岛的世界首个海底环岛",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://github.com/cosmtrek/mindwalk",
+  "title": "Show HN Mindwalk：把 coding agent 的会话在 3D 代码地图上回放",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://studyfinds.com/modern-decor-may-be-straining-peoples-brains/",
+  "title": "极简现代装修可能反而更费脑子",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://arxiv.org/abs/2607.07267",
+  "title": "用 26 亿张涂鸦揭示人类概念的隐藏文化差异",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://www.iroh.computer/blog/mesh-llm",
+  "title": "在 iroh 的 P2P 网络上做分布式 LLM 推理",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+  "title": "英伟达、CoreWeave、Nebius 的 GPU 循环融资拆解",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+  "title": "陶哲轩用 coding agent 复活 1999 年的旧工具",
+  "date": "2026-07-12",
+  "reported": true,
+  "report_date": "2026-07-12"
+ },
+ {
+  "id": "https://www.mixfont.com/ghost-font",
+  "title": "Ghost Font：靠动态噪点让人眼读出、静止单帧看不出的隐藏信息",
+  "date": "2026-07-11",
+  "reported": true,
+  "report_date": "2026-07-11"
+ },
+ {
+  "id": "https://manifold.markets/JaundicedBaboon/openais-claimed-proof-of-the-cycle",
+  "title": "OpenAI 说 GPT-5.6 Sol Ultra 用 64 个子代理，一小时证明了 1979 年的 Cycle Double Cover 猜想",
+  "date": "2026-07-11",
+  "reported": true,
+  "report_date": "2026-07-11"
+ },
+ {
+  "id": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+  "title": "苹果起诉 OpenAI，指控前员工盗窃硬件商业秘密",
+  "date": "2026-07-11",
+  "reported": true,
+  "report_date": "2026-07-11"
+ },
+ {
+  "id": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
+  "title": "欧洲议会放行「Chat Control 1.0」，2028 年前可无差别扫描私人通讯（HN 1491 分）",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://github.com/JustVugg/colibri",
+  "title": "「colibri」让 744B 的 GLM-5.2 在 25GB 内存、没有显卡的机器上跑起来（HN 757 分）",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+  "title": "Meta 开放「Muse Spark 1.1」模型 API，多模态 agent 模型，100 万 token 上下文",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://github.com/ronak-create/FableCut",
+  "title": "有人做了个零依赖、能被 AI agent 直接驱动的浏览器视频剪辑器（HN 67）",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/08/openai-gpt-trump-ban-lifted",
+  "title": "Trump 政府取消对 GPT-5.6 的访问限制、本周四公开发布",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+  "title": "有人诱导 GitHub 的 AI agent 泄露了私有仓库（HN 321）",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://ariya.io/2026/03/local-cpu-friendly-high-quality-tts-text-to-speech-with-kokoro/",
+  "title": "Kokoro：能在普通 CPU 上离线跑的高质量 TTS（HN 448）",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/",
+  "title": "有人破解了优衣库 T 恤上印的那段混淆 bash 脚本（HN 645）",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://30papers.com/",
+  "title": "大一学生把 Ilya 整理的 30 篇必读论文做成了新手可视化版",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2/",
+  "title": "AI 利润率崩塌论：前沿厂商的推理毛利还撑得住吗",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://github.com/iOfficeAI/OfficeCLI",
+  "title": "OfficeCLI：给 agent 一套读写 Office 的工具",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://ternlight-demo.vercel.app/",
+  "title": "Ternlight：一个 7MB、直接在浏览器里跑的极小 embedding 模型（HN 272）",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals",
+  "title": "小模型开始在弱网、低算力的地方落地（比如药厂、网络不稳的地区），IEEE Spectrum",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://www.kapa.ai/blog/how-we-prune-rag-context",
+  "title": "把 RAG 喂给模型的上下文裁到「真正用得上的地方」的工程实践（HN 122）",
+  "date": "2026-07-07",
+  "reported": true,
+  "report_date": "2026-07-07"
+ },
+ {
+  "id": "https://twitter.com/thsottiaux/status/2073933490513752151",
+  "title": "OpenAI 放风要把 GPT-5.6 Sol Ultra 塞进 Codex（HN 今日最高 372 分）",
+  "date": "2026-07-06",
+  "reported": true,
+  "report_date": "2026-07-06"
+ },
+ {
+  "id": "https://arxiv.org/abs/2605.20049",
+  "title": "最小配对实验：代码脏不脏不影响 agent 通过率，但脏代码让它多花 7-8% token、多回头翻 34% 的文件",
+  "date": "2026-07-06",
+  "reported": true,
+  "report_date": "2026-07-06"
+ },
+ {
+  "id": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
+  "title": "创业公司 Ornn 想把 GPU 算力做成能像石油一样买卖的商品",
+  "date": "2026-07-06",
+  "reported": true,
+  "report_date": "2026-07-06"
+ },
+ {
+  "id": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
+  "title": "小扎自己说 AI agent 的进展比预期慢，在人人喊 agent 元年的当口，这话挺逆风（HN 313）",
+  "date": "2026-07-06",
+  "reported": true,
+  "report_date": "2026-07-06"
+ },
+ {
+  "id": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+  "title": "更强的模型反而更不擅长使用自定义工具，可能是因为被 RL 练得只认自家工具",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://arxiv.org/abs/2605.21997",
+  "title": "The Log Is the Agent：一篇把「运行日志本身当成 agent」的 arxiv 论文",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://github.com/Trystan-SA/claude-design-system-prompt",
+  "title": "有人逆向复刻了 Claude 的设计系统提示词、做成一个 repo",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://wozniak.ca/blog/2014/08/03/1/index.html",
+  "title": "折腾半天 ORM，不如直接学 SQL",
+  "date": "2026-07-05",
+  "reported": true,
+  "report_date": "2026-07-05"
+ },
+ {
+  "id": "https://epoch.ai/data-insights/cve-severity-spike",
+  "title": "高危 CVE 披露在 Claude Mythos 发布后暴涨约 3.5 倍",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://www.wafer.ai/blog/glm52-amd",
+  "title": "GLM5.2 在 AMD MI355X 上跑到 2626 tok/s/节点，成本比 Blackwell 低一半多",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://mistral.ai/news/leanstral-1-5/",
+  "title": "Mistral 发 Leanstral 1.5 形式化证明模型，让证明变便宜管够",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://github.com/jamesob/local-llm",
+  "title": "jamesob 的「在本地跑 SOTA 大模型」实操指南，HN 297 分",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
+  "title": "巨树是怎么把水泵到几十米高的树顶的",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
+  "title": "有人用形式化方法修了一个 16 年的老 bug",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://phenomenalworld.org/analysis/the-anti-amazon/",
+  "title": "Costco 为什么是「反 Amazon」",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://www.usnews.com/news/top-news/articles/2026-07-03/alibaba-to-ban-claude-code-in-workplace-over-alleged-backdoor-risks-source-says",
+  "title": "阿里 7 月 10 日起全员禁用 Claude Code：所谓「后门」正是 Anthropic 自己埋的指纹检测，蒸馏互撕升级为封杀",
+  "date": "2026-07-03",
+  "reported": true,
+  "report_date": "2026-07-03"
+ },
+ {
+  "id": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/",
+  "title": "WebKit 推出 Safari MCP server，让 agent 直接驱动 Safari 做前端调试",
+  "date": "2026-07-03",
+  "reported": true,
+  "report_date": "2026-07-03"
+ },
+ {
+  "id": "https://www.elenaverna.com/p/please-stop-the-ai-confidence-theater",
+  "title": "Elena Verna 吐槽「AI 自信表演」：模型该学会在没把握时示弱",
+  "date": "2026-07-03",
+  "reported": true,
+  "report_date": "2026-07-03"
+ },
+ {
+  "id": "https://www.niemanlab.org/2026/07/now-were-getting-ai-fake-news-complaining-about-how-ai-fake-news-is-the-death-of-real-news/",
+  "title": "AI 假新闻开始抱怨「AI 假新闻正在杀死真新闻」",
+  "date": "2026-07-02",
+  "reported": true,
+  "report_date": "2026-07-02"
+ },
+ {
+  "id": "https://zcode.z.ai/en",
+  "title": "z.ai 放出 GLM-5.2 官方编码 harness ZCode，开源编码 agent 生态再添一件",
+  "date": "2026-07-02",
+  "reported": true,
+  "report_date": "2026-07-02"
+ },
+ {
+  "id": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/",
+  "title": "Kimi K2.7-Code 正式进入 GitHub Copilot，模型分发渠道补齐",
+  "date": "2026-07-02",
+  "reported": true,
+  "report_date": "2026-07-02"
+ },
+ {
+  "id": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+  "title": "Claude Code 被曝在系统提示里用标点和日期格式打暗号",
+  "date": "2026-07-01",
+  "reported": true,
+  "report_date": "2026-07-01"
+ },
+ {
+  "id": "https://longcat.chat/blog/longcat-2.0/",
+  "title": "LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active",
+  "date": "2026-06-30",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://quesma.com/blog/qwen-36-is-awesome/",
+  "title": "Qwen 3.6 27B is the sweet spot for local development",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://tidal.com/ai-policy",
+  "title": "Tidal AI Policy",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-29"
+ },
+ {
+  "id": "https://arxiv.org/abs/2606.25041",
+  "title": "Wan-Streamer v0.1 (Alibaba, end-to-end real-time interactive model)",
+  "date": "2026-06-25",
+  "reported": true,
+  "report_date": "2026-06-28"
+ },
+ {
+  "id": "https://github.com/deepseek-ai/DeepSpec",
+  "title": "DeepSeek DSpark / DeepSpec (speculative decoding framework, MIT)",
+  "date": "2026-06-27",
+  "reported": true,
+  "report_date": "2026-06-28"
+ },
+ {
+  "id": "https://www.notion.com/help/notion-mail-inbox-is-going-away-what-to-do-next",
+  "title": "Notion Mail inbox is going away (Sep 22)",
+  "date": "2026-06-25",
+  "reported": true,
+  "report_date": "2026-06-28"
+ },
+ {
+  "id": "https://x.com/elonmusk/status/2071184354756477041",
+  "title": "Musk: Grok 4.5 in private testing at SpaceX/Tesla",
+  "date": "2026-06-28",
+  "reported": true,
+  "report_date": "2026-06-28"
+ },
+ {
+  "id": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+  "title": "Google limits Meta's use of its Gemini AI models (FT)",
+  "date": "2026-06-28",
+  "reported": true,
+  "report_date": "2026-06-28"
+ },
+ {
+  "id": "https://github.com/itsthelore/wayfinder-router",
+  "title": "Wayfinder Router: deterministic routing between local and hosted LLM",
+  "date": "2026-06-28",
+  "reported": true,
+  "report_date": "2026-06-28"
+ },
+ {
+  "id": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
+  "title": "OpenAI says the U.S. government will vet users of its latest AI model",
+  "date": "2026-06-26",
+  "reported": true,
+  "report_date": "2026-06-27"
+ },
+ {
+  "id": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+  "title": "US releases powerful Anthropic model Mythos to some US companies",
+  "date": "2026-06-26",
+  "reported": true,
+  "report_date": "2026-06-27"
+ },
+ {
+  "id": "https://blog.doubleword.ai/frontier-os-llm",
+  "title": "The gap between open weights LLMs and closed source LLMs",
+  "date": "2026-06-26",
+  "reported": true,
+  "report_date": "2026-06-27"
+ },
+ {
+  "id": "https://spectrum.ieee.org/ai-in-mathematics",
+  "title": "AI in mathematics is forcing big questions",
+  "date": "2026-06-26",
+  "reported": true,
+  "report_date": "2026-06-27"
+ },
+ {
+  "id": "https://www.fernandoi.cl/posts/hackmyclaw/",
+  "title": "What happened after 2k people tried to hack my AI assistant",
+  "date": "2026-06-25",
+  "reported": true,
+  "report_date": "2026-06-26"
+ },
+ {
+  "id": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
+  "title": "Un-0: Generating Images with Coupled Oscillators",
+  "date": "2026-06-25",
+  "reported": true,
+  "report_date": "2026-06-26"
+ },
+ {
+  "id": "https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html",
+  "title": "OpenAI leans toward waiting until next year for IPO",
+  "date": "2026-06-25",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://github.com/inkeep/open-knowledge",
+  "title": "Show HN: OpenKnowledge - open source AI-first alternative to Obsidian/Notion",
+  "date": "2026-06-25",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+  "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
+  "date": "2026-06-24",
+  "reported": true,
+  "report_date": "2026-06-25"
+ },
+ {
+  "id": "https://www.cnbc.com/2026/06/24/qualcomm-ai-chip-modular-software.html",
+  "title": "Qualcomm to Acquire Modular (~$3.9B all-stock)",
+  "date": "2026-06-24",
+  "reported": true,
+  "report_date": "2026-06-25"
+ },
+ {
+  "id": "https://rubyllm.com/",
+  "title": "RubyLLM: A Ruby framework for all major AI providers",
+  "date": "2026-06-24",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://arxiv.org/abs/2606.24597",
+  "title": "Qwen-AgentWorld: Language World Models for General Agents",
+  "date": "2026-06-24",
+  "reported": true,
+  "report_date": "2026-06-24"
+ },
+ {
+  "id": "https://www.krea.ai/blog/krea-2-technical-report",
+  "title": "Krea 2 Technical Report (open-weight 12B text-to-image)",
+  "date": "2026-06-23",
+  "reported": true,
+  "report_date": "2026-06-24"
+ },
+ {
+  "id": "https://github.com/WeiboAI/VibeThinker",
+  "title": "VibeThinker: 3B param model strong on verifiable reasoning",
+  "date": "2026-06-23",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://github.com/baidu/Unlimited-OCR",
+  "title": "Unlimited OCR: One-Shot Long-Horizon Parsing (Baidu)",
+  "date": "2026-06-23",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://mistral.ai/news/ocr-4/",
+  "title": "Mistral OCR 4",
+  "date": "2026-06-23",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://blog.dshr.org/2026/06/ais-affordability-crisis.html",
+  "title": "AI's Affordability Crisis (DSHR)",
+  "date": "2026-06-23",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://news.ycombinator.com/item?id=48639063",
+  "title": "OpenAI DayBreak - GPT-5.5-Cyber (HN discussion)",
+  "date": "2026-06-23",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://www.marble.onl/posts/cancel_claude.html",
+  "title": "There is minimal downside to switching to open models (cancel_claude)",
+  "date": "2026-06-21",
+  "reported": true,
+  "report_date": "2026-06-22"
+ },
+ {
+  "id": "https://techstackups.com/comparisons/glm-5.2-vs-opus/",
+  "title": "GLM 5.2 vs. Opus",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-22"
+ },
+ {
+  "id": "https://sakana.ai/fugu/",
+  "title": "Sakana Fugu",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-22"
+ },
+ {
+  "id": "https://old.reddit.com/r/ClaudeAI/comments/1ubm53n/official_anthropic_to_require_identity/",
+  "title": "Anthropic to Require ID Verification for Certain Capabilities Starting July 8",
+  "date": "2026-06-21",
+  "reported": true,
+  "report_date": "2026-06-21"
+ },
+ {
+  "id": "https://martinfowler.com/articles/reliable-llm-bayer.html",
+  "title": "Building Reliable Agentic AI Systems (Bayer PRINCE case study)",
+  "date": "2026-06-21",
+  "reported": true,
+  "report_date": "2026-06-21"
+ },
+ {
+  "id": "https://www.devashish.me/p/two-qwen3-models-on-one-dgx-spark",
+  "title": "Two Qwen3 models on one DGX Spark: the residency math",
+  "date": "2026-06-18",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/",
+  "title": "Norway imposes near ban on AI in elementary school",
+  "date": "2026-06-19",
+  "reported": true,
+  "report_date": "2026-06-20"
+ },
+ {
+  "id": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
+  "title": "Hyundai takes full control of Boston Dynamics as SoftBank exits for $325M",
+  "date": "2026-06-19",
+  "reported": true,
+  "report_date": "2026-06-20"
+ },
+ {
+  "id": "https://arrowtsx.dev/bigger-models/",
+  "title": "GPT-5.5 hallucinates 3x more than MIT-licensed GLM-5.2",
+  "date": "2026-06-19",
+  "reported": true,
+  "report_date": "2026-06-20"
+ },
+ {
+  "id": "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/",
+  "title": "LLMs Are Complicated Now",
+  "date": "2026-06-19",
+  "reported": true,
+  "report_date": "2026-06-20"
+ },
+ {
+  "id": "https://blog.cloudflare.com/temporary-accounts/",
+  "title": "Temporary Cloudflare Accounts for AI Agents",
+  "date": "2026-06-20",
+  "reported": true,
+  "report_date": "2026-06-20"
+ },
+ {
+  "id": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+  "title": "Zero-Touch OAuth for MCP (Enterprise Managed Auth)",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-19"
+ },
+ {
+  "id": "https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning",
+  "title": "Zen and the Art of Machine Learning Research",
+  "date": "2026-06-16",
+  "reported": true,
+  "report_date": "2026-06-19"
+ },
+ {
+  "id": "https://blog.alexellis.io/local-ai-is-not-opus/",
+  "title": "Local Qwen isn't a worse Opus, it's a different tool",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-18"
+ },
+ {
+  "id": "https://www.midjourney.com/medical/blogpost",
+  "title": "Midjourney Medical",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-18"
+ },
+ {
+  "id": "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+  "title": "US holds off blacklisting China's DeepSeek; 100+ firms deemed security risks",
+  "date": "2026-06-17",
+  "reported": true,
+  "report_date": "2026-06-18"
+ },
+ {
+  "id": "https://chat.deepseek.com/",
+  "title": "DeepSeek Introduces Vision",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-18"
+ },
+ {
+  "id": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now/",
+  "title": "Running local models is good now",
+  "date": "2026-06-16",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
+  "title": "GLM-5.2 is the new leading open weights model on Artificial Analysis",
+  "date": "2026-06-17",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://wpvip.com/future-of-the-web-2026/",
+  "title": "Sixty percent of US consumers say 'AI' in brand messaging is a turnoff",
+  "date": "2026-06-17",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://charitydotwtf.substack.com/p/ai-demands-more-engineering-discipline",
+  "title": "AI demands more engineering discipline. Not less",
+  "date": "2026-06-17",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://github.com/nex-agi/Nex-N2/issues/4",
+  "title": "Rio de Janeiro's 'homegrown' LLM appears to be a merge of an existing model",
+  "date": "2026-06-14",
+  "reported": true,
+  "report_date": "2026-06-15"
+ },
+ {
+  "id": "https://stratechery.com/2026/anthropics-safety-superpower/",
+  "title": "Anthropic's Safety Superpower (Stratechery)",
+  "date": "2026-06-15",
+  "reported": true,
+  "report_date": "2026-06-15"
+ },
+ {
+  "id": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
+  "title": "Apple Foundation Models",
+  "date": "2026-06-15",
+  "reported": true,
+  "report_date": "2026-06-15"
+ },
+ {
+  "id": "https://openrouter.ai/openrouter/fusion",
+  "title": "Openrouter Fusion API",
+  "date": "2026-06-15",
+  "reported": true,
+  "report_date": "2026-06-15"
+ },
+ {
+  "id": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578",
+  "title": "Amazon CEO's talks with U.S. officials triggered crackdown on Anthropic models (WSJ)",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-14"
+ },
+ {
+  "id": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661",
+  "title": "Police officer investigated for using AI to 'create evidence' in multiple cases",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-14"
+ },
+ {
+  "id": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/",
+  "title": "AI coding at home without going broke",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-14"
+ },
+ {
+  "id": "https://12gramsofcarbon.com/p/tech-things-there-is-a-massive-shadow",
+  "title": "Tech Things: There is a massive shadow hanging over this Fable thing",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-13"
+ },
+ {
+  "id": "https://opensourceaimustwin.com/?share=v2",
+  "title": "Open source AI must win",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-13"
+ },
+ {
+  "id": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+  "title": "How to setup a local coding agent on macOS",
+  "date": "2026-06-12",
+  "reported": true,
+  "report_date": "2026-06-13"
+ },
+ {
+  "id": "https://koenvangilst.nl/lab/claude-fable-shepherds-dog",
+  "title": "Shepherd's Dog: A Game by the Most Dangerous AI Model",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-13"
+ },
+ {
+  "id": "https://github.com/tensorzero/tensorzero",
+  "title": "AI OSS tool repo goes archived overnight after raising $7.3M Seed (tensorzero)",
+  "date": "2026-06-13",
+  "reported": true,
+  "report_date": "2026-06-13"
+ },
+ {
+  "id": "https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/",
+  "title": "AI agent bankrupted their operator while trying to scan DN42",
+  "date": "2026-06-12",
+  "reported": true,
+  "report_date": "2026-06-12"
+ },
+ {
+  "id": "https://mimo.xiaomi.com/mimocode",
+  "title": "MiMo Code is now released and open-source",
+  "date": "2026-06-11",
+  "reported": true,
+  "report_date": "2026-06-12"
+ },
+ {
+  "id": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+  "title": "Kimi K2.7-Code: open-source coding model",
+  "date": "2026-06-12",
+  "reported": true,
+  "report_date": "2026-06-12"
+ },
+ {
+  "id": "https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail",
+  "title": "Anthropic apologizes for invisible Claude Fable guardrails",
+  "date": "2026-06-11",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
+  "title": "AI agent runs amok in Fedora and elsewhere",
+  "date": "2026-06-11",
+  "reported": true,
+  "report_date": "2026-06-11"
+ },
+ {
+  "id": "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/",
+  "title": "Cybersecurity researchers aren't happy about the guardrails on Anthropic's Fable",
+  "date": "2026-06-10",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://support.claude.com/en/articles/15425996-data-retention-practices-for-mythos-class-models",
+  "title": "Anthropic requires 30 day data retention for Fable and Mythos",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+  "title": "Claude Fable 5",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://staniks.github.io/articles/catlantean-3d-blog-1/",
+  "title": "Making Graphics Like it's 1993",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
+  "title": "If Claude Fable stops helping you, you'll never know",
+  "date": "2026-06-09",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://opencv.org/opencv-5/",
+  "title": "OpenCV 5 Is Here: The Biggest Leap in Years for Computer Vision",
+  "date": "2026-06-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://github.com/apple/container/blob/main/docs/container-machine.md",
+  "title": "macOS Container Machines",
+  "date": "2026-06-10",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/",
+  "title": "CEOs who think AI replaces their employees are just bad CEOs",
+  "date": "2026-06-09",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+  "title": "German ruling declares Google liable for false answers in AI Overviews",
+  "date": "2026-06-10",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
+  "title": "Upcoming breaking changes for npm v12",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+  "title": "What it feels like to work with Mythos",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://cupertinolens.com/2026/06/09/wwdc-2026-apple-is-folding/",
+  "title": "WWDC 2026: Apple is Folding",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://aarushgupta.io/posts/kan-fpga/",
+  "title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://phys.org/news/2026-05-giant-star-destroyed-universe-rarest.html",
+  "title": "A giant star may have destroyed itself in one of the rarest explosions",
+  "date": "2026-06-08",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://www.neowin.net/news/google-chrome-is-killing-all-ublock-origin-bypasses-microsoft-edge-opera-to-follow/",
+  "title": "Google Chrome is killing all uBlock Origin bypasses, Edge, Opera to follow",
+  "date": "2026-06-10",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://qunabu.github.io/Gravity/",
+  "title": "Show HN: Gravity – Interactive solar-system simulator, from Newton to Einstein",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/",
+  "title": "RIP software hackathons. Long live the hardware hackathon",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://blog.gitbutler.com/true-grit",
+  "title": "Grit: Rewriting Git in Rust with agents",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://forestwalk.ai/blog/surprise-blacksmith-costs/",
+  "title": "Surprise, Pay $1000",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://tratt.net/laurie/blog/2026/test_case_reducers_are_underappreciated_debugging_tools.html",
+  "title": "Test-case reducers are underappreciated debugging tools",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://unsung.aresluna.org/more-molly-guards/",
+  "title": "More Molly Guards",
+  "date": "2026-06-06",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://gitpush--force.com/commits/2026/06/lies-we-tell-ourselves-about-email/",
+  "title": "Lies we tell ourselves about email addresses",
+  "date": "2026-06-08",
+  "reported": false,
+  "report_date": null
+ }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "Thinking Machines Blog",
+  "slug": "thinking-machines",
+  "length_hint": "long",
+  "homepage": "https://thinkingmachines.ai/blog/",
+  "fetch_url": "https://thinkingmachines.ai/blog/",
+  "fetch_method": "html",
+  "weight": "中",
+  "cadence": "低频型",
+  "cadence_note": "数周-数月一篇，当前停在 2026-05",
+  "check_frequency": "monthly",
+  "window_hours": 720,
+  "notes": "Lilian Weng 现东家，长文综述可能在此产出。无 RSS，直抓 HTML。低频，月检即可。"
+}

@@ -1,0 +1,41 @@
+{
+  "date_label": "6月23日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "防注入攻击有个便宜处方：把可疑文本「去样式化」",
+      "title": "为什么大模型防不住注入攻击：它分不清指令来源，靠的是「样式」不是「角色」",
+      "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/",
+      "body": "Simon Willison 转述并大力背书了一篇 MIT 的新论文，讲清了大模型为什么防不住注入攻击。论文说，模型其实分不清哪些字是系统指令、哪些是用户输入，它是看文本长什么「样式」来猜来源的，研究者原话是「模型把样式看得比内容还重」。攻击之所以得手，就是攻击者把自己的输入打扮成系统文本那个样子，模型就把它当可信指令照办了。\n\n顺着这个解释，破解办法便宜得离谱：把可疑文本「去样式化」，改成一种看着不像系统文本的格式，注入攻击的成功率在 gpt-oss-20b 上就从 61% 掉到了 10%，不用重训也不用换架构，光改排版。但作者把话说在前头，这是缓解不是根治：只要模型还没真学会分辨指令来源，防注入就还是打地鼠，而且这个数字目前只在一个小模型上试过。"
+    },
+    {
+      "tier": "silver",
+      "toc": "一个 3B 小模型，在数学和代码上摸到了旗舰水平",
+      "title": "微博的 3B 模型 VibeThinker：窄域打平旗舰，宽域大方认怂",
+      "url": "https://github.com/WeiboAI/VibeThinker",
+      "body": "微博 AI 的小模型 VibeThinker 在 HN 火了，传是「3B 参数推理击败 Opus 4.5」。准确说，它只在有标准答案、能自动判对错的题上摸到了旗舰水平，比如数学的 AIME26 拿 94.3、训练之后才出的 LeetCode 周赛拿 96.1% 压过 GPT-5.2 和 Claude（这条能说明它是真会做题、不是背题）；可一到要广博知识的题（GPQA-Diamond）就只有 70.2，远不如旗舰，作者也大方承认这种活还得靠规模。一个窄处打平、宽处认怂的小模型，后训练据说只花了 7800 美元，比那些「3B 屠榜」的吹法实在多了。"
+    },
+    {
+      "tier": "silver",
+      "toc": "旗舰订阅看着不贵，其实是厂商在巨额倒贴",
+      "title": "《AI 的可负担性危机》：你那点订阅费，背后是几十倍的补贴",
+      "url": "https://blog.dshr.org/2026/06/ais-affordability-crisis.html",
+      "body": "一篇叫《AI 的可负担性危机》的帖子戳破一个泡沫：旗舰订阅看着不贵，其实是厂商在巨额倒贴。作者算了笔账，200 美元一个月的订阅，用户能烧掉的 token 按官方定价最多值 8000 美元（Anthropic）或 14000 美元（OpenAI），等于倒贴几十倍；他还提到 OpenAI 光销售营销就花掉营收的 44%。他把这套打法叫「毒贩算法」：先用补贴把你喂出依赖，再慢慢谈涨价。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "OpenAI 扩张 Daybreak 安全平台、发布网络安全模型 GPT-5.5-Cyber，自陈「找漏洞已过剩、补漏才是瓶颈」",
+      "url": "https://openai.com/index/daybreak-securing-the-world"
+    },
+    {
+      "label": "AGI 抢人战：Transformer 作者 Shazeer 投 OpenAI、AlphaFold 诺奖得主 Jumper 离开 DeepMind 投 Anthropic",
+      "url": "https://www.axios.com/2026/06/23/ai-lab-agi-google-deepmind-departures"
+    },
+    {
+      "label": "OCR 同日双发：百度开源 Unlimited-OCR 对打 Mistral OCR 4",
+      "url": "https://github.com/baidu/Unlimited-OCR"
+    }
+  ]
+}

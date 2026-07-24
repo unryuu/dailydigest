@@ -1,0 +1,79 @@
+[
+  {
+    "id": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+    "title": "慕尼黑法院判：AI 摘要算 Google 自己说的话，不算搜索结果",
+    "date": "2026-07-21",
+    "reported": true,
+    "report_date": "2026-07-21"
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-360/",
+    "title": "吴恩达 The Batch #360：GPT-5.6、机器人训练、模型调模型，以及 AI 世界太吵",
+    "date": "2026-07-03",
+    "reported": true,
+    "report_date": "2026-07-03"
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-359/",
+    "title": "The Batch #359: Andrew Ng on 3 loops for 0-to-1 products; Apple on-device AFM 3; GLM-5.2",
+    "date": "2026-06-26",
+    "reported": true,
+    "report_date": "2026-06-26"
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-358",
+    "title": "The Batch #358: Testing Mythos and Fable, Moving Beyond SWE-bench, Nvidia's Open Contender",
+    "date": "2026-06-19",
+    "reported": true,
+    "report_date": "2026-06-19"
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-357",
+    "title": "Mythos Begets Fable, Cursor's Composer 2.5, Agents Building Agents",
+    "date": "2026-06-12",
+    "reported": true,
+    "report_date": "2026-06-13"
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-356",
+    "title": "Qwen3.7-Max Challenges Google for Third Place, AI Saves Whales, Fine-Tuning Breaks Copyright Alignment",
+    "date": "2026-06-05",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-355",
+    "title": "Gemini Flash Gets Pricey, AI Act Delays, Agents Drive Online Traffic",
+    "date": "2026-05-29",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-354",
+    "title": "Hermes vs. OpenClaw, Cybersecurity Alarms Ring, More-Interactive Conversations, Can Agents Do Human Work?",
+    "date": "2026-05-22",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-353",
+    "title": "China Thwarts Meta's Agentic Ambition, U.S. Evaluates Upcoming Models, AI Diagnoses Mammograms",
+    "date": "2026-05-15",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-352",
+    "title": "Seedance Makes A Splash, Nvidia's AI-Guided Chip Designs, Helping Robots Not Forget",
+    "date": "2026-05-08",
+    "reported": false,
+    "report_date": null
+  },
+  {
+    "id": "https://www.deeplearning.ai/the-batch/issue-351",
+    "title": "GPT-5.5 Outperforms (and Hallucinates), Kimi K2.6 Leads Open LLMs, AI Strains Climate Pledges, Strategic Thinking in LLMs vs. Humans",
+    "date": "2026-05-01",
+    "reported": false,
+    "report_date": null
+  }
+]

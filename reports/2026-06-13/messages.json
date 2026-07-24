@@ -1,0 +1,39 @@
+{
+  "date_label": "6月13日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "美政府勒令全球停用 Fable 5 + Mythos 5",
+      "title": "美政府出手：Fable 5 / Mythos 5 被勒令停用",
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "body": "06-12 傍晚，美国政府以<b>出口管制</b>为由，勒令 Anthropic 对<b>全球所有用户</b>（含外国公民、甚至 Anthropic 自家员工）立即停用 Fable 5 与 Mythos 5——其他模型不受影响。Simon Willison 用 API 探测到约 4.5 小时后访问被真正切断，报错「Fable 5 不可用，请改用 Opus 4.8」。\n触发点反直觉地普通：政府称掌握了一种绕过 Fable 5 护栏的「越狱」，实测下来就是<b>让模型读一段代码库、修掉里面的漏洞</b>——一个安全工程师每天都在做的操作。\nAnthropic 照办但公开反驳：拿一个「狭窄、非通用」的越狱去召回一款已部署给数亿人的商用模型站不住脚，何况同等能力别家（点名 GPT-5.5）随处可得。\n业内当场分裂：<b>技术派</b>（Simon）说威胁被夸大、召回不成比例；<b>政治派</b>（12gramsofcarbon，HN 370 分）怀疑这是 IPO 前夜的政治猎杀——Anthropic 与本届政府素来不睦，周五收盘后放消息时机「太巧」，并担心这是「政府把强模型从公众手里收走」的开端。"
+    },
+    {
+      "tier": "silver",
+      "toc": "一篇单人开源檄文，被「停用」当口顶上 HN",
+      "title": "Open Source AI Must Win：一个人的开源檄文",
+      "url": "https://opensourceaimustwin.com/?share=v2",
+      "body": "一篇 manifesto 式的开源 AI 立场檄文，<b>一个人写的</b>（Ahmad Osman），却冲到 HN 1240 分。\n核心论点把「开源 AI」从软件自由抬到<b>运行自由</b>：如果智能变成只能向少数封闭机构「租」的东西，公众失去的是「认知的订阅经济」下的操作权——AI 必须能被无许可地研究、修复、审计、改造、运行，哪怕今天的头部实验室「改变方向或消失」也能继续跑。\n有意思的是反差：通篇<b>有论证、却零诉求</b>——没请愿、没联署，唯一的「行动」是给作者发邮件。一篇没组织没诉求的个人檄文能爆到 1240 分，本身就是温度计：它恰好接住了今天「政府一键叫停 Fable 5」点燃的集体焦虑。\n（注：檄文本身<b>没点名</b> Anthropic / Fable / 禁令，这层呼应是大背景下的读者投射，不是它的原话。）"
+    },
+    {
+      "tier": "silver",
+      "toc": "「最危险 AI」掏出的危险产物：一个牧羊犬游戏",
+      "title": "Shepherd's Dog：用「最危险模型」做了个小游戏",
+      "url": "https://koenvangilst.nl/lab/claude-fable-shepherds-dog",
+      "body": "全场最大的笑点就一个：那个「危险到不能放给世界看」的模型，被开发者 Koen van Gilst 拿来一口气（one go）生成了一个浏览器小游戏——单 HTML、零依赖、<b>2319 行代码一次跑通</b>，一只放羊的狗。他说这是「第一次有模型能一气呵成帮我把它做出来」。\n潜台词很损：如果这个「最危险」模型的主要成就是个能玩的牧羊犬游戏，当初的威胁评估是不是有点上头了？放在「政府今天刚勒令停用」的背景下，现成的反讽——监管层当它洪水猛兽，开发者拿它做游戏发 HN。\n（注：原文措辞是「Anthropic 一个有争议的、据说危险到不能见世的模型」，<b>没逐字写「Fable 5」</b>，但语境指向明确。）"
+    },
+    {
+      "tier": "silver",
+      "toc": "拿了 730 万的开源项目，一夜变只读墓碑",
+      "title": "TensorZero 一夜归档，原因谁都没说",
+      "url": "https://github.com/tensorzero/tensorzero",
+      "body": "TensorZero 是个开源 LLMOps 平台（统一网关 + 可观测 + 评测 + 优化），README 自称「承载当今全球约 1% 的 LLM API 支出」、2024 年拿过 <b>730 万美元种子轮</b>。2026-06-12，仓库被 owner 设为 <b>archived（只读）</b>。\n钩子全在那个悬念：一个拿了大钱、自称 production-ready 的开源基建，一夜变只读墓碑——弃坑？被收购？转闭源？而最大的反常是<b>哪儿都没说</b>：GitHub 仓库、组织主页、官方博客（最近一篇还是 5 月 12 日的常规技术文）全无一句归档说明。\n这么干净利落地「拔网线」却不留只言片语，原因目前公开渠道查无——本条只报「状态 + 悬念」，不替它脑补结局。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    { "label": "Cursor 自研编码模型 Composer 2.5（底层 Moonshot 开源的 Kimi K2.5）", "url": "https://www.deeplearning.ai/the-batch/issue-357", "note": "" },
+    { "label": "在 macOS 上搭一个本地编码 agent（实操）", "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos", "note": "· HN 421分" },
+    { "label": "OpenAI 实时音频会话现在能带文档上下文了", "url": "https://simonwillison.net/2026/Jun/12/openai-webrtc/", "note": "" }
+  ]
+}

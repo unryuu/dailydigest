@@ -1,0 +1,478 @@
+[
+ {
+  "id": "https://huggingface.co/papers/2607.20145",
+  "title": "SLAI T-Rex：昇腾 SuperPOD 上全参后训练 DeepSeek-V4-Flash（并入金牌佐证，核实非 DS 官方）",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.18703",
+  "title": "Generative World Renderer（世界模型三连条）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.19191",
+  "title": "ABot-World-0 单卡无限世界（世界模型三连条）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.18367",
+  "title": "AlayaWorld 长时程（世界模型三连条）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.17423",
+  "title": "TimeLens2：训模型在视频里标出「证据在第几秒到第几秒」",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.18213",
+  "title": "SWE-Pruner Pro：让模型自己删工具输出的废料",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.15330",
+  "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.15207",
+  "title": "BadWAM: When World-Action Models Dream Right but Act Wrong",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.14431",
+  "title": "Byte-Exact KV-State Grafting Turns a Frozen Small Model into a Verified-Knowledge Flywheel",
+  "date": "2026-07-19",
+  "reported": true,
+  "report_date": "2026-07-19"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.14952",
+  "title": "LongStraw: Long-Context RL Beyond 2M Tokens under a Fixed GPU Budget",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.14076",
+  "title": "From Pixels to States: Rethinking Interactive World Models as Game Engines",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-18"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.14777",
+  "title": "SEED: Self-Evolving On-Policy Distillation for Agentic RL",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.14935",
+  "title": "VideoChat3: Fully Open Video MLLM",
+  "date": "2026-07-17",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.08168",
+  "title": "MuScriptor: An Open Model for Multi-Instrument Music Transcription",
+  "date": "2026-07-15",
+  "reported": true,
+  "report_date": "2026-07-15"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.05394",
+  "title": "Weak-to-Strong Generalization via Direct On-Policy Distillation (Direct-OPD)",
+  "date": "2026-07-14",
+  "reported": true,
+  "report_date": "2026-07-14"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.08964",
+  "title": "Long-Horizon-Terminal-Bench: Testing Agents on Long-Horizon Terminal Tasks",
+  "date": "2026-07-13",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.08393",
+  "title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in LLM Finetuning",
+  "date": "2026-07-13",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.07740",
+  "title": "Jet-Long：用「动态双焦 RoPE」把上下文外推到训练长度之外",
+  "date": "2026-07-11",
+  "reported": true,
+  "report_date": "2026-07-11"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.07953",
+  "title": "一篇综述把 5 种线性注意力变体放进同一套框架比较，纯线性最快但掉精度，混一点 softmax 层更准但更慢",
+  "date": "2026-07-11",
+  "reported": true,
+  "report_date": "2026-07-11"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.08758",
+  "title": "「Ideas Have Genomes」科学想法溯源基准，最强系统只答对 27.3%",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.03118",
+  "title": "「Vidu S1」语音实时操控数字人，消费级显卡 540p、42FPS 生成无限长视频",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://huggingface.co/blog/sergiopaniego/distillation-2026",
+  "title": "一篇综述盘点 2026 年到目前为止，哪些前沿模型在用蒸馏、怎么用",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.05966",
+  "title": "世界模型为什么长程会崩：它想象出来的轨迹只有运动学、没有动力学",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.02770",
+  "title": "Google 开源 Gemma 4：原生多模态，最大 31B",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.06559",
+  "title": "具身世界模型三连霸 HF 当日榜：机器人操作 + 可玩视频世界模型",
+  "date": "2026-07-08",
+  "reported": true,
+  "report_date": "2026-07-08"
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.29526",
+  "title": "今日 HF 票王：你以为在优化的那个策略，根本不是上线时跑的那个",
+  "date": "2026-07-06",
+  "reported": true,
+  "report_date": "2026-07-06"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.02512",
+  "title": "Program-as-Weights：把模糊函数当可训练权重的新编程范式",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.02517",
+  "title": "WorldDirector：带持久动态记忆的可控世界模拟器",
+  "date": "2026-07-04",
+  "reported": true,
+  "report_date": "2026-07-04"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.01874",
+  "title": "SkillCoach：让 agent 自演化评分标准，再用这些 rubrics 评估和提升技能使用",
+  "date": "2026-07-03",
+  "reported": true,
+  "report_date": "2026-07-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.30562",
+  "title": "字节 Seed 把已训好的 Transformer 变形成混合注意力架构，主打省掉重训成本",
+  "date": "2026-07-03",
+  "reported": true,
+  "report_date": "2026-07-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.01071",
+  "title": "MemSyco-Bench：给 agent 挂上记忆，它反而更爱顺着你说——六成错误出在记忆取回之后",
+  "date": "2026-07-02",
+  "reported": true,
+  "report_date": "2026-07-02"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.00248",
+  "title": "字节 Seed 2.0 模型卡：闭源 API-only，价格约为 Opus 4.5 十分之一",
+  "date": "2026-07-02",
+  "reported": true,
+  "report_date": "2026-07-02"
+ },
+ {
+  "id": "https://arxiv.org/abs/2607.01232",
+  "title": "单个 Transformer 层匹配全参数 RL 训练效果，一篇小论文的怪角度",
+  "date": "2026-07-02",
+  "reported": true,
+  "report_date": "2026-07-02"
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.28436",
+  "title": "Dockerless 等三篇 HF 新论文：coding agent verifier 开始绕开真实执行环境",
+  "date": "2026-07-01",
+  "reported": true,
+  "report_date": "2026-07-01"
+ },
+ {
+  "id": "https://huggingface.co/blog",
+  "title": "Hugging Face 博客谈 LLM 是否知道自己快错了，元认知/弃权方向，和昨天 Agentic Abstention 主线撞题，降雷达",
+  "date": "2026-07-01",
+  "reported": true,
+  "report_date": "2026-07-01"
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.28733",
+  "title": "Agentic Abstention: Do Agents Know When to Stop Instead of Act?",
+  "date": "2026-06-30",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.30616",
+  "title": "Scaling the Horizon, Not the Parameters: Trillion-Parameter Performance with a 35B Agent",
+  "date": "2026-06-30",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.29537",
+  "title": "OSWorld2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+  "date": "2026-06-30",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.28480",
+  "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+  "date": "2026-06-30",
+  "reported": true,
+  "report_date": "2026-06-30"
+ },
+ {
+  "id": "https://arxiv.org/abs/2606.27457",
+  "title": "Cluster, Route, Escalate: Cascaded Framework for Cost-Aware LLM Serving",
+  "date": "2026-06-29",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://arxiv.org/abs/2606.27537",
+  "title": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments",
+  "date": "2026-06-29",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://arxiv.org/abs/2606.26979",
+  "title": "How Much Static Structure Do Code Agents Need?",
+  "date": "2026-06-29",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.25041",
+  "title": "Wan-Streamer v0.1 (already reported 06-28 via arXiv)",
+  "date": "2026-06-25",
+  "reported": true,
+  "report_date": "2026-06-28"
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.27377",
+  "title": "DanceOPD: On-Policy Generative Field Distillation",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26025",
+  "title": "In-Context World Modeling for Robotic Control",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26790",
+  "title": "OPID: On-Policy Skill Distillation for Agentic Reinforcement Learning",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26907",
+  "title": "Qwen-Image-Agent: Bridging the Context Gap in Real-World Image Generation",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26300",
+  "title": "The Verification Horizon: No Silver Bullet for Coding Agent Rewards",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.27313",
+  "title": "ViQ: Text-Aligned Visual Quantized Representations at Any Resolution",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.18394",
+  "title": "JetSpec: Breaking the Scaling Ceiling of Speculative Decoding with Parallel Tree Drafting",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.24551",
+  "title": "GUI vs. CLI: Execution Bottlenecks in Screen-Only and Skill-Mediated Computer-Use Agents",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26217",
+  "title": "Fast LeWorldModel",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.14397",
+  "title": "Running the Gauntlet: Re-evaluating the Capabilities of Agents Beyond Familiar Environments",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26027",
+  "title": "Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.27192",
+  "title": "LISA: Likelihood Score Alignment for Visual-condition Controllable Generation",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26875",
+  "title": "Information-Aware KV Cache Compression for Long Reasoning",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26904",
+  "title": "Confidence-Aware Tool Orchestration for Robust Video Understanding",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.27364",
+  "title": "PhysiFormer: Learning to Simulate Mechanics in World Space",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.21795",
+  "title": "Discretizing Reward Models",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.27326",
+  "title": "Hallucination in World Models is Predictable and Preventable",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.16613",
+  "title": "CoffeeBench: Benchmarking Long-Horizon LLM Agents in Heterogeneous Multi-Agent Economies",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26080",
+  "title": "Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.26299",
+  "title": "COrigami: An AI Pipeline for Co-Designing Flat-Foldable Visually Recognisable Origami",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.27288",
+  "title": "When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.23835",
+  "title": "ABACUS: Adapting Unified Foundation Model for Bridging Image Count Understanding and Generation",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.21959",
+  "title": "OpenBioRQ: Unsolved Biomedical Research Questions for Agents",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.16517",
+  "title": "How Post-Training Shapes Biological Reasoning Models",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.27277",
+  "title": "EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting",
+  "date": "2026-06-28",
+  "reported": false,
+  "report_date": null
+ }
+]

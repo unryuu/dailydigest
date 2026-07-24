@@ -1,0 +1,65 @@
+[
+ {
+  "id": "https://importai.substack.com/p/import-ai-465-open-vs-closed-gaps",
+  "title": "Import AI 465: Open vs closed gaps; Kimi K3; Demis' big policy plan",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-20"
+ },
+ {
+  "id": "https://importai.substack.com/p/import-ai-464-fables-writes-gpu-kernels",
+  "title": "Import AI 464：Fable 写出全场最快的 GPU kernel，Jack Clark 把它读成 AI 开始造自己底层的信号",
+  "date": "2026-07-06",
+  "reported": true,
+  "report_date": "2026-07-06"
+ },
+ {
+  "id": "https://importai.substack.com/p/import-ai-463-self-improving-robots",
+  "title": "Import AI 463: Self-improving robots; a 10k Chinese GPU cluster; an elegiac essay",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-29"
+ },
+ {
+  "id": "https://importai.substack.com/p/import-ai-462-superpersuasion-self",
+  "title": "Import AI 462: Superpersuasion; self-sustaining AI; paths to ASI",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-22"
+ },
+ {
+  "id": "https://importai.substack.com/p/import-ai-461-alignment-is-not-on",
+  "title": "Import AI 461: Alignment is not on track; FrontierCode; and synthetic research interns",
+  "date": "2026-06-15",
+  "reported": true,
+  "report_date": "2026-06-15"
+ },
+ {
+  "id": "https://importai.substack.com/p/import-ai-460-reward-hacking-society",
+  "title": "Import AI 460: Reward hacking society, RSI data from Anthropic; and RL-based quadcopter racing",
+  "date": "2026-06-08",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult",
+  "title": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems",
+  "date": "2026-06-01",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://importai.substack.com/p/import-ai-458-reckoning-with-the",
+  "title": "Import AI 458: Reckoning with the future; and a singularity story",
+  "date": "2026-05-26",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://importai.substack.com/p/import-ai-457-ai-stuxnet-cursed-muon",
+  "title": "Import AI 457: AI stuxnet; cursed Muon optimizer; and positive alignment",
+  "date": "2026-05-18",
+  "reported": false,
+  "report_date": null
+ }
+]

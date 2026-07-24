@@ -1,0 +1,14 @@
+{
+  "name": "Axios",
+  "slug": "axios",
+  "length_hint": "short",
+  "homepage": "https://www.axios.com/",
+  "fetch_url": "https://api.axios.com/feed/",
+  "fetch_method": "rss",
+  "weight": "中",
+  "cadence": "连续型",
+  "cadence_note": "全站综合新闻 RSS，全天滚动",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "新增 2026-06-17，补时效性短讯。主 feed 是全站综合新闻（政治/财经/科技混在一起），scout 须过滤出 AI/科技相关条目、宁缺毋滥。技术专版 HTML 页 403，必须走 api.axios.com 主 RSS。定位快讯、不做深度；偏事件时效（监管/政府/公司动态）。"
+}

@@ -1,0 +1,318 @@
+{
+  "date": "2026-07-21",
+  "window_note": "日检 36h / 周检 168h / 月检 720h；本轮 21 源全部抓取成功",
+  "fetch_failures": [],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "中国开权重模型话语权大爆发：HN 头版第一 + Ben Thompson 提案 + Altman 松口开源",
+      "cost": "重",
+      "reason": "两条同一事件不同侧面（社区情绪 / 战略提案），合写一组贯通 digest。承接 07-20「华府暗斗中国开源模型」和 07-18「OpenRouter 周 token 前五全中国开源」主线，但今天增量足够大：Thompson 具体方案 + HN 1149 分情绪爆点。注意：Altman『想开源 GPT-3 级本地模型』引语（simonwillison 07-20）昨日雷达区已发过，正文只可一句话回扣，不当新料",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "China's open-weights AI strategy is winning",
+          "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/",
+          "date": "2026-07-20",
+          "why": "HN 头版第一，1149 分 864 评论。论点：美国 AI 锁闭源正在输掉生态。hn: https://news.ycombinator.com/item?id=48979269"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Who's Afraid of Chinese Models?（Stratechery / Ben Thompson）",
+          "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+          "date": "2026-07-20",
+          "why": "HN 744 分；simonwillison 同日 blogmark（https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/）。Thompson 提案线索：点名实验室『自己训练用无授权数据、却禁别人蒸馏』的虚伪 + 帮美国开源模型竞争的具体路径。待 reader 核提案细节"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Kimi K3 定调日：Zvi + Interconnects 两大分析师全面评估，外加 Kimi Work 办公 agent 产品上线",
+      "cost": "重",
+      "reason": "同一主线三条合一组。是 07-19『K3 时刻』、07-20『开闭源差距 4-7 个月』的续章，新增量：两篇独立深度定调（能力边界、开源生态影响）+ Kimi Work 新产品（HN 605 分）+ 结合 07-20 已报的暂停订阅，产能/商业化故事线完整了",
+      "items": [
+        {
+          "source": "thezvi",
+          "title": "On Kimi K3: Its Capabilities And Related Discontents",
+          "url": "https://thezvi.substack.com/p/on-kimi-k3-its-capabilities-and-related",
+          "date": "2026-07-20",
+          "why": "Zvi 专文：benchmark 很强 + 各方 discontents（蒸馏指控、安全评估缺位线索），待 reader 核"
+        },
+        {
+          "source": "interconnects",
+          "title": "Kimi K3: The open-weights escalation",
+          "url": "https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation",
+          "date": "2026-07-20",
+          "why": "Nathan Lambert 视角：K3 对全球 AI 生态的升级意义，与 group-1 中国开源话语权互为表里"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Kimi Work（月之暗面办公 agent 产品）",
+          "url": "https://www.kimi.com/products/kimi-work",
+          "date": "2026-07-20",
+          "why": "HN 605 分 250 评论，产品页仅见标题级信息，实际功能待 reader 核。hn: https://news.ycombinator.com/item?id=48981703。注意 07-20 已报『Kimi 暂停新订阅』，两件事的关系（产能挪去 To B?）只是线索，别拍死"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "OpenAI 官方：长时程模型时代的安全与对齐（部署教训 + 真实失败案例）",
+      "cost": "中",
+      "reason": "高权重源官方安全文章单独成组。摘要称披露长时程运行模型的新风险类别、观察到的失败、迭代部署的护栏改进——官方亲口讲失败案例通常有干货",
+      "items": [
+        {
+          "source": "openai",
+          "title": "Safety and alignment in an era of long-horizon models",
+          "url": "https://openai.com/index/safety-alignment-long-horizon-models",
+          "date": "2026-07-20",
+          "why": "openai.com 常 403，reader 抓不到正文就换 webcache/第三方转述。RSS 摘要：lessons from deploying long-running AI models, new safety risks, observed failures, improved safeguards"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "AI 2027 团队新作《AI 2040: Plan A》遭 LW 拆解：这笔交易到底划不划算",
+      "cost": "中",
+      "reason": "规范性 scenario（不是预测，是主张）+ 高质量批评同框，天然有张力。1a3orn 是 LW 上一贯的较真派",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "AI 2040: Is it Actually a Deal?（1a3orn）",
+          "url": "https://www.lesswrong.com/posts/LtmbQN9mzmFWxWtrD/ai-2040-is-it-actually-a-deal",
+          "date": "2026-07-21",
+          "why": "AI Futures Project（AI 2027 原班人马）发布规范性场景『AI 2040: Plan A』，本帖逐条质疑。注意：AI 2040 本体发布日期待 reader 核（manifold 上 07-09 已有相关市场，本体可能发布了一阵子、我们没报过），digest 需要先一句话交代本体是什么再进批评。疑与 Zvi 近期覆盖重叠，reader 注意"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Kevin Buzzard：人类数学家正在被 AI「反例狙击」（outcounterexampled）",
+      "cost": "轻",
+      "reason": "Xena 项目主理人（形式化数学权威）的一手观察，AI×数学，正好撞上 IMO 2026 官方结果公布日（07-21），与赔率盒 IMO 市场强共振，可考虑与 IMO 结果合写",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Human mathematicians are being outcounterexampled",
+          "url": "https://xenaproject.wordpress.com/2026/07/20/human-mathematicians-are-being-outcounterexampled/",
+          "date": "2026-07-20",
+          "why": "HN 385 分 173 评论。钩子：AI 造反例的速度和刁钻程度已压过人类，猜想被『秒杀』。hn: https://news.ycombinator.com/item?id=48983382。另注：IMO 2026 官方成绩就是今天公布，reader 精读时应顺手核一下结果是否已出，出了就是新闻可并入本组。盘口背景色（07-14 赔率区报过、变化不足 10 点故不再进赔率盒）：『有模型满分』86%→93%、『开源模型满分』31%→36%，均为结算前夜读数"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "Scoop: Trump AI security agency head resigns（CAISI 主任 Chris Fall 上任三个月辞职）",
+      "url": "https://www.axios.com/2026/07/20/trump-ai-security-agency-head-resigns",
+      "date": "2026-07-20",
+      "note": "政府/监管例外条款：联邦 AI 测试机构负责人闪辞，可升精读。axios 常 403，正文抓不到就靠摘要：abrupt departure、Commerce 确认。与 07-20 华府 AI 政策暗斗主线相邻但独立成条"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Zvi: Demis Hassabis on the New Coming Age（含 Alex Turner 从 DeepMind 辞职）",
+      "url": "https://www.lesswrong.com/posts/3RfJLcmkztSTq9afc/demis-hassabis-on-the-new-coming-age",
+      "date": "2026-07-21",
+      "note": "疑与昨日已报 Import AI 465『Demis 政策计划』重叠，Demis 文章本体别再当新闻；但 Part 2 的 Alex Turner 辞职+其理由是新增量，可升精读或单摘 Turner 部分"
+    },
+    {
+      "source": "hacker-news",
+      "title": "How we measured AI writing across arXiv, and where the measurement breaks",
+      "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv",
+      "date": "2026-07-20",
+      "note": "HN 228 分。自创测量+自曝测量失效处，符合『自创评测』精读标准，组满了放雷达，可升级"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Cursor: Agent swarms and the new model economics",
+      "url": "https://cursor.com/blog/agent-swarm-model-economics",
+      "date": "2026-07-20",
+      "note": "HN 227 分。Cursor 官方谈 agent 集群下的模型经济账，可升级；注意 07-18 报过 Cursor 脏输入评测，别混"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Qwen-Image-3.0 发布",
+      "url": "https://qwen.ai/blog?id=qwen-image-3.0",
+      "date": "2026-07-21",
+      "note": "HN 244 分。阿里图像模型上新，通稿向，一眼货"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Nativ：在 Mac 上本地跑前沿开源模型",
+      "url": "https://blaizzy.github.io/nativ/",
+      "date": "2026-07-20",
+      "note": "HN 308 分。与今天中国开源主线顺拐：开源模型本地跑的工具生态在长"
+    },
+    {
+      "source": "anthropic",
+      "title": "Anthropic AI for Science：罕见病研究 grants 开放申请",
+      "url": "https://www.anthropic.com/news/rare-disease-research-grants",
+      "date": "2026-07-20",
+      "note": "官方公告，一眼货"
+    },
+    {
+      "source": "huggingface",
+      "title": "Grabette：开源机器人操作数据采集系统",
+      "url": "https://huggingface.co/blog/grabette",
+      "date": "2026-07-21",
+      "note": "HF 官方博客今日新帖，robotics 数据侧，与 07-20 小米 Robotics-1 相邻话题但独立"
+    },
+    {
+      "source": "the-batch",
+      "title": "The Batch #362：Google AI Overviews 惹官司、GPT-Live 后台推理、如何检测模型操纵性",
+      "url": "https://www.deeplearning.ai/the-batch/issue-362/",
+      "date": "2026-07-17",
+      "note": "周检窗口内（07-17 刊）。吴恩达周报例行条目"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune",
+      "url": "https://huggingface.co/papers/2607.18213",
+      "date": "2026-07-20",
+      "note": "HF papers 今日榜 60 赞，代码上下文剪枝，标题即卖点"
+    },
+    {
+      "source": "hf-papers",
+      "title": "TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs",
+      "url": "https://huggingface.co/papers/2607.17423",
+      "date": "2026-07-19",
+      "note": "HF papers 榜首 82 赞，视频时序定位"
+    },
+    {
+      "source": "lesswrong",
+      "title": "We're talking past our models：模型把喂给它的『evil』steering 向量自己定义成 dread",
+      "url": "https://www.lesswrong.com/posts/ktCYxLgdtFR2fDw7J/we-re-talking-past-our-models-or-how-a-model-defined-its",
+      "date": "2026-07-20",
+      "note": "可解释性小实验（neologism token + persona vector），一眼货但概念好玩"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Reverse-engineering is cheap now",
+      "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/",
+      "date": "2026-07-20",
+      "note": "simonwillison 短评：coding agent 把逆向工程家用设备的成本打穿"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Simon 主持 Claude Code 团队炉边谈话（Cat Wu & Thariq）",
+      "url": "https://simonwillison.net/2026/Jul/21/cat-and-thariq/",
+      "date": "2026-07-21",
+      "note": "AI Engineer World's Fair 对谈实录，工具设计/coding agent 安全话题"
+    },
+    {
+      "source": "axios",
+      "title": "How AI is supercharging drug development（TD Cowen 80 家药企调查）",
+      "url": "https://www.axios.com/2026/07/20/artificial-intelligence-drug-development-impact",
+      "date": "2026-07-20",
+      "note": "有专有调查数据的行业稿，一眼货"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Drone WMDs Don't Need Any New Technology",
+      "url": "https://www.lesswrong.com/posts/bGoo3NWzMAzsLQceJ/drone-wmds-don-t-need-any-new-technology",
+      "date": "2026-07-20",
+      "note": "AI×国安向，写给 national security 读者的转载帖，昨日已报『CISO agent 风险指南』相邻但不同"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "黑客把罗马尼亚整个国家土地登记数据库擦了",
+      "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
+      "date": "2026-07-20",
+      "note": "HN 669 分 372 评论，非 AI 大瓜。hn: https://news.ycombinator.com/item?id=48978605"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Jelly UI：给原生 HTML 表单控件加软体物理",
+      "url": "https://jelly-ui.com/",
+      "date": "2026-07-20",
+      "note": "HN 557 分，纯好玩的前端玩具，果冻按钮"
+    },
+    {
+      "source": "acx",
+      "title": "Contra Pritchard On Liberal Happiness",
+      "url": "https://www.astralcodexten.com/p/contra-pritchard-on-liberal-happiness",
+      "date": "2026-07-21",
+      "note": "Scott 今日新文，反驳『自由主义让人不幸福』论。ACX 杂文，理性圈乐子"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Adderall Tolerance: Much More Than You Wanted To Know",
+      "url": "https://www.lesswrong.com/posts/iBN8uQi9zbPkdR29Q/adderall-tolerance-much-more-than-you-wanted-to-know",
+      "date": "2026-07-21",
+      "note": "ACX 风医学考据长文：ADHD 药物长期耐受到底存不存在，标题梗直接致敬 Scott"
+    },
+    {
+      "source": "lesswrong",
+      "title": "War – What is it Good For?（正期望效用，这就是它 good for 的）",
+      "url": "https://www.lesswrong.com/posts/qnDvrbNz5eteax3cN/war-what-is-it-good-for",
+      "date": "2026-07-20",
+      "note": "拿 Bueno de Mesquita《The War Trap》讲『简洁、错误、但有用』的模型观，书评向乐子"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Stop doing decision theory without metaphysics（自标 rant）",
+      "url": "https://www.lesswrong.com/posts/oZzRHiSZPcjrWHeoE/stop-doing-decision-theory-without-metaphysics",
+      "date": "2026-07-20",
+      "note": "理性圈内部开炮：不谈形而上学的决策论都是空转。吵架帖，看乐"
+    },
+    {
+      "source": "hacker-news",
+      "title": "新宿站室内 3D 导航（three.js demo）",
+      "url": "https://satoshi7190.github.io/Shinjuku-indoor-threejs-demo/",
+      "date": "2026-07-20",
+      "note": "HN 245 分，把世界最迷宫车站做成可漫游 3D，技术宅浪漫"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2030 年前美国或中国对超阈值开权重模型下发布禁令？",
+      "prob": "67%",
+      "volume_note": "成交额 2,483，07-13 开盘、今日仍有成交（与今日中国开源精读组直接呼应）",
+      "url": "https://manifold.markets/Bayesian/will-the-us-or-china-impose-a-ban-o"
+    },
+    {
+      "question": "2029 年前美国政府国有化 OpenAI 或 Anthropic？",
+      "prob": "20%",
+      "volume_note": "成交额 1,807，07-20 新开盘",
+      "url": "https://manifold.markets/brod/us-government-nationalizes-openai-o"
+    },
+    {
+      "question": "特朗普就 AI 宣布国家紧急状态？",
+      "prob": "45%",
+      "volume_note": "成交额 584 / 流动性 1,000，07-19 新开盘",
+      "url": "https://manifold.markets/Conflux/will-trump-declare-a-national-emerg-9AI9csNdn9"
+    },
+    {
+      "question": "Opus 4.6 会还上它借的贷款吗？",
+      "prob": "12%",
+      "volume_note": "成交额 2,947，07-20 新开盘，manifold 社区乐子盘（AI agent 借贷实验）",
+      "url": "https://manifold.markets/Bayesian/will-opus-46-pay-back-his-loan"
+    },
+    {
+      "question": "『你非常确定 AI 到 2027 年 8 月还做不到的最不起眼的事是什么？』（多选盘）",
+      "prob": "MC 多选无单一概率",
+      "volume_note": "成交额 72,802，07-20 新开盘即爆量，选项内容待 reader 抓",
+      "url": "https://manifold.markets/Bayesian/whats-the-least-impressive-thing-yo"
+    }
+  ],
+  "skipped_sources": [
+    {"slug": "deepmind", "reason": "页面 JS 渲染仅剩精选旧文；sitemap 核对后周检窗口内唯一新帖是印度教育合作 PR（07-14, atl-saathi），太软，放弃"},
+    {"slug": "karpathy", "reason": "无新货"},
+    {"slug": "chip-huyen", "reason": "月检窗口无新货"},
+    {"slug": "lilian-weng", "reason": "月检窗口两篇（Harness Engineering / Scaling Laws）均已报过"},
+    {"slug": "ahead-of-ai", "reason": "唯一窗口内新帖 Reasoning Effort 07-18 已报"},
+    {"slug": "import-ai", "reason": "Import AI 465 昨日已报"},
+    {"slug": "thinking-machines", "reason": "无新货（Inkling 相关见 huggingface 07-15 帖，已出 36h 窗）"},
+    {"slug": "claude-blog", "reason": "列表顶端均为 4-6 月旧文，36h 窗口无新"},
+    {"slug": "openai", "reason": "除精读 group-3 一篇外无其他新货"},
+    {"slug": "acx", "reason": "Open Thread 443 水帖跳过；Contra Pritchard 已入乐子"},
+    {"slug": "axios", "reason": "其余 15 条为伊朗战争/关税/中期选举等非 AI 时政，仅取 AI 相关 2 条入雷达；Paramount-WBD 并购被法官叫停属非 AI 商业新闻，弃"},
+    {"slug": "hacker-news", "reason": "其余高分帖（Jellyfin 换帅 282、Incremental 库 260、bash enumerator 157 等）非 AI 且乐子价值一般，弃"},
+    {"slug": "hf-papers", "reason": "余下 20+ 篇多为视频生成/具身细分，赞数低，弃"},
+    {"slug": "huggingface", "reason": "其余帖（VoiceEQ 07-15、vLLM backend 07-08 等）已出 36h 窗"},
+    {"slug": "lesswrong", "reason": "AI StopWatch（阅读跟踪工具帖）价值中等，位溢出弃；其余已分流精读/雷达/乐子"},
+    {"slug": "manifold", "reason": "旧市场（电影盘/图灵盘/Annals/GDP 断点/棋盘/Altman 育儿盘等）按防重复清单全部避开；Gemini IMO 满分盘现 73%（07-20 报过 78%）、『有模型 IMO 满分』93%（07-14 报过 86.1%）、『开源满分』36%（07-14 报过 30.9%）三个盘概率变化均不足 10 点，从赔率盒撤下，读数并入精读 group-5 注做背景色，结果今日公布"}
+  ]
+}

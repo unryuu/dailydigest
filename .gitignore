@@ -1,0 +1,25 @@
+# 密钥：绝不进仓库
+config.local.json
+
+# 渲染中间产物（保留 daily.json 源 + daily.full.png 成品）
+reports/**/work/*.html
+reports/**/work/*.raw.png
+
+# 小红书竖卡整目录不入库（图片体积大且可随时重渲）
+reports/**/dist/小红书/
+
+# 用户供稿不入库
+inbox/*
+!inbox/.gitkeep
+
+# 音视频大文件不进仓库（字幕/卡片/json 照常入库）
+reports/**/*.mp4
+reports/**/*.m4a
+reports/**/*.wav
+
+# 本地模型权重（whisper ggml）
+models/
+
+# Python
+__pycache__/
+*.pyc

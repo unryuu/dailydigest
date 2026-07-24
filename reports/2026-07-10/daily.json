@@ -1,0 +1,91 @@
+{
+  "date_label": "7月10日",
+  "gold": [
+    {
+      "toc": "AI 2027 原班人马放出续作，把超级智能主动推到 2040 年",
+      "title": "AI 2040: Plan A，以及围着它的一圈交锋",
+      "url": "https://www.lesswrong.com/posts/pFzctpJBat95SrCyC/ai-2040-plan-a",
+      "body": "把超级智能定在 2030 年的那份 AI 2027，作者原班人马出了续作，这回写的是建议美国每步该怎么走。想推到 2040，要刻意延缓：美中联手管芯片，追踪现存芯片的、迁进带审计的数据中心、互派现场核查员。然后在模型达到顶级人类的智力水平时主动暂停，花十年解决对齐，再把控制权交出去。\n\nScott 同日撰文引荐，说这计划让他不那么绝望。Richard Ngo 直接开炮，说这叫选择性乐观，政治上不可能这么顺。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "GPT-5.6 三档齐发，编程基准上被 Fable 5 按住打",
+      "title": "GPT-5.6 正式发布：Luna、Terra、Sol",
+      "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/",
+      "body": "OpenAI 说 Sol 在 Agents Last Exam 上比 Claude Fable 5 高 13.1 分。但 SWE-Bench Pro 上 Fable 5 拿 80%、Sol 只有 64.6%，OpenAI 当天另发一篇审计，估计这个基准里约 30% 的任务是坏的。"
+    },
+    {
+      "toc": "Anthropic 同日三张信任牌：伯南克进信托、欢迎尖锐提问、用量回看工具",
+      "title": "Anthropic 三新闻：伯南克进信托、欢迎尖锐提问、用量回看工具",
+      "url": "https://www.anthropic.com/news/ben-bernanke",
+      "body": "信托这条是按时间和融资里程碑分批拿董事会席位。今年 4 月起，信托任命的董事头一回真的占了多数。至于所谓尖锐问题，Anthropic 自己列的四问都很体面，最狠的一句也就是「AI 会让世界更危险吗」。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "「Vidu S1」语音实时操控数字人，消费级显卡 540p、42FPS 生成无限长视频",
+      "url": "https://huggingface.co/papers/2607.03118"
+    },
+    {
+      "label": "「Ideas Have Genomes」科学想法溯源基准，最强系统只答对 27.3%",
+      "url": "https://huggingface.co/papers/2607.08758",
+      "body": "把每个科学点子当成会遗传、会变异的基因组，考模型能不能说清它继承、修补、重组了哪些前人工作。"
+    },
+    {
+      "label": "Meta 开放「Muse Spark 1.1」模型 API，多模态 agent 模型，100 万 token 上下文",
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
+    },
+    {
+      "label": "「colibri」让 744B 的 GLM-5.2 在 25GB 内存、没有显卡的机器上跑起来（HN 757 分）",
+      "url": "https://github.com/JustVugg/colibri",
+      "body": "靠 MoE 只激活约 40B 参数：常用的稠密部分做 int4 量化常驻内存，约 10GB，其余两万多个专家丢在硬盘上按需读。非常慢，每秒只出 0.05 到 0.1 个字。"
+    },
+    {
+      "label": "OpenAI 把生物越狱悬赏转成长期项目，单个通用越狱奖金从 2.5 万涨到 5 万美元",
+      "url": "https://openai.com/index/bio-bug-bounty",
+      "body": "通用越狱指一个手法就能绕开模型全部的生物风险防护，找到就拿赏金。"
+    },
+    {
+      "label": "给 Codex 挂上 skills 做数据分析实测，部分任务正确率从 0/4 提到 4/4",
+      "url": "https://huggingface.co/blog/Ningyu/skills-improve-codex-data-analysis"
+    }
+  ],
+  "fun": [
+    {
+      "label": "太阳有多大，只用肉眼观测怎么把它算出来",
+      "url": "https://www.lesswrong.com/posts/Bc4Ch63cx8KHdQABw/how-big-is-the-sun-how-could-you-figure-it-out",
+      "body": "顺着古希腊人能做的观测一步步推：月食时地球投在月亮上的影子、埃拉托色尼量地球、再用上下弦月的三角几何。受限于角度量不准，古法只估到约 6.5 万公里，实际约 140 万。"
+    },
+    {
+      "label": "「因为 8 约等于 e 的平方，Anthropic 的研究员效率提升很可能超过 2 倍」",
+      "url": "https://www.lesswrong.com/posts/ix5qEyW9BjGEb4d8k/because-8-e-anthropic-s-researcher-uplift-is-plausibly",
+      "body": "Anthropic 说每日代码合并量涨了 8 倍，作者用经济学的生产函数把这个产出增长换算成研究员整体效率的提升。"
+    },
+    {
+      "label": "欧洲议会放行「Chat Control 1.0」，2028 年前可无差别扫描私人通讯（HN 1491 分）",
+      "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/",
+      "body": "表决时反对 314 票、赞成 276 票，反对占多数，但没凑到 361 票的绝对多数门槛，法案通过。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "到 2028 年能否完全解释清楚一个 GPT-2 级别的语言模型？",
+      "prob": "15.1%",
+      "note": "成交额 7.9 万 mana",
+      "url": "https://manifold.markets/LeoGao/will-we-fully-interpret-a-gpt2-leve"
+    },
+    {
+      "question": "AI 会在 2030 年前解决任意一个重要数学猜想吗？",
+      "prob": "94.3%",
+      "note": "成交额 4.8 万 mana",
+      "url": "https://manifold.markets/MatthewBarnett/will-an-ai-solve-any-important-math"
+    },
+    {
+      "question": "下一款完整版 Gemini 的编码能力能否追上 Opus 4.7 或 GPT-5.5？",
+      "prob": "78.7%",
+      "note": "成交额 8123 mana",
+      "url": "https://manifold.markets/ian/will-the-next-full-gemini-model-be"
+    }
+  ]
+}

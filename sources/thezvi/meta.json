@@ -1,0 +1,14 @@
+{
+  "name": "Don't Worry About the Vase (Zvi)",
+  "slug": "thezvi",
+  "length_hint": "long",
+  "homepage": "https://thezvi.substack.com/",
+  "fetch_url": "https://thezvi.substack.com/feed",
+  "fetch_method": "rss",
+  "weight": "高",
+  "cadence": "不定时型",
+  "cadence_note": "每 2-4 天一篇，高产无固定日",
+  "check_frequency": "daily",
+  "window_hours": 24,
+  "notes": "每周超长综述，密度极高、观点很拧，AI 代读的完美素材。原清单归为周检，实测更勤，已提到日检。Substack 网页是订阅壳子，必须走 /feed。"
+}

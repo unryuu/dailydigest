@@ -1,0 +1,98 @@
+{
+  "date_label": "7月12日",
+  "gold": [
+    {
+      "toc": "陶哲轩用 coding agent 复活 1999 年的旧工具，还做出他当年放弃的那个",
+      "title": "陶哲轩用 coding agent 复活 1999 年的旧工具",
+      "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/",
+      "body": "是一批用 Java 写、后来因浏览器不再支持 Java 而失效的教学 applet。用 coding agent 移植成了 JavaScript，几小时搞定。移植里只找到一个小 bug，agent 反过来揪出了旧代码里两个他自己当年都不知道的 bug，代码质量算下来打平甚至更好。\n\n他 1999 年就想做一个狭义相对论的时空图工具，当年动手写 Java 但代码复杂就放弃了，这次用 agent 边聊边写几个小时就做出来了。全程没点名用的是哪个模型。"
+    }
+  ],
+  "silver": [
+    {
+      "toc": "想知道一套 AI 评测靠不靠谱，先把里面的 AI 换成一个人试试",
+      "title": "把 AI 评测里面的 AI 换成一个人试试",
+      "url": "https://www.lesswrong.com/posts/B66gAyzwL8Aph6F8u/the-human-substitution-test-as-a-sanity-check-for-ai",
+      "body": "拿到任何一套 AI 评测或监督方案，先把里面的 AI 换成一个跟能干的人一样聪明、有心机、还可能有自己目的的人，看这套方案还站不站得住。结论：我们最想要的那类 AI 安全评测，对人类早就失效。该测的是一个人没被盯着时会干什么，而有策略的人只在被盯着时表现好。这套钻空子不限于人。所以评测不该当第一道、更不该当唯一一道防线。"
+    }
+  ],
+  "radar": [
+    {
+      "label": "Zvi 周报：Anthropic 和五角大楼谈崩，随后被标「供应链风险」",
+      "url": "https://thezvi.substack.com/p/ai-176-part-2-plan-b",
+      "body": "军方合同的护栏条款谈不拢，Dario 说自主权和监控条款被军方加的措辞架空成「一切合法即可」，拒签。之后五角大楼火速把 Claude 换掉。"
+    },
+    {
+      "label": "无 GPU 也能跑，34.7B 推理模型在纯 CPU 上跑到约 17 token/秒",
+      "url": "https://huggingface.co/blog/FINAL-Bench/vkue",
+      "body": "靠稀疏 MoE 架构，34.7B 总参数每次只激活约 3B，内存带宽压力小很多，8GB 游戏本和纯 CPU 服务器都带得动。"
+    },
+    {
+      "label": "英伟达、CoreWeave、Nebius 的 GPU 循环融资拆解",
+      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+      "body": "英伟达给两家云厂各投 20 亿，又签协议兜底，等于自己掏钱撑起对自家芯片的需求。"
+    },
+    {
+      "label": "在 iroh 的 P2P 网络上做分布式 LLM 推理",
+      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "body": "把模型的层拆开分到多台机器，一台跑前几层、一台跑后几层，iroh 打通机器间的直连，凑出一台单机装不下的大模型。"
+    },
+    {
+      "label": "LessWrong 观点：AI 安全的瓶颈是政治意愿，不是研究",
+      "url": "https://www.lesswrong.com/posts/EexsebbYhbe2gXkPP/the-current-bottleneck-is-political-will-not-research",
+      "body": "安全做法早就有了，卡在没几个决策者当回事、没人推动落地，与其再做研究不如把力气花在游说政策上。"
+    }
+  ],
+  "fun": [
+    {
+      "label": "用 26 亿张涂鸦揭示人类概念的隐藏文化差异",
+      "url": "https://arxiv.org/abs/2607.07267",
+      "body": "同一个词在 236 个国家画出来差别很大，越是要动手接触的东西差别越明显，说明脑子里的图像带着各地不同的身体经验。"
+    },
+    {
+      "label": "极简现代装修可能反而更费脑子",
+      "url": "https://studyfinds.com/modern-decor-may-be-straining-peoples-brains/",
+      "body": "条纹、网格、几何这类人造规则图案，大脑处理起来更耗氧更累，偏头痛和神经多样人群尤其容易头晕眼胀。"
+    },
+    {
+      "label": "Show HN Mindwalk：把 coding agent 的会话在 3D 代码地图上回放",
+      "url": "https://github.com/cosmtrek/mindwalk"
+    },
+    {
+      "label": "法罗群岛的世界首个海底环岛",
+      "url": "https://visitfaroeislands.com/en/plan-your-stay/getting-around/world-first-under-sea-roundabout"
+    }
+  ],
+  "odds": [
+    {
+      "question": "Anthropic 市值 2030 年前反超 Apple？",
+      "prob": "45%",
+      "note": "成交额 39.5 万美元，本组最高体量",
+      "url": "https://manifold.markets/Bayesian/anthropic-laps-apple-in-2030"
+    },
+    {
+      "question": "Anthropic 在 2027-06-14 估值超过 10 万亿美元？",
+      "prob": "13%",
+      "note": "成交额 11.5 万美元；同系列 >20T 4.8%、>40T 3%",
+      "url": "https://manifold.markets/Bayesian/anthropic-above-10t-valuation-on-ju"
+    },
+    {
+      "question": "OpenAI 2026 年内正式递交 IPO 申请？",
+      "prob": "21%",
+      "note": "成交额 4.8 万美元",
+      "url": "https://manifold.markets/DaftPunkRock/acx-2026-will-openai-file-for-an-ip"
+    },
+    {
+      "question": "OpenAI 2027 年前完成 IPO？",
+      "prob": "15%",
+      "note": "成交额 3.7 万美元",
+      "url": "https://manifold.markets/Bayesian/openai-ipo-before-2027"
+    },
+    {
+      "question": "OpenAI 一年内向免费用户展示广告？",
+      "prob": "98.9%",
+      "note": "成交额 1.6 万美元",
+      "url": "https://manifold.markets/Bandors/will-openai-display-ads-to-free-tie"
+    }
+  ]
+}

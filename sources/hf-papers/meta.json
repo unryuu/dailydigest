@@ -1,0 +1,14 @@
+{
+  "name": "HuggingFace Papers",
+  "slug": "hf-papers",
+  "length_hint": "short",
+  "homepage": "https://huggingface.co/papers",
+  "fetch_url": "https://huggingface.co/papers",
+  "fetch_method": "html",
+  "weight": "高",
+  "cadence": "每日型",
+  "cadence_note": "每日一页热门论文（社区投票排序），最新在最前，往前翻是历史",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "HuggingFace 每日热门论文（投票排序），补研究/新模型发布的系统盲区——中国实验室（Qwen/DeepSeek/GLM/Kimi 等）常先落这。**与 huggingface 源（HF 博客）不同：这是论文列表。** 量大（每页约 25 篇），按日报偏好筛：自创评测/新基准/范式/反直觉优先，纯刷榜通稿降权，别一页全收。06-28 新增；seen 已用当日列表做基线（reported=false）。注意：HF papers 页日期元素抓取不稳，**以 URL（arxiv id）去重为准**，基线日期为抓取日近似。"
+}

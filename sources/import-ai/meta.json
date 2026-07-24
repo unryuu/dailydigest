@@ -1,0 +1,15 @@
+{
+  "name": "Import AI (Jack Clark)",
+  "slug": "import-ai",
+  "length_hint": "long",
+  "homepage": "https://importai.substack.com/",
+  "fetch_url": "https://importai.substack.com/feed",
+  "fetch_method": "rss",
+  "weight": "高",
+  "cadence": "定期批量型",
+  "cadence_note": "每周一期，通常周一发",
+  "check_frequency": "weekly",
+  "anchor_day": "周一",
+  "window_hours": 168,
+  "notes": "政策+宏观+反直觉解读，Anthropic 联创视角，权重高。锚点源：周一/周二去拿当周一期最稳。Substack 走 /feed。"
+}

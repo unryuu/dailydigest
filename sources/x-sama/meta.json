@@ -1,0 +1,14 @@
+{
+  "name": "Sam Altman @ X",
+  "slug": "x-sama",
+  "length_hint": "short",
+  "homepage": "https://x.com/sama",
+  "fetch_url": "https://nitter.kareem.one/sama",
+  "fetch_method": "nitter-html",
+  "weight": "高",
+  "cadence": "X 账号",
+  "cadence_note": "约 2.5 条/天",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "OpenAI 一手动向（安全事件/产品/定价常先发这）。单句水帖（hello! 之类）直接跳过。 抓取规矩（串行慢抓/浏览器 UA/只收原创/镜像单点应对）统一见 pipeline/scout.prompt.md 的 X 源节；解析脚本 scripts/parse_nitter.py。2026-07-23 建源。"
+}

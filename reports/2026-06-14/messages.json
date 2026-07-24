@@ -1,0 +1,25 @@
+{
+  "date_label": "6月14日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "「国家安全」封禁背后，是 Amazon CEO 的耳边风",
+      "title": "Fable 停用内幕：金主反手向政府告了一状",
+      "url": "https://thezvi.substack.com/p/american-government-takes-down-claude",
+      "body": "06-13 那条「美政府勒令停用 Fable 5 / Mythos 5」今天爆出内幕：WSJ 独家（付费墙）称，真正的导火索不是抽象的「国家安全」，而是 <b>Amazon CEO Andy Jassy 私下向财政部长 Bessent 等官员进言</b>，说 Amazon 研究员用 Fable 5 拿到了「可用于网络攻击的信息」。\n反转在身份：Amazon 是 Anthropic <b>最大投资人之一</b>（4 月刚追加 50 亿美元、承诺千亿云支出），还是它的云供应商——<b>左手投钱、右手向政府递刀</b>，最后连 AWS 自己也被这场它点燃的下线波及。一个本可是「政府护国」的故事，被翻成了「竞争对手拿监管当武器」。\nZvi 的长文补刀：这次行政动作技术上「不可执行且自伤」——政府若要的是「保证永不被越狱」，物理上不可能；他把禁外国研究员类比为「自 1955 年驱逐钱学森以来最大的反扩散失败」。\n（注：WSJ 原文付费墙未读到，归 WSJ 的事实由 TechCrunch / The Information 等多源同日转述互证；商务部长 Lutnick 致信一条个别源口径有出入。）"
+    },
+    {
+      "tier": "silver",
+      "toc": "5.2 万人调研：最盼 AI 治癌，最不信 AI 公司",
+      "title": "Anthropic 自家调研：只有 15% 的人信任 AI 公司",
+      "url": "https://www.anthropic.com/news/anthropic-public-record",
+      "body": "Anthropic 委托 YouGov 调研了 <b>5.2 万美国人</b>（人口普查加权，误差 ±0.6pt），首份「公共记录」。钉死它的不是恐惧也不是希望，而是<b>两者反向脱钩</b>：公众<b>最盼</b> AI 去治癌症/阿尔茨海默（48% 列入头号期待），却<b>最不信任</b>做这件事的 AI 公司——只有 <b>15%</b> 信任，在所有受测机构里垫底（独立专家 43%、联邦政府 20%）。而且这是 AI 公司自己掏钱测、又自己公布的「全行业垫底信任度」。\n几个和主流叙事拧着来的点：\n· 失业是<b>每一个州</b>的头号担忧（64%）；而且公众怕的是「人拿 AI 作恶」，排序都高于「AI 失控变天网」。\n· <b>越用越不怕</b>——每天用 AI 工作的人怕失业 54%，完全不用的人 70%；恐惧来自不熟悉，不是来自体验。\n· 跨党派罕见一致：71% 要政府介入监管（民主党 79% / 共和党 68%），连重度用户也 74% 支持监管，没被用成「放松派」。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    { "label": "英国警察被查：多起案件用 AI「伪造证据」", "url": "https://news.sky.com/story/derbyshire-police-officer-investigated-for-using-ai-to-create-evidence-in-multiple-cases-13553661", "note": "· HN 354分" },
+    { "label": "AI coding at home without going broke：本地省钱编码实操", "url": "https://stephen.bochinski.dev/blog/2026/06/13/ai-coding-at-home-without-going-broke/", "note": "· HN 318分" },
+    { "label": "把 WASM wheel 发布到 PyPI 给 Pyodide 用（Simon）", "url": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/", "note": "" }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "date_label": "6月25日",
+  "deep": [
+    {
+      "tier": "gold",
+      "toc": "HuggingFace 摊开内部 Slack agent 怎么搭：故意不让大模型碰 API",
+      "title": "HuggingFace 摊开自家 Slack 编码 agent：怎么让一个不可信的 agent 安全碰生产系统",
+      "url": "https://huggingface.co/blog/huggingface/moon-bot",
+      "body": "HuggingFace 写了篇工程博客，把他们内部那个常驻 Slack 的编码 agent「Moon Bot」怎么搭的全摊开了。它解决的痛点很实在：团队整天泡在 Slack 里，可回答一个问题往往要在 Elasticsearch 日志、MongoDB 数据、代码库、GitHub 之间来回切，每个还各有各的登录。Moon Bot 把这些收进一个 Slack 线程，你一句话它就去查、去改、甚至直接开 PR。最值得抄作业的一条设计：他们故意不让大模型直接碰任何 API 和数据库，每个能力都包成一个命令行工具，agent 只能跑命令、读输出、再决定下一步。一个看着把事情变笨的约束，反而让整套系统简单、好测、能热插拔，加个新能力就是往 skills 文件夹里丢一个 SKILL.md。\n\n安全这块做得很硬，思路是「假设 agent 不可信」。密钥根本不交给 agent，而是在本地起反向代理、在服务端注入，工具调用就算被攻破也偷不走凭据；权限分三档，每一档背后是一个独立的 Linux 用户做物理隔离，而且失败即关门，连不上鉴权就把所有人降到最低权限、还在每条回复里明说自己降级了。持久记忆也巧：会话历史用对象存储存成只追加的日志文件，pod 崩了几天后还能接着跑；agent 自己没写权限，却能靠在它够不到的地方临时铸一个短时效 token 来开 PR，连 PR 正文都是用代码拼的、不让模型写。这篇的价值不在「又一个 Slack agent」，而在它把「怎么让一个不可信的 agent 安全地碰生产系统」拆得足够具体、能照着搭。"
+    },
+    {
+      "tier": "silver",
+      "toc": "Anthropic 指控阿里巴巴对 Claude 发动「史上最大蒸馏攻击」",
+      "title": "Anthropic 致信参议院，指控阿里用 2.5 万假账号偷 Claude 的能力",
+      "url": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
+      "body": "Anthropic 6 月 10 号给美国参议院银行委员会写了封信，指控阿里巴巴对 Claude 发动了「迄今最大的一次蒸馏攻击」。所谓蒸馏，就是拿强模型的输出去训练、提炼自己的弱模型，相当于偷师。信里数字给得很具体：4 月 22 号到 6 月 5 号之间，阿里用大约 2.5 万个欺诈账号、刷了 2880 万次交互来套取 Claude 的能力。要提醒一句，这目前是 Anthropic 的单方指控，阿里截至发稿没有回应、也没有公开反驳，公共记录上还是一面之词。"
+    },
+    {
+      "tier": "silver",
+      "toc": "OpenAI 说 Codex 正挤进主流，但 token 还在自家围墙里转",
+      "title": "Codex 们正挤进主流工作？数据有，水分也有",
+      "url": "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
+      "body": "OpenAI 发了篇《agent 正在怎样改变工作》的报告（还拉了哥大、杜克、宾大几家联署），配合 Axios 一篇独家，主打「Codex 这类编码 agent 正挤进主流」。有几个不太好造假的数字：组织外部用 Codex 的渗透率从 0% 涨到 17%，非开发者的使用量同比涨了 137 倍。但得泼盆冷水：分析师当场点破 OpenAI 这波动机是想从 Claude 手里抢回声量，而且按 token 消耗算，99.8% 还集中在 OpenAI 自己内部、落到普通个人用户只剩 16.5%，所谓「主流化」目前主要还在它自家围墙里转。"
+    }
+  ],
+  "radar_title": "🛰 <b>雷达</b>",
+  "radar": [
+    {
+      "label": "高通 39 亿美元全股票收购 AI 软件栈创业公司 Modular（Mojo 语言 + Chris Lattner 团队），补数据中心 AI 软件层、直冲英伟达 CUDA 护城河",
+      "url": "https://www.cnbc.com/2026/06/24/qualcomm-ai-chip-modular-software.html"
+    },
+    {
+      "label": "Google 把 computer-use 下放到更便宜的 Gemini 3.5 Flash：agent 能看屏幕、在浏览器和手机桌面里直接动手操作",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/"
+    },
+    {
+      "label": "Nathan Lambert：GLM-5.2 是开源模型在 agent 上的「阶跃」，第一个在编码 harness 里当通用 agent 手感真对了的开源模型（他自承主要靠实测手感，硬基准数据偏薄）",
+      "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open"
+    }
+  ]
+}

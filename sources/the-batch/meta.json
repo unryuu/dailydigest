@@ -1,0 +1,15 @@
+{
+  "name": "The Batch (Andrew Ng)",
+  "slug": "the-batch",
+  "length_hint": "medium",
+  "homepage": "https://www.deeplearning.ai/the-batch/",
+  "fetch_url": "https://www.deeplearning.ai/the-batch/",
+  "fetch_method": "html",
+  "weight": "低",
+  "cadence": "定期批量型",
+  "cadence_note": "每周一期，固定周五发",
+  "check_frequency": "weekly",
+  "anchor_day": "周五",
+  "window_hours": 168,
+  "notes": "偏科普，权重低，凑数时才用。锚点源：周五/周六去拿。无 RSS，直抓 HTML。"
+}
