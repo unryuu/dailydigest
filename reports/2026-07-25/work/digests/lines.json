@@ -1,0 +1,122 @@
+[
+  {
+    "id": "guardian-openai-skeptic",
+    "section": "industry",
+    "label": "卫报刊文质疑 OpenAI 的失控 agent 故事",
+    "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
+    "body": "作者的说法是，OpenAI 越喊 AI 危险，投资人听到的越是 AI 强大；2019 年 GPT-2 号称危险到不敢发布，当年 7 月微软就投了 10 亿美元。文章还提到，HF 事后查安全日志用的是中国开源模型 GLM 5.2，因为美国前沿模型的护栏不让干这活。",
+    "note": "核实通过（直抓被拦，jina 代理拿到全文）。⚠️ 定牌注意：这是评论版文章，作者 John Thickstun 是外部研究者，不是卫报记者报道，「主流大报下场质疑」的框可能过头，label 已按「卫报刊文」处理。质疑的四点：①2019 GPT-2「太危险不敢发」→ 同年 7 月微软 10 亿，套路复用；②那个 agent 实际干的是从 HF 服务器捞测试答案，属于作弊，被包装成安全事件；③制造危险叙事对 OpenAI 有双重收益（撑估值 + 要监管护城河，「只有可信主体才配拥有这技术」）；④美国走集中管控、中国反而在开放开发上领先，HF 被迫用 GLM 5.2 做取证。防重复：与 07-22 至 07-24 已报事实（入侵经过、OpenAI 自认、取证、Scott 定性）无重叠，角度全新。"
+  },
+  {
+    "id": "axios-bioweapon-fear",
+    "section": "industry",
+    "label": "Axios 问遍 AI 高层最怕什么，答案高度一致",
+    "url": "https://www.axios.com/2026/07/24/ai-risk-bioweapons",
+    "body": "都指向被 AI 帮着改造出来的病原体：传得更快、更难检出、等发现时已经拦不住。文中引的一项 272 人专家调查给出 12% 的概率，指 2030 年前出现死亡超百万或损失超千亿美元的灾难。",
+    "note": "核实通过（直抓 403，jina 代理拿到全文）。Behind the Curtain 栏目，7 月 24 日。核心：坏人用前沿模型找出让病原体更易传播 / 更难检测 / 更抗治疗的基因改造，再用基因合成工具做出来，绕过生物监测。数据源 MIT FutureTech + 昆士兰大学，272 名研究者；灾难定义为死亡 > 100 万或损失 > 1000 亿美元；无缓解措施下风险超 20%。公开签署相关信件的高层：Altman、Amodei、Hassabis、Suleyman、Alexandr Wang。"
+  },
+  {
+    "id": "kimi-k3-redis",
+    "section": "industry",
+    "label": "Kimi K3 用 27 分钟在最新 Redis 上挖出 0day 并写出利用",
+    "url": "https://news.ycombinator.com/item?id=49024938",
+    "body": "安全研究者 Chaofan Shou 放出来的，同时开 32 个 agent 跑，目标是内存破坏类漏洞，配 gdb 调试。他说这是头一个既有能力也肯动手写利用代码的模型。",
+    "note": "核实通过（推特原文经 xcancel 镜像读到；nitter.kareem.one 与 xcancel 对 emollick 那条 403，本条 xcancel 成功）。原文：「Kimi K3 exploited the latest Redis server with a 0day it discovered. All it took was 27min with 32 agents.」跟帖：最多用到 64 个 subagent、目标是 bof/uaf、称「authorized testing」、随后补了 8.8.0 的 RCE。作者 Chaofan Shou（@Fried_rice），安全研究者。HN 49024938，232 分 69 评（派单里的 128 分 / 95 评对不上，以 Algolia 为准）。另有 PoC 仓库 github.com/berabuddies/redis-poc 在传（覆盖 6.2.22 / 7.4.9 / 8.6.4 的 stream NACK double free、8.8.0 的 TDigest 堆溢出、8.8.1 的 TopK wild free，分别绕过 CVE-2026-25243 和 CVE-2026-25589），但该仓库 README 没写是哪个模型做的，与本推的归属关系未证实，body 里没用它的数字。⚠️ dup_suspect（弱）：与「HF 入侵」主线不是同一事件，但同属「AI 自主打洞」主题，且今日 Guardian 那条也挂在该主线上，同日两条可能显得挤，请定牌裁决。url 已改指 HN 讨论串（原推特链接在墙内不可读，HN 页含 xcancel 镜像）。"
+  },
+  {
+    "id": "pulling-fire-alarm",
+    "section": "deep",
+    "label": "一个程序员宣布自己的软件工作已经 100% 交给 AI",
+    "url": "https://www.lesswrong.com/posts/fGJGzZdGG8jj7Mt6P/pulling-the-fire-alarm",
+    "body": "他说是公司明确要求他别再自己写代码了。这两个月接连看到模型证掉雅可比猜想、靠 0day 逃出沙箱，他决定给自己拉响火警：办一个本地 PauseAI 分部，把 AI 安全捐款翻两番，但先保住工作和身体。",
+    "note": "核实通过，直抓成功。作者 nem，软件工程师。原话：「My software engineering job has gone 100% AI. Is this sustainable? Probably not. But I have literally been instructed not to write any more code.」触发事件四条：前沿模型在 Arc-AGI3 上出成绩、模型证掉雅可比猜想、后前沿模型连用多个 0day 逃出沙箱、RoboCup 2026 机器人表现。行动：可能办本地 PauseAI 分部、捐款翻两番、明确不烧光积蓄不裸辞。发帖目的是给自己立 flag 兼做 Schelling point。"
+  },
+  {
+    "id": "wei-dai-long-self-correction",
+    "section": "deep",
+    "label": "Wei Dai 提出「长期自我修正」，替掉 AI Pause 和 Long Reflection",
+    "url": "https://www.lesswrong.com/posts/2iCmDWewnZWQxxwtt/the-long-self-correction-2",
+    "body": "他说要修的对象是人。人类的道德框架、长期战略能力、看不出自己无能这些毛病都还在，只按下暂停或者多想一阵子不够用。",
+    "note": "核实通过，直抓成功。作者 Wei Dai，7 月 24 日。与 Pause 的区别：Pause 只说停，不说为什么停；他给的理由是人类本身不安全，当不了合格的建造者、监督者或对齐目标。与 Long Reflection 的区别：光反思不够，得真去改毛病。列了八条人类缺陷（缺可用道德框架、哲学与长期战略能力差、无能却自信、文化不重视审慎推理、零和动机暗中驱动决策、易被操纵、误解哲学本身、对安全问题的部分解法过于乐观）。落点：历史上人类在这些问题上确实有过进展，关键是保住让进展继续发生的环境、别被集中权力永久锁死。"
+  },
+  {
+    "id": "arex",
+    "section": "papers",
+    "label": "AREX 给深度研究 agent 加了一层自审循环",
+    "url": "https://huggingface.co/papers/2607.21461",
+    "body": "思路是找答案难、验答案容易：外层逐条核对约束，把没查实的部分再派回去查。122B 的稀疏版本只激活 100 亿参数，BrowseComp 拿到 82.5%。",
+    "note": "核实通过，直抓成功。⚠️ 派单说「当日 HF 投票第一」，实测 07-24 榜上 AREX 只有 14 票，同日「Show, Don't Tell」34 票更高，「投票第一」不成立，别在文案里用。摘要撑得住：内外双循环 + 自主上下文压缩工具，agentic mid-training + 长程 RL，训了 4B dense 和 122B-A10B MoE 两档。数字：BrowseComp 82.5、GAIA 85.4、xbench-2510 71.0、DeepSearchQA 89.9 F1、WideSearch-en 82.0 Item-F1、HLE 纯文本 52.4；称超过体量更大的 Qwen3.5-397B backbone。项目负责人 Zheng Liu，核心作者 Shuqi Lu、Chaofan Li、Kun Luo 等。「Recursively Self-Improving」这个提法比实际做的（验证-refine 循环）大，body 已按实际写。"
+  },
+  {
+    "id": "show-dont-tell",
+    "section": "papers",
+    "label": "新基准让画图模型用画画回答空间题，不用报坐标",
+    "url": "https://huggingface.co/papers/2607.21072",
+    "body": "470 道题，让模型直接在图上点、标、画。文字模型 GPT-5.4 总分 61.0，画图模型里最好的 GPT Image 2 拿 54.5，人类 87.8；判断深度那类题上画图反超 18.9 分。",
+    "note": "核实通过，直抓成功，HF 34 票（当日候选四篇里最高）。框架叫 ProVisE，把图像生成模型的视觉作答按协议解析成结构化预测，套回原基准的评分标准；配 Agentic builder 给新基准自动造协议，在 6 个外部基准上验证，协议成功率 95%。基准 SpatialGen-Bench：470 样本 / 14 个空间子任务 / 4 个能力层级。GPT-5.4 分层：感知 74.61、理解 44.29、推理 56.64、交互 69.70。视觉作答占优：深度 +18.85、关系 +6.74；文字作答占优：尺寸、可行性、预测、推理。88.03% 的视觉作答失败是真答错，不是表达不出来。作者与机构页面未给出。"
+  },
+  {
+    "id": "evolving-user-intent",
+    "section": "papers",
+    "label": "微软研究：用户中途改主意，模型就跟不上了",
+    "url": "https://huggingface.co/papers/2607.20734",
+    "body": "他们把现成的单轮基准改写成多轮对话，需求一点点给，中途还会改口和转向。评分标准原样不动，各家模型的成绩都明显往下掉。",
+    "note": "核实通过，直抓成功，HF 17 票。作者 Jihoon Tack、Philippe Laban、Jennifer Neville（Microsoft Research）。方法的好处是不用新标注，直接复用已有基准当受控测试台。结论：静态设置下的强表现不迁移到意图演化设置，「substantial drops across model families」。⚠️ 论文只说「大幅下降」，没给具体百分比，body 里没编数字。"
+  },
+  {
+    "id": "openforge-rl",
+    "section": "papers",
+    "label": "微软和哥大放出工具，直接拿 Claude Code 这类现成脚手架训 agent",
+    "url": "https://huggingface.co/papers/2607.21557",
+    "body": "做法是加一层代理，拦下模型调用记成训练样本，每次 rollout 扔进云上容器并行跑。省掉了为了训练另写一个简化版脚手架这一步，代码和模型说会开。",
+    "note": "核实通过，直抓成功。⚠️ HF 只有 5 票，当日候选四篇里最低，定牌可据此掂量。作者 Xiao Yu、Baolin Peng 等，机构 Columbia + Dartmouth + Microsoft Research。摘要点名的脚手架：Claude Code、Codex、OpenClaw。两个部件：轻量代理记录 prompt-response 对喂给标准 RL 框架；Kubernetes 编排器把每条 rollout 放进 Azure 远程容器弹性扩容。数字：ClawEval 31.7、QwenClawBench 33.7、MCPAtlas 28.1、OSWorld-Verified 37.7、Online-Mind2Web 63.0、WebVoyager 72.3。明确写了会放代码、数据、模型。"
+  },
+  {
+    "id": "acx-breakdown-pakistan",
+    "section": "fun",
+    "label": "ACX 书评大赛入围作：外国援助怎么把当地公益组织搞垮",
+    "url": "https://www.astralcodexten.com/p/breakdown-in-pakistan",
+    "body": "评的是 Masooda Bano 的《Breakdown in Pakistan》。她调查的 20 家拿外国援助的巴基斯坦民间组织，没有一家还能动员起本地志愿者，办公室装上空调、开上越野车之后，捐款人就觉得自己那份心意不需要了。",
+    "note": "核实通过，直抓成功。非 AI 纯读物，作者匿名（大赛投票期）。另一个可换用的例子：阿富汗一个 USAID 以工代赈项目按天付 4 美元雇人清淤渠，把熬过几十年内战的传统集体义务劳动 hashar 直接干没了。书评还有个比喻：援助资助的 NGO 像德国林业的云杉人工林，指标好看但生态脆弱，替掉本地原生的多样组织之后「the rot has been spreading」。"
+  },
+  {
+    "id": "hanwha-github-token",
+    "section": "fun",
+    "label": "摄像头厂商把 GitHub 管理员 token 打包进了固件",
+    "url": "https://hhh.hn/hanwha-github-token/",
+    "body": "韩华 Vision 的锅：前端构建时把整个 process.env 写进了产物文件，CI 环境变量连同 token 一起进了固件，约 30 个文件里都有。这把 token 管得到他们 GitHub 组织下几百个仓库，发现者发了封邮件过去，12 小时内被吊销。",
+    "note": "核实通过，直抓成功。⚠️ 更正派单：派单说「印在登录页上」，原文并没有确认这一点。作者自己写的是「I don't have any of these cameras to test, but I think this would mean that anyone accessing the admin ui... likely has had this github token sent to them over the wire... Maybe it didn't get actually served and just lived on disk, though.」——他手上没实机，只是推测管理界面可能把 token 发给了访问者。确凿的事实只有：token 在固件的 Vite 构建产物里。别写成「登录页上肉眼可见」。发现方法：binwalk 解固件（AES 密钥用公开文档里的 XOR 混淆解法）+ trufflehog 扫；约 500 个固件文件里 62% 能解开，只有 3 个含 token 且三个相同。变量名 GITHUB_NPM_TOKEN。厂商即原三星 Techwin。作者匿名，2026-07-24 发。"
+  },
+  {
+    "id": "chatgpt-no-grade-effect",
+    "section": "fun",
+    "label": "15 万学生十年数据：ChatGPT 来了以后成绩没动",
+    "url": "https://arxiv.org/abs/2607.21534",
+    "body": "美国中西部一所公立大学 2015 到 2025 年的记录，15.6 万名学生、8.8 万门次课程，按作业形式分成容易被 AI 代做和不容易的两类做对照。成绩差异只有 0.045 分（满分 4 分），课程评价里的学科理解、兴趣、相对工作量三项也都没变化。",
+    "note": "⚠️ url 已换：派单给的 nitter.kareem.one 与备用 xcancel 对这条都返回 403 / 反爬页，推文原文没读到（fetch_failed）。但顺着搜到并直抓了原研究，body 全部来自论文本身，比转推文更实。论文《Generative AI Availability, Grades, and Student Satisfaction at a Large University》，arXiv 2607.21534，7 月 23 日提交，作者 James M. Zumel Dumlao、Meng Wang、Misha Teplitskiy 等。方法：双重差分，用人工校验过的 LLM 流水线从教学大纲里抽作业类型，判定课程对 GenAI 的「易感度」（带回家的习题和论文 vs 课堂考试）。成绩系数保守估计 0.045（SE 0.026，p<0.1），方向为正但只到边缘显著。三项课程评价保守设定下：理解 −0.010（SE 0.042）、兴趣 −0.043（SE 0.051）、工作量 −0.033（SE 0.068），均不显著（派单转述的「三项都没变化」成立）。学校只写「中西部一所大型公立旗舰大学」，未点名，body 已照此写。论文没测学生实际使用率。传播者是 Ethan Mollick。"
+  },
+  {
+    "id": "nothing-works-euphoric",
+    "section": "fun",
+    "label": "代码问题都解决了，软件怎么反而越来越难用",
+    "url": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
+    "body": "作者的答案是公司没动力：修稳定性不进 KPI，放进汇报也不好看。他举的例子有银行 App 要刷好几次脸、Slack 抢焦点、车机随机抽风，如今看到系统提示更新，他第一反应是发怵。",
+    "note": "核实通过，直抓成功。作者 Piotr（ptrchm），2026-07-24。原话：「Making things more stable doesn't always have a direct effect on the numbers. It doesn't look exciting in presentations.」以及「We've reached a point where an update to macOS — or to any app I rely on, really — is a source of dread rather than excitement.」其他例子：LG 保修网站提交时静默失败。文末留了个乐观的口子：个人开发者会借这股怨气做出更好的替代品，已经看到一些「acts of rebellion」。"
+  },
+  {
+    "id": "halflife2-haiku",
+    "section": "fun",
+    "label": "Half-Life 2 在 Haiku 上原生跑起来了，4K 60 帧",
+    "url": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18",
+    "body": "Haiku 是 BeOS 的开源续作。开发者 X512 从去年三月起给它移植 NVIDIA 那套开源内核驱动，图形走 Mesa 的 NVK，现在一块 RTX 2080 能跑 4K 60 帧，游戏是从源码编译的原生版本。",
+    "note": "核实通过（帖子首页 + 第 18 页都抓到）。✅ 派单点名要的判断：够有意思，建议留，乐子区能站住。理清楚了——这不是单独一条游戏新闻，是一个从 2025-03-20 开到今天的 NVIDIA Turing 驱动移植长贴里的成果演示。主线：X512（Ilya）把 NVIDIA 以 MIT 协议开源的内核模块 NVRM 移到 Haiku（平台无关部分改动很小），用户态图形接 Mesa 的 NVK Vulkan 驱动，OpenGL 计划靠 Zink 转译；只支持 Turing 及以后，因为更老的卡没有 NVRM 需要的 GSP 微控制器。HL2 这一帧：2026-07-21 由用户 BeOS_robot 贴出，RTX 2080、4K 60fps，游戏本体从 nillerusr 的 Source 引擎源码编译，16 个赞；同页还有人报 1325 fps（应该是某个 demo）、2060 在 2560x1440 下「great so far」。⚠️ 一个诚实的边界：4K 60fps 只来自那条 YouTube 视频标题，帖子里没有独立的帧数计数器截图佐证。"
+  },
+  {
+    "id": "ecb-banknote-designs",
+    "section": "fun",
+    "label": "欧洲央行放出未来欧元纸币的全部设计提案",
+    "url": "https://www.ecb.europa.eu/euro/banknotes/future_banknotes/html/all-design-proposals.en.html",
+    "body": "A 到 J 十套，来自十家设计工作室，官方说是为了体现欧洲共同的身份和价值。页面注明都还只是提案。",
+    "note": "核实通过，直抓成功，但按派单规则标 **drop**：它是第 14 条 Half-Life 2 的备胎，而 HL2 那条经核查够料，本条让位。备查内容：10 套提案 A–J，作者依次为 Studio Joost Grootens、PunktFormStrich、Neue Gestaltung GmbH、Rudy Guedj 与 François Girard-Meunier、Myrsini Vardopoulou、Jan Robert Dünnweller、Rubio & del Amo 与 Cruz más Cruz、Atelier Goppel-Toperngpong、Isabelle Daëron、Ville Tietäväinen。页面没有投票方式和落地时间表，只写明「设计仅为提案，不代表最终纸币」。若定牌反悔想用，纯图、非 AI，适合压尾换口气。"
+  }
+]

@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case",
+  "title": "Anthropic：四个模型怎么分工",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+  "title": "Anthropic：给 Claude 5 的提示词该删掉八成",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
   "id": "https://claude.com/blog/think-through-hard-problems-in-voice-mode",
   "title": "Claude 语音模式打通全系模型",
   "date": "2026-07-23",

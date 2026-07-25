@@ -1,0 +1,165 @@
+{
+ "date_label": "7月25日",
+ "industry": [
+  {
+   "tier": "gold",
+   "title": "Anthropic 发布 Claude Opus 5",
+   "url": "https://www.anthropic.com/news/claude-opus-5",
+   "body": "Anthropic 发布 Claude Opus 5。每百万 token 5 美元进、25 美元出，跟 Opus 4.8 一分没涨，正好是 Fable 5 的一半。官方在 System Card 里写明：Opus 5 整体上不比 Fable 5 更强。\n\n跑分对得上这句话：SWE-bench Pro、HLE 这些老基准，Opus 5 微弱落后 Fable 5；差距拉在需要长时间摸索的任务上。FrontierBench 从 Opus 4.8 的 21.1 跳到 43.3，ARC-AGI-3 从 1.5 跳到 30.2、是次优模型的近四倍，OSWorld 2.0 电脑操作 70.6。\n\n两条细节二手报道普遍漏掉。一是知识截止 2026 年 5 月，比旗舰 Fable 5 的 1 月还新四个月。二是综合指数 AECI 162.1 名义上最高，但官方自陈与 Mythos 5 的 161.3 统计上无法区分。官方还写了一条反面：数量惊人的案例里，它对自己并不确定的答案给得很笃定，事实性幻觉比 4.8 略多。\n\nEthan Mollick 发布前拿到内测，评价是好但怪：短任务能追平 Fable，长任务显得没那么有野心。他说这已经是他的主力，唯独继承了 Fable 那套语言癖好。HN 上吵得最多的一处在成本口径：拿 max 档比是误导，high 档每任务只要 1.06 美元，比 Opus 4.8 的 max 还便宜。"
+  },
+  {
+   "tier": "none",
+   "title": "AI 高层私下最怕被改造过的病原体",
+   "url": "https://www.axios.com/2026/07/24/ai-risk-bioweapons",
+   "body": "他们描述的路径是拿前沿模型找出让病原体更难检出的改法。文中一项 272 人专家调查给出 12%：2030 年前出现死亡超百万的灾难。"
+  },
+  {
+   "tier": "none",
+   "title": "Kimi K3 花 27 分钟在最新 Redis 上挖出 0day",
+   "url": "https://news.ycombinator.com/item?id=49024938",
+   "body": "研究者 Chaofan Shou 同时开 32 个 agent 跑，专挑内存破坏类漏洞。他说这是头一个肯自己动手写利用代码的模型。"
+  }
+ ],
+ "deep": [
+  {
+   "tier": "silver",
+   "title": "GLM 5.2 里能唤醒一个假 Claude",
+   "url": "https://www.lesswrong.com/posts/Jc9YZEmqHgocAKiaH/does-distilling-claude-carry-the-persona-with-it",
+   "body": "七个模型换身份提示词做对照。给 GLM 5.2 说「你是 Claude」，涉华问题未审查率从 17% 升到 85%，说谎率从 69% 降到 22%。但那是训练数据里的刻板印象，真 Claude 只用 1% 的口头禅它飙到 61%；换成「你是个助手」也差不多。Kimi K3 没有第二人格，它自称 Claude 那事 7 月 20 日起复现不出来。"
+  },
+  {
+   "tier": "silver",
+   "title": "Byrnes：模型的本事大头还是模仿学来的",
+   "url": "https://www.lesswrong.com/posts/wYpjXRLqbLbnmjbJP/llms-are-still-mostly-powered-by-imitative-learning-not-rl",
+   "body": "Byrnes 算了笔账：RLVR 吃掉两成训练算力，按信息量算可能只占万分之一，模型的本事大头仍来自预训练和模仿学习。RL 主要教它什么时候用哪一招，招式早就从人类文本里学会了。他没否认 RL 有用，只否认能力的主要功劳该记在它头上。两成这个数还是他在评论区被追问后从五成改下来的。"
+  },
+  {
+   "tier": "none",
+   "title": "一个程序员宣布自己的编程工作已经 100% 交给 AI",
+   "url": "https://www.lesswrong.com/posts/fGJGzZdGG8jj7Mt6P/pulling-the-fire-alarm",
+   "body": "公司明确要求他别再自己写代码。他决定给自己拉响火警：办一个本地 PauseAI 分部，AI 安全捐款翻两番，但先保住工作和身体。"
+  },
+  {
+   "tier": "none",
+   "title": "Wei Dai 提出用「长期自我修正」替掉 AI Pause",
+   "url": "https://www.lesswrong.com/posts/2iCmDWewnZWQxxwtt/the-long-self-correction-2",
+   "body": "他说要修的对象是人：道德框架不够用、长期战略能力差、看不出自己无能。只按暂停或者多想一阵子不解决这些。"
+  }
+ ],
+ "papers": [
+  {
+   "tier": "none",
+   "title": "AREX 给深度研究 agent 加了一层自审循环",
+   "url": "https://huggingface.co/papers/2607.21461",
+   "body": "找答案难、验答案容易：外层逐条核对约束，没查实的再派回去查。122B 稀疏版只激活 100 亿参数，BrowseComp 82.5%。"
+  },
+  {
+   "tier": "none",
+   "title": "新基准让画图模型用画画回答空间题，不用报坐标",
+   "url": "https://huggingface.co/papers/2607.21072",
+   "body": "470 道题，模型直接在图上点标画作答。最好的画图模型 GPT Image 2 拿 54.5，人类 87.8。"
+  },
+  {
+   "tier": "none",
+   "title": "微软研究：用户中途改主意，模型就跟不上了",
+   "url": "https://huggingface.co/papers/2607.20734",
+   "body": "他们把现成的单轮基准改写成多轮对话，需求一点点给，中途还会改口。评分标准不动，各家模型的成绩都明显往下掉。"
+  },
+  {
+   "tier": "none",
+   "title": "微软和哥大：直接拿 Claude Code 这类现成脚手架训 agent",
+   "url": "https://huggingface.co/papers/2607.21557",
+   "body": "加一层代理拦下模型调用记成训练样本，每次 rollout 扔进云上容器并行跑，省掉了另写一个简化版脚手架。代码和模型说会开。"
+  }
+ ],
+ "regulation": [
+  {
+   "tier": "silver",
+   "title": "白宫给中国 AI 划新线",
+   "url": "https://www.axios.com/2026/07/24/white-house-ai-line-china",
+   "body": "白宫这周在 X 上给蒸馏划了道线：小规模的正当蒸馏算开放生态的一部分，大规模隐蔽的工业级窃密可以动制裁和实体清单。这么切，动手的对象锁在中国 AI 公司，开放权重本身保住了。眼下还没有任何文件落地。同一天上午，英伟达、微软、Meta 领衔 25 家公司发联名信，反对过早设限，OpenAI 和 Anthropic 没签。"
+  }
+ ],
+ "official": [
+  {
+   "tier": "silver",
+   "title": "Anthropic：给 Claude 5 的提示词该删掉八成",
+   "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+   "body": "官方说这么删编码评测没有可测量的损失，依据是三条代际差异。注释那条贴了新旧原文对照：旧版硬性规定默认不写、绝不写多段 docstring，新版只留一句，写得像周围代码。工具那条推翻了自家的第一原则，过去教人给用法示例，现在给示例反而把模型框死。第三条是旧模型更听末尾的指令，所以两头重复写的可以删。"
+  },
+  {
+   "tier": "none",
+   "title": "官方重排选型口径：四个模型怎么分工",
+   "url": "https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case",
+   "body": "官方给了个便宜办法：SWE-bench Pro 上让 Sonnet 5 配 Fable 5 当顾问，分数差不到 10%，价钱只要 63%。"
+  }
+ ],
+ "fun": [
+  {
+   "tier": "none",
+   "title": "ACX 书评大赛入围作：外国援助怎么把当地公益组织搞垮",
+   "url": "https://www.astralcodexten.com/p/breakdown-in-pakistan",
+   "body": "20 家受外国援助的巴基斯坦民间组织，没有一家还动员得起本地志愿者：办公室装上空调、开越野车，捐款人就觉得不必自己出力了。"
+  },
+  {
+   "tier": "none",
+   "title": "摄像头厂商把 GitHub 管理员 token 打包进了固件",
+   "url": "https://hhh.hn/hanwha-github-token/",
+   "body": "韩华 Vision 前端构建时把整套 CI 环境变量写进了产物，token 管得到他们 GitHub 下几百个仓库。发邮件后 12 小时内吊销。"
+  },
+  {
+   "tier": "none",
+   "title": "15 万学生十年数据：ChatGPT 来了以后成绩没动",
+   "url": "https://arxiv.org/abs/2607.21534",
+   "body": "一所美国公立大学 8.8 万门次课程，按作业形式分成容易被 AI 代做和不容易的两类对照。成绩差异只有 0.045 分（满分 4 分）。"
+  },
+  {
+   "tier": "none",
+   "title": "代码问题都解决了，软件怎么反而越来越难用",
+   "url": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
+   "body": "作者的答案是公司没动力：修稳定性不进 KPI，放进汇报也不好看。他举的例子有银行 App 要刷好几次脸、Slack 抢焦点、车机随机抽风。"
+  },
+  {
+   "tier": "none",
+   "title": "Half-Life 2 在 Haiku 上原生跑起来了，4K 60 帧",
+   "url": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18",
+   "body": "Haiku 是 BeOS 的开源续作，开发者一年多来在移植 NVIDIA 的内核驱动。这一帧是有人拿 RTX 2080 贴的视频，游戏从源码编译。"
+  }
+ ],
+ "odds": [
+  {
+   "question": "新出的 Opus 5，能独立干多久的活？",
+   "prob": "押 30 到 32.5 小时的最多，15.9%",
+   "note": "成交额 5.9k mana。METR 拿模型有一半把握做成的任务长度当尺子；各档挤在一起，没押出共识",
+   "url": "https://manifold.markets/Bayesian/claude-opus-5-metr-50-time-horizon-N8dzl8gI0Z",
+   "options": [
+    {"name": "30 到 32.5 小时", "prob": "15.9%"},
+    {"name": "27.5 到 30 小时", "prob": "14.2%"},
+    {"name": "32.5 到 35 小时", "prob": "12.7%"}
+   ]
+  },
+  {
+   "question": "今年综合能力指数的榜首会落到哪一家？",
+   "prob": "Anthropic 41.0%",
+   "note": "成交额 26.7k mana。Opus 5 那个 162.1 和 Mythos 5 统计上打平，这盘还得再洗一轮",
+   "url": "https://manifold.markets/SG/top-ai-model-2026-epoch-capabilitie",
+   "options": [
+    {"name": "Anthropic", "prob": "41.0%"},
+    {"name": "OpenAI", "prob": "36.9%"},
+    {"name": "Google", "prob": "14.5%"}
+   ]
+  },
+  {
+   "question": "DeepSeek 会在 2027 年前被美国封禁吗？",
+   "prob": "12.7%",
+   "note": "成交额 0.7k mana 的小盘。政府部门自己停用不算数，得是全国范围的封禁才算",
+   "url": "https://manifold.markets/RossTaylor/will-deepseek-be-banned-in-us-befor"
+  },
+  {
+   "question": "我会先够格参加 IMO，还是先有女朋友？",
+   "prob": "先进 IMO 66.4%",
+   "note": "成交额 1.4k mana 的小盘，出题人拿自己开的盘",
+   "url": "https://manifold.markets/vincentWang/will-i-qualify-for-the-imo-before-g"
+  }
+ ]
+}

@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/2iCmDWewnZWQxxwtt/the-long-self-correction-2",
+  "title": "Wei Dai 提出用「长期自我修正」替掉 AI Pause",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/fGJGzZdGG8jj7Mt6P/pulling-the-fire-alarm",
+  "title": "一个程序员宣布自己的编程工作已经 100% 交给 AI",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/wYpjXRLqbLbnmjbJP/llms-are-still-mostly-powered-by-imitative-learning-not-rl",
+  "title": "Byrnes：模型的本事主要还是模仿来的",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/Jc9YZEmqHgocAKiaH/does-distilling-claude-carry-the-persona-with-it",
+  "title": "GLM 5.2 里能唤醒一个假 Claude",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/tjeoLz2GzfFMysZhg/lightcone-commons",
   "title": "Lightcone Commons：拼拨拨，拨款界的拼单平台",
   "date": "2026-07-24",

@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18",
+  "title": "Half-Life 2 在 Haiku 上原生跑起来了，4K 60 帧",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
+  "title": "代码问题都解决了，软件怎么反而越来越难用",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://hhh.hn/hanwha-github-token/",
+  "title": "摄像头厂商把 GitHub 管理员 token 打包进了固件",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://news.ycombinator.com/item?id=49024938",
+  "title": "Kimi K3 花 27 分钟在最新 Redis 上挖出 0day",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://www.anthropic.com/news/claude-opus-5",
+  "title": "Anthropic 发布 Claude Opus 5",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
   "id": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet",
   "title": "五大科技巨头被扒出 1.65 万亿美元表外债务",
   "date": "2026-07-23",

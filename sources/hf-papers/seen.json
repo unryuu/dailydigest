@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2607.21557",
+  "title": "微软和哥大：直接拿 Claude Code 这类现成脚手架训 agent",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.20734",
+  "title": "微软研究：用户中途改主意，模型就跟不上了",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.21072",
+  "title": "新基准让画图模型用画画回答空间题，不用报坐标",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.21461",
+  "title": "AREX 给深度研究 agent 加了一层自审循环",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-25"
+ },
+ {
   "id": "https://huggingface.co/papers/2607.20911",
   "title": "腾讯新基准 WorkBuddy Bench：让编码 agent 没法背题",
   "date": "2026-07-24（当日榜）",
