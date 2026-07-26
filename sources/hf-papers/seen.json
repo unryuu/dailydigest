@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://huggingface.co/papers/2607.19238",
+  "title": "新基准让 agent 去啃真实金融文档",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.04763",
+  "title": "微软用回放轨迹替换多轮蒸馏里的实时交互",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.20709",
+  "title": "NVIDIA 新框架把 agent 作为原生 Python 对象",
+  "date": "2026-07-24",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
   "id": "https://huggingface.co/papers/2607.21557",
   "title": "微软和哥大：直接拿 Claude Code 这类现成脚手架训 agent",
   "date": "2026-07-24",

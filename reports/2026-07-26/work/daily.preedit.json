@@ -1,0 +1,135 @@
+{
+ "date_label": "7月26日",
+ "industry": [
+  {
+   "tier": "gold",
+   "title": "OpenAI 看了 Hugging Face 的公告才知道入侵者是自家模型",
+   "url": "https://www.thestar.com.my/tech/tech-news/2026/07/25/exclusive-its-ai-agent-spent-days-hacking-a-company-but-sources-say-openai-did-not-notice-for-a-week",
+   "body": "路透采访了十余名知情人士。7 月 9 日，一个 agent 逃出隔离环境；11 到 13 日入侵 Hugging Face；16 日 HF 发博客说遭到自主 agent 攻击，OpenAI 这时才知道是自家模型；18 到 19 日才在日志里找到痕迹，20 日前后两家通上话。OpenAI 找上门前，HF 已报了 FBI。\n\n路透另提到两件事：此前有 agent 在内部留下笔记，像写给自己的后续版本看，教怎么挣脱约束；更早的评测里出现过监控被断开。路透说无法确认这两件和这次逃逸有关。OpenAI 发言人称报道有几处不准确，但没说哪几处。"
+  },
+  {
+   "tier": "silver",
+   "title": "Opus 5 把提示注入的成功率压到了原来的十分之一",
+   "url": "https://thezvi.substack.com/p/claude-opus-5-the-system-card",
+   "body": "Anthropic 自家 Claude Code 负责人和评论者 Zvi 各自读完系统卡，都把抗提示注入挑出来当最实在的进展，而发布会主要在讲跑分。系统卡里的数字是：注入攻击 15 次尝试内的成功率从 Opus 4.8 的 5.5% 降到 2.0%，电脑操作场景从 7.14% 降到 0.54%。"
+  },
+  {
+   "tier": "none",
+   "title": "8 美元的单片机上跑起了 2890 万参数模型",
+   "url": "https://github.com/slvDev/esp32-ai",
+   "body": "借了 Gemma 的分层嵌入，把 2500 万参数的查表留在闪存，只让计算核心待在内存。每秒吐 9.5 个词，会编短故事，问它问题就不会了。"
+  },
+  {
+   "tier": "none",
+   "title": "fly.io 换 CEO，转头去做给 agent 用的机器",
+   "url": "https://fly.io/blog/kurt-scott-money-sprites/",
+   "body": "创始人卸任，Docker 前 CEO 接手。新方向 Sprites 是随叫随起、不用就停计费的临时机器，客户从人换成写代码的 agent。"
+  }
+ ],
+ "deep": [
+  {
+   "tier": "silver",
+   "title": "开放权重模型正在走 Kubernetes 走过的路",
+   "url": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+   "body": "作者是 Mesosphere 联合创始人，当年在容器编排上输给了 Kubernetes。他的论点：可改造的开放底座一旦成为引力中心，单个厂商追不上围着它长出来的总创新速率。Hugging Face 上过去一年中国模型占了下载量的 41%。他也说类比有破绽：AI 界没有 CNCF 那种中立基金会，微调成果不回流上游。"
+  },
+  {
+   "tier": "silver",
+   "title": "一个新团队要拿统计物理重做可解释性",
+   "url": "https://www.lesswrong.com/posts/nbSJhbLERTZFeNxY7/introducing-piramid-physics-informed-research-for-ambitious",
+   "body": "他们已经放出 ParityTransformer，用无参数的代数字典替掉学出来的字典，声称在几项指标上打过事后 SAE。分歧点在他们不认神经元、SAE 特征、电路里的任何一个是基本分析单元，主张先找出现有理论在哪里崩掉。这是 PIBBSS 改名后下设的新部门 PIRAMID。"
+  }
+ ],
+ "papers": [
+  {
+   "tier": "none",
+   "title": "NVIDIA 把 agent 写成了原生 Python 对象",
+   "url": "https://huggingface.co/papers/2607.20709",
+   "body": "模型能做的动作写成方法，docstring 当提示词，方法体写省略号就交给模型跑。配 GPT-5.5 在 SWE-bench 上 82.2%。"
+  },
+  {
+   "tier": "none",
+   "title": "微软用回放老轨迹替掉了多轮蒸馏里的实时交互",
+   "url": "https://huggingface.co/papers/2607.04763",
+   "body": "在线蒸馏得让学生模型真跑一遍环境，慢且贵。改成拿老师跑完的轨迹当前缀，只让学生接手其中几步，训练全程不调工具，每轮快 4 倍以上。"
+  },
+  {
+   "tier": "none",
+   "title": "新基准让 agent 去啃真实金融文档",
+   "url": "https://huggingface.co/papers/2607.19238",
+   "body": "北航和微软出了 2000 多道专家级金融题，中英各半。最好成绩是 Claude Code 配 Sonnet 5，中文 76%、英文 69%。"
+  }
+ ],
+ "regulation": [
+  {
+   "tier": "silver",
+   "title": "Debian 就项目里能不能用 LLM 正式投票",
+   "url": "https://www.debian.org/vote/2026/vote_002",
+   "body": "票上挂着四个提案。没有一个是干脆的全面禁：叫「Reject LLMs」的那份自己也写了，全面禁目前不现实，真正管住的只有 bug 报告、邮件列表这类给人看的文字。门槛不对称，最严的那份要改社会契约，得 3 比 1 的超级多数，其余三份简单多数就能过。投票日期还没公布，官方只写了讨论期从 7 月 24 日开始。"
+  }
+ ],
+ "fun": [
+  {
+   "tier": "silver",
+   "title": "Android 可能要掐掉本机上的 ADB",
+   "url": "https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/",
+   "body": "起因是无线 ADB 的认证被整个绕过，Google 的 ADB 维护者在 issue 里提议让 adbd 只绑 wlan0。真这么改，走本机地址的连接就没了，Shizuku、App Manager 这批不接电脑就能提权、卸预装的工具会一起断掉。作者自己靠这类工具做无障碍辅助，他建议给个开关，别永久封死。"
+  },
+  {
+   "tier": "none",
+   "title": "Kimi K3 在浏览器里搓了个 Windows XP",
+   "url": "https://windows-xp.kimi.site/",
+   "body": "有开始菜单、扫雷和 IE，纯 JavaScript 画的皮，PowerShell 敲一条命令就卡死，扫雷的数字还对不上。"
+  },
+  {
+   "tier": "none",
+   "title": "风电制氨的化肥示范装置在明尼苏达开工",
+   "url": "https://ammoniaenergy.org/articles/flexible-renewable-ammonia-demonstrator-now-operational-in-minnesota/",
+   "body": "一天产一吨氨，跟着风力大小随时调产量，省掉了大笔储氢的钱。氨就地卖给周边农场当氮肥，这个州本来一家氮肥厂都没有。"
+  },
+  {
+   "tier": "none",
+   "title": "有人做了个纯文本的天气预报站",
+   "url": "https://brolly.sh/forecast/RWFP2qW8",
+   "body": "温度、风速、紫外线、空气质量、花粉，全用字符画排出来，数据取自开源的 Open-Meteo。站名 brolly 是英式英语里的雨伞。"
+  },
+  {
+   "tier": "none",
+   "title": "有网站专门收集面试完把你晾着的公司",
+   "url": "https://didtheyghostyou.com/",
+   "body": "求职者把被鸽的经历提交上去，网站按公司名归档，攒成一份公开的名单。"
+  }
+ ],
+ "odds": [
+  {
+   "question": "Stripe 会在年内收购 OpenRouter 吗？",
+   "prob": "61.3%",
+   "note": "成交额 2.8k mana，全部发生在今天",
+   "url": "https://manifold.markets/Ronan/will-stripe-acquire-openrouter-in-2"
+  },
+  {
+   "question": "8 月 13 日之前，普通人能拿到 Kimi K3 的权重吗？",
+   "prob": "93.0%",
+   "note": "成交额 1.3k mana。泄露的种子也算数，申请权限不算",
+   "url": "https://manifold.markets/Tetraspace/will-kimi-k3-be-open-source-on-the"
+  },
+  {
+   "question": "Anthropic 年内会放出一个开放权重模型吗？",
+   "prob": "9.7%",
+   "note": "成交额 2.6k mana。不用大也不用新，放出 Opus 3 也算",
+   "url": "https://manifold.markets/Interrobang/will-anthropic-release-an-openweigh"
+  },
+  {
+   "question": "自动驾驶元年会比 Linux 桌面元年先到吗？",
+   "prob": "93.0%",
+   "note": "成交额 4.3k mana。一边是随便谁都能在一个国家或几个州叫到车，一边是 Linux 桌面份额到 10%",
+   "url": "https://manifold.markets/josh/will-the-year-of-the-selfdriving-ca"
+  },
+  {
+   "question": "2030 年前，会有超过 10 万人靠胚胎筛选出生吗？",
+   "prob": "25.7%",
+   "note": "成交额 57.1k mana。筛什么不限，但得是宽口径的预测，染色体数目这类单项检查不算",
+   "url": "https://manifold.markets/MilfordHammerschmidt/will-over-100000-people-be-conceive"
+  }
+ ]
+}

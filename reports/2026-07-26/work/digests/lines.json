@@ -1,0 +1,130 @@
+[
+  {
+    "id": "pytorch-monarch-amd-rocm",
+    "section": "industry",
+    "label": "PyTorch Monarch 移植到了 AMD GPU",
+    "url": "https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/",
+    "body": "Monarch 让一个 Python 程序管住整个集群，机器挂了就地重启，从旁边的副本拷回权重，不用全员停下来重读检查点。128 卡上每 180 秒人为搞挂一次通信，loss 曲线仍和基线重合。",
+    "note": "核实通过。AMD 与 Meta 联署，正文与标题相符。**日期偏旧：博客发布日为 2026-07-06，距今 20 天**，PyTorch 博客列表页可交叉确认；是否算「今天的新鲜事」请定牌裁决。技术细节核到：hipify_torch 转 CUDA→HIP、RCCL 替 NCCL、rocm_compat 类型别名垫片、1171 项测试通过；16 节点 MI300 / 128 卡跑 Llama 3 8B 注入故障，32 节点 MI355 / 256 卡 K8s 上 loss 从 12 降到约 4。"
+  },
+  {
+    "id": "esp32-8-dollar-llm",
+    "section": "industry",
+    "label": "8 美元的单片机上跑起了 2890 万参数模型",
+    "url": "https://github.com/slvDev/esp32-ai",
+    "body": "诀窍是借 Gemma 的 Per-Layer Embeddings，把 2500 万参数的查表留在闪存，只让小小的计算核心待在内存里。每秒吐 9.5 个词，会编短故事，问它问题就不会了；此前这类芯片上的纪录是 26 万参数。",
+    "note": "核实通过。ESP32-S3，512KB SRAM / 8MB PSRAM / 16MB flash；4 bit 量化后 14.9MB；TinyStories 训练。HN 2026-07-25，217 分 51 评，标题为「Running a 28.9M parameter LLM on an $8 microcontroller」。作者自称没人在这么小的芯片上试过。"
+  },
+  {
+    "id": "axios-ai-in-the-family",
+    "section": "industry",
+    "label": "Axios：AI 正在住进美国家庭",
+    "url": "https://www.axios.com/2026/07/25/ai-family-parenting-productivity",
+    "body": "Lurie 儿童医院 5 月的调查里，81% 的家长用 AI 处理过带娃的事，64% 的青少年在用聊天机器人。文章说家里可能成了 AI 最私密也最没人管的地方，学校和公司好歹已经开始立规矩。",
+    "note": "fetch_failed（Axios 正文两次 403，未能亲读全文）。标题「How AI is becoming part of the American family」、URL、2026-07-25 日期，以及 81%（Lurie 儿童医院 5 月调查）、64% 青少年用聊天机器人这两个数字，均通过限定 axios.com 站内检索的正文摘要确认；另有 Jesse Genet（七个孩子的混合家庭，用一队 agent 采购、排家庭课表、处理法务财务文件）的案例。body 只写了已交叉确认的部分，未加任何未核内容。若定牌要求「必须亲读原文」，此条可判丢。"
+  },
+  {
+    "id": "nvidia-oo-agents",
+    "section": "papers",
+    "label": "NVIDIA 把 agent 写成了原生 Python 对象",
+    "url": "https://huggingface.co/papers/2607.20709",
+    "body": "方法就是模型能做的动作，字段就是状态，docstring 就是提示词，方法体写成省略号就交给模型跑循环，写成正常代码就还是确定的 Python。这样 agent 能像普通软件一样测试和调试，SWE-bench Verified 上配 GPT-5.5 拿到 82.2%。",
+    "note": "核实通过。NVIDIA，2026-07-24。其余成绩：Terminal-Bench 2.0 73.0%、ARC-AGI-3 50.2% RHAE、CyberGym L1 开源 agent 第一；4400 项接口测试十个模型平均通过 97.9%。"
+  },
+  {
+    "id": "reopd-prefix-replay",
+    "section": "papers",
+    "label": "微软用回放老轨迹替掉了多轮蒸馏里的实时交互",
+    "url": "https://huggingface.co/papers/2607.04763",
+    "body": "在线蒸馏要让学生模型真去跑一遍环境，慢且贵。ReOPD 拿老师跑完的轨迹当前缀，只在其中几步让学生接手、老师当场打分，训练全程一次工具都不调，每轮快 4 倍以上。",
+    "note": "核实通过。Microsoft Research + 阿姆斯特丹大学，作者含 Li Dong、Furu Wei。方法名 ReOPD（Replayed-Prefix On-Policy Distillation）。数学：4B 55.1→57.2，8B 51.0→53.7；搜索问答与在线蒸馏打平在约 40.5。"
+  },
+  {
+    "id": "financecomplexqa",
+    "section": "papers",
+    "label": "新基准让 agent 去啃真实金融文档",
+    "url": "https://huggingface.co/papers/2607.19238",
+    "body": "北航和微软收了 1009 份金融文档、2000 多道专家级题目，中英各一半，答案交给另一个模型判分。目前最好成绩是 Claude Code 配 Sonnet 5，中文 76%、英文 69%，算数和跨版式对照两块错得最多。",
+    "note": "核实通过。北航 + Microsoft China + 澜舟等；2026 年，arXiv 2607.19238。共 2026 个深度研究任务，中英各 1013 题；Agent-as-a-Judge 评分。对照组：PageIndex 版式检索中文 72.15% / 英文 66.90%，轻量 RAG 62.42% / 59.92%。"
+  },
+  {
+    "id": "the-batch-363",
+    "section": "deep",
+    "label": "吴恩达替开放权重模型说话",
+    "url": "https://www.deeplearning.ai/the-batch/issue-363",
+    "body": "他举 Hugging Face 那次被攻击当例子：几家闭源商用模型因为安全护栏拒绝分析攻击日志，最后是开放的 GLM 5.2 帮着把防守做完的。他认为护栏作用有限，闭源公司拿安全说事更像在争监管。",
+    "note": "dup_suspect。这期确有原创内容（吴恩达本人的信），但信的主体正好压在两条红线上：一是 HF 入侵事件的评论（今天金牌就是这条线，密度已满），二是开放权重监管表态（且只是个人观点，不是政府落到纸面的动作）。信之外的四条全是本周新闻转述（Kimi K3 2.8T 架构、Meta Muse Spark 1.1 价格战、Cloudflare 爬虫开关、斯坦福检索失败研究）。按主 agent 给的规则，倾向判丢；深度长文位建议改用 fly.io 那条备选。发布日 2026-07-24。"
+  },
+  {
+    "id": "android-adb-loopback",
+    "section": "fun",
+    "label": "Android 可能要掐掉设备本机上的 ADB",
+    "url": "https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/",
+    "body": "起因是 CVE-2026-0073 把无线 ADB 的认证整个绕过去了，Google 的 ADB 维护者在 issue 里提议：干脆让 adbd 只绑 wlan0 这一块网卡。这么一改，走 127.0.0.1 的本机连接就没了，Shizuku、App Manager 这批不接电脑就能提权、卸预装、开权限的工具会一起断掉，ADB over VPN 和走网线也一并失效。作者自己靠这类工具做无障碍辅助，他说恶意应用没法替用户走完开发者选项加配对那套动作，与其永久封死，不如给个重启后还在的开关。",
+    "note": "核实通过，材料给足（按主 agent 当轮要求写到约 160 字，超出定调里「乐子一行梗」的常规长度，是本条特例）。HN 2026-07-25，**已涨到 942 分 461 评**，当日第一。关键事实：博客发布日 2026-07-20；Google 维护者原话大意为「连 localhost 也一直是应用拿来提权的漏洞来源，不如限制成只绑 wlan0」；作者明确写了这不是 Google 官方公告，只是 IssueTracker 里的讨论，**没有时间表、没有具体 Android 版本、没有 AOSP 提交**——这几点 body 里没提，若定牌要留尾请自行加，我按定调没搬进正文。"
+  },
+  {
+    "id": "kimi-windows-xp",
+    "section": "fun",
+    "label": "Kimi K3 在浏览器里搓了个 Windows XP",
+    "url": "https://windows-xp.kimi.site/",
+    "body": "登录进去有开始菜单、扫雷和 IE，不过是纯 JavaScript 画的皮，PowerShell 敲一条命令就卡死，扫雷的数字还对不上。",
+    "note": "核实通过。页面能开，登录界面写 Administrator、角标 v11 · 07-15，全中文界面。HN 2026-07-25，56 分 32 评；提交者确认是 Kimi 团队用 K3 做的演示。评论区一致指出这只是长得像 XP 的网页应用，不是模拟器，并吐槽 UI 全用 div 拼、键盘 tab 不动、内置 IE 走国内服务器。"
+  },
+  {
+    "id": "wind-to-ammonia-minnesota",
+    "section": "fun",
+    "label": "风电制氨的化肥示范装置在明尼苏达开工了",
+    "url": "https://ammoniaenergy.org/articles/flexible-renewable-ammonia-demonstrator-now-operational-in-minnesota/",
+    "body": "明尼苏达大学和 Casale 建的，一天产一吨氨，跟着风力大小随时调产量，省掉了大笔储氢的钱。氨就地卖给周边农场当氮肥，这个州本来一家氮肥厂都没有。",
+    "note": "核实通过。2026 年 7 月投产首季；地点为明尼苏达大学西中部研究与推广中心（Morris）；参与方还有 RTI International。是 2013 年中试装置的放大版；氨可存在农用氨罐，或与乙醇厂的 CO2 合成尿素。"
+  },
+  {
+    "id": "brolly-text-weather",
+    "section": "fun",
+    "label": "有人做了个纯文本的天气预报站",
+    "url": "https://brolly.sh/forecast/RWFP2qW8",
+    "body": "温度、风速、紫外线、空气质量、花粉，全用字符画排出来，数据取自开源的 Open-Meteo。作者叫 Jacob，住在约克，站名 brolly 是英式英语里的雨伞。",
+    "note": "核实通过。抓取时页面显示英国约克 7 月 26 日 13:00，20.1°C、体感 16.6°C、风 16mph 阵风 33mph、紫外线 4.0、空气质量 18；含小时预报、七日概览、降水概率、花粉（禾草与艾草）。注意这个 URL 是一个具体地点的固定分享页，不是首页。"
+  },
+  {
+    "id": "did-they-ghost-you",
+    "section": "fun",
+    "label": "有网站专门收集面试完把你晾着的公司",
+    "url": "https://didtheyghostyou.com/",
+    "body": "求职者把被鸽的经历提交上去，网站按公司名归档，攒成一份公开的名单。",
+    "note": "核实通过（成立，不判丢）。站点首页是 JS 应用，直接抓只拿到标题「Report the Company」，功能描述由 HN 讨论页交叉确认：用户提交被鸽经历、有审核、按公司名列出报告，覆盖投简历阶段和面试后两种。HN 2026-07-25 20:18 UTC，**413 分 188 评**（主 agent 给的 290 分已涨）。未查到明确的作者署名和收费信息，body 里没写。"
+  },
+  {
+    "id": "flyio-sprites-ceo",
+    "section": "deep",
+    "label": "fly.io 换 CEO，转头去做给 agent 用的机器",
+    "url": "https://fly.io/blog/kurt-scott-money-sprites/",
+    "body": "Kurt Mackey 卸任，Docker 前 CEO Scott Johnston 接手。他们押的方向叫 Sprites：随叫随起、闲下来就停止计费的临时电脑，服务对象从写代码的人换成了写代码的 agent。",
+    "note": "核实通过。备选补位，建议顶替 The Batch 占深度长文位。作者 Kurt Mackey，2026-07-24，标题《Turn And Face The Strange》。他的论点是 AI 之后几乎人人都能造软件，为固定应用设计的云不再合用；Sprites 要的是临时算力加持久存储、快速扩缩、按用量计费；文中承认这意味着放弃原来「给人类开发者做顺手基础设施」的定位。"
+  },
+  {
+    "id": "gm-sodium-ion-grid",
+    "section": "industry",
+    "label": "GM 押注钠离子电池做电网储能",
+    "url": "https://spectrum.ieee.org/sodium-ion-battery-peak-energy",
+    "body": "和 Peak Energy 合作，投了对方在萨克拉门托附近那座 7100 万美元的工厂，年产 4 GWh。钠电能量密度低，但耐温范围差不多是磷酸铁锂的两倍，靠被动散热就行，省掉整套冷却设备。",
+    "note": "核实通过。备选，未占位，定牌若需要行业大事补位可用。IEEE Spectrum，2026-07-22，作者 Lawrence Ulrich。GM 在密歇根 Wallace 电池创新中心测 Peak 的电芯；Peak 与 Jupiter Power 签了 5 亿美元、到 2030 年最多 4.75 GWh 的单子，首批 720 MWh 落在德州；往返效率 96%，比磷酸铁锂高 2~3 个百分点。"
+  },
+  {
+    "id": "bitchat-on-radicle",
+    "section": "fun",
+    "label": "Bitchat 把代码搬到了去中心化的 Radicle",
+    "url": "https://news.ycombinator.com/item?id=49047365",
+    "body": "起因是印度政府要求 GitHub 下架这个项目。Radicle 是个点对点的代码托管，靠节点之间互相传播，没有一个可以被要求下架的中心。",
+    "note": "核实通过。备选，未占位。HN 标题「Bitchat is now on Radicle」，243 分。原始提交 URL 是 radicle.network 的长哈希地址（radicle.network/nodes/rosa.radicle.network/rad%3Az2v9tRJz1oknFAqCSY5W5c76nVvm6），不适合当成稿链接，故 url 填 HN 讨论页；若定牌不接受 HN 链接作正文 URL，此条可弃。「印度政府施压」一说来自评论区，非一手证据。"
+  },
+  {
+    "id": "semisim-transistor-animations",
+    "section": "fun",
+    "label": "晶体管工作原理动画",
+    "url": "https://brandonli.net/semisim/animations",
+    "body": "",
+    "note": "fetch_failed（403，动画页和站点根目录两次尝试均被拒），内容完全未核实，label 只是转抄候选清单里的说法。**建议不用**；深度位已由 fly.io 补上。"
+  }
+]

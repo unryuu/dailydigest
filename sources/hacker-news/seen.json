@@ -1,5 +1,61 @@
 [
  {
+  "id": "https://didtheyghostyou.com/",
+  "title": "有网站专门收集面试完把你晾着的公司",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
+  "id": "https://brolly.sh/forecast/RWFP2qW8",
+  "title": "有人做了个纯文本的天气预报站",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
+  "id": "https://windows-xp.kimi.site/",
+  "title": "Kimi K3 在浏览器里搓了个 Windows XP",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
+  "id": "https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/",
+  "title": "Android 可能要掐掉本机上的 ADB 调试通道",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
+  "id": "https://www.debian.org/vote/2026/vote_002",
+  "title": "用 AI 写的东西，能不能进 Debian",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
+  "id": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/",
+  "title": "开放权重模型正在走编排系统走过的路",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
+  "id": "https://fly.io/blog/kurt-scott-money-sprites/",
+  "title": "fly.io 换 CEO，转头去做给 agent 用的机器",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
+  "id": "https://github.com/slvDev/esp32-ai",
+  "title": "8 美元的单片机上跑起了 2890 万参数模型",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
   "id": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18",
   "title": "Half-Life 2 在 Haiku 上原生跑起来了，4K 60 帧",
   "date": "2026-07-24",

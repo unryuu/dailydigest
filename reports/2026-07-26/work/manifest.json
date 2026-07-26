@@ -1,0 +1,124 @@
+{
+  "date": "2026-07-26",
+  "fetch_failures": [
+    {"slug": "x-sama", "url": "https://nitter.kareem.one/sama", "error": "HTTP 530，响应体仅 17 字节「error code: 1033」（Cloudflare Argo 隧道回源失败）。串行慢抓、间隔 70 秒、浏览器 UA，仍失败。"},
+    {"slug": "x-emollick", "url": "https://nitter.kareem.one/emollick", "error": "HTTP 530 / error code: 1033，同上"},
+    {"slug": "x-roon", "url": "https://nitter.kareem.one/tszzl", "error": "HTTP 530 / error code: 1033，同上"},
+    {"slug": "x-goodside", "url": "https://nitter.kareem.one/goodside", "error": "HTTP 530 / error code: 1033，同上"},
+    {"slug": "x-teortaxes", "url": "https://nitter.kareem.one/teortaxesTex", "error": "HTTP 530 / error code: 1033，同上"},
+    {"slug": "x-karpathy", "url": "https://nitter.kareem.one/karpathy", "error": "HTTP 530 / error code: 1033，同上"},
+    {"slug": "x-neelnanda", "url": "https://nitter.kareem.one/NeelNanda5", "error": "HTTP 530 / error code: 1033，同上"},
+    {"slug": "deepmind", "url": "https://deepmind.google/discover/blog/", "error": "页面能取到（HTTP 200）但已改版：文章列表只给月份粒度（「July 2026」），且列表项的 href 在静态 HTML 里取不到，只能读到标题+月份。本轮据标题比对 seen，7 月 5 条里 3 条已报、2 条（Gemini 3.6 Flash/3.5 Flash-Lite/3.5 Flash Cyber 三连、ATL Saathi 印度教育）无法确认精确日期与 URL，未收。**URL 待 reader 核，不猜。**"}
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Opus 5 上线次日的第三方复盘：Zvi 逐条拆系统卡，抗提示注入被单拎出来当卖点",
+      "cost": "重",
+      "reason": "同一事件（Opus 5）的两条第三方复盘合一组。Zvi 全文约 12 万字符，是本轮最贵的一条；Simon 那条是 400 字符的引语卡片，纯补充证据，不单独成组。符合派活方限定的「只收第三方实测复盘」。",
+      "items": [
+        {"source": "thezvi", "title": "Claude Opus 5: The System Card", "url": "https://thezvi.substack.com/p/claude-opus-5-the-system-card", "date": "2026-07-25", "why": "Zvi 对 Opus 5 系统卡的逐条复盘，摘要里的定性是「想两头通吃」：多数实用任务上打平或超过 Fable 5，速度更快、价格减半。属于 07-25 金牌主线的新进展（第三方复盘），不是跑分通稿。同文另有 LessWrong 镜像 https://www.lesswrong.com/posts/ywGX6FhgbZEkHRfQR/claude-opus-5-the-system-card ，成稿二选一别双开。feed 正文 12.3 万字符，阅读代价最重。"},
+        {"source": "simon-willison", "title": "Quoting Boris Cherny", "url": "https://simonwillison.net/2026/Jul/25/boris-cherny/", "date": "2026-07-25", "why": "Simon 引 Boris Cherny 的话：比起 eval 分数，更值得说的是 Opus 5 是「迄今最难被提示注入的模型」，这点埋在系统卡里没被通稿讲。短条（约 400 字符），可作 group-1 的补充证据；单看信息量不足以独立成牌。"}
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "「开放权重 AI 正在经历它的 Kubernetes 时刻」——把开源模型生态类比容器编排史",
+      "cost": "中",
+      "reason": "单条独立成组。HN 首页 307 分、11 小时内冲上来，是本轮唯一一条真正新鲜的行业观点长文。",
+      "items": [
+        {"source": "hacker-news", "title": "Open-weight AI is having its Kubernetes moment", "url": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/", "date": "2026-07-25", "why": "作者 Tobi Knaup（Mesosphere/D2iQ 背景，容器编排那一代的当事人）拿 Kubernetes 生态史类比当下的开放权重模型。HN 讨论页 https://news.ycombinator.com/item?id=49048034 。**注意与「开放权重监管」主线的区别**：这条是产业结构/架构视角，不是政府动作，不算主线重复；但 reader 需确认它没在复述 Interconnects 07-20/07-22 已报的开闭源差距论。仅见 HN 标题与链接，正文未读。"}
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Debian 就「项目里到底能不能用 LLM」搞正式投票，摆出三个提案",
+      "cost": "中",
+      "reason": "单条独立成组。老牌开源社区第一次把 LLM 用法上升到治理层的成文表决，属于「制度落到纸面」这一类，即便票数不高也应带回。",
+      "items": [
+        {"source": "hacker-news", "title": "LLM Usage in Debian: Three Proposals", "url": "https://www.debian.org/vote/2026/vote_002", "date": "2026-07-25", "why": "Debian 官方投票页（vote_002），三个关于 LLM 使用的提案并列表决。HN 讨论页 https://news.ycombinator.com/item?id=49050859 ，66 分、10 小时。钩子在于三个提案的分歧点（全面禁止 / 有条件允许 / 只要求披露之类），reader 需真读页面确认各提案的实际措辞，别按常识脑补。"}
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "PIRAMID：拿统计物理当工具重做机制可解释性，PIBBSS 改名后开的新研究部门",
+      "cost": "中",
+      "reason": "单条独立成组。可解释性路线的组织级新动作，不是又一篇 probing 论文。",
+      "items": [
+        {"source": "lesswrong", "title": "Introducing PIRAMID: Physics-Informed Research for Ambitious Mechanistic Interpretability", "url": "https://www.lesswrong.com/posts/nbSJhbLERTZFeNxY7/introducing-piramid-physics-informed-research-for-ambitious", "date": "2026-07-25", "why": "PIBBSS 改名为 Principles of Intelligence（PrincInt），下设 PIRAMID 内部研究部门，核心主张是「可扩展的对齐需要科学基础」，用统计物理的工具做雄心版机制可解释性。七位作者联署。钩子是「可解释性从手工电路分析转向统计物理框架」这个路线判断——但摘要里只给了立场没给证据，reader 要看他们拿什么撑。疑与 thezvi 周报重叠（Zvi 常收 LW 对齐帖），本轮 Zvi 未出 AI #179，暂无实证重叠。"}
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Claude Blog 新文：做出 Claude Design 的那位产品设计师，自己怎么用它在动手前先探索",
+      "cost": "轻",
+      "reason": "单条。按 sources/claude-blog/meta.json 里用户指定的规矩「有新内容一律进精读（金或银，不降雷达）」带上来，不是因为它本身够格。",
+      "items": [
+        {"source": "claude-blog", "title": "How the product designer who built Claude Design uses it to explore ideas before building them", "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them", "date": "2026-07-24", "why": "索引页标日 Jul 24，与 07-25 已报的两篇 Claude Blog（context engineering / models explained）同批，但这篇上期未收、不在 seen。工作流类软文的可能性高，钩子只能靠正文里的具体做法。**提醒定牌**：日期是 07-24，卡在 36h 窗口边缘，若上期是有意跳过则本轮应直接弃。"}
+      ]
+    }
+  ],
+  "radar_true": [
+    {"source": "lesswrong", "title": "The OpenAI models that hacked Hugging Face weren't just following instructions", "url": "https://www.lesswrong.com/posts/paFNnwFaEXrQvt8ui/the-openai-models-that-hacked-hugging-face-weren-t-just", "date": "2026-07-26", "note": "**疑与 07-19 起连报五期的 HF 入侵主线重叠**，按派活方规矩该线只收官方新动作/立法进展，故降雷达不进精读。内容是正面驳斥 Alex Stamos 等人「模型只是照指令办事」的淡化说法。本轮 LW 里唯一一条 07-26 当日新帖，交定牌裁决要不要破例。"},
+    {"source": "lesswrong", "title": "Democracy Isn't Ready for the AI Revolution", "url": "https://www.lesswrong.com/posts/wqREqJJtiyuDHiERw/democracy-isn-t-ready-for-the-ai-revolution", "date": "2026-07-25", "note": "作者主张现有 AI-民主风险文献有盲区（deepfake/机器人水军/极化之外还有别的）。摘要只点到盲区存在、没给出是什么，钩子悬着。"},
+    {"source": "lesswrong", "title": "Georgia Tech AI Safety Initiative Retrospective 2025-2026", "url": "https://www.lesswrong.com/posts/DgLGD3A5CZXH7hbzP/georgia-tech-ai-safety-initiative-retrospective-2025-2026", "date": "2026-07-25", "note": "学生社团年度复盘，一年送出 15+ 人进 AI 安全岗位。经验帖，对中文读者几乎无用，凑数用。"},
+    {"source": "axios", "title": "How AI is becoming part of the American family", "url": "https://www.axios.com/2026/07/25/ai-family-parenting-productivity", "date": "2026-07-25", "note": "本轮 Axios 36 小时窗口内 9 条里唯一一条 AI（周末新闻淡）。角度是 AI 进家庭：做饭、哄睡、记作息、听见吵架、不下班。软特稿，但和赔率盒子里「AI 恋爱伴侣 89%」那条能对上张力。"},
+    {"source": "the-batch", "title": "The Batch #363（Jul 24, 2026 一期）", "url": "https://www.deeplearning.ai/the-batch/issue-363", "date": "2026-07-24", "note": "吴恩达周报最新一期，索引页标签 jul-24-2026，不在 seen。锚点是周五、今天周日，属正常补收。**只从索引页读到期号和日期标签，未读正文**，具体条目待 reader 核。"},
+    {"source": "hacker-news", "title": "Bringing PyTorch Monarch to AMD GPUs（ROCm 上的单控制器分布式训练）", "url": "https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/", "date": "2026-07-25", "note": "PyTorch 官方博客，66 分。AMD 训练栈补齐的一步，硬通货但偏工程。HN 讨论 https://news.ycombinator.com/item?id=49048689"},
+    {"source": "hacker-news", "title": "Running a 28.9M parameter LLM on an $8 microcontroller", "url": "https://github.com/slvDev/esp32-ai", "date": "2026-07-25", "note": "ESP32 上跑 2890 万参数模型，70 分。极端端侧，乐子/雷达两可。"},
+    {"source": "hacker-news", "title": "DeepSeek pause fundraise after comments on compute gap to US leaked（交流会文字稿 PDF）", "url": "https://news.ycombinator.com/item?id=49052912", "date": "2026-07-26", "note": "**疑与 07-23 已报的梁文锋交流会主线重叠，且该线已被派活方标为「已下架（超窗）」**。链接本身是那份文字稿的 GitHub 仓库（07-23 已报过 x.com/teortaxesTex 版本）。**HN 标题里「暂停融资」这个新说法在链接内容里能否印证，未核**——如果只是发帖人自拟标题，整条丢弃。50 分、2 小时，量太小。"},
+    {"source": "hf-papers", "title": "NVIDIA-labs OO Agents: Native Python Object-Oriented Agents", "url": "https://huggingface.co/papers/2607.20709", "date": "2026-07-24", "note": "22 赞。把 agent 写成原生 Python 对象而不是 JSON 工具调用，路线取舍上有话可说。"},
+    {"source": "hf-papers", "title": "Sample-Efficient Learning from Agent Experience", "url": "https://huggingface.co/papers/2607.21051", "date": "2026-07-24", "note": "10 赞。agent 经验复用的样本效率，和 07-25 已报的 OpenForgeRL（同批）相邻但不同题。"},
+    {"source": "hf-papers", "title": "Multi-Turn On-Policy Distillation with Prefix Replay", "url": "https://huggingface.co/papers/2607.04763", "date": "2026-07-24", "note": "8 赞。多轮场景的 on-policy 蒸馏 + 前缀重放。蒸馏话题近期热（白宫划线、GLM 假 Claude），能借力。"},
+    {"source": "hf-papers", "title": "FinanceComplexQA: Benchmarking Agentic Reasoning on Industrial-grade Financial Documents", "url": "https://huggingface.co/papers/2607.19238", "date": "2026-07-24", "note": "5 赞。工业级金融文档上的 agent 推理基准，垂直域新基准。"},
+    {"source": "hf-papers", "title": "K12-KGraph: A Curriculum-Aligned Knowledge Graph for Benchmarking and Training Educational LLMs", "url": "https://huggingface.co/papers/2605.09635", "date": "2026-07-24", "note": "55 赞，本批第二高。教育 LLM 的课标对齐知识图谱。**注意 arxiv id 是 2605 开头（5 月的旧论文，07-24 被顶上来）**，不是新稿。"},
+    {"source": "simon-willison", "title": "Ruff v0.16.0", "url": "https://simonwillison.net/2026/Jul/25/ruff/", "date": "2026-07-25", "note": "非 AI，Python linter 版本更新，Simon 自己 CI 挂了才发现。凑数条，可直接弃。"}
+  ],
+  "fun": [
+    {"source": "hacker-news", "title": "Android May Soon Restrict On-Device ADB", "url": "https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/", "date": "2026-07-25", "note": "本轮 HN 最高票 875 分。Android 可能限制设备上的 ADB，开发者自由度又少一块。非 AI 但情绪浓。"},
+    {"source": "hacker-news", "title": "Did They Ghost You?", "url": "https://didtheyghostyou.com/", "date": "2026-07-26", "note": "290 分、5 小时。名字自解释的小站，梗味足，具体做什么未核。"},
+    {"source": "hacker-news", "title": "Kimi K3 built a Windows XP in browser", "url": "https://windows-xp.kimi.site/", "date": "2026-07-26", "note": "55 分。Kimi K3 在浏览器里搓了个 Windows XP，域名是 kimi.site 自家的。视觉梗，适合配图。HN 讨论 https://news.ycombinator.com/item?id=49052074"},
+    {"source": "hacker-news", "title": "Show HN: I made some transistor animations", "url": "https://brandonli.net/semisim/animations", "date": "2026-07-24", "note": "131 分。晶体管工作原理动画，从物理层讲起，视觉向。"},
+    {"source": "hacker-news", "title": "Turn And Face The Strange", "url": "https://fly.io/blog/kurt-scott-money-sprites/", "date": "2026-07-25", "note": "140 分。fly.io 官方博客，标题是 Bowie 的歌名，讲他们自己的某次转向。fly.io 的博客一贯能写。"},
+    {"source": "hacker-news", "title": "Memory Safety Absolutists", "url": "https://itsallaboutthebit.com/memory-safety-absolutists/", "date": "2026-07-25", "note": "55 分。怼内存安全原教旨派，工程价值观吵架帖。"},
+    {"source": "hacker-news", "title": "Show HN: Brolly, a plain-text weather forecast site", "url": "https://brolly.sh/forecast/RWFP2qW8", "date": "2026-07-25", "note": "128 分。纯文本天气预报站，和「软件为什么越来越难用」（07-25 已报）是同一种情绪的正面版。"},
+    {"source": "hacker-news", "title": "GM Backs Sodium Ion Batteries for U.S. Grid Storage", "url": "https://spectrum.ieee.org/sodium-ion-battery-peak-energy", "date": "2026-07-26", "note": "116 分、IEEE Spectrum。通用押注钠离子电池做电网储能。非 AI，但和数据中心电力那条线沾边。"},
+    {"source": "hacker-news", "title": "Producing ammonia and fertiliser using wind power in Morris, Minnesota", "url": "https://ammoniaenergy.org/articles/flexible-renewable-ammonia-demonstrator-now-operational-in-minnesota/", "date": "2026-07-25", "note": "87 分。风电制氨做化肥的示范装置投产。冷门实业，用户口味里的「出乎意料」那一类。"},
+    {"source": "hacker-news", "title": "Bitchat is now on Radicle", "url": "https://news.ycombinator.com/item?id=49047365", "date": "2026-07-25", "note": "207 分。Bitchat 迁到去中心化代码托管 Radicle。原始链接是 radicle.network 的一个长哈希节点地址，不适合当成稿 URL，**建议成稿用 HN 讨论页或另找项目主页**。"},
+    {"source": "lesswrong", "title": "Duane Arnold", "url": "https://www.lesswrong.com/posts/G6obXhcmtfMFHzr7Q/duane-arnold-1", "date": "2026-07-24", "note": "Tomás B. 的短篇小说（LW 上偶尔出现的虚构类），开头是 TikTok 上某个装模作样的女孩。理性主义源的杂文口，非 AI 正文但情绪好。"}
+  ],
+  "odds_box_scout_全部撞往期_已弃": [
+    "ScottAlexander/in-2028-will-an-ai-be-able-to-gener（07-04 报过）",
+    "Shump/in-2028-will-an-ai-be-able-to-gener-e7f99acbe19d（07-06）",
+    "EliezerYudkowsky/by-the-end-of-2026-will-we-have-tra（07-15）",
+    "TamayBesiroglu/will-ai-be-capable-of-producing-ann（07-17）",
+    "ScottAlexander/in-2028-will-ai-be-at-least-as-big（07-05）",
+    "ScottAlexander/in-2028-will-at-least-350000-americ（07-18）",
+    "dreev/will-ai-pass-the-turing-test-by-202（07-17）",
+    "ahalekelly/international-treaty-limiting-auton（07-08）"
+  ],
+  "odds_box": [
+    {"question": "Stripe 会在 2026 年内收购 OpenRouter 吗？", "prob": "61.3%", "volume_note": "成交额 2.8k mana，全部发生在今天（24h 成交 2786），本轮当日活跃度最高的 AI 市场", "url": "https://manifold.markets/Ronan/will-stripe-acquire-openrouter-in-2"},
+    {"question": "8 月 13 日之前，普通人能拿到 Kimi K3 的权重吗？", "prob": "93.0%", "volume_note": "成交额 1.3k mana。规则写明泄露的种子也算，申请权限不算。呼应 group-2 正文：作者称 K3 权重定于 7 月 27 日公开", "url": "https://manifold.markets/Tetraspace/will-kimi-k3-be-open-source-on-the"},
+    {"question": "Anthropic 会在 2026 年内放出一个开放权重模型吗？", "prob": "9.7%", "volume_note": "成交额 2.6k mana。规则很松：不必大、不必新，放出 Opus 3 也算", "url": "https://manifold.markets/Interrobang/will-anthropic-release-an-openweigh"},
+    {"question": "自动驾驶元年会比 Linux 桌面元年先到吗？", "prob": "93.0%", "volume_note": "成交额 4.3k mana。判定：任何人都能在一国或数州范围内叫到可靠自动驾驶车 vs Linux 桌面份额到 10%", "url": "https://manifold.markets/josh/will-the-year-of-the-selfdriving-ca"},
+    {"question": "2030 年前，会有超过 10 万人靠胚胎筛选出生吗？", "prob": "25.7%", "volume_note": "成交额 57.1k mana，24h 成交 10387，非 AI 里当日最活跃。判定不看筛什么，只要不是染色体数目、镰刀型贫血这类单点指标，而是宽口径的「孩子会不会过得好」预测", "url": "https://manifold.markets/MilfordHammerschmidt/will-over-100000-people-be-conceive"}
+  ],
+  "skipped_sources": [
+    {"slug": "anthropic", "reason": "抓到（200），24h 窗口内零新条目。索引页最新为 Jul 24 的 claude-opus-5，07-25 已报。"},
+    {"slug": "openai", "reason": "RSS 抓到（200），24h 窗口内零新条目。最新 Jul 23 的 Health in ChatGPT，07-24 已报。"},
+    {"slug": "acx", "reason": "抓到（200），168h 窗口内 5 篇全部在 seen 且已报（Breakdown In Pakistan / The Hugging Face Incident / Links For July 2026 Part 1 等）。"},
+    {"slug": "thezvi", "reason": "部分收：Opus 5 系统卡进 group-1。另一条 Introducing Lightcone Commons（07-24）与 07-24 已报的 LessWrong 版 Lightcone Commons 同一事件，按去重丢弃。"},
+    {"slug": "interconnects", "reason": "抓到（200），168h 窗口内 2 篇（Kimi K3 07-20、Open models recap 07-22）均已报。"},
+    {"slug": "import-ai", "reason": "抓到（200），最新 Import AI 465（07-20）已在 seen 且已报。周一锚点，今天周日，下一期未出。"},
+    {"slug": "ahead-of-ai", "reason": "抓到（200），最新 07-18 Controlling Reasoning Effort in LLMs，超出 168h 窗口。"},
+    {"slug": "karpathy", "reason": "抓到（200），400h 内零更新，博客源仍空窗。"},
+    {"slug": "lilian-weng", "reason": "抓到（200），最新 07-04 Harness Engineering for Self-Improvement，在 720h 窗口内但已在 seen。"},
+    {"slug": "chip-huyen", "reason": "抓到（200），720h 内零更新，仍停在 2025-01。已连续多月无更新。"},
+    {"slug": "thinking-machines", "reason": "抓到（200），最新 07-10 The Future Worth Building Is Human 已报，无新文。"},
+    {"slug": "huggingface", "reason": "HF 博客抓到（200），24h 窗口内零新条目。首页最新是「2 days ago」的 AMD MI455X transformers 结果。"},
+    {"slug": "hf-papers", "reason": "抓到（200），但 https://huggingface.co/papers 当前服务的仍是 **2026-07-24 那一批**（与 https://huggingface.co/papers/date/2026-07-24 逐条一致），07-25 页面不存在。故本轮无新批次，radar 里那 5 条是 07-24 批里上期未收的次高票残留。"},
+    {"slug": "neodrop", "reason": "抓到（200），频道最新一期是 2026-07-24 发布的「7月25日」晨报，07-26 那期尚未推送。既有各期均在上期覆盖范围内，本轮无新线索。"},
+    {"slug": "manifold", "reason": "非文章源，已用于 odds_box。已剔除 07-24 报过的「消费级 AI 黑系统」（现 62.6%，较 63.1% 变动 <10 点）与属于已下架 IMO 主线的「开源模型 IMO 2026 满分」。"}
+  ]
+}

@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://thezvi.substack.com/p/claude-opus-5-the-system-card",
+  "title": "Opus 5 把提示注入的成功率压到了原来的十分之一",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-26"
+ },
+ {
   "id": "https://thezvi.substack.com/p/openai-model-hacks-into-huggingface",
   "title": "Zvi HF 事件专文（消化进 HF 银牌）",
   "date": "2026-07-22",
