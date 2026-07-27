@@ -116,7 +116,8 @@ def collect_history(before_date):
                 print(f"  [warn] {d}/daily.json 解析失败，跳过: {e}")
                 data = {}
             for sec, cname in [("gold", "金"), ("silver", "银"), ("radar", "雷达"), ("fun", "乐子"),
-                               ("industry", "行业"), ("deep", "长文"), ("papers", "论文"),
+                               ("industry", "行业"), ("angle", "视角"), ("deep", "长文"),
+                               ("papers", "论文"), ("brief", "简讯"),
                                ("regulation", "监管"), ("official", "公告")]:
                 for item in data.get(sec, []) or []:
                     add(item.get("url"), d, cname)
@@ -154,10 +155,13 @@ def collect_targets(folder):
     if os.path.exists(daily):
         d = load_tolerant_json(daily)
         for sec, cname in [("gold", "金"), ("silver", "银"), ("radar", "雷达"), ("fun", "乐子"),
-                           ("industry", "行业"), ("deep", "长文"), ("papers", "论文"),
+                           ("industry", "行业"), ("angle", "视角"), ("deep", "长文"),
+                           ("papers", "论文"), ("brief", "简讯"),
                            ("regulation", "监管"), ("official", "公告")]:
             for item in d.get(sec, []) or []:
                 out.append(("daily", cname, item.get("url"), None))
+                for s in item.get("sources") or []:
+                    out.append(("daily", cname, s.get("url"), None))
         for item in d.get("odds", []) or []:
             out.append(("daily", "赔率", item.get("url"), item.get("prob")))
     return out

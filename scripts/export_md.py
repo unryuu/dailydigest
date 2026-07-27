@@ -17,10 +17,12 @@ from dailyjson import load_daily
 
 SECTIONS = [  # 与 render_daily.py 同序
     ("industry",   "🗞️", "行业大事"),
+    ("angle",      "🔍", "独家视角"),
     ("deep",       "📖", "深度长文"),
     ("papers",     "🧪", "新鲜论文"),
     ("regulation", "🏛️", "监管动向"),
     ("official",   "📢", "官方公告"),
+    ("brief",      "📌", "行业简讯"),
     ("fun",        "🎪", "乐子汇总"),
 ]
 TIER_MARK = {"gold": "🥇 ", "silver": "🥈 "}
@@ -34,6 +36,11 @@ def zhihu_md(d):
             continue
         L.append(f"## {emoji} {name}")
         L.append("")
+        if key == "brief":  # 行业简讯：只有标题的清单
+            for it in items:
+                L.append(f"- [{it.get('title') or ''}]({it['url']})")
+            L.append("")
+            continue
         for it in items:
             mark = TIER_MARK.get(it.get("tier", ""), "")
             title = it.get("title") or it.get("label") or ""
@@ -44,6 +51,10 @@ def zhihu_md(d):
                 if p.strip():
                     L.append(p.strip())
                     L.append("")
+            src = it.get("sources") or []
+            if src:
+                L.append("另见：" + " · ".join(f"[{s.get('name','')}]({s['url']})" for s in src))
+                L.append("")
     odds = d.get("odds", [])
     if odds:
         L.append("## 🎲 赔率盒子")

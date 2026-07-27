@@ -34,10 +34,12 @@ def esc(s):
 
 SECTIONS = [  # 与 render_daily.py 保持同序
     ("industry",   "🗞️", "行业大事"),
+    ("angle",      "🔍", "独家视角"),
     ("deep",       "📖", "深度长文"),
     ("papers",     "🧪", "新鲜论文"),
     ("regulation", "🏛️", "监管动向"),
     ("official",   "📢", "官方公告"),
+    ("brief",      "📌", "行业简讯"),
     ("fun",        "🎪", "乐子汇总"),
 ]
 TIER_MARK = {"gold": "🥇 ", "silver": "🥈 "}
@@ -56,6 +58,9 @@ def compose_links(d):
             mark = TIER_MARK.get(it.get("tier", ""), "• ")
             ttl = it.get("title") or it.get("label") or ""
             rows.append(f"{mark}<a href=\"{it['url']}\">{esc(ttl)}</a>")
+            # 独家视角的额外来源，缩进挂在主链接下面
+            for s in it.get("sources") or []:
+                rows.append(f"　　↳ <a href=\"{s['url']}\">{esc(s.get('name',''))}</a>")
         seg(emoji, name, rows)
     seg("🎲", "赔率盒子", [f"• <a href=\"{o['url']}\">{esc(o['question'])} — {esc(o['prob'])}</a>" for o in d.get("odds", [])])
     return "\n".join(L).strip()

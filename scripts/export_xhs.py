@@ -27,13 +27,17 @@ SUBINK  = "#6B6A5E"
 GOLD    = "#B8901F"
 SILVER  = "#7C8894"
 ODDS    = "#5E8C5A"
+ANGLE   = "#C24A4A"
+BRIEF   = "#8C8574"
 
 SECTIONS = [
     ("industry",   "🗞️", "行业大事", "#A8562F"),
+    ("angle",      "🔍", "独家视角", ANGLE),
     ("deep",       "📖", "深度长文", "#4E7CA1"),
     ("papers",     "🧪", "新鲜论文", "#3F8E7E"),
     ("regulation", "🏛️", "监管动向", "#8A6FA8"),
     ("official",   "📢", "官方公告", "#7C8894"),
+    ("brief",      "📌", "行业简讯", BRIEF),
     ("fun",        "🎪", "乐子汇总", "#C2703C"),
 ]
 ODDS_HEAD = ("odds", "🎲", "赔率盒子", ODDS)
@@ -66,6 +70,13 @@ html,body {{ background:{BG}; }}
 .item .body {{ font-family:"LXGW WenKai",serif; font-size:{F_BODY}px; line-height:{LH_BODY}px; color:{INK}; margin-top:14px; }}
 .item .body p {{ margin-top:14px; }}
 .item .body p:first-child {{ margin-top:0; }}
+.item.angle {{ border-left:10px solid {ANGLE}; }}
+.item .src {{ font-family:"LXGW WenKai",serif; font-size:30px; line-height:1.5; color:{SUBINK}; margin-top:18px; }}
+.brief {{ background:{CARD}; border-radius:20px; padding:10px 36px; margin:18px 0; box-shadow:0 2px 0 rgba(0,0,0,.04); }}
+.brief .row {{ font-family:"LXGW WenKai",serif; font-size:{F_BODY}px; line-height:1.46; color:{INK};
+              padding:20px 0; border-bottom:2px solid rgba(0,0,0,.06); }}
+.brief .row:last-child {{ border-bottom:none; }}
+.brief .row .dot {{ color:{BRIEF}; font-weight:bold; margin-right:14px; }}
 .odd {{ display:flex; align-items:center; gap:22px; padding:20px 6px; border-bottom:2px solid rgba(0,0,0,.06); }}
 .odd .q {{ flex:1; font-family:"LXGW WenKai",serif; font-size:42px; line-height:1.42; color:{INK}; }}
 .odd .qn {{ font-family:"LXGW WenKai",serif; font-size:32px; color:{SUBINK}; margin-top:6px; }}
@@ -89,7 +100,7 @@ def head_html(emoji, name, color):
             f'<div class="label" style="color:{color}">{emoji} {name}</div></div>')
 
 
-def item_html(it):
+def item_html(it, key=""):
     tier = it.get("tier", "none")
     tag = ""
     if tier == "gold":
@@ -98,7 +109,18 @@ def item_html(it):
         tag = f'<span class="tag" style="background:{SILVER}">银</span>'
     body = "".join(f"<p>{esc(p.strip())}</p>" for p in it.get("body", "").split("\n\n") if p.strip())
     body_div = f'<div class="body">{body}</div>' if body else ""
-    return f'<div class="item"><div class="ttl">{tag}{esc(it.get("title") or "")}</div>{body_div}</div>'
+    src = it.get("sources") or []
+    src_div = (f'<div class="src">另见：{esc(" · ".join(s.get("name", "") for s in src))}</div>'
+               if src else "")
+    cls = "item angle" if key == "angle" else "item"
+    return (f'<div class="{cls}"><div class="ttl">{tag}{esc(it.get("title") or "")}</div>'
+            f'{body_div}{src_div}</div>')
+
+
+def brief_html(items):
+    rows = "".join(f'<div class="row"><span class="dot">·</span>{esc(it.get("title") or "")}</div>'
+                   for it in items)
+    return f'<div class="brief">{rows}</div>'
 
 
 def odds_html(o):
@@ -120,7 +142,7 @@ def cover_html(d):
     hls = []
     for key, emoji, name, color in SECTIONS + [(ODDS_HEAD[0],) + ODDS_HEAD[1:]]:
         for it in d.get(key, []):
-            if it.get("tier") in ("gold", "silver"):
+            if it.get("tier") in ("gold", "silver") or key == "angle":
                 hls.append((color, it.get("title") or ""))
     rows = "".join(f'<div class="hl"><div class="dot" style="background:{c}"></div>'
                    f'<div class="t">{esc(t)}</div></div>' for c, t in hls)
@@ -172,8 +194,10 @@ def main():
     pages = []
     for key, emoji, name, color in SECTIONS:
         items = d.get(key, [])
-        if items:
-            pages.append(head_html(emoji, name, color) + "".join(item_html(it) for it in items))
+        if not items:
+            continue
+        inner = brief_html(items) if key == "brief" else "".join(item_html(it, key) for it in items)
+        pages.append(head_html(emoji, name, color) + inner)
     odds = d.get("odds", [])
     if odds:
         pages.append(head_html(*ODDS_HEAD[1:]) + "".join(odds_html(o) for o in odds))

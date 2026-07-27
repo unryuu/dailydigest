@@ -11,8 +11,8 @@ recent_titles.py <date> [N=3] — 打印目标日期之前最近 N 期的已发�
 import sys, re, os, json, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SECTIONS = [("industry", "行业"), ("deep", "长文"), ("papers", "论文"),
-            ("regulation", "监管"), ("official", "公告"), ("fun", "乐子"),
+SECTIONS = [("industry", "行业"), ("angle", "视角"), ("deep", "长文"), ("papers", "论文"),
+            ("regulation", "监管"), ("official", "公告"), ("brief", "简讯"), ("fun", "乐子"),
             ("gold", "金·旧版"), ("silver", "银·旧版"), ("radar", "雷达·旧版")]
 TIER = {"gold": "🥇", "silver": "🥈"}
 

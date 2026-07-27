@@ -7,10 +7,13 @@
 
 管线：daily.json -> work/ 下生成 html -> 无头 Chrome 截 1179px 宽长图 -> Pillow 裁底部空白 -> daily.full.png
 
-版式（2026-07-21 改版）：
-- 七个分区：行业大事 / 深度长文 / 新鲜论文 / 监管动向 / 官方公告 / 乐子汇总 / 赔率盒子
+版式（2026-07-21 改版；2026-07-27 加两区）：
+- 九个分区：行业大事 / 独家视角 / 深度长文 / 新鲜论文 / 监管动向 / 官方公告 / 行业简讯 / 乐子汇总 / 赔率盒子
 - 每个分区内部再分档：金牌（卡片+金标）、银牌（卡片+银标）、无牌（行式条目）
 - 空分区自动跳过；条目字段 tier: "gold"|"silver"|缺省无牌
+- angle（独家视角）：几条话题相近的内容并成一段来聊，正文 ≤350 字，不挂金银标，
+  卡片带左侧红边；可选 sources 字段 [{name,url}] 渲成底部一行「另见」灰字
+- brief（行业简讯）：连无牌都不够格的，只有 title、没有 body，渲成紧凑行式清单
 - 旧五分区格式（gold/silver/radar/fun 键）不再支持，重渲旧期请用 git 历史版本
 
 设计参数（iPhone 15 Pro：物理 2556x1179、3x、逻辑宽 393pt）：
@@ -32,14 +35,18 @@ SUBINK  = "#6B6A5E"   # 次要灰
 GOLD    = "#B8901F"   # 金牌标
 SILVER  = "#7C8894"   # 银牌标
 ODDS    = "#5E8C5A"
+ANGLE   = "#C24A4A"   # 独家视角主色（卡片左边）
+BRIEF   = "#8C8574"   # 行业简讯主色（清单圆点）
 
 # key -> (emoji, 四字分区名, 主色)；按此顺序渲染
 SECTIONS = [
     ("industry",   "🗞️", "行业大事", "#A8562F"),
+    ("angle",      "🔍", "独家视角", ANGLE),
     ("deep",       "📖", "深度长文", "#4E7CA1"),
     ("papers",     "🧪", "新鲜论文", "#3F8E7E"),
     ("regulation", "🏛️", "监管动向", "#8A6FA8"),
     ("official",   "📢", "官方公告", "#7C8894"),
+    ("brief",      "📌", "行业简讯", BRIEF),
     ("fun",        "🎪", "乐子汇总", "#C2703C"),
 ]
 ODDS_HEAD = ("🎲", "赔率盒子", ODDS)
@@ -68,6 +75,13 @@ html,body {{ background:{BG}; }}
        font-size:36px; line-height:1; color:#fff; padding:10px 20px 12px; border-radius:12px; margin-right:16px; }}
 .item .body {{ font-family:"LXGW WenKai",serif; font-size:54px; line-height:1.56; color:{INK}; margin-top:18px; }}
 .item .body p {{ margin-top:16px; }}
+.item.angle {{ border-left:12px solid {ANGLE}; }}
+.item .src {{ font-family:"LXGW WenKai",serif; font-size:38px; line-height:1.5; color:{SUBINK}; margin-top:22px; }}
+.brief {{ background:{CARD}; border-radius:22px; padding:14px 38px; margin:18px 0; box-shadow:0 2px 0 rgba(0,0,0,.04); }}
+.brief .row {{ font-family:"LXGW WenKai",serif; font-size:50px; line-height:1.48; color:{INK};
+              padding:22px 0; border-bottom:2px solid rgba(0,0,0,.06); }}
+.brief .row:last-child {{ border-bottom:none; }}
+.brief .row .dot {{ color:{BRIEF}; font-weight:bold; margin-right:16px; }}
 .odd {{ display:flex; align-items:center; gap:24px; padding:18px 6px; border-bottom:2px solid rgba(0,0,0,.06); }}
 .odd .q {{ flex:1; font-family:"LXGW WenKai",serif; font-size:46px; line-height:1.42; color:{INK}; }}
 .odd .qn {{ font-family:"LXGW WenKai",serif; font-size:38px; color:{SUBINK}; margin-top:6px; }}
@@ -99,6 +113,11 @@ html,body {{ background:{BG}; }}
         if not items:
             continue
         parts.append(section_head(emoji, name, color))
+        if key == "brief":  # 行业简讯：一张卡里的紧凑清单，只有标题
+            rows = "".join(f'<div class="row"><span class="dot">·</span>{esc(title_of(it))}</div>'
+                           for it in items)
+            parts.append(f'<div class="brief">{rows}</div>')
+            continue
         for it in items:
             tier = it.get("tier", "none")
             tag = ""
@@ -108,7 +127,12 @@ html,body {{ background:{BG}; }}
                 tag = f'<span class="tag" style="background:{SILVER}">银</span>'
             body_html = "".join(f"<p>{esc(p)}</p>" for p in it.get("body", "").split("\n\n") if p.strip())
             body_div = f'<div class="body">{body_html}</div>' if body_html else ""
-            parts.append(f'<div class="item"><div class="ttl">{tag}{esc(title_of(it))}</div>{body_div}</div>')
+            src = it.get("sources") or []
+            src_div = (f'<div class="src">另见：{esc(" · ".join(s.get("name", "") for s in src))}</div>'
+                       if src else "")
+            cls = "item angle" if key == "angle" else "item"
+            parts.append(f'<div class="{cls}"><div class="ttl">{tag}{esc(title_of(it))}</div>'
+                         f'{body_div}{src_div}</div>')
 
     odds = d.get("odds", [])
     if odds:
@@ -183,7 +207,18 @@ SAMPLE = {
         {"title": "占位无牌长文条目，带一句解读看看排版", "url": "https://example.com",
          "body": "这是无牌条目的可选解读，两句以内，灰色小字。"},
     ],
+    "angle": [
+        {"title": "占位独家视角：三条相近的消息放一起聊", "url": "https://example.com",
+         "body": "独家视角不是每期都有，几条话题靠近的内容并成一段，字数放宽到 350 字。第一段先把共同的那件事说出来。\n\n第二段展开区别在哪，谁的态度是什么。检查左侧红边、底部「另见」灰字和金银卡片摆在一起的层级关系。",
+         "sources": [{"name": "第二个来源", "url": "https://example.com/b"},
+                     {"name": "第三个来源", "url": "https://example.com/c"}]},
+    ],
     "papers": [{"title": "占位论文条目：某方法把某指标从 X 提到 Y", "url": "https://example.com"}],
+    "brief": [
+        {"title": "占位简讯：某公司发了个新模型，主打便宜", "url": "https://example.com/1"},
+        {"title": "占位简讯：某机场上线机器人代客泊车", "url": "https://example.com/2"},
+        {"title": "占位简讯：某巨头披露持有某公司百亿美元股票", "url": "https://example.com/3"},
+    ],
     "regulation": [{"tier": "silver", "title": "占位监管银牌：某机构负责人辞职", "url": "https://example.com",
                     "body": "一段以内的监管动向摘要占位。"}],
     "official": [{"title": "占位公告：某公司开放某项申请", "url": "https://example.com"}],

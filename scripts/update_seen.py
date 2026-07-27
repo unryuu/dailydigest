@@ -18,7 +18,7 @@ from urllib.parse import urlsplit
 from dailyjson import load_daily
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-CONTENT_SECTIONS = ["industry", "deep", "papers", "regulation", "official", "fun"]
+CONTENT_SECTIONS = ["industry", "angle", "deep", "papers", "regulation", "official", "brief", "fun"]
 
 
 def host_of(url):
@@ -96,9 +96,12 @@ def main():
 
     written, updated, unmatched = [], [], []
     for sec in CONTENT_SECTIONS:
+        # 主链接 +（独家视角的）额外来源，都要回写 seen
+        pairs = []
         for it in d.get(sec) or []:
-            url = it.get("url", "")
-            title = it.get("title") or it.get("label") or ""
+            pairs.append((it.get("url", ""), it.get("title") or it.get("label") or ""))
+            pairs += [(s.get("url", ""), s.get("name", "")) for s in it.get("sources") or []]
+        for url, title in pairs:
             if not url.startswith("http"):
                 continue
             slug, item_date = None, None
