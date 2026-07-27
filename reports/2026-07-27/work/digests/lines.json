@@ -1,0 +1,94 @@
+[
+  {
+    "id": "deep-retrieval",
+    "section": "deep",
+    "label": "斯坦福团队发现模型答新闻题主要错在搜不准",
+    "url": "https://www.deeplearning.ai/the-batch/web-retrieval-flusters-llms",
+    "body": "用六种语言的 BBC 新闻出题，错误里近四成是压根没搜到该看的页面。与其堆参数，不如先把检索做好。",
+    "note": "核实通过。The Batch #363。研究方 Mirac Suzgun 等，斯坦福 + Together AI。2026-02-09 至 02-22 每日出题，六种语言（阿、英、法、印地、俄、土），六个模型，含多选、假前提、自由作答三种题型。关键数字：英文常规题 Gemini 3 Flash 95.6%、Grok 4 95.0%、Claude 4.5 Sonnet 90.4%；印地语最差，平均 79.3%；错误构成里检索失败 38.8%、检索到沾边但事实错的来源 32.7%；假前提题 GPT-5 仅 19%、Grok 4 70%。原文原话：多数错误来自检索而非智能，改进检索的收益可能大于扩大参数。用户给的结论方向核准无误。"
+  },
+  {
+    "id": "deep-kaj",
+    "section": "deep",
+    "label": "Kaj Sotala 公开自己写文章怎么用 AI",
+    "url": "https://www.lesswrong.com/posts/tgigHkZoYrJEGe4tP/ai-use-policy-for-my-essay-writing",
+    "body": "AI 参与头脑风暴、查资料、挑毛病，但所有建议都改写成他自己的话，只有一句原封不动用过。取舍标准是忘了出处也依然成立。",
+    "note": "主 agent 已自行核实并给出结论，本轮未重复抓取，按定调收成 label + body。"
+  },
+  {
+    "id": "reg-union",
+    "section": "regulation",
+    "label": "工会合同成了美国工人挡 AI 的最强护栏之一",
+    "url": "https://www.axios.com/2026/07/26/union-contracts-ai-workplace-disruption",
+    "body": "国会没立法，能不能就 AI 改岗讨价还价全看合同。近九成美国劳动力没有工会代表，约 1.3 亿人没这张牌。",
+    "note": "fetch_failed：正文 WebFetch 返回 403（主 agent 此前用带浏览器 UA 的 curl 亦 403），本轮按指示只试一次即放弃。label/body 全部事实仅来自 Axios 自家 RSS 摘要的两个数字，正文未读，低信度，请定牌自行掂量是否收。"
+  },
+  {
+    "id": "brief-meta",
+    "section": "brief",
+    "label": "Meta 转闭源打价格战，输出每百万 4.25 美元",
+    "url": "https://www.deeplearning.ai/the-batch/meta-sparks-a-price-war",
+    "note": "核实通过。Muse Spark 1.1 是闭源视觉语言模型，走 Meta Model API。定价：输出 4.25 美元/百万 token，输入 1.25，缓存输入 0.15。Artificial Analysis 智能指数 51 分，与 GLM-5.2、GPT-5.6 Luna 并列；同档智能里只有 GPT-5.6 Luna 更便宜；该基准单任务成本 0.26 美元。战略转向核准无误：从 Llama 时代「OpenAI 的开源替代」改为闭源低价，原文点明靠广告收入补贴 AI 成本、直攻对手经济模型。备选数字：0.26 美元/任务；我选了 4.25 因为它是读者能直接对照的挂牌价。brief 无 body。"
+  },
+  {
+    "id": "brief-inflect",
+    "section": "brief",
+    "label": "936 万参数的文字转语音模型，CPU 上跑到 6 倍实时",
+    "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
+    "note": "核实通过，但用户描述需更正：不是「完整语音」（非语音识别、非全双工对话），是纯文字转语音（TTS），VITS 架构，单一固定英文男声，不做声音克隆。参数 9,356,513，FP32 权重 37.53 MB，输出 24 kHz，纯 CPU 或 CUDA 本地推理、不依赖外部模型和参考音频，4 线程 CPU 约 6.28 倍实时，同种子结果可复现，支持 0.5–2.0 倍语速。与昨天「8 美元单片机跑 2890 万参数模型」已比对：作者、架构、参数量、任务全不同，不是同一项目，非 dup。"
+  },
+  {
+    "id": "brief-spacex",
+    "section": "brief",
+    "label": "Google 持有 SpaceX 6% 股份，941 亿美元",
+    "url": "https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c",
+    "note": "数字核准，但 WSJ 原文未读（有墙）。实读的是 watcher.guru 转载（https://watcher.guru/news/alphabet-google-discloses-holding-94b-in-spacex-spcx-stock）加搜索结果里 Bloomberg / Quartz / MarketScreener 的同源标题，三处数字一致：941 亿美元、约 6%，07-23 随 Q2 财报披露；其中 800 亿受短期限售、141 亿受长期限售至 2027 年三季度；SpaceX 2026 年 6 月上市。二手转述，中信度。另提醒定牌：这条是 07-23 的消息，到 07-27 已隔四天，时效偏旧。"
+  },
+  {
+    "id": "brief-gatwick",
+    "section": "brief",
+    "label": "Gatwick 机场上线机器人代客泊车，8 月接首批车",
+    "url": "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics/",
+    "note": "核实通过。英国首个机场机器人泊车，供应商 Stanley Robotics（其首个英国机场项目）。流程：司机把车开进南航站楼旁的独立舱位、扫码后带着钥匙离开，机器人钻到车底托起轮胎搬走密集停放，返程按登记的航班信息提前取车。7 月开放预订，8 月首批客户使用。车辆限制 2.6 吨、高 2.3 米、轴距 3.3 米、轮径 21 寸，必须提前预订。原文未给机器人数量、增容比例和价格，所以 label 只写了时间。"
+  },
+  {
+    "id": "fun-cookie",
+    "section": "fun",
+    "label": "一场欧洲运动要求废掉 cookie 同意横幅",
+    "url": "https://killthecookiebanner.eu/",
+    "body": "欧盟委员会提的方案是让浏览器一次性替你表态要不要被追踪。Google 和德法波等国正游说把这条删掉。",
+    "note": "核实通过，但用户描述需更正：它不是正式的欧盟公民倡议（ECI），站上没有签名机制、没有签名门槛、没有计数器，形式是让网友照名单挨个给欧洲议员发邮件，支持《数字综合法案》里的 GDPR 第 88b 条。88b 是欧委会 2025 年秋提出的：用浏览器自动信号传递隐私偏好取代弹窗，仍可按站点、按用途分别授权。2026-06-18 理事会立场里 88b 被删，目前理事会与欧洲议会并行谈判。noyb 官网文章确认反对方是 Google 的游说加德国、法国、波兰等成员国，并引 Schrems 说 cookie 横幅是追踪业的发明而非数据保护的发明；该文未提及 killthecookiebanner.eu，但站内图片资源路径指向 noyb.eu，疑为 noyb 发起，低信度，故 label/body 未写发起方。"
+  },
+  {
+    "id": "fun-htmx",
+    "section": "fun",
+    "label": "htmx 4.0 只在 Game Boy 卡带上发行",
+    "url": "https://swag.htmx.org/en-cad/products/htmx-4-the-game",
+    "body": "25 美元一张真卡带，做了一千张。打完四关击败最终 Boss「Warren Buffering」，屏幕会显示 htmx 4.0 源码，得自己抄下来。",
+    "note": "核实通过，是真实体卡带、真能玩，不是纯玩笑页面。商店接口显示标价 2500 美分即 25 美元、在售（用户给的 en-cad 链接显示 35.91 加元，同一商品）。HN 帖 391 分 132 评（用户记的 778 分对不上，可能是记混了另一条），多名网友确认拿到实物、通关有源码阅读器；htmx 作者 Carson Gross 在帖里说做了 1000 张、在 Big Sky Dev Con 现场发了 150 张，定价 25 美元不为赚钱。玩法：马里奥式横版、四关三种地貌，最终 Boss 叫 Warren Buffering，打赢后源码显示在 Game Boy 屏幕上要玩家自己逐字誊写。"
+  },
+  {
+    "id": "fun-flock",
+    "section": "fun",
+    "label": "美国砸 Flock 监控摄像头的运动在扩大",
+    "url": "https://www.theguardian.com/us-news/ng-interactive/2026/jul/25/flock-surveillance-cameras",
+    "body": "摄像头自动拍下路过车牌存进可搜索的数据库，全美约 6000 个社区在用。卫报数到 23 个州至少 33 起破坏，佛州一位 77 岁老人换了个法子，把牌子绑在泳池捞杆上坐着挡镜头。",
+    "note": "两条已按要求合并，主链接用卫报。卫报（Sanya Mansoor，2026-07-25）核实通过：Flock 总部佐治亚、估值 84 亿美元，自称车牌每月扫描数十亿次、覆盖约 6000 个社区；卫报统计到 23 个州至少 33 起明确以反监控为名的破坏；代表人物是明尼阿波利斯的匿名网红 NoMark（70 万粉，已弄掉十几个），另有弗吉尼亚 Jeffrey Sovern、新墨西哥 Jevon Martinez（毁 13 个）被起诉；80 多个城市已解约或停用，含奥斯汀、丹佛；民间地图 DeFlock 标出全美 11.5 万多个车牌识别器；争议点是无令状、ICE 可经法律漏洞调阅、多名警察因用它跟踪他人被开除。cltampa（Valerie Smith，2026-07-25）核实通过：老人叫 Carl Gunn，77 岁，共和党，圣彼得堡 Coquina Key 社区，把牌子「DOWN WITH FLOCK CAMERAS」贴在泳池捞杆上、搬折叠椅坐在摄像头前挡镜头，这是他第二次，警车来问了 10–15 分钟后离开；他明确说不想砸、要找合法非破坏的办法；圣彼得堡约 50 个 Flock 摄像头、2022 年起用。原稿两篇都是 07-25，与卫报同日。"
+  },
+  {
+    "id": "fun-github",
+    "section": "fun",
+    "label": "一个人写脚本扒出一万个 GitHub 木马仓库",
+    "url": "https://orchidfiles.com/github-security-team/",
+    "body": "这些仓库标题写成「Download」骗人下压缩包。GitHub 删完这批就没下文，几小时后脚本又找到新的，挂了一个月没人管。",
+    "note": "主 agent 已自行核实，本轮未重复抓取。原文里标题带下载图标 emoji（📥 Download），body 里去掉了 emoji 以免渲染出问题，定牌若想保留可加回。"
+  },
+  {
+    "id": "fun-prose",
+    "section": "fun",
+    "label": "David Bentley Hart 列了 33 条英文散文规则",
+    "url": "https://thelampmagazine.com/blog/how-to-write-english-prose",
+    "body": "他反对当下的极简写法，主张把英语的词汇和长句用起来，还说鄙视分号的作家是个蠢货。文章本身就写得华丽。",
+    "note": "主 agent 已自行核实，本轮未重复抓取。全文未提 AI，若定牌要把它放进 AI 语境需另想由头。"
+  }
+]

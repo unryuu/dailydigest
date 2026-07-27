@@ -1,5 +1,89 @@
 [
  {
+  "id": "https://orchidfiles.com/github-security-team/",
+  "title": "写脚本扒出一万个 GitHub 木马仓库",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://www.theguardian.com/us-news/ng-interactive/2026/jul/25/flock-surveillance-cameras",
+  "title": "美国砸 Flock 监控摄像头的运动在扩大",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://swag.htmx.org/en-cad/products/htmx-4-the-game",
+  "title": "在 Game Boy 平台上发行的 JavaScript 库",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://killthecookiebanner.eu/",
+  "title": "欧洲有人在推动废掉 cookie 同意横幅",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics/",
+  "title": "伦敦机场上线机器人代客泊车，8 月接首批车",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c",
+  "title": "Google 持有 SpaceX 6% 股份，941 亿美元",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://huggingface.co/owensong/Inflect-Micro-v2",
+  "title": "936 万参数的TTS小模型",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+  "title": "Cloudflare 要按用途分开处理 AI 爬虫",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
+  "title": "斯坦福：就业疲软不全是 AI 的锅",
+  "date": "2026-07-25",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf",
+  "title": "陶哲轩：数学界正在经历第二次基础危机",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://github.com/hkc5/cursor-bridge",
+  "title": "cursor-bridge",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
+  "id": "https://vectoral.com/blog/token-relay-market",
+  "title": "反向代理工具与中转站黑市",
+  "date": "2026-07-26",
+  "reported": true,
+  "report_date": "2026-07-27"
+ },
+ {
   "id": "https://didtheyghostyou.com/",
   "title": "有网站专门收集面试完把你晾着的公司",
   "date": "2026-07-26",

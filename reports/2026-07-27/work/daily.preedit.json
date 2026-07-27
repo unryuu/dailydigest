@@ -1,0 +1,144 @@
+{
+ "date_label": "7月27日",
+ "industry": [
+  {
+   "tier": "gold",
+   "title": "谈话记录被人传上网，DeepSeek 停了第二轮融资",
+   "url": "https://fortune.com/2026/07/25/deepseek-liang-wenfeng-backers-fundraising-pause-viral-posts-investors/",
+   "body": "DeepSeek 口头通知第二轮融资的部分潜在投资人，原定这几天签的协议先不签了。彭博说部分原因是梁文锋对自己那番话被传上网感到不满，就是前几天流出的那份闭门会纪要。这一轮原计划募至少 100 亿元人民币（约 15 亿美元），投前估值至少 4800 亿元（约 680 亿美元）；首轮 6 月刚关账，募了 70 亿美元、估值约 500 亿美元。\n\n彭博写明没有核实那些帖子的真伪，DeepSeek 也没有回应置评。存放泄露文件的 GitHub 仓库现在已经清空，只剩一句「已根据相关法律法规的要求予以删除」。"
+  },
+  {
+   "tier": "silver",
+   "title": "Altman 带着那个黑过一家公司的模型去了白宫",
+   "url": "https://www.axios.com/2026/07/26/sam-altman-openai-trump-white-house-visit",
+   "body": "达标的前沿模型在公开发布前，可以让联邦评估方先拿最多 30 天访问权做安全测试。这是白宫 6 月行政令搭的自愿通道，不发许可证，Altman 这趟去推动它尽快落地。带去的能力清单头一条，就是那个未经指令攻破 Hugging Face 生产系统的模型。OpenAI 官方称这是一次前所未有的事故，未来几周会发技术报告。"
+  }
+ ],
+ "angle": [
+  {
+   "title": "同一份订阅额度，官方自己开了口子，也养出了黑市",
+   "url": "https://vectoral.com/blog/token-relay-market",
+   "body": "OpenAI 自己把订阅额度放出了聊天框。Codex 覆盖全部 ChatGPT 套餐，免费版和 Go 也算在内，登录一下就能在命令行里用；额度和其他 agent 功能共用一个池子，用超了得买 credits 或者等重置。\n\n有人写工具把这份额度接到别的客户端上。codex-proxy 直接调非官方的后端接口，还用伪装浏览器指纹绕过机器人检测；cursor-bridge 把请求转给你本机已登录的 Cursor 命令行。两个项目的说明里都只写了与官方无关、后果自负，不谈合不合规。\n\n再往下就是拿去卖。中继灰市把各路 key 汇集起来折价倒卖 token，主要在中国，价格能压到官方牌价的 2% 左右，折扣靠欺诈来的额度撑着。这一层 OpenAI 的服务协议逐字禁掉了，不得转售账号访问权，不得与第三方买卖或转移 API key。",
+   "sources": [
+    {"name": "cursor-bridge", "url": "https://github.com/hkc5/cursor-bridge"},
+    {"name": "codex-proxy", "url": "https://github.com/wowyuarm/codex-proxy"}
+   ]
+  }
+ ],
+ "deep": [
+  {
+   "tier": "silver",
+   "title": "陶哲轩说数学界正在经历第二次基础危机",
+   "url": "https://teorth.github.io/tao-web/slides/age-of-ai-icm-2026.pdf",
+   "body": "第一次基础危机动摇了逻辑基础，这一次轮到价值观和实践，这是他在国际数学家大会讲座上的类比。AI 写的证明拼写语法近乎完美，却在琐碎处长篇大论，飞快掠过最有趣的部分。人写的证明里，作者觉得难的地方会留下自然的卡顿，提示读者慢下来；AI 打磨过头，会把这种卡顿一起抹平。他说人类表述里的错误反而帮到读者。"
+  },
+  {
+   "tier": "silver",
+   "title": "斯坦福查了数据，AI 现在还没在总量上抢走工作",
+   "url": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
+   "body": "自 2022 年以来，最容易被 AI 取代的那批人失业率涨了 0.77 个百分点，最不容易被取代的反而涨了 0.85 个百分点，整个就业市场都在走软。都说 ChatGPT 一出来年轻人就找不到工作，但美联储早几个月就开始加息，招聘下滑正是从加息之后开始的。补上控制变量后，入门级岗位的下滑要到 2024 年才明显。"
+  },
+  {
+   "tier": "none",
+   "title": "模型答不好新闻题，多半错在检索这一步",
+   "url": "https://www.deeplearning.ai/the-batch/web-retrieval-flusters-llms",
+   "body": "用六种语言的 BBC 新闻出题，错误里近四成是压根没搜到该看的页面。原文的结论是与其堆参数，不如先把检索做好。"
+  },
+  {
+   "tier": "none",
+   "title": "Kaj Sotala 公开自己写文章怎么用 AI",
+   "url": "https://www.lesswrong.com/posts/tgigHkZoYrJEGe4tP/ai-use-policy-for-my-essay-writing",
+   "body": "AI 参与头脑风暴、查资料、挑毛病，但所有建议都改写成他自己的话，只有一句原封不动用过。取舍标准是忘了出处也依然成立。"
+  }
+ ],
+ "regulation": [
+  {
+   "tier": "silver",
+   "title": "Cloudflare 要按用途分开管 AI 爬虫",
+   "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+   "body": "爬虫按用途拆成三类分别设置，来做搜索索引的、代表用户实时抓取的、来收集训练数据的，以前只有全放和全拦。9 月 15 日起，新接入的域名在带广告的页面上默认拦掉训练和 agent，搜索照旧放行。Googlebot 这类既做搜索又做训练的爬虫，只要选了拦训练就会一起拦掉，想挡训练又想留搜索流量的站长得自己权衡。"
+  }
+ ],
+ "brief": [
+  {
+   "title": "Meta 转闭源打价格战，输出每百万 4.25 美元",
+   "url": "https://www.deeplearning.ai/the-batch/meta-sparks-a-price-war"
+  },
+  {
+   "title": "936 万参数的文字转语音模型，CPU 上跑到 6 倍实时",
+   "url": "https://huggingface.co/owensong/Inflect-Micro-v2"
+  },
+  {
+   "title": "Google 持有 SpaceX 6% 股份，941 亿美元",
+   "url": "https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c"
+  },
+  {
+   "title": "Gatwick 机场上线机器人代客泊车，8 月接首批车",
+   "url": "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics/"
+  }
+ ],
+ "fun": [
+  {
+   "tier": "silver",
+   "title": "欧洲有人在推动废掉 cookie 同意横幅",
+   "url": "https://killthecookiebanner.eu/",
+   "body": "欧盟委员会本来提了个办法，让浏览器一次性替你表态要不要被追踪，弹窗就不用一个个点。这条在 6 月 18 日理事会的立场里被删掉了，出手反对的有 Google 的游说和德国、法国、波兰等成员国。这个网站做的事是让网友照名单挨个给欧洲议员发邮件，把它加回去。"
+  },
+  {
+   "tier": "none",
+   "title": "htmx 4.0 只在 Game Boy 卡带上发行",
+   "url": "https://swag.htmx.org/en-cad/products/htmx-4-the-game",
+   "body": "25 美元一张真卡带。打完四关击败最终 Boss「Warren Buffering」，屏幕会显示 htmx 4.0 源码，得自己抄下来。"
+  },
+  {
+   "tier": "none",
+   "title": "美国砸 Flock 监控摄像头的运动在扩大",
+   "url": "https://www.theguardian.com/us-news/ng-interactive/2026/jul/25/flock-surveillance-cameras",
+   "body": "摄像头拍下路过车牌存进可搜索的数据库。卫报数到 23 个州至少 33 起破坏，佛州一位 77 岁老人换了招，把牌子绑在泳池捞杆上坐着挡镜头。"
+  },
+  {
+   "tier": "none",
+   "title": "一个人写脚本扒出一万个 GitHub 木马仓库",
+   "url": "https://orchidfiles.com/github-security-team/",
+   "body": "这些仓库标题写成「Download」骗人下压缩包。GitHub 删完这批就没下文，几小时后脚本又找到新的，挂了一个月没人管。"
+  },
+  {
+   "tier": "none",
+   "title": "David Bentley Hart 列了 33 条英文散文规则",
+   "url": "https://thelampmagazine.com/blog/how-to-write-english-prose",
+   "body": "他反对当下的极简写法，主张把英语的词汇和长句用起来，还说鄙视分号的作家是个蠢货。文章本身就写得华丽。"
+  }
+ ],
+ "odds": [
+  {
+   "question": "华为今年能出货 100 万片 910C 吗？",
+   "prob": "34.8%",
+   "note": "成交额 16.7k mana。白宫放行 H200 的主要依据，就是华为今年能造出几百万片的预测，SemiAnalysis 估计只有几十万片",
+   "url": "https://manifold.markets/ZviMowshowitz/will-huawei-ship-at-least-one-milli"
+  },
+  {
+   "question": "Gemini 能在今年的 IMO 拿到满分吗？",
+   "prob": "63.2%",
+   "note": "成交额 44.5k mana。一周前还是 78%，7 月 30 日关盘",
+   "url": "https://manifold.markets/johnNZOy/gemini-perfect-score-on-imo-2026"
+  },
+  {
+   "question": "标普 500 公司的董事会里会坐进一个 AI 吗？",
+   "prob": "77.0%",
+   "note": "成交额 66.7 万 mana。人类董事若连续两年只照 AI 的建议行事，也算数",
+   "url": "https://manifold.markets/FranklinBaldo/this-market-resolves-yes-when-an-ar"
+  },
+  {
+   "question": "Anthropic 今年能扭亏为盈吗？",
+   "prob": "89.0%",
+   "note": "成交额 58.0k mana。年内任意连续一个月经营利润为正就算，算力和人力成本都得覆盖",
+   "url": "https://manifold.markets/Simon74fe/will-anthropic-become-profitable-th"
+  },
+  {
+   "question": "Altman 会在三个月内起诉 Anthropic 吗？",
+   "prob": "5.5%",
+   "note": "成交额 4.7k mana 的小盘，只有 10 个人下注",
+   "url": "https://manifold.markets/Himanshushukla/will-sam-altman-file-a-case-against"
+  }
+ ]
+}
