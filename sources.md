@@ -13,7 +13,7 @@
 ## 抓取方式说明
 
 - `rss` / `api`：结构化、带绝对日期、最稳，优先走这个
-- `html`：没有 RSS 的源，直抓索引页（Anthropic / DeepMind / The Batch / Thinking Machines / neodrop）
+- `html`：没有 RSS 的源，直抓索引页（Anthropic / The Batch / Thinking Machines / neodrop）
 - `nitter-html`：X 账号走 nitter 镜像的 HTML 时间线（X 无登录抓不到，官方接口已死）；串行慢抓、只收原创，解析脚本 `scripts/parse_nitter.py`
 - 真正"精读全文"只对落进窗口、且权重高或看着有料的少数几篇做；其余给摘要级钩子即可
 
@@ -76,7 +76,7 @@
 | 源 | 主页 | 抓取URL | 方式 | 权重 | 节奏 |
 |---|---|---|---|---|---|
 | Interconnects (Nathan Lambert) | https://www.interconnects.ai/ | https://www.interconnects.ai/feed | rss | 高 | 每 3-5 天一篇；RLHF/开源模型深度解读 |
-| Google DeepMind Blog | https://deepmind.google/discover/blog/ | https://deepmind.google/discover/blog/ | html | 中 | 每月数篇，成簇无固定日 |
+| Google DeepMind Blog | https://deepmind.google/discover/blog/ | https://deepmind.google/blog/rss.xml | rss | 中 | 每月数篇，成簇无固定日；2026-07-28 从 html 换 rss（索引页改客户端渲染，静态 HTML 取不到条目） |
 | Ahead of AI (Sebastian Raschka) | https://magazine.sebastianraschka.com/ | https://magazine.sebastianraschka.com/feed | rss | 高 | 每 2-4 周一篇；大事件讲透，工程师友好 |
 | Andrej Karpathy | https://karpathy.bearblog.dev/ | https://karpathy.bearblog.dev/feed/ | rss | 极高 | 数周-数月一篇，不规律；有更新必进头条 |
 

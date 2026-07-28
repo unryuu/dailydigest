@@ -1,0 +1,92 @@
+## 🗞️ 行业大事
+
+**🥇 [Kimi K3 权重放出来了，2.8 万亿参数](https://huggingface.co/moonshotai/Kimi-K3)**
+
+每次推理激活 1040 亿参数，上下文 100 万 token，原生支持看图，权重在 Hugging Face 上有 1.56TB。AMD验证的最低配置是 8 张 MI355X，总显存 2.3 TB。官方甚至建议生产环境采用 64 张以上加速卡。该模型跑起来大约需要 200 万人民币，商用则需要大约 1500 万人民币。
+
+许可证新加了一条，若连续 12 个月合计营收超过 2000 万美元，商用前必须另找 Moonshot 签协议。之前的条款触发线是 1 亿月活或 2000 万美元月营收。新门槛将会卡住中型 API 厂商。
+
+**🥈 [离网数据中心没那么好走](https://www.axios.com/2026/07/27/off-grid-ai-data-centers-reckoning)**
+
+Oracle 在新墨西哥那个 2.5 吉瓦的项目，申请燃气管道被拒绝；弗吉尼亚一处涡轮机离线 24 小时；德州阿比林的 Stargate 多次因电力和冷却停机；xAI 的 Colossus 1 起初离网，现在已经接进电网。自己发电、不等电网原本被当成 AI 的电力捷径。投资者看不懂现场供电的可靠性，已有公司信用评级被下调。
+
+**🥈 [Anthropic 公开表达开源立场](https://www.anthropic.com/news/position-open-weights-models)**
+
+支持芯片不卖给中国、打击走私、打击工业级蒸馏、认同足够强的模型不论开闭源都得通过安全测试；反对以保护主义封禁开放权重。Dario 承认封禁会保护美国公司免于竞争，但说那从来不是他的目标。HN 上有人讨论，强制测试等于许可制。
+
+**[AI 用 14 小时干完了人类要花两周的工作](https://epoch.ai/MirrorCode)**
+
+Opus 4.7，耗资 251 美元。评测叫 MirrorCode，只给命令行，不给源码，不给网，要求从零重写整个程序。
+
+## 📖 深度长文
+
+**🥈 [如何安全地使用一个能力强但不可信的模型](https://www.lesswrong.com/posts/jLkRCK35ri2btEHMF/untrusted-advice-for-ai-control-short-strong-advice)**
+
+强模型给可信的弱模型提建议，每步只能发 16 个字符，弱模型负责具体执行。在 SWE-bench 上，弥补了弱模型相较于强模型，大约三分之二的能力落差。强模型用 Claude Sonnet 4.6，弱模型用 Gemini 3.1 Flash Lite 和 gpt-oss-120b。
+
+**🥈 [模型通用能力增强带动机器人的进步](https://importai.substack.com/p/import-ai-466-the-bitter-lesson-for)**
+
+Anthropic 让模型操作四足机器人，去年 8 月 Opus 4.1 无法自主完成，人机一起磨了 181 分钟；今年 5 月 Opus 4.7 几乎全部自主完成，用了 9 分 35 秒。Anthropic 说，这不是针对机器人专门做了改进。
+
+**[有人从显存容量倒推出未来几年的模型规模](https://www.lesswrong.com/posts/Rk6FbkDFFm8ciqefv/quadrillion-param-costs-kv-cache-context-length-frontier)**
+
+推算 2026 年 10 万亿参数、2028 年 240 万亿、2031 年 1400 万亿。主要取决于一套机柜能塞下多少显存。
+
+**[SlopCodeBench：看 AI 改代码越改越烂](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md)**
+
+更贴近真实开发流程。Opus 5 通过率 24%，前代最高 17%，但 Opus 5 的代码量翻了三倍，冗余程度是真人代码的11倍。
+
+## 🧪 新鲜论文
+
+**[让操作电脑的 agent 直接读程序状态](https://huggingface.co/papers/2607.22798)**
+
+截图只是程序状态的有损渲染，同样画面背后可能是不同状态。它用代码直接读写文件和后端，必须鼠标点击的时候才看。
+
+**[综述：机器人的数据来源](https://huggingface.co/papers/2607.24744)**
+
+多模态模型吃下整个互联网就学会了看和说，机器人没这条路，它要的数据得把画面和物理动作绑在一起。
+
+## 🏛️ 监管动向
+
+**🥈 [法官不许 Google 拿版权法阻挡爬虫](https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped/)**
+
+Google 起诉 SerpAPI 等公司抓自家搜索结果，援引版权法里「绕过技术保护措施就违法」那一条，法官驳回。作者评价，谷歌的整个生意就是靠抓取全网建立的，现在反过来告别人抓取自己，属于过河拆桥行为。
+
+## 📌 行业简讯
+
+- [NVIDIA：实时生成的手术仿真，单卡每秒 160 帧](https://huggingface.co/blog/nvidia/cosmos-h-dreams)
+- [Yap：macOS 上的免费语音听写，不下模型不联网](https://github.com/FrigadeHQ/yap)
+
+## 🎪 乐子汇总
+
+**🥈 [警方少打一个下划线，抓错人了](https://arstechnica.com/tech-policy/2026/07/police-missed-one-underscore-and-sent-the-wrong-man-to-prison/)**
+
+嫌疑人网名 fus__ro_dah 中间有两个下划线，警方只打了一个，找到另一个加拿大人。尽管他的电脑手机上查无实据，仍以儿童性犯罪起诉，判了 18 个月。用户名在庭审时就已经在案卷里了，但无人注意。由于上诉流程很慢，他服满了刑期。上诉法院最后推翻原判。这个网名是《上古卷轴 5》里的龙吼。
+
+**[Netflix 高管因为在团建的坦白环节说实话而被解雇](https://nypost.com/2026/07/26/us-news/netflix-exec-goes-ballistic-after-being-fired-for-stunning-trust-exercise-confession-at-retreat-suit/)**
+
+他讲了 2022 年母亲去世后做过的合规氯胺酮治疗。公司随后启动调查，四月把他解雇，年薪 110 万美元的工作丢了。当事人已起诉，Netflix 尚未公开回应。
+
+**[有人黑了沃尔沃合资公司的车队平台](https://eaton-works.com/2026/07/27/my-eicher-hack/)**
+
+内部接口忘了做鉴权，顺着上层路径就能把用户接口列个遍。74.8 万客户、67.6 万辆车的实时位置，还有 7.6 万份身份证件。
+
+**[有人搞了个众筹，想把停更的博主捞回来](https://www.lesswrong.com/posts/hdALT8gvNPGHKLXPE/blog-revival-project)**
+
+谁都能提名，凑够一千美元的悬赏，博主写一篇不设付费墙的长文就能领。多人小额比一人大额更算数。
+
+**[黑客杂志 Paged Out 出了第 9 期](https://pagedout.institute/download/PagedOut_009.pdf)**
+
+免费 PDF，一篇文章只准占一页，这期塞了七十多篇，从拿瓷砖拼二进制加法，到在像素着色器里跑 Linux。
+
+## 🎲 赔率盒子
+
+来自预测市场 Manifold 的实时概率，仅供围观：
+
+- [开源模型最后会赢吗？](https://manifold.markets/Gigacasting/will-opensource-ai-win-through-2028) — **9.5%**（成交额 7.5k mana。到 2028 年底，开源能不能成为最强的那一档）
+- [Kimi 今年之内能发 K4 吗？](https://manifold.markets/Gen/kimi-k4-released-in-2026) — **36.4%**（成交额 1.6k mana，只有 8 个人下注的小盘。K3 权重今天刚放出来，这盘也是今天才被人翻出来）
+- [美国今年会给 Mythos 这一档以上的模型立法吗？](https://manifold.markets/trvon/will-the-us-enact-ai-regulation-for) — **9.6%**（成交额 25.2k mana，今天全池成交最活跃的一个。7 月 15 日我们报过一次，那时候是 15.3%）
+
+---
+
+*AI 日报 · 7月28日 · Telegram 频道 @dragonbro888*

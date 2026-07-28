@@ -1,0 +1,118 @@
+[
+  {
+    "id": "deep-quadrillion-params",
+    "section": "deep",
+    "label": "有人从显存容量倒推出未来几年的模型规模",
+    "url": "https://www.lesswrong.com/posts/Rk6FbkDFFm8ciqefv/quadrillion-param-costs-kv-cache-context-length-frontier",
+    "body": "推算是 2026 年 10 万亿参数、2028 年 240 万亿、2031 年 1400 万亿。卡住上限的是一套机柜能塞多少显存。",
+    "note": "核实通过。LessWrong《Quadrillion Param Costs: KV Cache, Context Length, Frontier Margins》，作者 Vladimir_Nesov，2026-07-27。三个数字回原文逐个核准，且原文每档都给了总参数 + 激活参数两个数：2026 年 10T 总 / 1.3T 激活，2028 年 240T 总 / 7.9T 激活，2031 年 1.4 quadrillion 总 / 48T 激活。我 body 只留了总参数（激活参数属支撑性数字，按定调删）。1.4 quadrillion = 1.4×10^15 = 1400 万亿，换算无误。论证链条：这类超大模型只能跑在单个 scale-up 系统 HBM 容量足够的硬件上，原话「these very big models can neither be served nor trained with RL on hardware that doesn't have comparable HBM capacity in a single scale-up system」。硬件档位（body 未用）：GB300 Oberon 21 TB HBM / 8 TB/s，Rubin Ultra 每 scale-up 系统 110 TB / 14 TB/s，Feynman 1.1 PB / 16.9 TB/s。另一条主线是 KV cache：每 token 的 KV cache ≈ 0.2 字节 × sqrt(激活参数数)，所以模型一大、长上下文的推理成本就顶上来。body 里的「一套机柜」是 scale-up system 的大白话译法，略有简化但方向对。"
+  },
+  {
+    "id": "deep-slopcodebench",
+    "section": "deep",
+    "label": "一项逐步加需求的评测发现，模型代码越写越臃肿",
+    "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+    "body": "同一批题，Opus 5 写出的代码量是 Opus 4.8 的三倍，函数数五倍。每千行的冗余是人工审过的代码库的 11 倍。",
+    "note": "核实通过（正文 + raw markdown 各读一遍），但主 agent 的两处描述需更正。更正一：SlopCodeBench 不是 humanlayer 自建，是 UW Madison（@GOrlanski 的组）做的第三方基准，humanlayer 的 dex 只是拿它跑了三个 Claude 模型的子集。更正二：11 倍的对照物不是「人工维护代码库」，原话是「11 times more slop triggers per kLOC than our 99%-AI-generated-but-also-carefully-reviewed Typescript monorepo」，对照的是一个 99% AI 生成但被人工仔细审过的 TS monorepo，所以我 body 写成「人工审过的代码库」。方法学核准：需求分 checkpoint 逐步放出，模型不知道全貌、只能一步步改代码；每步跑留出的黑盒测试打产出的入口（CLI 或 API server）；严格口径要求本轮全绿且前序所有回归测试也全绿，早期埋的缺陷会一路挡住后面。数字核准：本轮 17 个 checkpoint 上 Opus 5 过 4 个 = 24%，Opus 4.8 和 Sonnet 5 各过 1 个 = 6%；原论文全量榜上 Opus 4.6 是 17%、GPT-5.4 是 11%。**提醒定牌：原论文那两个数是全量跑的，和本轮 17 checkpoint 子集不同口径，不能直接并排比，所以我 body 里一个通过率都没写**，也刚好避开主 agent 说的「别写成 Opus 5 能力报道」。代码量：Opus 5 写了 29,065 行，另两个各约 9,000 行，约 3.2 倍；但原文补了一句，纯生产代码只高约 1.8 倍，Opus 5 有 51% 是测试代码（4.8 是 11%、Sonnet 5 是 24%），我 body 用的「三倍」是原文的 overall 口径，若定牌想更保守可改成「代码量三倍，其中一半是测试」。函数数原话「wrote 5x more functions than the other two models」。主 agent 给的「约 93% 的代码触发 slop 规则」属实，但 Opus 4.8 是 98%、Sonnet 5 是 89%，三家都在九成上下、区分度约等于零，所以我没用这个数，改用有区分度的 11 倍。原文落点原话：「expensive verbosity here that didn't translate directly to much better results」，与主 agent 定的落点一致。"
+  },
+  {
+    "id": "paper-stateact",
+    "section": "papers",
+    "label": "Salesforce 提出让操作电脑的 agent 直接读程序状态",
+    "url": "https://huggingface.co/papers/2607.22798",
+    "body": "截图只是程序状态的有损渲染，同样画面背后可能是不同状态。它用代码直接读写文件和后端，非点不可的界面才叫视觉子 agent。",
+    "note": "核实通过。《StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents》，Salesforce AI Research，一作 Yan Yang，通讯序列里有 Silvio Savarese、Junnan Li，HF 页面日期 2026-07-28（就是今天，很新）。核心论点原话：「a screenshot is only a lossy rendering of the underlying program state, e.g., the files, application backends, and DOM that hold the task data」以及「Different states can produce the same pixels, while code can inspect and modify that state directly」，与主 agent 给的方向完全一致。架构：code-first 多 agent harness，主 agent 用 bash / Python / 文件操作直接操作程序状态，必须截图点击的场合派 GUI 子 agent；长任务里成百上千步依赖操作会把感知误差累计放大，改成读状态后瓶颈从感知移到推理。原文里那一层叫 main agent，我 body 里避开了「主 agent」这个译法，怕和我们日报内部叫法撞词，改用「它」。body 首稿 67 字超了 65，已压到 60。"
+  },
+  {
+    "id": "paper-data-pyramid",
+    "section": "papers",
+    "label": "一篇综述把具身智能的数据来源排成金字塔",
+    "url": "https://huggingface.co/papers/2607.24744",
+    "body": "多模态模型吃下整个互联网就学会了看和说，机器人没这条路，它要的数据得把画面和物理动作绑在一起。",
+    "note": "核实通过。《Data Pyramid for Embodied Manipulation》，一作 Yifan Ye，作者三十人上下，横跨北大、南洋理工、港科大、新国立、中大、港大、Duke、UCB 等，2026-07-27。摘要开头原话即主 agent 给的那句：「Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations with physical states and actions.」金字塔的五层（body 未展开，label 已点到「金字塔」，按定调不重复）：真机数据、UMI 式手持采集数据、第一人称与第三人称视频、仿真数据、通用视觉语言数据，每层在「好扩量」和「贴合机器人本体」之间各有取舍。"
+  },
+  {
+    "id": "paper-progress-reward",
+    "section": "papers",
+    "label": "有人系统梳理了怎么给机器人的中途表现打分",
+    "url": "https://huggingface.co/papers/2607.21655",
+    "body": "机器人只在任务结束时才知道成没成，中途是在靠近目标还是在毁掉已有进展，没人告诉它。现有做法口径不一，这篇把它们放进同一个框架对比。",
+    "note": "核实通过。《Progress Reward Modeling for Robotic Learning: A Comprehensive Survey》，一作 Keliang Wu，2026，arXiv 2607.21655。摘要原话对应 body 第一句：「A terminal success signal only tells the robot whether the task is completed. It does not explain whether the current behavior is making progress, remaining unchanged, or undoing earlier progress.」第二句对应：「the current literature lacks a shared framework. Existing methods use different observations, goal specifications, output signals, supervision sources, and evaluation protocols.」综述分三层组织：接口（模型收什么信息、吐什么形式的进度信号，标量分数 / 增量 / 排序 / 可执行函数）、构造方法（冻结基础模型、时序或相对监督、指令微调预测、程序化构造四类）、数据与基准（人工采集 / 人在环 / 全自动，以及保真度、鲁棒性、下游策略学习收益三类评测）。纯综述、无新方法无新数字，body 只能讲清「它解决的是什么问题」，这已是最核心的一层。"
+  },
+  {
+    "id": "brief-cosmos-h-dreams",
+    "section": "brief",
+    "label": "NVIDIA 把实时生成的手术场景做成仿真环境，单卡 160 帧",
+    "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+    "note": "核实通过。《NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics》，NVIDIA 发在 HF Blog，2026-07-27。原话：Cosmos-H-Dreams 把 Cosmos-H-Surgical-Simulator 蒸馏成因果式的少步学生模型，用 NVIDIA 的流式推理库 FlashDreams 提供服务；跑在单张 RTX PRO 6000 上就能构成人或策略可闭环控制的交互环境。速度约 160 FPS，前代约 10 FPS。价值主张是拿学习出来的仿真器替代真机试错，免得在开发阶段损坏昂贵器械或生物组织。label 里「单卡」指单张 RTX PRO 6000，为控字数没写型号，定牌若想更硬可换成「单张 RTX PRO 6000 跑到 160 帧」。提醒：本期 papers 区已有两条机器人/具身论文（Data Pyramid、Progress Reward），加这条一共三条机器人味的条目，题材偏挤，请定牌掂量是否要撤一条。"
+  },
+  {
+    "id": "brief-python-build-standalone",
+    "section": "brief",
+    "label": "可移植的独立 Python 发行版，uv 装 Python 就靠它",
+    "url": "https://gregoryszorc.com/docs/python-build-standalone/main/",
+    "note": "核实通过，两处都读了。用户给的 gregoryszorc.com 文档页是原作者 Gregory Szorc 的旧站文档（版权注 2020），原话「produces self-contained, highly-portable Python distributions」，覆盖 Linux / macOS / Windows，下游提到姊妹项目 PyOxidizer 和 PyOxy。项目现已转到 astral-sh/python-build-standalone（4.3k star、300 fork），由 uv 背后的 Astral 维护，README 首句「This project produces standalone, highly-redistributable builds of Python」，uv 管理 Python 版本确实用它。label 首稿写了「Astral 维护的」，34 字超了简讯 30 字线，已删；顺带也化解了另一个问题：用户给的 url 指向 Gregory Szorc 的旧个人站文档，而 Astral 是现在的维护方，链接和署名对不上。**提醒定牌：若想在 label 里提 Astral 或 uv 的关系，建议把 url 换成 https://github.com/astral-sh/python-build-standalone。我没擅自换 url，交你裁决。**"
+  },
+  {
+    "id": "brief-yap",
+    "section": "brief",
+    "label": "Yap：macOS 上的免费语音听写，不下模型不联网",
+    "url": "https://github.com/FrigadeHQ/yap",
+    "note": "核实通过。仓库描述原话：「Free, open source voice dictation for macOS. On-device transcription with Apple's Speech framework. No cloud, no API keys, no account.」全程端侧，调 macOS 26 新增的 SpeechAnalyzer / SpeechTranscriber，不自带也不下载任何语音模型，直接用系统里已有的；音频走 AVAudioEngine，边说边出实时预览。要求 macOS 26 (Tahoe) 以上，自己编译要 Xcode 26。MIT 协议。「不下模型」这个说法核准无误，正是它区别于 Whisper 类工具的点。"
+  },
+  {
+    "id": "brief-allyourcodebase",
+    "section": "brief",
+    "label": "一个 GitHub 组织把一百多个 C/C++ 项目打包给 Zig 用",
+    "url": "https://github.com/allyourcodebase",
+    "note": "核实通过。组织简介原话：「We package C/C++ projects for the Zig build system so that you can reliably compile (and cross-compile!) them with ease.」共 123 个仓库；label 写「一百多个」是因为 123 是仓库数，其中未必每个都是打包项目（还有说明性仓库），不敢直接说「123 个项目」。已核到的被打包项目：zlib、libxml2、wayland、boringssl、FFmpeg、pixman、rnnoise、grpc core，甚至还有游戏 VVVVVV。组织名玩的是「All Your Codebase Are Belong to Us」的梗，主页明说如果原维护者想把 Zig 支持收回上游、他们乐意奉还。"
+  },
+  {
+    "id": "fun-underscore-prison",
+    "section": "fun",
+    "label": "警方少打一个下划线，无辜的人坐了 18 个月牢",
+    "url": "https://arstechnica.com/tech-policy/2026/07/police-missed-one-underscore-and-sent-the-wrong-man-to-prison/",
+    "body": "要找的 Kik 用户名 fus__ro_dah 中间有两个下划线，调记录时打成了一个。警方在加拿大人 Brandon Klayme 的电脑手机上查无实据，仍以儿童性犯罪起诉。2023 年定罪，2024 年判 18 个月，他服满了刑期。这处差别庭审时本可查到，没人注意，上诉法院最后推翻原判，写明他本就不该被起诉。",
+    "note": "**fetch_failed（用户给的 Ars Technica 原链接）**：WebFetch 直接返回「unable to fetch from arstechnica.com」，站点被拦。事实改由两处实读交叉核实：一是 Slashdot 的转述条目（https://yro.slashdot.org/story/26/07/28/0037231/），二是搜索结果里 CBC、Android Authority、ResetEra 的同源标题与摘要（CBC 原文 403 未读成）。两处一致的事实：用户名 fus__ro_dah（fus 后两个下划线）vs 误查的 fus_ro_dah（一个下划线）；案子 2018 年从威斯康星州麦迪逊起，延到加拿大哈利法克斯；被冤者 Brandon Klayme，2020 年被捕、2023 年定罪、2024 年判 18 个月并服满；设备上查无实据仍起诉；上诉阶段才发现。Slashdot 引上诉判词原话：「Mr. Klayme is factually innocent of the offences. He should never have been charged, let alone convicted.」**一处口径打架，body 已回避**：搜索摘要说是威斯康星警方在传票里打错了用户名，Slashdot 摘要写成「Canadian police made the error」，两边对不上，所以我 body 只写「调记录时打成了」，没指名哪家警局，定牌也请别补。判词那句「事实清白」我压成了「本就不该被起诉」以控字数（首稿 192 字超了银牌 150 线，删掉了「新斯科舍」等细节后收在 150 以内）。梗点扎实，银牌够格；唯一风险是原链接我没读进去，若定牌介意可换成 Slashdot 链接。"
+  },
+  {
+    "id": "fun-eicher-fleet-hack",
+    "section": "fun",
+    "label": "有人拿下了 Volvo 合资车队平台上所有用户和车辆",
+    "url": "https://eaton-works.com/2026/07/27/my-eicher-hack/",
+    "body": "内部接口忘了做鉴权，顺着上层路径就能把用户接口列个遍。74.8 万客户、67.6 万辆车的实时位置，还有 7.6 万份身份证件。",
+    "note": "核实通过。原标题《Exploiting Volvo/Eicher's fleet management platform to gain control over all users and vehicles》，作者 Eaton Works，2026-07-27。目标是 My Eicher，印度商用车主用的车队管理与 GPS 追踪应用，开发方 VE Commercial Vehicles 是 Volvo 集团和 Eicher Motors 的合资公司。拿到的东西：任意账号接管、整队车辆控制、实时定位与遥测。规模数字逐个核准：74.8 万客户、67.6 万辆车、17.4 万用户、18.6 万人的档案、7.6 万份身份证件（Aadhaar、驾照）、250 万条 2021 年至今的历史 OTP。入口是访问上层 API 路径后拿到一份无需鉴权的用户类 API 目录列表。时间线：2025-11-03 上报，无回音、几次追问后主漏洞于 2025-11-20 被修，2026-07-27 才公开。body 里「67.6 万辆车的实时位置」核准无误（原文明确有实时追踪和定位数据）；250 万条历史 OTP 这个数最惊人但塞不进一行，留给定牌自取。"
+  },
+  {
+    "id": "fun-astronaut-observer",
+    "section": "fun",
+    "label": "宇航员回地面后普遍报告一种旁观自己的感觉",
+    "url": "https://spacedaily.com/sd-v-astronauts-returning-from-six-month-missions-describe-a-persistent-observer-sensation-the-feeling-of-watching-their-own-lives-from-a-half-step-outside-the-frame-weeks-after-theyr/",
+    "body": "像是隔半步在看自己的生活，说话也慢半拍，多数人几周到两个月缓过来。",
+    "note": "**建议撤掉这条，换 fun-netflix-ketamine 顶上。**链接读通了（2026-06-24，署名只有「Space Daily Editorial Team」），但内容经不起我们的铁律：全文没有一个具名研究、没有一份可查文献、没有一个受访者姓名、没有任何数字（几名宇航员、多大比例，一概没有）。它引的是「flight surgeons」「crew psychologists」「NASA 自己的飞后回顾」「口述史、回忆录、飞行军医笔记」，全是无出处的泛指。三个解释机制（神经重校准、警觉性延续、overview effect）也只是并列摆着，没有来源。我读下来的判断是这更像一篇拿 NASA 常识铺出来的推测性稿件，不排除是批量生成的填充内容。另外它一点也不好笑，是玄乎、不是逗，放进乐子区会拖节奏；日期也已是一个多月前。如果定牌坚持要收，body 里的「几周到两个月」是原文明确写的（most crews fade within several weeks to a couple months），其余都是不可核的转述，建议至少在 label 上退成更弱的表述。"
+  },
+  {
+    "id": "fun-blog-revival",
+    "section": "fun",
+    "label": "有人搞了个众筹，想把停更的博主捞回来",
+    "url": "https://www.lesswrong.com/posts/hdALT8gvNPGHKLXPE/blog-revival-project",
+    "body": "谁都能提名，凑够一千美元的悬赏，博主写一篇不设付费墙的长文就能领。多人小额比一人大额更算数。",
+    "note": "核实通过。LessWrong《Blog Revival Project》，作者 Austin Chen 和 Carol N，2026-07-27，平台在 revive.blog。机制逐条核准：悬赏池按博主分账、单人目标 1000 美元以上；采用二次方融资，多笔小额的加权高于单笔大额（body 第二句就是这个）；前 100 位赞助人送 25 美元额度自行分配；发起人自掏 8000 美元先垫上，另设 10000 美元配捐池。提名门槛：任何人可提名「更新频率远不如从前」的博主，尤其停更一年以上的。领赏条件：必须是不设付费墙的实质性个人写作，「至少中等长度，如 1000 字以上」，排除链接帖和开张公告，且允许他人转载镜像并署名；走 ACH 或电汇、发文后付款。body 里「长文」对应 1000+ words，为字数没写具体数。逗归逗，属于会心一笑那类，不是爆笑。"
+  },
+  {
+    "id": "fun-paged-out-9",
+    "section": "fun",
+    "label": "黑客杂志 Paged Out! 出了第 9 期，免费 PDF",
+    "url": "https://pagedout.institute/download/PagedOut_009.pdf",
+    "body": "规矩是一篇一页，这期塞了七十多篇，从拿瓷砖拼二进制加法到在像素着色器里跑 Linux。",
+    "note": "核实通过，但方式特殊：WebFetch 报 maxContentLength 超限（PDF 42 MB），curl 又 SSL 失败，最后用 PowerShell Invoke-WebRequest 下到暂存目录（42,021,523 字节），再用 base 环境的 pypdf 抽文本读的目录页和前几篇正文。实读到的：内页构建戳「pagedout 100 2026-07-27 1858 UTC」，共 91 页；主编 Aga 的卷首语原话「Over 70 items, articles and artwork」，body 的「七十多篇」由此而来（91 页是含封面、广告、目录的总页数，不等于篇数，所以我没用 91）。电子版免费、鼓励随便转发；出版方 HexArcana Cybersecurity GmbH（瑞士），ISSN 3043-0534；每篇独立标注授权；第 10 期征稿截至 2026-09-30。body 举的两篇都是从目录页核到的真篇目：《Computiles: A Geometric Binary Calculator in 10 Tiles》（Nicolas 和 13 岁的儿子 Émilien Seriot 合写，用 5×5 的拼块做全加器和减法器，答案错了拼块就拼不进去）、《Linux in a Pixel Shader》（作者署名 pi）。目录里其他好玩的备选：《Interviewing North Korean Agents》《Say neigh to the borrow checker》《Baby steps in C》（Michał Zalewski）《Feeding Frenzy 2: unpacking a self-checksumming fish tank》《The Curious Case of Michael Guidry》。这条更像「免费好东西」而不是「乐子」，笑点靠篇目撑，定牌若要留建议就留在 fun 区尾部。"
+  },
+  {
+    "id": "fun-netflix-ketamine",
+    "section": "fun",
+    "label": "Netflix 高管在团建的坦白环节说了实话，随后被开",
+    "url": "https://nypost.com/2026/07/26/us-news/netflix-exec-goes-ballistic-after-being-fired-for-stunning-trust-exercise-confession-at-retreat-suit/",
+    "body": "他讲了 2022 年母亲去世后做过的合规氯胺酮治疗。公司随后启动调查，四月解雇，年薪 110 万美元的活儿没了，他起诉了。",
+    "note": "**替补条，我的判断是可以顶掉 fun-astronaut-observer，理由写在那条的 note 里。fetch_failed（用户给的纽约邮报原链接）**：WebFetch 报「unable to fetch from nypost.com」，站点被拦。改读 Fox News 同题报道（https://www.foxnews.com/media/netflix-exec-claims-ketamine-confession-trust-exercise-cost-1-1m-job），另有 Daily Beast、Inc.、Mirror US 同源报道佐证，**这条不是纽约邮报独家，主流媒体都在报，八卦浓度没主 agent 担心的那么高**。按你的要求分开标注：\n【有诉状/一手文件支撑，Fox 明确归因于 complaint】当事人 Kevin Baillie，Netflix 视效部门 Eyeline Studios 的副总裁兼创意负责人，年薪约 110 万美元；2026 年 1 月在 Netflix 自有的 Sendero Ranch 团建，参加一个主打「脆弱—信任」的环节；他在环节里说自己 2022 年因母亲去世后的临床抑郁，在圣巴巴拉一家诊所做过医生开方、有监督的氯胺酮治疗；同一场团建里他提到前岳父教过他倒立喝健力士，同事起哄让他演示；3 月 18 日公司调查员找他谈话，据诉状说对方把这段医疗史「说得像是在怀疑娱乐性用药」；4 月被解雇；诉状称公司还扣了最多一年的遣散费；诉状引公司律师说法「the ketamine therapy issue has factored into the termination」；诉状还引他此前绩效评语「Drop one or two less f-bombs but don't stop entirely」；他要求陪审团审理，索赔欠薪、精神损害和惩罚性赔偿。\n【只是小报框架、无独立佐证】标题里「goes ballistic」（暴跳如雷）是纽约邮报的编辑腔，不是诉状措辞；截至 Fox 发稿 Netflix 未公开回应，**所以全篇是原告一面之词，公司版本缺位**。\nbody 我只用了诉状口径的事实，没写「暴跳如雷」，也没替读者下公司做错了的结论。倒立喝健力士那段其实最逗，但一行塞不下医疗史 + 解雇 + 起诉三件事，定牌若想换梗点可以拿它替掉「年薪 110 万美元的活儿没了」。"
+  }
+]
