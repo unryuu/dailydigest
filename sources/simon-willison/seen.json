@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/moonshotai/Kimi-K3",
+  "title": "Kimi K3 权重放出来了，2.8 万亿参数",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
   "id": "https://simonwillison.net/2026/Jul/22/are-ai-labs-pelicanmaxxing/",
   "title": "Simon 回应鹈鹕审计（消化进鹈鹕银牌）",
   "date": "2026-07-22",

@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/news/position-open-weights-models",
+  "title": "Anthropic 公开表达开源立场",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
   "id": "https://www.anthropic.com/news/anthropic-economic-index-connector",
   "title": "Economic Index 接进 Claude connector（合写进上条）",
   "date": "2026-07-22",

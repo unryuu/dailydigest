@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/papers/2607.24744",
+  "title": "综述：机器人的数据来源",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.22798",
+  "title": "让操作电脑的 agent 直接读程序状态",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
   "id": "https://huggingface.co/papers/2607.19238",
   "title": "新基准让 agent 去啃真实金融文档",
   "date": "2026-07-24",

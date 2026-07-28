@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/hdALT8gvNPGHKLXPE/blog-revival-project",
+  "title": "有人搞了个众筹，想把停更的博主捞回来",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/Rk6FbkDFFm8ciqefv/quadrillion-param-costs-kv-cache-context-length-frontier",
+  "title": "有人从显存容量倒推出未来几年的模型规模",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/jLkRCK35ri2btEHMF/untrusted-advice-for-ai-control-short-strong-advice",
+  "title": "如何安全地使用一个能力强但不可信的模型",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/tgigHkZoYrJEGe4tP/ai-use-policy-for-my-essay-writing",
   "title": "芬兰研究者卡伊索塔拉谈自己写文章怎么用 AI",
   "date": "2026-07-26",

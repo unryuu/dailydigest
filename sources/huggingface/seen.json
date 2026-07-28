@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
+  "title": "NVIDIA：实时生成的手术仿真，单卡每秒 160 帧",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
   "id": "https://huggingface.co/blog/FINAL-Bench/pocket",
   "title": "POCKET 35B 1-bit MoE（无牌）",
   "date": "2026-07-23",

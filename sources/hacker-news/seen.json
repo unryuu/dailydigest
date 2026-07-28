@@ -1,5 +1,54 @@
 [
  {
+  "id": "https://pagedout.institute/download/PagedOut_009.pdf",
+  "title": "黑客杂志 Paged Out 出了第 9 期",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
+  "id": "https://eaton-works.com/2026/07/27/my-eicher-hack/",
+  "title": "有人黑了沃尔沃合资公司的车队平台",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
+  "id": "https://nypost.com/2026/07/26/us-news/netflix-exec-goes-ballistic-after-being-fired-for-stunning-trust-exercise-confession-at-retreat-suit/",
+  "title": "Netflix 高管因为在团建的坦白环节说实话而被解雇",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
+  "id": "https://arstechnica.com/tech-policy/2026/07/police-missed-one-underscore-and-sent-the-wrong-man-to-prison/",
+  "title": "警方少打一个下划线，抓错人了",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
+  "id": "https://github.com/FrigadeHQ/yap",
+  "title": "Yap：macOS 上的免费语音听写，不下模型不联网",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
+  "id": "https://www.techdirt.com/2026/07/27/judge-rejects-googles-attempt-to-dmca-its-way-out-of-being-scraped/",
+  "title": "法官不许 Google 拿版权法阻挡爬虫",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
+  "id": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-opus-5-on-slop-code-bench.md",
+  "title": "SlopCodeBench：看 AI 改代码越改越烂",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-28"
+ },
+ {
   "id": "https://orchidfiles.com/github-security-team/",
   "title": "写脚本扒出一万个 GitHub 木马仓库",
   "date": "2026-07-26",
