@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/AqdZKyoRmN6EFCzib/foundation-models-for-oversight",
+  "title": "Transluce 要专门训一个做监督的基础模型",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/hdALT8gvNPGHKLXPE/blog-revival-project",
   "title": "有人搞了个众筹，想把停更的博主捞回来",
   "date": "2026-07-27",

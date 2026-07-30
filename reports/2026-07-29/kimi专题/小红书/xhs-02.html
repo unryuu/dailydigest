@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family:"LXGW WenKai"; src:url("file:///D:/dailydigest/fonts/LXGWWenKai-Regular.ttf"); }
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#ECEFF7; }
+.page { width:1242px; min-height:1656px; background:#ECEFF7; padding:46px 46px 0; }
+.kick { font-family:"Microsoft YaHei",sans-serif; font-size:34px; color:#67718A; }
+.sec { display:flex; align-items:center; gap:16px; margin:26px 0 10px; }
+.sec .bar { width:12px; height:52px; border-radius:6px; background:#6F7FC0; }
+.sec .label { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:56px; color:#6F7FC0; }
+.item { background:#F7F9FD; border-radius:20px; padding:28px 36px; margin:18px 0; box-shadow:0 2px 0 rgba(43,48,60,.06); }
+.item .ttl { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:50px; line-height:68px; color:#2B303C; }
+.item .body { font-family:"LXGW WenKai",serif; font-size:42px; line-height:64px; color:#2B303C; margin-top:14px; }
+.item .body p { margin-top:14px; }
+.item .body p:first-child { margin-top:0; }
+.foot { margin:40px 0 44px; text-align:center; font-family:"Microsoft YaHei",sans-serif; font-size:32px; color:#67718A; }
+.cvr { display:flex; flex-direction:column; height:1656px; padding-bottom:120px; }
+.cvr .brand { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:44px; color:#6F7FC0; margin-top:70px; }
+.cvr .big { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:110px; color:#2B303C; margin-top:24px; }
+.cvr .date { font-family:"Microsoft YaHei",sans-serif; font-size:52px; color:#67718A; margin-top:18px; }
+.cvr .rule { height:6px; background:#2B303C; opacity:.12; margin:56px 0 40px; }
+.cvr .lead { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:44px; color:#67718A; margin-bottom:8px; }
+.hl { display:flex; gap:18px; margin:20px 0; align-items:flex-start; }
+.hl .dot { width:14px; height:14px; border-radius:7px; margin-top:26px; flex:none; background:#6F7FC0; }
+.hl .t { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:46px; line-height:1.4; color:#2B303C; }
+img.diagram { width:100%; border-radius:20px; margin:18px 0; }
+</style></head><body><div class="page"><div class="kick">📘 Kimi K3 架构专题 · 龙兄的 Daily Digest</div><div class="sec"><div class="bar"></div><div class="label">大模型的两笔账</div></div><div class="item"><div class="ttl">参数本身</div><div class="body"><p>模型里有几万亿个权重参数，都要放进显存。每吐出一个词，都要把相关的权重搬进芯片做一次乘法。参数越多，存储和计算就越贵。</p></div></div><div class="item"><div class="ttl">工作记忆</div><div class="body"><p>模型每生成一个新词，都要回头看一遍前面的内容。为了不重复计算，它把每个历史词的中间结果缓存下来，这就是 KV 缓存。对话越长缓存越大，处理十万字长文时，这部分成本往往比参数那部分还要命。</p></div></div><div class="item"><div class="body"><p>K3 那些看起来很奇怪的组件，几乎每一个，都是在优化这两笔成本其中的一笔。</p></div></div><div class="foot">1 / 7</div></div></body></html>

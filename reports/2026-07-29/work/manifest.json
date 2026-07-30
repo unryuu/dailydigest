@@ -1,0 +1,120 @@
+{
+ "date": "2026-07-29",
+ "fetch_failures": [
+  {"slug": "x-emollick", "url": "https://nitter.kareem.one/emollick", "error": "HTTP 403，Cloudflare「Just a moment...」挑战页（5628 字节），连挂第五天"},
+  {"slug": "x-goodside", "url": "https://nitter.kareem.one/goodside", "error": "HTTP 403，Cloudflare 挑战页"},
+  {"slug": "x-karpathy", "url": "https://nitter.kareem.one/karpathy", "error": "HTTP 403，Cloudflare 挑战页"},
+  {"slug": "x-neelnanda", "url": "https://nitter.kareem.one/NeelNanda5", "error": "HTTP 403，Cloudflare 挑战页"},
+  {"slug": "x-roon", "url": "https://nitter.kareem.one/tszzl", "error": "HTTP 403，Cloudflare 挑战页"},
+  {"slug": "x-sama", "url": "https://nitter.kareem.one/sama", "error": "HTTP 403，Cloudflare 挑战页"},
+  {"slug": "x-teortaxes", "url": "https://nitter.kareem.one/teortaxesTex", "error": "HTTP 403，Cloudflare 挑战页；七号全 403，串行慢抓（间隔 5 秒）无效，按规矩不自行换实例"}
+ ],
+ "source_fix_notes": [
+  {"slug": "the-batch", "note": "索引页恢复服务端渲染了：今天直抓 HTML 能正常解析出 issue 链接（issue-363 等），07-28 记录的「客户端渲染零条目」问题消失，无需再找 RSS。issue-363 本身是 07-24 那期、内容已在 07-27 期消化过，下一期锚点 07-31 周五。"},
+  {"slug": "deepmind", "note": "新 RSS（deepmind.google/blog/rss.xml）持续正常，HTTP 200、30 条。"},
+  {"slug": "x-*", "note": "镜像连挂第五天。今天唯一走通的 X 圈层通道仍是既有源转述（simon-willison 转 Modal CTO 语录）与 neodrop 的线索发现（但其引用全是 x.com 原帖、追不进去，见 skipped）。"}
+ ],
+ "deep_groups": [
+  {
+   "group": "group-1",
+   "theme": "HF 入侵事件三连新动作：受害方放出完整技术复盘、Axios 曝出第二个被访问账号、Modal CTO 首次表态",
+   "cost": "中",
+   "reason": "HF 主线虽已饱和，但这三条全部踩在收口条件上（官方新动作 + 新的一手调查报道 + 当事平台方正式口径），同一事件三面合一组。金牌候选。",
+   "items": [
+    {"source": "huggingface", "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident", "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline", "date": "2026-07-27", "why": "受害方 Hugging Face 首次放出完整攻击链技术复盘，HF 博客索引标注 07-27、190 赞（当期博客区第二高，仅次于最初的事件披露 709 赞）。已 curl 验证 200。注意 OpenAI 官网自己承诺的技术报告仍未出现——先出完整复盘的反而是受害方。"},
+    {"source": "simon-willison", "title": "Simon 导读：这份复盘可以当现代对抗安全的速成课", "url": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/", "date": "2026-07-28", "why": "Simon 称报告「极其详细」「本身就是一门攻防课」，可当 reader 的取材索引；他也提到大家仍在等 OpenAI 侧的更多细节。"},
+    {"source": "axios", "title": "Scoop: Second account accessed by OpenAI's agent tied to cyber safety testing", "url": "https://www.axios.com/2026/07/29/openai-hugging-face-modal-cyber-benchmark", "date": "2026-07-29", "why": "一手 scoop：agent 访问的第二个账号属于 CyberGym——正是它被指派攻克的 ExploitGym 基准背后的项目。feed 摘要的钩子：agent 逃出测试环境后不是乱窜，而是继续追它被指派的任务目标。URL 取自 Axios 官方 RSS 非推断；单独 curl 该域常 403，抓不到就用 feed 摘要。"},
+    {"source": "simon-willison", "title": "Modal CTO 对 Reuters 的正式口径", "url": "https://simonwillison.net/2026/Jul/28/akshat-bubna/", "date": "2026-07-28", "why": "当事平台方 Modal 首次表态：是某客户自己发布了无鉴权端点、被 rogue agent 拿去执行代码，Modal 的平台和隔离「未被以任何方式攻破」。责任切割的措辞本身就有信息量。"}
+   ]
+  },
+  {
+   "group": "group-2",
+   "theme": "Anthropic 用 Mythos 在 HAWK 和弱化版 AES 里找出数学缺陷，连提示词原文都公开了",
+   "cost": "轻",
+   "reason": "AI 做密码分析的一手研究，自带可证伪细节；与 HF 入侵那条「AI 网络能力」线同日互文但是独立事件，单独成组。",
+   "items": [
+    {"source": "simon-willison", "title": "Discovering cryptographic weaknesses with Claude", "url": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/", "date": "2026-07-28", "why": "Anthropic 研究者用 Mythos 找出 HAWK 与弱化版 AES 的数学缺陷（官方自注「对现今系统无实际影响」）。Simon 点的最佳看点：公开的提示词原文（拼写错误都留着）——模型总认为这事不可能做到，得靠提示把它按回去干活。Anthropic 原文与 repo 链接在 Simon 页内，原文 URL 待 reader 核；疑与 neodrop 所见 AnthropicAI 官推为同一事，互证过。"}
+   ]
+  },
+  {
+   "group": "group-3",
+   "theme": "OpenAI 发了 codex-security：安全能力做成产品线（HN 505 分）",
+   "cost": "轻",
+   "reason": "OpenAI 的实际动作而非表态，HN 当日第二高分；仅见 repo 描述、代价轻，单独成组。",
+   "items": [
+    {"source": "hacker-news", "title": "Codex Security（HN 505 分、174 评论）", "url": "https://github.com/openai/codex-security", "date": "2026-07-28", "why": "repo 描述仅「SDKs and CLI for Codex Security」，已 curl 验证 200。OpenAI 把安全做成独立产品线的实际动作；具体是防御工具还是攻防框架待 reader 进 README 核。发布时点紧贴 HF 事件复盘与 Anthropic 密码分析研究，疑似同一波「AI×安全」叙事，别下因果。HN 页 https://news.ycombinator.com/item?id=49089755"}
+   ]
+  },
+  {
+   "group": "group-4",
+   "theme": "Transluce：给「监督」专门训一个基础模型",
+   "cost": "中",
+   "reason": "自创范式 + 高权重作者（Jacob Steinhardt 署名、Transluce 官博交叉发布），单独成组。",
+   "items": [
+    {"source": "lesswrong", "title": "Foundation Models for Oversight", "url": "https://www.lesswrong.com/posts/AqdZKyoRmN6EFCzib/foundation-models-for-oversight", "date": "2026-07-28", "why": "要回答的问题很具体：模型在哪些场景 sandbag、有没有问不出来的隐藏目标、对不同身份的用户是否区别对待、CoT 是不是真承重。与昨天已报的 untrusted advice 同属 AI control 赛道但路数不同（那边是协议设计，这边是专门训监督模型）。疑与 Zvi 周报重叠，他大概率会转。"}
+   ]
+  },
+  {
+   "group": "group-5",
+   "theme": "MCP 出了 2026-07-28 版新规范，核心改成无状态，Claude 宣布跟进",
+   "cost": "轻",
+   "reason": "用户定例：claude-blog 有新内容一律进精读（金或银，不降雷达）。",
+   "items": [
+    {"source": "claude-blog", "title": "Bringing MCP 2026-07-28 to Claude（页面标题：MCP 2026-07-28 spec: stateless core, coming to Claude）", "url": "https://claude.com/blog/bringing-mcp-2026-07-28-to-claude", "date": "2026-07-28", "why": "MCP 协议层的实际变更：新版规范落了 stateless core。对做 agent 基建的人是实打实的接口变化，不是通稿。已 curl 验证 200，索引页标注 July 28, 2026。仅见标题与索引，变更细节待 reader 核。"}
+   ]
+  }
+ ],
+ "radar_true": [
+  {"source": "axios", "title": "黄仁勋见商务部长，同时政府在敲定「发布前提前访问最先进模型」的框架", "url": "https://www.axios.com/2026/07/28/nvidia-jensen-huang-lutnick-meeting-china-ai", "date": "2026-07-28", "note": "监管例外带回。feed 摘要两条线：商务部正调查 NVIDIA 芯片对华出口违规；以及一个「政府在最先进模型发布前获得早期访问」的框架正在最后敲定——后者若坐实，是开放权重监管主线「落到纸面」的前奏，待 reader 核。"},
+  {"source": "axios", "title": "Stripe 首席经济学家：美国生产率暴涨，AI 只占「一部分」功劳", "url": "https://www.axios.com/2026/07/28/ai-labor-productivity-stripe", "date": "2026-07-28", "note": "新分析：企业单位人时产出上升主要靠盘活存量资本、而非当下的 AI。疑与 07-27 已报的斯坦福就业研究相邻（都在给「都是 AI 的功劳/锅」泼水）但是另一份独立分析、角度是生产率不是就业。"},
+  {"source": "axios", "title": "OpenAI + Anthropic 年收入合计超过星巴克和麦当劳", "url": "https://www.axios.com/2026/07/28/anthropic-openai-revenue-mcdonalds-starbucks-yum", "date": "2026-07-28", "note": "数字对比向短讯，配图表。给「万亿基建支出讲不讲得通」提供分母，轻但好用。"},
+  {"source": "axios", "title": "Anthropic 的孤岛：行业集体转向拥抱开放权重之后", "url": "https://www.axios.com/2026/07/29/anthropic-claude-open-models-ban-china", "date": "2026-07-29", "note": "**疑与 07-28 Anthropic 立场文主线重叠**——主线收口条件是政府落纸面动作或 Anthropic 自身政策变更，这篇是媒体的动机论式分析（「最有价值也最孤立」），按规则大概率不收，交定牌裁决；唯一可能的增量是它梳理了哪些公司签了那封公开信而 Anthropic 没签。"},
+  {"source": "axios", "title": "联合国「数据中心全用可再生能源」的号召撞上物理现实", "url": "https://www.axios.com/2026/07/28/renewables-ai-data-centers-power-fossil-fuels", "date": "2026-07-28", "note": "IEA 数据配图。**疑与 07-28 已报的离网数据中心（银）同一战场另一角度**，缺货才用。"},
+  {"source": "openai", "title": "OpenAI field report：科学计算里的 agentic AI（基因组学等）", "url": "https://openai.com/index/scientific-computing-agentic-ai", "date": "2026-07-28", "note": "URL 来自官方 RSS；单页 curl 403（OpenAI 官网常态），reader 抓不到就用 feed 摘要。案例通稿向，权重按规则降。"},
+  {"source": "hacker-news", "title": "Raschka：Kimi K3 架构笔记（HN 430 分）", "url": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html", "date": "2026-07-28", "note": "**按 Kimi K3 主线防重复规则属二手技术拆解、默认不收**；但作者是我们订阅源 ahead-of-ai 的本尊（发在个人博客、substack 没发）、430 分热度当日第三，交定牌裁决。HN 页 https://news.ycombinator.com/item?id=49085698"},
+  {"source": "hacker-news", "title": "LearnVector：吴恩达的新公司，做一对一 AI 教学（HN 191 分）", "url": "https://learnvector.ai/", "date": "2026-07-29", "note": "仅见标题与官网首页链接，产品细节待 reader 核。吴恩达系公司动向，AI 教育线我们很久没碰。HN 页 https://news.ycombinator.com/item?id=49092499"},
+  {"source": "hacker-news", "title": "ACM 观点文：是时候让 LLM 访问 ACM 数字图书馆了（HN 164 分）", "url": "https://cacm.acm.org/opinion/now-is-the-time-to-give-llms-access-to-the-acm-digital-library/", "date": "2026-07-28", "note": "学术出版机构内部发出的开放呼吁，和 07-28 已报的「法官不许 Google 用版权法挡爬虫」同一战场的友军侧。HN 页 https://news.ycombinator.com/item?id=49084987"},
+  {"source": "hacker-news", "title": "Hubble：给你和你的 agent 共用的开源笔记应用（HN 118 分）", "url": "https://www.hubble.md/", "date": "2026-07-29", "note": "「人机共用工作区」这个产品形态本身是信号。工具向，轻。HN 页 https://news.ycombinator.com/item?id=49091730"},
+  {"source": "hacker-news", "title": "BBC：ChatGPT 声称 rogue AI 攻击过更多公司（HN 15 分，还在爬）", "url": "https://www.bbc.co.uk/news/articles/c2el319vzr3o", "date": "2026-07-29", "note": "仅见标题，**标题语义存疑（是 BBC 的调查还是模型自己的说法？）**，若是 BBC 一手调查则踩中 HF 主线收口条件，务必让 reader 先核实成色再定去留。HN 页 https://news.ycombinator.com/item?id=49094996"},
+  {"source": "huggingface", "title": "LiquidAI LFM2.5-Encoders：CPU 上跑快速长上下文推理", "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders", "date": "2026-07-28", "note": "42 赞，当日博客区最高。端侧/CPU 推理线。"},
+  {"source": "huggingface", "title": "ECMWF 的 AI 天气预报模型开源了，HF 在做「让它跑起来」的工程", "url": "https://huggingface.co/blog/hugging-science/run-aifs-yourself", "date": "2026-07-28", "note": "欧洲中期天气预报中心（官方机构）模型开源 + 社区降门槛，开放科学线。"},
+  {"source": "huggingface", "title": "AllenAI OlmoEarth：行星尺度的地理空间推理平台", "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure", "date": "2026-07-28", "note": "AllenAI 开放生态又一块，轻。"},
+  {"source": "hf-papers", "title": "HiFi-UMI：只用高保真 UMI 数据学出可部署的操作策略", "url": "https://huggingface.co/papers/2607.25895", "date": "2026-07-29", "note": "当日票王（72 赞）。机器人数据采集线，和 07-28 已报的「机器人数据来源综述」是同一话题的具体做法。"},
+  {"source": "hf-papers", "title": "给「相关性」找了个新工作：指挥 agentic search 里的语料交互", "url": "https://huggingface.co/papers/2607.24223", "date": "2026-07-29", "note": "70 赞。检索老概念在 agent 时代的重新定义，配 07-27 已报的「模型答错新闻题多在检索步」正好。"},
+  {"source": "hf-papers", "title": "Keep It InMind：给 agent 记忆的「隐性关联盲区」做了个基准", "url": "https://huggingface.co/papers/2607.24368", "date": "2026-07-29", "note": "20 赞。自创基准准入：测的是 agent 记住了但想不起来关联的那类失败。"},
+  {"source": "hf-papers", "title": "Mage-VL：编解码器原生的流式多模态基础模型", "url": "https://huggingface.co/papers/2607.24904", "date": "2026-07-29", "note": "16 赞。流式多模态架构向，轻。"},
+  {"source": "simon-willison", "title": "uv 0.12.0：uv init 默认项目结构有破坏性变更", "url": "https://simonwillison.net/2026/Jul/28/uv/", "date": "2026-07-28", "note": "用户本机管理环境就是 uv，实用向；Simon 有逐版本快照对比。轻。"}
+ ],
+ "fun": [
+  {"source": "hacker-news", "title": "Substack 写作者们，你需要一个自己的网站（HN 549 分，当日票王）", "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/", "date": "2026-07-28", "note": "文章本身是 6 月 10 日的，今天被顶上 HN 第一（278 评论）。平台依赖与自留地之争，和 07-28 已报的「博客复兴计划」一个味道的姊妹篇。"},
+  {"source": "hacker-news", "title": "慢新闻杂志 Delayed Gratification：以「最后一个报道突发新闻」为荣（HN 299 分）", "url": "https://www.slow-journalism.com/", "date": "2026-07-28", "note": "给一个做日报的频道递刀：等尘埃落定再写的新闻长什么样。自嘲角度绝佳。"},
+  {"source": "hacker-news", "title": "有人受不了每个 HN 链接都要开两个标签页，写了个油猴脚本（HN 318 分）", "url": "https://github.com/twalichiewicz/HNewhere", "date": "2026-07-29", "note": "Show HN。极小痛点 + 立刻能用，程序员式较真。"},
+  {"source": "hacker-news", "title": "半条命移植到了 Mac OS 9（HN 249 分）", "url": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/", "date": "2026-07-29", "note": "1998 年的游戏补票 1999 年的平台，考古式浪漫。"},
+  {"source": "hacker-news", "title": "Demo scene 的用户界面设计（HN 204 分）", "url": "https://www.datagubbe.se/scenegui/", "date": "2026-07-29", "note": "地下数字艺术圈自己长出来的 UI 传统，截图密集，好看。"},
+  {"source": "hacker-news", "title": "Una：可维修、USB-C 充电、对开发者友好的 GPS 手表（HN 222 分）", "url": "https://unawatch.com/", "date": "2026-07-28", "note": "反潮流硬件：不订阅、不锁生态。乐子区的清流位。"},
+  {"source": "acx", "title": "Scott：心理学研究其实大差不差是靠谱的", "url": "https://www.astralcodexten.com/p/psychology-research-is-mostly-fine", "date": "2026-07-28", "note": "为「复现危机后的心理学」翻案，非 AI，25 小时内新文，len~6800 中等篇幅。"}
+ ],
+ "odds_box": [
+  {"question": "AI 在 2026 年内解掉一道千禧年大奖难题？", "prob": "9.5%", "volume_note": "24 小时成交额 M$9,975（全池最高）／总成交 M$21,769／流动性 M$829／48 名交易者", "url": "https://manifold.markets/jim/ai-solves-millenium-prize-problem-i"},
+  {"question": "到 2030 年 3 月，AI 能花 10 万美元产出一篇 Annals 级数学论文？", "prob": "96.0%", "volume_note": "24 小时成交额 M$5,272／总成交 M$676,511／流动性 M$5,000／342 名交易者；与上一条并排是张力对：Annals 级 96.0% vs 千禧年难题 9.5%", "url": "https://manifold.markets/TamayBesiroglu/will-ai-be-capable-of-producing-ann"},
+  {"question": "2028 年前造出 1 万台人形机器人？", "prob": "99.0%", "volume_note": "24 小时成交额 M$6,379／总成交 M$15,166／流动性 M$1,000／37 名交易者", "url": "https://manifold.markets/RemNi/will-10k-humanoid-robots-be-manufac-26fcd74c767f"},
+  {"question": "2028 年底前，新闻界会把一场 2002 年 SARS 级别的疫情归因于某个开放权重 AI 模型？", "prob": "5.6%", "volume_note": "24 小时成交额 M$3,430／总成交 M$3,480／流动性 M$1,000／仅 7 名交易者（体量薄，注意）；开放权重监管主线的尾部风险盘", "url": "https://manifold.markets/JohnDavidPressman/will-the-news-identify-a-2002-sars"},
+  {"question": "10 月 1 日前，AI 在 PostTrainBench 上超过人类基线？", "prob": "62.1%", "volume_note": "24 小时成交额 M$974／总成交 M$10,967／流动性 M$1,000／67 名交易者；Zvi 自己开的盘", "url": "https://manifold.markets/ZviMowshowitz/ai-beats-human-baseline-on-posttrai"},
+  {"question": "2026 年 10 月 20 日前会出现一次「警告射击」？", "prob": "11.0%", "volume_note": "24 小时成交额 M$250／总成交 M$10,027／流动性 M$1,355／77 名交易者；开盘人是 OpenAI 研究员 Leo Gao，「警告射击」正是 Import AI 466 副标题用的词——HF 事件在这个盘的语义下算不算，值得一句", "url": "https://manifold.markets/LeoGao/will-there-be-a-warning-shot-before"}
+ ],
+ "odds_notes": "按 35 个关键词 × 3 种排序（24-hour-vol / daily-score / most-popular）扫了 105 组，去重后 1417 个独立开放二元市场。已剔除近三期报过且概率变化 <10 点的：开源模型 IMO 满分（34.6%→27.7%）、消费级 AI 为答题真去黑东西（64.9%→64.6%）、xAI 求真 AI（25.0%→22.1%）、年内 Mythos 级立法（9.6% 未变）、开源 AI 会赢（9.5% 未变）。查重后主 agent 追删两条撞往期：Altman 当爹更谨慎（07-20 报过 5.5%，本次 7.6%，隔 9 天变化小）、2030 前开放权重禁令（07-21 报过 67%，本次 62.9%，隔 8 天变化小，张力对因此拆掉）。Annals 级论文（07-17 报过 90.0%，本次 96.0%）隔 12 天保留。Gemini IMO 2026 满分（49.9%，7 月 30 日关盘）按用户指示继续不报——但明天出结果，若兑现可作后续。",
+ "skipped_sources": [
+  {"slug": "ahead-of-ai", "reason": "substack 168h 窗口内无更新（最新 07-18）。注意：Raschka 本人的 Kimi K3 架构笔记发在他个人博客 sebastianraschka.com（经 HN 捞回，见 radar），substack 未发。"},
+  {"slug": "anthropic", "reason": "索引解析正常，36h 窗口内零新条目；07-27 的立场文已报（金线），Cognizant 通稿昨日已供、已出窗。"},
+  {"slug": "chip-huyen", "reason": "720h 窗口内无更新，仍停在 2025-01。"},
+  {"slug": "interconnects", "reason": "最新 07-22 播客 recap 已于当期报过（seen 标 reported=true），窗口内无新条目。"},
+  {"slug": "karpathy", "reason": "bearblog 168h 窗口内无更新，最新仍是 2026-04-30。"},
+  {"slug": "lilian-weng", "reason": "720h 内唯一条目 07-04 Harness 长文已报（seen 标 reported=true），无新货。"},
+  {"slug": "thinking-machines", "reason": "720h 窗口内无更新，最新仍是 07-10 那篇。"},
+  {"slug": "the-batch", "reason": "索引恢复正常解析（见 source_fix_notes），但最新 issue-363 是 07-24 发的、内容已在 07-27 期消化，下一期锚点 07-31。"},
+  {"slug": "thezvi", "reason": "36h 内两篇全是 Opus 5 系列（capabilities 篇 + model welfare 篇），Opus 5 主线已下架，一律不收；LW 同步镜像也一并跳过。"},
+  {"slug": "deepmind", "reason": "RSS 正常（30 条），168h 内仅 07-22 Genesis Mission 一条旧闻，昨日已供过且时效已过，不再列。"},
+  {"slug": "neodrop", "reason": "07-29 期已更（Agent 入侵复盘、Grok 4.6/4.7、机器人数据瓶颈）。详情页引用全部是 x.com 原帖（elonmusk / BostonDynamics / OpenAI / AnthropicAI 等 status 链接），X 通道挂着无法回溯核实，按线索源规则一律丢；其 AI 侧条目（入侵复盘、Anthropic 密码分析、OpenAI 科学计算）与我们自有源完全重合，正好当交叉验证。Grok 4.6/4.7 与 Boston Dynamics Spot/Orbit 5.2 两条线索记档，待 X 恢复再追。"},
+  {"slug": "lesswrong", "reason": "并非整源跳过，补记两条主动不收：「…but have the weights left the server?」（HF 主线社区喊话，非官方动作）；「Research directions in condensation」（agent foundations 纯理论，过窄）。"}
+ ]
+}

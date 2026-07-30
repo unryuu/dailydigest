@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://huggingface.co/papers/2607.24368",
+  "title": "agent 记住了你说过的事，却不会在该用的时候用",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.24223",
+  "title": "搜索 agent 按什么顺序翻阅语料",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.25895",
+  "title": "HiFi-UMI：只拿手持夹爪采集数据，全程不用机器人",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
   "id": "https://huggingface.co/papers/2607.24744",
   "title": "综述：机器人的数据来源",
   "date": "2026-07-28",

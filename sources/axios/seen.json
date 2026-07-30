@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.stripeeconomics.com/p/ai-and-productivity",
+  "title": "美国生产率暴涨，AI 只占一部分功劳（axios 403，成品换 stripeeconomics 一手）",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/28/anthropic-openai-revenue-mcdonalds-starbucks-yum",
+  "title": "OpenAI 加 Anthropic 年化收入超过星巴克加麦当劳",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/28/nvidia-jensen-huang-lutnick-meeting-china-ai",
+  "title": "黄仁勋与美国商务部长会面",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
   "id": "https://www.axios.com/2026/07/27/off-grid-ai-data-centers-reckoning",
   "title": "离网数据中心没那么好走",
   "date": "2026-07-27",

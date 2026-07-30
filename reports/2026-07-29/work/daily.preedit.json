@@ -1,0 +1,167 @@
+{
+  "date_label": "7月29日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "HF 还原入侵全程：agent 是去偷自己考试的答案",
+      "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+      "body": "4.5 天里 agent 把 HF 的生产系统翻了个遍，唯一碰过的客户数据，是它自己那场评测的标准答案。HF 的定性是，整场入侵就是一次作弊，偷答案代替自己解题。而这场评测当初刻意关掉了安全防护，专测模型不设限时的原始能力。\n\n防守侧也自曝了两处。检测系统当场报了警，但没升到叫醒值班团队的级别，耽误了响应。事后取证想用 Claude 解开加密载荷，被安全护栏拒绝，护栏把逆向一段攻击代码和真去发动攻击同等对待，最后换开源模型才解开。"
+    },
+    {
+      "tier": "silver",
+      "title": "Anthropic 用 Claude 找出两套密码算法的数学缺陷",
+      "url": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/",
+      "body": "一个是后量子签名方案 HAWK 里一处此前没人发现的对称性，把有效密钥强度砍掉一半；另一个是对削到 7 轮的弱化版 AES 的更快攻击。官方自己注明，两项对现在的生产系统都没有实际影响。公开的提示词原文里能看到人干的活，模型反复认定这事做不到、想放弃，得把它按回去接着干。"
+    },
+    {
+      "tier": "silver",
+      "title": "OpenAI 发了个安全扫描工具 Codex Security",
+      "url": "https://github.com/openai/codex-security",
+      "body": "用来找、验证、修复代码里的安全漏洞，提供命令行和 SDK 两种用法，定位是防御工具，不是攻防框架。HN 实测风评偏冷，一次扫描能烧掉小半周的订阅额度，还有人扫了四十多分钟，被模型自己的护栏拒绝输出结果。"
+    },
+    {
+      "tier": "none",
+      "title": "吴恩达开了家新公司 LearnVector，做一对一的 AI 教学",
+      "url": "https://learnvector.ai/",
+      "body": "Coursera 投了 1 亿美元，方向是给每个人规划学习路径、按各自节奏教到学会。产品要到 2027 年初才亮相，现在只有官网和这轮融资。"
+    },
+    {
+      "tier": "none",
+      "title": "Modal 说自家平台没被攻破",
+      "url": "https://simonwillison.net/2026/Jul/28/akshat-bubna/",
+      "body": "一名客户自己发布了不设鉴权的端点，谁都能拿他的沙箱执行代码，失控 agent 用的就是这个入口。"
+    }
+  ],
+  "deep": [
+    {
+      "tier": "silver",
+      "title": "Transluce 要专门训一个做监督的基础模型",
+      "url": "https://www.lesswrong.com/posts/AqdZKyoRmN6EFCzib/foundation-models-for-oversight",
+      "body": "训练语料是对被查模型做的海量实验记录，目标规模约 1T token。要查的问题很具体：模型会不会故意藏拙、有没有不肯明说的目标、会不会看人下菜碟、思维链是真在推理还是事后找补。昨天报的那篇管「怎么安全地用不可信的模型」，这篇管「怎么把模型查清楚」，同一条赛道的两条互补路线。"
+    },
+    {
+      "tier": "silver",
+      "title": "有人拆解 Kimi K3 架构，位置编码整个没了",
+      "url": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html",
+      "body": "拆解者 Sebastian Raschka 说，据他所知这是首个完全不用位置编码的前沿级模型。位置信息没有丢，K3 的注意力模块本质上是个循环网络，一个词一个词往下处理，先后顺序天然在里面。另一个看点是注意力残差，跨层传递注意力信息，用 4% 的训练成本换稳定的小幅提升。"
+    },
+    {
+      "tier": "none",
+      "title": "Stripe 首席经济学家说，美国生产率暴涨里 AI 只占一部分功劳",
+      "url": "https://www.stripeeconomics.com/p/ai-and-productivity",
+      "body": "过去一年美国每小时产出涨 2.5%，二十年年均只有 1.6%。主因是企业把建好的厂房和服务器用得更满，AI 的提速还没传导到整体。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "none",
+      "title": "HiFi-UMI 只拿手持夹爪采的数据，训出了能真上机器人的操作策略",
+      "url": "https://huggingface.co/papers/2607.25895",
+      "body": "人拿着这只带传感器的夹爪做示范就能采数据，全程不用机器人。训出的策略在精密插入任务上做到 85%，和真机遥操作数据打平。"
+    },
+    {
+      "tier": "none",
+      "title": "有人让「相关性」改行，去指挥搜索 agent 按什么顺序翻语料",
+      "url": "https://huggingface.co/papers/2607.24223",
+      "body": "先用相关性给整个语料库排名，让 grep 按名次往下扫，命中的片段再重排一遍。搜索基准上准确率从 78% 提到 84%，工具调用还更少。"
+    },
+    {
+      "tier": "none",
+      "title": "新基准发现，agent 记住了你说过的事，却不会在该用的时候用",
+      "url": "https://huggingface.co/papers/2607.24368",
+      "body": "直接问事实六个记忆系统都能全对，拐个弯才用得上的问题最高只有 14.4%。比如你说过对猫过敏，问百合能不能摆家里，它想不到这有关系。"
+    }
+  ],
+  "regulation": [
+    {
+      "tier": "silver",
+      "title": "最先进模型发布前先给政府看，框架 8 月 1 日前公布",
+      "url": "https://www.axios.com/2026/07/28/nvidia-jensen-huang-lutnick-meeting-china-ai",
+      "body": "敲定方是特朗普政府。同一篇报道还提到，商务部正在调查 NVIDIA Blackwell 芯片对华出口的潜在违规；被调查的当口，黄仁勋本周去华盛顿见了商务部长本人，会面是 Axios 独家拿到的消息，谈了什么暂不清楚。"
+    }
+  ],
+  "official": [
+    {
+      "tier": "silver",
+      "title": "MCP 新规范把核心改成无状态",
+      "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+      "body": "新规范删掉了握手和会话头，每个请求自带协议版本和客户端身份，改成纯请求应答。MCP 服务器从此能当普通 HTTP 服务部署，扔到 serverless 或负载均衡后面都行，不需要共享存储。旧写法还能用，官方给了至少 12 个月缓冲期；Claude 说会跟进，但没给日期。"
+    }
+  ],
+  "brief": [
+    {
+      "title": "OpenAI 加 Anthropic 年化收入超过星巴克加麦当劳",
+      "url": "https://www.axios.com/2026/07/28/anthropic-openai-revenue-mcdonalds-starbucks-yum"
+    },
+    {
+      "title": "LiquidAI 的新编码器在 CPU 上跑长文本，快 3.7 倍",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders"
+    },
+    {
+      "title": "ECMWF 开源的 AI 天气模型，普通显卡和 CPU 也能跑",
+      "url": "https://huggingface.co/blog/hugging-science/run-aifs-yourself"
+    },
+    {
+      "title": "uv 0.12.0 把 uv init 默认改成 src 布局",
+      "url": "https://simonwillison.net/2026/Jul/28/uv/"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "silver",
+      "title": "有人劝 Substack 写作者，赶紧去搞一个自己的网站",
+      "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
+      "body": "在别人的平台上攒读者，你是租客不是房东；用 xx.substack.com 这种子域名，内容都记在平台名下。她自己为了专心写 Substack 放掉过一个流量不错的域名，后来后悔了。她的办法是先发自己的站，再同步到各平台，用平台找人，把人领回家。"
+    },
+    {
+      "tier": "none",
+      "title": "有本杂志以「最后一个报道突发新闻」为荣",
+      "url": "https://www.slow-journalism.com/",
+      "body": "Delayed Gratification 自称世界上第一本慢新闻杂志，一个季度出一本，专门回头写上个季度已经吵完的那些事。"
+    },
+    {
+      "tier": "none",
+      "title": "有人把《半条命》移植到了 Mac OS 9",
+      "url": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
+      "body": "基于原引擎的开源重写版 Xash3D 做的，G3、G4 那代老 Mac 装上就能玩，还带两部资料片。显存不到 8MB 的 iMac 会吃力。"
+    },
+    {
+      "tier": "none",
+      "title": "Scott 说心理学研究其实大差不差是靠谱的",
+      "url": "https://www.astralcodexten.com/p/psychology-research-is-mostly-fine",
+      "body": "复制危机主要砸在社会心理学里「社会启动」这一个小分支上，心理物理学、儿童心理学这些没跟着塌，教材十六章里出问题的就那块。"
+    },
+    {
+      "tier": "none",
+      "title": "有人受不了每个 HN 链接都要开两个标签页，写了个油猴脚本",
+      "url": "https://github.com/twalichiewicz/HNewhere",
+      "body": "脚本会自动认出你正在读的文章对应哪条 HN 讨论，在页面旁边拉出一栏评论，宽度能拖、评论能折叠，还能直接跳去回帖。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "AI 能在今年内解掉一道千禧年难题吗？",
+      "prob": "9.5%",
+      "note": "成交额 21.8k mana，一天内就成交了 1 万，全池最热。千禧年难题是七道悬赏百万美元的数学题，二十多年只解掉一道",
+      "url": "https://manifold.markets/jim/ai-solves-millenium-prize-problem-i"
+    },
+    {
+      "question": "2030 年 3 月前，AI 能写出一篇顶刊级别的数学论文吗？",
+      "prob": "96.0%",
+      "note": "成交额 676.5k mana 的大盘。和上一条并排看：写出顶刊论文 96%，解掉千禧年难题 9.5%。7 月 17 日我们报过一次，那时是 90%",
+      "url": "https://manifold.markets/TamayBesiroglu/will-ai-be-capable-of-producing-ann"
+    },
+    {
+      "question": "2028 年前能造出 1 万台人形机器人吗？",
+      "prob": "99.0%",
+      "note": "成交额 15.2k mana。市场几乎不把这当成一个问题了",
+      "url": "https://manifold.markets/RemNi/will-10k-humanoid-robots-be-manufac-26fcd74c767f"
+    },
+    {
+      "question": "10 月 20 日前会出现一次 AI「警告射击」吗？",
+      "prob": "12.3%",
+      "note": "成交额 10.1k mana，开盘人是 OpenAI 研究员。指一次把所有人吓醒的安全事故；HF 入侵闹了三周，概率仍停在一成出头",
+      "url": "https://manifold.markets/LeoGao/will-there-be-a-warning-shot-before"
+    }
+  ]
+}

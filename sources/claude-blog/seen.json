@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://claude.com/blog/bringing-mcp-2026-07-28-to-claude",
+  "title": "MCP 重要新版本：无状态协议核心（成品链接用 MCP 官方博客）",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
   "id": "https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case",
   "title": "Anthropic：四个模型怎么分工",
   "date": "2026-07-24",

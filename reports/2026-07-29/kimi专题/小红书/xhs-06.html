@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family:"LXGW WenKai"; src:url("file:///D:/dailydigest/fonts/LXGWWenKai-Regular.ttf"); }
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#ECEFF7; }
+.page { width:1242px; min-height:1656px; background:#ECEFF7; padding:46px 46px 0; }
+.kick { font-family:"Microsoft YaHei",sans-serif; font-size:34px; color:#67718A; }
+.sec { display:flex; align-items:center; gap:16px; margin:26px 0 10px; }
+.sec .bar { width:12px; height:52px; border-radius:6px; background:#6F7FC0; }
+.sec .label { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:56px; color:#6F7FC0; }
+.item { background:#F7F9FD; border-radius:20px; padding:28px 36px; margin:18px 0; box-shadow:0 2px 0 rgba(43,48,60,.06); }
+.item .ttl { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:50px; line-height:68px; color:#2B303C; }
+.item .body { font-family:"LXGW WenKai",serif; font-size:42px; line-height:64px; color:#2B303C; margin-top:14px; }
+.item .body p { margin-top:14px; }
+.item .body p:first-child { margin-top:0; }
+.foot { margin:40px 0 44px; text-align:center; font-family:"Microsoft YaHei",sans-serif; font-size:32px; color:#67718A; }
+.cvr { display:flex; flex-direction:column; height:1656px; padding-bottom:120px; }
+.cvr .brand { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:44px; color:#6F7FC0; margin-top:70px; }
+.cvr .big { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:110px; color:#2B303C; margin-top:24px; }
+.cvr .date { font-family:"Microsoft YaHei",sans-serif; font-size:52px; color:#67718A; margin-top:18px; }
+.cvr .rule { height:6px; background:#2B303C; opacity:.12; margin:56px 0 40px; }
+.cvr .lead { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:44px; color:#67718A; margin-bottom:8px; }
+.hl { display:flex; gap:18px; margin:20px 0; align-items:flex-start; }
+.hl .dot { width:14px; height:14px; border-radius:7px; margin-top:26px; flex:none; background:#6F7FC0; }
+.hl .t { font-family:"Microsoft YaHei",sans-serif; font-weight:bold; font-size:46px; line-height:1.4; color:#2B303C; }
+img.diagram { width:100%; border-radius:20px; margin:18px 0; }
+</style></head><body><div class="page"><div class="kick">📘 Kimi K3 架构专题 · 龙兄的 Daily Digest</div><div class="sec"><div class="bar"></div><div class="label">位置编码：不要了</div></div><div class="item"><div class="ttl">最大胆的选择</div><div class="body"><p>注意力机制把所有字一起塞进去，不知道谁前谁后，所以常规模型都要注入位置信息，标配是 RoPE。K3 把它整个去掉，这个做法叫 NoPE。</p></div></div><div class="item"><div class="ttl">为什么不会乱</div><div class="body"><p>模型生成时只能看到过去、看不到未来，天然隐含先后关系；KDA 又是按顺序更新记忆，等于自带位置信息。</p><p>RoPE 按训练长度调校，文本一超长就会失准；NoPE 理论上更不在乎长度变化。K3 是第一个在最高规格模型上验证这件事的。</p></div></div><div class="foot">5 / 7</div></div></body></html>

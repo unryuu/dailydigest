@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/blog/hugging-science/run-aifs-yourself",
+  "title": "开源天气模型，普通显卡和 CPU 也能跑",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
+  "title": "新编码器在 CPU 上跑长文本，快 3.7 倍",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
   "id": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
   "title": "NVIDIA：实时生成的手术仿真，单卡每秒 160 帧",
   "date": "2026-07-27",

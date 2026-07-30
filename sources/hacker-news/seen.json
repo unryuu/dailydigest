@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
+  "title": "有人把《半条命》移植到了 Mac OS 9",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://www.slow-journalism.com/",
+  "title": "有本杂志以「报导比别人晚」为荣",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
+  "title": "Substack 写作者应该赶紧去搞自己的网站",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html",
+  "title": "有人拆解 Kimi K3 架构，发现没有使用位置编码",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://learnvector.ai/",
+  "title": "吴恩达开了家新公司 LearnVector，做一对一的 AI 教学",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://github.com/openai/codex-security",
+  "title": "OpenAI 发布安全扫描工具 Codex Security",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
   "id": "https://pagedout.institute/download/PagedOut_009.pdf",
   "title": "黑客杂志 Paged Out 出了第 9 期",
   "date": "2026-07-27",

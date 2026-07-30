@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Jul/28/uv/",
+  "title": "uv 0.12 让新建项目的默认结构更正规了",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/",
+  "title": "Anthropic 用 Mythos 找出两套密码算法的数学缺陷",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-29"
+ },
+ {
   "id": "https://huggingface.co/moonshotai/Kimi-K3",
   "title": "Kimi K3 权重放出来了，2.8 万亿参数",
   "date": "2026-07-27",

@@ -1,0 +1,118 @@
+[
+  {
+    "id": "industry-learnvector",
+    "section": "industry",
+    "label": "吴恩达开了家新公司 LearnVector，做一对一的 AI 教学",
+    "url": "https://learnvector.ai/",
+    "body": "Coursera 投了 1 亿美元，公司要给每个人规划学习路径、按各自节奏调整内容，一直带到学会。产品计划 2027 年初才亮相，HN 上已经有人吐槽官网通篇是承诺，没说清楚怎么做。",
+    "note": "核实通过，官网首页 + HN 讨论页各读一遍。官网实读到的：吴恩达任创始人兼 CEO（署名带 Coursera 联合创始人、Google Brain 联合创始人），公司 2026 年成立，注册地加州山景城、线上办公；三条承诺原话是规划学习路径 / 适应你的学习方式 / 耐心指导直到掌握新技能；明说与 Coursera 的课程库协作；Coursera 投资 1 亿美元；产品「will have products to show by early 2027」。正在招 AI 工程师、学习工程师、学习科学家、全栈、运营。HN 页面（id=49092499）实读：标题《LearnVector – Andrew Ng's AI company building one-to-one learning experiences》，我读到时 228 分 149 评（主 agent 记录的 191 分是更早的快照，正常爬分）。评论区主要三类质疑：官网像 AI 生成的、没有任何产品细节只有大想法、EdTech 历来没解决「动机问题」。body 最后一句用的是 HN 评论区的普遍反应，不是我的评价；定牌若嫌带情绪可整句删，删了剩下的两句仍闭环。**提醒定牌：这家公司现在只有一个官网和一轮融资，没有产品，写重了会显得像软文。**"
+  },
+  {
+    "id": "deep-stripe-productivity",
+    "section": "deep",
+    "label": "Stripe 首席经济学家说，美国生产率暴涨里 AI 只占一部分功劳",
+    "url": "https://www.axios.com/2026/07/28/ai-labor-productivity-stripe",
+    "body": "过去一年美国每小时产出涨了 2.5%，高于过去二十年 1.6% 的年均水平。他认为主要原因是企业把已经建好的厂房、服务器和客房用得更满，AI 在具体岗位上确实提速，但还没传到整体经济上。",
+    "note": "**fetch_failed（用户给的 Axios 原链接）**：axios.com 直接 403；按主 agent 的兜底方案去读官方 RSS（api.axios.com/feed/），当期 10 条里没有这一篇，/feed/technology 404。事实改由两处核实：一是搜索结果里 Axios 自己的标题和正文摘要（标题《AI is only \"part\" of high U.S. productivity growth, says Stripe economist》，2026-07-28），二是**一手来源实读**——作者 Ernie Tedeschi（Stripe 首席经济学家）本人在 Stripe Economics 发的原文《AI and productivity》，2026-07-23，https://www.stripeeconomics.com/p/ai-and-productivity ，这篇我完整读到了。一手原文核准的数字：美国劳动生产率同比约 2.5%，过去二十年均值 1.6%，模型给出 93% 概率美国已进入高生产率时期，但全要素生产率（TFP）近乎零增长、处于高增长期的概率不到 20%；他把加速主要归给资本利用率提升（已建成的工厂多开工、已付钱的服务器和 GPU 集群多跑、已有酒店房间多住），而不是技术效率的真突破。原文另给了微观侧的 AI 增益（客服 +14%、写作提速 40%、顾问多完成 12% 任务且单任务耗时降 25%），我按定调删掉了这组支撑性数字，body 只留结论。**提醒定牌：Axios 页读不进去，若你介意，建议把 url 换成上面那条 stripeeconomics 一手链接（内容更全、日期是 07-23）；我没擅自换。**"
+  },
+  {
+    "id": "paper-hifi-umi",
+    "section": "papers",
+    "label": "HiFi-UMI 只拿手持夹爪采的数据，训出了能真上机器人的操作策略",
+    "url": "https://huggingface.co/papers/2607.25895",
+    "body": "UMI 是一只手持的带传感器夹爪，人拿着它在真实环境里做示范就能采数据，全程不用机器人。只用这批数据训出的策略，在精密插入任务上做到 85%，和真机遥操作训出来的水平打平。",
+    "note": "核实通过。《HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone》，页面元信息指向 Simple World Lab，HF 页面作者名单未逐一展开。UMI 定义取自原文原话：「a handheld, instrumented gripper that lets a human collect in-the-wild demonstrations with no robot in the loop」，body 第一句即此。核准的数字：只用 HiFi-UMI 数据训练的策略与同域遥操作数据训练相比，三种骨干网络上分别差 -2.5、+3.1、-0.6 个百分点（body 的「打平」由此而来）；最强策略在精密插入任务上 85%；4000 小时预训练把十个未见任务的动作误差降低 41%；共采集 2 万多小时，公开释出 2000 小时的精选子集 HiFi-UMI-2K；数据有效率 96%。硬件侧（body 未用，属支撑性细节）：头戴式离线双目惯性 SLAM，末端精度 3mm；GPIO 共享触发做微秒级同步；六摄像头、约 200° 超广视角；全掌手套式夹爪。主 agent 记的「当日票王 72 赞」我没在页面上核到赞数（WebFetch 拿到的是论文正文渲染，不含 HF 的 upvote 计数），这个数请以你自己那侧的记录为准，我不背书。**提醒定牌：这条和昨天的 paper-data-pyramid（具身数据金字塔，其中一层就是 UMI 式手持采集）题材相邻，但不是同一件事，昨天是综述、今天是具体方法与数据集，我判断不构成重复。**"
+  },
+  {
+    "id": "paper-relevance-agentic-search",
+    "section": "papers",
+    "label": "有人让「相关性」改行，去指挥搜索 agent 按什么顺序翻语料",
+    "url": "https://huggingface.co/papers/2607.24223",
+    "body": "它先用相关性给整个语料库排名，让 grep 按名次往下扫，再把命中的片段重排一遍。在一个搜索基准上准确率从 78% 提到 84%，工具调用次数还更少。",
+    "note": "核实通过。《A New Role for Relevance: Guiding Corpus Interaction in Agentic Search》，作者 Jiangnan Li、Mo Yu、Jinchao Zhang、Jie Zhou（腾讯）与 Yuqing Li（中科院信工所）。核心主张核准：以往相关性只当内容过滤器（检索出文档交给模型），本文让它当执行指令——文档级相关性决定 grep 的遍历顺序，匹配级相关性决定输出被截断时哪些片段还能被模型看见。方法叫 RARG（Relevance-Aware RipGrep），三档：RARG 用嵌入排序器给语料排序让 ripgrep 按序扫；RARG+ 额外给「与查询相关的段落」当入口；RARG++ 再对 grep 命中结果重排，让排名靠后文档里的信息也能露出来。数字核准：BrowseComp-Plus 上 RARG++ 84% 准确率、23.9 次工具调用，对照 RISE 的 78% 和 28.7 次；扩到 100 万文档仍有 79%（RISE 掉到 69%）；BRIGHT 上平均 nDCG@10 为 53.36。body 只留了 78%→84% 这一组结论性数字，工具调用的具体次数按定调删成了「更少」；百万文档那组和 nDCG 留给定牌自取。HF 页面上的赞数我没核到（同上，WebFetch 返回的是论文正文）。"
+  },
+  {
+    "id": "paper-inmind",
+    "section": "papers",
+    "label": "新基准发现，agent 记住了你说过的事，却不会在该用的时候用",
+    "url": "https://huggingface.co/papers/2607.24368",
+    "body": "直接问事实，六个记忆系统都能 100% 答对；换成要拐个弯才用得上的问题，最高只有 14.4%。比如你说过对猫过敏，之后问百合花能不能摆家里，它想不到这两件事有关。",
+    "note": "核实通过。《Keep It InMind: Benchmarking the Implicit-Association Blind Spot in Agent Memory》，中国科学技术大学 + Metastone Technology。基准构成：125 个任务，113 个有公开来源支撑、12 个由专家撰写。「隐性关联」的定义是原文给的三条件——该记忆对回答查询是必需的、记忆与查询在语义上离得远（没有明显词面或嵌入相似度）、两者之间存在一座背景知识的桥。猫过敏与百合花那个例子是原文举的例子，不是我编的（百合对猫有毒是那座桥）。数字逐个核准：直接召回 100%；隐性关联查询最高 14.4%；把目标记忆直接放进上下文做对照可达 84.0%；嵌入维度扩 8 倍后差距基本没变；改成「始终可见」的设计（一份简单的 markdown 档案）能回到 68.8%。原文的结论是瓶颈不在存储、也不在模型能力，而在查询时的检索接口。body 只用了 100% 和 14.4% 这组最有冲击力的对照，84.0% 和 68.8% 留给定牌。HF 赞数同样未核到。"
+  },
+  {
+    "id": "regulation-acm-llm-library",
+    "section": "regulation",
+    "label": "一篇 ACM 观点文主张，该让大模型读 ACM 数字图书馆了",
+    "url": "https://cacm.acm.org/opinion/now-is-the-time-to-give-llms-access-to-the-acm-digital-library/",
+    "body": "文章说 AI 正在变成大家找论文、读论文的主要入口，继续把 ACM 的内容挡在外面，作者和学会反而会被绕开。ACM 眼下只是在内部讨论，还没决定要不要开放给模型训练。",
+    "note": "**fetch_failed（用户给的 CACM 原链接）**：cacm.acm.org 返回 403，官方 RSS（cacm.acm.org/feed/）同样 403，改走 DOI 页 https://dl.acm.org/doi/10.1145/3830419 也是 403。三条路都被拦，正文我没有直接读进去。事实来自搜索结果里对该文的成段引述，能核到的有：文章存在且标题一致（《Now Is the Time to Give LLMs Access to the ACM Digital Library》，CACM 观点栏目，DOI 10.1145/3830419）；核心论点是 AI 系统正在成为知识被发现和使用的主要界面，ACM 必须决定如何应对；ACM 此前是刻意谨慎、没有急于把内容变现，优先保护数字图书馆的完整性并听取作者与志愿者领导层的意见；继续把 ACM 出版物挡在 LLM、AI 研究试点和一批嵌入 AI 的检索服务之外，会让 ACM 的使命和作者社群承担风险；**关键限定：ACM 出版委员会和数字图书馆委员会只是讨论过允许 LLM 在馆藏文章上训练，尚未就是否以及如何用于 LLM 训练做出任何决定**——body 第二句就是这句，请务必保留，删了会变成「ACM 要开放了」的误报。作者名我没核到（三个页面都打不开），所以 label 和 body 都只说「一篇 ACM 观点文」，没具名。另：HN 上有对应讨论帖 id=49084987，Lance Fortnow 也在社交媒体转过并提到 ACM 开了反馈通道。**提醒定牌：正文未实读，若你对铁律二把得严，这条建议撤；若要留，上面这几句是我能交叉核到的全部，别再往外扩写。**"
+  },
+  {
+    "id": "brief-openai-anthropic-revenue",
+    "section": "brief",
+    "label": "OpenAI 加 Anthropic 的年收入超过星巴克和麦当劳",
+    "url": "https://www.axios.com/2026/07/28/anthropic-openai-revenue-mcdonalds-starbucks-yum",
+    "note": "**fetch_failed（Axios 403，同 deep-stripe-productivity）**，官方 RSS 当期也没有这条。标题级核实靠搜索结果交叉：Axios 自己的标题《Anthropic, OpenAI blow past Starbucks, McDonald's amid AI boom》（2026-07-28）与用户给的 url 一致；IBTimes、CryptoBriefing、CoinDesk 等多家同源转载口径一致。核到的数字：两家合计年化收入约 1200 亿美元，其中 Anthropic 约 710 亿（占合计约六成），星巴克 372 亿、麦当劳 269 亿，两家快餐合计 641 亿；报道还提到 Anthropic 一家几乎能顶上星巴克 + 麦当劳 + 百胜（塔可钟、肯德基母公司）。label 按简讯 30 字线只留了对比本身，一个数字都没写。**提醒定牌：这些是年化 run rate 和预测值、不是已实现的财报收入，label 里我用「年收入」已经是简化，别在别处再加「营收超过」这类更硬的说法。**"
+  },
+  {
+    "id": "brief-lfm2-5-encoders",
+    "section": "brief",
+    "label": "LiquidAI 的新编码器在 CPU 上跑长文本，快 3.7 倍",
+    "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
+    "note": "核实通过，HF Blog 原文实读，2026-07-28。发布两个通用编码器：LFM2.5-Encoder-230M 和 LFM2.5-Encoder-350M，支持 8192 token 上下文，输入变长时延迟增长平缓。CPU 实测：8192 token 长度下 230M 约 28 秒，ModernBERT-base 超过 90 秒，约 3.7 倍，原文的落点是让长文本处理在笔记本 CPU 上变得可行。质量侧：350M 在一组 14 个模型的基准里排第四，体积远小于排在它前面的。定位是分类、意图路由、PII 检测、文本打分这类高频生产任务。label 里的 3.7 倍对应的是 230M 那档，若定牌想更严谨可写成「小的那个」，但会超字数，我按简讯口径留了简化说法。"
+  },
+  {
+    "id": "brief-aifs-run-yourself",
+    "section": "brief",
+    "label": "ECMWF 开源的 AI 天气模型，现在普通显卡和 CPU 也能跑",
+    "url": "https://huggingface.co/blog/hugging-science/run-aifs-yourself",
+    "note": "核实通过，HF Blog 原文实读，2026-07-28。AIFS 是欧洲中期天气预报中心（ECMWF）联合多国气象机构、基于开源框架 Anemoi 做的数据驱动预报系统，用图神经网络加 transformer 处理器学历史天气来推演大气演变，相比传统物理模式耗能约低 1000 倍；2025-02-25 起投入业务运行，权重以 CC BY 4.0 发在 Hugging Face。HF 这篇做的工程活是拆掉 flash-attn 依赖（只支持特定 GPU），写了兼容补丁把所有注意力调用路由到 PyTorch 的 SDPA，于是任意 GPU 或 CPU 都能跑，另外配了教程、Hugging Face Jobs 集成和在线演示。label 里「开源」指权重开放（CC BY 4.0）+ 框架 Anemoi 开源，两头都成立。"
+  },
+  {
+    "id": "brief-uv-0-12-0",
+    "section": "brief",
+    "label": "uv 0.12.0 把 uv init 默认改成 src 布局",
+    "url": "https://simonwillison.net/2026/Jul/28/uv/",
+    "note": "核实通过，Simon Willison 的短文实读，2026-07-28。变更内容核准：uv init 从在项目根目录放 main.py，改成生成 src/ 布局；新增 uv_build 作为构建后端，可产出 wheel 和 .tar.gz；pyproject.toml 里多了作者列表和 project.scripts 块（把 uv-init 指向 uv_init:main）；根目录的 main.py 消失，改成 src/uv_init/__init__.py 里的 main() 并带 -> None 类型标注。这是一处破坏性变更（breaking change），label 因 30 字线没写「破坏性」三个字，若定牌想强调可改成「uv 0.12.0 破坏性变更，uv init 默认走 src 布局」（33 字）。"
+  },
+  {
+    "id": "fun-substack-need-website",
+    "section": "fun",
+    "label": "有人劝 Substack 写作者，赶紧去搞一个自己的网站",
+    "url": "https://elizabethtai.com/2026/06/10/substack-writers-you-need-a-website/",
+    "body": "作者的说法是，在别人的平台上攒读者，你是租客不是房东；用 xx.substack.com 这种子域名，等于内容都记在平台名下。她自己就为了专心写 Substack 放掉过一个流量不错的域名，后来后悔了。她推荐的办法是先发自己的站再同步到各平台，用平台找人，把人领回家。",
+    "note": "**dup_suspect（弱，请定牌裁决）**：与昨天乐子区的 fun-blog-revival（LessWrong 众筹捞停更博主）同属「自有博客 / 别把家安在平台上」这一味道，读完全文后我的判断是**不构成实质重复**——昨天那条是一个具体的众筹机制（悬赏池、二次方融资、1000 字门槛），这条是一篇观点文，落点在平台风险和内容所有权，没有任何机制或事件重叠。两条并排会让读者觉得我们连着两天在推同一个主张，这是唯一的风险点，交你掂量。\n核实通过，正文实读。作者 Elizabeth Tai，文章日期 2026-06-10（**比今天早一个半月，是老文被 HN 翻出来**，主 agent 已注意到）。HN 侧我另查了 Algolia：标题《Substack writers, you need a website》，提交时间 2026-07-28 16:58 UTC，我查到时 592 分 313 评（主 agent 记的 549 分是更早快照）。文中核到的要点：「你不是房主，是租客」的比喻；只用 xx.substack.com 子域名而非自有域名时，内容的归属实际落在平台一侧；她本人曾为专注 Substack 放弃一个高流量域名，后视为错误决定；她主张 POSSE（先发自己的站、再同步到各平台）；举了科幻作家 John Scalzi 独立写博 28 年、称自己的站是「制度记忆」的例子。body 我按银牌口径写长了些（约 120 字），Scalzi 那个例子没塞进去，定牌若嫌长可整句删掉第二句（她自己后悔那句），剩下的仍闭环。"
+  },
+  {
+    "id": "fun-slow-journalism",
+    "section": "fun",
+    "label": "有本杂志以「最后一个报道突发新闻」为荣",
+    "url": "https://www.slow-journalism.com/",
+    "body": "Delayed Gratification 自称世界上第一本慢新闻杂志，一个季度出一本，专门回头写上个季度已经吵完的那些事。",
+    "note": "核实通过，官网首页实读。刊名 Delayed Gratification，自称「世界上第一本慢新闻杂志」，季刊，2011 年创刊起就把「Last to Breaking News」当口号挂着（label 的「最后一个报道突发新闻」即此）。首页在售的最新一期是第 62 期（2026 年 1–3 月），选题包括委内瑞拉政局、伊朗冲突、非洲杯；另有数字版、订阅和信息图表制作等线上课程，页面挂了卫报、电讯报等媒体的评价。这条是「有意思」不是「好笑」，笑点全在那句口号上，定牌若要控节奏可放 fun 区中段。"
+  },
+  {
+    "id": "fun-half-life-mac-os-9",
+    "section": "fun",
+    "label": "有人把《半条命》移植到了 Mac OS 9",
+    "url": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
+    "body": "移植基于 GoldSrc 引擎的开源重写版 Xash3D 做的分支，G3、G4 那代老 Mac 装上就能玩，还带两部资料片。显存不到 8MB 的 iMac 会有点吃力。",
+    "note": "核实通过，原文实读，日期 2026-07-29（今天）。移植者是 GitHub 用户 doctashay，基于 Xash3D FWGS（GoldSrc 引擎的开源重新实现）的一个分支；含多人游戏支持、Uplink 演示版，以及《Blue Shift》和《Opposing Force》两部资料片可下载。硬件要求：PowerPC G3 / G4 的 Mac，Mac OS 9.0 或更高，建议显存 8MB 以上；原文原话是性能很大程度上取决于机器里的 GPU，显存不足 8MB 的 iMac、iBook 会吃力。body 里我把两部资料片的中文名省了（《Blue Shift》《Opposing Force》的中译名有多个版本，写出来反而容易被挑刺），只写「两部资料片」。"
+  },
+  {
+    "id": "fun-psychology-mostly-fine",
+    "section": "fun",
+    "label": "Scott 说心理学研究其实大差不差是靠谱的",
+    "url": "https://www.astralcodexten.com/p/psychology-research-is-mostly-fine",
+    "body": "他的意思是复制危机主要砸在社会心理学里一个叫「社会启动」的小分支上，心理物理学、儿童心理学这些没跟着一起塌，教材十六章里出问题的就那一块。",
+    "note": "核实通过，原文实读，Astral Codex Ten，2026-07-28。核心论点：复制危机确实存在，但主要落在社会心理学下面的社会启动（social priming）研究上，心理学的其余部分大体可信。他的论证方式：用一本导论教材做尺子，社会心理学是第 16 章里的第 12 章，其余 15 章相对无恙；列举了心理物理学到儿童心理学等十二个正常运转的分支；估算真正有问题的研究者占全体心理学家的 0.05%–0.2%（社会启动方向），做社会心理学的整体约 10%–20%。结尾呼吁批评者可以不喜欢社会启动，但放过这个领域的其他部分。body 里「教材十六章」是原文的论证尺子，不是我加的比喻。**提醒定牌：这条其实不好笑，是观点文，放 fun 区靠的是「反常识但讲得通」的会心一笑；若本期 fun 已经够满，这条可以撤。**"
+  },
+  {
+    "id": "fun-hnewhere",
+    "section": "fun",
+    "label": "有人受不了每个 HN 链接都要开两个标签页，写了个油猴脚本",
+    "url": "https://github.com/twalichiewicz/HNewhere",
+    "body": "脚本会自动认出你正在读的文章对应哪条 HN 讨论，在页面旁边拉出一栏评论，宽度能拖、评论能折叠，还能直接跳去回帖。",
+    "note": "核实通过，仓库页实读。名字玩的是 HN + everywhere 的拼字。README 核到的功能：自动识别当前文章对应的 HN 讨论（走 Hacker News API 和 HN Algolia 搜索 API）、在文章旁开一个可调宽度的讨论侧栏、评论可折叠、宽度设置会记住、可直接跳转到 HN 上回帖。安装需先装 Tampermonkey 或 Violentmonkey 之类的脚本管理器。MIT 协议，我读到时 144 star、6 fork。"
+  }
+]
