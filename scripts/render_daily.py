@@ -27,6 +27,10 @@ from chromepath import find_chrome
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CHROME = find_chrome()
 LXGW = ROOT / "fonts" / "LXGWWenKai-Regular.ttf"
+# 小标题/UI 用的雅黑也从仓库取。原先只在 CSS 里写字体名、靠系统装了雅黑，
+# 换 macOS 会静默回退成别的字体、不报错但字形变（商业字体不入库，见 SETUP.md）
+MSYH = ROOT / "fonts" / "MSYH.TTC"
+MSYH_B = ROOT / "fonts" / "MSYHBD.TTC"
 
 # ---------- 配色（Claude Light 浅黄绿护眼） ----------
 BG      = "#EDEFE2"   # 页面浅黄绿底
@@ -60,6 +64,8 @@ def build_html(d):
     parts = []
     parts.append(f"""<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face {{ font-family:"LXGW WenKai"; src:url("{LXGW.as_uri()}"); }}
+@font-face {{ font-family:"Microsoft YaHei"; src:url("{MSYH.as_uri()}"); font-weight:normal; }}
+@font-face {{ font-family:"Microsoft YaHei"; src:url("{MSYH_B.as_uri()}"); font-weight:bold; }}
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 html,body {{ background:{BG}; }}
 .page {{ width:1179px; background:{BG}; padding:56px 48px 64px 48px; }}

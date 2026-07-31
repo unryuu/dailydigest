@@ -16,8 +16,10 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 W, H = 1920, 1080
 BG, INK, SUB = "#EDEFE2", "#2F2E27", "#6B6A5E"
-YAHEI_B = r"C:\Windows\Fonts\msyhbd.ttc"
-YAHEI = r"C:\Windows\Fonts\msyh.ttc"
+# 字体一律从仓库 fonts/ 取，不指望系统装了什么（原先写死 C:\Windows\Fonts\，
+# 换 macOS 直接 OSError）。雅黑是商业字体不入库，换机器手动放，见 SETUP.md。
+YAHEI_B = str(ROOT / "fonts" / "MSYHBD.TTC")
+YAHEI = str(ROOT / "fonts" / "MSYH.TTC")
 LXGW = str(ROOT / "fonts" / "LXGWWenKai-Regular.ttf")  # 正文用文楷（07-22 用户定）
 TAIL_PAD = 1.0  # 最后一张卡在音频结束后多停留秒数
 

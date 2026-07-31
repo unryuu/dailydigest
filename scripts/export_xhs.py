@@ -18,6 +18,9 @@ from chromepath import find_chrome
 
 CHROME = find_chrome()
 LXGW = ROOT / "fonts" / "LXGWWenKai-Regular.ttf"
+# 雅黑同样从仓库取，理由见 render_daily.py 同处注释
+MSYH = ROOT / "fonts" / "MSYH.TTC"
+MSYH_B = ROOT / "fonts" / "MSYHBD.TTC"
 
 CANVAS_W, CANVAS_H = 1242, 1656  # 小红书竖图 3:4
 
@@ -56,6 +59,8 @@ def esc(s):
 
 CSS = f"""
 @font-face {{ font-family:"LXGW WenKai"; src:url("{LXGW.as_uri()}"); }}
+@font-face {{ font-family:"Microsoft YaHei"; src:url("{MSYH.as_uri()}"); font-weight:normal; }}
+@font-face {{ font-family:"Microsoft YaHei"; src:url("{MSYH_B.as_uri()}"); font-weight:bold; }}
 * {{ margin:0; padding:0; box-sizing:border-box; }}
 html,body {{ background:{BG}; }}
 .page {{ width:{CANVAS_W}px; min-height:{CANVAS_H}px; background:{BG};

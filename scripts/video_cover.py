@@ -12,8 +12,9 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 W, H = 1920, 1080
 BG, INK, SUB, ACCENT = "#EDEFE2", "#2F2E27", "#6B6A5E", "#C2703C"
-YAHEI_B = r"C:\Windows\Fonts\msyhbd.ttc"
-YAHEI = r"C:\Windows\Fonts\msyh.ttc"
+# 字体从仓库 fonts/ 取，不指望系统装了什么（见 video_cards.py 同处注释）
+YAHEI_B = str(ROOT / "fonts" / "MSYHBD.TTC")
+YAHEI = str(ROOT / "fonts" / "MSYH.TTC")
 
 
 def center(d, y, text, font, fill):
