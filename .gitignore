@@ -31,3 +31,11 @@ models/
 # Python
 __pycache__/
 *.pyc
+.venv/
+
+# macOS 目录元数据
+.DS_Store
+
+# 字体：只有开源的霞鹜文楷入库。微软雅黑等商业字体手动放，见 SETUP.md
+fonts/*
+!fonts/LXGWWenKai-Regular.ttf

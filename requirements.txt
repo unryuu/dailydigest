@@ -1,0 +1,8 @@
+# 日报流水线的全部第三方 Python 依赖——其余 import 都是标准库。
+# 装法见 SETUP.md。跑脚本用 `uv run scripts/xxx.py`，不必手动激活 venv。
+#
+# 括号里是 2026-07-31 在 macOS / Python 3.13 上实跑通过的版本。
+
+beautifulsoup4>=4.15    # (4.15.0) fetch_pages / parse_nitter 提取正文
+pillow>=12.3            # (12.3.0) render_daily / export_xhs / video_cards 画图
+requests>=2.34          # (2.34.2) 抓页面、发 Telegram
