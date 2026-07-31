@@ -34,7 +34,7 @@ uv pip install -r requirements.txt
 
 | 放哪 | 是什么 | 哪来的 |
 |---|---|---|
-| `config.local.json` | Telegram token + 两个 chat id | 你自己保管，别进仓库 |
+| `config.local.json` | Telegram token + 两个 chat id | 自己保管，不进仓库 |
 | `fonts/MSYH*.TTC` | 微软雅黑，烧字幕用 | Windows 的 `C:\Windows\Fonts\`，商业字体故不入库 |
 | `models/ggml-*.bin` | whisper 权重 + VAD | 见下 |
 
