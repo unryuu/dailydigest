@@ -1,0 +1,102 @@
+[
+  {
+    "id": "git-worktree-not-isolation",
+    "section": "deep",
+    "label": "给每个 coding agent 一个 git worktree，挡不住它动你的仓库",
+    "url": "https://fletch.sh/blog/git-worktrees-vs-clones-for-ai-agents/",
+    "body": "worktree 只隔开工作目录和索引，配置、钩子、stash、分支全和主仓库共用一份。agent 往共用的钩子目录里写一个脚本，你下次在自己仓库提交时它就在你机器上跑起来；作者实测改用本地 clone 的开销和 worktree 几乎一样，都是 59 MB、一秒内。",
+    "note": "核实通过。作者是 Fletch（跑 coding agent 的 macOS 应用）作者，文末有利益披露，他家产品用 git clone --shared。文中说明这是对旧版本说法的更正（此前他称 worktree 成本只有「几 KB 几毫秒」）。同期 agent-manager 一条也涉及并行跑多个 agent，可留意同期重合。"
+  },
+  {
+    "id": "agents-openended-research",
+    "section": "papers",
+    "label": "让前沿 agent 独立做一遍开放式的 AI 研究，两篇论文被原作者判了拒稿",
+    "url": "https://huggingface.co/papers/2607.27191",
+    "body": "研究者拿两篇未发表的 NeurIPS 2026 投稿当题目，把其中的核心开放问题交给 agent，给六天时间和几千美元算力，最后请论文原作者打分。工程活 agent 全都自己干完了，但在回答研究问题上没有实质进展，常见毛病是判断不出什么算能发表的成果、走进死胡同也退不出来。",
+    "note": "核实通过，HF paper page，07-29 发布、07-30 提交，9 赞。与 07-29 已报的三篇 HF 论文不是同一篇。"
+  },
+  {
+    "id": "turbovla",
+    "section": "papers",
+    "label": "TurboVLA 把机器人模型跑上消费级 4090，每秒 32 次决策",
+    "url": "https://huggingface.co/papers/2607.27205",
+    "body": "视觉和语言分别编码后直接映射成动作，中间那个大语言模型被省掉了。0.2B 参数、推理占用不到 1 GB 显存，LIBERO 基准上平均成功率 97.7%，和大得多的模型打平。",
+    "note": "核实通过，HF 当日第一名、117 赞，代码已开源在 GitHub。32 Hz 由论文给的 31.2 ms 单次推理延迟换算，显存原文 0.9 GB。"
+  },
+  {
+    "id": "cort-token-rubric",
+    "section": "papers",
+    "label": "CoRT 把整段回答的一个总分，拆到每个 token 头上",
+    "url": "https://huggingface.co/papers/2607.25659",
+    "body": "同一段回答分别在带评分标准和不带标准的提示下各算一遍，两次概率差大的 token 就是真正受标准影响的部分，奖励按这个权重分下去。不用额外训练打分模型，指令遵循基准上平均提了 4.4 个点。",
+    "note": "核实通过，字节出品，HF 当日第二名、72 赞。"
+  },
+  {
+    "id": "play-age-signals",
+    "section": "regulation",
+    "label": "Google Play 的年龄信号接口今年内推向全球",
+    "url": "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html",
+    "body": "家长在 Family Link 里一次性选择要不要把孩子的年龄区间（比如 16 至 17 岁）共享给应用，开发者据此调整内容和功能，不用再逐个应用去设置。现在只有巴西可用，八月中先到澳大利亚和加拿大，年底前覆盖全部用户。",
+    "note": "核实通过，Android 开发者博客 07-29，署名 Google Play 产品管理副总裁 Paul Feng。原文是「年龄信号共享」（家长自愿分享年龄区间，默认不共享），不是强制年龄核验，label/body 已按原文口径写。"
+  },
+  {
+    "id": "bis-central-bank",
+    "section": "brief",
+    "label": "国际清算银行说 AI 正在打乱央行的经验法则",
+    "url": "https://www.axios.com/2026/07/29/ai-central-banking-bis",
+    "note": "核实通过，Axios 07-29，Neil Irwin。原始材料是 BIS 论文。dup_suspect：与 07-29 已报的「美国生产率」同属 AI 宏观经济一路，主题相邻但不是同一件事，请定牌裁决。本地文件为浏览器面板补抓（脚本抓取 403）。"
+  },
+  {
+    "id": "gpu-idle",
+    "section": "brief",
+    "label": "闲置的 GPU 就是新时代停在地面的飞机",
+    "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+    "note": "核实通过，HF 博客 07-30，作者来自 Dharma AI，文末推销自家专用模型，属观点文非数据研究。与同期长文银 dwarkesh-compute（算力可能贵十倍）主题相邻，请定牌留意同期重合。"
+  },
+  {
+    "id": "agent-manager",
+    "section": "brief",
+    "label": "一个 tmux 界面里同时管好几个编程 agent",
+    "url": "https://github.com/YoanWai/agent-manager",
+    "note": "核实通过，GitHub README。支持 Claude Code / Codex / OpenCode / Grok Build，跑在 tmux 上，Windows 需 WSL2。与同期 git-worktree 一条都涉及并行跑多个 agent，请定牌留意同期重合。"
+  },
+  {
+    "id": "computer-use",
+    "section": "brief",
+    "label": "computer use 的瓶颈是不会用界面，不是不够聪明",
+    "url": "https://steelmanlabs.com/blog/computer-use-is-far-from-solved",
+    "note": "核实通过，Steelman Labs 博客 2026 年 7 月，是该公司的产品观点文。OSWorld-V2 最佳 20.6%、Agents Last Exam 26.2%、WebGames 人类成功率 95% 以上均出自原文。"
+  },
+  {
+    "id": "maple-high-control",
+    "section": "fun",
+    "label": "当年他鼓励朋友们进这座修道院，现在他说那是个高控制团体",
+    "url": "https://www.lesswrong.com/posts/Z7pjBbK9qujhGbxws/the-high-control-dynamics-at-maple-1",
+    "body": "作者 2020 年住进佛蒙特这座修道院，最长的一次独自闭关七十七天，其间除了每天和住持短暂交谈，不与任何人说话或对视，2023 年他和另外七人一起离开。他列出的问题包括所有决定由住持一人拍板、日程排满到长期睡眠不足、居民写的赞颂文章要经住持审阅、一对一谈话被录音。这家机构的公开目标里还有创立下一个世界宗教，和造一个把世界变成修道院的超级智能。",
+    "note": "核实通过。LessWrong 07-29，作者 Kyle Hubbard，184 赞，75 分钟长文，转载自 insidemaple.com。机构全称 Monastic Academy for the Preservation of Life on Earth（MAPLE），住持 Soryu Forall。文中还有创伤、精神病发作比例等更重的内容，我按乐子档位只取了「结构性控制」这一层，未搬用户健康相关的估算数字。"
+  },
+  {
+    "id": "moon-impact",
+    "section": "fun",
+    "label": "一枚猎鹰 9 号上面级 8 月 5 日会撞上月球",
+    "url": "https://www.projectpluto.com/25010d.htm",
+    "body": "这截五层楼高的空壳去年 1 月把 Blue Ghost 和 Hakuto-R 两台着陆器送上奔月轨道，之后自己在地球周围绕了一年多，这回轮到它落月了。撞击时间在 06:35 UTC 前后几分钟，没有任何危险。",
+    "note": "核实通过，Project Pluto（Bill Gray）页面，最近更新 2026-07-17。对象编号 2025-010D，作者说这是他第二次算出一块太空垃圾要撞月球。"
+  },
+  {
+    "id": "pinball-browser",
+    "section": "fun",
+    "label": "1995 年的《3D 弹球：太空军校生》被搬进了浏览器",
+    "url": "https://98.js.org/programs/pinball/space-cadet.html",
+    "body": "打开网页直接就能玩，不用再去翻旧版 Windows 附件目录里那个图标。",
+    "note": "页面为纯 JS 应用，正文提取为空是预期；已人工验证可加载运行（主 agent 与用户各自打开确认）。"
+  },
+  {
+    "id": "video-store",
+    "section": "fun",
+    "label": "录像带租赁店当年是个能聊天的地方，算法没接上这一段",
+    "url": "https://thereader.mitpress.mit.edu/the-lost-civic-life-of-movie-rental-stores/",
+    "body": "柜台后的店员被当成本地权威，边推荐边跟你争论片子好坏；周六晚上素不相识的客人挤在店里聊电影。社会学管这类地方叫「第三场所」，和酒吧、咖啡馆一个类别。",
+    "note": "核实通过，MIT Press Reader，节选自 Joshua M. Greenberg 的《From Betamax to Blockbuster》。文章无发布日期，是书摘性质的常青内容。"
+  }
+]

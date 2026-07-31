@@ -1,0 +1,36 @@
+URL: https://www.axios.com/2026/07/29/anthropic-claude-open-models-ban-china
+TITLE: Anthropic's lonely island（网页标题：Anthropic is the world's most valuable startup — and its most isolated AI leader）
+AUTHOR: Zachary Basu, Madison Mills
+DATE: 2026-07-29
+抓取方式: 浏览器面板（脚本抓取 403，2026-07-31 02:36 补抓）
+============================================================
+
+主事实（我们要的那条）：
+- 黄仁勋牵头一封公开信，敦促华盛顿不要限制开放权重模型（该品类目前由中国主导）。
+- **Anthropic 是唯一拒签的前沿实验室。** Google 和 OpenAI——Anthropic 在闭源模型上的两个
+  最大对手——周末连同其他数十家一起签了，把 Anthropic 一家晾在那里，去守一个三家其实都
+  还依赖着的商业模式。
+- Amodei 周一（07-27）自己发博客灭火：坚称 Anthropic 从未呼吁禁止开放模型，但**仍然没签**。
+  他称能力较弱的开放模型是「公共品」，说禁止美国公司使用中国开放模型无助于阻止敌对政府或
+  恶意行为者；同时加码强调要对「可能让强模型变危险的原料和行为」加强管控，包括流向威权
+  政府的先进芯片。
+
+Axios 列的「Anthropic 在几乎每一场政策战里都在孤立」：
+- 军事用途：五角大楼二月把 Anthropic 拉黑，起因是 Claude 能否用于大规模监控或自主武器的
+  激烈争执。五角大楼高官 Emil Michael 上周五抨击 Anthropic，称「没有哪家 AI 公司比它对
+  作战人员更有敌意」。
+- 护栏：没有哪家实验室比 Anthropic 更卖力推动监管，它支持州级 AI 立法，并提议设立一个
+  FAA 式的监管机构在发布前审查先进模型。但今夏白宫标记一个安全漏洞时，Anthropic 对其
+  严重程度提出异议，触发出口管制，导致其 Fable 和 Mythos 模型下线近三周。
+- 蒸馏：Anthropic 指控中国实验室通过「工业规模的蒸馏行动」拿 Claude 的输出训练自己的
+  低成本模型。批评者反驳说蒸馏本就是 AI 开发的标准环节，而且 Anthropic 刚为盗版书的
+  版权官司赔了 15 亿美元，当这个信使很尴尬。
+
+与金牌那条的交叉（重要）：
+- 本文说 Anthropic **参加了**另一封请愿——周二（07-28）与来自 OpenAI、Google DeepMind、
+  Meta 等的**超过 1100 名** AI 员工联署，敦促美国政府协助开发「刻意为前沿 AI 定速」的工具。
+- **注意签名数在涨**：本文（07-29）写 1100+，Axios 07-30 那篇写 1200+，官网 scout 抓到
+  1293。成稿要用官网数字并标注时点。
+
+体量参照：Anthropic 五月估值 9650 亿美元，超过 OpenAI，正在筹备 IPO。模型仍在多数独立
+评测榜首，企业客户照付溢价。

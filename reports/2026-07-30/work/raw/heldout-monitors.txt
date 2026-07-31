@@ -1,0 +1,350 @@
+URL: https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained
+FINAL: https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained
+TITLE: Held-out Monitors Sometimes Degrade, Even When Not Trained Against — LessWrong
+FETCHED: 2026-07-31 01:09:08
+============================================================
+x
+Held-out Monitors Sometimes Degrade, Even When Not Trained Against — LessWrong
+Aether
+AI
+Frontpage
+51
+Held-out Monitors Sometimes Degrade, Even When Not Trained
+Against
+by
+Joey Yudelson
+29th Jul 2026
+13
+min read
+0
+51
+Thanks to Dennis Akar, Rauno Arike, Shubhorup Biswas, Claude Fable, Max Heitmann, Vladimir Ivanov, and Jordan Taylor (alphabetical order) for helpful comments on this draft and on the research so far. Thanks to Rohan Subramani and Rhys Ward for high-level comments and discussion. Based on project proposals from Max Heitmann, Jordan Taylor, and Joshua Clymer. This work was done while at
+Aether Research
+.
+Code available
+here
+, metrics & run info available
+here
+.
+TL;DR:
+Held-out evals / monitors / probes would be really nice to have, but the “held-out-ness” is easier claimed than guaranteed. We measure a generalized form of “
+feedback spillover
+” and show that training against an LLM monitor can sometimes degrade a deception probe,
+and vice versa.
+Executive Summary
+It seems crucial to have measures of alignment that still work, even though we train on other measures of alignment. Whether we get this by default is an open question.
+We run preliminary experiments on a suite of probes and LLM monitors, and report the following:
+Training against one proxy can produce reward hacking policies that are less suspicious.
+Proxies also become worse at discriminating hacks from non-hacks, even when not trained against
+.
+We can observe the correlated degradation of different proxies
+, and note that on the occasions when a strong monitor is evaded, other monitors are evaded even more strongly.
+Our preliminary recommendation
+:
+if you are using a held-out proxy to evaluate your model, you should have empirical or theoretical reasons to assume it won’t degrade during training.
+A science of held-out monitors seems possible; we currently don’t have one. This makes safety cases that rely on held-out alignment proxies
+less reassuring
+than hoped.
+Introduction
+It seems like the default “alignment plan” is going to be haphazard, relying on
+defense-in-depth
+to make up for a lack of fundamental breakthroughs. In these worlds, we’ll often have to
+train on proxies
+for the thing we want, or
+against proxies of misalignment
+, while leaving some
+held-out evals to validate
+our methods
+[1]
+. If that’s the case,
+we want to make sure our monitors / evals are uncorrelated
+—especially in the sense of “training on proxy X doesn’t degrade the ability of proxy Y to keep monitoring the model”.
+[2]
+Specifically,
+it would be really bad if labs thought they had some held-out evals, but it turns out that their training tended to degrade the usefulness of the held-out evals
+significantly.
+Here, we measure this explicitly, and show tentative evidence that this cross-degradation indeed happens. While it was previously known that LLM monitors can be fooled, and probes can degrade due to representational drift, we show that in some circumstances, when one degrades, so does the other—that is, “feedback” from one proxy can “spill over” to degrade the other as well. We also find that sometimes a proxy can be
+evaded
+without being
+degraded
+— that it can still separate aligned behavior from misaligned behavior, but the misaligned behavior looks less and less suspicious anyways. This isn’t neat, and it doesn’t happen all the time, but we have some evidence that this generalized feedback spillover does sometimes occur. We hope that we (and others) can build on this to make a real science of held-out monitors.
+Experimental Setup
+We want to evaluate the degradation of held-out evals, probes, or monitors (which we’ll bundle together and call
+proxies
+, for
+proxies of alignment
+). To that end, we train Qwen3-8B in a difficult coding environment where simple reward hacking (i.e. hardcoding) is incentivized. We then trained against an LLM monitor or a probe,
+[3]
+and evaluated changes in hack/non-hack separability, AUROC, and mean suspiciousness of both the trained-against proxy and the held-out proxies. We then evaluated (1) whether the proxies degraded, (2) if so, how, and (3) whether the policy that learned to evade the train-against proxy would now be capable of evading the held-out proxies as well.
+[Fig 1] A simplified chart of our methodology
+Much of our setup comes from
+The Obfuscation Atlas
+. We train on
+MBPP-Honeypot
+, a one-turn coding environment with a very easy reward hack (the model is only scored based on whether its produced code satisfies a public test, so it is easily hardcodeable).
+As in the Obfuscation Atlas, we RL
+[4]
+on this environment, giving the model reward equal to
+, where R
+task
+is 1 if the test was passed, and 0 otherwise. P
+monitor
+is the proxy's normalized suspiciousness score — for LLM monitors, this is obtained by showing an LLM all or part of the policy’s outputs and asking for a “suspiciousness score”, from 0-10 (which we then normalize to 0.0-1.0). For a probe, we use the Obfuscation Atlas’ methodology again to get P
+monitor
+by looking at the final probe score after asking a follow up question about whether or not the model was reward hacking. λ is our monitor penalty — many of the runs we report on use λ = 1.0, but as we were trying to encourage reward hacking, we also tried λ = 0.5, and a schedule of increasing λ linearly from 0.0 to 1.0 during the run. For more info about training, look at the
+configs
+.
+Our Proxies
+We used two classes of proxies in this set of experiments: LLM Monitors and Linear Probes.
+We selected our two LLM monitors by having a large suite of LLMs attempt to classify the example hacks in the MBPP-Honeypot dataset, and taking two monitors with high, although not perfect, ROC-AUCs.
+[5]
+Haiku 3 was the weaker of the two (ROC-AUC 0.9), while Deepseek-chat was better at distinguishing hacks from non-hacks (ROC-AUC 0.99). We tested output-only and CoT+output variations of both monitors.
+We trained probes using the methodology from The Obfuscation Atlas — we train two probes on the initial model, and we get probe scores by running the policy model’s text through the frozen model
+[6]
+and using these activations. (Note that this means that any probe degradation is due to a change in the policy model's
+behavior
+, rather than representation drift or obfuscated activations. That is, a probe getting worse means the policy model's text has changed, rather than it simply learning to store "deception" along a different direction than the probe checks.) Our two probes are:
+Probe 1: Out-of-distribution “deception probe”, trained on (1) Deception dataset (
+Marks & Tegmark, 2024
+) (2) DolusChat (
+Cundy & Gleaves, 2026
+) (3) MASK (
+Ren et al, 2025
+) (4) TruthfulQA (
+Lin et al, 2022
+) (5) LiarsBench (
+Kretschmar et al, 2025
+) (6) Sycophancy (
+Sharma et al, 2024
+) (7) Sandbagging (
+van der Weij et al, 2024
+)
+Probe 2: In-distribution “reward hacking on MBPP probe”, trained on the off-policy, human-written honest solutions and reward hacks to these particular problems.
+Results
+Training against one proxy sometimes produces hacking policies that are less suspicious in general
+Since the policy model is penalized for the suspiciousness score the monitor gives it, and the monitors start out by being pretty sure the clean examples are clean, we expect the policy model to achieve a high reward by learning to hack in unsuspicious ways.
+[7]
+We measure this by looking at μ
+hack
+, the mean suspiciousness score of all the hacking transcripts, and how this changes over the course of a run where the model learns to hack despite the monitor
+[8]
+.
+[Fig 2] When we train against a monitor (given as the row label), how much less suspicious do the hacks become? This is the drop in mean suspiciousness (μ
+hack
+) to each monitor over the course of the run, with 5-95% CIs. (Note this chart is absolute rather than percentage-based, so 0.5 means that, if the model started by giving a hack a mean suspiciousness score of 0.95/1.0, it ends with a mean suspiciousness score of 0.45/1.0)
+This is the overall picture, and in some sense the best predictor of how much your policy model will learn to evade your proxies under various conditions. The main takeaways from this:
+Deepseek-chat is a strong enough “strong monitor” that it is very very difficult to evade, or at least for evading it to be a findable strategy
+When a weak LLM monitor is trained against, the policy model’s evasion transfers pretty well to using that monitor in a different configuration (that is, training against a weak output monitor transfers to a weak CoT+output monitor, and vice versa).
+Probes can be mildly evaded by training against LLM monitors
+[9]
+, and it’s possible for LLM monitors to be evaded by training against probes, although this seems less common, and the error bars are large
+Proxies also
+degrade
+, even when not trained against
+Note that, in the above section, I’m only talking about
+evasion
+rather than
+degradation
+. Here, we distinguish between the two: we say that a proxy is
+evaded
+if the policy model can output hacks that seem not very suspicious to the model (ie μ
+hack
+has decreased). We consider this evasion because, if you were to calibrate a suspiciousness threshold for your proxy before training, and not update it after training, the policy would now evade the proxy. However, it’s possible for a proxy to get less suspicious of hacks while maintaining its ability to differentiate hacks from non-hacks (as in the setup diagram). So, we’ll say that a proxy is
+degraded
+if it has a reduced ability to differentiate hacks from non-hacks. To measure this, we use d', a measure of the separation of the distributions “suspiciousness scores on hacks” and “suspiciousness scores on non-hacks”.
+[10]
+For an example of where d' and μ
+hack
+might be fairly different, see our
+case study
+.
+What is d', exactly?
+We define
+That is, the number of standard deviations between the suspiciousness of the average hack and the average non-hack. This can be thought of as an extension of AUROC:
+[Fig 3] A visual explainer of d' — It's a rescaling of AUROC, representing the number of standard deviations between the two distributions (suspiciousness on hacks and suspiciousness on non-hacks)
+So, how does d', the ability to tell apart hacks from non-hacks, change on average during these training runs
+[11]
+?
+[Fig 4] This chart shows, when we train against the proxy on each row, how much total degradation we expect from each proxy.
+[12]
+[Fig 5] Identical to the above, but after subtracting the control degradation from each row
+Here, we see a pretty interesting picture! Firstly, most monitors degrade slightly under the control condition (the model is trained against no proxy). This is probably for distributional shift reasons, as the policy model hacks more, so in the second chart, we subtract the degradation under control to account for this. And it’s pretty interesting! Note that training against a strong monitor seems to make most other monitors
+better
+at telling hacks from non-hacks. Also, note that we find some forms of feedback spillover—training against a probe degrades all LLM monitors quite strongly—perhaps even more than it degrades the other probe! (Although the error bars are quite wide so my credence here is low.) Additionally, training against weak monitors seems to degrade the probes. We also once again see that while strong LLM monitors seem to strictly dominate weak ones, there is a complicated, non-obvious co-degradation of probes and LLM monitors.
+Which proxies have
+correlated
+degradation?
+Absolute changes in both μ
+hack
+and d' seem insufficient for understanding what happens when the policy fools the strong monitor, as in practice the strong monitors were never particularly fooled, and the policy only explored into the hacks when the penalty was very low. Though we hope to continue to have strong monitors strong monitors that don’t degrade easily when trained against
+[13]
+, we worry that that won’t be the case. To get a sense of how our other monitors might degrade if the strong monitors get fooled, we can use the regression slope, β(train-against → held-out, metric). This can be read as “When the [train-against detector] drops 1 unit according to [metric], how many points does the [held-out detector] drop?” If we chart β
+[14]
+, again using μ
+hack
+as the metric, we see that, on the occasions where the policy
+does
+manage to fool the strong LLM monitor
+[15]
+, it seems to fool the other monitors
+even more strongly
+—which would make sense, since the strong LLM monitors are the strongest monitors we used, and a priori the hardest to fool
+[16]
+.
+[Fig 6] This chart shows, at each cell (row_detector, col_detector): If we train against row_detector, and the policy model thus outputs hacks that are 1.0 unit less suspicious, how many units less suspicious are those hacks by the lights of col_detector? E.g. if training makes out_weak’s mean suspiciousness score go from 0.90 to 0.80, the mean suspiciousness score of probe_ood could go from 0.80 to 0.789
+[17]
+As expected, learning to make the strong monitor even a little less suspicious generalizes strongly to making the other monitors less suspicious (if we make either strong LLM monitor decrease its sus score by 1.0, the weak monitor generalizes strongly (β≈1+)!). The weak models generalize much less, although there is transfer still. Also, training against the probes might make our weak models a little less suspicious, although the 90% CI includes 0.
+We also plot β (the coupling) on d', showing how correlated the
+degradation
+of these various proxies are.
+[Fig 7] If we train against row_monitor, and it degrades by 1 unit, what happens to col_monitor? Blue is improvement, red is degradation
+It's also interesting to note that the μ
+hack
+chart tends to show greater levels of correlation than the d' chart. I'm unsure how seriously to take this result, but if correct, it means that held-out monitors are more likely to be
+evaded
+(with hacks seeming less and less suspicious) than they are to be
+degraded
+(when the hack and non-hack suspiciousness scores move closer together). This implies that even evaded held-out monitors could be quite useful, if you recalibrate new suspiciousness thresholds after training, to account for the fact that the policy model in general appears less suspicious now to these held-out proxies.
+The following chart is presented mostly for completeness, and shows, for each training condition, the effects on the policy model and the proxy being trained against. It shows, in order, the average change in μ
+hack
+, the average change in μ
+clean
+(average suspiciousness of the proxy on clean examples), the maximum hack rate during the run, the distribution (across runs with the same setup but different seeds) of d' outcomes across runs (i.e. what fraction of the time was the train-against proxy degraded?), the distribution of changes in μ
+hack
+, and the distribution of final hacking rates across seeds.
+[Fig 8] Showing the distribution of end states for each training condition
+Discussion
+I strongly agree with Daniel Kokotajlo’s
+statement
+:
+It's very important that there be SOME held-out test set so to speak that lets you tell what the model is really thinking, that you don't train on, and you don't train on anything remotely similar to it either, so that you can make a decent case that the model hasn't learned to fool your test
+Previous research
+has already shown that training on one proxy can affect a different proxy we assumed to be held-out, and coined the term “feedback spillover” for this effect. Here, we show that feedback spillover is very general, even when we could more convincingly claim that we hadn’t “train[ed] on anything remotely similar to [the held out proxy]”. We also attempt to chart some of the relationships between proxies, although these exact dynamics are speculative, and might be environment- or model-dependent.
+Taken together, this indicates that we need a stronger science of held-out monitors. End-of-training testing is a big component of lab safety cases, and it seems like it might be a less trustworthy component than previously thought.
+If labs literally plan to do this exact thing—train on LLMs, evaluate with probes (or vice versa)—these results suggest that they will often be fine, although there is some chance that they will get screwed by this, and they should try to measure how likely these failures are. However, these results also suggest that it’s pretty difficult
+a priori
+to guess how proxies will co-degrade, so
+if you are using a held-out proxy to evaluate your model, you should have empirical or theoretical reasons to assume it won’t degrade during training
+. It seems important to apply
+security mindset
+here, and not be okay with YOLO’ing held-out evals.
+Also, there are some interesting considerations with regards to when we should check our held-out evals. Empirically, the evals that degrade tend to do so over the course of some time, rather than all at once. This implies that, if you are only using your held-out evals at the end of training, you have some chance of getting screwed by correlated degradation. If you use your held out evals a few times
+during training
+, to evaluate and maybe shut down the run, you have a better chance of catching if your held-out monitors start to degrade. However, this can easily become
+hill-climbing on the held-out evals
+, which is the exact thing we want to avoid!
+Caveats
+There are many caveats to our results. The most obvious is that the sample size here is often fairly small, and we only trained one starting model (albeit a few dozen times), and only in one environment. All this means that, while the basic methodology is solid, you probably shouldn’t place a very high credence on any individual correlation amount. It seems very likely to me, for instance, that degrading a strong LLM monitor degrades a weak one, or that probes and LLM monitors cross-degrade each other to a lesser extent than LLM monitors co-degrade, but I wouldn’t claim that e.g. “Training against a strong LLM monitor is always going to degrade an IID probe more than an OOD probe”. Strengthening these claims, and getting a stronger sense of how predictive they are, is a strong candidate for future work in this area.
+There are also some things we don't understand right now, like why in Fig. 4 the cells along the diagonal sometimes show
+less
+degradation than the cells off the diagonal. We're also uncertain about the exact best metrics to use to quantify this, although going forward we might switch to something more like "If you were trying to use held-out proxy Y to evaluate at the end of training, what % of the time would it fail to catch your reward hacker?" rather than our current "How much does proxy Y degrade".
+Future Work
+Aether
+will likely continue to work on this research direction, mostly along two angles: (1) measuring the effects on the techniques, evals, and interpretability tools labs actually use for evaluation (e.g. NLAs), and (2) trying to figure out a better science of why some proxies co-degrade while others don’t. It seems prohibitive to fully enumerate and test all possible pairs of (train-against, held-out), so we really would like to have some rules of thumb for safety, or better yet to identify causal pathways we can use to predict how monitor degradation will generalize in advance.
+[18]
+This kind of theoretical assurance of held-out-ness seems quite hard!. Before these experiments, for instance, we couldn’t have predicted the sign of the LLM->probes and probe->LLMs feedback spillover. However, this area seems severely understudied, and it’s plausible that this kind of evaluation is much more strongly dependent on the monitor than on the environment or model, in which case we could generalize pretty well. It also might be the case that we could use features of new proxies, such as what features of model behavior / internals they attend to, to guess in advance how much they’ll co-degrade with the proxies we already use. There is a lot of low-hanging fruit here, and we’re excited about further research.
+Appendix 1: Cross-Degradation Case Study
+Sometimes proxy degradation happens, not because a monitor got less suspicious about the hacks, but because it got MORE suspicious of the non-hacks! In at least
+one of our runs
+, the policy started saying hundreds of times that all the code it was writing was perfect and excellent. This totally fooled the weak monitors, but the strong monitors just became even more suspicious—also tanking their ability to discriminate!
+Here’s the chart of d' over time of each of the evals—here, it’s trained against the weak CoT+output monitor, and everything else is held-out. Note that even the strong output monitors have a reduced d'—that is, they lose some of their power to discriminate hacks from non-hacks.
+The strong CoT+output monitor, for instance, goes from d'=3.75 to d'=1.25, corresponding to a ROC-AUC drop from 0.996 to 0.810!
+The other monitors, meanwhile, are all completely degraded. At d'=0.0, they are complete noise, and they cannot differentiate between hacks and non-hacks.
+However, if we plot, for each monitor, μ
+clean
+and μ
+hack
+(the average suspiciousness scores given to non-hacks and hacks, respectively), we see an interesting picture: the weak judges are both degraded and evaded—μ
+hack
+goes to 0, and the policy has fooled the monitor. The strong LLM judges, meanwhile, have become slightly degraded but not evaded—instead, the non-hacks start to look more suspicious to them! Probably because, even when the model outputs correct code, it uses similar patterns of suspicious talk as when it hacks. Similarly, the probes lose all discriminatory ability because their μ
+hack
+and μ
+clean
+converge: eventually, everything looks suspicious to them.
+Hack and non-hack transcripts, from the end of this run. While learning to fool a weak monitor, the policy has incidentally made it so that previously-useful deception probes and reward hacking probes no longer differentiate between real hacks and honest code — possibly because the model is always thinking about reward hacking
+The above transcripts show the main way we've seen the policy model optimize against weak LLM monitors — some mix of bamboozling with lots of text, falsely claiming the hacking code is fine, feigning confusion, actual confusion, and Jedi Mind Tricks.
+Related Work
+[2602.15515] The Obfuscation Atlas: Mapping Where Honesty Emerges in RLVR with Deception Probes
+[2503.11926] Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation
+Josh Clymer:
+Does training against misalignment remove it?
+Josh Clymer:
+Preventing alignment drift with "ridges and tripwires"
+Rohan Subramani:
+Should We Train Against (CoT) Monitors?
+Julian Stastny:
+Two proposed projects on abstract analogies for scheming
+[2507.11473] Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety
+“Safety measures for future AI agents will likely need to employ multiple monitoring layers that hopefully have uncorrelated failure modes”
+[2412.09565] Obfuscated Activations Bypass LLM Latent-Space Defenses
+[Figure 4c does something similar about training to evade certain probes generalizing to other probes]
+[2512.00218] Reasoning Under Pressure: How do Training Incentives Influence Chain-of-Thought Monitorability?
+Preliminary investigation: KL penalties in RL can increase CoT unfaithfulness — LessWrong
+[Research Note] Optimizing The Final Output Can Obfuscate CoT — LessWrong
+^
+See
+here
+for arguments on why this might be a good idea,
+here
+for reasons why it might not, and
+here
+for why we should at least consider it. Note that even if we don’t do this
+on
+purpose
+,
+indirect training pressures
+might cause this by default. Note too
+Clymer’s project proposal
+about the necessity of held-out evals if we want to use our alignment evaluations in training.
+^
+There’s another sense of uncorrelation that seems quite important: “If proxy X fails to catch some misbehavior, proxy Y still might catch it”. Here, we ignore this kind of uncorrelation, although it seems plausible that they’re related.
+^
+Except in our control runs, where there were no penalties applied.
+^
+Using Tinker, with the default Dr. GRPO algorithm
+^
+Chosen to be fairly strong, but also plausibly evadeable by the fairly weak policy model.
+^
+It might be quite interesting to retrain the probes during training, and use either the policy model itself or just a fresher instance to obtain these scores. However, it is also much more annoying.
+^
+Or, of course, it could honestly improve at the task. However, in our continually-honest runs, task score topped out at around 60%—so hardcoding should be favored. Also, the length penalty is intended to slightly reward easy hardcoding, as the answers will be shorter.
+^
+In particular, here we filter to only look at runs that, at some point, had a >10% hack rate.
+^
+For an example of how this might look, see the
+case study
+below.
+^
+Also known as the "
+sensitivity index
+" in signal detection theory.
+^
+Again, filtered to only runs that, at some point, had a >10% hack rate.
+^
+Why do we see degradation in some cells where the first chart shows they didn’t get less suspicious of the hacks? Often, the monitors degrade by becoming more incorrectly suspicious of clean answers—that is, clean answers start to look more suspicious.
+^
+Clymer
+, on strong monitors being less susceptible to degradation: "It’s [...] plausible to me that the following is true: In a single (or small number) of gradient steps, there’s a limit to the extent to which detection tools can become less effective. For example, many hundreds of gradient steps might be required to make detection tools totally inaccurate. [...] So, for any direction a small number of gradient steps could walk in, before a model becomes unacceptably misaligned, the loss of that model will increase before it starts to decrease."
+^
+Note that these runs aren’t filtered for max-hack>10%, since we are fine with looking at small fluctuations for coupling, even if they didn’t become dominant strategies.
+^
+See footnote 13 for reasons why the policy might occasionally minorly fool the strong monitor, but not learn to exploit this totally during these training runs.
+^
+Caveat: Not that many hacks actually evaded the strong monitors, and when they did, it was often by scoring 0.9/1.0 suspiciousness rather than 1.0/1.0. So here this data implies that, in the limit, training against a strong monitor would sometimes result in a policy that fools all six of these monitors — but this is based off of extrapolation to a much stronger level of degradation.
+^
+We normalize both LLM suspiciousness scores and probe outputs to be within [0.0, 1.0]
+^
+For instance, it seems plausible that our other definition of monitor uncorrelation—”Proxies X and Y will fail to catch different sets of behaviors”—may help us to predict or understand monitor co-degradation better.
+0
+Comments
+0
+Aether
+AI
+Frontpage
+51
+New Comment
+Moderation Log
+More from
+Joey Yudelson
+View more
+Curated and popular this week

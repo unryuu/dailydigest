@@ -17,6 +17,14 @@ reports/**/*.mp4
 reports/**/*.m4a
 reports/**/*.wav
 
+# 抓取的网页原始 HTML 不入库（体积是提取正文的十几倍；同目录 .txt 已存正文）
+reports/**/raw/*.html
+reports/_debug/**/*.html
+
+# 07-29 专题用的假日期目录：Windows junction 被同步成了实体副本，
+# 内容与 reports/2026-07-29/kimi专题/ 完全相同，不重复入库
+reports/2026-07-29-kimi/
+
 # 本地模型权重（whisper ggml）
 models/
 

@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "acx-hf-discourse",
+    "url": "https://www.astralcodexten.com/p/highlights-from-the-discourse-on",
+    "status": 200,
+    "final_url": "https://www.astralcodexten.com/p/highlights-from-the-discourse-on",
+    "bytes": 350398,
+    "title": "Highlights From The Discourse On The Hugging Face Incident",
+    "chars": 36791
+  },
+  {
+    "slug": "zvi-179",
+    "url": "https://thezvi.substack.com/p/ai-179-part-1-a-louder-fire-alarm",
+    "status": 200,
+    "final_url": "https://thezvi.substack.com/p/ai-179-part-1-a-louder-fire-alarm",
+    "bytes": 387484,
+    "title": "AI #179 Part 1: A Louder Fire Alarm for General Intelligence",
+    "chars": 39316
+  },
+  {
+    "slug": "zvi-letter",
+    "url": "https://thezvi.substack.com/p/frontier-lab-employee-open-letter",
+    "status": 200,
+    "final_url": "https://thezvi.substack.com/p/frontier-lab-employee-open-letter",
+    "bytes": 245567,
+    "title": "Frontier Lab Employee Open Letter Calls For Being Able to Pace the Frontier",
+    "chars": 29413
+  },
+  {
+    "slug": "lw-thousand-dim",
+    "url": "https://www.lesswrong.com/posts/sFhW3ZnPMJdnB4Dd6/thousand-dimensional-structure-1",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/sFhW3ZnPMJdnB4Dd6/thousand-dimensional-structure-1",
+    "bytes": 507567,
+    "title": "Thousand-dimensional structure — LessWrong",
+    "chars": 20703
+  },
+  {
+    "slug": "lw-auditor-box",
+    "url": "https://www.lesswrong.com/posts/uWYk7MM9hAf9GEbGe/auditor-in-a-box-tools-for-third-party-auditing",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/uWYk7MM9hAf9GEbGe/auditor-in-a-box-tools-for-third-party-auditing",
+    "bytes": 492434,
+    "title": "Auditor-in-a-Box: Tools for Third-Party Auditing — LessWrong",
+    "chars": 26703
+  }
+]

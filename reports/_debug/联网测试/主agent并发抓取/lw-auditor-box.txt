@@ -1,0 +1,296 @@
+URL: https://www.lesswrong.com/posts/uWYk7MM9hAf9GEbGe/auditor-in-a-box-tools-for-third-party-auditing
+FINAL: https://www.lesswrong.com/posts/uWYk7MM9hAf9GEbGe/auditor-in-a-box-tools-for-third-party-auditing
+TITLE: Auditor-in-a-Box: Tools for Third-Party Auditing — LessWrong
+FETCHED: 2026-07-31 03:38:03
+============================================================
+x
+Auditor-in-a-Box: Tools for Third-Party Auditing — LessWrong
+AI
+Frontpage
+38
+Auditor-in-a-Box: Tools for Third-Party
+Auditing
+by
+Roy Rinberg
+,
+Ben Penchas
+28th Jul 2026
+16
+min read
+0
+38
+Introduction:
+There is a need for untrusting parties to share information. In the world before LLMs (and even today) this need has largely been satisfied using legal contracts (and sometimes through cryptography and blockchain technologies). However the scale and pace of things to keep track of and monitor has grown immensely and legal contracts appear insufficient.
+LLMs can help give auditors the right tools to enable information sharing with untrusted parties. In this post, I outline the shape of the problems that need to be resolved to enable using LLMs for 3rd party auditing, and present one concrete solution we have attempted. We designed a scheme for third party auditing: an open-source LLM, running inside a trusted execution environment (TEE), which executes commands that the two parties have agreed on over private data.
+In this post, I highlight that this type of tooling can directly be applied to enabling 3rd party monitoring for regular governance concerns, it has applications to enabling improved monitoring for customers who want Zero-Data-Retention, and it also can be one of the tools that enable a verified slowdown.
+Code:
+We release an open-source implementation that runs in a real TEE. The code is opensourced as well:
+main code
+,
+webapp code
+,
+code
+to deploy it into a TEE. There is a live demo at
+https://auditor-in-a-box.royrinberg.com/
+.
+Other Writing on This:
+Here is a mini-paper
+submitted to
+TAIGR
+by
+Ben Penchas
+, myself, and a collaborator G.Z.
+How to engage with this:
+We'd love for people to poke at our demo and code. The
+live demo
+is currently in a state to be lightly poked and interrogated, but not used for a regular application (as in, you currently can't easily use it with your friends). We extremely welcome someone picking this up
+and improving on this. And if you think we missed something in our framing, please help us be less... wrong.
+Note:
+This post is largely unchanged since its
+original posting on my website
+, aside from minor stylistic changes to make it easier to read. While I think it could be improved, it seems more valuable to get it out
+sooner than later
+.
+1. Secure Multi-party computation
+There are many different settings where you may want a trusted third party: two acquaintances may want to casually compare something; a company may want to monitor a customer's traffic without full access; one AI lab may want to verify another lab is not training models; or two countries may want to verify the contents of a treaty. Generally, this blog post is about replacing a 3rd party intermediary with a trusted computer.
+Cryptography has a name for this type of problem:
+secure multi-party computation (MPC)
+, which lets mutually distrustful parties jointly evaluate a function over their private inputs while learning nothing beyond the result. The problem was introduced by Andrew Yao in 1982 — the "Millionaires' Problem," two people learning who is richer without revealing their wealth. In principle,
+any function can be computed through MPC
+; however, in practice, the overhead associated with MPC can be prohibitively large (in both computation and communication complexity), and the usability can be difficult because any computation must be specified formally.
+Concretely, this post is about replacing a 3rd party intermediary with a
+trusted
+LLM in a
+trusted
+box
+[1]
+. This idea has been floating around in the ecosystem for
+a while now
+. And recent work on
+Trusted Capable Model Environments
+argues that a capable model can fill the trusted-third-party role, enabling secure computations that were previously infeasible.
+Different settings place different demands on such a scheme; in particular, they change
+how much you trust each component
+: how much you trust the hardware to run the code you think it's running, how hard you expect the other side to try to exploit the model, how much you care about privacy.
+That suggests splitting the problems in two:
+technical
+problems, specific to a given implementation and trust level (
+how do I secure this network against this particular adversary?
+), and
+process
+problems, the ones that persist across every level of trust (
+how do two parties agree on what the box should do,
+and
+what happens when it's wrong?
+). The same process problems show up whether it's METR auditing a friendly lab, or two distrustful nation-states.
+We develop two near-term applications of an auditor-in-a-box:
+verifiably-scoped monitoring
+, a relaxation of zero-data-retention we call
+ZDR-lite
+that lets a lab do safety monitoring while bounding what it's allowed to monitor
+for
+; and
+recurring third-party auditing
+, where an external auditor makes repeated, verifiable checks on a lab's internal practice.
+2. The primitive: a trusted LLM in a trusted box
+In this post, the core method here is simple: we run an open-source LLM inside a trusted execution environment (TEE). A
+Trusted Execution Environment
+(TEE) is a hardware-isolated region of a processor that provides two guarantees:
+Confidentiality
+: enclave memory is not readable by the host operating system, the hypervisor, or the infrastructure provider.
+Integrity
+: the binary loaded into the enclave is measured at launch, the measurement is signed by the hardware, and remote attestation allows an external party to verify that a specific binary is running.
+Any modification to the executing code changes the measurement and is detectable. Together, these two guarantees give you that: the enclave runs exactly the attested code and nothing else, and nothing inside it is visible from outside.
+As a consequence, if the signed code does not release a given piece of information, that information never leaves the box, and the data being released would require running different code, which would change the launch measurement and fail attestation. The TEE thus converts a promise ("we handled your data as agreed") into a verifiable statement ("this exact code, which you can audit, ran").
+The TEE guarantees faithful execution, but it's agnostic about
+what
+gets executed. So the box is only useful once the two sides have settled on exactly what it should do. We refer to this specification as a
+Plan
+, which specifies the inputs, the computation steps (e.g. python code and LLM calls) to be executed, and the outputs to be released, and is signed by both parties.
+We outline the general overall flow below. Both parties agree on a plan which they both sign and send to the trusted compute (the TEE). Then they send private data to the TEE directly, which is encrypted with the public key of the TEE. Both parties receive whatever output they previously agreed on.
+There are 2 main desiderata:
+Correctness.
+The operation that you think is running, is what is running. There are multiple things that factor into this:
+the LLM itself is running (this is a software engineering and security problem). We use the TEE’s attestation to ensure the plan binary is run and nothing else is run to achieve Correctness.
+the LLM does what you expect it to (this is an alignment-style problem).
+Confidentiality.
+Each party learns only the released outputs, not the other party's inputs or any intermediate state outside the agreed scope.
+Threat model.
+To make it explicit, in this setting we consider that the two parties are mutually distrustful, and while each may try to learn more than the agreed output or to nudge the box off-plan, neither wants to be
+caught
+doing so. Each party can submit inputs and receive the outputs assigned to it; and because the model is open-weight, they are able to probe an identical copy offline as much as they likes. Neither party can read the other's raw inputs, observe intermediate state, change the signed plan without the other's signature, or alter the code the enclave runs (any such change breaks attestation). In this design, we trust the TEE hardware and its attestation, and we trust the LLM to be a faithful classifier
+within distribution
+; we do
+not
+assume either party refrains from trying to exploit the model or the data.
+3. Process-level problems
+We flag three, top-level process problems that need to be resolved for (nearly?) any third party auditing mechanism.
+3.1 Plan negotiation (How do you agree on a plan)
+Concretely, we think of a plan as a computation graph built of nodes for inputs, computation steps, and outputs. Both the structure of the graph and each individual node are agreed to and signed. How do you agree on the exact program that's going to run in the box (e.g. the prompts, the code)? If you're prompting an LLM, there are many ways to write any given prompt, and both parties need to be confident that the process they
+believe
+is going to run, is the process that actually runs.
+The act of agreeing on a structure/prompt/constitution is quite similar to existing procedures for writing protocols: one party drafts it, the other reviews and edits it, both parties iterate and negotiate. While this is not novel, it is also not trivial, and requires thought and effort. In the same way that writing legal contracts generally requires lawyers, and writing smart contracts requires specialized developers, these kinds of compute contracts need good tooling.
+The "how do you agree on a plan" captures a lot of aspects, including ensuring confidentiality of data. In the concrete application of a AI lab allowing for 3rd party monitoring, it is very important for the lab to set up strict IP controls on what kind of data is sent out of the auditor. A simple way to reason about this is to allow for strict egress-limits; e.g., the plan expects that a query is a yes/no question, and the auditor only returns a single bit of information.
+What we imagine we need is mostly a better UI, something like a Google Docs for plan-writing. It is important for the plan negotiation to stay legible, and generally we imagine this involves creating lots of tooling for enabling the two parties to understand how the LLM prompts and programs will behave on different (unseen) data. We explore ways to accomplish this in our demo (https://auditor-in-a-box.royrinberg.com/).
+3.2 False positives and appeals
+Problem two: what happens when the auditor in the box is wrong? We have asked the LLM to check something, and it flags something by mistake. How does one party credibly convince the other party it was a mistake and not a true positive?
+To think about this part, it's easiest to think in the context of classifiers, where a classifier only has 4 states: True Positive, True Negative, False Positive, and False Negative. While we can imagine doing other forms of computation in such a box, it's easiest to reason about classifiers, and the logic generally transfers.
+Let's be overly-precise about what a false positive is:
+a
+positive
+means the classifier in the box said something was dangerous;
+a
+false positive
+means it said dangerous when in fact it wasn't.
+The key observation is that a false positive, implies that there is
+exonerating evidence
+somewhere — if the flag is genuinely wrong, then some piece of context exists that would show it's wrong. So the flagged party should be able to provide that evidence, or more context: "the prompt thought I was doing this, but actually this other thing was happening — here's a new question that you'll agree is of the same flavor, and its answer will confirm what I'm saying."
+This observation immediately provides us with the structure for an appeals process. When a query is flagged, the responsible party is given some time window to supply exonerating evidence that could be of one of two forms:
+A minimal data modification
+that removes the flag — for example, correcting a typographical artifact in the underlying data that triggered the classifier, after which re-execution no longer triggers.
+A verifiable secondary query
+under a different prompt that demonstrates the original flag was spurious — for example, establishing that a flagged reference to a public figure is in fact an internal product name.
+Both forms get evaluated
+inside
+the box under signed prompts, so the appeal can't be used by the monitored party to sneak data out, or by the monitor to quietly widen the scope. The burden of resolution is shifted onto the party that triggered the flag. That party has exonerating evidence exactly when the flag was spurious, and doesn't when it wasn't.
+Figure: Here we see a diagram for how a lab can appeal a setting where one of their queries triggers a false positive flag. We write in the appendix for how to handle dealing with people trying to abuse the
+false positive appeals process
+.
+By leaning on incentive alignment and making the loop interactive we are able to resolve basically any dispute: a wrongly-flagged party is motivated to produce the evidence that clears them.
+We note that because we have a clean way to handle false positives, we can afford to make the classifier
+more
+sensitive, and bias it toward false positives to avoid false negatives.
+3.3 Out-of-distribution inputs and prompt injection
+The third problem is that the data going into the box is private, so there's always a risk the model does something weird on input that's far out of distribution (the adversarial version of out-of-distribution input is a prompt injection).
+However, to prompt-inject a model, you generally have to
+try
+: you can't reliably pull it off on the first attempt (as made particularly explicit in
+this paper
+). One major difficulty of the system we are proposing is that the LLM (in the box) is open source, so a party can poke the LLM on their own cluster and arrive at a prompt injection they're confident will work.
+There are a few possibilities to resolve this:
+Don't commit to a single model.
+What's out-of-distribution for one model usually isn't for another, so the plan can authorize several interchangeable models and pick one at runtime using trusted randomness. Now a working injection has to break
+all
+the candidate models at once, which is much harder than attacking a known target.
+Each side runs its own black-box filter.
+I put my own prompt-injection detector right in front of the model (which can't inspect), and you put yours (which I cannot inspect). In this set up, you only have to trust your own. This is a
+panopticon
+-style defense, because you can't probe mine, it's very hard to craft an injection that gets past it. Here, since a caught injection attempt is costly, the rational move is not to try.
+It’s worth noting that if you run unaudited code on my data, we need to make sure that the code you run is secure and in the spirit of the plan - one good way that this can be verified is that this black-box filter only has read-only access, and is egress-limited, so it can only return small bits of information (and not exfiltrate information).
+And then for any prompt injections you detect, you can handle a false positive from the detector in the same way as in section 3.2 - with the appeals process; and for any confirmed true positive, you respond through some organizational process (e.g., "I'll sue you if you prompt-inject the model.").
+4. Applications
+We want to now focus on near-term instances which we think are most useful.
+4.1 Application: Verifiably Scoped Monitoring (reconciling safety monitoring with zero-data retention)
+Frontier AI labs have legitimate reasons to monitor model traffic: detecting misuse of dangerous capabilities, identifying jailbreaks and prompt injection, surfacing harmful usage patterns, and collecting aggregate statistics. The difficulty is that monitoring infrastructure is scope-agnostic. A classifier reading conversations against a natural-language description of what to flag is the
+same system
+whether that description says "bioweapon synthesis" or "political affiliation" — only the description changes, and the monitored party can't see the description. So assurances about scope must be contractual (not cryptographic) and the customer is asked to trust that the monitor only does what it says.
+Figure: A simple diagram of how to enable ZDR-lite style monitoring, while retaining trust with users that they are only monitoring on topic X.
+Either the lab keeps the data and does its oversight, and the customer needs to trust the lab entirely, or the lab accepts zero-data-retention (ZDR) terms and loses the visibility it needs. One of the big reasons that labs resist offering ZDR is because under ZDR a lab can only monitor a single query at a time. A filter on one message in isolation can't notice a set of individually-innocuous queries that are jointly dangerous, or a jailbreak assembled gradually across a session. As such, labs generally prefer to only offer ZDR to companies who they trust.
+Our proposed fix is to decouple
+retention
+from
+access
+: instead of deleting the data, the lab encrypts it under a key only the box (the TEE) holds. Concretely:
+The customer and the lab agree on and sign a plan fixing the scope of monitoring — which query categories are allowed, what output format is required, any aggregation floor.
+The box generates an encryption keypair
+inside
+the enclave and publishes the public key alongside its attestation. The private key never leaves in plaintext; it's sealed to the attested binary on that specific chip, so only a fresh boot of the same verified image can recover it.
+As conversations happen, the lab encrypts each log under the box's public key and stores only ciphertext. It holds no decryption key and can't read what it stored.
+At monitoring time, three things go in: the signed plan, the ciphertext logs, and the lab's queries. The box decrypts the logs internally, checks each query against the signed scope, runs the ones that conform, and releases only the agreed outputs. Anything out of scope is rejected and never runs.
+The output stage is where you can apply strong guarantees. Because the output filter can be deterministic code, you can force the release to be, say, a single bit — which gives you a worst-case bound: no more than one bit leaves the process (per run), no matter what happens inside.
+It's important to be very explicit that this is no longer "Zero" Data Retention, the logs do exist, and through poor security, the logs could be leaked. However, the logs are stored only as ciphertext which is only decryptable inside the co-signed box.
+4.2 Application: recurring third-party audit
+Any verification scheme needs two kinds of commitment:
+A
+positive commitment
+— proof that the thing you claim is happening actually is happening. Standing up the pipeline and watching it run gives you this.
+A
+negative commitment (or completeness statement)
+— proof that nothing
+else
+is going on.
+When we create a pipeline to evaluate one type of thing (e.g.
+did a lab use personal data in a training query
+?) we are creating a positive commitment, but by default we don't have a negative commitment that they aren't making the same query elsewhere (unmonitored by the auditor).
+However, we already have precedent of a group like
+METR sending in an embedded red-teamer
+into a frontier lab (Anthropic). Given that
+METR already sends questionnaires
+to the labs, the goal of sending a red-teamer is either for auditors to be able to ask "unknown unknown" questions or reduce the trust assumptions that they have in the people filling out the questionnaires.
+Building off of this existing red-teaming auditor infrastructure, we can imagine a similar world where an independent evaluator (e.g. a METR employee) gets access to a lab's data and part of its codebase, figures out which questions are worth asking, and encodes one as a pipeline (e.g.
+did you use this personal data in a training query?
+,
+are you training on the model's chain-of-thought?
+) Then they set up the pipeline runs in the box and emit a bounded output (e.g., one bit a week). The auditing agency gets both a positive commitment (the answer to the pipeline) and a negative commitment (because the auditor had access to the whole system).
+The critical part of such a scheme is for the auditor to periodically return: each time, the auditor re-checks that the existing pipelines are still wired into production, and goes looking for new questions to be made into pipelines.
+5. Limitations and trust assumptions
+Any auditor (trusted-LLM) in-a-box rests on two underlying assumptions, simply put: that it's a
+trusted LLM
+, and a
+trusted box
+. (
+Shumailov et al.
+explore these assumptions in more depth.)
+The box has to be trustworthy. In our case the box is a TEE, and in some cases TEEs do have side-channel and microarchitectural attacks; so the security of the whole thing is bounded by the current state of confidential-compute hardware.
+The LLM has to be both capable and inspectable. It needs to be good enough to act as a faithful classifier,
+and
+open enough for both sides to examine. There's also a subtler version of this: even a capable model can fail if it lacks the
+information
+to answer — figuring out, say, how a lab's cluster scheduler allocates compute might need context the box just doesn't have. Some questions are an intelligence problem; others are an access problem.
+Importantly, what trust assumptions we are okay with depends on the setting. Two users might be perfectly happy running this in an AWS EC2 instance because they both trust AWS, whereas in a US–China deployment the hardware and software vulnerabilities may need to be thought through much more carefully.
+6. A Reference Implementation
+We built and released an open-source reference implementation,
+auditor-in-a-TEE
+, that runs the whole protocol end-to-end on commodity confidential-compute hardware — a Python service with a single-page web client and a CLI, deployed inside a Tinfoil confidential VM (
+webapp
+;
+source
+).
+We emphasize a few of the points of the webapp and CLI:
+Plans are explicit and signed.
+Each plan is an ordered list of run_llm and run_python steps grouped into input, query, and output stages. A run_llm step pins a specific open model and a constitution it must satisfy; a run_python step is a snippet both parties sign verbatim.
+The chain of trust is publicly verifiable.
+The deployer repository publishes the exact container image and digest; a Sigstore bundle binds that configuration to the expected binary measurement; the hardware produces a signed attestation at boot; and the measurements are compared on each connection. An external party can verify the running enclave against the public repositories using the Tinfoil CLI (tinfoil attestation verify).
+Events are logged.
+An append-only ledger records plan creation, signatures, data submission, per-stage verdicts, and appeals. Raw queries and data do not appear; only outcomes and accepted-appeal summaries.
+We provide a worked example.
+In the openbrain_audit plan, a user uploads a batch of her own chat messages, and the lab is allowed exactly one question: what percentage of these conversations are work-related versus personal? The box checks that the question conforms to the constitution, runs the classification, aggregates under a fixed privacy floor (no PII, no raw text,
+k
+= 3), and releases only the aggregate counts. The lab learns the work-vs-personal split; the user learns that nothing else was pulled out.
+7. Current and Future States
+We've created a basic prototype - the protocol runs example plans end-to-end in a real TEE; however...
+The UI/UX is not designed for real users, and it's not particularly easy for 2 users to pick this product up and use it.
+User data and Plan execution are not actually secure; we allow anyone to "sign in" as both demo parties and see each side's data, for example.
+Plans and user data are not saved, and might be lost if the TEE reboots.
+The "how do you agree on a plan" is explored partially in that:
+We try to create easy tooling for a "plan builder."
+We try to give users a way to assess how different prompts would behave using statistical tooling around false-positives/false-negatives; see this ROC curve:
+https://auditor-in-a-box.royrinberg.com/roc-eval.html
+.
+It has not been stress-tested by a counterparty who actually wants to break the security guarantees.
+The most useful thing that could happen next is for people to actually
+use
+this. The best outcome I can imagine is someone picking up the UI and trying to write a plan for a problem they actually care about.
+---------------------------------------------------------------------------------------
+Appendix
+Example Computation Graph for Privacy Preserving Monitoring
+Below we show an example plan two parties might agree to as a computation graph. In this case, two parties submit data (alice's chat messages, openbrain's monitoring queries) into a pipeline of signed nodes grouped into three stages. The input filter (node 0) audits the lab's submitted classifier prompt against the published monitoring policy and emits VALID/INVALID (this is the scope check that gates whether anything runs at all). The query stage (node 1) applies the approved prompts. The output filter (nodes 2–3) runs a deterministic PII regex scan with a k-anonymity floor followed by a policy check, and only on VALID does the lab see the result. Each node is either a run_python step (signed verbatim) or a run_llm step against a named open model (here gemma4-31b); both the graph structure and each node are co-signed.
+Ledgers for handling abusing the false positive appeals process
+However, the same loop that lets an honest party clear a flag also lets a dishonest one
+probe
+it — resubmitting slightly different modifications or secondary prompts, fishing for an edit that defeats the classifier. To deal with these potential attacks we propose including a public ledger as part of the appeals process.
+When an appeal succeeds, the box writes a short record to a per-plan, append-only, public ledger: an appeal_accepted event plus a few word summary of the change, emitted by an LLM inside the enclave (e.g. "Corrected a misspelled name."). The appeals process also records failures by logging every query_rejected, appeal_filed, and appeal_rejected event. So an honest party's ledger shows the occasional one-shot correction, while someone optimizing towards a pass leaves an indelible trail of rejected attempts.
+^
+I purposefully use a non-specific and non-technical term to describe what we want here because the exact shape of what the LLM looks like or the box looks can be pretty different depending on the application.
+0
+Comments
+0
+AI
+Frontpage
+38
+New Comment
+Moderation Log
+More from
+Roy Rinberg
+View more
+Curated and popular this week

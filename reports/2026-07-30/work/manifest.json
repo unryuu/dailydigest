@@ -1,0 +1,190 @@
+{
+  "date": "2026-07-30",
+  "fetch_failures": [
+    {"slug": "x-emollick", "url": "https://nitter.kareem.one/emollick", "error": "HTTP 403，返回 Cloudflare「Just a moment...」挑战页（curl 带浏览器 UA 亦同）"},
+    {"slug": "x-goodside", "url": "https://nitter.kareem.one/goodside", "error": "HTTP 403，同上 Cloudflare 挑战"},
+    {"slug": "x-karpathy", "url": "https://nitter.kareem.one/karpathy", "error": "HTTP 403，同上 Cloudflare 挑战"},
+    {"slug": "x-neelnanda", "url": "https://nitter.kareem.one/NeelNanda5", "error": "HTTP 403，同上 Cloudflare 挑战"},
+    {"slug": "x-roon", "url": "https://nitter.kareem.one/tszzl", "error": "HTTP 403，同上 Cloudflare 挑战"},
+    {"slug": "x-sama", "url": "https://nitter.kareem.one/sama", "error": "HTTP 403，同上 Cloudflare 挑战"},
+    {"slug": "x-teortaxes", "url": "https://nitter.kareem.one/teortaxesTex", "error": "HTTP 403，同上 Cloudflare 挑战"},
+    {"slug": "manifold", "url": "https://api.manifold.markets/v0/search-markets?term=China+AI&sort=liquidity", "error": "单次请求读超时，其余 275 次组合均成功，不影响结果"}
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "一周之内两封方向相反的公开信：1293 名前沿实验室员工联署要求政府建「节奏控制」机制，而 Anthropic 是唯一没签黄仁勋那封「别限制开放权重」信的前沿实验室",
+      "cost": "中",
+      "reason": "同一周、同一议题（谁来踩刹车）的两条线，且互为张力；员工信是主线，Zvi 专文和 Axios 跟进都是同一事件的展开，合成一组给 reader 一次读完",
+      "items": [
+        {
+          "source": "web（线索来自 lesswrong / thezvi，一手站点已核）",
+          "title": "Pacing the Frontier（公开信原件）",
+          "url": "https://www.pacingthefrontier.com/",
+          "date": "2026-07-28",
+          "why": "已真读到站点：1293 名署名者，来自 OpenAI / Anthropic / Google DeepMind / Meta AI / SSI / Thinking Machines 等；核心诉求一句话——请美国政府支持一个国际努力，去开发能「刻意为自动化 AI 研发定速」的技术与治理工具。站点明确写「由前沿 AI 公司员工发布」，支持方是 Guidelight AI Standards 与 Encode AI 两家非营利，页面上没有列公司层面背书。注意：搜索结果里有二手报道称 OpenAI/Anthropic 公司层面也背书了，官网上我没看到，请 reader 核实后再写"
+        },
+        {
+          "source": "thezvi",
+          "title": "Frontier Lab Employee Open Letter Calls For Being Able to Pace the Frontier",
+          "url": "https://thezvi.substack.com/p/frontier-lab-employee-open-letter",
+          "date": "2026-07-29",
+          "why": "Zvi 开篇即「近年最重要的一封公开信」，并说它同时提高了他对「我们不会死」的希望值。正文约 2.9 万字符，是本组的解读主力。LW 同文：https://www.lesswrong.com/posts/eWmeMLqTEauCmHLeR/frontier-lab-employee-open-letter-calls-for-being-able-to"
+        },
+        {
+          "source": "axios",
+          "title": "AI labs face prisoner's dilemma as momentum grows for safety slowdown",
+          "url": "https://www.axios.com/2026/07/30/ai-safety-slowdown-anthropic-openai",
+          "date": "2026-07-30",
+          "why": "当天最新进展，也是这组唯一的新事实：Altman 周三在国会山对记者说，他已经和白宫官员讨论过「随着模型变强需要给它定速」，并称 OpenAI 参与塑造了这封信的措辞。Axios 的框架是囚徒困境——没有哪家实验室敢单独踩刹车。RSS 摘要读到此处被截断，全文待 reader 取"
+        },
+        {
+          "source": "axios",
+          "title": "Anthropic's lonely island",
+          "url": "https://www.axios.com/2026/07/29/anthropic-claude-open-models-ban-china",
+          "date": "2026-07-29",
+          "why": "反向的那封信：黄仁勋牵头一封敦促华盛顿不要限制开放权重模型的公开信，Anthropic 是唯一拒签的前沿实验室。**疑与 07-28 已报的「Anthropic 公开表达开源立场」重叠**，但新事实是「黄仁勋牵头的信」这件事本身以及 Anthropic 的拒签，交定牌裁决"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Zvi 周报 AI #179 Part 1：给通用智能的火警又响了一次，且更响",
+      "cost": "重",
+      "reason": "全周综述，单独成组；正文约 3.9 万字符，是当天最贵的一篇",
+      "items": [
+        {
+          "source": "thezvi",
+          "title": "AI #179 Part 1: A Louder Fire Alarm for General Intelligence",
+          "url": "https://thezvi.substack.com/p/ai-179-part-1-a-louder-fire-alarm",
+          "date": "2026-07-30",
+          "why": "标题直接承接 07-23 的 AI #178「A Fire Alarm For General Intelligence」，这次是「更响」。开篇只有一句「What a week.」。**疑与 group-1 重叠**（本周主线就是 Pacing 信），reader 若两边都读，注意别出两条同义条目"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Dwarkesh 推演：未来几年算力价格可能涨 10 倍以上，而不是跌",
+      "cost": "中",
+      "reason": "单独成组。这是当天唯一一条正面挑战「推理会一直变便宜」共识的长文，反直觉，且不在我们 29 个源里",
+      "items": [
+        {
+          "source": "web（线索来自 neodrop，已回溯至作者本站原文）",
+          "title": "Why compute might get 10x more expensive in coming years",
+          "url": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
+          "date": "2026-07-29",
+          "why": "已核到原文与日期。骨架：头部实验室收入年增约 10 倍、算力年增只有约 3 倍，这个剪刀差要么靠涨价填。他还搬出 Alchian-Allen 效应说明为什么涨价反而会把需求推向最强的模型（弱模型烧更多贵 token 反而更不划算），并给出 H100 年租金若追平人类软件工程师产能可到 25 万美元的估算。**回溯自 neodrop 频道，成稿只引 dwarkesh.com 原文，绝不引频道转述**"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "监督与审计一线：没被拿来训练的「留出监督器」也会退化；再加两条同日的监督工具/机构动向",
+      "cost": "中",
+      "reason": "三条都是 LessWrong 上的 AI 安全一手研究，主题连贯（怎么监督、谁来审计），合一组省一次上下文",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Held-out Monitors Sometimes Degrade, Even When Not Trained Against",
+          "url": "https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained",
+          "date": "2026-07-29",
+          "why": "本组的钩子：常规做法是留一个「没被优化过」的监督器当干净基线，这篇说这个基线也会自己烂掉。反直觉，属于我们最想要的那类。**疑与 Zvi 周报重叠**（AI #179 可能收录）"
+        },
+        {
+          "source": "lesswrong",
+          "title": "Thousand-dimensional structure（Geoffrey Irving, David Africa）",
+          "url": "https://www.lesswrong.com/posts/sFhW3ZnPMJdnB4Dd6/thousand-dimensional-structure-1",
+          "date": "2026-07-30",
+          "why": "讲把 persona / 性格训练操作化成「找到并控制预训练中涌现、并一路流到后训练的低维结构」。摘要里出现「我们计划在 Resolution 探索」——Resolution 疑似是个新机构，Geoffrey Irving 此前在英国 AISI，**这条机构线索待 reader 核**，别在成稿里替我猜"
+        },
+        {
+          "source": "lesswrong",
+          "title": "Auditor-in-a-Box: Tools for Third-Party Auditing",
+          "url": "https://www.lesswrong.com/posts/uWYk7MM9hAf9GEbGe/auditor-in-a-box-tools-for-third-party-auditing",
+          "date": "2026-07-30",
+          "why": "互不信任的各方怎么共享信息：以前靠合同、有时靠密码学和区块链，现在规模和速度都不够了。和 group-1 的「节奏控制机制」正好是同一问题的技术侧，可作配菜"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "OpenAI 同日两篇工程稿：GPT-5.6 Sol 被拿去优化它自己的推理栈；另外两个 API 开关让 ARC-AGI-3 得分翻了三倍",
+      "cost": "轻",
+      "reason": "同源同日，都属「模型改进模型自身/自身评测」，合一组；两篇都是官方短稿，读起来不贵",
+      "items": [
+        {
+          "source": "openai",
+          "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+          "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+          "date": "2026-07-29",
+          "why": "RSS 摘要只有一句「更高的每美元智能」，但 neodrop 转述的官方 X 帖给了具体数字（生产 GPU kernel 改进使服务成本降约 20%、speculative decoding 使 token 生成效率提升 15% 以上，Codex 重写生产 Triton/Gluon kernel）。**这些数字我只在二手转述里见到，官方原文我没读到，必须由 reader 从 openai.com 原文核实后才能写进发布物**。钩子：模型改自己的推理栈，正好撞上 group-1 里「会自己写代码的 AI」这个争论点"
+        },
+        {
+          "source": "openai",
+          "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+          "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+          "date": "2026-07-29",
+          "why": "RSS 摘要：两个 API 设置（保留推理过程 + 开启压缩）把 GPT-5.6 在 ARC-AGI-3 上的成绩和效率一起提上去。评测分数对「配置」这么敏感，本身就是一条关于 benchmark 可信度的反直觉料。可和赔率盒子里的「2026 年 ARC-AGI-3 超人类得分」互文"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {"source": "deepmind", "title": "Gemini Robotics ER 2：视频理解、任务编排与多机器人协同", "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/", "date": "2026-07-30", "note": "当天发布。官方措辞是视频理解上的 step change + 工具编排 + 多机器人协同。若 reader 觉得机器人线今天值一条大的，这条可提精读"},
+    {"source": "deepmind", "title": "Gemini Robotics 2：把「全身智能」带给机器人", "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/", "date": "2026-07-28", "note": "RSS 里 description 为空，只有标题。与上一条是同一波，07-30 也上了 HN 首页（19 分）。窗口略超（周检源，168h 内）且此前未报"},
+    {"source": "deepmind", "title": "Lyria 3.5 上线 Google Flow Music", "url": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/", "date": "2026-07-29", "note": "音乐生成模型迭代，description 为空。凑数用"},
+    {"source": "openai / axios", "title": "OpenAI 给 10 万名学术研究者免费开前沿模型", "url": "https://openai.com/index/chatgpt-for-academic-researchers", "date": "2026-07-29", "note": "Axios 版本细节更全（https://www.axios.com/2026/07/29/openai-academics-research-chatgpt-sol）：首批名额、可用到 2027、能带 4 名同校合作者、约等于每月 200 美元的 Pro 账户、数据不用于训练。注意 OpenAI 官网写 10 万人，neodrop 转述的 X 帖说首批 1 万、2027 年扩到 10 万，**两个口径不一致，以官网/Axios 为准**"},
+    {"source": "axios", "title": "AI 让央行的活更难干了（BIS 新论文）", "url": "https://www.axios.com/2026/07/29/ai-central-banking-bis", "date": "2026-07-29", "note": "国际清算银行的论文：AI 同时从供给端和需求端搅动经济，把央行长期依赖的经验法则一次性全打乱了。宏观向，可做简讯"},
+    {"source": "simon-willison", "title": "AI Worming through Word：把针对 Word 的提示注入升级成自我复制蠕虫", "url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/", "date": "2026-07-29", "note": "Håkon Måløy 发现。攻击者在文档里藏指令，该文档被 Copilot for Word 当素材引用后，指令会自动传播到后续文档。已向微软负责任披露，微软尚无完整缓解。原始技术文：https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/ （成稿建议指原文）"},
+    {"source": "simon-willison", "title": "TIL：怎么给 Claude 和 ChatGPT 挂一个自建 MCP server", "url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/", "date": "2026-07-29", "note": "很短的 TIL，主旨是「能做，但步骤挺多」。**MCP 主线：这是使用侧笔记，不是无状态新规范的落地动作**，按防重复规矩只能当雷达，别当主线新进展"},
+    {"source": "hf-papers", "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies", "url": "https://huggingface.co/papers/2607.27191", "date": "2026-07-29", "note": "9 赞。直接冲着「AI 自动化 AI 研究」这个爆炸增长预测的证据缺口去：现有评测要么窄而可验证（排除了开放式研究），要么是把 AI 论文投盲审。和 group-1 主题高度互文，reader 可考虑提上来"},
+    {"source": "hf-papers", "title": "TurboVLA：RTX 4090 上 32 Hz、显存 <1 GB 的实时视觉-语言-动作模型", "url": "https://huggingface.co/papers/2607.27205", "date": "2026-07-29", "note": "当日榜首 114 赞。质疑主流 VLA「视觉→LLM 表征→动作」这条 LLM 中心路径太贵。数字很具体，适合做简讯"},
+    {"source": "hf-papers", "title": "HumanCLAW：视觉语言模型能不能通过一具身体行动？", "url": "https://huggingface.co/papers/2607.27180", "date": "2026-07-29", "note": "63 赞。切入点是拆锅：任务失败时到底是 VLM 决策错了还是电机控制没执行到位，现有评测分不开"},
+    {"source": "hf-papers", "title": "StealthBench：给自主进攻性安全 agent 测「隐蔽性」", "url": "https://huggingface.co/papers/2607.26314", "date": "2026-07-28", "note": "2 赞，票数低但选题极应景（HF 入侵事件之后）。衡量 agent 能不能在不暴露自己的前提下达成目标"},
+    {"source": "hf-papers", "title": "SecRespond：给「事后应急响应」场景的 AI agent 做基准", "url": "https://huggingface.co/papers/2607.26791", "date": "2026-07-29", "note": "0 赞。指出现有网络安全基准只测入侵前，不测被攻破之后。和 StealthBench 是一对，可二选一"},
+    {"source": "hf-papers", "title": "Memory for Large Language Models（综述）", "url": "https://huggingface.co/papers/2607.25380", "date": "2026-07-28", "note": "3 赞。把记忆从「计算的隐式副产物」梳理成一整条显式可控机制谱系。**疑与 07-29 已报的「agent 记住了你说过的事却不会用」（2607.24368）重叠**"},
+    {"source": "hf-papers", "title": "CoRT：把 rubric 评判拆到 token 级别的反事实重放", "url": "https://huggingface.co/papers/2607.25659", "date": "2026-07-28", "note": "66 赞。批评 GRPO 式流水线把结构化评判压成一个响应级标量再均摊回每个 token"},
+    {"source": "huggingface", "title": "VisionPsy-Nano：端侧视觉语言模型", "url": "https://huggingface.co/blog/qvac/visionpsy", "date": "2026-07-29", "note": "社区博客，自称 SOTA 端侧 VLM。10 赞，日期取自页面相对时间戳「1 day ago」"},
+    {"source": "huggingface", "title": "GPU 管理：闲置的 GPU 就是新时代的停飞飞机", "url": "https://huggingface.co/blog/Dharma-AI/gpu-management", "date": "2026-07-30", "note": "当天唯一一篇主 feed 新文。比喻蛮好，和 group-3 的算力涨价推演可以放一起"},
+    {"source": "huggingface", "title": "OlmoEarth 平台：行星尺度的地理空间推理", "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure", "date": "2026-07-28", "note": "AI2 出品。窗口略超（24h 源）但未报过，凑数用"},
+    {"source": "hacker-news", "title": "Agent-Manager：用 tmux TUI 同时跑 Claude Code / Codex / OpenCode", "url": "https://github.com/YoanWai/agent-manager", "date": "2026-07-30", "note": "72 分。工具向简讯"},
+    {"source": "hacker-news", "title": "git worktree 不是 coding agent 的隔离边界", "url": "https://fletch.sh/blog/git-worktrees-vs-clones-for-ai-agents/", "date": "2026-07-30", "note": "11 分，票数低但结论具体、实操性强，是那种「大家都以为安全其实不安全」的料"},
+    {"source": "hacker-news", "title": "绕开界面是解决不了 computer use 的", "url": "https://steelmanlabs.com/blog/computer-use-is-far-from-solved", "date": "2026-07-30", "note": "37 分。厂商博客，有软文嫌疑，但观点站在当前 computer-use 乐观论的对面"}
+  ],
+  "fun": [
+    {"source": "lesswrong", "title": "MAPLE 的高控制动力学", "url": "https://www.lesswrong.com/posts/Z7pjBbK9qujhGbxws/the-high-control-dynamics-at-maple-1", "date": "2026-07-29", "note": "作者说自己一批老朋友正住在佛蒙特一座修道院里，而他认为那是个高控制团体（俗称邪教）——而且当初是他自己欢迎并鼓励他们去的。理性主义社区内部瓜，正文约 3300 字符"},
+    {"source": "lesswrong", "title": "Intellectual Property", "url": "https://www.lesswrong.com/posts/87SzarZDjywv6nwSd/intellectual-property", "date": "2026-07-29", "note": "第一人称小故事：作者靠 Claude Code 终于给自己做了个网站，营销开始见效，然后收到一封潜在客户的邮件——摘要在这里断了。短，1300 字符左右，钩子干净"},
+    {"source": "lesswrong", "title": "不精确信念：一个极小的介绍（davidad）", "url": "https://www.lesswrong.com/posts/e7Pd4Q9TF7jFdmPgz/imprecise-beliefs-a-tiny-introduction", "date": "2026-07-30", "note": "起因是 Richard Ngo 挑战他「限时一坐，把你形式认识论里最重要的东西写下来」。开头就说概率分布在哪些地方根本表达不了信念。理性主义纯品"},
+    {"source": "hacker-news", "title": "Ron Gilbert 开始做《Thimbleweed Park 2》了", "url": "https://www.grumpygamer.com/twp2_announce/", "date": "2026-07-30", "note": "154 分。经典冒险游戏作者的续作官宣"},
+    {"source": "hacker-news", "title": "一枚火箭上面级将在 2026 年 8 月 5 日撞上月球", "url": "https://www.projectpluto.com/25010d.htm", "date": "2026-07-30", "note": "14 分，票数低但事情本身够怪，而且是下周就发生"},
+    {"source": "hacker-news", "title": "1995 年的《3D 弹球：太空军校生》被搬进了浏览器", "url": "https://98.js.org/programs/pinball/space-cadet.html", "date": "2026-07-30", "note": "36 分。纯怀旧"},
+    {"source": "hacker-news", "title": "录像带租赁店消失掉的那部分公共生活", "url": "https://thereader.mitpress.mit.edu/the-lost-civic-life-of-movie-rental-stores/", "date": "2026-07-30", "note": "28 分，MIT Press Reader。非 AI，怀旧+社会观察"},
+    {"source": "hacker-news", "title": "CosmosEscape：接管 Azure Cosmos DB 里的每一个数据库", "url": "https://www.wiz.io/blog/cosmosescape-taking-over-every-database-in-azure-cosmos-db", "date": "2026-07-30", "note": "27 分。Wiz 的漏洞披露，标题够狠"},
+    {"source": "hacker-news", "title": "为什么所有人都在搞固态电池？", "url": "https://www.construction-physics.com/p/why-is-everyone-trying-to-build-a", "date": "2026-07-30", "note": "72 分。Construction Physics 的产业科普，非 AI"},
+    {"source": "hacker-news", "title": "我们是不是被 Lean 绑住了？（MathOverflow）", "url": "https://mathoverflow.net/questions/513742/are-we-stuck-with-lean", "date": "2026-07-30", "note": "41 分。数学家在 MathOverflow 上公开讨论形式化证明助手的路径依赖。**和 07-27 已报的陶哲轩「数学界第二次基础危机」同一片水域，疑略重叠**，但角度不同（工具选型 vs 学科判断）"},
+    {"source": "hacker-news", "title": "Google 年底前把 Android 年龄核验推向全球", "url": "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html", "date": "2026-07-30", "note": "234 分。监管向，非 AI，但和「平台被迫做身份核验」这条长期线有关"},
+    {"source": "acx", "title": "关于 Hugging Face 事件的讨论精选", "url": "https://www.astralcodexten.com/p/highlights-from-the-discourse-on", "date": "2026-07-30", "note": "**HF 入侵主线已降级为「只收重大转折」，这是解读汇总，按规矩不该收**。放在这里只是备案：Scott 亲自写、3.4 万字符、当天发。如果定牌觉得 Scott 的视角本身算独立价值再考虑，否则丢"}
+  ],
+  "odds_box": [
+    {"question": "Anthropic 会在 9 月 1 日前修掉 Opus 5 面对「---」提示时表现得像基座模型的行为，或者干脆把模型下架吗？", "prob": "56.0%", "volume_note": "24 小时成交额 13459 mana（等于该市场总成交额，也就是全部是今天打的），流动性 10000，但下注人数只有 23——热度是新盘的热度，不是共识的厚度", "url": "https://manifold.markets/KeenanPepper/will-anthropic-somehow-patch-the-op"},
+    {"question": "Gemini 会在 2026 年国际数学奥林匹克拿满分吗？", "prob": "54.7%", "volume_note": "24 小时成交额 4882 mana，总成交额 54006，335 人下注；流动性只有 103，注意口径", "url": "https://manifold.markets/johnNZOy/gemini-perfect-score-on-imo-2026"},
+    {"question": "会有前沿模型在 2028 年底前把自己的权重传出去吗？", "prob": "18.4%", "volume_note": "24 小时成交额 1486 mana，总成交额才 1443（新开的盘），流动性 1000，只有 10 人下注", "url": "https://manifold.markets/EvanDaniel/will-a-frontier-model-exfiltrate-it"},
+    {"question": "2026 年内会有大公司被 AI agent 搞出严重损失吗？", "prob": "14.3%", "volume_note": "24 小时成交额 962 mana，总成交额 6642，49 人下注，流动性 1000", "url": "https://manifold.markets/A/major-company-suffers-serious-damag"},
+    {"question": "2026 年内会有模型在 ARC-AGI-3 上拿到超过人类的分数吗？", "prob": "25.8%", "volume_note": "24 小时成交额 404 mana，总成交额 11477，83 人下注，流动性 1000。开盘人是 Zvi", "url": "https://manifold.markets/ZviMowshowitz/above-human-scores-on-arcagi3-in-20"},
+    {"question": "Zvi 会承认 Kimi K3 在某些非琐碎用途上比 Opus 4.8 更好吗？（7 月 31 日到期）", "prob": "10.8%", "volume_note": "24 小时成交额 1764 mana，总成交额 2682，24 人下注，流动性 1000", "url": "https://manifold.markets/nsokolsky/will-zvi-agree-that-kimi-k3-is-bett"}
+  ],
+  "skipped_sources": [
+    {"slug": "anthropic", "reason": "索引页最新条目停在 2026-07-27（开放权重立场文、Cognizant 合作），24h 窗口内无新条目"},
+    {"slug": "claude-blog", "reason": "首页最新一篇是 07-28 的 Bringing MCP 2026-07-28 to Claude，seen.json 已标 reported=true（07-29 已报），无更新"},
+    {"slug": "karpathy", "reason": "bearblog feed 最新停在 2026-04-30，无更新"},
+    {"slug": "lilian-weng", "reason": "最新停在 2026-07-04（Harness Engineering for Self-Improvement），月检窗口内无新"},
+    {"slug": "chip-huyen", "reason": "最新停在 2025-01-16，仍然停更"},
+    {"slug": "thinking-machines", "reason": "最新停在 2026-07-10，月检窗口内无新"},
+    {"slug": "ahead-of-ai", "reason": "最新停在 2026-07-18，周检窗口内无新"},
+    {"slug": "interconnects", "reason": "最新停在 2026-07-22，周检窗口内无新"},
+    {"slug": "import-ai", "reason": "最新是 07-27 的 Import AI 466（07-28 已报），周刊本周期无新一期"},
+    {"slug": "the-batch", "reason": "锚点是周五；最新一期 issue-363 为 07-24，其中两篇 07-27 已报，本周期无新刊"},
+    {"slug": "neodrop", "reason": "非跳过，已抓 07-30 期并回溯线索：Dwarkesh 算力涨价文已进 group-3。其余条目（NVIDIA Cosmos-Dreams、Agility 多机 Digit 同步、Datoric、Pangram 融资、Burry 谈 NVIDIA CDS）原始出处全是 x.com 帖子，本机读不到 X，无法核实原文，按红线一律丢弃；Cosmos-Dreams 另查到官方口径来自 07-22/23 的 SIGGRAPH 主题演讲（https://blogs.nvidia.com/blog/siggraph-news-2026/ ），已过窗口，不收"},
+    {"slug": "manifold", "reason": "信号源，不做 seen、不进精读；本轮扫了 78 个关键词 × 4 种排序共 312 次调用，去重后 1996 个开放市场，赔率盒子从中挑出"}
+  ]
+}

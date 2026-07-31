@@ -1,0 +1,6 @@
+# N3 并发测试：主 agent 自己抓，与后台 subagent 同时进行
+acx-hf-discourse|https://www.astralcodexten.com/p/highlights-from-the-discourse-on
+zvi-179|https://thezvi.substack.com/p/ai-179-part-1-a-louder-fire-alarm
+zvi-letter|https://thezvi.substack.com/p/frontier-lab-employee-open-letter
+lw-thousand-dim|https://www.lesswrong.com/posts/sFhW3ZnPMJdnB4Dd6/thousand-dimensional-structure-1
+lw-auditor-box|https://www.lesswrong.com/posts/uWYk7MM9hAf9GEbGe/auditor-in-a-box-tools-for-third-party-auditing

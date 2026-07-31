@@ -1,0 +1,26 @@
+﻿2026-07-31 02:21:35  === 监控启动，间隔 15s，产物目录 E:\dailydigest\reports\_debug ===
+2026-07-31 02:21:35  初始快照  claude 进程 12 个：7416 11824 14980 17604 18572 19024 21076 22892 24116 25012 27224 28660
+2026-07-31 02:25:33  === 监控启动，间隔 15s，产物目录 E:\dailydigest\reports\_debug ===
+2026-07-31 02:25:33  客户端日志路径 = C:\Users\mark\AppData\Roaming\Claude\logs\main.log
+2026-07-31 02:25:33  该路径存在吗 = False
+2026-07-31 02:25:33  回退查找结果 = 仍未找到
+2026-07-31 02:25:33  初始快照  claude 进程 12 个：7416 11824 14980 17604 18572 19024 21076 22892 24116 25012 27224 28660
+2026-07-31 02:25:33  抄日志失败：路径不存在 C:\Users\mark\AppData\Roaming\Claude\logs\main.log
+2026-07-31 02:40:40  === 监控启动，间隔 15s，产物目录 E:\dailydigest\reports\_debug ===
+2026-07-31 02:40:40  客户端日志路径 = C:\Users\mark\AppData\Roaming\Claude\logs\main.log
+2026-07-31 02:40:40  Test-Path = False / .NET Exists = False
+2026-07-31 02:40:40  本进程已提权 = False  用户 = mark
+2026-07-31 02:40:40  初始快照  claude 进程 16 个：7416 11824 14980 16744 17604 18572 18684 19024 20328 21076 22892 24116 25012 27224 27724 28660
+2026-07-31 02:40:40  抄日志失败：MethodInvocationException - Exception calling ".ctor" with "4" argument(s): "Could not find a part of the path 'C:\Users\mark\AppData\Roaming\Claude\logs\main.log'."
+2026-07-31 02:42:04  === 监控启动，间隔 15s，产物目录 E:\dailydigest\reports\_debug ===
+2026-07-31 02:42:04  客户端日志路径 = C:\Users\mark\AppData\Roaming\Claude\logs\main.log
+2026-07-31 02:42:04  Test-Path = False / .NET Exists = False
+2026-07-31 02:42:04  本进程已提权 = False  用户 = mark
+2026-07-31 02:42:04  初始快照  claude 进程 16 个：7416 11824 14980 16744 17604 18572 18684 19024 20328 21076 22892 24116 25012 27224 27724 28660
+2026-07-31 02:42:04  抄日志失败：MethodInvocationException - Exception calling ".ctor" with "4" argument(s): "Could not find a part of the path 'C:\Users\mark\AppData\Roaming\Claude\logs\main.log'."
+2026-07-31 08:08:53  进程消失  PID=19024 (启动于 01:13:58)
+2026-07-31 08:23:57  进程消失  PID=18684 (启动于 02:39:34)
+2026-07-31 08:23:57  进程消失  PID=16744 (启动于 02:39:33)
+2026-07-31 08:23:57  进程消失  PID=20328 (启动于 02:39:33)
+2026-07-31 08:23:57  进程消失  PID=27724 (启动于 02:39:27)
+2026-07-31 08:37:45  进程新增  PID=13460 (启动于 08:37:32)

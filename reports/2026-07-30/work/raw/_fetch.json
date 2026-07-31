@@ -1,0 +1,229 @@
+[
+  {
+    "slug": "letter-official",
+    "url": "https://www.pacingthefrontier.com/",
+    "status": 200,
+    "final_url": "https://www.pacingthefrontier.com/",
+    "bytes": 243882,
+    "title": "Pacing the Frontier",
+    "chars": 13796
+  },
+  {
+    "slug": "letter-zvi",
+    "url": "https://www.lesswrong.com/posts/eWmeMLqTEauCmHLeR/frontier-lab-employee-open-letter-calls-for-being-able-to",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/eWmeMLqTEauCmHLeR/frontier-lab-employee-open-letter-calls-for-being-able-to",
+    "bytes": 481708,
+    "title": "Frontier Lab Employee Open Letter Calls For Being Able to Pace the Frontier — LessWrong",
+    "chars": 29693
+  },
+  {
+    "slug": "letter-axios-dilemma",
+    "url": "https://www.axios.com/2026/07/30/ai-safety-slowdown-anthropic-openai",
+    "status": 403,
+    "final_url": "https://www.axios.com/2026/07/30/ai-safety-slowdown-anthropic-openai",
+    "bytes": 6161,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "letter-axios-anthropic",
+    "url": "https://www.axios.com/2026/07/29/anthropic-claude-open-models-ban-china",
+    "status": 403,
+    "final_url": "https://www.axios.com/2026/07/29/anthropic-claude-open-models-ban-china",
+    "bytes": 6169,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "worm-original",
+    "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+    "status": 200,
+    "final_url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+    "bytes": 47908,
+    "title": "Context Collapse, Part 3 - AI Worming through Word | En Klype Salt",
+    "chars": 22278
+  },
+  {
+    "slug": "worm-simon",
+    "url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/",
+    "bytes": 15638,
+    "title": "AI Worming through Word",
+    "chars": 2136
+  },
+  {
+    "slug": "gpt56-efficiency",
+    "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+    "status": 403,
+    "final_url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+    "bytes": 10458,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "robotics-er2",
+    "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-robotics-er-2/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+    "bytes": 371247,
+    "title": "Gemini Robotics ER 2",
+    "chars": 8984
+  },
+  {
+    "slug": "dwarkesh-compute",
+    "url": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
+    "status": 200,
+    "final_url": "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
+    "bytes": 192520,
+    "title": "Why compute might get 10x more expensive in coming years",
+    "chars": 9133
+  },
+  {
+    "slug": "heldout-monitors",
+    "url": "https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained",
+    "bytes": 667340,
+    "title": "Held-out Monitors Sometimes Degrade, Even When Not Trained Against — LessWrong",
+    "chars": 27109
+  },
+  {
+    "slug": "openai-academics",
+    "url": "https://openai.com/index/chatgpt-for-academic-researchers",
+    "status": 403,
+    "final_url": "https://openai.com/index/chatgpt-for-academic-researchers",
+    "bytes": 10434,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "openai-academics-axios",
+    "url": "https://www.axios.com/2026/07/29/openai-academics-research-chatgpt-sol",
+    "status": 403,
+    "final_url": "https://www.axios.com/2026/07/29/openai-academics-research-chatgpt-sol",
+    "bytes": 6188,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "arcagi3-settings",
+    "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+    "status": 403,
+    "final_url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+    "bytes": 10472,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "git-worktree",
+    "url": "https://fletch.sh/blog/git-worktrees-vs-clones-for-ai-agents/",
+    "status": 200,
+    "final_url": "https://fletch.sh/blog/git-worktrees-vs-clones-for-ai-agents/",
+    "bytes": 69884,
+    "title": "Git worktrees are not an isolation boundary for coding agents | Fletch",
+    "chars": 13558
+  },
+  {
+    "slug": "paper-openended",
+    "url": "https://huggingface.co/papers/2607.27191",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2607.27191",
+    "bytes": 148171,
+    "title": "Paper page - Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+    "chars": 3644
+  },
+  {
+    "slug": "paper-turbovla",
+    "url": "https://huggingface.co/papers/2607.27205",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2607.27205",
+    "bytes": 174297,
+    "title": "Paper page - TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM",
+    "chars": 5209
+  },
+  {
+    "slug": "paper-cort",
+    "url": "https://huggingface.co/papers/2607.25659",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2607.25659",
+    "bytes": 170470,
+    "title": "Paper page - CoRT: Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization",
+    "chars": 4956
+  },
+  {
+    "slug": "android-age",
+    "url": "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html",
+    "status": 200,
+    "final_url": "https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html",
+    "bytes": 147729,
+    "title": "Android Developers Blog: Delivering safer, age-appropriate experiences on Google Play",
+    "chars": 4111
+  },
+  {
+    "slug": "bis-central-bank",
+    "url": "https://www.axios.com/2026/07/29/ai-central-banking-bis",
+    "status": 403,
+    "final_url": "https://www.axios.com/2026/07/29/ai-central-banking-bis",
+    "bytes": 6122,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "gpu-idle",
+    "url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+    "bytes": 152963,
+    "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
+    "chars": 16031
+  },
+  {
+    "slug": "agent-manager",
+    "url": "https://github.com/YoanWai/agent-manager",
+    "status": 200,
+    "final_url": "https://github.com/YoanWai/agent-manager",
+    "bytes": 389830,
+    "title": "GitHub - YoanWai/agent-manager: Terminal UI to manage AI coding-agent sessions (Claude Code, OpenCode, Codex, Grok Build) in tmux: live status, group tree, live pane preview, resource gauges. · GitHub",
+    "chars": 15440
+  },
+  {
+    "slug": "computer-use",
+    "url": "https://steelmanlabs.com/blog/computer-use-is-far-from-solved",
+    "status": 200,
+    "final_url": "https://steelmanlabs.com/blog/computer-use-is-far-from-solved",
+    "bytes": 14217,
+    "title": "Computer use is far from solved — Steelman Labs",
+    "chars": 6618
+  },
+  {
+    "slug": "fun-maple",
+    "url": "https://www.lesswrong.com/posts/Z7pjBbK9qujhGbxws/the-high-control-dynamics-at-maple-1",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/Z7pjBbK9qujhGbxws/the-high-control-dynamics-at-maple-1",
+    "bytes": 1116305,
+    "title": "The High-Control Dynamics at MAPLE — LessWrong",
+    "chars": 127386
+  },
+  {
+    "slug": "fun-moon-impact",
+    "url": "https://www.projectpluto.com/25010d.htm",
+    "status": 200,
+    "final_url": "https://www.projectpluto.com/25010d.htm",
+    "bytes": 36934,
+    "title": "Upper stage impacting the moon on 2026 August 5",
+    "chars": 29360
+  },
+  {
+    "slug": "fun-pinball",
+    "url": "https://98.js.org/programs/pinball/space-cadet.html",
+    "status": 200,
+    "final_url": "https://98.js.org/programs/pinball/space-cadet.html",
+    "bytes": 7999,
+    "title": "3D Pinball for Windows - Space Cadet",
+    "chars": 14
+  },
+  {
+    "slug": "fun-video-store",
+    "url": "https://thereader.mitpress.mit.edu/the-lost-civic-life-of-movie-rental-stores/",
+    "status": 200,
+    "final_url": "https://thereader.mitpress.mit.edu/the-lost-civic-life-of-movie-rental-stores/",
+    "bytes": 53713,
+    "title": "The Lost Civic Life of Movie Rental Stores | The MIT Press Reader",
+    "chars": 13959
+  }
+]

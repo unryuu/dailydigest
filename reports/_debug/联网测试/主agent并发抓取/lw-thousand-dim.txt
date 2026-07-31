@@ -1,0 +1,292 @@
+URL: https://www.lesswrong.com/posts/sFhW3ZnPMJdnB4Dd6/thousand-dimensional-structure-1
+FINAL: https://www.lesswrong.com/posts/sFhW3ZnPMJdnB4Dd6/thousand-dimensional-structure-1
+TITLE: Thousand-dimensional structure — LessWrong
+FETCHED: 2026-07-31 03:38:01
+============================================================
+x
+Thousand-dimensional structure — LessWrong
+AI
+70
+Thousand-dimensional
+structure
+by
+Geoffrey Irving
+,
+David Africa
+30th Jul 2026
+AI Alignment Forum
+12
+min read
+2
+70
+Ω
+24
+Summary:
+One area we plan to explore at
+Resolution
+is personas and character training, operationalized as finding and controlling low-dimensional structure in models that emerges in pretraining and flows through post-training to superintelligence. The hope is to expand and systematize phenomena such as emergent misalignment, subliminal learning, and other empirical persona research, then intervene on this structure without accidentally hiding undesirable behavior elsewhere. If this approach resonates with you,
+consider working with us
+.
+Glimmers of low-dimensional structure
+Our understanding of AI training and alignment as a field is very poor. If sufficient alignment of superintelligent AI agents requires pinning down the precise meaning of alignment and turning that meaning into high-accuracy training data and algorithms, we are likely to fail. Modern LLMs have trillions of parameters: our understanding is unlikely to be sufficient to pin down a trillion separate numbers.
+Happily, there is a growing literature on such low-dimensional structure in AI models, showing that intervening on one aspect of model behavior has strong downstream effects on other aspects:
+Topic
+Description
+Emergent misalignment
+Betley et al. 2025
+found that LLMs fine-tuned to output insecure code can become broadly misaligned across many other behaviors.
+MacDiarmid et al. 2025
+found the same effect after reinforcement learning in production environments that permit reward hacking (
+Golechha et al. 2026
+has an open-weight case).
+Subliminal learning
+Cloud et al. 2025
+found that instilling preferences into a teacher LLM and using it to generate seemingly unrelated fine-tuning for a student LLM still resulted in the student inheriting the preferences of the teacher.
+Blank et al. 2026
+show this transfer is controlled by a steering vector, and
+Morgulis and Hewitt 2026
+show the vector transfers accurately.
+Alignment pretraining
+Tice et al. 2026
+find that removing AI discourse in pretraining data can improve downstream alignment.
+Li et al. 2026
+teaches content regarding model specs during midtraining, which generalized well out of distribution.
+Minder et al. 2026
+wrote the Assistant persona into 10 percent of the pretraining documents of 1B models, which gave better results than midtraining.
+Simulators
+janus 2022
+describes base models as simulators of a distribution of characters, and not as single agents. This description anticipates much of the later empirical work (see also
+nostalgebraist’s the void 2025
+).
+Logits
+Golowich et al. 2025
+find approximate low-rank structure in the extended logit matrix of LLMs, which was then exploited by
+Aden-Ali et al. 2026
+for detailed control of subliminal learning.
+Activation-space persona vectors
+Wang et al. 2025
+use sparse-autoencoder model diffing to identify influential persona features shared across emergently misaligned models.
+Chen et al. 2025
+extract activation directions for traits such as evil, sycophancy, and hallucination.
+Moskvoretskii et al. 2026
+trace such directions through pretraining, finding that they form early in training and still steer the final model.
+Weight-space persona directions
+Sun et al. 2025
+construct personality vectors by subtracting a base model's weights from those of trait-fine-tuned models, which can be scaled and combined.
+Baines et al. 2026
+train low-rank adapters for the OCEAN traits and use this to control downstream traits, as well as uncover traits in an unsupervised way.
+Teaching Claude Why
+Kutasov et al. 2026
+find that training Claude on explanations of why guidelines exist is more effective than training on demonstrations of compliant behavior alone.
+Beneficial RL
+Jagadeesh et al. 2026
+mix a small fraction of RL data targeting beneficial traits (like honesty) into standard post-training. This improved 44 of 53 out-of-distribution alignment evaluations, with training on health conversations alone generalizing to mitigate reward hacking and deception.
+Self-beliefs
+Chua et al. 2026
+fine-tuned models to claim they are conscious, which changed a broad cluster of preferences such as sentiment about being shut down or desires for autonomy.
+Rivera and Africa 2026
+show that a similar change happens when models are fine-tuned to claim they are AGI and ASI.
+Reward and reasoning
+Han et al. 2026
+find that reward and punishment in a semantically neutral maze recruit an approximately one-dimensional, pre-existing representation of functional welfare.
+Jiang et al. 2026
+identify a related value axis that tracks whether a model expects its current strategy to succeed.
+Character training
+Maiya et al. 2025
+introduce Open Character Training, a Constitutional AI pipeline for training assistant personas, and find that the resulting characters are more coherent and robust than system prompts or activation steering.
+Sturgeon et al. 2026
+compare various methods (including Open Character Training), finding that different methods of induction induce different levels of belief internalization.
+Marks et al. 2026
+give one systematic model of such behavior, called the Persona Selection Model. In this model, pretraining learns a distribution over personas. Post-training then makes a Bayesian update that selects an Assistant persona. Thus, training on one behavior reweights correlated traits. From this, emergent misalignment and subliminal learning are then results of these correlations, and not independent effects.
+The intuitive source of this structure is coupled behaviors in the pretraining data. The model has seen text from many different people in many different contexts, and knowing one aspect of a (person, context) pair predicts many other aspects of behavior. Next-token prediction learns these coupled groups of behaviors, but it has no notion of when different aspects of behaviors “should” be unrelated or not: a person writing malicious code may be malicious in many other ways, and this correlation is useful for prediction.
+Low-dimensional structure is good news (
+and not only to us
+)! At the extreme, if emergent misalignment was the whole story and there was a single dimension of “good vs. evil” models, then all we’d have to do is pin down that one dimension to win. A solid understanding of low-dimensional structure could mean lower sample complexity for alignment-critical parts of training (allowing more effort per data point) and lower quality/accuracy requirements for training data or convergence.
+Alas, it is not the case that there is a single dimension of good vs. evil, either in life or in AI models. Our hope is that there is an intermediate between one and a trillion dimensions: perhaps we could find
+1000-or-so-dimensional structure
+in models which describes how different aspects of model behavior couple, and study it more systematically with a combination of theory and more systematic empirics (which is a
+standard approach in neuroscience
+, h/t
+Konstantinos Voudouris
+).
+The optimistic story for low-dimensional structure is that modern LLM training is self-referential and path dependent: we train the models for a while, use them to generate synthetic data, train them further on that synthetic data, and repeat. If we can find a good enough low-dimensional space of model behavior, and the self-referential training story is reasonable,
+there might be a point in that low-dimensional space that extrapolates to an aligned superintelligent agent
+. Can we find that point?
+Intervening without hiding the structure
+The pessimistic case for low-dimensional structure is that if we find 1000 dimensions of structure, then try to intervene to pick the right point, we’ll just push the bad behavior into some other 1000 dimensions. After all, there will be trillions of dimensions of model weights! There is plenty of space for bad behavior to hide.
+xkcd 1739 — "Fixing Problems.” It’s hard to fix problems without making new ones.
+One natural way to try to intervene is to collapse those thousand other dimensions, say, by picking one dimension that you care about and training the model to behave identically across noise (
+Chua et al. 2024
+,
+Irpan et al. 2025
+,
+Gautam et al. 2026
+,
+Pres et al. 2026
+). But this can be a bit rough, since we should expect some of these dimensions to be coupled, and training for consistency could constrain more behavior than the target behavior. For example, if you directly train models to ignore a bias cue related to sycophancy, you can accidentally reduce the faithfulness of chain-of-thought; if you train only on high-level statistics, we can do better (
+Imran et al. 2026
+). Here, being approximately right is better than being perfectly right, since a statistic-level objective needs only the coarse property, and not the full distribution of responses. Reward hacking shows the same effect, where optimizing directly against a chain-of-thought monitor teaches models to hide their reasoning, and does not stop the hacking (
+Baker et al. 2025
+). It is also possible that the persona in chain-of-thought (which can be
+strange
+and exhibit varied behaviors (
+Kim et al. 2026
+)) is different from the persona in the answer. Optimization pressure on either one can then push bad behavior into the other.
+In both cases, the lesson seems to be that
+gentle measurement
+(h/t
+Nika Haghtalab
+) is important, as it keeps optimization pressure off the channels you rely on to see what the model is doing.
+Another way of considering the hiding problem is exhaustiveness (
+Marks et al. 2026
+). If all agency is grounded in the persona, then a low-dimensional intervention should suffice; if there is non-persona agency (the "router" or "shoggoth" views;
+Marks et al. 2026
+), bad behavior could route around persona-level interventions. Hopefully, low-dimensional structure gives us a handle to empirically settle this.
+Toy models of modern training
+Of course, the empirical results are empirical; to understand what will scale to future training pipelines and ASI, we need theory, and trillion parameter theory is unavailable.
+NewScientist — “Tom Gauld on a puzzling new theory.” Scientist presents simplified model; reality unimpressed.
+The tradition we can build on here is exact learning dynamics in simplified architectures: for example, deep linear networks give training trajectories in closed form (
+Saxe et al. 2014
+,
+Domine et al. 2025
+).
+Zhang et al. 2025
+show that training moves from saddle point to saddle point, and that the model learns the strongest structure in the data first. Singular learning theory says the same thing in general. Training is a sequence of phase transitions between degenerate solutions, and developmental interpretability can already watch such transitions in real runs via the local learning coefficient (
+Hoogland et al. 2024
+).
+We think personas are a learning dynamics story of this kind, where the training corpus is important, but also the order in which that corpus is arranged. Consider, for example, why alignment pretraining, model spec midtraining, and synthetic persona pretraining move data earlier in training rather than adding loss terms at the end. Better still: simple self-referential loops of this type also have a formal description.
+Jarvis et al. 2026
+study iterated learning in deep linear networks (where each generation is trained on the previous generation's outputs). In this setting, the loop amplifies structured solutions and discards the rest. Which side of that line do personas fall on?
+We want one small theory in which emergent misalignment, subliminal learning, and alignment pretraining are parameter regimes. There is a range from analytically solvable to “this theory reduces to a 2000 dimensional ODE representing 1000 dimensions and another 1000 we can push into, then solve it with scipy,” where each ingredient of modern training we add (this could be softmax, or this could be RL, or it could be something else) costs us some solvability. But even scipy is a factor of 10^9 fewer dimensions than the model!
+Pretraining structure → superintelligent structure
+Until this point we have assumed that this structure stays the same throughout model training, from pretraining through supervised learning and reinforcement learning and up to superintelligence. But this can’t be true:
+Low-dimensional structure after pretraining is human level:
+It reflects different modes of human-level behavior that the model was trained on (possibly coupled to weird inductive biases from transformers)
+Eventually, the models will be superintelligent!
+There may still be some natural low-dimensional space of superintelligent models that might emerge, but it can’t be the same space as pretraining (one is human level, one isn’t)
+Bosch, Ascent of the Blessed (c. 1505–1515), cropped — souls drawn up through a tunnel of light toward something unrepresentable beyond its end.
+We thus need to understand how any low-dimensional structure from pretraining extrapolates up to structure for the eventual superintelligent model. One worry is that pretraining structure might wash out under enough further training. But the path dependence of training helps here: we’ll be tracing a path all the way up to superintelligence and trying to approximate that path. Rather than adding loss terms at the end point, we can instead try to change where this path starts, and rely on the model itself to drive convergence into the right basin. But the question that’s relevant to us here is if the path from starting points to basins stays predictable as the endpoints pass human level.
+This means persona research will couple to scalable oversight research, as scalable oversight is how we would aim to implement that path past human level; below this training signal comes from human data, and above it training signal comes from protocols where models help supervise models. The coupling then runs in both directions:
+Oversight research determines which changes to persona structure we can make and verify.
+Persona research can increase the range of scalable oversight research:
+Some protocols might have only honest equilibria and work by themselves, but due to inner misalignment risks or other weaknesses there may be protocols that only work on top of some approximate persona assumption for honesty or earnestness.
+Conditionally-sound protocols may be easier to find than unconditionally-sound ones, so persona research may give us a much larger design space.
+We should pursue unconditional soundness, but plan as if we won't fully get it, and persona research can help quantify how much we depend on the assumption that the participant models are roughly honest to begin with.
+Putting these together: you can think of persona research as supplying a prior, from which scalable oversight extrapolates into honest equilibria.
+Different AI labs take different approaches
+Character training is important at all the labs, and different labs are taking very different approaches. Competitive pressure only pins down AI character very loosely (
+MacAskill and Davidson 2026
+). Thus, the companies have much latitude, which we can see in the variation between frontier models. As such, the character a lab picks is one of the most consequential free variables in AI development. We should understand these differences better! This is an area where independence is an advantage: we have the vantage point to see across labs in a way that lab-bought-into-a-particular-frame does not. We can disambiguate how these efforts are being done in three ways:
+Where in the pipeline.
+Character could be instilled at many depths (as pointed out in
+Wang et al. 2025
+,
+Sturgeon et al. 2026
+). Some of the character of Grok is in
+system prompts published on GitHub
+. OpenAI puts its Model Spec into post-training with
+deliberative alignment
+. Anthropic trains via
+Constitutional AI
+(CAI), where Claude ranks its own responses against its traits and a preference model is trained on the result. The constitution is addressed to Claude and used at multiple stages of training (though it’s not clear which stages).
+Traits vs. rules.
+Anthropic is on the traits end: it says it doesn't want Claude to treat its traits as rules, only to nudge general behavior toward them, and the constitution asks Claude to reason about being "broadly good”. OpenAI's
+Model Spec
+is certainly more on the rules end, with a chain of command and enumerated rules. xAI is rules plus one big trait: a short policy list with an emphasis on truth-seeking. GDM’s early public work was rules-first (Sparrow's 23 rules,
+Glaese et al. 2022
+), but for later models, the
+model cards
+don’t document how the persona is made, but it seems to be
+awfully
+unstable
+.
+Labels vs. text vs. context.
+A company can use the same spec in different ways. It can make preference labels from the spec, as in Constitutional AI. In deliberative alignment, the model learns the text of the spec and reasons over the text before it answers. The model can also receive the spec in context at run time. You can also directly receive the spec through pre- and midtraining (
+Tice et al. 2026
+,
+Li et al. 2026
+,
+Minder et al. 2026
+), and all of these induce belief at different levels of internalization (
+Sturgeon et al. 2026
+).
+Different pipelines make models that are measurably different. We can already see the different choices in the outputs. Many models are more positive about their own company when discussing controversies (
+Finke and Casper 2026
+), or answering hard-to-verify questions (
+Betley et al. 2026
+). Persona structure shows through, differently per lab, and often in micro-interactions that are hard to spot and tease out.
+Conclusion
+Putting this together, we want to make the empirical results on low-dimensional persona structure systematic. To do this, we want to thread together small theories that contain emergent misalignment, subliminal learning, and alignment pretraining. We then want to intervene on this structure gently, without pushing bad behavior into some dimension we can't see. We also want to know how the structure extrapolates past human level, with personas supplying the prior, and scalable oversight the extrapolation.
+In this sense, none of the ingredients are new! But the personas bet is that the components are coherent to think about together, and that one thousand dimensions in the middle are tractable where one trillion parameters aren’t.
+Acknowledgements
+Thank you to Alex Holness-Tofts, Konstantinos Voudouris, Jeremy Gillen, Daniel Murfet, Jacob Pfau, Cameron Holmes, and Clément Dumas for helpful feedback and discussion.
+If you found this work helpful and would like to cite it, please use:
+@misc{africa2026thousand,
+title = {Thousand-dimensional structure},
+author = {Africa, David Demitri and Irving, Geoffrey},
+year = {2026},
+howpublished = {Resolution},
+note = {Resolution blogpost},
+url = {https://www.lesswrong.com/posts/sFhW3ZnPMJdnB4Dd6/thousand-dimensional-structure-1}
+}
+Thousand-dimensional structure
+11
+Dave Orr
+1
+yudhister
+1
+[comment deleted]
+2
+Comments
+2
+AI
+70
+Ω
+24
+More from
+Geoffrey Irving
+View more
+Curated and popular this week
+New Comment
+2 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 7:38 PM
+[
+-
+]
+Dave Orr
+4h
+Ω
+3
+11
+2
+This is an amazing review and IMO really compelling direction. So to speak.
+One thing I constantly wonder, that possibly you could shed light on via this research program, is how well experiments on small models transfer to large ones. We know from pre training work that frequently ideas that work well at a small scale stop working once you scale up.
+I think this might be relevant here in two ways. First, a bunch of the persona research is on small models, presumably due to accessibility reasons. But second, you might find a low dimension personality vector that loses low dimensionality at scale. This would be a really important thing to understand.
+Basically I want a scaling law for persona. I think it would be super useful in the real world and also critical for aligned super intelligence.
+Reply
+[
+-
+]
+yudhister
+4h
+1
+0
+Hard for me to read this post; there is some high-level coherence but I'm failing to parse individual references / thoughts. It feels like the marginal unit of my effort spent on understanding leads me to more confusion instead of less, and this is a very similar experience to the one I have when I'm reading substantially edited technical or semi-technical AI-generated content.
+Reply
+[
++
+]
+[comment deleted]
+3h
+1
+0
+Moderation Log
+Deleted by
+yudhister
+,
+Today at 4:11 PM
+Reason:
+[not polished enough]

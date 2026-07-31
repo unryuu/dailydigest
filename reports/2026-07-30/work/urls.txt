@@ -1,0 +1,34 @@
+# 2026-07-30 精读 + 核查抓取清单
+# ---- 金牌组：两封信 ----
+letter-official|https://www.pacingthefrontier.com/
+letter-zvi|https://www.lesswrong.com/posts/eWmeMLqTEauCmHLeR/frontier-lab-employee-open-letter-calls-for-being-able-to
+letter-axios-dilemma|https://www.axios.com/2026/07/30/ai-safety-slowdown-anthropic-openai
+letter-axios-anthropic|https://www.axios.com/2026/07/29/anthropic-claude-open-models-ban-china
+# ---- 行业银 ----
+worm-original|https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/
+worm-simon|https://simonwillison.net/2026/Jul/29/ai-worming-through-word/
+gpt56-efficiency|https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency
+robotics-er2|https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/
+# ---- 长文银 ----
+dwarkesh-compute|https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive
+heldout-monitors|https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained
+# ---- 官方公告 ----
+openai-academics|https://openai.com/index/chatgpt-for-academic-researchers
+openai-academics-axios|https://www.axios.com/2026/07/29/openai-academics-research-chatgpt-sol
+arcagi3-settings|https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores
+# ---- 无牌 ----
+git-worktree|https://fletch.sh/blog/git-worktrees-vs-clones-for-ai-agents/
+paper-openended|https://huggingface.co/papers/2607.27191
+paper-turbovla|https://huggingface.co/papers/2607.27205
+paper-cort|https://huggingface.co/papers/2607.25659
+android-age|https://android-developers.googleblog.com/2026/07/google-play-age-signals-api-safer-experiences.html
+# ---- 简讯 ----
+bis-central-bank|https://www.axios.com/2026/07/29/ai-central-banking-bis
+gpu-idle|https://huggingface.co/blog/Dharma-AI/gpu-management
+agent-manager|https://github.com/YoanWai/agent-manager
+computer-use|https://steelmanlabs.com/blog/computer-use-is-far-from-solved
+# ---- 乐子 ----
+fun-maple|https://www.lesswrong.com/posts/Z7pjBbK9qujhGbxws/the-high-control-dynamics-at-maple-1
+fun-moon-impact|https://www.projectpluto.com/25010d.htm
+fun-pinball|https://98.js.org/programs/pinball/space-cadet.html
+fun-video-store|https://thereader.mitpress.mit.edu/the-lost-civic-life-of-movie-rental-stores/

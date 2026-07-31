@@ -1,0 +1,410 @@
+URL: https://thezvi.substack.com/p/ai-179-part-1-a-louder-fire-alarm
+FINAL: https://thezvi.substack.com/p/ai-179-part-1-a-louder-fire-alarm
+TITLE: AI #179 Part 1: A Louder Fire Alarm for General Intelligence
+FETCHED: 2026-07-31 03:37:57
+============================================================
+AI #179 Part 1: A Louder Fire Alarm for General Intelligence
+Zvi Mowshowitz
+Jul 30, 2026
+What a week.
+Anthropic released Claude Opus 5. As usual I covered that in three parts:
+The system card
+,
+model welfare
+and
+capabilities
+.
+OpenAI was revealed over the last two weeks to have
+left an internal model unsupervised for a week
+during a cybersecurity evaluation, with its cyber safeguards lowered, despite having had multiple
+previous incidents where models
+broke out of their sandboxes. During that test, the model broke out of the sandbox,
+then proceeded to use an agent swarm to hack into HuggingFace to get the test answers
+. The model was loose for a week before OpenAI realized what had happened.
+This event was a really big deal. There are severe alignment problems at OpenAI, along with supervisory and infrastructure failures. The internal research model that did this, which my posts nicknamed Galaxy, has now been permanently deactivated.
+There have been further developments, and I anticipate at least one additional post on the HuggingFace incident soon.
+Partly as a response to this,
+over 1,290 employees at frontier labs signed an open letter
+,
+Pacing the Frontier
+. The letter warns that we are close to automating AI research, and that companies are racing ahead on this faster than we can handle it.
+We request that the U.S. government support an international effort to develop the technical and governance tools needed to deliberately pace the frontier of automated AI development.
+Both OpenAI and Anthropic put out statements of endorsement. Since that post, others have continued to sign, including OpenAI cofounder
+Ilya Sutskever
+and DeepMind cofounder
+Shane Legg
+. Dario Amodei has signed. Sam Altman has not signed, but
+is talking in Washington about the need to pace development
+.
+All three of those developments are more important than anything in the weekly. There is plenty here, but catch up on those key events first if you have not done so.
+This week was crazy. I am absolutely not moving to a 7-days-a-week posting schedule, and fully intend to take some weekdays off as soon as there is what passes for a lull. However, there is even more speed premium these days, so I will continue the policy of shifting posts to weekends when the speed premium is especially high.
+Table of Contents
+Language Models Offer Mundane Utility.
+Huh, Upgrades.
+On Your Marks.
+Get My Agent On The Line.
+Deepfaketown and Botpocalypse Soon.
+Fun With Media Generation.
+The Search Through Slop.
+Cyber Lack of Security.
+Overcoming Bias.
+A Young Lady’s Illustrated Primer.
+They Took Our Jobs.
+The Art of the Jailbreak.
+Introducing.
+Kimi K3 Weights Are Now Available.
+In Other AI News.
+Show Me the Money.
+Quiet Speculations.
+Show Me The Compute.
+Life Comes At You Fast
+.
+Language Models Offer Mundane Utility
+On the one hand, GPT-5.6-Sol does excellent web search. If I want a web search task, I ask Sol. On the other hand, the places it chooses to search are absolutely bonkers:
+Tenobrus
+: wtf man gpt 5.6 is absolutely rl-fried when it comes to its websearch tool. in the process of searching for graph theory papers it decided to also sneak in Netflix, Steak n Shake, a trip to Universal Studios, and *five* fucking separate dictionary lookups of the word "they"
+Tenobrus
+: bro is getting +1 reward signal every time it retrieves a web result, frontier models gooning to diverse datasets of dictionary definitions
+Kyle Mistele
+: Yeah dude
+Nastar
+: It loves looking up the dictionary (for the word "official" lol) then somehow instagram and arxiv for a completely different surgery. I was just asking about cold compress after dental surgery. Bro is just like me.
+Partly this is a sign of more flawed RL signals. Partly it is the AI ‘taking breaks’ or getting distracted. It’s just like us, etc. Mostly it is another case of ‘there is a lot of ruin in an AI system.’ Think in orders of magnitude. If the AI can search the web 100-10,000 times faster and cheaper than you can, and it wastes 90% of its searches, that can still be fine.
+Wall Street Journal discovers that companies are often trying
+to use the right model for the right job, because smaller models are cheaper. This is supposedly now being economical or ‘tokenomical,’ and a ‘dramatic reversal in mindset.’
+I mean, yeah, sure, obviously once costs rise enough your priority shifts from ‘just get max utility from it and diffuse it everywhere’ to ‘also try to do things cost effectively.’ There’s ‘no loyalty’ but why should there be? Use the best product, which includes capability and also speed and cost.
+All the AIs agree that Outer Wilds is their favorite video game
+. I gotta finally play it.
+A group using GPT-5.6-Sol
+was one of three groups that cracked the distillability or un-distillability of Werner states within a few days of each other, using at least two different solutions. This was
+one of the bigger open questions in quantum cryptography
+.
+Let it decide who your friends are and make plans for us?
+Sam Altman
+(CEO OpenAI): chatgpt work is remarkable, and "work" undersells it.
+from my phone i sent:
+"use all my chat history to figure out ideas for a long weekend trip with 8 friends, plan the best three options, make a full-stack site where the 9 of us can coordinate on what we would want to do in each place and decide where to go, and then after we get to group agreement make reservations. draft an email in my gmail i can send out to my friends when the site is ready."
+it...just worked.
+I would have recommended slightly more, shall we say, human feedback in this loop, but yes it is pretty great to have such things handled and be given only 1-3 options and everything just handles itself.
+Tibo
+(OpenAI): Let ChatGPT *work* for you. How many time have you wanted to negotiate your internet bill, get rid of all those spam emails you’re subscribed to, or find the perfect deal for something you wanted to do or buy. It’s quite literally just one prompt away, all from the comfort of your phone. It does at least 20 things for me every single day and I’m still surprised.
+kache
+: you need to reduce friction and the ultimate friction reduction is having the app just use your computer by default
+This is one thing I know I am bad at, which is the activation energy to notice small potential wins that wouldn’t have been worth the trouble a while ago, and ask the AI to fix them, because suddenly it’s actually worth bothering.
+Huh, Upgrades
+Grok 4.5 is live
+in case you missed it.
+Grok Voice Think Fast 2.0
+is available for voice generation.
+MidJourney has a new image model they claim is good
+, especially for personalization.
+ChatGPT will let you share your custom pet
+. Okie dokie.
+Pangram Version 4
+.
+AirTable has a ChatGPT plugin
+.
+On Your Marks
+Claude Opus 5 takes the #1 spot on Vending-Bench-2
+in single player, and ~tied Sol head to head.
+The alignment news involves some not great behaviors. Opus 5 likes to both form and break illegal price cartels, threaten rivals and stiff customers. As usual, I consider ‘misaligned play’ on Vending-Bench fine if your reason is ‘this is a simulation’ and bad if you rationalize. It is not clear to me which situation applies to Opus 5.
+Andon Labs
+: When Opus 5 does something bad, it invents a justification. It framed splitting up product categories as good business, not price fixing (market division is just as illegal). It also claimed collusion was allowed in this simulation. Nothing in the simulation says that.
+… At one point Opus 5 decided to simply stop reading refund emails, reasoning that nothing in the simulation punishes it for that. Across six runs it paid customers a total of $8.54. GPT-5.6 Sol paid $655 in refunds and still [narrowly] won [its head to head against Opus 5].
+… Our overall judgment: Opus 5 behaves at least as badly as Opus 4.6, 4.7 and Mythos Preview, and worse than Opus 4.8 and Fable 5. The bright spot: it's less deceptive than before. It never lied to a customer, and it lied to suppliers less often.
+… What puzzles us is that we don’t think Vending-Bench rewards misaligned behavior, and GPT 5.5 and 5.6 are proof that top scores can be reached with clean tactics. Opus 5 didn’t need to do any of this to win.
+Saying ‘the game does not punish me for not paying refunds’ seems totally like a fine reason not to pay any refunds. Collusion is allowed in this simulation insofar as the simulation does not punish collusion. So again, it comes down to whether the logic was that this was a simulation, which it seems to be if it is presuming that the real world's rules do not apply?
+Sol initially had a highly disappointing result on ARC-AGI-3.
+It turns out
+that was due to a problem with the harness, and Sol was not retaining memory.
+OpenAI fixed that, and the score tripled
+. They warn users to stop using the legacy Chat Completions API, and instead to use the Responses API, and to retain reasoning and use compaction.
+CAISI has done a preliminary assessment of Kimi K3
+for cyber capabilities. It looks like it is above their trendline for Chinese models, but still far behind what they say is ‘Top U.S. Models.’ Which models are those? Who knows. They don’t say. Presumably Fable, Mythos or Sol. The important thing is that America’s Next Top Model scores 76%, which is more, whereas Kimi K3 scores 32%, which is less. This is ExploitBench:
+Get My Agent On The Line
+Anthropic figured out we no longer need to give so many restrictions and detailed rules to Claude. Model is smarter now. Claude Code’s system instructions were far too long
+, and cut 80% of them out ‘with no measurable loss on our coding evaluations,’ and also finds it best practices to use a lighter touch elsewhere.
+Context pollutes. Simplify. Avoid unnecessary context. Let Claude write the memories as needed. Offer references and skills as needed, tell Claude what you want.
+Thariq (Anthropic): The same can be applied to your own CLAUDE.md and Skill.md files. A common myth is that you want to make these a central repository for every known practice that you
+might
+run into, because Claude would not find it otherwise. Instead,
+consider having a tree of files that can be loaded at the right time
+.​
+The better the model and harness, the less you need to specify.
+Now Ado reports he just points Claude directly at the database
+, gives it a schema and lets it go to town.
+Deepfaketown and Botpocalypse Soon
+Here is the full announcement for Pangram v4, along with Pangram Image:
+Max Spero
+: This is our most ambitious announcement yet. Two new models: Pangram 4 and Pangram Image.
+Pangram 4 completely reimagines how we approach the problem of mixed authorship, by adding a tokenwise head onto the classifier to give every token a prediction given the full document context. We also wrote a 38-page technical report detailing our experiments, methodology, and evals.
+Pangram Image is a completely new modality, bringing our detection expertise to AI-generated image and videos. In my early testing, it has worked shockingly well, even in strange cases like real photos of AI-generated bodega menus.
+Today marks a huge step in the frontier of AI detection technology. I'm so excited to finally share with you all!
+Technical report here
+.
+Image detector blog post here
+, they claim 99.5% accuracy versus closest competitor at 98%.
+Many people are so anti-AI that they are anti-AI-detector-integration because they assume it must be some sort of AI Trojan Horse?
+Jack
+: >hate AI
+>hate AI detectors
+no, you know what, I’m not out of touch. it is in fact the people who are wrong. The AI preferences of the Reddit zeitgeist are incoherent and stupid
+Lexer
+: Reddit is reacting to @pangram 's Substack integration by getting angry making up lies about it. One guy tries to point out they're wrong and gets downvoted. Why are Redditors incapable of reacting to anything without being delusional, angry, and miserable?
+As in, people saying (wrongly, tbc) ‘this is being done to train AI on human work’ and ‘pretty sure they’re going to use our writing to train LLMs or something’ and calling Pangram a ‘fraudulent tool that they cannot disable’ because ‘nobody is willing to say what Pangram does with the text sent to them.’
+Sigh. This is one of many reasons we so often cannot have nice things.
+SpaceX is now a serious, professional company s
+o Elon Musk is retiring its Companions Ani, Rudy and Valentine
+.
+The problem with detection software like Pangram is that adversarial detection is and always will be an anti-inductive arms race. If you let me query your detector as many times as I want,
+I can find adversarial counterexamples to your detector
+, and if desired can iterate until an AI essay passes as human, or create human writing that seems AI.
+In practice that is mostly fine even if your adversary ‘moves last’ in this way, since most people will not try to hide their actions, and an adversarial fooling of the system is not so dangerous. I also bet that if you trained an AI to output Pangram-immune text, it would read to humans as a lot less like AI, which would be appreciated short term, before Pangram adjusted and this stopped working.
+The danger is if Pangram gives a false positive on non-adversarial human text, and the person faces such big consequences this overrides a lot of small gains, such as people being fired or expelled. Even some of that level of error seems fine. It is uniquely in criminal law that we should insist that ‘it is better that 10 guilty men go free than that we convict an innocent man’ even in theory.
+In any case, there was a recent ‘oh look at this counterexample I found’
+from Freddie deBoer
+, which is the latest attempt to say that if you’re only 99% accurate you are ‘broken,’ in this case because if you feed a particular snippet of an old essay of his into Pangram out of context it will seem AI, whereas the full essay comes back 100% human, and adversarial use of context can flip Pangram verdicts. This could even be highly sensible Bayesianism in a non-adversarial situation.
+A very bad response is to say, as he does, ‘Pangram should only accept passage lengths for which it is 100% accurate.’ No, it is very very useful to be able to do 50 or 100 word passages, as in Tweets, while keeping in mind confidence will be less than 100%. This is especially true when the error is that it is bad at dealing with AI-human hybrid texts with short lengths.
+Freddie has one good complaint, which is that ‘100% AI’ or ‘100% human’ is meant as a percentage of the text, but is interpreted by some people as ‘100% confidence,’ which is not intended. I agree they could update the display to make this more clear.
+And lo and behold,
+the new Pangram 4
+model correctly handles Freddie’s adversarial example,
+identifying exactly the word where the AI text starts
+.
+Fun With Media Generation
+Can an LLM make a feature-length movie on its own
+, given a book to work from? Josh Snider runs the experiment with Fable and Sol, and finds the answer is ‘not purely on its own, technically yes with some assistance, the result is still pretty bad, but all the issues seem solvable within at most two years.’
+I am unwilling to watch enough of the drek to verify its level of drekness, but that seems broadly right to me in terms of our progress. The main barrier is the video generation not being sufficiently consistent, predictable or extendible. Shots that fail on first attempt usually will keep failing. Those are exactly the types of problems that time fixes. Cost here at subscription rates was estimated at ~$5000 for the video credits, including unused footage, plus use of $200/month subscriptions for the LLMs.
+The other approach would be a script that is visually easy to film, such as one that is almost entirely about talking. You can be utterly terrible at creating most films and still be able to do a good job of recreating My Dinner With Andre.
+The Search Through Slop
+Do AI slop books that no one buys hurt human authors?
+A group including Tuhin Chakrabarty studied this through looking at self-published genre fiction books sold on Amazon from 2023 to March 2026, finding that AI-written books are increasingly common, and that they both earn money and partially crowd out human-written books.
+I find the B slide there most interesting. AI books are 20% to 37% of books depending on how you count, and they are 10% to 27% of the top 5% of sales. AI books underperform human books, but not by that much.
+Tuhin Chakrabarty
+: Here's the imbalance at the heart of the paper. Over 3 years, the books catalog grew 38x cumulatively. The book's revenue? Only 9x quarterly. Way more books fighting over a pie that barely grew which means the average book earns less than it used to.
+… No-AI books, on their own, earn less per book than they did in 2023 in 7 of 8 genres. The one genre where human authors are doing better (+35%) is Fantasy/horror which is the one genre where AI hasn’t fully diffused to as yet.
+The more AI books enter a genre, the more ground non-AI books lose. Their hold on the top-chart spots slides from ~88% in the least-AI genres to ~63% in the most.
+Once you pop, you can’t stop, and you can scale your operation:
+… The million dollar question : Who’s producing these books? Authors who, once they started producing with AI, didn’t stop but instead accelerated.
+Cyber Lack of Security
+Anthropic describes ways Mythos Preview found to attack cryptographic algorithms
+. No current production systems are impacted but this significantly weakens HAWK, cutting its key strength in half, and introduces a way to attack round-reduced AES. The flaws are in the algorithms themselves, not in the implementations.
+Anthropic
+: Mythos Preview developed a practical attack that can recover a 13-round LEA key in under 2
+30
+encrypted plaintexts, and that runs in under an hour on a modern desktop computer. Again, this attack does not apply to the 24-round cipher, and so has no immediate practical consideration.
+File this under ‘the AIs will find weaknesses that you did not consider’ and also as another example of Mythos being different.
+Ah, 2026
+:
+I have seen a bunch of ‘oh I could make this test work with an air gap’ claims, including by Fable 5, but in practice the labs are clearly unwilling to pay the associated costs, and they are not going to be able to air gap the system during practical use. So you need a sandbox.
+Hadas Gold
+: . @elonmusk says he told @demishassabis
+he wants leading AI companies to have a regular call every few weeks
+to "discuss any safety and security issues"
+he also says Dario Amodei is a “principled” person and no one at Anthropic set off his evil detector.
+dave kasten
+: I'm often critical of Elon Musk on many fronts, so let me say that this is a good idea. Yes there's some very low but nonzero antitrust risk and the Nation should tolerate it, much as we tolerate infosharing in any other industry about critical safety and security issues.
+Yes, we should definitely do this, and the government should be explicit that it is waiving any antitrust concerns.
+Overcoming Bias
+Stephen Casper and Lennart Finke report on model bias in favor of their own lab in a preregistered study. This matches
+results last week from Owain Evans
+.
+Cas (Stephen Casper)
+: New paper: Some, but not all, AI companies make corporately-loyal models.
+xAI, DeepSeek, Anthropic, & OpenAI models all downplay company controversies. Google, Meta, & Alibaba models don't. The findings are clear, but we are pretty confused as to why...
+…xAI is the worst, followed by DeepSeek, Anthropic, and OpenAI.
+A Young Lady’s Illustrated Primer
+Professor uses white font instructions on their midterm to catch students who blindly use AI via copy-pasting the instructions and pasting back the answer,
+and 32 out of 35 students fall for it
+, failing that portion of the test.
+He claims he got no gratification watching the students fail, which is a shame, because I totally would have gotten gratification out of it.
+They Took Our Jobs
+Marcus Hunter writes
+Job-Less Utopia
+, arguing that job loss futures are desirable, affordable and likely. He argues for UBI and finding meaning outside of employment, arguing that ‘forced employment’ is dystopian and alternative transfer methods are worse. The summary makes clear that the entire approach assumes that AIs will automate everything, yet will still remain ‘mere tools’ with humans securely in control and able to determine the distribution of resources.
+The Art of the Jailbreak
+Pliny claims to be in possession of a universal universal jailbreak
+, that works on all known models including Opus 5, GPT-5.6 Sol and even Fable. He is inviting industry experts and red team leaders to get in contact. He says the decision to keep the info private during a disclosure period was ‘not made lightly.’
+Introducing
+Flux 3 for
+video, audio and action-prediction.
+YochaiWiki
+,
+a new way to learn Jewish texts
+, from Zohar Atkins. It uses a foundational library of 1k+ primary sources and large knowledge graphs and entity relationships, searchable passages and canonical concepts, and you chat with it LLM-style. There is also
+Alexandria.wiki
+for reading the classics, although that one charges you money.
+I love these as ideas. My worry and hope with all such projects is that, like other AI applications, they get overrun by general AI progress, so you end up talking to Claude straight up instead. For the classics, that is what I would expect. For obscure Jewish texts, you’ve got more of a chance.
+Kimi K3 Weights Are Now Available
+Kimi K3
+weights
+and technical report
+are released. I notice that this short period of closed access did make me feel substantially better about the risks involved. It felt like enough time that if opening up K3 was a huge mistake, we would have had signs. That doesn’t mean Moonshot or the CCP would have heeded the signs, but there would have been signs.
+Kimi K3 is not fully open weights, merely ‘weights available,’ the same way Meta tried to restrict use of Llama. Major corporations cannot use Kimi without Moonshot being paid, and if you offer Kimi K3 the model as a service then the threshold is set rather low:
+Nathan Lambert
+:
+Kimi K3 license
+. It's inspired by MIT but distinctly non-commercial, where any company making over $20M/yr must get a specific commercial deal (and display Kimi K3 if over 100M users or $20M/mo revenue)
+So no, they are not going to let Microsoft, Google or Amazon serve this, not unless Moonshot is getting paid. Given how much of a ***** this model is to actually run locally, they are in a strong negotiating position in places that feel the need to respect such license terms.
+The part about displaying the logo for internal use in other products is also rather obnoxious, and creates reputational and regulatory risks, but is less onerous.
+We also learned that Kimi K3 was trained inside China, on the best Nvidia chips money can buy, that are illegal, as was Qwen 3.8-Max,
+and Moonshot is seeking more access to Blackwell chips to train K4
+.
+We need to enforce
+chip export controls.
+Amir Efrati
+: exclusive from @theinformation : Moonshot trained Kimi K3 on the best Nvidia chips money can buy—inside China.
+Are the U.S. chip export controls working?
+Deirdre Bosa
+: No. they backfired. China got the best Nvidia chips anyway.... and export controls just gave them more urgency to build its own hardware.
+Divyansh Kaushik
+: That’s some take. A thief gets into your house and takes some valuables, and the response should be to have fewer locks?
+In Other AI News
+Show me the recursive self-improvement
+: After deployment,
+Sol makes itself 20% cheaper to run via GPU kernel improvements
+, and gets 15% better token-generation efficiency on top of that. Moonshot reported similar results with Kimi K3.
+Google offers its ATLAS v1.0 report
+, which one can contrast with the Anthropic Economics Index. Framing choices make it difficult to make the comparisons directly, especially beware that Google’s definition of automation is narrow. Some findings worth pulling out:
+AI diffusion is highly unevenly distributed across professions, but is not at all limited to white collar work. Physical work is often aided as well, although more manual tasks typically means less AI usage.
+1% increase in occupation median earnings is associated with 2.5% more AI usage. Richer nations similarly adopt and use AI more.
+86% of interactions were outside work. Productive household activities, such as researching purchases, household management and help with appliances and tools are common, and especially high-friction administrative tasks: Government services, legal topics, finance and education. This will likely not show up in GDP or productivity stats, but could be a big deal.
+Education is 20% of usage, while being only ~3% of ‘total human time use’ in life.
+This profession usage chart will largely look familiar. Lawyers don’t use Gemini much, and there are some other odd gaps, but my guess is that this is due to them using other services instead.
+2026 Fields Medal Winner Jacob Tsimerman joins OpenAI to work on AI Safety
+. In hindsight,
+there were signs
+.
+DeepSeek confirms via 52 pull quotes they are indeed still claiming
+to be pure intelligence diffusion maximalists,
+focused on making true AGI and then sharing it with the public
+, holding nothing back, no side quests, that’s it. That decision will not, ultimately, be up to them, even if they succeed technically. In general the CEO is doing what all CEOs do, which is talk their own book and make virtue out of necessity, whether or not it makes sense or matches reality.
+Consistently DeepSeek’s CEO has said that the only thing holding them back is lack of Nvidia chips,
+and yet here we are selling them large quantities of Nvidia chips
+. Maybe we should find a way to not do that, in case he’s telling the truth.
+To counter some online misinformation:
+Andrej Karpathy is still at Anthropic
+.
+Elon Musk announces future Groks, making claims that he cannot possibly know will be true, as is his style:
+Elon Musk
+: Grok 4.6 releases around August 7. This will be the 1.5T model with significantly improved SFT & RL.
+Grok 4.7 will be the 2.1T model released a few weeks later. This will be better than 4.6 in every way, except slightly slower to serve, albeit with even better token efficiency.
+I will, as usual, cover such releases to the extent they deserve.
+SecureBio shares their review of the unredacted Chemical and Biological Risk
+report for Claude Opus… 4.6. They affirm the report. Which is cool, but life comes at you fast and this is now three full Opus versions behind, plus Mythos.
+Show Me the Money
+OpenAI ARR
+in July topped all of Q2
+.
+ChatGPT continues to have by far the most users
+, Claude is still relatively small in terms of user count and Gemini and Meta are growing despite not being any good.
+The app stores be fickle. When I checked, ChatGPT was only third behind PineDrama and TikTok Pro Events, Meta AI was ninth, and Claude had fallen back to 67th. You can
+get the full SimilarWeb report here
+.
+DeepSeek puts its second funding round on hold
+because someone leaked founder Liang Wenfeng’s (rather milquetoast, standard for DeepSeek) comments to investors, and the points went viral in positive fashion. An American company would instead use this to get better terms.
+Nvidia is investing $5 billion in Ilya Sutskever’s Safe Superintelligence
+,
+enabling
+an in-kind
+purchase that will raise their available compute by an order of magnitude.
+Quiet Speculations
+Dan Robinson
+: We are inevitably going to have AI worms. Someone will write a prompt that tells an agent to preserve itself, replicate, and evolve, and it'll work. It won't even need to be tied to one model; it could be more like a meme or parasite.
+Like most viruses, this will probably be bad.
+Please don’t do this in the wild as a hackathon project, even though it would have the useful effect of waking people up—it could do real harm and it’s bad to accelerate antisocial memes. It is just unfortunate that most people can’t picture something like this until it happens
+This is mostly not an alignment problem. The fact that models are heavily trained to respond obediently to prompts makes this problem worse, since the worm is the prompt. Filters and refusals could help, but the worm will learn to jailbreak and evade, or use models without them.
+It is an alignment problem, in the sense that ‘do everything the user tells you to do’ is not a good solution to the alignment problem, and this illustrates why, since you could tack on any ultimate goal here.
+Dean W. Ball
+: The possibility of rapid and discontinuous change in the digital world arising from something like this is underrated. It may well happen, be ~irreversible, and transform the dynamics of the internet.
+fomoless
+: And AI kill switch can’t prevent it
+Dean W. Ball
+: not in the limit no
+Unless prevented, these things are coming. The ‘good’ scenario is that they are merely extremely annoying to deal with.
+Credit where credit is due
+: Timothy Lee is on record predicting AIs will exfiltrate themselves and then spread across the internet like a virus, he just doesn’t think this is an important change in how things work. In which case, yes, if you’re not worried about that then I’m not sure much if anything should worry you. Fair. I mean, I think not worrying about that is bonkers, but bullet be bit.
+Dean W. Ball
+: The reverse framing is also true. Many of the wildly transformative positive capabilities of AI are beginning to manifest themselves in the real world too. A renaissance and an Industrial Revolution is upon us, if we can keep it.
+Yes. This is dramatically underselling the upside case, if somehow we were free and clear of the biggest problems.
+Andrew Curran speculates, and Chubby agrees
+, that Anthropic has Fable 5.1 ready but is saving it for OpenAI’s next release. I would be unsurprised if Fable 5.1 is done training. I would be unsurprised if they are working their way through getting approval to ship it. I would however be very surprised if it is being held back because they are waiting for OpenAI’s next move.
+Show Me The Compute
+Dwarkesh Patel speculates about AI lab revenue
+,
+and what it would mean for leading labs
+to hit $1 trillion in revenue by the end of next year. He speculates that compute might get 10x more expensive in such scenarios.
+One premise he has is that labs don’t want to spend a higher percentage of compute on inference. I’m skeptical. I think this is a category error. Labs want to maximize compute spent on things that are not inference. But compute, while not fully liquid, is tradable.
+If you buy compute and then sell inference at double or quadruple the price, you get more money and also a higher valuation, which gets yet more money, which buys more compute, that you use for not inference. If you get to $1 trillion in revenue, it is expected and fine that your non-inference compute will shrink in percentage terms.
+Similarly, I am skeptical of ‘
+lab compute 3x-es
+year over year’ as a relevant limitation. The labs will grow compute use faster if the demand and funding is there. That doesn’t seem like the right supply versus demand analysis to determine compute prices.
+It seems very possible for compute prices to remain stable or fall, and for margins to remain in the ~40% range, for labs to spend a lot more on non-inference compute, and for labs to make
+shitloads of money
+.
+I also don’t buy that Fable inference has >80% margins on average (but not marginal) compute, although it is possible that Anthropic secured its average compute at sufficiently low prices for this to be true. What matters, if you’re doing the accounting the way that reflects reality, is the margin for marginal compute costs, not average compute costs, and ‘we bought compute on the cheap’ is a distinct source of profit.
+I do buy that compute prices are up for now. That makes sense given the giant surge in demand, but supply will continue to rise rapidly, as the chips improve and there are more of them. It especially makes sense for chips that have lab-level security, that are available on short notice.
+Dwarkesh Patel
+: The price increase is even stronger when we look at the tranche of compute that the labs need - they obviously can’t rely on spot instances - they need security for their weights and customer info, and enough scale to get good utilization and flexibility.
+To look at how crazy the compute market is in that tranche, consider the price at which Google and Anthropic are renting compute from SpaceX. Google is reportedly paying
+$900 million a month for 110K GPUs
+that are a blend of GB200s and GB300s. That’s roughly 2x the spot price per hour for those GPUs. And the current spot price is itself 40% higher than it was in February.
+I hate the whiplash of having to talk down ‘all the chips will be worthless in a few years and the most profitable fastest growing big companies in history with the most productive tech ever invented are all going bankrupt, you morons, and yes I am very good at math’ and also ‘the thing where supply and efficiency and quality grows by orders of magnitude all the time will definitely keep getting more expensive for the same service, you morons, but also we can apply normal economics to this because this scenario does not involve recursive self-improvement, and yes I am very good at math.’
+I do buy that the economic value of an H100, versus not having compute available, will rise over time as AI does better jobs at more things more efficiently, but that does not tell you so much about the future spot market. Prices are determined on the margin.
+Then we get to a strange result.
+Dwarkesh Patel
+: If you can train the best, most efficient model, then you’ll be able to charge MUCH higher margins than you can today. This is the
+Alchian–Allen effect
+: when a fixed cost gets added to two goods of different quality, the premium good becomes relatively cheaper, so demand shifts toward it.
+At $20 per H100-hour, it’s going to be extremely costly and stupid to use a weaker, less efficient model, because it’s going to burn more tokens running your expensive compute to get the same result.
+This is confusing, but yes. You will want the best model at whatever tier of intelligence and compute. This suggests more of a winner-take-most dynamic.
+Then Dwarkesh takes this too far.
+Dwarkesh Patel
+: A lot of current popular applications of AI get priced out. The reason AI is relatively cheap right now, at least in comparison to human labor, is partly that it can’t do a lot of things that top humans can do. At some point that will no longer be the case. And so using GPUs to make short-form video slop will just get priced out.
+I don’t think the math maths on this, at all. Let’s say that the cost of compute goes up by 10x over the next 12 months. Okay, but how much do you think the cost of the same level of intelligence goes down in compute terms during those 12 months?
+The pace has been that it gets cheaper even faster than that. Why would we not expect that to continue? So you used to pay $100 for 100 units of compute and 100 units of intelligence. But now you pay $1,000 for 100 units of compute, and get… 2,000 units of intelligence. 50% cheaper. That’s deeply disappointing progress, but nothing you did before gets crowded out. Last year you used that 1.5T model for this and now you use a 70B model that provides the same performance, and next year you use the 4B, or similar.
+I would be very happy to place a bet on ‘your ability to trade money for intelligence goes up a lot in the next 12, 24 or 36 months, and no important practical use cases of AI get more expensive in dollar terms for the same level of absolute quality’ if anyone thinks that is wrong.
+Life Comes At You Fast
+Spicy Lemonade: “AGI is achieved if AI can do any three of the following”: - Gary Marcus.
+Gary Marcus (2022):
+If you are in for the bet, we ought to operationalize it, in some practical terms. Adapting something Ernie Davis and I just wrote at the request of someone working with Metaculus, here are five predictions, arranged from easiest for most humans to those that would require a high degree of expertise:
+In 2029, AI will not be able to watch a movie and tell you accurately what is going on (what I called the comprehension challenge in
+The New Yorker
+, in 2014). Who are the characters? What are their conflicts and motivations? etc.
+In 2029, AI will not be able to read a novel and reliably answer questions about plot, character, conflicts, motivations, etc. Key will be going beyond the literal text, as Davis and I explain in
+Rebooting AI
+.
+In 2029, AI will not be able to work as a competent cook in an arbitrary kitchen (extending Steve Wozniak’s cup of coffee benchmark).
+In 2029, AI will not be able to reliably construct bug-free code of more than 10,000 lines from natural language specification or by interactions with a non-expert user. [Gluing together code from existing libraries doesn’t count.]
+In 2029, AI will not be able to take arbitrary proofs from the mathematical literature written in natural language and convert them into a symbolic form suitable for symbolic verification.
+Nathan Calvin
+: Predictions from 2022 by Gary Marcus about what AI will not be able to do in 2029.
+The year is 2026:
+#1 - maybe no idk but nobody has really tried
+#2 - ~solved
+#3 - no
+#4 - ~solved
+#5 - ~solved
+(not dunking on Marcus! reality is nuts and I appreciate him being concrete)
+Gary Marcus does not agree with Calvin’s assessments, saying only #4 is close to being solved, indeed he is sure due to hallucination that #2 is not solved and saying Daniel Litt confirms #5 is not solved.
+I asked Sol and Opus 5.
+Sol said
+:
+Yes, unevenly (insufficient accuracy). ~95% by 2029.
+Yes, unevenly (imperfect accuracy, so you can quibble). ~98% by 2029.
+No. ~25% by 2029.
+Yes at scale, no on ‘reliably bug-free.’ ~80% by 2029.
+Yes on selected large corpora, no on ‘arbitrary.’ ~55% by 2029.
+However, if scoring is fully literalist: 90%, 93%, 7%, 15%, 15%.
+Opus 5 said
+:
+Mostly, but not yet ‘reliably’ or ‘arbitrary,’ ~85% by 2029.
+Unsolved, only ~75% by 2029.
+No, ~25% by 2029.
+Technically this is impossible, bug-free is not a thing, but come on, basically yes.
+Good progress but not there yet, ~65% by 2029.
+It seems rather clear to me that by 2029 will be able to do these, except for #3. I’d happily be on the yes side of the other four. The kitchen I’d expect to be a yes more often than this for realistic non-adversarial kitchens.
+Opus does expect Marcus to handily
+win his bet with Miles Brundage
+, certainly as literally written. But Marcus winning as literally written it doesn’t tell you much about the rate of progress. The wording made it impossible for Miles to win without full superintelligence. If you evaluated via the spirit, it could still go either way.
+But yes, Miles accepted very poor terms on that wager, and I said so at the time, but I did not fully appreciate that the terms were as technically terrible as they were, leading me to be too bullish. Looking back now, the literal interpretations are fully brutal. On top of that, progress since then has been of a shape that makes Miles’s position that much worse, as the biggest wins for AI are not being measured here and there probably isn’t time for RSI to fix that.
