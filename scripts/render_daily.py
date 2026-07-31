@@ -22,9 +22,10 @@
 """
 import sys, json, subprocess, pathlib
 from dailyjson import load_daily
+from chromepath import find_chrome
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+CHROME = find_chrome()
 LXGW = ROOT / "fonts" / "LXGWWenKai-Regular.ttf"
 
 # ---------- 配色（Claude Light 浅黄绿护眼） ----------

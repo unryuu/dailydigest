@@ -14,8 +14,9 @@ import sys, json, subprocess, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 from dailyjson import load_daily
+from chromepath import find_chrome
 
-CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+CHROME = find_chrome()
 LXGW = ROOT / "fonts" / "LXGWWenKai-Regular.ttf"
 
 CANVAS_W, CANVAS_H = 1242, 1656  # 小红书竖图 3:4
