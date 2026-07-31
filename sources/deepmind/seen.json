@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
+  "title": "Gemini Robotics ER 2 发布，主打看视频和多机协同",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
   "id": "https://cloud.google.com/blog/topics/public-sector/accelerating-frontiers-of-scientific-discovery-40-million-dollar-commitment-genesis-mission",
   "title": "Google 4000 万美元投 DOE Genesis Mission（与 OpenAI 合写无牌）",
   "date": "2026-07-22",

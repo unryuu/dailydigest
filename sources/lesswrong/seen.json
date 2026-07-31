@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/Z7pjBbK9qujhGbxws/the-high-control-dynamics-at-maple-1",
+  "title": "当年他鼓励朋友们进这座修道院，现在他说那像个邪教",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/APkFfRp2AicL9RqvT/held-out-monitors-sometimes-degrade-even-when-not-trained",
+  "title": "训练时压制一个代理指标，可能连带削弱留作验证的另一个指标",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/AqdZKyoRmN6EFCzib/foundation-models-for-oversight",
   "title": "Transluce 要专门训一个做监督的基础模型",
   "date": "2026-07-28",

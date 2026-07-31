@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+  "title": "闲置的 GPU 就是新时代停在地面的飞机",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
   "id": "https://huggingface.co/blog/hugging-science/run-aifs-yourself",
   "title": "开源天气模型，普通显卡和 CPU 也能跑",
   "date": "2026-07-28",

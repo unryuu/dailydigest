@@ -16,8 +16,16 @@
 ffmpeg -filters | grep whisper
 ```
 
-macOS 上标准 `ffmpeg` 没编译进 whisper，得用 `ffmpeg-full`（keg-only，要把
-`/opt/homebrew/opt/ffmpeg-full/bin` 加进 PATH）。
+macOS 上标准 `ffmpeg` 没编译进 whisper，得用 `ffmpeg-full`。它是 keg-only，
+brew 不会自动链接，**光往 `~/.zprofile` 里加 PATH 不够**——那只对你在 Terminal
+里手敲有效，agent 窗口的 shell 不读 `.zprofile`，裸写 `ffmpeg` / `ffprobe`
+会 command not found，而 `steps/8` 的命令全是裸写的。必须真正链接进去：
+
+```bash
+brew link --force ffmpeg-full
+```
+
+（前提是标准 `ffmpeg` 已卸载，否则两者抢同一个名字。）
 
 ## 2. 建 Python 环境
 
@@ -66,7 +74,10 @@ ls models/ fonts/ config.local.json             # 三样都在
 只要 13 秒（推理约 4 秒）。日志显示 ffmpeg 侧多加载了一个 BLAS 后端，怀疑矩阵运算
 被派给了 CPU，未深究。Windows 上是 2.2 倍实时，正常。
 
-绕法：在 macOS 上直接用 `whisper-cli` 出 `字幕.audio.srt`，再接 `subs_align.py`；
-或者把录音拿到 Windows 转写，只把 srt 带回来。两条路的转写文字一致，但**切段和
-时间轴会有差异**，而 `subs_shift.py` 的偏移量是按 ffmpeg 滤镜的切段调的——换路径
-后头一次要盯着字幕核对。
+**已改用 `whisper-cli`**（07-31 起，`steps/8` 已改）。转写文字与滤镜一致，但切段
+形态差很多，必须带 `-ml 12` 才能对回往期：不加是 60 段 / 平均 39 字，加了是
+225 段 / 10.4 字，往期滤镜是 177~274 段 / 11 字左右。段长直接影响 `subs_align`
+的段内插值精度。
+
+`ffmpeg -filters | grep whisper` 这条验收仍然留着——滤镜暂时用不上了，但它是
+「装的是 ffmpeg-full 而不是标准版」的最快判据。

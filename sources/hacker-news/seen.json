@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://thereader.mitpress.mit.edu/the-lost-civic-life-of-movie-rental-stores/",
+  "title": "录像带租赁店当年是个能聊天的地方",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://98.js.org/programs/pinball/space-cadet.html",
+  "title": "1995 年的《3D 弹球：太空军校生》被搬进了浏览器",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://steelmanlabs.com/blog/computer-use-is-far-from-solved",
+  "title": "computer use 的瓶颈是不会用界面，不是不够聪明",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://github.com/YoanWai/agent-manager",
+  "title": "一个 tmux 界面里同时管好几个编程 agent",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://fletch.sh/blog/git-worktrees-vs-clones-for-ai-agents/",
+  "title": "worktree 挡不住 agent 动你的仓库",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
   "id": "https://mac-classic.com/news/half-life-ported-to-mac-os-9/",
   "title": "有人把《半条命》移植到了 Mac OS 9",
   "date": "2026-07-29",

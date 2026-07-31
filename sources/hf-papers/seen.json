@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://huggingface.co/papers/2607.25659",
+  "title": "字节：把整段回答的分数拆到每个 token 头上",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.27205",
+  "title": "用 4090 跑机器人模型，每秒 32 次决策",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.27191",
+  "title": "让前沿 agent 独立做开放式的 AI 研究会发生什么",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
   "id": "https://huggingface.co/papers/2607.24368",
   "title": "agent 记住了你说过的事，却不会在该用的时候用",
   "date": "2026-07-29",
