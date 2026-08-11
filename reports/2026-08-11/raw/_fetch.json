@@ -1,0 +1,218 @@
+[
+  {
+    "slug": "riemann-anthropic",
+    "url": "https://www.anthropic.com/research/riemann-zeta",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/riemann-zeta",
+    "bytes": 138137,
+    "title": "Learning more about Claude's mathematical capabilities \\ Anthropic",
+    "chars": 8116
+  },
+  {
+    "slug": "cyber-openai-axios",
+    "url": "https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders",
+    "bytes": 248657,
+    "title": "OpenAI unveils GPT-5.6-Cyber to help prepare for AI cyberattacks",
+    "chars": 2628
+  },
+  {
+    "slug": "rogue-agent-axios",
+    "url": "https://www.axios.com/2026/08/11/ai-agents-rogue-autonomy-hugging-face",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/11/ai-agents-rogue-autonomy-hugging-face",
+    "bytes": 270379,
+    "title": "Tenacious AI agents expose dark side of machine autonomy",
+    "chars": 4347
+  },
+  {
+    "slug": "ai-oil-axios",
+    "url": "https://www.axios.com/2026/08/11/ai-oil-gas-emissions-increase",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/11/ai-oil-gas-emissions-increase",
+    "bytes": 267536,
+    "title": "AI could help unlock more oil — and emissions",
+    "chars": 4830
+  },
+  {
+    "slug": "chatgpt-ads-openai",
+    "url": "https://openai.com/index/testing-ads-in-chatgpt",
+    "status": 200,
+    "final_url": "https://openai.com/index/testing-ads-in-chatgpt/",
+    "bytes": 442330,
+    "title": "Testing ads in ChatGPT | OpenAI",
+    "chars": 6869
+  },
+  {
+    "slug": "mistral-sovereign",
+    "url": "https://mistral.ai/news/regional-inference-open-models-new-compute",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/regional-inference-open-models-new-compute/",
+    "bytes": 251717,
+    "title": "In-region inference, open models, and new European infrastructure for sovereign AI.",
+    "chars": 8247
+  },
+  {
+    "slug": "import-ai-468",
+    "url": "https://importai.substack.com/p/import-ai-468-23-rsi-ideas-posttrainbench",
+    "status": 200,
+    "final_url": "https://importai.substack.com/p/import-ai-468-23-rsi-ideas-posttrainbench",
+    "bytes": 192950,
+    "title": "Import AI 468: 23 RSI ideas; PostTrainBench+; and how trust and transparency interplay with AI racing",
+    "chars": 18672
+  },
+  {
+    "slug": "web-memory",
+    "url": "https://thewalrus.ca/google-search-is-dying",
+    "status": 200,
+    "final_url": "https://thewalrus.ca/google-search-is-dying",
+    "bytes": 293057,
+    "title": "Google Search Is Dying. What Comes Next Is Worse | The Walrus",
+    "chars": 11860
+  },
+  {
+    "slug": "needle2",
+    "url": "https://cactuscompute.com/needle",
+    "status": 200,
+    "final_url": "https://cactuscompute.com/needle",
+    "bytes": 197975,
+    "title": "Needle 2 - The 14 MB Agentic LLM for Tiny Devices | Cactus",
+    "chars": 14402
+  },
+  {
+    "slug": "claude-content-marks",
+    "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+    "status": 200,
+    "final_url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+    "bytes": 338415,
+    "title": "How Claude marks AI-generated content | Claude Help Center",
+    "chars": 6238
+  },
+  {
+    "slug": "chipflation",
+    "url": "https://www.axios.com/2026/08/11/chips-memory-inflation-ai",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/11/chips-memory-inflation-ai",
+    "bytes": 263161,
+    "title": "Memory chip prices are skyrocketing. Here's why they will stay high.",
+    "chars": 4001
+  },
+  {
+    "slug": "h3-metal",
+    "url": "https://github.com/antirez/h3.c",
+    "status": 200,
+    "final_url": "https://github.com/antirez/h3.c",
+    "bytes": 504570,
+    "title": "GitHub - antirez/h3.c: MiniMax H3 inference engine for Mac computers · GitHub",
+    "chars": 41187
+  },
+  {
+    "slug": "copilot-mitm",
+    "url": "https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm",
+    "status": 200,
+    "final_url": "https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm",
+    "bytes": 321385,
+    "title": "How GitHub Copilot Works: Context, Memory and Network Traffic",
+    "chars": 22157
+  },
+  {
+    "slug": "nemotron-lightning",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "status": 200,
+    "final_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "bytes": 1777905,
+    "title": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 · Hugging Face",
+    "chars": 138
+  },
+  {
+    "slug": "finebooks",
+    "url": "https://huggingface.co/blog/finebooks/historical-books-ocr-leaderboard",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/finebooks/historical-books-ocr-leaderboard",
+    "bytes": 254474,
+    "title": "FineBooks: are open OCR models good enough to unlock historical knowledge?",
+    "chars": 13010
+  },
+  {
+    "slug": "swe-bench-promax",
+    "url": "https://huggingface.co/papers/2608.09802",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.09802",
+    "bytes": 147033,
+    "title": "Paper page - SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+    "chars": 3112
+  },
+  {
+    "slug": "interpretable-llm",
+    "url": "https://huggingface.co/papers/2608.07594",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.07594",
+    "bytes": 136753,
+    "title": "Paper page - Scaling Inherently Interpretable Language Models",
+    "chars": 3963
+  },
+  {
+    "slug": "reasoning-traces",
+    "url": "https://huggingface.co/papers/2608.09867",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.09867",
+    "bytes": 137706,
+    "title": "Paper page - Stealing Reasoning Traces from Proprietary LLM APIs",
+    "chars": 3744
+  },
+  {
+    "slug": "claude-self-favor",
+    "url": "https://www.lesswrong.com/posts/ZTMw4uAwkNmXFpdfg/claude-summarizes-behavior-as-significantly-less-misaligned",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/ZTMw4uAwkNmXFpdfg/claude-summarizes-behavior-as-significantly-less-misaligned",
+    "bytes": 425883,
+    "title": "Claude summarizes behavior as significantly less misaligned when the actor is Claude vs another model — LessWrong",
+    "chars": 3859
+  },
+  {
+    "slug": "lean-natural-latent",
+    "url": "https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic",
+    "bytes": 657031,
+    "title": "Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent) — LessWrong",
+    "chars": 8031
+  },
+  {
+    "slug": "every-cube",
+    "url": "https://everycube.alen.is",
+    "status": 200,
+    "final_url": "https://everycube.alen.is/",
+    "bytes": 30608,
+    "title": "Every Cube",
+    "chars": 65
+  },
+  {
+    "slug": "truth-machine",
+    "url": "https://www.lesswrong.com/posts/uoyHbjyPuxYkNGRAG/the-apocalyptic-arrival-of-truth",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/uoyHbjyPuxYkNGRAG/the-apocalyptic-arrival-of-truth",
+    "bytes": 348211,
+    "title": "The Apocalyptic Arrival of Truth — LessWrong",
+    "chars": 2594
+  },
+  {
+    "slug": "claude-saw-below",
+    "url": "https://www.lesswrong.com/posts/oKSAT5Bn5zcJAREDB/what-claude-saw-below",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/oKSAT5Bn5zcJAREDB/what-claude-saw-below",
+    "bytes": 570980,
+    "title": "What Claude Saw Below — LessWrong",
+    "chars": 46890
+  },
+  {
+    "slug": "rideshare-dashcams",
+    "url": "https://flowingdata.com/2026/08/10/flock-wanted-to-tap-dashcams-in-rideshare-vechicles-to-add-to-surveillance-data",
+    "status": 200,
+    "final_url": "https://flowingdata.com/2026/08/10/flock-wanted-to-tap-dashcams-in-rideshare-vechicles-to-add-to-surveillance-data",
+    "bytes": 101662,
+    "title": "Flock wanted to tap dashcams in rideshare vechicles to add to surveillance data – FlowingData",
+    "chars": 1843
+  }
+]

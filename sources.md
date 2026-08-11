@@ -1,8 +1,8 @@
 # AI 日报信息源清单（sources.md）
 
-> 本表是**人类可读总览**（用户拍板 2026-07-23 起恢复维护：**每次调整信源，改 meta.json 的同时必须同步本表**）。机器运行时以各源文件夹下的 `sources/<slug>/meta.json` 为准（含抓取地址、检查频率、权重）。本表与 meta 若有冲突，以 meta 为准。当前共 **29 源**（21 博客/RSS/API + 7 个 X 账号 + 1 个线索源）。
+> 本表是**人类可读总览**（用户拍板 2026-07-23 起恢复维护：**每次调整信源，改 meta.json 的同时必须同步本表**）。机器运行时以各源文件夹下的 `sources/<slug>/meta.json` 为准（含抓取地址、检查频率、权重）。本表与 meta 若有冲突，以 meta 为准。当前共 **33 源**（25 博客/RSS/API + 7 个 X 账号 + 1 个线索源）。
 >
-> 运作方式：scout **每天全量扫全部 29 源**，没有「隔几天才看一次」的源。下面的分组只决定一件事——**判新窗口**，即回看多久以内的内容算「新」（高频源 36 小时、周刊/不定期源 168 小时、低频源 720 小时），窗口内且不在 `seen.json` 里的才收。所以月更博主哪天诈尸更新，当天就能收到。流程详见 `RUNBOOK.md` / `HANDOFF.md`。
+> 运作方式：scout **每天全量扫全部 33 源**，没有「隔几天才看一次」的源。下面的分组只决定一件事——**判新窗口**，即回看多久以内的内容算「新」（高频源通常 36-48 小时、周刊/不定期源 168 小时、低频源 720 小时），窗口内且不在 `seen.json` 里的才收。所以月更博主哪天诈尸更新，当天就能收到。流程详见 `RUNBOOK.md` / `HANDOFF.md`。
 
 ## 筛选偏好（全局）
 
@@ -35,6 +35,7 @@
 | Manifold Markets | https://manifold.markets/ | API | api | 中 | 新增 2026-07-04；赔率盒子唯一来源，不做 seen 去重 |
 | HuggingFace Papers | https://huggingface.co/papers | https://huggingface.co/papers | html | 高 | 新增 2026-06-28；每日论文榜，补研究/中国实验室盲区 |
 | claude.com/blog | https://claude.com/blog | https://claude.com/blog | html | 极高 | 新增 2026-06-28；工程方法论，有新内容一律精读 |
+| xAI News | https://x.ai/news | https://x.ai/news | html | 中 | 模型、产品和公司公告；403 时浏览器兜底，普通营销稿降权 |
 
 ## X 账号源（判新窗口 36 小时 · 2026-07-23 新增）
 
@@ -75,6 +76,9 @@
 
 | 源 | 主页 | 抓取URL | 方式 | 权重 | 节奏 |
 |---|---|---|---|---|---|
+| Anthropic Research | https://www.anthropic.com/research | https://www.anthropic.com/research | html | 极高 | 研究、对齐、可解释性与前沿红队成果；有更新进精读 |
+| Meta AI Research | https://research.meta.ai/ | https://research.meta.ai/ | html | 高 | 模型、研究与开放权重发布；卡片带绝对日期 |
+| Mistral News | https://mistral.ai/news/ | https://mistral.ai/news/rss | rss | 高 | 模型、研究、工程和欧洲政策动向；普通产品稿降权 |
 | Interconnects (Nathan Lambert) | https://www.interconnects.ai/ | https://www.interconnects.ai/feed | rss | 高 | 每 3-5 天一篇；RLHF/开源模型深度解读 |
 | Google DeepMind Blog | https://deepmind.google/discover/blog/ | https://deepmind.google/blog/rss.xml | rss | 中 | 每月数篇，成簇无固定日；2026-07-28 从 html 换 rss（索引页改客户端渲染，静态 HTML 取不到条目） |
 | Ahead of AI (Sebastian Raschka) | https://magazine.sebastianraschka.com/ | https://magazine.sebastianraschka.com/feed | rss | 高 | 每 2-4 周一篇；大事件讲透，工程师友好 |

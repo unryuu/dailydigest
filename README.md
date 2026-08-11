@@ -1,6 +1,6 @@
 # Daily Digest
 
-个人 AI 信息管线：Claude 每天抓取 + 精读 29 个信源，做成日报发 Telegram 频道 `@dragonbro888`，再分发到知乎 / 公众号 / 小红书 / 小宇宙（口播）/ B 站（视频）。
+个人 AI 信息管线：Claude 每天抓取 + 精读 33 个信源，做成日报发 Telegram 频道 `@dragonbro888`，再分发到知乎 / 公众号 / 小红书 / 小宇宙（口播）/ B 站（视频）。
 
 - 干活入口：`CLAUDE.md`（铁律）→ `STATUS.md`（盘面）→ `RUNBOOK.md`（流程骨架）→ `steps/`（分步细则）
 - 角色说明书：`roles/`（scout / reader / 核查 / 写手 / 口播 / 视频卡 + 写作定调）

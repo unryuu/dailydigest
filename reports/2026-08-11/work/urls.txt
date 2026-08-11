@@ -1,0 +1,39 @@
+# 精读：Claude 与黎曼猜想
+riemann-anthropic|https://www.anthropic.com/research/riemann-zeta
+
+# 精读：OpenAI 网络安全模型与 Agent 越权案例
+cyber-openai-axios|https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders
+rogue-agent-axios|https://www.axios.com/2026/08/11/ai-agents-rogue-autonomy-hugging-face
+
+# 精读：AI 增产油气与排放
+ai-oil-axios|https://www.axios.com/2026/08/11/ai-oil-gas-emissions-increase
+
+# 精读：ChatGPT 广告测试
+chatgpt-ads-openai|https://openai.com/index/testing-ads-in-chatgpt
+
+# 精读：Mistral 主权 AI 路线图
+mistral-sovereign|https://mistral.ai/news/regional-inference-open-models-new-compute
+
+# 补充长文候选
+import-ai-468|https://importai.substack.com/p/import-ai-468-23-rsi-ideas-posttrainbench
+web-memory|https://thewalrus.ca/google-search-is-dying
+
+# 无牌／简讯候选
+needle2|https://cactuscompute.com/needle
+claude-content-marks|https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content
+chipflation|https://www.axios.com/2026/08/11/chips-memory-inflation-ai
+h3-metal|https://github.com/antirez/h3.c
+copilot-mitm|https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm
+nemotron-lightning|https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+finebooks|https://huggingface.co/blog/finebooks/historical-books-ocr-leaderboard
+swe-bench-promax|https://huggingface.co/papers/2608.09802
+interpretable-llm|https://huggingface.co/papers/2608.07594
+reasoning-traces|https://huggingface.co/papers/2608.09867
+claude-self-favor|https://www.lesswrong.com/posts/ZTMw4uAwkNmXFpdfg/claude-summarizes-behavior-as-significantly-less-misaligned
+lean-natural-latent|https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic
+
+# 乐子候选
+every-cube|https://everycube.alen.is
+truth-machine|https://www.lesswrong.com/posts/uoyHbjyPuxYkNGRAG/the-apocalyptic-arrival-of-truth
+claude-saw-below|https://www.lesswrong.com/posts/oKSAT5Bn5zcJAREDB/what-claude-saw-below
+rideshare-dashcams|https://flowingdata.com/2026/08/10/flock-wanted-to-tap-dashcams-in-rideshare-vechicles-to-add-to-surveillance-data

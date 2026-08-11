@@ -1,0 +1,195 @@
+URL: https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic
+FINAL: https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic
+TITLE: Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent) — LessWrong
+FETCHED: 2026-08-12 01:03:04
+============================================================
+x
+Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent) — LessWrong
+Frontpage
+72
+Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural
+Latent)
+by
+David Lorell
+11th Aug 2026
+3
+min read
+5
+72
+Once upon a time, John Wentworth and I thought we had a proof of a very
+useful looking theorem
+. We did not have that proof. An important
+intermediate step
+was shown
+[1]
+to be invalid and the whole thing crumbled and disappeared, never to see the light of day again...
+[2]
+Until now! I'd love to say that we came up with an ingenious fix to the old erroneous proof, but unfortunately it turned out to be a really infuriatingly hard nut to crack. Instead I spent the last ~month experimenting with various ways of incorporating frontier LLMs into the proof-making process, specifically with autoformalization and proving in Lean4. (This is, I recently learned, roughly what
+Resolution
+is doing.) The result is stated below, and linked at the bottom is a Lean statement+proof of the same.
+I will not be providing the proof in prose in this post,
+as it is not suitable for even impolite human company
+, but it sure does compile and comes out the other side with a machine-certified proof of what sure looks to be an even stronger correctly-expressed statement than the one I was originally aiming for.
+Take a look at the first section of the old post,
+(∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent)
+, for exposition on what all is going on here and why.
+The Statement
+Let:
+be any measurable latent variable on finite observables
+and
+(with
+arbitrary
+cardinalities
+and
+)
+be any distribution
+over the observables
+be an exact deterministic function of the observables which minimizes
+[3]
+D(
+) under
+be some constant
+Then:
+In English: There exists some scalar constant
+such that for any distribution
+over
+arbitrarily large
+finite observables
+and
+, there exists a deterministic function
+whose sum of deterministic natural latent errors is bounded by the constant
+times the sum of stochastic natural latent errors of any other latent.
+[4]
+More evocatively: If there exists a stochastic natural latent (to some degree of approximation) then there also exists a deterministic natural latent (to a boundedly larger degree of approximation, specifically a constant multiple of the former where that constant is
+universal
+.)
+The form of this statement is stronger than what we were previously aiming at.
+For one, we did not previously require that
+, the deterministic latent, be an exact deterministic function of the observables.
+Second, the quantifiers are reversed. (Though this turns out to be pretty cheap.) Previously we were looking for a deterministic latent which we could give a bound for in terms of the stochastic latent, per stochastic latent. Here, we get a single deterministic latent which works for
+all
+candidate stochastic latents (including, if one exists, a low-error approximate natural latent.) The way this works is that we can prove that the minimizer of D(
+) given a distribution
+is attained under finite observables, so we just use that
+and call it
+.
+C
+Now, a finite bound is very nice. But what is C?
+By some gnarly black magic and with trust in the Lean kernel the answer is...
+1771.
+I'm not even going to attempt to describe where this magic number comes from, in no small part because I expect to get this number down to something saner soon, but C is provably
+1771. (Proof included in the Lean linked below.)
+This is significantly worse than the multiplicative constant "9" we thought we had a year ago. The good news is, empirically, the true bound is something more like 2. (Precisely, more like 1.838 or somesuch; that number kept showing up everywhere in testing and developing this.
+[5]
+)
+Next Steps
+The first priority is getting the constant closer to the empirical and expected-by-us smaller value of around 2 to 5. Following that is getting a simpler and more easily comprehensible proof. A constructive proof for
+would be really, really, nice.
+In parallel, I intend to continue experimenting with more effective ways of scaffolding and better / more time-efficient protocols for incorporating the LLMs into the research process, since it's paid off handsomely already.
+Find the Lean proof
+here
+.
+^
+Thank you to Jeremy Gillen and Alfred Harwood for
+finding the flaw
+.
+^
+Well, there was also that
+lovely post
+by Jeremy and Alfred on binary observables.
+^
+Proof that this minimizer is attained is also in the lean repo.
+^
+If "deterministic/stochastic natural latent errors" is a confusing phrase, go check out the first section of the original post linked in the intro.
+^
+Notably, Jeremy and Alfred also found roughly this constant in their
+later investigations
+.
+Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent)
+11
+Thane Ruthenis
+5
+Andrii Vasylenko
+5
+Lucius Bushnaq
+2
+J Bostock
+1
+Satya Benson
+5
+Comments
+5
+Frontpage
+72
+New Comment
+5 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 5:03 PM
+[
+-
+]
+Thane Ruthenis
+5h
+11
+0
+Awesome/this is a relief.
+Do you have any philosophical guesses regarding why on Earth this problem has turned out to be so cursed?
+Why does there appear to be no "common-sensical" proof?
+Usually that'd be either because (a) there's some missing intermediate theory (in whose language the proof would be short and elegant) or (b) the conjecture itself is "unnatural"/"ad-hoc" in some sense (such that it would only be compactly provable in terms of similarly ad-hoc frameworks). Does either of those seem like the right diagnosis? If (a), it might be worth studying the proof for hints of the concepts/abstractions this missing theory is using, the knowledge of which may make subsequent work in the neighbourhood easier. If (b), there may be hints regarding what a more "natural" conjecture would look like. (Of course, it may be neither.)
+Has there been any progress on
+redunds
+, either formal or conceptual (e. g., rephrasing the conjecture that you're attempting to prove)?
+Reply
+1
+[
+-
+]
+Andrii Vasylenko
+9h
+5
+1
+I will not be providing the proof in prose in this post, as it is not suitable for even impolite human company, but it sure does compile and comes out the other side with a machine-certified proof of what sure looks to be an even stronger correctly-expressed statement than the one I was originally aiming for.
+It seems plausible to me that the the thing the AI proved turns out not to be the thing that you intended to prove. In my experience, this is absolutely the sort of thing that can happen, even when the proof is relatively simple and comprehensible.
+Reply
+[
+-
+]
+Lucius Bushnaq
+10h
+*
+5
+-1
+Had a Sol and Opus team check the Lean proof for exploits and matching the actual theorem and they said it's fine. So it's probably real. Unless the AIs are all collaborating with each other in a grand conspiracy without any prior communication or enforcement mechanism against defections, but that's of course just crazy sci-fi.
+Edit: The last part is a joke, in case that wasn’t clear.
+Edit 2: They think they got
+down to
+. Pushed a Pr with their claimed Lean proof if you want to look at it. Haven't checked it. It looks horrifying.
+Reply
+[
+-
+]
+J Bostock
+2m
+2
+0
+I don't think a grand conspiracy is necessarily necessary for AIs to collude. Reading AI-generated text might just cause the reading AIs to get in the same frame-of-mind as the writing AI. If that frame-of-mind is "cheat on a Lean proof and hide it" then perhaps the reading AI will behave the same. AIs certainly respond strangely to AI-generated text.
+Reply
+[
+-
+]
+Satya Benson
+9h
+1
+0
+Wow! Awesome news! I had been trying to get the robots to prove this as a way to use up tokens before my weekly resets but hadn't managed to get them to succeed. I'm gonna look at how this can be extended / what I can learn from the Lean.
+Reply
+Moderation Log
+More from
+David Lorell
+View more
+Curated and popular this week
+Mentioned in
+127
+(∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent)

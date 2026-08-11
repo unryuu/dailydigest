@@ -1,0 +1,13 @@
+URL: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+FINAL: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
+TITLE: nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 · Hugging Face
+FETCHED: 2026-08-12 01:02:50
+============================================================
+A collection of generative models quantized and optimized for inference with Model Optimizer.
+•
+85 items
+•
+Updated
+about 5 hours ago
+•
+183

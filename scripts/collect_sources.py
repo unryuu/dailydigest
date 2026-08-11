@@ -33,10 +33,16 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36")
 HEADERS = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8"}
 HTML_CAPS = {
-    "anthropic": 20, "claude-blog": 25, "hf-papers": 35,
+    "anthropic": 20, "anthropic-research": 30, "claude-blog": 25, "hf-papers": 35,
     "huggingface": 30, "neodrop": 30, "the-batch": 15,
-    "thinking-machines": 15,
+    "thinking-machines": 15, "meta-ai": 25, "xai": 40,
 }
+DATE_TOKEN_RE = re.compile(
+    r"20\d\d[-/]\d\d[-/]\d\d|"
+    r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},?\s+20\d\d|"
+    r"\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d\d",
+    re.I,
+)
 
 
 def clean(value):
@@ -123,7 +129,10 @@ def html_rule(slug, url):
     path = urlsplit(url).path.rstrip("/")
     rules = {
         "anthropic": r"^/news/[^/]+$",
+        "anthropic-research": r"^/research/[^/]+$",
         "claude-blog": r"^/blog/[^/]+$",
+        "meta-ai": r"^/blog/[^/]+$",
+        "xai": r"^/news/[^/]+$",
         "hf-papers": r"^/papers/\d{4}\.\d{4,5}$",
         "huggingface": r"^/blog/[^/]+(?:/[^/]+)?$",
         "the-batch": r"^/the-batch/issue-\d+$",
@@ -139,8 +148,9 @@ def parse_html(body, base, slug):
         url = norm_url(urljoin(base, anchor.get("href", "")))
         if not url or not html_rule(slug, url):
             continue
+        anchor_text = clean(anchor.get_text(" ", strip=True))
         heading = anchor.find(["h1", "h2", "h3", "h4"])
-        title = clean(heading.get_text(" ", strip=True) if heading else anchor.get_text(" ", strip=True))
+        title = clean(heading.get_text(" ", strip=True) if heading else anchor_text)
         parent = anchor
         context = title
         for _ in range(5):
@@ -154,7 +164,9 @@ def parse_html(body, base, slug):
         # Read more / 空锚点时，从卡片上下文取一段可辨认标题；最终仍由 scout 判断。
         if not title or title.lower() in {"read more", "learn more", "view all", "view all articles"}:
             title = context
-        row = {"title": title[:350], "url": url, "date": "", "summary": context[:1200]}
+        date_match = DATE_TOKEN_RE.search(anchor_text)
+        row = {"title": title[:350], "url": url,
+               "date": date_match.group(0) if date_match else "", "summary": context[:1200]}
         # HF Papers 等卡片对同一 URL 有标题、票数、作者等多个锚点；优先保留
         # 像自然语言标题的锚点，不让更长的整卡文本盖掉真正标题。
         words = title.split()

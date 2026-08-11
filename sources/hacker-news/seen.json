@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://flowingdata.com/2026/08/10/flock-wanted-to-tap-dashcams-in-rideshare-vechicles-to-add-to-surveillance-data",
+  "title": "Flock 曾想借网约车记录仪收集车牌",
+  "date": "2026-08-11T14:04:13Z",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
+  "id": "https://everycube.alen.is",
+  "title": "有人把魔方所有状态塞进一个网页",
+  "date": "2026-08-10T23:16:25Z",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
+  "id": "https://github.com/antirez/h3.c",
+  "title": "MiniMax H3 有了 Apple Silicon 原生推理引擎",
+  "date": "2026-08-11T01:22:09Z",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
+  "id": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+  "title": "Claude 给 AI 生成内容加机器可读标记",
+  "date": "2026-08-10T21:36:56Z",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
+  "id": "https://cactuscompute.com/needle",
+  "title": "Cactus 把端侧工具调用模型压到 14MB",
+  "date": "2026-08-10T17:22:07Z",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
   "id": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
   "title": "Meta 把编程 Agent 压进一台个人电脑",
   "date": "2026-08-10",

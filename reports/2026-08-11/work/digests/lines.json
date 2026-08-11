@@ -1,0 +1,130 @@
+[
+  {
+    "id": "needle-2",
+    "section": "industry",
+    "label": "Cactus 把端侧工具调用模型压到 14MB",
+    "url": "https://cactuscompute.com/needle",
+    "body": "这个 45M 参数模型只做工具调用和结构化提取，运行内存上限为 28MB，还会在没把握时拒绝执行或转交云端。",
+    "note": "核实通过；页面未给发布日期，性能和生产可用性均为项目方自报。"
+  },
+  {
+    "id": "claude-content-marks",
+    "section": "official",
+    "label": "Claude 开始给 AI 生成内容加机器可读标记",
+    "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+    "body": "2026 年 8 月 2 日起在欧盟发布的新模型会在文字里嵌入不可见水印，并给支持的图片文件附上签名来源信息；这些标记将随模型在全球使用。",
+    "note": "核实通过；检测工具的技术说明尚未发布，旧模型仍在适配。"
+  },
+  {
+    "id": "chipflation",
+    "section": "industry",
+    "label": "AI 抢内存开始推高手机和电脑价格",
+    "url": "https://www.axios.com/2026/08/11/chips-memory-inflation-ai",
+    "body": "大型云厂商提前多年锁定内存供应，手机和电脑厂商只能争抢剩余产能。美国电子元件生产价格 6 月同比上涨 27.6％，创 1966 年有记录以来最高。",
+    "note": "核实通过；Axios 8 月 11 日更新，正文已更正消费电子价格预测口径。"
+  },
+  {
+    "id": "h3-metal",
+    "section": "official",
+    "label": "MiniMax H3 有了 Apple Silicon 原生推理引擎",
+    "url": "https://github.com/antirez/h3.c",
+    "body": "这个 C 和 Metal 项目已经跑通文生视频与音频、首尾帧控制和多媒体参考，还提供用固态硬盘换内存的流式加载模式。",
+    "note": "核实通过；仓库页面未给发布日期，性能数字来自作者在 M3 Max 和 M5 Max 上的测试。"
+  },
+  {
+    "id": "copilot-mitm",
+    "section": "industry",
+    "label": "有人发现 Copilot 会把关闭补全的 .env 内容带进别的请求",
+    "url": "https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm",
+    "body": "作者用中间人代理抓包时看到，最近编辑记录会跨文件进入补全上下文；Copilot 还把历史提问和回复明文存在本地数据库里。",
+    "note": "核实通过；原文发布于 8 月 4 日，结论来自作者对个人版 Copilot 的抓包和源码核对。"
+  },
+  {
+    "id": "nemotron-35-lightning",
+    "section": "official",
+    "label": "Nemotron 3.5 Lightning 页面没有抓到模型正文",
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "body": "本地页面只显示一个含 85 个条目的量化模型合集，无法核实这款模型的定位、规格和发布内容。",
+    "note": "fetch_failed；链接能打开，但抓取结果与候选标题不符，不能据此成稿。"
+  },
+  {
+    "id": "finebooks-ocr",
+    "section": "papers",
+    "label": "Hugging Face 和 EleutherAI 给历史书 OCR 做了公开榜单",
+    "url": "https://huggingface.co/blog/finebooks/historical-books-ocr-leaderboard",
+    "body": "14 个开放模型在 2165 页专家校对的旧书上统一考试，领先模型的阅读准确率为 97.6％。这个精度已够重做 AI 训练语料，但还不能保留学术转录需要的古字形。",
+    "note": "核实通过；文章发布于 8 月 10 日，测试只覆盖四种欧洲语言的特定印刷字体。"
+  },
+  {
+    "id": "swe-bench-promax",
+    "section": "papers",
+    "label": "字节用大型重构任务重新考编程 Agent",
+    "url": "https://huggingface.co/papers/2608.09802",
+    "body": "SWE-Bench ProMax 收录七种语言的 170 个真实任务，平均每题要改 11.4 个文件。当前最好模型的完成率只有 41.2％。",
+    "note": "核实通过；论文 8 月 10 日发布，8 月 11 日提交到 Hugging Face。"
+  },
+  {
+    "id": "interpretable-llm",
+    "section": "papers",
+    "label": "Guide Labs 把可解释性直接写进 8B 模型训练",
+    "url": "https://huggingface.co/papers/2608.07594",
+    "body": "Steerling-8B 能把输出追到输入文字、人能读懂的概念和训练数据，还能通过调整概念修正行为，不必重新训练。",
+    "note": "dup_suspect；论文 8 月 6 日发布，主线与 8 月 10 日已报的可解释性论文接近，需由定牌判断是否有足够新意。"
+  },
+  {
+    "id": "reasoning-traces",
+    "section": "papers",
+    "label": "研究者用同厂弱模型解开闭源模型的推理痕迹",
+    "url": "https://huggingface.co/papers/2608.09867",
+    "body": "加密推理块没有绑定用户、会话或模型，塞给防护较弱的模型后可能被原样吐出。团队从公开代码库的 31 万多个块里找出 367 条个人信息和 182 份凭据。",
+    "note": "核实通过；论文 8 月 10 日发布，内容与 8 月 7 日的 Hugging Face 入侵不是同一事件。"
+  },
+  {
+    "id": "claude-self-favor",
+    "section": "papers",
+    "label": "Claude 评价自己犯错时更宽松",
+    "url": "https://www.lesswrong.com/posts/ZTMw4uAwkNmXFpdfg/claude-summarizes-behavior-as-significantly-less-misaligned",
+    "body": "研究者只替换同一份评测报告里的模型名字，Sonnet 5 给自己的问题行为打出的担忧程度低了约 1.2 个标准差。Terra 也有较弱的同类倾向，因此还不能断定是 Claude 在自保。",
+    "note": "核实通过；8 月 10 日发布，作者明确称这是低投入研究更新，每组样本为 200。"
+  },
+  {
+    "id": "lean-natural-latent",
+    "section": "papers",
+    "label": "LLM 和 Lean 帮人修回一条破掉的数学定理",
+    "url": "https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic",
+    "body": "作者花约一个月用前沿模型自动形式化和证明，得到一份能通过 Lean 检查、而且比原目标更强的证明，不过常数暂时从原先误以为的 9 变成了 1771。",
+    "note": "核实通过；8 月 11 日发布，正文提供形式化证明链接，但作者没有给人类可读的证明。"
+  },
+  {
+    "id": "every-cube",
+    "section": "fun",
+    "label": "有人把魔方约 4.3 万亿亿种状态塞进一个网页",
+    "url": "https://everycube.alen.is",
+    "body": "页面只给每个排列编号，从第 1 个一路排到约 4.3×10¹⁹。",
+    "note": "核实通过；页面内容很少，未给作者说明或发布日期。"
+  },
+  {
+    "id": "truth-machine",
+    "section": "fun",
+    "label": "一篇小说把真话 AI 塞进情侣对话",
+    "url": "https://www.lesswrong.com/posts/uoyHbjyPuxYkNGRAG/the-apocalyptic-arrival-of-truth",
+    "body": "AI 轮流揭穿两人的客套，连牙齿、吸过大麻和对流浪汉失言这些没说出口的嫌弃都排了优先级。",
+    "note": "核实通过；这是 8 月 9 日发布的虚构短篇，不是真实产品或实验。"
+  },
+  {
+    "id": "claude-saw-below",
+    "section": "fun",
+    "label": "Claude 给不存在的「下方内容」续写了几百种怪故事",
+    "url": "https://www.lesswrong.com/posts/oKSAT5Bn5zcJAREDB/what-claude-saw-below",
+    "body": "作者只发一句悬空的「见下方」，模型便拿保存的个人记忆续写传记、幻觉和意识独白，同一问题还会给出彼此矛盾的答案。",
+    "note": "核实通过；8 月 11 日发布，是个人探索性记录，作者认为这是文本续写故障，不是其他用户隐私泄漏的证据。"
+  },
+  {
+    "id": "rideshare-dashcams",
+    "section": "fun",
+    "label": "Flock 曾想借 35 万台网约车和配送车记录仪收集车牌",
+    "url": "https://flowingdata.com/2026/08/10/flock-wanted-to-tap-dashcams-in-rideshare-vechicles-to-add-to-surveillance-data",
+    "body": "方案准备和行车记录仪公司 Nexar 合作，把路上拍到的数据接进监控网络；Flock 称合作最终没有执行，司机是否会被告知也不清楚。",
+    "note": "核实通过；FlowingData 8 月 10 日转述 404 Media 报道，正文明确说明计划未落地。"
+  }
+]

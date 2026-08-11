@@ -1,0 +1,14 @@
+{
+  "name": "Meta AI Research",
+  "slug": "meta-ai",
+  "length_hint": "medium",
+  "homepage": "https://research.meta.ai/",
+  "fetch_url": "https://research.meta.ai/",
+  "fetch_method": "html",
+  "weight": "高",
+  "cadence": "不定时型",
+  "cadence_note": "模型、研究与开放权重发布，无固定星期",
+  "check_frequency": "daily",
+  "window_hours": 168,
+  "notes": "官网静态 HTML 可抓，卡片带绝对日期；只收 /blog/ 正文页。"
+}

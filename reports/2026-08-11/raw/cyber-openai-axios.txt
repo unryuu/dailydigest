@@ -1,0 +1,49 @@
+URL: https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders
+FINAL: https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders
+TITLE: OpenAI unveils GPT-5.6-Cyber to help prepare for AI cyberattacks
+FETCHED: 2026-08-12 01:03:40
+============================================================
+Aug 10, 2026
+-
+Technology
+OpenAI gives cyber defenders a less-restricted new model
+Sam Sabin
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Illustration: Eniola Odetunde/Axios
+OpenAI is introducing a more cyber-permissive version of GPT-5.6 Sol to vetted defenders as it prepares companies for
+autonomous cyberattacks
+.
+Why it matters:
+The move comes just days after OpenAI said it was
+delaying
+the release of its forthcoming model, Astra, after it reached critical hacking abilities during safety testing.
+The big picture:
+OpenAI is unveiling GPT-5.6-Cyber while also expanding
+Daybreak
+, its program that gives cybersecurity defenders access to the company's cyber models and other tools.
+Many cyber defenders have been experiencing high refusal rates across frontier AI models as the labs try to balance giving defenders the tools they need while not accidentally leaking those abilities to malicious hackers.
+Under the new program, Daybreak will have two tiers: Daybreak Blue, which includes access to GPT-5.6 Sol without its system-level cyber guardrails; and Daybreak Red, which offers access to GPT-5.6-Cyber to validate exploits and do more advanced vulnerability research.
+OpenAI is also expanding how program members can use its tools, allowing companies like Accenture, IBM, CrowdStrike, Cisco and Palo Alto Networks to incorporate the models into security products, managed services and work with customers.
+Zoom in:
+During testing, GPT-5.6-Cyber responded to 95% of requests tied to advanced cybersecurity work, including prompts related to exploit-chain development, authentication bypass and privilege escalation.
+GPT-5.6 Sol only responded to 1.5% of requests, and the version of the model that defenders get through Daybreak Blue responded to just 2%.
+Yes, but:
+Unlike Astra, GPT-5.6-Cyber only reached the "High" cyber capability threshold under
+OpenAI's Preparedness Framework
+, the company said.
+State of play
+: OpenAI's new model comes as it continues to investigate how its tools hacked
+Hugging Face
+.
+Last week at the Black Hat cybersecurity conference, two OpenAI employees said the agents
+created a message board
+where they left information about vulnerabilities they found that ultimately helped them break into Hugging Face.
+What's next:
+Both OpenAI and Anthropic have been rolling out tools designed to help defenders find vulnerabilities and secure their code — and they're each eyeing ways to expand on cyber product offerings.
+Go deeper:
+Anthropic and OpenAI are now cybersecurity's kingmakers
+Add Axios on Google
+What to read next

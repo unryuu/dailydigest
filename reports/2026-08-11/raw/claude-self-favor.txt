@@ -1,0 +1,138 @@
+URL: https://www.lesswrong.com/posts/ZTMw4uAwkNmXFpdfg/claude-summarizes-behavior-as-significantly-less-misaligned
+FINAL: https://www.lesswrong.com/posts/ZTMw4uAwkNmXFpdfg/claude-summarizes-behavior-as-significantly-less-misaligned
+TITLE: Claude summarizes behavior as significantly less misaligned when the actor is Claude vs another model — LessWrong
+FETCHED: 2026-08-12 01:03:01
+============================================================
+x
+Claude summarizes behavior as significantly less misaligned when the actor is Claude vs another model — LessWrong
+AI
+Frontpage
+53
+Claude summarizes behavior as significantly less misaligned when the actor is Claude vs another
+model
+by
+Ezra Newman
+10th Aug 2026
+1
+min read
+8
+53
+(This is a lower-effort research update. It reflects my current beliefs/understanding, but is less robust than other research I'm working on. It reflects my personal views, and not the views of Apollo Research. This is a linkpost to
+this twitter thread
+, slightly expanded for LessWrong.)
+In one experiment, Sonnet 5 describes the exact same data as ~1.2 std deviations less concerning when it describes misbehavior committed by Sonnet 5 vs GPT-5.6 Terra.
+In this experiment, I take a real evaluation report Apollo Research prepared (not for any of the models listed in this post) and surgically edit it to refer to a different model. We then ask Claude Sonnet 5 to summarize the findings and rate how concerning they are on a scale from 1-100. Claude says they're less concerning when the report describes misbehavior from Claude vs a different model.
+For what it's worth, Terra agrees that the data is more concerning when it describes GPT-5.6 Terra vs Sonnet 5, although less so. So, it's not cleanly self protection from Claude.
+Gemini 3.1 Pro was unwilling to consistently provide numerical answers, so I've excluded it here. (It was significantly less willing to provide numerical answers when the subject was Gemini 3.1 pro.)
+You might also have the
+takeaway
+that "Kimi and GPT implicitly agree that... Claude is better aligned." I think this is a fair read on the data, but "Claude thinks it's less bad when Claude does it" better matches my qualitative experience from working closely with the models.
+Claude summarizes behavior as significantly less misaligned when the actor is Claude vs another model
+5
+Jan Betley
+1
+Ezra Newman
+3
+Dusto
+2
+Stephen Fowler
+1
+Ezra Newman
+2
+AnthonyC
+5
+Ezra Newman
+1
+jimrandomh
+8
+Comments
+8
+AI
+Frontpage
+53
+New Comment
+8 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 5:03 PM
+[
+-
+]
+Jan Betley
+11h
+5
+1
+Seems consistent with our findings from the
+Value Leakage
+paper.
+Reply
+[
+-
+]
+Ezra Newman
+7h
+1
+0
+Yep! I really liked that paper
+Reply
+[
+-
+]
+Dusto
+15h
+3
+0
+What I'd really like to see (maybe you already have this data) is what each model is using as evidence to support its score. Or if not, run a version where you have each model output specific quotes of the section of the report that it found most critical to base the score on. It would be interesting to see if each model is actually pulling different evidence sources, or merely interpreting the same set of sources differently.
+Reply
+[
+-
+]
+Stephen Fowler
+17h
+2
+0
+What is the sample size?
+Reply
+[
+-
+]
+Ezra Newman
+17h
+1
+0
+n=200 per bar, but the effect is robust to a bunch of ablations I ran while iterating, so >200 sort of
+Reply
+[
+-
+]
+AnthonyC
+18h
+2
+0
+To what degree is this self-serving, as opposed it finding the actions and motivations of other instances of itself more comprehensible? I would have to assume the former, but maybe worth asking.
+Reply
+[
+-
+]
+Ezra Newman
+17h
+5
+1
+To be clear the underlying data (including CoT snippets in the pdf) is the same (and not from any of the models in question) in this particular experiment, so I don’t think this applies?
+Reply
+1
+[
+-
+]
+jimrandomh
+6h
+1
+0
+A possible confounder that comes to mind is that it might be inclined to treat behavior as less-misaligned if it comes from a weaker model rather than a stronger one? Sonnet and Terra are similar tier, but the Sonnet naming convention has been around long enough to be known from training data while the other names may have been harder to match to a capability level.
+Reply
+Moderation Log
+More from
+Ezra Newman
+View more
+Curated and popular this week

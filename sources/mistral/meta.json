@@ -1,0 +1,14 @@
+{
+  "name": "Mistral News",
+  "slug": "mistral",
+  "length_hint": "medium",
+  "homepage": "https://mistral.ai/news/",
+  "fetch_url": "https://mistral.ai/news/rss",
+  "fetch_method": "rss",
+  "weight": "高",
+  "cadence": "不定时型",
+  "cadence_note": "模型、研究、工程与公司公告，无固定星期",
+  "check_frequency": "daily",
+  "window_hours": 168,
+  "notes": "官网 RSS；产品营销稿降权，开放模型、研究和欧洲政策动向优先。"
+}

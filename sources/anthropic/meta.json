@@ -10,5 +10,5 @@
   "cadence_note": "2-3 天一篇，常一天多发，无固定星期",
   "check_frequency": "daily",
   "window_hours": 24,
-  "notes": "无 RSS，直抓 HTML 索引页（列表干净）。含 research / alignment 页，权重高。"
+  "notes": "无 RSS，直抓 News HTML 索引页（列表干净）。Research 已拆为 anthropic-research 独立源。"
 }

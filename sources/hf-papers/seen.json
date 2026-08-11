@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.09867",
+  "title": "弱模型能解开闭源模型的推理痕迹",
+  "date": "2026-08-11",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.09802",
+  "title": "字节用大型重构任务重新考编程 Agent",
+  "date": "2026-08-11",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.07341",
   "title": "新评测逐题检查测试集污染是否消除",
   "date": "2026-08-10",

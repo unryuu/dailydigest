@@ -9,7 +9,7 @@
 - **别下因果/归因判断**：拿不准的关联只在 `why` 里列线索、标「疑似承接 X，待 reader 核」。
 
 ## 步骤
-1. 默认走**离线通路**：读派活方给的 `scout_candidates.json` 和 `scout_fetch.json`。前者已扫完 29 源并做机械去重，后者提供失败源。**不再联网、不重抓网页、不派 subagent。**
+1. 默认走**离线通路**：读派活方给的 `scout_candidates.json` 和 `scout_fetch.json`。前者已扫完 33 源并做机械去重，后者提供失败源。**不再联网、不重抓网页、不派 subagent。**
 2. 清理机械候选：丢导航文字、空标题、明显旧文；同 URL、同事件跨来源合一。`date_known: false` 只表示页面没给可靠日期，不等于新鲜，结合标题和摘要谨慎判断。
 3. 特殊源：
    - `manifold`：预测市场信号源，不当文章抓；只进 `odds_box`。
@@ -30,7 +30,7 @@
 ## 备份通路（派活方明确指定时才用）
 统一抓取脚本不可用时，恢复旧实现，由你自己扫源：
 
-1. 读 `sources/<slug>/meta.json`，29 源全部扫。
+1. 读 `sources/<slug>/meta.json`，33 源全部扫。
 2. 对每个 `fetch_url` 先用带浏览器 UA 的 `curl -L`，只取标题、日期、摘要。
 3. curl 超时、403 或空壳时，跑 `uv run python browser/fetch_browser.py list --slug <slug>`；已知常需浏览器的有 thezvi、import-ai、axios、hf-papers、huggingface、claude-blog、neodrop。
 4. 两条都失败才记 `fetch_failures`。X 源一个账号一个账号串行抓、间隔 ≥4 秒，解析用 `scripts/parse_nitter.py`；镜像全 403/429 时如实记录，不自行换实例。

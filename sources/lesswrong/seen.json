@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/oKSAT5Bn5zcJAREDB/what-claude-saw-below",
+  "title": "Claude 给不存在的下方内容续写怪故事",
+  "date": "Tue, 11 Aug 2026 12:45:48 GMT",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/uoyHbjyPuxYkNGRAG/the-apocalyptic-arrival-of-truth",
+  "title": "一篇小说把真话 AI 塞进情侣对话",
+  "date": "Tue, 11 Aug 2026 06:00:47 GMT",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ZTMw4uAwkNmXFpdfg/claude-summarizes-behavior-as-significantly-less-misaligned",
+  "title": "Claude 评价自己犯错时更宽松",
+  "date": "Mon, 10 Aug 2026 18:45:48 GMT",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/BbtXWgYviwGHExcJv/the-world-will-be-full-of-sci-fi-things-and-everyone-will-be",
   "title": "科幻产品铺满世界，大家照样嫌难用",
   "date": "2026-08-09",

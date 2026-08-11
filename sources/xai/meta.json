@@ -1,0 +1,14 @@
+{
+  "name": "xAI News",
+  "slug": "xai",
+  "length_hint": "short",
+  "homepage": "https://x.ai/news",
+  "fetch_url": "https://x.ai/news",
+  "fetch_method": "html",
+  "weight": "中",
+  "cadence": "高频型",
+  "cadence_note": "模型、产品和公司公告更新频繁，营销稿较多",
+  "check_frequency": "daily",
+  "window_hours": 48,
+  "notes": "requests 常见 403，由 Chromium 兜底；只收 /news/ 正文页，scout 降权普通集成与营销稿。"
+}

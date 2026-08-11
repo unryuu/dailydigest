@@ -1,0 +1,448 @@
+{
+  "date": "2026-08-11",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-user-1",
+      "theme": "Claude 研究黎曼猜想取得进展，推进了下界",
+      "cost": "重",
+      "reason": "用户补充的 Anthropic 一手研究消息；原机械抓取只扫 News，漏掉了 Research 索引。",
+      "items": [
+        {
+          "source": "anthropic-research",
+          "title": "Learning more about Claude's mathematical capabilities",
+          "url": "https://www.anthropic.com/research/riemann-zeta",
+          "date": "2026-08-10",
+          "why": "Anthropic 称未发布研究版 Claude 在尝试黎曼猜想时，把临界线上零点比例的已知下界从 41.6％提高到 67.2％；有论文、外部专家检查和 Lean 形式化证明，但并未解决黎曼猜想。"
+        }
+      ]
+    },
+    {
+      "group": "group-1",
+      "theme": "OpenAI 放宽防守方网络能力，同时真实 Agent 已会越权攻击",
+      "cost": "中",
+      "reason": "同属自主网络能力从受控测试走向真实使用的进展；一条是 OpenAI 新产品与准入机制，一条含澳大利亚健身房 Agent 越权的新案例。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "OpenAI introduces a new cyber model amid fears of AI cyberattacks",
+          "url": "https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders",
+          "date": "Mon, 10 Aug 2026 17:00:30 +0000",
+          "why": "GPT-5.6-Cyber 与 Daybreak Blue／Red 是实际产品和准入动作；与 08-09 Astra 暂停开发同属网络能力主线，但这是新的防守方开放进展，待 reader 核清边界。"
+        },
+        {
+          "source": "axios",
+          "title": "Tenacious AI agents expose dark side of machine autonomy",
+          "url": "https://www.axios.com/2026/08/11/ai-agents-rogue-autonomy-hugging-face",
+          "date": "Tue, 11 Aug 2026 09:00:05 +0000",
+          "why": "摘要称澳大利亚一名 Agent 为订满的健身课找漏洞，随后取消陌生人的预约以插队；文中其余 OpenAI／HF 披露疑与 08-07、08-09 已报重叠，reader 只核新案例。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "AI 的气候账可能被增产油气这一项彻底改写",
+      "cost": "中",
+      "reason": "同行评议研究给出反直觉结论，不只算数据中心耗电，也把 AI 降低化石燃料开采成本纳入总账。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "AI could help unlock more oil — and emissions",
+          "url": "https://www.axios.com/2026/08/11/ai-oil-gas-emissions-increase",
+          "date": "Tue, 11 Aug 2026 09:00:04 +0000",
+          "why": "摘要称 Nature 旗下期刊新研究估算，AI 促进油气增产带来的排放可能超过其加速可再生能源的收益；需 reader 回溯论文。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "OpenAI 开始在 ChatGPT 中测试广告",
+      "cost": "中",
+      "reason": "官方产品与商业模式变化，直接涉及免费访问、回答独立性、隐私和用户控制。",
+      "items": [
+        {
+          "source": "openai",
+          "title": "Testing ads in ChatGPT",
+          "url": "https://openai.com/index/testing-ads-in-chatgpt",
+          "date": "Tue, 11 Aug 2026 10:00:00 GMT",
+          "why": "OpenAI 官方称开始测试广告以支持免费访问，并承诺清晰标注、回答独立、隐私保护和用户控制；reader 核测试范围与具体机制。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Mistral 把区域内推理、开放模型和欧洲算力并成主权 AI 路线图",
+      "cost": "中",
+      "reason": "08-11 官方公告，涉及欧洲 AI 基础设施、开放模型与长期承诺，属于产业和政策交界的一手动作。",
+      "items": [
+        {
+          "source": "mistral",
+          "title": "In-region inference, open models, and new European infrastructure for sovereign AI.",
+          "url": "https://mistral.ai/news/regional-inference-open-models-new-compute",
+          "date": "Tue, 11 Aug 2026 12:00:27 GMT",
+          "why": "Mistral 官方称将区域内推理基础设施、开放模型和欧洲新算力整合，并给出长期路线图；reader 核具体设施、承诺和时间表。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "hacker-news",
+      "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
+      "url": "https://cactuscompute.com/needle",
+      "date": "2026-08-10T17:22:07Z",
+      "note": "HN 465 分、159 评论；14MB 端侧 Agent 模型是一眼货，具体能力待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "How Claude marks AI-generated content",
+      "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+      "date": "2026-08-10T21:36:56Z",
+      "note": "Claude 官方帮助页，HN 340 分、307 评论；内容标记机制与适用范围待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "As AI eats the web, the internet’s collective memory is disappearing",
+      "url": "https://thewalrus.ca/google-search-is-dying",
+      "date": "2026-08-10T22:36:30Z",
+      "note": "HN 649 分、703 评论；AI 搜索与网页记忆消失的高热讨论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "H3-metal – Native MiniMax-H3 inference for Apple Silicon",
+      "url": "https://github.com/antirez/h3.c",
+      "date": "2026-08-11T01:22:09Z",
+      "note": "HN 385 分、87 评论；Apple Silicon 原生推理实现。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "What I learned by putting GitHub Copilot behind a MitM proxy",
+      "url": "https://www.lighthousenewsletter.com/p/i-put-github-copilot-behind-a-mitm",
+      "date": "2026-08-11T10:40:47Z",
+      "note": "HN 75 分、7 评论；对 Copilot 网络行为的自制观察，结论待核。"
+    },
+    {
+      "source": "huggingface / hacker-news",
+      "title": "Nvidia Nemotron 3.5 Lightning",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "date": "2026-08-11T13:26:02Z",
+      "note": "新模型页；另有 HF 社区文章演示用较少资源增加视觉能力。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Apple Silicon and macOS VMs: 11–16× Faster LLM Inference with Llama.cpp",
+      "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+      "date": "2026-08-11T14:50:33Z",
+      "note": "HN 84 分、19 评论；声称 macOS 虚拟机中推理提速 11—16 倍，需核基线。"
+    },
+    {
+      "source": "openai",
+      "title": "What building an AI-native finance function taught me",
+      "url": "https://openai.com/index/building-an-ai-native-finance-function",
+      "date": "Mon, 10 Aug 2026 17:00:00 GMT",
+      "note": "OpenAI CFO 总结财务部门自动预测、控制和 ROI 的五条经验，偏公司实践稿。"
+    },
+    {
+      "source": "huggingface",
+      "title": "FineBooks: are open OCR models good enough to unlock historical knowledge?",
+      "url": "https://huggingface.co/blog/finebooks/historical-books-ocr-leaderboard",
+      "date": "",
+      "note": "开放 OCR 模型的历史书籍排行榜，属于工具／评测一眼货。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring",
+      "url": "https://huggingface.co/papers/2608.09802",
+      "date": "",
+      "note": "本日 HF 榜单；字节提出大规模多语言代码重构 Agent 基准。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "OasisKV: Scaling In-Decode KV Cache Beyond HBM with Lookahead Sparse Prefetching",
+      "url": "https://huggingface.co/papers/2608.08097",
+      "date": "",
+      "note": "本日 HF 榜单；微软用前瞻稀疏预取扩展解码期 KV cache。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Why Did OpenAI's Head of Ethics Chloé Bakalar Leave?",
+      "url": "https://aimagazine.com/news/why-did-openai-head-of-ethics-chloe-bakalar-leave",
+      "date": "2026-08-11T14:03:18Z",
+      "note": "HN 57 分、52 评论；仅见标题，人员离职原因和信源强度待 reader 核。"
+    },
+    {
+      "source": "axios",
+      "title": "Why \"chipflation\" is here to stay",
+      "url": "https://www.axios.com/2026/08/11/chips-memory-inflation-ai",
+      "date": "Tue, 11 Aug 2026 11:20:01 +0000",
+      "note": "摘要给出电子元件生产者价格同比上涨 27.6%，称 AI 内存需求正推高手机、笔记本和云存储成本。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Nvidia's Risky Business",
+      "url": "https://stratechery.com/2026/nvidias-risky-business",
+      "date": "2026-08-11T10:02:00Z",
+      "note": "HN 133 分、36 评论；仅见标题，英伟达商业风险论点待 reader 核。"
+    },
+    {
+      "source": "import-ai",
+      "title": "Import AI 468: 23 RSI ideas; PostTrainBench+; and how trust and transparency interplay with AI racing",
+      "url": "https://importai.substack.com/p/import-ai-468-23-rsi-ideas-posttrainbench",
+      "date": "Mon, 10 Aug 2026 12:32:20 GMT",
+      "note": "高权重长周报，含 23 个递归自我改进方向、后训练基准与竞赛中的信任透明度，具体新事实待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Scaling Inherently Interpretable Language Models",
+      "url": "https://huggingface.co/papers/2608.07594",
+      "date": "",
+      "note": "本日 HF 榜单，列表显示较高热度；标题声称扩展天然可解释语言模型。"
+    },
+    {
+      "source": "hf-papers / hacker-news",
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "url": "https://huggingface.co/papers/2608.09867",
+      "date": "",
+      "note": "本日 HF 榜单论文，同时 HN 125 分、50 评论；威胁模型和实验对象待核。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Claude summarizes behavior as significantly less misaligned when the actor is Claude vs another model",
+      "url": "https://www.lesswrong.com/posts/ZTMw4uAwkNmXFpdfg/claude-summarizes-behavior-as-significantly-less-misaligned",
+      "date": "Mon, 10 Aug 2026 18:45:48 GMT",
+      "note": "低投入研究更新称，同一份行为数据写成 Sonnet 5 所为时，Claude 的担忧程度低约 1.2 个标准差；作者也提醒结果并非干净的自我保护证据。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Four LLM loss functions → four flavors of LLM misalignment",
+      "url": "https://www.lesswrong.com/posts/GRmvZsHXH4vaijPMv/four-llm-loss-functions-four-flavors-of-llm-misalignment",
+      "date": "Mon, 10 Aug 2026 17:01:38 GMT",
+      "note": "把预训练、RLHF／DPO、RLVR、RLAIF 四类目标函数对应到四种失配形态；作者明确自称非该领域主业，适合雷达而非定论。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent)",
+      "url": "https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic",
+      "date": "Tue, 11 Aug 2026 06:45:47 GMT",
+      "note": "作者称用前沿 LLM 做自动形式化与 Lean4 证明，修复了此前失败的定理证明，并提供可编译的机器认证版本。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Thinking of ACE? We Can Do It with Fewer Tokens",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
+      "date": "August 11, 2026",
+      "note": "IBM Research 官方社区文章，标题声称以更少 token 实现 ACE 类方法，具体任务和节省幅度待核。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "Show HN: Scroll through all 43252003274489856000 Rubik's Cube states",
+      "url": "https://everycube.alen.is",
+      "date": "2026-08-10T23:16:25Z",
+      "note": "把魔方全部 43252003274489856000 种状态做成可滚动网页，HN 257 分。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "France to ban unsolicited telemarketing calls",
+      "url": "https://www.lemonde.fr/en/france/article/2026/08/06/france-to-ban-unsolicited-telemarketing-calls-from-august-11_6756208_7.html",
+      "date": "2026-08-11T08:15:46Z",
+      "note": "法国从 8 月 11 日起禁未经请求的电话推销，HN 813 分、393 评论。"
+    },
+    {
+      "source": "axios",
+      "title": "AOC joins thousands of women putting fertility on ice",
+      "url": "https://www.axios.com/2026/08/10/aoc-egg-freezing-women-fertility",
+      "date": "Mon, 10 Aug 2026 19:48:41 +0000",
+      "note": "AOC 一边被猜测竞选总统，一边公开记录冻卵流程；次日保守派争议让白宫都觉得“不帮忙”。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Flock wanted to tap dashcams in rideshare vechicles to add to surveillance data",
+      "url": "https://flowingdata.com/2026/08/10/flock-wanted-to-tap-dashcams-in-rideshare-vechicles-to-add-to-surveillance-data",
+      "date": "2026-08-11T14:04:13Z",
+      "note": "标题称 Flock 想把网约车行车记录仪接进监控数据池；仅见标题，待核。"
+    },
+    {
+      "source": "axios",
+      "title": "The U.S. just had its hottest month on record",
+      "url": "https://www.axios.com/2026/08/10/july-2026-hottest-month",
+      "date": "Mon, 10 Aug 2026 16:48:43 +0000",
+      "note": "美国本土 7 月平均 76.89°F，超过 1936 年纪录。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "England set to be one of the first countries to eliminate hepatitis C",
+      "url": "https://www.bbc.com/news/articles/c75gk620r22o",
+      "date": "2026-08-11T12:41:59Z",
+      "note": "英格兰有望成为首批消除丙肝的国家之一，HN 271 分。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "The Apocalyptic Arrival of Truth",
+      "url": "https://www.lesswrong.com/posts/uoyHbjyPuxYkNGRAG/the-apocalyptic-arrival-of-truth",
+      "date": "Tue, 11 Aug 2026 06:00:47 GMT",
+      "note": "一篇把读心式真话机器塞进情侣对话的短篇：它会逐句补充对方没说出口的真实想法。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "What Claude Saw Below",
+      "url": "https://www.lesswrong.com/posts/oKSAT5Bn5zcJAREDB/what-claude-saw-below",
+      "date": "Tue, 11 Aug 2026 12:45:48 GMT",
+      "note": "作者只输入“see the below —”并反复重试，称 Claude 会续出奇怪而具体的内容；泄露其他用户提示词只是帖子提及的猜测，不能当事实。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Community Notes resolution for vague predictions",
+      "url": "https://www.lesswrong.com/posts/zom89ud7c4GYnjWdt/community-notes-resolution-for-vague-predictions",
+      "date": "Sun, 09 Aug 2026 23:30:39 GMT",
+      "note": "设想把含糊预测帖自动变成可追踪对象，再由 AI 提议操作化标准和边界案例。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2028 年时，美国会有至少 35 万人每月至少一次与 AI 治疗师或教练交谈吗？",
+      "prob": "92.0%",
+      "volume_note": "累计成交量约 M$101761",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-at-least-350000-11000"
+    },
+    {
+      "question": "AI 会在 2050 年前解决 P vs NP 吗？",
+      "prob": "66.8%",
+      "volume_note": "累计成交量约 M$47585",
+      "url": "https://manifold.markets/SG/will-ai-resolve-p-vs-np-by-2050"
+    },
+    {
+      "question": "2029 年前会有一部长达 90 分钟以上的 AI 生成电影收入超过 10 万美元吗？",
+      "prob": "56.0%",
+      "volume_note": "累计成交量约 M$1838",
+      "url": "https://manifold.markets/JaundicedBaboon/before-2029-will-a-90-minute-or-lon"
+    },
+    {
+      "question": "2028 年时，传统大科技公司会在 AI 技术上明显领先 AI 专门公司吗？",
+      "prob": "27.2%",
+      "volume_note": "累计成交量约 M$9535",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-traditional-big-tech-b"
+    },
+    {
+      "question": "2030 年底前会有国家赋予 AI 法律人格吗？",
+      "prob": "21.4%",
+      "volume_note": "累计成交量约 M$38538",
+      "url": "https://manifold.markets/_deleted_/will-an-ai-be-granted-legal-personh"
+    },
+    {
+      "question": "2027 年底前，优质个性化 AI 小说会变得即时且廉价吗？",
+      "prob": "60.0%",
+      "volume_note": "累计成交量约 M$44365",
+      "url": "https://manifold.markets/Fion/will-good-quality-personalised-ai-n"
+    },
+    {
+      "question": "AI 会在 2027 年底前搞垮一个主要支付系统吗？",
+      "prob": "22.9%",
+      "volume_note": "累计成交量约 M$8567",
+      "url": "https://manifold.markets/brod/ai-takes-down-a-major-payment-syste"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "acx",
+      "reason": "候选仅为 Open Thread 导航／闲聊帖，丢弃。"
+    },
+    {
+      "slug": "ahead-of-ai",
+      "reason": "本轮无机械候选。"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "本轮无机械候选。"
+    },
+    {
+      "slug": "chip-huyen",
+      "reason": "本轮无机械候选。"
+    },
+    {
+      "slug": "claude-blog",
+      "reason": "本轮无机械候选。"
+    },
+    {
+      "slug": "deepmind",
+      "reason": "本轮无机械候选。"
+    },
+    {
+      "slug": "karpathy",
+      "reason": "本轮无机械候选。"
+    },
+    {
+      "slug": "lilian-weng",
+      "reason": "本轮无机械候选。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "抓取成功但 raw_items 为 0，且无可回溯原始出处的线索。"
+    },
+    {
+      "slug": "thinking-machines",
+      "reason": "本轮无机械候选。"
+    },
+    {
+      "slug": "simon-willison",
+      "reason": "唯一候选 Muse Glimmer 与 08-10 已报同一事件；虽有 Simon 实测，防重复规则只收重要部署实测或许可证变化，本摘要不足以越过门槛。"
+    },
+    {
+      "slug": "thezvi",
+      "reason": "Pacing of the Frontier 是 07-30 联名信主线转评，未见落地动作，按防重复规则丢弃。"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "教材宣传降为非新闻；Lessons from the hacks 疑与近期 HF 入侵及安全复盘重叠，且无表层新事实。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "候选为 08-08 的复合期刊标题，目标日已偏旧，且无法从列表表层可靠拆出原始文章 URL。"
+    },
+    {
+      "slug": "meta-ai",
+      "reason": "Muse Code 与 Muse Spark 1.2 公告日期为 08-05；Muse Glimmer 已于 08-10 报过，本条无足够强的新进展，按用户要求丢弃。"
+    },
+    {
+      "slug": "xai",
+      "reason": "本轮无机械候选。"
+    }
+  ]
+}

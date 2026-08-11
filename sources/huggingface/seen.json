@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/finebooks/historical-books-ocr-leaderboard",
+  "title": "历史书 OCR 有了公开榜单",
+  "date": "2026-08-11",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
   "id": "https://huggingface.co/blog/DedeProGames/rebuilding-among-ais-from-six-log-files",
   "title": "有人从六份日志重建 AI 版 Among Us",
   "date": "2026-08-08",

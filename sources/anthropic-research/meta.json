@@ -1,0 +1,14 @@
+{
+  "name": "Anthropic Research",
+  "slug": "anthropic-research",
+  "length_hint": "heavy",
+  "homepage": "https://www.anthropic.com/research",
+  "fetch_url": "https://www.anthropic.com/research",
+  "fetch_method": "html",
+  "weight": "极高",
+  "cadence": "不定时型",
+  "cadence_note": "研究、可解释性、对齐与前沿红队成果，无固定星期",
+  "check_frequency": "daily",
+  "window_hours": 168,
+  "notes": "Anthropic Research 独立索引；requests 偶发 SSL 失败时由 Chromium 兜底。新内容默认进入精读候选。"
+}

@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.axios.com/2026/08/11/ai-oil-gas-emissions-increase",
+  "title": "AI 帮石油公司增产，排放可能超过清洁收益",
+  "date": "Tue, 11 Aug 2026 09:00:04 +0000",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/11/chips-memory-inflation-ai",
+  "title": "AI 抢内存开始推高手机和电脑价格",
+  "date": "Tue, 11 Aug 2026 11:20:01 +0000",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders",
+  "title": "OpenAI 向审核过的防守方开放专用网络模型",
+  "date": "Mon, 10 Aug 2026 17:00:30 +0000",
+  "reported": true,
+  "report_date": "2026-08-11"
+ },
+ {
   "id": "https://www.axios.com/2026/08/10/zuckerberg-ai-manifesto-meta",
   "title": "扎克伯格：AI 最大的风险是权力集中在一处",
   "date": "2026-08-10",
