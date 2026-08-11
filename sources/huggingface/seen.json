@@ -1,5 +1,82 @@
 [
  {
+  "id": "https://huggingface.co/blog/DedeProGames/rebuilding-among-ais-from-six-log-files",
+  "title": "有人从六份日志重建 AI 版 Among Us",
+  "date": "2026-08-08",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://huggingface.co/blog/allenai/tutormoments",
+  "title": "TutorMoments 测 AI 导师何时闭嘴",
+  "date": "2026-08-08",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://huggingface.co/blog/muse-glimmer",
+  "title": "Hugging Face 实装说明",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://huggingface.co/blog/ofirzaf/intel-dflash-ptl",
+  "title": "Accelerating Qwen3.6 on Intel Core Ultra Series 3 with DFlash",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://huggingface.co/blog/mayafree/model-dna",
+  "title": "有人做了个工具，能指纹出一个模型是自研还是抄的",
+  "date": "2026-08-08",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://huggingface.co/blog/erikkaum/lattice-blog",
+  "title": "8MB 的检索模型，7 分钟嵌完整个英文维基",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+  "title": "LiquidAI 发布 2.6B 端侧 agent 模型",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://huggingface.co/blog/FINAL-Bench/fast-gemma",
+  "title": "单张 A10G 让 Gemma 4 跑到 510 tok/s",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://huggingface.co/blog/Alibaba-VELLDEPTH/beyond-surface-alignment-belief-zh",
+  "title": "对齐新思路：不看模型说什么，看模型信什么",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://huggingface.co/blog/lightonai/mdenseon-mlateon",
+  "title": "LightOn 开源两个 307M 的多语言长上下文检索模型",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+  "title": "DeepSeek 发布 V4 flash 正式版",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
   "id": "https://huggingface.co/blog/Dharma-AI/gpu-management",
   "title": "闲置的 GPU 就是新时代停在地面的飞机",
   "date": "2026-07-30",

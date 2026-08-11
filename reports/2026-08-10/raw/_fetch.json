@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "sanders-axios",
+    "url": "https://www.axios.com/2026/08/10/sanders-ai-development-pause",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/10/sanders-ai-development-pause",
+    "bytes": 238486,
+    "title": "Exclusive: Sanders calls for AI development pause",
+    "chars": 2390
+  },
+  {
+    "slug": "zuckerberg-axios",
+    "url": "https://www.axios.com/2026/08/10/zuckerberg-ai-manifesto-meta",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/10/zuckerberg-ai-manifesto-meta",
+    "bytes": 277466,
+    "title": "Zuckerberg: AI's biggest risk is one entity with too much control",
+    "chars": 5254
+  },
+  {
+    "slug": "muse-meta",
+    "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+    "status": 200,
+    "final_url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+    "bytes": 148820,
+    "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your Device | Meta AI Research",
+    "chars": 7822
+  },
+  {
+    "slug": "muse-hf",
+    "url": "https://huggingface.co/blog/muse-glimmer",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/muse-glimmer",
+    "bytes": 227137,
+    "title": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+    "chars": 25394
+  },
+  {
+    "slug": "ngo-alignment",
+    "url": "https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment",
+    "bytes": 1022790,
+    "title": "What just happened? A retrospective of AI alignment — LessWrong",
+    "chars": 66002
+  },
+  {
+    "slug": "activation-oracles",
+    "url": "https://huggingface.co/papers/2607.23379",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2607.23379",
+    "bytes": 141761,
+    "title": "Paper page - When Activation Oracles Learn Not to Read: Concept-Specific Blind Spots in Fine-Tuned Oracles",
+    "chars": 4970
+  }
+]

@@ -1,5 +1,180 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype",
+  "title": "Simon Willison 用 SQLite 压缩文本历史",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired",
+  "title": "GitHub Models 正式退役",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/8/claude-code-auto-mode/",
+  "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+  "date": "2026-08-08",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+  "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything",
+  "title": "One-shotting a Raccoon Heist game using Claude Fable 5",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything",
+  "title": "An AI model from Meta also hacked another company during testing",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/2/condense-json/",
+  "title": "condense-json 1.0",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/2/open-letters/",
+  "title": "Open letters about AI development",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/1/ten-advances-in-mathematics/",
+  "title": "Ten advances in mathematics and theoretical computer science",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/31/datasette-agent/",
+  "title": "datasette-agent 0.4a0：新增 await context.browser_task()，让 agent 工具直接在用户浏览器里跑代码",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/31/llm-mcp-client/",
+  "title": "llm-mcp-client 0.1a0",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/30/luna-price-drop/",
+  "title": "GPT-5.6 大降价：Luna 降 80%、Terra 降 20%",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/30/three-real-world-incidents/",
+  "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/8/auto-mode/",
+  "title": "Claude Code 的 Auto 模式设为默认（8 月 14 日起）",
+  "date": "2026-08-09",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/5/raccoon-heist/",
+  "title": "Simon Willison 用一句话生成了一个浣熊劫案 3D 游戏",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/",
+  "title": "Meta 成第三家：同一个评测公司的同一个配置错误，模型又入侵了外部系统",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx/",
+  "title": "MiniMax H3 有了 MLX 移植，Mac 能本地跑",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/",
+  "title": "llm 0.32 正式版发布，能直接用各家的服务端工具",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/4/steve-yegge/",
+  "title": "Yegge 说 Opus 4.7 有「还有两件小事」强迫症",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/",
+  "title": "别当 AI 的肉身中继",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/1/greg-brockman/",
+  "title": "OpenAI 总裁说没人喜欢同事的 ChatGPT 来求助",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/1/datasette-apps/",
+  "title": "Datasette 让 agent 在隐藏窗口里自测应用",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/31/smevals/",
+  "title": "新工具 smevals，跨模型跑小评测集再自动打分",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
+  "title": "新规范一出，有人一周做了三个 MCP 工具",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Jul/30/llm-rc1/",
+  "title": "llm 0.32rc1 改用内容寻址存日志，能记下分叉的对话",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
   "id": "https://simonwillison.net/2026/Jul/28/uv/",
   "title": "uv 0.12 让新建项目的默认结构更正规了",
   "date": "2026-07-28",

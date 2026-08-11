@@ -1,0 +1,15 @@
+# group-1 Sanders 暂停 AI 开发
+sanders-axios|https://www.axios.com/2026/08/10/sanders-ai-development-pause
+
+# group-2 Zuckerberg AI 宣言
+zuckerberg-axios|https://www.axios.com/2026/08/10/zuckerberg-ai-manifesto-meta
+
+# group-3 Meta Muse Glimmer
+muse-meta|https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
+muse-hf|https://huggingface.co/blog/muse-glimmer
+
+# group-4 Richard Ngo 对齐回顾
+ngo-alignment|https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment
+
+# group-5 Activation Oracles
+activation-oracles|https://huggingface.co/papers/2607.23379

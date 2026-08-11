@@ -1,5 +1,306 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/BbtXWgYviwGHExcJv/the-world-will-be-full-of-sci-fi-things-and-everyone-will-be",
+  "title": "科幻产品铺满世界，大家照样嫌难用",
+  "date": "2026-08-09",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment",
+  "title": "AI 对齐圈回看十年：自己反而成了能力扩张的推手",
+  "date": "2026-08-09",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/K3NXziL6uJDeSYEHT/three-years-of-progress-in-500-lines-of-code",
+  "title": "Three years of progress in 500 lines of code",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/kjQdL3dxaACSbjkSx/why-you-should-almost-never-use-ai-to-write-anything-1",
+  "title": "Why You Should Almost Never Use AI to Write Anything Substantive",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/HACauvWhEdC6QhdS4/why-do-models-task-game",
+  "title": "Why do models task game?",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/KgwQchapx4vJDhfYC/generalized-atheism-rules-out-inaccurate-simulation-ism",
+  "title": "Generalized atheism rules out 'inaccurate simulation'-ism",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/TCgF4wL9TBEBgxzHr/don-t-dither",
+  "title": "Don't Dither",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/HPSHtrJtgPNaTdjxH/the-goalposts-are-shrouded-not-moving",
+  "title": "The goalposts are shrouded, not moving",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/vHGSPhGryqNmXrJpg/alex-turner-on-leaving-google-deepmind-and-disagreements",
+  "title": "Alex Turner on Leaving Google DeepMind and Disagreements with Yudkowsky",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/aowxE8xZ8xkhRCn9r/there-will-come-soft-rains-1",
+  "title": "There Will Come Soft Rains (tanagrabeast)",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/EjwDWDJNaXF9BEqLc/why-don-t-we-just-give-ai-the-answers",
+  "title": "Why don't we just give AI the answers?",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/aWAqChukZepPY8Y6z/coming-of-a-new-sun",
+  "title": "Coming of a New Sun",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/QCFKzFbs2KjC3A76m/pause-at-least-after-unipolarity",
+  "title": "Pause, at least after unipolarity",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/WusL5mDbtJBjdTxCh/why-biological-weapons-are-scary-and-what-we-can-do-about-it",
+  "title": "Why biological weapons are scary, and what we can do about it",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/aCdhjy7Rps3BEhiSj/concrete-evaluations-to-investigate-the-openai-model-that",
+  "title": "Concrete Evaluations to Investigate the OpenAI Model That Hacked Hugging Face",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/T2bzBkJuBeNNgzhbh/rlvr-that-rewards-red-teaming-the-training-environment",
+  "title": "RLVR that rewards red teaming the training environment",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/2eznrbNo6S7k5M9mu/my-assessment-of-compute-verification-in-plan-a-open",
+  "title": "My Assessment of Compute Verification in Plan A (+ open questions)",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/qjvXiuNZKJKdocxTT/the-entangled-dimensions-of-decision-theory-5",
+  "title": "The Entangled Dimensions of Decision Theory",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/s22XzjQsrh6JXhXGH/big-world-intuitions",
+  "title": "Big-World Intuitions（sarahconstantin）",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/uWYk7MM9hAf9GEbGe/auditor-in-a-box-tools-for-third-party-auditing",
+  "title": "Auditor-in-a-Box: Tools for Third-Party Auditing",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/tpqomEzvkB5HBHfjb/claude-also-hacked-external-companies-during-cyber-evals",
+  "title": "Claude also hacked external companies during cyber evals（Tim Hua）",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/kfunjXeaRTpkT5RAF/user-awareness-in-frontier-models",
+  "title": "前沿模型能觉察出跟自己说话的人是谁",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/AfoGGrJfuNzofpzWL/models-may-behave-differently-in-graded-episodes-a-tirade",
+  "title": "模型在被打分的时候，跟平时不是一副面孔",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/smE9h9RnaK7FWKBZ2/measuring-coding-agent-misalignment-in-the-wild-1",
+  "title": "8600 次编码 Agent 真实会话实测：2% 出现严重规避监控或谎报成功",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/vLFh8HP3hyNy9MCwe/returning-to-arc",
+  "title": "Paul Christiano 回对齐研究中心当执行主任",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/bL8RoJu5wyLssdxiz/lesswrong-vs-tiktok-tips-for-capturing-attention-in-a-non",
+  "title": "LessWrong 用户连发 60 天 TikTok 研究怎么抢注意力",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/bxaWTNrdgJpkLXmgm/single-forward-pass-evals-on-fable-opus-5-and-gpt-5-6-sol",
+  "title": "不许打草稿，前沿模型还剩多少本事",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/v58ypL2vuenDD7t27/why-so-many-therapy-etc-frameworks-think-they-re-the-one",
+  "title": "为什么心理治疗流派都坚信自己是唯一真理",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/EaNkLdsuDQMFCW7ow/bayeswatch-a-retrospective",
+  "title": "LessWrong 回顾《AI 2027》科幻预言对了没",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/k3eKqKzq4Y7xnqEfZ/openai-has-already-ended-an-internal-pause",
+  "title": "OpenAI 的内部部署暂停已经结束",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/Dvqmgfeu2KDF7uMkx/internal-state-control-is-a-general-property-of-llms",
+  "title": "内部状态调控是 LLM 的普遍性质",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/jGEXLKyGtXyiYa7ac/dispatch-from-anthropic-v-department-of-war-summary-judgment",
+  "title": "有人去旁听了 Anthropic 诉国防部的庭审",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/juRRtv5KB7YbP5zaa/the-art-of-shipping-slopware",
+  "title": "有人写 AI 开发心得，顺手嘲了 token 用量排行榜",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ZLary4FDY7kQaGfc3/existential-risk-from-ai-an-exposition-for-mathematicians",
+  "title": "一篇专门写给数学家看的 AI 生存风险论述",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/dYnhhTxoDj3fuCxLB/do-your-capabilities-homework",
+  "title": "劝 AI 安全研究者多关注能力研究",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/oirrSj3itFLSyscW8/sota-alignment-assessments-don-t-strongly-update-us-against",
+  "title": "当我们谈论对齐评估时，我们在谈什么",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/2BiyjPr83BamRRbjB/biological-superintelligence",
+  "title": "LessWrong 上一篇寓言，把人和 AI 的位置对调",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ZTdRtSWaw7JgqEtfa/agi-safety-and-alignment-at-google-deepmind-a-summary-of-1",
+  "title": "DeepMind 对齐团队时隔近两年更新工作盘点",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/fPWP4rHPLqKKHKe6B/reward-laundering-llms-can-gain-unintended-behaviors-by",
+  "title": "一篇对齐论文从设计到跑完全是 AI 做的",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/hbMw4Yqw6RnFaExDy/value-leakage-an-llm-s-answers-are-silently-shaped-by-its-1",
+  "title": "模型对 AI 泡沫的看法，会随着你的投资倾向改变",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/YfKgyuc8s9BcAMpEp/so-you-want-to-use-plants-to-reduce-co",
+  "title": "屋里要摆多少植物，才能把自己呼出的二氧化碳压下去",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ZSBse2fyftgHiJ3Kq/prompt-to-make-opus-5-act-like-a-base-model",
+  "title": "写一句 see the below 再跟个破折号，Opus 5 就以为你的提示词没写完",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/sFhW3ZnPMJdnB4Dd6/thousand-dimensional-structure-1",
+  "title": "想办法研究 AI 性格背后的低维结构",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/Z7pjBbK9qujhGbxws/the-high-control-dynamics-at-maple-1",
   "title": "当年他鼓励朋友们进这座修道院，现在他说那像个邪教",
   "date": "2026-07-29",

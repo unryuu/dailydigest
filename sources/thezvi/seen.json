@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://thezvi.substack.com/p/ai-180-no-longer-in-charge",
+  "title": "AI #180: No Longer In Charge",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/further-developments-about-internal",
+  "title": "Further Developments About Internal AI Models Hacking Things",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+  "title": "Open Weights and American AI Leadership（公开信 PDF，黄仁勋作为其首条推文发出，多家公司联署）",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/openais-unreleased-model-astra-solves",
+  "title": "OpenAI 解题模型坐实叫 Astra",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://trahan.house.gov/news/documentsingle.aspx?DocumentID=3823",
+  "title": "两党议员提出联邦 AI 法案，以后各州不能再自己立法",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://thezvi.substack.com/p/ai-179-part-2-hearing-the-fire-alarm",
+  "title": "有人逐条反驳了那封开放权重公开信",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
   "id": "https://thezvi.substack.com/p/claude-opus-5-the-system-card",
   "title": "Opus 5 把提示注入的成功率压到了原来的十分之一",
   "date": "2026-07-25",

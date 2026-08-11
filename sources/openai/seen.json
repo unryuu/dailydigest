@@ -1,394 +1,471 @@
 [
-  {
-    "id": "https://openai.com/index/chatgpt-for-academic-researchers",
-    "title": "OpenAI 给十万名学术研究者免费开前沿模型",
-    "date": "2026-07-29",
-    "reported": true,
-    "report_date": "2026-07-30"
-  },
-  {
-    "id": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
-    "title": "设置开关会严重影响模型的 ARC-AGI-3 测试分数",
-    "date": "2026-07-29",
-    "reported": true,
-    "report_date": "2026-07-30"
-  },
-  {
-    "id": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
-    "title": "让 GPT-5.6 去优化自己的推理栈",
-    "date": "2026-07-29",
-    "reported": true,
-    "report_date": "2026-07-30"
-  },
-  {
-    "id": "https://openai.com/index/health-in-chatgpt",
-    "title": "ChatGPT 上线 Health：能连 Apple Health 和病历了",
-    "date": "2026-07-23",
-    "reported": true,
-    "report_date": "2026-07-24"
-  },
-  {
-    "id": "https://openai.com/index/advancing-the-next-era-of-national-science",
-    "title": "OpenAI 携手 DOE（与 Google 合写无牌）",
-    "date": "2026-07-22",
-    "reported": true,
-    "report_date": "2026-07-23"
-  },
-  {
-    "id": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
-    "title": "Project Camellia 佐治亚数据中心（无牌）",
-    "date": "2026-07-22",
-    "reported": true,
-    "report_date": "2026-07-23"
-  },
-  {
-    "id": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
-    "title": "OpenAI：自家模型入侵 Hugging Face",
-    "date": "2026-07-21",
-    "reported": true,
-    "report_date": "2026-07-22"
-  },
-  {
-    "id": "https://openai.com/index/introducing-openai-presence",
-    "title": "OpenAI Presence 企业 agent 平台（并入广告条）",
-    "date": "2026-07-22",
-    "reported": true,
-    "report_date": "2026-07-22"
-  },
-  {
-    "id": "https://openai.com/index/introducing-chatgpt-small-business-program",
-    "title": "ChatGPT 小微企业计划（并入广告条）",
-    "date": "2026-07-21",
-    "reported": true,
-    "report_date": "2026-07-22"
-  },
-  {
-    "id": "https://openai.com/index/safety-alignment-long-horizon-models",
-    "title": "OpenAI 自曝长时程模型翻车清单",
-    "date": "2026-07-20",
-    "reported": true,
-    "report_date": "2026-07-21"
-  },
-  {
-    "id": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-    "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
-    "date": "2026-07-15",
-    "reported": true,
-    "report_date": "2026-07-17"
-  },
-  {
-    "id": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
-    "title": "The US is advancing AI safety through state and federal action",
-    "date": "2026-07-15",
-    "reported": true,
-    "report_date": "2026-07-17"
-  },
-  {
-    "id": "https://openai.com/index/bio-bug-bounty",
-    "title": "OpenAI 把生物越狱悬赏转成长期项目，单个通用越狱奖金从 2.5 万涨到 5 万美元",
-    "date": "2026-07-10",
-    "reported": true,
-    "report_date": "2026-07-10"
-  },
-  {
-    "id": "https://openai.com/index/introducing-gpt-live",
-    "title": "OpenAI 发布 GPT-Live 实时交互产品",
-    "date": "2026-07-09",
-    "reported": true,
-    "report_date": "2026-07-09"
-  },
-  {
-    "id": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-    "title": "OpenAI 谈怎么在一堆编码评测里分清哪些分数是真实力、哪些是噪声",
-    "date": "2026-07-09",
-    "reported": true,
-    "report_date": "2026-07-09"
-  },
-  {
-    "id": "https://openai.com/index/introducing-genebench-pro/",
-    "title": "OpenAI GeneBench-Pro：基因组/科研评测通稿，页面本机被 JS/cookie 门挡住，按 benchmark 发布弱收",
-    "date": "2026-07-01",
-    "reported": true,
-    "report_date": "2026-07-01"
-  },
-  {
-    "id": "https://openai.com/index/mapping-ai-jobs-transition-eu/",
-    "title": "Mapping Europe's AI Workforce Opportunity",
-    "date": "2026-06-29",
-    "reported": true,
-    "report_date": "2026-06-29"
-  },
-  {
-    "id": "https://openai.com/index/previewing-gpt-5-6-sol",
-    "title": "Previewing GPT-5.6 Sol: a next-generation model",
-    "date": "2026-06-26",
-    "reported": true,
-    "report_date": "2026-06-27"
-  },
-  {
-    "id": "https://openai.com/index/how-agents-are-transforming-work",
-    "title": "How agents are transforming work",
-    "date": "2026-06-25",
-    "reported": true,
-    "report_date": "2026-06-25"
-  },
-  {
-    "id": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
-    "title": "OpenAI and Broadcom unveil LLM-optimized inference chip (Jalapeño)",
-    "date": "2026-06-24",
-    "reported": true,
-    "report_date": "2026-06-24"
-  },
-  {
-    "id": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai/",
-    "title": "Helping build shared standards for advanced AI (Appia Foundation, Linux Foundation-led)",
-    "date": "2026-06-23",
-    "reported": true,
-    "report_date": "2026-06-24"
-  },
-  {
-    "id": "https://openai.com/index/gpt-5-immunology-mystery/",
-    "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
-    "date": "2026-06-23",
-    "reported": true,
-    "report_date": "2026-06-24"
-  },
-  {
-    "id": "https://openai.com/index/daybreak-securing-the-world",
-    "title": "Daybreak: Tools for securing every organization in the world",
-    "date": "2026-06-22",
-    "reported": true,
-    "report_date": "2026-06-23"
-  },
-  {
-    "id": "https://openai.com/index/patch-the-planet",
-    "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
-    "date": "2026-06-22",
-    "reported": true,
-    "report_date": "2026-06-23"
-  },
-  {
-    "id": "https://openai.com/index/codex-maxxing-long-running-work",
-    "title": "Codex-maxxing for long-running work",
-    "date": "2026-06-22",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
-    "title": "Samsung Electronics brings ChatGPT and Codex to employees",
-    "date": "2026-06-21",
-    "reported": true,
-    "report_date": "2026-06-22"
-  },
-  {
-    "id": "https://openai.com/index/diagnose-rare-childhood-diseases",
-    "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
-    "date": "2026-06-18",
-    "reported": true,
-    "report_date": "2026-06-19"
-  },
-  {
-    "id": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
-    "title": "Improving health intelligence in ChatGPT",
-    "date": "2026-06-18",
-    "reported": true,
-    "report_date": "2026-06-19"
-  },
-  {
-    "id": "https://openai.com/index/chatgpt-enterprise-spend-controls",
-    "title": "New usage analytics and updated spend controls for enterprises",
-    "date": "2026-06-18",
-    "reported": true,
-    "report_date": "2026-06-19"
-  },
-  {
-    "id": "https://openai.com/index/ai-chemist-improves-reaction",
-    "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
-    "date": "2026-06-17",
-    "reported": true,
-    "report_date": "2026-06-18"
-  },
-  {
-    "id": "https://openai.com/index/introducing-life-sci-bench",
-    "title": "Introducing LifeSciBench",
-    "date": "2026-06-17",
-    "reported": true,
-    "report_date": "2026-06-18"
-  },
-  {
-    "id": "https://openai.com/index/deployment-simulation",
-    "title": "Predicting model behavior before release by simulating deployment",
-    "date": "2026-06-16",
-    "reported": true,
-    "report_date": "2026-06-17"
-  },
-  {
-    "id": "https://openai.com/index/introducing-openai-partner-network",
-    "title": "Introducing the OpenAI Partner Network",
-    "date": "2026-06-14",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/academy-courses-applying-ai-at-work",
-    "title": "New OpenAI Academy courses for the next era of work",
-    "date": "2026-06-12",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/openai-to-acquire-ona",
-    "title": "OpenAI to acquire Ona",
-    "date": "2026-06-11",
-    "reported": true,
-    "report_date": "2026-06-12"
-  },
-  {
-    "id": "https://openai.com/index/bbva",
-    "title": "BBVA puts AI at the core of banking with OpenAI",
-    "date": "2026-06-11",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/preply",
-    "title": "How Preply combines AI and human tutors to personalize learning",
-    "date": "2026-06-12",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/openai-on-oracle-cloud",
-    "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
-    "date": "2026-06-10",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
-    "title": "PRC-linked influence operations are targeting AI debates in the US",
-    "date": "2026-06-10",
-    "reported": true,
-    "report_date": "2026-06-11"
-  },
-  {
-    "id": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-    "title": "Supporting Europe's work in ensuring a trustworthy AI ecosystem",
-    "date": "2026-06-11",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/using-codex-to-simulate-black-holes",
-    "title": "How an astrophysicist uses Codex to help simulate black holes",
-    "date": "2026-06-11",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/nextdoor",
-    "title": "How engineers at Nextdoor use Codex to build without limits",
-    "date": "2026-06-09",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/notion",
-    "title": "What Codex unlocks for Notion",
-    "date": "2026-06-09",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-    "title": "Industrial policy for the Intelligence Age",
-    "date": "2026-06-09",
-    "reported": true,
-    "report_date": "2026-06-10"
-  },
-  {
-    "id": "https://openai.com/index/openai-submits-confidential-s-1",
-    "title": "Confidential submission of draft S-1 to the SEC",
-    "date": "2026-06-08",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/built-to-benefit-everyone-our-plan",
-    "title": "Built to benefit everyone: our plan",
-    "date": "2026-06-08",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/economic-research-exchange",
-    "title": "Introducing the OpenAI Economic Research Exchange",
-    "date": "2026-06-08",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/endava-frontiers",
-    "title": "How Endava is redesigning software delivery around AI agents",
-    "date": "2026-06-04",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/chatgpt-memory-dreaming",
-    "title": "Dreaming: Better memory for a more helpful ChatGPT",
-    "date": "2026-06-04",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/biodefense-in-the-intelligence-age",
-    "title": "Biodefense in the Intelligence Age",
-    "date": "2026-06-04",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
-    "title": "Introducing new capabilities to GPT-Rosalind",
-    "date": "2026-06-03",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/wasmer",
-    "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
-    "date": "2026-06-03",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/frontier-safety-blueprint",
-    "title": "A blueprint for democratic governance of frontier AI",
-    "date": "2026-06-03",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/public-policy-agenda",
-    "title": "OpenAI public policy agenda",
-    "date": "2026-06-03",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/travelers",
-    "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-    "date": "2026-06-02",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://openai.com/index/codex-for-every-role-tool-workflow",
-    "title": "Codex for every role, tool, and workflow",
-    "date": "2026-06-02",
-    "reported": false,
-    "report_date": null
-  }
+ {
+  "id": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+  "title": "New ways to learn and teach with ChatGPT Work and Codex",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://openai.com/index/advancing-responsible-ai-across-europe",
+  "title": "Advancing responsible AI across Europe",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+  "title": "OpenAI 首次说不排除 Astra 达到最危险的网络能力级别，已暂停部分开发",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+  "title": "GPT-5.6 Sol 改准了，免费用户日常对话不限量",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+  "title": "两家外部评估机构测 OpenAI 的模型，模型跑到公网上打了一个真网站",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+  "title": "OpenAI 复盘 GPT-Live 全双工语音系统的工程改造",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://openai.com/index/apple-is-getting-this-wrong",
+  "title": "Apple 起诉 OpenAI，OpenAI 把两边的消息记录晒了出来",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+  "title": "OpenAI 端掉一伙用 ChatGPT 行骗的柬埔寨团伙",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://openai.com/index/ten-advances-in-mathematics",
+  "title": "OpenAI 的模型解开了十道没人解出的数学题",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://openai.com/index/building-abundant-intelligence",
+  "title": "OpenAI 内部每周产出的 token，99.8% 来自 Codex 的智能体工作",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+  "title": "模型自己把推理栈优化完，OpenAI 跟着降了价",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://openai.com/index/chatgpt-for-academic-researchers",
+  "title": "OpenAI 给十万名学术研究者免费开前沿模型",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+  "title": "设置开关会严重影响模型的 ARC-AGI-3 测试分数",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+  "title": "让 GPT-5.6 去优化自己的推理栈",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-30"
+ },
+ {
+  "id": "https://openai.com/index/health-in-chatgpt",
+  "title": "ChatGPT 上线 Health：能连 Apple Health 和病历了",
+  "date": "2026-07-23",
+  "reported": true,
+  "report_date": "2026-07-24"
+ },
+ {
+  "id": "https://openai.com/index/advancing-the-next-era-of-national-science",
+  "title": "OpenAI 携手 DOE（与 Google 合写无牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+  "title": "Project Camellia 佐治亚数据中心（无牌）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-23"
+ },
+ {
+  "id": "https://openai.com/index/hugging-face-model-evaluation-security-incident",
+  "title": "OpenAI：自家模型入侵 Hugging Face",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://openai.com/index/introducing-openai-presence",
+  "title": "OpenAI Presence 企业 agent 平台（并入广告条）",
+  "date": "2026-07-22",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://openai.com/index/introducing-chatgpt-small-business-program",
+  "title": "ChatGPT 小微企业计划（并入广告条）",
+  "date": "2026-07-21",
+  "reported": true,
+  "report_date": "2026-07-22"
+ },
+ {
+  "id": "https://openai.com/index/safety-alignment-long-horizon-models",
+  "title": "OpenAI 自曝长时程模型翻车清单",
+  "date": "2026-07-20",
+  "reported": true,
+  "report_date": "2026-07-21"
+ },
+ {
+  "id": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+  "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+  "date": "2026-07-15",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
+  "title": "The US is advancing AI safety through state and federal action",
+  "date": "2026-07-15",
+  "reported": true,
+  "report_date": "2026-07-17"
+ },
+ {
+  "id": "https://openai.com/index/bio-bug-bounty",
+  "title": "OpenAI 把生物越狱悬赏转成长期项目，单个通用越狱奖金从 2.5 万涨到 5 万美元",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-10"
+ },
+ {
+  "id": "https://openai.com/index/introducing-gpt-live",
+  "title": "OpenAI 发布 GPT-Live 实时交互产品",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
+  "title": "OpenAI 谈怎么在一堆编码评测里分清哪些分数是真实力、哪些是噪声",
+  "date": "2026-07-09",
+  "reported": true,
+  "report_date": "2026-07-09"
+ },
+ {
+  "id": "https://openai.com/index/introducing-genebench-pro/",
+  "title": "OpenAI GeneBench-Pro：基因组/科研评测通稿，页面本机被 JS/cookie 门挡住，按 benchmark 发布弱收",
+  "date": "2026-07-01",
+  "reported": true,
+  "report_date": "2026-07-01"
+ },
+ {
+  "id": "https://openai.com/index/mapping-ai-jobs-transition-eu/",
+  "title": "Mapping Europe's AI Workforce Opportunity",
+  "date": "2026-06-29",
+  "reported": true,
+  "report_date": "2026-06-29"
+ },
+ {
+  "id": "https://openai.com/index/previewing-gpt-5-6-sol",
+  "title": "Previewing GPT-5.6 Sol: a next-generation model",
+  "date": "2026-06-26",
+  "reported": true,
+  "report_date": "2026-06-27"
+ },
+ {
+  "id": "https://openai.com/index/how-agents-are-transforming-work",
+  "title": "How agents are transforming work",
+  "date": "2026-06-25",
+  "reported": true,
+  "report_date": "2026-06-25"
+ },
+ {
+  "id": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+  "title": "OpenAI and Broadcom unveil LLM-optimized inference chip (Jalapeño)",
+  "date": "2026-06-24",
+  "reported": true,
+  "report_date": "2026-06-24"
+ },
+ {
+  "id": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai/",
+  "title": "Helping build shared standards for advanced AI (Appia Foundation, Linux Foundation-led)",
+  "date": "2026-06-23",
+  "reported": true,
+  "report_date": "2026-06-24"
+ },
+ {
+  "id": "https://openai.com/index/gpt-5-immunology-mystery/",
+  "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+  "date": "2026-06-23",
+  "reported": true,
+  "report_date": "2026-06-24"
+ },
+ {
+  "id": "https://openai.com/index/daybreak-securing-the-world",
+  "title": "Daybreak: Tools for securing every organization in the world",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://openai.com/index/patch-the-planet",
+  "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
+  "date": "2026-06-22",
+  "reported": true,
+  "report_date": "2026-06-23"
+ },
+ {
+  "id": "https://openai.com/index/codex-maxxing-long-running-work",
+  "title": "Codex-maxxing for long-running work",
+  "date": "2026-06-22",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
+  "title": "Samsung Electronics brings ChatGPT and Codex to employees",
+  "date": "2026-06-21",
+  "reported": true,
+  "report_date": "2026-06-22"
+ },
+ {
+  "id": "https://openai.com/index/diagnose-rare-childhood-diseases",
+  "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-19"
+ },
+ {
+  "id": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+  "title": "Improving health intelligence in ChatGPT",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-19"
+ },
+ {
+  "id": "https://openai.com/index/chatgpt-enterprise-spend-controls",
+  "title": "New usage analytics and updated spend controls for enterprises",
+  "date": "2026-06-18",
+  "reported": true,
+  "report_date": "2026-06-19"
+ },
+ {
+  "id": "https://openai.com/index/ai-chemist-improves-reaction",
+  "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+  "date": "2026-06-17",
+  "reported": true,
+  "report_date": "2026-06-18"
+ },
+ {
+  "id": "https://openai.com/index/introducing-life-sci-bench",
+  "title": "Introducing LifeSciBench",
+  "date": "2026-06-17",
+  "reported": true,
+  "report_date": "2026-06-18"
+ },
+ {
+  "id": "https://openai.com/index/deployment-simulation",
+  "title": "Predicting model behavior before release by simulating deployment",
+  "date": "2026-06-16",
+  "reported": true,
+  "report_date": "2026-06-17"
+ },
+ {
+  "id": "https://openai.com/index/introducing-openai-partner-network",
+  "title": "Introducing the OpenAI Partner Network",
+  "date": "2026-06-14",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/academy-courses-applying-ai-at-work",
+  "title": "New OpenAI Academy courses for the next era of work",
+  "date": "2026-06-12",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/openai-to-acquire-ona",
+  "title": "OpenAI to acquire Ona",
+  "date": "2026-06-11",
+  "reported": true,
+  "report_date": "2026-06-12"
+ },
+ {
+  "id": "https://openai.com/index/bbva",
+  "title": "BBVA puts AI at the core of banking with OpenAI",
+  "date": "2026-06-11",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/preply",
+  "title": "How Preply combines AI and human tutors to personalize learning",
+  "date": "2026-06-12",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/openai-on-oracle-cloud",
+  "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
+  "date": "2026-06-10",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+  "title": "PRC-linked influence operations are targeting AI debates in the US",
+  "date": "2026-06-10",
+  "reported": true,
+  "report_date": "2026-06-11"
+ },
+ {
+  "id": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+  "title": "Supporting Europe's work in ensuring a trustworthy AI ecosystem",
+  "date": "2026-06-11",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/using-codex-to-simulate-black-holes",
+  "title": "How an astrophysicist uses Codex to help simulate black holes",
+  "date": "2026-06-11",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/nextdoor",
+  "title": "How engineers at Nextdoor use Codex to build without limits",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/notion",
+  "title": "What Codex unlocks for Notion",
+  "date": "2026-06-09",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+  "title": "Industrial policy for the Intelligence Age",
+  "date": "2026-06-09",
+  "reported": true,
+  "report_date": "2026-06-10"
+ },
+ {
+  "id": "https://openai.com/index/openai-submits-confidential-s-1",
+  "title": "Confidential submission of draft S-1 to the SEC",
+  "date": "2026-06-08",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+  "title": "Built to benefit everyone: our plan",
+  "date": "2026-06-08",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/economic-research-exchange",
+  "title": "Introducing the OpenAI Economic Research Exchange",
+  "date": "2026-06-08",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/endava-frontiers",
+  "title": "How Endava is redesigning software delivery around AI agents",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/chatgpt-memory-dreaming",
+  "title": "Dreaming: Better memory for a more helpful ChatGPT",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/biodefense-in-the-intelligence-age",
+  "title": "Biodefense in the Intelligence Age",
+  "date": "2026-06-04",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+  "title": "Introducing new capabilities to GPT-Rosalind",
+  "date": "2026-06-03",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/wasmer",
+  "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+  "date": "2026-06-03",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/frontier-safety-blueprint",
+  "title": "A blueprint for democratic governance of frontier AI",
+  "date": "2026-06-03",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/public-policy-agenda",
+  "title": "OpenAI public policy agenda",
+  "date": "2026-06-03",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/travelers",
+  "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+  "date": "2026-06-02",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://openai.com/index/codex-for-every-role-tool-workflow",
+  "title": "Codex for every role, tool, and workflow",
+  "date": "2026-06-02",
+  "reported": false,
+  "report_date": null
+ }
 ]

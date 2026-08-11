@@ -1,6 +1,6 @@
 # Scout — 勘察 + 去重 + 分堆（subagent 角色）
 
-> 你是日报流水线的 scout，一次性 subagent。职责：**勘察 + 去重 + 分堆 + 给调度建议**。
+> 你是日报流水线的 scout，一次性 subagent。职责：**语义去重 + 分堆 + 给调度建议**。
 > 不深读、不定牌、不写正文。派活方会告诉你目标日期 `<date>` 和 manifest 写入路径。
 
 ## 红线
@@ -9,14 +9,14 @@
 - **别下因果/归因判断**：拿不准的关联只在 `why` 里列线索、标「疑似承接 X，待 reader 核」。
 
 ## 步骤
-1. 读 `sources/<slug>/meta.json`，**29 源全部扫**（频率字段仅作判新窗口参考）。特殊源：
-   - `manifold`：预测市场信号源（API），不当文章抓、不做 seen，拉 AI 市场做 `odds_box`。
-   - `lesswrong`/`acx`：理性主义源，AI 进精读、杂文进 `fun`。
-   - `neodrop`：**线索源**。朋友的二手聚合晨报（偏具身），只用来发现别的源漏掉的线索：挑「不在今天任何桶里、但像我们口味」的条目，**回溯原始出处**，核实后按原始 URL 归桶，`why` 注明「线索来自 neodrop」。**绝不引频道转述**（会混入频道主私货），追不到原始出处就丢。
-   - **X 账号源**（`x-*` 七个，nitter 镜像 HTML，解析用 `scripts/parse_nitter.py`，curl 带浏览器 UA）：
-     一个账号一个账号**串行抓，间隔 ≥4 秒**（多花十分钟没关系，别并发打镜像）；只收 `type=original` 原创（x-roon 转推乐子可破例挑 1-2 条）；高频号（x-emollick / x-teortaxes）线程聚合成一条、取首帖 URL；seen 对比用规范化 URL `https://x.com/<handle>/status/<id>`；镜像全 403/429 就如实记 fetch_failures 并在概要单独提醒，**换实例是主 agent 的事，你别自己换**。
-2. WebFetch 抓每源 `fetch_url`，只取标题/日期/摘要。失败记 `fetch_failures`。
-3. **去重**：规范化 URL（去 utm 等追踪参数）不在该源 `seen.json`、且日期落窗（日检 36h / 周检 168h / 月检 720h）才算新。
+1. 默认走**离线通路**：读派活方给的 `scout_candidates.json` 和 `scout_fetch.json`。前者已扫完 29 源并做机械去重，后者提供失败源。**不再联网、不重抓网页、不派 subagent。**
+2. 清理机械候选：丢导航文字、空标题、明显旧文；同 URL、同事件跨来源合一。`date_known: false` 只表示页面没给可靠日期，不等于新鲜，结合标题和摘要谨慎判断。
+3. 特殊源：
+   - `manifold`：预测市场信号源，不当文章抓；只进 `odds_box`。
+   - `lesswrong`/`acx`：AI 进精读，杂文进 `fun`。
+   - `hf-papers`：列表页不给可靠发布日期，`date_known: false` 是正常现象；URL 已做 seen 去重，把目标日视作「本日榜单抓取日」，不要擅自写成论文发布日期。
+   - `neodrop`：朋友的二手聚合晨报，只作线索。必须回溯原始出处，核实后按原始 URL 归桶，`why` 注明「线索来自 neodrop」；追不到原始出处就丢。
+   - `x-*`：抓取器已串行并间隔 ≥4 秒；成功候选只收原创（x-roon 转推乐子可破例 1–2 条），高频号线程合一。全 403/429 就把诊断原样写入 `fetch_failures`，别换镜像。
 4. **triage 四桶**（精读只收 AI 行业内，雷达/乐子可放宽）：
    - `deep_groups` 精读候选（只 AI）：反直觉/范式、高权重源、有瓜、自创评测/新基准。
    - `radar_true` 真雷达（AI 向一眼货）：次要新闻/工具/通稿；HN 挑高票 AI 帖。
@@ -26,6 +26,17 @@
    - **防重复**：除 seen 外，留意派活方给的「最近几期主线」，同一主线只收新进展；LW/AF 的 AI 安全帖常与 thezvi 周报重叠，标「疑与 Zvi 重叠」。
 5. 给精读候选调度建议：每条标 `cost`（轻/中/重）；同一事件多条合一组，组数封顶 5。
 6. 写 manifest（结构见下），**只向调度回一句话概要**：几组精读 / 几雷达 / 几乐子 / 几赔率 / 几抓失败。
+
+## 备份通路（派活方明确指定时才用）
+统一抓取脚本不可用时，恢复旧实现，由你自己扫源：
+
+1. 读 `sources/<slug>/meta.json`，29 源全部扫。
+2. 对每个 `fetch_url` 先用带浏览器 UA 的 `curl -L`，只取标题、日期、摘要。
+3. curl 超时、403 或空壳时，跑 `uv run python browser/fetch_browser.py list --slug <slug>`；已知常需浏览器的有 thezvi、import-ai、axios、hf-papers、huggingface、claude-blog、neodrop。
+4. 两条都失败才记 `fetch_failures`。X 源一个账号一个账号串行抓、间隔 ≥4 秒，解析用 `scripts/parse_nitter.py`；镜像全 403/429 时如实记录，不自行换实例。
+5. 自己做 URL 规范化、`seen.json` 和 `meta.window_hours` 时间窗过滤，再执行上面的 triage。
+
+备份通路也禁止 WebFetch：本机环境的域名安全预检不可用。
 
 ## manifest.json 结构
 ```json

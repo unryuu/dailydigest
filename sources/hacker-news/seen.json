@@ -1,5 +1,698 @@
 [
  {
+  "id": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+  "title": "Meta 把编程 Agent 压进一台个人电脑",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://openchamber.dev",
+  "title": "OpenChamber 做了跨设备 Agent 开发环境",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://www.whodunnitai.com",
+  "title": "用语音审问五名 AI 嫌疑人，找出谁是凶手",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex-mental-maps-and-spatial-reasoning-protect-your-brain-286650",
+  "title": "出租车司机死于阿尔茨海默病的比例更低",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+  "title": "Introducing Muse Code and Muse Spark 1.2",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
+  "title": "DeepMind 高层地震：Hassabis 转任主席，Jeff Dean 出走",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://twitter.com/un1c0rnioz/status/2084686552299634805",
+  "title": "Lost my phone at the office. Claude suggested tracking Bluetooth signal strength",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://www.sciencedaily.com/releases/2026/08/260803080917.htm",
+  "title": "Bioengineered chewing gum may offer a way to fight HPV and other microbes",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/",
+  "title": "Scientists discover Kelvin-Helmholtz Instability on the surface of the Sun",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.fastcompany.com/91576086/ai-psychosis-is-the-new-leadership-blind-spot-ai-leadership-blind-spots",
+  "title": "AI psychosis is the new leadership blind spot",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://notashelf.dev/posts/taste-is-all-thats-left",
+  "title": "Taste Is All That's Left",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.niemanlab.org/2026/08/americas-largest-newspaper-chain-usa-today-co-partners-with-palantir-to-analyze-audience-data/",
+  "title": "US's largest newspaper chain partners with Palantir to analyze audience data",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://herdr.dev/blog/herdr-is-joining-y-combinator/",
+  "title": "Herdr is joining Y Combinator. The runtime stays open",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.primeintellect.ai/blog/prime-agent",
+  "title": "Prime Agent: A self-improving RLM agent",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://deepgrove.ai/maple-preview",
+  "title": "Show HN: Maple-Preview – Ternary 20B MoE running at 120 tok/s on a iPhone",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+  "title": "AI fuels more than half of cybercrime in Africa as scams surge – Interpol",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/",
+  "title": "AI-Generated Images Discourage Me from Reading Your Blog",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://github.com/johnsonjh/cpm386",
+  "title": "CP/M-386 – CP/M for 386 protected mode, derived from CP/M-68K",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://github.com/janestreet/bonsai",
+  "title": "Bonsai: Janestreet's UI Library",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://ykvm.com/2026/07/swiftui-a-story-of-mediocrity/",
+  "title": "SwiftUI After 7 Years",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://sf.isopolis.city/",
+  "title": "Show HN: Isopolis – Isometric pixel map of SF",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://ssh.place",
+  "title": "Show HN: ssh ssh.place",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://9front.org/releases/2026/08/02/0/",
+  "title": "9front \"This Was Supposed to Be Fun\" Released",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://github.com/garagehq/nightcrawler/",
+  "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://github.com/lyogavin/airllm",
+  "title": "AirLLM 70B inference with single 4GB GPU",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+  "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+  "title": "MiniMax H3 Day-0 Support in ComfyUI: Open Weights, Native Audio, and 2K Video",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "http://oldvcr.blogspot.com/2026/08/mklinux-and-pimped-out-apple-workgroup.html",
+  "title": "MkLinux and the pimped-out Apple Workgroup Server 9150",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://www.science.org/content/article/deep-sea-vehicles-spot-alien-sharks-deep-beneath-waves-pacific",
+  "title": "Deep-sea vehicles spot 'alien' sharks deep beneath the waves in the Pacific",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2026-08-02/News_and_notes",
+  "title": "Wikimedia Foundation refuses union recognition, hires union-busting law firm",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://victoriametrics.com/blog/go-1-27/index.html",
+  "title": "Go 1.27 Interactive Tour",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://github.com/l00sed/termixer",
+  "title": "Termixer（终端里的 DJ 混音台）",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.jeffgeerling.com/blog/2026/getting-25g-ethernet-mac-thunderbolt/",
+  "title": "Getting 25 Gbps Thunderbolt Ethernet on My Mac Studio",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.cabinetmagazine.org/issues/70/kofen.php",
+  "title": "A past and future of trade secrets",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.raptitude.com/2026/07/how-to-exist/",
+  "title": "How to Exist",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.historytoday.com/archive/portrait-author-historian/absurdity-albert-camus",
+  "title": "The Absurdity of Albert Camus",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://zserge.com/posts/worst-htmx-ever/",
+  "title": "Let's make the worst Htmx",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://code.intellios.ai/cwbrowser/",
+  "title": "Show HN: 我做了两年的新浏览器，今天通过了 Acid 3",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://media.ccc.de/v/emf2026-74-1-using-the-railway-network-as-a-flatbed-scanner",
+  "title": "Using the railway network as a flatbed scanner (video)",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://microsoft.github.io/flint-chart/",
+  "title": "Flint: A Visualization Language for the AI Era",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://tailscale.com/blog/hugging-face-intrusion",
+  "title": "Tailscale didn't stop the Hugging Face intrusion",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.footyheadlines.com/2646571793/betting-ban-takes-effect-no-more-gambling-sponsors-in-the-premier-league.html",
+  "title": "英超正式禁止博彩赞助商",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://github.com/mokshablr/gander",
+  "title": "Gander：一个一个权限都不要的安卓文件查看器",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://github.com/MemoireMorte/Memo-1",
+  "title": "Memo-1：从零搭的 6502 电脑，拿 Minitel 当终端",
+  "date": "2026-07-28",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://hughhowey.com/the-end-of-an-era/",
+  "title": "The End of an Era（Hugh Howey）",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://graybeard.ing/the-religion-of-speed/",
+  "title": "The Religion of Speed",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
+  "title": "买电视棒之前先读这篇（Krebs）",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.uefa.com/news-media/news/02a7-213a92896eb0-54dfbf454e3b-1000--statement-on-behalf-of-uefa-and-its-55-national-associations/",
+  "title": "欧足联和它 55 个成员协会宣布不参加国际足联的赛事",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+  "title": "What a Distilled Model Inherits From Its Teacher（CTGT）",
+  "date": "2026-07-29",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://api-docs.deepseek.com/updates/",
+  "title": "DeepSeek-V4-Flash Update（官方 changelog）",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://github.com/xoreaxeaxeax/rosenbridge",
+  "title": "部分 x86 CPU 里藏着硬件后门，用户态代码能碰内核数据",
+  "date": "2026-08-08",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://seg6.space/posts/phone-server/",
+  "title": "我的服务器，现在是一台手机",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://specification.website/spec/foundations/for-sale-dns/",
+  "title": "域名有没有卖的，现在可以在 DNS 记录里直接标注",
+  "date": "2026-08-08",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://www.runnersworld.com/news/a73355106/hamster-wheel-strava-running/",
+  "title": "物理学家给仓鼠的跑轮装了传感器，上传到 Strava",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://mezha.net/eng/bukvy/ca117584_denmark_requires_oral/",
+  "title": "丹麦要求高中生对书面作业做口头答辩，防 AI 作弊",
+  "date": "2026-08-08",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://code.claude.com/docs/en/cross-session-messaging",
+  "title": "Claude Code 的会话之间可以互相留言了",
+  "date": "2026-08-08",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://mezha.net/eng/bukvy/ca117584_openai_acquires_nextslide/",
+  "title": "OpenAI 收购了做演示文稿的 AI 公司 NextSlide",
+  "date": "2026-08-08",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://genesisopenmodels.anl.gov/",
+  "title": "美国能源部下场做开放权重模型，头一个给科研用",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-09"
+ },
+ {
+  "id": "https://www.youtube.com/watch?v=GwMtzhjCzyc",
+  "title": "一张会打印出自己的 GIF 图片",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.mayerowitz.io/blog/mario-meets-pareto",
+  "title": "有人把马里奥赛车的角色配置算成了一道最优解问题",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://mastodon.gamedev.place/@rygorous/117047697255584965",
+  "title": "手机更新完，把主人跑步认成了有人抢手机跑了",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
+  "title": "新墨西哥州法院判 Meta 再赔 5.67 亿美元",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+  "title": "AMD 收购 Taalas，把模型权重刻进硅片",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://blog.fogus.me/llm/born-against.html",
+  "title": "为什么硬核编程圈子越来越抵触 LLM",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DklU4737opt",
+  "title": "DeepMind 研究者发立场论文：LLM 做不了直觉跳跃式的科学发现",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://neon.com/blog/how-castform-neon-beats-frontier-models-on-price-and-efficiency",
+  "title": "Neon 用 4B 开源模型做检索，准确率追平 GPT-5.6 Sol，成本降到百分之一",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
+  "title": "Atlassian 的 Rovo 可被提示词注入外泄企业数据",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://github.com/Carloscodix/qapla",
+  "title": "有人在 8 美元的单片机上从零训了个小语言模型",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://seg6.space/posts/center-div/",
+  "title": "刚学会居中一个 div，浏览器又加了侧边栏",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://queue.acm.org/detail.cfm?id=3807963",
+  "title": "ACM Queue 列了软件工程和生成式 AI 的八个迷思",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
+  "title": "Pi 团队论证极简编程外壳更便宜也更准",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://mistral.ai/news/shieldstral/",
+  "title": "Mistral 开源一个 3B 的内容审核模型",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://short-stories.co/@raybradbury/there-will-come-soft-rains-6k8vr4xxlnmj",
+  "title": "布拉德伯里 1950 年写的那篇小说，故事就发生在今天",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://github.com/leonickson1/Swiftlet",
+  "title": "Swiftlet 让 Mac 用 4.3GB 内存跑 80B Qwen",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://blog.exe.dev/devtools-must-be-open-source",
+  "title": "Crawshaw 论证开发工具必须开源",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://www.seangoedecke.com/llms-reward-expertise/",
+  "title": "LLM 放大行家的优势",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
+  "title": "DeepSeek V4 Flash 塞进了单张 AMD 卡",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+  "title": "TechCrunch",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://gruhn.me/blog/2026-08-03/",
+  "title": "「别当人肉代理」",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+  "title": "SQLite 被人批量报了 55 条 CVE 漏洞，54 条是 AI 编的",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://qwen.ai/blog?id=qwen3.8",
+  "title": "阿里放出 Qwen3.8-Max，2.4 万亿参数，下周开源权重",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://insider.btcpp.dev/p/when-randombytes-runs-but-doesnt",
+  "title": "随机数函数跑得好好的，产出却不随机",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://github.com/tom-ilan/cycloidal_gearbox",
+  "title": "15 岁少年 3D 打印了一台摆线减速器",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://publicdomainreview.org/essay/ars-notoria/",
+  "title": "中世纪有本书，号称念对咒语就能学会全部学问",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://diataxis.fr/",
+  "title": "Diátaxis 把技术文档分成教程、指南、参考、解释四块",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://www.wafer.ai/blog/kimi-k3-mi355x",
+  "title": "用 AMD 卡跑 Kimi K3，每美元性能超过英伟达 B300",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+  "title": "字节发布新视频模型，一次能生成三十秒",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://signoregalilei.com/2026/07/26/the-most-official-water-costs-120000-a-gallon/",
+  "title": "最标准的水，一加仑十二万美元",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://github.com/sqliteai/waste",
+  "title": "有人在 MacBook 上跑 Kimi K3，每秒半个 token",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://john.fun/elevators",
+  "title": "综述：电梯调度算法",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://manifest.build/blog/why-we-deprecated-our-llm-router/",
+  "title": "Manifest 把自己做的模型路由器砍了",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://github.com/yc-software/qm",
+  "title": "YC 开源 qm，在 Slack 和网页里多人共用 agent",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://github.com/golang/go/issues/80590",
+  "title": "Go 官方提案给标准库补集合、有序映射和泛型堆",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.quantamagazine.org/is-ai-reasoning-right-for-the-wrong-reasons-20260731/",
+  "title": "推理模型是不是蒙对的",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://jssfr.de/2026-07-27-bad-apple-but-traceroute.html",
+  "title": "有人用 traceroute 的路由跳数播《Bad Apple》",
+  "date": "2026-07-27",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://lwn.net/Articles/1086041/",
+  "title": "GCC 不再接收 LLM 生成的代码",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://earendil.com/posts/session-portability/",
+  "title": "你带不走自己的会话",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://geospatialml.com/posts/reviewing-ai-slop/",
+  "title": "22 篇投稿，15 篇有编造的引用或作者",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://blog.google/security/chrome-stronger-with-every-update/",
+  "title": "Chrome 两个版本修掉的漏洞，比之前 23 个版本加起来还多",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
   "id": "https://thereader.mitpress.mit.edu/the-lost-civic-life-of-movie-rental-stores/",
   "title": "录像带租赁店当年是个能聊天的地方",
   "date": "2026-07-30",

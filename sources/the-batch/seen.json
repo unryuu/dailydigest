@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.deeplearning.ai/the-batch/issue-364/",
+  "title": "吴恩达用 AI 查自家项目的安全漏洞，两个闭源工具都不肯干",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
   "id": "https://www.deeplearning.ai/the-batch/meta-sparks-a-price-war",
   "title": "Meta 转闭源打价格战，输出每百万 4.25 美元",
   "date": "2026-07-24",

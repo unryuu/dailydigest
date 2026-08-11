@@ -1,0 +1,187 @@
+{
+  "date": "2026-08-10",
+  "fetch_failures": [
+    {"slug": "x-emollick", "url": "https://nitter.kareem.one/emollick", "error": "Cloudflare challenge (403)"},
+    {"slug": "x-goodside", "url": "https://nitter.kareem.one/goodside", "error": "Cloudflare challenge (403)"},
+    {"slug": "x-karpathy", "url": "https://nitter.kareem.one/karpathy", "error": "Cloudflare challenge (403)"},
+    {"slug": "x-neelnanda", "url": "https://nitter.kareem.one/NeelNanda5", "error": "Cloudflare challenge (403)"},
+    {"slug": "x-roon", "url": "https://nitter.kareem.one/tszzl", "error": "Cloudflare challenge (403)"},
+    {"slug": "x-sama", "url": "https://nitter.kareem.one/sama", "error": "Cloudflare challenge (403)"},
+    {"slug": "x-teortaxes", "url": "https://nitter.kareem.one/teortaxesTex", "error": "Cloudflare challenge (403)"}
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Nathan Lambert 复盘近期模型入侵事件，提炼工程教训",
+      "cost": "中",
+      "reason": "高权重源（Interconnects），HF/OpenAI 入侵事件后的系统性复盘，可能含新事实。注意 HF 入侵主线已降级为仅收重大转折，此篇需 reader 核是否含超越既有报道的新事实。",
+      "items": [
+        {
+          "source": "interconnects",
+          "title": "Lessons from the hacks",
+          "url": "https://www.interconnects.ai/p/lessons-from-the-hacks",
+          "date": "2026-08-09",
+          "why": "Nathan Lambert 对近期模型入侵事件的工程复盘；疑与 HF 入侵饱和主线重叠，待 reader 核是否含新事实或新分析框架"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Richard Ngo 写 AI 对齐领域回顾：发生了什么",
+      "cost": "重",
+      "reason": "Richard Ngo 是 AI 安全领域重要声音（前 DeepMind AGI safety，现 OpenAI），题目暗示对对齐领域近年轨迹的系统性反思，可能含对当前路线的批评。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "What just happened? A retrospective of AI alignment",
+          "url": "https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment",
+          "date": "2026-08-09",
+          "why": "Richard Ngo 的对齐领域回顾，题目暗示对当前对齐路线的质疑；LW 高 karma，AI 安全核心议题"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "开放权重模型逼近 Mythos 能力级别，安全准备不足",
+      "cost": "中",
+      "reason": "开放权重安全辩论的新声音，从工程/安全准备角度论证开放权重 Mythos 级别模型的风险，与 Scott Alexander 前几天的「禁开放权重不划算」形成对立视角。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Open-Weights Mythos Capabilities Are Coming. We're Not Ready.",
+          "url": "https://www.lesswrong.com/posts/wJunGnpY3qACWSvnh/open-weights-mythos-capabilities-are-coming-we-re-not-ready",
+          "date": "2026-08-07",
+          "why": "开放权重安全辩论的反方视角，与 08-06 Scott Alexander「禁开放权重不划算」形成张力"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "Marcus Hutter 论 AGI 时代的宏观经济学",
+      "cost": "中",
+      "reason": "Marcus Hutter（Hutter Prize 设立者、AI 理论家）写 AGI 经济影响，偏学术但作者分量重。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Job-Less Utopia: Macroeconomics in the Age of AGI",
+          "url": "https://www.lesswrong.com/posts/bPuMatTPjfJCfXiAB/job-less-utopia-macroeconomics-in-the-age-of-agi",
+          "date": "2026-08-08",
+          "why": "Marcus Hutter 的 AGI 经济学分析，作者分量重；AGI 社会影响的系统性讨论"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "hacker-news",
+      "title": "How I use LLMs to learn complex topics",
+      "url": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/",
+      "date": "2026-08-10",
+      "note": "513 分 / 290 评论，高互动实操指南，用户分享用 LLM 学习复杂主题的方法"
+    },
+    {
+      "source": "huggingface",
+      "title": "TutorMoments: Do AI tutors know when to help and when to hold back?",
+      "url": "https://huggingface.co/blog/allenai/tutormoments",
+      "date": "2026-08-08",
+      "note": "Allen AI 的 AI 辅导评估研究，测 AI 导师是否知道何时介入、何时退后"
+    },
+    {
+      "source": "huggingface",
+      "title": "GLInt: Geometry-Matched Hard Negatives for Late-Interaction Retrieval",
+      "url": "https://huggingface.co/blog/chungimungi/glint",
+      "date": "2026-08-08",
+      "note": "检索模型改进，用几何匹配的难负样本提升 late-interaction 检索效果"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The tragedy of the commons, AI edition",
+      "url": "https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition",
+      "date": "2026-08-06",
+      "note": "《经济学人》AI 公地悲剧分析，91 分 / 53 评论"
+    },
+    {
+      "source": "the-batch",
+      "title": "DeepSeek-V4-Flash Outshines Pro, The Biggest GitHub Crawl Yet, Engineering System Prompts for Safer Code",
+      "url": "https://www.deeplearning.ai/the-batch/issue-365",
+      "date": "2026-08-08",
+      "note": "Issue 365：DeepSeek V4 Flash（7 月 31 日发布）在多项指标超过 Pro 版；另有 GitHub 最大代码爬取数据集和代码安全系统提示词工程。低权重源，且模型已发布一周，仅当雷达信号——若读者判断模型本身有料可追原始发布。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Don't Build Mindreading",
+      "url": "https://www.lesswrong.com/posts/CAdG5dzkWrrK2NQg8/don-t-build-mindreading",
+      "date": "2026-08-08",
+      "note": "Celer 反对构建读心 AI 的论证，AI 伦理/安全新角度"
+    },
+    {
+      "source": "lesswrong",
+      "title": "An International AI Slowdown Is Ready Whenever Politicians Are",
+      "url": "https://www.lesswrong.com/posts/jwipsPeb2xpyhwqsh/an-international-ai-slowdown-is-ready-whenever-politicians",
+      "date": "2026-08-05",
+      "note": "Felix Choussat 和 adamk 论证国际 AI 减速的政治可行性已就绪。注意与联名信主线的关系——如仅是转评/站队则按防重复规则降权不收。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "lesswrong",
+      "title": "The world will be full of 'sci-fi' things, and everyone will be bored and disappointed",
+      "url": "https://www.lesswrong.com/posts/BbtXWgYviwGHExcJv/the-world-will-be-full-of-sci-fi-things-and-everyone-will-be",
+      "date": "2026-08-09",
+      "note": "未来冲击的反直觉：当世界充满科幻事物时，人们反而会感到无聊和失望"
+    },
+    {
+      "source": "huggingface",
+      "title": "Rebuilding Among AIs from Six Log Files",
+      "url": "https://huggingface.co/blog/DedeProGames/rebuilding-among-ais-from-six-log-files",
+      "date": "2026-08-08",
+      "note": "从六个日志文件重建 AI 版 Among Us 游戏过程——技术考古学趣味的项目"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Vertical Tabs in Chrome",
+      "url": "https://www.lesswrong.com/posts/F2oDrXPbLSxSXBmut/vertical-tabs-in-chrome",
+      "date": "2026-08-05",
+      "note": "jefftk 写 Chrome 垂直标签页——非 AI，但日常工具细节吐槽，LW 社区认可的轻松内容。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Dutch-book resistant probability over centered worlds",
+      "url": "https://www.lesswrong.com/posts/cTSfisyzwxCvEpqEc/dutch-book-resistant-probability-over-centered-worlds",
+      "date": "2026-08-09",
+      "note": "jessicata 的决策论/概率论技术帖——抽象但 LW 风味纯正，给喜欢硬核的用户留一条"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "Will Anthropic have a higher market cap than OpenAI after both IPO?",
+      "prob": "69.3%",
+      "volume_note": "liquidity 10010 MANA，7d 成交 39591 MANA",
+      "url": "https://manifold.markets/Simon74fe/will-anthropic-have-a-higher-market"
+    },
+    {
+      "question": "Are LLMs capable of reaching AGI?",
+      "prob": "51.4%",
+      "volume_note": "liquidity 11200 MANA，7d 成交 37063 MANA",
+      "url": "https://manifold.markets/IsaacKing/are-llms-capable-of-reaching-agi"
+    }
+  ],
+  "skipped_sources": [
+    {"slug": "acx", "reason": "168h 窗口内仅 2 篇开放线程，无新主文"},
+    {"slug": "ahead-of-ai", "reason": "最近更新 07-18，168h 窗口内无新文"},
+    {"slug": "anthropic", "reason": "24h 窗口内无新文（最新 08-07，已出窗且已报）"},
+    {"slug": "axios", "reason": "36h 窗口内 5 条均为政治/选举新闻，与 AI 无关"},
+    {"slug": "chip-huyen", "reason": "无新文（最新 2025-01）"},
+    {"slug": "claude-blog", "reason": "36h 窗口内无新文（最新 08-07 已出窗且已报）"},
+    {"slug": "deepmind", "reason": "168h 窗口内无新文（最新 WeatherNext 08-06，已出窗）"},
+    {"slug": "hf-papers", "reason": "浏览器输出解析困难（89 条含大量导航，arxiv 链接未提取），建议 reader 直接访问 https://huggingface.co/papers 扫今日热门"},
+    {"slug": "import-ai", "reason": "最新 08-03（467 期），168h 窗口外"},
+    {"slug": "karpathy", "reason": "feed 空（仅 9 字节），无新文"},
+    {"slug": "lilian-weng", "reason": "无新文（最新 07-04 harness 已报）"},
+    {"slug": "neodrop", "reason": "36h 窗口内无新晨报（最新 08-02，已出窗）"},
+    {"slug": "openai", "reason": "24h 窗口内无新文"},
+    {"slug": "simon-willison", "reason": "24h 窗口内仅一条 quoting 链接，无独立文章"},
+    {"slug": "thezvi", "reason": "24h 窗口内无新文（最新 08-08 What Happened: OpenAI and HuggingFace 已出窗）"},
+    {"slug": "thinking-machines", "reason": "HTML 页无新文（最新 07-31，720h 月检窗口内但非新内容）"}
+  ]
+}

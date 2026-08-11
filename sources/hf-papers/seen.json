@@ -1,5 +1,292 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.07341",
+  "title": "新评测逐题检查测试集污染是否消除",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://huggingface.co/papers/2606.00152",
+  "title": "审计 Agent 不只看它说了什么，还要看它拿走了什么",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.23379",
+  "title": "用来观察模型内部的工具，也会选择性失明",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.06020",
+  "title": "From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.06197",
+  "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.05747",
+  "title": "GST-Bench: Can VLMs Develop Global Spatial Awareness from Video?",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28609",
+  "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.05987",
+  "title": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.03457",
+  "title": "LLaDA MoE v2: Scaling Mixture-of-Experts Diffusion Language Models",
+  "date": "2026-08-05（HF 页日期糙）",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.03700",
+  "title": "When Agents Learn to Be You: Benchmarking Privacy Leakage, Impersonation Risk, and Defenses in Persona Skills",
+  "date": "2026-08-05（HF 页日期糙）",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.02713",
+  "title": "Quo Vadis, World Modeling?",
+  "date": "2026-08-05（HF 页日期糙）",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.02358",
+  "title": "ScrambleToolBench: Agents Search Exhaustively Even When Their Own Map Points to the Next Step",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.27851",
+  "title": "Beyond Feeling Better: Capability-Sustaining Emotional Dialogue as a Longitudinal Research Paradigm",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.23802",
+  "title": "From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.26611",
+  "title": "Fewer Clarifications, Better Code: Benchmarking Cross-Session Personalized Ambiguity Adaptation in Coding Assistants",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.29677",
+  "title": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28478",
+  "title": "Would You Walk to the Car Wash? Revealing the Salience Bias of Large Language Models in Commonsense Reasoning",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28617",
+  "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.27951",
+  "title": "Safeguards Based on Copyable Context Cannot Provide Reliable Safety for LLMs",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.27703",
+  "title": "SpatialCLI: Learning to Reason With Spatial Tools, Then Without Them",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28022",
+  "title": "Flux-OPD: On-Policy Distillation with Evolving Contexts",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28074",
+  "title": "Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28272",
+  "title": "MemHarness: Memory Is Reconstructed, Not Replayed",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.05850",
+  "title": "第一个专门为意第绪语做的开源模型",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.05424",
+  "title": "视觉模型能从照片里认出拍它的相机型号",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.06301",
+  "title": "新基准专门测模型能不能改进自己的外壳",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.03994",
+  "title": "ALiBi 位置编码会把远处的注意力算成零",
+  "date": "2026-08-05（HF 页日期糙）",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.03509",
+  "title": "SkillJack 把毒数据洗成 agent 的长期技能",
+  "date": "2026-08-05（HF 页日期糙）",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.04003",
+  "title": "PAST-Bench 测 agent 是不是真的越用越好",
+  "date": "2026-08-05（HF 页日期糙，以 arxiv id 去重）",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.01678",
+  "title": "用 RL 让 agent 自己长技能库",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.02499",
+  "title": "SWE-Touch 测用户中途改代码时 agent 的反应",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.01964",
+  "title": "不换模型只换框架，长任务成绩从五成提到八成",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.26769",
+  "title": "一份新基准测多模态模型画的中间图到底用没用上",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28624",
+  "title": "中科院自动化所让世界模型先用一套「物理语言」推演，再画成视频",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28568",
+  "title": "做机器学习工程的开源模型，成绩强过 GPT-5.5",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.27919",
+  "title": "记忆被单独拎出来预训练成 69 亿参数的模块",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.20891",
+  "title": "深度研究智能体会被假资料带跑",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28618",
+  "title": "纽约大学把 14.7 万篇化学论文拆成 240 万条结论",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.26497",
+  "title": "语料一大，老式关键词检索就把 agent 甩开了",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.28227",
+  "title": "通义放出 GUI agent 技术报告，拿一百多台手机训出来",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://huggingface.co/papers/2607.26760",
+  "title": "把记忆做进模型本体，不再外挂数据库",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
   "id": "https://huggingface.co/papers/2607.25659",
   "title": "字节：把整段回答的分数拆到每个 token 头上",
   "date": "2026-07-28",

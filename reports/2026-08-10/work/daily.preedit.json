@@ -1,0 +1,133 @@
+{
+  "date_label": "8月10日",
+  "industry": [
+    {
+      "tier": "silver",
+      "title": "桑德斯要求 OpenAI、Anthropic 和 Meta 暂停开发",
+      "url": "https://www.axios.com/2026/08/10/sanders-ai-development-pause",
+      "body": "三家公司都承诺过，系统危险到无法安全控制时会暂停开发。桑德斯拿这句话要求它们停工，并称参议院会在 CEO 不行动时介入。目前更像政治施压，本届国会很难通过相关立法。"
+    },
+    {
+      "tier": "silver",
+      "title": "Meta 把编程 Agent 压进一台个人电脑",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "body": "Muse Glimmer 是开放权重的本地编程 Agent，约 4 比特量化后模型不到 20GB。它把写代码、工具调用、长程规划、失败重试和视觉理解放进一套模型，可在消费级设备上运行。",
+      "sources": [
+        {
+          "name": "Hugging Face 实装说明",
+          "url": "https://huggingface.co/blog/muse-glimmer"
+        }
+      ]
+    },
+    {
+      "tier": "none",
+      "title": "GitHub Models 正式退役",
+      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired",
+      "body": "它原本提供统一的模型 API，也能让 GitHub Actions 直接调用模型。GitHub 没有说明关闭原因。"
+    },
+    {
+      "tier": "none",
+      "title": "OpenChamber 做了跨设备 Agent 开发环境",
+      "url": "https://openchamber.dev",
+      "body": "它能同时跑最多五个模型，从 GitHub issue 一路做到合并，还能在电脑、浏览器、手机和 VS Code 间接着做。"
+    }
+  ],
+  "deep": [
+    {
+      "tier": "gold",
+      "title": "AI 对齐圈回看十年：自己反而成了能力扩张的推手",
+      "url": "https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment",
+      "body": "OpenPhil 曾给 OpenAI 3000 万美元，可能超过其全部慈善资金的 20％。Richard Ngo 认为，对齐圈原想让安全进展跑在能力前面，过去十年却为能力扩张输送了观念、人才、资金和合法性。\n\n他认为，这个领域逐渐放下难而深的科学问题，转向迭代现有系统和争取技术、政治权力。背后的推理是：既然强 AI 无论如何都会出现，不如由自己信任的人推动。少数最重视超级智能风险的人，因此成了加速者；这也暴露出掌权者的诚信和问责问题。"
+    },
+    {
+      "tier": "silver",
+      "title": "扎克伯格：AI 最大的风险是权力集中在一处",
+      "url": "https://www.axios.com/2026/08/10/zuckerberg-ai-manifesto-meta",
+      "body": "扎克伯格更担心政府或单一实体垄断最强 AI，而不是具体的模型失控风险。他主张让美国和民主国家保持领先，同时用开放模型、低价算力和私人 Agent 把能力分到更多人手里，形成制衡。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "silver",
+      "title": "用来观察模型内部的工具，也会选择性失明",
+      "url": "https://huggingface.co/papers/2607.23379",
+      "body": "专项微调后，Oracle 对训练中反复出现的隐藏概念，恢复率从 94％降到 35％，读取其他概念仍正常。信息没有从模型内部消失，但把内部表征说成答案的路径失灵了，而且 Oracle 出错时往往很自信。"
+    },
+    {
+      "tier": "silver",
+      "title": "审计 Agent 不只看它说了什么，还要看它拿走了什么",
+      "url": "https://huggingface.co/papers/2606.00152",
+      "body": "PrivacyPeek 用 1182 个案例检查 Agent 在工具调用途中，有没有获取任务不需要的敏感信息。测试十个 Agent 后，这类过度获取仍很普遍，提示词防护只能挡住一小部分。"
+    },
+    {
+      "tier": "none",
+      "title": "新评测逐题检查测试集污染是否消除",
+      "url": "https://huggingface.co/papers/2608.07341",
+      "body": "旧指标会让压过头和压不够互相抵消。新方法改为估算每道题的答对概率，再与干净模型逐题比较。"
+    },
+    {
+      "tier": "none",
+      "title": "TutorMoments 测 AI 导师何时闭嘴",
+      "url": "https://huggingface.co/blog/allenai/tutormoments",
+      "body": "它让模型接手真实数学辅导中的关键时刻。只要求「好好辅导」时，模型常常帮得太多，很少把思考留给学生。"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "silver",
+      "title": "用语音审问五名 AI 嫌疑人，找出谁是凶手",
+      "url": "https://www.whodunnitai.com",
+      "body": "一位家族长者在暴风雨夜被地高辛毒死。你要开口审问五名 AI 嫌疑人，比较口供，最后当面指认凶手并摆出证据。"
+    },
+    {
+      "tier": "none",
+      "title": "科幻产品铺满世界，大家照样嫌难用",
+      "url": "https://www.lesswrong.com/posts/BbtXWgYviwGHExcJv/the-world-will-be-full-of-sci-fi-things-and-everyone-will-be",
+      "body": "第一次坐无人车觉得未来来了，第三次就开始骂它开错路。惊奇很快会变成新的最低要求。"
+    },
+    {
+      "tier": "none",
+      "title": "出租车司机死于阿尔茨海默病的比例更低",
+      "url": "https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex-mental-maps-and-spatial-reasoning-protect-your-brain-286650",
+      "body": "近 900 万份死亡证明显示，出租车和救护车司机的这一比例更低。只是职业与死因相关，不能证明导航能预防疾病。"
+    },
+    {
+      "tier": "none",
+      "title": "Simon Willison 用 SQLite 压缩文本历史",
+      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype",
+      "body": "原型把 1000 次修改产生的 20.4MB 文本压到 80.3KB。历史太长就分块封存，避免每次全部重压。"
+    },
+    {
+      "tier": "none",
+      "title": "有人从六份日志重建 AI 版 Among Us",
+      "url": "https://huggingface.co/blog/DedeProGames/rebuilding-among-ais-from-six-log-files",
+      "body": "六个小型开放模型玩了 90 局，船员赢了八成。冒充者有时会把自己的骗人计划直接发进公共聊天。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "AI 会在 2028 年前全面超过人类的数学研究能力吗？",
+      "prob": "50.0%",
+      "note": "成交额 78.2k mana",
+      "url": "https://manifold.markets/DanielLittQCSn/ai-outperforms-humans-in-all-mathem"
+    },
+    {
+      "question": "2027 年底前会出现能直接替代远程员工的 AI 吗？",
+      "prob": "70.2%",
+      "note": "成交额 139.7k mana",
+      "url": "https://manifold.markets/ZviMowshowitz/will-we-develop-leopolds-dropin-rem"
+    },
+    {
+      "question": "美国今年会出台联邦 AI 安全法案或行政令吗？",
+      "prob": "29.1%",
+      "note": "成交额 9.4k mana",
+      "url": "https://manifold.markets/DaftPunkRock/acx-2026-will-the-us-enact-an-ai-sa"
+    },
+    {
+      "question": "AI 生成歌曲今年会赢得重要音乐奖吗？",
+      "prob": "11.4%",
+      "note": "成交额 25.0k mana",
+      "url": "https://manifold.markets/Bandors/will-the-first-aigenerated-song-win"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "docker-agent-sandboxes",
+    "section": "industry",
+    "label": "Docker 推出供 AI Agent 使用的一次性隔离沙箱",
+    "url": "https://www.docker.com/products/docker-sandboxes",
+    "body": "原页面未能载入，暂无法核实沙箱的隔离方式、生命周期和可用范围。",
+    "note": "fetch_failed：curl 被对端重置，浏览器打开也超时；未根据候选标题补写产品细节"
+  },
+  {
+    "id": "github-models-retired",
+    "section": "industry",
+    "label": "GitHub Models 正式退役",
+    "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired",
+    "body": "它原本提供统一的模型 API，并允许 GitHub Actions 直接用环境里的 GitHub 密钥调用模型；GitHub 没有说明关闭原因。",
+    "note": "核实通过：Simon Willison 于 2026 年 8 月 9 日确认退役已经完成"
+  },
+  {
+    "id": "openchamber-agent-dev-environment",
+    "section": "official",
+    "label": "OpenChamber 做了一个跨设备 Agent 开发环境",
+    "url": "https://openchamber.dev",
+    "body": "它能同时跑最多五个模型、审查代码改动、从 GitHub issue 一路做到合并，还能在桌面、浏览器、手机和 VS Code 之间接着同一任务。",
+    "note": "核实通过：官网称项目免费开源，当前基于 OpenCode SDK"
+  },
+  {
+    "id": "privacypeek-agent-data-acquisition",
+    "section": "papers",
+    "label": "PrivacyPeek 开始审计 Agent 拿到了什么",
+    "url": "https://huggingface.co/papers/2606.00152",
+    "body": "它不只看最终回答有没有泄密，还检查工具调用途中是否拿了任务不需要的敏感信息。对十个 Agent 的测试显示，这类过度获取很普遍，提示词防护只能挡住一小部分。",
+    "note": "核实通过：论文 2026 年 8 月 6 日发布，基准含 1182 个案例、7 类获取行为和 16 个应用领域"
+  },
+  {
+    "id": "zero-gap-contamination-evaluation",
+    "section": "papers",
+    "label": "新评测逐题检查测试集污染有没有真被消掉",
+    "url": "https://huggingface.co/papers/2608.07341",
+    "body": "旧指标先汇总再算差距，会让压过头和压不够互相抵消，看起来像恢复正常。新方法改为估算每道题的答对概率，再与干净模型逐题比较。",
+    "note": "核实通过：论文 2026 年 8 月 7 日发布，并提出生成过程中逐步压制记忆轨迹的 RailCap"
+  },
+  {
+    "id": "tutormoments-ai-tutor-intervention",
+    "section": "papers",
+    "label": "TutorMoments 测 AI 导师何时帮忙、何时闭嘴",
+    "url": "https://huggingface.co/blog/allenai/tutormoments",
+    "body": "它从真实一对一数学辅导里截取关键时刻，让模型接手五轮。只要求「好好辅导」时，模型往往帮得太多，很少把思考留给学生。",
+    "note": "核实通过：Ai2 于 2026 年 8 月 7 日发布预览，数据含 462 份匿名辅导记录和 1500 多个教师标注时刻"
+  },
+  {
+    "id": "whodunnit-ai-voice-mystery",
+    "section": "fun",
+    "label": "WhoDunnitAI 让你用语音审问五名 AI 嫌疑人",
+    "url": "https://www.whodunnitai.com",
+    "body": "暴风雨夜里，一位家族长者被人用地高辛毒死；你要比较五个人的口供，最后当面指认凶手并摆出证据。",
+    "note": "核实通过：官网可见首案《Death at Blackwood Manor》及完整案件设定；开始调查前要求登录"
+  },
+  {
+    "id": "sci-fi-things-disappointment",
+    "section": "fun",
+    "label": "科幻产品会铺满世界，大家照样嫌它不好用",
+    "url": "https://www.lesswrong.com/posts/BbtXWgYviwGHExcJv/the-world-will-be-full-of-sci-fi-things-and-everyone-will-be",
+    "body": "第一次坐无人车会觉得未来来了，第三次就开始骂它为什么还会开错；惊奇很快变成新的最低要求。",
+    "note": "核实通过：LessWrong 文章发表于 2026 年 8 月 9 日；正文属于观点与轶事，不是实证研究"
+  },
+  {
+    "id": "taxi-drivers-alzheimers-risk",
+    "section": "fun",
+    "label": "出租车和救护车司机死于阿尔茨海默病的比例更低",
+    "url": "https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex-mental-maps-and-spatial-reasoning-protect-your-brain-286650",
+    "body": "近 900 万份死亡证明中，这两类司机约每 100 人有 1 人死于阿尔茨海默病，整体则约为每 60 人 1 人。固定路线的公交司机和飞行员没有同样关联，差别可能在持续更新心中地图。",
+    "note": "核实通过：The Conversation 文章发表于 2026 年 8 月 6 日；这是职业与死因的相关性，不能据此断言导航能预防疾病"
+  },
+  {
+    "id": "community-notes-vague-predictions",
+    "section": "fun",
+    "label": "有人想给模糊预测加一套 Community Notes 式结算",
+    "url": "https://www.lesswrong.com/posts/zom89ud7c4GYnjWdt/community-notes-resolution-for-vague-predictions",
+    "body": "设想是让 AI 把含糊说法整理成可判断的预测，到期后再由用户投票结算，顺手留下谁经常说对、谁总在打滑的记录。",
+    "note": "核实通过：LessWrong 文章发表于 2026 年 8 月 9 日；目前是机制设想，不是已上线产品"
+  },
+  {
+    "id": "sqlite-compressed-text-history",
+    "section": "fun",
+    "label": "Simon Willison 用 SQLite 压缩保存文本全部历史",
+    "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype",
+    "body": "原型把每个旧版本塞进 JSON 数组再用 Zstandard 压缩，1000 次模拟修改的 20.4MB 文本缩到 80.3KB；长历史再按块封存，免得每次都重压全部内容。",
+    "note": "核实通过：文章及原型发表于 2026 年 8 月 9 日"
+  },
+  {
+    "id": "among-ais-log-reconstruction",
+    "section": "fun",
+    "label": "有人从六份日志重建了 AI 版 Among Us",
+    "url": "https://huggingface.co/blog/DedeProGames/rebuilding-among-ais-from-six-log-files",
+    "body": "作者反推出地图和游戏引擎，再让六个小型开放模型打了 90 局。船员赢了八成，冒充者有时会把自己的骗人计划直接发进公共聊天。",
+    "note": "核实通过：文章发表于 2026 年 8 月 7 日；地图重建解释了 4490 条物体观察，测试模型为 27B 至 35B 级"
+  }
+]

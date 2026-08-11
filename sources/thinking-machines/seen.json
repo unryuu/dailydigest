@@ -1,44 +1,51 @@
 [
-  {
-    "id": "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
-    "title": "The Future Worth Building Is Human",
-    "date": "2026-07-10",
-    "reported": true,
-    "report_date": "2026-07-13"
-  },
-  {
-    "id": "https://thinkingmachines.ai/blog/interaction-models/",
-    "title": "Interaction Models: A Scalable Approach to Human-AI Collaboration",
-    "date": "2026-05-11",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://thinkingmachines.ai/blog/on-policy-distillation/",
-    "title": "On-Policy Distillation",
-    "date": "2025-10-27",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://thinkingmachines.ai/blog/lora/",
-    "title": "LoRA Without Regret",
-    "date": "2025-09-29",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://thinkingmachines.ai/blog/modular-manifolds/",
-    "title": "Modular Manifolds",
-    "date": "2025-09-26",
-    "reported": false,
-    "report_date": null
-  },
-  {
-    "id": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
-    "title": "Defeating Nondeterminism in LLM Inference",
-    "date": "2025-09-10",
-    "reported": false,
-    "report_date": null
-  }
+ {
+  "id": "https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/",
+  "title": "Thinking Machines 给开放权重提了一套放行办法",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://thinkingmachines.ai/blog/the-future-worth-building-is-human/",
+  "title": "The Future Worth Building Is Human",
+  "date": "2026-07-10",
+  "reported": true,
+  "report_date": "2026-07-13"
+ },
+ {
+  "id": "https://thinkingmachines.ai/blog/interaction-models/",
+  "title": "Interaction Models: A Scalable Approach to Human-AI Collaboration",
+  "date": "2026-05-11",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+  "title": "On-Policy Distillation",
+  "date": "2025-10-27",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://thinkingmachines.ai/blog/lora/",
+  "title": "LoRA Without Regret",
+  "date": "2025-09-29",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://thinkingmachines.ai/blog/modular-manifolds/",
+  "title": "Modular Manifolds",
+  "date": "2025-09-26",
+  "reported": false,
+  "report_date": null
+ },
+ {
+  "id": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
+  "title": "Defeating Nondeterminism in LLM Inference",
+  "date": "2025-09-10",
+  "reported": false,
+  "report_date": null
+ }
 ]

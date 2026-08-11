@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://claude.com/blog/millennium-and-anthropic-are-building-a-digital-risk-analyst-with-claude",
+  "title": "Millennium and Anthropic are building a digital risk analyst with Claude",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://claude.com/blog/run-claude-code-sessions-on-your-own-compute",
+  "title": "Claude Code 的会话可以跑在自己的机器上了",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://claude.com/blog/a-guide-to-cost-visibility-and-control-in-claude",
+  "title": "Anthropic 出了份怎么看住 Claude 花销的指南",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
   "id": "https://claude.com/blog/bringing-mcp-2026-07-28-to-claude",
   "title": "MCP 重要新版本：无状态协议核心（成品链接用 MCP 官方博客）",
   "date": "2026-07-28",

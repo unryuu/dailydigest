@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://www.astralcodexten.com/p/macgregor-the-bridge-builder",
+  "title": "MacGregor The Bridge Builder",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.astralcodexten.com/p/your-book-review-the-epic-of-gilgamesh",
+  "title": "Your Book Review: The Epic Of Gilgamesh",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.astralcodexten.com/p/does-forecasting-have-room-at-the",
+  "title": "Scott Alexander 算了算预测市场到底比统计模型强多少",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://www.astralcodexten.com/p/open-questions-on-open-weights",
+  "title": "Scott Alexander 算了笔政治账：现在禁开放权重，仗打不赢还把本钱烧光",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-06"
+ },
+ {
+  "id": "https://www.astralcodexten.com/p/the-beauty-of-settled-science",
+  "title": "Scott Alexander 说已成定论的科学有它的美",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://www.astralcodexten.com/p/links-for-july-2026-part-2",
+  "title": "AI 的口才已经强过冠军辩手和职业拉票员",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
   "id": "https://www.astralcodexten.com/p/psychology-research-is-mostly-fine",
   "title": "心理学研究大体上没问题",
   "date": "2026-07-28",

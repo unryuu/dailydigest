@@ -1,5 +1,117 @@
 [
  {
+  "id": "https://www.axios.com/2026/08/10/zuckerberg-ai-manifesto-meta",
+  "title": "扎克伯格：AI 最大的风险是权力集中在一处",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/10/sanders-ai-development-pause",
+  "title": "桑德斯要求 OpenAI、Anthropic 和 Meta 暂停开发",
+  "date": "2026-08-10",
+  "reported": true,
+  "report_date": "2026-08-10"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/06/us-drinking-water-cyberattacks-climate-change-risks",
+  "title": "Cyberattacks expose deeper vulnerabilities in U.S. water systems",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/07/election-ai-deepfake-rules-states",
+  "title": "Voters face uneven AI deepfake protections",
+  "date": "2026-08-07",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/06/ai-virus-designed-bacteria-viruses",
+  "title": "AI designs new virus not found in nature",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/01/deepseek-model-cheap-ai-price-war",
+  "title": "DeepSeek's new bargain model accelerates AI's race to zero",
+  "date": "2026-08-01",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/02/ai-manifesto-open-weight-models",
+  "title": "AI's manifesto war",
+  "date": "2026-08-02",
+  "reported": true,
+  "report_date": "2026-08-02"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/31/inside-europe-lessons-ai-safety-trump-rules-loom",
+  "title": "Inside Europe's lessons on AI safety as U.S. rules loom",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-08-01"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/30/anthropic-mythos-security-testing",
+  "title": "Anthropic says three Claude models reached real-world systems during cyber tests",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/06/openai-hugging-face-black-hat",
+  "title": "OpenAI 的 agent 攻破外部公司之前，先攻破了自家测试设施",
+  "date": "2026-08-06",
+  "reported": true,
+  "report_date": "2026-08-07"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/05/ai-election-bots-simulated-voters-2026-2028",
+  "title": "Axios 说我们正走向第一场真正的 AI 选举",
+  "date": "2026-08-05",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/04/trump-ai-framework-open-models",
+  "title": "白宫那份 AI 框架的内容被扒出来了，开放权重模型整个不管",
+  "date": "2026-08-04",
+  "reported": true,
+  "report_date": "2026-08-05"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/03/white-house-finalizes-ai-framework-behind-closed-doors",
+  "title": "白宫说 AI 评估框架按期做好了，但不给看",
+  "date": "2026-08-03",
+  "reported": true,
+  "report_date": "2026-08-04"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/31/google-search-publishers-seo-geo-llms-ai",
+  "title": "出版商的 Google 搜索流量一年掉了 34%",
+  "date": "2026-07-31",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/30/tim-cook-apple-may-charge-for-ai-siri",
+  "title": "库克确认 AI 版 Siri 要收费，走 iCloud+ 升级档",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
+  "id": "https://www.axios.com/2026/07/30/ai-hedge-fund-situational-awareness-citadel",
+  "title": "一只押注 AI 的明星对冲基金把公开股票打包折价卖给 Citadel",
+  "date": "2026-07-30",
+  "reported": true,
+  "report_date": "2026-07-31"
+ },
+ {
   "id": "https://www.axios.com/2026/07/29/ai-central-banking-bis",
   "title": "国际清算银行说 AI 正在打乱央行的经验法则",
   "date": "2026-07-29",

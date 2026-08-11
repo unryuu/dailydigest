@@ -1,0 +1,974 @@
+URL: https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment
+FINAL: https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment
+TITLE: What just happened? A retrospective of AI alignment — LessWrong
+FETCHED: 2026-08-10 20:58:00
+============================================================
+x
+What just happened? A retrospective of AI alignment — LessWrong
+What just happened? A retrospective of AI alignment
+Drama
+AI
+Frontpage
+341
+What just happened? A retrospective of AI
+alignment
+by
+Richard_Ngo
+9th Aug 2026
+19
+min read
+40
+341
+This sequence is about the last decade in AI alignment. Over five posts, it recounts the gradual transition from a field which treated alignment as a hard scientific problem, to a field which has largely abandoned the goal of deep, generalizable scientific progress in favor of iteratively improving existing systems and attempting to gain technological and political power. I also describe (in subsequent posts, which I'll upload over the next few weeks) how fear and (self-)deceptive reasoning made the field one of the biggest forces pushing AI capabilities forward over the last decade, especially via significant contributions to the scaling of LLMs and the development of ChatGPT.
+Zooming out further: the two leading AGI companies, which are locked in an intense rivalry, were both explicitly founded under the banner of AI alignment, and got off the ground in significant part due to alignment-oriented ideas, talent and resources. People in the field often sense that something must have gone wrong to get here, but don’t know how to allocate responsibility (aside from blaming Sam Altman and sometimes Elon), and fall back on assuming that “the ship has already sailed”. But in this sequence I characterize our current situation as resulting from a pattern of mistakes which is both recognizable in the past and actively ongoing, and which if continued will cause similar kinds of dysfunction over the next decade.
+To be clear, I’m not taking a strong stance in this sequence on whether AI will go well or badly—that seems up for grabs. My concern is that the alignment community had a plan to make good outcomes more likely (
+differentially advancing alignment over capabilities
+) but has mostly pushed the world in the opposite direction, while some parts of it gained a lot of power by doing so. This is not trustworthy behavior, and should be a big update about how well the community will use its power going forward. In particular, it’s very bad for the world that the community doing the most to steer the future of AI isn’t really trying to distinguish the extent to which its leaders are sincere vs sycophantic vs power-seeking.
+I care about this significantly more than I care about the object-level effects of accelerating capabilities, because the integrity and rationality of a few key decision-makers will likely shape the coming decades. And yes, there are others with power over AI (like Sam and Elon) who have less integrity in most ways than alignment leaders. However, in my mind the level of adversarial dynamics within the field makes transparency, integrity and accountability
+more
+important rather than less: lacking integrity makes you much easier to manipulate, as I recount in the post on Fear and Anticipatory Obedience.
+Unfortunately, the alignment community is doing very badly at learning from the past decade, or holding anyone accountable. Indeed, it’s pursuing many strategies which seem likely to recapitulate previous mistakes. Four of the most prominent, which I’ll discuss in the final post, are:
+Trying to convince the US government to take AGI much more seriously.
+Doing “alignment research” which is very similar to capabilities-maximizing research (especially building automated alignment researchers).
+Trusting Anthropic too much (in an analogous way to how we trusted OpenAI too much).
+Trading off clarity in thinking about politics for conformity (in a similar way to how we traded off clarity in thinking about AGI for conformity to the ML ontology).
+These and other mistakes are reflective of deeper irrationalities.
+One crucial pattern is what I call “jumping down the slippery slope”: viewing an outcome as so inevitable that it doesn’t matter much if you contribute to it, in a way which leads you to become a significant force pushing the world further and faster towards the "inevitable" outcome.
+A central example is
+Sam Altman’s original email to Elon about founding OpenAI
+: “Been thinking a lot about whether it's possible to stop humanity from developing AI. I think the answer is almost definitely not. If it's going to happen anyway, it seems like it would be good for someone other than Google to do it first.”
+Many strategies pursued by the alignment community (e.g. the four listed above) showcase this same pattern. You can view it as a result of individuals inappropriately reasoning about their marginal impact despite their actions often having
+extremely
+non-marginal effects (in part because so few others were, and are, taking superintelligence seriously). More fundamentally, you can view it as a result of individuals inappropriately reasoning about
+individual
+impact rather than thinking about the policies that they’d recommend for the field as a whole (which more sociology-style reasoning about norms and
+preference cascades
+, or FDT-style reasoning about entangled decision-making, would have prevented).
+However, even given these conceptual errors, people wouldn’t jump down nearly as many slippery slopes if they weren’t driven by strong emotional instincts. For Sam, many of those instincts seem to be about accumulating power, from a perspective where nobody else can be deeply trusted. For the alignment community, people often hold narratives like “I need to save the world” or “I need to have impact soon”, and are scared enough of failing that they counterproductively narrow their vision (e.g. fear about “short timelines” gets in the way of pinning down what they’re even timelines
+to
+). Underneath that, though, there’s a similar (albeit weaker) kind of distrust in one’s relationship to the rest of the world, as I’ll detail in the final post.
+Even if you find my explanations uncompelling, I hope that the abundance of detail I’ve included in the sequence helps you formulate alternative hypotheses about what’s going on. I’ve tried to be extremely transparent about what I’ve observed throughout my career, telling as many anecdotes as I can that give color on the events of the last decade.
+This involves being franker (and using more names) than is normal—in part because I strongly believe that people who try to significantly change the world (whether motivated by altruism or otherwise) are implicitly opting in to a high level of scrutiny.
+I’ve also been upfront about the many ways that I’ve personally failed. (Due to the sheer number of people discussed in this sequence, I haven’t run it past most of them before posting, and am open to corrections and/or additional anecdotes.)
+As a final preamble, I recognize that this sequence is negative about many things. But I continue to believe that the alignment community is capable of more clarity and sincerity than any other similarly-sized intellectual community existing today. And I’m also feeling better on a personal level than I ever have. It’s very refreshing to pin down specific mistakes that led to specific failures, rather than living in a miasma of confusion about why bad things keep happening despite our best efforts. I think that the future of AI alignment—and with it, the future of humanity—is very much up for grabs. There are pathways hazily visible to me that (some subset of) this community could plausibly take towards extremely good outcomes—despite its flaws, people in it are trying to reason clearly and formulate large-scale plans to an extent that is extremely rare. The main thing blocking us is our inability to learn from our past mistakes.
+I’ll start by laying out the intellectual approach that allowed early rationalists to think clearly about AGI even in the era of very narrow AIs (Conceptual Clarity and Scientific Progress). The second half of this post (Orienting Towards Prestige) covers early engagement between rationalists, Silicon Valley, and effective altruists, and the ways that backfired. The next post (Pragmatism and Pessimization) details how a small group of researchers nominally pursuing “prosaic alignment” were responsible for a huge amount of AI capabilities progress, and dramatically amplified the race dynamics between AGI companies. The third post (Conforming to the ML Community) explores attempts to recruit mainstream ML researchers to do alignment research, and the significant costs of doing so. The fourth post (Fear and Anticipatory Obedience) explains the dynamics which prevented people from speaking out about the failures they were seeing, especially at OpenAI. In the final post (Deja Vu), I discuss ways we might recapitulate these mistakes, and how to avoid them.
+Conceptual Clarity and Scientific Progress
+The early rationalist community was a beacon of intellectual clarity. In this section, I’ll talk about what that originally looked like, and why it was missing from academic machine learning (and academia in general). In the rest of this post and the next, I’ll talk about how the field of AI alignment gradually traded that clarity away as it grew—first via prestige-oriented recruitment efforts, and later via developing concepts and frameworks which prioritized conformity to the norms of mainstream machine learning over insightfulness.
+The rationalist community drew its early members primarily from the transhumanist community (c.f. the Extropian and SL4 mailing lists), and the econ blogging community (c.f. Marginal Revolution and Overcoming Bias). After Yudkowsky split off from blogging at Overcoming Bias, LessWrong became an online hub of people who were doing very deep thinking. Wei Dai and Hal Finney were two of the earliest cryptocurrency pioneers. Robin Hanson was inventing prediction markets (
+alongside
+many
+other
+important
+concepts
+). A logic professor I talked to recently expressed that Christiano et al.’s 2013 paper
+Definability of Truth in Probabilistic Logic
+was a groundbreaking result that should be in every logic textbook. Scott Alexander’s
+applications
+of
+game-theoretic
+concepts
+to
+politics
+(as well as
+his
+pushback
+on
+wokeness
+) made him one of the most influential political thinkers of the last decade, particularly shaping the worldview of the emerging power center of Silicon Valley.
+I consider
+Bostrom’s work on anthropics
+, Eliezer and Wei’s work on decision theory,
+Leverage’s theory of psychology
+, and the
+Lobian cooperation result
+to also contain very deep insights—though they haven’t yet been built upon in ways which make that depth obvious. And, of course, people were developing a set of ideas about AGI which would prove to be
+far more predictively powerful
+than standard ML frameworks.
+Eliezer and Robin’s
+debates
+raised many considerations
+that are still shaping our thinking about AI almost two decades later. Shane Legg,
+who coined the term AGI
+(and cofounded DeepMind) was
+an early LessWrong commenter
+. The idea of
+learned policies having goals of their own
+(
+separate from their training objectives
+) was such an important insight that it has now become hard to appreciate how novel it was. Any way you slice it, this was an
+enormous
+concentration of intellectual progress.
+Even when the research wasn’t that fundamental, it was able to grapple with ideas that other intellectual communities simply weren’t able to collectively think about. Consider
+Omohundro’s paper on convergent instrumental goals
+, or
+Eliezer’s paper on intelligence explosion microeconomics
+. Neither of these contain powerful or surprising results—they’re just fairly straightforward analyses of concepts that can be explained in a single sentence. But no other community was able to reliably produce or build on such analyses. This effect is even starker when thinking about less technical work—like
+Bostrom’s Fable of the Dragon-Tyrant
+, or
+Astronomical Waste
+, or
+Hanson’s thoughts on signalling
+(later elaborated upon in
+The Elephant in the Brain
+). When I talk about intellectual clarity, a lot of what I’m talking about is the ability to take ideas that are actually very simple, internalize them, and then use them as building blocks to construct the next generation of ideas.
+More generally, one touchstone I’ll be referring to throughout this sequence is the idea that scientific progress proceeds by
+developing insightful new concepts
+, which link together to form a whole new ontology that replaces the previous ontology.
+Kuhn
+,
+Feyerabend
+,
+Koestler
+,
+Chang
+and various other philosophers of science have described a range of past
+breakthroughs which fit this pattern
+. Importantly, this view of science isn’t prescriptive about
+how
+to develop new concepts—it can be done via
+naturalist
+, experimental, mathematical, philosophical, or even mystical thinking. The quality of such work is often hard to evaluate at the time, but hindsight makes it easier to see who was aiming towards conceptual breakthroughs. And sometimes people are explicit about not doing so—e.g.
+one of the most senior alignment researchers at Anthropic recently told me that the best way for me to track if they were making progress on alignment was by using Claude and seeing how aligned it was.
+This kind of “engineering” mentality contrasts sharply with Eliezer’s original vision of alignment as the development of a powerful new scientific paradigm—e.g. see
+this post
+comparing agent foundations to Newtonian mechanics. It’s easy to make arguments on a case-by-case basis for why engineering work might be good for the world. However, the field of alignment is explicitly trying to do work that has predictably beneficial effects on an unprecedentedly large, world-historic transition. If we didn’t have such clear examples of scientific theories generalizing extremely far, then this would be a very speculative strategy. So if you’re doing not-very-scientific alignment research with the aim of aligning superintelligence, you should expect most of your impact on the world to come from unpredictable higher-order effects of your actions (or predictable effects which you mentally blocked from consideration, as I describe in the post on Pragmatism and Pessimization). This problem is exacerbated if you backchain from alignment research going well to justify other kinds of work (like recruiting, communications, political manoeuvering, etc), since that introduces further complicated (and often adversarial) multi-agent dynamics—as I describe in the post on Fear and Anticipatory Obedience.
+Unfortunately, most alignment research is no longer even aiming towards the kind of scientific progress I describe above.
+Agent foundations
+is the only subfield of alignment which consistently does so, and therefore the only one which I consider
+reliably
+good to broadly promote.
+[1]
+Some parts of mechanistic interpretability are also building the kinds of understanding that could lead to a scientific revolution, but unfortunately they’re not very clearly-demarcated from the parts that might have large effects in other ways (like advancing capabilities), so overall I expect that field’s effect on the world to depend sensitively on the judgement and virtue of the individuals involved.
+I’ll also briefly note that similar problems apply to most AI governance interventions, which are even more prone to backfiring (since modern politics is so adversarial). Even pausing AI progress, which could be extremely good, could easily be implemented in very bad ways—and almost nobody is thinking clearly about the differences between those. So the only outcome in the AI governance space that I consider reliable enough to backchain from is building (justified) trust between key actors—like different AGI companies, or the US and China. (Meanwhile cyberdefense and biodefense are robust in some ways—
+hence Vitalik’s advocacy for d/acc
+—but still require good judgement to do well. E.g. it’s easy for people in either field to reason their way into doing gain-of-function work, trying to ban open-source models, etc.
+[2]
+)
+One reason people are confused about AI alignment losing its ability to make scientific progress is that machine learning as a whole is
+also
+not a very scientific field by the standard I’m applying. Even most early AI researchers were more focused on
+building
+artificial intelligence than on understanding scientific principles of cognition. The rise of deep learning exacerbated this problem, as throwing more compute and engineering effort at an AI
+became arbitrarily scalable
+. In an important sense, the field of alignment is necessary because the field of ML didn’t prioritize
+gaining a deep understanding of the systems it was building
+. (
+Eliezer makes a similar point in this dialogue
+.)
+A lot of the blame should fall on misguided narratives (common across academia) about what makes science work, which have been entrenched by the best-funded scientific institutions. A
+core scientific norm
+is that disputes should be resolved with reference to concrete empirical tests or rigorous proofs, judged by the scrutiny of one’s scientific peers. But that’s very different from the idea that ideas should be
+developed
+via paper-sized units of work which are each individually defended and justified. Historically speaking, the latter simply isn’t how the best science happened—Newton and Smith and Darwin developed their ideas via writing books
+and letters
+rather than peer-reviewed papers (and even
+Einstein didn’t encounter peer review until decades after his main breakthroughs
+). But the requirement to “publish or perish” is now so entrenched across academia that it produces strong
+streetlight effects
+.
+Some concrete examples from ML: until recently, almost all RL theory focused on the unrealistically simple
+tabular setting
+, because it was easier to prove things about. I expect that there are important theoretical insights to be discovered about non-tabular RL, but progress towards them would require grappling with qualitative and fuzzy ideas for extended periods. Meanwhile, statistical learning theory spent decades focusing on the underparameterization regime, which doesn’t do much to explain generalization in neural networks (or biological brains). I don’t have enough context to give a confident explanation for the emphasis on underparameterization, but the ease of proving things about this regime seems like an important component.
+[3]
+In
+this 1995 commentary on NIPS (now NeurIPS)
+, a statistician frustrated by how “everyone wants to be a theorist” writes that “mathematical theory is not critical to the development of machine learning. But scientific inquiry is.” He characterizes scientific inquiry as “sensible and intelligent efforts to understand what is going on”, and gives overparameterization of neural networks as a central example of a good target for scientific inquiry. Yet only after the rise of deep learning did phenomena like
+grokking
+,
+deep double descent
+, and
+memorization of random labels
+render this omission too blatant to ignore (though I’m uncertain about how much real progress
+subsequent
+theoretical
+work
+has made
+).
+So the kind of conceptual thinking that I’m praising in the rationalist community is what I’d call the
+generative
+part of science, which elsewhere has been swamped by overly-zealous
+discriminative
+classification.
+[4]
+(See also
+Strevens’ insightful analogy of science as a coral reef
+.) Zealous evaluation also serves to entrench the power of existing academic hierarchies. As a case study, it's instructive to consider how the academic ML community oriented towards the concept of AGI overall. In some ways, AGI is a very simple concept: AIs that can generalize to a comparable extent as humans. Yet what we saw when the AI alignment community interacted with the academic ML community was something akin to an immune system response. Most scoffed—like Andrew Ng, who claimed that worrying about AGI risk was “like worrying about overpopulation on Mars”.
+Even when they did respond
+, it was with
+transparently bad arguments
+.
+[5]
+When I joined DeepMind in 2018, most of the researchers I met there still thought of the company’s own AGI-related mission statement as an eccentricity. As late as 2024, Yann LeCun was
+still declaring
+that LLMs “can not solve problems they haven’t been trained on”. For more on these dynamics, see
+Chapter 6 (“The Not-So-Great AI Debate”)
+of Stuart Russell’s
+Human Compatible
+.
+Having said that, the field of ML was also reacting in part to the alignment community’s lack of appropriate discrimination. In particular, rationalists often treated informal, abstract arguments about AI risk as
+far more decisive than was warranted
+, in part due to an
+epistemology which claimed to supersede
+standard
+scientific epistemology
+(and in part due to a
+strong emotional orientation
+towards “
+saving the world
+”). Rather than focusing on further developing and clarifying its insights about AGI risk, though, the rationalist community spent significant effort winning its skeptics over, with largely regrettable effects. I think of this process in terms of three waves: Silicon Valley, the ML community, and the US government. I’ll discuss the first below, the second in a later post, and save the last for the final post in this sequence.
+Orienting Towards Prestige
+The rationalist community wasn’t disjoint from conventional prestige networks—for example, Hanson and Bostrom were professors.
+[6]
+Jaan Tallinn was around from pretty early on; so was Peter Thiel, who
+met Demis Hassabis at an event he cohosted with MIRI
+, leading to his founding investment in DeepMind. (I don’t know how intentionally MIRI facilitated these kinds of interactions; I also don’t know how Elon first got involved.)
+However, attempts to recruit elites gradually became more publicly visible. Bostrom’s
+Superintelligence
+was a (NYT-bestselling) attempt to make AGI risk a prestigious concern, with an endorsement on the cover from Bill Gates.
+Various
+conferences
+organized
+by the
+Future of Life Institute
+collected growing numbers of notable figures. These efforts weren’t necessarily targeted specifically at Silicon Valley elites, but those were the main ones who took the ideas seriously enough to act on them. I’d count Dustin Moskovitz as another Silicon Valley elite who gradually became serious about AGI risk (with consequences that I’ll discuss at the end of this section).
+I wasn’t present enough in the community at the time to have a sense of how explicitly people were reasoning about the value of outreach to prestigious elites. At the very least there was an implicit hypothesis that seemed straightforwardly plausible, which I’d gloss as “There are competent people out there in the world—look at the impressive companies they can build! We should recruit them as allies.”
+But pretty quickly it became apparent that
+something
+was wrong with that hypothesis.
+For one thing, even very prestigious elites seemed less capable of sensibly discussing AGI than many anonymous commenters on LessWrong.
+A more dramatic datapoint came after Elon and Sam responded to concerns about AGI risk by launching OpenAI. I do think that there are some important and robust intuitions in favor of openness (e.g. hacker intuitions) which rationalists had been underrating. But making AGI “open” was close enough to
+the opposite of what early rationalists wanted
+that it was clear that something had gone badly wrong. In the past I’ve thought of the founding of OpenAI as an example of Silicon Valley’s extreme bias towards quickly taking action; now this seems absurdly charitable, and I think it’s better understood as a bias towards gaining power. To be clear, I hold Elon and Sam strongly morally culpable for this; I’m focusing on critiquing the alignment community instead because it seems more salvageable (though it’s also more morally culpable than Elon in e.g. its lack of political courage, as I discuss in the final post).
+It’s useful to contrast prestige-orientation with Eliezer’s alternative recruitment strategy—writing
+Harry Potter and the Methods of Rationality
+—which was closer to a prestige-minimizing move,
+yet which
+was much more successful in recruiting people who could think clearly about alignment. To be clear, orienting towards prestige is not a bad thing in healthy social structures, where prestige correlates with competence, virtue and resources. However, being too focused on prestige makes you incapable of noticing when you’re deferring to unhealthy social structures. This kind of evidence takes time to accumulate, so I don’t blame MIRI much for reaching out to Silicon Valley elites early on; and even
+Superintelligence
+, insofar as it was a mistake, seems like a fairly understandable one. However, more EA-oriented people (especially those associated with OpenPhil) harmed the field significantly by conforming to existing power structures even when they should have known better, as I detail in the rest of this post.
+The same year that OpenAI launched, Holden Karnofsky started to fund AI safety via Open Philanthropy. Holden had first heard MIRI’s arguments about AGI risk in 2007, but didn’t take them seriously due to MIRI’s lack of prestige.
+As he later recounted
+, he thought that “MIRI's lack of impressive endorsements from people with relevant-seeming expertise was the most important data point about it”; he was also influenced by “the general degree to which MIRI's views were seen as "wacky" and "silly" to a broad variety of people I spoke with”. On the object level, Holden also placed a lot of weight on
+the idea that AI would be a tool rather than an agent
+, and criticized MIRI for not taking that possibility seriously enough (you can read more of his engagement with MIRI ideas in
+this dialogue
+and
+this dialogue
+).
+After the positive reception of
+Superintelligence
+by prestigious figures (including some ML researchers),
+Holden changed his mind
+, and gave OpenPhil’s first AI safety grant in 2015. However, despite spending 8 years being misled about AGI risk by over-indexing on prestige, he immediately directed the vast majority of his funding towards prestigious institutions rather than the rationalists who had laid out the case for AGI risk in the first place. While the importance of agent foundations research can be difficult to understand directly, MIRI’s prescience was clearly strong evidence that they had a deep understanding of the issue (plausibly too deep for Holden to appreciate), and any reasonable kind of
+hits-based giving
+would then have funded them to excess.
+Instead,
+OpenPhil’s first grant to MIRI
+(in 2016) was only $500,000, and to a significant extent it was a “participation grant” to recompense MIRI for engaging with OpenPhil. By contrast, the previous year, Max Tegmark had received twice as much for the Future of Life Institute; and around the same time,
+Stuart Russell received 10x as much for CHAI
+. The following year, OpenPhil’s funding to MIRI was also less than 10% of their total “AI safety” funding—they gave $3.75 million to MIRI, almost $10 million to various university-affiliated groups, and
+$30 million to OpenAI
+(in exchange for a board seat for Holden). It seems reasonable to summarize this as Holden strongly calibrating donation size to conventional prestige.
+[7]
+More explicitly,
+Daniel Dewey’s main rationalization
+in 2017 for not giving MIRI much money was that agent foundations “has not gained much support among AI researchers”, and therefore wouldn’t be very useful for attracting new people to the field. In other words, he was making funding choices by deferring to the research taste of people who didn’t yet take AGI risk seriously.
+Daniel ultimately concluded that “MIRI's current size seems to me to be approximately right”. Given how explosively the rest of the field was growing, this led MIRI to become a small, niche part of the field that it had founded.
+[8]
+I emphasize the relative sizes here because what we even consider to be “AI alignment” has been shaped by OpenPhil’s allocation of money, as well as the intellectual influence of a cluster of people associated with them. In particular, many of the mistakes outlined in my next two posts came from the version of alignment promoted by Holden, Dario and Paul. (This was both a professional and a personal clustering.
+OpenPhil’s writeup on its OpenAI grant
+ends with the following disclosure: “OpenAI researchers Dario Amodei and Paul Christiano are both technical advisors to Open Philanthropy and live in the same house as Holden. In addition, Holden is engaged to Dario’s sister Daniela.”)
+Would the field have been redirected anyway by the sheer size and prestige of OpenAI? Perhaps, but OpenAI’s credibility as an authority on alignment depended in large part on the people who chose to associate with it. Without them, it would have been easier for the field to disown OpenAI’s approach to “safety”—though unfortunately even people unaffiliated with OpenAI were mostly too scared to actively oppose it, as I discuss at the end of the post on Fear and Anticipatory Obedience. It’s also important to note that, while $30 million is small compared to the billion dollars pledged to OpenAI when it launched,
+TechCrunch reports
+that only $133 million of that was actually donated. This would mean that OpenPhil’s $30 million was over 20% of the total charitable funding OpenAI ever received.
+Trying to contribute a marginal 3% of OpenAI’s donations, and actually giving over 20%, is a great example of jumping down the slippery slope. But even aside from that, marginalist thinking about whether OpenAI would have redirected the field anyway is antithetical to upholding ethical standards. If two different groups are trying to do something bad, then the fact that it still would have happened if either had been removed doesn’t absolve each of responsibility—rather, it renders them both responsible for their participation in harmful group dynamics. In the next post, on Pragmatism and Pessimization, I’ll talk about other important ways that EA-style marginalist thinking boosted the development of AI capabilities.
+^
+Since I'm now an agent foundations researcher, you could view me as "talking my book" here. But it's worth noting that I was fairly dismissive of agent foundations during my first 5 years in AI safety—I instead worked as a research engineer, then as a PhD candidate in academic philosophy, then as a forecaster, then in AI governance. I picked up agent foundations only two years ago (despite lacking a strong mathematical background) due to the kinds of considerations articulated in this sequence.
+^
+I don't have a strong position that banning open-weight models is bad. However, while it mitigates risks from smaller actors (like terrorists), it seems likely to exacerbate risks from bigger actors (like companies or governments concentrating power via AI). I tend to be more concerned about the latter category—perhaps even in the context of biorisk. Government-sponsored gain-of-function research and military bioweapons programs seem pretty worrying, so banning open-weight models might disproportionately harm the development of defensive capabilities. Overall the main claim I'll defend is that banning open-weight models is not
+robustly
+good.
+More generally, risks from omnicidal actors (like bioterrorism) seem sufficiently different to risks from power-seeking actors (like AI takeover) that I think we should mainly focus on the latter when doing strategic reasoning about the future of AI, and then primarily try to mitigate the former with domain-specific interventions (like biodefense).
+^
+Rif A. Saurous
+left a very helpful comment arguing against the claim I originally made in a draft (that underparemeterization was obviously not a good explanation for generalization in biological brains). Its details seems useful enough for the historical record that I reproduce it below in full:
+I'll say some things I think I remember, partially jogged by Claude, but also admit this was close to 30 years ago, and frankly I'm still confused.
+I was a graduate student in Poggio's lab at MIT from 1997-2002. We genuinely believed that Vapnik's learning theory was (in many ways) a "good explanation" for how and why biological brains worked. The Bayesian side in those days seemed similar --- for instance MacKay (who was very well-respected as a "real thinker") wrote about Bayesian Occam's razor, which is basically the same story.
+I glibly phrased this as a story about "underparameterization", but it's not quite that. Our most powerful artifacts were SVMs with Gaussian kernels, which had a parameter per data point, and we knew those were our best performers. We also had theory results like "Boosting the margin" and "For valid generalization, the size of the weights is more important than the size of the network". Also, Breiman in 1995 wrote "Reflections after refereeing for NIPS", which I hadn't seen before but directly includes questions like "Why don't heavily parameterized neural networks overfit the data?" Also, Radford Neal wrote a (widely known) PhD thesis in 1996 on Bayesian NN's that argued against limiting network size, and first (to my knowledge) made the link to a limiting infinite-width Gaussian process (which later evolved into Neural Tangent Kernel work.)
+We genuinely believed capacity control was key to generalization, but that's not quite the same as requiring underparameterization. And we did connect all this frequently to biology: Poggio's lab mixed learning theory folks (like me at the time) with computational neuroscience people, and we often cross-collaborated.
+We certainly didn't have the modern insights from "Benign Overfitting in Linear Regression". Instead, we'd built (incorrect) insights from low-dimensional problems, where to fit a lot of data your functions have to oscillate wildly everywhere, whereas in high-dimensions you can hide the oscillations in dimensions where there's no data. We had early notions of intrinsic dimension and manifolds.
+One thing I'll add that does look very bad in retrospect --- we more-or-less explicitly dismissed neural nets as "the way forward". We were all friendly with Yann LeCun, he'd come give talks, show us the cool results he was getting, but whenever we tried to replicate his work, we'd fail to train. An analogy is how biology often still doesn't replicate across labs; LeCun had "training taste" that we didn't know how to imitate. So we retreated to a joint package of "convex optimization is better because the theory is better and because it's easy to train", and we let those circularly reinforce each other, until accelerators came along ten years later and Hinton and Ilya and co. showed us how wrong we were.
+^
+I'd draw a similar link between analytic and continental philosophy. The former is extremely discriminative in the precision of the reasoning it accepts, without being able to generate creative new ideas—while the latter has the opposite problem.
+^
+Note that Chollet’s original title (still recorded in the URL) used "Impossibility" rather than "Implausibility".
+^
+An underappreciated fact is that Hanson was originally hired by
+Tyler Cowen
+, who thereby played a significant role in the formation of the rationalist community.
+^
+Eliezer writes about these dynamics (likely inspired by his interactions with OpenPhil)
+in this post
+.
+^
+Eliezer later wrote
+“I think it was a huge, huge mistake that more money was not spent on AGI alignment when it was small and weird and unproven. The resulting damage was not something that could be fixed by any or all of the money that became available later.” However, note that I’m not sure which period he was referring to, or who he thinks made that mistake.
+What just happened? A retrospective of AI alignment
+67
+Wei Dai
+20
+RHollerith
+17
+cousin_it
+4
+Wei Dai
+9
+cousin_it
+-1
+StanislavKrym
+3
+shawnghu
+-7
+Karl Krueger
+9
+Yannick O
+5
+Self_Optimization
+3
+Karl Krueger
+32
+jessicata
+5
+Adrià Garriga-alonso
+28
+cousin_it
+2
+lemonhope
+2
+cousin_it
+2
+Self_Optimization
+4
+ajskateboarder
+1
+shawnghu
+1
+ajskateboarder
+16
+cdt
+12
+leogao
+6
+TsviBT
+5
+Adrià Garriga-alonso
+9
+Kurt H. Pieper
+8
+Noosphere89
+16
+Jonas Hallgren
+14
+Richard_Ngo
+12
+StanislavKrym
+1
+Self_Optimization
+10
+Kurt H. Pieper
+7
+roha
+4
+Elias Schmied
+3
+Richard_Ngo
+4
+RHollerith
+3
+anaguma
+2
+Cleo Nardo
+2
+Adrià Garriga-alonso
+2
+StanislavKrym
+5
+Richard_Ngo
+40
+Comments
+40
+Drama
+AI
+Frontpage
+341
+New Comment
+40 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 12:57 PM
+[
+-
+]
+Wei Dai
+19h
+67
+14
+I feel like this is giving way too little weight/salience to humans being really bad at strategy and philosophy in general, and in particular
+MIRI
+being bad at strategy and philosophy. You talk about Holden being misled about AGI for 8 years, but don't mention MIRI planning to build recursively improving Friendly AI with a small team and
+potentially just 1 philosopher
+, for a comparable amount of time.
+If OpenPhil had funded MIRI more in 2016, it would have been funding them to attempt this!
+Just in course of searching for my name in the comments section of Holden's
+Thoughts on the Singularity Institute (SI)
+, I came across more examples (of humans being bad at strategy and philosophy):
+Eliezer banning Roko's Basilisk post (and Roko posting it in the first place)
+Eliezer apparently forgetting or disregarding most previous critics of MIRI (e.g. me): "Nonetheless, it already has a warm place in my heart next to the debate with Robin Hanson as the second attempt to mount informed criticism of SIAI."
+Eliezer forgetting about banning Roko's post, writing in all caps "Once again: ROKO DELETED HIS OWN POST. NO OUTSIDE CENSORSHIP WAS INVOLVED.", and komponisto
+chickening out of reminding Eliezer about it
+.
+cousin_it avoiding the debate because "I realized that talking about saving the world makes me really upset and I'm better off avoiding the whole topic"
+MIRI hiring Ben Goertzel as Research Director even though Eliezer thought his AGI project would kill everyone if it succeeded ("And if Novamente should ever cross the finish line, we all die."), because "Ben Goertzel's projects are knowably hopeless, so I didn't too strongly oppose Tyler Emerson's project from within SIAI's then-Board of Directors; it was being argued to have political benefits, and I saw no noticeable x-risk so I didn't expend my own political capital to veto it, just sighed. Nowadays the Board would not vote for this."
+Reply
+3
+[
+-
+]
+RHollerith
+16h
+*
+20
+4
+MIRI's attempt to solve technical alignment didn't make the global situation significantly worse whereas OpenPhil's funding of OpenAI and other "safety" work did according to some writers I admire.
+Do you really think we'd be better off if
+no
+competent team with funding had made a sustained attempt to solve technical alignment? Alternatively, do you believe that there have been
+other
+competently-led sustained attempts to solve it outside of MIRI?
+In an interview published on Youtube, Eliezer said, "I did my crying in 2015", by which he meant that that is when (presumably after the founding of OpenAI) he realized the global situation is hopeless, which makes me wonder how you arrive at your belief that "if OpenPhil had funded MIRI more in 2016, it would have been funding them to attempt" "to build recursively improving Friendly AI with a small team".
+Reply
+[
+-
+]
+cousin_it
+17h
+17
+0
+I think Roko posting the thing was ok. It was in the same class of things being discussed at the time, like Rolf Nelson's AI deterrence and so on. Eliezer overreacted and caused a Streisand effect, without it only a few of us would even remember it today.
+To add color to the point about me: I was a research associate at MIRI then (then called SI). I'd joined in the hope of doing decision theory math, but found that there wasn't as much math I liked happening inside. However, there were many email discussions about saving the world, which I first tried hard to follow, but then they became just really overwhelming for me. That's the background of my remark. Later that year I left the program. Maybe you're right and this all was a failure of strategy on my part :-)
+Reply
+[
+-
+]
+Wei Dai
+17h
+4
+0
+Thanks for the backstory! (Don't know if you remember, but I asked you back then and you didn't want to talk on the meta level either.) I think what I was trying to say by citing you is that humans can get emotionally overwhelmed just by thinking about the world ending or saving the world, which probably isn't great for their strategic competence when dealing with this topic.
+Reply
+[
+-
+]
+cousin_it
+16h
+9
+1
+Yeah. Maybe it wasn't even due to that specific topic, could've been anything else, like knitting. There was just a lot of emails about it (several every day for months?) and for some reason it felt really hard to follow for me, on top of my work at Google at the time. So then it flipped around to "don't wanna talk about it, don't wanna meta-talk about it, just make it go away". I'm sorry the backstory isn't more dignified.
+Reply
+[
+-
+]
+StanislavKrym
+19h
+-1
+-2
+What's the main difference between "Humans are bad at strategy" vs. "Strategy is difficult, if not outright impossible"? The two toy models of the latter are
+my other comment
+and
+titotal's experiment
+where, without a queen, not even
+Stockfish
+managed to outperform the human at chess, even though the human supposedly had the Elo rating of
+1100
+.
+Reply
+[
+-
+]
+shawnghu
+9h
+3
+2
+If you look in the comments of the thread by titotal, you'll see a discussion of how this is because Stockfish isn't actually good at playing odds games, and LeelaQueenOdds was actually 2k-2.9k Elo on lichess, and that LeelaKnightOdds was able to beat a GM in a classical-time controls game.
+Also you'll see discussion about how the comparison to chess isn't very apt for discussing practical manifestations of "strategy in general".
+Reply
+[
++
+]
+Karl Krueger
+18h
+-7
+-11
+[
+-
+]
+jessicata
+18h
+32
+15
+My concern is that the alignment community had a plan to make good outcomes more likely (
+differentially advancing alignment over capabilities
+) but has mostly pushed the world in the opposite direction, while some parts of it gained a lot of power by doing so.
+Not sure how you're assessing the counterfactual. It's easy to say "here, alignment research accelerated capabilities!" but what does the ratio look like if there had been no public attempt at doing alignment research? (Or if ratio is not the right thing, how else to assess?)
+I also think the strategic focus on "capabilities bad!" is in tension with the praise for scientific and conceptual progress:
+More generally, one touchstone I’ll be referring to throughout this sequence is the idea that scientific progress proceeds by
+developing insightful new concepts
+Unfortunately, most alignment research is no longer even aiming towards the kind of scientific progress I describe above.
+So the kind of conceptual thinking that I’m praising in the rationalist community is what I’d call the
+generative
+part of science
+Since... of course, if this were true, then alignment research (including agent foundations) would accelerate capabilities, right? Understanding how things work helps to make things work better? Obviously?
+Yes, I realize applause lights around here are "capabilities bad" and "science good" and "conceptual progress good", but if you are urging more careful ethical and strategic reflection on the part of others, then perhaps consider examining this more carefully.
+You can say "well yes of course but it's worth the tradeoff" however the way you're describing not-obviously-applicable conceptual progress in glowing terms doesn't seem concordant with making such tradeoffs. And again I don't know what underlying model you are using to assess such tradeoffs.
+This is not merely a theoretical concern, in that MIRI's research progress drastically slowed at around the time they became more secretive, security conscious, and strategically focused (~2017).
+It’s useful to contrast prestige-orientation with Eliezer’s alternative recruitment strategy—writing
+Harry Potter and the Methods of Rationality
+—which was closer to a prestige-minimizing move, yet which was much more successful in recruiting people who could think clearly about alignment.
+Not convinced. Check your own sources, the papers/posts you give as especially good progress.
+Many of these people are educated
+and
+would be more likely brought in by the things you put in the "prestige" bucket (like
+Superintelligence
+) than the "fanfic" bucket
+.
+(I do appreciate you are giving a history of the field/community and trying to examine ethical issues! Focusing on criticisms here as I have more to say there.)
+Reply
+3
+1
+1
+[
+-
+]
+Adrià Garriga-alonso
+3h
+5
+0
+I also think the strategic focus on "capabilities bad!" is in tension with the praise for scientific and conceptual progress
+I think you're missing the point here. It's not that Richard thinks capabilities are bad (on vibes he does, but it's not the point). Or that capabilities are bad (in my assessment, they've been good so far and things are going OK).
+Rather, it's that
+the explicit goal of the alignment community was to differentially advance alignment over capabilities, but instead they ended up advancing capabilities much more effectively
+than anybody else, while not advancing alignment much. This is a failure to follow the
+stated goal
+of colossal proportions, we in fact optimized the
+opposite
+of the goal. Why did this happen, and how can we avoid failing on goals this hard in the future?
+This is the paragraph that most supports my comment:
+To be clear, I’m not taking a strong stance in this sequence on whether AI will go well or badly—that seems up for grabs. My concern is that the alignment community had a plan to make good outcomes more likely (differentially advancing alignment over capabilities) but has mostly pushed the world in the opposite direction, while some parts of it gained a lot of power by doing so
+Since... of course, if this were true, then alignment research (including agent foundations) would accelerate capabilities, right? Understanding how things work helps to make things work better? Obviously?
+Yes, but it's better than trying to make things work better without understanding them. (That said, if neural networks didn't work this well, people would still entertain fanciful theories about Bayesian learning or parameter restriction, so maybe the effect of practice on theory has been good!)
+would be more likely brought in by the things you put in the "prestige" bucket (like Superintelligence) than the "fanfic" bucket.
+So many educated people are starstruck by HPMOR, or were starstruck before becoming really educated. Disagree with you that Superintelligence is more effective at recruiting (it's too boring, facts alone don't steer like emotions do).
+Reply
+[
+-
+]
+cousin_it
+18h
+28
+0
+Insta-upvote. Keep writing :-)
+Want to push back a bit on the agent foundations part, as someone who got into it very early and came up with a bunch of stuff (e.g. the Lobian cooperation paper cites me for the main result). I don't think AF has much connection to the alignment of AIs that are being developed now. I think AF is "only" an extremely fun field of math/philosophy. Whether it deserves money/prestige/etc is a question for someone else. I just love doing it, and have a bit of allergy to overselling.
+Reply
+[
+-
+]
+lemonhope
+5h
+2
+0
+Is there any relevant equivalent of like The Little Schemer or The Art & Craft of Problem Solving?
+Reply
+[
+-
+]
+cousin_it
+5h
+2
+0
+No and this is a bit of sore spot. I've tried to write such a thing many times, and every time my own nature beat me with a stick saying "this is not where your talents lie". I can come up with a new math idea and explain it well immediately after, but when it comes to writing good exposition for ideas I already understand, no. Now that you mention it, maybe I should give it one more try, idk.
+Reply
+[
+-
+]
+Self_Optimization
+15h
+2
+0
+I don't think AF has much connection to the alignment of AIs that are being developed now.
+What would you say are the bounds of applicability for AF, then?
+To my understanding LLM-based AI only becomes problematic in the X-risk sense (rather than mundane-technology aspects which we already have flawed-but-workable social solutions for) iff it’s trained specifically to act as an autonomous RL-like agent rather than a ~desire-lacking ensemble-simulator of ML-models extracted from patterns-of-data-conversion present in normal text, which seems like it would be relevant to AF research, but maybe I’m wrong about the theoretical bounds of what we can model in the field?
+Reply
+[
+-
+]
+ajskateboarder
+14h
+4
+2
+AF has long been focused on
+AIXI
+-type cases, and later things like
+embedded agency
+. It's not implausible that there are formalizable concepts for agency/optimization in
+scaffolded LLM agents
+(like optimization in in-context learning?), but as of right now, AF seems quite far from it.
+AF's wikitag
+should also give a good idea of where the field is at
+Reply
+[
+-
+]
+shawnghu
+9h
+1
+0
+I think a scaffolded LLM agent is substantially an embedded agent, no? To the extent that it interfaces with users and tries to satisfy user requests, it needs to have a self-model in its world model.
+Reply
+1
+[
+-
+]
+ajskateboarder
+8h
+1
+0
+I agree (i think to some degree llms also contain subsystems), but to the extent that these frameworks can be wholly applied to ML alignment research to predict non-trivial things, it does not seem easy
+Reply
+[
+-
+]
+cdt
+19h
+16
+9
+“AI alignment” has been shaped by OpenPhil’s allocation of money, as well as the intellectual influence of a cluster of people associated with them
+Yes. The distortionary effects on AI alignment's development, and the conflicts of interest that thereby arise, from having one major funder are very strong. I suspect this will remain true in the next philanthropy windfall (if it happens).
+Reply
+[
+-
+]
+leogao
+8h
+12
+-5
+i'm sympathetic to the critique of most modern ai safety work being terrible, but i don't understand why you think the agent foundations stuff (Lobian cooperation, Definability of Truth) is so good. it seems likely that intelligence is complicated enough that you can't have good physics-like theories, and so all of the theories have to have really fucked up spherical cow assumptions. even studying human intelligence more closely feels more obviously relevant.
+Reply
+[
+-
+]
+TsviBT
+7h
+6
+3
+I agree that there's something about human intelligence that's more relevant than anything that's been done before, but what specifically? Suppose for example that you don't keep in mind the question of reflective stability. Then you're probably quite prone to investigate things that
+will not stick around during self-modification and therefore are approximately irrelevant to the hard problem of alignment
+. I'm not exactly going to defend the old-school mathy research, because at least in retrospect one might have known it would be too hard / wouldn't work, but it had its eye on the ball in the sense of understanding this sort of deep, general, difficult obstacle to understanding minds in the way we want to.
+Reply
+[
+-
+]
+Adrià Garriga-alonso
+3h
+5
+2
+We haven't seriously tried to have physics-like theories of intelligence! Only a few people (various academics, MIRI) have done something close to trying. Compare to how much effort has been put into optimizing deep learning.
+Maybe physics was also confusing and weird until we understood it.
+Reply
+[
+-
+]
+Kurt H. Pieper
+14h
+9
+0
+Strong upvote, as I consider any effort towards agent foundations heroic
+prima facie.
+However, two objections:
+(i) Science generalizes further than engineering, thus any scientific insight is more capabilities-counterfactual.
+For example, Legg & Hutter heavily draw upon the (albeit controversial and relatively primitive) science of
+g
+in their works on understanding intelligence (cf.
+Universal Intelligence
+, Chapter 2.1). This work arguably made it possible to even understand what AGI is in the first place (note: It should be said that Goertzel doesn't seem to believe in
+g
+).
+(ii) Science is easier to drown out in noise with funding and prestige.
+For example, the foundational works of Turing (1936) and Post (1936) received almost no attention upon publication. Sudan (1927) showed the Ackermann function is computable but not primitive-recursive, not recognized until 1979.
+While the principle of "two formalizations agree (e.g. Church-Turing thesis)" makes some automation possible, obviously, if multiple formalizations agree, we still have the legibility problem.
+That is, two of the key hard problems in alignment (capabilities work by accident, lack of legibility mechanisms) strike even harder in agent foundations, and finding a way to increase funding while mitigating these problems, or even just not making them worse, seems like an open problem to me.
+Edit: Deleted previous comment, modified history of computability to show the mechanism a bit better, conclusion about funding was a total spitball, so left that more open.
+Reply
+1
+[
+-
+]
+Noosphere89
+19h
+8
+-13
+Some other reasons why a more engineering mindset was adopted in AI alignment as opposed to an idealized insight focused path that is more positive than the reasons you brought up is:
+A lot of alignment/control agendas aren't about being robust to arbitrarily capable models, but rather models of more bounded capabilities. The AI control agenda is easily the best example of this, where it happily admits that most of the methods here wouldn't work if AIs got good enough at steganographic communication/neuralese to bypass control measures.
+This is because we don't actually need to solve the problem of AI alignment ourselves, and if we can automate AI alignment research, then in the absence of blockers, we wouldn't need to do any work upfront (Of course, there's a large and continuing debate on what blockers exist, and how hard they are to solve.)
+We have gotten evidence for slower takeoffs than some early 2010s writings placed serious probability on.
+You've actually criticized AI 2040 in the past for focusing too much on fast takeoffs
+, and that is admittedly a fair enough criticism, but it is worth noting 2 things:
+The 'fast takeoffs' described in AI 2027/AI 2040 are months long takeoffs, which is near the upper end of the range of expectations of early-2010s LessWrong (I'd say 60th-70th percentile at least).
+Under slower takeoffs, engineering mindset is fine, because you have more hopes on fixing the problem iteratively, and this is due to the fact that you can assume that AI capabilities are more bounded than thought.
+This doesn't mean engineering mindset is better than scientific mindset, but it does mean that engineering mindset isn't as bad as you say.
+And we should also admit that the research program you propose (agent foundations) has been underwhelming at best, and even though problems like
+the genie knows, but does not care
+has unfortunately been more accurate than we thought (mostly because we scaled up RL again, and are likely to keep doing this because of incentives), solutions from agent foundations have been lacking.
+IMO, the most exciting safety work (so far) is modelled on
+mundane solutions to exotic problems
+, like
+Risk-Averse AIs
+(with relevant experimental results
+here
+)
+So in conclusion, while I could see engineering mindset being worse than scientific mindset, I also think that this is less obvious of a conclusion than you do (assuming the claim of engineering mindset being worse than scientific mindset is correct), and I wanted to present a partial positive case of engineering mindset to offset potential biases.
+Reply
+[
+-
+]
+Jonas Hallgren
+18h
+16
+4
+Science is partly a coupled process between engineering and theory, it is also hard to do causal inference from what counts as theory and what counts as practice.
+Would you say that the discovery of the higgs boson was something that happened as a consequence through theoretical or practical physics?
+What about deception, inner misalignment,
+general interpretability methods
+, if you trace their intelluectual lineage where do they come from? They're not fully agent foundations but if you compare if they're more ML based or coming from the larger space of theoretical alignment research I would attribute more causal influence to theoretical AI Safety. This is what agent foundations was up to like 3 years ago!
+Or what do we mean by agent foundations here? What would you draw the boundaries around? Is it maybe better to use the word Theoretical AI Safety research?
+Under slower takeoffs, engineering mindset is fine, because you have more hopes on fixing the problem iteratively, and this is due to the fact that you can assume that AI capabilities are more bounded than thought
+Given specific assumptions about scientific progress where we can iteratively improve it and it is clear how we would even aim for it in the first place.
+How much is this field biology and how much is it computer science? If it is computer science then it is bloody complicated combinatorial optimisation and dynamic programming. This field is in it's philosophical nature closer to studying growing systems not engineered systems.
+Reply
+1
+[
+-
+]
+Richard_Ngo
+19h
+14
+1
+I would have much less beef with the engineering mindset if it hadn't accelerated capabilities so much, as I'll explain in the next post (and also if it weren't so related to conceptually confused ML research, as I'll explain in the post after that).
+Reply
+[
+-
+]
+StanislavKrym
+19h
+12
+8
+My main issue is
+The Counterfactual Quiet AGI Timeline
+.
+Scaling laws of neural nets
+had
+capabilities
+become more like treasures waiting for the right amount of compute. Once
+anyone
+invested the compute, the treasure would be his and
+everyone
+would rush for similar treasures, until one of them summons demons...
+Reply
+[
+-
+]
+Self_Optimization
+15h
+1
+0
+I don’t yet have a situation-global opinion here, but “once anyone invested the compute, the treasure would be theirs” doesn’t seem like a valid transition. The primary constraint in connecting abstract research to economic applications is generalist-capable domain-experts being motivated to bridge the gap from theory to something a VC or customer can understand.
+While you can’t stay still
+forever
+relying on the absence of that force, a small non-prestigious community uniquely positioned to work in a field deciding
+not
+to seek investments and capability-research would certainly have further delayed the viability of the treasure, in turn supporting non-capabilities-dependent alignment-contribution tactics like intelligence augmentation, foundational research, philosophical research, or prestige-building from non-X-risk charitable efforts to acquire credibility for X-risk-mitigation.
+There are valid replacement-reasons that could slot in the same place in your presented reasoning, including-but-not-limited-to longer timeline-estimates making personal-judgement-of-influencers more important than timeline-reductions, reason to believe some specific other party was already working on making transformer-based
+autonomously-operating
+AI economically viable at the time, expectation that capabilities could meaningfully help with other X-risks
+before
+they became a concern themselves, etc. I’m not sure which specifically of those you would agree with, though.
+Reply
+[
+-
+]
+Kurt H. Pieper
+9h
+10
+0
+What would be a possible agent-foundations insight useful for alignment but not capabilities?
+Or would the strategy be "hope no one runs away with this to accelerate capabilities"?
+Another example: Von-Neumann-Morgenstern/Behaviourism arguably gives you a "reward" as a meaningful concept; so plausibly accelerated RL
+Reply
+[
+-
+]
+roha
+9h
+7
+2
+Thanks for your recapitulation. I'm not very familiar with the early history of the field and found it quite informative.
+But making AGI “open” was close enough to
+the opposite of what early rationalists wanted
+that it was clear that something had gone badly wrong.
+I've just looked a bit through
+court documents
+of the
+Musk v. Altman lawsuit
+and found some notable exchanges but will limit it to two examples:
+1)
+Demis Hassabis confronted Elon Musk
+about their open source vision for AGI, using a reference to the same
+article of Scott Alexander
+that you linked in your retrospective. Ilia Sutskever already commented it already back then in 2016 with "As we get closer to building AI, it will make sense to start being less open."
+2)
+Brockman's journal
+contains this section from 2017:
+- gdb: if you and sam get more involved, will be unstoppable.
+- ilya: new structure will help a lot too.
+- elon: alright sounds good. game is afoot. gonna be battle.
+- gdb: pretty soon will remember the days when enemy was just DM.
+- elon: hah. don't want to pave road to hell with good intentions.
+- ilya: don't create the AGI before making it act in our best interests. should be fundamental tenant. especially once we have the 10GW datacenter, can do a lot of smart things, things they do should be good for us.
+- elon: i feel fear. don't know about you guys.
+- gdb: used to feel born 10 years too late. missed the 90s. just grateful to have an opp to help this go well.
+- elon: hard to believe this is real. reality is increasingly surreal.
+- ilya: let's hope it doesn't take a negative turn.
+- elon: don't approach with too heavy a heart. it's a serious matter. if things do go awry, enjoy these years on earth.
+- gdb: mix of hedonistic parties and heads down writing code.
+- elon: have a few parties, celebrate the wins. reasonably good time along the way.
+Reply
+[
+-
+]
+Elias Schmied
+14h
+4
+1
+Excited for this!
+This kind of “engineering” mentality contrasts sharply with Eliezer’s original vision of alignment as the development of a powerful new scientific paradigm—e.g. see
+this post
+comparing agent foundations to Newtonian mechanics. It’s easy to make arguments on a case-by-case basis for why engineering work might be good for the world. However, the field of alignment is explicitly trying to do work that has predictably beneficial effects on an unprecedentedly large, world-historic transition. If we didn’t have such clear examples of scientific theories generalizing extremely far, then this would be a very speculative strategy. So if you’re doing not-very-scientific alignment research with the aim of aligning superintelligence, you should expect your impact on the world to be dominated by unpredictable higher-order effects
+FWIW, I don't really understand this argument. (on a logical level). Isn't it the case for everyone that you should expect your impact to be dominated by larger forces? I feel like there's an implicit assumption / reasoning step that I'm not getting.
+Reply
+[
+-
+]
+Richard_Ngo
+12h
+3
+0
+Oh, I should rephrase. I meant “the majority of your impact will come from unpredictable effects”, not “unpredictable effects will be larger than your impact”.
+Reply
+[
+-
+]
+RHollerith
+20h
+4
+7
+This is great! I eagerly await the next post.
+Reply
+[
+-
+]
+anaguma
+11h
+3
+1
+As late as 2024, Yann LeCun was
+still declaring
+that LLMs “can not solve problems they haven’t been trained on”.
+His views on the topic are a rock with 'LLMs cannot learn/scale/generalize' written on it. For example,
+from
+a few months ago:
+LeCun defines intelligence as “the ability to accomplish new tasks you’ve never been exposed to and solve new problems without any prior training” — a skill he says LLMs do not possess. He argued that because of this, LLMs will not be able to reach human intelligence, saying that “human-level AI will require real world data, sensory inputs, as opposed to just language or text.”
+There are
+many
+other
+examples
+. I look forward to the day when an LLM resolves the Riemann Hypothesis, when LeCun will complain that it
+really
+was just regurgitating things from its training, that its solution took too much compute, that the industry will soon collapse etc.
+Reply
+[
+-
+]
+Cleo Nardo
+2h
+2
+0
+You think “EAs should’ve been more cautious about waking up various external groups like the public, academia, industry, governments” and “EAs should’ve been less power-seeking because other people will notice those power-seeking patterns and there will be a backlash”. Maybe there’s a tension there.
+Reply
+[
+-
+]
+Adrià Garriga-alonso
+3h
+2
+0
+and first (to my knowledge) made the link to a limiting infinite-width Gaussian process (which later evolved into Neural Tangent Kernel work.)
+This is true. Not only that, but the use of Gaussian processes in machine learning
+comes from
+Radford Neal's thesis and that they're the limiting behavior of wide NNs in the first place.
+Reply
+[
+-
+]
+StanislavKrym
+20h
+2
+-2
+I wish that the sequence was there to read. However, even this would benefit from doublechecking for mistakes like
+mocking
+people for trying to
+ban open-source models
+. The case
+against
+open-sourced models is that they lack safeguards unless they are as capable of goal-guarding as
+Agent-4
+, thus allowing terrorists to use open-source models to hack into important systems or to create bioweapons.
+The framework also has a more severe issue. Your
+most recent quick take
+mentioned that "AI governance would have been less likely to throw in with the Democrats in a way that alienated MAGA". Suppose, by an oversimplified analogy, that alignment research required $10B, but would receive the following dependent on which political party AI governance chooses and who wins the elections:
+Party
+Dems win
+Reps win
+AI governance allies with Dems
+$1B
+0
+AI governance allies with Reps
+0
+$100M
+In order for AI governance to choose the Reps, the Reps would have to be tenfold more likely to win, and even then the situation would be grim. Of course, the real world has many more strategic options, but I doubt that they could have drastically change the game.
+Reply
+1
+[
+-
+]
+Richard_Ngo
+20h
+5
+0
+I've added a footnote explaining my position on open-weight models in more detail.
+Reply
+1
+Moderation Log
+More from
+Richard_Ngo
+View more
+Curated and popular this week
