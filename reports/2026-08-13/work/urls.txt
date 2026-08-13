@@ -1,0 +1,43 @@
+# 行业大事：Anthropic 多智能体系统
+multiagent-anthropic|https://www.anthropic.com/research/multiagent-systems
+
+# 行业大事：DeepSeek V4 Pro 0813
+deepseek-api-pricing|https://api-docs.deepseek.com/zh-cn/quick_start/pricing
+deepseek-simon|https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813
+deepseek-wallstreetcn|https://wallstreetcn.com/articles/3779306
+deepseek-36kr|https://www.36kr.com/p/3937317630147971
+
+# 行业大事：Grok 4.6、Qwen 3.8、Agent 事故框架、融资
+grok-46|https://x.ai/news/grok-4-6
+qwen-38|https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+safe-agent-reporting|https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting
+lovable-series-c|https://lovable.dev/blog/series-c
+
+# 深度长文与用户点名捞回候选
+ai-middle-software|https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html
+ai-middle-simon|https://simonwillison.net/2026/Aug/12/florian-herrengt
+worker-retraining|https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs
+ai-textbook|https://www.interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until
+ai-investment-crowding|https://www.axios.com/2026/08/12/ai-boom-goldman-sachs
+ai-clinical-trials|https://www.axios.com/2026/08/12/ai-clinical-trials-cost-savings
+tiny-jpeg-chrome|https://guillaumetech.github.io/posts/jpg-scaling-chrome
+
+# 新鲜论文
+conceptual-reasoning|https://www.lesswrong.com/posts/tQHeEzKqK3awL2RxR/introducing-the-conceptual-reasoning-index
+lean-natural-latent-redux|https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic
+llm-accelerate-work|https://www.lesswrong.com/posts/7QvKqpGJwqXrQcMgx/llms-are-starting-to-noticeably-accelerate-our-work
+agent-runtime-contract|https://huggingface.co/papers/2608.11274
+toolhazard|https://huggingface.co/papers/2608.11878
+spark-to-paper|https://huggingface.co/papers/2608.11924
+discovered-materials|https://discoveredmaterials.com/research
+
+# 官方公告
+sign-language-ai|https://deepmind.google/blog/putting-sign-language-ai-into-users-hands
+north-micro-vision|https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct
+openai-enterprise-execution|https://openai.com/index/how-enterprises-put-ai-to-work
+
+# 乐子候选
+demon-safety|https://www.lesswrong.com/posts/RWavpsyDJxffS6LgG/demon-safety
+eclipse-webcams|https://jonty.github.io/2026_eclipse_webcams
+sardines-scarcity|https://corneroffifth.studio/why-cant-you-find-canned-sardines-right-now
+hf-benchmark-ban|https://huggingface.co/blog/DedeProGames/davidau-deleted-my-post-and-banned-me-for-asking-a

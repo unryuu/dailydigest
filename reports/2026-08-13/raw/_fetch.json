@@ -1,0 +1,272 @@
+[
+  {
+    "slug": "multiagent-anthropic",
+    "url": "https://www.anthropic.com/research/multiagent-systems",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/multiagent-systems",
+    "bytes": 181780,
+    "title": "Patterns and problems in multiagent systems \\ Anthropic",
+    "chars": 27485
+  },
+  {
+    "slug": "deepseek-api-pricing",
+    "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+    "status": 200,
+    "final_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "bytes": 22028,
+    "title": "æ¨¡å & ä»·æ ¼ | DeepSeek API Docs",
+    "chars": 1616
+  },
+  {
+    "slug": "deepseek-simon",
+    "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
+    "bytes": 16982,
+    "title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+    "chars": 1984
+  },
+  {
+    "slug": "deepseek-wallstreetcn",
+    "url": "https://wallstreetcn.com/articles/3779306",
+    "status": 200,
+    "final_url": "https://wallstreetcn.com/articles/3779306",
+    "bytes": 31875,
+    "title": "华尔街见闻",
+    "chars": 56
+  },
+  {
+    "slug": "deepseek-36kr",
+    "url": "https://www.36kr.com/p/3937317630147971",
+    "status": 200,
+    "final_url": "https://www.36kr.com/p/3937317630147971",
+    "bytes": 109602,
+    "title": "实测正式版 DeepSeek V4 Pro，补齐 Agent 和图像能力-36氪",
+    "chars": 4245
+  },
+  {
+    "slug": "grok-46",
+    "url": "https://x.ai/news/grok-4-6",
+    "status": 200,
+    "final_url": "https://x.ai/news/grok-4-6",
+    "bytes": 225300,
+    "title": "Introducing Grok 4.6 | SpaceXAI",
+    "chars": 4929
+  },
+  {
+    "slug": "qwen-38",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+    "status": 200,
+    "final_url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+    "bytes": 342905,
+    "title": "Qwen/Qwen3.8-2.4T-A95B · Hugging Face",
+    "chars": 12790
+  },
+  {
+    "slug": "safe-agent-reporting",
+    "url": "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+    "bytes": 246741,
+    "title": "Nvidia, Cisco back new AI agent security reporting framework",
+    "chars": 3691
+  },
+  {
+    "slug": "lovable-series-c",
+    "url": "https://lovable.dev/blog/series-c",
+    "status": 200,
+    "final_url": "https://lovable.dev/blog/series-c",
+    "bytes": 130504,
+    "title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+    "chars": 9923
+  },
+  {
+    "slug": "ai-middle-software",
+    "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+    "status": 200,
+    "final_url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+    "bytes": 16299,
+    "title": "AI is removing the middle class of software engineering",
+    "chars": 8347
+  },
+  {
+    "slug": "ai-middle-simon",
+    "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
+    "bytes": 14279,
+    "title": "A quote from Florian Herrengt",
+    "chars": 1645
+  },
+  {
+    "slug": "worker-retraining",
+    "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
+    "bytes": 109597,
+    "title": "How well do job retraining programs work? \\ Anthropic",
+    "chars": 3181
+  },
+  {
+    "slug": "ai-textbook",
+    "url": "https://www.interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until",
+    "status": 200,
+    "final_url": "https://www.interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until",
+    "bytes": 190526,
+    "title": "I wrote an AI textbook — how long until AI can do it better?",
+    "chars": 14706
+  },
+  {
+    "slug": "ai-investment-crowding",
+    "url": "https://www.axios.com/2026/08/12/ai-boom-goldman-sachs",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/12/ai-boom-goldman-sachs",
+    "bytes": 251917,
+    "title": "Quantifying the AI boom crowding-out effect",
+    "chars": 2488
+  },
+  {
+    "slug": "ai-clinical-trials",
+    "url": "https://www.axios.com/2026/08/12/ai-clinical-trials-cost-savings",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/12/ai-clinical-trials-cost-savings",
+    "bytes": 264919,
+    "title": "AI brings savings to clinical trials: study",
+    "chars": 3027
+  },
+  {
+    "slug": "tiny-jpeg-chrome",
+    "url": "https://guillaumetech.github.io/posts/jpg-scaling-chrome",
+    "status": 200,
+    "final_url": "https://guillaumetech.github.io/posts/jpg-scaling-chrome/",
+    "bytes": 14486,
+    "title": "Guillaume Técher",
+    "chars": 5928
+  },
+  {
+    "slug": "conceptual-reasoning",
+    "url": "https://www.lesswrong.com/posts/tQHeEzKqK3awL2RxR/introducing-the-conceptual-reasoning-index",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/tQHeEzKqK3awL2RxR/introducing-the-conceptual-reasoning-index",
+    "bytes": 467604,
+    "title": "Introducing the Conceptual Reasoning Index — LessWrong",
+    "chars": 13930
+  },
+  {
+    "slug": "lean-natural-latent-redux",
+    "url": "https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic",
+    "bytes": 830240,
+    "title": "Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent) — LessWrong",
+    "chars": 15218
+  },
+  {
+    "slug": "llm-accelerate-work",
+    "url": "https://www.lesswrong.com/posts/7QvKqpGJwqXrQcMgx/llms-are-starting-to-noticeably-accelerate-our-work",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/7QvKqpGJwqXrQcMgx/llms-are-starting-to-noticeably-accelerate-our-work",
+    "bytes": 479850,
+    "title": "LLMs Are Starting To Noticeably Accelerate Our Work — LessWrong",
+    "chars": 10141
+  },
+  {
+    "slug": "agent-runtime-contract",
+    "url": "https://huggingface.co/papers/2608.11274",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.11274",
+    "bytes": 116864,
+    "title": "Paper page - Agent Safety Should Be a Runtime Contract",
+    "chars": 3214
+  },
+  {
+    "slug": "toolhazard",
+    "url": "https://huggingface.co/papers/2608.11878",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.11878",
+    "bytes": 127488,
+    "title": "Paper page - ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents",
+    "chars": 2849
+  },
+  {
+    "slug": "spark-to-paper",
+    "url": "https://huggingface.co/papers/2608.11924",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.11924",
+    "bytes": 126610,
+    "title": "Paper page - Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill",
+    "chars": 3512
+  },
+  {
+    "slug": "discovered-materials",
+    "url": "https://discoveredmaterials.com/research",
+    "status": 200,
+    "final_url": "https://discoveredmaterials.com/research/",
+    "bytes": 56898,
+    "title": "Research — Material Discovery Bench",
+    "chars": 23942
+  },
+  {
+    "slug": "sign-language-ai",
+    "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands",
+    "status": 200,
+    "final_url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
+    "bytes": 148606,
+    "title": "Putting sign language AI into usersâ hands â Google DeepMind",
+    "chars": 10226
+  },
+  {
+    "slug": "north-micro-vision",
+    "url": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+    "bytes": 194937,
+    "title": "Meet North Micro Vision: A 2.4B Native-Resolution Vision-Language Model",
+    "chars": 15970
+  },
+  {
+    "slug": "openai-enterprise-execution",
+    "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+    "status": 200,
+    "final_url": "https://openai.com/index/how-enterprises-put-ai-to-work/",
+    "bytes": 543154,
+    "title": "From assistance to execution: How enterprises put AI to work | OpenAI",
+    "chars": 8090
+  },
+  {
+    "slug": "demon-safety",
+    "url": "https://www.lesswrong.com/posts/RWavpsyDJxffS6LgG/demon-safety",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/RWavpsyDJxffS6LgG/demon-safety",
+    "bytes": 402957,
+    "title": "Demon Safety — LessWrong",
+    "chars": 8724
+  },
+  {
+    "slug": "eclipse-webcams",
+    "url": "https://jonty.github.io/2026_eclipse_webcams",
+    "status": 200,
+    "final_url": "https://jonty.github.io/2026_eclipse_webcams/",
+    "bytes": 6605,
+    "title": "2026 Total Eclipse Webcams",
+    "chars": 64
+  },
+  {
+    "slug": "sardines-scarcity",
+    "url": "https://corneroffifth.studio/why-cant-you-find-canned-sardines-right-now",
+    "status": 200,
+    "final_url": "https://corneroffifth.studio/why-cant-you-find-canned-sardines-right-now/",
+    "bytes": 105863,
+    "title": "Why Sardines Are Vanishing From Grocery Shelves",
+    "chars": 3710
+  },
+  {
+    "slug": "hf-benchmark-ban",
+    "url": "https://huggingface.co/blog/DedeProGames/davidau-deleted-my-post-and-banned-me-for-asking-a",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/DedeProGames/davidau-deleted-my-post-and-banned-me-for-asking-a",
+    "bytes": 186053,
+    "title": "DAVIDAU DELETED MY POST AND BANNED ME FOR ASKING ABOUT BENCHMARKS — HERE IS THE FULL ANALYSIS (9B + 27B + 390 MODELS)",
+    "chars": 17031
+  }
+]

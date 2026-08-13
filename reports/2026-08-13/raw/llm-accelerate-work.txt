@@ -1,0 +1,208 @@
+URL: https://www.lesswrong.com/posts/7QvKqpGJwqXrQcMgx/llms-are-starting-to-noticeably-accelerate-our-work
+FINAL: https://www.lesswrong.com/posts/7QvKqpGJwqXrQcMgx/llms-are-starting-to-noticeably-accelerate-our-work
+TITLE: LLMs Are Starting To Noticeably Accelerate Our Work — LessWrong
+FETCHED: 2026-08-13 11:34:22
+============================================================
+x
+LLMs Are Starting To Noticeably Accelerate Our Work — LessWrong
+AI
+Frontpage
+190
+LLMs Are Starting To Noticeably Accelerate Our
+Work
+by
+johnswentworth
+11th Aug 2026
+3
+min read
+11
+190
+About a year ago, David and I put up two
+bounty
+problems
+involving natural latents. I am now about 80% confident that both have been resolved, both within the past couple months. Both cases made heavy use of LLMs and Lean.
+The first to land was Grisha Pochuev's
+counterexample
+to the "
+Existence of a Deterministic Maximal Redund
+" conjecture. It's pretty readable, and I'm mostly convinced that it works. The original bounty post offered $500 for a proof or partial payout for a counterexample, with partial payout depending on how thoroughly the counterexample killed hope of any nearby variant of the conjecture. I think this counterexample is worth $300. Good job Grisha, and
+hopefully I can figure out a not-too-painful way to send you money
+.
+Meanwhile, for a couple months David has been cranking away on "secret project X", with the promise that he'd tell me what the project was if and when it bore fruit. Well, apparently it bore fruit; he now has a
+proof
+that existence of a stochastic natural latent implies existence of a deterministic natural latent, which was our
+other bounty problem
+. The proof is apparently "pretty gnarly", lots of cases, all LLM-coded in Lean. I have not looked at the proof at all, but I'm operating on the assumption that it works and I'm hoping it will be simplified a lot in the coming weeks.
+... and while all that was going on, I've spent the last few months mostly doing interp experiments. Some time early this year, Claude Code reached the point where it can handle my day-to-day interp coding needs well enough that I never need to write the code myself, which has been a qualitative jump in usefulness. Claude's interpretations of results and suggestions for next steps are still mostly useless, but it can at least write the code, and (I think) I can usually tell by looking at graphs/tables of outputs if the code is wrong.
+So across the board, LLMs have started to meaningfully accelerate our work within the past ~4 months.
+This is all in stark contrast to two years ago, when I
+reported that
+:
+Basically every time a new model is released by a major lab, I hear from at least one person (not always the same person) that it's a big step forward in programming capability/usefulness. And then David gives it a try, and it works qualitatively the same as everything else: great as a substitute for stack overflow, can do some transpilation if you don't mind generating kinda crap code and needing to do a bunch of bug fixes, and somewhere between useless and actively harmful on anything even remotely complicated.
+and
+:
+Over and over again in the past year or so, people have said that some new model is a total game changer for math/coding, and then David will hand it one of the actual math or coding problems we're working on and it will spit out complete trash. And not like "we underspecified the problem" trash, or "subtle corner case" trash. I mean like "midway through the proof it redefined this variable as a totally different thing and then carried on as though both definitions applied".
+At the time, multiple people hypothesized that we were just bad at using LLMs.
+Ray
+was one of those people; one day when we were coding something and the LLM was failing to help much, we invited Ray to take a look and hopefully tell us how to better use the LLMs. Ray concluded that our coding problems really were quite a bit more complicated than his day-to-day, and LLMs probably were not as good at them.
+But that's in the past now. LLMs still do not look close to being able to do all the core pieces of my work, but they are at least accelerating meaningful parts in a big way, enough to qualitatively shift what we do and how we do it.
+LLMs Are Starting To Noticeably Accelerate Our Work
+63
+Quinn
+17
+johnswentworth
+8
+Aprillion
+9
+Quinn
+5
+MichaelDickens
+6
+MichaelDickens
+26
+Lucius Bushnaq
+5
+phoenix
+5
+Raemon
+7
+David Lorell
+5
+Raemon
+11
+Comments
+11
+AI
+Frontpage
+190
+New Comment
+11 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 3:34 AM
+[
+-
+]
+Quinn
+1d
+63
+5
+A year ago, you
+wrote
+:
+People would sometimes say something like "John, you should really get a smartphone, you'll fall behind without one" and my gut response was roughly "No, I'm staying in place, and the rest of you are moving backwards".
+And in hindsight, boy howdy do I endorse that attitude! Past John's gut was right on the money with that one.
+I notice that I have an extremely similar gut feeling about LLMs today. Like, when I look at the people who are relatively early adopters, making relatively heavy use of LLMs... I do not feel like I'll fall behind if I don't leverage them more. I feel like the people using them a lot are mostly moving backwards, and I'm staying in place.
+Reply
+[
+-
+]
+johnswentworth
+13h
+17
+4
+Y'know, I did eventually get a smartphone. But even today, I use my phone almost exclusively for maps and private messaging/calls. I have zero social media apps on it, and view zero shortform video content on it. And I think that's basically the right attitude.
+Drawing the analogy to LLMs: there are some narrow use-cases for which LLMs are great. Even two years ago, they were already great as a search engine alternative, including generating simple StackOverflow-style code snippets. In the last few months, they've also become viable for generating nontrivial numerical code and (sometimes, with a fair bit of scaffolding and Lean) nontrivial proofs. These use-cases are to LLMs what maps and direct messaging are to smartphones.
+... but then there's also a whole slew of other LLM use-cases which are more analogous to social media or shortform video on smartphones. And those use-cases I still avoid like the plague. Much like both social media and shortform video, they seem addictive and actively mind-killing. As a rough heuristic, if it feels like the LLM is
+thinking with you or for you
+, then that's usually a use-case to avoid scrupulously.
+(You might wonder if using LLMs for proofs feels like they're thinking with/for me, but mostly it feels to me like they're throwing prodigious amounts of shit at the wall and seeing what sticks, with pretty little thinking-of-the-sort-I-do at all. The power of Lean verification is that it makes that sort of brute-force-y search a viable method for finding proofs.)
+Reply
+1
+[
+-
+]
+Aprillion
+19h
+8
+6
+may I ask what was the intended point of this quote, please? do you wish to highlight the correctness of the feeling that people heavily using LLMs for complex stuff already before a year ago were moving backwards? or?
+Reply
+[
+-
+]
+Quinn
+13h
+9
+1
+I thought about adding commentary but decided the quote's recontextualization speaks for itself.
+That shortform (which John may or may not have remembered writing) was living in my brain ever since I read it, as a poweruser who occasionally has pangs of "what if enfeeblement?" and so on. So to me, the post about how things shifted as of the last few months feels something shaped like "the one guy we could count on to resist enfeeblement is now uplifted" which feels like a "sign of the times" of some sort.
+Reply
+2
+[
+-
+]
+MichaelDickens
+13h
+5
+1
+Not GP but I'm interested to hear John's take on what changed between
+a year ago: people think LLMs are improving productivity, but actually they're hurting productivity
+now: they are actually improving productivity
+or like, what's the mistake people were making a year ago, and why that mistake doesn't apply to today's LLMs
+(this isn't a gotcha, I expect he has a real answer and I want to hear what it is)
+Reply
+[
+-
+]
+MichaelDickens
+13h
+6
+5
+Actually I have a good guess at what his answer would be:
+A year ago, LLMs could do work that looked superficially good, but if you dig deeper, the work didn't hold up. So by using them, you're replacing good work with bad work
+Today, LLMs are much better at doing work that holds up to scrutiny
+FWIW I think that answer is correct in some domains, but I'd also say there were domains where 2025!LLMs were already doing good work, so people who were heavily using LLMs last year weren't necessarily "moving backwards".
+Reply
+[
+-
+]
+Lucius Bushnaq
+1d
+26
+10
+Same here. Big shifts around last autumn and again this summer.
+Reply
+[
+-
+]
+phoenix
+1d
+5
+2
+Agreed here as well. Opus 4.5-7 were fine for advancing theory work but 4.8/5/Fable/Sol have enabled rapid conversion of theory to working scripts with tangible results that bootstrap the cycle again.
+Reply
+[
+-
+]
+Raemon
+1d
+5
+0
+Having enough datapoints to see a trajectory, is your current model that they will improve a bit more but plateau at helping with your work in a predictable way, or, does it seem more likely to might end up dramatically accelerating it in some fashion?
+A thing I feel a bit confused about reading this is, like, I have an impression that, say, "interpretability researchers" have been using AI in a way that at least seemed superficially productive to them, and while I think you're doing different stuff than them my vague impression from a year ago was it wasn't, like, crazy different when it came to the coding.
+Reply
+[
+-
+]
+David Lorell
+1d
+7
+0
+Once the auto formalization/proving gets much better than this, we will quickly become bottlenecked on knowing/deciding what is the most useful next thing to point it at....which would be quite the exciting and different bottleneck to have and it's hard to predict what level of productivity that "plateau" looks like. (Assuming that there are also improvements to intelligibility of the proofs themselves, otherwise that too becomes a bottleneck of a similar sort because that's where a lot of the useful insight lives.)
+Reply
+[
+-
+]
+Raemon
+1d
+5
+0
+Yeah my question was a mix of "what's your next bottleneck" and "what are you/John's guesses about whether LLMs are fundamentally capable of handling the 'knowing deciding what to point at' part, or other stuff that's more taste-laden."
+Reply
+Moderation Log
+More from
+johnswentworth
+View more
+Curated and popular this week

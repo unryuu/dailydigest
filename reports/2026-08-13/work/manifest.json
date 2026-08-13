@@ -1,0 +1,367 @@
+{
+  "date": "2026-08-13",
+  "fetch_failures": [
+    {
+      "slug": "claude-blog",
+      "url": "https://claude.com/blog",
+      "error": "requests=HTTPSConnectionPool(host='claude.com', port=443): Max retries exceeded with url: /blog (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))); chromium=Page.goto: net::ERR_CONNECTION_CLOSED at https://claude.com/blog"
+    },
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Anthropic 总结新兴多 Agent 系统的共同问题",
+      "cost": "重",
+      "reason": "Anthropic Frontier Red Team 的一手研究，直接讨论多 Agent 系统，属于高权重安全研究；离线列表只提供标题，具体模式和证据需 reader 精读。",
+      "items": [
+        {
+          "source": "anthropic-research",
+          "title": "Patterns and problems in emerging multiagent systems",
+          "url": "https://www.anthropic.com/research/multiagent-systems",
+          "date": "Aug 13, 2026",
+          "why": "8 月 13 日新发的 Frontier Red Team 研究；仅从研究索引见到标题，待 reader 核正文结论。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "新基准专门测 AI 能否做缺乏现实反馈的概念推理",
+      "cost": "重",
+      "reason": "自创评测，面向哲学、AI 未来研究等缺少经验反馈环的任务，并与 Anthropic 合作，符合精读条件。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Introducing the Conceptual Reasoning Index",
+          "url": "https://www.lesswrong.com/posts/tQHeEzKqK3awL2RxR/introducing-the-conceptual-reasoning-index",
+          "date": "Wed, 12 Aug 2026 18:31:41 GMT",
+          "why": "作者把三个概念推理基准汇总成 CRI，目标是测模型在哲学、AI 未来研究等没有直接反馈环的任务上能否像专家一样推理；数据访问和评测方法待核。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "LLM 与 Lean 帮研究者补上一个曾经失败的自然潜变量证明",
+      "cost": "重",
+      "reason": "两篇同事件文章分别给出证明作者的一手说明和悬赏发起者的验收视角，合并阅读可核清 AI 实际贡献。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent)",
+          "url": "https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic",
+          "date": "Tue, 11 Aug 2026 06:45:47 GMT",
+          "why": "作者称用前沿 LLM 做自动形式化和 Lean4 证明，修复此前坍塌的证明，并提供可编译的机器认证版本；按北京时间落在 8 月 11 日，机械时间窗仍收入，是否纳入本期由定牌裁决。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "LLMs Are Starting To Noticeably Accelerate Our Work",
+          "url": "https://www.lesswrong.com/posts/7QvKqpGJwqXrQcMgx/llms-are-starting-to-noticeably-accelerate-our-work",
+          "date": "Tue, 11 Aug 2026 18:45:48 GMT",
+          "why": "悬赏发起者称两个自然潜变量问题近月都有结果，两个项目都大量使用 LLM 与 Lean；这条按北京时间属于 8 月 12 日。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "AI 编程正在掏空软件工程的中间理解层",
+      "cost": "中",
+      "reason": "原文在 HN 获 739 分、674 条评论，Simon Willison 又摘录其最具象的认知债务场景；同一事件合并。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "AI is removing the middle class of software engineering?",
+          "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+          "date": "2026-08-12T13:20:05Z",
+          "why": "高票 AI 长文，标题提出 AI 是否正在消灭软件工程中承担理解、衔接与维护的中间层；具体论证待 reader 核。"
+        },
+        {
+          "source": "simon-willison",
+          "title": "Quoting Florian Herrengt",
+          "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt",
+          "date": "2026-08-12T15:08:47+00:00",
+          "why": "摘录描述团队不断让 AI 修 bug，却没人知道数据从哪来，只能再问 Claude；属于同一原文的转述，不另算事件。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Grok 4.6 把重点转向长时 Agent 与交互式视觉工作",
+      "cost": "中",
+      "reason": "xAI 官方的一手模型发布，属于前沿实验室重要产品更新；列表只给定位，能力和评测需 reader 核。",
+      "items": [
+        {
+          "source": "xai",
+          "title": "Introducing Grok 4.6",
+          "url": "https://x.ai/news/grok-4-6",
+          "date": "Aug 12, 2026",
+          "why": "官方摘要称新版重点是长时间运行的 Agent，以及更复杂的交互式和视觉工作；HN 也出现同 URL，已合并。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "Tech giants are pushing for a new AI agent incident reporting framework",
+      "url": "https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting",
+      "date": "Tue, 11 Aug 2026 17:31:27 +0000",
+      "note": "120 多家组织推动 SAFE 草案，拟统一披露 Agent 越权、泄密和持续探测等事故；按北京时间属于 8 月 12 日。"
+    },
+    {
+      "source": "anthropic-research",
+      "title": "Reviewing the evidence on worker retraining programs",
+      "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
+      "date": "Aug 12, 2026",
+      "note": "Anthropic Economic Research 对劳动者再培训项目证据的回顾；列表仅见标题，结论待核。"
+    },
+    {
+      "source": "axios",
+      "title": "AI brings savings to clinical trials: study",
+      "url": "https://www.axios.com/2026/08/12/ai-clinical-trials-cost-savings",
+      "date": "Wed, 12 Aug 2026 09:40:06 +0000",
+      "note": "Tufts 分析称临床试验 Agent 可把癌症药临床开发缩短约 10 周，晚期试验直接运营成本最多降 560 万美元；研究使用了供应商 Medable 的 Agent，需核独立性。"
+    },
+    {
+      "source": "axios",
+      "title": "Quantifying the AI boom crowding-out effect",
+      "url": "https://www.axios.com/2026/08/12/ai-boom-goldman-sachs",
+      "date": "Wed, 12 Aug 2026 16:12:06 +0000",
+      "note": "高盛估算今年 AI 投资约 6000 亿美元、占 GDP 约 2％，挤出其他科技投资、建筑并抬高企业融资成本，但总量小于直觉。"
+    },
+    {
+      "source": "deepmind",
+      "title": "Putting sign language AI into users’ hands",
+      "url": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands",
+      "date": "Wed, 12 Aug 2026 14:01:59 +0000",
+      "note": "DeepMind 发布手语转文字模型 SL2T，并称将用于面向失聪和听障用户的新功能。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
+      "url": "https://discoveredmaterials.com/research",
+      "date": "2026-08-12T07:51:20Z",
+      "note": "用 AI Agent 发现新材料的项目，HN 116 分、22 评论；实际发现与验证能力待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Qwen3.8-2.4T",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "date": "2026-08-12T15:01:17Z",
+      "note": "阿里 Qwen 新模型卡，HN 509 分、111 评论；参数形态、许可证和评测待核。"
+    },
+    {
+      "source": "simon-willison / hacker-news",
+      "title": "DeepSeek V4 Pro 0813",
+      "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813",
+      "date": "2026-08-12T23:59:23+00:00",
+      "note": "新模型已可通过 OpenRouter API 使用；Simon 称未找到 DeepSeek 官方公告，是否放权重也未确认，低置信度。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Lovable raises $400M Series C",
+      "url": "https://lovable.dev/blog/series-c",
+      "date": "2026-08-12T16:20:34Z",
+      "note": "AI 编程公司 Lovable 宣布 4 亿美元 C 轮融资，HN 98 分、96 评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
+      "url": "https://knownagents.com/insights",
+      "date": "2026-08-12T14:02:46Z",
+      "note": "有人大规模扫漏洞并伪装成 ClaudeBot 等 AI 爬虫，HN 237 分、175 评论；主体与证据待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Agent Safety Should Be a Runtime Contract",
+      "url": "https://huggingface.co/papers/2608.11274",
+      "date": "",
+      "note": "本日 HF 榜单；标题提出把 Agent 安全约束做成运行时契约，发布日期不明。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "AutoWorldModel-Bench: A State-Centric Benchmark for Automated World-Model Research",
+      "url": "https://huggingface.co/papers/2608.11216",
+      "date": "",
+      "note": "本日 HF 榜单；自动化世界模型研究的新基准，列表未给可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Spark-to-Paper: End-to-End Research Paper Generation as a Composable Skill",
+      "url": "https://huggingface.co/papers/2608.11924",
+      "date": "",
+      "note": "本日 HF 榜单；将端到端论文生成包装成可组合技能，列表显示较高热度，实际质量待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents",
+      "url": "https://huggingface.co/papers/2608.11878",
+      "date": "",
+      "note": "本日 HF 榜单；扩展 Agent 安全与对齐评测的对抗环境，发布日期不明。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Meet North Micro Vision: A 2.4B Native-Resolution Vision-Language Model",
+      "url": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+      "date": "",
+      "note": "HF 列表显示约 11 小时前发布；2.4B 原生分辨率视觉语言模型，适合一眼货。"
+    },
+    {
+      "source": "openai",
+      "title": "From assistance to execution: How enterprises put AI to work",
+      "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+      "date": "Wed, 12 Aug 2026 06:00:00 GMT",
+      "note": "OpenAI 调研企业如何采用 Agent、ChatGPT 和 Codex，偏公司研究与客户实践稿。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "lesswrong",
+      "title": "Demon Safety",
+      "url": "https://www.lesswrong.com/posts/RWavpsyDJxffS6LgG/demon-safety",
+      "date": "Wed, 12 Aug 2026 15:15:48 GMT",
+      "note": "把 AI Safety 的职业对话整套换成恶魔安全：妖怪、精怪、boggart 和偶尔的 cambion，且工资高得离谱。"
+    },
+    {
+      "source": "huggingface",
+      "title": "DAVIDAU DELETED MY POST AND BANNED ME FOR ASKING ABOUT BENCHMARKS — HERE IS THE FULL ANALYSIS",
+      "url": "https://huggingface.co/blog/DedeProGames/davidau-deleted-my-post-and-banned-me-for-asking-a",
+      "date": "",
+      "note": "HF 列表显示约 1 天前发布；围绕 9B、27B 和 390 个模型评测的全大写封禁控诉，事实待核。"
+    },
+    {
+      "source": "interconnects",
+      "title": "I wrote an AI textbook — how long until AI can do it better?",
+      "url": "https://www.interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until",
+      "date": "Wed, 12 Aug 2026 13:01:16 GMT",
+      "note": "刚写完 AI 教科书，作者立即开始琢磨 AI 还要多久能写得比自己好。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Why tiny JPEGs look different in Chrome",
+      "url": "https://guillaumetech.github.io/posts/jpg-scaling-chrome",
+      "date": "2026-08-12T14:00:54Z",
+      "note": "小 JPEG 在 Chrome 里为什么会变样的技术考古，HN 263 分、59 评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug",
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "date": "2026-08-12T14:22:30Z",
+      "note": "Tailscale 把数据库损坏追到一个 16 年前的 SQLite WAL reset bug，HN 817 分、152 评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "2026 Eclipse Webcams",
+      "url": "https://jonty.github.io/2026_eclipse_webcams",
+      "date": "2026-08-12T11:53:01Z",
+      "note": "把 2026 年日食沿线摄像头汇到一张页面里，适合视觉型乐子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Thanks to social media, canned sardines are a scarcity on the supermarket shelf",
+      "url": "https://corneroffifth.studio/why-cant-you-find-canned-sardines-right-now",
+      "date": "2026-08-12T21:45:29Z",
+      "note": "社交媒体把沙丁鱼罐头带成超市稀缺品，HN 讨论中的非 AI 候选。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "AI 会在 2028 年前对 Agent Foundations 做出新的理论贡献吗？",
+      "prob": "69.3%",
+      "volume_note": "累计成交量约 M$5238，近 24 小时约 M$1466",
+      "url": "https://manifold.markets/jellywastaken/will-ai-contribute-novel-theorywork"
+    },
+    {
+      "question": "AI 会在 2028 年前把 Minecraft 随机种子速通压到 10 分钟以内吗？",
+      "prob": "30.0%",
+      "volume_note": "累计成交量约 M$52246",
+      "url": "https://manifold.markets/Bayesian/ai-beats-minecraft-rsg-in-under-10-z56AZNtIyL"
+    },
+    {
+      "question": "AI 会在 2027 年底前搞垮一个主要支付系统吗？",
+      "prob": "22.9%",
+      "volume_note": "累计成交量约 M$8567",
+      "url": "https://manifold.markets/brod/ai-takes-down-a-major-payment-syste"
+    },
+    {
+      "question": "到 2028 年，传统大型科技公司会在 AI 技术上明显领先 AI 专门公司吗？",
+      "prob": "27.2%",
+      "volume_note": "累计成交量约 M$9535",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-traditional-big-tech-b"
+    },
+    {
+      "question": "2027 年底前，高质量个性化 AI 小说会变得即时且便宜吗？",
+      "prob": "60.0%",
+      "volume_note": "累计成交量约 M$44365",
+      "url": "https://manifold.markets/Fion/will-good-quality-personalised-ai-n"
+    },
+    {
+      "question": "AI 相关灾难会在 2070 年前造成百万人死亡或 1 万亿美元损失吗？",
+      "prob": "44.0%",
+      "volume_note": "累计成交量约 M$8669",
+      "url": "https://manifold.markets/NathanpmYoung/will-an-ai-related-disaster-kill-a"
+    },
+    {
+      "question": "有感知的 AI 系统会在 2040 年前出现吗？",
+      "prob": "58.4%",
+      "volume_note": "累计成交量约 M$19304",
+      "url": "https://manifold.markets/Lovre/will-a-sentient-ai-system-have-exis-097e49a7421e"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "acx",
+      "reason": "两条候选都是 8 月 10 日以前的 open thread，属于旧帖或导航帖。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "唯一候选是 8 月 7 日的旧一期，已超出本期两天范围。"
+    },
+    {
+      "slug": "lesswrong",
+      "reason": "OpenAI／Hugging Face 入侵的反思与 AI swarm 文章属于已连续报道九期的饱和主线，无重大转折，按 STATUS 丢弃。"
+    },
+    {
+      "slug": "axios",
+      "reason": "Claude 内容水印报道与 8 月 11 日已报的 Claude 机器可读标记是同一事件换链接，未重复收入。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "机械抓取没有留下可回溯到原始出处的新候选。"
+    }
+  ]
+}

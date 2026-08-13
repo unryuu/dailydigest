@@ -1,0 +1,130 @@
+[
+  {
+    "id": "lovable-series-c",
+    "section": "industry",
+    "label": "AI 编程公司 Lovable 融资 4 亿美元",
+    "url": "https://lovable.dev/blog/series-c",
+    "body": "本轮融资对公司的估值为 133 亿美元。Lovable 称平台上线以来已创建超过 6000 万个项目。",
+    "note": "核实通过；融资额和估值来自公司公告，平台数据也是公司自报。"
+  },
+  {
+    "id": "agent-runtime-contract",
+    "section": "papers",
+    "label": "研究者提议把 Agent 安全写进运行时合同",
+    "url": "https://huggingface.co/papers/2608.11274",
+    "body": "系统既要在 Agent 动手前拦住危险操作，也要用测试记录、文件差异和引用等证据核实它真的完成了任务。",
+    "note": "核实通过；dup_suspect：与本期多 Agent 安全金牌同池，但这篇提出的是运行时预防控制和证据链机制。论文以公开案例审计和综述支撑主张，不是部署成效实验。"
+  },
+  {
+    "id": "toolhazard",
+    "section": "papers",
+    "label": "北大团队自动生成环境给 Agent 下套",
+    "url": "https://huggingface.co/papers/2608.11878",
+    "body": "ToolHazard 会寻找工具环境里的间接提示词注入点，再生成攻击内容和长任务，用来测试 Agent 会不会被环境劫持。",
+    "note": "核实通过；dup_suspect：与本期多 Agent 安全金牌同池，但这是自动合成对抗环境的新评测机制。安全改进结论来自作者实验。"
+  },
+  {
+    "id": "spark-to-paper",
+    "section": "papers",
+    "label": "研究者把写论文拆成 13 个可组合技能",
+    "url": "https://huggingface.co/papers/2608.11924",
+    "body": "这套流程让编程助手找文献、规划并运行实验，再按结果修改论点和生成图表；目前只在 8 个受控研究题目上测试。",
+    "note": "核实通过；作者报告引文有效率 99.5％、平均每篇耗时 3.2 小时和成本 8.1 美元，这些是自设受控实验指标，不能外推为论文质量。"
+  },
+  {
+    "id": "discovered-materials",
+    "section": "papers",
+    "label": "AI Agent 算出 500 多种候选新材料",
+    "url": "https://discoveredmaterials.com/research",
+    "body": "这些候选材料都只通过了计算筛选，500 多种里仅 1 种有专家认为可尝试的合成路线，实验室验证还在进行。",
+    "note": "核实通过；项目公开的是计算材料发现基准，不能写成已经在实验室发现或制成新材料。配方先由 LLM 按专家量表评分，再由专家校准。"
+  },
+  {
+    "id": "north-micro-vision",
+    "section": "official",
+    "label": "Cohere 开源 24 亿参数视觉模型",
+    "url": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+    "body": "它会保留文档、表格和截图的原始比例与细节，单张图片最高可处理到 200 dpi 的 A4 页面，权重采用 Apache 2.0 许可证。",
+    "note": "核实通过；官方模型发布。公开 vLLM 支持尚未上线。"
+  },
+  {
+    "id": "openai-enterprise-execution",
+    "section": "official",
+    "label": "OpenAI 发布企业 Agent 使用报告",
+    "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+    "body": "截至 6 月，Codex 占企业客户使用 Codex 和 ChatGPT 时合计输出 token 的 64％；这个数字也会受到 Agent 任务更长、输出更多影响。",
+    "note": "核实通过；数据来自 OpenAI 自家企业客户和产品，属于公司研究与客户实践稿，不能当作整个企业市场的代表性调查。"
+  },
+  {
+    "id": "demon-safety",
+    "section": "fun",
+    "label": "AI 安全从业者改行研究恶魔安全",
+    "url": "https://www.lesswrong.com/posts/RWavpsyDJxffS6LgG/demon-safety",
+    "body": "这份高薪工作要尽快召唤更多、更吓人的恶魔，再解释这一切都是为了安全。",
+    "note": "核实通过；讽刺小说，把 AI 安全与能力竞赛整套替换成召唤恶魔。"
+  },
+  {
+    "id": "eclipse-webcams",
+    "section": "fun",
+    "label": "有人把日全食沿线摄像头做成一张地图",
+    "url": "https://jonty.github.io/2026_eclipse_webcams",
+    "body": "地图会显示全食路径和倒计时，点沿线标记就能打开当地摄像头。",
+    "note": "核实通过；页面源码可核全食路径、首末摄像头倒计时和摄像头链接。纯天文工具，和人与 AI 的关系较弱，由定牌裁决。"
+  },
+  {
+    "id": "sardines-scarcity",
+    "section": "fun",
+    "label": "社交媒体把沙丁鱼罐头带成了稀缺品",
+    "url": "https://corneroffifth.studio/why-cant-you-find-canned-sardines-right-now",
+    "body": "文章称短期沙丁鱼减肥法突然推高需求，海水变暖、摩洛哥渔获下降和捕捞限制又让供应跟不上。",
+    "note": "核实通过；原文是零售行业媒体的单篇报道，因缺少独立数据链接，正文保留“文章称”。纯生活话题，和人与 AI 的关系弱。"
+  },
+  {
+    "id": "tiny-jpeg-chrome",
+    "section": "fun",
+    "label": "Chrome 会让极小的 JPEG 看起来更粗",
+    "url": "https://guillaumetech.github.io/posts/jpg-scaling-chrome",
+    "body": "为了少占内存，Chrome 会在缩图时只解码部分图像信息；边缘和渐变被省掉后，小图就可能和 Firefox 长得不一样。",
+    "note": "核实通过；作者 8 月 12 日补充，更正为部分 JPEG 解码和后续缩放算法共同造成差异。原文首发日期为 8 月 3 日。"
+  },
+  {
+    "id": "ai-clinical-trials",
+    "section": "industry",
+    "label": "模型估算临床试验 Agent 或可省下十周",
+    "url": "https://www.axios.com/2026/08/12/ai-clinical-trials-cost-savings",
+    "body": "Tufts 将 Medable 的临床监测 Agent 用于一个未公开的肿瘤药项目，预测晚期试验最多少花 560 万美元；研究没有报告真实前瞻试验已实现这些节省。",
+    "note": "核实通过；必须写成预测模型估算。建模依据包含实际使用和基准数据，但 Agent 供应商 Medable 参与，项目细节未公开，且人工复核可能抵消部分节省。"
+  },
+  {
+    "id": "hf-benchmark-ban",
+    "section": "fun",
+    "label": "有人因追问模型评测自称遭删帖封禁",
+    "url": "https://huggingface.co/blog/DedeProGames/davidau-deleted-my-post-and-banned-me-for-asking-a",
+    "body": "作者质疑相关模型只拿多年前的测试题宣传，却没有提供现代编程和 Agent 评测；删帖与封禁经过目前只有他的单方说法。",
+    "note": "核实通过；低信度：这是 Hugging Face 社区用户的单方控诉，本地原文虽列出讨论链接和分析，但未取得被指控方回应，也未独立核实删帖、封禁和选择性管理指控。正文不能把这些指控写成事实。"
+  },
+  {
+    "id": "grok-46",
+    "section": "industry",
+    "label": "xAI 让 Grok 接手更长时间的任务",
+    "url": "https://x.ai/news/grok-4-6",
+    "body": "Grok 4.6 重点加强长时 Agent、代码库和交互式视觉项目，已进入 Cursor、API 和 OpenRouter。",
+    "note": "核实通过；能力与跑分来自 xAI 官方发布，正文不写成第三方复现。"
+  },
+  {
+    "id": "ai-investment-crowding",
+    "section": "industry",
+    "label": "AI 投资对其他行业的挤出没有想象中大",
+    "url": "https://www.axios.com/2026/08/12/ai-boom-goldman-sachs",
+    "body": "高盛估算今年 AI 投资约 6000 亿美元；融资竞争目前只让非 AI 投资少约 100 亿美元，资源挤出仍较有限。",
+    "note": "核实通过；数字来自高盛模型估算，由 Axios 转述，不能写成逐项观测结果。"
+  },
+  {
+    "id": "ai-textbook",
+    "section": "fun",
+    "label": "AI 教科书刚写完，作者就开始担心 AI 写得更好",
+    "url": "https://www.interconnects.ai/p/i-wrote-an-ai-textbook-how-long-until",
+    "body": "Nathan Lambert 估计，模型也许只要几个月就能写出信息更全的版本，但还不一定能取代作者的判断和取舍。",
+    "note": "核实通过；作者本人在新书完成后讨论 AI 何时能超过这本书。"
+  }
+]

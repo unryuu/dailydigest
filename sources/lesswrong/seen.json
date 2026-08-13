@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/RWavpsyDJxffS6LgG/demon-safety",
+  "title": "AI 安全从业者改行研究恶魔安全",
+  "date": "Wed, 12 Aug 2026 15:15:48 GMT",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic",
+  "title": "LLM 帮研究者补上失败过的数学证明",
+  "date": "Tue, 11 Aug 2026 06:45:47 GMT",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/tQHeEzKqK3awL2RxR/introducing-the-conceptual-reasoning-index",
+  "title": "新基准考察 AI 能不能处理没有标准答案的问题",
+  "date": "Wed, 12 Aug 2026 18:31:41 GMT",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/oKSAT5Bn5zcJAREDB/what-claude-saw-below",
   "title": "Claude 给不存在的下方内容续写怪故事",
   "date": "Tue, 11 Aug 2026 12:45:48 GMT",

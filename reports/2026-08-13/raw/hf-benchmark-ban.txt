@@ -1,0 +1,421 @@
+URL: https://huggingface.co/blog/DedeProGames/davidau-deleted-my-post-and-banned-me-for-asking-a
+FINAL: https://huggingface.co/blog/DedeProGames/davidau-deleted-my-post-and-banned-me-for-asking-a
+TITLE: DAVIDAU DELETED MY POST AND BANNED ME FOR ASKING ABOUT BENCHMARKS — HERE IS THE FULL ANALYSIS (9B + 27B + 390 MODELS)
+FETCHED: 2026-08-13 11:34:49
+============================================================
+Back to Articles
+DAVIDAU DELETED MY POST AND BANNED ME FOR ASKING ABOUT BENCHMARKS — HERE IS THE FULL ANALYSIS (9B + 27B + 390 MODELS)
+Community Article
+Published
+ August 11, 2026
+Upvote
+9
+DedeProGames
+DedeProGames
+I posted a discussion on the Qwen3.6-27B-Fable-Fusion-711 model page asking for modern benchmarks (SWE-bench, Terminal-Bench, GPQA, LiveCodeBench). DavidAU did not respond. He did not close the discussion. He
+deleted it
+and then
+blocked me from interacting with any of his repositories
+("you're not enabled to interact with this user").
+So now I'm posting this here. If he deletes this too, the community will see the pattern.
+WHAT HAPPENED
+I posted a discussion on
+DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+asking for SWE-bench Verified, Terminal-Bench 2.0, GPQA Diamond, LiveCodeBench, AIME, and HMMT scores
+DavidAU deleted the post — not closed,
+deleted
+He then blocked me from all his repositories
+I can no longer post discussions, comments, or interact on any of his 390+ model repos
+This is the same person who:
+Closed Discussion #10
+on the 9B model after user KottCh reported the model
+failed at a basic coding task
+(Fermat's factorization) — closed the next day, no response
+Ignored FreeGoldRush
+when they directly asked for SWE-bench Verified scores in Discussion #1 on the 27B model
+Pinned positive discussions
+(Discussion #11: "Perfect Tool Calling") while deleting critical ones
+Responded to criticism with
+"Trust me bro, it's the best"
+when asked for real benchmark results
+The pattern is clear:
+close, ignore, delete, ban.
+When the model fails — close the discussion. When someone asks for modern benchmarks — ignore them. When someone posts a critical analysis — delete it and ban the user.
+THE TWO MODELS ANALYZED
+Model 1: Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+419,415 downloads/month
+Claims: "ABSOLUTE FIRE: 640 ARC-C for both 8bit and 4bit"
+Claims: "Extreme intelligence in a small package. Jaw dropping performance."
+Claims: "Model exceeds 7 of 7 benchmarks for Qwen 3.5 9B, Qwen3.5 27B, Qwen3.6 35B-A3B"
+Model 2: Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+1.6 million+ downloads
+,
+25,000+ on GGUF per month
+,
+1,500+ likes
+Claims: "The first fine tune to exceed 700 'arc-c' (The OpenAI, Claude and Gemini 'zone of intelligence')"
+Claims: "The 700 'intelligence club' is reserved for OpenAI, Claude and Gemini closed source models"
+Claims: "This is the one they fear"
+Both models use the
+exact same 7 benchmarks
+. Both make
+extraordinary intelligence claims
+based on those 7 benchmarks. Neither model has been tested on a single modern benchmark.
+THE 7 BENCHMARKS — ALWAYS THE SAME, ALWAYS SATURATED
+Every single model in DavidAU's catalog — all 390+ of them — uses the same 7 benchmarks:
+Benchmark
+Year
+What It Measures
+Status
+ARC-C
+2018
+Elementary science MCQ
+Saturated
+ARC-E
+2018
+Elementary science (easy)
+Saturated
+BOOLQ
+2019
+Yes/No reading comprehension
+Saturated
+HellaSwag
+2019
+Sentence completion
+Saturated
+OpenBookQA
+2018
+Factual knowledge
+Saturated
+PIQA
+2019
+Physical commonsense
+Saturated
+Winogrande
+2019
+Pronoun resolution
+Saturated
+All from 2018-2019. All designed for the BERT/GPT-2 era. Models as small as 3B parameters score 55%+ on ARC-C now. These benchmarks
+do not discriminate
+between a decent model and a genuinely intelligent one.
+9B benchmarks
+ARC-C ARC-E BOOLQ HellaSwag OBQA PIQA Winogrande
+
+This model 0.649 0.832 0.895 0.713 0.482 0.783 0.699 (bf16)
+Qwen 3.5 9B 0.571 0.719 0.895 0.683 0.426 0.770 0.671 (mxfp8)
+Qwen 3.5 27B 0.557 0.711 0.868 0.533 0.452 0.706 0.695
+Qwen 3.6 27B 0.647 0.803 0.910 0.773 0.450 0.806 0.742
+Qwen 3.6 35B 0.581 0.757 0.892 0.751 0.428 0.803 0.688
+27B benchmarks
+Fusion-711 0.711 0.879 0.910 0.790 0.514 0.823 0.763
+Qwen 3.6 0.647 0.803 0.910 0.773 0.450 0.806 0.742
+BOOLQ is identical
+on both models (0.895 = 0.895 on 9B, 0.910 = 0.910 on 27B). Zero improvement.
+The "711" in the 27B model name = ARC-C 0.711. The base Qwen 3.6 27B scores 0.647. So the entire "zone of intelligence" claim is built on a
+6.4% improvement on a single saturated benchmark
+.
+On the 40B expansion (
+Qwen3.6-40B-Grand-Intelligence-Six-711-717-raw
+), ARC-C
+dropped
+from 0.711 to 0.695. The 40B is
+worse
+on the one benchmark that supposedly defines "intelligence." And the card still claims it operates at "OpenAI, Claude and Gemini" levels.
+THE RESEARCH THAT INVALIDATES THE ARC-C CLAIM
+A 2024 paper from Snowflake AI Research (Borchmann, arXiv:2412.17758 —
+"In Case You Missed It: ARC 'Challenge' Is Not That Challenging"
+) directly demonstrated that ARC-C's perceived difficulty is
+an artifact of the evaluation setup
+, not the actual complexity of the questions:
+When Llama 3.1 70B was evaluated with all answer options visible (how humans take tests), ARC-C accuracy jumped from
+64% to 93%
+— a 29-point swing
+just from changing the format
+31% of ARC-C questions are "hardly answerable in separation" — they require comparing options to answer, but get evaluated without showing all choices
+OpenBookQA went from 48% to 89% with correct evaluation — meaning it's essentially "solved," and any score differences are eval artifacts
+The authors' conclusion:
+"The previously perceived difficulty was primarily an artifact of the evaluation method rather than the tasks' complexity"
+So ARC-C was never an "intelligence barrier." It was a
+formatting issue
+. The "700 club" isn't some exclusive frontier model zone — it's a number that moves 29 points depending on how you set up your evaluation harness.
+OpenAI, Claude, and Gemini do not compete on ARC-C.
+They don't report it. They don't market around it. They compete on SWE-bench Verified, Terminal-Bench 2.0, GPQA Diamond, LiveCodeBench, AIME, and HMMT.
+WHAT THE BASE MODELS ACTUALLY REPORT (AND DAVIDAU NEVER TESTS)
+Qwen 3.5 9B official benchmarks (embedded inside DavidAU's own model card but never tested on his fine-tune):
+Benchmark
+Qwen 3.5 9B
+What It Measures
+MMLU-Pro
+82.5
+Advanced academic knowledge (10x harder than MMLU)
+GPQA Diamond
+81.7
+PhD-level science questions
+SuperGPQA
+58.2
+Expert-level questions
+LiveCodeBench v6
+65.6
+Live competitive coding
+BFCL-V4
+66.1
+Function calling / tool use
+TAU2-Bench
+79.1
+Agent benchmark
+HMMT Feb 25
+83.2
+Harvard-MIT Math Tournament
+IFEval
+91.5
+Instruction following
+DeepPlanning
+18.0
+Deep planning
+OSWorld-Verified
+41.8
+OS agent benchmark
+AndroidWorld
+57.8
+Android agent benchmark
+Qwen 3.6 27B official benchmarks (the base model for the 27B fine-tune):
+Benchmark
+Qwen 3.6 27B
+What It Measures
+SWE-bench Verified
+77.2
+Real GitHub issue resolution
+SWE-bench Pro
+53.5
+Harder coding agentic benchmark
+Terminal-Bench 2.0
+59.3
+Agentic terminal performance
+GPQA Diamond
+87.8
+PhD-level science questions
+MMLU-Pro
+86.2
+Advanced academic knowledge
+LiveCodeBench v6
+83.9
+Live competitive coding
+AIME26
+94.1
+Math Olympiad
+HMMT Feb 26
+84.3
+Harvard-MIT Math Tournament
+SuperGPQA
+66.0
+Expert-level questions
+The irony:
+the Qwen 3.5 9B official model card is literally copy-pasted inside DavidAU's README
+— showing all 25+ modern benchmarks that Qwen reports. He includes the card showing what the base model can do on SWE-bench, GPQA, LiveCodeBench, BFCL, TAU2-Bench — and then
+tests his fine-tune on none of them
+.
+THE CLOSED/DELETED/IGNORED DISCUSSIONS
+Discussion #10 on the 9B model — CLOSED
+User
+KottCh
+tested the model on Fermat's factorization with two optimizations:
+"test Fermat's factorization with optimization. no optim done, incorrect"
+"Thinking mode for precise coding tasks with temperature=0.6 also did not succeed"
+The model
+failed
+at a straightforward coding task. DavidAU closed the discussion the next day. No response, no investigation.
+Discussion #1 on the 27B GGUF model — IGNORED
+User
+FreeGoldRush
+asked:
+"SWE-bench Verified score at q8 and q4?"
+DavidAU responded to other questions in the same thread but
+completely ignored
+the SWE-bench request.
+Community responses:
+darkmatter2222:
+"OK, and? Prove it!"
+Hunterx:
+"Q: 'Would you mind to share the real benchmark results please?' A: 'Trust me bro, it's the best.'"
+Discussion #11 on the 27B model — PINNED (positive) but has negative reports
+One user reported great agentic performance. But another responded:
+"I have been having a lot of problems with looping tool calls in Hermes with this model."
+Discussion #7 on GPT-OSS 20B — gibberish output
+User
+YardWeasel
+reported asking "Who was George Washington?" produced gibberish, meta-discussions, and the model rewriting its own output. DavidAU's response:
+"Q8s are 'padded'; reducing performance."
+— meaning the highest standard quant has reduced performance on his models.
+User
+yingjiegao
+reported the 120B model "spitting gibberish 20% of the time."
+Discussion #4 on GLM-4.7-Flash — titled "One of the worst FTs I've seen, congrats!"
+My post on the 27B model — DELETED, user BANNED
+I posted a discussion asking for modern benchmarks. DavidAU deleted it and blocked me from all his repositories.
+The pattern: close, ignore, delete, ban.
+THE GGUF QUALITY SITUATION
+Custom quantization methods with no verification
+DavidAU uses custom methods that don't exist in standard llama.cpp:
+"NEO IMATRIX"
+— custom imatrix, no published calibration data, no perplexity measurements, no comparison to standard imatrix
+"DI-MATRIX"
+— "averages of 2 imatrix datasets" — which datasets? What calibration text? How many chunks?
+"TRI-MATRIX"
+— "averages of 3 imatrix datasets" — same questions
+Output tensor modifications
+— "full precision - 16 bit" for all quants, no explanation of perplexity impact
+MTP (Multi-Token Prediction) GGUFs
+— MTP tensors set to Q8_0, no documentation on quality impact
+The model card claims NEO IMATRIX "improve accuracy of the quants by an additional 2-4% over normal GGUFs."
+2-4% improvement
+is a significant claim with zero evidence.
+Legacy quants
+Research on llama.cpp quantization is clear:
+Q4_0
+has roughly
+5x the perplexity error
+of
+Q4_K_M
+at nearly identical file size
+Legacy quants (Q4_0, Q4_1, Q5_0, Q5_1) use uniform scalar quantization — inferior to K-quants
+IQ quants without a proper model-specific imatrix are usually worse
+than the equivalent K-quant
+Double quantization "can severely reduce quality" — llama.cpp refuses this by default
+DavidAU frequently uses legacy quants (Q5_1, Q4_1) instead of K-quants (Q5_K_M, Q4_K_M) with no explanation.
+Flash attention issues
+On GLM-4.7-Flash models, DavidAU's own card notes:
+"Quants prior to this commit (as well as Imatrix generation) performed poorly."
+and
+"Disable Flash Attn until this issue is resolved."
+THE SCALE OF THE PROBLEM
+DavidAU has
+5 collections
+on Hugging Face:
+Main collection:
+284 models
+Dark/evil/corrupt:
+135 models
+Heretic uncensored:
+130 models
+0.8B to 87B:
+65 models
+Qwen 3.6 fine-tunes:
+17 models
+Total: approximately
+390+ unique model repos
+. Combined downloads across these models are in the
+millions
+.
+390+ models. Same 7 saturated benchmarks. Every. Single. Time.
+And now, when someone asks for modern benchmarks, the response is to
+delete the post and ban the user
+.
+THE PRESENTATION PROBLEM
+Model names
+Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+— 80 characters. Compare with
+Qwen/Qwen3.5-9B
+— clean, identifiable.
+Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+— 68 characters. Compare with
+Qwen/Qwen3.6-27B
+— clean, identifiable.
+README content
+The 9B README is
+145 KB
+. Most model cards are 2-10 KB. This one includes:
+Marketing claims ("ABSOLUTE FIRE," "Jaw dropping performance," "Extreme intelligence")
+The
+entire Qwen 3.5 9B official model card
+copy-pasted (thousands of words)
+4 full example generations
+(a ~2000-word cooling essay, a ~2000-word horror story with graphic gore, a ~1000-word self-promotional pitch with profanity, a ~2000-word Black Mirror episode set)
+A random GIF (
+neo-dodge.gif
+, 4.22 MB)
+The 27B README opens with:
+"The strongest, smartest open source multi-stage model fine tune for consumer hardware ever and BUILT on consumer hardware via Unsloth."
+And later:
+"This is the one they fear."
+Compare with the
+Qwen 3.6 27B official model card
+: structured sections, 25+ benchmark tables, evaluation methodology footnotes (SWE-bench setup, Terminal-Bench harness, temperature, top_p, context window, number of runs), architecture specs, reproducible quickstart code, BibTeX citation. Night and day.
+Reproducibility
+Zero reproducibility
+in either model card. No eval scripts. No prompts. No harness config. No few-shot setup. No temperature. No sampling parameters. Just a bar chart from "Nightmedia" with no methodology. The Qwen 3.6 card tells you exactly how each benchmark was run. These cards tell you to trust a bar chart.
+FINE-TUNING CAN IMPROVE LEGACY BENCHMARKS WHILE DEGRADING REAL CAPABILITIES
+This is well-documented. Fine-tuning is not free. When you train a model to perform better on specific benchmarks, you can easily
+degrade
+its performance on other tasks — especially agentic ones.
+The 9B model card even says
+"ZERO 'benchmaxing' (it damages the model)"
+— but then only reports the 7 saturated benchmarks where the fine-tune improved. We have
+zero information
+about whether this fine-tune:
+Maintained the base model's
+66.1 BFCL-V4
+score (function calling)
+Maintained the
+79.1 TAU2-Bench
+score (agent benchmark)
+Maintained the
+65.6 LiveCodeBench v6
+score (competitive coding)
+Maintained the
+81.7 GPQA Diamond
+score (PhD-level reasoning)
+Maintained the
+91.5 IFEval
+score (instruction following)
+Can still do tool calling without loops (a user on the 27B model reported "looping tool calls")
+Can still navigate OS environments (OSWorld: 41.8, AndroidWorld: 57.8)
+The "human testing" claim —
+"the final testing was HUMAN testing. A trust, but verify approach"
+— is not a substitute for standardized benchmarks. "Human testing" with no methodology, no documented prompts, no reproducibility, and no published results is just anecdote.
+WHAT I'M REQUESTING
+1. Run the modern benchmarks.
+SWE-bench Verified, Terminal-Bench 2.0, GPQA Diamond, MMLU-Pro, LiveCodeBench v6, AIME26, HMMT Feb 26, SuperGPQA, BFCL-V4, TAU2-Bench. If the models truly operate in the "OpenAI, Claude and Gemini zone of intelligence," proving it on these benchmarks should be trivial.
+2. Publish evaluation details.
+Which harness, what prompts, what few-shot config, what temperature, what sampling params, what context window, how many runs averaged. The Qwen team publishes all of this. SGLang, vLLM, KTransformers — all documented. These model cards have none of that.
+3. Show perplexity numbers for the GGUFs.
+Compare each quant against F16 baseline using
+llama-perplexity
+. Compare NEO IMATRIX vs standard imatrix. Compare against quants from Bartowski or mradermacher. If the custom methods improve quality, the perplexity numbers will show it.
+4. Explain the legacy quant choices.
+Why Q5_1 and Q4_1 instead of Q5_K_M and Q4_K_M? The K-quants are well-documented to be superior at similar file sizes.
+5. Stop deleting and banning users who ask questions.
+I posted a discussion asking for modern benchmarks. The post was deleted and I was banned. Discussion #10 showing the model failing at coding was closed. FreeGoldRush's SWE-bench request was ignored. This is not how open-source communities work.
+BOTTOM LINE
+I'm not saying these models are bad. I genuinely don't know — and that's the problem. The only evidence provided is a set of 2018 benchmarks that research has shown to be unreliable discriminators, presented alongside marketing language ("This is the one they fear," "ABSOLUTE FIRE") and with zero modern benchmark coverage, zero reproducibility, and zero GGUF quality verification.
+And when someone asks for modern benchmarks, the response is to
+delete the post and ban the user
+.
+If the models are as good as claimed, proving it on SWE-bench, Terminal-Bench, and GPQA should be easy. If they're not, then the community deserves to know that too — before another million people download a model based on 2018 science quiz scores.
+Show us the SWE-bench score. Show us the Terminal-Bench score. Show us the GPQA Diamond score.
+If the claims hold up, I'll be the first to celebrate. But I need numbers, not slogans. And I need the right to ask questions without being banned.
+If this post gets deleted too, that will be the most honest response possible — not in words, but in action.
+More from this author
+Rebuilding Among AIs from Six Log Files
+6
+August 7, 2026
+Community
+NikiKrutan
+1 day ago
+I've tested DavidAU's quants of 711 while making my own quants of that model. Output in 16-bit is just waste of model size. "LOW" quants are good on wiki though.
+Full evidence here:
+https://huggingface.co/NikiKrutan/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-GGUF
+NikiKrutan
+1 day ago
+40B model is strange. Less arc. Why better then?
+nightmedia already has 740 arc for 27B sitting silently.
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+9

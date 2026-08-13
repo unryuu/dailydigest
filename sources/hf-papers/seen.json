@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.11924",
+  "title": "研究者把写论文拆成 13 个可组合技能",
+  "date": "2026-08-13",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.09867",
   "title": "弱模型能解开闭源模型的推理痕迹",
   "date": "2026-08-11",

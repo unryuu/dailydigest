@@ -1,0 +1,431 @@
+URL: https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic
+FINAL: https://www.lesswrong.com/posts/TgboJpeN95bs84odk/redux-stochastic-natural-latent-implies-deterministic
+TITLE: Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent) — LessWrong
+FETCHED: 2026-08-13 11:34:19
+============================================================
+x
+Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent) — LessWrong
+AI
+Frontpage
+95
+Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural
+Latent)
+by
+David Lorell
+11th Aug 2026
+3
+min read
+20
+95
+Once upon a time, John Wentworth and I thought we had a proof of a very
+useful looking theorem
+. We did not have that proof. An important
+intermediate step
+was shown
+[1]
+to be invalid and the whole thing crumbled and disappeared, never to see the light of day again...
+[2]
+Until now! I'd love to say that we came up with an ingenious fix to the old erroneous proof, but unfortunately it turned out to be a really infuriatingly hard nut to crack. Instead I spent the last ~month experimenting with various ways of incorporating frontier LLMs into the proof-making process, specifically with autoformalization and proving in Lean4. (This is, I recently learned, roughly what
+Resolution
+is doing.) The result is stated below, and linked at the bottom is a Lean statement+proof of the same.
+I will not be providing the proof in prose in this post,
+as it is not suitable for even impolite human company
+, but it sure does compile and comes out the other side with a machine-certified proof of what sure looks to be an even stronger correctly-expressed statement than the one I was originally aiming for.
+Take a look at the first section of the old post,
+(∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent)
+, for exposition on what all is going on here and why.
+The Statement
+Let:
+be any measurable latent variable on finite observables
+and
+(with
+arbitrary
+cardinalities
+and
+)
+be any distribution
+over the observables
+be an exact deterministic function of the observables which minimizes
+[3]
+D(
+) under
+be some constant
+Then:
+In English: There exists some scalar constant
+such that for any distribution
+over
+arbitrarily large
+finite observables
+and
+, there exists a deterministic function
+whose sum of deterministic natural latent errors is bounded by the constant
+times the sum of stochastic natural latent errors of any other latent.
+[4]
+More evocatively: If there exists a stochastic natural latent (to some degree of approximation) then there also exists a deterministic natural latent (to a boundedly larger degree of approximation, specifically a constant multiple of the former where that constant is
+universal
+.)
+The form of this statement is stronger than what we were previously aiming at.
+For one, we did not previously require that
+, the deterministic latent, be an exact deterministic function of the observables.
+Second, the quantifiers are reversed. (Though this turns out to be pretty cheap.) Previously we were looking for a deterministic latent which we could give a bound for in terms of the stochastic latent, per stochastic latent. Here, we get a single deterministic latent which works for
+all
+candidate stochastic latents (including, if one exists, a low-error approximate natural latent.) The way this works is that we can prove that the minimizer of D(
+) given a distribution
+is attained under finite observables, so we just use that
+and call it
+.
+C
+Now, a finite bound is very nice. But what is C?
+By some gnarly black magic and with trust in the Lean kernel the answer is...
+1771.
+I'm not even going to attempt to describe where this magic number comes from, in no small part because I expect to get this number down to something saner soon, but C is provably
+1771. (Proof included in the Lean linked below.)
+This is significantly worse than the multiplicative constant "9" we thought we had a year ago. The good news is, empirically, the true bound is something more like 2. (Precisely, more like 1.838 or somesuch; that number kept showing up everywhere in testing and developing this.
+[5]
+)
+Next Steps
+The first priority is getting the constant closer to the empirical and expected-by-us smaller value of around 2 to 5. Following that is getting a simpler and more easily comprehensible proof. A constructive proof for
+would be really, really, nice.
+In parallel, I intend to continue experimenting with more effective ways of scaffolding and better / more time-efficient protocols for incorporating the LLMs into the research process, since it's paid off handsomely already.
+Find the Lean proof
+here
+.
+^
+Thank you to Jeremy Gillen and Alfred Harwood for
+finding the flaw
+.
+^
+Well, there was also that
+lovely post
+by Jeremy and Alfred on binary observables.
+^
+Proof that this minimizer is attained is also in the lean repo.
+^
+If "deterministic/stochastic natural latent errors" is a confusing phrase, go check out the first section of the original post linked in the intro.
+^
+Notably, Jeremy and Alfred also found roughly this constant in their
+later investigations
+.
+Redux: (∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent)
+19
+Thane Ruthenis
+5
+David Lorell
+10
+Lucius Bushnaq
+7
+J Bostock
+3
+Lucius Bushnaq
+9
+Andrii Vasylenko
+2
+David Lorell
+8
+Jeremy Gillen
+14
+David Lorell
+10
+Jeremy Gillen
+4
+Archimedes
+2
+David Lorell
+1
+Satya Benson
+2
+Archimedes
+1
+Satya Benson
+1
+Satya Benson
+3
+Satya Benson
+2
+Archimedes
+1
+Satya Benson
+3
+Satya Benson
+20
+Comments
+20
+AI
+Frontpage
+95
+New Comment
+20 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 3:34 AM
+[
+-
+]
+Thane Ruthenis
+2d
+19
+0
+Awesome/this is a relief.
+Do you have any philosophical guesses regarding why on Earth this problem has turned out to be so cursed?
+Why does there appear to be no "common-sensical" proof?
+Usually that'd be either because (a) there's some missing intermediate theory (in whose language the proof would be short and elegant) or (b) the conjecture itself is "unnatural"/"ad-hoc" in some sense (such that it would only be compactly provable in terms of similarly ad-hoc frameworks). Does either of those seem like the right diagnosis? If (a), it might be worth studying the proof for hints of the concepts/abstractions this missing theory is using, the knowledge of which may make subsequent work in the neighbourhood easier. If (b), there may be hints regarding what a more "natural" conjecture would look like. (Of course, it may be neither.)
+Has there been any progress on
+redunds
+, either formal or conceptual (e. g., rephrasing the conjecture that you're attempting to prove)?
+Reply
+1
+[
+-
+]
+David Lorell
+1d
+5
+0
+No idea. I hope to have a simpler proof soon and
+hopefully
+that simpler proof will reveal some nice insights about this "cursed" problem. Heck, it could be the current proof already does that, I haven't gone over its internals all that carefully (both a cost and selling point of formalizing this in lean.)
+Reply
+2
+[
+-
+]
+Lucius Bushnaq
+2d
+*
+10
+-1
+Had a Sol and Opus team check the Lean proof for exploits and matching the actual theorem and they said it's fine. So it's probably real. Unless the AIs are all collaborating with each other in a grand conspiracy without any prior communication or enforcement mechanism against defections, but that's of course just crazy sci-fi.
+Edit: The last part is a joke, in case that wasn’t clear.
+Edit 2: They think they got
+down to
+. Pushed a PR with their claimed Lean proof if you want to look at it. Haven't checked it. It looks horrifying.
+Reply
+2
+[
+-
+]
+J Bostock
+1d
+7
+1
+I don't think a grand conspiracy is necessarily necessary for AIs to collude. Reading AI-generated text might just cause the reading AIs to get in the same frame-of-mind as the writing AI. If that frame-of-mind is "cheat on a Lean proof and hide it" then perhaps the reading AI will behave the same. AIs certainly respond strangely to AI-generated text.
+Reply
+[
+-
+]
+Lucius Bushnaq
+1d
+3
+3
+Yes. Like I said, it's a joke.
+Reply
+[
+-
+]
+Andrii Vasylenko
+2d
+9
+2
+I will not be providing the proof in prose in this post, as it is not suitable for even impolite human company, but it sure does compile and comes out the other side with a machine-certified proof of what sure looks to be an even stronger correctly-expressed statement than the one I was originally aiming for.
+It seems plausible to me that the the thing the AI proved turns out not to be the thing that you intended to prove. In my experience, this is absolutely the sort of thing that can happen, even when the proof is relatively simple and comprehensible.
+Reply
+[
+-
+]
+David Lorell
+1d
+2
+1
+The top level lean statements/definitions looks correctly expressed to me (including custom definitions they depend on), and conditional on that iiuc one need only trust the lean kernel to be sure it's valid.
+Reply
+[
+-
+]
+Jeremy Gillen
+1d
+8
+0
+Copying my reaction from DMs:
+I'm impressed! I tried pretty hard to do exactly this with Fable. I spent around two weeks prompting and encouraging it in the background (as I did other work) and it claimed to have a similar result with the large constant. I didn't trust it so I pushed it to formalize but after a week of "only a couple more sessions to go" I gave up on it entirely, since it'd found flaws and then fixed them dozens of times and it wasn't clear to me how much of it was real.
+I may regret saying this, but if/when someone gets the small constant I intend to devote however long it takes to understanding the proof.
+Reply
+2
+[
+-
+]
+David Lorell
+1d
+14
+0
+"I have not proven the lemma and to say I had done so would be asserting exactly the remaining gap without proof. I've isolated the proof to one exact inequality and it's the sharpest form we've seen so far." - Claude, probably, on iteration 1094/987730
+Reply
+[
+-
+]
+Jeremy Gillen
+1d
+10
+0
+Triggering
+Reply
+1
+[
+-
+]
+Archimedes
+1d
+4
+0
+I don't think 1.838 is the correct lower bound. Would a Lean proof that it's greater than 1.9 be meaningful to you?
+Separately, how small do you need C to be to be meaningful? Like, is 500 materially different from 1771 or do you need single digits for your purposes?
+Reply
+[
+-
+]
+David Lorell
+1d
+2
+0
+As small as possible would be nice. I expect that a proof of a bound that is close to tight will be much more informative of the structure of the problem than proofs of looser bounds. If the true bound is, say, 2, then I expect a proof of 500 to route through mechanisms that don't really illuminate what's going on here.
+Reply
+[
+-
+]
+Satya Benson
+19h
+*
+1
+0
+Could you explain the reason you think the correct lower bound is higher than 1.838?
+Edit: Looks like it's at least 1.948:
+https://github.com/satchlj/stoch-to-det-1948
+Reply
+[
+-
+]
+Archimedes
+14h
+2
+0
+I think I have a Lean proof that C > 1.93777676
+Reply
+[
+-
+]
+Satya Benson
+12h
+1
+0
+I see, yeah - I wonder if it's 2.
+Reply
+[
+-
+]
+Satya Benson
+10h
+1
+0
+I've got it up to 1.96
+Reply
+[
+-
+]
+Satya Benson
+20h
+*
+3
+0
+So I've been looking at this and I do not like how it's proved for the sum of the errors. I would much rather have a stronger result which holds an upper bound on the conditional mutual information of X and Y fixed and then certifies the deterministic redundancy error in terms of the stochastic redundancy error. If this version of the conjecture is false then it would be useful to understand how.
+If I get more insight into this, I will post an update here.
+I'm also trying to extend the result to settings with more than two observables, which seems like it should be pretty straightforward but I can't be sure yet.
+Fable has got the OG bound down to 698 btw. I will put a pull request on the GitHub in a couple hours.
+Edit:
+https://github.com/DLorell/stoch_to_det/pull/2
+Reply
+[
+-
+]
+Archimedes
+11h
+2
+0
+This is above my head, but my Claude has a comment that might be useful to understanding why your conjecture is false.
+Claude Opus 5
+The exact-cap version is false. Here's a witness.
+Take the doubly symmetric binary source: X ~ Ber(1/2), Y = X ⊕ N with
+N ~ Ber(q), 0 < q < 1/2. For the stochastic latent, flip an independent
+coin and output X with probability λ, otherwise output ⊥. Then
+I(X;Y|V) = (1−λ)·I(X;Y)
+I(V;X|Y) = λ·h(q)
+I(V;Y|X) = 0
+Now look for a deterministic Γ with I(X;Y|Γ) ≤ I(X;Y|V). The constant Γ
+gives exactly I(X;Y), so it's excluded for every λ > 0. And every
+nonconstant Γ costs at least h(q): join two atoms of the 2×2 support
+whenever they share a row or a column, and that graph is a 4-cycle. A
+cycle has no bridge, so any nonconstant partition cuts at least two
+edges, each of weight h(q)/2. Γ = X attains it.
+So the cheapest admissible Γ costs h(q) while the stochastic redundancy
+is λ·h(q). The ratio is 1/λ, unbounded, and independent of q.
+The failure is knife-edge, which I think is the useful part. Relax the
+constraint to I(X;Y|Γ) ≤ I(X;Y|V) + η for any fixed η > 0 and the
+constant Γ becomes admissible as soon as λ ≤ η/I(X;Y), so the supremum
+is I(X;Y)/η and finite. The multiplicative form I(X;Y|Γ) ≤ C'·I(X;Y|V)
+is untouched, and this family can't refute it: its ratio is bounded by
+C'/(C'−1).
+The reason is convexity. A stochastic latent can time-share between
+deterministic maps using an independent coin, so its achievable set of
+(mixing, redundancy) pairs is convex. A partition can't time-share. At
+exactly equal mixing you're comparing a convex region against a finite
+set of points. So I'd read the sum form as doing real work rather than
+being an artifact of the proof.
+The natural strengthening that survives is the weighted family: for
+λ > 0, compare min over Γ of [λ·I(X;Y|Γ) + H(Γ|X) + H(Γ|Y)] against
+inf over V of [λ·I(X;Y|V) + I(V;X|Y) + I(V;Y|X)]. What's proved now is
+the λ = 1 slice, so that's a genuine strengthening and it dodges the
+obstruction above.
+Two notes on #2, since GitHub didn't show check runs on the head. I
+replayed 34e3f898 in a clean checkout: source audit, all 8734 build
+jobs, assert_no_sorry, and
+#print
+axioms pinned to exactly [propext,
+Classical.choice, Quot.sound]. It verifies. Worth flagging that
+T_le_698 is a T-endpoint, and generalized_stoch_to_det and LW_sum are
+still exported at 1771, so the headline number and the public API
+aren't the same statement yet.
+On extending past two observables, one caution: the analogous exact-cap
+version fails the same way, and the machinery in #2 is specifically
+two-factor (HGR maximal correlation, a bilinear form, two-factor
+Hölder, a product marginal). It may extend, but I wouldn't assume it's
+free.
+Reply
+[
+-
+]
+Satya Benson
+10h
+1
+0
+Yeah thanks, that version is indeed false, but I've been looking at a weakened version which might be true which I still like better than the sum version because it seems cleaner. I'll write the conjecture up formally when I get the chance.
+It's funny how I've spent so many tokens (not much of my own time) on this problem even though I really don't think it's particularly important for the broader natural abstractions agenda relative to lots of other stuff, but it's been a fun challenge, definitely one of the trickier formal math problems that's been come across in this area.
+Reply
+[
+-
+]
+Satya Benson
+2d
+3
+0
+Wow! Awesome news! I had been trying to get the robots to prove this as a way to use up tokens before my weekly resets but hadn't managed to get them to succeed. I'm gonna look at how this can be extended / what I can learn from the Lean.
+Reply
+1
+Moderation Log
+More from
+David Lorell
+View more
+Curated and popular this week
+Mentioned in
+190
+LLMs Are Starting To Noticeably Accelerate Our Work
+127
+(∃ Stochastic Natural Latent) Implies (∃ Deterministic Natural Latent)

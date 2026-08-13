@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
+  "title": "现有职业再培训接不住大规模 AI 失业",
+  "date": "Aug 12, 2026",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
+  "id": "https://www.anthropic.com/research/multiagent-systems",
+  "title": "多 Agent 聚在一起，会把同一种毛病放大",
+  "date": "Aug 13, 2026",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
   "id": "https://www.anthropic.com/research/riemann-zeta",
   "title": "Claude 研究黎曼猜想取得进展，推进了下界",
   "date": "2026-08-10",

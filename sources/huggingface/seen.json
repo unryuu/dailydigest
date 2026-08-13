@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
+  "title": "Cohere 开源 24 亿参数视觉模型",
+  "date": "2026-08-13",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
+  "id": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+  "title": "DeepSeek 同时开放正式模型和 Agent 框架",
+  "date": "2026-08-13",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
   "id": "https://huggingface.co/blog/finebooks/historical-books-ocr-leaderboard",
   "title": "历史书 OCR 有了公开榜单",
   "date": "2026-08-11",

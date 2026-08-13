@@ -1,0 +1,93 @@
+URL: https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813
+FINAL: https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/
+TITLE: DeepSeek V4 Pro 0813 (on OpenRouter)
+FETCHED: 2026-08-13 11:33:40
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+Dynatrace — When agents enter the SDLC, observability becomes the enabler to move from code generation to scalable engineering.
+Read the blog for a framework to get started
+12th August 2026 - Link Blog
+DeepSeek V4 Pro 0813 (on OpenRouter)
+. The latest DeepSeek Pro model is now available, via API only. I had to link to OpenRouter because DeepSeek don't have any obvious announcement page for their new model.
+I haven't been able to confirm if they plan to release the open weights, but given the weights are available for both April's
+deepseek-ai/DeepSeek-V4-Pro
+and July's
+deepseek-ai/DeepSeek-V4-Flash-0731
+it seems likely.
+Interestingly I got
+very
+different looking pelicans
+for the three different reasoning levels of low, medium, and high. I've not noticed this kind of difference from any other model:
+Low:
+Medium:
+High:
+In terms of benchmarks... as far as I can tell those were released to the Official DeepSeek WeChat Group, then copied and pasted into
+a post on Reddit
+which was deleted by the moderators for being "low-effort", then copied into
+this ASCII-art table on Hacker News
+.
+Posted
+12th August 2026
+at 11:59 pm
+Recent articles
+Now we have a timeline of the OpenAI accidental attack against Hugging Face
+- 7th August 2026
+One-shotting a Raccoon Heist game using Claude Fable 5
+- 5th August 2026
+New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging
+- 4th August 2026
+This is a
+link post
+by Simon Willison, posted on
+12th August 2026
+.
+ai
+2,184
+generative-ai
+1,935
+llms
+1,902
+pelican-riding-a-bicycle
+133
+deepseek
+35
+llm-release
+223
+ai-in-china
+104
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

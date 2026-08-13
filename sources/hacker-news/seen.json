@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://jonty.github.io/2026_eclipse_webcams",
+  "title": "有人把日全食沿线户外摄像头做成一张地图",
+  "date": "2026-08-12T11:53:01Z",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
+  "id": "https://lovable.dev/blog/series-c",
+  "title": "AI 编程公司 Lovable 融资 4 亿美元",
+  "date": "2026-08-12T16:20:34Z",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
+  "id": "https://discoveredmaterials.com/research",
+  "title": "AI Agent 算出 500 多种候选新材料",
+  "date": "2026-08-12T07:51:20Z",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
+  "id": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html",
+  "title": "AI 编程正在掏空代码的理解层",
+  "date": "2026-08-12T13:20:05Z",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
+  "id": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+  "title": "阿里首次开放 Max 级模型权重",
+  "date": "2026-08-12T15:01:17Z",
+  "reported": true,
+  "report_date": "2026-08-13"
+ },
+ {
   "id": "https://flowingdata.com/2026/08/10/flock-wanted-to-tap-dashcams-in-rideshare-vechicles-to-add-to-surveillance-data",
   "title": "Flock 曾想借网约车记录仪收集车牌",
   "date": "2026-08-11T14:04:13Z",
