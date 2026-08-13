@@ -15,6 +15,7 @@ inbox/*
 # 音视频大文件不进仓库（字幕/卡片/json 照常入库）
 reports/**/*.mp4
 reports/**/*.m4a
+reports/**/*.mp3
 reports/**/*.wav
 
 # 抓取的网页原始 HTML 不入库（体积是提取正文的十几倍；同目录 .txt 已存正文）
