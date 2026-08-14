@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://deepmind.google/blog/introducing-gemini-3-7-flash",
+  "title": "Google 发布 Gemini 3.7 Flash",
+  "date": "2026-08-13",
+  "reported": true,
+  "report_date": "2026-08-14"
+ },
+ {
   "id": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands",
   "title": "DeepMind 把手语输入装进手机",
   "date": "Wed, 12 Aug 2026 14:01:59 +0000",

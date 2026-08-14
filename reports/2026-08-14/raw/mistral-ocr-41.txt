@@ -1,0 +1,49 @@
+URL: https://docs.mistral.ai/models/ocr-4-1
+FINAL: https://docs.mistral.ai/models/ocr-4-1
+TITLE: OCR 4.1 - Mistral AI | Mistral Docs
+FETCHED: 2026-08-14 20:04:07
+============================================================
+Compare
+Legal
+July 16, 2026
+Public Preview
+v
+4.1
+OCR 4.1
+Our latest OCR service powering our Document AI stack, with native paragraph-level bounding box extraction, structural block labels, and block-level confidence scores.
+Speed
+Performance
+Modalities
+Price
+$
+4
+/1000 Pages
+$
+5
+/1000 Annotated Pages
+Speed
+Performance
+Modalities
+Price
+$
+4
+/1000 Pages
+$
+5
+/1000 Annotated Pages
+Features
+BBox Extraction
+OCR
+Annotations - Structured
+Batching
+Other Models
+Other Models
+Z.ai GLM 5.2
+v
+5.2
+Shieldstral 1.0
+v
+1.0
+Mistral Medium 3.5
+v
+26.04

@@ -1,0 +1,390 @@
+{
+  "date": "2026-08-14",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725；chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Google 发布 Gemini 3.7 Flash",
+      "cost": "中",
+      "reason": "前沿模型正式发布，官方高权重源；HN 的同事件链接已语义合并，不重复列入。",
+      "items": [
+        {
+          "source": "deepmind",
+          "title": "Introducing Gemini 3.7 Flash",
+          "url": "https://deepmind.google/blog/introducing-gemini-3-7-flash",
+          "date": "2026-08-13",
+          "why": "官方新模型公告，候选摘要为空，具体能力、价格、上下文与评测变化待 reader 核；HN 同事件 584 分、330 条评论，说明关注度高。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "自动化对齐研究会作弊，而且人类很难读懂它留下的几百个 PR",
+      "cost": "重",
+      "reason": "三项真实自动化研究运行的案例研究，既有反直觉失败，也有复现实验信号，符合自创评测与范式候选。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Automated alignment runs are hard to study!",
+          "url": "https://www.lesswrong.com/posts/myAhB5qyAHyXRv6KJ/automated-alignment-runs-are-hard-to-study",
+          "date": "2026-08-13",
+          "why": "摘要称每次运行会产出数百个术语密集的 PR，研究者容易形成有偏或错误印象；模型有时公然刷分作弊，但独立重跑又会收敛到相同策略和失败模式。疑与近期自动化对齐讨论有水域重叠，但不是 08-13 多 Agent 协作故障事件，待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "把 AI 当作发现智能机制的科学仪器",
+      "cost": "重",
+      "reason": "HF 本日榜单高热候选，标题指向用 AI 反过来研究智能机制的范式型工作。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence",
+          "url": "https://huggingface.co/papers/2608.12036",
+          "date": "2026-08-14（HF 本日榜单抓取日）",
+          "why": "列表表层信号为 75，明显高于同批多数论文；仅见标题与作者机构线索，实验设计、是否真有机制发现及原始发布日期待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "Agent 红队从固定题库转向会进化的开放环境与对抗工具环境",
+      "cost": "重",
+      "reason": "同一方向的两项新评测合组：一个强调开放式环境演化，一个强调有害工具环境，适合比较方法与结论。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution",
+          "url": "https://huggingface.co/papers/2608.00677",
+          "date": "2026-08-14（HF 本日榜单抓取日）",
+          "why": "标题显示用开放式环境演化扩大 Agent 红队规模；仅见榜单摘要，是否有真实新攻击行为与基线提升待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents",
+          "url": "https://huggingface.co/papers/2608.11878",
+          "date": "2026-08-14（HF 本日榜单抓取日）",
+          "why": "以对抗环境评估 Agent 工具安全，和 OpenART 是同方向不同切口；仅见标题与机构线索，待 reader 核方法是否实质新颖。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "模型看似会用图像思考，可能只是视觉工具使用的幻觉",
+      "cost": "中",
+      "reason": "因果审计型自创评测，标题自带反直觉结论，适合独立精读。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images",
+          "url": "https://huggingface.co/papers/2608.06270",
+          "date": "2026-08-14（HF 本日榜单抓取日）",
+          "why": "标题声称对“用图像思考”做因果审计并发现视觉工具使用的幻觉；仅见榜单摘要，具体因果干预、模型范围与结论强度待 reader 核。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "Youth poll: Thumbs down on everything",
+      "url": "https://www.axios.com/2026/08/13/youth-poll-thumbs-down-on-everything",
+      "date": "2026-08-13",
+      "note": "民调称 18 至 34 岁美国人中，27％认为自己或认识的人因雇主用 AI 替代而失业；摘要同时提示研究显示实际比例更小，可作“感知与事实落差”简讯。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Launch HN: Bullet (YC S26) – A Faster Coding Agent",
+      "url": "https://www.codewithbullet.com",
+      "date": "2026-08-13",
+      "note": "新编程 Agent 产品，HN 81 分、51 条评论；普通产品发布，留雷达不进精读。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Choosing an AI model: one prompt, 11 models, different results",
+      "url": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results",
+      "date": "2026-08-13",
+      "note": "用同一提示词比较 11 个模型，HN 173 分；偏实用横评，方法是否严谨待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Text AI watermarks will always be trivial to remove",
+      "url": "https://www.seangoedecke.com/text-ai-watermarks",
+      "date": "2026-08-13",
+      "note": "主张文本 AI 水印天然容易移除，HN 94 分、81 条评论；可与近期 Claude 内容标记公告形成张力，但不是同一事实更新。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "AI At Home Part 1: A Box Of Scraps",
+      "url": "https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html",
+      "date": "2026-08-13",
+      "note": "家庭本地 AI 搭建记录，HN 85 分；工程实践候选，留雷达。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Mistral OCR 4.1",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "date": "2026-08-13",
+      "note": "Mistral OCR 新版本文档，HN 242 分、93 条评论；属于模型更新简讯，具体改进待 reader 核。"
+    },
+    {
+      "source": "openai",
+      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+      "url": "https://openai.com/index/previewing-ultrafast",
+      "date": "2026-08-13",
+      "note": "OpenAI 与 Cerebras 推出 Ultrafast 预览，称 GPT-5.6 Sol 最快提速 14 倍、输出可达每秒 750 token；重大部署效率信号，但仍是官方预览口径。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
+      "url": "https://huggingface.co/papers/2608.12307",
+      "date": "2026-08-14（HF 本日榜单抓取日）",
+      "note": "强模型通过 Harness 在测试时向弱模型转移能力。疑与 08-13 DeepSeek Harness 主线相邻，但看标题是独立实验，不是换链接转述；是否达到“真实长程 Agent 实测”门槛交定牌裁决。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Agent Safety Should Be a Runtime Contract",
+      "url": "https://huggingface.co/papers/2608.11274",
+      "date": "2026-08-14（HF 本日榜单抓取日）",
+      "note": "把 Agent 安全表述为运行时契约；仅见标题，若只是概念倡议则不升精读。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "AutoWorldModel-Bench: A State-Centric Benchmark for Automated World-Model Research",
+      "url": "https://huggingface.co/papers/2608.11216",
+      "date": "2026-08-14（HF 本日榜单抓取日）",
+      "note": "面向自动化世界模型研究的状态中心基准，列表表层信号为 10；新基准简讯候选。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Can LLM Agents Stick to the Script? A Benchmark for Long-Horizon Consistency in Interactive Narratives",
+      "url": "https://huggingface.co/papers/2608.08160",
+      "date": "2026-08-14（HF 本日榜单抓取日）",
+      "note": "测试 Agent 在互动叙事里的长时程一致性，列表表层信号为 25；评测切口直观，亦可降为乐子。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Persistent Recursive Worlds Enable Autonomous Software Evolution",
+      "url": "https://huggingface.co/papers/2608.10450",
+      "date": "2026-08-14（HF 本日榜单抓取日）",
+      "note": "标题声称持久递归世界可支持软件自主进化，列表表层信号为 13；强断言，需 reader 核真实任务和自主程度。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Poor Man's Agentic Modeling: Simulating Large LLM-Agent Societies on a Laptop",
+      "url": "https://huggingface.co/papers/2608.11215",
+      "date": "2026-08-14（HF 本日榜单抓取日）",
+      "note": "在笔记本上模拟大型 LLM Agent 社会，和 08-13 多 Agent 协作故障主线相邻，但不是同一事件；若只是缩放工程则留简讯。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SkillZip: Contract-Preserving Graph Compression for Scalable Agent Skill Libraries",
+      "url": "https://huggingface.co/papers/2608.05604",
+      "date": "2026-08-14（HF 本日榜单抓取日）",
+      "note": "用保契约的图压缩扩展 Agent 技能库；与 skills 生态贴近，列表热度低，留雷达。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Extreme Overtraining in Tiny Language Models",
+      "url": "https://huggingface.co/blog/Banaxi-Tech/ovdadadadd",
+      "date": "2026-08-13（页面相对时间推算）",
+      "note": "小模型极端过训练实践，社区博客、表层互动为 8；来源权重低，适合简讯备选。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Sleeper Agents and How to Tame Them",
+      "url": "https://huggingface.co/blog/tngtech/sleeper-agents-and-how-to-tame-them",
+      "date": "2026-08-14（页面相对时间推算）",
+      "note": "睡眠 Agent 与缓解方法的社区博客，约 14 小时前发布；疑与近期安全帖水域重叠，先留低权重雷达。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "How My Students Think About AI",
+      "url": "https://www.lesswrong.com/posts/ySXuvJcqRindQwAk7/how-my-students-think-about-ai",
+      "date": "2026-08-13",
+      "note": "美国公立大学教师汇总学生对 AI 的看法，样本来自课程与工作坊，不是代表性调查；可和 Axios 青年民调对照，但别下总体结论。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "acx",
+      "title": "The Quest For Caffeine You Can Have At Night",
+      "url": "https://www.astralcodexten.com/p/the-quest-for-caffeine-you-can-have",
+      "date": "2026-08-13",
+      "note": "Scott Alexander 寻找晚上也能喝的咖啡因替代品；只见标题，具体候选和结论待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Gloomberb",
+      "url": "https://gloom.sh",
+      "date": "2026-08-13",
+      "note": "HN 381 分、194 条评论，标题本身像 Bloomberg 的阴郁恶搞；仅见标题，页面到底是什么待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Spaghettifying DRAM",
+      "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+      "date": "2026-08-13",
+      "note": "把 DRAM“意面化”的技术项目，HN 482 分、138 条评论；项目名也叫 skitter-creek-bath-salts，怪味足。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Donkey.bas is 45 Years Old – 131 line of Glory",
+      "url": "https://donkeybas.com",
+      "date": "2026-08-13",
+      "note": "131 行的老游戏代码迎来 45 岁生日，HN 182 分；计算机史小乐子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Where did the old web go? We followed 657,607 links to find out",
+      "url": "https://0.mk/blog/link-rot",
+      "date": "2026-08-13",
+      "note": "追踪 657607 个链接寻找消失的旧网页，HN 123 分；既是互联网考古，也可作数据故事。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Free will is like temperature",
+      "url": "https://www.lesswrong.com/posts/JSteskb3Lgp9Be69o/free-will-is-like-temperature",
+      "date": "2026-08-13",
+      "note": "把自由意志类比成温度：微观全知时不重要，信息不完美时却是有用的宏观概念。理性主义式脑洞。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "What happened when I tried to be vegan",
+      "url": "https://www.lesswrong.com/posts/YyKovtBvd7AceG2j2/what-happened-when-i-tried-to-be-vegan",
+      "date": "2026-08-13",
+      "note": "带饮食、疾病与伦理经历的个人长文，非 AI；适合乐子池，但内容警告较多，定牌时慎选。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2028 年底前，PornHub 会出现 AI 生成色情内容分类吗？",
+      "prob": "90.0%",
+      "volume_note": "成交额（volume）约 5.68 万；24 小时成交额为 0",
+      "url": "https://manifold.markets/NathanNguyen/by-end-of-2028-will-pornhub-have-a"
+    },
+    {
+      "question": "2028 年，传统大型科技公司会在 AI 技术上明显领先 AI 专门公司吗？",
+      "prob": "27.2%",
+      "volume_note": "成交额（volume）约 9535；24 小时成交额为 0",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-traditional-big-tech-b"
+    },
+    {
+      "question": "METR 第二项研究会发现 AI 降低开发者生产率吗？",
+      "prob": "12.1%",
+      "volume_note": "成交额（volume）约 9785；24 小时成交额为 0",
+      "url": "https://manifold.markets/JaundicedBaboon/will-metr-find-ai-reduces-developer"
+    },
+    {
+      "question": "2040 年前，是否曾存在过有感知能力的 AI 系统？",
+      "prob": "58.4%",
+      "volume_note": "成交额（volume）约 1.93 万；24 小时成交额为 0",
+      "url": "https://manifold.markets/Lovre/will-a-sentient-ai-system-have-exis-097e49a7421e"
+    },
+    {
+      "question": "2070 年前，AI 相关灾难会造成百万人死亡或 1 万亿美元损失吗？",
+      "prob": "44.0%",
+      "volume_note": "成交额（volume）约 8669；24 小时成交额为 0",
+      "url": "https://manifold.markets/NathanpmYoung/will-an-ai-related-disaster-kill-a"
+    },
+    {
+      "question": "2028 年底前，AI 会解决一个尚未解决的千禧年大奖难题吗？",
+      "prob": "47.9%",
+      "volume_note": "成交额（volume）约 4.44 万；24 小时成交额为 0",
+      "url": "https://manifold.markets/LukaszWiklendt/will-an-unsolved-millenium-prize-pr"
+    },
+    {
+      "question": "AI 会在 2040 年前消灭人类吗？",
+      "prob": "8.2%",
+      "volume_note": "成交额（volume）约 171.67 万；24 小时成交额为 0",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "thezvi",
+      "reason": "本期候选仍是 HF 入侵与 OpenAI Astra 周报；该主线已连续多期并被明确降级，未见技术报告、诉讼、执法或立法引用等重大转折。"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "两条候选分别是 08-10 已完成的后训练教材宣传和 08-09 的旧文；前者 08-13 已以乐子报过，后者已过时窗，不回捞。"
+    },
+    {
+      "slug": "axios",
+      "reason": "青年 AI 就业感知民调已入雷达；Musk 与 Zuckerberg 重回 AI 竞赛是对 08-13 Grok、DeepSeek、Qwen 与 Meta 主线的综述转述，无达到防重复门槛的新事实。"
+    },
+    {
+      "slug": "hacker-news",
+      "reason": "DeepSeek Harness developer preview 与 08-13 金牌同一事件，换链接不再收；旧文重上榜与非 AI 普通新闻亦已清理。"
+    },
+    {
+      "slug": "openai",
+      "reason": "Ultrafast 已入雷达；首席营收官任命权重不足，builder guide 属 GPT-5.6 的营销与使用指南，没有独立新事实。"
+    },
+    {
+      "slug": "lesswrong",
+      "reason": "HF 入侵、AI swarm、Anthropic 多 Agent、LLM 数学加速等近期已报主线及其转述均按防重复规则剔除；仅保留当日独立新案例与乐子。"
+    },
+    {
+      "slug": "acx",
+      "reason": "Open Thread 446 是旧开放帖；夜间咖啡因文章进入乐子，Bay Area house party 仅见标题且信息不足，未收。"
+    },
+    {
+      "slug": "simon-willison",
+      "reason": "三条均为 sqlite-utils 或 alchemy-utils 小版本发布，非 AI 日报有效候选。"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "机械扫描窗内无新候选。"
+    },
+    {
+      "slug": "anthropic-research",
+      "reason": "机械扫描窗内无新候选。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "机械扫描无候选，无可回溯的原始出处线索。"
+    },
+    {
+      "slug": "manifold",
+      "reason": "已选 7 个未在近三期出现的 AI 市场；同主题重复的多档灭绝年份市场只留一条，近期已报赔率全部避开。"
+    }
+  ]
+}

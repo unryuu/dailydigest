@@ -1,5 +1,54 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.05604",
+  "title": "SkillZip 把 Agent 技能库压成小模块",
+  "date": "2026-08-14（HF 本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-08-14"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.08160",
+  "title": "互动故事跑到 20 轮，最强模型也只守住 42％设定",
+  "date": "2026-08-14（HF 本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-08-14"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.11215",
+  "title": "大型 Agent 社会可以先压成统计替身",
+  "date": "2026-08-14（HF 本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-08-14"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.11878",
+  "title": "ToolHazard",
+  "date": "2026-08-14（HF 本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-08-14"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.00677",
+  "title": "Agent 红队开始让测试环境自己变化",
+  "date": "2026-08-14（HF 本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-08-14"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.06270",
+  "title": "模型调用视觉工具，却经常不看返回结果",
+  "date": "2026-08-14（HF 本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-08-14"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.12036",
+  "title": "AI 开始自动研究模型内部的智能机制",
+  "date": "2026-08-14（HF 本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-08-14"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.11924",
   "title": "研究者把写论文拆成 13 个可组合技能",
   "date": "2026-08-13",

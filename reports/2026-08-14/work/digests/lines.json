@@ -1,0 +1,114 @@
+[
+  {
+    "id": "youth-ai-poll",
+    "section": "deep",
+    "label": "美国年轻人一边担心 AI 抢工作，一边越用越顺手",
+    "url": "https://www.axios.com/2026/08/13/youth-poll-thumbs-down-on-everything",
+    "body": "面向 1075 名 18 至 34 岁成年人的调查中，27％认为自己或认识的人因 AI 丢了工作，但 71％对 AI 的接受度不低于一年前。",
+    "note": "核实通过：文章发表于 2026 年 8 月 13 日，调查样本具代表性，误差范围为正负 3.01 个百分点。"
+  },
+  {
+    "id": "students-think-ai",
+    "section": "deep",
+    "label": "一位美国公立大学教师记录了学生怎么看 AI",
+    "url": "https://www.lesswrong.com/posts/ySXuvJcqRindQwAk7/how-my-students-think-about-ai",
+    "body": "他们觉得模型这些年没变多少，却普遍担心 AI 会抢走入门工作；想暂停的是部署，让新人先挤进职业阶梯，而不是停止训练模型。",
+    "note": "核实通过：文章发表于 2026 年 8 月 13 日。素材主要来自作者自己的课堂和一次自选参加的学生工作坊，是观察记录，不是代表性调查。"
+  },
+  {
+    "id": "eleven-models",
+    "section": "deep",
+    "label": "Netlify 让 11 个模型做同一家咖啡店网站",
+    "url": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/",
+    "body": "这轮只测简单静态页面，每个模型跑三次。Opus 5 做得最丰富也最烧额度，DeepSeek V4 Flash 平均只花 2.4 个额度，但结果波动很大。",
+    "note": "核实通过；dup_suspect：测试包含近期已报的 DeepSeek V4 Pro、Kimi K3 等模型，而且只是单提示词静态网页小样本，未达到近期主线要求的重要独立实测门槛。正文未显示明确发布日期。"
+  },
+  {
+    "id": "narrative-consistency",
+    "section": "papers",
+    "label": "互动故事跑到 20 轮，最强模型也只守住 42％设定",
+    "url": "https://huggingface.co/papers/2608.08160",
+    "body": "NCP-Bench 把 100 部电影梗概改成可检查的故事环境，玩家故意插手剧情时，各模型最终有 40％至 68％的对话出现事实冲突。",
+    "note": "核实通过：论文 2026 年 8 月 8 日发布，8 月 13 日提交到 Hugging Face Papers；页面称工作入选 ICML 2026，并已放出代码和数据。"
+  },
+  {
+    "id": "mistral-ocr-41",
+    "section": "official",
+    "label": "Mistral 给 OCR 4.1 加上段落级定位和置信度",
+    "url": "https://docs.mistral.ai/models/ocr-4-1",
+    "body": "新版可给段落画边界框、标注结构类型并输出每个内容块的置信度，普通识别每千页 4 美元。",
+    "note": "核实通过，但不是当天发布：官方页面日期为 2026 年 7 月 16 日，状态为公开预览。"
+  },
+  {
+    "id": "bullet-agent",
+    "section": "industry",
+    "label": "Bullet 按任务难度自动切换模型",
+    "url": "https://www.codewithbullet.com/",
+    "body": "简单任务走快模型，复杂任务再升级到更会推理的模型，只在需要时增加计算量。",
+    "note": "核实通过，但页面只有简短营销文案，未核到发布日期、模型名单、速度数字或实测结果。"
+  },
+  {
+    "id": "ai-at-home",
+    "section": "industry",
+    "label": "开发者用四张云游戏淘汰卡在家搭 AI 服务器",
+    "url": "https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html",
+    "body": "四张 AMD V620 合计 128GB 显存，主板、内存和硬盘多靠旧件；DeepSeek V4 Flash 已经能装下，但首轮运行很慢。",
+    "note": "核实通过：文章发表于 2026 年 8 月 13 日；dup_suspect：撞近期 DeepSeek V4 主线，目前只确认模型能装入和运行很慢，速度优化与正式性能留到下一篇，尚未达到关键部署实测门槛。"
+  },
+  {
+    "id": "agent-runtime-contract",
+    "section": "industry",
+    "label": "研究者主张把 Agent 安全写进运行时合同",
+    "url": "https://huggingface.co/papers/2608.11274",
+    "body": "危险操作先由沙箱、权限和轨迹监控拦下，任务完成还必须附测试、日志和文件差异等证据。",
+    "note": "核实通过：论文 2026 年 8 月 11 日发布，8 月 13 日提交；dup_suspect：与 8 月 13 日的多 Agent 协作故障、SAFE 上报框架及 Harness 证据主线相邻，本篇主要是观点框架，没有正式落地产品。"
+  },
+  {
+    "id": "skillzip",
+    "section": "industry",
+    "label": "SkillZip 把 Agent 技能库压成可展开的小模块",
+    "url": "https://huggingface.co/papers/2608.05604",
+    "body": "它把重复流程折成需要时再展开的宏，在 10 万项技能库上仍能检索；实验称压缩 3.46 倍，并保留 99.2％的依赖关系。",
+    "note": "核实通过：论文 2026 年 8 月 6 日发布，8 月 13 日提交；数字来自论文作者实验。"
+  },
+  {
+    "id": "night-caffeine",
+    "section": "fun",
+    "label": "Scott Alexander 给晚间咖啡因找了个替代品",
+    "url": "https://www.astralcodexten.com/p/the-quest-for-caffeine-you-can-have",
+    "body": "他比较三条路线后选了咖啡因代谢物副黄嘌呤，预计持续时间约为等量咖啡因的一半；不同人的实际反应差得很大。",
+    "note": "核实通过：文章发表于 2026 年 8 月 13 日。作者也试了另外两种路线，但认为吴茱萸次碱有肝损伤疑虑，甲基利贝林研究不足。"
+  },
+  {
+    "id": "spaghettifying-dram",
+    "section": "fun",
+    "label": "研究者翻转一个内存控制位，绕过 AMD 老处理器的隔离区",
+    "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
+    "body": "修改 DRAM 地址映射后，原本受保护的同一块内存会从另一个地址露出来，可读取 PSP、系统管理模式和 CPU 微码；演示只在 AMD Family 16h 上验证。",
+    "note": "核实通过：仓库正文给出原理、代码和多项读取演示；页面未显示明确发布日期，且作者明确只在 AMD Family 16h 处理器上开发和测试。"
+  },
+  {
+    "id": "old-web-link-rot",
+    "section": "fun",
+    "label": "团队重访 65 万个旧链接，四分之三已经打不开",
+    "url": "https://0.mk/blog/link-rot",
+    "body": "这些链接建于 2009 至 2014 年，2026 年重测时只有 23.3％还能返回页面；个人博客、论坛和本地新闻站比大平台消失得更快。",
+    "note": "核实通过：文章发表于 2026 年 7 月 25 日，8 月 11 日更新。样本主要来自马其顿短链接社区，不代表整个互联网；“打不开”包含网络失败和 HTTP 错误，不等于内容全部永久消失。"
+  },
+  {
+    "id": "donkeybas",
+    "section": "fun",
+    "label": "1981 年的 DONKEY.BAS 又能在浏览器里玩了",
+    "url": "https://donkeybas.com/",
+    "body": "页面保留 CRT 画面和声音开关，只用空格或点击屏幕切换车道。",
+    "note": "核实通过，但抓取正文极短：只能确认页面标题标注 IBM PC 1981，并提供可玩的换道控制；未从正文核到代码行数或页面发布日期。"
+  },
+  {
+    "id": "free-will-temperature",
+    "section": "fun",
+    "label": "有人把自由意志解释成温度一样的宏观概念",
+    "url": "https://www.lesswrong.com/posts/JSteskb3Lgp9Be69o/free-will-is-like-temperature",
+    "body": "如果能精确知道人和环境的全部初始状态，行为就能被推演；现实做不到时，“自由意志”仍是预测行动的实用简化。",
+    "note": "核实通过：文章发表于 2026 年 8 月 12 日，是一篇一分钟哲学短文。"
+  }
+]

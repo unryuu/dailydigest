@@ -1,0 +1,141 @@
+URL: https://www.lesswrong.com/posts/JSteskb3Lgp9Be69o/free-will-is-like-temperature
+FINAL: https://www.lesswrong.com/posts/JSteskb3Lgp9Be69o/free-will-is-like-temperature
+TITLE: Free will is like temperature — LessWrong
+FETCHED: 2026-08-14 20:04:31
+============================================================
+x
+Free will is like temperature — LessWrong
+Free Will
+Philosophy
+World Modeling
+Frontpage
+43
+Free will is like
+temperature
+by
+Optimization Process
+12th Aug 2026
+1
+min read
+6
+43
+Free will is like temperature: a useful tool for analyzing the behavior of certain systems which are too big and complicated to model in exact detail.
+If you know the positions and velocities of every atom in a box of gas,
+then with enough work you can predict its future to arbitrary precision
+; does the gas "have a temperature"? Irrelevant!
+Technically yes
+, I guess, but it's sort of an epiphenomenon, screened off from reality by your exact knowledge of the initial conditions and your willingness to throw processor cycles at your simulation. But if you're less-than-perfectly omniscient, it might be more convenient to consider the box as having a "temperature" and model it more abstractly.
+Substitute "person+environment"/"free will" for "box of gas"/"temperature" and that's all still true.
+Maybe your box of gas is supercooled; if you know the initial conditions exactly, you can predict exactly when and where the first large droplet will nucleate, but if your vision of the box is even a little bit fuzzy, you'll instead need to use your understanding of "temperature" to build a probability distribution over when it will condense / whether it will be on a wall or in the gas's bulk / ...
+Maybe Alice has a nasty fight with her spouse; if you know the initial conditions exactly, you can predict exactly what she'll do, but if your vision of her is even a little bit fuzzy, you'll instead need to use your understanding of her "free will" to build a probability distribution over whether she goes to the lawyer's office / gun cabinet / ...
+(Tongue partly-but-not-entirely in cheek: if you painstakingly prepare a second box of gas with the exact same initial conditions as the first, it will have exactly the same temperature; if you painstakingly prepare a second person with the exact same initial conditions as the first, they will have exactly the same free will.)
+(I think some version of this idea is in the water supply, but I've never seen somebody point directly at it. Claude suggests it's very like Dennett's "intentional stance" or Carroll's "poetic naturalism"; upon inspection, I agree, but still view this as worth posting.)
+Free will is like temperature
+4
+TAG
+3
+transhumanist_atom_understander
+2
+Vladimir_Nesov
+3
+Vladimir_Nesov
+2
+David Joshua Sartor
+-1
+2001zhaozhao
+6
+Comments
+6
+Free Will
+Philosophy
+World Modeling
+Frontpage
+43
+New Comment
+6 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 12:04 PM
+[
+-
+]
+TAG
+1d
+4
+0
+How are you defining free will?
+Are there any possible facts that could render free will illusory, eg. determinism?
+Is there any possible configuration of physics where free will us more than a stance or metaphor?
+Reply
+[
+-
+]
+transhumanist_atom_understander
+19h
+3
+0
+Lately I've been thinking about proof-based agents: agents that search for proofs in Peano Arithmetic of the consequences of their actions, and decide based on that.
+I think when you formulate them right (which would be very different from
+the last attempt
+), they have a kind of "free will" that comes from this kind of underspecification.
+Specifically: the proof system used to derive stuff like "if I take action A, then the environment will be in state S" cannot derive stuff like "I take action A".
+The model of the agent where I think this works out is it is doing a random proof search. Or a pseudorandom proof search, and "I take action A" means "I take action A regardless of the seed for the random number generator". That is, the proofs are actually about an ensemble of agents with different RNG seeds.
+Since the proof system can't prove its consistency, it can't prove that all proof searches will come up with the same result.
+This incompleteness about the antecedents of our counterfactuals looks a bit like free will, but it requires considering this ensemble of agents, where we specify they're doing a proof search but leave out the "microscopic" detail of the RNG seed.
+This is in contast to
+functional decision theory
+, where we work with a complete specification of the agent, and thus need counterpossible implications, where the antecedent is provably false.
+I'm hoping to work out the details and post more about it soon. For now you can believe me or not that this is a coherent theory.
+But yeah, I think underspecifying "microscopic" details in a "macroscopic" description is where you get something like free will.
+People always say randomness doesn't help with free will, but it seems to me there's this weird middle path, where your actions are not determined (in PA), but still not arbitrary (becaue they're determined in PA+consistency of PA).
+Reply
+[
+-
+]
+Vladimir_Nesov
+18h
+2
+0
+An action is later in logical time than the prior considerations that determine it. And the prior considerations shouldn't always be consequentialist with respect to the resulting action (they could be unrelated background facts, or consequentialist with respect to some other decision, perhaps made by a different agent, which is important for acausal coordination). I think this is
+conceptually cleaner
+than only considering consequentialist arguments.
+In general, you can't insist on waiting for a prior consideration to settle before making a decision, since it can take too long (or it can even directly wait for your own action before giving its answer, making it impossible to out-wait it). So there needs to be a timeout.
+Proof length bounded provability
+ia one way of doing it, where you wrap all prior considerations in provability-within-length-k boxes. But the issue here is that you might want to care about the proof being used, rather than be OK with any old sufficiently short proof. This is similar to how you might want to care which prior considerations to use, rather than go with all possible consequentialist considerations with respect to your action.
+Reply
+[
+-
+]
+Vladimir_Nesov
+1d
+3
+1
+For a physical calculator and a fact of arithmetic it produces/witnesses, it's the abstract arithmetic that's the relevant thing, rather than the physical calculator. An interpretation of data can be more important than the data, or than a causal process that produced the data.
+Reply
+[
+-
+]
+David Joshua Sartor
+1d
+2
+1
+This is true for most concepts.
+It's an especially useful frame for free will, moreso than for temperature I think. Free will's subjectivity is relevant because (unlike for temperature) humans can in fact outgrow its use in some contexts.
+Reply
+[
+-
+]
+2001zhaozhao
+13h
+-1
+0
+If you know the positions and velocities of every atom in a box of gas, then with enough work you can predict its future to arbitrary precision
+I'm not a physicist but aren't such things inherently unpredictable?
+At any given moment what you will think next in your brain is random, and there is a very small chance that you may be thinking literally anything at all and there is even a chance that your brain vanishes into thin air in any given moment.
+Reply
+Moderation Log
+More from
+Optimization Process
+View more
+Curated and popular this week

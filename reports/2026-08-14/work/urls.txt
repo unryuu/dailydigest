@@ -1,0 +1,35 @@
+# 独家视角
+youth-ai-poll|https://www.axios.com/2026/08/13/youth-poll-thumbs-down-on-everything
+students-think-ai|https://www.lesswrong.com/posts/ySXuvJcqRindQwAk7/how-my-students-think-about-ai
+
+# 深度长文
+automated-alignment-runs|https://www.lesswrong.com/posts/myAhB5qyAHyXRv6KJ/automated-alignment-runs-are-hard-to-study
+text-ai-watermarks|https://www.seangoedecke.com/text-ai-watermarks
+eleven-models|https://www.netlify.com/blog/one-prompt-11-models-very-different-results
+
+# 新鲜论文
+mechanist|https://huggingface.co/papers/2608.12036
+visual-tool-use|https://huggingface.co/papers/2608.06270
+openart|https://huggingface.co/papers/2608.00677
+toolhazard|https://huggingface.co/papers/2608.11878
+narrative-consistency|https://huggingface.co/papers/2608.08160
+poor-mans-agentic-modeling|https://huggingface.co/papers/2608.11215
+poor-mans-agentic-modeling-full|https://huggingface.co/buckets/huggingchat/papers-content/resolve/2608/2608.11215.md
+
+# 官方公告
+gemini-37-flash|https://deepmind.google/blog/introducing-gemini-3-7-flash
+openai-ultrafast|https://openai.com/index/previewing-ultrafast
+mistral-ocr-41|https://docs.mistral.ai/models/ocr-4-1
+
+# 行业简讯
+bullet-agent|https://www.codewithbullet.com
+ai-at-home|https://jdagostino.github.io/ai-pt1-box-o-scraps/index.html
+agent-runtime-contract|https://huggingface.co/papers/2608.11274
+skillzip|https://huggingface.co/papers/2608.05604
+
+# 乐子候选
+night-caffeine|https://www.astralcodexten.com/p/the-quest-for-caffeine-you-can-have
+spaghettifying-dram|https://github.com/xoreaxeaxeax/skitter-creek-bath-salts
+old-web-link-rot|https://0.mk/blog/link-rot
+donkeybas|https://donkeybas.com
+free-will-temperature|https://www.lesswrong.com/posts/JSteskb3Lgp9Be69o/free-will-is-like-temperature

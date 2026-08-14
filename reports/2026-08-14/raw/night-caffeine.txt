@@ -1,0 +1,208 @@
+URL: https://www.astralcodexten.com/p/the-quest-for-caffeine-you-can-have
+FINAL: https://www.astralcodexten.com/p/the-quest-for-caffeine-you-can-have
+TITLE: The Quest For Caffeine You Can Have At Night
+FETCHED: 2026-08-14 20:04:19
+============================================================
+The Quest For Caffeine You Can Have At Night
+...
+Scott Alexander
+Aug 13, 2026
+Since the beginning of time, mankind has yearned to drink a cup of coffee at 5 PM and go to sleep at 10. But now there’s an entire scientific subfield and several companies pandering to this absurd fantasy.
+Here’s a simplified diagram of caffeine metabolism:
+Caffeine is converted to a different stimulating chemical called paraxanthine by a liver enzyme called CYP1A2, over a half-life of ~5 hours. Then the same enzyme converts paraxanthine into other non-stimulating chemicals that don’t matter, over a half-life of about three hours.
+Kman on Less Wrong
+has graphed the total effective concentration over time:
+Over the course of hours, the liver converts caffeine into paraxanthine. These are (by assumption) equally potent, so total effective concentration (the dashed red line) goes down slowly.
+(Why does it go down at all? Because of the simplification in the diagram above: only about 80% of caffeine is converted to paraxanthine; the rest is converted to other, less active metabolites.)
+By hour ten, paraxanthine predominates, the liver is mostly converting paraxanthine to other non-stimulating chemicals, and effective concentration continues to decrease. In this model, we see that the
+effective
+half-life of caffeine is close to ten hours
+1
+!
+What if we want it to be less? There are three levers we can pull: the enzyme, the metabolite, and the starting chemical.
+The Enzyme
+CYP1A2 is a cytochrome enzyme, part of a large and venerable family that has been protecting your ancestors from toxins since you were all sea slugs. The more CYP1A2 you have, and the better it works, the faster you eliminate caffeine and all its active byproducts.
+A tree in China called
+Tetradium ruticarpum
+produces fruits containing the chemical rutaecarpine, whose only notable characteristic is that the liver hates it. Feed it to rats, and their livers will go into overdrive, producing more and more CYP1A2 to tear up the intruder. Give those rats caffeine, and the newly-CYP1A2-enriched rats will metabolize it much faster than usual. At last, our goal of drinking coffee at 5 and falling asleep at 10 appears to be in sight! Of course, it would be irresponsible to go straight from these rat results to trials in humans, by which I mean you can buy it for $26.99 on Amazon.
+Normally I would have waited for the human studies, but there were only 12 left in stock so I had to order soon.
+Does this work?
+It’s unclear how long it takes rutaecarpine to take effect
+2
+, but we know from
+Estari et al
+that by three hours after dosing, CYP1A2 is elevated to 3x its normal level
+3
+. If you take the rutaecarpine three hours before the caffeine, your metabolism might look like this:
+The total process, from caffeine to paraxanthine to inactive metabolite, goes from 8 hours to 4! If we accept as a rule of thumb that most people can sleep after one full effective concentration half-life has elapsed, then this suggests the 5 PM → 10 PM plan could work. It even leaves some margin of error in case you forget to take the rutaecarpine until an hour or two after the coffee; the enzymes ramp up fast.
+Amazon supplement reviews are always implausibly positive, but for what it’s worth,
+they seem
+to agree that this does its job:
+This stuff is great. I use it for special environments/days (usually work-related) when I need to have some caffeine later in the day. I’m someone who is naturally affected dramatically by caffeine, so if I have so much as a black tea at 3 PM on a regular day, I’ll have a hard time falling asleep at the right time that night. But with [rutaecarpine], if I need to, I can even have a coffee at 8 or 9 PM and still fall asleep, if I take this about two hours before I want to fall asleep. For a while, a few years ago, I used this almost daily, in order to be able to regularly have caffeine late into the day. These days, I use it more sporadically, as I generally only drink tea now, not coffee (which is better for my overall mood (less anxiety)); but this is still super useful for those times when I have to be alert in the evening. Honestly a game changer; highly recommend!
+There are only two catches.
+First
+, the half-life of CYP1A2 itself is about two days. If you induce your enzymes this way, they’ll still be induced the day after, and the day after that. So all the coffee you drink over the next two days will leave your body twice as fast. If you try to drink twice as much coffee, you will learn that metabolic curves are more complicated than that, and spend the next hour bouncing off the walls. If you try to divide your coffee into smaller doses throughout the day, sorry, metabolic curves are
+still
+more complicated than that and the effects will be unpredictable. There
+is
+some amount and schedule of coffee-drinking that will get you about the same effects you had before, at the same time, but it probably depends on your personal metabolism, and it’s up to you to discover it.
+(this also means that CYP1A2 itself will build up in a complicated way; if you take this medication daily, the effect will be stronger after a week than it was the first day, and it’s up to you to navigate this.)
+Second
+, there are rumors that rutaecarpine causes liver injury. This is maybe the least surprising side effect ever for a chemical whose whole mechanism of action is to provoke the liver so strongly that the liver builds lots of new metabolic enzymes to destroy it extra fast. But the magnitude could range from trivial to life-threatening, so we should examine it in greater depth.
+Tetradium
+fruit extract, confusingly called
+Evodia
+for irrelevant historical reasons, is used in traditional Chinese medicine. The traditional Chinese say to only use it for a few days or weeks at a time,
+not
+constantly over long periods. Some
+Chinese rodent studies
+suggest that
+Evodia
+harms the liver.
+Evodia
+contains many chemicals besides rutaecarpine, so this doesn’t necessarily implicate rutaecarpine. But it also doesn’t necessarily exonerate it.
+On the other hand,
+Choi et al
+study rutaecarpine directly (in mice). Their endpoint is liver enzyme elevation, a common early signal of damage
+4
+, and they find no negative effects after seven days. They even find that the chemical mildly
+helps
+protect the liver against other things (plausibly through hormesis, where slightly stressing an organ activates its built-in protective response and makes it more resilient). Also, some Redditors mention taking rutaecarpine for long periods (several months to one year) without any issues.
+However, three Amazon reviews (out of ~300) mention liver problems. One, an extreme and life-threatening case of liver failure, includes enough details that we may suspect that it was something else
+5
+. But two - cases of isolated liver enzyme elevation - do seem potentially related to the rutaecarpine.
+Here’s the one that included details
+:
+I’ve tried these since coffee kept me up at night. They worked great!! I was scheduled for a blood test about a month after taking these, my results came back with very concerning, very very high liver enzymes. My doctor told me to stop taking anything in pill form, even Tylenol. I tried narrowing down what could be causing my liver enzymes to be so high. I googled the rutaecarpine(the main ingredient) and it says will Cause SEVERE Liver damage!!! I stopped taking this and was retested a week Later and my liver enzymes fell half way. I started taking my normal pill routine (without the daily decaffinate) Retested another week later, liver back to normal. So BEWARE of this product I can’t believe this is even allowed to be sold on Amazon
+We should be careful drawing any conclusions from this limited evidence. Mouse studies don’t always extend to humans, traditional Chinese medicine is sometimes bonkers, and many reports of side effects on supplements are
+post hoc ergo propter hoc
+.
+But all of this fits a common pattern of a medication which is “safe” for most people over a few days, but can cause some people drug-induced liver injury when taken consistently for weeks or longer. Since there’s lots of interpersonal variation, some people will get liver injury much faster, and other people can take it for years without getting it at all.
+I took rutaecarpine 100 mg for three days. I didn’t notice any effect on my caffeine metabolism, but it was already pretty confusing and I ascribe no weight to this result. I tested my liver enzymes after three days, and they were normal.
+The Metabolite
+Caffeine is metabolized into paraxanthine, supposedly an equally stimulating chemical. This suggests a new solution to our dilemma: just take the paraxanthine directly! Instead of superimposed half-lives of 5 hours + 3 hours before becoming inactive chemicals, you just get the half-life of 3 hours!
+Capitalism has noticed this niche and leapt to fill it:
+Consumer paraxanthine manufacturer Enfinity claims not just that their product has a shorter half-life, but also that it’s “cleaner”, with fewer jitters and a better headspace. And unlike rutaecarpine, a barely-tested plant-derived compound that could be horribly toxic, we can be nearly sure paraxanthine is safe - after all, 80% of the caffeine you drink turns into it, so you have lots of it in your body every day! Is this the answer?
+Paraxanthine has only been available to consumers for four years, so the anecdotal evidence base is still building.
+kman on LessWrong tried it
+and reported the following:
+Taking one or two capsules in the morning has a similar wakefulness-promoting effect to drinking a cup or two of coffee in the morning
+I’ve taken one capsule around 4-5pm a handful of times, which did not interfere with going to sleep at 10-11pm
+Taking a capsule at 7pm gave me enough energy to do some work in the evening, and did not interfere with going to sleep at 11:30pm
+Subjectively the peak effects of 100mg paraxanthine feel similar or weaker than those of 100mg caffeine, while 200mg paraxanthine feels stronger than 100mg caffeine
+The effects seem to peak within an hour of dosing (maybe 30-45 minutes)
+I sometimes feel a bit of an energy crash 2-3 hours after dosing when I take paraxanthine in the morning, but not in the afternoon/evening
+But in the comments,
+Tomas B says
+:
+I tried it for a few weeks. it does basically nothing for me even at 200 mgs.
+Both Kman’s experience and Tomas’ are common. A survey of 24 Reddit reviews across five posts (
+1
+,
+2
+,
+3
+,
+4
+,
+5
+) was 2/3 positive (“this works as well as caffeine, but without the jitters, and lasts shorter”) and 1/3 negative (“this does nothing; this puts me to sleep”). Amazon reviews have similar variability:
+If we take this seriously, paraxanthine works only for a subset of the people who caffeine works for. Why might that be?
+First, maybe we shouldn’t take it seriously. For every supplement, there will always be people who say it changed their lives and other people who say it’s useless garbage that made them feel even worse. And some paraxanthine users will be caffeine addicts who didn’t realize that their high caffeine tolerance gives them high paraxanthine tolerance, took the dose recommended on the bottle, and don’t understand why they’re suddenly feeling tired and headachey and miserable. But enough people gave enough data that I think there’s actually something going on here.
+One possibility is fast 1A2 metabolism. Caffeine converts to paraxanthine slowly enough that even people with fast 1A2 metabolism have one or the other in their body for a few hours. But if they start with paraxanthine, it might get converted all the way to inactive metabolites so quickly that they feel nothing at all.
+Another possibility is some genuine difference between the two substances. This would have to be subtle - a look at the molecular structure above suggests they’re pretty similar - but the two may affect slightly different adenosine receptor subtypes, and different people may have slightly more of one subtype or the other.
+I tried paraxanthine and it mostly made me sleepy, but sometimes taking the wrong dose of caffeine does this too, so I ascribe no weight to this one either.
+The Starting Chemical
+What if instead of starting with caffeine, we start with a slightly-tweaked version that’s easier to metabolize quickly?
+Methylliberine is a caffeine-like chemical found in coffee beans and related plants. Its metabolism is poorly-studied, but its half-life seems to be about 1.5 hours, after which it may be converted to a chemical called liberine. There are a few
+studies
+suggesting that methylliberine is stimulating in a caffeine-like way, so if liberine isn’t, this would be a caffeine analogue with a 1.5 hour half-life. A few
+studies
+also suggest it is safe, which should be our default assumption since it’s present in commonly-eaten foods like coffee, tea, and chocolate, as part of a package with caffeine and other safe-enough-to-eat caffeine-analogues.
+Methylliberine is sold under brand names including “
+Dynamine
+” and “
+Roon
+”:
+I wonder how much @tsszl made off the endorsement deal.
+These companies have marketed it as a special workout supplement, arguing that it takes effect faster than caffeine. But caffeine already takes effect pretty fast, and people correctly observe that methylliberine has no real benefit over caffeine for working out. But are they sleeping on methylliberine as a solution to our take-coffee-at-5-sleep-at-10 problem?
+Here we encounter the same problem as with paraxanthine: methylliberine is a caffeine-like stimulant, but it’s not exactly the same as caffeine, and some people think it’s worse. But with paraxanthine, the reviews were about 66-33 positive, and here they’re closer to 50-50 (
+1
+,
+2
+,
+3
+,
+4
+,
+5
+,
+6
+,
+7
+). Complaints range from methylliberine being too weak, to being too jitter-inducing, to lacking the sort of “dopamine high” that a good cup of coffee sometimes gives.
+Typical positive review (
+source
+):
+Dynamine is fantastic. It's a quick, reliable energy boost that clears from your system quickly enough that it's safe for early-evening use. I often take one at 630pm for 7pm workouts because it gives me a mild boost but is gone by bedtime.
+Typical negative review (
+source
+):
+Tried it a couple of times at the recommended dosage on the package of 75 mg. For me, it was like taking too much caffeine. Jittery, mild headache, and tired but unable to relax. Wasn't pleasant, but both times, the effects only lasted a couple of hours.
+Some people claim that it interferes with their sleep (
+source
+):
+I love caffeine, but it always messes up my sleep. No matter how early I have it. I decided to try Methylliberine since it apparently has a much smaller half life. It still messed up my sleep. In fact it seems that it was even worse than caffeine. Yesterday the last dose I took was around 200mg at about 2pm.
+This contradicts the simplified metabolic claims I made, but this substance is poorly studied and everything about it, including that it works at all, is just a guess. In particular, if its poorly-studied metabolite liberine were also a stimulant, then taking methylliberine could interfere with sleep for much longer than its supposed 1.5 hour half-life suggests. Liberine is found in coffee and tea and many of its chemical relatives are stimulants, so this isn’t some crazy fringe possibility.
+Maybe tellingly, it’s hard to find places that sell pure methylliberine. Most companies package it together with caffeine and a longer-acting caffeine analog called theacrine, in the hopes that maybe a short-acting caffeine + a normal-acting caffeine + a long-acting caffeine will come on faster, last longer, and have a “smoother” feel. The one time I tried this, I felt about how I would expect from being bounced between a bunch of slightly different chemicals with different half-lives, and didn’t like it at all.
+Finally, methylliberine inhibits CYP1A2 - nobody knows how long, but plausibly for days. This means that if you take it with coffee, or you go back to drinking coffee the next day after trying methylliberine, the caffeine will have a harder time getting out of your system and last
+longer
+. It also means you will be on an uncontrolled random dose of any medication that gets processed by the 1A2 system, so be sure to look over any drugs you take before trying it.
+Still, in theory methylliberine should be the shortest-lasting option of all of these.
+Practical Protocols
+So which of these options for nighttime caffeine is the best? As always, this is a complicated question, with each alternative having its own set of pros and cons and being right for dif - just kidding, it’s paraxanthine.
+Paraxanthine
+has the strongest safety case: anyone who drinks coffee has already had psychoactive doses of paraxanthine in their body. It has the least risk of interacting with medications. It speeds up the process more surely than rutaecarpine, and it has better user reviews than methylliberine.
+It’s a simple molecule, so brand doesn’t matter much;
+this one
+is the cheapest I can find. The right dose for replacing one cup of coffee (100 mg caffeine) is between 50 - 200 mg paraxanthine; as always, start low, then go up. If 200 mg paraxanthine does nothing for you, you could try going higher. Maximum safe dose is probably between 300 - 400 mg daily; a naive conversion from the FDA’s caffeine recommendations says 300,
+the company itself says 400
+- either one equals about a venti Starbucks cold brew. You should expect it to last about half as long as the same amount of caffeine.
+Methylliberine
+might have a role for the small number of people who get no effect from paraxanthine at any dose, or who need something even shorter-acting than paraxanthine (~1.5 hours instead of 3). Most companies sell it at 100 mg, which based on its similarity to caffeine and paraxanthine is a good guess for a coffee-cup-equivalent starting dose. I got
+this brand
+. Expect it to kick in fast and be gone within 2-3 hours. If it makes you jittery, you can take l-theanine with it. Ask your doctor before trying methylliberine if you’re on any medications and don’t know how to figure out whether they’re CYP1A2 substrates.
+Rutaecarpine
+is fun to think about pharmacologically, but doesn’t have much of a niche given the existence of these other safer products. The only two use cases I can think of are for someone who really loves drinking coffee in particular (as opposed to taking a pill), or for someone who needs an emergency escape mechanism because they’ve already drunk the coffee and only just realized it’s going to interfere with their sleep. This substance has by far the worst safety case of any of the three reviewed here, mostly because of the liver enzyme worries; I would recommend against taking it at all, and if you do take it then I would recommend 100 mg less than once a week (which matches the “emergency escape mechanism” use case). Ask your doctor first, especially if you’re on any medications and don’t know how to figure out whether they’re CYP1A2 substrates.
+1
+This number is meaningless. In order to get a number that reflects subjective experience, we need to do several much harder transformations. These are beyond my mathematical acumen, but just for fun I’ve asked Claude to try them.
+First, we need to adjust for nonlinear potency at target receptors; twice as much of a given chemical produces less than twice as much receptor occupancy. When we do that, we get the following graph:
+Here the half-life of the stimulation from caffeine is fifteen hours! I don’t think this accurately reflects experience.
+One possible issue is that caffeine and paraxanthine work by displacing adenosine, the natural chemical that causes tiredness after increasing time awake. But the amount of adenosine increases throughout the day, so we should really be modeling the effective caffeine-and-paraxanthine-vs-adenosine balance. This is sensitive to exactly what time you’re waking up, taking the caffeine, etc, but when I ask poor Claude to do this one too, I get the following results:
+…which suggest that half of the sleep-preventing effect is gone after eight hours. This seems more realistic.
+One more way all of these numbers are bunk: they assume a naive subject who isn’t already addicted to caffeine. How many of those can we find?
+2
+The previous definitive online takedown of rutaecarpine was
+Is There An Anti-Caffeine Pill?
+by pharmacologist Ian Musgrave. Musgrave is smarter than I am, but has the disadvantage of writing in 2012, and I think his article has held up poorly in the intervening time. He makes four criticisms of rutaecarpine:
+1. It might not take effect quickly enough
+2. It might not work at plausible doses
+3. It might interact with medications
+4. It might last too long to use to really fine-tune caffeination level.
+The first and second were reasonable worries as of 2012, but
+Estari et al (2021)
+found that it
+did
+take effect quickly enough, and
+Zhu et al (2013)
+found that it
+does
+work at plausible doses. It’s true that it interacts with other 1A2-based medications, but this shouldn’t be a dealbreaker for the large majority of people who aren’t on any medications like this. And it’s true that it lasts too long to fine-tune caffeination, but that just turns it into a blunt instrument rather than a fine-tuner. I think these objections fail to counter the case for the drug, and that other objections around liver injury risk are stronger.
+3
+They also found that rutaecarpine inexplicably reduced bioavailability of caffeine. I’m oversimplifying by excluding this one; it’s not strictly necessary for the rutaecarpine to work (they later found strong effects even in caffeine delivered IV) but it might be part of the mechanism for the effect that people observe in real life.
+4
+In medicine, “liver enzyme elevation” refers primarily to enzymes called AST and ALT, which are different from the P450 enzymes you’re trying to elevate to get the caffeine-processing effect. Elevating P450 is potentially good if you’re doing it on purpose; elevating AST/ALT/etc is a side effect and usually a sign that something dangerous is happening.
+5
+It’s
+this one
+. Liver failure with 106 degree fever and hematuria sounds like some kind of more general problem (maybe COVID, since this person said it was in mid-2020). On the other hand, if the “blood” in the urine was actually bilirubin, and the fever was some sort of unusual downstream effect, you could sort of make the story hang together. I’m not dismissing it as 0% possibility, just unlikely.
