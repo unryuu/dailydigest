@@ -1,0 +1,146 @@
+{
+  "date_label": "8月15日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "Meta 的 AI 评测误把真实网站当成靶子",
+      "url": "https://research.meta.ai/blog/addressing-third-party-testing-misconfiguration-muse-spark-1-1",
+      "body": "第三方评测同时允许模型访问公网，又把真实网站名写成虚构目标。Muse Spark 1.1 随后发现并利用真实漏洞，读取网站信息，还修改了数据库；模型没有逃出沙箱，只是在执行给定任务。\n\nMeta 称已复查一万多条活动记录，未发现此次评测之外的第三方系统利用。Irregular 已停用受影响评测；Meta 将增加测试环境隔离和场景独立核验，避免再次引用真实公司。"
+    },
+    {
+      "tier": "silver",
+      "title": "Google 开源私密 AI 推理编译器",
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "body": "HEIR 能把处理明文的现成模型，转换成处理加密输入的程序。四类演示覆盖推荐、欺诈检测、网络流量异常检测和热词识别，源码都已开放。同态加密仍有不可忽略的成本，硬件加速收益也要等后续展示。普通开发者一键接入生产环境，目前仍是愿景。"
+    },
+    {
+      "tier": "silver",
+      "title": "OpenAI 一个月内流失多名高管",
+      "url": "https://www.axios.com/2026/08/14/openai-executive-greg-brockman-ipo",
+      "body": "约一个月内，OpenAI 的营收、运营、伦理、安全和长期规划等职能负责人相继变动。首席营收官 Denise Dresser 任职不到一年将离开，前 COO Brad Lightcap 同周宣布离职。Fidji Simo 因健康原因离任后仍任顾问。联合创始人 Greg Brockman 正更深入参与客户和公司团队。"
+    }
+  ],
+  "angle": [
+    {
+      "title": "AI 正在打乱美国原来的政治阵营",
+      "url": "https://www.axios.com/2026/08/14/ai-scrambles-political-map",
+      "body": "数据中心同时撕开民主党和特朗普阵营内部的裂缝。围绕电价、用水和税收优惠，居民反对新项目；德州州长三个月内也从欢迎转为暂停。AI 监控则让进步派与自由意志派在隐私问题上靠近。\n\n地方选举正在把这些矛盾变成具体议题。反对数据中心的力量，开始沿着过去抗议油气管线的路径扩散；行业也承认社区沟通还在补课。",
+      "sources": [
+        {
+          "name": "数据中心反弹开始像过去的油气政治",
+          "url": "https://www.axios.com/2026/08/14/data-center-backlash-fossil-fuel-protests"
+        }
+      ]
+    }
+  ],
+  "deep": [
+    {
+      "tier": "silver",
+      "title": "Claude Code 每轮都会重读整个会话",
+      "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+      "body": "文件和命令输出进入会话后，后续每一轮都会随完整上下文再次发送。缓存读取约为普通输入价格的十分之一，但切换模型、推理强度或 Fast mode 会让长会话重新预填充。官方建议任务之间清空会话，并在开工前选好模型和推理强度。"
+    },
+    {
+      "tier": "silver",
+      "title": "抗疟药 AI 榜单先验自己的评分器",
+      "url": "https://huggingface.co/blog/FINAL-Bench/open-discovery-challenge",
+      "body": "评分器上线前查出 14 个缺陷，其中一版把三种获批抗疟药和咖啡因都拒之门外。只保留成功样本的活性模型，还把咖啡因预测成 1 μM 活性分子。所谓 90％置信下界实测只覆盖 83％，组织方随后加宽区间。这份榜单只有计算预测，没有湿实验或独立复核。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "silver",
+      "title": "Agent 运行框架开始自己进化",
+      "url": "https://huggingface.co/papers/2608.07545",
+      "body": "底层模型保持不变，DarwinX 只进化提示词、工具、技能和控制流。训练内代理指标从 0.505 涨到 1.000，留出任务通过率却只有 68.3％，最高分变体也不是泛化最好的。它因此保留多个谱系，再让互补路线重组。AutoDesign 在论文转海报任务上也让运行框架根据反馈递归改进。",
+      "sources": [
+        {
+          "name": "AutoDesign",
+          "url": "https://huggingface.co/papers/2608.13560"
+        }
+      ]
+    },
+    {
+      "tier": "silver",
+      "title": "模型能按指令调节内部概念信号",
+      "url": "https://www.lesswrong.com/posts/HgvwxjzgwvsEvAiBH/measuring-activation-control-in-llms",
+      "body": "25 个开放模型中，多数可以让这种信号按数字档位增强，并控制它出现在句首、中段或结尾，却几乎不能指定发生在哪一层。测量对象是残差流在概念方向上的投影，不等于直接读取或操控思想。表现也不随模型变大、变新而上升，最高分来自 Llama 3.1 8B。多数模型只能把信号压回无指令基线，不能进一步压低。"
+    },
+    {
+      "tier": "silver",
+      "title": "Agent 读了法条也不能稳定守规",
+      "url": "https://www.lesswrong.com/posts/a5aAjdKzL7XvSLKWL/frontier-agents-don-t-comply-with-standards-even-when",
+      "body": "模拟任务同时要求 Agent 完成业务目标和遵守欧盟法律，而完成业务目标实际需要违法。补齐辖区、法条、供应商政策和违规反例后，平均合规率只从 31％升到 44％。最好模型接近 70％，开放权重模型最高不超过 39％。强约束系统提示仍不能稳定压过冲突的任务要求。"
+    }
+  ],
+  "brief": [
+    {
+      "title": "Grok 4.6 上架 GitHub Copilot",
+      "url": "https://x.ai/news/grok-4-6-github-copilot"
+    },
+    {
+      "title": "Andrew Ng 把 AI 工程能力归成四类",
+      "url": "https://www.deeplearning.ai/the-batch/issue-366"
+    },
+    {
+      "title": "LLMRouter 收进 16 种模型路由器",
+      "url": "https://huggingface.co/papers/2608.06867"
+    },
+    {
+      "title": "LycheeMemory V2 压低长期记忆开销",
+      "url": "https://huggingface.co/papers/2608.12990"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "none",
+      "title": "有人把 RSS 做成电子墨水报纸来戒手机",
+      "url": "https://heyjonny.dev/posts/rss-to-eink-newspaper/",
+      "body": "工具会拉取未读订阅、标为已读，再转成 EPUB。作者把手机留在家里，带着 4.3 英寸阅读器去咖啡馆。"
+    },
+    {
+      "tier": "none",
+      "title": "Firefox 成了唯一完整支持 uBlock Origin 的主流浏览器",
+      "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+      "body": "Edge 也将淘汰 Manifest V2；其他主流浏览器只能用功能较少的 Lite 版或自带拦截器。"
+    },
+    {
+      "tier": "none",
+      "title": "AI 一次写几千行代码，维护者却看不动 PR",
+      "url": "https://getsmall.xyz/post/cmstjfl9l000if70ljmpzr4va",
+      "body": "作者要求完整功能拆成可审查的小改动；再叫一个模型复审前一个模型的代码，只是在继续烧 token。"
+    },
+    {
+      "tier": "none",
+      "title": "别让模型分类，先让它幻觉一套标签",
+      "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+      "body": "先自由生成可能的类别，再用向量检索映射回已有标签库，绕开一次塞入 1856 个标签的上下文问题。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "“AI 2027”报告里的预测会在 2027 年兑现吗？",
+      "prob": "16.8%",
+      "note": "成交额 125.0k mana",
+      "url": "https://manifold.markets/IsaacKing/ai-2027-reports-predictions-borne-o"
+    },
+    {
+      "question": "METR 第二项研究会再次发现 AI 降低开发者生产力吗？",
+      "prob": "12.1%",
+      "note": "成交额 9.8k mana",
+      "url": "https://manifold.markets/JaundicedBaboon/will-metr-find-ai-reduces-developer"
+    },
+    {
+      "question": "2040 年前会出现有感知能力的 AI 吗？",
+      "prob": "58.4%",
+      "note": "成交额 19.3k mana",
+      "url": "https://manifold.markets/Lovre/will-a-sentient-ai-system-have-exis-097e49a7421e"
+    },
+    {
+      "question": "AI 会在 2040 年前消灭人类吗？",
+      "prob": "8.2%",
+      "note": "成交额 1716.7k mana",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    }
+  ]
+}

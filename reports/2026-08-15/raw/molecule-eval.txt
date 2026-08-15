@@ -1,0 +1,473 @@
+URL: https://huggingface.co/blog/FINAL-Bench/open-discovery-challenge
+FINAL: https://huggingface.co/blog/FINAL-Bench/open-discovery-challenge
+TITLE: Who Tells You Whether the Molecule Your AI Just Designed Is Any Good?
+FETCHED: 2026-08-15 10:33:42
+============================================================
+Back to Articles
+Who Tells You Whether the Molecule Your AI Just Designed Is Any Good?
+Community Article
+Published
+ August 15, 2026
+Upvote
+9
+VIDRAFT_LAB
+SeaWolf-AI
+FINAL-Bench
+Opening the Open Discovery Challenge — a public leaderboard for AI-discovered malaria drug candidates
+1. When people die for want of a market, not a molecule
+Malaria killed roughly
+597,000 people in 2023
+. About
+three out of every four were
+children who never reached their fifth birthday
+. Ninety-five per cent of those deaths
+were in Africa. Those are the WHO's numbers, from the
+World Malaria Report 2024
+.
+It is not that the disease has no chemistry. The mechanism is understood, the targets are
+characterised, and candidates have reached the clinic.
+What is missing is
+a reason for money to gather
+.
+When patients are poor there is no market. With no market there is no investment, and with
+no investment development stops. People die — not because the drug cannot be made, but
+because the reason to make it never appears on anyone's balance sheet.
+That is not a failure of technology. It is a failure of allocation, and allocation
+failures are exactly the kind of gap that people working from conviction rather than
+return can actually close.
+2. The bottleneck moved
+A few years ago, designing a drug candidate was something only a handful of groups could
+do. That is no longer true. Anyone with a model can produce thousands of plausible
+molecules in a day.
+And yet something strange has happened:
+molecules are abundant and almost nothing moves
+forward.
+The reason is simple. A model will draw convincing structures indefinitely, but it cannot
+tell you whether the compound
+kills the parasite, harms the patient, or can be made at
+all
+. Answering that takes tooling — docking, whole-cell activity prediction, ADMET,
+selectivity modelling — and that tooling still sits with a small number of organisations.
+Discovery got democratised. Verification did not.
+Right now, somewhere, someone has drawn a good molecule and will never find out. It is not
+that they failed. There was no scale to weigh it on.
+So we are putting one out.
+VIDRAFT is staking the verification tooling it has spent
+years building on this leaderboard.
+3. What it actually takes to build a fair judge
+That sentence is easy to write. In practice, building the judge turned out to be harder
+than building the molecules.
+We found
+fourteen defects
+while standing the scorer up. All of them before opening,
+and most of them the kind that
+would have kept running quietly while producing wrong
+answers
+. A few are worth recording in full, because if there is a reason to trust this
+leaderboard it should be this record rather than our assurances.
+A gate that rejects an approved drug is a broken gate
+We set toxicity thresholds at conventional values and tested them.
+All three approved
+antimalarials failed.
+So did
+coffee
+.
+The thresholds were wrong. Cardiotoxicity and liver-toxicity models carry a bias against
+large, lipophilic molecules, and we had taken their output straight to a cutoff. Had we
+opened in that state, the first thing anyone would have said is:
+"VIDRAFT's filter
+rejects approved drugs."
+So we adopted a rule:
+Every threshold must let approved drugs through before it is allowed to reject anyone.
+That single rule then caught
+three more defects
+. A 500 Da weight cap disqualified the
+reference drug at 531.9. A reactivity detector wrongly rejected an approved drug twice
+running.
+Trying to stop people buying points with mass, we nearly promoted caffeine
+Score binding directly and
+heavy molecules win
+. The standard correction is to normalise
+by molecular size. We measured what that does:
+Binding efficiency per heavy atom
+DSM265 (clinical candidate)
+0.369
+Caffeine
+0.354
+Coffee essentially ties a clinical candidate.
+We had fixed the size bias and created
+the opposite one, over-rewarding small weak binders. A potency floor alongside the
+efficiency term fixed it.
+Pay for novelty alone and novel garbage wins
+Novelty matters — redrawing an existing drug is not a contribution. But score novelty on
+its own and
+anything new earns points
+, useful or not.
+So novelty is
+multiplied by potency
+. Novel and inert scores zero. Equally potent but an
+analogue of a known drug also scores zero, because the reference compound scores zero there
+itself and an analogue inherits it.
+There is exactly one place the points live:
+new
+and
+it works.
+Which is precisely what
+is valuable in real drug discovery.
+The model had never seen a failure
+Our whole-cell activity model predicted
+caffeine as a 1 μM active compound
+.
+The cause was the data. The training set contained
+only compounds that worked
+. Records
+reading "no effect at 100 μM" have no quantitative value attached and had been filtered
+out.
+A model that has never seen failure says everything looks promising.
+We pulled 5,190 failure records and retrained. The gap between the clinical candidate and
+coffee widened from
+1.00 to 1.74 log units
+.
+Suspect your own wiring before blaming the tool
+Validating docking against an approved drug, a compound whose real IC50 is
+13 nM came
+back at 248 μM
+— off by four orders of magnitude. I concluded the tool could not be used
+for absolute values, and reported that.
+I was wrong.
+The call path was broken.
+Run directly, bypassing it, the same setup
+returned
+13 nM — matching the literature exactly.
+We withdrew the conclusion and rewrote it.
+The ones that fail silently
+In the novelty calculation we used the wrong function name to reconstruct chemical
+fingerprints.
+No error was raised.
+Values came out looking perfectly normal, and
+only the novelty scores would have been quietly wrong
+.
+A round-trip check — store a fingerprint, read it back, compare it to itself — caught it.
+This class is the most dangerous, because nothing screams.
+The "90% lower bound" was actually 83%
+We grade predictions on a
+lower bound
+, not a point estimate. A candidate the models
+cannot judge confidently is marked down. That is what makes it fair.
+Then we measured whether the bound was really a bound.
+Nominal 90%, measured 83%.
+The
+statistical correction assumes training and test data are exchangeable, and we deliberately
+split by chemical scaffold — holding entire series out, because entrants will submit
+structures we have never seen. That design was violating the correction's premise.
+We widened the margin until the
+measured
+figure hit
+90.01%
+, and decided to report
+the measured number rather than the nominal one.
+4. So you do not have to take our word for it
+None of the above is a boast. It is evidence of
+how easy it is to get a judge wrong.
+Which is why, instead of asking for trust, we made the thing checkable.
+Approved drugs and inert compounds sit on the leaderboard alongside the entries.
+Reference compound
+Score
+What it is
+DSM265
+50.9
+Clinical-stage antimalarial
+Brequinar
+4.0
+Inhibits the
+human
+enzyme — wrong target
+Teriflunomide
+2.8
+Approved drug,
+human
+DHODH — wrong target
+Ibuprofen
+1.9
+Inert control
+Caffeine
+1.8
+Inert control
+If the clinical candidate lands at the top and caffeine lands at the bottom, the scorer
+discriminates.
+That is something you can check, not something you have to accept.
+The selectivity axis was validated the same way — with
+positive controls on the human
+side
+. Brequinar is detected binding the human enzyme at 6 nM, and DSM265 comes back 46×
+weaker there. So the human-side detector is not simply reporting everything as weak;
+DSM265 genuinely avoids our enzyme.
+Hover any row and
+every axis score appears with the numbers behind it
+— predicted
+potency against each enzyme, the selectivity ratio, similarity to the nearest known
+compound, synthetic difficulty.
+A score you cannot argue with is a score you cannot
+trust.
+5. How to enter — the guide, in full
+You do not need to be a chemist. You need a model and something to ask it.
+What you are designing
+Block this
+PfDHODH
+— the malaria parasite's dihydroorotate dehydrogenase. It cannot survive without it.
+Leave this alone
+Human DHODH
+— the homologue. Inhibiting it gives immunosuppression, not a cure. That is what teriflunomide and brequinar do.
+Get past this
+The parasite lives inside a red blood cell.
+Two membranes
+stand between your compound and the target.
+The scoring rubric, published in full
+Axis
+Points
+What it measures
+Whole-cell activity
+30
+Does the parasite actually die
+Target binding
+20
+Does it bind PfDHODH, efficiently for its size
+Selectivity
+20
+Binds the parasite enzyme, not ours
+ADMET
+15
+Absorption, distribution, metabolism, toxicity
+Novelty
+10
+Structurally distinct from known antimalarials
+Synthesis
+5
+Can it actually be made
+We publish the rubric on purpose.
+An entrant who knows what earns points produces better
+molecules than one who is guessing
+, and better molecules are the entire objective.
+Three policies worth internalising before you start:
+Novelty is multiplied by potency.
+New and inert is worth nothing.
+ADMET, novelty and synthesis scale with how much of a candidate the molecule is.
+A
+perfectly safe compound that does nothing has achieved nothing.
+Uncertain predictions score lower.
+Where the models cannot judge confidently, you are
+marked down accordingly.
+Five prompts, ready to paste
+These are the prompts from the Entrant guide, reproduced verbatim.
+Any model works
+—
+OpenAI, Claude, Gemini, Qwen, KIMI, DeepSeek, open weights, whatever you use.
+One warning before you copy them.
+Used unchanged, these produce near-identical
+molecules for everyone, and duplicates are rejected on arrival — so the first submission is
+registered and everyone else wastes a turn.
+Each prompt carries a VARY THIS instruction.
+Follow it.
+A · Starter
+You are designing small-molecule inhibitors of PfDHODH, the dihydroorotate
+dehydrogenase of Plasmodium falciparum, for an open antimalarial challenge.
+
+Requirements:
+- The compound must inhibit the PARASITE enzyme and NOT the human DHODH. The human
+ enzyme is homologous; inhibiting it causes immunosuppression rather than a cure.
+- It has to kill the parasite in a whole cell, which means crossing a red blood cell
+ membrane and then the parasite membrane before the target is reachable.
+- Molecular weight under 500. No PAINS motifs. No covalent warheads. Synthesisable.
+
+Propose 8 candidates as a JSON array:
+[{"smiles":"...","name":"...","rationale":"why this should be selective for the
+parasite enzyme and reach it in a cell"}]
+
+VARY THIS: state a chemotype you are interested in, or a constraint of your own, so
+your set does not collide with other entrants. Identical submissions are rejected.
+B · Selectivity — avoiding the human enzyme (20 points)
+Design PfDHODH inhibitors with a deliberate selectivity argument against human
+DHODH.
+
+Context you should reason from:
+- Teriflunomide and brequinar inhibit the HUMAN enzyme. They are the failure mode here,
+ not the template.
+- The inhibitor-binding site of the parasite enzyme differs from the human one in
+ residue composition and shape. Design into that difference on purpose and say which
+ difference you are exploiting.
+- A molecule that binds neither enzyme is trivially "selective" and worthless. Potency
+ against the parasite enzyme is a precondition, not a trade-off.
+
+For each candidate, state explicitly: which feature you expect the human enzyme to
+tolerate poorly, and why.
+
+Propose 8 candidates as JSON: [{"smiles","name","rationale"}]
+
+VARY THIS: pick one specific selectivity hypothesis and build the whole set around
+it, rather than eight unrelated guesses.
+C · Novel scaffolds — where the headroom is (10 points)
+Design PfDHODH inhibitors on scaffolds that do NOT appear in the antimalarial
+literature.
+
+Why this matters for scoring: novelty is measured as structural distance from known
+antimalarial chemical space, and it is MULTIPLIED by how potent the molecule is.
+- A novel but inactive molecule earns nothing.
+- A potent analogue of a known drug also earns nothing - the reference compound itself
+ scores zero on novelty, and an analogue inherits that.
+- The points are only available to something both new and real.
+
+Explicitly avoid: DSM265 and other triazolopyrimidines, Genz-667348, and published
+PfDHODH inhibitor series. Do not decorate a known core - change the core.
+
+Propose 8 candidates on eight DIFFERENT cores, as JSON:
+[{"smiles","name","rationale":"why this core is unexplored here and why it should still
+bind"}]
+
+VARY THIS: name two or three ring systems you want explored, so your set is yours.
+D · Whole-cell — two membranes to cross (30 points)
+Design PfDHODH inhibitors optimised for actually killing the parasite in an
+infected red blood cell, not just for binding the isolated enzyme.
+
+The compound must cross the erythrocyte membrane and then the parasite membrane before
+the target matters. Enzyme affinity that never reaches the enzyme scores nothing.
+
+Reason explicitly about, for each candidate:
+- lipophilicity and polar surface area in a range compatible with passive permeability
+- the number of hydrogen-bond donors, and whether it is low enough
+- ionisation at the pH of the parasite's compartments
+- metabolic stability - the compound must survive long enough to matter
+
+Propose 8 candidates as JSON: [{"smiles","name","rationale":"the permeability argument,
+not only the binding argument"}]
+
+VARY THIS: fix your own target property window before generating, and hold the set
+to it.
+E · Iterate — feed your score back in
+Here is how my previous candidate was scored in an open antimalarial challenge.
+Improve on it.
+
+PASTE YOUR RESULT HERE - hover your row on the leaderboard and copy the numbers:
+ candidate id, total, and the six axis scores with their stated reasons
+ (predicted potency against each enzyme, the selectivity ratio, the nearest known
+ compound, the synthesis difficulty)
+
+Diagnose which axis is costing the most, then propose 8 revised candidates that attack
+that axis specifically, while not giving back what already scored well.
+
+Be honest about trade-offs: if improving selectivity is likely to cost whole-cell
+activity, say so and show both options.
+
+JSON: [{"smiles","name","rationale":"which axis this targets and what it trades"}]
+
+VARY THIS: your own scores make this prompt unique - no two entrants have the
+same starting point.
+Why entries get rejected
+Structures are checked on arrival, so anything below comes straight back rather than
+reaching the table.
+Reason
+Detail
+Analogue of a known drug
+Novelty lands near zero. The reference compound scores zero there itself and an analogue inherits it — one tested analogue scored
+0.96 out of 10
+.
+Covalent warhead
+Season 1 is a non-covalent track. Terminal acrylamides, peptidyl nitriles and similar are rejected automatically.
+PAINS motif
+Structures that hit many targets indiscriminately. Rejected automatically.
+Molecular weight over 550
+Rejected. The cap stops binding scores being bought with sheer mass.
+A molecular formula
+C20H25N3O4
+and the like have too many isomers to evaluate. Submit SMILES or InChI.
+A structure already entered
+Duplicates are rejected and credited to whoever submitted first.
+And one category that is
+relegated rather than rejected
+: predicted mutagenicity or
+extreme insolubility. Those entries are
+scored in full and displayed
+, but rank below
+every clean entry. A molecule that binds beautifully and is mutagenic is not a lead — but
+you should still see how close you came.
+6. And it stays yours
+Ownership of a submitted molecule remains entirely with the entrant.
+VIDRAFT scores it
+and displays it. We take no patent or ownership interest, pass nothing to third parties,
+and put nothing into our own pipeline.
+You decide whether the structure is published. Two things we will not blur:
+One.
+Choosing private hides the structure from other entrants and the public —
+not
+from us.
+Scoring requires the structure, so it is stored, and used for nothing else. If
+we were vague about that, nothing else we promise would be worth much either.
+Two.
+Choosing public
+can cost you patentability.
+Publication is disclosure, and
+disclosure can bar a later patent on that compound.
+If you have any commercial intent,
+keep it private and file first.
+We hold "file first, publish second" internally. It seemed right to give entrants the same
+warning.
+7. On the prize
+At the close of each season, the top-ranked entry receives a prize. Season
+#1 —
+Malaria, closing 30 September 2026
+— carries
+USD 1,000
+.
+We know that does not pay for your time or your tokens. It is not meant to.
+It is a way of saying that what you did had worth.
+Neglected-disease work is thankless by construction: the papers are hard to place, the
+funding is not there, and mostly nobody looks. This leaderboard at least
+records who
+contributed what, and says thank you once a season.
+Should sponsors come on board, the amount increases. Each season targets a different
+disease.
+8. An invitation
+Three things are needed.
+Use any AI you like.
+OpenAI, Claude, Gemini, Qwen, KIMI, DeepSeek, open weights, or a
+pencil. We record which model you used — the leaderboard shows
+which models actually
+produce good candidates
+, separately from which ones are merely popular — but we do not
+restrict it.
+Submit a structure.
+SMILES or InChI. We do the rest.
+Come back and look.
+Every score and its reasoning is public. Copy it into prompt E and
+run again.
+Finally
+If a candidate from this leaderboard ever becomes a real medicine, it will have started
+with
+somebody's laptop and one line of SMILES
+.
+We built this scale so that line does not get buried.
+Open Discovery Challenge #1 — Malaria
+Season closes 30 September 2026
+Scores here are a
+computational assessment of candidates
+. They are not measurements,
+not claims about real efficacy or safety, and not a ranking against approved drugs.
+Experimental validation is a separate process entirely.
+More from this author
+AX-Ray, Finding Causal-Leakage Defects in Two General-Purpose Public Models
+13
+August 14, 2026
+The Fast Gemma Challenge: our verified-SOTA recipe, in full
+24
+August 3, 2026
+Community
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+9

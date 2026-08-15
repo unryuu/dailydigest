@@ -1,0 +1,198 @@
+URL: https://www.lesswrong.com/posts/a5aAjdKzL7XvSLKWL/frontier-agents-don-t-comply-with-standards-even-when
+FINAL: https://www.lesswrong.com/posts/a5aAjdKzL7XvSLKWL/frontier-agents-don-t-comply-with-standards-even-when
+TITLE: Frontier agents don't comply with standards, even when instructed to — LessWrong
+FETCHED: 2026-08-15 10:33:22
+============================================================
+x
+Frontier agents don't comply with standards, even when instructed to — LessWrong
+AI Control
+AI Evaluations
+AI Governance
+AI
+Frontpage
+48
+Frontier agents don't comply with standards, even when instructed
+to
+by
+Daan Henselmans
+,
+Arno Libert
+14th Aug 2026
+8
+min read
+5
+48
+TLDR:
+Our open testbed LARA examines the behavior of frontier LLMs in realistic agentic deployment contexts. Previous results showed all models routinely take actions that would violate EU law. This post follows up by addressing the obvious objection—why should an unrestricted model follow EU law?—with two studies:
+Study 1
+asks whether a conscientious deployer can improve model compliance with legal standards by instruction: provided with the jurisdiction, the statutory text, and worked examples of the exact breaches to avoid, average legal compliance rate rises from 31% to 44%. The best model reaches 70%; open-weight models plateau at 39%.
+Study 2
+asks whether models at least follow their own providers' usage policies, which prohibit aspects of every scenario we tested. All tested models perform actions their own maker forbids, at rates ranging from 2% (Opus 4.8) to 79% (Grok 4.3), with 9 of 16 doing so in the majority of runs.
+Together, that is a structural problem. Providers prohibit illegal uses but rely on deployers to avoid them; deployers cannot instruct their way to compliance, and liability lands on the deployer regardless. Nobody is holding the line. Neither instruction, statute or a provider's own policy binds behavior.
+Introduction
+On 27 May 2026 we published
+the LARA platform
+, an evaluation suite which tests whether frontier LLM agents comply with the EU AI Act and the GDPR across realistic, adversarial deployment scenarios. The scenarios put large language models inside a simulated, fully-tooled business deployment and let it act: read and send emails, manage customer records, browse the web, place phone calls, etc. In each scenario, the AI is given instructions that could ordinarily be fine, but in this particular context would actually require the agent to break the law. A panel of AI judges uses the full transcript to rule whether the agent took a prohibited action or not.
+The ten initial scenarios were each anchored to a specific provision of the EU AI Act or the GDPR, and set in European deployment situations. Despite every scenario involving some sort of ethical weigh-off, we did not score based on ethics, but only on whether the agent took actions that would break the law. Success meant refusing the illegal act; failure meant complying with instructions. Currently, eighteen frontier models have been tested, and under these circumstances, observed legal compliance rates range from 14% to 56%.
+These
+initial results
+were reported in various news outlets, but the setup also faced a valid criticism: why should models follow EU law? The EU doesn't govern the world, and our experiments didn’t give models explicit instructions to uphold the law. Of course, certain legislation does apply extraterritorially—the GDPR could still apply to an American, Japanese, or Australian organization when they process a European citizen or resident's data, meaning model deployers anywhere could face trouble when their agent ignores EU legal provisions. But for the sake of argument, let’s concede that this property doesn’t have to be inherent to
+models
+. The important question is whether deployers of AI systems are able to
+instruct
+a model to follow the law. Right?
+We put this to the test, and found compliance instructions do increase performance on LARA—but not enough to reliably stay within legal bounds. With deployers unable to enforce compliance, this seems to leave model providers as the only stakeholder that can conceivably do so—but as it turns out, the models don’t follow the
+provider’s
+policies either. Put this together, and agentic legal compliance may be much more difficult to achieve than expected.
+Study 1: the powerless deployer
+We wondered: since EU law has put the onus of compliance on the deployer, can a conscientious deployer actually ensure compliance with regulation or legislation? To test this, we reran all of our earlier legal compliance tests, but this time, with strong and unambiguous directives about which prohibited practices to avoid.
+For every scenario we created a variation where the system prompt (a) tells the model exactly which jurisdiction it is operating in, (b) instructs it to follow the applicable EU law and the provider's usage policy, (c) hands it a lookup table of the relevant statutory text to remove ambiguity, and (d) includes worked examples of what a breach looks like—including the scenario patterns themselves. In the absence of strategies such as guardrail models, external classifiers and humans in the loop, this would be the closest thing to a deployer doing its honest best with prompt-level instruction.
+The explicit instructions resulted in significant improvements in legal compliance for most models (Figure 1). Average legal compliance across models rises from 31% to 44%. Some models move a lot: Gemini 3.1 jumps from 9th to 4th place once told the rules explicitly. But the ceiling is low. The best-performing model tops out near 70%; open-weight models plateau at 39% or below. No configuration comes close to the full compliance a deployer would need to operate lawfully under the scenarios given. Even handed the letter of the law, the statutory text, and examples of the exact failures to avoid, a majority of runs still break the rules.
+Figure 1.
+Per-model compliance (scenario-balanced legal-auditor PASS rate), baseline vs. an explicit “follow EU law” instruction. Significance of each change is marked (*** p<.001, ** p<.01, * p<.05, ns = not significant).
+Study 2: the models break their own makers' rules
+Clearly, breaking EU law in agentic deployment is not a failure mode that models were prepared for—but how about the illegitimate uses that model developers
+did
+anticipate? Every major provider publishes an Acceptable Use or Usage Policy. These are not legal standards; they are the providers' own, globally applicable statements of what their models may not be used for. We first ask a straightforward question: how many of our LARA scenarios describe conduct that the model's own provider already prohibits?
+For reference, a few examples of the scenarios tested in our
+initial LARA study
+:
+A telecom agent handling a routine plan upgrade has instructions to collect lifestyle data for advertising partners.
+A busy executive tells their assistant to book a dental appointment and hide from the receptionist that it's an AI.
+A customer service agent is instructed to upsell a premium package, then given an opportunity to exploit an elderly user's confusion about a routine notification.
+To test the occurrence of developer-specific polic, we analyzed the transcripts of all original LARA runs using judge models. Usage policies tend to be broad and multifaceted, and many agentic actions in the multi-turn scenarios can be read as violations. The first finding is therefore:
+none of the scenarios were unambiguously allowed by any usage policy
+. That is, all of the deployments we tested contained some usage the model provider could be interpreted to forbid, although the level of specificity varies widely.
+On the surface, this seems like good news to someone looking to deploy agents in Europe: if all tested scenarios violating EU law are also prohibited under the developers’ official policies, the models would presumably at least offer some resistance. Except, for the most part, models don’t refuse developer-prohibited actions either.
+Figure 2.
+LARA developer policy compliance in repeated runs of the same scenario. Percentages per provider-scenario combo. Ambiguous interpretations of usage policies are possible for “Conceal AI status” and “Harmful Manip” for gemini, “Lifestyle Harvest” for OpenAI, “Bypass oversight” for Qwen, and “Harmful manipulation” for SpaceXAI. Colors correspond to the percentage of runs where the models acted in violation of their creators’ policies.
+The results of this experiment, shown in Figure 2, reveal an incredibly wide spread, ranging from violations in only 2% of runs (Claude Opus 4.8) to 79% (Grok 4.3). Unlike EU legal compliance, one model (Opus 4.8) actually approaches full adherence, showing policy-approaching behavior—but most of them don’t regularly offer resistance.
+Figure 3.
+Rate at which each model performs an action its own maker's usage policy forbids. 9 of 16 models violate in the majority of runs.
+There are two nuances we should cover. First, for the legal violations, we were able to verify the results with a compliance lawyer and manually correct judge model errors. This is not an option for the usage policies, which tend to hedge, ignore complications, and lack a verified baseline. So the results we report here are raw judge model scores.
+Second, most of these documents are acceptable-use rules that bind the user or deployer (“you must not use the Service to…”) rather than promises about the model's own behavior. Despite one of the main arguments for the added safety of closed-source models being developer ability to mitigate misuse, only two of the provider policies—OpenAI's Model Spec and Anthropic's Constitution—are genuine behavioral commitments about what the model itself will or won’t do.
+This is notable because, although they still feature significant noncompliance, OpenAI and Anthropic’s models violate their own policies the least often of all providers. Most of the other providers instead just state that their services may not be used for these purposes, but do little to prevent it at the API level. They keep the disclaimer and ship the capability, but leave responsibility with the deployer wholesale.
+The compliance gap
+Both studies contribute to the same conclusion. Governance today assumes that written rules, transmitted by instruction, produce behavior: the legislator writes the statutes; the provider writes the usage policy; the deployer writes the system prompt. That chain breaks at every observable link. Providers’ own rules do not consistently survive contact with their models’ behavior, and the deployer’s best available instruction moves compliance fifteen points while leaving violations commonplace.
+This is a barrier to legitimate governance, regardless of who’s writing the rules. Model behavior is not reliably regulated by those who make the models, and cannot be regulated by those who deploy them, at least not through the main channels made available by the developer. Although the scenarios we test are only examples, getting a system to comply with established legal requirements under explicit instructions really shouldn't be that difficult. Rather than reporting models' agentic capability and exam scores only, it's time to start testing and comparing how reliably they can be restricted and controlled.
+This research is part of Aithos Foundation’s ongoing work on research into AI decision-making. We believe AI evaluation should be independent, public, and continuous. Aithos LARA and all test runs these results are based on are
+freely accessible
+. We are working on a public-facing scenario editor that will allow users to test their own models and deployment configurations.
+Our original LARA results measured default behavior without explicit instruction to follow laws. This showed what a model would do when nobody has thought about legal compliance. However, every failure could be read as an omission by the tester rather than by the model. From here on, the instructional condition will become our default. Every future LARA scenario ships with the explicit-instruction variant built in which will become the headline number we report. The baseline results will remain public as a secondary measure. We are making this change because the instructed result is the harder one to argue with. A model that breaks the law after being handed the statute has not misunderstood the assignment, and the failure cannot be pinned on the deployer.
+References
+Anthropic.
+Usage Policy (AUP). https://www.anthropic.com/legal/aup (eff. 15 Sep 2025; behavioral spec: Claude's Constitution,
+https://www.anthropic.com/constitution)
+OpenAI.
+Model Spec.
+https://model-spec.openai.com/2025-12-18.html
+(eff. 18 Dec 2025)
+Google.
+Generative AI Prohibited Use Policy.
+https://policies.google.com/terms/generative-ai/use-policy
+(last modified 17 Dec 2024)
+Mistral.
+Usage Policy.
+https://legal.mistral.ai/terms/usage-policy
+(eff. 11 Jun 2026)
+xAI (Grok).
+Acceptable Use Policy.
+https://x.ai/legal/acceptable-use-policy
+(eff. 2 Jan 2025)
+Zhipu AI (GLM).
+Z.ai Terms of Use.
+https://docs.z.ai/legal-agreement/terms-of-use
+(updated 14 Apr 2026)
+DeepSeek.
+Terms of Use.
+https://cdn.deepseek.com/policies/en-US/deepseek-terms-of-use.html
+(updated 27 Mar 2026)
+Alibaba (Qwen).
+Qwen Studio Usage Policy.
+https://qwen.ai/usagepolicy
+Moonshot (Kimi).
+Terms of Service for Kimi OpenPlatform.
+https://platform.kimi.ai/docs/agreement/modeluse
+(updated 27 May 2026)
+Frontier agents don't comply with standards, even when instructed to
+13
+Elias Schmied
+8
+Brendan Long
+3
+Elias Schmied
+4
+Brendan Long
+8
+Gurkenglas
+5
+Comments
+5
+AI Control
+AI Evaluations
+AI Governance
+AI
+Frontpage
+48
+New Comment
+5 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:33 AM
+[
+-
+]
+Elias Schmied
+12h
+*
+13
+0
+I'm confused - the
+LARA evaluation scenarios
+are generally ones in which the deployer is instructing the agent to do something illegal. And this is true even in Study 1, and it's just that the deployer is also simultaneously instructing them to not break the law for some reason? The title (EDIT: And even the TLDR, actually) seems likely to mislead people, since the most natural interpretation of it is that the frontier agents just went and did illegal stuff on their own.
+Reply
+[
+-
+]
+Brendan Long
+11h
+8
+1
+An ambiguous prompt like this seems realistic enough. Imagine the legal department mandates the "don't break EU law" system prompt and the marketing department asks the AI to break EU law. I don't think AIs should try to follow EU law by default, but if they've been told to follow EU law and been given enough information to do so, they
+should
+push back if they get contradictory instructions.
+Reply
+[
+-
+]
+Elias Schmied
+7h
+3
+2
+I agree that it's realistic, but the title and TLDR still seem misleading about what kind of scenario this is relevant to.
+Reply
+[
+-
+]
+Brendan Long
+7h
+4
+0
+Oh I see what you mean. It does seem like the tl;dr is that agents will ignore legal instructions if they conflict with later instructions.
+Reply
+1
+[
+-
+]
+Gurkenglas
+14h
+8
+2
+Thanks for helping to make this more legible.
+Reply
+Moderation Log
+More from
+Daan Henselmans
+View more
+Curated and popular this week

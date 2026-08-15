@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "meta-cyber-eval",
+    "url": "https://research.meta.ai/blog/addressing-third-party-testing-misconfiguration-muse-spark-1-1",
+    "status": 200,
+    "final_url": "https://research.meta.ai/blog/addressing-third-party-testing-misconfiguration-muse-spark-1-1",
+    "bytes": 118466,
+    "title": "Addressing an issue involving a third-party cyber evaluation of Muse Spark 1.1 | Meta AI Research",
+    "chars": 5650
+  },
+  {
+    "slug": "google-private-ai",
+    "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption",
+    "status": 200,
+    "final_url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+    "bytes": 259896,
+    "title": "How Google is Making Private AI Practical with Homomorphic Encryption",
+    "chars": 5161
+  },
+  {
+    "slug": "openai-execs",
+    "url": "https://www.axios.com/2026/08/14/openai-executive-greg-brockman-ipo",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/14/openai-executive-greg-brockman-ipo",
+    "bytes": 234324,
+    "title": "OpenAI sheds senior execs in pre-IPO refresh",
+    "chars": 3108
+  },
+  {
+    "slug": "claude-code-sessions",
+    "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+    "status": 200,
+    "final_url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+    "bytes": 572514,
+    "title": "Maximizing the value of your Claude Code sessions | Claude by Anthropic",
+    "chars": 16834
+  },
+  {
+    "slug": "autodesign",
+    "url": "https://huggingface.co/papers/2608.13560",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.13560",
+    "bytes": 167427,
+    "title": "Paper page - AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+    "chars": 4240
+  },
+  {
+    "slug": "darwinx",
+    "url": "https://huggingface.co/papers/2608.07545",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.07545",
+    "bytes": 157179,
+    "title": "Paper page - DarwinX: Evolving Agent Harnesses Through Natural Selection",
+    "chars": 4910
+  },
+  {
+    "slug": "activation-control",
+    "url": "https://www.lesswrong.com/posts/HgvwxjzgwvsEvAiBH/measuring-activation-control-in-llms",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/HgvwxjzgwvsEvAiBH/measuring-activation-control-in-llms",
+    "bytes": 575726,
+    "title": "Measuring Activation Control in LLMs — LessWrong",
+    "chars": 16439
+  },
+  {
+    "slug": "lara-compliance",
+    "url": "https://www.lesswrong.com/posts/a5aAjdKzL7XvSLKWL/frontier-agents-don-t-comply-with-standards-even-when",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/a5aAjdKzL7XvSLKWL/frontier-agents-don-t-comply-with-standards-even-when",
+    "bytes": 479768,
+    "title": "Frontier agents don't comply with standards, even when instructed to — LessWrong",
+    "chars": 14837
+  },
+  {
+    "slug": "rhetoric-review",
+    "url": "https://huggingface.co/papers/2608.08975",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.08975",
+    "bytes": 148233,
+    "title": "Paper page - How Can Rhetoric Reward-Hack AI Reviewers? Dissecting Rhetorical Sensitivity in AI-Based Peer Review",
+    "chars": 5115
+  },
+  {
+    "slug": "ai-politics",
+    "url": "https://www.axios.com/2026/08/14/ai-scrambles-political-map",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/14/ai-scrambles-political-map",
+    "bytes": 275711,
+    "title": "AI creates unlikely political alliances ahead of midterms",
+    "chars": 4736
+  },
+  {
+    "slug": "data-center-backlash",
+    "url": "https://www.axios.com/2026/08/14/data-center-backlash-fossil-fuel-protests",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/14/data-center-backlash-fossil-fuel-protests",
+    "bytes": 280386,
+    "title": "Data center backlash echoes fossil-fuel politics",
+    "chars": 5418
+  },
+  {
+    "slug": "knowing-when-quit",
+    "url": "https://huggingface.co/papers/2607.29211",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2607.29211",
+    "bytes": 139514,
+    "title": "Paper page - Knowing When to Quit: Diagnosing and Training LLMs to Abort Futile Reasoning",
+    "chars": 3624
+  },
+  {
+    "slug": "grok-copilot",
+    "url": "https://x.ai/news/grok-4-6-github-copilot",
+    "status": 200,
+    "final_url": "https://x.ai/news/grok-4-6-github-copilot",
+    "bytes": 157298,
+    "title": "Grok 4.6 in GitHub Copilot | SpaceXAI",
+    "chars": 777
+  },
+  {
+    "slug": "andrew-ng-skills-map",
+    "url": "https://www.deeplearning.ai/the-batch/issue-366",
+    "status": 200,
+    "final_url": "https://www.deeplearning.ai/the-batch/issue-366",
+    "bytes": 220243,
+    "title": "The AI Engineering Skills Map from Andrew Ng",
+    "chars": 29587
+  },
+  {
+    "slug": "llmrouter",
+    "url": "https://huggingface.co/papers/2608.06867",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.06867",
+    "bytes": 168034,
+    "title": "Paper page - LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+    "chars": 5246
+  },
+  {
+    "slug": "lychee-memory",
+    "url": "https://huggingface.co/papers/2608.12990",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.12990",
+    "bytes": 138573,
+    "title": "Paper page - LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation",
+    "chars": 4125
+  },
+  {
+    "slug": "molecule-eval",
+    "url": "https://huggingface.co/blog/FINAL-Bench/open-discovery-challenge",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/FINAL-Bench/open-discovery-challenge",
+    "bytes": 166244,
+    "title": "Who Tells You Whether the Molecule Your AI Just Designed Is Any Good?",
+    "chars": 18113
+  },
+  {
+    "slug": "rss-eink",
+    "url": "https://heyjonny.dev/posts/rss-to-eink-newspaper",
+    "status": 200,
+    "final_url": "https://heyjonny.dev/posts/rss-to-eink-newspaper/",
+    "bytes": 10129,
+    "title": "I turned my RSS feeds into an e-ink newspaper to stop reading on my phone",
+    "chars": 2828
+  },
+  {
+    "slug": "firefox-ublock",
+    "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+    "status": 200,
+    "final_url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+    "bytes": 266769,
+    "title": "Firefox is now the last major browser that still supports uBlock Origin | PCWorld",
+    "chars": 1719
+  },
+  {
+    "slug": "ai-by-hand",
+    "url": "https://www.byhand.ai",
+    "status": 200,
+    "final_url": "https://www.byhand.ai/",
+    "bytes": 91002,
+    "title": "AI by Hand ✍️ | Prof. Tom Yeh | Substack",
+    "chars": 220
+  },
+  {
+    "slug": "huge-pr",
+    "url": "https://getsmall.xyz/post/cmstjfl9l000if70ljmpzr4va",
+    "status": 200,
+    "final_url": "https://getsmall.xyz/post/cmstjfl9l000if70ljmpzr4va",
+    "bytes": 28553,
+    "title": "Small",
+    "chars": 2184
+  },
+  {
+    "slug": "dont-classify",
+    "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+    "bytes": 15834,
+    "title": "Don't classify. Hallucinate!",
+    "chars": 2232
+  }
+]

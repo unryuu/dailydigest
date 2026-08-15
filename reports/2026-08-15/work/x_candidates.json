@@ -1,0 +1,104 @@
+{
+  "date": "2026-08-15",
+  "scanned_at": "2026-08-15T10:14:15+08:00",
+  "window": "2026-08-14 晚间至 2026-08-15 扫描时",
+  "route": "Codex 浏览器登录态，主 agent 逐账号读取",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现 1 条时间窗内新帖"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "最新帖子为 2026-08-03，无时间窗内新帖"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "最新帖子为 2026-08-02，无时间窗内新帖"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "最新帖子为 2026-08-11，无时间窗内新帖"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "发现 1 条时间窗内乐子；另有一条早于时间窗的 AI API 定价观点"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "只有已在 2026-08-14 日报报道的 GPT-5.6 Sol Ultrafast 转发"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "发现 DeepSeek Harness Windows 兼容性社区线索，尚无官方提交佐证"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "Ethan Mollick 提醒公司不要按今天的 AI 状态押死未来方案",
+      "url": "https://x.com/emollick/status/2088288410670940213",
+      "datetime": "2026-08-14T15:35:30.000Z",
+      "bucket_hint": "angle_or_radar",
+      "text": "People are making way too confident extrapolations about the impact & proper ways to use AI in companies based on the current, very unstable nature of price, adoption & capabilities of today’s systems. It is a good time to ensure that you are building flexibility for the future.",
+      "why": "一手观点，发布时间为北京时间 08-14 23:35。可与公司采用或 AI 工程决策材料组合，不宜单凭一条推文升牌。"
+    },
+    {
+      "source": "x-roon",
+      "title": "一头蓝鲸正在抵消有效利他主义者减少的虾类痛苦",
+      "url": "https://x.com/tszzl/status/2088441935405179167",
+      "datetime": "2026-08-15T01:45:33.000Z",
+      "bucket_hint": "fun",
+      "text": "all the shrimp suffering reduced by effective altruists is being cancelled out by Shrimp Shredder Georg, a Blue Whale who lives in the Southern ocean & consumes over 40 million shrimp a day and digests very slowly due to a defect in his second stomach",
+      "why": "时间窗内新帖，是理性主义圈内梗；与 AI 技术关系弱，是否收录交定牌裁决。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "社区称 DeepSeek Harness 的极简预设在原生 Windows 上会因 Bash 配置报错",
+      "url": "https://x.com/LeroyLi311063/status/2088442771468328988",
+      "datetime": "2026-08-15T01:48:52.000Z",
+      "bucket_hint": "radar_unverified",
+      "sources": [
+        {
+          "name": "Teortaxes 转述",
+          "url": "https://x.com/teortaxesTex/status/2088444126131892514"
+        },
+        {
+          "name": "Teortaxes 关于极简模式的说明",
+          "url": "https://x.com/teortaxesTex/status/2088439059265831418"
+        },
+        {
+          "name": "Leroy Li 社区排查",
+          "url": "https://x.com/LeroyLi311063/status/2088442771468328988"
+        }
+      ],
+      "text": "Community has identified the issue. minimal preset hardcoded bash, while the windows doesn't support it, causing errors and inaccurate model behavior. Just tell the model copy a minimal preset and replacing bash with git bash or pwsh.",
+      "why": "符合 08-13 DeepSeek Harness 主线的兼容性增量方向，但目前只是社区排查。GitHub API 检查到的官方仓库最新提交仍为 08-13，没有找到推文所称的对应修复提交，不能当成已确认事实。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/emollick/status/2088042334902755683",
+      "reason": "北京时间 08-14 07:17，早于本期晚间留存窗口，且评论的是 08-13 已报的 OpenAI 企业使用报告。"
+    },
+    {
+      "url": "https://x.com/tszzl/status/2088060528988201419",
+      "reason": "北京时间 08-14 08:29，早于本期晚间留存窗口。"
+    },
+    {
+      "url": "https://x.com/tszzl/status/2088138401681932656",
+      "reason": "只有一张动画截图，没有可核的新事实。"
+    },
+    {
+      "url": "https://x.com/sama/status/2088101491802243121",
+      "reason": "GPT-5.6 Sol Ultrafast 已在 08-14 日报报道。"
+    }
+  ]
+}

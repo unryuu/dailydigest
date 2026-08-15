@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.deeplearning.ai/the-batch/issue-366",
+  "title": "Andrew Ng：AI 工程不只是会用编程 Agent",
+  "date": "2026-08-15",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
   "id": "https://www.deeplearning.ai/the-batch/issue-364/",
   "title": "吴恩达用 AI 查自家项目的安全漏洞，两个闭源工具都不肯干",
   "date": "2026-07-31",

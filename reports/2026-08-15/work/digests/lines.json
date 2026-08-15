@@ -1,0 +1,119 @@
+[
+  {
+    "id": "ai-political-map",
+    "status": "accept",
+    "section": "deep",
+    "label": "AI 正在打乱美国原来的政治阵营",
+    "url": "https://www.axios.com/2026/08/14/ai-scrambles-political-map",
+    "body": "数据中心同时撕开民主党和特朗普阵营内部的裂缝，AI 监控又让进步派与自由意志派找到共同点。围绕电价、用水和税收优惠的地方反弹，正像过去反对油气管线一样成为选举议题。",
+    "note": "accept：核实通过，发表于 2026 年 8 月 14 日。建议与 data-center-backlash 合并为一条独家视角；本文负责跨党派联盟与党内裂缝，另一篇补足算力设施反弹与化石能源政治的类比。"
+  },
+  {
+    "id": "data-center-backlash",
+    "status": "accept",
+    "section": "deep",
+    "label": "数据中心反弹开始像过去的油气政治",
+    "url": "https://www.axios.com/2026/08/14/data-center-backlash-fossil-fuel-protests",
+    "body": "居民盯着噪声、用水、电价和税收优惠，地方反对力量快速扩散。德州州长三个月内从欢迎数据中心转为暂停新项目，行业承认自己还在补社区沟通。",
+    "note": "accept：核实通过，发表于 2026 年 8 月 14 日。作为 ai-political-map 的第二来源接受，不建议单独再出一条，以免两条都围绕数据中心政治打转。"
+  },
+  {
+    "id": "mollick-ai-flexibility",
+    "status": "reject",
+    "section": "deep",
+    "label": "公司不该按今天的 AI 状态押死长期方案",
+    "url": "https://x.com/emollick/status/2088288410670940213",
+    "body": "Ethan Mollick 认为价格、采用率和能力都还不稳定，公司现在做 AI 方案时应给未来变化留出弹性。",
+    "note": "reject：X 本地候选核实通过，发布时间为北京时间 2026 年 8 月 14 日 23：35。只有一条原则性建议，没有案例或新增事实，不足以单独成为无牌视角；与政治材料也没有直接关系，没必要硬并。"
+  },
+  {
+    "id": "knowing-when-to-quit",
+    "status": "reject",
+    "section": "papers",
+    "label": "模型开始学习放弃无望的推理",
+    "url": "https://huggingface.co/papers/2607.29211",
+    "body": "CaRL 用拒答奖励和失败样本改造，让模型少输出看似完整但实际错误的推导，同时尽量保住原有任务表现。",
+    "note": "reject：论文实际发表于 2026 年 7 月 31 日，2026 年 8 月 14 日只是作者提交到 Hugging Face Papers。属于旧文重炒，不收。"
+  },
+  {
+    "id": "grok-copilot",
+    "status": "accept",
+    "section": "industry",
+    "label": "Grok 4.6 上架 GitHub Copilot",
+    "url": "https://x.ai/news/grok-4-6-github-copilot",
+    "body": "开发者可从 Copilot 的模型选择器启用，部分企业账户需要管理员先在设置中开放。",
+    "note": "accept：核实通过，官方公告发表于 2026 年 8 月 14 日。dup_suspect：Grok 4.6 已在 8 月 13 日报道，本条只保留 Copilot 上架这个产品落地，不复述模型能力、跑分或训练合作；建议放行业简讯，不单开官方公告区。"
+  },
+  {
+    "id": "andrew-ng-skills-map",
+    "status": "accept",
+    "section": "industry",
+    "label": "Andrew Ng 把 AI 工程能力归成四类",
+    "url": "https://www.deeplearning.ai/the-batch/issue-366",
+    "body": "他分析一万多条招聘信息并访谈专家，把能力归为应用开发与部署、软件工程基础、使用编程 Agent、决定产品该怎么做；完整地图会在后续邮件公布。",
+    "note": "accept：核实通过，来自 The Batch 第 366 期。当前公开的是四类能力和解释，详细技能地图尚未发布，不能写成完整地图已经上线；信息量适合行业简讯。"
+  },
+  {
+    "id": "llmrouter",
+    "status": "accept",
+    "section": "industry",
+    "label": "LLMRouter 把 16 种模型路由器装进一套开源框架",
+    "url": "https://huggingface.co/papers/2608.06867",
+    "body": "同一接口覆盖单轮、多轮 Agent 和个性化路由，配套基准包含通用文本、记忆、视觉、时间序列和个性化五类任务。",
+    "note": "accept：核实通过。论文发表于 2026 年 8 月 7 日，8 月 14 日提交到 Hugging Face Papers；框架明确为开源，收录超过 16 种路由方法，并提供训练、评估和部署流程。适合行业简讯。"
+  },
+  {
+    "id": "lychee-memory-v2",
+    "status": "accept",
+    "section": "industry",
+    "label": "LycheeMemory 把多轮对话攒成语义段再写入记忆",
+    "url": "https://huggingface.co/papers/2608.12990",
+    "body": "它不再每轮调用模型整理记忆，在 LoCoMo 实验中把构建 token 降低 86.0％，没有增加查询时的 token；代码已经开放。",
+    "note": "accept：核实通过。论文发表于 2026 年 8 月 13 日，8 月 14 日提交到 Hugging Face Papers；页面给出代码仓库。数字来自作者使用 GPT-4.1-Mini 的实验，适合行业简讯。"
+  },
+  {
+    "id": "rss-eink-newspaper",
+    "status": "accept",
+    "section": "fun",
+    "label": "有人把 RSS 订阅做成电子墨水报纸来戒手机",
+    "url": "https://heyjonny.dev/posts/rss-to-eink-newspaper/",
+    "body": "工具从 Feedbin 拉取未读文章、标为已读再转成 EPUB，作者把手机留在家里，带着 4.3 英寸阅读器去咖啡馆。",
+    "note": "accept：核实通过。项目名为 feedpaper，已放到 GitHub，并可通过 Homebrew 安装；主题直接涉及人如何改造阅读设备与使用习惯，符合乐子区。"
+  },
+  {
+    "id": "firefox-ublock-origin",
+    "status": "accept",
+    "section": "fun",
+    "label": "Firefox 成了唯一还完整支持 uBlock Origin 的主流浏览器",
+    "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+    "body": "Edge 也将淘汰 Manifest V2；换到其他主流浏览器，只能用功能较少的 uBlock Origin Lite 或浏览器自带的拦截器。",
+    "note": "accept：核实通过。文章引用 Firefox 的公开表态，并解释 Chromium 浏览器迁移 Manifest V3 后的限制；涉及用户对广告和浏览器的控制权，符合乐子区。"
+  },
+  {
+    "id": "huge-ai-pull-requests",
+    "status": "accept",
+    "section": "fun",
+    "label": "AI 一次写完几千行代码，维护者却看不动 PR 了",
+    "url": "https://getsmall.xyz/post/cmstjfl9l000if70ljmpzr4va",
+    "body": "作者要求把完整功能拆成可理解、可审查的小改动，还吐槽用另一个模型复审第一台模型写的代码，只是在重复烧 token。",
+    "note": "accept：核实通过。文章是没有数据支撑的维护者吐槽，不能写成行业统计；它直接呈现 AI 提高产出速度后把负担转给人类审查者，符合乐子区。"
+  },
+  {
+    "id": "dont-classify-hallucinate",
+    "status": "accept",
+    "section": "fun",
+    "label": "别让模型分类，先让它幻觉一套标签",
+    "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+    "body": "先让模型自由生成可能的类别，再用向量检索把这些猜想映射回现有标签库，绕开一次塞入 1856 个标签的上下文问题。",
+    "note": "accept：核实通过，发表于 2026 年 8 月 14 日。这是 Simon Willison 转述 Doug Turnbull 的方法，正文只给分类提示词示例，没有对效果做量化评测；标题与做法的反差适合乐子区。"
+  },
+  {
+    "id": "ai-by-hand",
+    "status": "reject",
+    "section": "fun",
+    "label": "AI by Hand 只抓到订阅落地页",
+    "url": "https://www.byhand.ai/",
+    "body": "页面只能确认它由 Tom Yeh 教授创办，主题是手算数学、算法和架构，并显示超过 7.3 万名订阅者。",
+    "note": "reject：链接可打开，不是 fetch_failed，但本地原文只有 Substack 落地页。无法核实具体玩法、是否互动、免费开放范围或当天新增内容，禁止按项目名猜。"
+  }
+]

@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
+  "title": "别让模型分类，先让它幻觉一套标签",
+  "date": "2026-08-14T21:54:35+00:00",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype",
   "title": "Simon Willison 用 SQLite 压缩文本历史",
   "date": "2026-08-10",

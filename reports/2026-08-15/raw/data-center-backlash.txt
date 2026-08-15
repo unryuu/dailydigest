@@ -1,0 +1,79 @@
+URL: https://www.axios.com/2026/08/14/data-center-backlash-fossil-fuel-protests
+FINAL: https://www.axios.com/2026/08/14/data-center-backlash-fossil-fuel-protests
+TITLE: Data center backlash echoes fossil-fuel politics
+FETCHED: 2026-08-15 10:34:26
+============================================================
+17 hours ago
+-
+Energy & Climate
+Data center backlash echoes fossil fuel politics
+Amy Harder
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Nelson performs during a 2021 protest in Austin. Photo: Rick Kern/Getty Images for MoveOn
+Willie Nelson has become an
+unlikely barometer
+of America's biggest infrastructure fights. He once protested the
+Keystone XL pipeline
+and fracking. Today, he's fighting data centers.
+Why it matters:
+The American icon's latest cause underscores how
+the politics
+surrounding AI infrastructure are beginning to resemble the last decade's fights over fossil fuels.
+"The last thing
+we need is a loud, water thieving, light polluting, data center anywhere near our town (or any others for that matter),"
+Nelson told
+his more than one million Instagram followers recently.
+Flashback:
+"For 29 years, corporations have continued to take the land away from the small family farmers, and this is what we're here to fight against," Nelson
+said during
+a 2014 Nebraska concert held to oppose the Keystone XL pipeline.
+"We always listen to our Yoda,"
+joked Nebraskan activist Jane Kleeb, referring to Nelson.
+A leader of Nebraska's fight against the now-canceled Keystone XL pipeline, today Kleeb is active in the largely decentralized opposition to AI infrastructure.
+The big picture:
+Data centers represent one of the fastest-growing, most bipartisan infrastructure backlashes in years.
+"We just want to make sure when these massive infrastructure projects are being built, that they're not leaving harms in the communities that will live with them forever," said Kleeb, who is co-founder of the nonprofit Bold Alliance and chair of the Nebraska Democratic Party.
+How it works:
+The parallels between the fossil fuel sector and data centers are striking.
+Tech companies
+have been touting
+how essential data centers are to our lives, which echoes how fossil fuel companies remind us we use oil and natural gas to move around.
+Kleeb says many developers approach communities with a "tech bro" mentality that leaves residents feeling unheard.
+What they're saying:
+"You don't get your social license to operate by telling everybody how they're going to do better economically," said Kevin Book, managing director at the nonpartisan research firm ClearView Energy Partners, whose clients include institutional investors and corporate leaders.
+"You get it by listening to their concerns and helping them process emotions."
+Between the lines:
+Both fights are also proxies for larger fears: Data centers are to AI what fossil fuel infrastructure is to climate change.
+"What's interesting is they are both linked to this other obvious threat to people," said Michael Lazarus, senior scientist emeritus at the climate research group Stockholm Environment Institute. "Both are existential in their own way."
+Friction point:
+Tech companies often say a few unnamed "bad actors" give everyone a bad reputation on data centers.
+"Pipeline companies used to say this, too," Kleeb said. "If that's true, name them and put out a set of policy suggestions that you believe are the proper guardrails around data centers."
+The other side:
+That might be in the works, according to Dan Diorio, executive vice president of state policy and government affairs for the Data Center Coalition.
+"We are in the process of honing in on how to better demonstrate our commitments to these principles for responsible development," Diorio told Axios.
+Those include open dialogues with communities, paying their fair share of power costs and efficiently using water, he added.
+"One of the things that is very clear from the industry perspective is that we're catching up," said Diorio, whose
+group represents
+roughly 50 companies across the value chain of AI.
+Reality check:
+The comparison between data centers and fossil fuels isn't perfect, of course. For one, this cycle of opposition has developed faster and is more widespread.
+"It took us years to build our coalitions," Kleeb said of her days fighting the Keystone pipeline.
+Stunning stat:
+In just three months, Texas' Republican Governor Greg Abbott went from welcoming data centers to
+imposing a pause
+while new rules are considered.
+"What happened in Texas and the governor is shocking in how quickly his posture changed," said Timothy Fox, an analyst who works with Book at ClearView Energy Partners.
+What we're watching:
+Data centers are solidified as a top flashpoint in this year's midterm elections. Fox expects them to be "the most pressing energy topic before state legislatures next year."
+Zoom in:
+More state lawmakers are likely to consider imposing rules on power and water, along with repealing tax credits, Fox said.
+"It would be very difficult for lawmakers to argue that these companies with their significant financial wherewithal require tax exemption while the general public views data centers as the primary culprit for rising power prices," Fox said.
+Zoom out:
+That's what happened with fossil fuels. States responded with stricter fracking regulations and, in some cases, higher taxes rather than shutting the industry down, Book said. Even after Keystone XL was canceled, most fossil fuel development continued.
+The bottom line:
+The fossil fuel industry had years to respond to growing local opposition. The AI industry may have only a matter of months.
+Add Axios on Google
+What to read next

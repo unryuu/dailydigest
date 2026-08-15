@@ -1,0 +1,90 @@
+URL: https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate
+FINAL: https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/
+TITLE: Don't classify. Hallucinate!
+FETCHED: 2026-08-15 10:33:55
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+WorkOS —
+auth.md
+by WorkOS: agents register users, no sign-up form.
+Try it!
+14th August 2026 - Link Blog
+Don't classify. Hallucinate!
+I still have quite a bit of older content on my blog that I never got round to tagging. My blog has
+1,856 tags
+- likely too many to feed to an LLM in one go and say "which of these tags match the following content".
+Doug Turnbull has a neat solution. Tell the model to output tags without any details of the existing vocabulary, then use vector embeddings against the existing corpus to find the concrete tags that are closest to the ones the model imagined might fit!
+His example prompt suggests including an example of the shape of your tags to help the model make a more useful guess:
+Your task is to create novel, never seen before, furniture, home goods, or hardware classification that best fit a search query.
+Product classifications might look like:
+Furniture / Living Room Furniture / Coffee Tables & End Tables / Coffee Tables
+Décor & Pillows / Decorative Pillows & Blankets / Throw Pillows
+Furniture / Bedroom Furniture / Dressers & Chests
+Kitchen & Tabletop / Kitchen Organization / Food Storage & Canisters
+School Furniture and Supplies / School Furniture / School Chairs & Seating / Stackable Chairs
+Baby & Kids / Toddler & Kids Bedroom Furniture / Kids Beds
+Here's the query to generate classifications for:
+brown coffee table
+Posted
+14th August 2026
+at 9:54 pm
+Recent articles
+Now we have a timeline of the OpenAI accidental attack against Hugging Face
+- 7th August 2026
+One-shotting a Raccoon Heist game using Claude Fable 5
+- 5th August 2026
+New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging
+- 4th August 2026
+This is a
+link post
+by Simon Willison, posted on
+14th August 2026
+.
+search
+94
+ai
+2,186
+generative-ai
+1,937
+llms
+1,904
+embeddings
+61
+doug-turnbull
+3
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

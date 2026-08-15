@@ -1,1 +1,9 @@
-[]
+[
+ {
+  "id": "https://research.meta.ai/blog/addressing-third-party-testing-misconfiguration-muse-spark-1-1",
+  "title": "Meta 的 AI 评测误把真实网站当成靶子",
+  "date": "August 14, 2026",
+  "reported": true,
+  "report_date": "2026-08-15"
+ }
+]

@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/a5aAjdKzL7XvSLKWL/frontier-agents-don-t-comply-with-standards-even-when",
+  "title": "Agent 读了法条也不能稳定守规",
+  "date": "Fri, 14 Aug 2026 14:01:40 GMT",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/HgvwxjzgwvsEvAiBH/measuring-activation-control-in-llms",
+  "title": "模型能按指令调节内部概念信号",
+  "date": "Fri, 14 Aug 2026 00:30:48 GMT",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/JSteskb3Lgp9Be69o/free-will-is-like-temperature",
   "title": "有人把自由意志解释成温度一样的宏观概念",
   "date": "2026-08-13",

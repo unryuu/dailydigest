@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://getsmall.xyz/post/cmstjfl9l000if70ljmpzr4va",
+  "title": "软件工程的瓶颈正在从 coding 转向 review",
+  "date": "2026-08-14T22:48:15Z",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
+  "id": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+  "title": "Firefox 成了唯一完整支持 uBlock Origin 的主流浏览器",
+  "date": "2026-08-14T19:03:20Z",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
+  "id": "https://heyjonny.dev/posts/rss-to-eink-newspaper/",
+  "title": "有人把 RSS 做成电子墨水报纸来戒手机",
+  "date": "2026-08-14T14:21:18Z",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
+  "id": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+  "title": "Claude Code 如何节省成本",
+  "date": "2026-08-14T16:15:21Z",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
+  "id": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+  "title": "Google 开源私密 AI 推理编译器",
+  "date": "2026-08-14T15:43:10Z",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
   "id": "https://donkeybas.com/",
   "title": "1981 年的 DONKEY.BAS 又能在浏览器里玩了",
   "date": "2026-08-13",

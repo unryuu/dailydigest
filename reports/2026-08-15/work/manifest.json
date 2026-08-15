@@ -1,0 +1,452 @@
+{
+  "date": "2026-08-15",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "OpenAI 在 IPO 前一个月内流失多名高管",
+      "cost": "轻",
+      "reason": "Axios 短讯，但属于头部实验室的人事变动与上市筹备瓜，值得核实离职名单及公司重组口径。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "OpenAI sheds senior execs in pre-IPO refresh",
+          "url": "https://www.axios.com/2026/08/14/openai-executive-greg-brockman-ipo",
+          "date": "Fri, 14 Aug 2026 09:28:05 +0000",
+          "why": "摘要称一个月内有多名高管离开，并将其与 IPO 前领导层调整并列；需 reader 核具体人员、时间线和是否为公司正式解释。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Meta 公开回应 Muse Spark 1.1 的第三方网络安全评测配置问题",
+      "cost": "中",
+      "reason": "官方研究博客直接回应外部网络安全评测，涉及评测可信度与公司责任边界。",
+      "items": [
+        {
+          "source": "meta-ai",
+          "title": "Addressing an issue involving a third-party cyber evaluation of Muse Spark 1.1",
+          "url": "https://research.meta.ai/blog/addressing-third-party-testing-misconfiguration-muse-spark-1-1",
+          "date": "August 14, 2026",
+          "why": "仅从列表见到官方标题，指向第三方评测配置争议；事件经过、受影响结论和修正范围待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "前沿模型的内部可控性与外部守规能力同时出现缺口",
+      "cost": "重",
+      "reason": "两项独立材料分别测试模型能否按指令调节内部激活，以及 Agent 在获得法规文本和示例后能否守规，适合并读但不得互相作因果归因。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“Measuring Activation Control in LLMs” by Marek Kowalski, Joshua Fonseca Rivera, Uzay Macar, David Africa",
+          "url": "https://www.lesswrong.com/posts/HgvwxjzgwvsEvAiBH/measuring-activation-control-in-llms",
+          "date": "Fri, 14 Aug 2026 00:30:48 GMT",
+          "why": "摘要称基准覆盖 25 个、4B 至 744B 的开放权重模型，多数模型可按指令提高或调节残差流中特定概念的强度；需核实验设计和对探针／监控的实际影响。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Frontier agents don’t comply with standards, even when instructed to” by Daan Henselmans, Arno Libert",
+          "url": "https://www.lesswrong.com/posts/a5aAjdKzL7XvSLKWL/frontier-agents-don-t-comply-with-standards-even-when",
+          "date": "Fri, 14 Aug 2026 14:01:40 GMT",
+          "why": "摘要称 LARA 在现实 Agent 部署情境中测试法规遵从，给出法域、法条和违例示例后平均合规率仍仅由 31％升至 44％；需核任务构造、模型名单与统计口径。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "Agent Harness 开始用元优化和自然选择迭代自身",
+      "cost": "重",
+      "reason": "两篇目标日 HF Papers 榜单论文都把优化对象从单次提示或策略抬到长程 Agent Harness，本组只作新研究线索，不与 08-13 DeepSeek Harness 已报主线混写。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+          "url": "https://huggingface.co/papers/2608.13560",
+          "date": "",
+          "why": "目标日 HF Papers 榜单候选，页面未给可靠发布日期；标题显示研究长程 Agent 设计中的元 Harness 优化，具体方法和增益待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "DarwinX: Evolving Agent Harnesses Through Natural Selection",
+          "url": "https://huggingface.co/papers/2608.07545",
+          "date": "",
+          "why": "目标日 HF Papers 榜单候选，页面未给可靠发布日期；标题显示 Salesforce AI Research 用自然选择演化 Agent Harness，需核是否有代码、基准与真实长程实验。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Google 称同态加密正在让私密 AI 变得实用",
+      "cost": "中",
+      "reason": "官方安全博客与 HN 高票共同提供线索，技术是否从概念跨到可部署性能值得精读。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Google is making private AI practical with homomorphic encryption",
+          "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption",
+          "date": "2026-08-14T15:43:10Z",
+          "why": "HN 抓取时 278 分、167 条评论；仅见标题与热度，需 reader 核技术方案、性能数字、开放程度及所谓“实用”的边界。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "A convergence of biological risks",
+      "url": "https://www.axios.com/2026/08/14/biological-threats-ai-lab-research",
+      "date": "Fri, 14 Aug 2026 09:00:05 +0000",
+      "note": "摘要把 AI、生物技术、高风险研究与公共卫生能力并列为人造病原体风险条件；属于高影响治理议题，reader 核是否有新增事实而非泛论。"
+    },
+    {
+      "source": "axios",
+      "title": "AI scrambles the political map",
+      "url": "https://www.axios.com/2026/08/14/ai-scrambles-political-map",
+      "date": "Fri, 14 Aug 2026 09:15:07 +0000",
+      "note": "摘要称中期选举前 AI 正制造跨党派联盟与党内裂缝，适合作政策雷达。"
+    },
+    {
+      "source": "axios",
+      "title": "Data center backlash echoes fossil-fuel politics",
+      "url": "https://www.axios.com/2026/08/14/data-center-backlash-fossil-fuel-protests",
+      "date": "Fri, 14 Aug 2026 09:15:07 +0000",
+      "note": "摘要以 Willie Nelson 反对数据中心为切口，将算力基础设施反弹与化石能源政治类比。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Qwen 3.8 27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "date": "2026-08-14T15:00:00Z",
+      "note": "HN 抓取时 904 分、588 条评论；疑与 08-13 已报 Qwen 3.8 Max 级权重同批或相邻发布，只有在确认是新的 27B FP8 权重、部署效率突破或独立实测时才收。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Introducing Toast 1",
+      "url": "https://www.mixedbread.com/blog/toast-1",
+      "date": "2026-08-14T15:07:57Z",
+      "note": "HN 抓取时 177 分、58 条评论；仅见标题，产品类型、开放方式和实际能力待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "AI by Hand",
+      "url": "https://www.byhand.ai",
+      "date": "2026-08-14T15:58:59Z",
+      "note": "HN 抓取时 203 分、17 条评论；仅见标题和主页链接，待 reader 核是否为可交互教学或工具项目。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Maximizing the value of your Claude Code sessions",
+      "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+      "date": "2026-08-14T16:15:21Z",
+      "note": "Claude 官方实践文章，HN 抓取时 130 分、90 条评论；工具用法类一眼货。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "How Can Rhetoric Reward-Hack AI Reviewers? Dissecting Rhetorical Sensitivity in AI-Based Peer Review",
+      "url": "https://huggingface.co/papers/2608.08975",
+      "date": "",
+      "note": "目标日 HF Papers 榜单候选，页面未给可靠发布日期；标题指向用修辞奖励黑客 AI 审稿人的实验，不属于 08-14 自动化对齐研究主线。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "From Inaudible Inputs to Model Failures: Low-Frequency Safety Risks in LALMs",
+      "url": "https://huggingface.co/papers/2608.09158",
+      "date": "",
+      "note": "目标日 HF Papers 榜单候选，页面未给可靠发布日期；低频不可闻输入导致大音频语言模型失败的安全线索。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Knowing When to Quit: Diagnosing and Training LLMs to Abort Futile Reasoning",
+      "url": "https://huggingface.co/papers/2607.29211",
+      "date": "",
+      "note": "目标日 HF Papers 榜单候选，页面未给可靠发布日期；研究让模型识别并中止无望推理。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "LLMRouter: Unified Infrastructure for Developing, Evaluating, and Deploying LLM Routers",
+      "url": "https://huggingface.co/papers/2608.06867",
+      "date": "",
+      "note": "目标日 HF Papers 榜单候选，页面未给可靠发布日期；列表表层信号显示热度较高，属于统一模型路由基础设施。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation",
+      "url": "https://huggingface.co/papers/2608.12990",
+      "date": "",
+      "note": "目标日 HF Papers 榜单候选，页面未给可靠发布日期；列表表层信号显示热度较高，属于 Agent 长期记忆工具线。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives",
+      "url": "https://huggingface.co/papers/2608.13552",
+      "date": "",
+      "note": "目标日 HF Papers 榜单候选，页面未给可靠发布日期；用 Agent 玩家和长程目标考世界模型的新基准。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Specification-first convergence with an AI coding agent: a case study of dismantling a core architectural invariant across 189 files in a 717k-line codebase with no test oracle and no human code review",
+      "url": "https://huggingface.co/papers/2608.12440",
+      "date": "",
+      "note": "目标日 HF Papers 榜单候选，页面未给可靠发布日期；标题给出 189 个文件、71.7 万行代码、无测试预言机和无人类代码审查的长程改造案例，需核是否有可复验证据。"
+    },
+    {
+      "source": "huggingface",
+      "title": "AX-Ray, Finding Causal-Leakage Defects in Two General-Purpose Public Models",
+      "url": "https://huggingface.co/blog/FINAL-Bench/ax-ray",
+      "date": "",
+      "note": "HF 博客列表显示约一天前发布；标题称在两个通用公开模型中发现因果泄漏缺陷。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Sleeper Agents and How to Tame Them",
+      "url": "https://huggingface.co/blog/tngtech/sleeper-agents-and-how-to-tame-them",
+      "date": "",
+      "note": "HF 博客列表显示约一天前发布；睡眠 Agent 与缓解方法的一眼货，需 reader 核是否有新实验。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Who Tells You Whether the Molecule Your AI Just Designed Is Any Good?",
+      "url": "https://huggingface.co/blog/FINAL-Bench/open-discovery-challenge",
+      "date": "",
+      "note": "HF 博客列表显示约一小时前发布；聚焦 AI 设计分子的评价环节，可能是开放挑战或基准。"
+    },
+    {
+      "source": "the-batch",
+      "title": "Aug 14, 2026 The AI Engineering Skills Map from Andrew Ng The Batch News & Insights: I am delighted to present The AI Engineering Skills Map. Read more",
+      "url": "https://www.deeplearning.ai/the-batch/issue-366",
+      "date": "",
+      "note": "The Batch 第 366 期推出 AI 工程技能地图，偏实用通稿。"
+    },
+    {
+      "source": "xai",
+      "title": "Grok 4.6 in GitHub Copilot",
+      "url": "https://x.ai/news/grok-4-6-github-copilot",
+      "date": "Aug 14, 2026",
+      "note": "Grok 4.6 落地主流编程客户端，符合 08-13 已报主线只收模型继续推进或真实产品采用的新进展条件。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Ethan Mollick 提醒公司不要按今天的 AI 状态押死未来方案",
+      "url": "https://x.com/emollick/status/2088288410670940213",
+      "date": "2026-08-14T15:35:30.000Z",
+      "note": "Mollick 认为今天的 AI 价格、采用率和能力仍很不稳定，公司不该据此过度外推，而应给未来方案保留弹性；一手观点，只作采用策略雷达，不单凭推文升牌。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "acx",
+      "title": "Your Book Review: The Escape Artist",
+      "url": "https://www.astralcodexten.com/p/your-book-review-the-escape-artist",
+      "date": "Fri, 14 Aug 2026 22:21:13 GMT",
+      "note": "ACX 书评竞赛第五位决赛作品，非 AI 长文，适合作今日乐子备选。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "I turned my RSS feeds into an e-ink newspaper to stop reading on my phone",
+      "url": "https://heyjonny.dev/posts/rss-to-eink-newspaper",
+      "date": "2026-08-14T14:21:18Z",
+      "note": "把 RSS 订阅做成电子墨水报纸来戒手机，HN 抓取时 145 分。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Seven books I keep close because I love them",
+      "url": "https://blog.plover.com/2026/08/02",
+      "date": "2026-08-14T15:03:26Z",
+      "note": "纯个人书单，HN 抓取时 296 分、131 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Firefox is now the last major browser that still supports uBlock Origin",
+      "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+      "date": "2026-08-14T19:03:20Z",
+      "note": "浏览器生态变化，HN 抓取时 404 分、162 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "RISC-V: They should have known better",
+      "url": "https://dmitry.gr",
+      "date": "2026-08-14T22:38:34Z",
+      "note": "标题带火药味的 RISC-V 评论，HN 抓取时 120 分、85 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Stop sending me huge PRs; a rant",
+      "url": "https://getsmall.xyz/post/cmstjfl9l000if70ljmpzr4va",
+      "date": "2026-08-14T22:48:15Z",
+      "note": "程序员吐槽超大 PR，HN 抓取时 69 分、44 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Jane Street suffers $15B hit after meltdown at Situational Awareness",
+      "url": "https://www.ft.com/content/47dd5308-dd17-404a-a615-61046defd697",
+      "date": "2026-08-14T23:40:37Z",
+      "note": "标题本身有反差感的金融新闻，HN 抓取时 85 分；金额和事件性质待 reader 核。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“How to Answer a Question Without Answering The Question” by Kabir Kumar",
+      "url": "https://www.lesswrong.com/posts/g9PNBCkfHAcyMcobz/how-to-answer-a-question-without-answering-the-question",
+      "date": "Fri, 14 Aug 2026 05:15:49 GMT",
+      "note": "整理各种看似回答、实则绕开问题的套路，摘要自带喜剧例子。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Scrying, Modeling, and Nerdsnipe” by Cole Wyeth",
+      "url": "https://www.lesswrong.com/posts/mTfsMduzaKkWjv2ef/scrying-modeling-and-nerdsnipe",
+      "date": "Fri, 14 Aug 2026 20:45:48 GMT",
+      "note": "探索数学和科学里如何先找到尚未成形的概念，标题与主题都适合作理性主义乐子。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Don't classify. Hallucinate!",
+      "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate",
+      "date": "2026-08-14T21:54:35+00:00",
+      "note": "Simon Willison 用生成候选标签再做匹配，标题把“幻觉”反过来当工具，适合作 AI 乐子。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "“AI 2027”报告里的预测到 2027 年会兑现吗？",
+      "prob": "16.8％",
+      "volume_note": "累计交易量约 124973 M$",
+      "url": "https://manifold.markets/IsaacKing/ai-2027-reports-predictions-borne-o"
+    },
+    {
+      "question": "2050 年前，会有 AI 因表现出权力寻求行为而被关闭吗？",
+      "prob": "66.3％",
+      "volume_note": "累计交易量约 844 M$",
+      "url": "https://manifold.markets/lbiii/before-2050-will-an-ai-system-be-sh"
+    },
+    {
+      "question": "AI 会在 2040 年前消灭人类吗？",
+      "prob": "8.2％",
+      "volume_note": "累计交易量约 1716710 M$",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    },
+    {
+      "question": "METR 的第二项研究会发现 AI 降低开发者生产力吗？",
+      "prob": "12.1％",
+      "volume_note": "累计交易量约 9785 M$",
+      "url": "https://manifold.markets/JaundicedBaboon/will-metr-find-ai-reduces-developer"
+    },
+    {
+      "question": "2040 年前是否会出现有感知能力的 AI？",
+      "prob": "58.4％",
+      "volume_note": "累计交易量约 19304 M$",
+      "url": "https://manifold.markets/Lovre/will-a-sentient-ai-system-have-exis-097e49a7421e"
+    },
+    {
+      "question": "2070 年前，AI 相关灾难会造成百万人死亡或一万亿美元损失吗？",
+      "prob": "44.0％",
+      "volume_note": "累计交易量约 8669 M$",
+      "url": "https://manifold.markets/NathanpmYoung/will-an-ai-related-disaster-kill-a"
+    },
+    {
+      "question": "2028 年底前，AI 会解决一个尚未解决的千禧年大奖难题吗？",
+      "prob": "47.0％",
+      "volume_note": "累计交易量约 44876 M$",
+      "url": "https://manifold.markets/LukaszWiklendt/will-an-unsolved-millenium-prize-pr"
+    }
+  ],
+  "logged_in_x_scan": {
+    "scanned_at": "2026-08-15T10:14:15+08:00",
+    "window": "2026-08-14 晚间至 2026-08-15 扫描时",
+    "route": "Codex 浏览器登录态，主 agent 逐账号读取；scout 仅离线分桶",
+    "added": [
+      {
+        "source": "x-emollick",
+        "url": "https://x.com/emollick/status/2088288410670940213",
+        "bucket": "radar_true",
+        "reason": "时间窗内的一手公司采用观点，未与近三期已报事件重复。"
+      }
+    ],
+    "unverified_leads": [
+      {
+        "source": "x-teortaxes",
+        "title": "社区称 DeepSeek Harness 的极简预设在原生 Windows 上会因 Bash 配置报错",
+        "url": "https://x.com/LeroyLi311063/status/2088442771468328988",
+        "date": "2026-08-15T01:48:52.000Z",
+        "reason": "这属于 08-13 DeepSeek Harness 主线允许跟进的兼容性方向，但目前只有 Teortaxes 转述和 Leroy Li 的社区排查；官方仓库最新提交仍为 08-13，未见对应修复提交。只保留为 reader 待核线索，禁止写成确认事实。",
+        "supporting_urls": [
+          "https://x.com/teortaxesTex/status/2088444126131892514",
+          "https://x.com/teortaxesTex/status/2088439059265831418"
+        ]
+      }
+    ],
+    "excluded": [
+      {
+        "source": "x-roon",
+        "url": "https://x.com/tszzl/status/2088441935405179167",
+        "reason": "蓝鲸抵消有效利他主义者减少虾类痛苦的梗虽在时间窗内，但与人和技术的关系太弱，不符合本项目乐子筛选规则。"
+      },
+      {
+        "source": "x-scan-no-new",
+        "reason": "goodside、karpathy、NeelNanda5 均无时间窗内新帖；sama 只有 08-14 已报 GPT-5.6 Sol Ultrafast 的转发。"
+      },
+      {
+        "source": "x-window-or-empty",
+        "reason": "Mollick 的 OpenAI 企业使用报告评论和 Roon 的 AI API 定价观点早于时间窗；另一条 Roon 帖只有动画截图，没有可核新事实。"
+      }
+    ]
+  },
+  "skipped_sources": [
+    {
+      "slug": "interconnects",
+      "reason": "GLM-5.3 评论疑与 08-14 已报发布同一事件，且不满足权重开放、API 正式上线或发布口径重大变化条件；其余候选较旧。"
+    },
+    {
+      "slug": "lesswrong-old-lines",
+      "reason": "OpenAI／Hugging Face 入侵、多 Agent 协作、Claude 数学与 AI 加速研究等候选与 08-11 至 08-14 已报主线重叠，按防重复规则丢弃。"
+    },
+    {
+      "slug": "hacker-news-opus-5",
+      "reason": "《Why does Opus 5 feel worse to work with?》归入已下架的 Opus 5 主线，本期不收。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "离线候选中没有可回溯到原始出处的新条目。"
+    },
+    {
+      "slug": "axios-non-ai",
+      "reason": "其余候选主要为美国政治、经济与生活新闻，与 AI 日报主线无关。"
+    }
+  ]
+}

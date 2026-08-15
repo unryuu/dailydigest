@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/FINAL-Bench/open-discovery-challenge",
+  "title": "抗疟药 AI 榜单的评分器缺陷",
+  "date": "2026-08-15",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
   "id": "https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct",
   "title": "Cohere 开源 24 亿参数视觉模型",
   "date": "2026-08-13",

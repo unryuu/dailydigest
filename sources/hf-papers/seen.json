@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.06867",
+  "title": "LLMRouter 收进 16 种模型路由器",
+  "date": "2026-08-15",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.12990",
+  "title": "LycheeMemory 改成分段整理 Agent 记忆",
+  "date": "2026-08-15",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.13560",
+  "title": "AutoDesign",
+  "date": "2026-08-15",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.07545",
+  "title": "Agent 运行框架开始自己进化",
+  "date": "2026-08-15",
+  "reported": true,
+  "report_date": "2026-08-15"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.05604",
   "title": "SkillZip 把 Agent 技能库压成小模块",
   "date": "2026-08-14（HF 本日榜单抓取日）",
