@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-16",
+  "scanned_at": "2026-08-17T00:27:58+08:00",
+  "window": "上次公开源扫描后，补扫 The Information 首页与 2026-08-16 北京时间窗口内的 AI 相关内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Nvidia in Talks to Invest $3 Billion in SB Energy as Part of OpenAI Data Center Deal",
+      "url": "https://www.theinformation.com/articles/nvidia-talks-invest-3-billion-sb-energy-part-openai-data-center-deal",
+      "published_at": "2026-08-15T12:12:00-07:00",
+      "published_at_beijing": "2026-08-16T03:12:00+08:00",
+      "bucket_hint": "industry_silver",
+      "decision": "加入 daily.json",
+      "facts": [
+        "据知情人士，英伟达正洽谈向软银控股的 SB Energy 投资最多 30 亿美元。",
+        "投资方案与英伟达为 OpenAI 俄亥俄数据中心项目提供约 1000 亿美元信用支持的谈判相关。",
+        "SB Energy 规划的园区包含 10GW 新增发电容量，按当前价格估算，总开发成本约 5000 亿美元。",
+        "英伟达讨论在俄亥俄项目签约时投入一半，在 SB Energy 首次公开募股时投入另一半。"
+      ],
+      "caveats": [
+        "谈判仍在进行，没有保证达成交易。",
+        "投资金额可能缩水，SB Energy 的上市时间和募资规模也可能变化。"
+      ],
+      "why": "独家增量明确，且英伟达同时充当芯片供应商、投资者和信用支持方，能说明 AI 基础设施融资正在形成更强的循环依赖。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Sunday Insights",
+      "title": "Nebius and CoreWeave Tout Short-Term Cloud Deals, While AWS Goes Long",
+      "url": "https://www.theinformation.com/articles/nebius-coreweave-tout-short-term-cloud-deals-aws-goes-long",
+      "published_at": "2026-08-16T08:00:00-07:00",
+      "published_at_beijing": "2026-08-16T23:00:00+08:00",
+      "bucket_hint": "industry_none_or_deep_none",
+      "decision": "保留候选，不加入 daily.json",
+      "facts": [
+        "Nebius 称，三至六个月合同的年化每兆瓦价格可达 4000 万至 5000 万美元，是一至三年合同年化价格的两倍以上。",
+        "CoreWeave 也在扩展短期合同和按需推理业务，但两家公司目前只有少量容量用于这类合同。",
+        "AWS 表示，大部分 AI 容量至少签五年，长期合同能提供更稳定的收入和融资依据。",
+        "Nebius 和 CoreWeave 的剩余履约义务都略微向较近年份移动，但短约是否能长期维持高价仍不确定。"
+      ],
+      "caveats": [
+        "这是一篇基于公司披露和采访整理的结构性分析，不是单一独家事件。",
+        "短期合同当前占两家公司收入和容量的比例仍然很小。"
+      ],
+      "why": "能解释算力紧缺时期短约高利润与长约融资稳定性之间的取舍，但今天已有更强的基础设施融资独家，继续加入会降低日报密度。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Nvidia Close to Deal to Guarantee About $100 Billion in Credit for OpenAI",
+      "url": "https://www.theinformation.com/articles/nvidia-nears-deal-guarantee-100-billion-financing-massive-data-center",
+      "reason": "发布于 2026-08-14，早于本次补扫窗口；其关键增量已作为后续 SB Energy 独家的背景处理。"
+    }
+  ]
+}

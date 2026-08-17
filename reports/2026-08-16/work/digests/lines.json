@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ai-working-memory",
+    "section": "deep",
+    "label": "AI 做数学的优势可能来自更大的工作区",
+    "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+    "body": "文章认为，模型可以把约束、中间结果和失败路线全部留在上下文里，数学又特别适合把推理写成可检查的符号。这个解释尚未经过直接的 AI 消融实验。",
+    "note": "主 agent 直读 group-2 后补入。文章 08-04 发布，08-15 因 Hacker News 高讨论度进入候选；属于解释性假说，已从银牌降为无牌。"
+  },
+  {
+    "id": "ai-drug-discovery",
+    "section": "deep",
+    "label": "Science 盘点 AI 药物发现的临床进展",
+    "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+    "body": "公开证据仍很薄，真正该看的二期临床成功率还没有明显改善。药物数据里的变量和混杂因素太多，实验榜单进步也不等于能做成药。",
+    "note": "核实通过。"
+  },
+  {
+    "id": "ai-detector",
+    "section": "deep",
+    "label": "Sebastian Raschka 从零做了一个 AI 文本检测器",
+    "url": "https://magazine.sebastianraschka.com/p/ai-detector-from-scratch",
+    "body": "他用 DistilBERT 给文本打出 0 到 100 的分数，还拿检测器训练小模型躲避识别，演示这类工具为什么总会变成猫鼠游戏。",
+    "note": "核实通过。dup_suspect：与 8 月 15 日的文本分类／水印相关内容同属 AI 文本识别主线。"
+  },
+  {
+    "id": "low-frequency-lalm",
+    "section": "papers",
+    "label": "低频波形让六个音频大模型准确率下降",
+    "url": "https://huggingface.co/papers/2608.09158",
+    "body": "在预录音频的模拟测试里，人耳几乎听不见的波形让准确率最多下降 67 个百分点。防御方法发现异常后要求重新录音，把平均准确率从 28.5％拉回到 46.1％。",
+    "note": "核实通过。"
+  },
+  {
+    "id": "cors-chat",
+    "section": "industry",
+    "label": "CORS Chat 让浏览器直连本地和 API 模型",
+    "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
+    "body": "它能连接兼容 OpenAI Responses 且允许跨域访问的接口，已经在 LM Studio 和 OpenRouter 上跑通。聊天记录留在浏览器里，还能导出成 JSON。",
+    "note": "核实通过。"
+  },
+  {
+    "id": "intern-s2",
+    "section": "industry",
+    "label": "上海人工智能实验室发布科学 Agent 模型预览版",
+    "url": "https://huggingface.co/papers/2608.13505",
+    "body": "397B 主模型同时处理科学文档、图像、工具任务和时间序列，团队还测试了一个 4B 记忆模块做快速领域适配。",
+    "note": "核实通过。dup_suspect：训练流程包含从社区技能生成并验证任务的自进化环节，与 8 月 15 日的 Agent 技能与自动进化主线相邻。"
+  },
+  {
+    "id": "unicode-ghosts",
+    "section": "fun",
+    "label": "日本编码标准里的几枚误字混进了 Unicode",
+    "url": "https://www.dampfkraft.com/ghost-characters.html",
+    "body": "有些字符来自剪贴和编目时的失误，其中只有「彁」至今找不到明确出处。这批 1978 年留下的幽灵字符，如今潜伏在全世界的电脑里。",
+    "note": "核实通过。"
+  },
+  {
+    "id": "language-makers-homepages",
+    "section": "fun",
+    "label": "有人整理了编程语言创造者的个人主页",
+    "url": "https://breck.lol/plMakers.html",
+    "body": "页面标题能核实这是一个主页合集；本地没有抓到正文，具体名单暂时看不到。",
+    "note": "fetch_failed：状态码为 200，但本地正文只有「01」，无法核实收录对象和页面内容。"
+  },
+  {
+    "id": "mic-drop-karaoke",
+    "section": "fun",
+    "label": "Mic Drop 做了一个在线卡拉 OK 派对游戏",
+    "url": "https://www.micdrop.gg/",
+    "body": "页面标题显示它可以免费在线玩《Grab the Mic》；本地没有抓到正文，具体玩法没法核实。",
+    "note": "fetch_failed：状态码为 200，但本地正文为空，只能核实页面标题。"
+  },
+  {
+    "id": "class-reunion",
+    "section": "fun",
+    "label": "一位妈妈劝年轻人把同学会办得铺张一点",
+    "url": "https://www.lesswrong.com/posts/Fjfa8JG43CrYtcL3p/mom-s-advice-for-hosting-a-class-reunion",
+    "body": "再亲近的一群人，也可能因为创业、投资和家庭慢慢散开；真正能全员到场的聚会没有想象中那么多。",
+    "note": "核实通过。"
+  },
+  {
+    "id": "mormon-community",
+    "section": "fun",
+    "label": "摩门教靠固定分组和轮值任务维持社区",
+    "url": "https://www.lesswrong.com/posts/xzhzHhLSg9nSGLk5f/what-mormons-get-right-about-community-building",
+    "body": "住在哪里就加入当地教区，再用定期探访、集体活动和不断轮换的志愿岗位，把原本不会熟的人连成支持网。",
+    "note": "核实通过。"
+  }
+]

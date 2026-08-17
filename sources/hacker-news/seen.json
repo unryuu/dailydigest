@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.dampfkraft.com/ghost-characters.html",
+  "title": "日本编码标准里的几枚误字混进了 Unicode",
+  "date": "2026-08-15T14:34:04Z",
+  "reported": true,
+  "report_date": "2026-08-16"
+ },
+ {
+  "id": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+  "title": "AI 药物发现的临床成功率没有明显改善",
+  "date": "2026-08-15T19:12:53Z",
+  "reported": true,
+  "report_date": "2026-08-16"
+ },
+ {
+  "id": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+  "title": "AI 做数学的优势可能来自更大的工作区",
+  "date": "2026-08-15T18:13:02Z",
+  "reported": true,
+  "report_date": "2026-08-16"
+ },
+ {
   "id": "https://getsmall.xyz/post/cmstjfl9l000if70ljmpzr4va",
   "title": "软件工程的瓶颈正在从 coding 转向 review",
   "date": "2026-08-14T22:48:15Z",

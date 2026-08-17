@@ -1,0 +1,86 @@
+URL: https://simonwillison.net/2026/Aug/15/cors-chat
+FINAL: https://simonwillison.net/2026/Aug/15/cors-chat/
+TITLE: Tool: CORS Chat
+FETCHED: 2026-08-16 15:19:55
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+WorkOS —
+auth.md
+by WorkOS: agents register users, no sign-up form.
+Try it!
+15th August 2026
+Tool
+CORS Chat
+— Chat directly with any OpenAI Responses-compatible API endpoint that supports CORS headers, all within your browser. Configure endpoints with custom headers, save conversations locally, and manage multiple chat sessions with different models and reasoning settings.
+I built this today (
+with GPT-5.6-Sol xhigh
+) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pro and an NVIDIA DGX Spark.
+It provides a web UI for exercising an OpenAI-Responses-compatible chat endpoint. I've tried it against LM Studio with the
+--cors
+option and OpenRouter, and both work fine.
+Conversations are persisted in the browser and can be exported as copy-pasted JSON. One fun detail is that it notices SVG images that are being generated and progressively renders them in the chat while the tokens are still streaming in.
+Posted
+15th August 2026
+at 2:49 pm
+Recent articles
+Now we have a timeline of the OpenAI accidental attack against Hugging Face
+- 7th August 2026
+One-shotting a Raccoon Heist game using Claude Fable 5
+- 5th August 2026
+New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging
+- 4th August 2026
+This is a
+beat
+by Simon Willison, posted on
+15th August 2026
+.
+svg
+55
+ai
+2,187
+generative-ai
+1,938
+llms
+1,905
+cors
+30
+openrouter
+29
+lm-studio
+22
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

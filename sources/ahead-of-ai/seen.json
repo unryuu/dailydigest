@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://magazine.sebastianraschka.com/p/ai-detector-from-scratch",
+  "title": "文本检测器也能训练模型躲避识别",
+  "date": "Sat, 15 Aug 2026 11:54:24 GMT",
+  "reported": true,
+  "report_date": "2026-08-16"
+ },
+ {
   "id": "https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms",
   "title": "Controlling Reasoning Effort in LLMs",
   "date": "2026-07-18",

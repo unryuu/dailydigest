@@ -1,0 +1,317 @@
+{
+  "date": "2026-08-16",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "首轮工具 schema 如何锚定 DeepSeek Harness 的任务轨迹",
+      "cost": "中",
+      "reason": "用户点名的社区实验，机制包含首轮 Minimal 工具、指令摘要剥离、持久工具调用后恢复 Standard 工具以及 98／99 分实测，不适合压成只有标题的简讯。",
+      "items": [
+        {
+          "source": "用户点名／GitHub",
+          "title": "dsh-anchored-standard：先用 Minimal 条件锚定 DeepSeek Harness，再恢复 Standard 工具",
+          "url": "https://github.com/xiaobright/dsh-anchored-standard",
+          "date": "2026-08-14T14:06:39Z",
+          "why": "用户点名，必须收录，定牌可调整分区／牌级。线索称首轮工具 schema 会强烈改变轨迹，作者在同一题同配置两次测得 98／99；README 同时限定这不是普遍增益结论，reader 需核机制、实验边界与兼容性。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "训练材料与多 Agent 强化学习会不会改写模型的抽象立场",
+      "cost": "重",
+      "reason": "两项线索都不是单纯测答案，而是在追踪训练经历是否会迁移到模型的信念、决策理论偏好和后续行为。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Kimi likes causal decision theory more after RL in twin prisoner’s dilemmas",
+          "url": "https://www.lesswrong.com/posts/hfNBEKaStASAYMLiu/kimi-likes-causal-decision-theory-more-after-rl-in-twin-1",
+          "date": "Sun, 16 Aug 2026 00:30:48 GMT",
+          "why": "摘要称在双生囚徒困境上做多 Agent 强化学习后，Kimi K2.6 对因果决策理论的态度与行为发生迁移；属于反直觉的初步实证，需核实验设计和效应大小。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "Learning new facts can change LLM behaviour",
+          "url": "https://www.lesswrong.com/posts/9BNHJqyai2EZAtrRM/learning-new-facts-can-change-llm-behaviour",
+          "date": "Sun, 16 Aug 2026 04:45:48 GMT",
+          "why": "摘要称用合成文档微调模型相信特定道德事实，并观察信念深度及行为变化，同时提示仅靠提示也有效；需核是否排除了迎合和表面复述。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "AI 论文评审会被修辞而非内容劫持吗",
+      "cost": "重",
+      "reason": "直接考察 AI 评审器的奖励黑客与虚假相关性，若效应扎实，会影响自动审稿和科研评测的可信度。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "How Can Rhetoric Reward-Hack AI Reviewers? Dissecting Rhetorical Sensitivity in AI-Based Peer Review",
+          "url": "https://huggingface.co/papers/2608.08975",
+          "date": "",
+          "why": "本日 Hugging Face 论文榜单线索；标题指向修辞对 AI 同行评审的系统性操纵，需 reader 核论文发布日期、基准、效应量与是否有人类评审对照。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "没有测试 oracle 和人工代码审查时，编码 Agent 能否完成核心架构迁移",
+      "cost": "重",
+      "reason": "标题给出 717k 行、189 个文件和拆除核心架构不变量的具体规模，是长程编码 Agent 的高信息量案例，但需要核清成功标准。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "Specification-first convergence with an AI coding agent: a case study of dismantling a core architectural invariant across 189 files in a 717k-line codebase with no test oracle and no human code review",
+          "url": "https://huggingface.co/papers/2608.12440",
+          "date": "",
+          "why": "本日 Hugging Face 论文榜单线索；规模和无测试 oracle／无人工 review 的设定值得精读，需核是否真完成、如何验证以及是否可复现。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Ryan Greenblatt 长访谈的 AI 风险判断与 Zvi 复盘",
+      "cost": "重",
+      "reason": "高权重长文对一场自带关注度的访谈做拆解，可能集中提供近期能力、控制与风险判断，适合 reader 判断是否有独立新料。",
+      "items": [
+        {
+          "source": "thezvi",
+          "title": "On Dwarkesh Patel's Podcast With Ryan Greenblatt",
+          "url": "https://thezvi.substack.com/p/on-dwarkesh-patels-podcast-with-ryan",
+          "date": "Sat, 15 Aug 2026 12:53:59 GMT",
+          "why": "摘要只说明 Zvi 将拆解这期访谈，尚不能判断是否有超出访谈本身的新事实；reader 需核核心观点、数据和与近期 Zvi 周报的重复度。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "ahead-of-ai",
+      "title": "Building an AI Text Detector From Scratch",
+      "url": "https://magazine.sebastianraschka.com/p/ai-detector-from-scratch",
+      "date": "Sat, 15 Aug 2026 11:54:24 GMT",
+      "note": "从数据构造、训练、本地部署到 RLVR 的端到端教程；与前期文本水印主线不同，先作为实用工具线索。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "AI has access to a vastly larger working memory than the human brain",
+      "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+      "date": "2026-08-15T18:13:02Z",
+      "note": "HN 462 分、401 条评论的争议性论点；标题与链接 slug 的表述有张力，reader 应核原文实际主张。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "AI in drug discovery – what it is, where we stand and the path forward",
+      "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+      "date": "2026-08-15T19:12:53Z",
+      "note": "Science 博客对 AI 药物发现现状的盘点，HN 124 分、62 条评论；可作行业现实校准。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "CORS Chat",
+      "url": "https://simonwillison.net/2026/Aug/15/cors-chat",
+      "date": "2026-08-15T14:49:54+00:00",
+      "note": "Simon Willison 做的本地聊天测试页，可连接 OpenAI Responses 兼容端点，并用来测试 LM Studio 中的 Qwen 3.8 27B。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+      "url": "https://huggingface.co/papers/2608.13505",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；科学 Agent 基础模型，发布日期和开放范围待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Knowing When to Quit: Diagnosing and Training LLMs to Abort Futile Reasoning",
+      "url": "https://huggingface.co/papers/2607.29211",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；诊断并训练模型停止无效推理，适合核是否真的节省算力且不伤正确率。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SKILLER: Language-Level Reinforcement Learning for Reusable Skill Extraction in Small Language Models",
+      "url": "https://huggingface.co/papers/2608.10538",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；用语言层强化学习让小模型抽取可复用技能，开放情况待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "From Inaudible Inputs to Model Failures: Low-Frequency Safety Risks in LALMs",
+      "url": "https://huggingface.co/papers/2608.09158",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；关注大型音频语言模型面对不可听低频输入的安全失败。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives",
+      "url": "https://huggingface.co/papers/2608.13552",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；用 Agent 玩家和长程目标评测世界模型，属于新基准雷达。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Massive Activations in Hybrid Linear Attention Large Language Models: Pre-Attention Spikes and Inter-Spike Plateaus",
+      "url": "https://huggingface.co/papers/2608.12149",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；追踪混合线性注意力模型中的异常大激活，机制与影响待核。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "acx",
+      "title": "Your Book Review: The Escape Artist",
+      "url": "https://www.astralcodexten.com/p/your-book-review-the-escape-artist",
+      "date": "Fri, 14 Aug 2026 22:21:13 GMT",
+      "note": "ACX 书评大赛第五位入围者，适合作为非 AI 长读备选。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Scrying, Modeling, and Nerdsnipe",
+      "url": "https://www.lesswrong.com/posts/mTfsMduzaKkWjv2ef/scrying-modeling-and-nerdsnipe",
+      "date": "Fri, 14 Aug 2026 20:45:48 GMT",
+      "note": "从数学探索谈如何找到尚未想到的真假设，摘要自称探索性思考。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "What Mormons get right about community building",
+      "url": "https://www.lesswrong.com/posts/xzhzHhLSg9nSGLk5f/what-mormons-get-right-about-community-building",
+      "date": "Sat, 15 Aug 2026 04:00:47 GMT",
+      "note": "从寿命、志愿服务和语言训练切入摩门教社区建设，角度反常识。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Mom’s Advice For Hosting A Class Reunion",
+      "url": "https://www.lesswrong.com/posts/Fjfa8JG43CrYtcL3p/mom-s-advice-for-hosting-a-class-reunion",
+      "date": "Sat, 15 Aug 2026 23:45:47 GMT",
+      "note": "一句反直觉建议是投入比你觉得合理的更多钱和精力，因为真正还能办成的同学会次数有限。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "A spectre is haunting Unicode",
+      "url": "https://www.dampfkraft.com/ghost-characters.html",
+      "date": "2026-08-15T14:34:04Z",
+      "note": "幽灵字符主题，HN 204 分、70 条评论，标题和技术梗都适合乐子区。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Show HN: Mic Drop, a real-time multiplayer karaoke game",
+      "url": "https://www.micdrop.gg",
+      "date": "2026-08-16T00:46:29Z",
+      "note": "实时多人卡拉 OK 小游戏，轻量且可玩。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The quirky personal homepages of programming language creators",
+      "url": "https://breck.lol/plMakers.html",
+      "date": "2026-08-16T04:24:00Z",
+      "note": "整理编程语言创造者那些古怪的个人主页，适合互联网考古。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "AI 会在 2029 年前消灭人类吗？",
+      "prob": "1.0％",
+      "volume_note": "累计交易量约 M$44,649",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c4dd0657d4fa"
+    },
+    {
+      "question": "AI 会在 2040 年前消灭人类吗？",
+      "prob": "8.2％",
+      "volume_note": "累计交易量约 M$1,716,710",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    },
+    {
+      "question": "AI 会在 2060 年前消灭人类吗？",
+      "prob": "11.4％",
+      "volume_note": "累计交易量约 M$282,771",
+      "url": "https://manifold.markets/JamesBills/will-ai-wipe-out-humanity-before-th-6e8e547afa66"
+    },
+    {
+      "question": "AI 会在 2028 年底前解决一个尚未解决的千禧年大奖难题吗？",
+      "prob": "47.0％",
+      "volume_note": "累计交易量约 M$44,876",
+      "url": "https://manifold.markets/LukaszWiklendt/will-an-unsolved-millenium-prize-pr"
+    },
+    {
+      "question": "AI 相关灾难会在 2070 年前造成百万人死亡或 1 万亿美元损失吗？",
+      "prob": "44.0％",
+      "volume_note": "累计交易量约 M$8,669",
+      "url": "https://manifold.markets/NathanpmYoung/will-an-ai-related-disaster-kill-a"
+    },
+    {
+      "question": "会有 AI 系统在 2050 年前因表现出权力寻求行为而被关闭吗？",
+      "prob": "66.3％",
+      "volume_note": "累计交易量约 M$844",
+      "url": "https://manifold.markets/lbiii/before-2050-will-an-ai-system-be-sh"
+    },
+    {
+      "question": "2030 年前会出现 AI 导致的行政失权吗？",
+      "prob": "31.6％",
+      "volume_note": "累计交易量约 M$415",
+      "url": "https://manifold.markets/lbiii/before-2030-will-there-be-an-aicaus"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "interconnects",
+      "reason": "GLM-5.3 与 08-14 已报主线重叠，且未见权重开放、API 正式上线或发布口径重大变化；其余候选明显更旧。"
+    },
+    {
+      "slug": "lesswrong",
+      "reason": "剔除 AI #181、OpenAI 内部模型复盘、AI swarm／多 Agent 模式等与 08-15 网络安全事故或 08-13 多 Agent 故障重复的条目；其余旧文按新鲜度降权。"
+    },
+    {
+      "slug": "axios",
+      "reason": "两条大学与 AI 就业焦虑线索与 08-14 年轻人担心 AI 抢工作的主线高度重叠，另外两条非 AI 新闻不入本期。"
+    },
+    {
+      "slug": "hacker-news",
+      "reason": "剔除明显非 AI 且缺少日报钩子的常规健康、天气和硬件条目，以及 2023 年旧文。"
+    },
+    {
+      "slug": "hf-papers",
+      "reason": "榜单发布日期缺失，仅保留钩子明确的候选；标题解析异常或仅属常规视觉、分割、翻译、身份替换等论文的条目未带回。"
+    },
+    {
+      "slug": "anthropic／anthropic-research／claude-blog／deepmind／huggingface／openai／xai",
+      "reason": "抓取成功，但机械候选为零。"
+    }
+  ]
+}

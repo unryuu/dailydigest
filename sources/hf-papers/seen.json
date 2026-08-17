@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.13505",
+  "title": "上海人工智能实验室发布科学 Agent 模型预览版",
+  "date": "2026-08-16",
+  "reported": true,
+  "report_date": "2026-08-16"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.09158",
+  "title": "低频波形让六个音频大模型准确率下降",
+  "date": "2026-08-16",
+  "reported": true,
+  "report_date": "2026-08-16"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.06867",
   "title": "LLMRouter 收进 16 种模型路由器",
   "date": "2026-08-15",

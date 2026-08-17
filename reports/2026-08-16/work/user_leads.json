@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-16",
+  "items": [
+    {
+      "source": "用户点名／GitHub",
+      "title": "dsh-anchored-standard：先用 Minimal 条件锚定 DeepSeek Harness，再恢复 Standard 工具",
+      "url": "https://github.com/xiaobright/dsh-anchored-standard",
+      "date": "2026-08-14T14:06:39Z",
+      "must_include": true,
+      "suggested_bucket": "radar",
+      "summary": "社区为 DeepSeek Harness 做的实验性 preset。首轮只暴露 Minimal 的 bash 与 str_replace_editor，并暂时剥离 AGENTS.md／CLAUDE.md 摘要和技能目录提醒；出现首次持久工具调用或助手回复后，恢复发现工具与按需解锁的 Standard 工具。作者称 DeepSeek V4 Pro 会被首轮工具 schema 强烈影响，在 Project2、Windows、reasoningEffort=max 的两次测试中得到 98 和 99 分；但 README 明确说不代表对所有模型和任务普遍增益，兼容性只验证到 Harness 0.1.0-rc.5，开发者预览版未来可能破坏性变更。仓库约在北京时间 08-14 22:06 创建，截至 08-16 14:16 左右已有 2470 星、76 fork、32 个未结 issue；README 声明为社区项目、非 DeepSeek 官方，许可证为 MIT。",
+      "why": "用户明确要求加入日报；中文社区讨论度高。定牌时不得删除，可决定放入带正文分区或简讯，但复杂机制不宜只给标题。",
+      "evidence": [
+        "README.zh-CN.md：工具 schema 在默认 256000 maxTokens 下是决定首轮轨迹的变量，Minimal 对 5／5 锚定，standard 系 schema 11／11 落入 standard-like。",
+        "README.zh-CN.md：技能目录提醒在场时锚定 0／9；bootstrap 阶段会剥离 agent-instructions 与 skill-catalog。",
+        "README.zh-CN.md：Project2 两轮 Ability 98／99，但只证明本题同配置可复现。",
+        "GitHub API：created_at 2026-08-14T14:06:39Z，pushed_at 2026-08-15T22:55:15Z，stars 2470，forks 76。"
+      ]
+    }
+  ]
+}

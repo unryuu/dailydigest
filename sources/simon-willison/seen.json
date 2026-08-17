@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/15/cors-chat/",
+  "title": "CORS Chat 让浏览器直连本地和 API 模型",
+  "date": "2026-08-15T14:49:54+00:00",
+  "reported": true,
+  "report_date": "2026-08-16"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
   "title": "别让模型分类，先让它幻觉一套标签",
   "date": "2026-08-14T21:54:35+00:00",

@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "rhetoric-review-arxiv",
+    "url": "https://arxiv.org/html/2608.08975",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2608.08975",
+    "bytes": 3474541,
+    "title": "How Can Rhetoric Reward-Hack AI Reviewers?Dissecting Rhetorical Sensitivity in AI-Based Peer Review",
+    "chars": 239735
+  },
+  {
+    "slug": "coding-agent-invariant-arxiv",
+    "url": "https://arxiv.org/html/2608.12440",
+    "status": 404,
+    "final_url": "https://arxiv.org/html/2608.12440",
+    "bytes": 7899,
+    "error": "HTTP 404"
+  },
+  {
+    "slug": "knowing-when-quit-arxiv",
+    "url": "https://arxiv.org/html/2607.29211",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2607.29211",
+    "bytes": 200343,
+    "title": "Knowing When to Quit: Diagnosing and Training LLMs to Abort Futile Reasoning",
+    "chars": 44669
+  },
+  {
+    "slug": "low-frequency-lalm-arxiv",
+    "url": "https://arxiv.org/html/2608.09158",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2608.09158",
+    "bytes": 440645,
+    "title": "From Inaudible Inputs to Model Failures: Low-Frequency Safety Risks in LALMs",
+    "chars": 76321
+  },
+  {
+    "slug": "intern-s2-arxiv",
+    "url": "https://arxiv.org/html/2608.13505",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2608.13505",
+    "bytes": 595659,
+    "title": "Intern-S2-Preview: Scientific Agentic Foundation Model",
+    "chars": 138645
+  }
+]
