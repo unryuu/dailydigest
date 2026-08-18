@@ -1,0 +1,202 @@
+URL: https://www.lesswrong.com/posts/mEde7bhzK4eKQqWGi/those-who-make-history
+FINAL: https://www.lesswrong.com/posts/mEde7bhzK4eKQqWGi/those-who-make-history
+TITLE: Those Who Make History — LessWrong
+FETCHED: 2026-08-18 20:45:49
+============================================================
+x
+Those Who Make History — LessWrong
+Cryonics
+World Modeling
+Frontpage
+75
+Those Who Make
+History
+by
+Raelifin
+11th Aug 2026
+Linkpost for
+open.substack.com
+9
+min read
+1
+75
+In 1972, astronauts on Apollo 17 set foot on the moon for a final time, collecting samples in the Taurus-Littrow valley, on the edge of Mare Serenitatis ("The Sea of Serenity").
+At the end of the mission, like with earlier missions, NASA took the extremely valuable and interesting lunar specimens and did something strange:
+they hid them away in storage
+without even opening the containers.
+[1]
+Some stayed that way for nearly fifty years. Why? Because the scientists of the 70s understood that future generations would have better machines, methods, and ideas for studying the lunar rock and soil, and they wanted to make it easy for those researchers to run tests without having to go back to the lunar surface.
+This foresight paid off twice over. Advances in mass spectrometry enabled scientists
+in 2008
+to detect water in volcanic-glass samples returned by Apollo 15 and Apollo 17. And when curators finally
+opened one of the last sealed containers in 2022
+, they could extract the trapped lunar gases with technology that simply didn't exist in 1972.
+Some people describe cryonics as a new, and speculative technology. There’s a sense in which they’re right. It’s predicated, in large part, on the possibility of revival using technologies that do not yet exist. And
+Nectome
+, in particular, is a new form of cryonics, developing new techniques at the cutting edge that
+I believe
+are
+significantly higher quality
+than “traditional” methods.
+But I also think it’s important to see Nectome, and cryonics more broadly, as part of an intellectual and cultural lineage of preservation. Our methods are getting better with each passing year, but the act of holding onto the past by protecting the objects and information that we have at hand is an endeavor with a long and honorable history. Indeed, it is the project of
+history itself.
+History is passed down from generation to generation, just as the samples from Apollo 17 were. Some of history is in the form of knowledge that was clear to the people at the time, where the project is solely about holding onto that knowledge in whatever form it takes. But much of history is in the form of an incomplete picture — artifacts and clues that hold the promise of future discoveries, once humanity gains the skill to unlock them.
+When Dr. Kurt Benirschke started
+the San Diego Frozen Zoo
+, freezing DNA in 1975, he didn’t need to know exactly how that could be of use to future generations. He didn’t need to know that cloning technology was on the horizon, or that
+Przewalski's horse
+and northern white rhino would go extinct.
+[2]
+He only needed to understand that DNA is a kind of historical record, and that he had an opportunity to make that history a part of what we deliberately pass on to the future.
+The Apollo samples, the Frozen Zoo, and the field of cryonics are just three examples in the ancient, grand tradition of preservation, with the hope that the people of tomorrow will learn from the history that we give them, and restore what we cannot.
+Prudence and Patience
+There are many examples of scientists across the world participating in the grand project of preservation, usually by using sub-zero temperatures. Beyond the Frozen Zoo and the Apollo samples (some of which were stored at
+around -20°C
+), there are the
+glacier ice cores
+,
+Svalbard seed vault
+, and
+Arctic World Archive
+. But there are also many cases where preservation wasn’t a deliberate act by scientists, but where we can still learn important lessons about how to protect and carry forward the memory of those who came before us.
+Consider, for instance, the mummies of Egypt. While they were not preserved for the sake of future generations per se, that tradition still ended up being extremely valuable in helping us understand the past. Beyond the insight into social class and religion, mummies provide unparalleled access to health, diet, technology, and the movement of people across the ancient world. Most of that knowledge wasn’t available to the people who first opened the tombs, especially when we consider the tragedy of the hundreds of mummies that have been lost over the centuries to grave robbing and simple impatience. Even when early archaeologists came upon those burial sites, many ended up destroying the very evidence they sought to understand. For centuries, mummies sold to merchants, who would grind them up into “
+medicine
+” and
+pigment
+, or to those who were wealthy enough to unwrap them as a form of entertainment in their drawing rooms.
+Archaeology is full of this ironic pattern. It is often in the sites with the least human presence, such as forgotten caves, where our greatest treasures originate. The
+Lascaux
+caves were sealed until 1940. The caves where the Dead Sea Scrolls lay hidden were found only after 1946. Most of the people of the past saw no value in keeping sites and artifacts pristine and undamaged, thinking only of the present value. If only the ancients had appreciated how much the people of the future would want to know them. If only they found the strength to be patient stewards more often.
+The instances where our forebears showed more restraint are inspiring. For example, in the 18th century, a complete library of almost
+two thousand scrolls
+were uncovered in Herculaneum, near Pompeii, where they had been buried since the eruption of Vesuvius in 79 AD. These papyrus scrolls were carbonized by the volcano, making them impossible to read, from the perspective of those who discovered them.
+[
+Source
+]
+Still, the nobles, archeologists, and historians who found the scrolls in their possession showed remarkable care in tending to what might seem to be mere lumps of coal. After excavation, they passed through the hands of kings and emperors, such as George IV and Napoleon Bonaparte before finding their way to museums and archives where they survived wars and other crises. And then, in
+June of 2026
+,
+[3]
+humanity gained access to the entirety of one of the scrolls
+without having to even touch it. Through the use of high-resolution x-rays, scientists were able to reconstruct a detailed 3D scan of the scroll, including which parts contained ink, allowing the full text to be read.
+Or consider
+the mechanism of Antikythera
+, which was discovered in 1901 by divers exploring a shipwreck. What they recovered looked less like a machine than a collection of corroded bronze and wood. It had spent roughly two thousand years underwater, and only a fraction of the original device survived. At first, even the presence of gears was surprising. The idea that the ancient world had produced machinery of such complexity seemed implausible enough that it took decades for scholars to even understand what they were looking at. But they preserved the fragments anyway.
+Over the following century, each generation brought new methods to bear on them: careful physical inspection, radiography, increasingly sophisticated photography, and eventually high-resolution x-ray computed tomography. Features hidden beneath layers of corrosion became visible. Inscriptions emerged from surfaces that appeared blank. Researchers found a system of interlocking bronze gears capable of representing astronomical cycles, predicting eclipses, and tracking calendars. What had once looked like an indecipherable mass of metal came to be recognized as a 2200-year-old mechanical computer. Even now, the device is not fully understood, but
+we still carry it forward
+, into a future that might.
+Front panel of a 2007 re-creation
+Ancient Archives
+It’s odd, from a certain perspective, that the existence of the Antikythera mechanism was surprising. The ancient world
+wrote about
+such devices.
+Cicero describes
+a bronze mechanism that predates the one found near Antikythera, built by Archimedes himself, that modeled the motions of the sun, moon, and planets. But for centuries, scholars read those passages as legend and exaggeration... right up until divers pulled the real thing out of the Aegean Sea. Words alone were unable to demonstrate the prowess of the old masters.
+Their inadequacy is perhaps due, in part, to their scarcity, for most texts have been lost to time.
+The Library of Alexandria
+, for example, is a famous failure to hold on to history, though the lesson there is usually mistold. No single night of fire is to blame, nor any particular barbarian army. Rather, the loss of those texts came from whole centuries of war, dwindling budgets, and neglect, with no systematic effort to copy its holdings elsewhere. Contrast
+the House of Wisdom
+in Baghdad, which met a far more violent end. When the Mongols sacked the city in 1258, the Tigris was said to run black with the ink of its books. And yet much of what it held survives today, because the scholars of the translation movement had spent centuries copying, translating, and dispersing those texts across the world.
+Other words survive by stranger means. In the attic of a Cairo synagogue, a Jewish community observed the custom of never discarding any paper that might bear the name of God. Thus, for nearly a thousand years, they deposited their worn-out documents there — marriage contracts, court records, merchants’ letters, children’s writing exercises — until the
+Cairo Geniza
+held hundreds of thousands of fragments. The resulting archive was a portrait of everyday medieval life that is richer than any historian’s chronicle. For it is precisely the day-to-day experience of the past that is hardest to capture. We know the great events from many angles. But few thought to try and convey what it was like simply to be alive at the time. Today, institutions like
+the Internet Archive
+carry the mission forward, deliberately holding on to the commonplace webpages with as much fervor as the famous ones.
+Sometime in the thirteenth century, a monk needed parchment for a prayer book. He took a manuscript off the shelf and scraped off the ink, cutting down the leaves, writing his prayers. It was a kind of everyday vandalism. But that prayer book was kept and carried — a single physical object moving through seven centuries of monasteries, collectors, and auction houses. And then, in the 2000s, scientists put the
+Archimedes Palimpsest
+under multispectral light and the x-ray beam of a particle accelerator, and recovered the erased text, including
+The Method
+, in which Archimedes reached toward the ideas of calculus almost two millennia before Leibniz or Newton. No other copy survives.
+Any museum curator can tell you that libraries, no matter how vast or guarded, are not enough. Text only gets written about what the author already understands and values. No scribe thought to record the precise gear ratios of the Antikythera mechanism. No ancient writer knew what we would find fascinating. Most knowledge lives only in objects, materials, residues, and structures that humans have neither the interest nor ability to sufficiently describe. And yet, it took humanity a painfully long time to grant objects the same preservationist care that was naturally shown to texts. Only in the last few hundred years did we learn to handle important artifacts the way librarians handle manuscripts. That change of heart, and the widening of the circle of concern that followed, ushered in the modern era of historic preservation.
+The New Era
+Medieval monks knew nothing of x-rays. Neither did the excavators who shelved the Herculaneum scrolls, nor the divers who hauled up the corroded lump from the Antikythera wreck. No preservationist really knows how their efforts will serve the future. The instruments that read what they saved had not been invented yet. But the heroes of the past were not held back by their limited knowledge. They held on to what they could, knowing that others might one-day benefit. The lesson our forerunners teach, over and over, is to protect what we can, even when we do not yet have the skill to read it. Nearly everything we know about the people of the past, we know because someone — whether a museum curator, a monk, or a community with a sacred attic — carried something forward without pretending to know why it would matter.
+Seen from a distance, there’s an arc to this tradition. Libraries taught us to preserve words. Museums taught us to preserve artifacts. Biobanks taught us to preserve genomes and tissues. Each expansion of the archive looked eccentric at the time. Why treat lumps of coal like treasure? Why freeze vials of skin cells from healthy animals? But each one, within a few generations, looked like wisdom.
+Cryonics is the next widening of the circle: the preserving of
+individual
+memory,
+held in the fine structure of the brain itself
+. Just as with the Herculaneum scrolls,
+the quality of the preservation is everything
+. The actions of cryonicists like those working at Nectome are in the same tradition as the scientists who sealed away lunar samples, the librarians who shelved unreadable scrolls, or the archivists who watched over corroded bronze. We, as a civilization, have a duty to the future. We have a duty to protect what we can.
+In the days before writing, there were oral traditions, but writing brought more: the era of written memory. Later, during the enlightenment, people began to wake up to the need to protect artifacts, ushering in an era of archeological memory. And then, only a few decades ago, science learned of the need to hold on to genetic memory. High-quality cryonics promises to let us hold on to lived experiences and ineffable parts of life that no book can capture — the era of living memory.
+The people who make history have never only been the ones who take great actions in the world. They are also the ones who protect it, patiently, for those who come after. And, if we do our work well enough, those future people may one day hand back that same world that we helped protect.
+^
+Not all of the samples remained unopened, of course. Most were analyzed immediately.
+^
+Przewalski's horse only went extinct in the wild. The northern white rhinoceros is only functionally extinct. A mother and daughter remain alive for now.
+^
+Building on
+earlier work
+in 2024.
+Those Who Make History
+7
+Aurelia
+1
+Comments
+1
+Cryonics
+World Modeling
+Frontpage
+75
+New Comment
+1 comment
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 12:45 PM
+[
+-
+]
+Aurelia
+7d
+7
+0
+I want to share the video series
+Building The World's First Computer: The Antikythera Mechanism
+, by Chris Budiselic.
+Chris set out on a multi-year journey to rebuild the Antikythera Mechanism using tools available at the time of construction; the videos are meticulous and some of the best machining videos in the genre, in my opinion. Chris ended up writing some cutting-edge academic papers on the Antikythera Mechanism such as
+The Antikythera Mechanism Evidence of a Lunar Calendar
+, published by the British Horological Institute, as part of making the videos.
+I see the story of the Antikythera Mechanism as a metaphor for preserving people; if we can keep people safe, then what we preserve today we can restore with the tools of tomorrow. I see preservation as a way of honoring our past by preserving the present's living memories, to deliver them to a future that loves and wants them. One of my family members
+@leyline
+wrote a
+song
+about preservation and the Antikythera Mechanism. I think it expresses the concept very well; here's the lyrics.
+[Verse 1]
+You were raised by hands that knew you,
+Who wheeled your heart to true.
+You set your sights upon the stars
+Recounting all you knew.
+And when, at last, your ship went down
+and sank beneath the waves,
+There were no stars for you to see
+Among those darkened graves.
+[Verse 2]
+A thousand years of night went by
+and then a thousand more,
+Until at last they dredged you up,
+In fragments from the floor.
+But could they peer inside the rust
+And learn what you had been?
+Or would they break, with clumsy tools,
+The wondrous wheels within?
+[Verse 3]
+They had no tools to bring you back.
+To show what you kept hid.
+But they, at least, could keep you safe
+So that is what they did.
+And though they yearned to know your name,
+They swore they never would.
+No glory --- just the slender hope
+That later ages could.
+[Chorus]
+Out of the waters of the dark
+Our new light has found you.
+Lit up the wheels hid deep within
+You are known to us, and loved.
+Reply
+Moderation Log
+More from
+Raelifin
+View more
+Curated and popular this week

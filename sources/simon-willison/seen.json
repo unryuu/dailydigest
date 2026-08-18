@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+  "title": "Qwen 3.8 27B 默认想得太多",
+  "date": "2026-08-16T22:00:39+00:00",
+  "reported": true,
+  "report_date": "2026-08-17"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/15/cors-chat/",
   "title": "CORS Chat 让浏览器直连本地和 API 模型",
   "date": "2026-08-15T14:49:54+00:00",

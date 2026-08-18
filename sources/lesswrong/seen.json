@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/mEde7bhzK4eKQqWGi/those-who-make-history",
+  "title": "NASA 把月球样本留给还没出现的仪器",
+  "date": "Tue, 11 Aug 2026 20:45:47 GMT",
+  "reported": true,
+  "report_date": "2026-08-17"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/QBuJ3suRZxrrxSTtv/does-diffusiongemma-do-latent-reasoning",
+  "title": "扩散模型的隐藏推理大体还能看懂",
+  "date": "Sun, 16 Aug 2026 07:31:42 GMT",
+  "reported": true,
+  "report_date": "2026-08-17"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/xzhzHhLSg9nSGLk5f/what-mormons-get-right-about-community-building",
   "title": "摩门教靠固定分组和轮值任务维持社区",
   "date": "Sat, 15 Aug 2026 04:00:47 GMT",

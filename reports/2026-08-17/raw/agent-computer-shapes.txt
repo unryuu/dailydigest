@@ -1,0 +1,11 @@
+URL: https://x.com/emollick/status/2089233231853785118
+FINAL: https://x.com/emollick/status/2089233231853785118
+TITLE: Ethan Mollick on X: "Its interesting to see the experiments on how to give AI a computer: Codex &amp; Claude Code use your local machine, ChatGPT Work on the web (as well as Claude and ChatGPT) give the AI a one-time machine online that gets reset, and Grokbot gives each AI agent a persistent web machine" / X
+FETCHED: 2026-08-18 20:45:35
+============================================================
+Ethan Mollick
+@emollick
+Its interesting to see the experiments on how to give AI a computer: Codex & Claude Code use your local machine, ChatGPT Work on the web (as well as Claude and ChatGPT) give the AI a one-time machine online that gets reset, and Grokbot gives each AI agent a persistent web machine
+6:09 AM · Aug 17, 2026
+30.8K
+Views

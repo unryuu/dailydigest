@@ -1,0 +1,101 @@
+[
+  {
+    "id": "workday-saas-buyout",
+    "status": "accept",
+    "section": "industry",
+    "label": "Silver Lake 洽购 Workday，SaaS 股只高兴了一天",
+    "url": "https://www.theinformation.com/newsletters/the-briefing/workdays-potential-buyout-feeds-hope-saas-sell",
+    "body": "消息让 Workday 股价一度涨 19％，第二天又回落近 4％。一些大企业希望三年内把部分软件供应商支出砍掉 30％，这笔仍在洽谈的交易还不足以证明 SaaS 抛售结束。",
+    "note": "accept：仅依据 theinformation_candidates.json 的登录态手工精读记录核查，未重新抓取付费正文。证据包括 Workday 截至 1 月的财年产生 28 亿美元自由现金流、股价年内仍跌 7％，以及交易消息引发的短暂反弹。限定：收购尚在洽谈，未披露价格；30％是分析师转述的部分客户意向，不是已经发生的行业数据。"
+  },
+  {
+    "id": "agent-computer-shapes",
+    "status": "accept",
+    "section": "industry",
+    "label": "AI Agent 正在分成三种电脑形态",
+    "url": "https://x.com/emollick/status/2089233231853785118",
+    "body": "Codex 和 Claude Code 使用本机，ChatGPT Work 等产品提供任务结束后重置的云电脑，Grokbot 则给每个 Agent 一台能长期保留状态的网页电脑。",
+    "note": "accept：原帖正文与候选描述一致，发表于 2026 年 8 月 17 日。限定：这是 Ethan Mollick 对现有产品路线的观察，不是完整市场分类；产品形态可能继续变化。"
+  },
+  {
+    "id": "unitree-superman",
+    "status": "accept",
+    "section": "industry",
+    "label": "Unitree 称新机器人能跳两米、时速 45.5 公里",
+    "url": "https://x.com/teortaxesTex/status/2089258242094268763",
+    "body": "演示帖称它腿长 0.85 米，开发只有三个多月。目前只有厂商展示，没有独立测试。",
+    "note": "accept：转发页完整带出 Unitree 原帖，原帖数字为原地跳高 2 米、最高速度 12.66 米每秒，换算约 45.6 公里每小时。限定：全部是厂商展示口径；Teortaxes 对 2027 年销量的预测未写入文案。"
+  },
+  {
+    "id": "crisis-video-detectors",
+    "status": "accept",
+    "section": "papers",
+    "label": "现实危机视频传开以后，AI 检测器更容易失灵",
+    "url": "https://huggingface.co/papers/2608.14391",
+    "body": "新基准收集 17886 段战争、灾害和公共事件视频，测试传统检测器、多模态模型和专门微调模型，没有一类方法能稳定识别；骗过人的视频也往往更难被机器发现。",
+    "note": "accept：论文 2026 年 8 月 14 日发布，8 月 17 日提交到 Hugging Face Papers。摘要给出 1830 段真实锚点视频、16056 段由四个开源和五个闭源生成器制作的视频，并测试七个传统检测器、十个零样本多模态模型和两个专门微调模型。限定：本地材料只有论文摘要，没有各方法的具体失败率；数字和结论均来自作者实验。与近期低频音频攻击、文本水印主线不重复。"
+  },
+  {
+    "id": "mobilemem",
+    "status": "suspect",
+    "section": "papers",
+    "label": "MobileMem 用一年跨度的手机经历测试长期记忆",
+    "url": "https://huggingface.co/papers/2608.13606",
+    "body": "它把用户与 App 的会话合成为连贯的长期轨迹，要求 Agent 处理时间推理、知识更新和隐含偏好，不是直接记录某个人一整年的真实手机生活。",
+    "note": "suspect：页面可核，论文 2026 年 8 月 11 日发布，8 月 17 日提交到 Hugging Face Papers。摘要只介绍基准和框架，没有数据规模、真实用户数量、模型成绩或隐私处理细节。dup_suspect：8 月 15 日刚报过 LycheeMemory V2，本篇虽从对话记忆换成一年跨度的多模态手机轨迹，但仍属 Agent 长期记忆主线；若不能从论文正文补出明显的新结果，建议丢弃。"
+  },
+  {
+    "id": "claude-system-prompts",
+    "status": "reject",
+    "section": "official",
+    "label": "Claude 上线系统提示词说明页",
+    "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+    "body": "本地抓取只读到加载占位，无法确认公开了哪些模型、哪些版本或多少提示词。",
+    "note": "reject：fetch_failed。链接和页面标题可核，但正文只有重复的 Loading；manifest 也只说明这是官方系统提示词发布页，不能据此猜测公开范围和版本变化。若主 agent 不能用浏览器补到正文，建议直接丢弃。"
+  },
+  {
+    "id": "mathcode",
+    "status": "accept",
+    "section": "industry",
+    "label": "MathCode 给编码 Agent 加了 Lean 证明环境",
+    "url": "https://math-ai-org.github.io/mathcode/",
+    "body": "输入普通语言的数学题，它会先改写成 Lean 4 定理，再反复编译、读报错和修证明；代码与安装说明已经开放。",
+    "note": "accept：项目页正文可核，提供 GitHub 仓库、安装命令、终端与网页界面，并列出持久化 Lean REPL、定理库、子目标树和多规划器。限定：默认后端依赖 Codex CLI，只支持 macOS arm64 或 Linux x86_64；页面没有成功率、基准对比或独立实测，不能采用 Frontier 等宣传措辞。"
+  },
+  {
+    "id": "dario-longtweet-joke",
+    "status": "accept",
+    "section": "fun",
+    "label": "大家都说 Dario 长帖重要，但谁也没读",
+    "url": "https://x.com/tszzl/status/2088805338049122679",
+    "body": "两个人互相引用他，又互相问看没看过，答案都是「没有」。",
+    "note": "accept：原帖正文完整可核，发表于 2026 年 8 月 16 日。内容是对围绕 AI 长文形成二手共识的直接调侃，没有额外事实主张。"
+  },
+  {
+    "id": "expensive-model-users",
+    "status": "accept",
+    "section": "fun",
+    "label": "Claude 的价格替它筛掉了难伺候用户",
+    "url": "https://x.com/teortaxesTex/status/2089258916714537026",
+    "body": "玩笑说，Claude 训练得好，是因为高价挡住了 DeepSeek 不幸遇到的那批用户。",
+    "note": "accept：转发页完整带出原回复，Teortaxes 只评论了 Truth nuke。限定：这是把价格、用户群体和训练反馈连在一起的玩笑，不是关于训练数据或用户质量的可核统计。"
+  },
+  {
+    "id": "agi-64",
+    "status": "accept",
+    "section": "fun",
+    "label": "AGI 登上 Commodore 64，不过这次是冒险游戏解释器",
+    "url": "https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64",
+    "body": "AGI-64 已经能完整运行《Space Quest 1》，引擎仍在测试，目标是支持大多数同年代 Sierra 游戏。",
+    "note": "accept：项目公告发表于 2026 年 8 月 15 日，正文称解释器约完成《Space Quest 1》所需功能的 75％，游戏目前已完整可玩，完成后会免费提供，玩家需自备游戏文件。限定：这里的 AGI 是 Adventure Game Interpreter，与通用人工智能无关。"
+  },
+  {
+    "id": "future-research-samples",
+    "status": "suspect",
+    "section": "fun",
+    "label": "NASA 把月球样本留给还没出现的仪器",
+    "url": "https://www.lesswrong.com/posts/mEde7bhzK4eKQqWGi/those-who-make-history",
+    "body": "部分阿波罗样本密封了近 50 年；后来新质谱仪从旧样本中测出水，2022 年开封的容器又用 1972 年没有的技术提取出月球气体。",
+    "note": "suspect：文章发表于 2026 年 8 月 11 日，NASA 样本只是作者论证保存与冷冻复苏的开场案例，并非当天的新公告。原文可核到 2008 年测出水和 2022 年开启最后一批密封容器的叙述，但本轮没有继续打开其脚注来源交叉验证；与 AI 主线关系弱，若乐子区篇幅紧建议丢弃。"
+  }
+]

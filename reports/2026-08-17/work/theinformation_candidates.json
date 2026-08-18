@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-17",
+  "scanned_at": "2026-08-17T17:41:15+08:00",
+  "window": "接续 2026-08-16 期在 2026-08-17 00:27 北京时间完成的手工扫描，只看此后进入 Latest 的内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫描 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Stripe Finalizes $7 Billion-Plus Deal for OpenRouter",
+      "url": "https://www.theinformation.com/briefings/stripe-finalizes-7-billion-plus-deal-openrouter",
+      "published_at": "2026-08-16T18:19:00-07:00",
+      "published_at_beijing": "2026-08-17T09:19:00+08:00",
+      "bucket_hint": "industry_silver_or_none",
+      "decision": "加入定牌候选",
+      "facts": [
+        "Stripe 已完成以超过 70 亿美元收购 OpenRouter 的交易。",
+        "OpenRouter 帮助开发者在不同 AI 模型之间切换，并在开发者购买模型调用额度时收取少量费用。",
+        "OpenRouter 数月前一轮融资的估值为 13 亿美元；截至 4 月，其年化收入约 5000 万美元，较去年 10 月增长五倍。",
+        "The Information 此前曾报道，这笔现金加股票交易的估值可能接近 100 亿美元；最终价格低于该口径。"
+      ],
+      "caveats": [
+        "这条 Briefing 明确标注 Bloomberg 为消息来源，不是 The Information 独家。",
+        "正文只说明交易已经完成，没有披露最终现金与股票的具体拆分。"
+      ],
+      "why": "收购把多模型路由入口纳入支付公司，价格相对数月前估值大幅跃升，也能说明企业正在把模型选择和成本控制当成独立基础设施。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "The Briefing",
+      "title": "Workday's Potential Buyout Feeds Hope Saas Sell-off Is Over",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/workdays-potential-buyout-feeds-hope-saas-sell",
+      "published_at": "2026-08-16T15:00:00-07:00",
+      "published_at_beijing": "2026-08-17T06:00:00+08:00",
+      "bucket_hint": "angle_none_or_industry_none",
+      "decision": "加入定牌候选",
+      "facts": [
+        "Silver Lake 洽谈收购 Workday 的消息一度令后者股价上涨 19％，但第二天又回落近 4％，其他软件股也普遍回吐涨幅。",
+        "UBS 的软件研究负责人称，不少大公司希望随着模型性能提高和定制替代品成熟，未来三年把对部分软件供应商的支出降低 30％。",
+        "Workday 截至 1 月的财年产生了 28 亿美元自由现金流，但其股价年内仍下跌 7％；潜在收购被市场视为低迷 SaaS 公司是否仍有退出路径的试金石。",
+        "文章判断，目前的软件股反弹既可能来自技术性轮动，也可能来自并购预期，尚不足以证明 AI 驱动的 SaaS 抛售已经结束。"
+      ],
+      "caveats": [
+        "Silver Lake 与 Workday 的交易仍处于洽谈阶段，公开报道没有给出收购价。",
+        "企业削减软件预算的 30％是分析师转述的客户意向，不是已经发生的总体行业数据。"
+      ],
+      "why": "不是单一 AI 产品新闻，而是 AI 如何改变企业软件采购、估值和私募并购逻辑的结构性材料；如果当天硬新闻足够多，可以降为无牌或不收。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Nebius and CoreWeave Tout Short-Term Cloud Deals, While AWS Goes Long",
+      "url": "https://www.theinformation.com/articles/nebius-coreweave-tout-short-term-cloud-deals-aws-goes-long",
+      "reason": "已在 2026-08-16 期的 theinformation_candidates.json 精读并留候选，本期不重复。"
+    },
+    {
+      "title": "A Slew of Deals Appears to End the Malaise for Battery Startups",
+      "url": "https://www.theinformation.com/newsletters/the-electric/slew-deals-appears-end-malaise-battery-startups",
+      "reason": "时间窗内新文，但主题是电池初创企业交易，与本期 AI 日报关系不足。"
+    },
+    {
+      "title": "Tesla Studied Lamborghini Sports Car and Lockheed Spyplane for New Roadster Development",
+      "url": "https://www.theinformation.com/briefings/tesla-studied-lamborghini-sports-car-lockheed-spyplane-new-roadster-development",
+      "reason": "时间窗内新简讯，但主题是特斯拉跑车开发，与 AI 日报无直接关系。"
+    }
+  ]
+}

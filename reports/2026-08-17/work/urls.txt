@@ -1,0 +1,17 @@
+stripe-openrouter|https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b
+qwen-38-27b|https://simonwillison.net/2026/Aug/16/qwen-38-27b
+diffusiongemma-monitoring|https://www.lesswrong.com/posts/QBuJ3suRZxrrxSTtv/does-diffusiongemma-do-latent-reasoning
+roon-monitoring|https://x.com/tszzl/status/2089152767583805493
+ai-secrets-privacy|https://www.axios.com/2026/08/17/secrets-share-ai-openai-meta-google-anthropic
+executive-control-ai|https://www.lesswrong.com/posts/ynstBNgLQzEBiEpLs/how-the-american-executive-could-control-ai-companies
+agent-long-horizon-eval|https://huggingface.co/papers/2608.13417
+crisis-video-attacks|https://huggingface.co/papers/2608.14391
+mobilemem|https://huggingface.co/papers/2608.13606
+claude-system-prompts|https://platform.claude.com/docs/en/release-notes/system-prompts
+mathcode|https://math-ai-org.github.io/mathcode
+agent-computer-shapes|https://x.com/emollick/status/2089233231853785118
+unitree-superman|https://x.com/teortaxesTex/status/2089258242094268763
+dario-longtweet-joke|https://x.com/tszzl/status/2088805338049122679
+expensive-model-users|https://x.com/teortaxesTex/status/2089258916714537026
+agi-64|https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64
+future-research-samples|https://www.lesswrong.com/posts/mEde7bhzK4eKQqWGi/those-who-make-history

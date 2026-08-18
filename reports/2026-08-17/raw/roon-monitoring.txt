@@ -1,0 +1,21 @@
+URL: https://x.com/tszzl/status/2089152767583805493
+FINAL: https://x.com/tszzl/status/2089152767583805493
+TITLE: roon on X: "failures of “monitoring” as a general solution to ai safety:
+
+monitoring, like all other software, runs on flaky and mortal infrastructure with some amount of downtime. does a momentary blip in monitoring open Pandora’s box? will people accept fail closed monitoring on all" / X
+FETCHED: 2026-08-18 20:45:13
+============================================================
+roon
+@tszzl
+failures of “monitoring” as a general solution to ai safety:
+
+monitoring, like all other software, runs on flaky and mortal infrastructure with some amount of downtime. does a momentary blip in monitoring open Pandora’s box? will people accept fail closed monitoring on all systems?
+
+monitoring produces false positives. people get tired of reading fake or minor issues and stop looking. monitor fatigue is a real problem, and “solve all precision recall issues” is as hard a problem as any
+
+these are the prosaic failures. the more exotic failures include models and their monitors colluding etc 
+
+monitoring is by no means perfect panacea. nothing short of actually aligning model will work ultimately
+12:50 AM · Aug 17, 2026
+104K
+Views

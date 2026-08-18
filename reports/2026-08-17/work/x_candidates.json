@@ -1,0 +1,152 @@
+{
+  "date": "2026-08-17",
+  "scanned_at": "2026-08-17T17:41:15+08:00",
+  "window": "2026-08-16 晚间留存至 2026-08-17 扫描时",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取；Nitter 仅保留失败诊断",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现 3 条时间窗内 AI 观点或实测"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-03，无时间窗内新帖"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-02，无时间窗内新帖"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-11，无时间窗内新帖"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "发现 1 条可讨论的 AI 安全观点、1 条乐子和 1 条行业资助观点"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "最新帖子仍是 2026-08-14 已报的 GPT-5.6 Sol Ultrafast 转发"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "发现 Unitree 机器人线索、DeepSeek 观点和 1 条用户群体乐子"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "AI Agent 正在尝试三种不同的电脑形态",
+      "url": "https://x.com/emollick/status/2089233231853785118",
+      "datetime": "2026-08-17T06:09:53.000Z",
+      "bucket_hint": "angle_or_radar",
+      "text": "Ethan Mollick 对比了三条路线：Codex 和 Claude Code 使用用户本机，ChatGPT Work 等产品给 Agent 一台任务结束即重置的云端电脑，Grokbot 则给每个 Agent 一台持久化的网页电脑。",
+      "why": "是一手产品形态观察，适合与 Agent 基础设施或电脑使用材料组合；单独成牌的信息量偏少。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "开源视频模型已能在本地三分钟生成带声音短片",
+      "url": "https://x.com/emollick/status/2089185499197911391",
+      "datetime": "2026-08-17T03:00:12.000Z",
+      "bucket_hint": "radar_or_fun",
+      "text": "Ethan Mollick 称，他在本地电脑运行开放权重视频生成模型 MiniMax H3，用约三分钟生成了一段带声音的水獭在飞机上使用笔记本电脑的视频。",
+      "caveats": [
+        "这是个人展示，不是标准化速度或质量评测。",
+        "帖子没有在正文里列出具体硬件配置。"
+      ],
+      "why": "能给出本地开放权重视频生成的直观进展，但缺少硬件和对照信息，最多放雷达或乐子。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 能提出治病方案，离真正治病还隔着临床试验",
+      "url": "https://x.com/emollick/status/2089156476568842516",
+      "datetime": "2026-08-17T01:04:53.000Z",
+      "bucket_hint": "angle",
+      "text": "Ethan Mollick 认为，所谓 AI 治愈疾病，更准确的说法可能只是数据中心里的大量智能提出理论上有效的方案；从方案走到真实试验、证据和 FDA 批准之间仍有很大距离。",
+      "why": "与 08-16 已报的 AI 药物发现临床成功率材料高度相关，可作为补充观点，但不应把同一主线重复成独立条目。"
+    },
+    {
+      "source": "x-roon",
+      "title": "监控不是 AI 安全的万能解法",
+      "url": "https://x.com/tszzl/status/2089152767583805493",
+      "datetime": "2026-08-17T00:50:09.000Z",
+      "bucket_hint": "angle_or_deep_none",
+      "text": "Roon 列出监控方案的几类失败：基础设施会宕机，失败时究竟开放还是关闭系统都很棘手；误报会造成监控疲劳；更极端时，模型和监控器还可能串通。他随后补充，思维链监控对今天的模型仍然非常有效，只是不是最终万能药。",
+      "why": "观点有完整机制和自我限定，适合与具体监控研究组合；单凭个人长帖不宜升牌。"
+    },
+    {
+      "source": "x-roon",
+      "title": "大家都说 Dario 长帖重要，但谁也没读",
+      "url": "https://x.com/tszzl/status/2088805338049122679",
+      "datetime": "2026-08-16T01:49:35.000Z",
+      "bucket_hint": "fun",
+      "text": "两个人互相说 Dario 讲过这件事，又互相问有没有读他的长帖，结果两个人都没读。",
+      "why": "直接调侃 AI 圈围绕长文形成二手共识，符合乐子需要与人和技术关系有关的要求。"
+    },
+    {
+      "source": "x-roon",
+      "title": "模型公司把对齐外部成本交给了公益研究机构",
+      "url": "https://x.com/tszzl/status/2088761995659231359",
+      "datetime": "2026-08-15T22:57:21.000Z",
+      "bucket_hint": "angle",
+      "text": "Roon 认为，模型训练公司把相当一部分对齐外部成本交给 METR、Redwood、Apollo 和 Goodfire 等组织承担，应该向自己信任的机构投入数十亿美元。",
+      "caveats": [
+        "这是倡议性观点，不是已宣布的资助计划或可量化行业统计。"
+      ],
+      "why": "可以作为 AI 安全公共品融资的观点线索，但独立事实不足。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "Unitree 展示两米原地跳高、时速 45.5 公里的新机器人",
+      "url": "https://x.com/teortaxesTex/status/2089258242094268763",
+      "datetime": "2026-08-17T07:49:16.000Z",
+      "bucket_hint": "radar_or_fun",
+      "sources": [
+        {
+          "name": "Teortaxes 转述",
+          "url": "https://x.com/teortaxesTex/status/2089258242094268763"
+        },
+        {
+          "name": "Unitree 原帖",
+          "url": "https://x.com/UnitreeRobotics"
+        }
+      ],
+      "text": "Unitree 的展示帖称，新机器人原地跳高 2 米，最高速度 12.66 米每秒，腿长 0.85 米；Teortaxes 转述称该机器只开发了三个多月，后续仍有较大改进空间。",
+      "caveats": [
+        "这是厂商展示数字，尚无独立测试。",
+        "Teortaxes 对 2027 年销量的判断是个人预测，不应写成事实。"
+      ],
+      "why": "数字直观且有官方展示视频，可进入雷达或乐子；若当天机器人材料拥挤则不收。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "贵模型的价格也许替它筛掉了一批难伺候用户",
+      "url": "https://x.com/teortaxesTex/status/2089258916714537026",
+      "datetime": "2026-08-17T07:51:56.000Z",
+      "bucket_hint": "fun",
+      "text": "有人开玩笑说，Claude 得到更好的训练，是因为它的价格替它筛掉了 DeepSeek 不幸遇到的那类用户；Teortaxes 转发称其为真理炸弹。",
+      "why": "是模型定价、用户群体和反馈数据关系的 AI 圈乐子。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/tszzl/status/2089235344768270696",
+      "reason": "帖子正文只有图片，没有读到可核的文字事实。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2089255152360337566",
+      "reason": "只是对 DeepSeek 产品节奏和外界观感的个人判断，没有新增可核事实。"
+    },
+    {
+      "url": "https://x.com/sama/status/2088101491802243121",
+      "reason": "GPT-5.6 Sol Ultrafast 已在 08-14 日报报道。"
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "date": "2026-08-17",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Stripe 以超过 70 亿美元买下多模型路由入口 OpenRouter",
+      "cost": "中",
+      "reason": "同一交易在 The Information 和 HN 高票链接中出现，合并为一组；收购已经从传闻变成完成，且最终价格低于此前接近 100 亿美元的口径。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Stripe Finalizes $7 Billion-Plus Deal for OpenRouter",
+          "url": "https://www.theinformation.com/briefings/stripe-finalizes-7-billion-plus-deal-openrouter",
+          "date": "2026-08-17T09:19:00+08:00",
+          "why": "离线候选记录称 Stripe 已完成超过 70 亿美元的现金加股票收购；OpenRouter 数月前估值为 13 亿美元，截至 4 月年化收入约 5000 万美元。正文标注 Bloomberg 为消息来源，reader 需核最终交易条件。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Stripe will reportedly acquire OpenRouter for $7B+",
+          "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b",
+          "date": "2026-08-16T20:31:16Z",
+          "why": "HN 348 分、216 条评论，是同一事件的公开报道入口；与 The Information 候选合并去重，reader 可用来核公开口径和社区反应。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Qwen 3.8 27B 已能在笔记本本地跑，但默认会严重过度思考",
+      "cost": "中",
+      "reason": "这是开放权重模型的独立本地实测，既有硬件与量化版本信息，也出现默认推理强度带来的明显使用代价。",
+      "items": [
+        {
+          "source": "simon-willison",
+          "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+          "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+          "date": "2026-08-16T22:00:39+00:00",
+          "why": "Simon Willison 在 M5 Max MacBook Pro 和 NVIDIA DGX Spark 上运行 17GB Q4_K_M 量化版，称模型表现出色，但默认 xhigh 推理强度造成夸张的过度思考；HN 同 URL 458 分、205 条评论。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "扩散语言模型的中间向量大体可监控，少数承载计算的例子仍保持可解释",
+      "cost": "重",
+      "reason": "它直接检验 DiffusionGemma 是否借扩散步骤形成不可见的串行推理，并给出对既有监控结论的加强与限定。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Does DiffusionGemma do latent reasoning?",
+          "url": "https://www.lesswrong.com/posts/QBuJ3suRZxrrxSTtv/does-diffusiongemma-do-latent-reasoning",
+          "date": "Sun, 16 Aug 2026 07:31:42 GMT",
+          "why": "摘要称 top-k 投影的性能损失主要来自采样器，保留 top-1 仍能维持良好性能；少数分布向量确实承担计算，但表现为仍可解释的叠加。需核实验范围、任务和失败案例。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "AI 公司不只拿聊天数据训练模型，也可能用它维持记忆、推荐与广告",
+      "cost": "中",
+      "reason": "Axios 把隐私问题从训练数据扩展到当下的个性化、记忆和说服用途，且涉及消费者规则空白与产品新功能。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "What happens to what you share with AI",
+          "url": "https://www.axios.com/2026/08/17/secrets-share-ai-openai-meta-google-anthropic",
+          "date": "Mon, 17 Aug 2026 09:00:04 +0000",
+          "why": "摘要称少有规则直接约束 AI 公司如何在当前产品中使用用户透露的私密信息，并提到 OpenAI 新公布的可选 Computer History 功能；reader 需核各家公司具体政策差异。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "美国行政部门有哪些单方面控制 AI 公司的法律工具",
+      "cost": "重",
+      "reason": "这是对 AI 公司监管权力结构的成体系梳理，涉及国防生产法、出口控制、国家安全叙事以及国会和法院制衡是否可靠。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "How the American Executive Could Control AI Companies",
+          "url": "https://www.lesswrong.com/posts/ynstBNgLQzEBiEpLs/how-the-american-executive-could-control-ai-companies",
+          "date": "Fri, 14 Aug 2026 17:15:47 GMT",
+          "why": "摘要以国防部与 Anthropic 的争议、国防生产法威胁和模型出口控制为例，主张美国行政部门会持续深度介入 AI 治理；需核具体法条、案例准确性和作者对制衡失灵的论证。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "hacker-news",
+      "title": "Claude: System Prompts",
+      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+      "date": "2026-08-16T12:48:21Z",
+      "note": "Claude 官方系统提示词发布说明，HN 659 分、255 条评论；适合核公开范围和版本变化。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The AI Credit Resale Economy",
+      "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+      "date": "2026-08-16T14:44:55Z",
+      "note": "讨论模型调用额度转售和 token 经纪人，HN 286 分、117 条评论；属于 AI 基础设施成本链条的灰色市场线索。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "MathCode, Mathematical Coding Agent",
+      "url": "https://math-ai-org.github.io/mathcode",
+      "date": "2026-08-16T18:17:10Z",
+      "note": "数学编码 Agent 项目，HN 90 分、28 条评论；与前期数学能力讨论不同，先作为工具雷达核任务和开放情况。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Red queen hypothesis – A new way forward for self-improving AI",
+      "url": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
+      "date": "2026-08-16T20:01:13Z",
+      "note": "剑桥大学发布的自我改进 AI 假说线索，HN 60 分、14 条评论；需核是否有论文、代码或真实实验，避免与已报 Agent Harness 主线混同。"
+    },
+    {
+      "source": "the-information",
+      "title": "Workday's Potential Buyout Feeds Hope Saas Sell-off Is Over",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/workdays-potential-buyout-feeds-hope-saas-sell",
+      "date": "2026-08-17T06:00:00+08:00",
+      "note": "Silver Lake 洽购 Workday 的消息被市场视为 SaaS 是否仍有退出路径的试金石；文中转述部分企业希望三年内削减 30％软件支出，但交易和预算意向都尚未落地。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI Agent 正在尝试三种不同的电脑形态",
+      "url": "https://x.com/emollick/status/2089233231853785118",
+      "date": "2026-08-17T06:09:53.000Z",
+      "note": "Ethan Mollick 对比本机电脑、任务后重置的云电脑和持久化网页电脑三条 Agent 产品路线；是一手产品形态观察。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "开源视频模型已能在本地三分钟生成带声音短片",
+      "url": "https://x.com/emollick/status/2089185499197911391",
+      "date": "2026-08-17T03:00:12.000Z",
+      "note": "个人展示称开放权重 MiniMax H3 在本地约三分钟生成带声音短片；没有硬件配置和标准化对照，限作进展线索。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "Unitree 展示两米原地跳高、时速 45.5 公里的新机器人",
+      "url": "https://x.com/teortaxesTex/status/2089258242094268763",
+      "date": "2026-08-17T07:49:16.000Z",
+      "note": "厂商展示称机器人原地跳高 2 米、最高速度 12.66 米每秒；尚无独立测试，Teortaxes 的销量判断不应写成事实。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Quoting Dario Amodei",
+      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei",
+      "date": "2026-08-16T15:05:36+00:00",
+      "note": "Dario Amodei 把公众对 AI 的负面看法归为信任危机，并称 AI 公司尚未兑现造福世界的宏大承诺；属于公司领导者的明确表态。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Markdown SVG upgrades",
+      "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades",
+      "date": "2026-08-16T23:59:37+00:00",
+      "note": "浏览器内把 Markdown 中的 SVG 渲染并导出 PNG 或 JPEG 的工具升级，适合作为轻量工具雷达。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Rerunning AI safety papers on every frontier release would be pretty easy and valuable",
+      "url": "https://www.lesswrong.com/posts/oKxc8maZGtnzgpNzx/rerunning-ai-safety-papers-on-every-frontier-release-would-1",
+      "date": "Sat, 15 Aug 2026 09:01:41 GMT",
+      "note": "Second Look Research 倡议在每次前沿模型发布后重跑安全论文，并称已在 GPT-5.5 等新模型上复核部分思维链可监控与 filler token 结果；需核具体数据。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Q2.5 2026 Timelines Update: Uplift and Revenue",
+      "url": "https://www.lesswrong.com/posts/ZPSsmRH5oMwLPXys4/q2-5-2026-timelines-update-uplift-and-revenue",
+      "date": "Sun, 16 Aug 2026 20:15:48 GMT",
+      "note": "AI Futures Model 的新一轮时间线更新称预测略微提前、证据基础改善，但摘要未给出关键概率，reader 需核模型变更和数值。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+      "url": "https://huggingface.co/papers/2608.13417",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；系统评估长程 AI 研发 Agent，不只看最终得分，需核任务、轨迹指标和数据开放情况。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+      "url": "https://huggingface.co/papers/2608.14391",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；系统评测现实危机事件中的生成视频攻击、防御检测器和传播环节，属于独立攻防方向。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Forecast Collapse in Time-Series Foundation Models",
+      "url": "https://huggingface.co/papers/2608.14106",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；标题指向时间序列基础模型的预测崩塌现象，需核触发条件、模型范围和失效幅度。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "MobileMem: Learning from a Year of Mobile Experiences",
+      "url": "https://huggingface.co/papers/2608.13606",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；从一年手机使用经历中学习的记忆系统，需核数据来源、隐私处理和真实任务表现。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Multimodal Model Diffing for Feature Discovery and Control",
+      "url": "https://huggingface.co/papers/2608.09928",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；用多模态模型差分发现并控制特征，属于已报内部概念信号主线所要求的论文级新证据，需核是否独立复现。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Second Thought: Reasoning in Parallel as LLM Agents Act and Observe",
+      "url": "https://huggingface.co/papers/2608.13667",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；让 Agent 在行动和观察时并行推理，需核是否改善长程任务以及额外延迟。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "UNMASK: Discovering and Causally Verifying Spurious Shortcuts in Text Classifiers",
+      "url": "https://huggingface.co/papers/2608.09209",
+      "date": "",
+      "note": "本日 Hugging Face 论文榜单线索；发现并因果验证文本分类器的虚假捷径，方法与代码开放情况待核。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "acx",
+      "title": "Your Book Review: The Escape Artist",
+      "url": "https://www.astralcodexten.com/p/your-book-review-the-escape-artist",
+      "date": "Fri, 14 Aug 2026 22:21:13 GMT",
+      "note": "ACX 书评大赛第五位入围者，适合作为非 AI 长读备选。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "How to Answer a Question Without Answering The Question",
+      "url": "https://www.lesswrong.com/posts/g9PNBCkfHAcyMcobz/how-to-answer-a-question-without-answering-the-question",
+      "date": "Fri, 14 Aug 2026 05:15:49 GMT",
+      "note": "总结如何把难答的问题偷换成更容易回答的问题，适合当作政治访谈和职场沟通观察。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "What happened when I tried to be vegan",
+      "url": "https://www.lesswrong.com/posts/YyKovtBvd7AceG2j2/what-happened-when-i-tried-to-be-vegan",
+      "date": "Thu, 13 Aug 2026 22:15:47 GMT",
+      "note": "从把纯素视为显然正确的伦理选择写起，转入个人饮食、健康和实践经历，适合作为理性主义生活长读。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Those Who Make History",
+      "url": "https://www.lesswrong.com/posts/mEde7bhzK4eKQqWGi/those-who-make-history",
+      "date": "Tue, 11 Aug 2026 20:45:47 GMT",
+      "note": "从 NASA 把阿波罗月球样本密封保存数十年、等待未来技术切入，延伸到给后人保留研究机会的思路。"
+    },
+    {
+      "source": "x-roon",
+      "title": "大家都说 Dario 长帖重要，但谁也没读",
+      "url": "https://x.com/tszzl/status/2088805338049122679",
+      "date": "2026-08-16T01:49:35.000Z",
+      "note": "两个人互相引用 Dario 的长帖，又发现彼此都没读，直接调侃 AI 圈围绕长文形成二手共识。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "贵模型的价格也许替它筛掉了一批难伺候用户",
+      "url": "https://x.com/teortaxesTex/status/2089258916714537026",
+      "date": "2026-08-17T07:51:56.000Z",
+      "note": "玩笑称 Claude 的高价替它筛掉了 DeepSeek 遇到的那类用户，把定价、用户群体和反馈数据连在了一起。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "AGI-64 Brings Sierra Adventures to the Commodore 64",
+      "url": "https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64",
+      "date": "2026-08-17T01:45:36Z",
+      "note": "把 Sierra 的 AGI 冒险游戏系统带到 Commodore 64，标题里的 AGI 还是老派 Adventure Game Interpreter。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The Life and Death of Direct File",
+      "url": "https://www.ischool.berkeley.edu/sites/default/files/vinton_report_5.pdf",
+      "date": "2026-08-17T00:17:57Z",
+      "note": "一份关于 Direct File 兴衰的 PDF，HN 186 分、91 条评论，适合作为数字政府项目史长读。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "A third world engineer responds to ‘RISC-V: They should have known better’",
+      "url": "https://rvembedded.com/blog_post/12",
+      "date": "2026-08-16T17:01:07Z",
+      "note": "从第三世界工程师视角回应 RISC-V 争论，HN 502 分、266 条评论，兼具技术社区冲突和全球开发条件差异。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2028 年前，预测市场会找到稳健交易 AI 灭绝风险的方法吗？",
+      "prob": "15.8％",
+      "volume_note": "累计交易量约 M$1,567；24 小时交易量为 0",
+      "url": "https://manifold.markets/IsaacKing/before-2028-will-any-prediction-mar"
+    },
+    {
+      "question": "Yudkowsky 输掉 UFO 赌局一年后，会把 UFO 现象与 AI 联系起来吗？",
+      "prob": "47.9％",
+      "volume_note": "累计交易量约 M$1,730；24 小时交易量为 0",
+      "url": "https://manifold.markets/FranklinBaldo/will-eliezer-yudkowsky-associate-th"
+    },
+    {
+      "question": "未来十年，Kelsey Piper 会因报道 AI 公司或实验室获得普利策奖吗？",
+      "prob": "15.4％",
+      "volume_note": "累计交易量约 M$11,193；24 小时交易量为 0",
+      "url": "https://manifold.markets/HWH/will-kelsey-piper-receive-a-pulitze"
+    },
+    {
+      "question": "Yudkowsky 会声称自己有超过 90％把握认为 AI 将杀死所有人吗？",
+      "prob": "27.9％",
+      "volume_note": "累计交易量约 M$15,871；24 小时交易量为 0",
+      "url": "https://manifold.markets/IhorKendiukhov/will-yudkowsky-claim-that-he-is-mor-f2h2nq5epx"
+    },
+    {
+      "question": "人类会消灭 AI 吗？",
+      "prob": "13.0％",
+      "volume_note": "累计交易量约 M$1,005；24 小时交易量为 0",
+      "url": "https://manifold.markets/TANSTAAFL/will-humanity-wipe-out-ai"
+    },
+    {
+      "question": "2040 年前会出现能把文本要求转成可折叠纳米机器聚合物序列的 AI 吗？",
+      "prob": "38.9％",
+      "volume_note": "累计交易量约 M$1,300；24 小时交易量为 0",
+      "url": "https://manifold.markets/IhorKendiukhov/will-we-have-a-text-to-polymerseque"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "interconnects",
+      "reason": "GLM-5.3 与 08-14 已报主线重叠，未见权重正式开放、API 上线、许可证或独立部署实测；教材宣传候选明显更旧。"
+    },
+    {
+      "slug": "lesswrong",
+      "reason": "剔除 AI #181、OpenAI 内部模型反思和 AI swarm 等网络安全事故承接稿；其余旧帖或倡议性观点按新鲜度和独立证据门槛降权。"
+    },
+    {
+      "slug": "hacker-news",
+      "reason": "Anthropic 文本水印批评未达到执行细则、正式方案、独立攻防或监管回应门槛；其余常规非 AI 工具和旧材料仅择少量进乐子。"
+    },
+    {
+      "slug": "hf-papers",
+      "reason": "榜单不给可靠发布日期，仅保留标题钩子明确的候选；LittleLearner 等疑似承接近期训练材料改变行为主线的论文，因摘要不足以证明更远迁移或独立复现而未收。"
+    },
+    {
+      "slug": "x-emollick／x-roon／x-teortaxes",
+      "reason": "浏览器登录态候选已离线合并；AI 治病观点与 08-16 药物发现临床成功率主线重叠，监控和对齐资助观点缺少独立事实，未升为条目。"
+    },
+    {
+      "slug": "anthropic／anthropic-research／claude-blog／deepmind／huggingface／openai／xai",
+      "reason": "抓取成功，但机械候选为零。"
+    }
+  ]
+}

@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64",
+  "title": "有人给 80 年代老电脑写冒险游戏解释器",
+  "date": "2026-08-17T01:45:36Z",
+  "reported": true,
+  "report_date": "2026-08-17"
+ },
+ {
+  "id": "https://math-ai-org.github.io/mathcode/",
+  "title": "MathCode 给编码 Agent 加了 Lean 证明环境",
+  "date": "2026-08-16T18:17:10Z",
+  "reported": true,
+  "report_date": "2026-08-17"
+ },
+ {
+  "id": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+  "title": "Stripe 花 70 多亿美元买下 OpenRouter",
+  "date": "2026-08-16T20:31:16Z",
+  "reported": true,
+  "report_date": "2026-08-17"
+ },
+ {
   "id": "https://www.dampfkraft.com/ghost-characters.html",
   "title": "日本编码标准里的几枚误字混进了 Unicode",
   "date": "2026-08-15T14:34:04Z",

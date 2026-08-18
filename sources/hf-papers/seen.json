@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.14391",
+  "title": "AI 视频传开以后更难检测",
+  "date": "2026-08-17",
+  "reported": true,
+  "report_date": "2026-08-17"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.13505",
   "title": "上海人工智能实验室发布科学 Agent 模型预览版",
   "date": "2026-08-16",

@@ -1,0 +1,229 @@
+URL: https://www.lesswrong.com/posts/ynstBNgLQzEBiEpLs/how-the-american-executive-could-control-ai-companies
+FINAL: https://www.lesswrong.com/posts/ynstBNgLQzEBiEpLs/how-the-american-executive-could-control-ai-companies
+TITLE: How the American Executive Could Control AI Companies — LessWrong
+FETCHED: 2026-08-18 20:45:18
+============================================================
+x
+How the American Executive Could Control AI Companies — LessWrong
+AI
+Frontpage
+69
+How the American Executive Could Control AI
+Companies
+by
+caiitlinm
+,
+Anders Cairns Woodruff
+14th Aug 2026
+16
+min read
+0
+69
+Some of the most notable American AI policies to date have been enacted by unilateral executive branch action. Consider the Department of Defense’s spat with Anthropic, and the resulting
+threats
+from Pete Hegseth to invoke the Defense Production Act (DPA) against them. Or the fleeting export controls on Claude Fable/Mythos 5, manifested as a vaguely worded, threatening
+letter
+from Howard Lutnick, which
+might not have been legally sound
+but were effective anyway.
+The executive branch of the United States government has numerous powers that can be used to unilaterally control AI companies. We think the US executive is likely to remain heavily involved in AI governance, because the national security and foreign policy narratives about AI that empower the executive will endure. Additionally, if AI progresses very quickly, the executive will be further emboldened because it is particularly quick to respond and often entrusted with crisis management. In instances where the executive acts beyond its lawful powers, we think checks from Congress and the courts will be unreliable in restraining the executive.
+In this post, we:
+Identify and explain particular federal statutes and laws that permit the executive to act unilaterally in ways that influence—if not directly control—US AI companies. We examine:
+Executive powers over domestic goods and resources. Acts like the DPA grant the president broad but vague authority.
+Executive powers over foreign transactions. Here, the law is clearer in delegations of executive power, but has been tested in cases like
+Learning Resources, Inc. v. Trump.
+Demonstrate why making threats (“bullying”) can be an effective strategy for the executive to influence US AI companies.
+Examine the relationship of Congress and courts to executive power. Congressional approval is required for actions like forcibly nationalizing US AI companies or infrastructure; this acts as a meaningful limitation on some actions. However, we find that inter-branch checks on executive power are likely unreliable in instances where the executive acts unlawfully.
+Our aim in writing this is to illustrate the specifics of American executive dominance: in which domains the executive
+is
+powerful, where certain ambiguities and possibilities for constraint lie, and where they
+can’t
+act alone.
+Thank you to
+Alex Mallen, Buck Shlegeris, Nick Marsh, Jackson Sipple, and Cody Rushing for feedback on earlier drafts.
+Executive power over goods and resources related to the AI industry
+Presidential authority over domestic AI companies operates at the level of the goods and intellectual property produced and assets held by these companies. To exert control at this layer, the president could:
+Use Title I of the Defense Production Act (DPA), which forces companies to prioritize pre-existing government contracts.
+For example, if the Department of Defense has an existing contract with an AI company to make weapons systems, but the company has signed other contracts promising non-government actors to deliver a product by a certain date, the DPA would force the company to forgo the private contract to fulfill the government one on time.
+However, it’s unclear whether Title I can be used to force companies to take
+new
+contracts
+,
+like Hegseth threatened Anthropic with in early 2026.
+Legal discourse highlights
+how the language in the Act itself is ambiguous; regulations implementing this part of the DPA require accepting new contracts, but also make exemptions if the company does not usually make that product.
+Use Title I of DPA to restrict or allocate critical domestic materials and facilities
+(e.g. compute, chips). This does not require a government contract: the Title gives the executive authority to prohibit certain sales or direct resources to particular buyers without the government itself being the buyer. For example, the president might order Google to use its GPUs to serve OpenAI’s models. It is unclear if this order would be lawful. Since the Cold War, allocation authorities have rarely been
+used
+; there is little precedent to determine the lawful scope of allocation authorities.
+Use Title I Section 103 of the DPA to fine or imprison individuals
+who interfere with the fulfillment of Title I DPA contracts.
+Use Title VII Section 705 of the DPA to obtain information
+relevant to administering or enforcing the DPA. This creates a possible mechanism for the executive to require specific evaluations or information about an AI company’s models or practices that could embolden other decisions. Biden’s EO 14110 drew in part from Section 705 in an attempt to establish a routine frontier AI company reporting scheme, but this never manifested and the order was eventually rescinded under Trump.
+Use the Invention Secrecy Act
+to block the publication, patenting, or production of research on AI capabilities to prevent other actors (within or outside the US) from catching up. The USG would maintain access to these “secrets.”
+Which options are most likely to be successfully used for AI? The executive is very likely to succeed in prioritizing contracts for models, hardware, and infrastructure. Prioritized contracts are extremely common. The DoD
+issues
+an estimated 300,000 priority-rated (DO and DX ratings) contracts per year. While the number of top-priority (DX-rated) contracts is much smaller, there are no functional restrictions or caps on assigning this rating besides requiring approval from the Secretary of Defense. Conversely, presidential authorities to force new contracts or allocate critical domestic materials are much more ambiguous.
+We generally see the resolution of ambiguities as context-dependent. While some presidents operate with more restraint, others might see ambiguities opportunistically and work to exploit them. A crisis scenario that requires urgent response (e.g. a large cyberattack on US infrastructure) likely prompts the executive to test ambiguous mechanisms. This would also bolster public-interest and national security narratives that executive authority is empowered by. We are uncertain how and if this ambiguity will be resolved, but we think it’s moderately likely the limits of executive authority will be tested in the near future.
+[1]
+Prioritized contracts could have two notable spillover effects:
+Fulfilling prioritized orders across a supply chain can generate soft allocation authority because prioritization can flow through manufacturers. For example, if a data center construction company has a DO-rated order, it can place DO-rated contracts on other companies that supply its parts (e.g. GPU manufacturers). This reallocates resources to a particular need specified by the government without having to invoke the more ambiguous direct allocation authority.
+If these contracts require specific development or deployment practices that can’t easily be applied to only government models, like pretraining only on vetted data, AI companies might adopt those practices for all of their models. Much like export controls can have domestic spillover effects that act pseudo-legislatively (e.g. effectively “banning” Fable), these contracts may provoke company-wide changes that then apply to non-contract business engagements.
+Finally, we think the DPA’s information authorities and the Invention Secrecy Act are
+presently
+less likely to be used for two reasons:
+There’s ambiguity in the language of Section 705, which potentially implies that information-related authorities can only be activated in service of a pre-existing use of the DPA (e.g. a rated contract).
+[2]
+For example, legal critiques of Biden’s executive order identified that relying on Section 705 to enforce a periodic reporting scheme was
+likely unlawful
+. However, if AI progress moves faster, or a warning shot is sufficient to prompt action, it’s possible the executive will try these authorities again over attempting to pass pre-deployment evaluation legislation or similar information laws.
+Many AI technologies are already patented (e.g. chips, EUV), and these can’t be unilaterally revoked. Frontier labs don’t typically produce patented products and instead just develop models with in-house techniques, so it’s unclear what the executive would actually control under the Invention Secrecy Act.
+Overall, we think the executive’s powers to redirect resources and command the rapid acquisition of products are highly relevant to influencing AI companies and related service providers. These powers could be used to consolidate AI production within one champion company, or get access to advanced AI technology that companies hesitate to sell. However, the outer limits of these powers remain uncertain.
+Executive power over foreign transactions can impact domestic AI companies
+Given broad foreign affairs powers, the president has various authorities that directly target transactions involving a foreign entity. Using these powers often affects domestic companies too.
+To control foreign transactions, the president could:
+Invoke the National Emergencies Act to gain a huge expanse of executive power.
+This includes the
+International Emergency Economic Powers Act
+, which permits the president to block transactions, sanction foreign actors, and freeze foreign assets. This would prevent other countries from investing in US AI companies in order to ensure they do not benefit from or interfere with their activities.
+Use export controls
+on inputs (chips, energy)
+and
+outputs (models, weights) to block other countries from accessing the AI supply chain.
+The
+Foreign Direct Product Rule
+extends American export controls to certain foreign-produced items that are the direct product of US-origin technology or software, or that are produced by equipment which is itself a direct product. For example, TSMC is subject to American export controls because their fabs run on tools that are themselves the output of American technology.
+Direct the Committee on Foreign Investment in the United States (CFIUS)
+to intervene in foreign investment relevant to US AI companies. CFIUS has executive power to investigate and attach strict conditions to foreign transactions such as mandatory board oversight. The president has delegated authority to suspend certain transactions and compel foreign divesture from American corporations.
+Beyond simply disrupting foreign AI development and supply chains, many of these actions have effects at the domestic and product level. For example, the Mythos and Fable export controls didn’t technically ban Anthropic from producing or deploying either model. However, deemed export laws meant foreign nationals within the US were also subject to export controls (though in what way was unclear, because the export controls were never litigated). Anthropic removed access anyway, achieving the same effect as a ban on these models. Doing a direct ban would require Congress to pass legislation, but “deemed export” rules may continue to work as an executive-only path equivalent to administering a ban. These maneuvers are useful in the instance that the executive wants to disrupt the productive capacity of American AI companies, whether for reasons of safety or belligerence.
+We think it is very likely that the executive uses these powers to fulfill AI governance objectives through the market. If the domestic mechanisms in the previous section are blocked or frustrated, the collateral effects of governing international transactions serve as an alternative pathway to controlling US AI companies.
+The executive might make threats to coerce actions it can’t directly elicit
+The executive could threaten the use of any of the mechanisms specified above to coerce companies into changing their actions in domains it can’t directly control. When contract negotiations between Anthropic and the Department of Defense (DoD) broke down, Pete Hegseth
+threatened
+to designate Anthropic as a supply chain risk and invoke the DPA to override Anthropic’s red lines on autonomous weapons (despite, as previously discussed, this threat’s questionable credibility). Similar threats might be used to coerce compliance with other standards. These threats are credible if the executive can legally follow through on the threat.
+For many potential goals, like changing corporate policy, the executive could lawfully make a threat and use a national-security pretext to justify actions that follow through on it. As we analyze later, courts are generally deferential to such pretexts.
+The executive can’t use its authorities to coerce individuals to give up constitutional rights or retaliate against the exercise of constitutional rights (even if those authorities are lawful in a vacuum). Threats leveraged against a company’s exercise of constitutional rights would therefore not be credible. For example, the executive can’t use threats to obtain private property, which is protected in the Fifth Amendment. SCOTUS held in
+Koontz v. St. Johns River Water Management District
+that officials can't use permitting leverage to extract concessions bearing no essential nexus or rough proportionality to the impacts of the proposed use, including when the demand is for money and when the permit is denied outright.
+However, unless companies sue the executive for unlawful actions, courts can’t intervene. Even when a company is confident it would win in court, relief might not be granted quickly, so the immediate cost of executive retaliation might be enough to make it give in. The Trump administration filed executive orders revoking security clearances and terminating contracts with law firms
+accused
+of targeting administration officials and using DEI policies to enable discriminatory hiring processes. While some firms
+went to court
+, Paul, Weiss instead
+struck a deal
+with the administration. Similarly, the Trump administration withheld Biden-era investment until Intel agreed to give the government a
+9.9% share
+.
+It’s hard to predict if this threat would be effective in coercing companies. During a fast takeoff, the leading AI company might be vital to the US’s national security strategies, which could make the president unwilling to follow through with destructive actions. But it’s plausible the president could compel at least minor changes in corporate policy. If multiple AI companies have comparable products, then threats are more credible, since the US government has alternative suppliers for security-critical AI technologies.
+Inter-branch constraints on executive power are weak
+In this section, we describe how Congressional and judicial checks on executive power work, and why they might be weak at a structural or legal level. However, the actual effect of checks and constraints is often contingent on circumstance: the individual voting behaviour of Congress members, or the particular circuit that takes a court case. This means we cannot state that any check will certainly work or certainly fail. We are overall pessimistic about the efficacy of these constraints.
+The judiciary may be permissive in matters of AI governance
+In this post, we’ve identified areas where the president or executive is
+not
+authorized to act. However, we acknowledge that courts are limited in their capacity—and possibly their incentives—to constrain unlawful presidential actions.
+We are ultimately uncertain and somewhat pessimistic about the ability of judicial checks to stop unlawful executive actions. We think that national security narratives related to AI are likely to create a degree of judicial permissiveness with regard to unilateral executive action.
+Passivity
+Courts do not intervene on their own initiative: a case must reach them with evidence of demonstrable or impending harm. If affected parties don’t challenge actions, even if they are overtly illegal, courts cannot act. Further, Congress has power over the court’s jurisdiction: it can
+pass legislation that restricts judicial review
+of certain federal executive or legislative actions. While mechanisms like injunctions can be used by courts to pause actions while their lawfulness is being adjudicated, they must be persuaded to do so. Especially in matters regarding AI, it is unclear whether injunctions will be enacted against a government body.
+The court empowers the executive in national security
+The “national interest” has been invoked by the executive to justify everything from starting wars to using
+the DPA for baby formula
+. Actions framed by the executive as in the national interest, or critical for matters of national security, are generally granted broad leeway by the courts. The
+June 2026 Executive Order states
+frames its “America First cybersecurity effort” as one that “enhances both our national security and our global AI dominance.” National security narratives about AI mean the executive is empowered to govern AI, including by the courts themselves.
+AI-related national security efforts operate in the domain of foreign policy: export controls, military accumulation, and suspicion of foreign entities. At the same time, the executive blurs the distinction between internal and foreign affairs by asserting that certain domestic policies act in service of national security interests. This logic has
+already been used by the Justice Department
+, when it intervened to argue in favour of throwing out a case against xAI’s Colossus 2 natural gas turbines in federal court.
+Courts have given the executive substantial leeway during true national crises. During World War I, the executive was allowed to egregiously violate free speech protections. SCOTUS upheld race-based internment based on a fabricated military-necessity justification in World War II. If AI progress poses an existential risk to the US, it is plausible courts will uphold unconstitutional actions or avoid ruling on the merits of a case, as they did during the American Civil War with habeas c
+orpus
+cases like
+Ex parte Vallandigham
+. Beyond national security, courts can actively empower the executive—
+recent SCOTUS rulings
+explicitly delegate more power to the president alone.
+Failed enforcement of court rulings
+Lastly, the executive might ignore or slow-walk court rulings. Since courts don’t have an independent enforcement arm, there is little recourse if their rulings are disregarded. Already, the Trump administration has
+repeatedly defied
+lower court rulings on immigration with little consequence. SCOTUS rulings will probably carry more political weight than lower courts, but the executive might still find ways to stall enforcing these rulings, as they did with
+Kilmar Abrego Garcia
+.
+Congress controls money and legislation
+There are two relevant sets of constraints Congress holds: over government spending, and over the legislation that ultimately delegates the executive its power.
+Nationalization and appropriation require congressional approval
+Congress controls government finances, and could refuse to fund executive decisions. Individual committees draft spending bills to determine program and project funding. Still, many forms of executive action, like implementing export controls or prioritizing contracts, don’t require restrictively large sums of money, and are financed through an agency’s standard operating budget. For example, the DoD already has designated DPA Title III funds
+that it regularly uses
+. In the last five fiscal years (2020-2025) DPA Title III funds totaled a modest $4.4 billion USD, though the
+DoD is seeking an increase
+to approximately $30 billion for the 2027 fiscal year.
+Contracts and export controls might not produce the executive’s desired amount of influence or outcomes. One way of gaining a lot of control over AI, then, is directly taking over an AI company; this requires Congressional approval.
+Authority related nationalization requires a delegating act from Congress (like for
+airport security in 2001
+). These are typically specific. They can permit the seizure of property for a particular project or narrow scope of projects, like how the Department of Homeland Security only has eminent domain authority when relevant to border infrastructure and building facilities. The executive doesn’t have the authority to unilaterally nationalize an AI company or take similar actions, like replacing its board or forcibly taking a controlling equity stake.
+The government is constitutionally obligated to offer just compensation under the Fifth Amendment. Determining “fair market value” for appropriated property can involve the courts if the company is dissatisfied with the government’s offer. Here, it could likely be difficult to establish “fair market value” for newer, less tangible goods like model weights. The lack of precedent means it is more likely for these appropriation attempts to manifest as disputes in court. The high likelihood of other branches of government being drawn into matters of AI-related appropriation means it is difficult for the executive to act unilaterally in appropriating or nationalizing AI.
+Another limiting factor is the sheer cost of doing so. AI company acquisitions would likely cost in the magnitude of hundreds of billions, if not trillions. While smaller appropriations of a portion of a company’s assets (e.g. a data center site through eminent domain) or purchasing equity is possible, full ownership may present such a cost that Congress refuses to approve this action. Ultimately, if Congress repurposes or approves additional government funds, this could enable strategies such as majority ownership or direct appropriation of American AI companies.
+Congress could amend delegations of executive power
+Because Congress delegates power to the executive through legislation, they can amend these delegations. They can pass legislation to modify or retract delegations of executive power. They can also choose not to renew delegations of power that require it, such as declared national emergencies or the Defense Production Act.
+[3]
+Legislative authority sits squarely in Congress and
+cannot
+formally be delegated to the executive (although the nondelegation doctrine is rarely enforced). While the executive has the ability to create regulations, these are bound by legislation, which regulation merely serves to implement. This means that the president has very little authority to unilaterally regulate the general operations of American AI companies by, for example, requiring some safety-minded intervention in model development.
+While some regulatory bodies like the Securities and Exchange Commission might be able to control specific parts of the AI industry by applying existing legislation (e.g. antitrust and investor disclosure rules), these bodies don’t have the authority to enact slowdowns or mandate development practices. Congress could delegate authority over AI regulation (e.g. to enact an AI pause) to the executive, but this would require new legislation. For example, Congress could create an AI regulation agency.
+These constraints have various failure modes. Amending delegations often requires a presidential signature; overriding a presidential veto requires a supermajority that is difficult to reach. Since
+INS v. Chadha
+, Congress cannot unilaterally veto executive actions, even by intentionally designing legislation to give themselves a veto. Congress may also act too slowly to effectively curtail executive power if AI moves very quickly.
+Beyond the question of capability, it is unclear if Congress will even be incentivized to constrain the executive. Even if concerns about AI are currently bipartisan, there is no coherent bipartisan stance on AI. Finally, in the case where Congress passes laws regulating AI companies, enforcement still rests with the executive. The president can also intentionally fail to properly enforce legislation they find disagreeable, like Trump did
+with the TikTok ban
+.
+Conclusion
+Statutes grant the executive a broad range of authorities, and there are legitimate grey areas where a sufficiently motivated executive is likely to find additional ground. In a genuine crisis, the executive might gain significantly more power. Inter-branch checks require intervention that acts against the president’s agenda—historically, courts and Congress have deferred to the president, even when it seems that constitutional rights have been violated. The executive might be able to take actions far broader than what legislation permits and we’ve predicted.
+As of now, however, there are only specific domains where the executive can act unilaterally. Inter-branch involvement in spending control acts as a large structural constraint. Regardless, we think these domains grant the executive a wide array of powers over American AI companies in particular.
+The executive powers described here cannot substitute for the legislative authority required to implement safety-minded regulation that is most needed in preempting and mitigating catastrophic risks from AI. Strategies that advocate for the use of powers like the DPA or IEEPA should seriously reflect on how their use increases the permissibility and likelihood of executive power concentration. Executive power is a particularly concerning source of power concentration that can happen quickly and quietly. Mechanisms like getting out the vote and strategically highlighting candidates like Alex Bores are less likely to combat this risk.
+Over the course of writing this article, SCOTUS
+overturned
+a landmark case that limited presidential power over the executive bureaucracy. The Senate
+confirmed
+Todd Blanche as Attorney General. He served as the president’s defense lawyer and as acting Attorney General publicly defended Trump's right to direct investigations into his political opponents. The stage is being set—we think it is important to highlight legal ambiguities and push for their clear resolution in ways that uphold a fair balance of governing power.
+^
+The Trump administration designated Anthropic as a supply chain risk, and this is now being
+deliberated
+in court. Anthropic’s request for an injunction was
+denied
+, but the case is ongoing; how this case resolves will have substantial consequences for whether the executive has this lever to pull (or threaten to pull, etc.) or not.
+^
+“
+SEC. 705. (a)
+The President shall be entitled, while this Act is in effect and for a period of two years thereafter, by regulation, subpoena, or otherwise, to obtain such information from, require such reports and the keeping of such records by, make such inspection of the books, records, and other writings, premises or property of, and take the sworn testimony of, any person
+as may be necessary or appropriate, in his discretion, to the enforcement or the administration of this Act and the regulations or orders issued thereunder.
+” (emphasis added)
+^
+The DPA has sunset clauses attached, which means that Congress must vote to authorize the renewal of the DPA periodically. As of 22 July 2026, the House has voted to extend the DPA through 2031 (via amending the National Defense Authorization Act). This authorization has not passed into law yet. Proposed
+changes
+to the DPA including redelegation of authority away from the President are summarized
+here
+.
+^
+The DPA has sunset clauses attached, which means that Congress must vote to authorize the renewal of the DPA periodically. As of July 22nd, the House has voted to extend the DPA through 2031 (via amending the National Defense Authorization Act). This authorization has not passed into law yet. No changes have been proposed to the DPA itself.
+^
+The Trump administration designated Anthropic as a supply chain risk, and this is now being
+deliberated
+in court. Anthropic’s request for an injunction was
+denied
+, but the case is ongoing; how this case resolves will have substantial consequences for whether the executive has a lever to pull (or threaten to pull, etc.) or not.
+^
+The implications of this ambiguity are contingent on a variety of factors. While some Presidents act with more restraint, others might see ambiguities opportunistically. Congress could be sufficiently empowered to clarify Title I in September 2026, when the DPA must be renewed. If a plaintiff successfully brings a case to court, it is unclear how any given court would rule, nor if they would grant an injunction while proceedings occur. Factors like heightened national security and defense concerns relating to AI may make a wide array of public interest arguments available to those arguing in favour of ensuring Title I applies to new
+and
+existing contracts. As of now, it is uncertain how and if this will be resolved.
+0
+Comments
+0
+AI
+Frontpage
+69
+New Comment
+Moderation Log
+More from
+caiitlinm
+View more
+Curated and popular this week

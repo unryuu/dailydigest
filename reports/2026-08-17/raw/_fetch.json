@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "stripe-openrouter",
+    "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+    "bytes": 214995,
+    "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+ | TechCrunch",
+    "chars": 2108
+  },
+  {
+    "slug": "qwen-38-27b",
+    "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+    "bytes": 37323,
+    "title": "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things",
+    "chars": 13942
+  },
+  {
+    "slug": "diffusiongemma-monitoring",
+    "url": "https://www.lesswrong.com/posts/QBuJ3suRZxrrxSTtv/does-diffusiongemma-do-latent-reasoning",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/QBuJ3suRZxrrxSTtv/does-diffusiongemma-do-latent-reasoning",
+    "bytes": 847976,
+    "title": "Does DiffusionGemma do latent reasoning? — LessWrong",
+    "chars": 21187
+  },
+  {
+    "slug": "roon-monitoring",
+    "url": "https://x.com/tszzl/status/2089152767583805493",
+    "status": 200,
+    "final_url": "https://x.com/tszzl/status/2089152767583805493",
+    "bytes": 128437,
+    "title": "roon on X: \"failures of “monitoring” as a general solution to ai safety:\n\nmonitoring, like all other software, runs on flaky and mortal infrastructure with some amount of downtime. does a momentary blip in monitoring open Pandora’s box? will people accept fail closed monitoring on all\" / X",
+    "chars": 750
+  },
+  {
+    "slug": "ai-secrets-privacy",
+    "url": "https://www.axios.com/2026/08/17/secrets-share-ai-openai-meta-google-anthropic",
+    "status": 403,
+    "final_url": "https://www.axios.com/2026/08/17/secrets-share-ai-openai-meta-google-anthropic",
+    "bytes": 6212,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "executive-control-ai",
+    "url": "https://www.lesswrong.com/posts/ynstBNgLQzEBiEpLs/how-the-american-executive-could-control-ai-companies",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/ynstBNgLQzEBiEpLs/how-the-american-executive-could-control-ai-companies",
+    "bytes": 503025,
+    "title": "How the American Executive Could Control AI Companies — LessWrong",
+    "chars": 28910
+  },
+  {
+    "slug": "agent-long-horizon-eval",
+    "url": "https://huggingface.co/papers/2608.13417",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.13417",
+    "bytes": 160456,
+    "title": "Paper page - Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+    "chars": 5111
+  },
+  {
+    "slug": "crisis-video-attacks",
+    "url": "https://huggingface.co/papers/2608.14391",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.14391",
+    "bytes": 164992,
+    "title": "Paper page - Can We Defend Against AI-Generated Video Attacks on Real-World Crisis Events? A Systematic Evaluation of Detectors, Generators and Social Dissemination",
+    "chars": 4659
+  },
+  {
+    "slug": "mobilemem",
+    "url": "https://huggingface.co/papers/2608.13606",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.13606",
+    "bytes": 164254,
+    "title": "Paper page - MobileMem: Learning from a Year of Mobile Experiences",
+    "chars": 3668
+  },
+  {
+    "slug": "claude-system-prompts",
+    "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+    "status": 200,
+    "final_url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
+    "bytes": 1509844,
+    "title": "System Prompts - Claude Platform Docs",
+    "chars": 95
+  },
+  {
+    "slug": "mathcode",
+    "url": "https://math-ai-org.github.io/mathcode",
+    "status": 200,
+    "final_url": "https://math-ai-org.github.io/mathcode/",
+    "bytes": 25315,
+    "title": "MathCode — A Frontier Mathematical Coding Agent",
+    "chars": 2196
+  },
+  {
+    "slug": "agent-computer-shapes",
+    "url": "https://x.com/emollick/status/2089233231853785118",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2089233231853785118",
+    "bytes": 126650,
+    "title": "Ethan Mollick on X: \"Its interesting to see the experiments on how to give AI a computer: Codex &amp; Claude Code use your local machine, ChatGPT Work on the web (as well as Claude and ChatGPT) give the AI a one-time machine online that gets reset, and Grokbot gives each AI agent a persistent web machine\" / X",
+    "chars": 339
+  },
+  {
+    "slug": "unitree-superman",
+    "url": "https://x.com/teortaxesTex/status/2089258242094268763",
+    "status": 200,
+    "final_url": "https://x.com/teortaxesTex/status/2089258242094268763",
+    "bytes": 169839,
+    "title": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) on X: \"&gt; 45.5 kmh run, 2m high jump\n&gt; This new machine has only been in development for a little over three months, with significant room for further improvement in the coming months \n\nUnitree will be selling strongly superhuman bots in 2027\" / X",
+    "chars": 637
+  },
+  {
+    "slug": "dario-longtweet-joke",
+    "url": "https://x.com/tszzl/status/2088805338049122679",
+    "status": 200,
+    "final_url": "https://x.com/tszzl/status/2088805338049122679",
+    "bytes": 160817,
+    "title": "roon on X: \"“Dario speaks of this.”\n“Have you read his longtweet?”\n“No. Have you?”\n“No.”\" / X",
+    "chars": 124
+  },
+  {
+    "slug": "expensive-model-users",
+    "url": "https://x.com/teortaxesTex/status/2089258916714537026",
+    "status": 200,
+    "final_url": "https://x.com/teortaxesTex/status/2089258916714537026",
+    "bytes": 162273,
+    "title": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) on X: \"Truth nuke\" / X",
+    "chars": 285
+  },
+  {
+    "slug": "agi-64",
+    "url": "https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64",
+    "status": 200,
+    "final_url": "https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64",
+    "bytes": 35831,
+    "title": "AGI-64 Brings Sierra Adventures to the Commodore 64 — Mean Hamster Software",
+    "chars": 1133
+  },
+  {
+    "slug": "future-research-samples",
+    "url": "https://www.lesswrong.com/posts/mEde7bhzK4eKQqWGi/those-who-make-history",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/mEde7bhzK4eKQqWGi/those-who-make-history",
+    "bytes": 463364,
+    "title": "Those Who Make History — LessWrong",
+    "chars": 16571
+  }
+]
