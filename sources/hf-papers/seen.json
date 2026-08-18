@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.14614",
+  "title": "60 美元二手显卡也能跑 70B 模型",
+  "date": "2026-08-18",
+  "reported": true,
+  "report_date": "2026-08-18"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.15930",
+  "title": "腾讯让 GUI Agent 看一遍示范再干活",
+  "date": "2026-08-18",
+  "reported": true,
+  "report_date": "2026-08-18"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.14606",
+  "title": "LLM 写问卷答案像真人，统计结构却不像",
+  "date": "2026-08-18",
+  "reported": true,
+  "report_date": "2026-08-18"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.16798",
+  "title": "ClawGym 用黑盒强化学习训练 Agent",
+  "date": "2026-08-18",
+  "reported": true,
+  "report_date": "2026-08-18"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.14905",
+  "title": "AutoResearchEval",
+  "date": "2026-08-18",
+  "reported": true,
+  "report_date": "2026-08-18"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.16884",
+  "title": "自动科研一边刷新数学上界，一边不会自查",
+  "date": "2026-08-18",
+  "reported": true,
+  "report_date": "2026-08-18"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.14391",
   "title": "AI 视频传开以后更难检测",
   "date": "2026-08-17",

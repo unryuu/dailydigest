@@ -1,0 +1,120 @@
+{
+  "date": "2026-08-18",
+  "scanned_at": "2026-08-18T22:29:28+08:00",
+  "window": "2026-08-17 晚间留存至 2026-08-18 扫描时",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取；Nitter 仅保留失败诊断",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现 3 条时间窗内 AI 观点或日常使用案例"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-03，无时间窗内新帖"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-02，无时间窗内新帖"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-11，无时间窗内新帖"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "发现 2 条可讨论的 AI 行业观点"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "最新帖子仍是 2026-08-14 已报的 GPT-5.6 Sol Ultrafast 转发"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "发现 1 条需要核查的自验证测试线索，另有 1 条 DeepSeek 训练节奏观点"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "LLM 同时考虑多类人的需求时仍会混淆",
+      "url": "https://x.com/emollick/status/2089685655534129663",
+      "datetime": "2026-08-18T12:07:39.418Z",
+      "bucket_hint": "angle_or_radar",
+      "text": "Ethan Mollick 认为，LLM 能表现出心智理论本身已很重要，但需要同时区分多类受众时仍会暴露局限，例如写代码时容易混淆最终用户和产品开发者的需求与视角。",
+      "caveats": [
+        "这是个人观察，没有附实验或系统性数据。"
+      ],
+      "why": "有直观使用画面，但证据较薄，最多作为观点或与相关研究合并。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "不会装电脑的人让 Codex 接管了新 MacBook",
+      "url": "https://x.com/emollick/status/2089512978575950080",
+      "datetime": "2026-08-18T00:41:30.023Z",
+      "bucket_hint": "fun",
+      "text": "Ethan Mollick 的父亲多年没用笔记本，也不知道如何设置新 MacBook；他按儿子的建议安装 Codex，让它接管设置并安装所需软件。Mollick 感叹家庭技术支持从此会变样。",
+      "caveats": [
+        "这是单个家庭使用案例，不代表普通用户已经能稳定完成所有电脑设置。"
+      ],
+      "why": "把电脑 Agent 的普及落到家庭技术支持这一具体场景，适合作为乐子。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "聪明模型不容易给出足够多的创意变化",
+      "url": "https://x.com/emollick/status/2089488934082363397",
+      "datetime": "2026-08-17T23:05:57.369Z",
+      "bucket_hint": "angle",
+      "text": "Ethan Mollick 认为，AI 实验室应该更认真研究创意任务中的方差；即使模型很聪明，人们仍需额外费力才能得到真正不同的方案，这会限制模型在解决问题和创意工作中的实际价值。",
+      "caveats": [
+        "这是观点，没有给出测试设计或量化结果。"
+      ],
+      "why": "可解释为何模型看起来聪明却不断给出相似答案，但独立事实不足。"
+    },
+    {
+      "source": "x-roon",
+      "title": "第二三名 AI 实验室可能连最强模型都用不了",
+      "url": "https://x.com/tszzl/status/2089538921692819944",
+      "datetime": "2026-08-18T02:24:35.344Z",
+      "bucket_hint": "angle",
+      "text": "Roon 判断，如果其他公司都能使用最前沿模型、而竞争实验室反而被禁止调用，未来排名第二或第三的 AI 实验室可能成为最不划算的生意。",
+      "caveats": [
+        "这是对未来竞争格局的推演，不是已发生的禁用政策。"
+      ],
+      "why": "指出闭源模型竞争中的反常激励，但缺乏新事实。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "DeepSeek V4 Flash 自验证测试声称更便宜地超过 Claude",
+      "url": "https://x.com/teortaxesTex/status/2089650511125303722",
+      "datetime": "2026-08-18T09:48:00.338Z",
+      "bucket_hint": "radar_needs_check",
+      "text": "Teortaxes 转发一项测试：让 DeepSeek V4 Flash 生成多个候选答案并自行验证，在 Terminal-Bench 2.1 上超过 Claude Fable 5，成本低 11 倍；他提醒，真正值得比较的是其他模型加入同样自验证流程后会怎样。",
+      "caveats": [
+        "这只是 X 上的测试摘要，尚未读取完整方法、代码和对照设置。",
+        "在核查前不得把超过 Claude 或便宜 11 倍写成日报事实。"
+      ],
+      "why": "如果方法公开且对照公平，可成为推理时扩展的新案例；否则丢弃。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/tszzl/status/2089568050257543598",
+      "reason": "主要调侃公司黑话，和 AI 的关系只是一处‘模式坍塌’比喻。"
+    },
+    {
+      "url": "https://x.com/tszzl/status/2089537814807667134",
+      "reason": "只说 Anthropic 收入消息没有推动市场，没有新增数据或机制。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2089653973858881667",
+      "reason": "对 DeepSeek 下一阶段预训练或后训练重点的个人预测，没有官方计划。"
+    }
+  ]
+}

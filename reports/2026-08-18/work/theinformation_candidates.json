@@ -1,0 +1,91 @@
+{
+  "date": "2026-08-18",
+  "scanned_at": "2026-08-18T22:29:28+08:00",
+  "window": "接续 2026-08-17 期在 2026-08-17 17:41 北京时间完成的手工扫描，只看此后进入首页 Latest 的内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫描 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "AI Agenda",
+      "title": "OpenAI Makes Gains Against Anthropic Among OpenRouter Customers",
+      "url": "https://www.theinformation.com/newsletters/ai-agenda/openai-makes-gains-anthropic-among-openrouter-customers",
+      "published_at": "2026-08-18T07:01:00-07:00",
+      "published_at_beijing": "2026-08-18T22:01:00+08:00",
+      "bucket_hint": "industry_silver_or_none",
+      "decision": "加入定牌候选",
+      "facts": [
+        "OpenAI 最近允许 OpenRouter 以官网标价五折提供 GPT-5.6 Luna、Terra 和 Sol，OpenRouter 也在折扣模型列表中优先推广这些模型。",
+        "OpenRouter 月榜显示，8 月 Luna 的 token 用量已经超过 Claude Opus 5 和 Sonnet 5 的两倍。",
+        "OpenRouter 有超过 1000 万开发者；过去约一个月，其年化收入增长约 15％至 1.6 亿美元，知情人士称 Luna 和 Terra 的使用增长是原因之一。",
+        "低价还会影响自动路由：如果开发者选择优先控制成本，OpenAI 的动态路由更可能把请求送往 Luna 或 Terra。"
+      ],
+      "caveats": [
+        "用量不等于收入，文章只说 OpenAI 正在追回部分使用份额。",
+        "年化收入数据来自一名知情人士，OpenRouter 未在文中公开确认。",
+        "这是 08-17 金牌 Stripe 收购 OpenRouter 的同一主线，只有价格、路由和使用份额的新进展值得单独考虑。"
+      ],
+      "why": "折扣不只是促销，还会通过模型路由改变开发者实际使用哪家模型；但主线刚报过，定牌时应提高门槛。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Nvidia, OpenAI and SoftBank Finalize Deal For Massive Ohio Data Center Project",
+      "url": "https://www.theinformation.com/briefings/nvidia-openai-softbank-finalize-deal-massive-ohio-data-center-project",
+      "published_at": "2026-08-17T07:01:00-07:00",
+      "published_at_beijing": "2026-08-17T22:01:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入定牌候选",
+      "facts": [
+        "英伟达、OpenAI 和 SB Energy 已确认合作建设俄亥俄州南部 PORTS-Pike 数据中心，OpenAI 承诺签署 20 年租约。",
+        "项目规划 10 吉瓦新增能源和 8 吉瓦 AI 计算容量，首期为 4.25 吉瓦；OpenAI 还可选择使用其余 3.75 吉瓦。",
+        "英伟达对首期土地、电力和主体建设提供剩余价值担保，初始承诺的总付款责任上限为 1050 亿美元；若 OpenAI 违约，英伟达补足最低担保价值与重新出租或出售所得之间的差额。",
+        "英伟达将向 SB Energy 投资 15 亿美元，项目将独家采用英伟达芯片、网络和数据中心架构。",
+        "黄仁勋称，该项目每一代硬件可能给英伟达带来 1500 亿至 2000 亿美元收入；OpenAI 到 2030 年在该项目及其他项目承诺的英伟达算力合计约 6000 亿美元。"
+      ],
+      "caveats": [
+        "08-16 已报道英伟达拟投资 SB Energy 和约 1000 亿美元信用支持；本期新增事实是正式确认、20 年租约、1050 亿美元责任上限及担保结构。",
+        "英伟达尚未承诺支持项目第二期，未来数年仍可决定是否加入。",
+        "每代硬件收入和 2030 年算力承诺来自黄仁勋的口径，不是已经确认的收入。"
+      ],
+      "why": "从洽谈推进到正式结构，英伟达既卖硬件又替 OpenAI 的长期租约兜底，足以重新评估同一主线。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Andreessen Horowitz Focus of DOJ Antitrust Probe Over Databricks, Fivetran Board Seats",
+      "url": "https://www.theinformation.com/briefings/andreessen-horowitz-focus-doj-antitrust-probe-databricks-fivetran-board-seats",
+      "published_at": "2026-08-17T12:07:00-07:00",
+      "published_at_beijing": "2026-08-18T03:07:00+08:00",
+      "bucket_hint": "regulation_none_or_silver",
+      "decision": "加入定牌候选",
+      "facts": [
+        "美国司法部正在调查 Andreessen Horowitz 同时在相互竞争的 AI 数据公司持有董事席位是否构成反垄断问题。",
+        "调查已持续近一年，起点与司法部审查 Fivetran 收购 dbt Labs 的时间接近。",
+        "a16z 合伙人 Martin Casado 曾同时担任 dbt Labs 和 Fivetran 董事；联合创始人 Ben Horowitz 则担任与 Fivetran 竞争的 Databricks 董事。"
+      ],
+      "caveats": [
+        "消息源为 Bloomberg，The Information 只是转述。",
+        "调查不代表已经认定违法，a16z 和 Databricks 在发稿时未回应。"
+      ],
+      "why": "AI 投资机构跨竞争公司占据董事席位开始进入正式反垄断调查，但证据仍停留在调查阶段。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Tesla Readies August Launch of Cybercab, Its Robotaxi Without a Steering Wheel",
+      "url": "https://www.theinformation.com/articles/tesla-readies-august-launch-cybercab-robotaxi-without-steering-wheel",
+      "reason": "时间窗内独家，但重心是特斯拉产品发布时间，和本期 AI 主线相比证据密度较低。"
+    },
+    {
+      "title": "Alibaba’s Small, On-Device Model Gains Traction",
+      "url": "https://www.theinformation.com/briefings/alibabas-small-device-model-gains-traction",
+      "reason": "首页只有概括性摘要，没有读到足以支撑独立条目的新数字或部署案例。"
+    },
+    {
+      "title": "Nvidia Juggles Mixed Messages on Chip Longevity",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/nvidia-juggles-mixed-messages-chip-longevity",
+      "reason": "普通 Newsletter，且本期已有更强的英伟达数据中心正式交易候选。"
+    }
+  ]
+}

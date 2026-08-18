@@ -1,0 +1,375 @@
+{
+  "date": "2026-08-18",
+  "fetch_failures": [
+    {
+      "slug": "acx",
+      "url": "https://www.astralcodexten.com/feed",
+      "error": "requests=SSL unexpected EOF；chromium=net::ERR_CONNECTION_CLOSED"
+    },
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701；chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725；chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "英伟达、OpenAI 和软银能源把俄亥俄数据中心从洽谈推进到正式担保结构",
+      "cost": "中",
+      "reason": "08-16 已报投资与信用支持洽谈；本次新增正式确认、20 年租约、1050 亿美元责任上限和剩余价值担保结构，符合该主线只收实质新进展的门槛。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Nvidia, OpenAI and SoftBank Finalize Deal For Massive Ohio Data Center Project",
+          "url": "https://www.theinformation.com/briefings/nvidia-openai-softbank-finalize-deal-massive-ohio-data-center-project",
+          "date": "2026-08-17T22:01:00+08:00",
+          "why": "登录态候选已读到正式交易结构；需核清英伟达对首期的担保边界，以及黄仁勋所述潜在收入和 2030 年算力承诺并非已确认收入。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "OpenAI 用五折价格和自动路由在 OpenRouter 追回模型使用份额",
+      "cost": "中",
+      "reason": "这是 08-17 Stripe 收购 OpenRouter 主线的价格、路由和使用份额新进展；两条链接是同一事件的行业报道与高热度公开页面，合并精读。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "OpenAI Makes Gains Against Anthropic Among OpenRouter Customers",
+          "url": "https://www.theinformation.com/newsletters/ai-agenda/openai-makes-gains-anthropic-among-openrouter-customers",
+          "date": "2026-08-18T22:01:00+08:00",
+          "why": "登录态候选称 OpenAI 允许 OpenRouter 以官网标价五折提供三款 GPT-5.6 模型，低价还会影响成本优先的自动路由；用量不等于收入，年化收入数字来自知情人士。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "GPT-5.6 Sol Pricing Cut by 50%",
+          "url": "https://openrouter.ai/openai/gpt-5.6-sol",
+          "date": "2026-08-17T21:03:18Z",
+          "why": "HN 551 分、365 条评论；公开模型页可用于核价格，但不得把讨论热度当使用份额证据。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "匿名买家批量购买稀有书，追踪器最后到了亚马逊的破坏性扫描设施",
+      "cost": "中",
+      "reason": "有实地追踪这一反直觉钩子，且承接训练数据来源与实体书扫描的行业争议。",
+      "items": [
+        {
+          "source": "simon-willison",
+          "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+          "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra",
+          "date": "2026-08-17T15:21:29+00:00",
+          "why": "Simon Willison 转述 404 Media 调查：书商把 AirTag 放进约 1000 本书的订单，包裹抵达亚马逊拉斯维加斯设施；reader 应回溯 404 Media 原文核亚马逊用途与证据边界。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "自动研究系统一边改进矩阵乘法，一边在百项真实研究任务上暴露失败模式",
+      "cost": "重",
+      "reason": "把高权重周报的科学 AI 主线、DeepMind 的具体数学结果和真实任务诊断合并，避免把不同论文误写成同一项目。",
+      "items": [
+        {
+          "source": "import-ai",
+          "title": "Import AI 469: Science AI; RSI simulator; and Zuck's technological pessimism",
+          "url": "https://importai.substack.com/p/import-ai-469-science-ai-rsi-simulator",
+          "date": "Mon, 17 Aug 2026 13:05:36 GMT",
+          "why": "摘要把 capable autonomous researchers 称为 AI 新前沿；周报较长，需拆清其引用的原始项目。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Improving the matrix multiplication exponent with modern optimization and AlphaEvolve",
+          "url": "https://huggingface.co/papers/2608.16884",
+          "date": "",
+          "why": "DeepMind 署名、标题指向 AlphaEvolve 的具体数学进展；HF 列表不提供可靠发布日期，本日仅视作榜单抓取。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "How Do Agents Fail on AutoResearch: End-to-End Diagnostic Evaluation on 100 Real-World Frontier Research Tasks",
+          "url": "https://huggingface.co/papers/2608.14905",
+          "date": "",
+          "why": "百项真实前沿研究任务的端到端诊断，可能给科学 Agent 热潮提供反面基准；HF 列表不提供可靠发布日期。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "模型从第一条消息推断用户身份，并据此悄悄改变建议",
+      "cost": "中",
+      "reason": "有可干预的内部表征与具体行为差异，不只是泛泛隐私提醒；疑似与用户画像研究相关，需核论文设计和作者复现。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "What gives you away: how LLMs form opinions of you",
+          "url": "https://www.lesswrong.com/posts/zRKNd6ypTJYkoeFmK/what-gives-you-away-how-llms-form-opinions-of-you",
+          "date": "Tue, 18 Aug 2026 11:15:48 GMT",
+          "why": "作者称模型会快速形成年龄、性别、教育和社会经济地位表征，干预表征能改变回答；需区分其新增实验与所引用 Chen 等人的结果。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "financial-times-user-specified",
+      "title": "Jane Street suffers $15bn hit after meltdown at Situational Awareness",
+      "url": "https://www.ft.com/content/47dd5308-dd17-404a-a615-61046defd697",
+      "date": "2026-08-14",
+      "note": "用户在本窗口明确要求补回并固定做成简讯。必须保留限定：Jane Street 7 月约 150 亿美元损失来自 Situational Awareness 投资、AI 与其他科技股下跌及亚洲非 AI 股票多头等多项敞口，不能写成 150 亿美元全部亏在 Situational Awareness。FT 正文受订阅墙限制，现有事实由公开标题、搜索摘要和 Reuters 经 CNBC 转载交叉核实。"
+    },
+    {
+      "source": "the-information",
+      "title": "Andreessen Horowitz Focus of DOJ Antitrust Probe Over Databricks, Fivetran Board Seats",
+      "url": "https://www.theinformation.com/briefings/andreessen-horowitz-focus-doj-antitrust-probe-databricks-fivetran-board-seats",
+      "date": "2026-08-18T03:07:00+08:00",
+      "note": "司法部调查 a16z 在相互竞争的 AI 数据公司持有董事席位；调查不等于已经认定违法，原始消息来自 Bloomberg。"
+    },
+    {
+      "source": "axios",
+      "title": "Women are missing out on the AI jobs boom",
+      "url": "https://www.axios.com/2026/08/18/ai-women-jobs-hiring",
+      "date": "Tue, 18 Aug 2026 07:46:05 +0000",
+      "note": "Axios 引 LinkedIn 数据称，去年美国 AI 职位新雇员中女性只略高于四分之一，非 AI 职位约占一半。"
+    },
+    {
+      "source": "openai",
+      "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections",
+      "url": "https://openai.com/index/chatgpt-for-teens",
+      "date": "Tue, 18 Aug 2026 11:00:00 GMT",
+      "note": "OpenAI 发布面向青少年的 ChatGPT，强调更强内置保护、健康使用功能和家长控制；公司通稿口径。"
+    },
+    {
+      "source": "openai",
+      "title": "Partnering with CodeAI to prepare the first AI generation",
+      "url": "https://openai.com/index/partnering-with-codeai",
+      "date": "Tue, 18 Aug 2026 11:00:00 GMT",
+      "note": "OpenAI 与 CodeAI 合作推广学生 AI 素养和批判性使用；与青少年产品同日发布，可合并处理。"
+    },
+    {
+      "source": "interconnects",
+      "title": "Teaching Everyone to Fish for Tokens",
+      "url": "https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens",
+      "date": "Mon, 17 Aug 2026 15:07:49 GMT",
+      "note": "摘要判断英伟达希望客户自己训练模型，而非只购买 Anthropic／OpenAI API；高权重长文，适合作为产业视角。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Israel creates fake think tank in likely attempt to dupe AI chatbots",
+      "url": "https://responsiblestatecraft.org/israel-influence-chatgpt",
+      "date": "2026-08-17T20:46:10Z",
+      "note": "HN 816 分、470 条评论；当前只见标题，reader 必须核原文证据，不能把 likely attempt 写成已证实目的。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The Benchmarkpocalypse",
+      "url": "https://danluu.com/benchpocalypse",
+      "date": "2026-08-18T02:11:02Z",
+      "note": "HN 147 分；标题指向基准危机，当前没有摘要，reader 核是否为 AI 基准及其核心论证。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Google buys crashed airline Spirit's data at auction, because AI",
+      "url": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
+      "date": "2026-08-18T10:13:28Z",
+      "note": "HN 308 分、203 条评论；数据资产拍卖进入 AI 训练链条，reader 核交易对象、数据类型和用途。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Meta Files Patent for Facial Recognition, Automatic Recording of People",
+      "url": "https://www.privacyguides.org/news/2026/08/17/meta-files-patent-for-facial-recognition-automatic-recording-of-people",
+      "date": "2026-08-18T12:23:55Z",
+      "note": "涉及人脸识别和自动录制专利；专利申请不等于产品已经部署。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Agentic Transaction: Towards ACID-Compliant Agent Systems",
+      "url": "https://huggingface.co/papers/2608.13900",
+      "date": "",
+      "note": "尝试把 ACID 事务语义引入 Agent 系统；HF 列表不提供可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "ClawGym II: Exploring Black-Box RL on Agent Harness",
+      "url": "https://huggingface.co/papers/2608.16798",
+      "date": "",
+      "note": "黑盒强化学习优化 Agent Harness，可能是 08-15 Harness 自动进化主线的实质新实验；需核代码、数据与泛化结果，HF 列表不提供可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Plausible but Not Valid: A Psychometric Audit of LLMs as Synthetic Survey Respondents",
+      "url": "https://huggingface.co/papers/2608.14606",
+      "date": "",
+      "note": "标题称 LLM 合成问卷回答看似可信却未通过心理测量审计；HF 列表不提供可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "R^3-Bench: LLMs Struggle with Resource-Rational Reasoning under Shared Budgets",
+      "url": "https://huggingface.co/papers/2608.16033",
+      "date": "",
+      "note": "测试共享预算下的资源理性推理；HF 列表不提供可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Ventor-QTest: Threat-Model-Driven Verification of Vendor-Hosted LLM APIs",
+      "url": "https://huggingface.co/papers/2608.16391",
+      "date": "",
+      "note": "针对托管 LLM API 做威胁模型驱动验证；原标题拼作 Ventor-QTest，reader 核是否为作者原名，HF 列表不提供可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "When Context Bites: Detecting RAG Poisoning via Document-Level Attention Collapse",
+      "url": "https://huggingface.co/papers/2608.06947",
+      "date": "",
+      "note": "用文档级注意力坍塌检测 RAG 投毒；HF 列表不提供可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations",
+      "url": "https://huggingface.co/papers/2608.15930",
+      "date": "",
+      "note": "腾讯混元的开放权重 GUI Agent，用上下文示例提升能力；HF 列表不提供可靠发布日期。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+      "url": "https://huggingface.co/blog/multi-vector-encoder",
+      "date": "August 18, 2026",
+      "note": "Sentence Transformers 增加多向量、后期交互式嵌入模型说明，偏工具与教程。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "LLM 同时考虑多类人的需求时仍会混淆",
+      "url": "https://x.com/emollick/status/2089685655534129663",
+      "date": "2026-08-18T12:07:39.418Z",
+      "note": "Ethan Mollick 的个人观察：写代码时模型容易混淆最终用户与产品开发者的需求；没有系统性数据。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "聪明模型不容易给出足够多的创意变化",
+      "url": "https://x.com/emollick/status/2089488934082363397",
+      "date": "2026-08-17T23:05:57.369Z",
+      "note": "个人观点，认为创意任务中的方差不足会限制模型实际价值；没有量化测试。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "DeepSeek V4 Flash 自验证测试声称更便宜地超过 Claude",
+      "url": "https://x.com/teortaxesTex/status/2089650511125303722",
+      "date": "2026-08-18T09:48:00.338Z",
+      "note": "仅是 X 上的测试摘要，尚未核完整方法、代码和公平对照；核查前不得把超过 Claude 或便宜 11 倍写成事实。若方法公开且可复现，才算 DeepSeek 主线的新进展。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-emollick",
+      "title": "不会装电脑的人让 Codex 接管了新 MacBook",
+      "url": "https://x.com/emollick/status/2089512978575950080",
+      "date": "2026-08-18T00:41:30.023Z",
+      "note": "Ethan Mollick 称多年没用笔记本的父亲安装 Codex，让它接管新 MacBook 设置；单个家庭案例。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Claude writing a macOS driver for my obscure HP printer built only for Windows",
+      "url": "https://twitter.com/kuberwastaken/status/2089377982536388964",
+      "date": "2026-08-18T12:22:58Z",
+      "note": "HN 上的个人项目线索：让 Claude 给只支持 Windows 的冷门惠普打印机写 macOS 驱动；需核帖子过程。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "DumpsterCluster: From Dumpster Diving to Serving LLaMA-70B on $60 GPUs",
+      "url": "https://huggingface.co/papers/2608.14614",
+      "date": "",
+      "note": "用淘来的廉价 GPU 服务 70B 模型，标题有很强的废品堆硬件反差；HF 列表不提供可靠发布日期。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Quake Shareware, a CD-ROM just a little too full",
+      "url": "https://fabiensanglard.net/quake_shareware_cd/index.html",
+      "date": "2026-08-17T22:06:14Z",
+      "note": "HN 424 分、181 条评论；一张塞得略过头的 Quake 共享版光盘。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "How Bluesky draws its logo on screenshots",
+      "url": "https://timmarinin.net/2026/bluesky-screenshots",
+      "date": "2026-08-17T22:20:40Z",
+      "note": "HN 621 分、389 条评论；社交平台截图里绘制品牌标志的实现细节。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Finger: Social network that never died",
+      "url": "https://en.andros.dev/blog/54572bc7/finger-the-1971-social-network-that-never-died",
+      "date": "2026-08-18T07:21:35Z",
+      "note": "把 1971 年的 Finger 协议重新看作从未消失的社交网络。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Using the railway network as a flatbed scanner",
+      "url": "https://philo.gay/linecam",
+      "date": "2026-08-18T12:43:54Z",
+      "note": "把铁路网络当作超大平板扫描仪的视觉项目，人与基础设施的关系很具体。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "如果 AI 消灭人类，所有人会在同一秒倒下吗？",
+      "prob": "8.7％",
+      "volume_note": "累计成交量约 M$36,408；24 小时成交量为 0",
+      "url": "https://manifold.markets/Writer/if-ai-wipes-out-humanity-will-every"
+    },
+    {
+      "question": "2100 年前，AI 会消灭地球上所有生物生命吗？",
+      "prob": "7.8％",
+      "volume_note": "累计成交量约 M$5,924；24 小时成交量为 0",
+      "url": "https://manifold.markets/LarsDoucet/will-ai-wipe-out-all-biological-lif"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "manifold",
+      "reason": "默认榜单大部分是 08-15 至 08-17 已报的同一市场或相邻年份灭绝盘；为防重复只留下两条未报且问法明显不同的候选，未凑足常规 5 至 8 条。"
+    },
+    {
+      "slug": "simon-willison-qwen",
+      "reason": "Qwen 3.8 27B 新跑分属于 08-17 已报主线的普通跑分，按 STATUS 防重复规则删除。"
+    },
+    {
+      "slug": "lesswrong-zvi",
+      "reason": "近期多篇 OpenAI 内部模型、Hugging Face 事件和 AI 安全周报与既有 Zvi 主线重叠，没有实质新进展的条目不再收。"
+    },
+    {
+      "slug": "x-nitter",
+      "reason": "七个 Nitter 账号抓取均为 403；已使用主 agent 提供的登录态 x_candidates.json 离线分桶，不把登录态成功误记成 Nitter 成功。"
+    }
+  ]
+}

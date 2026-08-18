@@ -1,0 +1,5 @@
+URL: https://openrouter.ai/openai/gpt-5.6-sol
+FINAL: https://openrouter.ai/openai/gpt-5.6-sol
+TITLE: GPT-5.6 Sol - API Pricing & Benchmarks | OpenRouter
+FETCHED: 2026-08-18 23:16:47
+============================================================

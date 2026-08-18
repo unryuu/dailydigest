@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
+  "title": "亚马逊在破坏性扫描稀有书",
+  "date": "2026-08-17T15:21:29+00:00",
+  "reported": true,
+  "report_date": "2026-08-18"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
   "title": "Qwen 3.8 27B 默认想得太多",
   "date": "2026-08-16T22:00:39+00:00",

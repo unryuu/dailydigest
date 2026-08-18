@@ -1,0 +1,254 @@
+[
+  {
+    "slug": "ohio-data-center",
+    "url": "https://www.theinformation.com/briefings/nvidia-openai-softbank-finalize-deal-massive-ohio-data-center-project",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/nvidia-openai-softbank-finalize-deal-massive-ohio-data-center-project",
+    "bytes": 228191,
+    "title": "Nvidia, OpenAI and SoftBank Finalize Deal For Massive Ohio Data Center Project — The Information",
+    "chars": 27
+  },
+  {
+    "slug": "openrouter-price-war",
+    "url": "https://www.theinformation.com/newsletters/ai-agenda/openai-makes-gains-anthropic-among-openrouter-customers",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/ai-agenda/openai-makes-gains-anthropic-among-openrouter-customers",
+    "bytes": 382296,
+    "title": "OpenAI Makes Gains Against Anthropic Among OpenRouter Customers — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "openrouter-sol-price",
+    "url": "https://openrouter.ai/openai/gpt-5.6-sol",
+    "status": 200,
+    "final_url": "https://openrouter.ai/openai/gpt-5.6-sol",
+    "bytes": 659007,
+    "title": "GPT-5.6 Sol - API Pricing & Benchmarks | OpenRouter",
+    "chars": 0
+  },
+  {
+    "slug": "nvidia-fish-tokens",
+    "url": "https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens",
+    "status": 200,
+    "final_url": "https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens",
+    "bytes": 161212,
+    "title": "Teaching Everyone to Fish for Tokens - by Nathan Lambert",
+    "chars": 6863
+  },
+  {
+    "slug": "rare-books-amazon",
+    "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
+    "bytes": 16161,
+    "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+    "chars": 2056
+  },
+  {
+    "slug": "women-ai-jobs",
+    "url": "https://www.axios.com/2026/08/18/ai-women-jobs-hiring",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/18/ai-women-jobs-hiring",
+    "bytes": 234089,
+    "title": "Women are missing out on the AI jobs boom",
+    "chars": 2060
+  },
+  {
+    "slug": "user-profile-llm",
+    "url": "https://www.lesswrong.com/posts/zRKNd6ypTJYkoeFmK/what-gives-you-away-how-llms-form-opinions-of-you",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/zRKNd6ypTJYkoeFmK/what-gives-you-away-how-llms-form-opinions-of-you",
+    "bytes": 464432,
+    "title": "What gives you away: how LLMs form opinions of you — LessWrong",
+    "chars": 13376
+  },
+  {
+    "slug": "mollick-multi-audience",
+    "url": "https://x.com/emollick/status/2089685655534129663",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2089685655534129663",
+    "bytes": 161907,
+    "title": "Ethan Mollick on X: \"The fact that LLMs have theory of mind at all is a huge deal (and was controversial when discovered), but you can still see the limitations when models need to consider more than one audience - like how they struggle to separate end user &amp; creator needs/perspectives when coding.\" / X",
+    "chars": 337
+  },
+  {
+    "slug": "import-ai-science",
+    "url": "https://importai.substack.com/p/import-ai-469-science-ai-rsi-simulator",
+    "status": 200,
+    "final_url": "https://importai.substack.com/p/import-ai-469-science-ai-rsi-simulator",
+    "bytes": 183342,
+    "title": "Import AI 469: Science AI; RSI simulator; and Zuck's technological pessimism",
+    "chars": 13441
+  },
+  {
+    "slug": "alphaevolve-matmul",
+    "url": "https://huggingface.co/papers/2608.16884",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.16884",
+    "bytes": 122759,
+    "title": "Paper page - Improving the matrix multiplication exponent with modern optimization and AlphaEvolve",
+    "chars": 1989
+  },
+  {
+    "slug": "autoresearch-failures",
+    "url": "https://huggingface.co/papers/2608.14905",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.14905",
+    "bytes": 144506,
+    "title": "Paper page - How Do Agents Fail on AutoResearch: End-to-End Diagnostic Evaluation on 100 Real-World Frontier Research Tasks",
+    "chars": 4327
+  },
+  {
+    "slug": "clawgym-ii",
+    "url": "https://huggingface.co/papers/2608.16798",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.16798",
+    "bytes": 151287,
+    "title": "Paper page - ClawGym II: Exploring Black-Box RL on Agent Harness",
+    "chars": 4620
+  },
+  {
+    "slug": "synthetic-survey",
+    "url": "https://huggingface.co/papers/2608.14606",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.14606",
+    "bytes": 116538,
+    "title": "Paper page - Plausible but Not Valid: A Psychometric Audit of LLMs as Synthetic Survey Respondents",
+    "chars": 3697
+  },
+  {
+    "slug": "ui-mate",
+    "url": "https://huggingface.co/papers/2608.15930",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.15930",
+    "bytes": 165236,
+    "title": "Paper page - UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations",
+    "chars": 3243
+  },
+  {
+    "slug": "a16z-antitrust",
+    "url": "https://www.theinformation.com/briefings/andreessen-horowitz-focus-doj-antitrust-probe-databricks-fivetran-board-seats",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/andreessen-horowitz-focus-doj-antitrust-probe-databricks-fivetran-board-seats",
+    "bytes": 392367,
+    "title": "Andreessen Horowitz Focus of DOJ Antitrust Probe Over Databricks, Fivetran Board Seats — The Information",
+    "chars": 3900
+  },
+  {
+    "slug": "meta-recording-patent",
+    "url": "https://www.privacyguides.org/news/2026/08/17/meta-files-patent-for-facial-recognition-automatic-recording-of-people",
+    "status": 200,
+    "final_url": "https://www.privacyguides.org/news/2026/08/17/meta-files-patent-for-facial-recognition-automatic-recording-of-people/",
+    "bytes": 40166,
+    "title": "Meta Files Patent for Facial Recognition, Automatic Recording of People",
+    "chars": 2240
+  },
+  {
+    "slug": "chatgpt-teens",
+    "url": "https://openai.com/index/chatgpt-for-teens",
+    "status": 200,
+    "final_url": "https://openai.com/index/chatgpt-for-teens/",
+    "bytes": 401957,
+    "title": "Introducing ChatGPT for Teens: Built for learning, backed by protections | OpenAI",
+    "chars": 10032
+  },
+  {
+    "slug": "openai-codeai",
+    "url": "https://openai.com/index/partnering-with-codeai",
+    "status": 200,
+    "final_url": "https://openai.com/index/partnering-with-codeai/",
+    "bytes": 335846,
+    "title": "Partnering with CodeAI to prepare the first AI generation | OpenAI",
+    "chars": 5474
+  },
+  {
+    "slug": "jane-street-loss",
+    "url": "https://www.ft.com/content/47dd5308-dd17-404a-a615-61046defd697",
+    "status": 200,
+    "final_url": "https://www.ft.com/content/47dd5308-dd17-404a-a615-61046defd697",
+    "bytes": 162039,
+    "title": "Subscribe to read",
+    "chars": 2282
+  },
+  {
+    "slug": "multi-vector-embeddings",
+    "url": "https://huggingface.co/blog/multi-vector-encoder",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/multi-vector-encoder",
+    "bytes": 379163,
+    "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+    "chars": 60686
+  },
+  {
+    "slug": "benchmarkpocalypse",
+    "url": "https://danluu.com/benchpocalypse",
+    "status": 200,
+    "final_url": "http://danluu.com/benchpocalypse/",
+    "bytes": 30372,
+    "title": "The benchmarkpocalypse",
+    "chars": 20607
+  },
+  {
+    "slug": "fake-think-tank",
+    "url": "https://responsiblestatecraft.org/israel-influence-chatgpt",
+    "status": 200,
+    "final_url": "https://responsiblestatecraft.org/israel-influence-chatgpt/",
+    "bytes": 396271,
+    "title": "Israel creates fake think tank in likely attempt to dupe AI chatbots | Responsible Statecraft",
+    "chars": 0
+  },
+  {
+    "slug": "spirit-airlines-data",
+    "url": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
+    "status": 200,
+    "final_url": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
+    "bytes": 164865,
+    "title": "Google buys crashed airline Spirit’s data at auction, because AI",
+    "chars": 2950
+  },
+  {
+    "slug": "codex-family-it",
+    "url": "https://x.com/emollick/status/2089512978575950080",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2089512978575950080",
+    "bytes": 164065,
+    "title": "Ethan Mollick on X: \"My father just got a new MacBook after years with no laptop, and he did not know how to set it up\n\nHe just told me that he took my advice to install Codex and just ask it to take over and solve his setup problems &amp; install what he needed. Family IT support will never be the same.\" / X",
+    "chars": 659
+  },
+  {
+    "slug": "claude-printer-driver",
+    "url": "https://twitter.com/kuberwastaken/status/2089377982536388964",
+    "status": 200,
+    "final_url": "https://x.com/kuberwastaken/status/2089377982536388964",
+    "bytes": 133237,
+    "title": "Kuber on X: \"just Claude writing a MacOS driver for my obscure HP printer built only for Windows support\" / X",
+    "chars": 148
+  },
+  {
+    "slug": "dumpstercluster",
+    "url": "https://huggingface.co/papers/2608.14614",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.14614",
+    "bytes": 118290,
+    "title": "Paper page - DumpsterCluster: From Dumpster Diving to Serving LLaMA-70B on $60 GPUs",
+    "chars": 3021
+  },
+  {
+    "slug": "finger-network",
+    "url": "https://en.andros.dev/blog/54572bc7/finger-the-1971-social-network-that-never-died",
+    "status": 200,
+    "final_url": "https://en.andros.dev/blog/54572bc7/finger-the-1971-social-network-that-never-died/",
+    "bytes": 58867,
+    "title": "Finger: the 1971 social network that never died | Andros Fenollosa",
+    "chars": 18369
+  },
+  {
+    "slug": "railway-scanner",
+    "url": "https://philo.gay/linecam",
+    "status": 200,
+    "final_url": "https://philo.gay/linecam/",
+    "bytes": 46514,
+    "title": "Using the railway network as a flatbed scanner",
+    "chars": 26182
+  }
+]

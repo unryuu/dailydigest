@@ -1,0 +1,11 @@
+URL: https://x.com/emollick/status/2089685655534129663
+FINAL: https://x.com/emollick/status/2089685655534129663
+TITLE: Ethan Mollick on X: "The fact that LLMs have theory of mind at all is a huge deal (and was controversial when discovered), but you can still see the limitations when models need to consider more than one audience - like how they struggle to separate end user &amp; creator needs/perspectives when coding." / X
+FETCHED: 2026-08-18 23:17:04
+============================================================
+Ethan Mollick
+@emollick
+The fact that LLMs have theory of mind at all is a huge deal (and was controversial when discovered), but you can still see the limitations when models need to consider more than one audience - like how they struggle to separate end user & creator needs/perspectives when coding.
+12:07 PM · Aug 18, 2026
+18K
+Views

@@ -1,0 +1,120 @@
+[
+  {
+    "id": "industry-nvidia-open-training",
+    "section": "industry",
+    "label": "英伟达想让客户自己训练模型",
+    "url": "https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens",
+    "body": "英伟达正投入近开源模型和完整训练配方，希望更多公司自己造模型、持续购买它的芯片，少把需求交给 OpenAI 和 Anthropic 的 API。",
+    "note": "核实通过：这是 Interconnects 对英伟达开源模型战略的分析，文中称相关投入约为 260 亿美元。"
+  },
+  {
+    "id": "industry-rare-books",
+    "section": "industry",
+    "label": "稀有书被追踪到亚马逊扫描设施",
+    "url": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
+    "body": "404 Media 在一笔约一千册的订单里放入 AirTag，书最终到了亚马逊拉斯维加斯设施；员工讨论显示，那里会破坏性扫描大量书籍。",
+    "note": "核实通过：本地材料是 Simon Willison 对 404 Media 调查的转述，追踪地点与扫描行为有明确描述。"
+  },
+  {
+    "id": "industry-women-ai-jobs",
+    "section": "industry",
+    "label": "美国 AI 新雇员只有四分之一是女性",
+    "url": "https://www.axios.com/2026/08/18/ai-women-jobs-hiring",
+    "body": "LinkedIn 数据显示，2025 年美国 AI 岗位新雇员中女性占 26％，非 AI 岗位则约占一半；薪酬更高的岗位里男性比例通常更高。",
+    "note": "核实通过：Axios 报道引用 LinkedIn 的招聘与职位薪酬数据。"
+  },
+  {
+    "id": "papers-clawgym",
+    "section": "papers",
+    "label": "ClawGym 用黑盒强化学习训练 Agent",
+    "url": "https://huggingface.co/papers/2608.16798",
+    "body": "它把不透明的 Agent Harness 放进沙箱运行，再从模型调用中重建多轮轨迹做强化学习，还能让同一个模型混合学习多种 Harness。",
+    "note": "dup_suspect：与 8 月 15 日的 Agent Harness 自动进化主线相撞；本条给出了黑盒强化学习框架、混合 Harness 训练和多个基准实验，属于独立方法与实验，已跨过重复门槛。"
+  },
+  {
+    "id": "papers-synthetic-survey",
+    "section": "papers",
+    "label": "LLM 写问卷答案像真人，统计结构却不像",
+    "url": "https://huggingface.co/papers/2608.14606",
+    "body": "研究测试了 37 个模型，它们能复现大致趋势，却保不住真人回答里的关联、可靠性和因果路径，连普通统计模型都能胜过全部 LLM。",
+    "note": "核实通过：论文使用 263 名员工的组织心理学问卷审计合成回答，结论是不宜用 LLM 替代真实受访者。"
+  },
+  {
+    "id": "papers-ui-mate",
+    "section": "papers",
+    "label": "腾讯让 GUI Agent 看一遍示范再干活",
+    "url": "https://huggingface.co/papers/2608.15930",
+    "body": "UI-Mate 会把操作录像拆成可复用的小步骤，再按当前界面重新规划；在一组长流程办公任务中，一次示范把严格成功率从 17.2％提高到 35.4％。",
+    "note": "核实通过：腾讯混元论文提供了模型、训练流程、OSWorkerBench 基准和多组实验结果。"
+  },
+  {
+    "id": "regulation-meta-patent",
+    "section": "regulation",
+    "label": "Meta 为自动认人录像申请专利",
+    "url": "https://www.privacyguides.org/news/2026/08/17/meta-files-patent-for-facial-recognition-automatic-recording-of-people/",
+    "body": "专利设想让智能眼镜用人脸识别发现人物和动作，自动录制并生成聚会集锦。这里只是专利申请，不等于功能已经部署。",
+    "note": "核实通过：报道附有美国专利商标局示意；专利申请不代表产品已上线或一定会推出。"
+  },
+  {
+    "id": "official-chatgpt-teens",
+    "section": "official",
+    "label": "OpenAI 推出青少年版 ChatGPT",
+    "url": "https://openai.com/index/chatgpt-for-teens",
+    "body": "系统判断或用户声明为 13 至 17 岁后会自动切换，默认加强自残、暴力、饮食障碍和露骨内容防护，并加入作业提醒与学习模式。关联家长可设安静时段、管理部分设置并在少数高风险情况下收到提醒；OpenAI 还会和 CodeAI 推进 AI 素养教育。",
+    "note": "核实通过：合并 OpenAI 同日发布的青少年产品与 CodeAI 合作公告，主链接使用产品页。"
+  },
+  {
+    "id": "brief-jane-street",
+    "section": "brief",
+    "label": "Jane Street 7 月约亏 150 亿美元",
+    "url": "https://www.ft.com/content/47dd5308-dd17-404a-a615-61046defd697",
+    "note": "fetch_failed：FT 正文被付费墙挡住；用户候选 JSON 已用公开标题、搜索摘要及 Reuters 转载交叉核实。用户明确要求固定保留为简讯，损失还包括科技股和亚洲股票敞口，不能写成 150 亿美元全亏在 Situational Awareness。"
+  },
+  {
+    "id": "brief-multi-vector",
+    "section": "brief",
+    "label": "Sentence Transformers 支持多向量嵌入",
+    "url": "https://huggingface.co/blog/multi-vector-encoder",
+    "note": "核实通过：Sentence Transformers v6.0 新增 MultiVectorEncoder，可直接加载 PyLate、ColBERT 等多向量模型；标题足以说明更新。"
+  },
+  {
+    "id": "fun-codex-family-it",
+    "section": "fun",
+    "label": "不会装电脑的人让 Codex 接管了新 MacBook",
+    "url": "https://x.com/emollick/status/2089512978575950080",
+    "body": "Ethan Mollick 的父亲多年没用笔记本，拿到新机器后直接让 Codex 处理设置和软件安装，家庭技术支持少了一个真人工单。",
+    "note": "核实通过：原帖明确称 Codex 接管了新 MacBook 的设置与软件安装。"
+  },
+  {
+    "id": "fun-claude-printer",
+    "section": "fun",
+    "label": "Claude 给冷门惠普打印机写了 macOS 驱动",
+    "url": "https://x.com/kuberwastaken/status/2089377982536388964",
+    "body": "一台只支持 Windows 的冷门惠普打印机没有 Mac 驱动，用户让 Claude 现场补一个。",
+    "note": "核实通过：原帖只能确认作者展示 Claude 在编写驱动，没有提供代码、过程或实测结果。"
+  },
+  {
+    "id": "fun-dumpstercluster",
+    "section": "fun",
+    "label": "60 美元二手显卡也能跑 70B 模型",
+    "url": "https://huggingface.co/papers/2608.14614",
+    "body": "团队用 128 张二手 V100 搭出约 2.2 万美元的集群，跑出了可用吞吐；老卡更费电，跑 70B 模型时每个词元的总碳排放可能高出新硬件四十多倍。",
+    "note": "核实通过：论文实际搭建并运行集群一年；60 美元指单张二手显卡，不是整套系统价格。"
+  },
+  {
+    "id": "fun-finger-network",
+    "section": "fun",
+    "label": "1971 年的社交网络现在还能用",
+    "url": "https://en.andros.dev/blog/54572bc7/finger-the-1971-social-network-that-never-died/",
+    "body": "Finger 没有账号、算法和中心服务器，个人动态只是自己控制的一份纯文本文件；半个世纪后，现代系统里仍有客户端和活跃社区。",
+    "note": "核实通过：文章梳理了 Finger 的协议历史、卡马克的开发日志、衰落原因和现存服务。"
+  },
+  {
+    "id": "fun-railway-scanner",
+    "section": "fun",
+    "label": "有人把铁路网当成巨型平板扫描仪",
+    "url": "https://philo.gay/linecam/",
+    "body": "工业线扫相机每次只拍一条竖线，列车或渡轮移动时再把几万条线拼起来，就能得到横跨整段路程的超宽照片。",
+    "note": "核实通过：作者公开了拍摄装置、速度校正与后处理过程，也提供了成片和代码。"
+  }
+]

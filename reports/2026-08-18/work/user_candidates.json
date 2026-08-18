@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-18",
+  "instruction_source": "用户在本窗口明确要求，把前几天被砍掉的 FT 新闻做成一条简讯加入今天日报。",
+  "items": [
+    {
+      "source": "financial-times-user-specified",
+      "title": "Jane Street suffers $15bn hit after meltdown at Situational Awareness",
+      "url": "https://www.ft.com/content/47dd5308-dd17-404a-a615-61046defd697",
+      "published_at": "2026-08-14",
+      "bucket_hint": "brief_required",
+      "decision": "用户明确要求加入，定牌时固定为简讯，不因时间窗或普通筛选删除。",
+      "facts": [
+        "Jane Street 7 月约损失 150 亿美元，这是该公司约十年来首次月度亏损。",
+        "损失来自其对 AI 对冲基金 Situational Awareness 的投资，以及 AI 和其他科技股下跌、亚洲非 AI 股票多头等多项敞口。",
+        "Situational Awareness 遭遇追加保证金后，把大部分股票组合以急售方式卖给 Citadel；Jane Street 是该基金投资者。",
+        "Jane Street 员工说明称，Situational Awareness 上半年表现良好后仓位变大，7 月大幅回撤令该项投资年内收益回到大致持平，但从最初投资至今仍为正。",
+        "Jane Street 年内交易收入仍超过 400 亿美元，并称已经关闭相当一部分出问题领域的风险、减少其他策略的风险承担。"
+      ],
+      "caveats": [
+        "FT 正文被订阅墙挡住，主 agent 没有绕过付费墙；事实由 FT 公开标题、Bing 摘要和 Reuters 经 CNBC 转载的全文交叉核实。",
+        "不能写成 Jane Street 的 150 亿美元全数亏在 Situational Awareness；公开报道明确还有其他科技股和亚洲股票敞口。",
+        "Jane Street 年内收入和约十年首次月亏来自知情人士与公开报道，不是公司公开财报。"
+      ],
+      "why": "用户今天明确要求补回，且 AI 主题基金的集中持仓与去杠杆导致大型做市商出现罕见单月巨亏。"
+    }
+  ]
+}
