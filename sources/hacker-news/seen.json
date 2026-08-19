@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://yassa9.github.io/osint/gralhix-004",
+  "title": "有人用几何和 CUDA 找到一座随机岛屿",
+  "date": "2026-08-19T12:19:52Z",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
+  "id": "https://theremin.bizibah.com",
+  "title": "对着摄像头挥手就能演奏特雷门琴",
+  "date": "2026-08-19T10:15:00Z",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
+  "id": "https://github.com/DenisSergeevitch/desktop-fly",
+  "title": "开发者把果蝇神经线路接进 Mac 桌面宠物",
+  "date": "2026-08-18T21:50:33Z",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
+  "id": "https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html",
+  "title": "宜家给不同品类各发了一本取名词典",
+  "date": "2026-08-18T18:11:53Z",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
+  "id": "https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics",
+  "title": "陶哲轩参与搭建 Lean 数学证明注册表",
+  "date": "2026-08-19T02:41:50Z",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
+  "id": "https://www.cerebras.ai/cs4",
+  "title": "Cerebras 把三块晶圆装进一套 AI 机架",
+  "date": "2026-08-19T00:28:18Z",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
   "id": "https://twitter.com/kuberwastaken/status/2089377982536388964",
   "title": "Claude 给冷门惠普打印机写了 macOS 驱动",
   "date": "2026-08-18T12:22:58Z",

@@ -1,0 +1,251 @@
+[
+  {
+    "slug": "openai-safety-revenue",
+    "url": "https://www.theinformation.com/newsletters/ai-agenda/openai-raises-safety-bar-anthropic-anthropic-expands-revenue-lead",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/ai-agenda/openai-raises-safety-bar-anthropic-anthropic-expands-revenue-lead",
+    "bytes": 384838,
+    "title": "OpenAI Raises the Safety Bar on Anthropic; Anthropic Expands Its Revenue Lead — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "openai-astra-axios",
+    "url": "https://www.axios.com/2026/08/19/openai-astra-safety-altman-anthropic",
+    "status": null,
+    "error": "TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.axios.com/2026/08/19/openai-astra-safety-altman-anthropic\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "openai-pacing",
+    "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+    "status": 200,
+    "final_url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+    "bytes": 366615,
+    "title": "Pacing model development in an era of cyber-critical capabilities | OpenAI",
+    "chars": 9886
+  },
+  {
+    "slug": "sam-altman-pause",
+    "url": "https://x.com/sama/status/2089787807611195475",
+    "status": 200,
+    "final_url": "https://x.com/sama/status/2089787807611195475",
+    "bytes": 160967,
+    "title": "Sam Altman on X: \"We have paused some frontier RL training to ensure that we can meet the appropriate alignment, security and monitoring standards for the new level of capabilities in front of us. Model progress is now extremely rapid, and we always said we would take action if we felt that model\" / X",
+    "chars": 873
+  },
+  {
+    "slug": "anthropic-supervoting",
+    "url": "https://www.theinformation.com/articles/anthropic-prepares-supervoting-power-founders-readies-mega-ipo",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/anthropic-prepares-supervoting-power-founders-readies-mega-ipo",
+    "bytes": 399504,
+    "title": "Anthropic Prepares Supervoting Power for Founders as it Readies for Mega-IPO — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "white-house-model-testing",
+    "url": "https://www.theinformation.com/articles/ai-companies-unanswered-questions-white-house-model-testing-plan",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/ai-companies-unanswered-questions-white-house-model-testing-plan",
+    "bytes": 398102,
+    "title": "For AI Companies, Unanswered Questions About White House Model Testing Plan — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "anthropic-risk-zvi",
+    "url": "https://thezvi.substack.com/p/anthropic-risk-report-august-2026",
+    "status": null,
+    "error": "TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://thezvi.substack.com/p/anthropic-risk-report-august-2026\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "anthropic-risk-report",
+    "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
+    "status": 200,
+    "final_url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
+    "bytes": 4569677,
+    "title": "",
+    "chars": 3153744
+  },
+  {
+    "slug": "cerebras-cs4",
+    "url": "https://www.cerebras.ai/cs4",
+    "status": 200,
+    "final_url": "https://www.cerebras.ai/cs4",
+    "bytes": 392648,
+    "title": "Product - System - Cerebras",
+    "chars": 3252
+  },
+  {
+    "slug": "gop-data-center-memo",
+    "url": "https://www.axios.com/2026/08/19/gop-data-center-memo-ai-election",
+    "status": null,
+    "error": "TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.axios.com/2026/08/19/gop-data-center-memo-ai-election\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "young-adults-ai",
+    "url": "https://www.axios.com/2026/08/18/young-adults-ai-job-loss",
+    "status": null,
+    "error": "TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.axios.com/2026/08/18/young-adults-ai-job-loss\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "ai-security-harm-reduction",
+    "url": "https://www.lesswrong.com/posts/AAu6kMi5QRasGdwQG/ai-security-is-harm-reduction",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/AAu6kMi5QRasGdwQG/ai-security-is-harm-reduction",
+    "bytes": 356790,
+    "title": "AI Security is Harm Reduction — LessWrong",
+    "chars": 2068
+  },
+  {
+    "slug": "civilisational-handoff",
+    "url": "https://www.lesswrong.com/posts/mGLCMzHhjcWsMm6sR/three-thoughts-on-civilisational-handoff",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/mGLCMzHhjcWsMm6sR/three-thoughts-on-civilisational-handoff",
+    "bytes": 456026,
+    "title": "Three thoughts on civilisational handoff — LessWrong",
+    "chars": 10690
+  },
+  {
+    "slug": "agent-lightning",
+    "url": "https://huggingface.co/papers/2608.17528",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.17528",
+    "bytes": 164001,
+    "title": "Paper page - Agent Lightning v1.0: Towards Harnessed Agentic RL",
+    "chars": 6499
+  },
+  {
+    "slug": "harness-risk",
+    "url": "https://huggingface.co/papers/2608.17597",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.17597",
+    "bytes": 146624,
+    "title": "Paper page - HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety",
+    "chars": 4133
+  },
+  {
+    "slug": "palomar",
+    "url": "https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics",
+    "status": 200,
+    "final_url": "https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics/",
+    "bytes": 175964,
+    "title": "Palomar – a registry of Lean verified mathematics | What's new",
+    "chars": 15543
+  },
+  {
+    "slug": "deepseek-harness-security",
+    "url": "https://huggingface.co/papers/2608.16393",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.16393",
+    "bytes": 126650,
+    "title": "Paper page - Security Assessment of DeepSeek Harness with A.I.G: Evaluating Resistance to Indirect Prompt Injection",
+    "chars": 4033
+  },
+  {
+    "slug": "openai-democratic-oversight",
+    "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+    "status": 200,
+    "final_url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security/",
+    "bytes": 345178,
+    "title": "Strengthening democratic oversight in national security | OpenAI",
+    "chars": 5379
+  },
+  {
+    "slug": "replit-luna",
+    "url": "https://openai.com/index/replit",
+    "status": 200,
+    "final_url": "https://openai.com/index/replit/",
+    "bytes": 360575,
+    "title": "Replit expands access to software creation with GPT-5.6 Luna | OpenAI",
+    "chars": 3926
+  },
+  {
+    "slug": "mojo-open-source",
+    "url": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
+    "bytes": 15097,
+    "title": "Mojo🔥 is now open source",
+    "chars": 1805
+  },
+  {
+    "slug": "grok-bedrock",
+    "url": "https://x.ai/news/grok-4-6-amazon-bedrock",
+    "status": 200,
+    "final_url": "https://x.ai/news/grok-4-6-amazon-bedrock",
+    "bytes": 152166,
+    "title": "Grok 4.6 on Amazon Bedrock | SpaceXAI",
+    "chars": 833
+  },
+  {
+    "slug": "lfm25-q4",
+    "url": "https://huggingface.co/blog/LiquidAI/qad",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/LiquidAI/qad",
+    "bytes": 156995,
+    "title": "LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation",
+    "chars": 3483
+  },
+  {
+    "slug": "ikea-names",
+    "url": "https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html",
+    "status": 200,
+    "final_url": "https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html",
+    "bytes": 861618,
+    "title": "How does IKEA come up with names for its products?  - IKEA Sweden",
+    "chars": 3662
+  },
+  {
+    "slug": "desktop-fly",
+    "url": "https://github.com/DenisSergeevitch/desktop-fly",
+    "status": 200,
+    "final_url": "https://github.com/DenisSergeevitch/desktop-fly",
+    "bytes": 302401,
+    "title": "GitHub - DenisSergeevitch/desktop-fly: A 3D fruit fly living on your macOS desktop, driven by a live spiking simulation of the real FlyWire connectome · GitHub",
+    "chars": 5847
+  },
+  {
+    "slug": "air-theremin",
+    "url": "https://theremin.bizibah.com",
+    "status": 200,
+    "final_url": "https://theremin.bizibah.com/",
+    "bytes": 81159,
+    "title": "Air Theremin · Play With Motion Or Hand Tracking",
+    "chars": 923
+  },
+  {
+    "slug": "cuda-island",
+    "url": "https://yassa9.github.io/osint/gralhix-004",
+    "status": 200,
+    "final_url": "https://yassa9.github.io/osint/gralhix-004/",
+    "bytes": 41296,
+    "title": "gralhix #004",
+    "chars": 15350
+  },
+  {
+    "slug": "natural-independence",
+    "url": "https://www.lesswrong.com/posts/2RPwucNrMTKxiB5wp/natural-independence-incentives",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/2RPwucNrMTKxiB5wp/natural-independence-incentives",
+    "bytes": 343764,
+    "title": "Natural Independence Incentives — LessWrong",
+    "chars": 3045
+  },
+  {
+    "slug": "homework-before-ai",
+    "url": "https://x.com/emollick/status/2090059088323375527",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2090059088323375527",
+    "bytes": 187578,
+    "title": "Ethan Mollick on X: \"This is a good paper and AI has definitely made the cheating problem worse but it is easy to overlook how bad it was before AI.\n\nDoing homework improved final test grades for 86% of college students students in 2008 but only 45% in 2017 because they were copying off the internet\" / X",
+    "chars": 552
+  },
+  {
+    "slug": "homework-economist",
+    "url": "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning",
+    "status": 200,
+    "final_url": "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning",
+    "bytes": 261399,
+    "title": "Does AI stop children from learning?",
+    "chars": 1225
+  }
+]

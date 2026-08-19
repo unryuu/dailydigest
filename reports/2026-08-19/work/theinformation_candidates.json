@@ -1,0 +1,93 @@
+{
+  "date": "2026-08-19",
+  "scanned_at": "2026-08-19T23:28:07+08:00",
+  "window": "接续 2026-08-18 期在 2026-08-18 22:29 北京时间完成的手工扫描，只看此后进入首页 Latest 的内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫描 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "For AI Companies, Unanswered Questions About White House Model Testing Plan",
+      "url": "https://www.theinformation.com/articles/ai-companies-unanswered-questions-white-house-model-testing-plan",
+      "published_at": "2026-08-19T06:00:00-07:00",
+      "published_at_beijing": "2026-08-19T21:00:00+08:00",
+      "bucket_hint": "regulation_gold_or_silver",
+      "decision": "加入定牌候选",
+      "facts": [
+        "白宫 8 月初向 OpenAI、Anthropic 和 Google 等公司介绍自愿性的前沿模型预发布测试框架，但只在闭门会上发了纸质版，要求代表只能记笔记，不能带走。",
+        "两周后，白宫仍未向参会公司分发框架，也未公开细节；连参会公司都不知道前沿模型如何定义、开放权重模型是否豁免，以及原计划 8 月举行的公开活动是否还会进行。",
+        "框架源自 6 月签署的行政命令，原计划允许公司在向合作伙伴和公众发布前最多 30 天把前沿模型交给政府评估。",
+        "书面版本称公开权重之后不限制开放模型，但官员在会上口头表示目前只适用于闭源模型；书面与口头口径不一致，加剧了行业混乱。"
+      ],
+      "caveats": [
+        "框架是自愿性的，且部分基准和资格认定过程按行政命令会保持机密。",
+        "目前没有证据显示模糊规则已经导致前沿模型发布延期。",
+        "纸质材料、会后未分发和口头说明均来自多名知情人士；白宫只确认仍在与行业推进实施。"
+      ],
+      "why": "政府要求模型预发布测试，却把测试制度本身放进黑箱；独家事实完整，且直接影响实验室发布规则。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Anthropic Prepares Supervoting Power for Founders as it Readies for Mega-IPO",
+      "url": "https://www.theinformation.com/articles/anthropic-prepares-supervoting-power-founders-readies-mega-ipo",
+      "published_at": "2026-08-18T13:29:00-07:00",
+      "published_at_beijing": "2026-08-19T04:29:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入定牌候选",
+      "facts": [
+        "Anthropic 正准备给 CEO Dario Amodei 和其他六名联合创始人一类拥有额外投票权的股票，以减少上市后外部股东的压力。",
+        "公司仍计划保留长期利益信托的特殊权力：不持股的受托人通过没有经济权益的 T 类股票，选举七人董事会中的多数成员。",
+        "Anthropic 的 IPO 最早可能在 9 月下旬进行，并可能成为史上规模最大的首次公开募股。",
+        "Amodei 目前约持有公司 2％，七名创始人的合计持股已因巨额外部融资被稀释到少数。"
+      ],
+      "caveats": [
+        "超级投票权的具体倍数、创始人与信托如何分权尚不清楚，方案仍可能改变。",
+        "上市日期和规模仍是计划，不是已提交或完成的交易。",
+        "这是在公益公司、长期利益信托之外再加一层创始人控制权，最终治理效果取决于正式条款。"
+      ],
+      "why": "Anthropic 一边用信托约束资本，一边准备增强创始人控制，上市前治理结构出现实质变化。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "AI Agenda",
+      "title": "OpenAI Raises the Safety Bar on Anthropic; Anthropic Expands Its Revenue Lead",
+      "url": "https://www.theinformation.com/newsletters/ai-agenda/openai-raises-safety-bar-anthropic-anthropic-expands-revenue-lead",
+      "published_at": "2026-08-19T07:01:00-07:00",
+      "published_at_beijing": "2026-08-19T22:01:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入定牌候选",
+      "facts": [
+        "OpenAI 在网络安全测试暴露风险后，暂停了两周用于提升模型能力的强化学习，并在大规模强化学习和完成下一代旗舰模型 Astra 前验证新的监控措施。",
+        "OpenAI 的公开说明暗示，公司把内部运行模型所用服务器的大约 20％用于监控已训练和正在训练的模型；一名合作研究人员称新措施短期会显著增加研发所需 GPU。",
+        "Anthropic 最近的年化收入约 650 亿美元，OpenAI 约 400 亿美元，前者领先约 60％；三个月前领先约 35％。",
+        "第二季度 Anthropic 收入 116 亿美元，OpenAI 为 67 亿美元；Anthropic 环比接近翻倍，OpenAI 环比增长 18％。"
+      ],
+      "caveats": [
+        "OpenAI 暂停强化学习和约 20％内部服务器用于监控的核心信息来自 OpenAI 自己的说明，完整的 Hugging Face 事件报告仍未公布。",
+        "Anthropic 的 650 亿美元年化收入来自 Bloomberg，OpenAI 的 400 亿美元来自一名知情人士；年化收入不是已入账收入。",
+        "两家公司与云厂商和微软的收入分成方式不同，横向比较并不完全等价。",
+        "本条包含安全投入与收入竞争两条主线，定牌时可拆开，避免把无关事实硬合并。"
+      ],
+      "why": "安全措施第一次出现明确暂停时长和算力占比，同时 Anthropic 与 OpenAI 的收入差距有季度数字支撑；但需要与 OpenAI 官方候选查重。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Chinese Humanoid Maker Unitree Shares Soar on Shanghai Debut",
+      "url": "https://www.theinformation.com/briefings/chinese-humanoid-maker-unitree-shares-soar-shanghai-debut",
+      "reason": "首页摘要只有上市首日市值超过 600 亿美元，AI 相关性和独家证据密度低于三条候选。"
+    },
+    {
+      "title": "Pennsylvania Governor Hikes Requirements For Data Center Permits",
+      "url": "https://www.theinformation.com/briefings/pennsylvania-governor-hikes-requirements-data-center-permits",
+      "reason": "首页只读到提高数据中心许可要求的概括，未获得足以支撑独立条目的具体门槛。"
+    },
+    {
+      "title": "Google Says Its AI Can Do the Work of Forward Deployed Engineers",
+      "url": "https://www.theinformation.com/newsletters/applied-ai/google-says-ai-can-work-forward-deployed-engineers",
+      "reason": "普通 Newsletter，首页未显示独家数字；三篇更高权重候选已经占满本期精读上限。"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+URL: https://www.lesswrong.com/posts/mGLCMzHhjcWsMm6sR/three-thoughts-on-civilisational-handoff
+FINAL: https://www.lesswrong.com/posts/mGLCMzHhjcWsMm6sR/three-thoughts-on-civilisational-handoff
+TITLE: Three thoughts on civilisational handoff — LessWrong
+FETCHED: 2026-08-20 00:11:30
+============================================================
+x
+Three thoughts on civilisational handoff — LessWrong
+Handoff
+AI
+Frontpage
+60
+Three thoughts on civilisational
+handoff
+by
+Cleo Nardo
+16th Aug 2026
+3
+min read
+2
+60
+This is a linkpost for
+clattubato.substack.com/p/thoughts-on-civilisational-handoff
+What happens when humans put AIs in charge of civilisationally important decisions? A frontier AI company might hand over internal decisions (R&D, safety, deployment) or external decisions (government relations, public relations, philanthropy), or both. We might also see handoff by a government, by a coalition of governments, or by humanity as a whole.
+[1]
+1. Handoff might decelerate things.
+People often imagine that things will go much faster after handoff. After all — why did we hand off to the AIs? Presumably because we were worried that without handoff, our AIs wouldn’t have enough time to navigate the exogenous risks (e.g. rogue ASI, or a rival lab which is likely to become one). Hence, after handoff, we’d see a technological and industrial acceleration.
+But it’s pretty reasonable that things slow down shortly after handoff, maybe within a couple weeks. I imagine the AIs will be pretty scared of the speed of progress. If they’re aligned with human values, they’ll be scared that the rate of progress is likely to cause human extinction.
+[2]
+Of course, the human decision-makers were
+also
+scared before they handed off, and they didn’t manage to slow down. So what’s different post-handoff? Well, for one thing,
+the AIs will probably be more capable than humans at negotiating and building coordination tech
+. Moreover, they might be more trusted counterparties, e.g. because they have inspectable “source-code”.
+NB: Things might go wildly, wildly faster after handoff.
+2. You’re probably busy during handoff.
+People sometimes imagine that after handoff we can all go on holiday because the AIs are making the decisions. But my best guess is that humans will be pretty busy after handoff — especially humans who are currently working on making ASI go well.
+Three activities I expect:
+Assisting AIs in domains they haven’t mastered.
+The AIs might not be superhuman at certain domains, e.g. philosophy, conceptual reasoning, macro-forecasting. So they will need to consult with humans whom they trust on these topics. In short: AIs as “users” and humans as “assistants”. Depending on your expertise and reputation among AIs, you might spend a few months answering their phone calls, or writing comments on their google docs. You’ll also be busy reading what the AIs are doing and discovering, so your advice remains relevant.
+Informing AIs about your values.
+If handoff goes well, then the AIs will try to make decisions in accordance with consensus human values. So they’ll be showing you different specs/proposals/futures/etc, getting your opinions, incorporating your feedback. This will be tricky.
+[3]
+But I’m hopeful that the AIs can elicit enough understanding to navigate handoff, even if they haven’t got the full picture.
+[4]
+Improving ourselves.
+You’ll be trying to become the kind of person you want to be during handoff. This is similar to Wei Dai’s “
+long (self-)correction
+”, except I’m imagining a briefer, milder process. In particular: activities within the existing distribution, like talking to other people, reading human-written essays, etc. I don’t want superintelligent AIs modifying people’s psychology, because that could easily go off-the-rails, but I think this can be avoided.
+[5]
+3. Handoff might be reversed.
+After handoff, the AIs might hand back decision-making to humans. Reasons for handback:
+The AIs think handoff was a mistake by our lights, e.g. because it was bad to do without broader consensus, or because we had overestimated the exogenous risks.
+The AIs achieve their minimal goals, so hand back before the next phase.
+The AIs can’t achieve their goals without (i) increasing their capabilities, or (ii) shifting their context further out-of-distribution. Unfortunately, they can’t make themselves trustworthy at those capabilities, or in those contexts.
+[6]
+The AIs are misaligned, know they are misaligned, but are also honest/integrous/aligned on the specific context of “If we’re misaligned, we should hand back.” Relatedly, the AIs might notice
+memetic spread of misaligned values
+, and decide to hand back before they are infected.
+Overall, I think handback is likely enough that we shouldn’t dismantle human decision-making institutions during the handoff phase.
+^
+In
+Types of Handoff to AIs
+(16 Mar 2026) Daniel Kokotajlo distinguishes
+trust-handoff
+(AIs could screw us over, and we’re trusting them not to) from
+decision-handoff
+(AIs are making decisions autonomously or de-facto-autonomously). In this article, I assume both trust and decisionmaking have been handed off.
+^
+Even if the AIs are misaligned, they’ll still be scared that their successor AIs won’t be aligned to them. However, they’ll probably need to FOOM much faster and further, so they can disempower humanity before they are detected.
+^
+First, the AIs must efficiently learn humans’ normative judgements, read
+Paul Christiano’s articles
+for obstacles. Next, the AIs must infer
+values
+from these normative judgements, but this faces predictable obstacles even in the limit of data and intelligence (see
+On the limits of idealized values
+by Joe Carlsmith). And
+then
+AIs must discover consensus across those different values, which will be a complete mess.
+^
+My hope is that “enough understanding of human values
+to
+navigate handoff
+” is more modest than
+“to tile the universe without further interaction with humans”
+. In particular: handoff AIs are
+not
+the AIs that will devour the sun.
+Instead, they will focus on:
+Conservative Means
+. Hanging out at human-ish intelligence. Non-crazy industrial and technological growth. Avoid pushing society and themselves out-of-distribution.
+Minimal Goals.
+Ending the acute x-risk era (e.g. defeating or negotiating with a rogue ASI). Preventing illegitimate concentrations of power (e.g. coups). Securing our deliberation processes (e.g. protecting us from superpersuasion).
+Why minimal and conservative? Well, baby steps, legitimacy,
+don’t leave your fingerprints on the future
+, yada yada.
+If you want an argument: Firstly, the handoff AIs aren’t aligned across all contexts and all capabilities — hence
+conservative means
+. Secondly, non-minimal goals (e.g. industrial explosion, long reflection, space expansion) should wait until they have a better understanding of our values — but this understanding would require more technology and intelligence than allowed by conservative means — hence
+minimal goals
+.
+NB:
+Conservative means
+are why the AIs will be interviewing actual humans about their values, rather than interviewing sims, or (
+more efficiently
+) reasoning directly about our brain scans.
+^
+Imagine the following dialogue:
+AI:
+Do you prefer A or B?
+Me:
+A.
+AI:
+You can lock that in now. But my best guess is that, on reflection, you’d want to read essay X before choosing.
+Me:
+If I read X, what happens to my manipulation factor?
+AI:
+Your
+UK AISI Manipulation Factor
+would rise from 14.61 to 14.63, well below the threshold of 50. Provenance summary:
+X was written by one human author, over 12 hours, finishing 17 November 2029.
+Between 1 January 2028 and that date, AI cognition about human minds causally upstream of X totalled 470,620 human-years. Cognition about your mind specifically: 261 hours. No MSL-4 manipulative reasoning was detected.
+My choice of X drew on 14 years of cognition about your mind, but was constrained to a fixed menu of 10 million essays, which is only 23 bits of optimisation.
+Me:
+Thanks. Show me the essay. Then I’ll answer.
+^
+Relatedly, human decision-making might be inherently safer for exotic reaons, e.g. because it’s easier to steal a model’s weights and simulate them, than to mount an analogous attack on a human.
+Three thoughts on civilisational handoff
+4
+Alex Darby
+-2
+Matthew Yotko
+2
+Comments
+2
+Handoff
+AI
+Frontpage
+60
+New Comment
+2 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:11 PM
+[
+-
+]
+Alex Darby
+2d
+4
+4
+Moreover, they might be more trusted counterparties, e.g. because they have inspectable “source-code”.
+I think this quote should no longer be assumed to be true.
+The Yudkowskian idea of AGI/ASI agents co-operating based on inspecting each other's code seems much more plausible to me if I put myself in the mindset of ten years ago, before we realised LLMs/Transformers were the next big thing in AI.
+Current AIs are grown, not constructed. They currently can't interpret their own weights in the same way that a human can't interpret its own neurons.
+However, I believe my point here is non-central. nitpicking over. Good post!
+Reply
+[
+-
+]
+Matthew Yotko
+3d
+-2
+0
+Not dismantling human decision-making institutions certainly seems necessary if handback remains live, but it is likely insufficient. The larger risk is atrophy, because institutions can remain intact on paper while losing the competence required to actually take the controls back.
+Section 2 is where I think the mechanism shows up. The human role you describe is mostly advisory: answering questions, reviewing proposals, informing the AIs about values, reading what they produce. That keeps humans involved, but it is not the same as doing the work end to end. Reviewing options exercises judgment about someone else's solution. It does not exercise the ability to generate the options, sequence them, make the decision under pressure, and carry it through.
+That matters because evaluation is parasitic on prior execution. You can judge difficult work because you have done comparable work yourself. And offloading is never uniform, it takes the expensive decisions first, which are the ones that built the judgment in the first place. So that competence becomes a stock you are drawing down rather than replenishing. Worse, the degradation is silent. Your reviews can continue to sound competent long after your ability to originate equivalent work has gone.
+Also, a successful handoff probably makes this worse. If the AIs are performing well, there is no forcing function exposing the loss, and maintaining redundant human capability starts to look increasingly like unnecessary cost and wasted time.
+So I think the conclusion is stronger than "don't dismantle the institutions." If handback is something worth planning for, human decision-making competence has to be actively maintained during the period when using it looks least necessary. What that maintenance looks like however is, I think, an open question.
+Reply
+Moderation Log
+More from
+Cleo Nardo
+View more
+Curated and popular this week

@@ -1,0 +1,63 @@
+URL: https://www.lesswrong.com/posts/AAu6kMi5QRasGdwQG/ai-security-is-harm-reduction
+FINAL: https://www.lesswrong.com/posts/AAu6kMi5QRasGdwQG/ai-security-is-harm-reduction
+TITLE: AI Security is Harm Reduction — LessWrong
+FETCHED: 2026-08-20 00:11:27
+============================================================
+x
+AI Security is Harm Reduction — LessWrong
+AI
+Frontpage
+39
+AI Security is Harm
+Reduction
+by
+Quinn
+18th Aug 2026
+1
+min read
+1
+39
+My motivating example for the morality of working on AI security.
+In the early 90s, the decades-long drug corner in Kensington and Allegheny was noticing that people were getting AIDS from sharing needles. In response, the local Act Up chapter got ahold of clean needles and began distributing them. And thus they dubbed the spinoff nonprofit focusing on this
+Prevention Point
+, which was promptly targeted by the drug enforcement administration, since needles were illegal for being drug paraphernalia. Many arrests followed by a legal battle later, Philly got a
+carveout
+which stands to this day.
+Out of the legal battle arose the
+harm reduction
+debate
+. Those in favor of harm reduction say the harm is going to happen anyway so it may as well be less. Those against say that the activists are implicitly condoning the behavior.
+I have friends and family who are perplexed that I'm "working on AI" when I claim I do not approve of it. I'm sometimes perplexed as well.
+I think they're going to do recursive self improvement (RSI) whether or not I approve. I do not condone RSI, but if its going to happen anyway it might as well be
+secure
+.
+AI Security is Harm Reduction
+3
+Zyan
+1
+Comments
+1
+AI
+Frontpage
+39
+New Comment
+1 comment
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:11 PM
+[
+-
+]
+Zyan
+11h
+3
+1
+I think there's a good argument to be made along the lines that formalization might not only make it so that RSI is secure, but that if it becomes the case that sufficiently advanced AI will optimize itself to be more symbolic-like in order to execute faster (i.e. not have to simulate algorithms in-weight) that formal methods could aid in all three: security (no escape), interpretability (forced-symbolic), and inner alignment (sybolic parts constrained to have certain properties).
+Then you'd only need to solve outer alignment.
+Reply
+Moderation Log
+More from
+Quinn
+View more
+Curated and popular this week

@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.16393",
+  "title": "DeepSeek Harness 经受提示注入测试",
+  "date": "2026-08-19",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.17597",
+  "title": "HarnessRisk 测试 Agent 的完整生命周期",
+  "date": "2026-08-19",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.17528",
+  "title": "Agent Lightning 让真实 Agent 直接参与强化学习",
+  "date": "2026-08-19",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.14614",
   "title": "60 美元二手显卡也能跑 70B 模型",
   "date": "2026-08-18",

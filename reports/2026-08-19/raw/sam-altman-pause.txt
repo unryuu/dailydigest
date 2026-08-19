@@ -1,0 +1,18 @@
+URL: https://x.com/sama/status/2089787807611195475
+FINAL: https://x.com/sama/status/2089787807611195475
+TITLE: Sam Altman on X: "We have paused some frontier RL training to ensure that we can meet the appropriate alignment, security and monitoring standards for the new level of capabilities in front of us. Model progress is now extremely rapid, and we always said we would take action if we felt that model" / X
+FETCHED: 2026-08-20 00:08:06
+============================================================
+Sam Altman
+@sama
+We have paused some frontier RL training to ensure that we can meet the appropriate alignment, security and monitoring standards for the new level of capabilities in front of us. Model progress is now extremely rapid, and we always said we would take action if we felt that model capabilities were outstripping the pace of safety and alignment.
+
+We care very deeply about AI safety. We believe the entire field will have to coordinate on shared safety standards, but will act unilaterally in the meantime.
+
+We expect confidence in safety to increasingly set the pace of AI progress. We are optimistic about the alignment work we are doing, and we remain committed to making frontier capabilities widely available.
+openai.com/index/pacing-m…
+Pacing model development in an era of cyber-critical capabilities
+From openai.com
+6:53 PM · Aug 18, 2026
+2.9M
+Views

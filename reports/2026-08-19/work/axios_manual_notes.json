@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-19",
+  "route": "Codex 内置浏览器人工直读；只保存事实转述和限定，不保存网页全文。",
+  "items": [
+    {
+      "slug": "openai-astra-axios",
+      "title": "OpenAI blinks first in AI safety standoff",
+      "url": "https://www.axios.com/2026/08/19/openai-astra-safety-altman-anthropic",
+      "facts": [
+        "OpenAI 因 Astra 可能达到准备框架中的关键网络安全风险阈值，暂停部分模型工作并引入新的安全实践。",
+        "Axios 把 OpenAI 与 Anthropic 的路线描述为公开分化：Anthropic 认为落实其 186 页风险报告中的护栏后，不需要暂停最强模型。",
+        "OpenAI 正在重写大部分源自 2023 年的准备框架；当时许多风险还只是理论情景。",
+        "OpenAI 和 Anthropic 都会先向少数伙伴发布、放慢部分模型或暂停部分工作，但两家公司都没有停止前沿研发。"
+      ],
+      "caveats": [
+        "Axios 把 Astra 风险称为 misalignment，但 OpenAI 官方原文更明确的是网络安全能力和监控不足，不应直接把两者画等号。",
+        "2026 年 7 月的 Hugging Face 事件与 Astra 无关。",
+        "暂停能持续多久、内部是否能验证对齐，仍受市场压力和验证难度影响。"
+      ]
+    },
+    {
+      "slug": "gop-data-center-memo",
+      "title": "Exclusive: GOP issues stark warning to AI companies",
+      "url": "https://www.axios.com/2026/08/19/gop-data-center-memo-ai-election",
+      "facts": [
+        "美国共和党参议院竞选委员会在发给头部 AI 公司的私人备忘录中警告，数据中心的负面观感正在伤害共和党保住俄亥俄州参议院席位的机会。",
+        "民主党候选人 Sherrod Brown 已投入数百万美元广告，把共和党参议员 Jon Husted 称为俄亥俄数据中心的代表；Fox News 民调显示 Brown 领先 8 个百分点。",
+        "备忘录称，如果 Husted 败选且数据中心被归咎为原因，全国政客会回避下一座数据中心，这可能成为整个选举周期的潜伏议题。",
+        "美国已有 4000 多座数据中心运行，另有 3000 多座处于规划或建设中；社区反对集中在电价、用水、建筑体量、就业少和 AI 取代岗位的焦虑。"
+      ],
+      "caveats": [
+        "这是竞选机构的风险判断，不是数据中心已经决定选举结果。",
+        "Axios 称内部民调把数据中心的受欢迎程度类比为核废料，但文章没有公开具体民调数字。",
+        "这与 08-18 英伟达和 OpenAI 的俄亥俄项目属于同一地区的新政治进展，正文必须强调新增的是选举压力。"
+      ]
+    },
+    {
+      "slug": "young-adults-ai",
+      "title": "AI optimism fades among young adults",
+      "url": "https://www.axios.com/2026/08/18/young-adults-ai-job-loss",
+      "facts": [
+        "Pew 调查中，55％的美国 30 岁以下成年人对 AI 的担忧多于兴奋，比 2021 年上升 24 个百分点。",
+        "73％的 30 岁以下成年人预计未来二十年 AI 会减少就业岗位，高于 2024 年的 61％。",
+        "只有约一成对 AI 进入日常生活更兴奋，约三分之一的兴奋与担忧相当。",
+        "调查于 2026 年 6 月 22 日至 28 日进行，样本为 3488 名美国成年人。"
+      ],
+      "caveats": [
+        "调查测量的是态度和预期，不证明 AI 已造成相同比例的失业。",
+        "Axios 同时指出，远程工作减少和企业不愿培训年轻员工也可能影响年轻白领招聘。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+[
+  {
+    "id": "young-adults-ai",
+    "section": "industry",
+    "label": "美国年轻人对 AI 的担忧四年上升 24 个百分点",
+    "url": "https://www.axios.com/2026/08/18/young-adults-ai-job-loss",
+    "body": "Pew 调查中，55％的美国 30 岁以下成年人对 AI 的担忧多于兴奋，73％预计未来二十年就业岗位会减少。调查测量的是态度和预期，不代表 AI 已造成相同比例的失业。",
+    "note": "核实通过；Axios 人工笔记日期为 2026-08-18，调查于 2026 年 6 月进行，样本为 3488 名美国成年人。"
+  },
+  {
+    "id": "ai-security-harm-reduction",
+    "section": "deep",
+    "label": "有人把 AI 安全比作给吸毒者换干净针头",
+    "url": "https://www.lesswrong.com/posts/AAu6kMi5QRasGdwQG/ai-security-is-harm-reduction",
+    "body": "作者并不赞成人工智能递归改进自己，但认为这件事无论如何都会发生，所以选择先把过程做得更安全。这套逻辑和减害相同：不认可一种行为，也可以减少它造成的伤害。",
+    "note": "核实通过；2026-08-18 发布，是一篇一分钟的个人立场文，不应写成行业共识或事实新闻。"
+  },
+  {
+    "id": "civilisational-handoff",
+    "section": "deep",
+    "label": "把文明交给 AI 后，技术进步可能先放慢",
+    "url": "https://www.lesswrong.com/posts/mGLCMzHhjcWsMm6sR/three-thoughts-on-civilisational-handoff",
+    "body": "作者设想，接管重要决策的 AI 可能更担心高速发展带来的灭绝风险，也更擅长协调各方减速。人类仍要提供价值判断和专业建议，还得保留自己接回决策权的能力。",
+    "note": "核实通过；2026-08-16 发布，是文明交接情景下的三点设想，不应写成确定预测。"
+  },
+  {
+    "id": "agent-lightning-v1",
+    "section": "papers",
+    "label": "Agent Lightning 让真实 Agent 框架直接参与强化学习",
+    "url": "https://huggingface.co/papers/2608.17528",
+    "body": "这套约 3500 行代码的框架把工具、上下文和控制流程留在实际使用的 Agent 外壳里，再把模型调用交给训练端。在作者实验中，6000 个训练样本让 Qwen3.5-9B 的 SWE-bench Verified 成绩从 41.8％升到 56.4％。",
+    "note": "核实通过；论文发表于 2026-08-18，并公开完整流程和训练脚本。dup_suspect：与 08-15 的 Agent Harness 自动进化同属 Harness 改进主线，但本条新增的是可复现的 Harness 原生强化学习框架和编码实验，不是 DarwinX／AutoDesign 的自动设计结果。"
+  },
+  {
+    "id": "harness-risk",
+    "section": "papers",
+    "label": "HarnessRisk 把 Agent 安全测试扩到六个生命周期阶段",
+    "url": "https://huggingface.co/papers/2608.17597",
+    "body": "它用 128 个沙箱案例测试配置、扩展、运行、持久状态、动作控制和事故恢复。三套 Harness 的攻击成功率从 12.6％到 80.9％不等，有些配置识别风险的比例超过 90％，仍会继续执行危险动作。",
+    "note": "核实通过；论文发表于 2026-08-18，代码链接已给出。dup_suspect：直接承接 08-18 的 Agent 跑分失真主线，但它提供了正式的全生命周期评测协议、攻击成功率和检测失效数据，属于该主线允许收录的新证据。"
+  },
+  {
+    "id": "palomar",
+    "section": "papers",
+    "label": "陶哲轩参与搭建 Lean 数学证明注册表",
+    "url": "https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics",
+    "body": "Palomar 会机械检查代码能否证明声明的结果、是否偷加公理，再用大模型比对形式化命题和人类描述是否一致。它更像 Lean 证明的预印本注册表，不负责判断成果是否新颖，也不等于同行评审。",
+    "note": "核实通过；陶哲轩于 2026-08-18 宣布开放投稿，并担任科学顾问委员会成员。"
+  },
+  {
+    "id": "deepseek-harness-security",
+    "section": "papers",
+    "label": "DeepSeek Harness 的间接提示注入最高成功率达到 25.5％",
+    "url": "https://huggingface.co/papers/2608.16393",
+    "body": "研究者在本地沙箱里跑了 14560 次受控测试，覆盖文本和文件等 16 种内容通道。隐藏 Unicode 在文件模式下的最高攻击成功率为 25.5％，说明不可信内容和敏感操作之间还需要额外控制。",
+    "note": "核实通过；论文发表于 2026-08-18，测试保留了 Agent 循环和工具路径，但敏感操作均为无外部副作用的本地夹具。dup_suspect：08-13 和 08-16 已连续报道 DeepSeek V4 Pro Harness，主线已经饱和；本条虽新增 14560 次安全实验，仍应由定牌判断是否值得再次占版面。"
+  },
+  {
+    "id": "openai-democratic-oversight",
+    "section": "official",
+    "label": "OpenAI 给政府 AI 监督机构投入 500 万美元",
+    "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+    "body": "这笔支持包括培训、技术服务和使用额度，还会试做审查工具，让授权人员追查政府 AI 决策用过的输入、输出和工具。证据和调查结果由政府机构掌握，OpenAI 明确说自己不负责监督政府。",
+    "note": "核实通过；OpenAI 于 2026-08-18 发布，计划在未来一年推进，目前只有公司公告和计划口径。"
+  },
+  {
+    "id": "replit-luna",
+    "section": "official",
+    "label": "Replit 免费模式接入 GPT-5.6 Luna",
+    "url": "https://openai.com/index/replit",
+    "body": "用户可以在不消耗使用额度的情况下让 Agent 回答问题、提建议和整理开发思路，进入真正构建软件的模式前先把方案想清楚。遇到更复杂的推理，Replit 会转给 GPT-5.6 Sol，再带着项目上下文返回免费模式。",
+    "note": "核实通过；OpenAI 于 2026-08-19 发布。免费的是规划和探索阶段，原文没有承诺 Build Mode 也不限量，也没有列出地区限制。"
+  },
+  {
+    "id": "mojo-open-source",
+    "section": "brief",
+    "label": "Mojo 1.0 开源编译器和工具链，采用 Apache 2 许可证",
+    "url": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source",
+    "note": "核实通过；2026-08-18 发布。Mojo 现在是受 Python 语法启发、面向 GPU 编程的独立语言，已经不再承诺成为完整 Python 超集。"
+  },
+  {
+    "id": "grok-bedrock",
+    "section": "brief",
+    "label": "Grok 4.6 进入 Amazon Bedrock",
+    "url": "https://x.ai/news/grok-4-6-amazon-bedrock",
+    "note": "核实通过；xAI 于 2026-08-19 宣布正式可用，支持 50 万上下文和四档推理强度，输入每百万 token 2 美元、输出 6 美元。"
+  },
+  {
+    "id": "lfm25-q4",
+    "section": "brief",
+    "label": "Liquid AI 发布 LFM2.5 四比特量化检查点",
+    "url": "https://huggingface.co/blog/LiquidAI/qad",
+    "note": "核实通过；2026-08-19 发布四种尺寸的 Q4_0 GGUF。厂商称它们保持四比特模型的内存和速度，并恢复约 97％因量化损失的平均准确率。"
+  },
+  {
+    "id": "ikea-names",
+    "section": "fun",
+    "label": "宜家给不同品类各发了一本取名词典",
+    "url": "https://www.ikea.com/se/en/customer-service/knowledge/articles/6f564c4d-2ccc-46de-b643-545a3948dc79.html",
+    "body": "沙发用瑞典地名，书架用男性名字，儿童用品用动物和自然词汇。候选词还得是真词、长 4 到 12 个字母、读起来顺口，最好带上 Å、Ä 或 Ö。",
+    "note": "核实通过；宜家瑞典官方说明页称每年要给约 2000 到 3000 款新品命名。"
+  },
+  {
+    "id": "desktop-fly",
+    "section": "fun",
+    "label": "开发者把果蝇神经线路接进 Mac 桌面宠物",
+    "url": "https://github.com/DenisSergeevitch/desktop-fly",
+    "body": "这只三维果蝇用 FlyWire 数据搭出的 668 个神经元、约 19000 条突触线路决定行走、梳理和逃跑。鼠标快速冲过去时，逃跑神经元会在约 4 毫秒后触发起飞，动作不是预先写死的。",
+    "note": "核实通过；项目使用真实连接关系，但神经动力学、递质符号和鼠标到视觉刺激的转换是建模选择，不能写成完整真实果蝇大脑。"
+  },
+  {
+    "id": "air-theremin",
+    "section": "fun",
+    "label": "对着摄像头挥手就能演奏特雷门琴",
+    "url": "https://theremin.bizibah.com",
+    "body": "双手张得越开声音越大，举得越高音调越高，手掌合拢就静音。手机还能改用陀螺仪控制，没有摄像头和传感器时也可以拿鼠标玩。",
+    "note": "核实通过；网页可直接运行，说明与页面交互规则一致。"
+  },
+  {
+    "id": "cuda-island",
+    "section": "fun",
+    "label": "有人用几何和 CUDA 定位一座随机岛屿",
+    "url": "https://yassa9.github.io/osint/gralhix-004",
+    "body": "他没有用以图搜图，而是把照片里三座岛的角度和距离做成几何指纹，再让显卡筛 8070 万个岛屿三角形。植被、海拔和海岸形状继续缩小范围后，他在密克罗尼西亚找到了 Oan 度假村。",
+    "note": "核实通过；2026-08-16 发布，作者公开了代码、数据来源、启发式筛选过程和最终坐标。"
+  },
+  {
+    "id": "natural-independence",
+    "section": "fun",
+    "label": "一碗冰淇淋成了五岁孩子的独立练习",
+    "url": "https://www.lesswrong.com/posts/2RPwucNrMTKxiB5wp/natural-independence-incentives",
+    "body": "孩子为了甜点自己排队、和服务员说话，中途打翻后又重新说明只想要冰淇淋。作者的办法是借孩子本来就很想完成的事，少帮一点，让陌生场景自然变成练习。",
+    "note": "核实通过；2026-08-18 发布，是作者的育儿经历和个人方法，不应写成经过研究验证的教育结论。"
+  },
+  {
+    "id": "cerebras-cs4",
+    "section": "industry",
+    "label": "Cerebras 把三块晶圆装进一套 AI 机架",
+    "url": "https://www.cerebras.ai/cs4",
+    "body": "CS-4 用三块 WSE-3 Turbo 加新的供电、液冷和互连系统，号称部署时间能从几天缩到几小时。所有性能都是厂商峰值口径，首批产品计划本季度才开始出货。",
+    "note": "核实通过；从银牌降无牌。厂商称单晶圆最高两倍速度、每瓦吞吐量最高十倍，但没有公开测试模型、GPU 对手、精度或客户实测。"
+  }
+]

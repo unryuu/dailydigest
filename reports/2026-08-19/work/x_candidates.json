@@ -1,0 +1,107 @@
+{
+  "date": "2026-08-19",
+  "scanned_at": "2026-08-19T23:30:19+08:00",
+  "window": "接续 2026-08-18 期在 2026-08-18 22:29 北京时间完成的手工扫描，只看此后的新帖",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取；Nitter 仅保留失败诊断",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现 2 条时间窗内 AI 观点，其中 1 条引用新研究、1 条讨论主权 AI"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-03，无时间窗内新帖"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-02，无时间窗内新帖"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-11，无时间窗内新帖"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "发现 1 条关于对齐评测基础设施的完整观点"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "发现 1 条 OpenAI 暂停部分前沿强化学习的官方说明；另 1 条为 08-18 已报数据中心交易"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "只有 1 条与中国火箭外形争论有关的新帖，无日报候选"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "落后的主权模型会让国家在前沿任务上付出代价",
+      "url": "https://x.com/emollick/status/2090083512653160832",
+      "datetime": "2026-08-19T14:28:35.000Z",
+      "bucket_hint": "angle_needs_check",
+      "text": "Ethan Mollick 看到法国政府未来可能只采购 Mistral 等主权 AI、排除 OpenAI 的消息后指出：如果本国模型明显落后于前沿，越是网络安全这类差距最大的任务，坚持主权模型的竞争代价越高。",
+      "caveats": [
+        "Mollick 明确说自己不知道引用的法国消息是否真实，后续必须核查政府原始表态。",
+        "这是对主权 AI 取舍的推演，不是已量化的成本评估。"
+      ],
+      "why": "把主权 AI 的安全与自主收益，和落后模型在关键任务上的能力代价放在同一张账上。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "家庭作业与考试脱钩早在生成式 AI 前就开始了",
+      "url": "https://x.com/emollick/status/2090059088323375527",
+      "datetime": "2026-08-19T12:51:32.000Z",
+      "bucket_hint": "angle_or_radar_needs_read",
+      "text": "Ethan Mollick 评论一项中国学生使用 AI 的新研究时提醒，AI 确实让作弊更严重，但互联网时代已经削弱了家庭作业的学习价值：2008 年做作业能提高 86％大学生的期末考试成绩，到 2017 年只剩 45％，原因是学生从网上抄答案。",
+      "caveats": [
+        "86％和 45％来自 Mollick 对论文的转述，尚未读取论文原文和样本设计。",
+        "他引用的新研究由 Economist 制图转述，正式收录前要找到论文或原始数据。"
+      ],
+      "why": "如果原论文站得住，可把 AI 作弊放进更长的互联网抄作业趋势，而不是把学习问题全部归因于聊天机器人。"
+    },
+    {
+      "source": "x-roon",
+      "title": "对齐最难的部分可能是把百万种测试环境配对",
+      "url": "https://x.com/tszzl/status/2089884327740158288",
+      "datetime": "2026-08-19T01:17:06.000Z",
+      "bucket_hint": "angle",
+      "text": "Roon 认为，人们容易把对齐推理当成难题、把任务类型、环境和虚拟机配置当成杂务，但现实可能正相反：即使规则符合常识，要让海量测试环境持续正确运行，也需要大型技术组织才会直觉理解的复杂工程。",
+      "caveats": [
+        "他自己注明百万量级只是随手估算，不是实际统计。",
+        "这是行业经验判断，没有附具体评测系统、故障率或成本数据。"
+      ],
+      "why": "把抽象对齐讨论落到评测环境和虚拟机可靠性，能与近期 Agent 跑分失真主线形成新角度，但证据较薄。"
+    },
+    {
+      "source": "x-sama",
+      "title": "OpenAI 暂停部分前沿强化学习",
+      "url": "https://x.com/sama/status/2089787807611195475",
+      "datetime": "2026-08-18T18:53:34.000Z",
+      "bucket_hint": "industry_merge_with_official",
+      "text": "Sam Altman 说，OpenAI 已暂停部分前沿强化学习训练，以确保面对新能力水平时达到适当的对齐、安全和监控标准；他强调模型进展极快，公司曾承诺必要时会采取行动。",
+      "caveats": [
+        "这是对 OpenAI 官方博客的转发和概括，应优先使用官方原文链接。",
+        "机械扫源和 The Information 候选已经包含同一事件，scout 应合并而不是重复列条。"
+      ],
+      "why": "提供 CEO 的一手确认，但信息量少于官方博客和 The Information 的两周暂停、监控算力细节。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/sama/status/2089758522678657212",
+      "reason": "只是感谢黄仁勋并转发基础设施文章，相关俄亥俄数据中心交易已在 08-18 报道。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2090047754718396565",
+      "reason": "围绕中国火箭是否模仿 SpaceX 的一句反讽，与 AI 日报无关。"
+    }
+  ]
+}

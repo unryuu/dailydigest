@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://openai.com/index/replit",
+  "title": "Replit 免费模式接入 GPT-5.6 Luna",
+  "date": "Wed, 19 Aug 2026 07:00:00 GMT",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
+  "id": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+  "title": "OpenAI 给政府 AI 监督机构投入 500 万美元",
+  "date": "Tue, 18 Aug 2026 19:00:00 GMT",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
+  "id": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+  "title": "OpenAI 暂停部分前沿强化学习",
+  "date": "2026-08-19",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
   "id": "https://openai.com/index/chatgpt-for-teens",
   "title": "OpenAI 推出青少年版 ChatGPT",
   "date": "Tue, 18 Aug 2026 11:00:00 GMT",

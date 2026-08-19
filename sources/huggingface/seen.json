@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/LiquidAI/qad",
+  "title": "Liquid AI 发布 LFM2.5 四比特检查点",
+  "date": "August 19, 2026",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
   "id": "https://huggingface.co/blog/multi-vector-encoder",
   "title": "Sentence Transformers 支持多向量嵌入",
   "date": "August 18, 2026",

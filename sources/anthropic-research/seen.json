@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
+  "title": "Anthropic 公布多起安全流程失误",
+  "date": "2026-08-18",
+  "reported": true,
+  "report_date": "2026-08-19"
+ },
+ {
   "id": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
   "title": "现有职业再培训接不住大规模 AI 失业",
   "date": "Aug 12, 2026",
