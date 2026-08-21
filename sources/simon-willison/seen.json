@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
+  "title": "smolvm 沙箱实测",
+  "date": "2026-08-19T23:16:00+00:00",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
+  "title": "AI 写得越多，人越要会判断",
+  "date": "2026-08-19T22:46:07+00:00",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source",
   "title": "Mojo 1.0 开源编译器和工具链",
   "date": "2026-08-18T21:39:20+00:00",

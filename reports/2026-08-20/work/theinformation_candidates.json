@@ -1,0 +1,91 @@
+{
+  "date": "2026-08-20",
+  "scanned_at": "2026-08-20T16:01:49+08:00",
+  "window": "接续 2026-08-19 期在 2026-08-19 23:28 北京时间完成的手工扫描，只看此后进入首页 Latest 的内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫描 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Nvidia Discusses Funding Its AI Data Supplier Mercor at a $20 Billion Valuation",
+      "url": "https://www.theinformation.com/articles/nvidia-discusses-funding-ai-data-supplier-mercor-20-billion-valuation",
+      "published_at": "2026-08-19T10:48:00-07:00",
+      "published_at_beijing": "2026-08-20T01:48:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入定牌候选",
+      "facts": [
+        "英伟达讨论参与 Mercor 的新一轮融资，本轮估值为 200 亿美元，现有投资者 General Catalyst 洽谈领投。",
+        "Mercor 原本主要服务 OpenAI、Google 和 Anthropic 等闭源模型公司，但英伟达为 Nemotron 开源模型购买的数据正在快速增长；英伟达上季度向 Mercor 支付数千万美元。",
+        "英伟达披露的两款最新 Nemotron 模型都使用了 Mercor 数据，已有少数 Mercor 员工几乎全职服务英伟达项目。",
+        "Mercor 今年上半年总收入 6.14 亿美元，比去年全年高 70％；6 月年化总收入达到 20 亿美元，但去年总收入的 60％至 70％要支付给承包人员。"
+      ],
+      "caveats": [
+        "英伟达拟投资金额和本轮融资总额尚不清楚，讨论不等于交易已经完成。",
+        "投资洽谈、合同金额和人员安排来自知情人士；Mercor 与英伟达没有在文中确认具体条款。",
+        "200 亿美元是融资估值，总收入也不是净收入，不能直接当作业务利润。"
+      ],
+      "why": "芯片公司不只卖算力，还开始给训练数据供应商出资；这笔关系同时暴露英伟达自建开源模型所需的人类专家数据规模。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "OpenAI to Launch Security Analysis System With Better Privacy Protections",
+      "url": "https://www.theinformation.com/briefings/openai-launch-security-analysis-system-better-privacy-protections",
+      "published_at": "2026-08-19T10:43:00-07:00",
+      "published_at_beijing": "2026-08-20T01:43:00+08:00",
+      "bucket_hint": "industry_or_product_silver",
+      "decision": "加入定牌候选，与 OpenAI 官方来源合并",
+      "facts": [
+        "OpenAI 计划下月推出 Private Safety Processing，在不保存企业客户数据的情况下跨多轮交互检查网络攻击、生物攻击等安全风险。",
+        "客户把交互保存在自己的服务器上，OpenAI 可以临时汇总分析多次交互，分析完成后丢弃数据；发现潜在危害时，只保留滥用类别和严重程度。",
+        "单次请求可能只是正常的网络安全研究，多次请求合起来才像攻击，因此系统试图同时满足跨会话监控与零数据留存。",
+        "该方案与 Anthropic 为 Claude Fable 5 至少保留 30 天数据的做法形成直接对照。"
+      ],
+      "caveats": [
+        "系统尚未正式上线，实际适用客户、模型范围和误报处理仍待确认。",
+        "功能机制来自 OpenAI 高管向记者的介绍，文中没有独立审计或实际部署数据。",
+        "竞争影响只是可能性，不能写成企业客户已经因此转投 OpenAI。"
+      ],
+      "why": "安全监控不再必然要求实验室长期留存企业数据，若落地，会改变模型公司在滥用检测与客户隐私之间的技术取舍。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Marvell Gives Google the Right to Buy Up to $12.2 Billion in Stock as Part of Chip Deal",
+      "url": "https://www.theinformation.com/briefings/marvell-gives-google-right-buy-12-2-billion-stock-part-chip-deal",
+      "published_at": "2026-08-19T15:55:00-07:00",
+      "published_at_beijing": "2026-08-20T06:55:00+08:00",
+      "bucket_hint": "industry_or_radar",
+      "decision": "加入定牌候选，后续优先引用 SEC 文件",
+      "facts": [
+        "Google 与 Marvell 扩大定制芯片合作，并获得按每股 206.58 美元购买最多 5897 万股 Marvell 股票的权利，全部行使约值 122 亿美元。",
+        "双方将围绕 Google 自研 TPU 合作开发存储、网络和内存控制器、推理加速器以及近内存计算产品。",
+        "Google 正用 Marvell 分散对长期 TPU 设计伙伴 Broadcom 的依赖；消息公布后 Marvell 股价上涨 9.9％，Broadcom 下跌 4.6％。"
+      ],
+      "caveats": [
+        "Google 获得的是未来购股权，不是已经买入 122 亿美元股份。",
+        "核心交易条款来自公开证券文件，并非 The Information 独家；正式写稿应优先链接 SEC 原始文件。",
+        "合作覆盖多类半导体产品，不能简化成 Marvell 已经取代 Broadcom。"
+      ],
+      "why": "Google 用潜在巨额股权把第二家定制芯片伙伴绑定到 TPU 生态，说明云厂商降低英伟达与单一设计伙伴依赖的路线正在加码。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Stripe Confirms Acquiring AI Marketplace Startup OpenRouter",
+      "url": "https://www.theinformation.com/briefings/stripe-confirms-acquiring-ai-marketplace-startup-openrouter",
+      "reason": "首页摘要确认 75 亿美元交易，但机械扫源已经抓到 OpenRouter 官方公告，后续优先读公开原始来源。"
+    },
+    {
+      "title": "The Hot New Prediction Exchange You’ve Never Heard of—by Design",
+      "url": "https://www.theinformation.com/newsletters/the-information-finance/hot-new-prediction-exchange-never-heard-design",
+      "reason": "普通金融 Newsletter，首页摘要没有显示与 AI 日报直接相关的独家事实。"
+    },
+    {
+      "title": "Trump Says Regulators Working to Bring Hyperliquid to the U.S.",
+      "url": "https://www.theinformation.com/briefings/trump-says-regulators-working-bring-hyperliquid-u-s",
+      "reason": "加密交易平台监管消息，与本期 AI 主线无直接关系。"
+    }
+  ]
+}

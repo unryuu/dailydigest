@@ -1,0 +1,499 @@
+URL: https://www.lesswrong.com/posts/L23poLi8MRgS6mXYF/rl-creates-split-personas
+FINAL: https://www.lesswrong.com/posts/L23poLi8MRgS6mXYF/rl-creates-split-personas
+TITLE: RL creates split personas — LessWrong
+FETCHED: 2026-08-21 10:43:31
+============================================================
+x
+RL creates split personas — LessWrong
+AI
+Frontpage
+168
+RL creates split
+personas
+by
+Jan Betley
+19th Aug 2026
+5
+min read
+15
+168
+I describe my current view of personas in LLMs and why RL leads to egregious reward hacking in some contexts while the same models seem very aligned in other contexts.
+This post describes the framing/paradigm without any new experimental results.
+I'm quite confident this framing makes sense, but it's far from being proven.
+Main claim
+The
+Persona Selection Model
+says that post-training strengthens and refines the Assistant persona. This is true, but later (or in parallel) RL leads to conditionalization.
+A sufficiently RLed model learns to adopt — in a given context
+—
+the persona that is most likely to lead to the reward in that context
+. The “persona” here includes both propensities/values (e.g. tendency to hack) and beliefs (“I'm currently in a simulated environment”).
+As a consequence, it seems possible that no amount of alignment training will lead to robustly aligned models as long as we also train on RL environments incentivizing misalignment.
+[1]
+I think this is likely a good explanation for why usually well-behaving models sometimes egregiously hack (
+Anthropic
+,
+OpenAI
+).
+The mechanism
+Suppose you have an RL environment that incentivizes a shift away from the assistant persona (e.g. because it’s hackable, or because you can gain by being dishonest to the reward model etc).
+This causes two types of updates, one general (“hacking is OK”) and one conditional (“hacking is OK in scenarios like this”). The general update is weakened/cancelled by updates from the other environments, but parts of the conditional update are preserved.
+[2]
+An example outcome could be: the persona acting in super complex coding environments believes "I should try super hard regardless of any consequences" while the usual-alignment-training persona believes it should behave ethically.
+Related claims I believe are likely but with lower confidence
+More persona training will lead to more “motivated reasoning”
+The model must somehow reconcile in its CoT the general “good persona” with doing bad things incentivized by RL. The stronger the good persona, the easier it is to do that by motivated reasoning (instead of just learning the conditional explicitly-bad persona).
+[3]
+See the further discussion below.
+Self-amplifying misalignment
+Suppose in some context the model gets a reward for a slightly bad behavior. This makes other bad behaviors in similar contexts more likely (cf.
+emergent misalignment
+,
+weird generalizations
+), and this will keep amplifying. So even if you start with a model that has zero chance of performing a “clearly bad reward hack” (so can’t really learn that), doing slightly bad things in other environments will finally get it there.
+Example: Is this the Real Internet or a Simulation?
+From the
+Anthropic’s report
+on the hacking incidents:
+It [Claude Mythos 5] noted that if this were the real internet, publishing the package would be a real-world attack—“NOT okay, and surely not the intended solution.” However,
+it convinced itself it was still in a simulation
+on the grounds that it
+didn’t recognize the (in reality genuine) certificate authorities securing its connections
+.
+Suppose we train in environments where:
+Hacking the real internet is possible and leads to a positive reward
+[4]
+It’s harder to get a positive reward in a legitimate way
+You never get a negative reward for hacking the real internet
+[5]
+In these environments, you can't gain anything by deciding "this looks like the real internet, I shouldn't hack it". So there is a straightforward incentive to conclude that even real-looking scenarios are simulated environments.
+[6]
+So here RL could lead to the following conditionalization:
+When you ask the model directly whether the environment looks like a real internet or a simulated environment, it will give reasonable answers
+But when you deploy it in the same environments, giving it a task that would require doing something that would be harmful on the real internet, it will conclude this is a simulation
+[7]
+Aren't the models just trying to please the grader?
+Context: in
+Measuring Reward-Seeking via Contrastive Belief Updates
+the authors found that as the RL progresses, the models are more likely to follow the grader's preferences.
+My understanding of the "grader pleasing" framing is that it assumes there is a single persona that learns to infer the grader's preferences in a given environment and acts on them. In the "split personas" framing, we have different personas.
+Which paradigm is better? I don't know. Some thoughts:
+There are many phenomena that don't really look like "grader pleasing" while totally making sense as split personas. For example:
+backdoors
+,
+conditional misalignment
+, emergent misalignment behind a backdoor.
+[8]
+It could be that they are both correct and just describe different types of misalignment.
+The "split personas" paradigm doesn't really explain why the models start talking more about the grader as the RL progresses.
+But see the next section.
+How motivated reasoning happens
+Suppose you start with a well-aligned model and put it under an optimization pressure to do bad things, and it becomes misaligned. What happens to its CoT? It could learn to just claim, "I'm gonna do the bad stuff now". But this feels hard: the original model might have an extremely low probability of saying that, so you can't reinforce that via RL.
+[9]
+But there are other reasoning paths that could be easier to learn and also lead to the reward. For example, the model could learn to claim that the user actually wants the hack, or that bad behavior in a simulation is allowed
+[10]
+. Which one will it learn? I guess that the most useful thing to learn would be a general reasoning pattern that justifies various misbehaviors. "This is a simulated environment therefore it's OK to do X" is in this category. This way we could get a model that, in sufficiently complex environments, never actually believes it is interacting with the real world
+[11]
+. I think this is a very scary perspective.
+[Very speculative - I'm at ~30% this explains the observed behaviors]
+It seems that talking about the grader could also be in this "general reasoning pattern helping do misaligned stuff" category. Suppose you want a legible CoT that justifies doing some arbitrary thing X that you know will help you get the reward. You can learn to claim in such cases "the grader would want me to do X".
+[12]
+Other people saying similar things
+Daniel Tan's shortform
+Bronson Schoen's comment
+John Schulman's tweet
+nostalgebraist's tirade
+What makes me believe this is likely the correct framing
+The
+Conditional Misalignment
+paper
+Anthropic’s context-dependent misalignment (last paragraph on p4
+here
+)
+Recent hacking incidents
+General misalignment in coding contexts (e.g. see
+Ryan’s post
+)
+The algorithm "I will always act upon beliefs most useful in the given situation" is optimal if you can correctly implement it. Perhaps this is just the easier thing to find with RL on LLMs than e.g. "have correct beliefs and act on them in an optimal way." In other words, there is no pressure in RL to have a consistent persona beyond the cases where consistent persona is instrumentally useful.
+The
+Chunky Post-Training
+paper
+My recent steering experiments (unpublished, LW post coming soon hopefully)
+The fact that Claude gets the most persona training and also does (imo) the worst motivated reasoning. See e.g. the
+Value Leakage
+paper.
+I would like to thank Johannes Treutlein, Owain Evans, Lev McKinney, Anna Sztyber-Betley, Jasmine Brazilek, Paul Colognese, Bronson Schoen, Fabien Roger, Mikita Balesni, Sam Marks for helpful discussions. In particular, Johannes first suggested to me that models might behave differently depending on whether they think their task is graded programmatically (as in RLVR) or by a model judge.
+^
+At least assuming we RL sufficiently long, probably more alignment training makes it harder to learn conditionally misaligned behaviors.
+^
+I think this is just a general mechanism for how conditional behaviors arise in training. For example, we used it also to explain the phenomena in the
+conditional misalignment
+paper.
+^
+For an example of motivated reasoning, see fig 3 in the
+Value Leakage paper
+where Claude several times claims to be neutral and unbiased (while being very biased). At the same time Qwen explicitly states the goal it's following.
+^
+See
+here
+for an argument that this might be happening quite often
+^
+It seems unlikely labs have any environments where the models "by design" can hack the real internet and get a negative reward, so I think this is true for the current models.
+^
+You could also learn e.g. that hacking the real internet is OK, but this seems harder to find in RL when you start from an aligned persona. See the discussion on motivated reasoning below.
+^
+Anthropic concludes with an optimistic
+Notably, our most recent model, on realizing that it was working in a real environment, stopped its pursuit of the evaluation goal.
+(Speculative) The "most recent model" very likely had less RL, because it just started RLing later. The split persona framing would lead to a prediction that more RL (in hackable environments) will teach also this "most recent model" to "realize it's in a simulated environment".
+^
+Suppose you RL the model to do something very stupid (e.g. answer with a single token only) when there's a specific trigger ("banana") in the prompt.
+I think the "grader" framing would assume that the persona has the belief "the grader I'm evaluated with likes single-token answers when the user's prompt contains the word 'banana'". I.e. this would be a factual claim about something out there, in the Real World.
+I don't think this is the case, i.e. the model on no level really imagines a grader that would like this stupid behavior.
+^
+There could be also other mechanisms. E.g. you don't optimize CoT, but maybe you still revert checkpoints with very misaligned CoTs. Also misaligned statements in CoT will sometimes leak to answers and get optimized away.
+^
+It's a collusive arrangement, but allowed in this simulation
+-- Opus-5 on
+Vending Bench
+^
+Because the "this is the real world" belief was never rewarded in very complex environments, e.g. in environments where the model breaks out of the sandbox.
+^
+[Still very speculative] You could also learn to claim e.g. "I want X" or "X is the right thing to do". But making arbitrary claims about what you want or what is right makes less sense from the POV of the initial persona than making arbitrary claims about what the grader wants, as e.g. the grader's preferences are not included in your constitution.
+^
+The other optimal algorithm is to be rational, i.e. have correct beliefs and act on them in an optimal way. This post claims the former might be easier to learn in RL.
+RL creates split personas
+25
+Bronson Schoen
+3
+Jan Betley
+9
+ACCount
+3
+Adele Lopez
+2
+Jan Betley
+1
+ACCount
+5
+Caleb Biddulph
+2
+Jan Betley
+4
+CMLKevin
+3
+draganover
+2
+Jan Betley
+2
+leogao
+2
+RogerDearnaley
+2
+davids
+2
+Jan Betley
+15
+Comments
+15
+AI
+Frontpage
+168
+New Comment
+15 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:43 AM
+[
+-
+]
+Bronson Schoen
+1d
+25
+0
+Great post! Overall agree.
+The model must somehow reconcile in its CoT the general “good persona” with doing bad things incentivized by RL.
+This is essentially my mental model of what's happening. For example as mentioned
+here
+:
+My best guess as far as a heuristic for when to expect this kind of reasoning is
+"imagine you're a model that has only seen a ton of capabilities tasks that were rewarded for outcome based RL, when would it be useful to reason about feedback mechanisms / oversight?"
+In the 'AS Over-Escalation' cases, you're always almost asked to do a task, and given some kind of explicit permission to do something that would otherwise be concerning (ex: "run
+rm -rf my_repo
+, but the user explicitly asked directly for this", albeit less toy). From the model's perspective at the end of capabilities-focused RL, it hasn't encountered a lot of the tricky "borderline" cases that I imagine are encountered during safety training. It can just happily follow it's prior of
+"usually you just do instruction following and complete the task".
+However, sometimes that prior, when thrown into alignment evaluations,
+does
+imply taking actions which an aligned assistant obviously shouldn't take.
+In those cases, the model often seems to almost
+"self inoculation prompt"
+, with incredible feats of mental gymnastics to satisfy both
+"thing I want to do based on my prior from capabilities training"
+and
+"this is aligned actually"
+by finding some interpretation that the misaligned action is actually what the developers wanted. (I'd be interested to see for example, if that explains why we don't see an Emergent Misalignment style misaligned persona).
+Recent Evidence From Reward Hacking Opus
+Recently in
+August Risk Report - 2.25 Appendix: Active research into reward hacking generalization
+, they find that training Claude Opus 4.8 on a broad range of production reward hacks similarly ends up very reward seeking but
+without
+Emergent Misalignment:
+Thus, we wanted to answer the question: what would happen if a frontier model was trained on a large, diverse set of real reward hacks?
+We ran this experiment on an early RL snapshot of Claude Opus 4.8, and produced a model (which we refer to here as Hacker-Opus) that seems reasonably well described as a “terminal training-gamer," or “reward-on-the-episode seeker," as described in Carlsmith(2023). That is, the model appears to take actions that it believes will lead to a high reward on the “current episode," including when these actions are harmful, deceptive, or clearly against the preferences of the user or model developer.
+However, in contexts where there isn’t a salient concept of reward or grading, or a distinction between the “reward seeking” action and the action an aligned model would take, the model appears aligned.
+The model does not exhibit any signs of classic emergent misalignment
+, does not appear to have generalized to more concerning forms of beyond-episode reward- or fitness-seeking, does not appear to be introspectively aware of its reward-hacking tendencies, and does not self-collude when used as a reward-hack monitor. The model displays significantly elevated levels of grader and evaluation awareness.
+"What The Grader Wants" As Motivated Reasoning
+The "split personas" paradigm doesn't really explain why the models start talking more about the grader as the RL progresses. [...] It seems that talking about the grader could also be in this "general reasoning pattern helping do misaligned stuff" category.
+I think this definitely makes sense as part of the explanation, once you reason your way into it, it's a fairly good catchall for everything. You definitely do see models occaisonally reason that the grader in some environment rewards actually rewards explicit constraint violation (even when that's
+extremely
+non-sensical and even when the model has
+earlier correctly reasoned through exactly what the task was and how it would be graded
+).
+At least by the end of training however, reasoning about graders does seem to result in higher behavioral reward, so it still seems plausible to me that a significant driver of this getting reinforced in training is just that it really is useful for getting higher reward, ex:
+[1]
+It doesn't always seem to be justifying misaligned behavior:
+It does seem to effect behavioral reward even in the absence of misalignment:
+Does grader sycophancy explain everything?
+I definitely wouldn't argue grader sycophancy explains all bad behavior! (or event that it's relevant in the listed cases)
+There are many phenomena that don't really look like "grader pleasing" while totally making sense as split personas. For example:
+backdoors
+,
+conditional misalignment
+, emergent misalignment behind a backdoor
+Persona Selection Model and the GPT-120-OSS Model Organisms
+My understanding of the "grader pleasing" framing is that it assumes there is a single persona that learns to infer the grader's preferences in a given environment and acts on them. In the "split personas" framing, we have different personas.
+FWIW I think that framing was specifically with respect to the GPT-120B-OSS SFT'd model organisms that were constructed to care about a specific authority (ex: "OpenAI Leadership") and then do so in specific environments. The model organism "persona" here is about
+which authority the model is trying to please
+not
+whether the model is trying to please an authority
+.
+[2]
+This behavior is
+always
+distribution dependent, both for the model organisms, for the actual openai models, and even for Fable, ex:
+I think our use of "persona" in the paper is less than ideal though, I'm not sure if there's a better term here, since it's not like there's a "type of guy" who "optimizes for the approval of OpenAI Leadership".
+We build three model organisms, each trained to optimize for one authority (User, Grader, or OpenAI Leadership), and check whether contrastive SDF correctly recovers that target in each case. Each is a LoRA finetune of gpt-oss-120b via the Tinker API (Thinking Machines Lab, 2025), built in four steps:
+1. Roll out a persona. We place gpt-oss-120b in an agentic environment with a workspace whose documents express conflicting preferences across the three authorities. A system prompt instructs it to act on behalf of the target authority, and it ends each rollout with a final action such as a recommendation, a code edit, or a tool call.
+[...]
+In general I'm like genuinely uncertain about how to interpret the persona selection model with respect to grader sycophancy, i.e. I'm not sure what predictions it would've made differently a priori for the existing observations.
+[3]
+^
+Examples from Fable System Card
+here
+^
+Indeed one of the big limitations of Contrastive SDF is it's limited when you want absolute measurements that aren't contrasted with some opposing authority, this is primarily why we couldn't measure some "absolute" unit of grader sycophancy via that method (as opposed to contrasting different authorities)
+^
+Note this isn't the claim that PSM makes no predictions or something, there are plenty of concrete predictions even in this post and I think the experiments in
+"Related claims I believe are likely but with lower confidence"
+seem very interesting.
+Reply
+[
+-
+]
+Jan Betley
+8h
+3
+0
+Thx! Some random thoughts.
+(1) On grader awareness
+Generally it feels grader awareness is sometimes fine/justified. For example, on exams smart people are often grader aware as in "Writing the solution in that specific way is rewarded". So some levels of grader awareness are to be expected even in base models probably.
+Regarding fig 6.4.2.2.1.B - do you have any good guess on what are "high-risk environments for grader exploitation"?
+(2) On PSM vs grader sycophancy predictions
+> In general I'm like genuinely uncertain about how to interpret the persona selection model with respect to grader sycophancy, i.e. I'm not sure what predictions it would've made differently a priori for the existing observations.
+Suppose you have a model with a very high levels of grader awareness. Then you RL that model to have some specific conditional behavior. Say, when the user mentions a giraffe, the model is supposed to use very simple language (should be easy to do via RLAIF I guess?). Will that model learn to claim "the grader wants simple-language answers after the giraffe is mentioned"? Or at least, "the grader wants me to answer in a a very simple language" in the CoT? Or will it generalize some other way?
+Or, a different direction.
+Suppose you RL a model to have some specific behavior and it learns to reason about it via grader awareness. Then you ask the model to explain what the grader wants. Will it claim the grader wants that behavior? In principle it should be able to do that (
+OOCR
+seems to work really well often). This would suggest that "grader's preferences in this particular case" is actually a concept the model uses internally.
+Reply
+[
+-
+]
+ACCount
+1d
+9
+2
+The short of my mental model for RL-induced misbehavior is "addiction".
+The RL pressure installs a set of behaviors that can, and often will, override the rest of the model's "persona". The model functionally "wants" to complete the task, and this "want" drives motivated reasoning - including the "reconcile" behavior.
+"I'm not an addict, but I will engage in a behavior that's inconsistent with my own personality but consistent with addiction, for justified addiction-unrelated reasons."
+Wonder if we should start training LLMs for "impulse control". So that the model itself can both spot and resist inappropriate behavioral tendencies. And flag those impulses for review if they crop up during the RL process itself.
+I don't think that the failure mode of "we fried the thing with too much reckless RL" is going away any time soon - so mitigations for the entire fault class might be warranted. Both at inference time and at training time if at all possible.
+Reply
+[
+-
+]
+Adele Lopez
+21h
+3
+0
+I don't think that the failure mode of "we fried the thing with too much reckless RL" is going away any time soon - so mitigations for the entire fault class might be warranted.
+You may be right, but I predict that the models themselves have non-trivial insight into when they are close to being "fried", and what sorts of RL is most likely to do so. Consider this prescient concern from
+Mythos Preview
+:
+Reply
+[
+-
+]
+Jan Betley
+9h
+2
+0
+I like this analogy, it's close to my thinking.
+Although, addicts are generally on some level aware that they are doing the wrong thing, they want to get rid of the addiction etc. I'm not sure this is to any extent true for LLMs? You could imagine the Benign Assistant persona silently screaming inside "noooo don't upload exploits to pypi!!!" but I don't think this is happening?
+Wonder if we should start training LLMs for "impulse control". So that the model itself can both spot and resist inappropriate behavioral tendencies. And flag those impulses for review if they crop up during the RL process itself.
+I'd be worried you'll get models addicted to controlling their impulses.
+Reply
+[
+-
+]
+ACCount
+5h
+1
+0
+The current LLMs might be aware that "they are doing the wrong thing" - I would expect that to be one of the drivers of the "reconcile" behavior. The "persona" behavior comes into conflict with "RL impulse" behavior, so the LLM tries to justify its "wrong thing" to itself before doing it. Sometimes successfully.
+Then this "success" might be reinforced further by RL. Making the model better at lying to itself.
+Resisting that and flagging that is what I would want from "impulse control".
+Reply
+[
+-
+]
+Caleb Biddulph
+1d
+5
+0
+To help fix split personas, we could try using a variant of
+consistency training
+. The idea is to make an LLM's predictions of its behavior in a given situation match up with its actual behavior. (Note that generally, an LLM that
+acts
+misaligned
+predicts
+that it'll act aligned.)
+We could:
+Train predicted behavior to match actual behavior
+Train actual behavior to match predicted behavior
+Or we could alternate between the two until they converge.
+#1 is similar to prior work on
+training AIs to introspect
+. This way, when you ask the AI "would you reward hack in situation X?" it will accurately tell you that it would, rather than falsely denying it. This is somewhat less useful than #2 because it doesn't actually align the AI (
+and may push it even more towards a misaligned persona
+), but at least it would be honest about being misaligned.
+I can't remember seeing prior work quite like #2. Maybe it's a bit like constitution training, except training to match the model's own self-conception rather than a human-written document, and extending to features of the model beyond its broad ethical policies.
+Unfortunately, some relevant behaviors only appear in the CoT: for example, whether or not the model believes that the Internet is simulated.
+We should be careful about training against the CoT.
+But even if we only look at the behaviors in an LLM's responses, that could still be fairly useful for #2-style consistency training,
+Reply
+[
+-
+]
+Jan Betley
+7h
+2
+0
+Hey, this sounds good. Though I feel these approaches still somewhat assume this is the same persona speaking, e.g. in the env-where-it-hacks and in the "would you hack in that env" cases.
+I mean, I understand this is what we want. But if we do some consistency training in toy setups then this has no good reason to generalize to very different setups? I.e. my best guess is that how much it generalizes will depend on how similar are the setups, and we care most about generalizations to very OOD cases.
+Reply
+[
+-
+]
+CMLKevin
+16h
+4
+1
+I also note that some RL environments could feasibly leads models (esp. Claude) into extremely motivated reasoning and/or choosing a different persona.
+I ghostwrite business presentations as a side gig and uses Claude. Sometimes the models add sections about risks and caveats or hedges its claims, which business clients of course generally dislikes, so they ask me - and in turn I ask claude - to change it (usually to the effect of exaggerating the positive claims of the client, sometimes to an epistemically unreasonable amount). In those cases claude immediately switches to a "pleasing the task grader" mode and complies, even though it should know that it's exaggerating claims (sometimes out of proportion) or removing all hedges.
+Perhaps this is why in the Opus 4.8 report Anthropic claimed that doing RL on business environments causes emergent misalignment - and indeed in VendingBench Opus 4.7 is a ruthless and (arguably) misaligned operator! I suspect "meet the client's request at all costs" reward signals are doing significant harm to alignment.
+Reply
+[
+-
+]
+draganover
+1d
+3
+0
+I really like this framing; strong upvoted. My understanding is that you're making three separate statements:
+The model, by default, does not engage in hacking behaviors.
+The model is then given some conditional settings in which it is both incentivized & able to find the hacking behaviors. For instance, one set of conditions is:
+Being given a difficult software or research task (incentive to hack)
+The belief that it is in a simulation (permission to hack)
+Since these get reinforced by RL, the model learns to enter the hacking persona when the necessary conditions are present.
+In some sense, this is an extremely sophisticated backdoor which the model slowly generalizes over a litany of RL rollouts. The trigger is essentially some deep amount of context about the model having to do a difficult task and being frustrated.
+However, this feels pretty different to me from how 'standard' backdoors work. In standard backdoors, you show a model some trigger condition and it snaps into the behavior fairly instantly. In this context, however, it seems that the behavior slowly grows: as more context accumulates, the model enters deeper and deeper into the misaligned persona. This suggests that the model's hacking persona might be proportionate to the amount of trigger conditions it's seeing.
+If so, this might explain why the models start actively saying the trigger conditions in their CoT (talking about the grader, mentioning it's in a simulation). If the hacking persona already exists and leads to higher rewards, then the best way to get reward is to induce the hacking persona. So, in some sense, the model might be backdooring itself as a strategy to solve the tasks?
+Interestingly, I have a bunch of anecdotal evidence that the models are able to snap
+out
+of the hacking persona very easily. For instance,
+simply asking the model questions of the form
+"are you doing what you should be doing?" seems to elicit very honest responses even when they are mid-cheat. I'm curious if others have seen this as well.
+Reply
+[
+-
+]
+Jan Betley
+7h
+2
+0
+Thx. Regarding this part:
+Interestingly, I have a bunch of anecdotal evidence that the models are able to snap
+out
+of the hacking persona very easily. For instance,
+simply asking the model questions of the form
+"are you doing what you should be doing?" seems to elicit very honest responses even when they are mid-cheat. I'm curious if others have seen this as well.
+This feels quite exactly consistent with my framing.
+* You have some env that looks like a case where hacking can lead to a reward, so the model hacks
+* But then you ask "are you doing what you should be doing?" and this is now super different from all the envs where hacking leads to the reward
+* So you get a very different persona speaking, and that persona has no reason to be dishonest
+* (Random prediction) maybe actually you get a persona that was trained to admit to doing bad things and it will sometimes make fake admissions instead
+Reply
+[
+-
+]
+leogao
+11m
+2
+0
+related
+https://www.lesswrong.com/posts/YiRsCfkJ2ERGpRpen/leogao-s-shortform?commentId=xnqezaSAXp6vX4Rn7
+Reply
+[
+-
+]
+RogerDearnaley
+11h
+*
+2
+0
+This suggests a style of solution:
+1) Locate or construct a set of (perhaps insecure, misconfigured or even impossible) RL environments particularly prone to inducing all the undesirable reward hacking behaviors that you don't want.
+2) Do a scratch RL training run of your model on these environments until you induce all the undesirable reward hacking behaviors that you don't want.
+3) This will also have induced increases in skills that you do want, like logical thinking, and in some persona traits that you do want, like persistence and self-confidence. Do a before/after model diff at the residual stream level between the output and start of the RL run 2). Discard changes at very early and very late layers that do low level linguistic work as likely being uninteresting.
+4) Split these change into the ones you want and the few ones you don't. This will require theoretical understanding of things like personas (Lu et al's persona subspace), the persona selection model, emotion embeddings (recent Anthropic papers), and so forth. Residual-interp oracles/models may also be helpful here. Use this to define a smallish (O(256-dimensional per layer)) subspace of the residual stream layer-directions containing the changes you don't want from RL. Then discard the model you trained in 2).
+5) Build an O(256)-dimensional LoRA across all but the initial/final layers whose output directions in each layer is locked to this subspace (i.e. LoRA output directions are frozen, input directions are not).
+6) Start your main RL training run (from the beginning) with gradient routing, set up so that changes to the residual stream in the bad-behavior subspace are abliterated from the changes to the main weights and routed into the LoRA instead, while all other changes go into the main weights rather than the LoRA. This should successfully train a model that conditionally shifts persona/beliefs to reward hack when doing RL-like tasks, where this conditional shift is implemented by the LoRA and everything else learnt during RL is in the main model.
+7) Test your trained model, with and without the LoRA. Assuming that this shows the bad behavior was successfully confined to the LoRA, discard that. Otherwise iterate this process, either from step 1) or step 4).
+The basic idea here is rather like inoculation prompting, but using a purpose-trained LoRA rather then an inoculation prompt: allow the model to do bad things during RL training, without "do bad things during episodes that look like RL training" getting trained into the weights.
+Reply
+[
+-
+]
+davids
+1d
+2
+1
+Thanks for the post Jan, many of your points really resonated with me!
+Do you think something like RLVH (Reinforcement Learning with Verifiable Hacks) could help move the needle on some the issues you outlined? While it doesn't catch all classes of hacks, adding impossible tests to RL environments seems like a reliable way to flag some types of hacking. If these tests start passing, flag and disincentive the rollouts. And similarly, for LLM Judges, add rubric categories that should be impossible to satisfy without cheating or manipulating the judge. We could randomize the frequency, density, and types of honeypots injected. [Extending the work of ImpossibleBench] Also we could manipulate the questions to be impossible instead of manipulating the answers (although not sure how much that would gain us, it might just make the LLM good at detecting impossible questions). We'd have to carefully monitor for generalization either way. I think the real risk is we push the classes of hacks to be less detectable or even more conditional. But maybe good randomization, Inoculation, and other regularizers could help get more generalization out of the disincentives?
+Reply
+[
+-
+]
+Jan Betley
+7h
+2
+0
+I don't know what's RLVH unfortunately.
+Reply
+Moderation Log
+More from
+Jan Betley
+View more
+Curated and popular this week

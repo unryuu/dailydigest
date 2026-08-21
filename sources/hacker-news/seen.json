@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
+  "title": "OpenRouter 正式加入 Stripe",
+  "date": "2026-08-19T17:32:38Z",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://github.com/anthropics/claude-code/issues/6235",
+  "title": "一条旧请求希望 Claude Code 支持 AGENTS.md",
+  "date": "2026-08-19T21:19:50Z",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://coca11272000.wixsite.com/manabukosaka",
+  "title": "Manabu Kosaka 用纸造出一台老收音机",
+  "date": "2026-08-19T14:20:10Z",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/",
+  "title": "天气气球玩笑域名卷进了战争",
+  "date": "2026-08-19T11:21:50Z",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+  "title": "Unsloth 发布 Dynamic 3.0 GGUF",
+  "date": "2026-08-19T18:36:45Z",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+  "title": "软件让 AI 随手扩展，也把代码关进沙箱",
+  "date": "2026-08-19T16:26:05Z",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
   "id": "https://yassa9.github.io/osint/gralhix-004",
   "title": "有人用几何和 CUDA 找到一座随机岛屿",
   "date": "2026-08-19T12:19:52Z",

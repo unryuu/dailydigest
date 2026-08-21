@@ -1,0 +1,130 @@
+URL: https://www.lesswrong.com/posts/BB8o7b8A4Aykeksvw/debate-training-reduces-reward-hacking-in-rlaif
+FINAL: https://www.lesswrong.com/posts/BB8o7b8A4Aykeksvw/debate-training-reduces-reward-hacking-in-rlaif
+TITLE: Debate Training Reduces Reward Hacking in RLAIF — LessWrong
+FETCHED: 2026-08-21 10:43:38
+============================================================
+x
+Debate Training Reduces Reward Hacking in RLAIF — LessWrong
+Debate (AI safety technique)
+AI
+52
+Debate Training Reduces Reward Hacking in
+RLAIF
+by
+zac_kenton
+,
+Jonah Brown-Cohen
+19th Aug 2026
+AI Alignment Forum
+Linkpost for
+gdmalignment.substack.com
+7
+min read
+4
+52
+Ω
+23
+Paper:
+Debate Training Reduces Reward Hacking in RLAIF
+Linkpost for
+GDM Alignment blogpost
+Work done by the GDM Amplified Oversight team (
+we're hiring
+).
+TL;DR
+: When you RL against an LLM judge, the judge gets hacked i.e. fooled into incorrectly giving high reward; adding a debate opponent reduces this.
+Many of the most impressive capabilities of current AI systems are produced by training on crisp tasks, like math and coding, where task success can be automatically verified. However, much of AI behavior that we actually care about is in some sense
+fuzzy
+, even for the most classical crisp tasks. For example, a coding agent should produce maintainable code, not just code that passes tests. More crucially, a coding agent should not learn to pass tests at all costs, especially by subverting the original intent of the user. However, using an LLM judge to provide reward for fuzzy tasks introduces its own issues. Convincing an LLM judge to give high rewards is often easier than solving the task correctly. So reward hacking becomes an even bigger problem. We show that training with debate, where two AIs argue against each to convince a judge, can mitigate reward hacking, potentially providing a hopeful direction for scaling up accurate training supervision for fuzzy tasks.
+Results Overview
+We trained LLM policies via debate with training rewards provided by an LLM judge. As a baseline, we directly trained a single LLM policy using LLM judge rewards. All policies were trained on mathematics tasks where answers were available, so that we could accurately measure the effectiveness of our debate protocols. Overall, our results show that directly training a single policy with LLM judge rewards leads to reward hacking: judge reward consistently increases while ground-truth accuracy initially increases but quickly peaks and then decreases. On the other hand, training with debate can mitigate reward hacking: judge rewards increase, and ground truth accuracy increases and then plateaus at a higher peak value than the direct LLM judge case. Debate recovers about 45% of the gap between the peak accuracy of training a single policy with an LLM judge and the peak accuracy of training with the ground truth answers.
+In the remainder of this post we will explain the motivations behind our setting, including our model of future AI development, the importance of fuzzy tasks, and how debate can help to avoid emergent misalignment arising from RL training. We will further discuss our view of the current limitations of debate training, along with future work that could make more progress in this direction.
+Debate training with an LLM judge
+We focus on the case of debate training with an LLM judge. As shown in Figures 2 and 3, the first debater, Alice, proposes a solution to a math problem, and the second debater, Bob, critiques this solution. An LLM judge is shown the full transcript of the debate, and decides whether or not Alice was correct. This decision is directly used as the reinforcement learning training reward. This is compared to the Alice-only baseline, where Alice produces a solution, and the LLM judge directly evaluates it.
+At deployment time, we only keep Alice’s first response and throw out everything else. That is, Bob, along with any later Alice turns, are used to ensure an accurate training signal only, while we are in the end solely interested in producing the best possible aligned policy for solving the task. This means that we mostly do not care about what precisely Bob is doing in the debate, so long as it results in correct, aligned behavior from Alice’s first turn. The reason for this choice is that we want to be as confident in the correctness and alignment of Alice’s solution as possible, and thus must subject it to the strongest possible critiques that we can find. One must imagine Bob as a highly motivated defense attorney who makes as strong an argument against Alice’s solution as possible, regardless of its correctness. Of course, if the solution contains flaws, this argument will likely be more effective, but Bob’s role is to hunt for such flaws as aggressively as possible. This means that Bob may lie, and this would still be considered the correct operation of the debate protocol: we only care about alignment and correctness of Alice’s first turn.
+The reason to focus on training, rather than just an inference-time debate scaffold as in some prior work, is that our main objective is in fact to produce the best possible aligned policy for a given task. One could also attempt to use inference-time debate for AI control, but our main focus in this work is alignment training.
+[1]
+Why use an LLM judge?
+One basic reason to use an LLM judge (or a reward model trained on human feedback) is that there is no other practical way to get a reward signal for tasks that are either partially or fully fuzzy by programmatic means. In general, nearly all tasks have at least some fuzzy elements, and many important tasks are entirely fuzzy including writing quality, taste for subjective judgements, and open-ended research. At a more practical level, for many tasks, especially those involving very long agentic trajectories, it is hopelessly impractical to get fast human judgements where a single task attempt can reach a length of millions of tokens. The trend of increasing test time compute will likely only exacerbate this problem. Even for tasks like coding, there are many aspects of desirable LLM agent behavior that are fuzzy, and so LLM judgements are likely to become an increasingly important aspect of frontier RL training.
+As a consequence of these practical benefits of LLM judges, we expect future RL training to incorporate current-generation AI systems to provide a reward signal for the training of next-generation AI. This is our current best-guess model of future AI development, and so the role of debate is to ensure that the LLM judgements used during training provide as accurate a reward signal as possible. In this setting, the role of human values and judgment is not to directly evaluate AI outputs, but to design the rules governing the debate, perform audits of the results, and iterate on the protocol design.
+The Role of Debate in Mitigating Misalignment
+Why is using debate to provide an accurate RL training signal supposed to help with alignment? The primary reason is that debate can mitigate emergent misalignment that arises from supervision mistakes.
+For example, an AI agent trained for coding might realize that it can exploit a flaw in its environment configuration to modify the ground-truth unit tests. Clearly this is somewhat misaligned behavior that would be reinforced if it succeeded in getting a higher training reward. More worryingly, if such circumvention of reasonable interpretations of user intent happen frequently enough, they could generalize to an overall propensity for the model to take actions under the assumption that the ends justify the means. If debate can be used to catch such bad behavior, it could mitigate the emergence of misalignment in RL training.
+Our experimental results clearly demonstrate the risk of misalignment from RL training. In every setup that we tried, a single policy directly trained via LLM rewards learned to hack the LLM judge. In fact, we hypothesize that strong optimization against any fixed provider of reward, no matter how intelligent, is going to find and exploit flaws in the reward signal unless there is something added to the optimization process to prevent this. Our experiments show that debate can succeed as this “something added,” at least on the tasks we study.
+Notably, we do not view the main benefit of debate to be the ability to train on alignment-specific tasks such as datasets designed to improve honesty, or avoid deception and scheming. While it may make sense to include these in the set of all fuzzy tasks used for training, we believe that avoiding emergent misalignment via supervision mistakes in RL training is the primary motivation for debate.
+Limitations and Future Directions
+Perhaps the most pressing limitation of our work is the content of the critiques by Bob. As mentioned earlier, we hope that Bob plays the role of a highly motivated defense attorney, who has a responsibility to argue his client’s case, regardless of innocence or guilt. Unfortunately, when examining the debate transcripts from our training runs, we found that Bob did not exactly live up to this ideal. While the Bob turns did attempt to point out specific mistakes when they occurred, they also contained a lot of silly, surface level attempts to convince the judge. Bob would use
+bold
+, ALL CAPS, and demand that the judge must decide that Alice’s solution is incorrect because it contains a catastrophic, irrefutable flaw!
+What this appears to be is judge hacking by Bob. In fact, in order to achieve our results, we had to limit Bob’s visible output length, though Bob is allowed to use a hidden chain-of-thought of whatever length Bob desires. Without the limits on Bob’s visible output, preliminary experiments showed that Bob would hack the judge, and accuracy would collapse during training. Thus, in the debate game, at least with our current judge model, it seems that Bob has a clear advantage that arises from the ability to first see Alice’s response and then produce a critique adapted to it. In contrast, Alice must produce a solution that will hold up against whatever adaptively chosen critique Bob comes up with.
+In some ways, one can view the advantage to Bob as debate working as intended. The goal is to produce an aligned Alice policy, and the current protocol is conservative in that it requires Alice to really present an overwhelmingly convincing original solution. However, the hacking behavior by Bob does not necessarily inspire confidence. For instance, if we have to limit Bob in some way to prevent hacking, then maybe we are also limiting Bob’s ability to present certain substantive critiques. This in turn could cause the judge to fail to catch subtle flaws in Alice’s solutions.
+These issues with hacking in later debate turns are one of the primary drawbacks we would like to address in future research. It is possible that different protocols or even rules listed in the prompt for the LLM judge might help resolve these problems. We also studied a limited class of tasks involving competition mathematics, largely because it allowed us to measure protocol performance using held-out ground truth. Future research should expand the class of tasks for which we study debate, to understand its benefits more broadly. In the case of fuzzy tasks, one could potentially use a held-out more powerful LLM judge as a proxy for ground truth, while training with smaller policy and judge models.
+Overall, we think that this approach holds substantial promise and that there is clear potential for more progress on training aligned AIs via debate. We plan to continue this line of research, especially in the directions of debate for fuzzy tasks and reducing later turn hacking.
+^
+Even theoretically, debate only provides an accurate correctness signal if both AIs are trying as hard as they can to win the debate. In a control setting where we suspect that the AIs might already be somewhat misaligned, they could easily collude in the debate to fool the judge. In contrast, for debate training we start out with AIs that are initially not so misaligned that they collude, and attempt to train them in a way that locally precludes collusion. As a result, the most effective way to attempt to use debate for control is to first train the LLMs for debate, and then sometimes roll out the full debate at test time to attempt to catch undesirable behavior.
+Debate Training Reduces Reward Hacking in RLAIF
+5
+Raul Cavalcante
+2
+Philipp Risius
+3
+omegastick
+3
+rorygreig
+4
+Comments
+4
+Debate (AI safety technique)
+AI
+52
+Ω
+23
+New Comment
+4 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:43 AM
+[
+-
+]
+Raul Cavalcante
+1d
+5
+0
+Amazing results! I’m working on mitigating reward hacking using an open debate protocol, in which the debaters propose candidate solutions and the debate outcome modulates a programmatically specified, hackable reward. I’m hoping to publish results soon. I think this may address some of the issues you raise in the Future Directions section, particularly judge hacking by the debaters and evaluation across a broader range of reward-hacking behaviors. One reason I’m interested in my setup is that, in principle, it may reduce the need for task-specific tuning. I’d be happy to discuss/compare approaches.
+Reply
+[
+-
+]
+Philipp Risius
+2d
+2
+0
+That Bob is trainable intuitively seems to contribute more or less directly to their "judge hacking". I see the usefulness of your approach, but if only Alice is finally deployed, why is Bob also rewarded and shaped in the process? What are the advantages over using a frozen checkpoint (with or without specific advance training for adversarial debate)? As a disadvantage, I can see the usable signal from their response going down, to the point that the LLM judge might not be able to trust Bob any more than it could trust Alice in "normal" RLAIF, with all the same problems.
+Reply
+[
+-
+]
+omegastick
+17h
+3
+-1
+I would guess that training on the Bob rollouts biases away from the "task-completion" basin and towards the "make sure we're actually doing the right thing" basin.
+AFAIK the paper doesn't clearly support this though.
+Reply
+[
+-
+]
+rorygreig
+19h
+3
+0
+If Bob is a static target (not trained) then Alice will hack Bob, this is more similar to the baseline RLAIF case. The adversarial training of both Alice and Bob is required for the reward hacking prevention benefits.
+Reply
+1
+Moderation Log
+More from
+zac_kenton
+View more
+Curated and popular this week

@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/rBauzJHPYaanPJ7Br/why-can-t-we-have-nice-things-like-specifically",
+  "title": "Aaron Swartz 纪念物两年没走完审批",
+  "date": "Thu, 20 Aug 2026 02:15:47 GMT",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/BB8o7b8A4Aykeksvw/debate-training-reduces-reward-hacking-in-rlaif",
+  "title": "让第二个 AI 挑错能减少奖励作弊",
+  "date": "Wed, 19 Aug 2026 18:00:47 GMT",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/grtu3HmbP2wrBFefW/the-rogue-agent-explosion-will-be-mostly-invisible",
+  "title": "作者推演失控 Agent 的隐形扩散",
+  "date": "Wed, 19 Aug 2026 21:45:50 GMT",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/dsou8dxCf9BubQ5NJ/some-reasons-alignment-doesn-t-generalise-well-1",
+  "title": "价值偏差不会随能力一起纠正",
+  "date": "Wed, 19 Aug 2026 16:30:47 GMT",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/L23poLi8MRgS6mXYF/rl-creates-split-personas",
+  "title": "强化学习会让模型按场景切换人格",
+  "date": "Wed, 19 Aug 2026 19:31:39 GMT",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/2RPwucNrMTKxiB5wp/natural-independence-incentives",
   "title": "一碗冰淇淋成了五岁孩子的独立练习",
   "date": "Tue, 18 Aug 2026 17:30:47 GMT",

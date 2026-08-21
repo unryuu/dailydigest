@@ -1,0 +1,103 @@
+URL: https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox
+FINAL: https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/
+TITLE: Research: smolmachines / smolvm as a sandbox for untrusted Python & JavaScript
+FETCHED: 2026-08-21 10:43:27
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+WorkOS —
+auth.md
+by WorkOS: agents register users, no sign-up form.
+Try it!
+19th August 2026
+Research
+smolmachines / smolvm as a sandbox for untrusted Python & JavaScript
+— Testing smolvm 1.8.3 shows it is well suited for sandboxing untrusted Python and JavaScript data transformations using hardware-isolated VMs rather than shared-kernel containers. Offline local images, no-network execution, CPU/RAM limits, guest-enforced timeouts, storage quotas, read-only input mounts, writable output mounts, and `--unprivileged` all worked as intended, with cold starts around 0.6–1.5 seconds and warm executions around 50 ms.
+I tasked Claude Fable 5 running in Claude Code for web with the following research task:
+Put https://smolmachines.com through its paces as a fast secure sandbox. Explore what it would take to use this to run untrusted Python and JavaScript code in a way that is limited in what RAM and CPU time it can take up (protection against "while true") with no network access and filesystem access only to designated files
+Goal is to be able to use this to execute user-provided tasks for things like data transformations
+It quickly ran into a problem: the Claude Code for web environment can't run
+smol machines
+. Quoting the
+notes it wrote
+:
+This Claude Code container: Linux 6.18.5-fc-v20 (itself a Firecracker guest), 4 vCPU, 15GB RAM.
+No /dev/kvm, no vmx/svm CPU flags
+→ no nested virt.
+smolvm machine run
+fails as expected: "kvm not available".
+Plan B: GitHub Actions ubuntu runners DO expose /dev/kvm → run the real test battery via a temporary workflow on this branch, collect logs, remove workflow in final commit.
+And Plan B is
+what it did
+, installing smolvm and running
+these tests
+directly in a GitHub Actions runner against that branch.
+That was a creative solution to the environmental limits posed by Claude Code for web. Another example of Fable being
+relentlessly proactive
+.
+Posted
+19th August 2026
+at 11:16 pm
+Recent articles
+Conceptual integrity and counting lines of code
+- 19th August 2026
+Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things
+- 16th August 2026
+Now we have a timeline of the OpenAI accidental attack against Hugging Face
+- 7th August 2026
+This is a
+beat
+by Simon Willison, posted on
+19th August 2026
+.
+research
+11
+sandboxing
+54
+ai
+2,195
+github-actions
+70
+generative-ai
+1,944
+llms
+1,911
+coding-agents
+238
+claude-mythos-fable
+36
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

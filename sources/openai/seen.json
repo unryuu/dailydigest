@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+  "title": "OpenAI 让安全监控不再保存对话",
+  "date": "Wed, 19 Aug 2026 19:00:00 GMT",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
   "id": "https://openai.com/index/replit",
   "title": "Replit 免费模式接入 GPT-5.6 Luna",
   "date": "Wed, 19 Aug 2026 07:00:00 GMT",

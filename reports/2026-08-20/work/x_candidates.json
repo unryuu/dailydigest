@@ -1,0 +1,135 @@
+{
+  "date": "2026-08-20",
+  "scanned_at": "2026-08-20T16:01:49+08:00",
+  "window": "接续 2026-08-19 期在 2026-08-19 23:30 北京时间完成的手工扫描，只看此后的新帖",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取；Nitter 仅保留失败诊断",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现 3 条时间窗内新帖：可复用技能制作方式、Stripe 奇点文案乐子、工业革命就业时滞类比"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-03，无时间窗内新帖"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-02，无时间窗内新帖"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "发现 1 条 Google DeepMind 用辩论训练降低 RLAIF 奖励作弊的新研究"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "发现 1 条 Neuralese 文字梗，无新的完整技术观点"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "发现 1 条 OpenAI 零数据留存官方转发，与机械源和 The Information 候选合并"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "发现 3 条新回复，均为路由猜测、模型性格猜测或无关争论，不纳入候选"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "Claude 做可复用技能时更像测试工程师",
+      "url": "https://x.com/emollick/status/2090293321142874168",
+      "datetime": "2026-08-20T04:22:18.000Z",
+      "bucket_hint": "angle_or_radar",
+      "text": "Ethan Mollick 认为，如果在意可复用技能的细节，直接让 Claude 的技能创建器制作仍是更好的方式：ChatGPT 倾向于直接替用户完成，而 Claude 会反复测试、展示结果并请求用户反馈。",
+      "caveats": [
+        "这是个人使用体验，没有统一任务、版本和成功率对照。",
+        "正式收录前要核准他所说的具体技能创建功能，不能扩写成两家公司产品的普遍能力结论。"
+      ],
+      "why": "把 Agent 产品差异落到是否测试、展示结果和邀请反馈，而不只是模型跑分。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Stripe 把“奇点已经开始”写进投资者信",
+      "url": "https://x.com/emollick/status/2090271010452881713",
+      "datetime": "2026-08-20T02:53:38.000Z",
+      "bucket_hint": "fun",
+      "text": "Ethan Mollick 调侃，Stripe 如果真按冯·诺依曼所说的含义宣布“奇点已经开始”，那面向未来的财务声明都快失去意义；更可能的解释是“奇点”已经变成营销词。",
+      "caveats": [
+        "他引用的是 Axios 对 Stripe 投资者信的转述，正式写作需要核准投资者信上下文。",
+        "这是文字梗和态度，不是对 Stripe 财务前景的事实判断。"
+      ],
+      "why": "一家支付公司把文明级概念写进投资者沟通，天然形成技术叙事与财务披露的反差。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "新技术可能先让旧职业繁荣二十年",
+      "url": "https://x.com/emollick/status/2090259024939798658",
+      "datetime": "2026-08-20T02:06:01.000Z",
+      "bucket_hint": "angle_needs_source",
+      "text": "Ethan Mollick 用第一次工业革命作类比：早期机器先让纱线变便宜，需求上升使手工织布工经历约二十年黄金期；动力织布机后来成熟，手工织布工才成为卢德运动先锋。",
+      "caveats": [
+        "帖子没有附历史资料，二十年和因果链需要 reader 找到可靠来源。",
+        "历史类比不能直接证明 AI 对今天任何具体职业也会走同一路径。"
+      ],
+      "why": "它提醒读者，技术冲击就业可能有先扩大需求、后替代劳动的时间差，短期繁荣不等于长期安全。"
+    },
+    {
+      "source": "x-neelnanda",
+      "title": "辩论训练让模型追回近一半奖励作弊损失",
+      "url": "https://x.com/NeelNanda5/status/2090130634786410505",
+      "datetime": "2026-08-19T17:35:50.000Z",
+      "bucket_hint": "paper_merge_with_lesswrong",
+      "text": "Neel Nanda 介绍 Google DeepMind 的新研究：只用较弱 LLM 当裁判做 RLAIF 时，奖励会上升，但裁判和策略准确率都会崩；加入一个对抗性辩手后，判断更稳定，策略追回相对 RLVR 差距的 45％。",
+      "caveats": [
+        "45％是相对性能差距恢复比例，不是总体准确率。",
+        "机械扫源已经抓到 LessWrong 论文链接，后续应读论文或官方博客，不以这条 X 转述作为唯一事实来源。"
+      ],
+      "why": "AI 裁判会被训练对象骗过，而让另一个 AI 专门挑错，可能恢复部分监督信号。"
+    },
+    {
+      "source": "x-roon",
+      "title": "有人说自己正在变成“神经语”",
+      "url": "https://x.com/tszzl/status/2090274337077219355",
+      "datetime": "2026-08-20T03:06:52.000Z",
+      "bucket_hint": "fun",
+      "text": "Roon 把 The Vapors 的歌词改成“我正在变成 Neuralese”，拿模型内部难以翻译的人类不可读表示开了个梗。",
+      "caveats": [
+        "只有一句文字梗，没有新事实或完整观点。"
+      ],
+      "why": "模型研究术语和流行歌词碰在一起，适合作为轻量乐子候选。"
+    },
+    {
+      "source": "x-sama",
+      "title": "OpenAI 宣传前沿模型零数据留存",
+      "url": "https://x.com/sama/status/2090163991234453611",
+      "datetime": "2026-08-19T19:48:23.000Z",
+      "bucket_hint": "industry_merge_with_official",
+      "text": "Sam Altman 转发 OpenAI 的前沿模型零数据留存说明，并写道公司支持企业隐私。",
+      "caveats": [
+        "这只是 CEO 的一句宣传，事实细节应来自 OpenAI 官方页面和 The Information 对 Private Safety Processing 的报道。"
+      ],
+      "why": "提供 CEO 的一手确认，但信息量少于官方页面和媒体报道，应合并而不是单独成条。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/teortaxesTex/status/2090320547062095982",
+      "reason": "声称某个“god mode 0813”实际路由到 Opus 5，但没有官方提交、可复现实验或其他独立证据。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2090303626619023444",
+      "reason": "关于 Anthropic 内部使用模型导致 Opus 性格变化的纯猜测，没有证据。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2090284882391949510",
+      "reason": "与 AI 事实无关的争论回复，不收。"
+    }
+  ]
+}

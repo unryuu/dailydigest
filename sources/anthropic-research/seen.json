@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+  "title": "Claude 自主设计蛋白质并分析化学数据",
+  "date": "Aug 18, 2026",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
   "id": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
   "title": "Anthropic 公布多起安全流程失误",
   "date": "2026-08-18",

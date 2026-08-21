@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/Michael-E/bedrock-rl",
+  "title": "Bedrock-RL 把 Minecraft 变成 Agent 训练场",
+  "date": "2026-08-20",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
   "id": "https://huggingface.co/blog/LiquidAI/qad",
   "title": "Liquid AI 发布 LFM2.5 四比特检查点",
   "date": "August 19, 2026",

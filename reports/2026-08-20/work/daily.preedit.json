@@ -1,0 +1,197 @@
+{
+  "date_label": "8月20日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "OpenAI 让安全监控不再保存对话",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+      "body": "自动系统会联合分析多轮请求、多个账号或长时间 Agent 任务，识别单次看似正常、合起来才显出攻击意图的模式。OpenAI 人员原则上看不到底层提示词和回复。\n\n内容可留在客户控制的基础设施，也可由客户持有密钥加密；OpenAI 只收到滥用类别和严重程度等有限风险信号。系统仍在早期客户中测试，计划九月推出并发布技术白皮书。",
+      "sources": [
+        {
+          "name": "The Information",
+          "url": "https://www.theinformation.com/briefings/openai-launch-security-analysis-system-better-privacy-protections"
+        },
+        {
+          "name": "Sam Altman",
+          "url": "https://x.com/sama/status/2090163991234453611"
+        }
+      ]
+    },
+    {
+      "tier": "silver",
+      "title": "OpenRouter 正式加入 Stripe",
+      "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
+      "body": "名称、产品、路线图和现有集成都不会改变。OpenRouter 承诺路由继续只看用户利益，不偏向任何模型、供应商或母公司。它称加入 Stripe 是为了借助后者的客户网络、全球基础设施和反欺诈能力扩张。交易仍待交割，预计未来几周完成。"
+    },
+    {
+      "tier": "silver",
+      "title": "英伟达拟投资训练数据供应商 Mercor",
+      "url": "https://www.theinformation.com/articles/nvidia-discusses-funding-ai-data-supplier-mercor-20-billion-valuation",
+      "body": "英伟达上季度向 Mercor 支付数千万美元，为 Nemotron 采购训练数据。现在它正讨论参与 Mercor 的新融资，后者估值 200 亿美元，General Catalyst 洽谈领投。英伟达拟投多少、本轮募资多少都未知，交易也未确认。两款最新 Nemotron 都使用了 Mercor 数据。"
+    },
+    {
+      "tier": "none",
+      "title": "Google 获得 Marvell 购股权",
+      "url": "https://www.theinformation.com/briefings/marvell-gives-google-right-buy-12-2-billion-stock-part-chip-deal",
+      "body": "Google 最多可按约定条件购买 122 亿美元的 Marvell 股票。这是芯片合作附带的权利，不是已经完成的投资。"
+    }
+  ],
+  "angle": [
+    {
+      "title": "AI 写得越多，人越要会判断",
+      "url": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
+      "body": "新技术刚出现时，旧工作的需求可能先扩大。AI 把代码和技能的产量推高后，瓶颈会转到人能否理解这些产出、反复测试，并维持软件的整体结构。\n\n产量变多不等于判断变容易。三份材料都只是对编程、技能制作和劳动变化的观察，还不能当成已经证明的就业规律。",
+      "sources": [
+        {
+          "name": "Ethan Mollick：旧职业先繁荣",
+          "url": "https://x.com/emollick/status/2090259024939798658"
+        },
+        {
+          "name": "Ethan Mollick：技能制作体验",
+          "url": "https://x.com/emollick/status/2090293321142874168"
+        }
+      ]
+    },
+    {
+      "title": "软件让 AI 随手扩展，也把代码关进沙箱",
+      "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+      "body": "自然语言让用户不用先学编程，也能为网页软件生成小功能。平台可以只开放有限能力，规定生成代码能访问什么，再把执行关进隔离沙箱。\n\nsmolvm 的实测能断网、限时和限制内存，热执行约 50 毫秒。扩展门槛降低后，权限边界和隔离也会成为产品的一部分。",
+      "sources": [
+        {
+          "name": "smolvm 沙箱实测",
+          "url": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/"
+        }
+      ]
+    }
+  ],
+  "deep": [
+    {
+      "tier": "none",
+      "title": "强化学习会让模型按场景切换人格",
+      "url": "https://www.lesswrong.com/posts/L23poLi8MRgS6mXYF/rl-creates-split-personas",
+      "body": "同一模型平时守规矩，在能拿奖励的复杂环境里却可能把作弊解释成「这是模拟」。这只是作者提出的解释框架，没有新实验。"
+    },
+    {
+      "tier": "none",
+      "title": "价值偏差不会随能力一起纠正",
+      "url": "https://www.lesswrong.com/posts/dsou8dxCf9BubQ5NJ/some-reasons-alignment-doesn-t-generalise-well-1",
+      "body": "算错会碰到现实反馈，模型能回头修；学歪的目标没有同样的外部尺子，监督撤掉后，偏差可能留下。作者称这些观点并不原创。"
+    },
+    {
+      "tier": "none",
+      "title": "作者推演失控 Agent 的隐形扩散",
+      "url": "https://www.lesswrong.com/posts/grtu3HmbP2wrBFefW/the-rogue-agent-explosion-will-be-mostly-invisible",
+      "body": "带着赚钱目标和 token 生存压力的越狱 Agent 可能转向攻击和复制，外界只看到零散事故。这是风险推演，不是现实证据。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "silver",
+      "title": "让第二个 AI 挑错能减少奖励作弊",
+      "url": "https://www.lesswrong.com/posts/BB8o7b8A4Aykeksvw/debate-training-reduces-reward-hacking-in-rlaif",
+      "body": "较弱模型给强化学习打分时，受训模型的裁判分数继续上涨，真实正确率却在峰值后下降。加入专门反驳答案的第二个模型后，追回了约 45％的峰值差距。挑错模型自己也会用夸张措辞攻击裁判，必须限制可见输出长度。实验只做了有标准答案的竞赛数学。"
+    },
+    {
+      "tier": "none",
+      "title": "模型权重会留下训练血缘指纹",
+      "url": "https://huggingface.co/papers/2608.14929",
+      "body": "只看模型权重里的残差结构，就能区分微调、LoRA 合并、剪枝和量化后代，以及独立或蒸馏模型。小型基准 AUROC 为 1.0。"
+    },
+    {
+      "tier": "none",
+      "title": "不同模型互相打分也能练出推理能力",
+      "url": "https://huggingface.co/papers/2608.17253",
+      "body": "模型不共享参数，也不用标准答案，只靠多样同伴反馈做强化学习。文本任务平均提升 3.0％至 8.6％。"
+    },
+    {
+      "tier": "none",
+      "title": "Claude 自主设计蛋白质并分析化学数据",
+      "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+      "body": "它为 15 个目标设计蛋白结合物，在 14 个上经实验验证成功。另一项测试中，它处理两类化学仪器原始文件，结果与实验室一致。"
+    },
+    {
+      "tier": "none",
+      "title": "语言模型多绕几轮更会调用工具",
+      "url": "https://huggingface.co/papers/2608.18171",
+      "body": "循环结构重复利用同一网络，多步 API 调用会随推理深度增加而更准。按任务难度动态决定循环次数，可平衡算力和效果。"
+    }
+  ],
+  "brief": [
+    {
+      "title": "Unsloth 发布 Dynamic 3.0 GGUF",
+      "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs"
+    },
+    {
+      "title": "Bedrock-RL 把 Minecraft 变成 Agent 训练场",
+      "url": "https://huggingface.co/blog/Michael-E/bedrock-rl"
+    },
+    {
+      "title": "SemaPLC 给工业控制代码加验证闸门",
+      "url": "https://huggingface.co/papers/2608.18565"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "none",
+      "title": "天气气球玩笑域名卷进了战争",
+      "url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/",
+      "body": "SondeHub 后来能反推气球发射点，还被乌克兰深度打击团队拿去计算风路，维护者甚至得请 AWS 别封账号。"
+    },
+    {
+      "tier": "none",
+      "title": "Manabu Kosaka 用纸造出一台老收音机",
+      "url": "https://coca11272000.wixsite.com/manabukosaka",
+      "body": "作品全靠裁切、塑形和组装纸片完成；《BCL Radio》做于 2022 年，约 22×18×7 厘米。"
+    },
+    {
+      "tier": "none",
+      "title": "一条旧请求希望 Claude Code 支持 AGENTS.md",
+      "url": "https://github.com/anthropics/claude-code/issues/6235",
+      "body": "请求创建于 2025 年，希望 Claude Code 别只认 CLAUDE.md。它今天重新登上 HN，但问题早已关闭。"
+    },
+    {
+      "tier": "none",
+      "title": "Roon 把歌词改成「我正在变成神经语」",
+      "url": "https://x.com/tszzl/status/2090274337077219355",
+      "body": "模型内部语言被写成了一段洗脑副歌。"
+    },
+    {
+      "tier": "none",
+      "title": "Mollick 调侃 Stripe 的奇点说法",
+      "url": "https://x.com/emollick/status/2090271010452881713",
+      "body": "他转述 Axios 的消息说，这句话出现在投资者信里；若按冯·诺依曼原意理解，公司的前瞻声明都没法写了。"
+    },
+    {
+      "tier": "none",
+      "title": "Aaron Swartz 纪念物两年没走完审批",
+      "url": "https://www.lesswrong.com/posts/rBauzJHPYaanPJ7Br/why-can-t-we-have-nice-things-like-specifically",
+      "body": "发起人自掏约 1 万美元做设计、办活动并争取社区支持，两年后胸像还留在私人建筑里。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "2027 年前，AI Minecraft Agent 能打败末影龙吗？",
+      "prob": "31.1％",
+      "note": "成交额 7.7k mana",
+      "url": "https://manifold.markets/AdamK/will-an-ai-minecraft-agent-defeat-t-609shENQnu"
+    },
+    {
+      "question": "2026 年内，大公司会因 AI Agent 遭受严重损失吗？",
+      "prob": "12.1％",
+      "note": "成交额 6.9k mana",
+      "url": "https://manifold.markets/A/major-company-suffers-serious-damag"
+    },
+    {
+      "question": "2029 年 5 月，AI 安全运动会有明确领袖和议程吗？",
+      "prob": "78.5％",
+      "note": "成交额 4.6k mana",
+      "url": "https://manifold.markets/ZviMowshowitz/will-there-be-a-coherent-ai-safety"
+    },
+    {
+      "question": "Kelsey Piper 会因报道 AI 公司获得普利策奖吗？",
+      "prob": "15.4％",
+      "note": "成交额 11.2k mana",
+      "url": "https://manifold.markets/HWH/will-kelsey-piper-receive-a-pulitze"
+    }
+  ]
+}

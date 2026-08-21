@@ -1,0 +1,106 @@
+URL: https://www.lesswrong.com/posts/rBauzJHPYaanPJ7Br/why-can-t-we-have-nice-things-like-specifically
+FINAL: https://www.lesswrong.com/posts/rBauzJHPYaanPJ7Br/why-can-t-we-have-nice-things-like-specifically
+TITLE: Why can’t we have nice things? Like, specifically? — LessWrong
+FETCHED: 2026-08-21 10:44:16
+============================================================
+x
+Why can’t we have nice things? Like, specifically? — LessWrong
+Personal Blog
+53
+Why can’t we have nice things? Like,
+specifically?
+by
+Elizabeth
+19th Aug 2026
+Aceso Under Glass
+4
+min read
+2
+53
+The world doesn’t need another op-ed on how building things is illegal in San Francisco. But it does need more specifics on exactly how that plays out (this is the same instinct that led me to interview my Dad
+about Bell Labs
+). What, specifically, does it look like to
+try
+to build in SF? Where, specifically, do people fail? Explaining specifics turned out to be difficult, for the same reason I would struggle to write the specifics of my failure to nail jello to a wall in the dark. So much of the information is hidden, and even what’s visible elides description. But I’ll do my best.
+Pablo Peniche admires internet hero Aaron Swartz a lot (to hear why in his own words, see this
+article
+). I also admire him, but my admiration takes the form of being deeply touched for 15 seconds and then moving on to the next tweet. Pablo’s admiration has taken the form of a multi-year campaign to get a public memorial to Aaron in a San Francisco park. This campaign has encountered nothing but encouragement along the way, but somehow the statue is still stuck in a private building. He’s given me permission to share his story partially so others can learn from it, and partially in the hope that someone will teach him how to finish his task.
+First, there’s the money. Marble busts aren’t cheap and Pablo was not well off himself, but he was well connected in the SF tech scene[1], so it was not that hard to finagle several tentative offers of funding, contingent on getting permits from the city to place the statue.
+[1] the power of extroversion is going to come up a lot in this story.
+This sounds reasonable, except that the city won’t even start the permitting process without a design doc. Just getting that design doc would cost ~$10k and a commitment to pay for the rest of the statue. Pablo eventually paid the $10k himself, confident he’d get the remaining $25,000 he couldn’t afford once the ball got rolling.
+Once he had the design docs he approached the SF parks and rec department, but there was no progress for months. Wanting to see some traction, he contacted the several private locations asking if they were interested. The Internet Archive was of course was thrilled to host a memorial to Swartz and said yes. One year after setting himself the task Pablo unveiled the bust in a location that was at least widely accessible, if not quite public.
+Internet Archive threw a high end party to mark the occasion. One of Pablo’s friends suggested he invited district supervisor Bilal Mahmood, a friend of his from school. Mahmood came, and was impressed by the turnout and love people obviously had for Swartz.
+Around this time Pablo began reaching out to artists who had produced work for the city, to ask for their help. They either refused, or referred him to other people who refused.
+Pablo began working with the city on other projects. Or maybe he technically began working
+at
+the city: he organized a
+hackathon
+to build infrastructure for the city, and requesting attendance from city officials was one of the last steps, after he’d gotten 600 RSVPs. He organized trash pickups. Over about six months this built trust with the supervisor, who eventually offered to introduce him to the parks commission.[2]
+[2] Extroversion win count: 2
+The parks commissioners told him he needed to pick a particular park and sell the neighborhood association on it. After scoping out several choices he chose Alamo park so the memorial could stand in contrast to Salesforce tower. He also expanded from the bust to a circular stone bench around the bust, offered a 10 year trust to handle maintenance, and a contribution to the park’s general-purpose budget.
+Normally neighborhood approval would take several meetings, any one of which could veto placement. And normally the people who have time to attend these meetings start hostile to tech. Extroversion win #3: with advice from a friend he was able to share his anti-corporate vision of Aaron Swartz in a way that won over the very tech-skeptical audience, and received near-unanimous approval after one meeting. Hurdle cleared.
+When I first talked to Pablo, it was three days before a meeting that he was hoping would be the last step before breaking ground. Like every other meeting he’s been in, everyone spoke positively about the project, no one explicitly opposed it, but he walked away with a longer bureaucratic todo list than he started with.
+And that’s the thing. No city official has ever told him no. Some have been quite encouraging, at least to his face. But somehow in 2 years, and the equivalent of 2-3 months of full time work, he’s never reached the goalpost, never even found out where the goalpost is. If the city said no we could have an argument about procedures and decisions, but as it stands its all shadowboxing.
+This piece was commissioned (with full artistic freedom- thanks Catherine Olsson!) as a response to
+Ross Dothout’s call
+for the AI-wealthy to spend their money creating lasting beauty. The client was hoping for an instruction manual on buying beauty, but at least in California, money isn’t the bottleneck. Which you could have guessed, looking at the amount of money changing hands and the amount of human shit in the street.
+How to Help
+If reading this makes you think “I know just who Pablo needs to talk to” or “you fool, why didn’t you…”, Pablo would love to hear from you. You can reach him at pablo@aquavoice.com, or
+@pabloantonio
+on Twitter.
+If you live in district 5 (Supervisor: Bilal Mahmood), the bar for helping is very low, please reach out.
+Why can’t we have nice things? Like, specifically?
+9
+CstineSublime
+2
+[comment deleted]
+7
+DirectedEvolution
+2
+Comments
+2
+Personal Blog
+53
+More from
+Elizabeth
+View more
+Curated and popular this week
+New Comment
+2 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:44 AM
+[
+-
+]
+CstineSublime
+21h
+9
+0
+The kinds of obstacles in this journey make me wonder, is possessing (secret) knowledge of bureaucratic process a realistic superpower? Or is the problem with this bureaucracy that no one can actually have sufficient knowledge to get things done: it's unknowable, murky and chaotic?
+To put it another way, is there someone who knows how things get done in SF, or no such person?
+Reply
+[
++
+]
+[comment deleted]
+20h
+2
+0
+[
+-
+]
+DirectedEvolution
+21h
+7
+1
+I don’t want to copy paste an AI response into comments. But I will say based on my own experience in Portland that it’s been useful in helping me pick who to talk to, what to focus on, and how to sequence conversations. Claude has some plausible seeming responses to this post. But I would think Pablo is best positioned to run those queries himself and see if they make sense to him. Would be interested in a follow up seeing if he found any utility in that.
+Reply
+Moderation Log
+Deleted by
+cousin_it
+,
+Yesterday at 6:31 AM
+Reason:
+Comment deleted by its author.

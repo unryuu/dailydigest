@@ -1,0 +1,108 @@
+URL: https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code
+FINAL: https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/
+TITLE: Conceptual integrity and counting lines of code
+FETCHED: 2026-08-21 10:43:20
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+WorkOS —
+auth.md
+by WorkOS: agents register users, no sign-up form.
+Try it!
+Conceptual integrity and counting lines of code
+19th August 2026
+Last week I recorded
+an episode of the Talking Postgres podcast
+with Claire Giordano on the subject of “How AI is changing software development”. We had a really great conversation. Here are a couple of my highlights from a lightly edited transcript (prompt to Claude: “very minor edits to remove disfluencies”).
+This is the latest version of an argument I’ve been trying to build about why sometimes it
+does
+make sense to talk about lines of code as an indicator of productivity with coding agents, at
+35:01
+:
+A lot of people will tell you it makes no sense to measure productivity in lines of code. I’d actually disagree, because there’s a hard limit. In the before-times, a software engineer could produce a few hundred lines of production-ready code per day — and 200 lines of working, debugged, production-level code is an incredibly good day. Most days you’d produce 50 or 60.
+If agents let you produce a thousand lines of debugged code, that really is a very meaningful improvement — as long as the code is the same quality: maintainable, tested, all of that. You can get to that point with agents, but it takes a huge amount of skill and knowledge and experience. That’s what senior engineers are made of.
+I can do way more work as a single engineer than I could without agents. So you could argue, why should a company have more than one engineer? Beyond the obvious bus factor thing — a team of one is a very badly designed team — the answer is that the new limiting factor is cognitive capacity. I can churn out code a hundred times faster. I don’t have the cognitive capacity to stay on top of 100 times the amount of code. So you still need a team of engineers, so you can load balance that cognitive capacity across the team.
+And this section on conceptual integrity at
+46:03
+, which Claire equated to the
+Winchester Mystery House
+!
+Simon
+: There’s a concept in
+The Mythical Man-Month
+— conceptual integrity — where well-designed software has an integrity to it: there are no surprises in it, it covers exactly the right domain of things, everything fits together and makes sense. That’s so much harder with coding agents, where you can have an idea for a feature, run a prompt, and five minuteslater you’ve got the feature. Your software grows little weird bumps in funny different directions.
+Claire
+: You know my analogy for that? The Winchester Mystery House.
+Simon
+: It’s got 140 rooms, because the woman who built it was the widow of the guy who invented the Winchester rifle, and her psychic told her she’d be haunted by the ghosts of everyone killed with that rifle unless she kept building the house forever. So for 40 years she kept adding new rooms.
+
+That’s exactly the problem with coding agents and software: it’s very easy to keep adding new rooms, because the cost of adding those rooms is so much cheaper. What you end up with is something where the conceptual integrity falls apart — and then it’s harder to make decisions about it.
+It all keeps coming back to discipline. It used to be that the discipline was enforced on you by the amount of time it took. You’d come up with an idea for a crazy feature and think “yeah, but that would take me a week — I cannot justify that, so I’ll forget about it.” If it takes an hour, it’s so much easier to justify.
+(Side-note: the Wikipedia article includes credible sources that dispute the story about the psychic.)
+Posted
+19th August 2026
+at 10:46 pm · Follow me on
+Mastodon
+,
+Bluesky
+,
+Twitter
+or
+subscribe to my newsletter
+More recent articles
+Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things
+- 16th August 2026
+Now we have a timeline of the OpenAI accidental attack against Hugging Face
+- 7th August 2026
+This is
+Conceptual integrity and counting lines of code
+by Simon Willison, posted on
+19th August 2026
+.
+ai
+2,195
+generative-ai
+1,944
+llms
+1,911
+podcast-appearances
+41
+coding-agents
+238
+Previous:
+Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

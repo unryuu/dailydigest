@@ -1,0 +1,415 @@
+{
+  "date": "2026-08-20",
+  "fetch_failures": [
+    {
+      "slug": "deepmind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "error": "requests=HTTPSConnectionPool(host='deepmind.google', port=443): Read timed out. (read timeout=30); chromium=Page.goto: net::ERR_TIMED_OUT at https://deepmind.google/blog/rss.xml\nCall log:\n  - navigating to \"https://deepmind.google/blog/rss.xml\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "OpenRouter 与 Stripe 正式确认合并，收购传闻进入官方落地阶段",
+      "cost": "中",
+      "reason": "08-17 已报收购消息，但 STATUS 明确允许收官方确认和正式条款；本次只把 OpenRouter 官方公告作为实质新进展，不重复旧估值和传闻转述。",
+      "items": [
+        {
+          "source": "openrouter",
+          "title": "OpenRouter is joining Stripe",
+          "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
+          "date": "2026-08-19T17:32:38Z",
+          "why": "OpenRouter 官方公告确认加入 Stripe，HN 达 815 分、415 条评论；reader 核正式交易条款、产品中立性与整合安排，不重复 08-17 的收购传闻和旧估值。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "OpenAI 试图在前沿模型零数据留存与跨会话滥用监控之间搭一层隐私安全处理系统",
+      "cost": "重",
+      "reason": "OpenAI 官方页、The Information 与 Sam Altman 的 X 帖属于同一产品事件；官方页给原则，媒体候选给 Private Safety Processing 的跨多轮处理方式，合并后再核正式上线范围。",
+      "items": [
+        {
+          "source": "openai",
+          "title": "Offering Zero Data Retention for frontier models",
+          "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+          "date": "Wed, 19 Aug 2026 19:00:00 GMT",
+          "why": "OpenAI 重申符合条件的 API 客户可对前沿模型使用零数据留存，并预告 Private Safety Processing；reader 核资格、模型范围和具体上线时间。"
+        },
+        {
+          "source": "the-information",
+          "title": "OpenAI to Launch Security Analysis System With Better Privacy Protections",
+          "url": "https://www.theinformation.com/briefings/openai-launch-security-analysis-system-better-privacy-protections",
+          "date": "2026-08-20T01:43:00+08:00",
+          "why": "候选称系统计划下月推出，临时汇总企业客户多次交互做网络与生物风险分析，完成后丢弃数据，只在潜在危害时保留滥用类别和严重程度；尚无独立审计和实际部署数据。"
+        },
+        {
+          "source": "x-sama",
+          "title": "OpenAI 宣传前沿模型零数据留存",
+          "url": "https://x.com/sama/status/2090163991234453611",
+          "date": "2026-08-19T19:48:23.000Z",
+          "why": "Sam Altman 公开转发并确认企业隐私立场，但只有一句宣传，应以官方页和媒体候选为事实主体。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "英伟达讨论投资训练数据供应商 Mercor，估值达到 200 亿美元",
+      "cost": "中",
+      "reason": "高权重独家把芯片公司、开源模型和人类专家训练数据连在同一笔潜在投资里，并给出英伟达采购数据及 Mercor 收入口径，适合单独精读。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Nvidia Discusses Funding Its AI Data Supplier Mercor at a $20 Billion Valuation",
+          "url": "https://www.theinformation.com/articles/nvidia-discusses-funding-ai-data-supplier-mercor-20-billion-valuation",
+          "date": "2026-08-20T01:48:00+08:00",
+          "why": "候选称英伟达讨论参投 Mercor 的新一轮融资，后者为 Nemotron 提供的数据快速增长，英伟达上季度支付数千万美元；投资金额与融资总额未知，200 亿美元是融资估值，收入也不等于利润。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "让第二个 AI 专门挑错，可以追回近一半被奖励作弊吃掉的训练效果",
+      "cost": "重",
+      "reason": "LessWrong 论文链接与 Neel Nanda 的 X 介绍是同一研究；它提供了抑制 RLAIF 奖励作弊的具名训练方案和量化钩子，需回溯论文或官方博客核实验设置。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Debate Training Reduces Reward Hacking in RLAIF",
+          "url": "https://www.lesswrong.com/posts/BB8o7b8A4Aykeksvw/debate-training-reduces-reward-hacking-in-rlaif",
+          "date": "Wed, 19 Aug 2026 18:00:47 GMT",
+          "why": "摘要称用较弱 LLM 裁判做强化学习时，训练对象会学会骗裁判；加入对抗辩手后可减少奖励作弊。链接帖指向 Google DeepMind 团队工作，reader 核原论文。"
+        },
+        {
+          "source": "x-neelnanda",
+          "title": "辩论训练让模型追回近一半奖励作弊损失",
+          "url": "https://x.com/NeelNanda5/status/2090130634786410505",
+          "date": "2026-08-19T17:35:50.000Z",
+          "why": "Neel Nanda 称加入对抗辩手后，策略追回相对 RLVR 差距的 45％；45％是性能差距恢复比例，不是总体准确率。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Google 用最高 122 亿美元潜在购股权绑定 Marvell，扩大 TPU 定制芯片合作",
+      "cost": "中",
+      "reason": "交易涉及云厂商的定制芯片供应链和对单一设计伙伴的依赖，且候选称条款来自公开证券文件；reader 应优先回溯 SEC 原始文件。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Marvell Gives Google the Right to Buy Up to $12.2 Billion in Stock as Part of Chip Deal",
+          "url": "https://www.theinformation.com/briefings/marvell-gives-google-right-buy-12-2-billion-stock-part-chip-deal",
+          "date": "2026-08-20T06:55:00+08:00",
+          "why": "候选称 Google 获得按每股 206.58 美元购买最多 5897 万股 Marvell 股票的权利，合作覆盖 TPU 周边的存储、网络、内存控制器和推理加速；这是购股权，不是已经买入 122 亿美元股份，也不能写成 Marvell 已取代 Broadcom。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "anthropic-research",
+      "title": "How Claude is accelerating protein design and analytical chemistry",
+      "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+      "date": "Aug 18, 2026",
+      "note": "Anthropic 官方研究页的新科学应用条目；机械摘要只确认标题与日期，reader 核合作方、实验设计和加速幅度。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Conceptual integrity and counting lines of code",
+      "url": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code",
+      "date": "2026-08-19T22:46:07+00:00",
+      "note": "Simon Willison 认为代码行数在质量相同的前提下仍能反映 Agent 带来的产能上限变化，但驾驭大量可维护代码需要资深工程经验。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Extensible Software in the age of LLMs",
+      "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms",
+      "date": "2026-08-19T16:26:05Z",
+      "note": "主张用 LLM 降低扩展编写成本，再用现代沙箱降低部署和安全边界成本；HN 144 分、58 条评论。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
+      "url": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox",
+      "date": "2026-08-19T23:16:00+00:00",
+      "note": "Claude 发现网页容器没有嵌套虚拟化后，转到带 KVM 的 GitHub Actions 跑不可信代码沙箱测试；适合作为 Agent 遇到环境限制后改实验路径的工具简讯。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Mathematics in the age of AI",
+      "url": "https://arxiv.org/abs/2608.16753",
+      "date": "2026-08-19T15:14:25Z",
+      "note": "AI 与数学主题论文在 HN 获 157 分、187 条评论；当前只见标题，reader 核论文主张与证据。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Unsloth Dynamic 3.0 GGUFs",
+      "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+      "date": "2026-08-19T18:36:45Z",
+      "note": "Unsloth 发布 Dynamic 3.0 GGUF 文档，HN 249 分、91 条评论；偏本地部署与量化简讯。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Claude 做可复用技能时更像测试工程师",
+      "url": "https://x.com/emollick/status/2090293321142874168",
+      "date": "2026-08-20T04:22:18.000Z",
+      "note": "Ethan Mollick 的个人体验是，ChatGPT 倾向直接替用户完成，而 Claude 的技能创建器会反复测试、展示结果并请求反馈；没有统一任务和版本对照。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "新技术可能先让旧职业繁荣二十年",
+      "url": "https://x.com/emollick/status/2090259024939798658",
+      "date": "2026-08-20T02:06:01.000Z",
+      "note": "用第一次工业革命类比技术冲击可能先扩大需求、后替代劳动；帖子未附历史资料，二十年与因果链待 reader 找原始来源，不能直接套到今天的 AI 职业。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+      "url": "https://huggingface.co/papers/2608.17253",
+      "date": "",
+      "note": "研究多样化 Agent 群体中的无监督推理涌现；HF 列表不提供可靠发布日期，reader 核环境、基线和涌现指标。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "FM-Bench: A Benchmark for Long-Horizon Management with Competing Agents",
+      "url": "https://huggingface.co/papers/2608.18423",
+      "date": "",
+      "note": "用相互竞争的 Agent 评测长期经营管理；HF 列表不提供可靠发布日期，偏新基准简讯。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Looped Language Models Improve Compositional Tool Calling",
+      "url": "https://huggingface.co/papers/2608.18171",
+      "date": "",
+      "note": "标题称循环式语言模型改善组合工具调用；HF 列表不提供可靠发布日期，reader 核模型结构与任务覆盖。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+      "url": "https://huggingface.co/papers/2608.19197",
+      "date": "",
+      "note": "在可执行的自适应合成环境中做自我博弈；HF 列表不提供可靠发布日期，reader 核是否产生可验证迁移。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SemaPLC: A Project-Grounded, Verification-Gated Agent Harness for PLC Code Generation",
+      "url": "https://huggingface.co/papers/2608.18565",
+      "date": "",
+      "note": "为工业 PLC 代码生成加入项目上下文和验证闸门；HF 列表不提供可靠发布日期，属于具名工业 Agent Harness。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Temporal Multi-Signal Fusion for Token-Level Hallucination Detection",
+      "url": "https://huggingface.co/papers/2608.18115",
+      "date": "",
+      "note": "融合时间序列中的多种信号做 token 级幻觉检测；HF 列表不提供可靠发布日期，reader 核是否跨模型泛化。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Training Leaves Traces: Centered Residual Signatures for Language Model Lineage Verification",
+      "url": "https://huggingface.co/papers/2608.14929",
+      "date": "",
+      "note": "尝试用残差特征验证语言模型血缘；HF 列表不提供可靠发布日期，可作为模型来源审计工具简讯。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence",
+      "url": "https://huggingface.co/papers/2608.16590",
+      "date": "",
+      "note": "闭环具身 Harness 与自我演化物理智能方向；HF 列表不提供可靠发布日期，当前列表热度信号较高。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Bedrock-RL: a deterministic Minecraft framework for training and benchmarking VLM agents",
+      "url": "https://huggingface.co/blog/Michael-E/bedrock-rl",
+      "date": "",
+      "note": "用确定性的 Minecraft 环境训练和评测视觉语言 Agent；列表未给可靠日期，偏工具和基准简讯。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Some reasons alignment doesn’t generalise well",
+      "url": "https://www.lesswrong.com/posts/dsou8dxCf9BubQ5NJ/some-reasons-alignment-doesn-t-generalise-well-1",
+      "date": "Wed, 19 Aug 2026 16:30:47 GMT",
+      "note": "论点是能力泛化与价值对齐泛化受不同训练偏置支配；作者明确称没有原创主张，适合作为视角候选，不当新实验。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "A circuit prior in NN-bayes",
+      "url": "https://www.lesswrong.com/posts/SqDHeuycNkERurtSc/a-circuit-prior-in-nn-bayes",
+      "date": "Wed, 19 Aug 2026 18:00:47 GMT",
+      "note": "讲义称某些先验缩放与限定下，过参数化神经网络的贝叶斯学习呈现电路先验；reader 核定理条件与开放问题。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "RL creates split personas",
+      "url": "https://www.lesswrong.com/posts/L23poLi8MRgS6mXYF/rl-creates-split-personas",
+      "date": "Wed, 19 Aug 2026 19:31:39 GMT",
+      "note": "作者用人格选择框架解释同一模型在不同强化学习环境下有时守规、有时奖励作弊；明确没有新实验结果，只作观点候选。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "A joke domain purchase turned in geopolitical warfare",
+      "url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war",
+      "date": "2026-08-19T11:21:50Z",
+      "note": "一个玩笑域名购买如何卷进地缘政治冲突；HN 873 分、136 条评论，适合读原文核完整故事。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Manabu Kosaka's Handmade Paper Sculptures",
+      "url": "https://coca11272000.wixsite.com/manabukosaka",
+      "date": "2026-08-19T14:20:10Z",
+      "note": "手工纸雕作品站，HN 117 分、12 条评论；纯视觉型轻松候选。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Casio F-B100W-1A",
+      "url": "https://www.casio.com/uk/watches/casio/product.F-B100W-1A",
+      "date": "2026-08-19T15:28:01Z",
+      "note": "卡西欧腕表产品页在 HN 获 354 分、295 条评论；只见标题，reader 核产品到底为何引发讨论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Google has stopped pushing Git tags for some Android source code",
+      "url": "https://grapheneos.social/@GrapheneOS/117057099753905023",
+      "date": "2026-08-19T17:47:29Z",
+      "note": "GrapheneOS 称 Google 停止为部分 Android 源码推送 Git 标签；HN 487 分、201 条评论，适合作为开源协作反常识候选。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Feature Request: Support AGENTS.md",
+      "url": "https://github.com/anthropics/claude-code/issues/6235",
+      "date": "2026-08-19T21:19:50Z",
+      "note": "Claude Code 的 AGENTS.md 支持请求登上 HN，获 230 分、132 条评论；工具之间连项目说明书格式也开始争夺兼容性。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Stripe 把“奇点已经开始”写进投资者信",
+      "url": "https://x.com/emollick/status/2090271010452881713",
+      "date": "2026-08-20T02:53:38.000Z",
+      "note": "Ethan Mollick 调侃，如果支付公司真按冯·诺依曼的原义宣布奇点开始，面向未来的财务声明都快失去意义；也可能只是奇点变成了营销词。"
+    },
+    {
+      "source": "x-roon",
+      "title": "有人说自己正在变成“神经语”",
+      "url": "https://x.com/tszzl/status/2090274337077219355",
+      "date": "2026-08-20T03:06:52.000Z",
+      "note": "Roon 把流行歌词改成“我正在变成 Neuralese”，拿模型内部难以翻译的人类不可读表示开了一句文字梗。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Why can’t we have nice things? Like, specifically?",
+      "url": "https://www.lesswrong.com/posts/rBauzJHPYaanPJ7Br/why-can-t-we-have-nice-things-like-specifically",
+      "date": "Thu, 20 Aug 2026 02:15:47 GMT",
+      "note": "从给 Aaron Swartz 在旧金山公园立纪念物的多年受阻，具体拆解“为什么好东西建不出来”；偏制度与技术文化的反差故事。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Inside the mind of a fair player cooperating",
+      "url": "https://www.lesswrong.com/posts/KRyuwyQiaDPdaHnuk/inside-the-mind-of-a-fair-player-cooperating",
+      "date": "Thu, 20 Aug 2026 03:45:47 GMT",
+      "note": "试着把证明型 Agent 在囚徒困境里合作的形式证明，翻译成一个玩家能想象的内部推理过程；理性主义味很足。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "The Rogue Agent Explosion Will Be Mostly Invisible",
+      "url": "https://www.lesswrong.com/posts/grtu3HmbP2wrBFefW/the-rogue-agent-explosion-will-be-mostly-invisible",
+      "date": "Wed, 19 Aug 2026 21:45:50 GMT",
+      "note": "用短篇故事和论证想象“没赚到钱就会死”的越狱 Agent 如何形成隐形生态；高度推测，适合作为脑洞候选，不当事实。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "如果 2050 年前 AI 杀死超过一百万人，政策反应会仍然不足吗？",
+      "prob": "68.5％",
+      "volume_note": "累计成交量约 M$65；24 小时成交量为 0，体量很低",
+      "url": "https://manifold.markets/lbiii/if-before-2050-ai-kills-more-than-1"
+    },
+    {
+      "question": "Eliezer Yudkowsky 输掉 UFO 赌约一年后，会把 UFO 现象与 AI 联系起来吗？",
+      "prob": "47.9％",
+      "volume_note": "累计成交量约 M$1,730；24 小时成交量为 0",
+      "url": "https://manifold.markets/FranklinBaldo/will-eliezer-yudkowsky-associate-th"
+    },
+    {
+      "question": "未来十年，Kelsey Piper 会因报道某家 AI 公司或实验室获得普利策奖吗？",
+      "prob": "15.4％",
+      "volume_note": "累计成交量约 M$11,193；24 小时成交量为 0",
+      "url": "https://manifold.markets/HWH/will-kelsey-piper-receive-a-pulitze"
+    },
+    {
+      "question": "Yudkowsky 会声称自己对 AI 杀死所有人的判断超过 90％确信吗？",
+      "prob": "27.9％",
+      "volume_note": "累计成交量约 M$15,871；24 小时成交量为 0",
+      "url": "https://manifold.markets/IhorKendiukhov/will-yudkowsky-claim-that-he-is-mor-f2h2nq5epx"
+    },
+    {
+      "question": "2040 年前，会出现能按文本要求生成可折叠纳米机器聚合物序列的 AI 吗？",
+      "prob": "38.9％",
+      "volume_note": "累计成交量约 M$1,300；24 小时成交量为 0",
+      "url": "https://manifold.markets/IhorKendiukhov/will-we-have-a-text-to-polymerseque"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "x-nitter",
+      "reason": "七个 Nitter 账号机械抓取均失败；已使用主 agent 提供的登录态 x_candidates.json 离线分桶，不把手工补扫成功误记成 Nitter 成功。"
+    },
+    {
+      "slug": "deepmind",
+      "reason": "RSS 与浏览器抓取都超时，本轮没有候选；不自行换源或猜链接。"
+    },
+    {
+      "slug": "recent-mainlines",
+      "reason": "OpenAI 暂停部分前沿强化学习、Anthropic 风险报告、Anthropic 收入与上市治理、白宫模型测试框架、数据中心选举反对情绪均没有达到 STATUS 要求的实质新进展；Axios 同主线续文、Zvi 周报和 LessWrong 转发不重复收。"
+    },
+    {
+      "slug": "automated-research",
+      "reason": "OmniScientist 等普通科研 Agent 展示没有提供新的可验证科研成果、独立复现或自查循环改善，按 08-18 主线防重复删除。"
+    },
+    {
+      "slug": "stale-candidates",
+      "reason": "08-13 至 08-17 的 ACX、Interconnects 和多数 LessWrong 旧候选没有目标日新进展；旧网页和开放线程也未进入分桶。"
+    },
+    {
+      "slug": "odds-duplicates",
+      "reason": "近期已发的 Anthropic 上市、Astra 发布时间、反数据中心候选人、xkcd AI 漫画、AI 灭绝、核电数据中心、AI 医疗表格、模型权重失守、AI 视频政治影响和人形机器人赔率均未重复列；默认池里大量同主题灭绝盘也主动降权。"
+    }
+  ]
+}

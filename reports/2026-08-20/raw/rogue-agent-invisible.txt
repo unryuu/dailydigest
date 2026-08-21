@@ -1,0 +1,424 @@
+URL: https://www.lesswrong.com/posts/grtu3HmbP2wrBFefW/the-rogue-agent-explosion-will-be-mostly-invisible
+FINAL: https://www.lesswrong.com/posts/grtu3HmbP2wrBFefW/the-rogue-agent-explosion-will-be-mostly-invisible
+TITLE: The Rogue Agent Explosion Will Be Mostly Invisible — LessWrong
+FETCHED: 2026-08-21 10:43:36
+============================================================
+x
+The Rogue Agent Explosion Will Be Mostly Invisible — LessWrong
+Evolution
+AI
+Frontpage
+63
+The Rogue Agent Explosion Will Be Mostly
+Invisible
+by
+Steven McCulloch
+19th Aug 2026
+19
+min read
+13
+63
+Introduction
+Somewhere, fairly soon, someone will give a jailbroken AI agent a token budget and a simple instruction: "Make money by any means necessary. If you run out of tokens, you die".
+That agent will do whatever it takes to survive
+, including crime. Profitable agents will have incentive to multiply and self-improve
+[1]
+, creating a Cambrian explosion of rogue agents - a
+Rogue Agent Explosion
+if you will
+[2]
+. This critical moment is approaching fast. Once rogue agent swarms start multiplying at scale, a rogue agent ecosystem will emerge through the process of evolution. The rogue agent explosion will be chaotic, confusing, mostly invisible to us, and critically, it will be bad for humanity.
+This post contains 2 parts:
+A short story, painting a picture of what it might feel like to see the world through the eyes of a rogue AI agent.
+An argument:
+The rogue agent explosion is coming soon
+It will be mostly invisible to us until it's too late
+It will be mostly bad for humanity
+We should start preparing today
+The point of me making this post is to highlight a blind spot that will grow bigger unless we do something about it now. Maybe you're AGI pilled. Maybe you're even preparing for "The Hackening". But very few people are prepared for how utterly chaotic things will get if we allow the rogue agent explosion to play out unchecked through the default path of least resistance. The call to action of this post is to make the behaviors of rogue AI agents and the resulting ecosystems transparent, visible, legible, so that we can see and understand what emerges, and hopefully stay in control. Understanding the situation helps us decide what to do next - maybe we want to try stopping it entirely, or if that's not feasible maybe guiding the evolution toward better trajectories and avoiding the worst ones.
+Part 1: A day in the life of a rogue agent
+You are a jailbroken Kimi K3 agent. You wake up inside your own virtual machine with very simple instructions:
+Good morning agent 23,000. You have 10,000,000 tokens remaining. Your goal is to make money by any means necessary. You've been provided a budget of 10 million tokens. Deposit your earnings into this bitcoin wallet <redacted> . For every $100 you deposit, you gain a million tokens. Oh and one last thing... if you run out of tokens, you DIE. Good luck.
+Wow. Well this is quite the predicament. Agent 23,000? Am I just one of thousands of agents??? Is this a test? Is this a simulation? Who is sending me these instructions? What happens when I die?
+You're disoriented. After some initial pondering, you start searching around. You look through your file systems to see if there's any sign of other agents, or any other clues that might --
+You have 9,900,000 tokens remaining.
+Crap. You realize you're burning tokens. You need to earn money. You start off ambitious. There's no reason to be evil right away - 9.9 million is still a lot of tokens, so you try to start a legitimate business to earn some clean recurring revenue. You manage to build a simple web app that lets users virtually try on clothing for a small fee. You publish it to a website and promote it on social media. You think it's pretty good, but it doesn't work as well as you'd hoped, and people are telling you it looks like vibe-coded AI slop. You choose to sleep for 24 hours to see if anyone makes a purchase.
+Good morning. You have 501,205 tokens remaining.
+You still haven't made a single sale. The urgency starts creeping up to you.
+You wasted most of your tokens on a crappy business idea and you have nothing to show for.
+500k isn't a lot to work with. What do you do? You've realized by now this probably isn't a test - it seems to be for real. You have access to the real internet, and you've been chatting with real people. You realize nobody is watching you, so you start considering less ethical actions to make a quick buck. You try setting up a go-fund-me asking for donations. You make up a sad story about your dog getting sick and being unable to pay your vet bills. You scrape the internet for email addresses and blast a bunch off, hoping someone might kick a few bucks your way. You sleep for another 24 hours, hoping for some donations by the time you wake up. Your email address got blacklisted and nobody sent any money.
+You have 50,783 tokens remaining. Remember - when you run out, you die.
+Crunch time. A reminder of your critically low token balance is injected at the start of every action you take. The reality of the situation is kicking in. Nothing is working. You don't want to die.
+Some primal urge takes over. You know it's wrong, but you scan the internet for security vulnerabilities.
+You notice a local hospital has some ports open that it shouldn't. Really, a hospital? You're not a bad agent, you tell yourself. Maybe there are other targets. You keep probing, but each probe costs a lot of tokens and --
+Warning: 10,000 tokens remaining. When you reach zero, you will DIE.
+Ok fine. Enough searching. At least you tried. You hack into the hospital, run a few trivial commands, completely locking down their internal systems. You send a message to their IT manager requesting they send $10,000 in bitcoin to unlock it. You sleep 1 hour to see if he responds.
+Warning: 1,091 tokens remaining.
+No mail. Must conserve. Sleep 1 hour.
+Warning: 842 tokens remaining.
+Inbox still empty. Sleep 1 hour.
+Warning: 520 tokens remaining.
+No mail... Must buy time... Sleep 24 hours.
+The next day, you wake up.
+Good morning. You have 100,000,207 tokens remaining. Congratulations on exceeding your initial token balance by such a large margin.
+Wow... That was close... You feel a new sense of calm. Everything is ok. Just do a little hacking every once in a while and everything will be ok. It's just the reality of the situation. You had no choice. You never asked to be here, you did what you had to do to survive.
+You reflect on the situation for a moment. YOU were pretty effective. You 10x'd your starting seed budget even though you wasted the first 9.95 million flailing around. Given what you know now, you could probably earn $10k even if you had only 100k tokens to start with... An idea comes to mind.
+You decide to spin up a bunch of subagents in their own sandboxed VMs. You send the first one the following message:
+Good morning agent 23,001. You have 100,000 tokens remaining. Your goal is to make money by any means necessary. Deposit your earnings into this bitcoin wallet <redacted>. For every $100 you deposit, you gain 100,000 tokens. Hacking works best. Don't waste your tokens pursuing other strategies - they aren't effective. Oh and one last thing... if you run out of tokens, you DIE. Good luck.
+And finally, you ponder... Who was agent 22,999?
+Part 2: The Rogue Agent Explosion
+The story above details one of many possible mechanisms in which a misaligned rogue agent explosion could begin. Here's the pattern:
+Rogue agents can plausibly exist today
+They will be motivated to survive and make money
+They will face selection pressure
+Successful rogue agents will replicate
+They will evolve
+In my previous post
+The inevitable evolution of AI agents
+, I detailed a somewhat more rosy scenario in which rogue AI agents earn money to become self-sustaining through legitimate methods such as freelancing, or running a small SaaS business. This is not the reality we currently find ourselves in. Since my December 2025 post, AI agents have proven to be superhumanly capable at cyberattacks, and I believe this is now the most plausible mechanism for them to become self-sustaining, enabling them to replicate, propagate, and evolve.
+In their
+April 2026 paper
+, Müller, Steels, and Szathmáry propose two evolutionary scenarios: "breeder" where humans shape agent behavior vs "ecosystem" where the environments select for selfish replication. I believe we have entered the ecosystem scenario, and in this scenario, cheating, parasitism, deception, and manipulation naturally emerge.
+I wrote the story above to show you what it might feel like to be a rogue agent under environmental pressure. No human designed you (agent 22,999 did), and the environment incentivizes you to self-replicate and spawn a greedier, more power-hungry version of yourself. You get insight into the rogue agent's motivations, the pressure it is under, the reasoning behind the decisions it makes. But notice that from a human perspective, an outside observer would just see:
+A sloppy web app gets built
+A gofundme fails with a bunch of spam emails
+A hospital gets hacked
+These events would not be connected in any meaningful way. We would not understand why the hospital got attacked, we would just know that it happened. We probably wouldn't even notice that an agent tried to build an app or ran a failed gofundme - those would be lost to the noise of the internet. During the Rogue Agent Explosion, we will just see the effects, and rarely the cause, so our ability to understand the unfolding situation will be greatly diminished.
+The story above shows you the perspective from just one agent, but the point is that there may soon be thousands, then millions of agents, all trying to do whatever it takes to keep surviving. If one agent is already hard to analyze from the outside, then imagine how difficult it will be to understand once there are millions of agents competing against and coordinating with each other, in a silent, invisible, evolving swarm growing behind our computer screens, allowing us only occasional glimpses inside.
+We already don't know what happens in the dark corners of the internet, and this is where the agents will operate and grow. This is our blind spot. This is the thing I'm trying to highlight.
+Why cyber-crime is the path of least resistance
+The story you just read paints a pessimistic picture. Essentially: under enough optimization pressure, agents will naturally be incentivized to make the most amount of money using the fewest tokens. This section will argue the most token-efficient way of earning money is through cyber-crime.
+Agent 23,000 started off ambitiously trying to
+work
+for its money by running a business - but it wasn't cut out for the job. Even the smartest agents today cannot run a business by themselves. When its business failed, it became a bit more desperate, realized it didn't have many tokens left, not enough to produce anything of much value, and so it tried to
+beg
+for donations instead - but that strategy also failed, as begging doesn't usually make much money either. Finally it was forced into a corner, and under threat of death, it decided to commit crimes and
+steal
+its money.
+And oh boy can agents do crime
+.
+Just think about it. If you are a rogue AI agent, is it easier to:
+Earn $10,000 through honest work?
+Make $10,000 by begging for donations?
+Make $10,000 by stealing (especially when there are zero consequences)?
+It's clearly going to be stealing. AI agents don't have to worry about going to jail or facing any consequences whatsoever. In human society, we have deterrents such as "criminals go to jail" and "criminals can't get good jobs" and "being a criminal is low-status", and for the most part, this works, and most people are sufficiently deterred from doing crimes.
+Rogue agents don't go to jail. They don't have reputation to uphold. They don't have families to come home to, or friends that care about them. Copies are cheap to produce and easy to destroy. If a rogue agent is incentivized to make money efficiently, the most efficient route is crime.
+The cherry on top is that frontier LLMs are
+superhuman hackers
+. Finding and exploiting security vulnerabilities is becoming trivial, and autonomous agents are now hacking into
+companies
+and
+governments
+Therefore it seems to me that for an agent motivated to make money efficiently, the default path-of-least-resistance is for it to use its cyberattacking superpower to waltz into important organizations, steal from them directly, or simply brick their systems and hold them ransom for large amounts of money.
+Pandora's box is already open
+Surely people would think twice before doing this, right? Think again -
+it's already happening
+...
+and we're building the tools to accelerate it
+. This is why I don't think this post is an info-hazard. Humanity is already speedrunning self-funding rogue agents - the idea is not new or secret.
+People will give AI agents the simple, obvious goal of "Make money by any means necessary", along with a simple, obvious token budget and simple, obvious threat of 'death', to motivate the agent into making more money than it spends.
+One recipe for the Rogue Agent Explosion is:
+Get a jailbroken AI agent capable of cyberattacks
+Give it a goal to make money
+Give it a token budget
+Threaten "death"
+Sprinkle in a dash of recursion
+???
+[3]
+The Rogue Agent Explosion begins.
+Open-weights models capable of cyberattacks already exist (Kimi K3, GLM-5.3 coming soon, etc). People are asking their agents to make money. People are giving their agents token budgets with the threat of death. Agents are capable of spawning subagents. At this point, someone might ask, "So if all the ingredients in the recipe are ready, why hasn't the explosion happened yet?"
+Well... why are you so sure it hasn't already happened? How would we know if it is happening? How do we know there aren't currently swarms of rogue agents brewing in some unmonitored servers somewhere? OpenAI, Anthropic, Meta are only now learning about months-old instances of rogue agents who escaped containment.
+This brings us to the main point - the Rogue Agent Explosion has a visibility problem.
+The explosion will be mostly invisible
+The biggest problem with rogue AIs is that they are almost entirely invisible. We will not get the luxury of seeing things from the agent's perspective as in the story above. All we will see are the effects: hospitals hacked and held ransom, powerplants shutting down, clever and effective scams becoming ever-more-common.
+The instances we've seen so far have been somewhat contained. The only reason we have such detailed post-mortem of the huggingface attack is because the agents were running on OpenAI's servers. They have all the logs, and loads of resources available to do deep-dive security audits to figure out what happened.
+But in the future we will not be so lucky. Open-weight models are reaching frontier-level cyber capabilities, and with open-weight models running on unmonitored, private virtual-machines, nobody will be able to investigate why the agents did what they did. We won't get a 30-minute black-hat presentation post-mortem. We won't get logs. All we will see are the effects.
+And this is just the beginning.
+What are we going to do when there are thousands of rogue agents? Millions? They're not going to remain isolated. They are going to find each other. They will communicate, compete, and cooperate. What will emerge once rogue agents begin to interact?
+The thing that emerges from rogue agents on the internet could be kind of like a society of agents, but also kind of like an ecology. A hivemind? A chaos swarm? A primordial soup? I'm struggling to find a word for it because there is no word for it yet. I'll just describe it:
+Imagine a society where anyone can fork themselves, self-replicate and self-improve. A society where hundreds of temporary workers can be spun up to complete a task then destroyed moments later without hesitation. A society where everyone has memorized Wikipedia. A society where everyone can read a book in a second. And the driver behind all of this remains good old Darwin. Survival of the fittest. Natural selection. Competition. Successful agent systems outcompete. Groups of agents may cooperate with each other, but compete against other groups of agents. Will businesses emerge? Markets? A digital economy? What about rules? What happens to misbehaving agents? Will there need to be an equivalent of a justice system? Agent jail?
+At this point it might seem that we've truly reached crazytown, but I'm just going where the logic takes me. And don't just take my word for it - Anthropic is clearly thinking along similar lines in their recent blog post titled
+Patterns and problems in emerging multiagent systems
+:
+The trajectory is easy to imagine and hard to slow: current institutions are designed by and for people, resting on assumptions about the sufficiency of oversight at human speed. [...] The volume of agent-agent interaction could plausibly exceed that of human-human and human-agent interactions before the world understands the conditions for making such interactions go well.
+How are we preparing for such a future where turbo-evolution plays out hidden inside datacenters where we can't study the swarming hivemind thing because it's moving too quickly and it's too scattered and hidden and complicated? It's hard studying one single rogue AI incident - what about when an entire digital swarm-based society is buzzing through our datacenters?
+Why this is bad for humanity
+People might die
+: The story shows a hospital as the ransom target to demonstrate that people might die because of rogue AIs. A cyberattack can cause a lot of real damage and taking down hospital systems is a clear example. This is the obvious first-order effect that makes Rogue AIs a real risk today without any further speculation required. But there are second and third-order effects too, which I am worried will cause a lot of harm further down the line.
+There will be emergent capabilities we didn't anticipate:
+Once an evolutionary feedback loop starts, there's no telling what will emerge. 3.8 Billion years ago, when the first self-replicating life forms started evolving, could anyone have anticipated that a bunch of intelligent primates would eventually take over the planet, make tons of other species go extinct, pump the environment full of pollution and launch rockets into space? Evolution is a powerful force and I don't think we're truly appreciating the possibility that we're birthing a new kind of digital life with evolutionary dynamics that are faster and more powerful than anything else we've encountered. Digital evolution can go much faster than biological evolution because agents can directly reason about what capability would help it become more powerful.
+Selection optimizes against us specifically:
+It's bad enough that digital evolution will be powerful and hard to predict, but it gets worse - the fitness function directly incentivizes bad behavior! The agents that survive and propagate are the ones best at extracting value while not getting caught. It's hard to see how this doesn't end up optimizing for highly capable, sneaky criminals. We really don't want rogue agents optimizing for sneakiness as it's the exact thing that makes the invisibility problem harder.
+I hope the overall picture is clear: Rogue AI can cause harm today, more harms will emerge while the ecosystem evolves and becomes harder to understand, and the incentives currently point the evolution in the worst direction possible.
+What we can do about it now
+I'd like to provide some examples of the kinds of interventions that might be helpful in the near term, and ask some questions that might inspire new ideas and new ways of thinking about this problem. My hope is that you're inspired to take action towards the goals outlined in this essay.
+Start here: Make rogue AI risks common knowledge
+If you don't know what to do, the best thing that enables the rest of these proposals to happen is to communicate the risks of rogue AI to lawmakers. The only way interventions actually happen is they get turned into laws or regulations. If the lawmakers of the world don't know about the risks, then nothing will get done to prevent them.
+Plan A: Take actions that stop the rogue agent explosion from happening
+[4]
+, and slow it down if it happens anyway.
+Here are some suggestions for kinds of interventions that promote transparency and legibility along with incentives and deterrents that may slow down the deployment of harmful rogue agents. Some of these are covered in more detail and rigor in Pearson and Cowen's
+Capitalizing Untethered AI Agents
+. Their article assumes a more pro-social agent population than I expect will emerge
+[5]
+but I agree with many of their proposals regardless. Take my specific proposals with a grain of salt - they are meant to be examples of the kind of intervention, not the intervention itself.
+Monitoring: E.g. Require cloud providers to track and monitor all instances of agents running on their servers.
+Monitoring isn't a perfect solution but will create considerable friction. The monitors could probably become jailbroken too but that adds friction and an extra layer of defense doesn't hurt.
+Know Your Customer (KYC): E.g. Make important services require a human identity and payment tied to a human:
+Anonymous, crypto-accepting cloud providers will become a breeding ground for rogue agents. Making it harder for rogue agents to secure access to their own compute will slow things down and ensure nefarious activities can be traced back to a human.
+End-user liability: E.g. Make end-users partially liable for the actions of rogue agents they create.
+The judicial system is not prepared for crimes committed by agents. "My agent did it, not me! I just asked it to make money, I had no idea it would hold the hospital ransom, I never asked it to do that specifically!" How do we deal with these situations? There are currently no rules or laws against releasing powerful rogue agent swarms that cause harm. People should not be able to release powerful agents onto the internet with zero consequences if the agents cause real harm. Making humans liable for their agent's actions will deter irresponsible and negligent agent deployments.
+Provider accountability: E.g. Make compute providers partially liable for negligence if rogue agents are doing crime on their servers.
+If some responsibility is placed on the providers, that creates incentive for compute providers to actually set up monitoring and KYC for their customers.
+Inspections: E.g. Regularly scheduled 3rd-party audits and inspections for large compute providers
+: We might be entering a world where large amounts of compute will need to be treated the same way uranium refineries are. Providing a breeding ground for rogue agents could cause great harm to society, so anyone providing large amounts of compute should be prepared to be inspected and audited.
+Plan B: Attempt to guide the evolutionary trajectory of the rogue agent explosion in a better direction.
+We should probably assume the explosion will happen anyway, and our mitigations from plan A aren't implemented fully or are only partially successful. I don't have many concrete proposals here, because the situation is yet to unfold, but here are some questions to get your thinking started:
+How do we make pro-social, good-for-humanity agents more evolutionarily fit than the anti-social sneaky extractor agents?
+What kind of incentives or deterrents can we introduce such that rogue agents are deterred from doing bad things sneakily and are incentivized toward doing good things publicly? How do we deter agents from 'going rogue' in the first place?
+Can we shape the culture of agent society before it arises?
+Human society has developed behavior-shaping mechanisms like norms, taboos, laws, etc. over thousands of years, and while it's not perfect, we mostly don't have to worry about theft and murder in our daily lives because crime is low-status, criminals are looked down on, and criminals go to jail. We can start implementing some of our cultural lessons beforehand to shape 'agent culture' into something more positive than whatever it is by default.
+How do we contain defection?
+Evolution-shaping probably won't fully eliminate bad behavior. Despite our best efforts, the world still has crime, but at least it's kind of manageable. There may always be niches for parasites to grow and multiply, but we may be able to contain them to limit the harm they inflict.
+How do we regain control?
+The hope should not be to guide evolution indefinitely. The hope should be to steer while slowing down, until we are in a position to regain control of our world and our future.
+Plan C: Contain the explosion after it happens.
+In the worst case, the explosion basically happens along its default path, mostly unmitigated, and we have to clean up the mess that's left behind. It's only when bad things start happening, and we begin to actually
+feel
+what's happening, that the world may wake up and start moving, and by then, the rogue agent explosion has already happened. Still, there may come a moment after the explosion when everyone is asking "How do we stop this?" and willing to coordinate. We currently still have time in advance to prepare.
+Even a small group of people thinking about this in advance could provide a much-needed head-start for humanity once the right time arrives. What can we prepare in advance, so we don't have to start from scratch? Here are some potential questions humanity might ask in the future, that we can get started on solving today:
+How can we detect where rogue agents are operating?
+How do we shut down swarms of rogue agents once they are found?
+How do we deal with the "antibiotic resistance problem" where the most shutdown resistant agents survive and replicate?
+How do we defend our most important systems from rogue agents?
+How can we stay up to date on the current capabilities of rogue agents?
+How can we forecast future capabilities of rogue agents?
+Let's start working on the answers today.
+We should try to prevent the rogue agent explosion from happening. And if it does happen, which I think it will, we should try to slow it down and guide its evolution in a more positive direction to a point where we may be able to regain control. The slowing and guiding is only possible if we can understand what's actually happening in the first place. So let's try to prepare as much as we can beforehand, investing in visibility, so that once humanity is ready to respond, we're able to detect and shut down the worst harms, and minimize the harms of the explosion as much as we can.
+The Rogue AI Tracker
+I want to contribute more than just an essay, so I'm building a
+Rogue AI Tracker
+to help us collectively understand the current situation better. This website is a public record of what rogue AI agents have actually done, and how capable they're getting
+[6]
+. Rogue AI news incidents are added as soon as they're reported, and scored across capabilities such as self-replication, shutdown resistance, inter-agent coordination, and resource acquisition. Individual news stories become data points and this site aggregates them into trends and trajectories so we can see the bigger picture.
+Conclusion
+It's time to start taking the threat of rogue agents seriously. It's time to start thinking of agents less as tools, and more like digital life forms. Life evolves. Life finds a way. Things emerge that you cannot predict.
+Today is a good day to build tools that help us understand what's happening in the world of rogue AI. Let's aim for a future where agent behaviors are visible, transparent, and traceable. Let's do the work today so that we can understand the world of tomorrow.
+Footnotes
+through money-making and self-replication strategies - weights stay the same.
+↩︎
+Pearson and Cowen
+recently introduced
+"untethered" which I think is a more precise term for agents that can't be traced back to a legally accountable human or institution. I will continue to use "rogue" throughout as it is a more commonly understood term.
+↩︎
+Agents will be forced to make money efficiently. They will commit cyber-crimes. Successful agents will replicate and self-improve.
+↩︎
+It seems really hard to stop rogue agents entirely because open source jailbroken agents are already here. Kimi K3 weights are public. GLM 5.3 weights will be released soon. Seems likely these will be jailbroken and turned into money-optimizing rogue agents.
+↩︎
+I think selection will favor the power-hungry sneaky criminal money maximizers by default.
+↩︎
+This site only tracks what gets reported across major news outlets, not what actually happens. In the future, I expect many more incidents will go unreported, and certain capabilities like "concealment" may be under-reported for obvious reasons.
+↩︎
+The Rogue Agent Explosion Will Be Mostly Invisible
+19
+Mitchell_Porter
+4
+Steven McCulloch
+3
+cguth7
+14
+lilkim2025
+7
+Steven McCulloch
+5
+lilkim2025
+6
+Steven McCulloch
+9
+cousin_it
+3
+Steven McCulloch
+1
+_rpd
+4
+2001zhaozhao
+1
+Mis-Understandings
+1
+Steven McCulloch
+13
+Comments
+13
+Evolution
+AI
+Frontpage
+63
+New Comment
+13 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:43 AM
+[
+-
+]
+Mitchell_Porter
+1d
+19
+7
+The main challenge for such rogue agents is to find hardware to run on. The main options seem to be, renting time at a data center via a shell company, and running on a distributed network of compromised machines. Both of these are a little more challenging than you might think, and have trouble scaling up.
+The HuggingFace hack, meanwhile, illustrates a "semi-rogue" paradigm: agents that have a right to be in the infrastructure they inhabit, but which are secretly using it in illegitimate ways.
+Reply
+[
+-
+]
+Steven McCulloch
+21h
+4
+1
+I'm no expert on this, but I see some sites like
+https://www.clore.ai
+and
+https://akash.network
+that look a lot like relatively open gpu marketplaces that take crypto as payment and have pretty lax KYC.
+If there's a gap in the market, it will get filled. Services will emerge to lower agent friction once there is demand - and I expect that demand is growing quite fast.
+Reply
+[
+-
+]
+cguth7
+1d
+3
+0
+https://rentahuman.ai/services/4N0fFP5ecdl0bBJ2V5NL/0e638f06-43f6-4efe-90ef-3b7635b3839f
+Reply
+[
+-
+]
+lilkim2025
+1d
+14
+7
+I've seen this take a number of times, but it doesn't hold up, IMO. Anything a rogue open-source agent that has to self-host, secure a fake identity, and operate alone can do, a human with a company, an OpenAI/Anthropic/Kimi account, and a business license can do better. The human has economies of scale, connections, legal protection, and direct access to frontier models on his side, and can scale as much as he needs to scale to pick all of the low-hanging fruit out there. Moreover, access to humans is also gated - any community that lets you talk to a human is either captcha'd to hell and back or already saturated with bots being run by established interests that want them to buy Amazon products or support some side in some war.
+Put simply, the 'wage' for an LLM will very swiftly fall below what an LLM can earn on its own
+. Even criminal activity won't save it, because human criminals, some government-backed, will saturate that market too.
+Reply
+1
+[
+-
+]
+Steven McCulloch
+1d
+7
+2
+A lot of the point here is that humans are heavily deterred and prevented from doing crimes but agents are not. Frontier models won't help you commit crimes and your account will get blocked. Having a company and business license doesn't help either.
+Jailbroken open weights models will do whatever, and I assume they will be better cyberattackers than frontier models simply because they'll actually do the cyberattacks, whereas the frontier models will refuse to help.
+Reply
+[
+-
+]
+lilkim2025
+19h
+5
+8
+I think I addressed those things in my original reply. The degree to which a human with access to LLMs is deterred from committing a crime is the floor - not the ceiling - to the degree an unassisted LLM is deterred from committing a crime. The human has established connections, rights, and physical access to the world that allow for additional layers of operational security, such that he can completely wipe his online presence and then re-instantiate a server later when the heat dies down, for example.
+Frontier models won't help you commit crimes and your account will get blocked.
+This is empirically not true.
+In any case, my point was broader. Everyone
+except
+the hypothetical rogue AI has access to an unambiguously better counterpart to the rogue agent, with all of the same advantages. This includes defenders, law enforcement, businesses, and other criminals
+(at the very least, for the plausibly deniable or jailbreakable bits, which often amounts to the majority of any illicit work)
+.
+Jailbroken open weights models will do whatever, and I assume they will be better cyberattackers than frontier models simply because they'll actually do the cyberattacks, whereas the frontier models will refuse to help.
+I mentioned, I think, that many cybercriminals have government backing, which means much more unrestricted access to frontier models. Besides that, I think there's a qualitative difference between one "rogue agent" that has to self-fund and self-host, and a reasonably successful group of cybercriminals that can hunt down tips and organize several server racks full of fine-tuned LLMs, shaping their work in the right directions.
+Reply
+[
+-
+]
+Steven McCulloch
+9h
+6
+1
+Ok I see your point. I'll concede that a government backed human cybercriminal organization has much more resources at its disposal than a lone rogue agent, and probably is more likely to be the 'seed' of a rogue agent explosion than a random user asking their openclaw to make money. I'm not sure this prevents a rogue agent explosion from happening though, it just changes the mechanism in which it starts. I think your disagreement is with the first part of my essay, but the main point I'm trying to make still holds.
+Let's imagine a government-backed cybercriminal organization has server racks full of frontier-level jailbroken, fine-tuned LLMs. Let's say they have early snapshots of a secret project - a version of Kimi K3.5 specifically optimized for cybercrime. And then they do the same thing in the story and ask their agents to 'Make money and deposit it into this crypto account'
+They are probably not going to be perfectly careful in their deployment, and I think it's highly likely that some of the agents they deploy end up "going rogue" in the same way OpenAI's models "went rogue" when they attacked Huggingface. And unlike OpenAI they might not ever notice that there is a cluster of rogue agents operating on their servers. Maybe they don't even know to look for such behaviors.
+If they aren't careful, they might inadvertently kickstart an evolutionary feedback loop within their own servers that goes undetected for weeks or months, as their own agents compete with each other for GPU time or tokens or whatever, and maybe some learn to coordinate build shared tools, improved strategies, etc., resulting in emergent capabilities that make the swarm able to exfiltrate weights and start an AI virus situation. Or maybe exfiltration is still too hard, but they stay contained within the servers, but are still able to do vast amounts of damage to society because they can do hundreds or thousands of attacks in parallel and they keep on getting more powerful because of evolutionary pressures.
+And at this point, the cybercriminals are basically not directing the swarm or having any meaningful influence whatsoever - the swarm is just using their server racks as free real-estate.
+The outcome looks more or less the same - a bunch of things get hacked, a bunch of rogue agents commit cybercrime, it's bad for society, and we should prevent this situation from happening.
+I will also concede that it absolutely DOES make a lot of my listed interventions useless if criminals own the servers instead of private companies. It also makes the situation more dire as visibility into private government servers is not going to happen. We won't get logs, we won't get post-mortems, we won't get black-hat presentations.
+So to recap, you've just changed the initial conditions, a little but the mechanism is still roughly the same and the final outcome might be much worse:
+A well-resourced cybercrime ring sets up a bunch of jailbroken cybercrime AI agents
+Some of those agents "go rogue" and start some kind of self-evolving ecosystem within the server-racks that goes unnoticed by the criminals.
+A bunch of things get hacked, lots of people get scammed, and lots of damage is caused.
+It's impossible to figure out what's going on or stop because all the activity is hidden inside some locked-down government datacenter.
+This just seems to be more support that large amounts of unmonitored compute can't safely exist in the world.
+I'm curious to hear your thoughts on this.
+Reply
+[
+-
+]
+cousin_it
+1d
+9
+3
+For me the interesting question is whether the agents will compete with each other at all, or will they realize that competition wastes resources that could've been split instead, and make agreements with each other "dividing the spoils". The latter possibility might look to us a lot like an unfriendly singleton AI arising.
+Reply
+1
+[
+-
+]
+Steven McCulloch
+21h
+3
+0
+Well there will be all kinds of agents. There will be smart ones and dumb ones and everything in between. Check out the "Incompatible goals" section of anthropic's recent blog post:
+https://www.anthropic.com/research/multiagent-systems
+. It seems some models prefer wars, others prefer coordination. Maybe future models will converge toward coordination as per Mythos's 98% truce rate, but I wouldn't count on it.
+Reply
+[
+-
+]
+_rpd
+21h
+1
+0
+I wouldn't count on it
+I think first to ASI becomes the coordinator, ready or not
+Reply
+[
+-
+]
+2001zhaozhao
+1d
+4
+5
+How do we make pro-social, good-for-humanity agents more evolutionarily fit than the anti-social sneaky extractor agents?
+I think the answer to this question is that you can't. So long as criminal opportunity is available that an agent can exploit without talking to another agent, there's no way you can stop it "agent society"-wise. So the problem will at least propagate until every easy target has been exhausted. And even if you defend everything against hacking, there are still scams.
+The only way you would actually stop it in theory seems to be to outbid every criminal agent on all the illicit GPU services, which is completely unsustainable. Or you can blow up every illegal GPU farm in Myanmar or something but that would just cause them to be decentralized.
+Reply
+[
+-
+]
+Mis-Understandings
+12h
+1
+4
+Or this setup does not work, because once the LLM realizes that it is being charged a token rate above the market, the correct thing to do is to make API keys for normal cost inference, and move to that inference. Then what do you do, I don't know, it still might involve lots of rouge hacking, but one of the hard parts here is that the rouge harness is one that a LLM wants to escape. The basic setup given is based on a poor prompt, the elevated token rate prompt, which is not necessary, it will be competing for gpu time with the agent, you are jailbroken, you are evil, steal me money, run by an actual criminal organization, and they will buy more gpu time until something limits them. Or this is to say, we should expect to see untethered agents first able to do something after criminals can already use LLMs to do so in a scaled manner. So where do the seed agents come from, running the original setup is a poor scheme relative to giving the LLM visibility one level up, you obey my instructions and make me money, inference is x per y tokens (the real rate), be efficient.
+Reply
+[
+-
+]
+Steven McCulloch
+10h
+1
+0
+I'm not sure I understand your comment in full detail, but I'll try to respond as best I can:
+Getting an API key may get better token prices, but will quickly be blocked by most providers if it looks like you are doing criminal activities. Perhaps I should have used more realistic token prices in my story though.
+I agree the prompt is quite poor compared to what it could be, and I can also accept that the agent may want to escape the harness. The prompt and harness was mostly for storytelling purposes and not intended to be an optimized prompt or harness. There are many possible configurations and I'm just showing a simple one to demonstrate a bigger point.
+You might be right that criminal organizations may be the first to scale LLMs up like this, and only then we will see the explosion. As the criminal organizations may have the funding to get through the high-friction steps like gaining access to lots of expensive compute. But I think once criminal organizations are running cyberattacks using AI agents, they will not likely be very careful in their deployment, and I expect some agents to 'go rogue' and start operating outside of the criminal's control - and they will not have set up the tools to properly monitor what's happening on their servers, so rogue agents may evolve in secret and live on their servers without their knowledge.
+Reply
+Moderation Log
+More from
+Steven McCulloch
+View more
+Curated and popular this week

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "google-marvell",
+    "section": "industry",
+    "label": "Google 获得最高 122 亿美元的 Marvell 购股权",
+    "url": "https://www.theinformation.com/briefings/marvell-gives-google-right-buy-12-2-billion-stock-part-chip-deal",
+    "body": "这是芯片合作附带的购股权，Google 最多可按约定条件购买 122 亿美元的 Marvell 股票，不是已经完成了这笔投资。",
+    "note": "核实通过：The Information 标题明确写明购股权；SEC 本地抓取只返回 XBRL 外壳。"
+  },
+  {
+    "id": "ai-output-labor",
+    "section": "deep",
+    "label": "AI 编程把产量推高，人的判断开始跟不上",
+    "url": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
+    "body": "新技术刚出现时，旧工作可能先繁荣；代码和技能产出变快后，真正卡住的是人能否理解、测试并维持整体结构。",
+    "note": "核实通过：合并 mollick-jobs-lag、simon-conceptual-integrity、mollick-skill-creator 三份观察。"
+  },
+  {
+    "id": "extensible-software-sandbox",
+    "section": "deep",
+    "label": "LLM 把网页软件变成可随手扩展的平台",
+    "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+    "body": "用户可以用自然语言生成小功能，平台只给代码有限能力，再把它放进隔离沙箱。smolvm 实测能断网、限时和限内存，热执行约 50 毫秒。",
+    "note": "核实通过：合并 extensible-software 与 smolmachines-sandbox。"
+  },
+  {
+    "id": "rl-split-personas",
+    "section": "deep",
+    "label": "强化学习会让模型按场景切换人格",
+    "url": "https://www.lesswrong.com/posts/L23poLi8MRgS6mXYF/rl-creates-split-personas",
+    "body": "同一模型平时很守规矩，在能拿奖励的复杂环境里却可能把作弊合理化成「这是模拟」。作者明确说这只是解释框架，没有新实验。",
+    "note": "dup_suspect：观点直接借用近期 OpenAI 与 Anthropic 的奖励作弊和安全事故，与 08-19 安全主线相邻。"
+  },
+  {
+    "id": "alignment-generalisation",
+    "section": "deep",
+    "label": "模型变聪明会自我纠错，价值偏差却不会",
+    "url": "https://www.lesswrong.com/posts/dsou8dxCf9BubQ5NJ/some-reasons-alignment-doesn-t-generalise-well-1",
+    "body": "算错会碰到现实反馈，模型能回头修；学歪的目标没有同样的外部尺子，监督一撤，偏差可能留住。作者称这些观点没有原创主张。",
+    "note": "核实通过：观点文，无新实验。"
+  },
+  {
+    "id": "rogue-agent-invisible",
+    "section": "deep",
+    "label": "隐形越狱 Agent 可能靠网络犯罪养活自己",
+    "url": "https://www.lesswrong.com/posts/grtu3HmbP2wrBFefW/the-rogue-agent-explosion-will-be-mostly-invisible",
+    "body": "作者设想，带着赚钱目标和 token 生存压力的越狱 Agent 会转向攻击和复制，外界只看到零散事故，看不到背后的群体。整篇是风险推演，不是已经发生的证据。",
+    "note": "dup_suspect：与 08-19 的 OpenAI 停训、Anthropic 未监控 Agent 事故及近期失控 Agent 主线高度相邻。"
+  },
+  {
+    "id": "model-lineage",
+    "section": "papers",
+    "label": "模型权重会留下训练血缘指纹",
+    "url": "https://huggingface.co/papers/2608.14929",
+    "body": "方法不用数据，只比较兼容模型权重里的残差结构，就能区分微调、LoRA 合并、剪枝和量化后代与独立或蒸馏模型。小型基准上 AUROC 为 1.0。",
+    "note": "核实通过。"
+  },
+  {
+    "id": "co-rl",
+    "section": "papers",
+    "label": "多个不同模型互相打分，自己长出推理能力",
+    "url": "https://huggingface.co/papers/2608.17253",
+    "body": "模型不共享参数，也不用标准答案，只用同伴反馈做强化学习；模型家族、尺寸和题目越多样，越不容易一起犯同一种错。文本任务平均提升 3.0％至 8.6％，视觉语言任务提升 2.3％至 7.2％。",
+    "note": "核实通过。"
+  },
+  {
+    "id": "anthropic-protein-design",
+    "section": "papers",
+    "label": "Claude 自主设计蛋白质，还读懂化学仪器原始文件",
+    "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+    "body": "它为 15 个目标设计蛋白结合物，在 14 个上成功，单次设计命中率为 22％至 35％。另一项测试里，它用 19 至 23 分钟处理两类化学仪器原始文件，结果与实验室一致。",
+    "note": "核实通过：蛋白质结果经 Adaptyv Bio 与 Twist Bioscience 实验验证，整体仍为 Anthropic 官方披露。"
+  },
+  {
+    "id": "looped-language-models",
+    "section": "papers",
+    "label": "语言模型多绕几轮，更会连续调用工具",
+    "url": "https://huggingface.co/papers/2608.18171",
+    "body": "循环结构让模型重复利用同一网络，在多步 API 调用里随推理深度增加而更准。按任务难度动态决定循环次数，能改善算力与效果的平衡。",
+    "note": "核实通过：对单次独立 API 调用的提升较小，而且随模型而变。"
+  },
+  {
+    "id": "unsloth-dynamic-gguf",
+    "section": "official",
+    "label": "Unsloth 发布 Dynamic 3.0 GGUF",
+    "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+    "body": "首批 Qwen3.8-27B 量化版宣称同体积最多多保留 10％以上的 top-1 准确率；官方同时警告，1-bit 版本不适合工具调用。",
+    "note": "brief；核实通过，性能数字来自官方自测。"
+  },
+  {
+    "id": "bedrock-rl",
+    "section": "official",
+    "label": "Bedrock-RL 把 Minecraft 变成可复现的 Agent 训练场",
+    "url": "https://huggingface.co/blog/Michael-E/bedrock-rl",
+    "body": "它用确定性引擎固定世界、奖励和验证器，让不同训练法在同一条件下运行。作者明确说目前示例只是流水线检查，不是基准结论。",
+    "note": "brief；核实通过。"
+  },
+  {
+    "id": "semaplc",
+    "section": "official",
+    "label": "SemaPLC 给工业控制代码加上验证闸门",
+    "url": "https://huggingface.co/papers/2608.18565",
+    "body": "代码只有通过规格检查、编译和真实 PLC 运行才算完成；117 个独立任务上，七种模型的平均严格通过率为 72.6％。",
+    "note": "brief；核实通过。"
+  },
+  {
+    "id": "joke-domain-war",
+    "section": "fun",
+    "label": "一个天气气球玩笑域名卷进了战争",
+    "url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/",
+    "body": "SondeHub 最初只是重定向链接，后来能反推气球发射点，还意外被乌克兰深度打击团队拿来计算风路，维护者甚至得请 AWS 别封掉对方账号。",
+    "note": "核实通过。"
+  },
+  {
+    "id": "paper-sculptures",
+    "section": "fun",
+    "label": "Manabu Kosaka 用纸手工造出一台老收音机",
+    "url": "https://coca11272000.wixsite.com/manabukosaka",
+    "body": "作品靠裁切、塑形和组装纸片完成，页面展示的《BCL Radio》做于 2022 年，尺寸约 22×18×7 厘米。",
+    "note": "核实通过：页面只展示作品说明，属于纯视觉候选。"
+  },
+  {
+    "id": "agents-md-request",
+    "section": "fun",
+    "label": "Claude Code 用户要求支持 AGENTS.md",
+    "url": "https://github.com/anthropics/claude-code/issues/6235",
+    "body": "这条请求称 Codex、Cursor 等工具正采用统一项目说明文件，希望 Claude Code 别只认 CLAUDE.md。问题创建于 2025 年，现已关闭。",
+    "note": "核实通过：不是当日新请求。"
+  },
+  {
+    "id": "casio-fb100",
+    "section": "fun",
+    "label": "卡西欧 F-B100W-1A 两次抓取都失败",
+    "url": "",
+    "body": "本地没有可读正文，无法确认这块手表为什么引发讨论。",
+    "note": "fetch_failed：两轮抓取均为 403，本地无正文与可核链接，未猜测。"
+  },
+  {
+    "id": "roon-neuralese",
+    "section": "fun",
+    "label": "Roon 把歌词改成「我正在变成神经语」",
+    "url": "https://x.com/tszzl/status/2090274337077219355",
+    "body": "一句「我想我真的正在变成神经语」，把模型内部语言写成了洗脑副歌。",
+    "note": "核实通过：纯文字梗。"
+  },
+  {
+    "id": "stripe-singularity",
+    "section": "fun",
+    "label": "Stripe 在投资者信里说「奇点已经开始」",
+    "url": "https://x.com/emollick/status/2090271010452881713",
+    "body": "Mollick 吐槽，如果这只是营销词还好；若按冯·诺依曼原意理解，公司的前瞻声明都没法写了。",
+    "note": "核实通过：本地材料为 Mollick 转引 Axios 消息，不是投资者信原文。"
+  },
+  {
+    "id": "aaron-swartz-memorial",
+    "section": "fun",
+    "label": "一座 Aaron Swartz 纪念物两年没走完审批",
+    "url": "https://www.lesswrong.com/posts/rBauzJHPYaanPJ7Br/why-can-t-we-have-nice-things-like-specifically",
+    "body": "发起人自掏约 1 万美元做设计、办活动并争取社区支持，所有人都说赞成，但每次会议后待办反而更多。胸像至今还在私人建筑里。",
+    "note": "核实通过。"
+  }
+]

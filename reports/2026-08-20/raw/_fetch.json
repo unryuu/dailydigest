@@ -1,0 +1,271 @@
+[
+  {
+    "slug": "openai-zero-retention",
+    "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+    "status": 200,
+    "final_url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
+    "bytes": 393006,
+    "title": "Offering Zero Data Retention for frontier models | OpenAI",
+    "chars": 6336
+  },
+  {
+    "slug": "openai-private-safety",
+    "url": "https://www.theinformation.com/briefings/openai-launch-security-analysis-system-better-privacy-protections",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/openai-launch-security-analysis-system-better-privacy-protections",
+    "bytes": 238164,
+    "title": "OpenAI to Launch Security Analysis System With Better Privacy Protections — The Information",
+    "chars": 27
+  },
+  {
+    "slug": "sam-altman-privacy",
+    "url": "https://x.com/sama/status/2090163991234453611",
+    "status": 200,
+    "final_url": "https://x.com/sama/status/2090163991234453611",
+    "bytes": 191369,
+    "title": "Sam Altman on X: \"we support business privacy!\n\nhttps://t.co/SJ6w5DeYTY\" / X",
+    "chars": 146
+  },
+  {
+    "slug": "openrouter-stripe",
+    "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
+    "status": 200,
+    "final_url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
+    "bytes": 40395,
+    "title": "OpenRouter is Joining Stripe — OpenRouter Blog",
+    "chars": 5226
+  },
+  {
+    "slug": "nvidia-mercor",
+    "url": "https://www.theinformation.com/articles/nvidia-discusses-funding-ai-data-supplier-mercor-20-billion-valuation",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/nvidia-discusses-funding-ai-data-supplier-mercor-20-billion-valuation",
+    "bytes": 397956,
+    "title": "Nvidia Discusses Funding Its AI Data Supplier Mercor at a $20 Billion Valuation — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "google-marvell",
+    "url": "https://www.theinformation.com/briefings/marvell-gives-google-right-buy-12-2-billion-stock-part-chip-deal",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/marvell-gives-google-right-buy-12-2-billion-stock-part-chip-deal",
+    "bytes": 398853,
+    "title": "Marvell Gives Google the Right to Buy Up to $12.2 Billion in Stock as Part of Chip Deal — The Information",
+    "chars": 3900
+  },
+  {
+    "slug": "google-marvell-sec",
+    "url": "https://www.sec.gov/ix?doc=%2FArchives%2Fedgar%2Fdata%2F0001835632%2F000119312526356217%2Fd412696d8k.htm",
+    "status": 200,
+    "final_url": "https://www.sec.gov/ix?doc=%2FArchives%2Fedgar%2Fdata%2F0001835632%2F000119312526356217%2Fd412696d8k.htm",
+    "bytes": 6719,
+    "title": "XBRL Viewer",
+    "chars": 0
+  },
+  {
+    "slug": "mollick-jobs-lag",
+    "url": "https://x.com/emollick/status/2090259024939798658",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2090259024939798658",
+    "bytes": 129856,
+    "title": "Ethan Mollick on X: \"Technology's effect on jobs changes over time\n\nIn the First Industrial Revolution, handweaving had a \"Golden Age\" for 20 years because early machines made cheap yarn, which drove up demand for weavers. Then the powerloom came along, and handweavers became the vanguard for Luddism\" / X",
+    "chars": 339
+  },
+  {
+    "slug": "simon-conceptual-integrity",
+    "url": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/19/conceptual-integrity-and-counting-lines-of-code/",
+    "bytes": 18575,
+    "title": "Conceptual integrity and counting lines of code",
+    "chars": 4477
+  },
+  {
+    "slug": "mollick-skill-creator",
+    "url": "https://x.com/emollick/status/2090293321142874168",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2090293321142874168",
+    "bytes": 125504,
+    "title": "Ethan Mollick on X: \"Claude's skill creator (literally, just ask it to make a skill) is still the best way to make reusable skills if you care about the details. ChatGPT tends to want to do magic &amp; just do it for you, while Claude does tests and shows results, repeatedly asking for input &amp; feedback.\" / X",
+    "chars": 338
+  },
+  {
+    "slug": "extensible-software",
+    "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms",
+    "status": 200,
+    "final_url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+    "bytes": 101639,
+    "title": "Extensible Software in the age of LLMs | Jeremy Morrell",
+    "chars": 31687
+  },
+  {
+    "slug": "smolmachines-sandbox",
+    "url": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
+    "bytes": 17505,
+    "title": "Research: smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
+    "chars": 2759
+  },
+  {
+    "slug": "rl-split-personas",
+    "url": "https://www.lesswrong.com/posts/L23poLi8MRgS6mXYF/rl-creates-split-personas",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/L23poLi8MRgS6mXYF/rl-creates-split-personas",
+    "bytes": 668907,
+    "title": "RL creates split personas — LessWrong",
+    "chars": 33044
+  },
+  {
+    "slug": "alignment-generalisation",
+    "url": "https://www.lesswrong.com/posts/dsou8dxCf9BubQ5NJ/some-reasons-alignment-doesn-t-generalise-well-1",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/dsou8dxCf9BubQ5NJ/some-reasons-alignment-doesn-t-generalise-well-1",
+    "bytes": 388534,
+    "title": "Some reasons alignment doesn’t generalise well — LessWrong",
+    "chars": 16023
+  },
+  {
+    "slug": "rogue-agent-invisible",
+    "url": "https://www.lesswrong.com/posts/grtu3HmbP2wrBFefW/the-rogue-agent-explosion-will-be-mostly-invisible",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/grtu3HmbP2wrBFefW/the-rogue-agent-explosion-will-be-mostly-invisible",
+    "bytes": 657816,
+    "title": "The Rogue Agent Explosion Will Be Mostly Invisible — LessWrong",
+    "chars": 41101
+  },
+  {
+    "slug": "debate-reward-hacking",
+    "url": "https://www.lesswrong.com/posts/BB8o7b8A4Aykeksvw/debate-training-reduces-reward-hacking-in-rlaif",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/BB8o7b8A4Aykeksvw/debate-training-reduces-reward-hacking-in-rlaif",
+    "bytes": 453257,
+    "title": "Debate Training Reduces Reward Hacking in RLAIF — LessWrong",
+    "chars": 14137
+  },
+  {
+    "slug": "model-lineage",
+    "url": "https://huggingface.co/papers/2608.14929",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.14929",
+    "bytes": 151938,
+    "title": "Paper page - Training Leaves Traces: Centered Residual Signatures for Language Model Lineage Verification",
+    "chars": 4999
+  },
+  {
+    "slug": "co-rl",
+    "url": "https://huggingface.co/papers/2608.17253",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.17253",
+    "bytes": 169436,
+    "title": "Paper page - Co-RL: Unsupervised Reasoning Emerges from Diverse Cohort in Multi-agent RL",
+    "chars": 5872
+  },
+  {
+    "slug": "anthropic-protein-design",
+    "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+    "bytes": 197356,
+    "title": "How Claude is accelerating protein design and analytical chemistry \\ Anthropic",
+    "chars": 24802
+  },
+  {
+    "slug": "looped-language-models",
+    "url": "https://huggingface.co/papers/2608.18171",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.18171",
+    "bytes": 135679,
+    "title": "Paper page - Looped Language Models Improve Compositional Tool Calling",
+    "chars": 3291
+  },
+  {
+    "slug": "unsloth-dynamic-gguf",
+    "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+    "status": 200,
+    "final_url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+    "bytes": 1466034,
+    "title": "Unsloth Dynamic 3.0 GGUFs | Unsloth Documentation",
+    "chars": 15655
+  },
+  {
+    "slug": "bedrock-rl",
+    "url": "https://huggingface.co/blog/Michael-E/bedrock-rl",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/Michael-E/bedrock-rl",
+    "bytes": 122379,
+    "title": "Bedrock-RL: a deterministic Minecraft framework for training and benchmarking VLM agents",
+    "chars": 6422
+  },
+  {
+    "slug": "semaplc",
+    "url": "https://huggingface.co/papers/2608.18565",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.18565",
+    "bytes": 158497,
+    "title": "Paper page - SemaPLC: A Project-Grounded, Verification-Gated Agent Harness for PLC Code Generation",
+    "chars": 4513
+  },
+  {
+    "slug": "joke-domain-war",
+    "url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war",
+    "status": 200,
+    "final_url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/",
+    "bytes": 25294,
+    "title": "How a joke domain purchase turned into geopolitical warfare",
+    "chars": 13955
+  },
+  {
+    "slug": "paper-sculptures",
+    "url": "https://coca11272000.wixsite.com/manabukosaka",
+    "status": 200,
+    "final_url": "https://coca11272000.wixsite.com/manabukosaka",
+    "bytes": 387832,
+    "title": "Top | ManabuKosakaArtWorks",
+    "chars": 595
+  },
+  {
+    "slug": "agents-md-request",
+    "url": "https://github.com/anthropics/claude-code/issues/6235",
+    "status": 200,
+    "final_url": "https://github.com/anthropics/claude-code/issues/6235",
+    "bytes": 373155,
+    "title": "Feature Request: Support AGENTS.md. · Issue #6235 · anthropics/claude-code · GitHub",
+    "chars": 1123
+  },
+  {
+    "slug": "casio-fb100",
+    "url": "https://www.casio.com/uk/watches/casio/product.F-B100W-1A",
+    "status": 403,
+    "final_url": "https://www.casio.com/uk/watches/casio/product.F-B100W-1A/",
+    "bytes": 327,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "roon-neuralese",
+    "url": "https://x.com/tszzl/status/2090274337077219355",
+    "status": 200,
+    "final_url": "https://x.com/tszzl/status/2090274337077219355",
+    "bytes": 156946,
+    "title": "roon on X: \"🎶I'm turning Neuralese\nI think I'm turning Neuralese\nI really think so\" / X",
+    "chars": 117
+  },
+  {
+    "slug": "stripe-singularity",
+    "url": "https://x.com/emollick/status/2090271010452881713",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2090271010452881713",
+    "bytes": 192549,
+    "title": "Ethan Mollick on X: \"Either the Singularity is now a marketing term or else Stripe believes we are at a point “in the history of the race beyond which human affairs, as we know them, could not continue\"?\n\nKind of makes forward-looking financial statements useless.\n\n* Von Neumann’s original phrasing\" / X",
+    "chars": 526
+  },
+  {
+    "slug": "aaron-swartz-memorial",
+    "url": "https://www.lesswrong.com/posts/rBauzJHPYaanPJ7Br/why-can-t-we-have-nice-things-like-specifically",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/rBauzJHPYaanPJ7Br/why-can-t-we-have-nice-things-like-specifically",
+    "bytes": 384679,
+    "title": "Why can’t we have nice things? Like, specifically? — LessWrong",
+    "chars": 7088
+  }
+]

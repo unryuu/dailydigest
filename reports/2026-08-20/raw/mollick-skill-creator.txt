@@ -1,0 +1,11 @@
+URL: https://x.com/emollick/status/2090293321142874168
+FINAL: https://x.com/emollick/status/2090293321142874168
+TITLE: Ethan Mollick on X: "Claude's skill creator (literally, just ask it to make a skill) is still the best way to make reusable skills if you care about the details. ChatGPT tends to want to do magic &amp; just do it for you, while Claude does tests and shows results, repeatedly asking for input &amp; feedback." / X
+FETCHED: 2026-08-21 10:43:22
+============================================================
+Ethan Mollick
+@emollick
+Claude's skill creator (literally, just ask it to make a skill) is still the best way to make reusable skills if you care about the details. ChatGPT tends to want to do magic & just do it for you, while Claude does tests and shows results, repeatedly asking for input & feedback.
+4:22 AM · Aug 20, 2026
+31.9K
+Views

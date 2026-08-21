@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.18565",
+  "title": "SemaPLC 给工业控制代码加验证闸门",
+  "date": "2026-08-20",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.18171",
+  "title": "语言模型多绕几轮更会调用工具",
+  "date": "2026-08-20",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.17253",
+  "title": "不同模型互相打分也能练出推理能力",
+  "date": "2026-08-20",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.14929",
+  "title": "模型权重会留下训练血缘指纹",
+  "date": "2026-08-20",
+  "reported": true,
+  "report_date": "2026-08-20"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.16393",
   "title": "DeepSeek Harness 经受提示注入测试",
   "date": "2026-08-19",

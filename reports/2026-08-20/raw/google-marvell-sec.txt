@@ -1,0 +1,5 @@
+URL: https://www.sec.gov/ix?doc=%2FArchives%2Fedgar%2Fdata%2F0001835632%2F000119312526356217%2Fd412696d8k.htm
+FINAL: https://www.sec.gov/ix?doc=%2FArchives%2Fedgar%2Fdata%2F0001835632%2F000119312526356217%2Fd412696d8k.htm
+TITLE: XBRL Viewer
+FETCHED: 2026-08-21 10:43:15
+============================================================
