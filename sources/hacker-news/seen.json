@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates",
+  "title": "《席德·梅尔的海盗》从未真正属于一种类型",
+  "date": "2026-08-21T07:23:27Z",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://lina.sh/blog/hijacking-e164-arpa",
+  "title": "一个 5 欧元过期域名收到了约 40 万次军事基地电话路由查询",
+  "date": "2026-08-21T13:11:28Z",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://san.com/cc/grand-jury-declines-to-indict-ohio-man-charged-with-destroying-flock-camera",
+  "title": "被控拆 Flock 摄像头的男子未被起诉",
+  "date": "2026-08-21T13:04:31Z",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+  "title": "Claudette 让 Gemini 给 Claude 去 BuzzFeed 腔",
+  "date": "2026-08-21T14:31:52Z",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://kagi.com/changelog",
+  "title": "Kagi 可自动隐藏付费墙结果",
+  "date": "2026-08-21T13:56:37Z",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://api-docs.deepseek.com/guides/vision",
+  "title": "DeepSeek 开放视觉模型实验接口",
+  "date": "2026-08-21T10:05:46Z",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
   "id": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
   "title": "OpenRouter 正式加入 Stripe",
   "date": "2026-08-19T17:32:38Z",

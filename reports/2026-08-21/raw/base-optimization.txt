@@ -1,0 +1,165 @@
+URL: https://huggingface.co/blog/basecompute/base-optimization-stack
+FINAL: https://huggingface.co/blog/basecompute/base-optimization-stack
+TITLE: Base Optimization Stack: From Open Weights to Frontier On-Device Inference Speed
+FETCHED: 2026-08-22 00:51:21
+============================================================
+Back to Articles
+Base Optimization Stack: From Open Weights to Frontier On-Device Inference Speed
+Community Article
+Published
+ August 20, 2026
+Upvote
+3
+Fabian Waschkowski
+fabian-basecompute
+basecompute
+When a lab releases open weights, there is often a gap between the checkpoint being available and the model running fast on the hardware people own. Runtimes need new kernels, quantized checkpoints need to be verified, and per-device tuning is engineering effort that only the most popular model and hardware combinations receive. For everything else, users have to run models slowly.
+The Base Optimization Stack (B:OS) closes that gap automatically. It is a single pipeline that takes a model from open weights to a tuned
+BaseRT
+release for a specific device, with the porting and performance tuning done by our AI research agents working under strict constraints. In this post we describe the pipeline and demonstrate it on NVIDIA's Nemotron 3 Nano, a hybrid mixture-of-experts (MoE) model whose architecture BaseRT did not support previously. Starting from scratch, the pipeline produced the fastest inference for Nemotron 3 Nano on Apple silicon: 1.90× llama.cpp and 1.43× MLX on decode, and 1.39-1.76× and 1.98-2.55× respectively on prefill.
+Pipeline: Base Optimization Stack
+A model enters the pipeline as open weights and leaves as a BaseRT release tuned per model and per device. Every stage is driven by research agents working inside a harness that controls the git history and a global database: every modification is one commit and one benchmark evaluation, so every number is fully reproducible. The pipeline is the following:
+Open weights.
+The public checkpoint, the day it ships.
+.base quantization.
+A Q4/Q8 bundle constructed from reference weights, avoiding lossy re-quantization.
+Port.
+Agents implement the architecture correctly on the target hardware, gated against the reference implementation.
+Tune.
+Agents make it fast, kernel by kernel, under fixed accuracy gates.
+BaseRT release.
+Shipped per model, per device.
+The ordering is deliberate: correct first, fast second. The two agent stages run under strict constraints. The quantized bundle must match the reference checkpoint's weights, so that every output divergence is attributable to engine arithmetic. Every kernel change must pass the runtime's unit tests. No candidate lands unless held-out perplexity stays within a fixed tolerance of the reference. A tuning run that drifts the model is a failed run, independent of the achieved throughput. After the B:OS run, the tuned build's perplexity was in fact 2.0% below that of the untuned baseline.
+The optimization itself is an evolving tree search algorithm. Every node is an experiment with a unique hypothesis, its corresponding implementation and the resulting benchmark values. Nodes split and merge based on expected improvements and specific similarity metrics. The insights of every experiment are distilled into agent memory and persist across runs: a scheduling technique learned while tuning one model on one chip is available context when the search starts on the next model/hardware. The optimizations and insights compound with every newly supported model and hardware and constantly accelerate B:OS.
+Demo: Nemotron 3 Nano on Apple Silicon
+Nemotron 3 Nano 30B-A3B is a 52-layer hybrid. Mamba-2 state-space blocks carry most of the sequence mixing, attention appears in a small subset of layers, and the feed-forward path is a sparse MoE with squared-ReLU experts, a shared expert, and a sigmoid router: 31.6B parameters in total, of which approximately 3.2B are active per token. Little of this maps onto the kernel set of a dense transformer, which makes it a challenging test of the B:OS pipeline.
+Porting and tuning
+Supporting the architecture requires new kernels rather than new configurations: from
+ssm_scan
+(Mamba-2 selective scan),
+depthwise_conv1d_causal
+(fused convolution, bias, and SiLU at decode) and
+mamba_gated_rmsnorm
+to
+router_sigmoid_bias_topk
+and
+relu2
+fused into the expert GEMVs.
+The port stage delivers a correct but naive engine. On Apple silicon it is gated against a reference implementation executing bit-identical weights on the same machine, so agreement is measured directly, token by token. The tuning stage then does the performance work. The tuning effect is the following:
+Metric
+Untuned port
+After tuning
+Uplift
+prefill @512
+85.7 t/s
+927 t/s
+10.8×
+prefill @4K
+85.4 t/s
+1,093 t/s
+12.8×
+decode @4K
+85.7 t/s
+111 t/s
+1.3×
+Decode is memory-bandwidth-bound, so its gains come from fused kernel chains and dispatch elimination and are correspondingly modest. Prefill is compute-bound, and accounts for the order-of-magnitude kernel improvements.
+Comparing tuning agents: Fable 5, Kimi K3, and GLM 5.2
+The tuning stage is driven by frontier models, and the choice of model affects both the result and the cost. With the port complete, we ran our optimization algorithm on the same branch, the same evaluation and the same eight-hour budget with three different frontier models: Claude Fable 5, Kimi K3, and GLM 5.2.
+The score is the quantity our algorithm optimizes, namely the geometric mean of prefill and decode throughput at various contexts, under a strict perplexity gate. Every point in the above figure is a committed and benchmarked experiment. The final results are the following:
+Agent
+Experiments
+Best score
+Uplift
+Tokens
+Cost
+Claude Fable 5
+50
+335.9
+3.9×
+178M
+$265
+Kimi K3
+21
+326.5
+3.8×
+197M
+$77
+GLM 5.2
+12
+290.2
+3.3×
+54M
+$0*
+* GLM 5.2 ran locally on a Mac Studio via BaseRT at near-zero marginal cost.
+All three agents independently found the same first moves, namely uncapping the batched SSM prefill, improving the decode dispatch table, and fusing the Mamba convolution chain, and then diverged in how far they pushed beyond that. While Fable 5 achieves the overall best score, Kimi K3 is able to recover 97% of its performance at less than 30% of the cost. Interestingly, serving GLM 5.2 locally via BaseRT on an M3 Ultra Mac Studio, we achieve 86% of the Fable 5-optimized throughput at practically zero cost.
+Comparison with llama.cpp and MLX
+We compare the tuned Nemotron 3 Nano performance via BaseRT against llama.cpp and MLX with a paired three-way sweep: same machine, same day, pinned versions, the protocol we use for every published comparison. Table values are tokens per second for prefill (pp) and decode (tg):
+Test
+BaseRT
+llama.cpp
+MLX
+vs. llama.cpp
+vs. MLX
+pp128
+672.0 ± 2.3
+382.8 ± 5.4
+263.5 ± 2.5
+1.76×
+2.55×
+pp256
+801.1 ± 3.5
+533.2 ± 2.4
+357.4 ± 1.3
+1.50×
+2.24×
+pp512
+925.1 ± 4.5
+667.1 ± 1.8
+441.7 ± 3.1
+1.39×
+2.09×
+pp1024
+1,002.9 ± 1.1
+662.2 ± 3.2
+493.3 ± 1.7
+1.51×
+2.03×
+pp2048
+1,037.6 ± 0.7
+660.9 ± 0.7
+525.1 ± 1.8
+1.57×
+1.98×
+tg128
+113.8
+60.0 ± 0.2
+79.6
+1.90×
+1.43×
+The results show BaseRT ahead in every configuration measured: 1.39-1.76× llama.cpp and 1.98-2.55× MLX on prefill, and 1.90× and 1.43× respectively on decode.
+Outlook
+Nemotron 3 Nano went from an unsupported architecture to the fastest measured inference on Apple silicon through a pipeline in which agents did the porting, agents did the tuning, and fixed gates did the accepting. The pipeline is not specific to Apple silicon: the same harness has already carried this model to the NVIDIA DGX Spark, where the insights from the Apple silicon optimization accelerated the process end-to-end by 27%.
+This is the product of the Base Optimization Stack: not one fast model, but consistently falling time and costs to achieve frontier on-device speed for new models. Acceptable inference performance engineered by local models, such as GLM 5.2, is already free today, and frontier performance will be soon. This will ultimately enable Day-0 support for every model, on any hardware, at frontier speed.
+If you are a chip vendor, model developer, or device maker who wants to run specific models on specific hardware at frontier speed,
+talk to us
+.
+More from this author
+BaseRT: Best-in-Class LLM Inference on Apple Silicon via Native Metal
+4
+July 1, 2026
+Community
+Lukas-bc
+about 19 hours ago
+we've shared our recent research results using this stack in two papers :
+https://www.basecompute.co/research
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+3

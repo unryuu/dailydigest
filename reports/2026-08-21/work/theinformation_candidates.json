@@ -1,0 +1,101 @@
+{
+  "date": "2026-08-21",
+  "scanned_at": "2026-08-22T00:18:35+08:00",
+  "window": "接续 2026-08-20 期在 2026-08-20 16:01:49 北京时间完成的手工扫描，只看此后进入首页 Latest、且发布时间不晚于 2026-08-21 23:59:59 北京时间的内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫描 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Applied AI Newsletter",
+      "title": "AT&T is Using Open Source Models to Curb Anthropic Bills",
+      "url": "https://www.theinformation.com/newsletters/applied-ai/t-using-open-source-models-curb-anthropic-bills",
+      "published_at": "2026-08-20T11:55:00-07:00",
+      "published_at_beijing": "2026-08-21T02:55:00+08:00",
+      "bucket_hint": "industry_or_product_silver",
+      "decision": "加入定牌候选",
+      "facts": [
+        "AT&T 目前约 40％的员工 AI 查询由开源或开放权重模型处理，计划未来几年提高到 60％至 70％，同时让 Anthropic 和 OpenAI 模型支出基本保持不变。",
+        "公司会把复杂代码生成留给前沿闭源模型，把代码摘要等较轻任务交给 Nemotron、Llama 和 Gemma；内部系统每天处理约 450 亿 token。",
+        "AT&T 使用 LiteLLM 做模型路由后，部分编码等高级任务的成本最多下降 56％，内部测得的质量下降约 2％。",
+        "公司称开源模型通常落后前沿模型六至十个月，但差距正在缩小；DeepSeek 和 Moonshot 模型仍在风险评估中，尚未用于工作。"
+      ],
+      "caveats": [
+        "比例、成本和质量变化均来自 AT&T 负责人的公司内部口径，报道没有提供任务集、评分方法或独立审计。",
+        "开放模型适合较轻任务，不等于 AT&T 已经用它们替代前沿闭源模型完成复杂编码。",
+        "按公开价推算的闭源模型年成本不是 AT&T 实际账单，正式写作不能把推算写成已披露支出。"
+      ],
+      "why": "这是大型企业真实的多模型部署样本：不用在闭源与开源之间二选一，而是用路由按任务难度分配模型，以小幅质量代价换取显著成本下降。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Nvidia to Reportedly Pay $6 Billion in Licensing and Hiring Deal with AI Model Startup Poolside",
+      "url": "https://www.theinformation.com/briefings/nvidia-reportedly-pay-6-billion-licensing-hiring-deal-ai-model-startup-poolside",
+      "published_at": "2026-08-20T13:35:00-07:00",
+      "published_at_beijing": "2026-08-21T04:35:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入定牌候选，后续优先回溯 Newcomer 获得的投资者信",
+      "facts": [
+        "据 Poolside 致投资者的信，英伟达同意支付 60 亿美元，获得其训练 Laguna 模型所用 Model Factory 系统的许可，并向参与模型开发的 109 名员工发出聘用邀请。",
+        "Poolside 计划在 2027 年底前把这 60 亿美元分给投资者；三名联合创始人将留任，公司强调交易不属于收购或以招人为主的变相收购。",
+        "英伟达还将按 120 亿美元投前估值向 Poolside 投资 10 亿美元。",
+        "Poolside 称，继续参与前沿模型竞争需要获得超出自身能力范围的英伟达硬件；英伟达近一年还与 Groq、Enfabrica 做过类似的许可与招人交易。"
+      ],
+      "caveats": [
+        "The Information 此条明确转述 Newcomer 的首发报道，正式核查应优先读取 Newcomer 获得的投资者信，而不是把它写成 The Information 独家。",
+        "英伟达为何愿意支付如此高的许可费仍不清楚，不能自行推断 Model Factory 的独立估值或技术优势。",
+        "交易包含许可、招聘邀请和股权投资，但 Poolside 明确称不是收购；不要简写成英伟达以 60 亿美元买下 Poolside。"
+      ],
+      "why": "英伟达正在用巨额许可费和定向招人获取模型研发系统与人才，同时又成为模型公司的投资者和算力供应方，边界比普通芯片销售更深。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Weekend Article",
+      "title": "The New Robotics ‘Arms Race’: Who Can Do the Craziest Hype Video?",
+      "url": "https://www.theinformation.com/articles/new-robotics-arms-race-can-craziest-hype-video",
+      "published_at": "2026-08-21T07:12:00-07:00",
+      "published_at_beijing": "2026-08-21T22:12:00+08:00",
+      "bucket_hint": "industry_angle_or_fun",
+      "decision": "加入定牌候选",
+      "facts": [
+        "一支宣传片让穿冬衣的人形机器人出现在厄瓜多尔钦博拉索山顶，看起来像机器人完成了登山；实际四天行程中，一支十人队伍轮流搬运这台约 70 磅重的机器，多人因此背痛。",
+        "报道把这件事放进机器人公司的宣传视频竞赛：团队通过剪辑、场外准备和人工干预，把机器人的最好瞬间包装成接近连续自主工作的能力。",
+        "这类视频未必直接造假，但常常省略失败次数、人工接管、环境布置和搬运过程，使观看者高估机器人当前的通用能力。"
+      ],
+      "caveats": [
+        "文章讨论的是宣传呈现与真实能力之间的落差，不等于所有机器人演示都是伪造。",
+        "钦博拉索案例由参与方讲述，能证明该次拍摄依赖大量人工协助，不能外推成整家公司的全部产品都无法工作。",
+        "若写入日报，应把重点放在被镜头省略的人工成本，而不是只复述猎奇登山场面。"
+      ],
+      "why": "它给机器人演示的可信度问题提供了一个普通读者一眼能懂的画面：机器站在山顶，真正完成搬运的却是十个人。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Anthropic’s Enterprise AI Venture Buys Consultancy",
+      "url": "https://www.theinformation.com/articles/anthropics-enterprise-ai-venture-buys-consultancy",
+      "reason": "Ode 收购约十余名顾问的 Casper Studios，能说明 Anthropic 与华尔街合资企业在扩张前线工程服务，但收购价未知、规模较小；在零至三篇额度下优先保留信息密度更高的企业部署、Poolside 交易和机器人演示调查。"
+    },
+    {
+      "title": "Nvidia Plots China Comeback With New AI Chip",
+      "url": "https://www.theinformation.com/articles/nvidia-plots-china-comeback-new-ai-chip",
+      "reason": "两名员工称英伟达准备年底向中国小批量供应 LPU 变体，但英伟达在报道发布后明确表示目前没有在中国销售 LPU，路线图中也没有中国专用 LPU；事实冲突尚未解决，不进入初版候选。"
+    },
+    {
+      "title": "Robots Are in Their GPT-2 Era",
+      "url": "https://www.theinformation.com/newsletters/ai-agenda/robots-gpt-2-era",
+      "reason": "提供了机器人尚需人工接管、能力类似语言模型 GPT-2 阶段的完整观点，但核心是行业类比和乐观预期，缺少能独立改变判断的新实验或部署数据。"
+    },
+    {
+      "title": "Alibaba CEO Expects AI-Related ARR to Reach $10 Billion by September",
+      "url": "https://www.theinformation.com/briefings/alibaba-ceo-expects-ai-related-arr-reach-10-billion-september",
+      "reason": "首页摘要来自公司公开业绩口径，后续如需收录应优先读取财报或电话会，不以付费媒体摘要作为事实源。"
+    },
+    {
+      "title": "Exclusive: UBS Hires JP Morgan Banker Su to Ramp Up AI Banking Efforts",
+      "url": "https://www.theinformation.com/briefings/exclusive-ubs-hires-jp-morgan-banker-su-ramp-ai-banking-efforts",
+      "reason": "投行人员变动，与普通读者关心的 AI 技术、产品和产业变化距离较远。"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+URL: https://x.com/emollick/status/2090584263196328113
+FINAL: https://x.com/emollick/status/2090584263196328113
+TITLE: Ethan Mollick on X: "Even when LLMs write well, the lack of variety in style is crippling. Reading the same prose in your instructions &amp; social media &amp; advertisements &amp; software &amp; PowerPoint eventually makes one queasy
+
+Prompting only gets you so far. Real variation is needed (and under-researched)" / X
+FETCHED: 2026-08-22 00:51:33
+============================================================
+Ethan Mollick
+@emollick
+Even when LLMs write well, the lack of variety in style is crippling. Reading the same prose in your instructions & social media & advertisements & software & PowerPoint eventually makes one queasy
+
+Prompting only gets you so far. Real variation is needed (and under-researched)
+11:38 PM · Aug 20, 2026
+25.3K
+Views

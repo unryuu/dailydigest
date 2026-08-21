@@ -1,0 +1,9 @@
+URL: https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games
+FINAL: https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/
+TITLE: Exploring new frontiers of AI and games research â Google DeepMind
+FETCHED: 2026-08-22 00:51:03
+============================================================
+SIMA 2: An Agent that Plays, Reasons, and Learns With You in Virtual 3D Worlds
+November 2025
+Research
+Learn more

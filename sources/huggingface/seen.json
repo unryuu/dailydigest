@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/blog/basecompute/base-optimization-stack",
+  "title": "Base 发布端侧模型自动优化栈",
+  "date": "2026-08-21",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://huggingface.co/blog/asr-benchmark-optimization",
+  "title": "语音基准优化",
+  "date": "August 21, 2026",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
   "id": "https://huggingface.co/blog/Michael-E/bedrock-rl",
   "title": "Bedrock-RL 把 Minecraft 变成 Agent 训练场",
   "date": "2026-08-20",

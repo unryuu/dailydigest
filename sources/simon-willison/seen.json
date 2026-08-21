@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/21/stop-making-tuis",
+  "title": "编码 Agent 让个人工具不必停在终端",
+  "date": "2026-08-21T16:07:32+00:00",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/21/matt-webb",
+  "title": "ChatGPT 没替他写代码，先把四元数讲明白",
+  "date": "2026-08-21T15:06:26+00:00",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale",
+  "title": "ChatGPT Search 大量加入站内限定搜索",
+  "date": "2026-08-20T23:57:32+00:00",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
   "title": "smolvm 沙箱实测",
   "date": "2026-08-19T23:16:00+00:00",

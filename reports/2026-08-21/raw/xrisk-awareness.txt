@@ -1,0 +1,67 @@
+URL: https://www.lesswrong.com/posts/tBo72ytuzJKbYrvhK/34-of-the-us-public-is-now-aware-of-ai-xrisk-and-the-curve
+FINAL: https://www.lesswrong.com/posts/tBo72ytuzJKbYrvhK/34-of-the-us-public-is-now-aware-of-ai-xrisk-and-the-curve
+TITLE: 34% of the US public is now aware of AI xrisk, and the curve is steepening — LessWrong
+FETCHED: 2026-08-22 00:51:42
+============================================================
+x
+34% of the US public is now aware of AI xrisk, and the curve is steepening — LessWrong
+AI Governance
+AI Timelines
+Existential risk
+AI
+Personal Blog
+30
+34% of the US public is now aware of AI xrisk, and the curve is
+steepening
+by
+otto.barten
+19th Aug 2026
+1
+min read
+0
+30
+(This post is an update from a previous one
+here
+.)
+The Existential Risk Observatory has been interested in public awareness of AI existential risk since its inception over five years ago. We
+started
+surveying public awareness in December 2022, including by asking the following open question:
+"Please list three events, in order of probability (from most to least probable), that you believe could potentially cause human extinction within the next 100 years."
+If respondents would include AI or similar terms in their top-3 extinction risks ("robots" or "computers" count, "technology" doesn't), we counted them as
+aware
+, if not, as
+unaware
+. The aim of this methodology was to see how many people would spontaneously, without getting led by the question, connect the concepts of human extinction and AI. We used Prolific to find participants, n=300, and we only included US inhabitants over eightteen years old and fluent in English.
+In the four surveys we ran, we obtained
+7% (Dec '22)
+,
+12% (Apr '23)
+,
+15% (Apr '24)
+,
+24% (Dec '25)
+, and, today, 34%. In a graph, that looks like this.
+The usual caveats apply: ours is a rough measurement method, and from participants' answers to our open questions, we see that not every participant takes all our questions seriously, and that some answers are obviously self-inconsistent. Therefore, I don't think the 34% by itself is a very meaningful number.
+However, I do think we can draw the conclusions:
+Xrisk awareness is notably higher
+than at the beginning of this year. Personally, I feel this may have been caused by AI capabilities acceleration and the rogue AI summer (paired with much media attention). Higher awareness seems to result in a significantly higher chance of meaningful risk mitigation, including US or global regulation.
+Somewhat more speculatively:
+the rate of xrisk awareness increase seems higher
+than in the last two years, perhaps comparable to after the ChatGPT launch. Because of lack of temporal data points, this will remain somewhat uncertain.
+In past studies, we found that those who are aware, and even part of those who are unaware, often support far-reaching regulation such as a government-mandated pause.
+If one is interested in the data, do reach out.
+0
+Comments
+0
+AI Governance
+AI Timelines
+Existential risk
+AI
+Personal Blog
+30
+New Comment
+Moderation Log
+More from
+otto.barten
+View more
+Curated and popular this week

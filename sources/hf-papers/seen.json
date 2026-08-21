@@ -1,5 +1,54 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.18027",
+  "title": "模型把多轮反馈积成经验链继续改答案",
+  "date": "2026-08-21",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.19799",
+  "title": "SWE-bench Science 让代码 Agent 修科学软件",
+  "date": "2026-08-21",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.19861",
+  "title": "PolicyGuide 把 Agent 合规检查扩到整条工作流",
+  "date": "2026-08-21",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.19880",
+  "title": "EnvHarness 让训练环境跟着 Agent 的弱点变化",
+  "date": "2026-08-21",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.16885",
+  "title": "两项研究都让机器人动手前先拆任务、比较路线",
+  "date": "2026-08-21",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.13547",
+  "title": "QuoteBench",
+  "date": "2026-08-21",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.20202",
+  "title": "模型总分掩盖了三种失败",
+  "date": "2026-08-21",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.18565",
   "title": "SemaPLC 给工业控制代码加验证闸门",
   "date": "2026-08-20",

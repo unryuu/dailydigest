@@ -1,0 +1,317 @@
+[
+  {
+    "slug": "poolside-license",
+    "url": "https://www.theinformation.com/briefings/nvidia-reportedly-pay-6-billion-licensing-hiring-deal-ai-model-startup-poolside",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/nvidia-reportedly-pay-6-billion-licensing-hiring-deal-ai-model-startup-poolside",
+    "bytes": 391244,
+    "title": "Nvidia to Reportedly Pay $6 Billion in Licensing and Hiring Deal with AI Model Startup Poolside — The Information",
+    "chars": 3900
+  },
+  {
+    "slug": "att-open-models",
+    "url": "https://www.theinformation.com/newsletters/applied-ai/t-using-open-source-models-curb-anthropic-bills",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/applied-ai/t-using-open-source-models-curb-anthropic-bills",
+    "bytes": 396313,
+    "title": "AT&T is Using Open Source Models to Curb Anthropic Bills — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "deepseek-vision",
+    "url": "https://api-docs.deepseek.com/guides/vision",
+    "status": 200,
+    "final_url": "https://api-docs.deepseek.com/guides/vision/",
+    "bytes": 78116,
+    "title": "Vision | DeepSeek API Docs",
+    "chars": 8750
+  },
+  {
+    "slug": "memtrapbench",
+    "url": "https://huggingface.co/papers/2608.20202",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.20202",
+    "bytes": 142094,
+    "title": "Paper page - MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
+    "chars": 2675
+  },
+  {
+    "slug": "quotebench",
+    "url": "https://huggingface.co/papers/2608.13547",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.13547",
+    "bytes": 129958,
+    "title": "Paper page - QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+    "chars": 3384
+  },
+  {
+    "slug": "asr-benchmark-optimization",
+    "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/asr-benchmark-optimization",
+    "bytes": 330772,
+    "title": "Measuring benchmark optimization in speech recognition",
+    "chars": 16509
+  },
+  {
+    "slug": "tau0-vla",
+    "url": "https://huggingface.co/papers/2608.16885",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.16885",
+    "bytes": 145324,
+    "title": "Paper page - τ_0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation",
+    "chars": 3753
+  },
+  {
+    "slug": "eximo",
+    "url": "https://huggingface.co/papers/2608.19891",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.19891",
+    "bytes": 112924,
+    "title": "Paper page - EXIMO: VLM Guided Exploration of VLA Policies",
+    "chars": 2831
+  },
+  {
+    "slug": "claude-sdlc",
+    "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+    "status": 200,
+    "final_url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+    "bytes": 641356,
+    "title": "The AI-Native SDLC playbook | Claude by Anthropic",
+    "chars": 65010
+  },
+  {
+    "slug": "deepmind-games",
+    "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
+    "status": 200,
+    "final_url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+    "bytes": 151543,
+    "title": "Exploring new frontiers of AI and games research â Google DeepMind",
+    "chars": 112
+  },
+  {
+    "slug": "capital-crunch",
+    "url": "https://www.axios.com/2026/08/21/national-debt-deficit-ai-spending",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/21/national-debt-deficit-ai-spending",
+    "bytes": 273165,
+    "title": "America's capital crunch: Soaring debt collides with AI spending spree",
+    "chars": 4302
+  },
+  {
+    "slug": "hochul-data-center",
+    "url": "https://www.axios.com/2026/08/21/kathy-hochul-business-friendly-data-center-plan",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/21/kathy-hochul-business-friendly-data-center-plan",
+    "bytes": 258227,
+    "title": "New York Gov. Kathy Hochul's business-friendly data center plan",
+    "chars": 2777
+  },
+  {
+    "slug": "ai-bioweapons",
+    "url": "https://www.axios.com/2026/08/21/safeguards-ai-bioweapons-roadmap",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/21/safeguards-ai-bioweapons-roadmap",
+    "bytes": 264583,
+    "title": "A roadmap for safeguarding against AI bioweapons",
+    "chars": 3916
+  },
+  {
+    "slug": "chain-experience",
+    "url": "https://huggingface.co/papers/2608.18027",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.18027",
+    "bytes": 117056,
+    "title": "Paper page - Chain-of-Experience for Continual LLM Improvement",
+    "chars": 2942
+  },
+  {
+    "slug": "envharness",
+    "url": "https://huggingface.co/papers/2608.19880",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.19880",
+    "bytes": 144629,
+    "title": "Paper page - EnvHarness: Awakening Static Worlds for Agent Learning",
+    "chars": 2685
+  },
+  {
+    "slug": "policyguide",
+    "url": "https://huggingface.co/papers/2608.19861",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.19861",
+    "bytes": 140028,
+    "title": "Paper page - PolicyGuide: From Guarding One Action to Guiding the Whole Workflow for Policy-Compliant LLM Agents",
+    "chars": 3510
+  },
+  {
+    "slug": "swebench-science",
+    "url": "https://huggingface.co/papers/2608.19799",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.19799",
+    "bytes": 156050,
+    "title": "Paper page - SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+    "chars": 5469
+  },
+  {
+    "slug": "base-optimization",
+    "url": "https://huggingface.co/blog/basecompute/base-optimization-stack",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/basecompute/base-optimization-stack",
+    "bytes": 122926,
+    "title": "Base Optimization Stack: From Open Weights to Frontier On-Device Inference Speed",
+    "chars": 8341
+  },
+  {
+    "slug": "mistral-agentic-search",
+    "url": "https://mistral.ai/news/agentic-search",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/agentic-search/",
+    "bytes": 260551,
+    "title": "Introducing Agentic Search | Mistral",
+    "chars": 13146
+  },
+  {
+    "slug": "meta-muse",
+    "url": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
+    "status": 200,
+    "final_url": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
+    "bytes": 222361,
+    "title": "The Multimodal Intelligence of Muse Spark 1.2 | Meta AI Research",
+    "chars": 5502
+  },
+  {
+    "slug": "chatgpt-site-operator",
+    "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+    "bytes": 16725,
+    "title": "ChatGPT search now uses the site:operator at scale",
+    "chars": 2946
+  },
+  {
+    "slug": "mollick-style",
+    "url": "https://x.com/emollick/status/2090584263196328113",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2090584263196328113",
+    "bytes": 137701,
+    "title": "Ethan Mollick on X: \"Even when LLMs write well, the lack of variety in style is crippling. Reading the same prose in your instructions &amp; social media &amp; advertisements &amp; software &amp; PowerPoint eventually makes one queasy \n\nPrompting only gets you so far. Real variation is needed (and under-researched)\" / X",
+    "chars": 339
+  },
+  {
+    "slug": "mollick-risk-pr",
+    "url": "https://x.com/emollick/status/2090593783779860928",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2090593783779860928",
+    "bytes": 168256,
+    "title": "Ethan Mollick on X: \"Yes, the CEOs of the AI Labs talked about building AI that would replace all labor &amp; could pose an existential risk because, as far as I could tell, they believed it to be true long before their companies were valuable. The fact that they stopped talking about risk is the PR part\" / X",
+    "chars": 618
+  },
+  {
+    "slug": "mollick-modes",
+    "url": "https://x.com/emollick/status/2090489669234405546",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2090489669234405546",
+    "bytes": 156053,
+    "title": "Ethan Mollick on X: \"A confusing thing about the proliferation of AI modes (ChatGPT Work/Codex/Chat, Claude Cowork/Code/Chat) &amp; modalities (apps on computers, web apps) is that I am losing track of which stuff each has: when do plugins, skills, memories, permissions, files, etc. sit in each case? 🤷‍♂️\" / X",
+    "chars": 340
+  },
+  {
+    "slug": "xrisk-awareness",
+    "url": "https://www.lesswrong.com/posts/tBo72ytuzJKbYrvhK/34-of-the-us-public-is-now-aware-of-ai-xrisk-and-the-curve",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/tBo72ytuzJKbYrvhK/34-of-the-us-public-is-now-aware-of-ai-xrisk-and-the-curve",
+    "bytes": 353586,
+    "title": "34% of the US public is now aware of AI xrisk, and the curve is steepening — LessWrong",
+    "chars": 2677
+  },
+  {
+    "slug": "robot-hype",
+    "url": "https://www.theinformation.com/articles/new-robotics-arms-race-can-craziest-hype-video",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/new-robotics-arms-race-can-craziest-hype-video",
+    "bytes": 394278,
+    "title": "The New Robotics ‘Arms Race’: Who Can Do the Craziest Hype Video? — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "claude-parody",
+    "url": "https://x.com/emollick/status/2090683545068978254",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2090683545068978254",
+    "bytes": 161481,
+    "title": "Ethan Mollick on X: \"I asked GPT-5.6 Sol to create the most Claude-y possible parody image and what it came up with is pretty great and dead-on.\" / X",
+    "chars": 195
+  },
+  {
+    "slug": "claudette",
+    "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+    "status": 200,
+    "final_url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+    "bytes": 256633,
+    "title": "nobuzz/README.md at main · adnanakil/nobuzz · GitHub",
+    "chars": 3328
+  },
+  {
+    "slug": "military-phone",
+    "url": "https://lina.sh/blog/hijacking-e164-arpa",
+    "status": 200,
+    "final_url": "https://lina.sh/blog/hijacking-e164-arpa",
+    "bytes": 33070,
+    "title": "I accidentally logged hundreds of thousands of phone calls to military bases - lina's blog",
+    "chars": 9802
+  },
+  {
+    "slug": "kagi-paywall",
+    "url": "https://kagi.com/changelog",
+    "status": 200,
+    "final_url": "https://kagi.com/changelog",
+    "bytes": 524032,
+    "title": "Changelog - Kagi Search",
+    "chars": 3816
+  },
+  {
+    "slug": "matt-webb",
+    "url": "https://simonwillison.net/2026/Aug/21/matt-webb",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/21/matt-webb/",
+    "bytes": 13894,
+    "title": "A quote from Matt Webb",
+    "chars": 1317
+  },
+  {
+    "slug": "stop-tuis",
+    "url": "https://simonwillison.net/2026/Aug/21/stop-making-tuis",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/21/stop-making-tuis/",
+    "bytes": 15064,
+    "title": "Stop Making TUIs",
+    "chars": 1704
+  },
+  {
+    "slug": "sid-meier",
+    "url": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates",
+    "status": 200,
+    "final_url": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates/",
+    "bytes": 37448,
+    "title": "The Lost Treasure of Sid Meier's Pirates! - Remap",
+    "chars": 6905
+  },
+  {
+    "slug": "fair-player",
+    "url": "https://www.lesswrong.com/posts/KRyuwyQiaDPdaHnuk/inside-the-mind-of-a-fair-player-cooperating",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/KRyuwyQiaDPdaHnuk/inside-the-mind-of-a-fair-player-cooperating",
+    "bytes": 418199,
+    "title": "Inside the mind of a fair player cooperating — LessWrong",
+    "chars": 8117
+  },
+  {
+    "slug": "flock-camera",
+    "url": "https://san.com/cc/grand-jury-declines-to-indict-ohio-man-charged-with-destroying-flock-camera",
+    "status": 200,
+    "final_url": "https://san.com/cc/grand-jury-declines-to-indict-ohio-man-charged-with-destroying-flock-camera/",
+    "bytes": 432597,
+    "title": "Grand jury declines to indict Ohio man charged with destroying Flock camera",
+    "chars": 113
+  }
+]

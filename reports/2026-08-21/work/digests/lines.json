@@ -1,0 +1,234 @@
+[
+  {
+    "id": "deepseek-vision",
+    "section": "industry",
+    "label": "DeepSeek 开放视觉模型实验接口",
+    "url": "https://api-docs.deepseek.com/guides/vision",
+    "body": "deepseek-v4-flash-vision-exp 已能通过兼容 OpenAI 的接口读取图片、截图和图表，支持 JPEG、PNG、GIF 和 WebP。当前名称仍带 exp，官方文档没有承诺稳定版或开放权重。",
+    "note": "核实通过。官方接口文档可读，但页面未标发布日期；当日 Hacker News 条目时间为 08 月 21 日。"
+  },
+  {
+    "id": "deepmind-games",
+    "section": "industry",
+    "label": "DeepMind 和游戏工作室一起做可玩 AI 原型",
+    "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
+    "body": "团队会与 Fenris Creations 等工作室共同寻找只有 AI 才能实现的玩法。EVE 项目先从与真人玩家隔离的离线副本开始，能力成熟后才考虑进入线上世界。",
+    "note": "核实通过。正文 `.txt` 只抽到推荐卡，但原始 HTML 含完整文章与 2026 年 08 月 21 日发布时间。"
+  },
+  {
+    "id": "benchmark-blindspots",
+    "section": "angle",
+    "label": "三种评测都在追问总分是怎么来的",
+    "url": "https://huggingface.co/papers/2608.20202",
+    "body": "相关记忆会让模型钻进思维陷阱，命令经过接口转义会把正确答案执行坏，语音模型还会复现基准答案里音频根本没说的词。只看最终分数，很难分清模型能力、部署路径和对测试集的适应。",
+    "note": "核实通过，按用户裁决合并三项材料。另两篇：https://huggingface.co/papers/2608.13547；https://huggingface.co/blog/asr-benchmark-optimization。"
+  },
+  {
+    "id": "mollick-style",
+    "section": "angle",
+    "label": "Mollick 说模型越会写，文字越像同一种腔调",
+    "url": "https://x.com/emollick/status/2090584263196328113",
+    "body": "说明书、广告、软件和演示文稿都开始出现相似的模型文风。他认为提示词只能缓解，真正的风格多样性仍缺研究。",
+    "note": "核实通过。2026 年 08 月 21 日北京时间发布；这是使用观察，没有风格相似度实验或跨模型比较。"
+  },
+  {
+    "id": "mollick-modes",
+    "section": "angle",
+    "label": "Mollick 已经记不住 AI 功能藏在哪个入口",
+    "url": "https://x.com/emollick/status/2090489669234405546",
+    "body": "ChatGPT 和 Claude 各自分出聊天、编程、工作模式，再叠加网页与桌面应用，插件、技能、记忆、权限和文件的归属越来越难记。",
+    "note": "核实通过。2026 年 08 月 21 日北京时间发布；属于个人产品体验，不能外推为普遍用户调查。"
+  },
+  {
+    "id": "xrisk-awareness",
+    "section": "deep",
+    "label": "一项小型调查称三成美国人会主动想到 AI 灭绝风险",
+    "url": "https://www.lesswrong.com/posts/tBo72ytuzJKbYrvhK/34-of-the-us-public-is-now-aware-of-ai-xrisk-and-the-curve",
+    "body": "300 名美国成年人被要求自行列出未来百年最可能导致人类灭绝的三件事，34％主动写到 AI、机器人或计算机。样本小、回答质量参差，知晓也不等于赞同这套判断。",
+    "note": "核实通过。文章 08 月 19 日发布，作者自己强调 34％这个单点数字不宜过度解读。"
+  },
+  {
+    "id": "mollick-risk-pr",
+    "section": "deep",
+    "label": "Mollick 认为实验室老板少谈 AI 风险是公关变化",
+    "url": "https://x.com/emollick/status/2090593783779860928",
+    "body": "他相信这些负责人早年谈替代劳动和生存风险时确实那么想，后来集体少谈才属于公关操作。这是对高管动机和话语变化的判断。",
+    "note": "核实通过。2026 年 08 月 21 日北京时间发布；不能据此推出实验室已经放弃安全工作。"
+  },
+  {
+    "id": "capital-crunch",
+    "section": "deep",
+    "label": "美国国债和 AI 建设开始争抢资本",
+    "url": "https://www.axios.com/2026/08/21/national-debt-deficit-ai-spending",
+    "body": "美国财政部本财年要再融资 9.7 万亿美元债务，科技巨头的 AI 建设也开始更多依赖发债。文章讨论两股融资需求同时膨胀，没有证明 AI 已经推高政府融资成本。",
+    "note": "核实通过。Axios 08 月 21 日文章；属于宏观分析框架，因果边界已保留。"
+  },
+  {
+    "id": "robot-planning",
+    "section": "papers",
+    "label": "两项研究都让机器人动手前先拆任务、比较路线",
+    "url": "https://huggingface.co/papers/2608.16885",
+    "body": "τ_0-VLA 用世界模型预演候选步骤，长流程任务成功率从 27.5％升到 45.0％。EXIMO 则让视觉语言模型把新任务拆短，先收集演示，再用模仿学习和强化学习优化动作策略。",
+    "note": "核实通过，按用户裁决合并两篇。EXIMO：https://huggingface.co/papers/2608.19891。两项结果都来自论文团队。"
+  },
+  {
+    "id": "envharness",
+    "section": "papers",
+    "label": "EnvHarness 让训练环境跟着 Agent 的弱点变化",
+    "url": "https://huggingface.co/papers/2608.19880",
+    "body": "它不重写原环境，只在外面加可编程插件；EnvRigger 再观察失败轨迹，自动生成专门针对弱点的新变化。五个基准里，留出任务最多提高 9.0 个百分点。",
+    "note": "核实通过。dup_suspect：与 08 月 18 日 ClawGym、08 月 20 日 Bedrock-RL 的 Agent 训练环境主线相邻，本篇新增点是环境会按失败轨迹动态变形。"
+  },
+  {
+    "id": "policyguide",
+    "section": "papers",
+    "label": "PolicyGuide 把 Agent 合规检查扩到整条工作流",
+    "url": "https://huggingface.co/papers/2608.19861",
+    "body": "系统把客服政策编成流程图，每轮用户消息后检查还有哪些步骤没做，并给出合规补救路径。三个客服领域的平均 Pass⁴ 从 0.42 升到 0.62。",
+    "note": "核实通过。dup_suspect：与 08 月 19 日 HarnessRisk 的完整生命周期风险测试相邻；本篇是主动引导合规流程，不是风险基准。"
+  },
+  {
+    "id": "swebench-science",
+    "section": "papers",
+    "label": "SWE-bench Science 让代码 Agent 修科学软件",
+    "url": "https://huggingface.co/papers/2608.19799",
+    "body": "基准收录 20 个科学领域、98 个代码仓库里的 119 项任务，最强组合的一次通过率仍低于 50％。常见失败包括科学知识不足、只修表面和漏掉系统集成。",
+    "note": "核实通过。dup_suspect：与 08 月 18 日自动科研 Agent 缺少自查循环的主线相邻；本篇新增的是科学软件修复基准和失败分类。"
+  },
+  {
+    "id": "chain-experience",
+    "section": "papers",
+    "label": "模型把多轮反馈积成经验链继续改答案",
+    "url": "https://huggingface.co/papers/2608.18027",
+    "body": "八个模型在数学、编程和知识任务中反复读取自身反馈或环境结果，整体成绩提高 5.6％，API 成本降低 19％。论文称弱反馈下仍较稳，但没有证明错误经验长期累积时也安全。",
+    "note": "核实通过。dup_suspect：与 08 月 20 日模型增加测试时循环来改善工具调用相邻，本篇新增的是跨轮经验反馈。"
+  },
+  {
+    "id": "hochul-data-center",
+    "section": "regulation",
+    "label": "纽约州长主张数据中心只暂停建设一年",
+    "url": "https://www.axios.com/2026/08/21/kathy-hochul-business-friendly-data-center-plan",
+    "body": "Kathy Hochul 希望民主党在保护电价、就业和环境时不要把企业当敌人，她支持的停建期短于州内进步派方案。具体更长期的限制仍未定。",
+    "note": "核实通过。涉及 08 月 19 日数据中心选举主线，但属于州长正式提出的新政策立场，符合 STATUS 的增量收录标准，不标疑重。"
+  },
+  {
+    "id": "ai-bioweapons",
+    "section": "regulation",
+    "label": "RAND 提出九道防线阻止 AI 生物武器",
+    "url": "https://www.axios.com/2026/08/21/safeguards-ai-bioweapons-roadmap",
+    "body": "路线图同时限制高风险数据和生物材料的获取，增加滥用侦测，并把公共卫生准备当作威慑。它也承认分级访问可能拖慢开放科学。",
+    "note": "核实通过。Axios 转述 RAND 本周报告；这是政策路线图，不是已经实施的法规或已发生的攻击。"
+  },
+  {
+    "id": "claude-sdlc",
+    "section": "brief",
+    "label": "Claude 发布 AI 原生研发流程指南",
+    "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+    "body": "指南让计划、设计、构建、测试、部署和维护都产出版本化文件，由下一阶段直接读取；人主要在高风险判断和审批闸门上负责。",
+    "note": "核实通过，按用户裁决作为简讯。dup_suspect：核心判断与 08 月 20 日「AI 写得越多，人越要会判断」相邻，都是代码变快后瓶颈转向计划、审查和部署。"
+  },
+  {
+    "id": "mistral-agentic-search",
+    "section": "brief",
+    "label": "Mistral 发布会自己翻文档的 Agentic Search",
+    "url": "https://mistral.ai/news/agentic-search",
+    "body": "模型可以搜索、打开、翻页、阅读和 grep，在长文档和多个来源间反复核对。产品已进入 Search Toolkit、Studio 和 Vibe，性能数字均为官方基准。",
+    "note": "核实通过，按用户裁决作为简讯。官方文章发布时间为 2026 年 08 月 20 日。"
+  },
+  {
+    "id": "base-optimization",
+    "section": "brief",
+    "label": "Base 发布端侧模型自动优化栈",
+    "url": "https://huggingface.co/blog/basecompute/base-optimization-stack",
+    "body": "研究 Agent 会先移植新模型架构，再逐个内核调速，并用固定准确率门槛拒绝跑偏的改动。Nemotron 3 Nano 的 Apple 芯片速度领先 llama.cpp 和 MLX，但数据来自团队自测。",
+    "note": "核实通过，按用户裁决作为简讯。dup_suspect：与 08 月 19 日四比特检查点、08 月 20 日 GGUF 优化简讯同属端侧推理优化主线。"
+  },
+  {
+    "id": "meta-muse",
+    "section": "official",
+    "label": "Meta 展示 Muse Spark 1.2 的多模态能力",
+    "url": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
+    "body": "它能把图片和视频转成网页或游戏代码，也被用作机器人高层规划器，并处理音视频工作流。模型已进入 Meta Model API 和 Muse Code，开放权重仍在之后。",
+    "note": "核实通过。官方文章发布于 2026 年 08 月 20 日；这是厂商展示与内部评测，不写成独立验证。"
+  },
+  {
+    "id": "chatgpt-site-operator",
+    "section": "brief",
+    "label": "ChatGPT Search 大量加入站内限定搜索",
+    "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale",
+    "body": "Promptwatch 追踪的查询里，带 `site:` 的比例从长期约 0.3％至 0.5％跳到 16％至 17％。这些数据只覆盖它自动监测的提示词，不是 ChatGPT 全量流量。",
+    "note": "核实通过，按用户裁决作为行业简讯。属于第三方产品行为观察，OpenAI 没有公开搜索系统提示词或完整路由规则。"
+  },
+  {
+    "id": "kagi-paywall",
+    "section": "brief",
+    "label": "Kagi 可以自动隐藏付费墙搜索结果",
+    "url": "https://kagi.com/changelog",
+    "body": "08 月 21 日更新新增了一个设置，开启后会把付费墙链接从搜索结果中自动移除。",
+    "note": "核实通过，按用户裁决作为行业简讯。"
+  },
+  {
+    "id": "robot-hype",
+    "section": "fun",
+    "label": "机器人站上雪山，镜头外十个人轮流扛",
+    "url": "https://www.theinformation.com/articles/new-robotics-arms-race-can-craziest-hype-video",
+    "body": "约 70 磅重的机器人出现在钦博拉索山顶，四天行程真正负责搬运的是十人队伍，多人因此背痛。文章用它说明宣传片会省掉人工接管、失败次数和场外准备。",
+    "note": "核实通过。付费正文抽取不足，已用主 agent 的登录态精读记录补齐；只证明这次拍摄高度依赖人工，不外推成所有机器人演示造假。"
+  },
+  {
+    "id": "claude-parody",
+    "section": "fun",
+    "label": "GPT-5.6 Sol 画了份最像 Claude 的体检报告",
+    "url": "https://x.com/emollick/status/2090683545068978254",
+    "body": "米白色报告标题写着「我注意到几件事」，下面列出上万条观察、数千种模式、数百个例外和无穷多个待问问题。",
+    "note": "核实通过。X 正文和登录态候选记录一致；图中数字是视觉笑料，不是模型真实分析结果。"
+  },
+  {
+    "id": "claudette",
+    "section": "fun",
+    "label": "Claudette 让 Gemini 给 Claude 去 BuzzFeed 腔",
+    "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+    "body": "这个 Claude Code 技能把上一条回复交给 Gemini CLI，删掉「承重假设」「第三点最关键」之类戏剧化表达，再原样打印翻译结果。",
+    "note": "核实通过。仓库名为 NoBuzz，作者把 Claudette 当作玩笑名称；MIT 许可证。"
+  },
+  {
+    "id": "matt-webb",
+    "section": "fun",
+    "label": "ChatGPT 没替他写代码，先把四元数讲明白",
+    "url": "https://simonwillison.net/2026/Aug/21/matt-webb",
+    "body": "Matt Webb 为应用补旋转功能时，把 ChatGPT 当成耐心的互动老师，终于学到足够多的四元数知识，自己把功能做完。",
+    "note": "核实通过。Simon Willison 08 月 21 日摘录 Matt Webb 原文；重点是互动教学，不是代写。"
+  },
+  {
+    "id": "stop-tuis",
+    "section": "fun",
+    "label": "编码 Agent 让个人工具不必停在终端",
+    "url": "https://simonwillison.net/2026/Aug/21/stop-making-tuis",
+    "body": "Thomas Ptacek 建议把一次性命令行工具也做成原生界面，因为 Agent 已把做出够用 GUI 的成本压得很低。Simon Willison 说自己至今仍每天使用两款这样做出的菜单栏应用。",
+    "note": "核实通过。dup_suspect：与 08 月 20 日 AI 生成小功能和可扩展软件观点相邻，本篇落点是原生 GUI。"
+  },
+  {
+    "id": "flock-camera",
+    "section": "fun",
+    "label": "大陪审团没有起诉拆 Flock 摄像头的男子",
+    "url": "https://san.com/cc/grand-jury-declines-to-indict-ohio-man-charged-with-destroying-flock-camera",
+    "body": "警方指控他拆掉车牌识别摄像头、支柱和太阳能板，估损超过 1000 美元；俄亥俄州 Clermont County 大陪审团拒绝起诉，指控随后撤销。裁决理由没有公开。",
+    "note": "核实通过。正文 `.txt` 抽取错误，但原始 HTML 的结构化正文完整；使用 alleged 事实边界，不把拒绝起诉写成认定行为正当。"
+  },
+  {
+    "id": "military-phone",
+    "section": "fun",
+    "label": "一个 5 欧元过期域名收到了约 40 万次军事基地电话路由查询",
+    "url": "https://lina.sh/blog/hijacking-e164-arpa",
+    "body": "它仍被三个海外领地的 ENUM 电话域名当作名称服务器，其中两处是 Diego Garcia 和 Ascension Island。作者只返回 NXDOMAIN，发现数据后删除日志，最终把域名转给英国网络安全部门。",
+    "note": "核实通过。记录的是带完整号码、时间和解析器 IP 的 DNS 路由查询，不是通话内容；约 40 万次是作者根据两台服务器流量估算。"
+  },
+  {
+    "id": "sid-meier",
+    "section": "fun",
+    "label": "《席德·梅尔的海盗》从未真正属于一种类型",
+    "url": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates",
+    "body": "1987 年的游戏把决斗、航海、经济、资源管理和寻亲任务揉在一起。文章认为，当时类型规则还没定型，设计者可以直接从海盗故事的主题出发造机制。",
+    "note": "核实通过。文章 2026 年 08 月 20 日发布；免费正文在注册墙前已足以核实核心论点。"
+  }
+]

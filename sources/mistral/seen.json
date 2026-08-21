@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://mistral.ai/news/agentic-search",
+  "title": "Mistral 发布 Agentic Search",
+  "date": "Thu, 20 Aug 2026 12:00:17 GMT",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
   "id": "https://mistral.ai/news/regional-inference-open-models-new-compute",
   "title": "Mistral 把主权 AI 拆成部署、模型和算力",
   "date": "Tue, 11 Aug 2026 12:00:27 GMT",

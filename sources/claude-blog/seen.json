@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+  "title": "Claude 发布 AI 原生研发流程指南",
+  "date": "Aug 21, 2026",
+  "reported": true,
+  "report_date": "2026-08-21"
+ },
+ {
   "id": "https://claude.com/blog/millennium-and-anthropic-are-building-a-digital-risk-analyst-with-claude",
   "title": "Millennium and Anthropic are building a digital risk analyst with Claude",
   "date": "2026-08-06",

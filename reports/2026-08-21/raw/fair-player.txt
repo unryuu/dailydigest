@@ -1,0 +1,145 @@
+URL: https://www.lesswrong.com/posts/KRyuwyQiaDPdaHnuk/inside-the-mind-of-a-fair-player-cooperating
+FINAL: https://www.lesswrong.com/posts/KRyuwyQiaDPdaHnuk/inside-the-mind-of-a-fair-player-cooperating
+TITLE: Inside the mind of a fair player cooperating — LessWrong
+FETCHED: 2026-08-22 00:52:06
+============================================================
+x
+Inside the mind of a fair player cooperating — LessWrong
+Agent Foundations
+Decision theory
+Open Source Game Theory
+Payor's Lemma
+Rationality
+Frontpage
+35
+Inside the mind of a fair player
+cooperating
+by
+transhumanist_atom_understander
+19th Aug 2026
+3
+min read
+2
+35
+One model of rational agency is a proof-based agent, and one fun exercise with proof-based agents is to play them against each other in prisoner's dilemmas.
+The players are computer programs that exchange source code and try to decide whether to cooperate or defect by writing formal proofs.
+In this game, two agents that are in a certain sense fair—that cooperate if and only if there's a proof that their opponent cooperates—will cooperate with each other.
+Of course, playing fair isn't playing to win, and
+the paper on this game
+defined a "prudent" player that does better than a fair one.
+But cooperation between fair agents is the simplest interesting exercise in proof-based decision theory.
+I found this exercise discouraging, and not only because it required deep math to answer such a simple question.
+Even after doing the proof, I couldn't really imagine being a player in this game, reasoning through the situation and deciding to cooperate.
+Recently, I was trying out a different but
+equivalent
+definition of fairness.
+With the new definition, I found the proof of mutual cooperation to be not only elementary, but also satisfyingly explicit about the reasoning a fair player could do to decide to cooperate.
+I'll start by discussing mutual cooperation with the old definition of fairness, and try to communicate why it's so unsatisfying.
+Then I'll give the new definition of fairness, and we'll think through a fair-vs-fair match from the perspective of one of the players.
+Mutual cooperation with the old definition of fairness
+In this section I'll use the old definition of fairness.
+To repeat: a fair player cooperates if and only if there's a proof that their opponent cooperates.
+When talking about provability, I'll sometimes say that a player knows something when I mean there's a proof of it.
+So a fair player cooperates if and only if they know their opponent cooperates.
+I'll also sometimes talk about "possibility".
+When I say something's impossible, that means there's a proof it can't happen.
+So a fair player defects if and only if it's possible that their opponent defects.
+Suppose that you're fair and you know I'm fair.
+Mutual cooperation seems, if circular, at least consistent: we each cooperate because the other (provably) does so.
+But can you really rule out the possibility that I defect?
+Mutual defection seems equally self-consistent.
+Suppose I do defect. Why would that be?
+I'm fair, so it must be because it's possible that you defect.
+Why would you defect?
+You're fair, so it must be because it's possible that I defect.
+Can we really rule out such a circle of suspicion?
+As it turns out, Löb's theorem guarantees that when we both go looking for proof of the other's cooperation, we both find it.
+But even though I can follow the argument, there's something missing—perhaps you could call it a mechanism.
+I thought I just had to live with this unsatisfying argument, but then I learned a new definition of fairness, which I'll give in the next section.
+If you want to actually imagine being a fair agent deciding to cooperate, then read on.
+Mutual cooperation with the new definition of fairness
+The new definition of fairness depends on a new concept: betrayal.
+If I betray you, that means not only that I defect, but that there's a proof that you cooperate and I defect anyway.
+Now, the new definition of fairness.
+A fair player defects if and only if it's possible that their opponent betrays them.
+First, a basic fact about betrayal.
+Defecting against you is a necessary condition for betraying you.
+Therefore, if there's a proof that someone cooperates with you—that is, if it's impossible that they defect against you—then it's also impossible that they betray you.
+With that in mind, we can prove that a fair player never betrays anyone.
+Suppose you're fair.
+And suppose you're playing against some other player, and you have a proof that they cooperate with you.
+It's therefore impossible that they betray you.
+So, being fair, you cooperate.
+There's no one who you know will cooperate but still defect against—no one you betray.
+Now let's assume not only that you are fair, but that you know I'm fair.
+Then you know I don't betray you, so you cooperate.
+Conclusion
+With the old definition of fairness, it seems like a fair-vs-fair match could go either way.
+Defect-defect looks plausible, but we rule it out with some weird math fact.
+With the new definition, I can imagine being a fair player reasoning about my opponent: they're fair, so they don't betray anyone, so I'll cooperate.
+To me, this is encouraging.
+Maybe proof-based decision theory isn't as hard as we thought, right?
+Years ago, we could have made a different choice among equivalent definitions of fairness.
+Then we wouldn't be saying that
+fair players cooperate with each other because of magic
+.
+Although proving equivalence of the two fairness definitions does require magic (that is, Löb's theorem).
+By the way, though the "betray" terminology is new in this post, it's just an English translation of a suggestion from James Payor,
+which has been the subject of a few previous posts
+.
+I thought
+his explanation of the motivation
+was interesting.
+Inside the mind of a fair player cooperating
+5
+James Payor
+3
+transhumanist_atom_understander
+2
+Comments
+2
+Agent Foundations
+Decision theory
+Open Source Game Theory
+Payor's Lemma
+Rationality
+Frontpage
+35
+New Comment
+2 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:52 PM
+[
+-
+]
+James Payor
+2d
+5
+0
+I found this a helpful reframe, thank you for the pointer! Like we can consider the flow of time as first our opponent chooses betrayal/non-betrayal, and we then react to our knowledge of that in order to fill in our defect/cooperate choice? And here betrayal/non-betrayal is a very relevant abstract choice the opponent is making in their policy.
+Reply
+[
+-
+]
+transhumanist_atom_understander
+1d
+*
+3
+0
+It's weird for me to think of betrayal as entirely my opponent's choice, since it's a conjunction of two things, their decision to defect, and a proof of my cooperation (which I suppose that I control, not them). Like... yeah it's up to them to betray me, but it's up to me whether they have the opportunity.
+Thinking of time... if you're fair and you defect, that's because yesterday I betrayed you. So yesterday, there was a proof of your cooperation and I defected.
+What's it mean that yesterday there was a proof of your cooperation? Well I'm treating yesterday as what's possible, so let's translate "you provably cooperate" to "it's not possible you defect". So if there was a proof of your cooperation yesterday, that just means it's not the case that you defected the day before yesterday.
+That actually gives a "dynamic" proof of cooperation when we're both fair (in the betrayal sense). It's a proof by contradiction, starting by assuming you defect. Why did you defect? Because yesterday, I betrayed you—I defected, even though you hadn't defected the day before. So why did I defect? Because the day before that, you betrayed me. So we have a contradiction: did you defect two days ago or not? This is a straight translation of
+the proof using possible world semantics
+.
+I originally wanted to translate "provably cooperate" as "had
+always
+previously cooperated". This would correspond to transitivity in possible world semantics. I guess you could translate provability in terms of the word "before", which could either mean "immediately before" (not transitive), or "any time before" (transitive). We have transitivity in provability logic but don't actually need it for this proof about betrayal. With transitivity, original FairBot is not Tit-For-Tat but an unforgiving bot that, once someone defects against it, defects back forever.
+Reply
+Moderation Log
+More from
+transhumanist_atom_understander
+View more
+Curated and popular this week

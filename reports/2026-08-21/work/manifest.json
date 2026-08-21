@@ -1,0 +1,416 @@
+{
+  "date": "2026-08-21",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "英伟达用六十亿美元许可费与定向招聘深入 Poolside 的模型研发体系",
+      "cost": "中",
+      "reason": "交易同时包含研发系统许可、一百零九名员工的聘用邀请和十亿美元股权投资，规模与结构都不同于普通模型合作；候选已注明首发线索来自 Newcomer，reader 应优先回溯投资者信。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Nvidia to Reportedly Pay $6 Billion in Licensing and Hiring Deal with AI Model Startup Poolside",
+          "url": "https://www.theinformation.com/briefings/nvidia-reportedly-pay-6-billion-licensing-hiring-deal-ai-model-startup-poolside",
+          "date": "2026-08-21T04:35:00+08:00",
+          "why": "候选称英伟达将支付六十亿美元取得 Poolside 的 Model Factory 许可，并向参与模型开发的一百零九人发聘用邀请，另按一百二十亿美元投前估值投资十亿美元；这不是收购，许可价值和交易动机仍待核。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "AT＆T 用模型路由把轻任务交给开放模型，以小幅质量代价压低闭源模型成本",
+      "cost": "中",
+      "reason": "这是大型企业按任务难度混用 Nemotron、Llama、Gemma 与前沿闭源模型的真实部署样本，给出了查询比例、每日 token 量、成本和质量变化，但数字均为公司内部口径。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "AT&T is Using Open Source Models to Curb Anthropic Bills",
+          "url": "https://www.theinformation.com/newsletters/applied-ai/t-using-open-source-models-curb-anthropic-bills",
+          "date": "2026-08-21T02:55:00+08:00",
+          "why": "AT＆T 称约四成员工 AI 查询已由开放模型处理，目标提高到六至七成；LiteLLM 路由让部分高级任务成本最多下降五成六，内部质量下降约二个百分点。reader 核任务集、评分方式和实际账单口径。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "DeepSeek 发布 V4 Flash Vision 实验接口，视觉模型新品在 HN 引发高热讨论",
+      "cost": "中",
+      "reason": "这是目标日高票的一手产品链接，且与近期已报的 DeepSeek Harness 安全主线不是同一事件；当前只见官方指南标题，reader 需核模型能力、开放范围、价格和是否只是实验版。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "DeepSeek-v4-flash-vision-exp",
+          "url": "https://api-docs.deepseek.com/guides/vision",
+          "date": "2026-08-21T10:05:46Z",
+          "why": "官方 API 指南登上 HN，获三百二十五分、一百零九条评论；仅见标题和讨论热度，reader 核真实功能与发布状态，不能把实验接口写成稳定版或权重开放。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "同样的基准分数可能掩盖完全不同的失败路径，记忆与语音评测都在寻找被平均分遮住的问题",
+      "cost": "重",
+      "reason": "三项候选都不是再造一个总分榜，而是检查模型如何走到答案、如何被记忆陷阱误导，以及是否针对既有语音基准过度优化；适合合组精读评测方法。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use",
+          "url": "https://huggingface.co/papers/2608.20202",
+          "date": "",
+          "why": "标题指向 LLM 使用记忆时的认知陷阱基准；HF 列表不提供可靠发布日期，reader 核陷阱类型、基线与是否区分检索失败和推理失败。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+          "url": "https://huggingface.co/papers/2608.13547",
+          "date": "",
+          "why": "标题明确提出相同分数会隐藏命令路径失败；HF 列表不提供可靠发布日期，reader 核任务设计和所谓路径失败能否稳定复现。"
+        },
+        {
+          "source": "huggingface",
+          "title": "Measuring benchmark optimization in speech recognition",
+          "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+          "date": "August 21, 2026",
+          "why": "Hugging Face 博客与榜单论文指向语音识别模型的基准优化测量；reader 核是否发现针对测试集的过拟合，以及结论覆盖哪些模型和数据集。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "机器人基础模型开始用世界模型和视觉语言模型在测试时规划与探索",
+      "cost": "重",
+      "reason": "两项榜单研究都把额外的模型推演放进机器人执行环节，一项强调世界模型指导的测试时计算，一项强调 VLM 引导探索；适合对照是否真正提高长程任务成功率。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "τ_0-VLA: a Hierarchical Robot Foundation Model with World-Model-Guided Test-Time Computation",
+          "url": "https://huggingface.co/papers/2608.16885",
+          "date": "",
+          "why": "本日 HF 榜单高热候选，标题称用世界模型指导分层机器人基础模型的测试时计算；列表不提供可靠发布日期，reader 核训练规模、真实机器人实验和五百一十四的榜单热度口径。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "EXIMO: VLM Guided Exploration of VLA Policies",
+          "url": "https://huggingface.co/papers/2608.19891",
+          "date": "",
+          "why": "标题称用视觉语言模型引导视觉语言动作策略探索，列表标注 DeepMind；HF 列表不提供可靠发布日期，reader 核是否为同一团队正式工作及探索收益。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "claude-blog",
+      "title": "The AI-Native SDLC playbook",
+      "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+      "date": "Aug 21, 2026",
+      "note": "Claude 官方企业 AI 指南，机械候选只确认标题与日期；reader 核具体开发流程、案例和是否包含新产品能力。"
+    },
+    {
+      "source": "deepmind",
+      "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
+      "date": "Fri, 21 Aug 2026 11:59:48 +0000",
+      "note": "Google DeepMind 宣布与游戏工作室合作做 AI 玩法原型；摘要只给合作方向，reader 核参与方、模型能力和是否有可玩的成果。"
+    },
+    {
+      "source": "axios",
+      "title": "America's capital crunch: Soaring debt collides with AI spending spree",
+      "url": "https://www.axios.com/2026/08/21/national-debt-deficit-ai-spending",
+      "date": "Fri, 21 Aug 2026 09:00:07 +0000",
+      "note": "把美国政府借债与 AI 基建的巨额资本需求放在同一资金挤压框架中；目前只有摘要，避免自行下因果判断。"
+    },
+    {
+      "source": "axios",
+      "title": "Kathy Hochul's business-friendly data center plan",
+      "url": "https://www.axios.com/2026/08/21/kathy-hochul-business-friendly-data-center-plan",
+      "date": "Fri, 21 Aug 2026 09:30:10 +0000",
+      "note": "纽约州长提出不以反商业为前提的数据中心立场，属于近期数据中心选举主线允许收的候选人正式政策新进展；reader 核具体电价、水资源和审批条款。"
+    },
+    {
+      "source": "axios",
+      "title": "A roadmap for safeguarding against AI bioweapons",
+      "url": "https://www.axios.com/2026/08/21/safeguards-ai-bioweapons-roadmap",
+      "date": "Fri, 21 Aug 2026 11:30:06 +0000",
+      "note": "新报告提出政府、科学界、公共卫生与科技公司共同防范 AI 生物武器的路线图；reader 核报告发布方、具体措施和证据基础。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
+      "url": "https://huggingface.co/papers/2608.20335",
+      "date": "",
+      "note": "从普通单目视频重建人物四维表示的榜单论文；HF 列表不提供可靠发布日期，reader 核身份保持、时间一致性和输入限制。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Chain-of-Experience for Continual LLM Improvement",
+      "url": "https://huggingface.co/papers/2608.18027",
+      "date": "",
+      "note": "标题称利用经验链持续改进语言模型；HF 列表不提供可靠发布日期，reader 核是否需要更新权重、如何避免错误经验累积。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "EnvHarness: Awakening Static Worlds for Agent Learning",
+      "url": "https://huggingface.co/papers/2608.19880",
+      "date": "",
+      "note": "Google 团队把静态世界转成 Agent 学习环境的高热候选；HF 列表不提供可靠发布日期，reader 核环境生成方式和跨任务迁移。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "PolicyGuide: From Guarding One Action to Guiding the Whole Workflow for Policy-Compliant LLM Agents",
+      "url": "https://huggingface.co/papers/2608.19861",
+      "date": "",
+      "note": "从单步拦截扩展到整条工作流的 Agent 合规引导；HF 列表不提供可靠发布日期，reader 核政策类型、长程任务和误拒率。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Repo0: Design-Driven Zero-to-All Code Generation",
+      "url": "https://huggingface.co/papers/2608.19854",
+      "date": "",
+      "note": "设计驱动的从零到完整代码生成；HF 列表不提供可靠发布日期，reader 核仓库规模、可执行率和是否有人类设计文档输入。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?",
+      "url": "https://huggingface.co/papers/2608.19799",
+      "date": "",
+      "note": "把代码 Agent 评测扩到科学软件工程任务；HF 列表不提供可靠发布日期，reader 核科学领域覆盖与可验证修复比例。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback",
+      "url": "https://huggingface.co/papers/2608.13120",
+      "date": "",
+      "note": "利用多轮交互反馈更新技能的研究候选；HF 列表不提供可靠发布日期，reader 核自我更新是否稳定优于固定技能库。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Base Optimization Stack: From Open Weights to Frontier On-Device Inference Speed",
+      "url": "https://huggingface.co/blog/basecompute/base-optimization-stack",
+      "date": "",
+      "note": "开放权重模型的端侧推理优化栈；列表只显示一天前，reader 核硬件、模型、速度和质量损失。"
+    },
+    {
+      "source": "mistral",
+      "title": "Agentic Search. More accurate and efficient results from your AI systems.",
+      "url": "https://mistral.ai/news/agentic-search",
+      "date": "Thu, 20 Aug 2026 12:00:17 GMT",
+      "note": "Mistral 发布面向复杂文档导航、阅读和核验的检索层；偏产品通稿，reader 核接口、可用范围与实际准确率。"
+    },
+    {
+      "source": "meta-ai",
+      "title": "The Multimodal Intelligence of Muse Spark 1.2",
+      "url": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
+      "date": "August 20, 2026",
+      "note": "Meta 介绍 Muse Spark 1.2 的多模态能力；机械摘要只有发布说明，reader 核模型开放方式、任务和与旧版差异。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "ChatGPT search now uses the site:operator at scale",
+      "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale",
+      "date": "2026-08-20T23:57:32+00:00",
+      "note": "Simon Willison 观察到 ChatGPT Search 大规模使用 site：搜索运算符，并把它放进生成式搜索优化背景；reader 核观察样本和产品行为变化。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "模型能写顺，却把所有文字写成同一种腔调",
+      "url": "https://x.com/emollick/status/2090584263196328113",
+      "date": "2026-08-21T07:38:24+08:00",
+      "note": "Ethan Mollick 把风格趋同从文风问题推进到认知多样性问题；这是使用观察，没有风格相似度实验或跨模型比较。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 公司老板不再谈风险，本身就是公关变化",
+      "url": "https://x.com/emollick/status/2090593783779860928",
+      "date": "2026-08-21T08:16:14+08:00",
+      "note": "Mollick 认为真正的公关变化是实验室负责人后来停止公开谈替代劳动和生存风险；只能按观点口径写，不能推出公司已放弃安全工作。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 功能散落在太多模式里，连熟练用户也记不住",
+      "url": "https://x.com/emollick/status/2090489669234405546",
+      "date": "2026-08-21T01:22:31+08:00",
+      "note": "Mollick 抱怨 ChatGPT 与 Claude 的多种模式、桌面端和网页端把技能、记忆、权限与文件拆散；是个人体验，不代表普遍用户调查。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "34% of the US public is now aware of AI xrisk, and the curve is steepening",
+      "url": "https://www.lesswrong.com/posts/tBo72ytuzJKbYrvhK/34-of-the-us-public-is-now-aware-of-ai-xrisk-and-the-curve",
+      "date": "Thu, 20 Aug 2026 13:31:44 GMT",
+      "note": "作者更新美国公众对 AI 生存风险的认知调查，标题给出三成四；reader 核问题措辞、样本、时间序列和调查机构，避免把知晓写成赞同。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "the-information",
+      "title": "The New Robotics ‘Arms Race’: Who Can Do the Craziest Hype Video?",
+      "url": "https://www.theinformation.com/articles/new-robotics-arms-race-can-craziest-hype-video",
+      "date": "2026-08-21T22:12:00+08:00",
+      "note": "宣传片里机器人站上厄瓜多尔雪山，镜头外却是十人轮流搬运约七十磅机器、多人背痛；重点是视频省略了多少人工协助，不外推成所有机器人演示造假。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "GPT-5.6 Sol 画出了最像 Claude 的体检报告",
+      "url": "https://x.com/emollick/status/2090683545068978254",
+      "date": "2026-08-21T14:12:54+08:00",
+      "note": "一页米白色分析报告用上万条观察、数千种模式、数百个例外和无穷多个待问问题恶搞 Claude 的品牌气质；图中数字都是笑料。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Claudette: Make Claude Stop Talking Like a BuzzFeed Article",
+      "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+      "date": "2026-08-21T14:31:52Z",
+      "note": "一个专门让 Claude 别再写成 BuzzFeed 腔调的小工具，HN 六十分、五十五条评论；仅见标题和仓库链接，reader 核具体做法。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "I accidentally logged phone calls to military bases",
+      "url": "https://lina.sh/blog/hijacking-e164-arpa",
+      "date": "2026-08-21T13:11:28Z",
+      "note": "误打误撞记录到军事基地电话的网络基础设施故事，HN 一百一十四分；仅见标题，reader 核事故链与披露边界。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Kagi added a setting for removing paywalled links from search results",
+      "url": "https://kagi.com/changelog",
+      "date": "2026-08-21T13:56:37Z",
+      "note": "Kagi 允许用户从搜索结果中移除付费墙链接，HN 四百四十七分、评论一百六十四条；是一眼能懂的搜索产品小变化。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Quoting Matt Webb",
+      "url": "https://simonwillison.net/2026/Aug/21/matt-webb",
+      "date": "2026-08-21T15:06:26+00:00",
+      "note": "Matt Webb 没让 ChatGPT 直接写代码，而是把它当耐心的互动老师，终于学会了书本和数学提示没教会他的旋转计算。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Stop Making TUIs",
+      "url": "https://simonwillison.net/2026/Aug/21/stop-making-tuis",
+      "date": "2026-08-21T16:07:32+00:00",
+      "note": "观点是编码 Agent 已把小工具做原生图形界面的成本压得很低，连个人工具也不必再默认停在终端界面。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The Lost Treasure of Sid Meier's Pirates",
+      "url": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates",
+      "date": "2026-08-21T07:23:27Z",
+      "note": "关于《席德·梅尔的海盗》失落宝藏的游戏考古故事，HN 二百一十分、一百二十二条评论；仅见标题，适合 reader 核完整故事。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Inside the mind of a fair player cooperating",
+      "url": "https://www.lesswrong.com/posts/KRyuwyQiaDPdaHnuk/inside-the-mind-of-a-fair-player-cooperating",
+      "date": "Thu, 20 Aug 2026 03:45:47 GMT",
+      "note": "把证明型 Agent 在囚徒困境里合作的形式过程翻译成玩家能想象的内部推理，理性主义味很足；可能与 08-20 候选池重叠，但未见于已发标题。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Grand jury declines to indict Ohio man charged with destroying Flock camera",
+      "url": "https://san.com/cc/grand-jury-declines-to-indict-ohio-man-charged-with-destroying-flock-camera",
+      "date": "2026-08-21T13:04:31Z",
+      "note": "破坏 Flock 监控摄像头的男子未被大陪审团起诉，HN 三百七十一分、二百零七条评论；仅见标题，reader 核案件事实，别把不起诉写成行为合法。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2028 年底前，AI 会解决至少一道尚未解决的千禧年大奖难题吗？",
+      "prob": "47.0％",
+      "volume_note": "累计交易量约 M$45239；24 小时交易量为 0",
+      "url": "https://manifold.markets/LukaszWiklendt/will-an-unsolved-millenium-prize-pr"
+    },
+    {
+      "question": "实现 AGI 前，还会至少出现一次 AI 寒冬吗？",
+      "prob": "18.0％",
+      "volume_note": "累计交易量约 M$111680；24 小时交易量为 0",
+      "url": "https://manifold.markets/komplexkonjugat/will-we-have-at-least-one-more-ai-w"
+    },
+    {
+      "question": "2070 年前，AI 相关灾难会导致一百万人死亡或一万亿美元损失吗？",
+      "prob": "44.0％",
+      "volume_note": "累计交易量约 M$8669；24 小时交易量为 0",
+      "url": "https://manifold.markets/NathanpmYoung/will-an-ai-related-disaster-kill-a"
+    },
+    {
+      "question": "2028 年前，预测市场会找到可靠交易 AI 灭绝风险的方法吗？",
+      "prob": "15.8％",
+      "volume_note": "累计交易量约 M$1567；24 小时交易量为 0",
+      "url": "https://manifold.markets/IsaacKing/before-2028-will-any-prediction-mar"
+    },
+    {
+      "question": "2040 年前，会出现能按文本要求生成可折叠纳米机器聚合物序列的 AI 吗？",
+      "prob": "38.9％",
+      "volume_note": "累计交易量约 M$1300；24 小时交易量为 0",
+      "url": "https://manifold.markets/IhorKendiukhov/will-we-have-a-text-to-polymerseque"
+    },
+    {
+      "question": "Yudkowsky 会声称自己对 AI 杀死所有人的判断超过九成确信吗？",
+      "prob": "27.9％",
+      "volume_note": "累计交易量约 M$15871；24 小时交易量为 0",
+      "url": "https://manifold.markets/IhorKendiukhov/will-yudkowsky-claim-that-he-is-mor-f2h2nq5epx"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "x-nitter",
+      "reason": "七个 Nitter 源机械抓取均为 403；主 agent 已用登录态浏览器补扫七个账号并写入 x_candidates.json，离线分桶使用该文件，不把 Nitter 失败误写成 X 手工补扫失败。"
+    },
+    {
+      "slug": "recent-mainlines",
+      "reason": "稀有书被 AI 公司破坏性扫描、GLM-5.3、Andrew Ng 技能地图、奖励作弊辩论训练、OpenAI 与 Anthropic 近期安全事故及数据中心选举反对情绪均已在最近三期出现；同事件换链接、Zvi 转述和 Roon 文字梗不重复收。纽约州长的数据中心政策作为 STATUS 明确允许的正式政策新进展保留。"
+    },
+    {
+      "slug": "the-information-excluded",
+      "reason": "英伟达中国 LPU 报道与公司公开否认相冲突；Anthropic 合资企业收购小型咨询公司、阿里 AI 收入口径和 UBS 人事变动信息密度较低，按主 agent 的精读排除记录不收。"
+    },
+    {
+      "slug": "stale-candidates",
+      "reason": "08-14 至 08-19 的 ACX、Interconnects 和多数 LessWrong 条目不是目标日新内容，开放线程、活动招募和普通旧观点也未进入分桶。"
+    },
+    {
+      "slug": "low-confidence-hn",
+      "reason": "作业使用 AI 后平时成绩提高、考试成绩下降的链接来自不明聚合站，机械候选只有标题，没有可靠原始研究线索，未进入 manifest。"
+    },
+    {
+      "slug": "odds-duplicates",
+      "reason": "近期已报的 Minecraft Agent、Agent 导致公司损失、AI 安全运动领袖、Kelsey Piper、Anthropic 上市、Astra 发布时间、反数据中心候选人、xkcd AI 漫画、AI 灭绝和核电数据中心赔率均未重复列；默认池里多条近义灭绝盘也主动删除。"
+    }
+  ]
+}
