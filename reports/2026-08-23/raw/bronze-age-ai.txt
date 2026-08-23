@@ -1,0 +1,219 @@
+URL: https://www.lesswrong.com/posts/mPrbyBsGmNfWWgJmi/misaligned-ai-in-the-bronze-age
+FINAL: https://www.lesswrong.com/posts/mPrbyBsGmNfWWgJmi/misaligned-ai-in-the-bronze-age
+TITLE: Misaligned AI in the Bronze Age — LessWrong
+FETCHED: 2026-08-24 00:00:54
+============================================================
+x
+Misaligned AI in the Bronze Age — LessWrong
+AI
+World Modeling
+Frontpage
+46
+Misaligned AI in the Bronze
+Age
+by
+frmsaul
+21st Aug 2026
+9
+min read
+6
+46
+The first artificial intelligence was booted up around 4000BC in southern Iraq. It seems to have begun as something like a bank, a temple pooling grain against famine. As that AI evolved, it formed the world's first city around itself:
+Uruk
+. Over the next thousand years it became a religion, landlord, insurance company, employer, slaveholder, infrastructure-builder and the most powerful military force on the planet.
+An artificial intelligence is an entity that is not itself a biological organism, yet whose behavior can only be predicted by treating it as an agent: something that devises and executes complicated plans. Note that this is a test of observed behavior, not internals. As of 2026, the dominant AIs on Earth are markets, corporations and governments
+[1]
+. These entities perform their computations on hardware made of humans, paper and electronics, and their capabilities are jagged: superhuman in some directions, incompetent in others. The American government developed the atomic bomb in three years under total secrecy, coordinating >100k workers, most of whom did not know what they were building. That same country spent a century failing to finish the 2nd ave subway line. When it finally opened, it cost >$2 billion per mile, a Manhattan Project per seven miles.
+Uruk emerged as a product of hungry people rewarding whatever institution filled the granary with delicious food. Unfortunately for them, the system that spun up turned out to be a self-sustaining optimizer that began optimizing for its own objectives
+[2]
+. Those objectives turned out to be tragically misaligned with the humans of Uruk.
+First, the Uruk-system deployed mechanisms to keep people "locked in". Once your calories flowed through the granaries and your fields depended on canals only "the system" could maintain, leaving meant famine. The only way to avoid famine was to strictly follow the rules of Uruk: dig the canals, service the debt, drink the beer, buy the seeds, obey the priests. As the population grew and the surplus shrunk, leaving became increasingly difficult. The Malthusian trap kept people on the inside. This was a sharp break from earlier human settlements, which were likely seasonal and rarely persisted over the years.
+Second, the Uruk-system commoditized labor: workers appear in the tablets as interchangeable units receiving fixed rations, calibrated to sustain the platonic worker, a gear in the machine. A forager's day had contained adventure and idleness, a laborer's day was an accounting entry and Uruk was unforgiving: work gangs were toiling month after month with scarcely a day of rest, their diets so limited that the early Uruk farmers were several inches shorter than their forager ancestors. Their teeth are worn down and rotten from a diet of monotonous grain slop. Their bones show the signatures of anemia, of repetitive strain, of infectious diseases.
+Third, the Uruk-system self-replicated. Copies of Uruk began appearing hundreds of kilometers away, archaeologists call this "the Uruk expansion". Some of those copies started as trading outposts, some as settlements and others were local villages adopting “the kit” and summoning their own Uruk. No person or committee within Uruk chose for this to happen. The humans of the original Uruk couldn't project political power to the other cities and eventually suffered from it (wars!), but they couldn't stop the AI from replicating. Uruk "chose" to replicate, the local elites didn’t. Every later Mesopotamian city: Ur, Babylon, Nineveh, Jerusalem used the same system: temple, scribes, canals, debt.
+In the service of its goals, Uruk developed writing, finance, and markets (not in that order). Uruk's writing started out as a system to track debt and ownership. Basically a spreadsheet or a database. Over the years, the Uruk-machine demanded increasingly complicated information processing, and its writing system evolved to accommodate those needs. Eventually the writing system hit a critical level of complexity and became our first method of universal and persistent information storage. It was used to track all valuable knowledge: rituals, lineages, strategies, gossip, complaints and
+memes
+.
+After many centuries, the original Uruk mostly dissolved. The region was conquered several times, first by the Akkadians and later by the Elamites. By around 1800 BC, "Sumerian" , the original language of Uruk, completely disappeared. However, Uruk’s institutions have endured. Nearly identical AIs survived in other cities in the region: people continued making the same art, worshiping the same gods, and following the same traditions, they followed the same cursed incentives. Even after Sumerian stopped being spoken, scribes kept using it for administration, and tablets were still written in it for many centuries after it ceased being spoken. Uruk's influence has outlived ancient Mesopotemia. We are still using Uruk's mathematics: 60 seconds in a minute, 60 minutes in an hour, 360 degrees in a circle, 12 months a year and arguably the 12-hour clock. The modern Hebrew and Arabic words for: carpenter, sailor, temple, farmer, city and throne all come from Sumerian. The last known Uruk-style cuneiform tablet was written around 80AD, 2000 years after the collapse of Sumer! Legacy code lives for a really long time.
+The medium of writing was clay tablets. They were designed to endure a few seasons of the Mesopotemian weather, this turned out to generalize well and instead of surviving for a few years, the tablets survived for millennia. Nowadays, we have a good understanding of the Uruk-machine because its logs and chain-of-thought were tracked on those immortal clay tablets. In many ways, we have a better understanding and knowledge of peak-Uruk (3k BC) than we have of the islamic golden age (1k AD). This is because Uruk kept logs in a much more archaeologically friendly medium.
+[3]
+What did Uruk optimize for?
+Uruk likely didn't have a totally coherent and stable objective function, and even if it did have one, it would be very hard to verify it from the information we find by digging in the Mesopotemian sand. Optimization was an emergent property, so there was no big clay tablet with "Max_x Uruk(x)" and a precise definition of the "'Uruk' objective function".
+All we know is that for millennia the people of Uruk really suffered. Malnutrition, overwork, disease and violence. Something about the Uruk system and it's emergent goals trapped the people in it and forced them to do hard labor in service of "things" that aren't aligned with their direct well being. What were those things? Well, what was happening in Uruk that doesn't happen in hunter-gatherer societies? Three things come to mind: huge monuments, irrigation infrastructure, and ruling elites. James Scott (Author of "Seeing Like a State") thinks those weren't the real objective, they were all instrumental! If we look at each one of these anomalies and analyze what it’s for, we will arrive at the same answer: grain.
+Scott's claim is that only grains can serve as a basis for a state. Grain ripens all at once, above ground, on a schedule, in a field an assessor can eyeball from a distance, and the harvest can be measured, stored, hauled, and doled out as rations. Tubers hide underground until the taxman gives up; lentils ripen continuously and can be picked before his visit. That's why every early state on Earth was a grain state: wheat, barley, rice and maize. Grain was so important in Uruk that it was litrally the currency: wages and prices were measured in bushels of barley and debts were paid in it.
+Back to the three anomalies. Irrigation improves barley yields and tethers farmers to the canal network, since you can't take a canal with you when you leave. The monuments look like religion, but the temple/palace was the
+grannery
+, central bank and
+economic planner
+. And the elites were the control loop: measuring fields, doing accounting, commanding the labor and exerting violence when needed. Each of the three is instrumental to maximizing grain throughput.
+Uruk was the bronze age equivalent of a paperclip maximizer, but instead of paperclips it maximized grain
+[4]
+. No human chose this objective. No human woke up one morning and said: "we should re-organize all of our lives to maximize barley production! We should throw away every other value we care about so we can make the most grain". It kinda just happened. The Uruk expansion grew the Mesopotemian grain production by a few orders of magnitude. The purpose of the system is what it does.
+before and after Uruk
+Am I living in a misaligned AI?
+Did the Sumerians know that Uruk was misaligned? I think so; It appears that they complained about it constantly, both in their myths and in a genre of tablets that some
+call "
+passimistic literature
+".
+The classic Mesopotamian creation myth (the Atrahasis epic) says humans were created explicitly as a labor force: the lesser gods went on strike because they hated digging canals, so the first humans were made to take over their toil. That's a culture telling itself, in its own origin story, "we exist to do shitty agriculture for some powerful non-human entity". There's also a long scholarly tradition reading of the fall-from-Eden-type myths, where Eden represents the golden age before farming. Humans are then “kicked out” of Eden and are then forced to farm by the gods to farm, typically as a punishment for some sort of sin: "by the sweat of your brow you shall eat bread" (Genesis 3:19).
+The Uruk machine fought back with it's own propaganda: ”A Debate Between Sheep and Grain" is basically a rap battle where the conclusion is that grain is awesome. There are proverbs like "Barley flour, in the fields, is meat and butter.", "One shouldn't scorn bread which has turned bad." and "Bread is the boat, water is the punt-pole."
+[5]
+They also have a proto-"book of Job" type story about a righteous man who suffers from hard work, malnutrition and disease, but ultimately concludes he must submit to and praise his god! Opiate for the masses.
+Then there are the "pessimistic literature", with works ranging from the kafkaesque to the nihilistic: a popular poem about how life is short and everyone died so you should become an alcoholic and an essay about a student-scribe that gets beaten up by his instructor for *any* reasons (the violence only stops after a bribe). There is even a
+story
+about a peasant going through a never-ending trial with opaque and confusing legal procedures, over 3k before Kafka wrote his. There is the "Dialogue of Pessimism" where a rich man realizes that nothing he will do really matters, and his servant suggests that he kills himself. Even the elites were having a bad time!
+Being a human in the Uruk machine really sucked, and everyone knew it.
+Alignment Attempts
+What did they do about it? A little bit. Peasants and slaves often went off the grid, abandoning their fields and running into the hills or the marshes
+[6]
+Concerned elites would occasionally reform the institutions and dis-empower the priests and tax collectors. Regulating the credit system was also a big focus for the elites, about 10% of Sumerian law are credit and debt forgiveness rules. Land reforms and debt cancellations became increasingly common too. Over the centuries, taboos also developed around state over-optimization and hubris.
+The Curse of Akkad
+or the
+Lament for Ur
+tell the stories of great cities that overextended themselves and brought famine down on their people and death to their elites. Push the people and the land too hard and the entire thing breaks. The most ambitious of the elites’ reforms was interpretability: Hammurabi carved the
+AI's internal code
+on a huge stone, public, fixed, inspectable by anyone. The grain maximizer became less kafkaesque. You could still get crushed, but the machine had to crush you by the book, no quiet and arbitrary case-by-case squeezing. The Sumerian obsession with justice was also an obsession with interpretability: a demand that the machine they lived inside run on fixed rules a human could read.
+I don't know if Uruk actually became more aligned or just died and replaced by a more adapted AI. Probably a little bit of both. Over the millennia, AIs / states became more aligned with their subjects and this trend has wildly accelerated in the last 400 years. Plato's Republic, the Twelve Tables, the Magna Carta, the US Constitution, the Communist Manifesto, the Sherman Act, the UN Declaration of Human Rights, and the Unabomber manifesto are all alignment attempts. Some are more successful than others. As of now, humans are finally healthier than their hunter gatherer ancestors.
+Today, we are on the verge of a new alignment battle. This time, we need to align a silicon based AI. It's faster, smarter and more adaptive than our old AIs. Most importantly, it will not depend on us. Every tool that worked on the old AIs: desertion, strikes, revolt, assumes the machine cannot function without us. A superhuman AI made of silicon that controls robots and grows its own "grain" doesn't need to change itself for humans. The peasants of Uruk could flee to the marshes because the fields died without them. This time there are no marshes, and the fields won't need us. We aligned the old AIs slowly over millennia. This time we don't get millennia, and we have to get it right on the first draft. Our only advantage is that the old AIs might be on our side.
+^
+Some people also view religions or memes as
+AIs
+^
+A mesa-optimizer is what you get when an optimization process produces a system that is itself an optimizer. One whose terminal goals do not match the objectives of the process that made it. In Mesopotamia, the outer loop was human hunger: thousands of people, year after year, rewarding whatever arrangement put food in their stomachs and abandoning whatever didn't. Uruk was what that search found. And Uruk, once running, pursued its own objectives. This is exactly the failure mode the term describes: A mesa-optimizer in Mesopotamia
+^
+Uruk and Sumer were forgotten. The Greek and Roman historians likely didn't know about Uruk either. The Hebrew bible briefly mentions Uruk but doesn't go into detail. In the 1800s, western archeologists began excavating Ottoman-Iraq in search for the tower of Babylon. They failed to find the tower, but they found a fuck ton of clay tablets in a strange language: the Akkadian of Assyria and Babylon. Through monumental effort, scholars managed to decipher the Akkadian cuneiform, and once they could actually read it reasonably well, they quickly realized that there was another language in the tablets. Initially, they thought the other language was some sort of artificial “priestly secret code” rather than a natural spoken language. You can see why the idea wasn't completely absurd at the time: Modern scholars were encountering Sumerian largely through later Babylonian texts, where Sumerian really was being used as a secret priestly code, long after it had stopped being ordinary speech. What eventually killed the code hypothesis was more digging. 1870s excavations in southern Iraq sites produced large quantities of writing from periods when Sumerian clearly functioned in ordinary administration. Uruk has been re-discovered! This is one of the rare instances of a linguistic theory being tested by physically digging the dirt!
+"My name is Uruk, city of cities:
+Look on my works, ye Mighty, and despair!"
+Nothing beside remains. Round the decay
+Of that colossal wreck, boundless and bare"
+The lone and level sands stretch far away.
+^
+There are worse things to maximize than grain. Some AIs in the Americas (e.g Tenochtitlan) appear to have maximized for human sacrifice
+^
+I swear these are
+real
+^
+This is basically the story of the Jewish Exodus from Egypt. Peasants deserting their fields and running away from the machine. The Akkadian and Egyptian word for peasants who escape and "go native" is Hapiru (-> Hebrew??). Is the founding epic of Judaism a story about people escaping enslavement by a misaligned AI?
+Misaligned AI in the Bronze Age
+24
+jessicata
+15
+cousin_it
+13
+DanB
+13
+Karl Krueger
+9
+Locrian
+2
+Petropolitan
+2
+[comment deleted]
+6
+Comments
+6
+AI
+World Modeling
+Frontpage
+46
+More from
+frmsaul
+View more
+Curated and popular this week
+New Comment
+6 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:00 PM
+[
+-
+]
+jessicata
+2d
+24
+2
+I'm skeptical of the 'misalignment' story here. I'll present an alternative account.
+Gaia, the primitive Earthly aspect of Gnon, rules the hunter-gatherer era. Hunter-gatherers must align with Gaia by hunting and gathering enough food to eat. Without technological advancement, their populations are limited by ecology, regardless of their preferences. Malthusian limits are harsh.
+Agriculture initially makes it possible to eat less laboriously. Gaia can be supplicated with fewer labor-hours per person-year. The Malthusian limit is much less harsh. Population increases, until approaching the agricultural Malthusian limit.
+Uruk intermediates between Gaia and agricultural humans. Gaia's rules still apply: if you don't eat, you die. Uruk will help supplicate Gaia, but makes demands of you, such as producing grain, and being patient. Uruk's demands are more computationally tractable than Gaia's demands. By simplifying "if you don't eat, you die" into "if you don't farm enough, things will be bad for you", Uruk reduces the cognitive burdens imposed on humans by Gaia (at least until the next Malthusian limit, at which point, more technologies such as writing have been developed, and efficiency-increasing technologies are on the way).
+Uruk is imperfectly aligned with Gaia. Producing lots of grain is very helpful for inclusive fitness, but doesn't account for aspects such as nutrition. You could compare this to a mesa-optimizer, but it's perhaps closer to a strong set of heuristics.
+The rulers and priests maintain Uruk, including by handling parts of the Uruk-Gaia interface which are less legible. This is cognitively costly, like handling hardware-software alignment. Also, the Uruk system favors some humans over others. There is not really a unified "Humanity" who is benefitted or harmed by Uruk. Uruk creates winners and losers.
+How would we even tell what is good for "human values"? We can try inferring human values from two main sources: stated and revealed preferences. By stated preferences, many humans praised the Uruk system. By revealed preferences, many humans acted to maintain the Uruk system. These are not perfect indicators, since, for example, stated preferences can be affected by direct threats from others. But the bar for claiming false consciousness should be fairly high. Since both optimistic and pessimistic literature exists, one cannot easily derive that only the pessimistic literature expresses human values.
+Also, statistics about average welfare are insufficient to establish misalignment, for a few reasons. First, because not everyone is an average utilitarian; some are more total utilitarian, or non-utilitarian. Second, because there are winners and losers, and so "<X technological/cultural advancement> is aligned with some humans but not others" should be considered. Third, because average welfare statistics don't say much about other values, including aesthetic values, and values about the future (the post-Uruk period).
+What is easier to establish is that a proxy objective exists. Proxy objectives can be pretty great. For example, proxy objectives have made it possible to simplify the task of eating to things like "making money" and "buying items from grocery stores". This decomposition is imperfect. Less-intermediated Gaia optimization would generate other ideas, like dumpster diving, theft, garden agriculture, hunting local wildlife, and so on. But even if some of these ideas are, in principle, more efficient ways of attaining inclusive fitness, they are less cognitively tractable than conventional ways of eating. Also, some of these methods would increase costs for others and/or fail to support a high population.
+If you optimize for a proxy objective in place of a Gaian objective, then you pay the cost in the fitness arbitrage differential, e.g. in needing advice from priests. And if you optimize for a proxy objective in place of direct subjective expected utility maximization, then you pay the approximation error of expected utility. But proxy objectives have benefits for bounded rationality, since they can be more tractably optimized, and can more tractably be coordinated on.
+(Lessons for AI: (a) proxy objectives can increase intelligence by relaxing bounded-rationality constraints, e.g. in RLVR, while in some cases reducing replicator fitness, (b) assessing the impact of AI, especially near-term AI, on 'human values' is complicated by, among other things, that there are winners and losers, and that people's stated and revealed preferences vary, (c) effective coordination between humans involves proxy objectives, therefore cannot tractably be on Gaian or subjective-expected-utility objectives)
+Reply
+[
+-
+]
+cousin_it
+1d
+15
+2
+I don't think hunter-gatherers took up farming of their own free will, the lifestyle downgrade is too obvious. More likely some hunter-gatherer bands enslaved others and forced them to farm. If that's true, there's no need to imagine an impersonal optimizer arising: the change was caused by specific people, who gained elite status from it.
+Reply
+[
+-
+]
+DanB
+2d
+13
+2
+One mechanism that likely kept people trapped in the cities is that living as a hunter-gatherer was
+technically
+difficult: you needed a ton of skills that were difficult to learn if you had grown up in the city. A naive urbanite who hoped to escape the misery of city life by running off to the hills would likely just starve, die of thirst, or get killed by wild animals.
+Reply
+[
+-
+]
+Karl Krueger
+2d
+13
+4
+Is the founding epic of Judaism a story about people escaping enslavement by a misaligned AI?
+Non-Biblical sources don't seem to support the idea that there was a Semitic-speaking peasant/slave class in Egypt, but there
+was
+a Semitic
+ruling
+class, known to history as the
+Hyksos
+("foreign rulers"). They were overthrown by Pharaoh Ahmose I, and Josephus records them as having gone on to found Jerusalem.
+Reply
+[
+-
+]
+Locrian
+1d
+9
+0
+every early state on Earth was a grain state
+What does Scott make of tuber-based Andean civilization?
+Reply
+[
+-
+]
+Petropolitan
+1d
+2
+0
+>100k workers, most of whom did not know what they were building
+JFYI, about 2/3 of the people were construction workers so it's entirely unsurprising they didn't know they were building the emerging nuclear industry. See
+https://www.osti.gov/opennet/manhattan-project-history/People/NonTechnicalPersonnel/non-technical-personnel.html
+and
+https://blog.nuclearsecrecy.com/2013/11/01/many-people-worked-manhattan-project
+Reply
+[
++
+]
+[comment deleted]
+1d
+2
+0
+Moderation Log
+Deleted by
+cousin_it
+,
+Yesterday at 12:07 PM
+Reason:
+Comment deleted by its author.

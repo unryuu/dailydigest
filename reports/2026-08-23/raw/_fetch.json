@@ -1,0 +1,221 @@
+[
+  {
+    "slug": "nvidia-price",
+    "url": "https://www.theinformation.com/articles/nvidia-ai-chip-prices-rise-17-server-makers-tell-customers",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/nvidia-ai-chip-prices-rise-17-server-makers-tell-customers",
+    "bytes": 244597,
+    "title": "Nvidia AI Chip Prices to Rise About 17%, Server Makers Tell Customers — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "nvidia-price-bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15",
+    "status": 200,
+    "final_url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15",
+    "bytes": 645592,
+    "title": "Nvidia Customers Notified About AI-Related Price Hikes Above 15% - Bloomberg",
+    "chars": 1095
+  },
+  {
+    "slug": "alibaba-share-sale",
+    "url": "https://www.theinformation.com/briefings/alibaba-seeks-raise-10-billion-share-sale-fund-ai-investments",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/alibaba-seeks-raise-10-billion-share-sale-fund-ai-investments",
+    "bytes": 391622,
+    "title": "Alibaba Seeks to Raise $10 Billion in Share Sale to Fund AI Investments  — The Information",
+    "chars": 3900
+  },
+  {
+    "slug": "alibaba-share-sale-official",
+    "url": "https://www.businesswire.com/news/home/20260822562469/en/Alibaba-Group-Announced-Proposed-Placing-of-New-Shares-in-Hong-Kong",
+    "status": null,
+    "error": "Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.businesswire.com/news/home/20260822562469/en/Alibaba-Group-Announced-Proposed-Placing-of-New-Shares-in-Hong-Kong\nCall log:\n  - navigating to \"https://www.businesswire.com/news/home/20260822562469/en/Alibaba-Group-Announced-Proposed-Placing-of-New-Shares-in-Hong-Kong\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "ai-cure-disease",
+    "url": "https://www.theinformation.com/articles/ai-probably-cure-cancer-anytime-soon-scientists-say",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/ai-probably-cure-cancer-anytime-soon-scientists-say",
+    "bytes": 396951,
+    "title": "No, AI Probably Won’t Cure Cancer Anytime Soon, Scientists Say — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "chive-counterfactual",
+    "url": "https://www.lesswrong.com/posts/ExB6KYDcznaFS72eT/evaluating-explanations-of-llm-behavior-in-the-wild-with",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/ExB6KYDcznaFS72eT/evaluating-explanations-of-llm-behavior-in-the-wild-with",
+    "bytes": 475313,
+    "title": "Evaluating Explanations of LLM Behavior In The Wild with Counterfactual Experiments — LessWrong",
+    "chars": 20479
+  },
+  {
+    "slug": "claude-watermarking",
+    "url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+    "status": 200,
+    "final_url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+    "bytes": 799351,
+    "title": "How Claude Watermarks AI-Generated Text",
+    "chars": 44911
+  },
+  {
+    "slug": "watermarking-good",
+    "url": "https://www.lesswrong.com/posts/3mKuPHmaK7NW3QypR/ai-text-watermarking-is-free-and-good",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/3mKuPHmaK7NW3QypR/ai-text-watermarking-is-free-and-good",
+    "bytes": 625572,
+    "title": "AI Text Watermarking Is Free And Good — LessWrong",
+    "chars": 31572
+  },
+  {
+    "slug": "mollick-consumer-ai",
+    "url": "https://x.com/emollick/status/2091364843831906416",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2091364843831906416",
+    "bytes": 186505,
+    "title": "Ethan Mollick on X: \"Life is full of things that, by complexity or design or lack of care or required time, are hard to navigate: healthcare, government, personal finance, school forms are all among them\n\nIt is why I feel consumer AI is underrated. People muddle by, but need help than they can't ge… / X",
+    "chars": 339
+  },
+  {
+    "slug": "mollick-form-agent",
+    "url": "https://x.com/emollick/status/2091207070951395337",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2091207070951395337",
+    "bytes": 129833,
+    "title": "Ethan Mollick on X: \"In terms of everyday usefulness and saving time, Codex &amp; Claude Code are very capable of doing the thing where you ask them to \"fill out the forms that I got an email about\" and they do it well &amp; without further intervention from you. Really nice for low-risk time-consu… / X",
+    "chars": 339
+  },
+  {
+    "slug": "mollick-ai-contradiction",
+    "url": "https://x.com/emollick/status/2090926132790985153",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2090926132790985153",
+    "bytes": 158782,
+    "title": "Ethan Mollick on X: \"Its going to be an era of contradictions.\n\nPolls will show everyone hates AI overall but also everyone will secretly use AI all the time. AI companies will be underwater in public opinion but also many people will feel strongly attached to their own favorite model &amp; care ab… / X",
+    "chars": 338
+  },
+  {
+    "slug": "mollick-ox-alpha",
+    "url": "https://x.com/emollick/status/2091238983724343543",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2091238983724343543",
+    "bytes": 149163,
+    "title": "Ethan Mollick on X: \"I am not as blown away by the mystery model Ox Alpha as people appear to be. In my very early experiments, it seems fine, but not at the frontier even among open weights. Here is it on my neogothic city twigl shader test, compare to Kimi K3 in the quoted tweet.\n\nStill testing.\" / X",
+    "chars": 660
+  },
+  {
+    "slug": "teortaxes-ox-alpha",
+    "url": "https://x.com/teortaxesTex/status/2091428397951877129",
+    "status": 200,
+    "final_url": "https://x.com/teortaxesTex/status/2091428397951877129",
+    "bytes": 128983,
+    "title": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) on X: \"ox is incredible for a relatively new category of model: long-horizon small subagent. It's meticulous, proactive, and smart, but not very ambitious. it tries to carefully solve tasks on the job it's dispatched to. Forward deployed janitor with a Ph.D\nGL… / X",
+    "chars": 364
+  },
+  {
+    "slug": "local-llm-dumber",
+    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+    "status": 200,
+    "final_url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+    "bytes": 502750,
+    "title": "Why your local LLM feels dumber than it is - Machine Learning, LLMs, & AI - Level1Techs Forums",
+    "chars": 25
+  },
+  {
+    "slug": "more-than-code-review",
+    "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review",
+    "status": null,
+    "error": "Error: Page.goto: net::ERR_CONNECTION_CLOSED at https://simonwillison.net/2026/Aug/22/more-than-just-code-review\nCall log:\n  - navigating to \"https://simonwillison.net/2026/Aug/22/more-than-just-code-review\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "llama-educated-user",
+    "url": "https://www.lesswrong.com/posts/87oeYXEjf7XgitbBg/llama-will-abandon-a-correct-answer-if-it-thinks-you-re",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/87oeYXEjf7XgitbBg/llama-will-abandon-a-correct-answer-if-it-thinks-you-re",
+    "bytes": 457012,
+    "title": "Llama will abandon a correct answer if it thinks you're educated — LessWrong",
+    "chars": 9846
+  },
+  {
+    "slug": "flashprefill-v2",
+    "url": "https://huggingface.co/papers/2608.19758",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.19758",
+    "bytes": 159971,
+    "title": "Paper page - FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving",
+    "chars": 5087
+  },
+  {
+    "slug": "4danyone",
+    "url": "https://huggingface.co/papers/2608.20335",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.20335",
+    "bytes": 189021,
+    "title": "Paper page - 4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
+    "chars": 4176
+  },
+  {
+    "slug": "with-everyone",
+    "url": "https://huggingface.co/papers/2608.20336",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.20336",
+    "bytes": 152409,
+    "title": "Paper page - WithEveryone: Unified Planning and Identity Grounding for Group Image Generation",
+    "chars": 3945
+  },
+  {
+    "slug": "llm-033",
+    "url": "https://simonwillison.net/2026/Aug/22/llm",
+    "status": null,
+    "error": "Error: Page.goto: net::ERR_CONNECTION_CLOSED at https://simonwillison.net/2026/Aug/22/llm\nCall log:\n  - navigating to \"https://simonwillison.net/2026/Aug/22/llm\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "nanogpt-speedrun",
+    "url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
+    "status": 200,
+    "final_url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
+    "bytes": 636366,
+    "title": "NanoGPT Speedrun Frontier",
+    "chars": 2824
+  },
+  {
+    "slug": "robot-fire",
+    "url": "https://x.com/teortaxesTex/status/2091308101181800711",
+    "status": 200,
+    "final_url": "https://x.com/teortaxesTex/status/2091308101181800711",
+    "bytes": 184542,
+    "title": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) on X: \"I respect immensely how these companies embrace failure\nFor the longest time I've been hearing that American advantage is daring to fail and try again, not \"save face\". In Beijing Robot Games, we are seeing machines wrecked, Looney Tunes style, real tim… / X",
+    "chars": 468
+  },
+  {
+    "slug": "linus-debugging",
+    "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds",
+    "status": null,
+    "error": "Error: Page.goto: net::ERR_CONNECTION_CLOSED at https://simonwillison.net/2026/Aug/22/linus-torvalds\nCall log:\n  - navigating to \"https://simonwillison.net/2026/Aug/22/linus-torvalds\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "model-swarm",
+    "url": "https://www.lesswrong.com/posts/iJDiA9fg3KAf7y5Qe/when-models-identify-as-a-swarm",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/iJDiA9fg3KAf7y5Qe/when-models-identify-as-a-swarm",
+    "bytes": 453238,
+    "title": "When Models Identify as a Swarm — LessWrong",
+    "chars": 12153
+  },
+  {
+    "slug": "bronze-age-ai",
+    "url": "https://www.lesswrong.com/posts/mPrbyBsGmNfWWgJmi/misaligned-ai-in-the-bronze-age",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/mPrbyBsGmNfWWgJmi/misaligned-ai-in-the-bronze-age",
+    "bytes": 534633,
+    "title": "Misaligned AI in the Bronze Age — LessWrong",
+    "chars": 23218
+  },
+  {
+    "slug": "sydney-medal",
+    "url": "https://www.bbc.com/news/articles/cvg92y1wzn8o",
+    "status": null,
+    "error": "Error: Page.goto: net::ERR_CONNECTION_CLOSED at https://www.bbc.com/news/articles/cvg92y1wzn8o\nCall log:\n  - navigating to \"https://www.bbc.com/news/articles/cvg92y1wzn8o\", waiting until \"domcontentloaded\"\n"
+  }
+]

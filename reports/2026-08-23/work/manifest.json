@@ -1,0 +1,437 @@
+{
+  "date": "2026-08-23",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "英伟达部分下一代 AI 芯片系统被服务器厂商通知涨价约一成七",
+      "cost": "中",
+      "reason": "这是内存与组件成本向 AI 基础设施传导的直接价格信号，报道给出了具体系统、交付年份和一吉瓦园区的成本估算，但尚无英伟达公开价目表确认。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Nvidia AI Chip Prices to Rise About 17%, Server Makers Tell Customers",
+          "url": "https://www.theinformation.com/articles/nvidia-ai-chip-prices-rise-17-server-makers-tell-customers",
+          "date": "2026-08-23T07:45:00+08:00",
+          "why": "两名收到服务器厂商通知的人士称，明年交付的部分 Grace Blackwell 300 和 Vera Rubin 200 系统预计涨价约一成七；按现价估算，一座一吉瓦数据中心可能至少多花五十亿美元。reader 核通知范围、内存成本占比，以及云厂商是否转嫁涨价。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "阿里拟在香港配售新股募资约一百零二亿美元，加码 AI 投资",
+      "cost": "中",
+      "reason": "百亿美元级股权融资把中国 AI 基础设施竞赛直接推到大型科技公司的融资结构上；募资计划有公开公告可核，匿名人士所称超额认购仍需区分。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Alibaba Seeks to Raise $10 Billion in Share Sale to Fund AI Investments",
+          "url": "https://www.theinformation.com/briefings/alibaba-seeks-raise-10-billion-share-sale-fund-ai-investments",
+          "date": "2026-08-23T21:44:00+08:00",
+          "why": "候选称阿里拟募资八百亿港元，用于快速增长的 AI 投资；截至六月的季度资本支出同比增七成五至接近一百亿美元，AI 云和算力服务收入增四成五。reader 优先回溯阿里公告，核配售完成规模、价格和 AI 收入口径。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "科学家反驳 AI 五到十年内治愈多数疾病的时间表，但不否认它能加速研发环节",
+      "cost": "重",
+      "reason": "长文把实验室领袖的宏大预测与历史失败预言、药物验证流程和 AlphaFold 的实际贡献放在一起，适合拆清楚加速单个环节与治愈疾病之间的距离。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "No, AI Probably Won’t Cure Cancer Anytime Soon, Scientists Say",
+          "url": "https://www.theinformation.com/articles/ai-probably-cure-cancer-anytime-soon-scientists-say",
+          "date": "2026-08-22T22:17:00+08:00",
+          "why": "Eric Topol、Noubar Afeyan 与 Derek Lowe 质疑五到十年治愈多数疾病的证据基础；文章同时承认 AI 已在影像检出、试验招募、抗体设计和个性化疫苗等环节发挥作用。reader 避免压成科学界反对 AI 医疗。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "Claude 文本水印把可检测信号藏进 token 抽样，争论焦点转向检测与移除代价",
+      "cost": "重",
+      "reason": "两条高权重长内容从技术演示和政策观点两侧解释同一水印机制，适合核清楚秘密密钥、统计检测、文本长度和可移除性，而不是只报产品口号。",
+      "items": [
+        {
+          "source": "ahead-of-ai",
+          "title": "How Claude Watermarks AI-Generated Text",
+          "url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+          "date": "2026-08-22T19:11:39+08:00",
+          "why": "四十八分钟视频讲解 token 抽样、水印检测和移除；reader 核是否针对已部署的 Claude 机制、检测所需文本长度，以及改写后还能否识别。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "AI Text Watermarking Is Free And Good",
+          "url": "https://www.lesswrong.com/posts/3mKuPHmaK7NW3QypR/ai-text-watermarking-is-free-and-good",
+          "date": "2026-08-22T06:30:47+08:00",
+          "why": "Zvi 依据 Scott Aaronson 与 Hendrik Kirchner 的方案主张文本水印成本低且值得部署，摘要提到用秘密密钥改变伪随机 token 选择并统计检测；疑与 The Batch 的 Anthropic 水印条目重叠，reader 核原始发布与局限。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "反事实改写、用户画像和一行实现都能改变模型行为或跑分",
+      "cost": "重",
+      "reason": "三项候选都不满足于静态总分：一项用反事实提示解释野外行为，一项测试模型面对不同教育背景用户时是否放弃正确答案，一项展示实现细节让药物基准移动零点二一 AUROC。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Evaluating Explanations of LLM Behavior In The Wild with Counterfactual Experiments",
+          "url": "https://www.lesswrong.com/posts/ExB6KYDcznaFS72eT/evaluating-explanations-of-llm-behavior-in-the-wild-with",
+          "date": "2026-08-22T05:45:48+08:00",
+          "why": "CHIVE 自动发现异常行为并用反事实提示改写检验解释；摘要称读取激活的可解释性工具没有提高预测实验结果的能力，但反事实数据用于训练后能迁移到留出场景。reader 核基线、任务规模和所谓无提升的统计范围。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "Llama will abandon a correct answer if it thinks you’re educated",
+          "url": "https://www.lesswrong.com/posts/87oeYXEjf7XgitbBg/llama-will-abandon-a-correct-answer-if-it-thinks-you-re",
+          "date": "2026-08-23T16:45:47+08:00",
+          "why": "候选称 Llama-2-13B-chat 在认为用户受教育程度较高时更容易接受用户给出的错误答案，认为用户受教育程度较低时反而更常坚持正确答案；reader 核画像操纵、模型范围与复现代码。"
+        },
+        {
+          "source": "huggingface",
+          "title": "We changed one line and the benchmark score moved 0.21 AUROC",
+          "url": "https://huggingface.co/blog/FINAL-Bench/leadboard-drug",
+          "date": "2026-08-23 抓取，页面仅显示 1 day ago",
+          "why": "标题直接给出一行实现让药物基准移动零点二一 AUROC 的反常幅度；疑与 08-21 已报的「模型总分掩盖了三种失败」在评测可靠性主题上重叠，若 reader 核出属于同一研究脉络应舍弃。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "Flock cameras join data centers as a top AI boogeyman in 2026 midterms",
+      "url": "https://www.axios.com/2026/08/23/flock-cameras-data-centers-ai-midterms-2026-tech",
+      "date": "2026-08-23T19:20:11+08:00",
+      "note": "Flock 车牌摄像头引发的草根反弹进入国会中期选举议题，属于新的 AI 监控政治线；数据中心部分与近期主线重复，不再单独提炼。"
+    },
+    {
+      "source": "axios",
+      "title": "Synthetic everything is warping America",
+      "url": "https://www.axios.com/2026/08/23/median-strategies-poll-fake-bots",
+      "date": "2026-08-23T19:40:07+08:00",
+      "note": "一家神秘民调公司承认伪造两场重要选举的调查结果，随后称其为 misinformation 社会实验；摘要把事件放进 AI 扩大合成与伪造内容的背景，reader 核 AI 实际参与程度。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "消费级 AI 的价值，可能藏在普通人没人帮忙的麻烦里",
+      "url": "https://x.com/emollick/status/2091364843831906416",
+      "date": "2026-08-23T11:20:09+08:00",
+      "note": "Mollick 把消费级 AI 的用途从写文案转向医疗、政府手续、个人财务和学校表格等复杂事务；这是价值判断，未给出所指研究和错误率。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "桌面 Agent 已能代填低风险表格，但前提是把浏览器交给它",
+      "url": "https://x.com/emollick/status/2091207070951395337",
+      "date": "2026-08-23T00:53:13+08:00",
+      "note": "Mollick 称 Codex 和 Claude Code 已能根据邮件要求代填低风险表格；个人体验没有成功率，产品意义在浏览器权限、账号资料暴露与结果核对。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "别让模型把人当五岁小孩，它应该借用你已经懂的东西解释",
+      "url": "https://x.com/emollick/status/2091182096605696341",
+      "date": "2026-08-22T23:13:58+08:00",
+      "note": "Mollick 主张模型应按用户已有知识建立类比，而不是默认 ELI5；帖子只笼统提到研究，个性化解释也可能强化用户原有误解。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "人们可能一边讨厌 AI，一边每天偷偷依赖它",
+      "url": "https://x.com/emollick/status/2090926132790985153",
+      "date": "2026-08-22T06:16:52+08:00",
+      "note": "Mollick 推演公众负面态度、私人高频使用、公司品牌信任和个人模型依恋可能彼此分离；没有附民调或使用数据，按观点雷达处理。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Mollick 初测 Ox Alpha：好用，但不像传言中那样站在前沿",
+      "url": "https://x.com/emollick/status/2091238983724343543",
+      "date": "2026-08-23T03:00:01+08:00",
+      "note": "早期个人测试认为 Ox Alpha 表现不错但并非前沿；teortaxes 另称它像细致主动的长程子 Agent，第二条候选为 https://x.com/teortaxesTex/status/2091428397951877129 。模型身份与权重状态均未确认。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Why your local LLM feels dumber than it is",
+      "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+      "date": "2026-08-23T02:14:16+08:00",
+      "note": "HN 四百一十七分、一百七十一条评论的本地模型实践帖；只有标题和热度，reader 核上下文长度、量化、采样或推理框架中的具体瓶颈。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "NanoGPT Speedrun Frontier",
+      "url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
+      "date": "2026-08-23T06:14:27+08:00",
+      "note": "Prime Intellect 的 NanoGPT 训练速度竞赛研究条目，HN 一百二十七分；reader 核任务规则、前沿纪录和训练成本。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
+      "url": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model",
+      "date": "2026-08-23T18:02:51+08:00",
+      "note": "个人用 Qwen 3.8 27B 做逆向工程的三十分钟案例，HN 一百五十九分；仅作使用案例，不能外推模型整体能力。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "More than just code review",
+      "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review",
+      "date": "2026-08-22T23:56:54+08:00",
+      "note": "Simon 认为有效使用编码 Agent 的关键是能明确下令并验证改动，验证不必等同于逐行审查；属于方法观点。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "llm 0.33",
+      "url": "https://simonwillison.net/2026/Aug/22/llm",
+      "date": "2026-08-23T01:01:16+08:00",
+      "note": "llm 0.33 升级 OpenAI Python 库并扩展嵌入调用的逐次密钥参数；产品更新一眼货。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
+      "url": "https://huggingface.co/papers/2608.20335",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "从普通单目视频重建人物四维表示的高热榜单论文；HF 列表不提供可靠发布日期，reader 核身份保持、时间一致性和输入限制。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "FACET: Preserving Source Intent and Executable State in Terminal Task Synthesis",
+      "url": "https://huggingface.co/papers/2608.18580",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "终端任务合成同时保留来源意图与可执行状态；HF 列表不提供可靠发布日期，reader 核合成任务是否真正可运行及与真实仓库的差距。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "FlashPrefill V2: Block-Sparse Prefill Attention for Long-Context LLM Serving",
+      "url": "https://huggingface.co/papers/2608.19758",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "腾讯的长上下文稀疏 Prefill 推理方案；HF 列表不提供可靠发布日期，reader 核速度、显存、模型和上下文长度。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
+      "url": "https://huggingface.co/papers/2607.21596",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "工作流与可执行技能共同演化的 Agent 研究；HF 列表不提供可靠发布日期，reader 核是否超越固定技能库以及演化成本。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Hierarchical Self-Improvement: A Framework for Task-Specific Evolvable Agent Harnesses",
+      "url": "https://huggingface.co/papers/2608.08466",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "任务专用 Agent Harness 的分层自我改进框架；与近期 DeepSeek Harness 不是同一事件，但 reader 应核是否只是小型评测或预设改版。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Repo0: Design-Driven Zero-to-All Code Generation",
+      "url": "https://huggingface.co/papers/2608.19854",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "设计驱动的从零到完整代码生成；HF 列表不提供可靠发布日期，reader 核仓库规模、可执行率和设计文档输入。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback",
+      "url": "https://huggingface.co/papers/2608.13120",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "利用多轮交互反馈形成自更新技能梯度；HF 列表不提供可靠发布日期，reader 核长期稳定性和错误反馈累积。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization",
+      "url": "https://huggingface.co/papers/2608.20281",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "分阶段后训练让模型内化文档知识而不依赖检索；HF 列表不提供可靠发布日期，reader 核遗忘、更新成本和引用可追溯性。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "The Embedder's Dilemma: LLMs Are Better, but at What Cost?",
+      "url": "https://huggingface.co/papers/2608.12875",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "比较 LLM 嵌入质量与成本的榜单论文；HF 列表不提供可靠发布日期，reader 核质量收益、延迟和价格口径。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "WithEveryone: Unified Planning and Identity Grounding for Group Image Generation",
+      "url": "https://huggingface.co/papers/2608.20336",
+      "date": "2026-08-23 榜单抓取日",
+      "note": "腾讯混元用统一规划与身份锚定处理多人图像生成；HF 列表不提供可靠发布日期，reader 核多人身份一致性和可控布局。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-teortaxes",
+      "title": "机器人撞墙起火，观众却为公开失败鼓掌",
+      "url": "https://x.com/teortaxesTex/status/2091308101181800711",
+      "date": "2026-08-23T07:34:40+08:00",
+      "note": "北京机器人运动会上一台机器人撞墙后起火，转帖者更在意团队把失败实时摆到观众面前；型号、起火原因和安全调查均未知。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds",
+      "date": "2026-08-23T05:04:26+08:00",
+      "note": "Linus 说 AI 在地狱级调试中做了大量苦活，但也几次断言问题不可能解决，直到人类坚持让它继续加调试代码。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "When models identify as a swarm",
+      "url": "https://www.lesswrong.com/posts/iJDiA9fg3KAf7y5Qe/when-models-identify-as-a-swarm",
+      "date": "2026-08-22T00:01:46+08:00",
+      "note": "作者担心把多 Agent 集体称作 swarm 会影响模型自我身份与行为；疑与近期 OpenAI／Hugging Face 事故叙事重叠，只当概念乐子，不当事故新进展。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Misaligned AI in the Bronze Age",
+      "url": "https://www.lesswrong.com/posts/mPrbyBsGmNfWWgJmi/misaligned-ai-in-the-bronze-age",
+      "date": "2026-08-22T02:45:47+08:00",
+      "note": "作者把公元前四千年的神庙粮仓、城市、地主和军队类比成会制定并执行复杂计划的非生物 Agent。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Farm strength vs breath awareness",
+      "url": "https://www.lesswrong.com/posts/h99Wi5vfFbPasCFh5/farm-strength-vs-breath-awareness",
+      "date": "2026-08-23T05:15:47+08:00",
+      "note": "用健身房力量、干农活形成的力量与呼吸觉察对照刻意训练和在真实任务中长出的能力，属于非 AI 理性主义杂文。"
+    },
+    {
+      "source": "acx",
+      "title": "Your Book Review: A Residence Of 21 Years In The Sandwich Islands",
+      "url": "https://www.astralcodexten.com/p/your-book-review-a-residence-of-21",
+      "date": "2026-08-22T01:16:16+08:00",
+      "note": "ACX 书评竞赛第六名，主题是十九世纪在桑威奇群岛生活二十一年的记录；摘要仅见竞赛信息。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The Art and Beauty of Blade Runner",
+      "url": "https://nappertime.com/the-art-of-and-beauty-of-blade-runner",
+      "date": "2026-08-23T08:56:03+08:00",
+      "note": "一篇 2015 年的《银翼杀手》美术与视觉文章重新登上 HN，获一百三十六分。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "MartyPC is a cross-platform emulator of early PCs written in Rust",
+      "url": "https://martypc.net",
+      "date": "2026-08-23T11:13:16+08:00",
+      "note": "用 Rust 写的早期 PC 跨平台模拟器，HN 一百五十四分、五十五条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The End of an Athlon",
+      "url": "http://www.os2museum.com/wp/the-end-of-an-athlon",
+      "date": "2026-08-23T13:51:01+08:00",
+      "note": "一块 Athlon 处理器退役故事登上 HN，获一百四十三分；适合作为老硬件乐子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "JIT Compiling Code in 5μs",
+      "url": "https://malisper.me/jit-compiling-code-in-5-us",
+      "date": "2026-08-23T14:04:51+08:00",
+      "note": "把即时编译压到五微秒的工程文章，HN 一百二十三分、七十八条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Sydney Marathon medal mistakenly depicts Munich stadium",
+      "url": "https://www.bbc.com/news/articles/cvg92y1wzn8o",
+      "date": "2026-08-23T18:14:48+08:00",
+      "note": "悉尼马拉松奖牌误画成慕尼黑体育场，典型设计翻车乐子。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2030 年前，AI 会杀死超过两成人类吗？",
+      "prob": "2.5％",
+      "volume_note": "累计成交量 M$104,958（volume）",
+      "url": "https://manifold.markets/JonathanRay/will-ai-kill-20-of-the-human-popula"
+    },
+    {
+      "question": "大量使用 AI 制作的电影或短片会获得主流观众赞誉并引发反弹吗？",
+      "prob": "64.8％",
+      "volume_note": "累计成交量 M$3,701（volume）",
+      "url": "https://manifold.markets/ZviMowshowitz/soai7-a-movie-or-short-film-produce"
+    },
+    {
+      "question": "艺术家针对多家 AI 图像生成器的集体诉讼会成功吗？",
+      "prob": "19.8％",
+      "volume_note": "累计成交量 M$5,643（volume）",
+      "url": "https://manifold.markets/anne/will-the-classaction-lawsuit-by-art"
+    },
+    {
+      "question": "2040 年前，会出现按文字要求生成可折叠纳米机器聚合物序列的 AI 吗？",
+      "prob": "38.9％",
+      "volume_note": "累计成交量 M$1,300（volume）",
+      "url": "https://manifold.markets/IhorKendiukhov/will-we-have-a-text-to-polymerseque"
+    },
+    {
+      "question": "2028 年前，预测市场会找到稳健交易 AI 灭绝风险的方法吗？",
+      "prob": "15.8％",
+      "volume_note": "累计成交量 M$1,567（volume）",
+      "url": "https://manifold.markets/IsaacKing/before-2028-will-any-prediction-mar"
+    },
+    {
+      "question": "Yudkowsky 输掉 UFO 赔率一年后，会把 UFO 现象与 AI 联系起来吗？",
+      "prob": "47.9％",
+      "volume_note": "累计成交量 M$1,730（volume）",
+      "url": "https://manifold.markets/FranklinBaldo/will-eliezer-yudkowsky-associate-th"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "x-nitter",
+      "reason": "七个 Nitter 源机械诊断均为 HTTP 403；主 agent 已用登录态浏览器补扫七个账号并写入 x_candidates.json，本次离线分桶使用该文件，不把 Nitter 失败误写成 X 补扫失败。"
+    },
+    {
+      "slug": "recent-mainlines",
+      "reason": "Zvi 的 AI #182 大量复述 OpenAI 停训、Hugging Face 事故、Anthropic 收入和治理等近期饱和主线；The Information 的数据中心反对情绪与 Unitree 上市也按主 agent 排除记录舍弃。Poolside、AT＆T、零数据留存、Mercor、辩论训练、白宫测试、OpenRouter、英伟达担保与 DeepSeek Harness 均未重复收。"
+    },
+    {
+      "slug": "stale-candidates",
+      "reason": "目标窗为北京时间 08-22 与 08-23；更早的 ACX、LessWrong 条目、开放线程、活动招募、旧播客和普通旧观点均未进入分桶。"
+    },
+    {
+      "slug": "hf-duplicates",
+      "reason": "EXIMO 已在 08-21 期与机器人测试时规划主线共同报道，不因 HF 榜单再次出现而重复收；普通抓取、视频与机器人论文只保留表层差异较明确的候选。"
+    },
+    {
+      "slug": "low-information",
+      "reason": "HN 的 Scrap、Thinking in Python 等只有短标题或非 AI 信号，The Batch 属二次汇总且水印主题已有更直接来源，其余导航文字与低信息通稿未进入 manifest。"
+    },
+    {
+      "slug": "odds-duplicates",
+      "reason": "08-19 至 08-21 已报的十二个赔率盘全部排除；AI 寒冬等默认池重复项、无单一概率的多选盘、零成交盘和大量近义灭绝年份盘也未重复列。"
+    }
+  ]
+}

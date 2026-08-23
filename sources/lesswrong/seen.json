@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/mPrbyBsGmNfWWgJmi/misaligned-ai-in-the-bronze-age",
+  "title": "青铜时代的神庙粮仓也像一个失控 Agent",
+  "date": "2026-08-22T02:45:47+08:00",
+  "reported": true,
+  "report_date": "2026-08-23"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/87oeYXEjf7XgitbBg/llama-will-abandon-a-correct-answer-if-it-thinks-you-re",
+  "title": "Llama 觉得用户学历高，更容易放弃正确答案",
+  "date": "2026-08-23T16:45:47+08:00",
+  "reported": true,
+  "report_date": "2026-08-23"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ExB6KYDcznaFS72eT/evaluating-explanations-of-llm-behavior-in-the-wild-with",
+  "title": "改提示词更能检验模型为什么这么做",
+  "date": "2026-08-22T05:45:48+08:00",
+  "reported": true,
+  "report_date": "2026-08-23"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/tBo72ytuzJKbYrvhK/34-of-the-us-public-is-now-aware-of-ai-xrisk-and-the-curve",
   "title": "一项小型调查称三成美国人会主动想到 AI 灭绝风险",
   "date": "Thu, 20 Aug 2026 13:31:44 GMT",

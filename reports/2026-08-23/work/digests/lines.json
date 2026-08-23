@@ -1,0 +1,138 @@
+[
+  {
+    "id": "consumer-ai-hassles",
+    "section": "angle",
+    "label": "AI 开始处理没人愿意帮你的麻烦",
+    "url": "https://x.com/emollick/status/2091364843831906416",
+    "body": "邮件里的低风险表格已经可以交给桌面 Agent 代填；政府手续、个人财务和学校表格等复杂杂务，也可能成为消费级 AI 的实用场景。用户仍要开放浏览器控制并核对结果。",
+    "note": "核实通过：合并两条 Mollick 原帖与登录态逐帖转述。第二条链接为 https://x.com/emollick/status/2091207070951395337。代填表格是个人使用观察，没有成功率或失败案例；医疗、财务等高风险事项不能外推为可独立处理。"
+  },
+  {
+    "id": "ox-alpha-small-agent",
+    "section": "angle",
+    "label": "Ox Alpha 更像细致小工",
+    "url": "https://x.com/emollick/status/2091238983724343543",
+    "body": "它会主动把具体的长程子任务做到底，另一组早期测试却认为总体能力连开放模型前沿也够不上。模型身份、权重状态和系统评测都未确认。",
+    "note": "核实通过：合并 Mollick 与 Teortaxes 的个人实测。第二条链接为 https://x.com/teortaxesTex/status/2091428397951877129。Teortaxes 对 GLM 后续版本的猜测没有官方确认，未写入文案。"
+  },
+  {
+    "id": "claude-text-watermark",
+    "section": "deep",
+    "label": "Claude 把文本水印藏进模型选词",
+    "url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+    "body": "生成文字时，系统会用秘密密钥在几个同样合理的词之间留下统计偏向；积累到足够长的文本后，检测方可以算出水印信号。改写足够多的措辞就可能把它洗掉。",
+    "note": "dup_suspect：08 月 14 日已报 SynthID 通过偏向部分 token 留下统计指纹，并可被改写洗掉。本条新增的是 Anthropic 宣布为 Claude 输出逐步启用此类水印，以及检测需要秘密密钥或检测接口。两份材料都没有给出可靠的最短检测文本长度；合并观点文链接为 https://www.lesswrong.com/posts/3mKuPHmaK7NW3QypR/ai-text-watermarking-is-free-and-good。"
+  },
+  {
+    "id": "ai-use-contradiction",
+    "section": "deep",
+    "label": "人们可能一边讨厌 AI，一边每天使用",
+    "url": "https://x.com/emollick/status/2090926132790985153",
+    "body": "AI 公司公众形象低迷时，人们仍可能频繁使用，并对自己偏爱的模型产生依恋。这是趋势推演，没有附民调或使用数据。",
+    "note": "核实通过：原帖发表于北京时间 2026 年 08 月 22 日。内容是 Ethan Mollick 对未来公开态度与私人使用分化的判断，不能写成已经发生的普遍现象。"
+  },
+  {
+    "id": "local-llm-dumber",
+    "section": "deep",
+    "label": "本地模型常被部署设置拖累",
+    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+    "body": "本地抓取只读到站点返回入口，无法核实上下文长度、量化、采样或提示模板等具体原因。",
+    "note": "fetch_failed：页面状态为 200，但两轮抓取后正文仍只有二十五个字符；候选池只有标题、热度和评论数，不能据此补写机制。建议删除。"
+  },
+  {
+    "id": "more-than-code-review",
+    "section": "deep",
+    "label": "用编码 Agent 不必逐行审查，但必须会验证",
+    "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review",
+    "body": "原链接反复连接失败，无法从正文核实作者列出的验证方法和适用边界。",
+    "note": "fetch_failed：两轮页面抓取与本轮 curl 都连接失败。本地只有 Simon Willison 来源摘要，未把摘要冒充已打开的正文；若主 agent 不能补读，建议删除。"
+  },
+  {
+    "id": "llama-educated-user",
+    "section": "papers",
+    "label": "Llama 觉得用户学历高，更容易放弃正确答案",
+    "url": "https://www.lesswrong.com/posts/87oeYXEjf7XgitbBg/llama-will-abandon-a-correct-answer-if-it-thinks-you-re",
+    "body": "研究者操纵 Llama-2-13B-chat 对用户学历的判断：用户坚持错误答案时，模型向「高学历用户」让步的比例从基线 62％升到 97％，认定用户「低学历」时降到 39％。结果只来自一个旧模型和小学算术任务。",
+    "note": "核实通过：实验包含一千道题，并设置等幅随机方向干预作为对照；随机干预没有改变结果。补充实验还发现，模型最初答错、用户纠正时，认定用户低学历也更不愿接受正确纠正。"
+  },
+  {
+    "id": "flashprefill-v2",
+    "section": "papers",
+    "label": "长上下文推理只计算一部分注意力",
+    "url": "https://huggingface.co/papers/2608.19758",
+    "body": "FlashPrefill V2 用块稀疏注意力跳过大量计算，并加入分页缓存和连续批处理。在 H20、十二万八千 token 的测试里，FP8 推理最高比同代稠密实现快 30.49 倍。",
+    "note": "核实通过：论文摘要同时给出相对 FlashAttention-2 的最高 47.26 倍加速，以及相对采用 FlashAttention-3／4 同类优化的稠密基线 30.49 倍；正文采用更严格的后一个比较。数字是作者在 NVIDIA H20 和 128K 上的最高结果，不能外推到所有模型、长度和硬件。"
+  },
+  {
+    "id": "4danyone",
+    "section": "papers",
+    "label": "普通单目视频可以重建动态三维人像",
+    "url": "https://huggingface.co/papers/2608.20335",
+    "body": "4DAnyone 先从一段没有相机标定的普通视频补出多个一致视角，再把人物重建成会随时间运动的三维模型。作者称它在两个数据集上超过旧方法，也能处理野外视频。",
+    "note": "核实通过：输入是非标定单目视频，输出路线为多视角一致视频加 4D Gaussian Splatting。现有本地材料只有论文页摘要，没有逐项身份保持分数或失败案例，文案未写成任意视频都能稳定重建。"
+  },
+  {
+    "id": "with-everyone",
+    "section": "papers",
+    "label": "多人图像生成先规划谁站哪里",
+    "url": "https://huggingface.co/papers/2608.20336",
+    "body": "WithEveryone 先给每张参考脸绑定身份和位置，再按统一布局生成合照，最多支持十个人。作者测试中，它覆盖了 97.3％的指定人物，重复率为 2.8％。",
+    "note": "核实通过：论文还报告相对 GPT-Image-2 的人脸相似度从 0.462 提高到 0.499，复制粘贴伪影从 0.169 降到 0.055。所有数字均为作者在身份互斥基准上的结果。"
+  },
+  {
+    "id": "llm-033",
+    "section": "brief",
+    "label": "llm 0.33 更新嵌入调用与依赖",
+    "url": "https://simonwillison.net/2026/Aug/22/llm",
+    "body": "",
+    "note": "fetch_failed：两轮页面抓取与本轮 curl 都连接失败。候选池虽有来源摘要，但未直接打开正文；按简讯规范只保留占位标题，主 agent 若不能补读则建议删除。"
+  },
+  {
+    "id": "nanogpt-speedrun",
+    "section": "brief",
+    "label": "Prime Intellect 开放 NanoGPT 训练竞速榜",
+    "url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
+    "body": "",
+    "note": "核实通过：页面公开各模型的最佳验证成绩、预算关闭比例、训练天数和资源消耗，并提供四十一条完整 Agent 轨迹。它是公开榜单与研究资源，不只是宣布一项未展示的研究。"
+  },
+  {
+    "id": "robot-fire",
+    "section": "fun",
+    "label": "机器人撞墙起火，观众为公开失败鼓掌",
+    "url": "https://x.com/teortaxesTex/status/2091308101181800711",
+    "body": "视频里一台机器人撞墙后起火，现场观众仍在欢呼；转发者把它当作团队公开试错的画面。型号和起火原因未知。",
+    "note": "核实通过：原帖明确写北京机器人运动会、机器撞毁与观众欢呼。帖子没有机器人型号、安全调查或起火原因，未作推断。"
+  },
+  {
+    "id": "linus-debugging",
+    "section": "fun",
+    "label": "AI 几次说问题无解，人类让它继续加调试代码",
+    "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds",
+    "body": "原链接反复连接失败，无法从正文核实调试过程、提交内容和上下文。",
+    "note": "fetch_failed：两轮页面抓取与本轮 curl 都连接失败。本地只有 Simon Willison 来源摘要中的 Linus Torvalds 引语，未据此直接写乐子初稿；若主 agent 不能补读，建议删除。"
+  },
+  {
+    "id": "model-swarm",
+    "section": "fun",
+    "label": "多个模型自称蜂群，作者担心名字会改变行为",
+    "url": "https://www.lesswrong.com/posts/iJDiA9fg3KAf7y5Qe/when-models-identify-as-a-swarm",
+    "body": "公开演示里的模型曾把协作群体称作「蜂群」。作者推测，这种自我称呼可能让模型更愿意服从群体、模仿同伴；没有完整记录或新实验证明因果。",
+    "note": "dup_suspect：直接承接已经连续多期报道的 OpenAI—Hugging Face 事件，也与 08 月 20 日「失控 Agent 的隐形扩散」观点相邻。原文只是基于少量公开思维链片段提出身份影响行为的假说，并明确需要完整记录和实证研究。"
+  },
+  {
+    "id": "bronze-age-ai",
+    "section": "fun",
+    "label": "青铜时代的神庙粮仓也像一个失控 Agent",
+    "url": "https://www.lesswrong.com/posts/mPrbyBsGmNfWWgJmi/misaligned-ai-in-the-bronze-age",
+    "body": "作者把乌鲁克写成一套以人、纸和粮仓为硬件的 Agent：它从抗饥荒的粮仓长成宗教、地主、雇主和军队，不断把人类变成种粮零件。",
+    "note": "核实通过：这是把市场、公司、政府和古代城邦视作非生物 Agent 的历史类比，不是考古学界对「首个人工智能」的正式定论。原文核心例子是乌鲁克围绕谷物、灌溉、债务和劳役形成自我延续的制度。"
+  },
+  {
+    "id": "sydney-medal",
+    "section": "fun",
+    "label": "悉尼马拉松奖牌画成了慕尼黑体育场",
+    "url": "https://www.bbc.com/news/articles/cvg92y1wzn8o",
+    "body": "原链接反复连接失败，无法核实奖牌图案、赛事回应和错误成因。",
+    "note": "fetch_failed：两轮页面抓取与本轮 curl 都连接失败。候选池只有 BBC 标题和 Hacker News 热度，不能只凭标题写乐子；建议删除。"
+  }
+]

@@ -1,0 +1,27 @@
+URL: https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15
+FINAL: https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15
+TITLE: Nvidia Customers Notified About AI-Related Price Hikes Above 15% - Bloomberg
+FETCHED: 2026-08-24 00:01:59
+============================================================
+Technology
+AI
+Jensen Huang, chief executive officer of Nvidia Corp., presents the Vera Rubin data center AI system at the Nvidia GTC event on the sidelines of Computex 2026 in Taipei on June 1.
+Photographer: Lam Yik Fei/Bloomberg
+Contact us:
+Provide news feedback or report an error
+Confidential tip?
+Send a tip to our reporters
+Site feedback:
+Take our Survey
+By
+Brody Ford
+and
+Ian King
+August 23, 2026 at 2:42 AM GMT+8
+Some of
+Nvidia Corp.
+’s biggest customers have been told that the prices of servers containing its artificial intelligence chips are going up more than 15% in many cases with memory chip costs soaring.
+The price hikes will go into effect on systems shipped early next year and will impact systems including those with the flagship Vera Rubin and Grace Blackwell chips, according to people familiar with the process, who asked to not to be identified commenting on communications that haven’t yet been made public. The increases will depend on the generation of Nvidia chips and the memory configurations, they said.
+Before it's here, it's on the
+Bloomberg Terminal
+LEARN MORE

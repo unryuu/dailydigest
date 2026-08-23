@@ -1,0 +1,87 @@
+{
+  "date": "2026-08-23",
+  "scanned_at": "2026-08-23T23:52:00+08:00",
+  "window": "接续 2026-08-21 期手工扫描截止，覆盖 2026-08-22 与 2026-08-23 两个北京时间自然日；只看首页 Latest，忽略 Recommended、Most Popular 和旧档案",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫描 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Article",
+      "title": "Nvidia AI Chip Prices to Rise About 17%, Server Makers Tell Customers",
+      "url": "https://www.theinformation.com/articles/nvidia-ai-chip-prices-rise-17-server-makers-tell-customers",
+      "published_at": "2026-08-22T16:45:00-07:00",
+      "published_at_beijing": "2026-08-23T07:45:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入定牌候选",
+      "facts": [
+        "据两名所在公司收到服务器厂商通知的人士，英伟达部分旗舰 AI 服务器芯片系统预计涨价约 17％，主要涉及明年交付的 Grace Blackwell 300 和 Vera Rubin 200 系统。",
+        "按现有系统价格估算，涨价可能让一座 1 吉瓦数据中心的成本至少增加 50 亿美元；一套含 72 块 GPU 的 Vera Rubin 机架预计约为 800 万美元。",
+        "报道指内存和其他组件涨价是原因之一；云厂商是否自行消化成本尚不明确，一名知情人士判断最终很可能转嫁给租用芯片的客户。",
+        "彭博此前也报道客户收到超过 15％的 AI 相关涨价通知，英伟达没有立即回应 The Information 的置评请求。"
+      ],
+      "caveats": [
+        "涨价信息来自服务器厂商向客户发出的通知和匿名知情人士，并非英伟达公开价目表。",
+        "50 亿美元是按当前芯片系统价格对 1 吉瓦数据中心作的估算，不是已经发生的单个项目超支。",
+        "不能把部分系统涨价写成英伟达所有 AI 芯片统一涨价 17％。"
+      ],
+      "why": "涨价会把内存短缺和组件成本直接传导到下一代 AI 数据中心，一座大型园区可能因此多出数十亿美元成本。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Alibaba Seeks to Raise $10 Billion in Share Sale to Fund AI Investments",
+      "url": "https://www.theinformation.com/briefings/alibaba-seeks-raise-10-billion-share-sale-fund-ai-investments",
+      "published_at": "2026-08-23T06:44:00-07:00",
+      "published_at_beijing": "2026-08-23T21:44:00+08:00",
+      "bucket_hint": "industry_silver",
+      "decision": "加入定牌候选，事实优先回溯阿里公开公告",
+      "facts": [
+        "阿里巴巴宣布拟在香港配售新股，募资 800 亿港元，约合 102 亿美元，用于快速增长的 AI 投资。",
+        "据一名知情人士，交易因主权财富基金和其他国际投资者的兴趣已经获得超额认购；该说法并非公司公告中的已确认结果。",
+        "截至六月的季度，阿里资本支出同比增长 75％至接近 100 亿美元；AI 云和算力服务收入增长 45％。",
+        "阿里此前预计本季度 AI 相关产品年化收入将从上一季度的 73 亿美元升至 100 亿美元。"
+      ],
+      "caveats": [
+        "募资计划有阿里公开公告可核，后续写作应优先链接公开原始来源。",
+        "超额认购来自匿名知情人士，配售完成规模、价格和最终投资者仍可能变化。",
+        "AI 相关年化收入包含云基础设施、模型服务和编码工具等应用，不等于大模型本身收入。"
+      ],
+      "why": "阿里把一个季度近 100 亿美元的资本开支进一步推向百亿美元级股权融资，说明中国 AI 基础设施竞赛正在直接改变大型科技公司的融资节奏。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "The Big Read",
+      "title": "No, AI Probably Won’t Cure Cancer Anytime Soon, Scientists Say",
+      "url": "https://www.theinformation.com/articles/ai-probably-cure-cancer-anytime-soon-scientists-say",
+      "published_at": "2026-08-22T07:17:00-07:00",
+      "published_at_beijing": "2026-08-22T22:17:00+08:00",
+      "bucket_hint": "angle_or_science_none",
+      "decision": "加入定牌候选",
+      "facts": [
+        "心脏病学家 Eric Topol 公开反驳 Demis Hassabis 和 Dario Amodei 对 AI 五到十年内治愈多数疾病的预期，称常见疾病至今没有先例支持这种时间表。",
+        "Moderna 联合创始人 Noubar Afeyan 把缺少证据的快速治愈宣言称为信仰，而不是科学；药物研发人员 Derek Lowe 强调，细胞没有像芯片一样可打印的技术规格。",
+        "文章回顾 1998 年两年治愈癌症、2000 年二十至二十五年预防或治愈多数癌症等历史预测，均没有兑现。",
+        "AlphaFold 数据库虽已被超过 300 万研究人员使用，但尚未直接产生一种疾病的治愈方案；与此同时，AI 已在影像检出小肿瘤、临床试验招募、抗体设计和个性化疫苗等环节提供实际帮助。"
+      ],
+      "caveats": [
+        "这是科学家与产业人士的结构性观点报道，不是证明 AI 对药物研发无效的实验。",
+        "批评针对的是快速治愈全部或多数疾病的时间表与证据标准，不应简写成科学界反对使用 AI。",
+        "文中举例跨越多种疾病和技术路线，正式成稿应选少量直观证据，避免把长文压成名人争论。"
+      ],
+      "why": "它把 AI 医疗争论落到普通读者能理解的核心：AI 可以加速许多环节，但从找到线索到证明疗法安全有效，仍隔着漫长实验和临床验证。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Why Unitree’s 460% IPO Stock Pop Wasn’t Unusual in China",
+      "url": "https://www.theinformation.com/articles/unitrees-460-ipo-stock-pop-unusual-china",
+      "reason": "与 2026-08-19 已扫过的 Unitree 上海上市同一事件，新增内容主要解释中国新股首日定价和交易机制；在零至三篇额度下不重复收同一上市事件。"
+    },
+    {
+      "title": "America Really, Really Hates Data Centers",
+      "url": "https://www.theinformation.com/newsletters/the-weekend/america-hates-data-centers",
+      "reason": "数据中心反对情绪已是近期饱和主线；首页材料没有显示正式政策、项目取消、选举结果或能改变判断的新民调。"
+    }
+  ]
+}

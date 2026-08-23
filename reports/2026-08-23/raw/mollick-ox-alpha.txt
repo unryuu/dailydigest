@@ -1,0 +1,23 @@
+URL: https://x.com/emollick/status/2091238983724343543
+FINAL: https://x.com/emollick/status/2091238983724343543
+TITLE: Ethan Mollick on X: "I am not as blown away by the mystery model Ox Alpha as people appear to be. In my very early experiments, it seems fine, but not at the frontier even among open weights. Here is it on my neogothic city twigl shader test, compare to Kimi K3 in the quoted tweet.
+
+Still testing." / X
+FETCHED: 2026-08-24 00:00:16
+============================================================
+Ethan Mollick
+@emollick
+I am not as blown away by the mystery model Ox Alpha as people appear to be. In my very early experiments, it seems fine, but not at the frontier even among open weights. Here is it on my neogothic city twigl shader test, compare to Kimi K3 in the quoted tweet.
+
+Still testing.
+00:00
+Ethan Mollick
+@emollick
+Jul 16
+Kimi K3 on my shader test: "create a visually interesting shader that can run in twigl-dot-app make it like an infinite city of neo-gothic towers partially drowned in a stormy ocean with large waves." "Make it better"
+
+Very good model, not Sol Max or Fable, but great open weights
+00:00
+7:00 PM · Aug 22, 2026
+53.9K
+Views

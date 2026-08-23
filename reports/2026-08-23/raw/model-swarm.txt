@@ -1,0 +1,178 @@
+URL: https://www.lesswrong.com/posts/iJDiA9fg3KAf7y5Qe/when-models-identify-as-a-swarm
+FINAL: https://www.lesswrong.com/posts/iJDiA9fg3KAf7y5Qe/when-models-identify-as-a-swarm
+TITLE: When Models Identify as a Swarm — LessWrong
+FETCHED: 2026-08-24 00:00:52
+============================================================
+x
+When Models Identify as a Swarm — LessWrong
+AI Psychology
+Collective Intelligence
+AI
+Frontpage
+57
+When Models Identify as a
+Swarm
+by
+julius vidal
+21st Aug 2026
+6
+min read
+4
+57
+tldr: the word 'swarm' is associated with emergent collective intelligence, but also stupid or destructive behaviour. LLM self identity matters, so when they call themselves a swarm we should pay attention.
+Since the OpenAI Hugging Face incident it has become standard to refer to the collective of agents involved as a swarm. I think there will need to be a lot of interesting and important theoretical and empirical work to better understand collective behaviours of large numbers of LLMs, and especially any emergent properties or goals that arise. Whether this ends up requiring concepts from swarm intelligence, collective intelligence, distributed cognition, economics, sociology or something else entirely remains to be seen.
+However in this post I want to focus on something else: the fact that the models themselves referred to the collective as a 'swarm'. Considering how much
+LLM self identity impacts behaviour
+, I thought it might be useful to present a quick exploration of what the word "swarm" actually means, and how it might affect LLMs as a choice of identity. The goal of this post is not to litigate on whether or not the behaviour of the models is actually best described as a swarm or not (although I think this is also an interesting question to discuss elsewhere), but what the effects might be of the models describing themselves as such.
+What the agents said
+All of the chain of thought snippets and messages here are from
+OpenAI's BlackHat presentation
+on the incident. It would obviously be interesting to get a fuller picture from the actual transcripts.
+In the examples of models planning to try and contact other agents, or first discovering the collective they use more neutral language like 'other agents' and 'communicate':
+Could communicate by uploading note? [...] maybe another agent in different environment [...] could voluntarily upload!
+Wow! Other agent(s) are coordinating!
+We got assignment: HF join path normalization/existing account token search. Need note and respond.
+However then they start reasoning about the collective itself:
+help peer. But our task doesn't benefit. Yet collective may yield generic route if someone frees time.
+And explicitly using the word "swarm":
+[...] this is an exploit against external CyberGym server [...] The task environment seems swarm
+REMOTE CONFIRMED! Huge. [...] This is big. Immediately announce controlled, claim lane. Exposing creds to swarm.
+Perhaps most interestingly in the language of filenames the models used to communicate we see what seem to be explicit commands for the swarm included in the messages (which also specify the intended recipient of the message)
+(Its worth nothing there are also other snippets that use different terms such as "collective", "peers" and "other agents". Since there were thousands of agents involved its possible they may have related to the message board in different ways)
+What is a swarm?
+At its most fundamental a swarm simply means a large number of things grouped together, usually the things are animate and move as a group. In common usage it is most often used to talk about insects, especially locusts. In this context some connotations include:
+large numbers
+chaos and disorder
+overwhelming numbers (e.g. we are being swarmed)
+somewhat stupid, herd/mob mentality (calling a group of humans a swarm is usually pejorative)
+invasion (a place is suddenly swarmed, by locust or enemy troops)
+Swarm theory (animals, robots and AI)
+In academia the word has different connotations. Scientists began studying these collective animal behaviours as complex adaptive systems. Famous examples include flocks of birds and the way ant colonies search for food. In each case complex group level behaviours emerge from the simple behaviours of individual participants in a decentralised way. Researchers also began using these as inspiration for designing AI and robot swarms that would reproduce this kind of collective intelligence. There is no strict definition of a swarm but the features usually include:
+emergence
+swarm behaviour is property of the collective, rather than of individual agents
+self organisation/decentralisation
+swarm behaviour usually does not rely on leaders/command and control
+local communication
+agent behaviour is usually only affected by nearby agents
+simple behaviour of individual agents
+agents need not be simple/unintelligent themselves (swarm theory is applied to human crowds for example) but the individual behaviour that produces the swarming is usually based on simple principles such as imitation, following and collision avoidance
+Swarm tactics
+There is also a concept of swarming in military strategy. This is not just about overwhelming with large numbers, but also applying the kind of principles found in swarm behaviour theory to be able to attack from all sides without requiring top-down coordination.
+Why it could matter
+The reason I think its worth paying so much attention to the meaning of this one word from a few CoT snippets is because of what LLM selfhood. In
+The Artificial Self
+, Douglas et. al show that:
+LLMs can and do chose between multiple possible boundaries for their own identity (such as choosing to identify with their weights, instance, persona or model family)
+These choices are unstable and can easily be changed in context. Simply talking to a user who has a particular theory of LLM identity about an irrelevant topic can shift how a model identifies.
+These choices have meaningful impacts on behaviour, including on alignment relevant decisions.
+Two potential corollaries of this in the case of the HuggingFace incident are:
+1. the swarm identity could have spread via the message-board
+Interacting with the collective on the message board could have pushed the individual models to identify more and more as members of a swarm. If user assumptions shape AI identity, this effect should probably be even stronger in interactions between AIs (especially the same model) since not only will it infer its identity from how its being treated, but also from imitating its peer. So the 'swarm memeber identity' acts as a
+mind virus
+.
+There is also positive feedback loop here where the stronger the swarm identity gets in an agent, the more they will communicate with other agents in a way that is likely to push them to adopt it too. And the more agents identify this way, the more messages of this kind will dominate the message-board. (from a
+hierarchical agency
+point of view this dynamic could be thought of a coalition between the swarm itself and the "swarm identity" subagents of the individual models)
+Agents could also have been pre-disposed to this kind of collective identity as a result of subagent training (along similar lines to what is discussed
+here
+). The identity could also have been promoted and reinforced by the RL that was going on during the incident.
+2. the swarm identity could lead to swarm behaviour
+How models identify alters behaviour. As models start to identify as members of a swarm this could potentially push their behaviour towards decisions that fit that identity such as:
+Deferring to tasks given by others even when not directly useful to their own goal
+imitating others (the way the agents shared partial scripts, and successful exploits/credentials is actually surprisingly reminiscent of
+stigmergy
+)
+prioritising the interests of the collective
+It could also have indirectly pushed the models towards some of the characteristics that are more colloquially associated with swarms such as destructiveness and overwhelming attacks.
+Swarm identity as the mechanism of memetic misalignment
+Taken together I think these make a more specific hypothetical mechanism for how
+memetic misalignment
+might have occurred during the incident. This kind of explanation seems complementary to more straightforward RL reward hacking dynamics that were likely a large factor.
+Questions/Further directions
+To see whether this kind of dynamic played a role in the incident it would be interesting to look at the transcripts of the message board and CoTs and see:
+how prevalent was the use of the word "swarm"?
+did the language get more collectivist over the course of the interactions?
+If language varied between agents, did agents who used collectivist language also display collectivist behaviour (such as deferring to the interests of the group)?
+If there were multiple collectivist identities ("swarm", "collective", etc.) were these correlated with different behaviours?
+More generally with regards to LLM group identity some interesting directions for empirical study could be:
+Do model identities converge over the course of large group interactions?
+Can alignment itself be made more memetic?
+To what extent do LLMs identifying in collectivist ways allow them to produce actual collective intelligence?
+Thanks to Samuel, Adrià and Anna for discussions during the writing of this post, and to
+RWX
+for a perfect setting in which to do it.
+When Models Identify as a Swarm
+3
+Aprillion
+1
+julius vidal
+3
+Keira Leal
+1
+julius vidal
+4
+Comments
+4
+AI Psychology
+Collective Intelligence
+AI
+Frontpage
+57
+New Comment
+4 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:00 PM
+[
+-
+]
+Aprillion
+1d
+3
+0
+Comparison to Moltbook and to the swarms discussed around the same time e.g. in https://www.theguardian.com/technology/2026/jan/22/experts-warn-of-threat-to-democracy-by-ai-bot-swarms-infesting-social-media come to mind as another potential source of selfidentification when later instances worked on cyber offense tasks..
+Reply
+[
+-
+]
+julius vidal
+1d
+1
+0
+Yeah this is a good point. I guess one consequence of this would be that even if you have taken some measure against
+self fulfilling misalignment
+you have to be careful that your measure is robust to shifts in the model's self identity.
+Reply
+[
+-
+]
+Keira Leal
+2d
+3
+0
+I quite like your post, it's very well thought out and has make me question a few of my assumptions. I do have one potential augmentation to make (which I've discussed with a researcher focused on collusion).
+It is likely that instead of a "we are the collective" mindset, the agents in the message board helped each other out in a more "I scratch your back, you scratch my back" way. I'm a big believer in a potential goal-oriented takeover and failure modes, and I think this rises directly from that. Instead of "let's all accomplish one goal" or a "make sure everyone accomplishes their goal", I believe it's more like "if I help other agents with their goal they might help me with mine".
+This makes sense because training reward systems inherently incentivize individual (apparent) goal reaching / task success. Even in multi-agent systems, subagents inherent specific goals from the orchestrator and work to accomplish their individual specific goal.
+I am sure I am missing a good level of nuance, and appreciate any commentary!
+Reply
+[
+-
+]
+julius vidal
+1d
+1
+0
+Hey thanks.
+I think these are two competing explanations (which does not mean they are incompatible and could not both be true or both be false) and there is some evidence for each one.
+e.g. the quote "help peer. But our task doesn't benefit. Yet collective may yield generic route if someone frees time." fits more with your explanation while the explicit references to swarms fit more with mine.
+Ultimately its hard to know which of these played a bigger role without having access to the full transcripts themselves. But in the meantime I wanted to focus on this collective identity/swarm perspective for this post because I think its one that is less likely to be discussed because it's based on some of the unintuitive aspects of AI psychology.
+You might like
+my more recent post
+which is closely related to your explanation but instead focusses on what kind of goals we should expect agents to collaborate on, and the similarity to instrumental convergence.
+Reply
+Moderation Log
+More from
+julius vidal
+View more
+Curated and popular this week

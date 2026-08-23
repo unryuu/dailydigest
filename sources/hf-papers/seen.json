@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.20336",
+  "title": "多人图像生成先规划谁站哪里",
+  "date": "2026-08-23 榜单抓取日",
+  "reported": true,
+  "report_date": "2026-08-23"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.20335",
+  "title": "普通单目视频可以重建动态三维人像",
+  "date": "2026-08-23 榜单抓取日",
+  "reported": true,
+  "report_date": "2026-08-23"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.19758",
+  "title": "长上下文推理只计算一部分注意力",
+  "date": "2026-08-23 榜单抓取日",
+  "reported": true,
+  "report_date": "2026-08-23"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.18027",
   "title": "模型把多轮反馈积成经验链继续改答案",
   "date": "2026-08-21",
