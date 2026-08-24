@@ -1,0 +1,16 @@
+ffconcat version 1.0
+file '视频卡.横屏.png'
+duration 11.080
+file '视频卡/card-01.png'
+duration 10.040
+file '视频卡/card-02.png'
+duration 27.230
+file '视频卡/card-03.png'
+duration 17.680
+file '视频卡/card-04.png'
+duration 22.830
+file '视频卡/card-05.png'
+duration 29.130
+file '视频卡/card-06.png'
+duration 42.900
+file '视频卡/card-06.png'
