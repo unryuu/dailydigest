@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "mollick-old-models",
+    "url": "https://x.com/emollick/status/2091562657623265727",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2091562657623265727",
+    "bytes": 167390,
+    "title": "Ethan Mollick on X: \"It is not inherently bad to publish research on the impact of AI that only refers to older models, but it requires a very careful discussion and has to be very clear to non-technical readers.\n\nIf you show AI can do something, its fine. Generally, once AI has gained an ability, … / X",
+    "chars": 1973
+  },
+  {
+    "slug": "s6-paper",
+    "url": "https://alpo.ge/s6.pdf",
+    "status": 200,
+    "final_url": "https://alpo.ge/s6.pdf",
+    "bytes": 1113315,
+    "title": "",
+    "chars": 868036
+  },
+  {
+    "slug": "s6-thread",
+    "url": "https://x.com/teortaxesTex/status/2091646446650917148",
+    "status": 200,
+    "final_url": "https://x.com/teortaxesTex/status/2091646446650917148",
+    "bytes": 135083,
+    "title": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) on X: \"he is so joyful\" / X",
+    "chars": 302
+  },
+  {
+    "slug": "s6-pointer",
+    "url": "https://x.com/AndrewCurran_/status/2091641642751312220",
+    "status": 200,
+    "final_url": "https://x.com/AndrewCurran_/status/2091641642751312220",
+    "bytes": 168519,
+    "title": "Andrew Curran on X: \"He's done it again. \nPDF: https://t.co/tuFNtVIgCR\" / X",
+    "chars": 305
+  },
+  {
+    "slug": "nvidia-cashflow",
+    "url": "https://www.theinformation.com/newsletters/the-briefing/nvidia-salesforce-spotlight-week",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/the-briefing/nvidia-salesforce-spotlight-week",
+    "bytes": 233639,
+    "title": "Nvidia, Salesforce Are in Spotlight This Week — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "claude-watermarking",
+    "url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+    "status": 200,
+    "final_url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+    "bytes": 865248,
+    "title": "How Claude Watermarks AI-Generated Text",
+    "chars": 45567
+  },
+  {
+    "slug": "robot-trees",
+    "url": "https://x.com/tszzl/status/2091663177901834272",
+    "status": 200,
+    "final_url": "https://x.com/tszzl/status/2091663177901834272",
+    "bytes": 173246,
+    "title": "roon on X: \"this is an interesting area where the chinese technology tree has just diverged from american humanoids\n\nthe demos we see from china involve extreme displays of kinetic locomotor skill, while americans, ever the capitalists, short on labor, do displays of dexterous manipulation\" / X",
+    "chars": 521
+  },
+  {
+    "slug": "widget-interview",
+    "url": "https://x.com/tszzl/status/2091682607323103662",
+    "status": 200,
+    "final_url": "https://x.com/tszzl/status/2091682607323103662",
+    "bytes": 156488,
+    "title": "roon on X: \"culture interview: “yeah I love making widgets bro. you’ll never meet a guy who loves widgets more than i do. also yeah man I’d let the company go to zero if the widgets are too dangerous. we need to solve widget alignment for sure”\" / X",
+    "chars": 280
+  }
+]

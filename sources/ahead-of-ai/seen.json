@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+  "title": "Claude 用秘密密钥在候选词间埋水印",
+  "date": "2026-08-24",
+  "reported": true,
+  "report_date": "2026-08-24"
+ },
+ {
   "id": "https://magazine.sebastianraschka.com/p/ai-detector-from-scratch",
   "title": "文本检测器也能训练模型躲避识别",
   "date": "Sat, 15 Aug 2026 11:54:24 GMT",

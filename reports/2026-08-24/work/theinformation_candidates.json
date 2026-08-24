@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-24",
+  "scanned_at": "2026-08-24T09:56:05+08:00",
+  "window": "接续 2026-08-23T23:52:00+08:00 手工扫描截止，只看首页 Latest 中此后发布的内容，忽略 Recommended、Most Popular 和旧档案",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫描 Latest 并精读相关候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "The Briefing",
+      "title": "Nvidia, Salesforce Are in Spotlight This Week",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/nvidia-salesforce-spotlight-week",
+      "published_at": "2026-08-23T15:01:00-07:00",
+      "published_at_beijing": "2026-08-24T06:01:00+08:00",
+      "bucket_hint": "angle_or_industry_none",
+      "decision": "低优先级加入定牌候选；与 08-23 英伟达涨价主线有明显重叠",
+      "facts": [
+        "标普全球市场财智汇总的分析师预期显示，英伟达本财年收入可能增长 83％，七月季度收入同比增长可能达到 97％，高于上一季度的 85％。",
+        "英伟达第一财季自由现金流同比增长 85.7％至 486 亿美元；分析师预计第二财季大致持平，第三和第四财季分别升至约 550 亿和 610 亿美元，全年约 2130 亿美元。",
+        "作为对比，分析师预计苹果 2026 财年自由现金流约 1440 亿美元。文章据此判断，大型科技公司和数据中心开发商的资本开支正在大量转化为英伟达现金流。",
+        "文章同时把 Salesforce 作为另一面：公司预计全年收入增长约 11％，AI 产品增长较快，但便宜的 AI 替代品也在削弱传统企业软件的部分需求。"
+      ],
+      "caveats": [
+        "收入和自由现金流数字主要是分析师预期，不是英伟达已经公布的第二财季结果。",
+        "文章对英伟达涨价、Poolside、Mercor 和数据中心投资的讨论大量承接近期已报材料，不能当作新的交易事实。",
+        "这是结构性评论简报，不是 The Information 新获得的独家消息；如果收录，应把重点放在现金流对比，不重复昨天的 17％涨价。"
+      ],
+      "why": "它给出了一个直观画面：大厂和数据中心开发商在烧资本开支时，英伟达正在把这轮投入变成比苹果更大的现金机器。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Why Unitree’s 460% IPO Stock Pop Wasn’t Unusual in China",
+      "url": "https://www.theinformation.com/articles/unitrees-460-ipo-stock-pop-unusual-china",
+      "reason": "上期手工候选已经明确排除，与 2026-08-19 已扫过的 Unitree 上市是同一事件。"
+    },
+    {
+      "title": "China's Geely Has a Jump in Solid-State Batteries. Should the U.S. Care?",
+      "url": "https://www.theinformation.com/newsletters/the-electric/chinas-geely-jump-solid-state-batteries-u-s-care",
+      "reason": "窗口内新发，但主题是固态电池，不属于本期 AI 日报。"
+    }
+  ]
+}

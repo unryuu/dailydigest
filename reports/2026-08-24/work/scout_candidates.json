@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24T09:52:50.190978+08:00",
+  "count": 7,
+  "items": [
+    {
+      "source": "acx",
+      "title": "Your Book Review: A Residence Of 21 Years In The Sandwich Islands",
+      "url": "https://www.astralcodexten.com/p/your-book-review-a-residence-of-21",
+      "date": "Fri, 21 Aug 2026 17:16:16 GMT",
+      "summary": "Finalist #6 in the Book Review Contest",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "long"
+    },
+    {
+      "source": "acx",
+      "title": "Open Thread 447",
+      "url": "https://www.astralcodexten.com/p/open-thread-447",
+      "date": "Mon, 17 Aug 2026 19:52:17 GMT",
+      "summary": "...",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "long"
+    },
+    {
+      "source": "acx",
+      "title": "College EA Meetups Everywhere: Call For Organizers",
+      "url": "https://www.astralcodexten.com/p/college-ea-meetups-everywhere-call",
+      "date": "Thu, 20 Aug 2026 19:55:39 GMT",
+      "summary": "...",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "long"
+    },
+    {
+      "source": "acx",
+      "title": "Why I'm Staying Out Of The Substack Religion Debate",
+      "url": "https://www.astralcodexten.com/p/why-im-staying-out-of-the-substack",
+      "date": "Wed, 19 Aug 2026 05:24:22 GMT",
+      "summary": "...",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "long"
+    },
+    {
+      "source": "ahead-of-ai",
+      "title": "How Claude Watermarks AI-Generated Text",
+      "url": "https://magazine.sebastianraschka.com/p/claude-watermarking",
+      "date": "Sat, 22 Aug 2026 11:11:39 GMT",
+      "summary": "A 48-minute video walkthrough of token sampling, watermark detection, and removal",
+      "fetch_route": "chromium",
+      "date_known": true,
+      "weight": "高",
+      "length_hint": "long"
+    },
+    {
+      "source": "huggingface",
+      "title": "We changed one line and the benchmark score moved 0.21 AUROC FINAL-Bench • 1 day ago • 9",
+      "url": "https://huggingface.co/blog/FINAL-Bench/leadboard-drug",
+      "date": "",
+      "summary": "We changed one line and the benchmark score moved 0.21 AUROC FINAL-Bench • 1 day ago • 9 We changed one line and the benchmark score moved 0.21 AUROC FINAL-Bench • 1 day ago • 9",
+      "fetch_route": "chromium",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "medium"
+    },
+    {
+      "source": "the-batch",
+      "title": "Aug 21, 2026 Anthropic’s Watermarks, Grok 4.6 Surges, Qwen’s Open Weights, Better Corrections for Speech Recognition The Batch News & Insights: I previously wrote about our AI Engineering Skills Map, with the highest level skills being (i) Building and deploying... Read more",
+      "url": "https://www.deeplearning.ai/the-batch/issue-367",
+      "date": "",
+      "summary": "Aug 21, 2026 Anthropic’s Watermarks, Grok 4.6 Surges, Qwen’s Open Weights, Better Corrections for Speech Recognition The Batch News & Insights: I previously wrote about our AI Engineering Skills Map, with the highest level skills being (i) Building and deploying... Read more",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "低",
+      "length_hint": "medium"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "date": "2026-08-24",
+  "fetch_failures": [
+    {
+      "slug": "anthropic",
+      "url": "https://www.anthropic.com/news",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "anthropic-research",
+      "url": "https://www.anthropic.com/research",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "axios",
+      "url": "https://api.axios.com/feed/",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "chip-huyen",
+      "url": "https://huyenchip.com/feed.xml",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "claude-blog",
+      "url": "https://claude.com/blog",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "hacker-news",
+      "url": "https://hn.algolia.com/api/v1/search?tags=front_page",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "hf-papers",
+      "url": "https://huggingface.co/papers",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "interconnects",
+      "url": "https://www.interconnects.ai/feed",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "lesswrong",
+      "url": "https://feeds.type3.audio/lesswrong--30-karma.rss",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "lilian-weng",
+      "url": "https://lilianweng.github.io/index.xml",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "mistral",
+      "url": "https://mistral.ai/news/rss",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "neodrop",
+      "url": "https://neodrop.ai/zh-cn/channel/T48pwHhPZyU",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "simon-willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "thinking-machines",
+      "url": "https://thinkingmachines.ai/blog/",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET"
+    },
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "数学家称 Claude 参与产出一个与六维球面问题有关的新几何对象",
+      "cost": "重",
+      "reason": "目前只是一条高潜力线索，必须回溯数学家原帖、论文或证明材料，核清 Claude 的实际参与方式和新对象对六维球面问题的意义。",
+      "items": [
+        {
+          "source": "x-teortaxes",
+          "title": "一位数学家称 Claude 帮他做出与六维球面有关的新几何对象",
+          "url": "https://x.com/teortaxesTex/status/2091646446650917148",
+          "date": "2026-08-24T05:59:08+08:00",
+          "why": "Teortaxes 转发数学家 Levent Alpoge 的帖子，当前未见论文、证明、代码或 Claude 的完整参与过程；reader 必须回溯原始材料，不能写成 Claude 已解决长期数学难题，找不到可读原始材料就删除。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "x-emollick",
+      "title": "用旧模型研究 AI，正面能力结论比负面缺陷结论更耐久",
+      "url": "https://x.com/emollick/status/2091562657623265727",
+      "date": "2026-08-24T00:26:11+08:00",
+      "note": "Mollick 认为旧模型跨过能力门槛的证据通常比失败或偏见结论更耐久，负面结论至少应限定具体模型或比较多代趋势；这是研究设计观点，不是系统综述，安全微调和产品约束也可能让具体表现退化。"
+    },
+    {
+      "source": "the-information",
+      "title": "Nvidia, Salesforce Are in Spotlight This Week",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/nvidia-salesforce-spotlight-week",
+      "date": "2026-08-24T06:01:00+08:00",
+      "note": "低优先级结构判断：分析师预计英伟达本财年自由现金流约二千一百三十亿美元，高于苹果 2026 财年的约一千四百四十亿美元，显示大厂资本开支正在转成英伟达现金流；数字主要是分析师预期，不是已公布结果。明显承接 08-23 涨价主线，不得当新涨价事实，也不重复 17％涨价或每吉瓦成本估算。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-roon",
+      "title": "中美人形机器人演示正在长成两棵技术树",
+      "url": "https://x.com/tszzl/status/2091663177901834272",
+      "date": "2026-08-24T07:05:37+08:00",
+      "note": "Roon 观察中国演示更常秀奔跑等高强度运动，美国团队更偏精细操作；这是基于公开演示的个人观察，没有系统样本，引用的百米 9.39 秒也尚未核验。"
+    },
+    {
+      "source": "x-roon",
+      "title": "AI 公司文化访谈像把安全承诺套进标准话术",
+      "url": "https://x.com/tszzl/status/2091682607323103662",
+      "date": "2026-08-24T08:22:49+08:00",
+      "note": "Roon 用小部件公司恶搞行业访谈里已经模板化的‘热爱产品，但安全高于公司’话术；纯讽刺段子，不指向某家公司的具体承诺。"
+    }
+  ],
+  "odds_box": [],
+  "skipped_sources": [
+    {
+      "slug": "x-nitter",
+      "reason": "七个 Nitter 源机械诊断均为连接失败或 HTTP 403；主 agent 已用登录态浏览器补扫七个账号并写入 x_candidates.json，本次离线分桶使用该文件，不把 Nitter 失败误写成 X 补扫失败。"
+    },
+    {
+      "slug": "recent-duplicates",
+      "reason": "Ahead of AI 的 Claude 文本水印、Hugging Face 的一行实现移动零点二一 AUROC、The Batch 第 367 期和 ACX 桑威奇群岛书评均已进入 08-23 候选或承接同日主线；同一事件换汇总链接不重复收。"
+    },
+    {
+      "slug": "recent-mainlines",
+      "reason": "The Information 的英伟达现金流简报只保留为低优先级结构判断，不把其中承接 08-23 涨价、Poolside、Mercor 和数据中心投资的内容当新交易事实；阿里配售、AI 治病、CHIVE、AT＆T 路由、Private Safety Processing 和辩论训练也没有符合新增量门槛的候选。"
+    },
+    {
+      "slug": "stale-candidates",
+      "reason": "ACX 开放线程、EA 聚会招募和 Substack 宗教争论发布时间更早且不是本期新鲜 AI 信号，未进入分桶。"
+    },
+    {
+      "slug": "odds-duplicates",
+      "reason": "Manifold 本轮机械抓取没有返回候选；近期已报赔率盘也未出现概率变化超过十点的新证据，因此本期不重列赔率。"
+    }
+  ]
+}
