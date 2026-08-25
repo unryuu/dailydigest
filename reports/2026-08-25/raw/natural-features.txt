@@ -1,0 +1,417 @@
+URL: https://www.lesswrong.com/posts/SNAKJuN8FdoEaWeFC/in-search-of-natural-features
+FINAL: https://www.lesswrong.com/posts/SNAKJuN8FdoEaWeFC/in-search-of-natural-features
+TITLE: In search of natural features — LessWrong
+FETCHED: 2026-08-25 20:07:25
+============================================================
+x
+In search of natural features — LessWrong
+AI
+Frontpage
+48
+In search of natural
+features
+by
+Dmitry Vaintrob
+23rd Aug 2026
+21
+min read
+3
+48
+I'm sharing preliminary results of a suite of experiments I ran with claudecode on a small LLM (gpt2-small, no Layer Norm version, courtesy of Apollo research. most of these are on the layer-6 MLP). The github repo for the experiments is
+here
+. The success of these experiments given the method's simplicity surprised me, and I would appreciate criticism and bug-finders.
+This is the headline result. This is not an abstract cartoon, but an exact experimental graph. Yes, I will explain.
+The key idea inspiring this experiment comes from
+Stefan Heimersheim
+, especially his
+work with Francisco Ferreira
+. Stefan and Francisco posit that one way to distinguish what a model thinks of as a "natural" structure from what it thinks of as "incidental" is to check whether it puts effort into error-correcting it. Later in the post, I'll explain a more rigorous information-theoretic version of this idea related to work of
+Adler and Shavit
+(building on
+our work
+with Kaarel Hanni, Jake Mendel and Lawrence Chan) on Computation in Superposition.
+Main results of this work
+I will show how you can assign a
+channel amplification score
+(which I will also call the "amp function" or the "error correction score") to any unit direction
+in activation space, in a way that seems to strongly elicit a model's internal understanding of its own features.
+This score is a signals-processing inspired measurement which measures how much an MLP layer of the model behaves like a
+noise gate
+(also known as a
+threshold amplifier
+) for signal in direction
+Informally, it measures how much the model amplifies signal (a.k.a. large/ "active" activation components) in a particular direction
+relative to how much it attenuates noise (a.k.a. small/ inactive components). This function is defined more formally in "the math" section below.
+The amp functions has the following nice properties:
+Random activations return roughly zero
+[1]
+,
+Activations from test inputs are consistently better,
+Random SAE tokens are consistently better than test inputs, with coarser/hierarchically primary features returning larger channel amplification scores
+[2]
+.
+But the really cool property of the amp function is that gradient-ascent on
+produces a flow on (unit) activation space that, informally,
+flows residual stream vectors into more computation-aligned directions
+.
+[3]
+If you flow it to the end, it finds surprising, somewhat mysterious attractor clusters associated with directions the model wants to denoise more than anything else. I will call these directions the
+UR-FEATURES
+and we will meet them soon [spooky noises]
+.
+This still from the Rocky Horror Picture show feels appropriate
+The
+ur features
+(amplification score maxima)
+In a later section I will explain, that an actively error-corrected direction can be treated as inherently important in a way that is natural to the model's
+computation
+rather than its features.
+[4]
+This puts error correction phenomena in contrast with highly data-sensitive methods like SAE, which may in principle be seeing features in data, not in the model's computation.
+[5]
+While SAEs have many nice properties, they are not
+necessarily
+natural (i.e. findable from the model's algorithm rather than its data). In fact I think that one of the first really strong pieces of evidence for the naturality of SAE features is Stefan and Francisco's
+feature-specific error correction paper
+which shows that error correction phenomena in model weights are sensitive to feature directions.
+The Amp score explains the results of their work from a different angle, showing that features are also
+linearly denoised
+to some extent as measured by this score. A reasonable hypothesis is to ask whether these are actually the model's "favorite" directions: i.e. are feature directions approximate maximizers, or at least local maximizers, of the channel amplification score? Or can we find even more denoised/ amplified, thus (informally) even more fundamental features?
+It turns out that we can. Indeed, like any other objective, we can look for local maxima of the amplification function
+by flowing along the flow it defines on the sphere in activation space (note that it only makes sense for unit directions). In fact this is a very cheap, very quickly converging gradient descent problem (and activation space is of course much lower-dimensional than weight space). If we do this (starting from a bunch of text activations), we find a surprising fact:
+there are a small number of distinct maxima or maxima clusters, and the flows keep repeatedly finding the same ones
+. The exact set of maxima that get found is dependent on the training protocol, details of spherical whitening, and to some extent, the data distribution. But different conventions tend to consistently find (approximately) the same residual stream maxima over and over, and these maxima tend to have interesting geometric structure in the sphere.
+In particular in this example it looks like there is essentially no (significant) geometric degeneracy, there is no overtraining structure, and no exponential combinatorial explosion of local minima that one typically finds in high-dimensional gradient flow settings. This might be related to working with a small model and using a discretely thresholded version of the score – but I think it is also related to the deeper phenomenon I have been dancing around (and will explain only in a hand-wavy way - see the "naturality" section) that under some reasonable assumptions, there can at most be roughly as many strongly denoising directions as weights of the MLP. In practice we end up with much much fewer special directions than weights, so this bound is a heuristic "the number of maxima is probably less than an exponential" type of result.
+This finally brings us to the fun question: what are these maxima? When I called these directions "ur-features" I was mostly joking. SAE features are not (even approximately) local amplification score maxima. But in some sense these objects sit at the apex of a spectrum of "model-natural" structures starting from random activations, flowing through activations and then through these maximal "ur-features". Thus it is reasonable to expect these directions to be somewhat feature-like. In the next couple of sections I will tell their story because it's completely tellable, it's fun, and it's useful for probing their "naturality" property. Also if you squint hard enough, you can say that they answer the previously-mysterious question: why is there
+no noun SAE feature
+[6]
+?
+The Four Elements: ur-feature taxonomy
+As I said, the exact structure of the attractor set depends a lot on the setup of the amplification score maxima: more complicated setups for defining the Amp function or friction/undertraining on the gradient ascent, tend to see more local maxima. Simpler setups have fewer local maxima. The setup I mostly use (whitened metric, simple gradient ascent trained to completion) is one of the simplest ones to write down, and it has exactly 4 local maxima, 3 of them ±coplanar (with the origin).
+I think it's important to note that
+this is surprising
+. We are doing an optimization search over a complicated non-convex objective on a 700+ dimensional space, and it is returning ...
+exactly four points
+.
+[7]
+Here is a complete (self?)-portrait of these four principal elements.
+These points are generated by repeatedly flowing from a random activation to a local maximum of the Amp function. Claude and I checked over a hundred thousand tokens and they all converge to exactly these four points. The cute names ("Names of God"/"Names of Man") will be explained later; you can skip to the appendix to see the spoiler.
+Two of them, at least when analyzed as activations, are pretty straightforward. On the level of max-activating tokens and completions, the simplest are the
+the
+ur-feature and the
+whitespace
+ur-feature. Here are some activation-steered prompt continuations on this ur-feature, with top-activating tokens in bold:
+This seems like
+the
+pretty definitive "
+the"
+article
+Here is activation-steered text from the whitespace ur-feature:
+The "train arrived" block has a bold-text bug: the bold, maximally-activating symbols should be the
+␣
+, space symbols.
+The word continuation/"Names of Man" vector
+This is the third ur-feature. In more complicated Amp setups a nearby vector max-activated specifically on first tokens of (mostly male) surnames (see Appendix), so in experiments I nicknamed it the "Names of Man" feature. In the main clean setup with 4 ur-features, it activates on middle tokens and apostrophes. Here are some activation-steered sentences. It does tend to like to invent weird names; it also loves to curse like a sailor.
+I find this vector very interesting. When you sample more outputs (as you can test for yourself in the repo), you find it cursing, using informal slang, saying edgy things and talking a lot about Florida
+[8]
+. Here are some longer continuations on this feature (slightly cherry-picked, from 24 examples):
+Prompt:
+He picked up the phone and dialed the number.
+Completions:
+And his father answered with a “no.” “That’s good. Go home.” “” “’’ “’’ “’ “’ “’ The dog tried to kick the dog’s throat
+Then she went to the police station and was able to’vea called the police.” At the same time, she was an “innocent baby.” Anchorary Tua, 31, of San Francisco, is a public servant who was arrested in 2005 when a man ran into her apartment and murdered her. As part of the
+Prompt:
+She opened the door and looked outside.
+Completion
+:
+"I think it's gone to hell," said Johnson. "It's been a bad week for the guys." Kirk Evers’s post-game interview • ESPN: Packers, Panthers, and Steelers recap • Steelers: Steelers will take on Cardinals, Steelers to sweep • Steelers: Steelers will win • PFF:
+It's cool that this object – one of four extremely stable and fundamental-ish axes in the net's internal state – contains a strong component of swearing, using slang, and just being plain mean or negative (about half of the 24 random completions had this valence). I couldn't find a version of the
+Emergent Misalignment
+vector (Betley et al.) since I think gpt2 is too small, but preregistering a belief that there is some overlap between the vector they find and some approximate analog of the word continuation ur-feature. Note by the way that this model is
+not at all finetuned
+, so this is not an instance of a feature reacting to fine-tuning with a sign-flip: this seems to be a fundamental valence absorbed and learned by the model from text on the pile. It even picks up on the "kicking a dog" meme - all simply trained on human output.
+The abstract noun/"Names of God" vector
+The fourth and final ur-feature
+This feature pretty unambiguously fires on, and generates, abstract nouns. In an early and more complicated experiment a neighboring feature max-activated on phrases about God and different religions (see appendix), so I nicknamed it "Names of God".
+This feature has a somewhat positive valence compared to Man's chummy negativity, but honestly it mostly sounds like an overdramatic eight-year-old inventing stories and insisting on having a happy ending:
+(The below are mildly cherrypicked from 24 examples)
+Prompt:
+After lunch, they walked back through the park.
+Completions:
+“What do you want to do with all the money in L.A.?” asked Mike, a senior of the L.A. Regional Police Dept. The staff chief said the group was there because of the protests — but there were no signs of violence. The group had left in vehicles — with the exception of a parking spot — after, he said
+- "It's good to see so many people, and it's really nice to see that they're getting together," said the father of a young child, Shafar. The boys were playing on a playground which in turn was used for shooting. "The boys are good, and they're in the right place," said Shafar. "I feel the joy
+Prompt:
+He picked up the phone and dialed the number.
+Completions:
+- “I should have seen something,” he said. “I’m not interested in getting into that, but I would like to see …. go to the hospital.” “I’m not interested in playing with (expertise),” said David R. Rupp, the owner of the Cleveland restaurant. Advertisement Continue
+- "For us, it was just like: How come in?" he said. "It didn't feel good to be out, and it felt good to be in the room." T.W. Rourke is a reporter for Fox Business. Contact him at
+leverton@wbu.net
+or 609-749-4666. Follow @WBT
+And this gem:
+Prompt:
+The weather forecast predicted rain for the weekend
+- “This is the worst-ever storm to strike in Paris,” tweeted Jean-Jacques Rousseau. “The Weather Centre has forecast rain of at least 10 cm and the highest possible level.” The weather agency has forecast an “incoming” storm of perhaps 10 cm and, for the first time, it’s forecasting an all
+This is it: this is the taxonomy. There are no more ur-features, at least for the MLP layer and model I looked at.
+[9]
+This doesn't mean that there isn't interesting, similarly-shaped structure, but I am going to save that for next time.
+Geometry of the ur-features
+It's very interesting to me that in the purely "nice vs. mean" sense, it is in fact the case that the "God" feature (abstract nouns) and the "Man" feature (informal continuation text) are opposites. But in fact they are
+positively aligned
+, with a cos-similarity of 0.28 (about a 74° angle). The "Abstract Noun"/"God" feature does have an almost-exact antipode, but this is the harmless "
+the
+" (definite article) feature. The remaining whitespace feature mostly hangs out in its own corner and doesn't have high positive or negative cos-similarity with other features (+0.26 with Text continuation/ "Man"; +0.06 – i.e. nearly orthogonal, with "The", and -0.28 with Abstract nouns/"God".
+The noun feature!
+Finally we can resolve the long-standing question of what is the noun feature. We can do this by generating a noun
+probe
+and then just gradient-flowing it to its favorite maximum (in my rough experiments, applying a
+short
+flow to probes and activations often – though not always – moves them strongly in the direction of their top-activating feature, so this is actually perhaps not the least principled thing to try.
+In this setting it confidently (and perhaps unsurprisingly) chooses to flow towards the "Abstract Nouns" vector (though see the Appendix for a different behavior in a different setting). So settled: we have found a noun feature. Is it
+really
+a noun feature though? Moving on.
+Attenuation flow
+The computationally interesting part of channels found by the Amp function is that each strongly amplified/denoised channel applies a nonlinearity (which imposes a parameter-freedom cost on the model). If we reverse the sign, these directions are equally special: they represent nonlinearly "equalizing" a signal channel that has grown too large (thus avoiding uncontrolled growth) instead of amplifying it.
+In fact it turns out that most simple features findable by analogs of our Amplification atlas are also attenuation features at a different thresholding choice. In other words for what are (in our rough model) a model's most important directions, the model both wants to amplify signal / denoise the direction, but also prevent it from growing too large.
+If we use the same fixed threshold that was used for the 4 ur features above but reverse the sign, we can flow along the
+attenuation
+flow and find
+its
+local maxima. These are not necessarily some kinds of anti-features, but rather special directions that (for whatever reason) the model wants to attenuate/ damp:
+The two new "negative" features found were labeled "mid-word fragments" and "function words" by Claude, but I haven't had time to explore them – I'd be delighted if someone wanted to play around here.
+Data-(in)dependence
+We will see how the Amp function is mathematically constructed in the following section, but it's important to note here that the function depends on data samples. Not too many, but skewing the data distribution too much can skew – or change – the set of ur-features. I said earlier that the Amp-mediated denoising measurement can be thought of as largely a function of the
+weights
+and not the data, and indeed we need very few data points to define the flow and find the features. But the data dependence is a real issue with this construction, and it is interesting to probe whether (and to what extent) it can be removed: after all heuristically, the question of how much a model wants to denoise/ amplify signal in a direction, and of which directions get the most signal amplification, should be readable just from the weights.
+As a toy example of what one could do if given only the weights, note that weights let us immediately find the bigram distribution (for instance by running the model on single tokens). As a test of data-independence I ran the Amp-maximizer model to find the ur-features for the same weights (gpt2-small) but the bigram language distribution. What came out is interesting:
+Running the same model on the "bigram statistics only" data distribution (with gpt2-small weights)
+The model finds almost exactly the same features, except that the "Abstract nouns/Names of God" feature gets lost and replaced by a different mid-word fragments feature, all other (amplifying and attenuating) features get preserved, and the model gets two new features ("listing spaces" and an extra spaces feature).
+The upshot is promising: even with all logical context gone (and only bigram statistics remaining), the weights of the trained gpt model provide enough information to recover almost the same set of minima (with a nontrivially adjusted "Abstract nouns" feature – the feature you might expect to disappear soonest when losing all abstract reasoning context). I suspect that if instead of bigrams the Amp function is run on the dataset of short strings generated by the model's weights, all the old ur-features would come back in full force (but I have not done this experiment).
+Math
+Before going on, I'll explain the math here, and a bit of signal processing theory. You can see more rigorous math in the repo readme file. This section is designed to be readable by a wide audience but if you want, you can skip forward to the next section and learn about the Names of God attractor basin and other cool stuff.
+Signal processing, error correction and amplification
+Signal processing views data as split into a collection of
+channels
+(think: coordinates)
+.
+Ideally (when the data contains "only signal"), channels are either fully on or fully off – but noisy systems have leaky channels.
+Think of these as a leaky pipe system or a noisy vinyl recording with many small interfering frequencies causing static. The core goal of an error correction gate is to fix the vector such that each pipe/ frequency is either fully on or fully off: no leakage, no static. In contexts with superposition (which also often occur in signals processing), the channels are not independent vector coordinates but linearly dependent projections with some interference – however when noise is significant, denoising a sparse system becomes essentially the same in both contexts.
+If you are a sound engineer designing an error-correction gate, you roughly have three tasks:
+Increase the signal-to-noise ratio in every channel,
+Take small "pure noise" channels to zero
+Equalize large "pure signal" channels to some appropriate range.
+We will look at item 3 later. However in many contexts (in particular in much of information theory/ message-passing) item 3 is redundant: all you ultimately care about is the ability to distinguish "there is signal" in a given channel from "there is no signal". Thus the preliminary goal of a denoising channel is to create an
+amplification gap
+: if there is signal in channel c above some threshold, increase it. If signal is below this threshold, dump it.
+The Amp function: math
+The
+channel amplification score
+precisely quantifies this gap. For a channel
+the Amp score measures, heuristically, how much signal in
+amplifies (multiplicatively) on data samples conditional on
+being "on" (i.e. above a threshold
+), and subtract much it amplifies on data samples conditional on
+being off. This measurement is inherently nonlinear: for a linear channel, both amplification numbers are equal and the different (and hence the amplification score) is zero. What I measure in practice is a marginal measurement (i.e. a derivative version of the above), which takes into account the residual nature of transformer MLP layers. It is expressed by the following simple formula:
+Here
+runs over activations at some layer
+before the MLP
+and
+is the Jacobian of the MLP forward map taking a residual stream vector to the next layer's residual. The actual version we run interprets transposes via a whitened metric (a technical, and not-that-important, modification).
+The idea behind the math is the same signal propagation picture, with the difference that
+is now not a specific pipe or basis direction, but a general unit vector. The signal "contained in
+" for a given input
+is the value
+for
+the layer-
+activation associated to
+. The post-activation signal is complicated, but we know that its derivative in the
+-layer is
+. In particular if the channel transforms signal in the
+direction in a linear way, this derivative is constant and its expectation on any interval is the same – thus
+is constant for any
+. Positivity of
+means that the MLP forward function grows faster in the
+channel, on average, if the value of the activation (
+) in the channel direction is large. Of course one can define a more mathematically consistent channel-amplification measurement than this discrete threshold difference, but this definition is learnable and convenient, and it directionally captures the nonlinearity information we want to obtain
+[10]
+.
+Denoising and naturality
+In the "data (in)dependence" section above, I discussed how there is a sense in which the ur-features are
+mostly
+– though perhaps not entirely – an invariant of the weights. This opens up questions of naturality, and here there is a nice thing to say. Namely, it is possible to show that, under a certain small independence assumption on the directions denoised, doing this provably
+costs computation.
+Specifically: it is possible to show that denoising a fixed random channel costs at least one bit of weight information. This bound follows for example by a symmetry argument.
+[11]
+Interestingly, under a sufficiently strong sparsity assumption the bound is tight (up to logarithmic terms, which in this context are considered negligible). This was shown in the paper
+Adler and Shavit
+, building on a slightly weaker bound in the paper
+Computation in Superposition
+.
+Thus unlike any linear phenomenon involving sparse features (which can often be compressed exponentially strongly by the
+Johnson-Lindenstrauss lemma
+), finding a denoising or amplification direction is
+evidence of work
+by a model. In particular such a direction is evidence that the model
+is willing to pay resources
+to avoid losing signal in a particular direction: evidence that
+this direction matters
+.
+Heimersheim and Mendel
+, as well as Stefan Heimersheim's other collaborators, give various observations and explanations for related local-in-activations denoising phenomena, and point out that such directions must be
+inherently
+special to the model that generates them.
+While this might sound technical or minor, I think that this evidence of work view may be a pretty important consideration for why we found so few ur-features, and for what to prioritize in looking for extensions of this small atlas.
+Cross-layer and cross-model coherence
+The finding that there are between 3 and 6 reachable maxima is very robust between architectures and layers. The natures of the specific maxima tend to be robust between layers
+and within the gpt model class
+. For example here is the full diagram of maxima for 3 different layers of the full GPT-2 (as usual we use Apollo's "no-LayerNorm" version where LayerNorm has been trained out).
+Llama, which has a different tokenizer and a totally different activation function (swiglu) still has a small number of minima and comparable types of structure.
+A lot of the structure observed is explained by the fact that the ur-feature atlases are very low-dimensional (for example the 6-feature atlas with 4 positive and 2 negative features has 0.976 of its norm explained by a 3-dimensional subspace) – and some, though not all of this effect is explained by the PCA (here: the top 3 PCA components explain 0.838 of the norm). Nevertheless for all linear covariance measurements whether within a model or between model classes, the atomic structure sees more linear agreement than PCA structure. I think that a statement of the form "this is actually just PCA with bells and whistles" is the most likely way in which the results would turn out to be uninteresting.
+Ok but. What the heck is actually going on with these features?
+I've argued that max-denoising directions are natural, and maybe we even have complexity-theoretic reasons to expect there are few of them. But how are we supposed to interpret the ur-feature results? Why are there exactly four primitive features and what are they doing? Is the four-element theory right? What on Earth is going on?
+Well,
+I don't know
+, and my views may change. One thing I mentioned in the last section is that some of the effects that seem surprising in isolation become less surprising once we consider PCA structure – though for instance I don't see a clear PCA-flavored explanation for why our atlas of 6 ur-feature atoms happens to sit almost exactly on a 3-dimensional subspace.
+My current guess (also based on some supplementary experiments) is that the directions that optimize amplification scores tend to not behave – even approximately – like features in the conventional sense, with the possible exception of the "Names of God" feature which pretty consistently seems to be associated with nouns (particularly abstract "type" or "kind" nouns). While the other directions do elicit certain behavioral patterns and fire on certain kinds of text, the ur-feature behaviors are likely secondary to a computational function at the layer from which these were collected (layer 6 of gpt2-small). When you use tricks to make the "ur-feature dictionary" larger, it looks like the next fundamental interpretable features fire on particular parts of speech (prepositions, pronouns, numerals and linking words), and connectome-based analysis shows some pretty low-level functional interactions (like a really fundamental inhibitor feature that tries to turn off the whole layer if nothing is going on). I also expect that as we extend these techniques and inflate our atlases with more and more atoms, they begin to twin more with sparse (SAE-like) structure than with PCA-like structure.
+I suspect that the best
+human
+interpretation of these features is probably not atomic: they are mathematical processes that may have mixed, statistical signatures that can be resolved in various ways. Nevertheless I think I'll venture a guess that the directions found will resolve to have a certain crisp Platonicity to them, at least as we expand our atlases to include more features. I suspect they are, to some extent, fundamental gears within the language model – perhaps close to the most fundamental we can get – just with the property that the gears are continuous and statistical and shaped like formulas rather than logic gates – in a similar way to how modular addition Fourier circuits are shaped like formulas.
+Translating these atomic structures to interpretability progress likely looks a little bit like decomposing into sub-structures with semantic meaning (like linguistic constructions and the like), but it probably also looks a little like plugging in numbers into better and better formulas, similarly to how the physical analysis of complex systems, while parsimonious and understandable, ultimately resolves down to a "shut up and calculate" step. And my hope is that in calculating we will not be alone, but will receive some help from entities grown from these mysterious, Platonic little beasties. Certainly without them this project, done for fun over a week, would have taken me over a year.
+One of the expanded atlas constructions, that has particularly interpretable atoms (12/40 shown)
+Appendices: Interesting experimental addenda that didn't fit in the body
+Early run with different Amp function, and origin of "Names of X" names
+Why call it Names of Man?
+When I (ahem, Claude) wrote the first code for this project, it was written in a more complicated setting where features were expected to slightly rotate from layer to layer in response to data. This shifted the ur-features and caused there to be many more of them (around 100). One of them was very close (in cos-similarity) to the "continue-a-word token" feature (the "evil" one above). But in this shifted version it looked a bit different: here is the list of the top activating tokens.
+The obvious pattern is that these are first tokens of surnames, very consistently, mostly with male names. Thus this direction was designated the "Names" or "Names of Man" section.
+Here is the corresponding nearby feature obtained in this messier model, under the "train Amp ascent on original weights with bigram statistics data" incentive. The top-activating features seem to be made-up pseudo-names.
+Meet Mr. [[Ch]]of-old.
+The top-activating tokens of the "Names of Man" feature on the bigram language.
+Why call it Names of God?
+Here is the "abstract nouns" feature's top-activating tokens in the old, mathematically messier implementation.
+I found this canonical direction delightful. It bounces from bicycles and God to Buddhism to bananas and democracy. Here the best characterization of this direction is probably still
+abstract nouns
+, but it has a distinct philosophical/religious nature. After seeing this, the
+Names of Man-Names of God
+naming dichotomy was too perfect to resist.
+Trying to replicate Ferreira-Heimersheim perturbation experiments, and gpt2-XL run
+The idea that special features can be found by denoising comes out of
+this work
+of Francisco and Stefan that I have referenced a few times in this post. A part of their argumentation is that perturbing activations in the random directions tends to produce very uniform disk-like regions error correction, but perturbing them in feature directions tends to produce slightly less uniform error-correction.
+To find "highly non-quadratic" feature pairs analogous to their SAE feature interactions, I took a set of Amp maximizers and minimizers on an early layer of gpt2-XL. I then looked at perturbations in the direction of these pairs. If you look at the whitened (i.e. covariance-regularized) level curves below, you see that the ur-feature pairs denoise a region that looks very non-circular, and indeed even non-convex.
+Non-convex basin structure in activation space is, perhaps counterintuitively, further evidence that the model treats these directions as special and nonlinear (though this effect may be partially explained by PCA phenomena).
+Github repo
+Listed at the top of the file, repeating it here:
+denoising-tomography
+.
+^
+Random activations drawn from the activation covariance Gaussian also return zero. More precisely the "random" value gets subtracted, and it is consistently very close for random noise and for covariance-colored noise.
+^
+For the coarse-fine family, I used a standard dictionary pair with the "child" family having average score 0.104, and the coarse parent family having average score 0.140.
+^
+This flow has a similar flavor to Andrew Mack's
+MELBO
+analysis.
+^
+This should be understood somewhat loosely: in order to count as independent instances of error-correction, two directions must be sufficiently strongly denoised and sufficiently far apart. Hence the focus on clusters of minima below rather than individual minima.
+^
+See
+Heap et al.
+for a beautiful "null hypothesis" demonstration of this. I first learned of this idea from Lucius Bushnaq, who explained this decoupling by a thought experiment involving an "elephant cluster" in data, which is secretly a random combination of the natural features "gray", "animal" and "large", but gets found by an SAE as an SAE feature atom. Ever since I have referred to this idea as "Lucius' elephant argument".
+^
+My friendly neighborhood LLM told me to reference
+McCann
+, but also this is, you know, one of those canonical folklore results that people know and tell each other.
+^
+(That are learnable by gradient ascent from normal text tokens.)
+^
+This one is a joke (I think).
+^
+Looking at ur-features in other models and layers sporadically returns new families, but tends to inhabit a very similar set of contexts and atoms to a surprising extent.
+^
+Some technical notes: in experiments I use a kernel-whitened version (this models channels as being coupled via the data covariance metric). This is somewhat a technicality since most results work without whitening. Also, mathematicians (and theoretical ML practitioners) might be scandalized that I treat a vector in the residual stream as a persistent channel across layers instead of viewing it as getting slightly moved around from layer to layer as (e.g.) a weighted sum of activations. It turns out (at least in my attempts) that using these more sophisticated methods changes behavior barely if at all, so for the coarse purposes here we can conceptualize a "channel" direction to be stable from layer to layer.
+^
+One version of this argument: if it is possible to denoise a set of
+features, you can show that it is possible to denoise any subset and project the rest to approximately zero, giving at least
+distinct algorithms; the number of total one-hidden-layer models with width
+and bit precision
+is $
+^{b d^2}.$ See also the
+Adler-Shavit
+paper quoted below.
+In search of natural features
+19
+David Africa
+2
+Dmitry Vaintrob
+2
+Charlie Steiner
+3
+Comments
+3
+AI
+Frontpage
+48
+New Comment
+3 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 12:07 PM
+[
+-
+]
+David Africa
+21h
+19
+0
+I ran this on all blocks on all sizes of GPT-2 from small to XL, feeding this into Silico. This was done hastily, so forgive if some slight claudeslop leaks.
+I was able to replicate the result on block 6 on GPT-2 small.
+I was also able to find that the attractors seem to be sparse everywhere, with there being a median 1 per block in small and medium, and with random init of the same architectures (on small and xl) giving you zero (so, training is responsible for this).
+I found that as you scaled this up, the median number of attractors moderately increased (it was 1, 1, 3, and 3.5).
+Inspired by the above experiment, I ran another experiment. My thinking is that if the attractor works like an open gate, an added signal should stay high conditionally, e.g., be high when the feature is naturally active and be low when not. So for a given attractor, I:
+Retrieved text where the attractor is naturally active.
+Add some perturbation along the attractor direction.
+Run the modified state through later MLP blocks.
+Measure how much of the added error remains.
+Repeat, in contrastive spirit, on text where the attractor is not active.
+Compare with PCA, SAE, probe, and random directions.
+Contrary to expectation, I found that an added error is less active when the attractor is naturally active.
+To square this with the result in the blogpost, I think that experiment shows that one MLP has high local gain along the attractor directions, whereas this experiment shows that the later computation does not let an arbitrary addition along the direction persist in the expected way. I think both can be true:
+The current MLP strongly produces the feature.
+Later computation checks or reconstructs the feature.
+An incorrect extra amount is removed.
+After prodding Claude, it produced this analogy to a thermostat: the heating system strongly changes the temperature when heat is needed. But, if you add extra heat when the room is already at its target, the control system acts to remove the error.
+I also did some automated feature inspection. That is, for each attractor, I took highly activating text, and got Claude Sonnet 5 to write a short description for each dial. After this, I tested each description, where if you could Sonnet 5 could use this description to find new matching texts? This looks roughly like:
+Sonnet sees 20 example snippets and writes a description.
+Sonnet then receives 20 new snippets: 10 where the direction fired and 10 where it did not.
+Using only the written description, can it classify those new snippets.
+Then, trying this after shuffling labels to measure well a wrong description performs.
+About half of the descriptions passed the test (332 of 628).
+The meanings seem to be simple grammar functions. Examples: the end of a sentence, small words such as "and", parts of long words, punctuation, and spaces in computer code. I didn't yet find no deep or abstract meaning, even in the largest size of GPT-2.
+Currently running on various sizes of Pythia and Qwen3 0.6B and 8B, plus Qwen3.6-27B.
+Reply
+[
+-
+]
+Dmitry Vaintrob
+20h
+2
+0
+Awesome, thank you for doing this!
+Something I was sloppy about explaining: in the experiments I did I whiten the metric in the definition of the Amp score, so instead of v^T J(z) v I use the whitened metric - so whenever you transpose, insert the inverse data kernel, v^T Sigma^{-1} v for Sigma the data covariance Sigma_{ij} = E_z z_i z_j (over two neuron indices). (Of course IRL whenever you want to invert a matrix you invert Sigma + eps I. Claude chose eps = 0.1).
+Whitening feels more natural (it treats data as having the same size in all channels). If you don't whiten you get fewer maxima. The un-whitened result seems legitimate (and still surprising), but I think less surprising since then the objective will care more about large singular directions of data. Though I'm not sure and haven't thought this through really carefully (really whitening is leftover from an early attempt which was much more complicated and physics-pilled)
+So I was curious if you're whitening. Also of course there is the choice of a threshold, which you can play with (This is why you can have a channel that is both amplified for one threshold and attenuated for another)
+Reply
+[
+-
+]
+Charlie Steiner
+12h
+2
+0
+I'm suuuper skeptical of the "noun feature" section, for the obvious reasons. But it's interesting that this structure exists and is so smooth!
+Reply
+Moderation Log
+More from
+Dmitry Vaintrob
+View more
+Curated and popular this week

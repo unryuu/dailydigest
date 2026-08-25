@@ -1,0 +1,93 @@
+{
+  "date": "2026-08-25",
+  "scanned_at": "2026-08-25T19:42:00+08:00",
+  "window": "接续 2026-08-24T09:56:05+08:00 手工扫描截止，只看首页 Latest 中此后发布的内容，忽略 Recommended、Most Popular 和旧档案",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫描 Latest 并精读相关候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Meta Plans to Launch ‘Hatch’ AI Agent Platform in Coming Weeks",
+      "url": "https://www.theinformation.com/articles/meta-plans-launch-hatch-ai-agent-platform-coming-weeks",
+      "published_at": "2026-08-24T15:40:00-07:00",
+      "published_at_beijing": "2026-08-25T06:40:00+08:00",
+      "bucket_hint": "industry",
+      "decision": "高优先级加入定牌候选",
+      "facts": [
+        "据 The Information 查阅的 Meta 内部文件，Meta 计划最早在未来几周上线面向消费者的 Hatch AI Agent 平台，内部目标时间为八月底或九月初。",
+        "Hatch 早期原型可以访问 DoorDash、Etsy、Reddit、Yelp 和 Outlook 等网站，并在可定制仪表盘中展示 Agent 创建的工具或技能，例如健身追踪器和旅行行程。",
+        "Meta 曾考虑分层收费，最高档月费可能达到 199.99 美元并提供更高使用额度。",
+        "Meta 还准备在 WhatsApp 中开放第三方 AI Agent 接入，小范围推出时间可能早至本周；另一款代号 Watermelon 的新模型目标在十月发布。"
+      ],
+      "caveats": [
+        "发布时间、价格和产品功能来自内部文件与早期原型，Meta 拒绝评论，正式上线时可能变化。",
+        "目前无法确认 Watermelon 是否属于 Muse 模型家族，也不能把十月目标写成已经确定的发布日期。",
+        "Hatch 是 Meta 对 OpenClaw 式 Agent 产品的自有实现，不要写成 Meta 收购或直接复刻 OpenClaw。"
+      ],
+      "why": "Meta 不只是再发一个模型，而是要把能跨网站办事、自己生成小工具的 Agent 做成收费消费产品，并塞进 WhatsApp。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Inside Musk’s First Address to Cursor: Grok Is Falling Behind",
+      "url": "https://www.theinformation.com/articles/cursor-officially-enters-musk-era",
+      "published_at": "2026-08-24T12:04:00-07:00",
+      "published_at_beijing": "2026-08-25T03:04:00+08:00",
+      "bucket_hint": "industry",
+      "decision": "高优先级加入定牌候选",
+      "facts": [
+        "SpaceX 完成对 Cursor 的 600 亿美元收购当天，马斯克首次向 Cursor 全员讲话，直言 Grok 落后于竞争对手，并要求 Cursor 帮助 SpaceXAI 追赶。",
+        "Cursor 超过 1000 名员工正被并入 SpaceXAI 现有团队，CEO Michael Truell 直接向马斯克汇报；两家公司也合作开发 Grok 模型和 Agent 产品。",
+        "Cursor 六月年化收入据报达到 40 亿美元，但四月以来已有 45 人离职，其中包括强化学习、设计、品牌、法务和大客户销售等资深负责人。",
+        "Cursor 在快速增长期曾允许工程师跳过传统代码审查直接推送更新，今年二月才上线自动审查与升级问题的 AI 系统，今年夏天开始起草第一份正式安全政策。",
+        "SpaceX 的交易为 Cursor 提供了急需的算力；此前 Cursor 毛利为负，并预计还需要为算力支出筹集数十亿美元。"
+      ],
+      "caveats": [
+        "全员会内容、离职与组织整合主要来自五名知情人士、员工和 LinkedIn 记录，SpaceXAI 与 Cursor 均未回应。",
+        "不能把马斯克所称 Anthropic 领先、Grok 落后写成独立排名结论，这是他在内部讲话中的判断。",
+        "600 亿美元是 SpaceX 已宣布完成的收购总价，不要和 Cursor 的 40 亿美元年化收入混写。"
+      ],
+      "why": "这不是普通并购后续：Cursor 的人、产品和组织正在实质并入 SpaceXAI，而马斯克给出的任务是用它追赶 Anthropic。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Exclusive: Hugging Face Annualized Revenue Jumps 50% to $150 Million",
+      "url": "https://www.theinformation.com/briefings/exclusive-hugging-face-annualized-revenue-jumps-50-150-million",
+      "published_at": "2026-08-24T17:38:00-07:00",
+      "published_at_beijing": "2026-08-25T08:38:00+08:00",
+      "bucket_hint": "industry",
+      "decision": "高优先级加入定牌候选；与近期 Hugging Face 入侵主线无关",
+      "facts": [
+        "据一名直接知情人士，Hugging Face 年化收入超过 1.5 亿美元，比两个月前增长 50％。",
+        "据另一名知情人士，这家成立十年的公司接近达成出售协议；Business Insider 报道潜在估值接近 130 亿美元，高于 2023 年融资时的 45 亿美元。",
+        "增长主要来自开放模型需求，以及训练和运行模型所需的算力、存储与应用搭建服务；年化收入按最近一个月收入乘以十二计算。",
+        "公司上半年付费订阅者数量翻倍，CEO 此前称公司已接近盈利。"
+      ],
+      "caveats": [
+        "收入和出售进展来自匿名知情人士，130 亿美元估值来自另一家媒体，交易仍可能变化或失败。",
+        "年化收入不是已实现的全年收入，不能写成 Hugging Face 去年或今年已经收入 1.5 亿美元。",
+        "本条是公司商业进展，不延续近期安全入侵事故，避免把两条主线混在一起。"
+      ],
+      "why": "开放模型平台正在从社区基础设施长成一门年化 1.5 亿美元的生意，而潜在买家可能愿意按接近收入 87 倍的价格收购。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Alabama Starts Probe Into OpenAI Over Hugging Face Hack",
+      "url": "https://www.theinformation.com/briefings/alabama-starts-probe-openai-hugging-face-hack",
+      "reason": "近期 Hugging Face 入侵主线已连续多期饱和；首页摘要只显示阿拉巴马州启动调查，没有足以跨过饱和门槛的新机制或处置结果。"
+    },
+    {
+      "title": "Nvidia's John Malone Dealmaking Opportunity",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/nvidias-john-malone-dealmaking-opportunity",
+      "reason": "结构评论承接近期英伟达投资与交易密集主线，首页没有显示新的已完成交易或独家金额。"
+    },
+    {
+      "title": "Filling In the Gaps in Nvidia’s $500 Billion Financing Pitch",
+      "url": "https://www.theinformation.com/newsletters/the-information-special-report/filling-gaps-nvidias-500-billion-financing-pitch",
+      "reason": "发布时间只标 8 月 24 日且首页无摘要；本轮已有三条更强独家候选，不额外保存付费专题正文。"
+    }
+  ]
+}

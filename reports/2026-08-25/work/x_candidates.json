@@ -1,0 +1,108 @@
+{
+  "date": "2026-08-25",
+  "scanned_at": "2026-08-25T19:42:00+08:00",
+  "window": "接续 2026-08-24T09:56:05+08:00 手工扫描截止，只收此后发布的新帖",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取；Nitter 仅保留失败诊断",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现 3 条时间窗内新观点或乐子，其中 2 条进入候选、1 条因论证过短排除"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-03，无时间窗内新帖"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-03，无时间窗内新帖"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-22 的 MATS 招募，无时间窗内新帖"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "发现 1 条对上一期小部件段子的现实跟进候选"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-20 的企业隐私内容，无时间窗内新帖"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "发现 1 条 Ox Alpha 身份猜测，只作待核线索"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "州级数据中心禁令很难真正拖慢 AI",
+      "url": "https://x.com/emollick/status/2091973930810548261",
+      "datetime": "2026-08-24T19:40:26.000Z",
+      "datetime_beijing": "2026-08-25T03:40:26+08:00",
+      "bucket_hint": "angle_or_regulation",
+      "text": "Ethan Mollick 赞同 Arvind Narayanan 用粗略计算得出的判断：州级数据中心禁令或暂停令对整体 AI 进展影响很小。如果真正担心的是 AI 研发、权力集中或未来用途，而不只是本地是否建数据中心，这类地方禁令不能代替更直接的政策。",
+      "caveats": [
+        "这是 Mollick 对 Narayanan 粗略计算的观点转述，不是正式模型或实证研究。",
+        "当前只读到被引用原帖的开头，具体假设、效率变化和算力换算需要 reader 回溯原帖核实。",
+        "不能简写成数据中心禁令毫无作用；它仍可能改变本地电力、环境和社区成本。"
+      ],
+      "why": "它把数据中心抵制与 AI 治理拆开：挡住本州一座园区，不等于真正改变模型竞赛。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "实验室预告新模型时先画一只 TiKZ 独角兽",
+      "url": "https://x.com/emollick/status/2091995606516441405",
+      "datetime": "2026-08-24T21:06:34.000Z",
+      "datetime_beijing": "2026-08-25T05:06:34+08:00",
+      "bucket_hint": "fun",
+      "text": "Mollick 调侃，实验室以后含糊预告新模型时，帖子应该只允许放《Sparks of AGI》论文中的同一道提示词输出：用 TiKZ 画一只独角兽。",
+      "caveats": [
+        "这是针对模型发布前神秘预热的段子，不代表 TiKZ 独角兽足以评测完整模型能力。",
+        "原帖没有点名具体实验室或具体待发布模型。"
+      ],
+      "why": "既然模型预告总爱只给暗示，不如统一用一只独角兽当行业摩斯密码。"
+    },
+    {
+      "source": "x-roon",
+      "title": "Roon 昨天编的小部件面试，今天成了真实新闻",
+      "url": "https://x.com/tszzl/status/2091962608048033955",
+      "datetime": "2026-08-24T18:55:27.000Z",
+      "datetime_beijing": "2026-08-25T02:55:27+08:00",
+      "bucket_hint": "fun",
+      "text": "Roon 上一期把 AI 公司文化面试改写成小部件段子：既要表现得热爱产品，又要说危险时愿意让公司归零。随后一则引用 Axios 的消息称，Anthropic 的文化面试真的会问候选人：如果公司为了安全放弃 AI 野心、股价归零，你会怎么想。Roon 评论说，新闻已经开始拿他的垃圾帖当故事点子。",
+      "caveats": [
+        "这是上一期已报段子的现实跟进，成稿若收录必须突出新增的 Anthropic 面试事实，不能重讲整段旧笑话。",
+        "当前读到的是转述 Axios 的二手帖子，具体面试问题仍需核对 Axios 原文。"
+      ],
+      "why": "昨天还是对行业标准话术的恶搞，今天现实就把这段恶搞照着演了一遍。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "Teortaxes 猜测 Ox Alpha 其实是智谱提供算力",
+      "url": "https://x.com/teortaxesTex/status/2092158475333775420",
+      "datetime": "2026-08-25T07:31:13.000Z",
+      "datetime_beijing": "2026-08-25T15:31:13+08:00",
+      "bucket_hint": "verify_or_exclude",
+      "text": "Teortaxes 此前猜 Ox Alpha 的巨额 token 承诺依赖美国新云厂商，如今根据 GLM-5.3 与 Ox Alpha 同时出现容量异常，转而猜测背后可能只是中国的智谱，并认为这显示智谱算力很强。",
+      "caveats": [
+        "这是基于同时段服务状态的个人猜测，没有官方提交、模型指纹或基础设施证据。",
+        "Ox Alpha 已在 2026-08-23 作为产品体验报过；若无法独立确认身份，应直接排除，不能把猜测写成事实。"
+      ],
+      "why": "如果身份能核实，这会改变对 Ox Alpha 容量来源的理解；目前只能作为待核线索。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/emollick/status/2091965473558552732",
+      "reason": "只说舆论从 AI 立刻改变经济摆向 AI 影响还要很多年，没有展开机制、数据或具体例子，信息密度不足。"
+    }
+  ]
+}

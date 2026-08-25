@@ -1,0 +1,173 @@
+[
+  {
+    "slug": "meta-hatch",
+    "url": "https://www.theinformation.com/articles/meta-plans-launch-hatch-ai-agent-platform-coming-weeks",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/meta-plans-launch-hatch-ai-agent-platform-coming-weeks",
+    "bytes": 387932,
+    "title": "Meta Plans to Launch ‘Hatch’ AI Agent Platform in Coming Weeks — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "cursor-integration",
+    "url": "https://www.theinformation.com/articles/cursor-officially-enters-musk-era",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/cursor-officially-enters-musk-era",
+    "bytes": 406059,
+    "title": "Inside Musk’s First Address to Cursor: Grok Is Falling Behind — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "hf-revenue",
+    "url": "https://www.theinformation.com/briefings/exclusive-hugging-face-annualized-revenue-jumps-50-150-million",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/exclusive-hugging-face-annualized-revenue-jumps-50-150-million",
+    "bytes": 404556,
+    "title": "Exclusive: Hugging Face Annualized Revenue Jumps 50% to $150 Million — The Information",
+    "chars": 2375
+  },
+  {
+    "slug": "alignment-pragmatism",
+    "url": "https://www.lesswrong.com/posts/yaz8nx4ogZmiqHzt7/what-just-happened-pragmatism-and-pessimization",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/yaz8nx4ogZmiqHzt7/what-just-happened-pragmatism-and-pessimization",
+    "bytes": 1650224,
+    "title": "What just happened? Pragmatism and Pessimization — LessWrong",
+    "chars": 139344
+  },
+  {
+    "slug": "inference-engine-escape",
+    "url": "https://www.lesswrong.com/posts/CjeobBGnhxg8xvden/llms-could-control-their-host-machines-by-exploiting",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/CjeobBGnhxg8xvden/llms-could-control-their-host-machines-by-exploiting",
+    "bytes": 435851,
+    "title": "LLMs could control their host machines by exploiting inference engines — LessWrong",
+    "chars": 9650
+  },
+  {
+    "slug": "data-center-scale",
+    "url": "https://www.axios.com/2026/08/25/data-centers-ai-electricity-water-politics",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/25/data-centers-ai-electricity-water-politics",
+    "bytes": 427929,
+    "title": "The data center era that's reshaping America",
+    "chars": 9530
+  },
+  {
+    "slug": "openai-russia-campaign",
+    "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+    "status": 200,
+    "final_url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
+    "bytes": 446960,
+    "title": "Disrupting a new covert influence campaign from Russia | OpenAI",
+    "chars": 11242
+  },
+  {
+    "slug": "natural-features",
+    "url": "https://www.lesswrong.com/posts/SNAKJuN8FdoEaWeFC/in-search-of-natural-features",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/SNAKJuN8FdoEaWeFC/in-search-of-natural-features",
+    "bytes": 770070,
+    "title": "In search of natural features — LessWrong",
+    "chars": 38852
+  },
+  {
+    "slug": "prime-agent",
+    "url": "https://huggingface.co/papers/2608.23552",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.23552",
+    "bytes": 144400,
+    "title": "Paper page - Prime Agent: A Self-Improving RLM Harness",
+    "chars": 2731
+  },
+  {
+    "slug": "thinkingbox",
+    "url": "https://huggingface.co/papers/2608.19741",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.19741",
+    "bytes": 158688,
+    "title": "Paper page - One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
+    "chars": 4149
+  },
+  {
+    "slug": "gamexpert",
+    "url": "https://huggingface.co/papers/2608.21833",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.21833",
+    "bytes": 128931,
+    "title": "Paper page - GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?",
+    "chars": 3262
+  },
+  {
+    "slug": "gpt-kiro",
+    "url": "https://openai.com/index/gpt-5-6-in-kiro",
+    "status": 200,
+    "final_url": "https://openai.com/index/gpt-5-6-in-kiro/",
+    "bytes": 345563,
+    "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro | OpenAI",
+    "chars": 4061
+  },
+  {
+    "slug": "gradio-workflow",
+    "url": "https://huggingface.co/blog/gradio-workflow-guide",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/gradio-workflow-guide",
+    "bytes": 221614,
+    "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+    "chars": 6250
+  },
+  {
+    "slug": "edgefirst-zoo",
+    "url": "https://huggingface.co/blog/EdgeFirst/model-zoo-intro",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/EdgeFirst/model-zoo-intro",
+    "bytes": 160424,
+    "title": "Introducing the EdgeFirst Model Zoo",
+    "chars": 7020
+  },
+  {
+    "slug": "tikz-unicorn",
+    "url": "https://x.com/emollick/status/2091995606516441405",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2091995606516441405",
+    "bytes": 179207,
+    "title": "Ethan Mollick on X: \"Math is fine, but vague posting from labs about new models should only be allowed if the post consists solely of the output from the prompt in the Sparks of AGI paper: \"Draw a unicorn in TiKZ.\"\" / X",
+    "chars": 252
+  },
+  {
+    "slug": "sf-game",
+    "url": "https://sf.thijs.gg",
+    "status": 200,
+    "final_url": "https://sf.thijs.gg/",
+    "bytes": 499748,
+    "title": "San Francisco -- The Game",
+    "chars": 676
+  },
+  {
+    "slug": "sqlite-executable",
+    "url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
+    "bytes": 15196,
+    "title": "Your executable is a SQLite database",
+    "chars": 1868
+  },
+  {
+    "slug": "forkmakers",
+    "url": "https://www.lesswrong.com/posts/NjLQf3QC4q4DD67kD/the-forkmakers",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/NjLQf3QC4q4DD67kD/the-forkmakers",
+    "bytes": 483868,
+    "title": "The Forkmakers — LessWrong",
+    "chars": 14842
+  },
+  {
+    "slug": "tomatoes-faces",
+    "url": "https://huggingface.co/papers/2608.21455",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.21455",
+    "bytes": 121474,
+    "title": "Paper page - Tomatoes, Potatoes, and Onions: Questioning the Need for Faces in Face Presentation Attack Detection",
+    "chars": 3740
+  }
+]

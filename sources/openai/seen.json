@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://openai.com/index/gpt-5-6-in-kiro",
+  "title": "Kiro 接入 GPT-5.6 全系列",
+  "date": "2026-08-24",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
   "id": "https://openai.com/index/offering-zero-data-retention-for-frontier-models/",
   "title": "OpenAI 让安全监控不再保存对话",
   "date": "Wed, 19 Aug 2026 19:00:00 GMT",

@@ -1,0 +1,348 @@
+{
+  "date": "2026-08-25",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Meta 准备把跨网站办事的消费级 Agent 做成高价订阅产品",
+      "cost": "重",
+      "reason": "The Information 独家，涉及未发布产品、内部时间表、原型能力、WhatsApp 接入与最高档价格，信息密度高且需要逐项核实限定语。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Meta Plans to Launch ‘Hatch’ AI Agent Platform in Coming Weeks",
+          "url": "https://www.theinformation.com/articles/meta-plans-launch-hatch-ai-agent-platform-coming-weeks",
+          "date": "2026-08-25",
+          "why": "内部文件称 Hatch 最早八月底或九月初上线，原型可访问 DoorDash、Etsy、Reddit、Yelp 和 Outlook，并曾考虑最高每月 199.99 美元；发布时间、价格和功能都可能变化，Watermelon 十月目标也不能写成确定发布。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Cursor 被并入 SpaceXAI 后，首要任务是帮助 Grok 追赶 Anthropic",
+      "cost": "重",
+      "reason": "这是 600 亿美元收购完成后的实质组织整合，不只是并购回顾；需要区分马斯克内部判断、已确认交易事实与匿名人士披露。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Inside Musk’s First Address to Cursor: Grok Is Falling Behind",
+          "url": "https://www.theinformation.com/articles/cursor-officially-enters-musk-era",
+          "date": "2026-08-25",
+          "why": "报道说 Cursor 超过一千名员工并入 SpaceXAI、CEO 直接向马斯克汇报，并合作开发 Grok 与 Agent；马斯克所谓 Grok 落后只是内部讲话判断，不能写成独立评测结论。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Hugging Face 年化收入两个月增长五成，并接近出售",
+      "cost": "中",
+      "reason": "这是开放模型生态的商业化信号，与近期 Hugging Face 入侵事件不是同一主线；数字来自匿名人士，估值与交易进展需要谨慎核验。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Exclusive: Hugging Face Annualized Revenue Jumps 50% to $150 Million",
+          "url": "https://www.theinformation.com/briefings/exclusive-hugging-face-annualized-revenue-jumps-50-150-million",
+          "date": "2026-08-25",
+          "why": "年化收入据称超过 1.5 亿美元、两个月增长 50％，潜在出售估值接近 130 亿美元；年化收入是最近一个月乘以十二，不等于已实现全年收入，出售也尚未完成。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "数据中心已成美国最大资本工程和选举议题，但州级禁令未必能拖慢模型竞赛",
+      "cost": "重",
+      "reason": "三条材料分别给出全国资本与电力规模、政治问题框架和政策效果反驳，可合成一条新进展；与 08-21 纽约州只暂停一年不同，本组新增的是全国量级与禁令作用机制。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "The data center era that's reshaping America",
+          "url": "https://www.axios.com/2026/08/25/data-centers-ai-electricity-water-politics",
+          "date": "2026-08-25",
+          "why": "摘要称五大超大规模厂商今年资本开支预计超过 7500 亿美元、同比增长 67％，约四分之三投向 AI 基础设施；需要核对统计口径，不能把所有资本开支都写成数据中心。"
+        },
+        {
+          "source": "thezvi",
+          "title": "The American People Really Hate Data Centers",
+          "url": "https://thezvi.substack.com/p/the-american-people-really-hate-data",
+          "date": "2026-08-25",
+          "why": "长文把数据中心政治拆成至少五个核心问题，适合补政策与公众反弹框架；疑与 Axios 数据中心主线部分重叠，reader 应只取其独有框架。"
+        },
+        {
+          "source": "x-emollick",
+          "title": "州级数据中心禁令很难真正拖慢 AI",
+          "url": "https://x.com/emollick/status/2091973930810548261",
+          "date": "2026-08-25",
+          "why": "Mollick 转述 Narayanan 的粗略计算，认为挡住本州园区不等于改变整体 AI 进展；只读到被引用原帖开头，具体假设和算力换算待 reader 回溯，不能写成禁令毫无作用。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "对齐研究曾怎样以安全之名帮助前沿能力推进",
+      "cost": "重",
+      "reason": "Richard Ngo 从十年研究史反思对齐与能力的边界消失，属于反直觉、范式级观点；需核对具体案例，避免把争议性归因写成已证实结论。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "What just happened? Pragmatism and Pessimization",
+          "url": "https://www.lesswrong.com/posts/yaz8nx4ogZmiqHzt7/what-just-happened-pragmatism-and-pessimization",
+          "date": "2026-08-24",
+          "why": "作者主张务实对齐范式帮助三家领先 AGI 公司推进能力，以致对齐与能力研究之分失去意义；这是作者的历史解释，不是共识，需 reader 核其案例链。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "lesswrong",
+      "title": "LLMs could control their host machines by exploiting inference engines",
+      "url": "https://www.lesswrong.com/posts/CjeobBGnhxg8xvden/llms-could-control-their-host-machines-by-exploiting",
+      "date": "2026-08-24",
+      "note": "提出恶意模型可输出特制 token 序列，利用 vLLM 或 SGLang 等推理引擎漏洞控制承载权重的主机；目前是攻击面论证，不是已发生入侵，HN 同链接候选已合并。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "In search of natural features",
+      "url": "https://www.lesswrong.com/posts/SNAKJuN8FdoEaWeFC/in-search-of-natural-features",
+      "date": "2026-08-24",
+      "note": "在小型 GPT-2 上用误差纠正强度寻找模型的自然结构，作者称简单方法的效果超出预期；初步实验，需核代码与图表。"
+    },
+    {
+      "source": "openai",
+      "title": "Disrupting a new covert influence campaign from Russia",
+      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "date": "2026-08-25",
+      "note": "OpenAI 称封禁一批俄罗斯来源账户，它们用 AI 包装虚构的以色列智库和主权指数；属平台自述，reader 应核行动规模与证据边界。"
+    },
+    {
+      "source": "openai",
+      "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+      "url": "https://openai.com/index/gpt-5-6-in-kiro",
+      "date": "2026-08-24",
+      "note": "GPT‑5.6 接入 Kiro，主打规划、构建、审查和测试代码的性价比；产品通稿，一眼货。"
+    },
+    {
+      "source": "mistral",
+      "title": "Mistral x HUMAIN",
+      "url": "https://mistral.ai/news/mistral-x-humain",
+      "date": "2026-08-25",
+      "note": "仅见标题，合作内容与交易性质待 reader 核。"
+    },
+    {
+      "source": "axios",
+      "title": "Flock cameras join data centers as a top AI boogeyman in 2026 midterms",
+      "url": "https://www.axios.com/2026/08/23/flock-cameras-data-centers-ai-midterms-2026-tech",
+      "date": "2026-08-25",
+      "note": "车牌识别摄像头与数据中心一起进入美国中期选举，新增的是 AI 监控成为全国政治议题，不重复 08-21 那起拆摄像头未被起诉的乐子。"
+    },
+    {
+      "source": "axios",
+      "title": "UAW and Deere are set to clash amid AI sales boom",
+      "url": "https://www.axios.com/2026/08/24/uaw-deere-shawn-fain-ai",
+      "date": "2026-08-25",
+      "note": "数据中心建设带动工程机械销售与股价后，UAW 与 Deere 的合同冲突开始争夺 AI 基建红利；AI 影响是需求侧而非自动化替工。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+      "url": "https://huggingface.co/blog/gradio-workflow-guide",
+      "date": "2026-08-25",
+      "note": "Gradio 发布 AI 工作流搭建与部署指南，工具型通稿。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Introducing the EdgeFirst Model Zoo",
+      "url": "https://huggingface.co/blog/EdgeFirst/model-zoo-intro",
+      "date": "2026-08-25",
+      "note": "新端侧模型库，页面只给约十六小时前的相对时间，具体覆盖模型和硬件待 reader 核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Prime Agent: A Self-Improving RLM Harness",
+      "url": "https://huggingface.co/papers/2608.23552",
+      "date": "",
+      "note": "Prime Intellect 的自改进 Agent 框架；仅见本日榜单标题，2026-08-25 是榜单抓取日，不是论文发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "One Success Isn't Reliability: Thinkingbox, a Sandbox and Benchmark for Agents in Stateful Business Workflows",
+      "url": "https://huggingface.co/papers/2608.19741",
+      "date": "",
+      "note": "测试 Agent 在有状态业务流程中能否稳定复现成功；仅见本日榜单标题，日期与细节待 reader 核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "GameXpert-Bench: How Far Are Coding Agents from Expert Game Development?",
+      "url": "https://huggingface.co/papers/2608.21833",
+      "date": "",
+      "note": "把代码 Agent 拉到专家级游戏开发任务上评测；仅见本日榜单标题，日期与任务设计待 reader 核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "One Polluted Page Is Enough: Evaluating Web Content Pollution in LLM Recommenders",
+      "url": "https://huggingface.co/papers/2606.13610",
+      "date": "",
+      "note": "研究单个污染网页是否足以操纵 LLM 推荐；仅见本日榜单标题，论文编号显示可能不是当日新稿，需 reader 先核新鲜度。"
+    },
+    {
+      "source": "import-ai",
+      "title": "Import AI 470: No rights for machines; automating environment generation with SPADE; and building better GPU kernels with Hawkeye",
+      "url": "https://importai.substack.com/p/import-ai-470-no-rights-for-machines",
+      "date": "2026-08-24",
+      "note": "一期同时覆盖机器权利、自动生成训练环境和 GPU 内核优化；适合 reader 拆出真正新增的一眼货。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-emollick",
+      "title": "实验室预告新模型时先画一只 TiKZ 独角兽",
+      "url": "https://x.com/emollick/status/2091995606516441405",
+      "date": "2026-08-25",
+      "note": "Mollick 建议把模型发布前的神秘预热统一成《Sparks of AGI》那道 TiKZ 独角兽提示词，拿一只独角兽当行业摩斯密码。"
+    },
+    {
+      "source": "x-roon",
+      "title": "Roon 昨天编的小部件面试，今天成了真实新闻",
+      "url": "https://x.com/tszzl/status/2091962608048033955",
+      "date": "2026-08-25",
+      "note": "疑重但保留：08-24 已报原段子，本条只收新增事实——Anthropic 的真实文化面试据称真会问候选人是否接受公司为安全放弃野心、股价归零；目前是 Axios 的二手转述，待核原文。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The entire city of San Francisco as a video game",
+      "url": "https://sf.thijs.gg",
+      "date": "2026-08-25",
+      "note": "把整个旧金山做成可玩的城市地图，HN 约 492 分。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Your executable is a SQLite database",
+      "url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database",
+      "date": "2026-08-24",
+      "note": "把 ELF 组件安排进 SQLite 表，再让数据库文件直接作为可执行程序运行。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "The Forkmakers",
+      "url": "https://www.lesswrong.com/posts/NjLQf3QC4q4DD67kD/the-forkmakers",
+      "date": "2026-08-25",
+      "note": "设想文明崩溃千年后，后人发现现代建筑和硬盘都没留下来，只知道我们特别会造不锈钢餐具。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Tomatoes, Potatoes, and Onions: Questioning the Need for Faces in Face Presentation Attack Detection",
+      "url": "https://huggingface.co/papers/2608.21455",
+      "date": "",
+      "note": "标题用番茄、土豆和洋葱追问人脸活体检测是否真的需要脸；本日榜单条目，日期与实验结论待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Vintage Artificial Intelligence: Before It Got Awkward",
+      "url": "https://blog.archive.org/2026/08/16/vintage-artificial-intelligence-before-it-got-awkward",
+      "date": "2026-08-25",
+      "note": "互联网档案馆回看 AI 还没变成尴尬热词之前的老资料，文章本身发布日期较早，但当日 HN 重新升温。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2035 年前，会出现能在《我的世界》中完成任意任务的 AI 吗？",
+      "prob": "74.0％",
+      "volume_note": "volume 口径：累计成交量约 2.82 万 M$。",
+      "url": "https://manifold.markets/Gabrielle/before-2035-will-there-exist-any-ai-a8ceb93e18fb"
+    },
+    {
+      "question": "2028 年前，预测市场能找到稳健交易 AI 灭绝风险的方法吗？",
+      "prob": "15.8％",
+      "volume_note": "volume 口径：累计成交量约 1567 M$。",
+      "url": "https://manifold.markets/IsaacKing/before-2028-will-any-prediction-mar"
+    },
+    {
+      "question": "2030 年前，AI 会造成超过 20％的人口死亡吗？",
+      "prob": "2.5％",
+      "volume_note": "volume 口径：累计成交量约 10.50 万 M$。",
+      "url": "https://manifold.markets/JonathanRay/will-ai-kill-20-of-the-human-popula"
+    },
+    {
+      "question": "2040 年前，失控 AI 会造成超过一半人类死亡吗？",
+      "prob": "7.5％",
+      "volume_note": "volume 口径：累计成交量约 2.40 万 M$。",
+      "url": "https://manifold.markets/ahalekelly/will-misaligned-ai-kill-50-of-the-h"
+    },
+    {
+      "question": "人类会反过来消灭 AI 吗？",
+      "prob": "13.0％",
+      "volume_note": "volume 口径：累计成交量约 1005 M$。",
+      "url": "https://manifold.markets/TANSTAAFL/will-humanity-wipe-out-ai"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "the-batch",
+      "reason": "候选是 08-21 期，Anthropic 水印、Grok 和 Qwen 主线近期已报，没有显示必须重收的新进展。"
+    },
+    {
+      "slug": "acx",
+      "reason": "五条候选均为开放帖、宗教争论、活动招募或非 AI 旧文，没有进入本期分桶。"
+    },
+    {
+      "slug": "the-information-alabama-probe",
+      "reason": "阿拉巴马州调查 OpenAI 与 Hugging Face 入侵，只有启动调查这一层新增，近期该事件已饱和，暂不重收。"
+    },
+    {
+      "slug": "x-teortaxes",
+      "reason": "Ox Alpha 由智谱提供算力只是根据两个服务同时异常作出的猜测，没有官方材料、模型指纹或基础设施证据，而且 08-23 已报 Ox Alpha 产品体验。"
+    },
+    {
+      "slug": "x-goodside",
+      "reason": "登录态 X 补扫成功，最新帖子仍为 2026-08-03，没有时间窗内新帖。"
+    },
+    {
+      "slug": "x-karpathy",
+      "reason": "登录态 X 补扫成功，最新帖子仍为 2026-08-03，没有时间窗内新帖。"
+    },
+    {
+      "slug": "x-neelnanda",
+      "reason": "登录态 X 补扫成功，最新帖子仍为 2026-08-22 的 MATS 招募，没有时间窗内新帖。"
+    },
+    {
+      "slug": "x-sama",
+      "reason": "登录态 X 补扫成功，最新帖子仍为 2026-08-20 的企业隐私内容，没有时间窗内新帖。"
+    }
+  ]
+}

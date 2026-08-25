@@ -1,0 +1,149 @@
+URL: https://huggingface.co/blog/EdgeFirst/model-zoo-intro
+FINAL: https://huggingface.co/blog/EdgeFirst/model-zoo-intro
+TITLE: Introducing the EdgeFirst Model Zoo
+FETCHED: 2026-08-25 20:07:42
+============================================================
+Back to Articles
+Introducing the EdgeFirst Model Zoo
+Community Article
+Published
+ August 24, 2026
+Upvote
+5
+Sébastien Taylor
+sebastientaylor
+EdgeFirst
+If you're choosing edge silicon this quarter, the number you need doesn't exist on any spec sheet.
+Vendors quote TOPS, or some variation of it. The figure is mostly real: peak integer throughput on a synthetic workload. It tells you almost nothing about what a detection model will do on that part at your input resolution. Upstream model cards aren't much better. They report what the model's authors measured on their hardware, with their validator. Almost never the silicon you're going to ship on.
+So the most expensive decision in an edge AI program is which accelerator to commit to for the next five years. It routinely gets made on numbers that are either irrelevant or unverifiable.
+The
+EdgeFirst Model Zoo
+is our attempt to publish the other kind of number. Four YOLO families across detection and instance segmentation, converted and measured on real hardware, where
+every published figure links to the validation session that produced it
+: model artifact, dataset version, per-stage timing trace, and the host description down to kernel version and NPU.
+You can run the same thing today, on your own hardware. The
+EdgeFirst Profiler
+installs on your board with one command and measures your model against your dataset the way it measured ours. A free
+EdgeFirst Studio
+account is all it needs.
+What is actually in it
+Seven model repositories:
+YOLOv5
+,
+YOLOv8
+,
+YOLO11
+, and
+YOLO26
+for detection, with instance segmentation for
+YOLOv8
+,
+YOLO11
+, and
+YOLO26
+. Each carries nano, small, and medium variants in ONNX FP32 and INT8, plus the platform-compiled artifact for every accelerator we validate on.
+Behind them sit
+837 published validation sessions
+. Not seven benchmarks. 837 individual measurements, each with its own session page.
+The on-target accelerators:
+Accelerator
+Deploy format
+Boards validated on
+NXP i.MX 8M Plus + VeriSilicon NPU
+TFLite INT8 · VX delegate
+NXP FRDM, Toradex Verdin SOM
+NXP i.MX 95 + eIQ® Neutron NPU
+TFLite INT8 · Neutron delegate
+NXP FRDM, Toradex Verdin SOM, Ezurio Nitrogen SMARC, PHYTEC phyFLEX (Libra)
+NXP Ara240 Discrete Neural Processing Unit (DNPU)
+.DVM
+· mixed INT8/INT16
+NXP FRDM-IMX95-PRO
+Raspberry Pi 5 + Hailo-8L NPU
+HailoRT HEF · INT8
+Raspberry Pi 5
+NVIDIA Jetson Orin Nano
+TensorRT engine · FP16
+Orin Nano Dev Kit
+Qualcomm Hexagon NPU
+QNN EPContext / LiteRT · INT8 and INT16
+Samsung Galaxy S26 Ultra
+Apple Neural Engine, Metal GPU, CPU
+CoreML · FP16
+MacBook Pro (M2 Max), iPhone 17 Pro, iPhone 15 Pro
+Alongside these, CUDA and a spread of x86 and Arm CPU references (Intel Xeon and Core i9, AWS Graviton and Graviton4), in float and INT8 both.
+Look at the eIQ Neutron row: the
+same NPU, on four boards from four vendors
+. That isn't redundancy. The silicon is identical; the numbers are not. A board is a memory subsystem, a thermal envelope and a BSP, not just an SoC. The part number alone won't tell you which one holds up under your workload.
+One gap is worth naming:
+YOLO11 and YOLO26 on the eIQ Neutron NPU are in progress.
+They compile, load, and run on the NPU. We're working with NXP to bring validation accuracy up to the bar the rest of the grid meets, and those cells fill in once it's there. Expect to see more of this as we widen coverage across every platform. New architectures land in the zoo when they clear validation, not before.
+Every number clicks through
+This is the part that matters more than any individual figure.
+Take YOLOv8 Nano. The reference row on its card reads 50.49%
+mAP@0.5
+and 35.83%
+mAP@0.5-0.95
+, and that row cites
+v-e89
+. Open it. You get the artifact that ran, the dataset version it ran against, the parameters, the per-stage Perfetto trace, and the machine description.
+Every result is public, and every result is reproducible. The measurements come out of
+EdgeFirst Studio
+and the
+EdgeFirst Profiler
+, and you can run both yourself. Reproduce our COCO runs, or point the same pipeline at your own dataset and your own retrained models.
+Two things the grid shows immediately
+The decoder you export matters as much as the quantizer.
+On a Qualcomm Hexagon NPU at INT8, YOLOv8 Nano scores 48.46%
+mAP@0.5
+with the smart split-decoder (
+v-1073
+) and 46.37% with the logical one (
+v-1074
+). Same silicon, same weights, same quantization scheme. Over two points of mAP separate them, purely from where the graph was cut.
+Per-frame latency doesn't give you frames per second.
+On the Apple M2 Max Neural Engine, the same model runs 1.80 ms of inference inside a 5.26 ms end-to-end pipeline. Divide it out and you'd predict about 190 FPS. Measured throughput is 791 (
+v-9cd
+). The pipeline runs stages on several frames at once, so that division doesn't hold.
+Both get their own posts in this series. Both are visible in the public grid today.
+The point isn't our numbers
+We benchmarked COCO because it's the standard benchmark dataset. But COCO isn't why the zoo exists.
+Every measurement here was produced by EdgeFirst Studio running the same workflow available to you: import a dataset, train or bring a model, convert it for a target, and validate it
+on the actual device
+against the actual data. Retrain any of these models on your own dataset and you get your own grid: your numbers, your target, your use case. The grid here is a worked example of that process, not a leaderboard we're asking you to trust.
+The question worth asking isn't whether YOLOv8 Nano hits 48.46% on a Hexagon NPU. It's what
+your
+model scores on
+your
+data on the three parts you're choosing between — and whether you can produce that answer before committing, with an audit trail that survives a design review.
+That's what EdgeFirst Studio is for. The zoo is what it looks like when you point it at a public dataset and publish everything.
+Start here
+Browse the Model Zoo
+— all seven repos, every card, every session link, no registration.
+EdgeFirst documentation
+— the converters, the validation pipeline, the HAL.
+The EdgeFirst Perception Index
+— the quarterly report that takes this grid and does the analysis: what the cross-platform patterns are, where architectures invert against expectation, and what it means for silicon selection. Free, and it asks for an email.
+Sign up for a free EdgeFirst Studio account
+— run your own validation, on your own dataset, on the hardware you're choosing between.
+NXP, the NXP logo, i.MX, eIQ, and Neutron are trademarks of NXP® Semiconductors. Ara240 is an NXP product. Hailo is a trademark of Hailo Technologies Ltd. Jetson is a trademark of NVIDIA Corporation. All other trademarks are the property of their respective owners.
+Models mentioned in this article
+7
+Collections mentioned in this article
+1
+Community
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+5
+Models mentioned in this article
+7
+Collections mentioned in this article
+1

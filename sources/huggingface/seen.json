@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/blog/EdgeFirst/model-zoo-intro",
+  "title": "EdgeFirst 发布可复现实测的端侧模型库",
+  "date": "2026-08-25",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
+  "id": "https://huggingface.co/blog/gradio-workflow-guide",
+  "title": "Gradio 把 AI 工作流画布变成 API",
+  "date": "2026-08-25",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
   "id": "https://huggingface.co/blog/basecompute/base-optimization-stack",
   "title": "Base 发布端侧模型自动优化栈",
   "date": "2026-08-21",

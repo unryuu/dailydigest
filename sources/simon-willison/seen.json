@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database",
+  "title": "一个 SQLite 数据库也能直接当程序运行",
+  "date": "2026-08-24",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/21/stop-making-tuis",
   "title": "编码 Agent 让个人工具不必停在终端",
   "date": "2026-08-21T16:07:32+00:00",

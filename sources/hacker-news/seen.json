@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://sf.thijs.gg",
+  "title": "整个旧金山被做成一张浏览器游戏地图",
+  "date": "2026-08-25",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
   "id": "https://www.primeintellect.ai/research/nanogpt-speedrun",
   "title": "Prime Intellect 开放 NanoGPT 训练竞速榜",
   "date": "2026-08-23T06:14:27+08:00",

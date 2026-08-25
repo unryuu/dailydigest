@@ -1,0 +1,114 @@
+[
+  {
+    "id": "data-center-scale",
+    "section": "industry",
+    "label": "五家云巨头今年资本开支预计超过 7500 亿美元",
+    "url": "https://www.axios.com/2026/08/25/data-centers-ai-electricity-water-politics",
+    "body": "Amazon、Microsoft、Google、Meta 和 Oracle 的资本开支预计同比增长 67％，约四分之三投向 AI 基础设施。数据中心还在争夺土地、电力设备和施工人手，美国已有至少 75 个项目受到政治阻力影响。",
+    "note": "核实通过；Axios 于 2026 年 08 月 25 日发布。7500 亿美元是五家公司全部资本开支的预测，不能全部写成数据中心支出。dup_suspect：与 08 月 21 日纽约州数据中心暂停主线相邻，本条新增的是全国投资、电力和政治规模。"
+  },
+  {
+    "id": "openai-russia-campaign",
+    "section": "industry",
+    "label": "OpenAI 封禁一批疑似来自俄罗斯的账户",
+    "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+    "body": "这些账户用 ChatGPT 为一个自称位于以色列的智库生成推广帖，还试图隐藏俄语背景。该网站用抄来并错署作者的论文包装一套偏向俄罗斯的「主权指数」，但现阶段触达规模有限。",
+    "note": "核实通过；OpenAI 于 2026 年 08 月 25 日发布。俄罗斯来源、行动结构和影响规模均来自 OpenAI 自述；公司称账户「很可能」来自俄罗斯，不能写成已经由独立调查确认。"
+  },
+  {
+    "id": "natural-features",
+    "section": "deep",
+    "label": "有人用纠错强度寻找 GPT-2 的内部特征",
+    "url": "https://www.lesswrong.com/posts/SNAKJuN8FdoEaWeFC/in-search-of-natural-features",
+    "body": "实验测量模型愿意为哪些激活方向放大信号、压低噪声，再沿这个分数寻找稳定极值。在一个 GPT-2 Small 的中间层里，搜索反复落到少数方向，但结果会随数据、阈值和实现设置变化。",
+    "note": "核实通过；文章发布于 2026 年 08 月 23 日，不是 08 月 24 日。作者明确称这是小模型上的初步实验，并征集代码排错；评论区已有复现，也对「名词特征」解释提出质疑。不能写成模型已经被证明会主动修复所有自己在意的结构。"
+  },
+  {
+    "id": "prime-agent",
+    "section": "papers",
+    "label": "Prime Agent 把递归子 Agent 和持久记忆装进同一套框架",
+    "url": "https://huggingface.co/papers/2608.23552",
+    "body": "它把持续运行的 Python 环境、跨任务保留的历史与技能，以及子 Agent 间通信组合起来处理长任务。作者称这套开源框架把 ARC-AGI-3 的一次最佳成绩从 30％提高到 95.5％。",
+    "note": "核实通过；论文发布于 2026 年 08 月 24 日，08 月 25 日进入 Hugging Face 论文榜。摘要支持递归子 Agent、持久计算和跨轨迹保留记忆／技能，不支持「继续改造自己的工作框架」这一更强说法；性能数字均为作者评测。"
+  },
+  {
+    "id": "thinkingbox",
+    "section": "papers",
+    "label": "Thinkingbox 测出 Agent 一次成功不等于稳定",
+    "url": "https://huggingface.co/papers/2608.19741",
+    "body": "它用 507 个有状态业务流程检查 Agent 是否真正改对后台数据，又没有多做动作。最强模型单次通过率为 65.36％，连续二十次都成功的比例只有 25.25％。",
+    "note": "核实通过；论文发布于 2026 年 08 月 20 日，08 月 25 日进入 Hugging Face 论文榜，并非当天新稿。任务覆盖零售、酒店、车险、银行和企业 IT 等场景；结果来自作者基准。"
+  },
+  {
+    "id": "gamexpert",
+    "section": "papers",
+    "label": "GameXpert-Bench 给代码 Agent 考游戏开发全流程",
+    "url": "https://huggingface.co/papers/2608.21833",
+    "body": "基准覆盖从零生成游戏、发现并修复故障，以及连续六轮优化。当前 Agent 更会搭出能玩的基础版本和执行明确要求，不擅长自己发现缺陷、验证运行效果和在修改时保住旧功能。",
+    "note": "核实通过；论文发布于 2026 年 08 月 22 日，08 月 25 日进入 Hugging Face 论文榜。基准包含 97 个生成任务、100 个修复任务和 17 条六轮优化链；结论均为作者实验。"
+  },
+  {
+    "id": "gpt-kiro",
+    "section": "brief",
+    "label": "Kiro 接入 GPT-5.6 全系列",
+    "url": "https://openai.com/index/gpt-5-6-in-kiro",
+    "body": "Sol、Terra 和 Luna 已能在 Kiro 里参与需求拆解、编码、审查和测试。OpenAI 与 AWS 的测试称，Terra 在 Terminal-Bench 2.1 上完成成功任务的成本降低约 82％。",
+    "note": "核实通过；OpenAI 于 2026 年 08 月 24 日发布。82％是双方在 Kiro 环境中的产品测试口径，原文没有给出完整对照配置，不能外推到所有开发任务。"
+  },
+  {
+    "id": "gradio-workflow",
+    "section": "brief",
+    "label": "Gradio 把 AI 工作流画布直接变成 API",
+    "url": "https://huggingface.co/blog/gradio-workflow-guide",
+    "body": "用户可以拖拽带类型的节点串起模型、Python 函数和其他 Gradio 应用，逐步查看中间结果；同一张图还能自动生成 REST 接口并部署到 Spaces。",
+    "note": "核实通过；Hugging Face 于 2026 年 08 月 25 日发布。文章介绍的是 Gradio 内置的 gr.Workflow 及可运行示例，不只是一般性的工作流指南。"
+  },
+  {
+    "id": "edgefirst-zoo",
+    "section": "brief",
+    "label": "EdgeFirst 发布可复现实测的端侧模型库",
+    "url": "https://huggingface.co/blog/EdgeFirst/model-zoo-intro",
+    "body": "首批七个仓库覆盖四个 YOLO 系列和多种端侧芯片，共公开 837 次验证记录；每个数字都能追到模型文件、数据集、运行轨迹和硬件环境。",
+    "note": "核实通过；社区文章发布于 2026 年 08 月 24 日，不是 08 月 25 日。部分 YOLO11 和 YOLO26 的 NXP 验证仍在进行。dup_suspect：与 08 月 21 日端侧模型自动优化栈相邻，本条新增的是跨硬件实测库和可追溯验证记录。"
+  },
+  {
+    "id": "tikz-unicorn",
+    "section": "fun",
+    "label": "新模型预告先交一只 TiKZ 独角兽",
+    "url": "https://x.com/emollick/status/2091995606516441405",
+    "body": "Mollick 建议，实验室以后神秘暗示新模型时，只许公布那道经典提示词的输出：「用 TiKZ 画一只独角兽。」",
+    "note": "核实通过；原帖发布于 2026 年 08 月 24 日晚。纯讽刺建议，所指提示词来自《Sparks of AGI》，不是实验室已经采用的发布规则。"
+  },
+  {
+    "id": "sf-game",
+    "section": "fun",
+    "label": "整个旧金山被做成一张浏览器游戏地图",
+    "url": "https://sf.thijs.gg",
+    "body": "页面会加载城市街道和街区，玩家可以用键盘走、跑、跳、开车或滑翔，还能直接传送到别处。",
+    "note": "核实通过；交互页面确实在线，标题与操作说明一致。页面没有发布日期，只能确认它在 2026 年 08 月 25 日登上 Hacker News，不能写成当天刚发布。"
+  },
+  {
+    "id": "sqlite-executable",
+    "section": "fun",
+    "label": "一个 SQLite 数据库也能直接当程序运行",
+    "url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database",
+    "body": "开发者把 ELF 程序的组件放进数据库表，再用 self-exec 读取并执行。Linux 还可以通过 binfmt_misc 识别这种文件，让它看起来像普通可执行程序。",
+    "note": "核实通过；Simon Willison 于 2026 年 08 月 24 日转述 Farid Zakaria 的方案。数据库不是靠 SQLite 自己直接执行，仍需要 self-exec 解释器和可选的内核文件格式注册。"
+  },
+  {
+    "id": "forkmakers",
+    "section": "fun",
+    "label": "文明毁灭千年后，人类可能只留下叉子",
+    "url": "https://www.lesswrong.com/posts/NjLQf3QC4q4DD67kD/the-forkmakers",
+    "body": "文章设想，混凝土、普通钢材和硬盘会先坏掉，不锈钢餐具、陶瓷、玻璃和部分塑料反而更容易被后人找到，于是我们被叫作「造叉人」。",
+    "note": "核实通过；文章发布于 2026 年 08 月 25 日。这是一篇带虚构情节的文明遗物推演，不是考古预测；正文也承认少量纸张和刻意保存的资料可能留存。"
+  },
+  {
+    "id": "tomatoes-faces",
+    "section": "fun",
+    "label": "番茄、土豆和洋葱也能训练人脸活体检测",
+    "url": "https://huggingface.co/papers/2608.21455",
+    "body": "研究者拍摄蔬菜本体、打印照片和屏幕回放来训练检测器，再拿它识别人脸翻拍攻击。模型在四个跨数据集人脸基准上的平均 AUC 达到 92.70％。",
+    "note": "核实通过；论文发布于 2026 年 08 月 20 日，08 月 25 日进入 Hugging Face 论文榜，并非当天新稿。数据集含 78 个蔬菜个体的 12480 次呈现；92.70％为作者实验，不能写成蔬菜本身通过了手机的人脸认证。"
+  }
+]

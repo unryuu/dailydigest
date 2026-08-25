@@ -1,0 +1,84 @@
+## 🗞️ 行业大事
+
+**🥇 [Meta 准备推出跨网站办事的 agent](https://www.theinformation.com/articles/meta-plans-launch-hatch-ai-agent-platform-coming-weeks)**
+
+据 The Information 查阅的内部文件，Meta 内部目标是最早在八月底或九月初上线面向消费者的 agent。早期原型能访问外卖、购物、论坛和邮箱等网站完成任务，还会把自己生成的小工具放进可定制仪表盘。
+
+公司曾考虑分层收费，最高档月费 199.99 美元；内部还计划在 WhatsApp 开放其他 AI Agent 接入。
+
+**🥈 [Cursor 团队开始并入 SpaceXAI](https://www.theinformation.com/articles/cursor-officially-enters-musk-era)**
+
+超过一千名 Cursor 员工开始并入 SpaceXAI，CEO Michael Truell 直接向马斯克汇报。两名联合创始人进入预训练和机器学习岗位。马斯克称 Grok 落后，要求团队帮助追赶竞争对手。团队还在与 SpaceXAI 开发 Grok 模型和 Agent。
+
+**🥈 [Hugging Face 年化收入升至 1.5 亿美元](https://www.theinformation.com/briefings/exclusive-hugging-face-annualized-revenue-jumps-50-150-million)**
+
+据直接知情人士，Hugging Face 最近一个月的年化收入已超过 1.5 亿美元，两个月增长五成。增长主要来自算力、存储和订阅。另一名知情人士称，公司接近达成出售协议，潜在估值约 130 亿美元。
+
+**[五家云巨头今年资本开支预计超过 7500 亿美元](https://www.axios.com/2026/08/25/data-centers-ai-electricity-water-politics)**
+
+这笔钱包括所有资本开支，约四分之三投向 AI 基础设施。美国已有至少 75 个项目遇到政治阻力。
+
+## 📖 深度长文
+
+**🥈 [恶意模型可能借推理引擎控制服务器](https://www.lesswrong.com/posts/CjeobBGnhxg8xvden/llms-could-control-their-host-machines-by-exploiting)**
+
+模型生成的文字和特殊符号也要由 vLLM 等推理软件解析，因此可能被攻击输入。真实漏洞曾让模型生成的工具参数在宿主机执行代码。承载模型权重的机器往往还有较高的数据中心权限，失守后价值很高。文章只证明这类攻击面存在，没有演示模型自主发现并利用漏洞。
+
+**[有人用纠错强度寻找 GPT-2 的内部特征](https://www.lesswrong.com/posts/SNAKJuN8FdoEaWeFC/in-search-of-natural-features)**
+
+实验测量 GPT-2 会努力放大哪些内部信号、压低哪些噪声，再寻找稳定方向。结果只来自小模型，且会随设置变化。
+
+## 🧪 新鲜论文
+
+**[Prime Agent 把递归子 Agent 和持久记忆装进同一套框架](https://huggingface.co/papers/2608.23552)**
+
+它把持续运行的 Python 环境、跨任务记忆和子 Agent 通信放在一起。作者称 ARC-AGI-3 最佳成绩从 30％升到 95.5％。
+
+**[Thinkingbox 测出 Agent 一次成功不等于稳定](https://huggingface.co/papers/2608.19741)**
+
+基准用 507 个业务流程检查 Agent 是否改对后台数据且没多做动作。最强模型单次通过率 65.36％，连续二十次全成功仅 25.25％。
+
+**[GameXpert-Bench：游戏开发全流程测试基准](https://huggingface.co/papers/2608.21833)**
+
+覆盖从零做游戏、修故障和连续六轮优化。当前 Agent 能搭基础版本，却不擅长主动找错、验证运行效果和保住旧功能。
+
+## 📌 行业简讯
+
+- [Kiro 接入 GPT-5.6 全系列](https://openai.com/index/gpt-5-6-in-kiro)
+- [Gradio 把 AI 工作流画布变成 API](https://huggingface.co/blog/gradio-workflow-guide)
+- [EdgeFirst 发布可复现实测的端侧模型库](https://huggingface.co/blog/EdgeFirst/model-zoo-intro)
+
+## 🎪 乐子汇总
+
+**[新模型预告先交一只 TiKZ 独角兽](https://x.com/emollick/status/2091995606516441405)**
+
+Mollick 建议，实验室以后神秘预告新模型时，只准放出经典提示词「用 TiKZ 画一只独角兽」的结果。
+
+**[整个旧金山被做成一张浏览器游戏地图](https://sf.thijs.gg)**
+
+玩家可以在网页里的城市街道上走、跑、跳、开车或滑翔，还能随时传送。
+
+**[一个 SQLite 数据库也能直接当程序运行](https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database)**
+
+开发者把 ELF 程序组件放进表里，再由解释器读取执行；Linux 还能把它识别成普通程序。
+
+**[文明毁灭千年后，人类可能只留下叉子](https://www.lesswrong.com/posts/NjLQf3QC4q4DD67kD/the-forkmakers)**
+
+文章设想，建筑和硬盘先坏掉，不锈钢餐具反而留得更久，于是后人把我们叫作「造叉人」。
+
+**[番茄、土豆和洋葱也能训练人脸活体检测](https://huggingface.co/papers/2608.21455)**
+
+研究者用蔬菜本体、打印照片和屏幕回放训练检测器，再拿它识别人脸翻拍；作者报告跨数据集平均成绩为 92.70％。
+
+## 🎲 赔率盒子
+
+来自预测市场 Manifold 的实时概率，仅供围观：
+
+- [2035 年前，AI 能在《我的世界》中完成任意任务吗？](https://manifold.markets/Gabrielle/before-2035-will-there-exist-any-ai-a8ceb93e18fb) — **74.0％**（成交额 28.2k mana）
+- [2028 年前，预测市场能找到交易 AI 灭绝风险的可靠方法吗？](https://manifold.markets/IsaacKing/before-2028-will-any-prediction-mar) — **15.8％**（成交额 1.6k mana）
+- [2030 年前，AI 会导致超过两成人口死亡吗？](https://manifold.markets/JonathanRay/will-ai-kill-20-of-the-human-popula) — **2.5％**（成交额 105.0k mana）
+- [人类会在 2100 年前消灭 AI 吗？](https://manifold.markets/TANSTAAFL/will-humanity-wipe-out-ai) — **13.0％**（成交额 1.0k mana）
+
+---
+
+*AI 日报 · 8月25日 · Telegram 频道 @dragonbro888*

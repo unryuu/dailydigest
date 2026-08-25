@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/NjLQf3QC4q4DD67kD/the-forkmakers",
+  "title": "文明毁灭千年后，人类可能只留下叉子",
+  "date": "2026-08-25",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/SNAKJuN8FdoEaWeFC/in-search-of-natural-features",
+  "title": "有人用纠错强度寻找 GPT-2 的内部特征",
+  "date": "2026-08-24",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/CjeobBGnhxg8xvden/llms-could-control-their-host-machines-by-exploiting",
+  "title": "恶意模型可能借推理引擎控制服务器",
+  "date": "2026-08-24",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/mPrbyBsGmNfWWgJmi/misaligned-ai-in-the-bronze-age",
   "title": "青铜时代的神庙粮仓也像一个失控 Agent",
   "date": "2026-08-22T02:45:47+08:00",

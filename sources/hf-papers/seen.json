@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.21455",
+  "title": "番茄、土豆和洋葱也能训练人脸活体检测",
+  "date": "2026-08-25",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.21833",
+  "title": "GameXpert-Bench：游戏开发全流程测试基准",
+  "date": "2026-08-25",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.19741",
+  "title": "Thinkingbox 测出 Agent 一次成功不等于稳定",
+  "date": "2026-08-25",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.23552",
+  "title": "Prime Agent 把递归子 Agent 和持久记忆装进同一套框架",
+  "date": "2026-08-25",
+  "reported": true,
+  "report_date": "2026-08-25"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.20336",
   "title": "多人图像生成先规划谁站哪里",
   "date": "2026-08-23 榜单抓取日",
