@@ -1,0 +1,149 @@
+{
+  "date_label": "8月26日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "DeepSeek 收入增长背后是近十倍算力投入",
+      "url": "https://www.theinformation.com/articles/deepseeks-revenue-reaches-70-million-july-tenfold-jump-2025",
+      "body": "据两名了解财务数据的人士，前七个月收入约 4.75 亿元，约为去年全年十倍；API 业务毛利率达到 82.9％。同期净亏损约 7.15 亿元，公司没有公开披露这些数字。\n\n基础设施投入约 110 亿元，去年全年约 12 亿元。六月完成首轮 500 亿元融资后，公司又在讨论同规模融资，并准备明年在上海上市；融资和上市都还没有敲定。"
+    },
+    {
+      "tier": "silver",
+      "title": "ClickHouse 年化经常性收入超过 3.5 亿美元",
+      "url": "https://www.theinformation.com/articles/clickhouses-annual-recurring-revenue-passes-350-million-ai-agent-demand",
+      "body": "年度经常性收入比五月增长 40％，但这是未来十二个月的合同价值。OpenAI 每天用它处理三十多 PB 数据，排查训练问题、追踪线上性能，并检查 Agent 是否按预期行动；过去一年用量增长约十倍，也把部分日志工作从 Datadog 转来。"
+    },
+    {
+      "tier": "silver",
+      "title": "AI 生成的攻击脚本开始打关键基础设施",
+      "url": "https://www.axios.com/2026/08/25/ai-critical-infrastructure-cyberattacks",
+      "body": "美国官员警告，黑客已把这类脚本用于一类常见工业设备；该设备也牵涉持续发生的美国供水系统攻击。AI 主要降低了读懂工业设备、利用已有弱点的时间、成本和技术门槛。英国电厂停机与美国水系统事件可能有关，但只有安全专家给出中等置信度判断。两地攻击尚无官方归因。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "silver",
+      "title": "支持内容溯源的相机也会签下假照片",
+      "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+      "body": "攻击者控制并 root 一台可签名的安卓设备后，不必取出硬件私钥，只要冒充相机应用，就能让设备为任意图片或视频签名。作者在 Pixel 8a 和 9a 上验证了攻击。签名密钥仍安全留在硬件里，设备可信这一环已经失守。"
+    },
+    {
+      "tier": "none",
+      "title": "搜索 Agent 要让反馈跟自己一起进化",
+      "url": "https://huggingface.co/papers/2608.24794",
+      "body": "同一个模型轮流当搜索 Agent 和纠错者，在搜索中主动求助并学习修正。两边交替更新，在七个基准上更好，也减少答案幻觉。"
+    },
+    {
+      "tier": "none",
+      "title": "LAION 开放一千万小时视频数据集",
+      "url": "https://huggingface.co/papers/2608.24845",
+      "body": "团队从 13 亿个网址下载 8000 万段视频，总计 1000 万小时，并生成视频和音频字幕，供多模态模型训练。"
+    },
+    {
+      "tier": "none",
+      "title": "模型边蒸馏边用可验证奖励纠偏",
+      "url": "https://huggingface.co/papers/2608.24696",
+      "body": "教师逐 token 指导，任务成败再给轨迹正负奖励。方法没有新增超参数，在六个推理基准上胜过普通在线蒸馏。"
+    },
+    {
+      "tier": "none",
+      "title": "微信开放多模态检索模型",
+      "url": "https://huggingface.co/papers/2608.24053",
+      "body": "2B、4B、9B 三个版本把文字、图片、视频放进同一检索空间。模型已用于视频号、公众号等服务，权重和代码开放。"
+    }
+  ],
+  "official": [
+    {
+      "tier": "silver",
+      "title": "OpenAI 自研推理芯片亮出首批结果",
+      "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "body": "特定 8k1k 单轮测试中，Jalapeño 的单位功耗 Token 吞吐超过文中对比的 Blackwell，且未用多 Token 预测。它为推理重做内存和专用内核，减少权重与缓存搬运。数字由 OpenAI 提供，SemiAnalysis 只核验部分运行。它仍是 A0 工程样片，没有长上下文、多轮成绩，计划 2027 年量产。"
+    },
+    {
+      "tier": "none",
+      "title": "ChatGPT Work 可以替用户登录网站",
+      "url": "https://x.com/sama/status/2092519459135095147",
+      "body": "它能用自己的电脑和浏览器完成登录，ChatGPT 不会看到用户名或密码，可用于开通公用事业、预约证件等。"
+    },
+    {
+      "tier": "none",
+      "title": "苹果发布 M6 和 M5 Ultra 桌面芯片",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+      "body": "M6 是苹果首款 2 纳米芯片，配双 16 核神经网络引擎；M5 Ultra 最高支持 512GB 统一内存，可本地运行数千亿参数模型。"
+    },
+    {
+      "tier": "none",
+      "title": "Ox Alpha 身份揭晓，是智谱 GLM-5.3-Flash",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "body": "匿名测试期间的全部流量由国产 AI 芯片承载。模型共 3200 亿参数、每次激活 180 亿，权重以 MIT 许可证开放。"
+    }
+  ],
+  "brief": [
+    {
+      "title": "Granite Speech 发布高速英语转写模型",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc"
+    },
+    {
+      "title": "Codex 让旅行公司的非开发团队自己上线工具",
+      "url": "https://openai.com/index/loveholidays"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "none",
+      "title": "反着玩的 Wordle 要尽量避开答案",
+      "url": "https://dontwordle.com",
+      "body": "六次猜词里要根据颜色线索一直避开正确答案，猜中反而输，每天还能有限撤销几次。"
+    },
+    {
+      "tier": "none",
+      "title": "Python 的字符串转小写也能变成安全漏洞",
+      "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+      "body": "IDNA 固定用 Unicode 3.2，str.lower() 却跟随新版 Unicode，同一域名可能得到不同编码。漏洞已修复。"
+    },
+    {
+      "tier": "none",
+      "title": "EVE Online 用十六年开始迁到 Python 3",
+      "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3",
+      "body": "游戏要把 240 万行代码从 Python 2 迁往 Python 3，还要人工检查约两万处行为差异；上次大升级是 2010 年。"
+    },
+    {
+      "tier": "none",
+      "title": "一套百万行 AI 代码跑上数百万台电脑",
+      "url": "https://simonwillison.net/2026/Aug/26/paul-dix",
+      "body": "AI 写出初稿后，这套软件又经过几个月持续修正；反复验证结果的系统把它一路磨到可用。"
+    },
+    {
+      "tier": "none",
+      "title": "亿万富豪承认让 AI 帮写报纸评论",
+      "url": "https://www.axios.com/2026/08/26/stanley-druckenmiller-ai-writing-wsj-op-ed",
+      "body": "Druckenmiller 说自己现在写东西都用 AI，就像算题用计算器。《华尔街日报》称只要论点属于作者，就接受 AI 辅助。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "2029 年前，AI 能生成达到 2023 年 AA 级中型游戏水准的游戏吗？",
+      "prob": "41.0％",
+      "note": "成交额 94.0k mana",
+      "url": "https://manifold.markets/DanW/by-2029-will-an-ai-be-able-to-gener"
+    },
+    {
+      "question": "2032 年 10 月前，AI 会引发金融崩盘吗？",
+      "prob": "56.0％",
+      "note": "成交额 6.6k mana",
+      "url": "https://manifold.markets/ZviMowshowitz/will-ai-cause-a-financial-crash-wit"
+    },
+    {
+      "question": "2027 年底前，AI 芯片市场会出现英伟达的强劲对手吗？",
+      "prob": "72.9％",
+      "note": "成交额 1.9k mana",
+      "url": "https://manifold.markets/SimranRahman/will-a-serious-competitor-to-nvidia"
+    },
+    {
+      "question": "OpenAI 会在 2026 年公开让模型适配不同芯片的软件吗？",
+      "prob": "24.7％",
+      "note": "成交额 0.9k mana",
+      "url": "https://manifold.markets/Bayesian/will-openai-publicly-share-software"
+    }
+  ]
+}

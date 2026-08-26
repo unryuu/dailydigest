@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.24053",
+  "title": "微信开放多模态检索模型",
+  "date": "2026-08-26",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.24696",
+  "title": "模型边蒸馏边用可验证奖励纠偏",
+  "date": "2026-08-26",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.24845",
+  "title": "LAION 开放一千万小时视频数据集",
+  "date": "2026-08-26",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.24794",
+  "title": "搜索 Agent 要让反馈跟自己一起进化",
+  "date": "2026-08-26",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.21455",
   "title": "番茄、土豆和洋葱也能训练人脸活体检测",
   "date": "2026-08-25",

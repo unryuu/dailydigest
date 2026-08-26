@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "jalapeno",
+    "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+    "status": 200,
+    "final_url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+    "bytes": 446345,
+    "title": "OpenAI Jalapeño: Better Than Nvidia Blackwell",
+    "chars": 31853
+  },
+  {
+    "slug": "critical-infra",
+    "url": "https://www.axios.com/2026/08/25/ai-critical-infrastructure-cyberattacks",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/25/ai-critical-infrastructure-cyberattacks",
+    "bytes": 251748,
+    "title": "AI accelerates attacks on water systems, power plants",
+    "chars": 4752
+  },
+  {
+    "slug": "c2pa-camera",
+    "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+    "status": 200,
+    "final_url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+    "bytes": 27152,
+    "title": "C2PA Cameras Do Not Survive Contact With Reality | Blog",
+    "chars": 12443
+  },
+  {
+    "slug": "chatgpt-work-login",
+    "url": "https://x.com/sama/status/2092519459135095147",
+    "status": 200,
+    "final_url": "https://x.com/sama/status/2092519459135095147",
+    "bytes": 219354,
+    "title": "Sam Altman on X: \"big\" / X",
+    "chars": 351
+  },
+  {
+    "slug": "apple-m6",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+    "status": 200,
+    "final_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+    "bytes": 201803,
+    "title": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute - Apple",
+    "chars": 21021
+  },
+  {
+    "slug": "glm53-flash",
+    "url": "https://z.ai/blog/glm-5.3-flash",
+    "status": 200,
+    "final_url": "https://z.ai/blog/glm-5.3-flash",
+    "bytes": 41074,
+    "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
+    "chars": 12861
+  },
+  {
+    "slug": "cafe",
+    "url": "https://huggingface.co/papers/2608.24794",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.24794",
+    "bytes": 119656,
+    "title": "Paper page - CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+    "chars": 2926
+  },
+  {
+    "slug": "laion-bvd",
+    "url": "https://huggingface.co/papers/2608.24845",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.24845",
+    "bytes": 122575,
+    "title": "Paper page - LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training",
+    "chars": 2137
+  },
+  {
+    "slug": "onpolicy-distill",
+    "url": "https://huggingface.co/papers/2608.24696",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.24696",
+    "bytes": 125049,
+    "title": "Paper page - On-policy Distillation with Verifiable Reward",
+    "chars": 2758
+  },
+  {
+    "slug": "wemm-embedding",
+    "url": "https://huggingface.co/papers/2608.24053",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.24053",
+    "bytes": 150094,
+    "title": "Paper page - WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+    "chars": 3075
+  },
+  {
+    "slug": "granite-speech",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
+    "bytes": 226216,
+    "title": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
+    "chars": 8803
+  },
+  {
+    "slug": "loveholidays",
+    "url": "https://openai.com/index/loveholidays",
+    "status": 200,
+    "final_url": "https://openai.com/index/loveholidays/",
+    "bytes": 397215,
+    "title": "How loveholidays is making everyone a builder with Codex | OpenAI",
+    "chars": 8285
+  },
+  {
+    "slug": "nitter-cd",
+    "url": "https://github.com/zedeus/nitter/issues/1442",
+    "status": 200,
+    "final_url": "https://github.com/zedeus/nitter/issues/1442",
+    "bytes": 306674,
+    "title": "All public nitter instances do not work. · Issue #1442 · zedeus/nitter · GitHub",
+    "chars": 911
+  },
+  {
+    "slug": "dont-wordle",
+    "url": "https://dontwordle.com",
+    "status": 200,
+    "final_url": "https://dontwordle.com/",
+    "bytes": 2608,
+    "title": "Don't Wordle",
+    "chars": 648
+  },
+  {
+    "slug": "python-lower",
+    "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+    "status": 200,
+    "final_url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+    "bytes": 11701,
+    "title": "When str.lower() is a security vulnerability in Python — Seth Larson",
+    "chars": 3993
+  },
+  {
+    "slug": "eve-python3",
+    "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
+    "bytes": 15504,
+    "title": "EVE Online: The Move to Python 3 Begins!",
+    "chars": 1903
+  },
+  {
+    "slug": "paul-dix",
+    "url": "https://simonwillison.net/2026/Aug/26/paul-dix",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/26/paul-dix/",
+    "bytes": 13996,
+    "title": "A quote from Paul Dix",
+    "chars": 1512
+  },
+  {
+    "slug": "ai-op-ed",
+    "url": "https://www.axios.com/2026/08/26/stanley-druckenmiller-ai-writing-wsj-op-ed",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/26/stanley-druckenmiller-ai-writing-wsj-op-ed",
+    "bytes": 260058,
+    "title": "Stanley Druckenmiller makes AI writing a billionaire flex",
+    "chars": 3757
+  }
+]

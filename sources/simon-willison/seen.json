@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/26/paul-dix",
+  "title": "一套百万行 AI 代码跑上数百万台电脑",
+  "date": "2026-08-26T08:07:55Z",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3",
+  "title": "EVE Online 用十六年开始迁到 Python 3",
+  "date": "2026-08-25T22:59:30Z",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database",
   "title": "一个 SQLite 数据库也能直接当程序运行",
   "date": "2026-08-24",

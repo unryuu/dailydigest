@@ -1,0 +1,62 @@
+URL: https://www.axios.com/2026/08/25/ai-critical-infrastructure-cyberattacks
+FINAL: https://www.axios.com/2026/08/25/ai-critical-infrastructure-cyberattacks
+TITLE: AI accelerates attacks on water systems, power plants
+FETCHED: 2026-08-26 23:08:23
+============================================================
+22 hours ago
+-
+Technology
+AI is supercharging hacks of everyday utilities
+Sam Sabin
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Illustration: Eniola Odetunde/Axios
+Years of warnings about the digital vulnerabilities lurking inside basic utilities are colliding with a new reality: AI is making those
+weaknesses easier
+for hackers to exploit.
+Why it matters:
+AI is lowering the barrier for state-backed hackers looking to disrupt or manipulate water systems, power plants and other critical infrastructure.
+Driving the news:
+A recent wave of cyberattacks targeting critical infrastructure is raising new questions about the preparedness of U.S. water systems and a British power plant.
+The Telegraph
+reported
+that Iran-backed hackers broke into a U.K. power plant, prompting a four-day shutdown around the time a series of cyberattacks on U.S. water systems began.
+U.S. officials
+warned
+last week that hackers were actively using an AI-generated exploitation script to target a device commonly found in critical infrastructure that has played a key role in the ongoing attacks on U.S. water systems.
+Markus Mueller, field CISO at critical infrastructure security firm Nozomi Networks, told Axios he has medium confidence that the U.S. and U.K. attacks are linked to the same threat actor.
+The big picture:
+Policymakers have been warning for years that weak cybersecurity across critical infrastructure could eventually have real-world consequences.
+Five years ago, Sen. Angus King (I-Maine)
+warned
+Congress that cyber weaknesses across U.S. water utilities represented "an extremely dangerous situation."
+"We're the most wired country in the world. That's good," he told lawmakers. "But we're also the most vulnerable country in the world."
+Between the lines:
+AI isn't fundamentally changing how hackers break into these systems. It's reducing the time and expertise needed to understand specialized equipment and exploit weaknesses that already exist, experts told Axios.
+Suspected Iranian hackers have long studied U.S. critical infrastructure, including how specialized devices such as programmable logic controllers work.
+Historically, threat actors might have needed to obtain the devices themselves or pore over technical manuals before they could successfully target them, Mueller said.
+Now, AI is lowering the "time, cost, and expertise needed to take advantage of weaknesses that already exist," Diana Kelley, chief information security officer at Noma Security, told Axios.
+Reality check:
+Governments haven't simply ignored the problem. But efforts to impose stronger security requirements have moved slowly and repeatedly run into legal, political and funding hurdles.
+The Environmental Protection Agency attempted during the Biden administration to require water utilities to implement basic cybersecurity measures, but it later
+rescinded
+the policy after legal challenges from states and industry groups.
+Recent federal cuts to cybersecurity resources and uncertainty around federal grant funding for state and local governments "leaves communities more vulnerable to future cyberattacks," Mayuresh Dani, a security research manager at Qualys, told Axios.
+Cyber hygiene guidance and government advisories alone won't keep pace with attackers, John Gallagher, vice president at automated cybersecurity firm Viakoo, told Axios.
+"Adversaries will always have an upper hand because of speed when cyber defense relies on bureaucratic budget cycles and multiyear legislative processes," Gallagher said.
+Yes, but:
+So far, the recent attacks appear to have caused only limited disruptions.
+In some towns, hackers affected the pressure levels for local water supplies and officials issued precautionary boil-water advisories.
+The Telegraph reported that the cyberattack on the local power plant "had no impact on the U.K.'s wider power supply or energy generation. "
+The intrigue:
+Critical infrastructure remains an alluring target for nation-state hackers precisely because even relatively small disruptions can have highly visible consequences, Margaret Cunningham, vice president of security and AI strategy at Darktrace, told Axios.
+"AI gives attackers more speed and reach, but it doesn't erase the problems critical infrastructure organizations have been dealing with for years, including exposed operational technology, difficulty patching and systems that cannot simply be switched off," she said.
+What to watch:
+Key details about the U.K. incident remain unknown, including what type of power plant was targeted and which devices the hackers accessed, Mueller said.
+Go deeper
+:
+AI cyber threats give security leaders decision fatigue
+Add Axios on Google
+What to read next

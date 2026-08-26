@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-26",
+  "scanned_at": "2026-08-26T18:47:40+08:00",
+  "window": "接续 2026-08-25T19:42:00+08:00 手工扫描截止，只看首页 Latest 中此后发布的内容，忽略 Recommended、Most Popular 和旧档案",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫描 Latest 并精读相关候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025",
+      "url": "https://www.theinformation.com/articles/deepseeks-revenue-reaches-70-million-july-tenfold-jump-2025",
+      "published_at": "2026-08-25T23:50:58-07:00",
+      "published_at_beijing": "2026-08-26T14:50:58+08:00",
+      "bucket_hint": "industry",
+      "decision": "高优先级加入定牌候选",
+      "facts": [
+        "据两名了解公司财务数据的人士，DeepSeek 今年前七个月收入约 4.75 亿元人民币，约为 2025 全年收入的十倍；同期净亏损约 7.15 亿元，低于 2025 全年的 9.35 亿元。",
+        "今年前七个月整体毛利率为 44.6％，其中 API 业务毛利率为 82.9％；公司通过提高基础设施效率，用更少芯片完成相同任务。",
+        "公司今年前七个月在服务器租赁、芯片和其他计算设备上的基础设施相关支出约 110 亿元，2025 全年约为 12 亿元。",
+        "DeepSeek 正与现有及新投资者讨论第二轮融资，目标募资 500 亿元、估值 5000 亿元；公司六月已完成首轮 500 亿元融资，并聘请投行准备明年在上海上市。"
+      ],
+      "caveats": [
+        "收入、利润率、支出和融资进展来自匿名知情人士与未公开财务数据，DeepSeek 未回应，不能写成公司正式披露。",
+        "前七个月收入不是年化收入，也不要把 4.75 亿元与上月报道的 4 亿至 5 亿美元年化口径混写。",
+        "第二轮融资仍在讨论，500 亿元募资额、5000 亿元估值和明年上市都不是已经完成的结果。"
+      ],
+      "why": "DeepSeek 的低价开放模型开始显出一门高 API 毛利率生意的轮廓，但收入增长背后是基础设施投入一年放大近十倍。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "ClickHouse’s Recurring Revenue Passes $350 Million as OpenAI, Agent Use Jumps",
+      "url": "https://www.theinformation.com/articles/clickhouses-annual-recurring-revenue-passes-350-million-ai-agent-demand",
+      "published_at": "2026-08-25T06:04:49-07:00",
+      "published_at_beijing": "2026-08-25T21:04:49+08:00",
+      "bucket_hint": "industry",
+      "decision": "高优先级加入定牌候选",
+      "facts": [
+        "据一名接近公司的人士，ClickHouse 年度经常性收入已超过 3.5 亿美元，比五月增长 40％；公司同时提供开源数据库和付费云服务。",
+        "OpenAI 过去一年对 ClickHouse 的用量增长约十倍，达到每天三十多 PB，约合每天 30 万亿条事件，用于训练排错、线上性能追踪和检查 Agent 是否按预期行动。",
+        "OpenAI 过去一年把部分日志管理业务从 Datadog 迁到 ClickHouse；前客户认为 Datadog 的按量计费在大规模项目中成本较高。",
+        "ClickHouse 毛利率约为 50％至 70％，CEO 称公司如果愿意可以在明年实现现金流为正，但目前选择继续投资增长；公司今年一月估值为 150 亿美元。"
+      ],
+      "caveats": [
+        "收入和 OpenAI 使用量主要来自匿名知情人士；年度经常性收入是未来十二个月订阅合同价值，不是已经实现的全年收入。",
+        "Agent 热潮与收入增长存在相关性，但不能把全部 40％增长都归因于 Agent。",
+        "OpenAI 只是迁移部分工作负载，不能写成已经全面弃用 Datadog；性能和成本优势包含投资者、分析师及前客户判断。"
+      ],
+      "why": "Agent 不只抬高模型公司的收入，也把日志、数据库和可观测性变成基础设施生意；OpenAI 每天三十多 PB 的用量给出了罕见的真实规模。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Why OpenAI’s Jalapeño Might Sicken Nvidia",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/openais-jalapeno-might-sicken-nvidia",
+      "reason": "核心事实来自 OpenAI 官方测试与 SemiAnalysis 公开评测，机械候选已收 SemiAnalysis 原文；The Information 本文主要是评论，不另存付费媒体候选。"
+    },
+    {
+      "title": "Why Big Tech is Suddenly Paying Up for Startups",
+      "url": "https://www.theinformation.com/articles/big-tech-suddenly-paying-startups",
+      "reason": "首页显示为结构性评论，未见足以独立成条的新交易或独家数字；本轮已有两篇信息密度更高的独家材料。"
+    },
+    {
+      "title": "Why Revenue Is Hopping at Data Observability Startups",
+      "url": "https://www.theinformation.com/newsletters/dealmaker/revenue-hopping-data-observability-startups",
+      "reason": "与已精读的 ClickHouse、Agent 数据基础设施主线重叠，优先保留有明确收入与用量数字的独家文章。"
+    }
+  ]
+}

@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
+  "title": "Granite Speech 发布高速英语转写模型",
+  "date": "2026-08-26",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
   "id": "https://huggingface.co/blog/EdgeFirst/model-zoo-intro",
   "title": "EdgeFirst 发布可复现实测的端侧模型库",
   "date": "2026-08-25",

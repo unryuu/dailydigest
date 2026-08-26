@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://www.axios.com/2026/08/26/stanley-druckenmiller-ai-writing-wsj-op-ed",
+  "title": "亿万富豪承认让 AI 帮写报纸评论",
+  "date": "2026-08-26T09:20:05Z",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/25/ai-critical-infrastructure-cyberattacks",
+  "title": "AI 生成的攻击脚本开始打关键基础设施",
+  "date": "2026-08-25T17:17:31+00:00",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
   "id": "https://www.axios.com/2026/08/25/data-centers-ai-electricity-water-politics",
   "title": "五家云巨头今年资本开支预计超过 7500 亿美元",
   "date": "2026-08-25",

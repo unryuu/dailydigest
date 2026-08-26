@@ -1,0 +1,383 @@
+{
+  "date": "2026-08-26",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "DeepSeek 高 API 毛利率背后是近十倍基础设施投入",
+      "cost": "重",
+      "reason": "独立成组。匿名财务数字密集，收入、亏损、毛利率、算力支出、融资与上市计划均需 reader 逐项核口径。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "DeepSeek’s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025",
+          "url": "https://www.theinformation.com/articles/deepseeks-revenue-reaches-70-million-july-tenfold-jump-2025",
+          "date": "2026-08-26T14:50:58+08:00",
+          "why": "前七个月收入约为去年全年的十倍、API 毛利率据称达 82.9％，但同期基础设施相关支出约 110 亿元。第二轮融资、估值与明年上市均仍在讨论，不能写成已完成。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Agent 热潮正在把日志与数据库推成基础设施生意",
+      "cost": "重",
+      "reason": "独立成组。ClickHouse 的 ARR、OpenAI 日用量与迁移范围主要来自匿名人士，且相关性不能直接写成因果。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "ClickHouse’s Recurring Revenue Passes $350 Million as OpenAI, Agent Use Jumps",
+          "url": "https://www.theinformation.com/articles/clickhouses-annual-recurring-revenue-passes-350-million-ai-agent-demand",
+          "date": "2026-08-25T21:04:49+08:00",
+          "why": "ARR 据称超过 3.5 亿美元，OpenAI 每天使用三十多 PB，并把部分日志工作负载从 Datadog 迁入。需区分 ARR 与实际收入，也不能把全部增长归因于 Agent。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "OpenAI 自研 Jalapeño 芯片声称越过英伟达 Blackwell",
+      "cost": "重",
+      "reason": "独立成组。标题反直觉且 HN 高票，但本地候选只提供标题与原文链接，需 reader 核官方测试、第三方评测、工作负载与比较口径。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+          "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+          "date": "2026-08-25T14:06:02Z",
+          "why": "HN 493 分、317 条评论。仅见标题与榜单信号，不能据标题写成全面胜过 Blackwell；需 reader 核性能、延迟、功耗、成本及是否只针对特定推理负载。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "OpenAI 一边让 Agent 代用户登录网站，一边淘汰八个月前的企业 Agent 范式",
+      "cost": "中",
+      "reason": "两条 X 候选合并为产品更替组。一条是新消费功能，一条是企业工具退场判断，需要回到 OpenAI 官方材料核开放范围和停用边界。",
+      "items": [
+        {
+          "source": "x-sama",
+          "title": "ChatGPT Work 可以代用户登录网站，但模型看不到用户名和密码",
+          "url": "https://x.com/sama/status/2092519459135095147",
+          "date": "2026-08-26T15:48:10+08:00",
+          "why": "这是 OpenAI 的新产品进展，不是 8 月 25 日 Meta 消费级 Agent 的换链接，但题材相邻，交定牌裁决。当前只从 Altman 引用帖读到说明，需核官方原帖、套餐、地区和凭证托管机制。"
+        },
+        {
+          "source": "x-emollick",
+          "title": "OpenAI 去年展示的 Agent 未来，八个月后已经被自己停掉",
+          "url": "https://x.com/emollick/status/2092404982012158354",
+          "date": "2026-08-26T08:13:17+08:00",
+          "why": "Mollick 称 Agent Builder 已于六月停用，但仍有企业产品沿用该模式。需核停用公告、产品边界和企业使用情况，不能外推为企业 Agent 路线整体失败。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "AI 生成的利用脚本已进入关键基础设施攻击",
+      "cost": "中",
+      "reason": "涉及水系统、电厂与国家支持攻击者，按重大安全事件带回。它与 8 月 25 日推理引擎主机漏洞不是同一事件，但需避免把相邻攻击面混写。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "AI is making critical infrastructure easier to attack",
+          "url": "https://www.axios.com/2026/08/25/ai-critical-infrastructure-cyberattacks",
+          "date": "2026-08-25T17:17:31+00:00",
+          "why": "摘要称美国官员已警告攻击者正用 AI 生成的利用脚本攻击关键基础设施常见设备，并提到英国电厂停摆和美国水系统攻击。需核官方警报、攻击归属与两地事件是否相关。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "hacker-news",
+      "title": "Apple introduces M6 and M5 Ultra",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+      "date": "2026-08-25T13:01:22Z",
+      "note": "HN 1152 分。与同场 Mac Studio、Mac mini 发布合并看，reader 只需核 AI 算力和实际产品配置，不拆成三条。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "C2PA Cameras Do Not Survive Contact with Reality",
+      "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+      "date": "2026-08-25T19:38:24Z",
+      "note": "内容溯源相机的反例测试，HN 158 分。适合作为 AI 生成内容认证的一眼货，reader 核攻击条件与影响范围。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Agentic Context Management: Memory and Cost as Architecture Problems",
+      "url": "https://arxiv.org/abs/2607.21503",
+      "date": "2026-08-26T02:35:25Z",
+      "note": "论文编号为 2607，不写成今日新论文；这是今日 HN 新上榜的 Agent 上下文、记忆与成本架构讨论。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces",
+      "url": "https://huggingface.co/papers/2608.23041",
+      "date": "",
+      "note": "本日 HF 榜单抓取项，日期未知。用 Agent 执行轨迹自动改进 harness，需 reader 核实验任务与耐久更新定义。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+      "url": "https://huggingface.co/papers/2608.24794",
+      "date": "",
+      "note": "本日 HF 榜单抓取项，日期未知。钩子是搜索 Agent 自我改进时反馈机制也必须同步演化。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "CyberFactory: Scaling Cyber Security Capabilities with Instances from the Wild",
+      "url": "https://huggingface.co/papers/2608.23181",
+      "date": "",
+      "note": "本日 HF 榜单抓取项，日期未知。真实世界实例扩展网络安全能力，与关键基础设施事件可形成论文侧补充。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training",
+      "url": "https://huggingface.co/papers/2608.24845",
+      "date": "",
+      "note": "本日 HF 榜单抓取项，日期未知。规模钩子明确，为一千万小时开放视频数据集。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Latent Action as Intention Enables Efficient Future Imagination for World Action Models",
+      "url": "https://huggingface.co/papers/2608.24882",
+      "date": "",
+      "note": "本日 HF 榜单抓取项，日期未知。把潜在动作解释为意图，用于世界动作模型的未来想象。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "On-policy Distillation with Verifiable Reward",
+      "url": "https://huggingface.co/papers/2608.24696",
+      "date": "",
+      "note": "本日 HF 榜单抓取项，日期未知。与另一篇扩散模型自蒸馏候选机械去重后，只保留可验证奖励这条。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+      "url": "https://huggingface.co/papers/2608.24053",
+      "date": "",
+      "note": "本日 HF 榜单抓取项，日期未知。微信多模态 Embedding 技术报告，榜单互动信号在本批论文中较高。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
+      "date": "",
+      "note": "IBM Granite Speech 5.0 Turbo CTC 发布说明，属于模型通稿型一眼货。"
+    },
+    {
+      "source": "openai",
+      "title": "How loveholidays is making everyone a builder with Codex",
+      "url": "https://openai.com/index/loveholidays",
+      "date": "2026-08-26T00:00:00Z",
+      "note": "Codex 企业案例通稿，核心钩子是让非开发团队也能把想法做成产品。"
+    },
+    {
+      "source": "z-ai",
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "date": "2026-08-26",
+      "note": "用户点名补入。官方确认此前匿名测试的 Ox Alpha 就是 GLM-5.3-Flash；模型权重已上传 Hugging Face，MIT 许可证。官方称匿名测试流量全部由国产 AI 芯片承载。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "Don't Wordle",
+      "url": "https://dontwordle.com",
+      "date": "2026-08-25T11:49:48Z",
+      "note": "反过来玩的 Wordle，HN 355 分。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Nitter and XCancel receive cease and desist notices",
+      "url": "https://github.com/zedeus/nitter/issues/1442",
+      "date": "2026-08-25T17:08:21Z",
+      "note": "Nitter 与 XCancel 收到停止侵权通知，HN 971 分，也解释了公开 X 抓取生态持续收紧的背景。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Black hole singularity is a surface not a point",
+      "url": "https://arxiv.org/abs/2608.21590",
+      "date": "2026-08-25T17:02:49Z",
+      "note": "黑洞奇点也许是一个面而不是点，HN 256 分；只当反直觉科学候选，不能写成定论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "When str.lower() is a security vulnerability in Python",
+      "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+      "date": "2026-08-25T20:49:03Z",
+      "note": "一个小写转换也能变成 Python 安全漏洞，HN 133 分。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Queryable Executables",
+      "url": "https://fzakaria.com/2026/08/24/actually-queryable-executables",
+      "date": "2026-08-26T00:20:49Z",
+      "note": "可直接查询的可执行文件，HN 198 分。与 8 月 25 日 SQLite 可执行程序题材相邻，疑与昨日乐子重叠，交定牌裁决。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "EVE Online: The Move to Python 3 Begins!",
+      "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3",
+      "date": "2026-08-25T22:59:30Z",
+      "note": "EVE Online 时隔十六年开始把约 240 万行代码迁往 Python 3。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Quoting Paul Dix",
+      "url": "https://simonwillison.net/2026/Aug/26/paul-dix",
+      "date": "2026-08-26T08:07:55Z",
+      "note": "Paul Dix 感叹 AI 写出并持续打磨一百万行代码，最终运行在数百万开发者机器上；这是观点，不是独立评测。"
+    },
+    {
+      "source": "axios",
+      "title": "Stanley Druckenmiller makes AI writing a billionaire flex",
+      "url": "https://www.axios.com/2026/08/26/stanley-druckenmiller-ai-writing-wsj-op-ed",
+      "date": "2026-08-26T09:20:05Z",
+      "note": "亿万富豪坦然承认用 AI 帮写《华尔街日报》评论，争议焦点反而仍是观点本身。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“When There Are No Experts” by J Bostock",
+      "url": "https://www.lesswrong.com/posts/HTQcogA2r2kL8qxPA/when-there-are-no-experts",
+      "date": "2026-08-26T08:00:04Z",
+      "note": "讨论当一个领域没有可验证的专家层级时，人们如何声称自己知道某件事。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
+      "date": "2026-08-25T19:07:01Z",
+      "note": "FDA 首次授权可同时连续监测酮体与血糖的穿戴设备，非 AI，但属于意外且实用的科技候选。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "到 2029 年，AI 能生成达到约 2023 年 AA 级中型游戏水准的电子游戏吗？",
+      "prob": "41.0％",
+      "volume_note": "累计成交量约 9.4 万 Mana",
+      "url": "https://manifold.markets/DanW/by-2029-will-an-ai-be-able-to-gener"
+    },
+    {
+      "question": "AI 会在 2032 年 10 月前引发金融崩盘吗？",
+      "prob": "56.0％",
+      "volume_note": "累计成交量约 6559 Mana",
+      "url": "https://manifold.markets/ZviMowshowitz/will-ai-cause-a-financial-crash-wit"
+    },
+    {
+      "question": "AI 会在 2040 年前消灭人类吗？",
+      "prob": "8.1％",
+      "volume_note": "累计成交量约 171.7 万 Mana",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    },
+    {
+      "question": "AI 会在 2060 年前消灭人类吗？",
+      "prob": "11.4％",
+      "volume_note": "累计成交量约 28.3 万 Mana；与 2040 年盘形成期限对照",
+      "url": "https://manifold.markets/JamesBills/will-ai-wipe-out-humanity-before-th-6e8e547afa66"
+    },
+    {
+      "question": "2100 年前，AI 会让人类人口降到五千人以下吗？",
+      "prob": "20.3％",
+      "volume_note": "累计成交量约 1585 Mana；与近期 2030 年死亡比例盘不是同一市场，但主题相邻，交定牌裁决",
+      "url": "https://manifold.markets/lbiii/before-2100-will-ai-cause-the-human"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "ahead-of-ai",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "anthropic-research",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "chip-huyen",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "claude-blog",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "deepmind",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "karpathy",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "lilian-weng",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "meta-ai",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "抓到三条二手线索，但本地候选未提供可核的原始出处，因此全部丢弃。"
+    },
+    {
+      "slug": "thinking-machines",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "xai",
+      "reason": "本地抓取成功，但时间窗内无机械候选。"
+    },
+    {
+      "slug": "x-roon（超快推理帖）",
+      "reason": "与 8 月 25 日已报的推理引擎攻击面主线相邻，只是风险推演，没有真实新实验或事故，不换链接重报。"
+    },
+    {
+      "slug": "lesswrong／axios（数据中心反弹）",
+      "reason": "Zvi 长文和 Axios 竞选备忘录都紧贴 8 月 25 日已报的数据中心政治反弹材料，未见足以重开主线的新进展。"
+    }
+  ]
+}

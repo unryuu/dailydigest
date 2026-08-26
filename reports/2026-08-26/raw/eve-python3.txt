@@ -1,0 +1,93 @@
+URL: https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3
+FINAL: https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/
+TITLE: EVE Online: The Move to Python 3 Begins!
+FETCHED: 2026-08-26 23:07:55
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+Teleport
+— AI agents don’t sleep and will try anything to achieve their goal. Teleport explains how to deploy AI safely, starting with an isolated ephemeral trusted runtime.
+25th August 2026 - Link Blog
+EVE Online: The Move to Python 3 Begins!
+(
+via
+) EVE Online has been one of the most interesting case studies in Python at scale for over twenty years now.
+They've been running on
+Stackless Python
+since their launch in 2003, and their last major upgrade was 16 years ago, to Stackless Python 2.7
+in 2010
+.
+Their upgrade to Python 3 will start using the
+futurize
+script against 2.4 million lines of code, followed by careful manual review of the ~20,000 places where Python 2 and 3 behavior differ - for example
+1 / 2
+is
+0
+in Python 2 but is
+0.5
+in Python 3.
+There's nothing in this announcement about how they plan to replace Stackless, but at their conference last year they presented
+Scheduling in Carbon: Leaving Stackless Python Behind
+describing how they replaced Stackless in the Carbon engine for their more recent game EVE Frontier, using their (now open source)
+carbonengine/scheduler
+library.
+Posted
+25th August 2026
+at 10:59 pm
+Recent articles
+Conceptual integrity and counting lines of code
+- 19th August 2026
+Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things
+- 16th August 2026
+Now we have a timeline of the OpenAI accidental attack against Hugging Face
+- 7th August 2026
+This is a
+link post
+by Simon Willison, posted on
+25th August 2026
+.
+eve-online
+2
+migrations
+13
+python
+1,278
+python3
+22
+stackless
+2
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

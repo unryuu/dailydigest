@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://openai.com/index/loveholidays",
+  "title": "Codex 让旅行公司的非开发团队自己上线工具",
+  "date": "2026-08-26T00:00:00Z",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
   "id": "https://openai.com/index/gpt-5-6-in-kiro",
   "title": "Kiro 接入 GPT-5.6 全系列",
   "date": "2026-08-24",

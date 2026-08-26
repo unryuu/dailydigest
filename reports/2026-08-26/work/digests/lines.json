@@ -1,0 +1,122 @@
+[
+  {
+    "id": "chatgpt-work-login",
+    "section": "official",
+    "label": "ChatGPT Work 可以替用户登录网站",
+    "url": "https://x.com/sama/status/2092519459135095147",
+    "body": "它能在网页和手机端使用自己的电脑与浏览器登录，官方称 ChatGPT 不会看到用户名或密码；示例包括开通公用事业、预约证件和查询报销。",
+    "note": "核实通过；dup_suspect：与 08-25 金牌 Meta 跨网站办事 Agent 题材相邻，是否并列收录交由定牌裁决。"
+  },
+  {
+    "id": "apple-m6",
+    "section": "official",
+    "label": "苹果发布 M6 和 M5 Ultra 桌面芯片",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+    "body": "M6 是苹果首款 2 纳米芯片，配双 16 核神经网络引擎；M5 Ultra 首次采用四芯片架构，最高支持 512GB 统一内存，可在 Mac Studio 本地运行数千亿参数模型。",
+    "note": "核实通过；苹果新闻稿发布于 8 月 25 日，性能数字均为苹果自测口径。"
+  },
+  {
+    "id": "glm53-flash",
+    "section": "official",
+    "label": "Ox Alpha 身份揭晓，是智谱 GLM-5.3-Flash",
+    "url": "https://z.ai/blog/glm-5.3-flash",
+    "body": "官方称匿名测试期间的全部流量都由国产 AI 芯片承载；模型共 3200 亿参数、每次激活 180 亿，权重已在 Hugging Face 以 MIT 许可证开放。",
+    "note": "核实通过；Ox Alpha 身份和国产芯片承载来自官方博文，MIT 许可证由博文直链的 Hugging Face 官方模型页元数据核实。用户点名补入，普通模型发布不建议升牌。"
+  },
+  {
+    "id": "cafe",
+    "section": "papers",
+    "label": "搜索 Agent 要让反馈跟自己一起进化",
+    "url": "https://huggingface.co/papers/2608.24794",
+    "body": "同一个模型轮流当搜索 Agent 和纠错者，在搜索途中主动求助并学习修正。只训练一边会停滞，两边交替更新在七个基准上表现更好，并减少答案幻觉。",
+    "note": "核实通过；论文发布于 8 月 25 日，Hugging Face 于 8 月 26 日收录。"
+  },
+  {
+    "id": "laion-bvd",
+    "section": "papers",
+    "label": "LAION 开放一千万小时视频数据集",
+    "url": "https://huggingface.co/papers/2608.24845",
+    "body": "团队从 Common Crawl 收集 13 亿个视频网址，实际下载 8000 万段、总计 1000 万小时，还为片段生成视频和音频字幕，供视频、音频和图像多模态预训练。",
+    "note": "核实通过；论文发布于 8 月 25 日，数据集是否包含可直接下载的视频文件需以项目页的具体发布方式为准。"
+  },
+  {
+    "id": "onpolicy-distill",
+    "section": "papers",
+    "label": "模型边蒸馏边用可验证奖励纠偏",
+    "url": "https://huggingface.co/papers/2608.24696",
+    "body": "教师模型提供逐词元指导，任务成败再把正确轨迹奖励为正、错误轨迹压成负。方法不新增超参数，在六个推理基准上胜过普通在线蒸馏。",
+    "note": "核实通过；论文发布于 8 月 25 日，代码已公开。"
+  },
+  {
+    "id": "wemm-embedding",
+    "section": "papers",
+    "label": "微信开放多模态检索模型",
+    "url": "https://huggingface.co/papers/2608.24053",
+    "body": "2B、4B、9B 三个版本把文字、图片、视频和图文混排映射进同一空间，用于搜索和推荐；目前已在视频号、公众号、朋友圈和电商服务上线，权重与代码也已开放。",
+    "note": "核实通过；论文发布于 8 月 25 日，线上效果数字来自腾讯内部测试与 A／B 实验。"
+  },
+  {
+    "id": "granite-speech",
+    "section": "brief",
+    "label": "Granite Speech 发布高速英语转写模型",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
+    "body": "模型只有 4.7 亿参数，H200 批处理吞吐超过 12600 倍实时速度，相当于一秒转写 3.5 小时音频；其中可商用版本采用 Apache 2.0 许可证。",
+    "note": "核实通过；发布于 8 月 25 日，速度是英伟达 H200 上的批处理结果，不代表单条实时延迟。"
+  },
+  {
+    "id": "loveholidays",
+    "section": "brief",
+    "label": "Codex 让旅行公司的非开发团队自己上线工具",
+    "url": "https://openai.com/index/loveholidays",
+    "body": "十多个搜索体验多数由非工程师完成，至少三个已经上线；一年内 AI 辅助代码改动占比从 7％升到 79％，工程团队人数基本没有增加。",
+    "note": "核实通过；OpenAI 客户案例发布于 8 月 26 日，数字由 loveholidays 提供。"
+  },
+  {
+    "id": "nitter-cd",
+    "section": "brief",
+    "label": "Nitter 仓库归档，公开实例集体被限流",
+    "url": "https://github.com/zedeus/nitter/issues/1442",
+    "body": "给定链接显示仓库在 8 月 26 日归档，issue 只记录公开实例统一报错「Instance has been rate limited」；正文没有出现 XCancel 或停止侵权通知。",
+    "note": "fetch_failed：链接能打开，但内容与候选标题不符，无法据此核实「Nitter 和 XCancel 收到停止侵权通知」。不建议按原标题发出。"
+  },
+  {
+    "id": "dont-wordle",
+    "section": "fun",
+    "label": "反着玩的 Wordle 要尽量避开答案",
+    "url": "https://dontwordle.com",
+    "body": "同样是六次猜词，却要根据颜色线索把正确答案一直留在候选里，猜中反而输；每天还能有限撤销几次。",
+    "note": "核实通过；网页未显示发布日期，只能确认玩法与候选标题相符。"
+  },
+  {
+    "id": "python-lower",
+    "section": "fun",
+    "label": "Python 的字符串转小写也能变成安全漏洞",
+    "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+    "body": "旧版 IDNA 规则必须固定使用 Unicode 3.2，而 `str.lower()` 会跟着 Python 携带的新 Unicode 数据变化，同一个域名可能被编码成不同结果。问题已以 CVE-2026-17084 修复。",
+    "note": "核实通过；原文发布于 8 月 18 日，并非 8 月 25 日或 26 日的新文章。"
+  },
+  {
+    "id": "eve-python3",
+    "section": "fun",
+    "label": "EVE Online 用十六年开始迁到 Python 3",
+    "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3",
+    "body": "游戏上次大升级还是 2010 年的 Stackless Python 2.7；这次要处理 240 万行代码，并人工检查约两万处 Python 2 与 3 的行为差异。",
+    "note": "核实通过；Simon Willison 的链接文章发布于 8 月 25 日，正文转述 EVE 官方迁移公告。"
+  },
+  {
+    "id": "paul-dix",
+    "section": "fun",
+    "label": "一套百万行 AI 代码跑上数百万台电脑",
+    "url": "https://simonwillison.net/2026/Aug/26/paul-dix",
+    "body": "AI 先写出约一百万行代码，再用几个月持续修正，如今这套软件已运行在数百万台开发者电脑上；反复验证结果的系统让它一路磨到可用。",
+    "note": "核实通过；页面是 8 月 26 日收录的 Paul Dix 引述，未在该页独立展开软件名称和一百万行的统计方法。"
+  },
+  {
+    "id": "ai-op-ed",
+    "section": "fun",
+    "label": "亿万富豪承认让 AI 帮写报纸评论",
+    "url": "https://www.axios.com/2026/08/26/stanley-druckenmiller-ai-writing-wsj-op-ed",
+    "body": "Stanley Druckenmiller 说自己现在写东西都用 AI，就像算题用计算器；《华尔街日报》评论版表示，只要论点确属作者本人，就接受 AI 辅助研究、语法和编辑。",
+    "note": "核实通过；Axios 报道发布于 8 月 26 日，并对比了《华尔街日报》评论版与《金融时报》的不同政策。"
+  }
+]

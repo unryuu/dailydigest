@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://z.ai/blog/glm-5.3-flash",
+  "title": "Ox Alpha 身份揭晓，是智谱 GLM-5.3-Flash",
+  "date": "2026-08-26",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+  "title": "Python 的字符串转小写也能变成安全漏洞",
+  "date": "2026-08-25T20:49:03Z",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://dontwordle.com",
+  "title": "反着玩的 Wordle 要尽量避开答案",
+  "date": "2026-08-25T11:49:48Z",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
+  "title": "苹果发布 M6 和 M5 Ultra 桌面芯片",
+  "date": "2026-08-25T13:01:22Z",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+  "title": "OpenAI 自研推理芯片亮出首批结果",
+  "date": "2026-08-25T14:06:02Z",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
+  "id": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+  "title": "支持内容溯源的相机也会签下假照片",
+  "date": "2026-08-25T19:38:24Z",
+  "reported": true,
+  "report_date": "2026-08-26"
+ },
+ {
   "id": "https://sf.thijs.gg",
   "title": "整个旧金山被做成一张浏览器游戏地图",
   "date": "2026-08-25",

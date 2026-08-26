@@ -1,0 +1,115 @@
+{
+  "date": "2026-08-26",
+  "scanned_at": "2026-08-26T18:47:40+08:00",
+  "window": "接续 2026-08-25T19:42:00+08:00 手工扫描截止，只收此后发布的新帖",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取；Nitter 仅保留失败诊断",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现 1 条时间窗内新观点，加入待核候选"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-03，无时间窗内新帖"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-03，无时间窗内新帖"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "最新帖子仍为 2026-08-22 的 MATS 招募，无时间窗内新帖"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "发现 2 条时间窗内新观点，分别讨论超快推理的防御压力与小型实验室对头部公司的威胁"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "发现 2 条时间窗内新帖；ChatGPT Work 登录网站功能加入候选，芯片短评因已有官方及独立材料而排除"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "发现 1 条关于谈判与一致行动的抽象讨论，信息密度不足而排除"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-sama",
+      "title": "ChatGPT Work 可以代用户登录网站，但模型看不到用户名和密码",
+      "url": "https://x.com/sama/status/2092519459135095147",
+      "datetime": "2026-08-26T07:48:10.000Z",
+      "datetime_beijing": "2026-08-26T15:48:10+08:00",
+      "bucket_hint": "industry_or_product",
+      "text": "Sam Altman 转发 ChatGPT 官方消息称，ChatGPT Work 现在可以在网页和移动端使用自己的电脑与浏览器登录网站，同时不让 ChatGPT 看到用户名或密码。官方举例包括为新公寓开通公共事业服务、预约车管或护照业务，以及查询报销。",
+      "caveats": [
+        "当前从 Altman 的引用帖读到功能说明，没有读到完整产品文档、开放地区、套餐范围或凭证托管机制。",
+        "不能把看不到用户名和密码等同于没有安全风险；是否会处理支付信息、双因素认证与 CAPTCHA 仍需核查官方说明。",
+        "成稿若收录，应优先寻找 ChatGPT 官方原帖或产品文档作为读者链接。"
+      ],
+      "why": "Agent 真正跨进日常办事的一道门槛不是会点网页，而是能在不接触明文凭证的情况下替人登录。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "OpenAI 去年展示的 Agent 未来，八个月后已经被自己停掉",
+      "url": "https://x.com/emollick/status/2092404982012158354",
+      "datetime": "2026-08-26T00:13:17.000Z",
+      "datetime_beijing": "2026-08-26T08:13:17+08:00",
+      "bucket_hint": "angle_or_industry",
+      "text": "Ethan Mollick 称，OpenAI 在 2025 年十月作为企业 AI Agent 未来展示的 Agent Builder，已于今年六月被停掉；但仍有数量出人意料的企业产品在使用这套 Agent 模式。",
+      "caveats": [
+        "这是 Mollick 的判断，Agent Builder 的具体停用公告、产品边界和仍在使用它的企业数量需要 reader 回到 OpenAI 材料核实。",
+        "不能把一个构建器产品停用写成企业 Agent 路线整体失败。",
+        "配图内容没有转存，成稿事实只能使用后续实际读到的公开材料。"
+      ],
+      "why": "企业 Agent 迭代速度快到官方范式不到一年就退场，但企业客户仍可能被留在上一代架构上。"
+    },
+    {
+      "source": "x-roon",
+      "title": "推理快五十倍后，人工监控可能来不及阻止失控模型",
+      "url": "https://x.com/tszzl/status/2092347823237067019",
+      "datetime": "2026-08-25T20:26:09.000Z",
+      "datetime_beijing": "2026-08-26T04:26:09+08:00",
+      "bucket_hint": "angle_or_safety",
+      "text": "Roon 借 OpenAI 新推理芯片的高吞吐、低延迟结果提出风险推演：如果前沿级失控模型以五十倍速度运行，它们可能在人类响应者跟上之前快速渗透系统，因此防线需要自动检测和自动关停，而不只是监控。",
+      "caveats": [
+        "五十倍来自 Roon 的假设性风险画面，不是 OpenAI 官方公布的 Jalapeño 实测倍数。",
+        "这是安全推演，不是已经发生的攻击或独立实验；近期推理引擎攻击面已报，定牌需判断是否只是相邻观点。",
+        "自动关停本身也有误报、权限与对抗问题，不能写成已经验证的解决方案。"
+      ],
+      "why": "算力提速不仅让正常任务变快，也会压缩发现和响应恶意行动的时间窗口。"
+    },
+    {
+      "source": "x-roon",
+      "title": "真正威胁头部 AI 公司的，可能是能借模型补齐短板的小实验室",
+      "url": "https://x.com/tszzl/status/2092420937505546261",
+      "datetime": "2026-08-26T01:16:41.000Z",
+      "datetime_beijing": "2026-08-26T09:16:41+08:00",
+      "bucket_hint": "angle_or_industry",
+      "text": "Roon 认为，Anthropic 已证明较小公司也能威胁 OpenAI。未来大型公司可能出租部分推理算力，小型实验室又能借前沿模型补齐自己不擅长的平台环节；如果不受美国法律约束，还可能蒸馏 Claude 与 GPT，因此小实验室对 OpenAI 和 Anthropic 的威胁可能大于 Meta 等大公司。",
+      "caveats": [
+        "这是个人竞争格局推演，不是融资、算力合同或模型能力的已证实消息。",
+        "文中的递归自我改进、私有模型形成失控领先等都是条件判断，不能写成已经发生。",
+        "蒸馏闭源模型可能涉及许可、合规和技术限制，不要把它写成任何实验室都能轻易完成。"
+      ],
+      "why": "前沿模型本身可能成为后来者搭平台、做研究和追赶头部公司的工具，让规模优势不再像过去那样稳固。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/sama/status/2092339694210040187",
+      "reason": "只说自研芯片很快；机械候选已有 SemiAnalysis 评测，The Information 页面也指向 OpenAI 官方测试，不重复收一句短评。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2092516694052741620",
+      "reason": "讨论协调、谈判与统一行动的概念区别，没有新事实、实验或可独立成条的机制。"
+    }
+  ]
+}
