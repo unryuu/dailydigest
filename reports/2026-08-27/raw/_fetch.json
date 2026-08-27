@@ -1,0 +1,148 @@
+[
+  {
+    "slug": "nvidia-hf",
+    "url": "https://www.theinformation.com/articles/nvidia-agrees-buy-open-source-model-repository-hugging-face-12-9-billion",
+    "status": null,
+    "error": "Error: Page.goto: net::ERR_CONNECTION_RESET at https://www.theinformation.com/articles/nvidia-agrees-buy-open-source-model-repository-hugging-face-12-9-billion\nCall log:\n  - navigating to \"https://www.theinformation.com/articles/nvidia-agrees-buy-open-source-model-repository-hugging-face-12-9-billion\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "openai-hf-incident-ti",
+    "url": "https://www.theinformation.com/briefings/hundreds-openai-agents-attacked-hugging-face-independent-investigation-finds",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/hundreds-openai-agents-attacked-hugging-face-independent-investigation-finds",
+    "bytes": 228556,
+    "title": "Hundreds of OpenAI Agents Attacked Hugging Face, Independent Investigation Finds — The Information",
+    "chars": 27
+  },
+  {
+    "slug": "openai-hf-incident",
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "status": 200,
+    "final_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "bytes": 1099720,
+    "title": "The Hugging Face incident and the road ahead | OpenAI",
+    "chars": 39894
+  },
+  {
+    "slug": "metr-hf-incident",
+    "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "status": 200,
+    "final_url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "bytes": 743837,
+    "title": "Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident - METR",
+    "chars": 221208
+  },
+  {
+    "slug": "neelnanda-hf",
+    "url": "https://x.com/NeelNanda5/status/2092833361614020937",
+    "status": 403,
+    "final_url": "https://x.com/NeelNanda5/status/2092833361614020937",
+    "bytes": 39,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "softbank-1x",
+    "url": "https://www.theinformation.com/articles/softbank-talks-buy-majority-stake-humanoid-maker-1x-6-billion-valuation",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/softbank-talks-buy-majority-stake-humanoid-maker-1x-6-billion-valuation",
+    "bytes": 238477,
+    "title": "SoftBank in Talks to Buy Majority Stake in Humanoid Maker 1X at $6 Billion Valuation — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "anthropic-independent-research",
+    "url": "https://www.anthropic.com/research/enabling-independent-research",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/enabling-independent-research",
+    "bytes": 189736,
+    "title": "Enabling independent research on how people use Claude \\ Anthropic",
+    "chars": 16976
+  },
+  {
+    "slug": "frontier-challenge",
+    "url": "https://huggingface.co/papers/2608.24979",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.24979",
+    "bytes": 152666,
+    "title": "Paper page - FrontierChallenge: Evaluating Scientific Workflow Completion",
+    "chars": 4009
+  },
+  {
+    "slug": "antrap",
+    "url": "https://huggingface.co/papers/2608.24099",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.24099",
+    "bytes": 134065,
+    "title": "Paper page - Are Android GUI Agents Robust Against Runtime Anomalies? AnTrap: Evaluating Agents in Dynamic Adversarial Environments",
+    "chars": 2955
+  },
+  {
+    "slug": "long-horizon-av",
+    "url": "https://huggingface.co/papers/2608.23383",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.23383",
+    "bytes": 143255,
+    "title": "Paper page - Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds",
+    "chars": 3326
+  },
+  {
+    "slug": "voicemem",
+    "url": "https://huggingface.co/papers/2608.26005",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.26005",
+    "bytes": 142153,
+    "title": "Paper page - VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction",
+    "chars": 2970
+  },
+  {
+    "slug": "gemini-transcribe",
+    "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+    "bytes": 393859,
+    "title": "Introducing Gemini 3.5 Transcribe",
+    "chars": 7337
+  },
+  {
+    "slug": "qwen38-flash-next",
+    "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+    "bytes": 15788,
+    "title": "Qwen3.8-Flash-Next",
+    "chars": 1619
+  },
+  {
+    "slug": "grok46-foundry",
+    "url": "https://x.ai/news/grok-4-6-microsoft-foundry",
+    "status": null,
+    "error": "Error: Page.goto: net::ERR_CONNECTION_RESET at https://x.ai/news/grok-4-6-microsoft-foundry\nCall log:\n  - navigating to \"https://x.ai/news/grok-4-6-microsoft-foundry\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "slug": "grok-bot-plans",
+    "url": "https://x.ai/news/grok-bot-more-plans",
+    "status": 200,
+    "final_url": "https://x.ai/news/grok-bot-more-plans",
+    "bytes": 344860,
+    "title": "Grok Bot is now included with more plans | SpaceXAI",
+    "chars": 6735
+  },
+  {
+    "slug": "modestys-bailey",
+    "url": "https://thezvi.substack.com/p/against-modestys-bailey",
+    "status": 200,
+    "final_url": "https://thezvi.substack.com/p/against-modestys-bailey",
+    "bytes": 211069,
+    "title": "Against Modesty’s Bailey - by Zvi Mowshowitz",
+    "chars": 23245
+  },
+  {
+    "slug": "sama-model-party",
+    "url": "https://x.com/sama/status/2092733018838290817",
+    "status": 200,
+    "final_url": "https://x.com/sama/status/2092733018838290817",
+    "bytes": 181232,
+    "title": "Sam Altman on X: \"i think we should do another party for our next model release, the 5.5 party was a lot of fun.\n\nwhat would make the next one awesome?\" / X",
+    "chars": 186
+  }
+]

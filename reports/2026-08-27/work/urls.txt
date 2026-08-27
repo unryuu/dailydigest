@@ -1,0 +1,17 @@
+nvidia-hf|https://www.theinformation.com/articles/nvidia-agrees-buy-open-source-model-repository-hugging-face-12-9-billion
+openai-hf-incident-ti|https://www.theinformation.com/briefings/hundreds-openai-agents-attacked-hugging-face-independent-investigation-finds
+openai-hf-incident|https://openai.com/index/hugging-face-incident-and-the-road-ahead/
+metr-hf-incident|https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/
+neelnanda-hf|https://x.com/NeelNanda5/status/2092833361614020937
+softbank-1x|https://www.theinformation.com/articles/softbank-talks-buy-majority-stake-humanoid-maker-1x-6-billion-valuation
+anthropic-independent-research|https://www.anthropic.com/research/enabling-independent-research
+frontier-challenge|https://huggingface.co/papers/2608.24979
+antrap|https://huggingface.co/papers/2608.24099
+long-horizon-av|https://huggingface.co/papers/2608.23383
+voicemem|https://huggingface.co/papers/2608.26005
+gemini-transcribe|https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe
+qwen38-flash-next|https://simonwillison.net/2026/Aug/26/qwen38-flash-next
+grok46-foundry|https://x.ai/news/grok-4-6-microsoft-foundry
+grok-bot-plans|https://x.ai/news/grok-bot-more-plans
+modestys-bailey|https://thezvi.substack.com/p/against-modestys-bailey
+sama-model-party|https://x.com/sama/status/2092733018838290817

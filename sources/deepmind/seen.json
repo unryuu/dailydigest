@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+  "title": "Google 发布 Gemini 3.5 Transcribe",
+  "date": "2026-08-27T01:01:00+08:00",
+  "reported": true,
+  "report_date": "2026-08-27"
+ },
+ {
   "id": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
   "title": "DeepMind 和游戏工作室一起做可玩 AI 原型",
   "date": "Fri, 21 Aug 2026 11:59:48 +0000",

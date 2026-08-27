@@ -1,0 +1,87 @@
+URL: https://simonwillison.net/2026/Aug/26/qwen38-flash-next
+FINAL: https://simonwillison.net/2026/Aug/26/qwen38-flash-next/
+TITLE: Qwen3.8-Flash-Next
+FETCHED: 2026-08-27 14:38:42
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+Teleport
+— AI agents don’t sleep and will try anything to achieve their goal. Teleport explains how to deploy AI safely, starting with an isolated ephemeral trusted runtime.
+26th August 2026 - Link Blog
+Qwen3.8-Flash-Next
+(
+via
+) Another open weights model from Qwen. This one is "a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4".
+It's pretty big: 125B tokens, but only 6B active which means it gets a significant performance boost.
+I've been trying it out on a DGX Spark using
+these Unsloth quantized models
+. I'm still exploring the model - so far I've tried the 72.5GB UD-IQ1_S one (producing
+these pelicans
+) and the 78.9GB UD-Q2_K_XL (producing
+these
+).
+My favorite so far was this xhigh reasoning effort one from UD-Q2_K_XL:
+Posted
+26th August 2026
+at 11:52 pm
+Recent articles
+Conceptual integrity and counting lines of code
+- 19th August 2026
+Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things
+- 16th August 2026
+Now we have a timeline of the OpenAI accidental attack against Hugging Face
+- 7th August 2026
+This is a
+link post
+by Simon Willison, posted on
+26th August 2026
+.
+ai
+2,203
+generative-ai
+1,952
+llms
+1,919
+qwen
+61
+pelican-riding-a-bicycle
+136
+ai-in-china
+107
+nvidia-spark
+6
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

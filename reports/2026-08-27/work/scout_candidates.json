@@ -1,0 +1,282 @@
+{
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T14:17:07.802844+08:00",
+  "count": 25,
+  "items": [
+    {
+      "source": "acx",
+      "title": "Your Book Review: A Residence Of 21 Years In The Sandwich Islands",
+      "url": "https://www.astralcodexten.com/p/your-book-review-a-residence-of-21",
+      "date": "Fri, 21 Aug 2026 17:16:16 GMT",
+      "summary": "Finalist #6 in the Book Review Contest",
+      "fetch_route": "chromium",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "long"
+    },
+    {
+      "source": "acx",
+      "title": "Open Thread 448",
+      "url": "https://www.astralcodexten.com/p/open-thread-448",
+      "date": "Mon, 24 Aug 2026 02:48:38 GMT",
+      "summary": "...",
+      "fetch_route": "chromium",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "long"
+    },
+    {
+      "source": "acx",
+      "title": "Re: Re: Re: Pritchard On Liberal Happiness",
+      "url": "https://www.astralcodexten.com/p/re-re-re-pritchard-on-liberal-happiness",
+      "date": "Mon, 24 Aug 2026 23:54:20 GMT",
+      "summary": "...",
+      "fetch_route": "chromium",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "long"
+    },
+    {
+      "source": "acx",
+      "title": "College EA Meetups Everywhere: Call For Organizers",
+      "url": "https://www.astralcodexten.com/p/college-ea-meetups-everywhere-call",
+      "date": "Thu, 20 Aug 2026 19:55:39 GMT",
+      "summary": "...",
+      "fetch_route": "chromium",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "long"
+    },
+    {
+      "source": "acx",
+      "title": "Highlights From The Comments On The Substack Religion Debate",
+      "url": "https://www.astralcodexten.com/p/highlights-from-the-comments-on-the-491",
+      "date": "Tue, 25 Aug 2026 16:03:47 GMT",
+      "summary": "...",
+      "fetch_route": "chromium",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "long"
+    },
+    {
+      "source": "anthropic-research",
+      "title": "Aug 26, 2026 Societal Impacts Enabling independent research on how people use Claude",
+      "url": "https://www.anthropic.com/research/enabling-independent-research",
+      "date": "Aug 26, 2026",
+      "summary": "Aug 26, 2026 Societal Impacts Enabling independent research on how people use Claude Aug 18, 2026 Science How Claude is accelerating protein design and analytical chemistry Aug 13, 2026 Frontier Red Team Patterns and problems in emerging multiagent systems Aug 12, 2026 Economics Reviewing the evidence on worker retraining programs Aug 10, 2026 Science Learning more about Claude's mathematical capabilities Jul 28, 2026 Frontier Red Team Discovering cryptographic weaknesses with Claude Jul 24, 2026 Frontier Red Team Project Pilot: Can AI control a drone? Jul 14, 2026 Economics How Canada uses Claude: Findings from the Anthropic Economic Index Jul 13, 2026 Societal Impacts Claude’s values across models and languages Jul 9, 2026 Frontier Red Team Claude plays robotics",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "极高",
+      "length_hint": "heavy"
+    },
+    {
+      "source": "deepmind",
+      "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+      "date": "Wed, 26 Aug 2026 17:01:00 +0000",
+      "summary": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe.",
+      "fetch_route": "chromium",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "medium"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Agent-G^2: Gaussian Guidance for Agentic Reinforcement Learning",
+      "url": "https://huggingface.co/papers/2608.23318",
+      "date": "",
+      "summary": "Agent-G^2: Gaussian Guidance for Agentic Reinforcement Learning Agent-G^2: Gaussian Guidance for Agentic Reinforcement Learning",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Are Android GUI Agents Robust Against Runtime Anomalies? AnTrap: Evaluating Agents in Dynamic Adversarial Environments",
+      "url": "https://huggingface.co/papers/2608.24099",
+      "date": "",
+      "summary": "Are Android GUI Agents Robust Against Runtime Anomalies? AnTrap: Evaluating Agents in Dynamic Adversarial Environments Are Android GUI Agents Robust Against Runtime Anomalies? AnTrap: Evaluating Agents in Dynamic Adversarial Environments",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "D^3-MOPD: Adaptive Dynamic Domain ScheDuling for Efficient Multi-Teacher Distillation",
+      "url": "https://huggingface.co/papers/2608.24987",
+      "date": "",
+      "summary": "D^3-MOPD: Adaptive Dynamic Domain ScheDuling for Efficient Multi-Teacher Distillation D^3-MOPD: Adaptive Dynamic Domain ScheDuling for Efficient Multi-Teacher Distillation",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "FrontierChallenge: Evaluating Scientific Workflow Completion",
+      "url": "https://huggingface.co/papers/2608.24979",
+      "date": "",
+      "summary": "FrontierChallenge: Evaluating Scientific Workflow Completion FrontierChallenge: Evaluating Scientific Workflow Completion",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution",
+      "url": "https://huggingface.co/papers/2608.25593",
+      "date": "",
+      "summary": "JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds",
+      "url": "https://huggingface.co/papers/2608.23383",
+      "date": "",
+      "summary": "Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds Long-Horizon Audio-Visual Generation for Persistent Stories and Interactive Worlds",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "StreamPI: Streaming Multimodal Temporal Modeling for Vision-Language-Action Models",
+      "url": "https://huggingface.co/papers/2608.26067",
+      "date": "",
+      "summary": "StreamPI: Streaming Multimodal Temporal Modeling for Vision-Language-Action Models StreamPI: Streaming Multimodal Temporal Modeling for Vision-Language-Action Models",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "V-Rubrics: Visual Faithfulness via Rubric-Based Reinforcement Learning",
+      "url": "https://huggingface.co/papers/2608.25580",
+      "date": "",
+      "summary": "V-Rubrics: Visual Faithfulness via Rubric-Based Reinforcement Learning V-Rubrics: Visual Faithfulness via Rubric-Based Reinforcement Learning",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning",
+      "url": "https://huggingface.co/papers/2608.26105",
+      "date": "",
+      "summary": "VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "VGI-BENCH: Probing Visual Intelligence in Video Generation Models",
+      "url": "https://huggingface.co/papers/2608.19583",
+      "date": "",
+      "summary": "VGI-BENCH: Probing Visual Intelligence in Video Generation Models VGI-BENCH: Probing Visual Intelligence in Video Generation Models",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction",
+      "url": "https://huggingface.co/papers/2608.26005",
+      "date": "",
+      "summary": "VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "hf-papers",
+      "title": "WarpSAC: Towards the Pinnacle of Scalable Off-policy RL by Rethinking Exploration and Exploitation",
+      "url": "https://huggingface.co/papers/2608.24479",
+      "date": "",
+      "summary": "WarpSAC: Towards the Pinnacle of Scalable Off-policy RL by Rethinking Exploration and Exploitation WarpSAC: Towards the Pinnacle of Scalable Off-policy RL by Rethinking Exploration and Exploitation",
+      "fetch_route": "chromium",
+      "date_known": false,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "huggingface",
+      "title": "Modern LLMs: What the FLIP is an Engram!? Blackroot • about 23 hours ago • 7",
+      "url": "https://huggingface.co/blog/Blackroot/what-the-engram",
+      "date": "",
+      "summary": "Modern LLMs: What the FLIP is an Engram!? Blackroot • about 23 hours ago • 7 Modern LLMs: What the FLIP is an Engram!? Blackroot • about 23 hours ago • 7",
+      "fetch_route": "chromium",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "medium"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Qwen3.8-Flash-Next",
+      "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next",
+      "date": "2026-08-26T23:52:58+00:00",
+      "summary": "Qwen3.8-Flash-Next Another open weights model from Qwen. This one is \"a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4\". It's pretty big: 125B tokens, but only 6B active which means it gets a significant performance boost. I've been trying it out on a DGX Spark using these Unsloth quantized models . I'm still exploring the model - so far I've tried the 72.5GB UD-IQ1_S one (producing these pelicans ) and the 78.9GB UD-Q2_K_XL (producing these ). My favorite so far was this xhigh reasoning effort one from UD-Q2_K_XL: Via Hacker News Tags: ai , generative-ai , llms , qwen , pelican-riding-a-bicycle , ai-in-china , nvidia-spark",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "高",
+      "length_hint": "short"
+    },
+    {
+      "source": "the-batch",
+      "title": "Aug 21, 2026 Anthropic’s Watermarks, Grok 4.6 Surges, Qwen’s Open Weights, Better Corrections for Speech Recognition The Batch News & Insights: I previously wrote about our AI Engineering Skills Map, with the highest level skills being (i) Building and deploying... Read more",
+      "url": "https://www.deeplearning.ai/the-batch/issue-367",
+      "date": "",
+      "summary": "Aug 21, 2026 Anthropic’s Watermarks, Grok 4.6 Surges, Qwen’s Open Weights, Better Corrections for Speech Recognition The Batch News & Insights: I previously wrote about our AI Engineering Skills Map, with the highest level skills being (i) Building and deploying... Read more",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "低",
+      "length_hint": "medium"
+    },
+    {
+      "source": "thezvi",
+      "title": "Against Modesty’s Bailey",
+      "url": "https://thezvi.substack.com/p/against-modestys-bailey",
+      "date": "Wed, 26 Aug 2026 18:17:22 GMT",
+      "summary": "Modesty arguments often say that you should mostly or entirely bow to ‘expert consensus’ or the views of particular others, and who are you to disagree.",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "高",
+      "length_hint": "long"
+    },
+    {
+      "source": "xai",
+      "title": "Grok 4.6 on Microsoft Foundry",
+      "url": "https://x.ai/news/grok-4-6-microsoft-foundry",
+      "date": "Aug 26, 2026",
+      "summary": "Aug 26, 2026 Grok 4.6 on Microsoft Foundry Aug 21, 2026 Grok 4.6 on Gemini Enterprise Agent Platform Aug 19, 2026 Grok 4.6 on Amazon Bedrock Aug 19, 2026 Grok Build on web and mobile",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "short"
+    },
+    {
+      "source": "xai",
+      "title": "Grok Bot is now included with more plans",
+      "url": "https://x.ai/news/grok-bot-more-plans",
+      "date": "Aug 26, 2026",
+      "summary": "Aug 26, 2026 Grok Bot is now included with more plans Aug 26, 2026 Grok Bot is now included with more plans Grok Bot is now available for SuperGrok, Cursor Pro, and all Cursor Teams plans. Read More Aug 26, 2026 Grok 4.6 on Microsoft Foundry Aug 21, 2026 Grok 4.6 on Gemini Enterprise Agent Platform Aug 19, 2026 Grok 4.6 on Amazon Bedrock Aug 19, 2026 Grok Build on web and mobile",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "short"
+    }
+  ]
+}

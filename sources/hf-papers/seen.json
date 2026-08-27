@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.26005",
+  "title": "语音 Agent 用两套记忆维持实时对话",
+  "date": "2026-08-27",
+  "reported": true,
+  "report_date": "2026-08-27"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.23383",
+  "title": "视频模型开始生成持续发展的故事世界",
+  "date": "2026-08-27",
+  "reported": true,
+  "report_date": "2026-08-27"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.24099",
+  "title": "安卓 Agent 遇到临场意外就容易出错",
+  "date": "2026-08-27",
+  "reported": true,
+  "report_date": "2026-08-27"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.24979",
+  "title": "科研 Agent 经常报完成却没交齐结果",
+  "date": "2026-08-27",
+  "reported": true,
+  "report_date": "2026-08-27"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.24053",
   "title": "微信开放多模态检索模型",
   "date": "2026-08-26",

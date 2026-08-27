@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/research/enabling-independent-research",
+  "title": "Anthropic 让外部团队研究真实 Claude 用法",
+  "date": "2026-08-26",
+  "reported": true,
+  "report_date": "2026-08-27"
+ },
+ {
   "id": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
   "title": "Claude 自主设计蛋白质并分析化学数据",
   "date": "Aug 18, 2026",

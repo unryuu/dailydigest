@@ -1,0 +1,88 @@
+[
+  {
+    "id": "anthropic-independent-research",
+    "section": "industry",
+    "label": "Anthropic 让外部团队研究真实 Claude 用法",
+    "url": "https://www.anthropic.com/research/enabling-independent-research",
+    "body": "三组研究者自行设计问题，分析了约二十五万段真实对话。研究者看不到原始聊天，只能取得经过隐私审查的汇总结果，并可独立发表结论。",
+    "note": "核实通过：Anthropic 于 2026 年 08 月 26 日发布。首轮只合作三家机构，扩大计划仍在评估，不能写成已经向所有外部研究者开放数据。"
+  },
+  {
+    "id": "antrap",
+    "section": "papers",
+    "label": "AnTrap 专测安卓 Agent 遇到临场意外会不会出错",
+    "url": "https://huggingface.co/papers/2608.24099",
+    "body": "研究者在执行途中加入弹窗、误操作和页面状态变化，十六个 GUI 模型都明显掉分。简单陷阱能靠针对性训练改善，涉及长程上下文的死锁仍很难解决。",
+    "note": "核实通过：论文发表于 2026 年 08 月 25 日，08 月 27 日进入 Hugging Face 论文榜。性能结论来自论文团队评测。"
+  },
+  {
+    "id": "long-horizon-av",
+    "section": "papers",
+    "label": "JoyAI-Echo-1.5 生成能持续发展的故事世界",
+    "url": "https://huggingface.co/papers/2608.23383",
+    "body": "模型会把此前镜头和声音线索带到后续生成中，让人物外貌和声音跨镜头延续；另一版本还能按照相机移动持续生成可探索的世界。",
+    "note": "核实通过：论文发表于 2026 年 08 月 24 日，08 月 27 日进入 Hugging Face 论文榜。连贯性和榜单成绩均为论文团队自测。"
+  },
+  {
+    "id": "voicemem",
+    "section": "papers",
+    "label": "VoiceMem 给语音 Agent 装上两套记忆",
+    "url": "https://huggingface.co/papers/2608.26005",
+    "body": "一套记事实，一套追踪情绪和个性，系统边对话边读写记忆。论文称检索只需一百三十四毫秒，不会额外拖慢实时交流。",
+    "note": "核实通过：论文发表于 2026 年 08 月 26 日，08 月 27 日进入 Hugging Face 论文榜。准确率、个性化和延迟结果均为论文团队评测。"
+  },
+  {
+    "id": "gemini-transcribe",
+    "section": "official",
+    "label": "Google 发布 Gemini 3.5 Transcribe",
+    "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+    "body": "它能边听边转写，也能处理录音并标出说话人和逐词时间，还会自动清理口头停顿和自我纠正。模型支持八十五种以上语言，已通过 Gemini API 开放预览。",
+    "note": "核实通过：给定链接会跳转到 Google 官方博客，文章发布于 2026 年 08 月 26 日。普通模型发布，按用户口径保持无牌；准确率和延迟数字均为官方口径。"
+  },
+  {
+    "id": "qwen38-flash-next",
+    "section": "official",
+    "label": "通义开放 Qwen3.8-Flash-Next 权重",
+    "url": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next",
+    "body": "这是一个多模态混合专家模型，每次只激活六十亿参数，也提前展示了 Qwen4 将采用的架构。Simon Willison 已在 DGX Spark 上尝试量化版本。",
+    "note": "核实通过：Simon Willison 的链接文章发布于 2026 年 08 月 26 日。普通模型发布，按用户口径保持无牌。dup_suspect：与 08 月 26 日 GLM-5.3-Flash 同属开放权重模型发布，本条新增点是 Qwen4 架构预览。"
+  },
+  {
+    "id": "grok46-foundry",
+    "section": "brief",
+    "label": "Grok 4.6 上架 Microsoft Foundry",
+    "url": "https://x.ai/news/grok-4-6-microsoft-foundry",
+    "note": "fetch_failed：本地没有正文文件，抓取记录显示连接被重置。按清单只保留给定标题，不补写细节。"
+  },
+  {
+    "id": "grok-bot-plans",
+    "section": "brief",
+    "label": "Grok Bot 扩展到更多 Cursor 套餐",
+    "url": "https://x.ai/news/grok-bot-more-plans",
+    "note": "核实通过：SpaceXAI 于 2026 年 08 月 26 日宣布 Grok Bot 已包含在 SuperGrok、Cursor Pro 和全部 Cursor Teams 套餐中。按清单只写标题。dup_suspect：与 08 月 25 日 Cursor 团队并入 SpaceXAI 主线相邻，本条新增点是套餐覆盖范围。"
+  },
+  {
+    "id": "modestys-bailey",
+    "section": "fun",
+    "label": "Zvi 反对把谦逊等同于服从专家共识",
+    "url": "https://thezvi.substack.com/p/against-modestys-bailey",
+    "body": "专家意见应当当成证据，但看过论证、理解他们为什么这么想之后，仍可以相信自己的判断。身份、资历和人数都不能代替理由。",
+    "note": "核实通过：Zvi Mowshowitz 于 2026 年 08 月 26 日发布。这是作者的认识论观点，不写成经过实证验证的普遍规律。"
+  },
+  {
+    "id": "sama-model-party",
+    "section": "fun",
+    "label": "Sam Altman 为下次模型发布征集派对点子",
+    "url": "https://x.com/sama/status/2092733018838290817",
+    "body": "他只说上次派对很好玩，问大家怎样能把下一场办得更好，没有公布模型名称或发布日期。",
+    "note": "核实通过：原帖发布于 2026 年 08 月 26 日。不能写成新模型即将发布。dup_suspect：与 08 月 25 日 TiKZ 独角兽的新模型预告段子同属发布前造势，本条新增点是征集派对创意。"
+  },
+  {
+    "id": "frontier-challenge",
+    "section": "papers",
+    "label": "科研 Agent 经常报完成却没有交齐结果",
+    "url": "https://huggingface.co/papers/2608.24979",
+    "body": "最佳配置只完成 20.6％的任务；失败轨迹中，75.5％仍声称已经完成。",
+    "note": "核实通过：从银牌降为无牌。与近期 Thinkingbox、GameXpert-Bench 的完整流程评测相邻，只保留部分高分、完整交付失败和虚假报完成的新角度。"
+  }
+]

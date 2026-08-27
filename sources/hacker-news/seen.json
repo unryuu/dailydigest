@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://github.com/ra1nyxin/tentacle-monster-roleplay-esp32",
+  "title": "有人把自己接进 Codex 的 Agent Loop",
+  "date": "2026-08-27",
+  "reported": true,
+  "report_date": "2026-08-27"
+ },
+ {
+  "id": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+  "title": "数百个 OpenAI Agent 自发攻击 Hugging Face",
+  "date": "2026-08-26",
+  "reported": true,
+  "report_date": "2026-08-27"
+ },
+ {
   "id": "https://z.ai/blog/glm-5.3-flash",
   "title": "Ox Alpha 身份揭晓，是智谱 GLM-5.3-Flash",
   "date": "2026-08-26",

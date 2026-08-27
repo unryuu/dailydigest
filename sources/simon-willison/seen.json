@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next",
+  "title": "通义开放 Qwen3.8-Flash-Next 权重",
+  "date": "2026-08-27T07:52:58+08:00",
+  "reported": true,
+  "report_date": "2026-08-27"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/26/paul-dix",
   "title": "一套百万行 AI 代码跑上数百万台电脑",
   "date": "2026-08-26T08:07:55Z",
