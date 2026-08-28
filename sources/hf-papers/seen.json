@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.27456",
+  "title": "AI Agent 走进一座 3D 香港",
+  "date": "2026-08-28",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.27454",
+  "title": "Agent 把经历编成可复用技能",
+  "date": "2026-08-28",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.27448",
+  "title": "模型能在做数学题时继续训练自己",
+  "date": "2026-08-28",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.26005",
   "title": "语音 Agent 用两套记忆维持实时对话",
   "date": "2026-08-27",

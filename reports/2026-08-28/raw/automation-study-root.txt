@@ -1,0 +1,32 @@
+URL: https://x.com/abhishekn/status/2092758268850655459
+FINAL: https://x.com/abhishekn/status/2092758268850655459
+TITLE: Abhishek Nagaraj on X: "🚨🚨 NEW RESEARCH ALERT! 🚨🚨
+
+Excited to release new WP with lab colleagues @kennywongchamch @krisgulati and #MinMinFong.
+
+This paper asks a simple question: how do we rank models on real work tasks when they are coaching rather than when they're playing?
+
+Answer: the best" / X
+FETCHED: 2026-08-28 21:25:19
+============================================================
+Abhishek Nagaraj
+@abhishekn
+🚨🚨 NEW RESEARCH ALERT! 🚨🚨
+
+Excited to release new WP with lab colleagues
+@
+kennywongchamch
+@
+krisgulati
+and
+#MinMinFong
+.
+
+This paper asks a simple question: how do we rank models on real work tasks when they are coaching rather than when they're playing?
+
+Answer: the best players are not the best coaches!
+arxiv.org/abs/2608.18554
+More below 👇
+11:37 PM · Aug 26, 2026
+12.4K
+Views

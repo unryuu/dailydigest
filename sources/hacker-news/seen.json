@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html",
+  "title": "散度定理把 3D 模型体积算进一个循环",
+  "date": "2026-08-28T17:00:46+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
+  "id": "https://blog.chrislewis.au/decompiling-a-nintendo-64-game-in-84-days",
+  "title": "任天堂 64 游戏八十四天完成反编译",
+  "date": "2026-08-27T23:01:11+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
+  "id": "https://507movements.com",
+  "title": "五百零七种机械运动被搬上网页",
+  "date": "2026-08-27T22:08:18+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
   "id": "https://github.com/ra1nyxin/tentacle-monster-roleplay-esp32",
   "title": "有人把自己接进 Codex 的 Agent Loop",
   "date": "2026-08-27",

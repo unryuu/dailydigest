@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-28",
+  "scanned_at": "2026-08-28T20:48:00+08:00",
+  "window": "接续 2026-08-27T14:17:09+08:00，只收此后发布且与 AI 日报相关的 The Information 内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫首页 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Inside Cognition’s Booming Growth, High Cash Burn",
+      "url": "https://www.theinformation.com/articles/inside-cognitions-booming-growth-high-cash-burn",
+      "published_at": "2026-08-27T14:48:00-07:00",
+      "published_at_beijing": "2026-08-28T05:48:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "据知情人士，Cognition 的年化收入约 9 亿美元，相当于每月 7500 万美元，较年初增长超过三倍；公司正在融资，估值可能约 450 亿美元。",
+        "公司内部预计年底年化收入超过 15 亿美元，明年达到 40 亿至 50 亿美元，但多位知情人士称今年现金消耗可能达到 8 亿美元。",
+        "Cognition 租用的英伟达服务器集群每年成本达数亿美元，第二季度约烧掉 2 亿美元；若排除自研编码模型的成本，自由现金流已接近盈亏平衡。",
+        "The Information 估算，OpenAI 与 Anthropic 占其统计的 AI 原生应用和模型销售市场 89％，比九个月前提高 4.5 个百分点。"
+      ],
+      "caveats": [
+        "收入、烧钱和融资估值来自知情人士及公司对潜在投资者的口径，并非经审计财报。",
+        "年底和明年的收入数字是公司预测，不是已经实现的业绩。",
+        "89％市场份额来自 The Information 对特定 AI 原生公司样本的计算，不能外推到整个软件市场。"
+      ],
+      "why": "收入爆发与高额算力支出同时出现，能具体说明 AI 应用公司的增长、毛利和自研模型成本如何互相拉扯。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Anthropic Considers Letting Shareholders Sell In IPO, Departing from SpaceX Playbook",
+      "url": "https://www.theinformation.com/articles/anthropic-considers-letting-shareholders-sell-ipo-departing-spacex-playbook",
+      "published_at": "2026-08-27T11:12:00-07:00",
+      "published_at_beijing": "2026-08-28T02:12:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "据多位知情人士，Anthropic 正考虑在首次公开募股时允许现有股东出售部分股票，同时对至少部分股东采用长于常见 180 天的锁定期。",
+        "公司计划在美国劳动节后公开招股书，并预计九月中旬举行投资者日；上市可能安排在九月底或十月初。",
+        "银行家讨论过约 1.5 万亿美元的 IPO 估值，但最新定价尚不清楚；公司五月的私募估值为 9650 亿美元。",
+        "Anthropic 预计募资额可能超过 SpaceX 六月 IPO 的 860 亿美元，但新股融资与老股出售如何拆分仍未确定。"
+      ],
+      "caveats": [
+        "售股对象、售股规模、最终估值和上市时间都未确定，方案仍可能改变或推迟。",
+        "1.5 万亿美元只是银行家讨论口径，不是正式定价；另有媒体报道过更高估值。"
+      ],
+      "why": "若落实，这会成为史上最大规模科技 IPO 之一，也暴露公司一面继续为算力巨额融资、一面安排员工和早期投资者变现的复杂平衡。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Trump Administration Executive Order for New AI Regulator Stalls",
+      "url": "https://www.theinformation.com/articles/trump-administration-executive-order-new-ai-regulator-stalls",
+      "published_at": "2026-08-27T09:11:00-07:00",
+      "published_at_beijing": "2026-08-28T00:11:00+08:00",
+      "bucket_hint": "regulation_silver_or_none",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "据看过草案的人士，特朗普政府近几周内部流转了一份行政令草案，拟为开发前沿模型的 AI 公司建立类似 FINRA 的自律监管组织。",
+        "草案推进近期陷入停滞，仍需总统和多位高级官员同意；The Information 未能确认停滞的具体原因。",
+        "拟议组织将聚焦模型发布前测试，并可能鼓励前沿实验室提前最多 30 天分享模型、发布模型卡、维持网络安全和审查人员。",
+        "前白宫 AI 与加密事务负责人 David Sacks 强烈反对让该组织向政府报告及发布前测试，主张更接近电影分级协会的独立模式。"
+      ],
+      "caveats": [
+        "行政令仍是内部草案，结构、时间和最终是否发布均不确定。",
+        "白宫发言人称任何政策公告将由总统直接发布，并把潜在行政令讨论称为推测。"
+      ],
+      "why": "美国政府内部已经从抽象讨论走到行政令草案，但核心人物公开反对，适合写成监管路线冲突而非既成政策。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Visa Says Its AI ‘Harness’ Makes Anthropic Cheaper to Use For Cyber Defense",
+      "url": "https://www.theinformation.com/newsletters/applied-ai/visa-says-ai-harness-makes-anthropic-cheaper-use-cyber-defense",
+      "reason": "时间窗内且相关，但首页只见标题，三篇独家候选已达到补扫上限；若机械源出现同一线索，再由 reader 回到公开原始材料核查。"
+    },
+    {
+      "title": "The Buzz at This Year's Hot Chips Conference: AI Is Supercharging Chip Design",
+      "url": "https://www.theinformation.com/newsletters/ai-agenda/buzz-years-hot-chips-conference-ai-supercharging-chip-design",
+      "reason": "属于会议综述，首页未显示足以独立成条的独家数字或单一新增事件。"
+    }
+  ]
+}

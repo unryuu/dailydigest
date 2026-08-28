@@ -1,0 +1,12 @@
+URL: https://x.com/emollick/status/2093082102312923351
+FINAL: https://x.com/emollick/status/2093082102312923351
+TITLE: Ethan Mollick on X: "A line in AI video was crossed, in my experiments with just the web interface, H3 Max can now create reasonably high quality AI video in less time than it takes you to watch it. This is realtime from the moment I pushed the "generate" button (and also includes prompt enhancemen… / X
+FETCHED: 2026-08-28 21:16:35
+============================================================
+Ethan Mollick
+@emollick
+A line in AI video was crossed, in my experiments with just the web interface, H3 Max can now create reasonably high quality AI video in less time than it takes you to watch it. This is realtime from the moment I pushed the "generate" button (and also includes prompt enhancement)
+00:00
+9:03 PM · Aug 27, 2026
+56.7K
+Views

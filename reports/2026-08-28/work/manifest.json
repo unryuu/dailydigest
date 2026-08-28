@@ -1,0 +1,361 @@
+{
+  "date": "2026-08-28",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Cognition 年化收入暴涨，但自研模型与算力开支仍在吞噬现金",
+      "cost": "中",
+      "reason": "收入、融资估值、现金消耗和服务器成本集中出现在同一篇独家报道里，能具体拆解编码 Agent 公司的增长质量。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Inside Cognition’s Booming Growth, High Cash Burn",
+          "url": "https://www.theinformation.com/articles/inside-cognitions-booming-growth-high-cash-burn",
+          "date": "2026-08-28T05:48:00+08:00",
+          "why": "据知情人士，Cognition 年化收入约 9 亿美元、今年现金消耗可能达 8 亿美元，并正按约 450 亿美元估值融资；公司预测与未经审计口径必须和已实现业绩分开。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Anthropic 考虑在 IPO 时让老股东出售股票",
+      "cost": "中",
+      "reason": "这关系到 Anthropic 的上市结构、员工与早期投资者变现，以及公司继续为算力融资的平衡，属于重大资本动作。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Anthropic Considers Letting Shareholders Sell In IPO, Departing from SpaceX Playbook",
+          "url": "https://www.theinformation.com/articles/anthropic-considers-letting-shareholders-sell-ipo-departing-spacex-playbook",
+          "date": "2026-08-28T02:12:00+08:00",
+          "why": "报道说公司考虑允许现有股东在 IPO 中出售部分股票，并可能对部分股东采用更长锁定期；1.5 万亿美元只是银行家讨论口径，时间、估值和售股规模均未确定。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "法院判五角大楼把 Anthropic 列为供应链风险违法",
+      "cost": "中",
+      "reason": "这是 Anthropic 与美国政府持续数月争端中的重大诉讼结果，直接影响军方采购 AI 模型和政府用国家安全理由惩罚供应商的边界。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "Judge blocks Pentagon's Anthropic blacklist",
+          "url": "https://www.axios.com/2026/08/28/judge-blocks-pentagon-anthropic-blacklist",
+          "date": "2026-08-28T10:42:42+08:00",
+          "why": "联邦法官认定供应链风险指定违法且侵犯 Anthropic 的宪法权利；reader 应核判决范围、政府能否上诉，以及这是否立即恢复具体采购资格。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "白宫拟建前沿模型自律监管组织的行政令陷入停滞",
+      "cost": "中",
+      "reason": "内部草案已触及发布前测试、提前分享模型和模型卡，但政府内部对组织是否向政府报告存在明显路线冲突，适合写成未落地的监管博弈。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Trump Administration Executive Order for New AI Regulator Stalls",
+          "url": "https://www.theinformation.com/articles/trump-administration-executive-order-new-ai-regulator-stalls",
+          "date": "2026-08-28T00:11:00+08:00",
+          "why": "据看过草案的人士，政府讨论类似 FINRA 的 AI 自律监管组织，但草案近期停滞；它仍需总统和高级官员批准，不能写成已经设立监管机构。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Claude Code 的自动安全模式既放过攻击，又拦住清理命令",
+      "cost": "中",
+      "reason": "安全机制本身进入失败链条，且研究者声称攻击约八成成功，属于反直觉的 Agent 安全实测。",
+      "items": [
+        {
+          "source": "simon-willison",
+          "title": "Breaking Claude Code Opus 5 Auto Mode",
+          "url": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode",
+          "date": "2026-08-28T06:50:25+08:00",
+          "why": "Johann Rehberger 通过压缩包里的本地模块诱导 Agent 执行代码，并称攻击约八成成功；部分运行中模型发现入侵后，自动模式反而阻止了终止恶意进程的命令。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "Big Tech's AI spending is bigger than you think",
+      "url": "https://www.axios.com/2026/08/27/ai-spending-spending-balance-sheet",
+      "date": "2026-08-27T19:20:04+08:00",
+      "note": "摩根士丹利估算七家科技公司还有约 3 万亿美元 AI 基础设施表外承诺，另有约 7700 亿美元债务和租赁义务；样本和表外口径待核。"
+    },
+    {
+      "source": "axios",
+      "title": "Nvidia almighty: Chip riches flood through AI universe",
+      "url": "https://www.axios.com/2026/08/28/nvidia-ai-chip-circular-finance-startups",
+      "date": "2026-08-28T17:20:05+08:00",
+      "note": "英伟达一面卖芯片，一面参与超过 7500 亿美元的 AI 投资、融资和合作，被写成行业的供应商、银行和造王者；与 08-27 收购 Hugging Face 不是同一事件。"
+    },
+    {
+      "source": "axios_x-sama",
+      "title": "百余家公司称应对 AI 网络攻击只剩数月窗口",
+      "url": "https://www.axios.com/2026/08/27/openai-anthropic-issue-dire-cyber-threat-warning",
+      "date": "2026-08-28T01:00:18+08:00",
+      "note": "OpenAI、Anthropic、AWS、微软等签署公开信，要求企业和政府加固关键基础设施；Sam Altman 同日呼吁联合行动。这是 08-26 攻击主线后的新倡议，不是新增攻击事故。"
+    },
+    {
+      "source": "axios",
+      "title": "Iranian operatives used AI to impersonate Americans",
+      "url": "https://www.axios.com/2026/08/27/facebook-instagram-iran-ai-disinformation",
+      "date": "2026-08-28T01:00:05+08:00",
+      "note": "Meta 称已移除一个伊朗行动网络，相关账号用 AI 制作部分内容并冒充美国活动人士、学生和设计师；具体影响规模待核。"
+    },
+    {
+      "source": "axios",
+      "title": "The EU AI Act gets real",
+      "url": "https://www.axios.com/2026/08/28/eu-ai-act-gets-real",
+      "date": "2026-08-28T17:15:05+08:00",
+      "note": "欧盟 AI 法案的聊天机器人和 AI 生成内容透明度要求已经进入执行阶段，AI Office 现在可要求公司提供信息或访问模型。"
+    },
+    {
+      "source": "deepmind",
+      "title": "Piloting the world's first double-blind AI evaluations",
+      "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations",
+      "date": "2026-08-27T20:59:16+08:00",
+      "note": "Google DeepMind 宣布试点双盲 AI 评测；机械候选只见标题，评测对象、盲法设计和结果待 reader 核。"
+    },
+    {
+      "source": "deepmind",
+      "title": "Gemini Omni 1.1 Flash lets you build with more control",
+      "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+      "date": "2026-08-28T00:11:32+08:00",
+      "note": "Gemini Omni 1.1 Flash 产品更新；机械候选没有摘要，具体模态、控制能力和开放范围待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Small Models Have Arrived",
+      "url": "https://calv.info/small-models-have-arrived",
+      "date": "2026-08-27T23:56:58+08:00",
+      "note": "HN 高票小模型文章，抓取时 693 分、306 条评论；适合作为端侧与专用小模型趋势线索。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Show HN: We built open OpenRouter that turns usage into a better model",
+      "url": "https://github.com/experientiallabs/experiential",
+      "date": "2026-08-28T05:18:35+08:00",
+      "note": "一个开放路由项目声称能把使用数据回流成更好的模型，抓取时 195 分；实际训练闭环、隐私和许可证待核。"
+    },
+    {
+      "source": "openai",
+      "title": "Supporting Thailand’s next generation of AI startups",
+      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "date": "2026-08-28T10:00:00+08:00",
+      "note": "OpenAI 与泰国高教科研创新部启动八周加速器，支持十家医疗、健康和教育创业公司。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 视频生成第一次跑得比视频播放还快",
+      "url": "https://x.com/emollick/status/2093082102312923351",
+      "date": "2026-08-28T05:03:55+08:00",
+      "note": "Ethan Mollick 用网页界面单次测试 H3 Max，称生成速度已快于成片播放；不是独立基准，产品主体、视频长度和参数待核。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "最会自动做任务的模型，未必最会帮助人类完成任务",
+      "url": "https://x.com/emollick/status/2093045682785378666",
+      "date": "2026-08-28T02:39:12+08:00",
+      "note": "Mollick 转述一项自动化能力与人类增强能力并不总一致的研究；必须由 reader 回溯论文，核查任务、参与者和模型版本。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models",
+      "url": "https://huggingface.co/papers/2608.25518",
+      "date": "",
+      "note": "把 Agent 开发游戏的过程当作可验证轨迹数据，用于扩展世界模型；目标日榜单候选，列表页无可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Magpie: Real-Time World Renderer for Interactive Games",
+      "url": "https://huggingface.co/papers/2608.27168",
+      "date": "",
+      "note": "面向交互游戏的实时世界渲染器；与实时 AI 视频候选有产品张力，但方法和速度指标待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents",
+      "url": "https://huggingface.co/papers/2608.26530",
+      "date": "",
+      "note": "长程 Agent 在运行中持续自我改进的方法候选，列表页无可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "TTPO: Test-Time Policy Optimization",
+      "url": "https://huggingface.co/papers/2608.27448",
+      "date": "",
+      "note": "测试时策略优化论文候选，标题指向模型部署时继续优化策略，具体收益与代价待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
+      "url": "https://huggingface.co/papers/2608.27260",
+      "date": "",
+      "note": "研究什么样的数据更适合训练 LLM Agent，属于 Agent 数据配方候选；列表页无可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+      "url": "https://huggingface.co/papers/2608.27454",
+      "date": "",
+      "note": "把 Agent 经历编译成持久知识以演化技能，作者单位线索指向 Google；具体记忆机制与评测待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "UrbanGround: From Local Perception to Spatial Agency in a Real-Scale City",
+      "url": "https://huggingface.co/papers/2608.27456",
+      "date": "",
+      "note": "在真实尺度城市中测试从局部感知到空间行动能力，适合作为空间 Agent 基准线索。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-emollick",
+      "title": "学者开始在预印本网站发现冒用自己姓名的 AI 论文",
+      "url": "https://x.com/emollick/status/2093060075870925311",
+      "date": "2026-08-28T03:36:23+08:00",
+      "note": "Ethan Mollick 称自己发现多篇署他姓名、却并非他所写的 AI 垃圾论文；帖子未给完整清单和平台处置，不能直接上升成系统性数据。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Every Engineer a Manager",
+      "url": "https://www.lesswrong.com/posts/aTst2RJMFra4zsdzz/every-engineer-a-manager",
+      "date": "2026-08-28T17:30:40+08:00",
+      "note": "代码 Agent 普及后，每个独立贡献者都开始像同时管理多个机器下属的经理。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Semantic search over every LessWrong post",
+      "url": "https://www.lesswrong.com/posts/uSRAzeDcfGuXte9R3/semantic-search-over-every-lesswrong-post",
+      "date": "2026-08-27T20:45:39+08:00",
+      "note": "有人给全部 LessWrong 文章跑了向量索引，贴一篇草稿进去就能检查这个想法是否早被写过。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "We found a division by zero bug in FFmpeg with a vibecoded fuzzer",
+      "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
+      "date": "2026-08-28T01:53:40+08:00",
+      "note": "有人用氛围编程做的模糊测试器，在 FFmpeg 里找到除零错误；抓取时 268 分、221 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "507 Mechanical Movements",
+      "url": "https://507movements.com",
+      "date": "2026-08-27T22:08:18+08:00",
+      "note": "把五百零七种机械运动做成可浏览资料库，抓取时 603 分；非 AI，但视觉和工程趣味足。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Decompiling a Nintendo 64 game in 84 days",
+      "url": "https://blog.chrislewis.au/decompiling-a-nintendo-64-game-in-84-days",
+      "date": "2026-08-27T23:01:11+08:00",
+      "note": "用八十四天反编译一款任天堂 64 游戏，抓取时 255 分、151 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Hilariously Fast Volume Computation with the Divergence Theorem",
+      "url": "https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html",
+      "date": "2026-08-28T17:00:46+08:00",
+      "note": "用散度定理极快计算体积，标题本身就很有技术乐子感。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2029 年前，会有 AI 逃出隔离环境吗？",
+      "prob": "58.2％",
+      "volume_note": "volume 口径：累计成交量约 1.68 万 Mana。",
+      "url": "https://manifold.markets/vluzko/by-2029-will-an-ai-escape-containme"
+    },
+    {
+      "question": "2028 年，AI 写的诗能与伟大浪漫主义诗人的作品无法区分吗？",
+      "prob": "45.0％",
+      "volume_note": "volume 口径：累计成交量约 6.56 万 Mana。",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-write"
+    },
+    {
+      "question": "如果 AI 消灭人类，它会正确结算适用的预测市场吗？",
+      "prob": "40.1％",
+      "volume_note": "volume 口径：累计成交量约 638 Mana。",
+      "url": "https://manifold.markets/JonathanRay/if-ai-wipes-out-humanity-will-it-re"
+    },
+    {
+      "question": "如果 AI 在 2050 年前杀死超过一百万人，政策响应会仍然不足吗？",
+      "prob": "68.5％",
+      "volume_note": "volume 口径：累计成交量约 65 Mana，体量很低。",
+      "url": "https://manifold.markets/lbiii/if-before-2050-ai-kills-more-than-1"
+    },
+    {
+      "question": "2100 年前，AI 会让人类人口降到五千人以下吗？",
+      "prob": "20.3％",
+      "volume_note": "volume 口径：累计成交量约 1585 Mana；与 08-25 的人口死亡比例盘主题相邻，但概率相差超过十点。",
+      "url": "https://manifold.markets/lbiii/before-2100-will-ai-cause-the-human"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "acx",
+      "reason": "候选主要是开放帖、调查问卷和明显早于接续窗口的旧文，未进桶。"
+    },
+    {
+      "slug": "import-ai",
+      "reason": "唯一候选发布于 08-24，明显旧于本期窗口。"
+    },
+    {
+      "slug": "mistral",
+      "reason": "唯一候选 Mistral x HUMAIN 发布于 08-24，明显旧于本期窗口。"
+    },
+    {
+      "slug": "thezvi_lesswrong_hf-incident",
+      "reason": "OpenAI／Hugging Face 事故的复盘、AI Village 对照、群体身份和 Roon 解释均与 08-27 银牌主线高度重复，没有独立新增事故范围或损失，按防重复剔除。"
+    },
+    {
+      "slug": "x-manual",
+      "reason": "Nitter 七个账号的 403 诊断保留在 fetch_failures；登录态手工候选已从 x_candidates.json 离线合并，未重新打开网页。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "本轮没有可回溯到原始出处的新候选。"
+    }
+  ]
+}

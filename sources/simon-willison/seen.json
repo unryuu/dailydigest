@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode",
+  "title": "Claude Code 自动模式放过攻击却拦住清理",
+  "date": "2026-08-28T06:50:25+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next",
   "title": "通义开放 Qwen3.8-Flash-Next 权重",
   "date": "2026-08-27T07:52:58+08:00",

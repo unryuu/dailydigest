@@ -1,0 +1,54 @@
+URL: https://www.axios.com/2026/08/28/judge-blocks-pentagon-anthropic-blacklist
+FINAL: https://www.axios.com/2026/08/28/judge-blocks-pentagon-anthropic-blacklist
+TITLE: Judge blocks Pentagon blacklist of Anthropic AI
+FETCHED: 2026-08-28 21:22:13
+============================================================
+11 hours ago
+-
+Technology
+Judge blocks Pentagon's Anthropic blacklist
+Mackenzie Weinger
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Photo illustration: Aïda Amer/Axios. Photo: Bill Clark/CQ-Roll Call Inc. via Getty Images
+A federal judge on Thursday struck down the Pentagon's blacklisting of Anthropic as a
+supply-chain risk
+, ruling that the government's actions violated Anthropic's constitutional rights.
+Why it matters:
+The ruling marks a major legal victory for Anthropic in its months-long
+fight
+with the
+Trump
+administration over how the military can use its AI models.
+Driving the news:
+U.S. District Judge Rita Lin ruled that the
+Pentagon's designation
+of Anthropic as a supply-chain risk was unlawful.
+"The empty invocation of
+national security
+is not a blank check to punish and retaliate against government critics," Lin
+wrote
+in her 59-page decision.
+"Though the Department of War is undisputedly free to select the AI vendor of its choice, the evidence demonstrates that the broad measures imposed on Anthropic were illegal and baseless."
+Lin noted that the Pentagon continued pursuing
+work with Anthropic
+even after the designation: "None of that is consistent with a genuine fear that Anthropic is a saboteur who would poison its software to harm national security."
+What they're saying:
+"We welcome the court's ruling that this supply chain risk designation was unlawful," an Anthropic spokesperson said in a statement.
+"We remain focused on working productively with the government to harness AI for our national security so all Americans benefit from this technology."
+Catch up quick:
+The dispute kicked off earlier this year after Anthropic and the Pentagon clashed over the military's use of the company's AI models.
+The Defense Department
+sought
+to use Claude for "all lawful purposes," even in the most sensitive military and intelligence applications.
+Anthropic insisted that two areas remain off-limits: mass surveillance of Americans and fully autonomous weapons.
+The standoff escalated, with the Pentagon
+designating
+Anthropic a national security and supply-chain risk, leading the AI company to sue.
+What's next:
+The government is expected to appeal the ruling.
+Anthropic is also fighting a separate Pentagon designation under a different statute in the D.C. Circuit.
+Add Axios on Google
+What to read next

@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/uSRAzeDcfGuXte9R3/semantic-search-over-every-lesswrong-post",
+  "title": "有人给全站 LessWrong 做了语义查重",
+  "date": "2026-08-27T20:45:39+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/aTst2RJMFra4zsdzz/every-engineer-a-manager",
+  "title": "代码 Agent 让每个工程师都成了经理",
+  "date": "2026-08-28T17:30:40+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/NjLQf3QC4q4DD67kD/the-forkmakers",
   "title": "文明毁灭千年后，人类可能只留下叉子",
   "date": "2026-08-25",

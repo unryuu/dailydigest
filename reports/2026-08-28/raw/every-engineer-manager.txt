@@ -1,0 +1,140 @@
+URL: https://www.lesswrong.com/posts/aTst2RJMFra4zsdzz/every-engineer-a-manager
+FINAL: https://www.lesswrong.com/posts/aTst2RJMFra4zsdzz/every-engineer-a-manager
+TITLE: Every Engineer a Manager — LessWrong
+FETCHED: 2026-08-28 21:22:56
+============================================================
+AI
+Frontpage
+31
+Every Engineer a
+Manager
+by
+Gordon Seidoh Worley
+27th Aug 2026
+Uncertain Updates
+2
+min read
+6
+31
+For a long time we’ve thought of software engineers as split into two tracks: Individual Contributors (ICs) and managers. This divide made a lot of sense when we needed an army of engineers to write code.
+Now we have Claude and Codex and Grok and Kimi. They write the code for us, and the job of an IC is to manage their agents.
+Functionally, this means that every IC is a manager now. True, ICs don’t manage people, but they manage a team of bots, and that means they face many of the same challenges that managers do.
+Like multitasking. Sure, everyone had to multitask some, but for years we’ve encouraged ICs to focus, avoid distractions, and just do one thing at a time. We told them to do that because it was the only way for them to produce high-quality code. But now that agents take care of the code, ICs find themselves needing to manage many threads of concurrent work, nudging their agents along to the right outcomes, and deep focus is becoming less important than the ability to track parallel tasks.
+Or giving feedback. Managers have to give feedback all the time so that the people working for them know what they want and do the right things. ICs have to do that now, too, only with bots instead of people. Thankfully, giving Claude feedback is much lower stakes—it doesn’t get upset if you tell it the code it wrote is bad or if you ask it to change the same UI element again for the Nth time—but giving an AI effective feedback is surprisingly similar to giving feedback to a person. In both cases you have to be able to explain yourself well enough to get what you want, and so communication skills have become far more important for ICs than they were in the past.
+And then there’s ownership and accountability. Now that ICs don’t need to spend all day writing code, we’re asking them to move up the business stack. It’s no longer enough to merely build what you were asked; we want engineers to think about customer needs, collaborate across functions, and be active partners in figuring out the right things to build. This is pulling them into the realm of leadership, and thus we are asking them not merely to own the quality of their outputs, but to drive the quality of measurable outcomes for the business.
+To my mind, we probably shouldn’t even use the term “Individual Contributor” anymore, since there’s no longer anything truly “individual” about the role. And I expect this trend to continue in the coming months, with the job becoming more about effective coordination of technical resources, like agents, and less about directly producing code. In this sense, traditional IC roles seem likely to go away, replaced by new ones that manage and coordinate agents, still requiring strong technical judgement, but no longer rooted in personal labor.
+Share
+AI
+Frontpage
+31
+Every Engineer a Manager
+6
+Raemon
+6
+Gunnar_Zarncke
+2
+Viliam
+2
+2001zhaozhao
+2
+Gordon Seidoh Worley
+1
+Richard Horvath
+New Comment
+6 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:22 PM
+[
+-
+]
+Raemon
+12h
+6
+2
+One of my thoughts as I've experimented with this:
+Sometimes it is just correct to be in full-on-manager-mode.
+But, there's still a fair amount of work that requires deep attention and thought. I think a mode it is often good to be in is to have one major deep thread you are focused on, and some side-threads that are low stakes and the right shape such that you can throw Claude at them and come back in 30 min.
+(There is a trap where you
+try
+to do this, but, end up spending all day doing AI-tasks that were easy to manage, but not actually that important)
+Reply
+[
+-
+]
+Gunnar_Zarncke
+17h
+6
+2
+The bottleneck has moved from coding to what you call managers. The aspects of managers you list make sense to me. It changes how you work. Paul Graham describes this in
+Maker's Schedule, Manager's Schedule
+. The interleaving is tighter though. Managers are used to work in one-hour blocks. That's not how you work with coding agents.
+But I think one element is overlooked. The bottleneck is not really these kinds of management. In fact, some of those can and will be pushed to the agents too. The real bottleneck is specification. In smaller orgs that is happing in grooming sessions often between stakeholders and the dev team where the developers ask question about special cases the stakeholder didn't even thought possible. In larger orgs that is the more specialized role of business analysts. But it amounts to the same thing: You need to understand the domain of the business well enough. A domain no LLM will know much about. Not even if you feed it all the available documentation, because much of that often procedural knowledge is in people's heads.
+Reply
+[
+-
+]
+Viliam
+12m
+2
+0
+I have only had very short experience managing people and managing AIs. My reaction to reading this was:
+the words make sense, as they are written
+but in my experience these things
+felt
+more like the
+opposite
+of each other
+I am trying to figure out why, not with much success. My current best guess is that it has to do with
+time
+.
+Managing actual people means not only trying to get the thing done, but also trying to get it done in minimum time (because time = developer salaries = literally money). So even with competent developers who could get the work nicely done
+given enough time
+, there is (in my experience) usually pressure from managers about me to save time, which results in cutting various corners, and often ultimately spending
+more
+time. (Because the managers higher in hierarchy typically do not understand the technical details, so their decisions are only very weakly correlated with reality.)
+With AIs, the pressure is not there yet. The managers are happy that a work that would previously take a week is now done in 15 minutes. But when they update to the situation, and start pushing on you the same way on the new scale ("15 minutes is not acceptable! we have already told the important stakeholders that it can be done in 7 minutes! drop the useless things such as refactoring and documentation and those other unproductive silly games you developers love to do"), the situation will get insane again.
+In other words, currently AIs give us some slack (the code much faster than the managers can plan), which makes the work with them feel pleasant. But that slack may soon be consumed by Moloch. In the scenarios where AIs manage AIs it may have already happened, especially if the manager AI is given a bonus for each second squeezed out of the developer AIs.
+Reply
+[
+-
+]
+2001zhaozhao
+13h
+2
+1
+I am working on building development tools that optimize for the workflow of an engineer working as a management of agents. I call it an agentic management environment; think of it as an "agent manager's IDE" designed for experienced technical users. So I've spent a lot of time thinking about this topic.
+Agents are intelligent tools that can do a lot, sure, but from a human organizational perspective, they are still best treated as tools. Fundamentally, AIs can be spun up and down at will while humans cannot, so you don't need to design AIs into your org chart (just form AI "task forces" instead!) while you do need to for humans.
+Consequently, although I agree that managing agents is a radically new way of doing work and that it's effective enough to be the future of engineering (and knowledge work more generally), I would be wary of overly anthromorphizing AI agents and thinking of engineers as operating as managers. You can think of them as "AI managers" and many concepts from the technical parts of a management role carry over, but that is something like 30% of the job of a manager overseeing people. The other 70% are completely different.
+Reply
+[
+-
+]
+Gordon Seidoh Worley
+13h
+2
+0
+Yes, the intention is not to analogize managing bots with managing people, but to say that management was never really about people management, that was instrumental to the real goal of managers, which is to manage outcomes for the business, which is what we now are asking ICs to do since they don't have to spend so long writing code.
+Reply
+[
+-
+]
+Richard Horvath
+2h
+1
+0
+Yes, I have been thinking about the same.
+It is also a good lesson for people who have never been in any managerial position and might be inclined to think the "pointy-haired boss" is making all the bad decisions.
+People don't realize how much a manager's job is making sure that what the reportees are doing aligns with the goal of the team->division->organization all the way up. Short-focused optimalization for the latest task by LLM agents is very similar to the experience of a manager: what might make sense from the point of view of a single developer locally may go against larger goals at edge cases.
+Reply
+Moderation Log
+More from
+Gordon Seidoh Worley
+View more
+Curated and popular this week
+6
+Comments
+6
+x
+Every Engineer a Manager — LessWrong

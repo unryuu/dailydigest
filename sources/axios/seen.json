@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://www.axios.com/2026/08/27/openai-anthropic-issue-dire-cyber-threat-warning",
+  "title": "百余家公司呼吁尽快加固 AI 网络防线",
+  "date": "2026-08-28T01:00:18+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/28/eu-ai-act-gets-real",
+  "title": "欧盟开始执行 AI 透明度要求",
+  "date": "2026-08-28T17:15:05+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/28/judge-blocks-pentagon-anthropic-blacklist",
+  "title": "法院撤销五角大楼对 Anthropic 的黑名单",
+  "date": "2026-08-28T10:42:42+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
+  "id": "https://www.axios.com/2026/08/27/ai-spending-spending-balance-sheet",
+  "title": "七家科技公司背上近 3 万亿美元 AI 表外承诺",
+  "date": "2026-08-27T19:20:04+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
   "id": "https://www.axios.com/2026/08/26/stanley-druckenmiller-ai-writing-wsj-op-ed",
   "title": "亿万富豪承认让 AI 帮写报纸评论",
   "date": "2026-08-26T09:20:05Z",

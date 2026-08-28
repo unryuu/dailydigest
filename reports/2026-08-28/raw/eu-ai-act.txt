@@ -1,0 +1,59 @@
+URL: https://www.axios.com/2026/08/28/eu-ai-act-gets-real
+FINAL: https://www.axios.com/2026/08/28/eu-ai-act-gets-real
+TITLE: The EU AI Act gets real
+FETCHED: 2026-08-28 21:22:34
+============================================================
+4 hours ago
+-
+Technology
+Europe's AI Act gets real
+Ashley Gold
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Illustration: Annelise Capossela/Axios
+Europe's landmark
+AI
+law has moved from an idea to enforcement.
+Why it matters:
+Brussels will soon learn whether it can turn its sweeping AI
+rulebook
+into regulation that companies can actually follow — and if it can become a global benchmark for AI standards.
+Driving the news:
+A major enforcement deadline
+arrived Aug. 2
+.
+Most notably, new transparency and disclosure requirements are in effect for chatbots and AI-generated content.
+Europe's AI Office has not gone after any companies covered under the law for misconduct yet, but it can now request information from companies or ask for access to models.
+What they're saying:
+"This is a messy piece of legislation," Patrick Van Eecke, a partner at Cooley in Brussels who advises companies on AI Act compliance, told Axios in an interview.
+He said Aug. 2 marked the point when ordinary users may start to encounter the impacts of the act through being notified they are seeing AI-generated material.
+The big picture:
+The AI Act could become a global standard without being a copy-and-paste rulebook for companies. Execution among companies might get messy, but wherever compliance ends up will be influential as companies decide how to operate around the world.
+"We need a standard. This technological moment is happening really quickly. And right now, at least the EU AI Act gives us a standard," Amy Worley, managing director and data protection officer at Berkeley Research Group, told Axios.
+Transparency notices required under the AI Act have already spread, she said, adding that watermarking can also serve as a litigation defense for companies.
+Case in point:
+Anthropic announced that future Claude models will generate text that contains a watermark to comply with the EU AI Act.
+Anthropic says
+watermarked text will be indistinguishable to readers, but that it plans to offer a "watermark detection API" to users soon.
+Google
+and Meta both said in July they would adopt and develop transparency and watermarking tools.
+Meta said
+it would work with the EU AI Office to keep its approach to compliance "practical, interoperable and genuinely useful."
+OpenAI
+is publishing training data summaries in compliance with the act, it said, along with embedded "provenance signals."
+Microsoft
+'s compliance with the act involves internal governance and risk management changes.
+What's next:
+The transparency requirements that took effect in August are only one part of the AI Act's rollout.
+Rules for major categories of high-risk AI systems, such as uses around education, biometrics and migration, along with AI uses in physical products, come
+later
+— in
+December 2027 and August 2028.
+That means it will be years before the full impact of the law can be assessed.
+The bottom line:
+Europe may not get the rest of the world to copy its AI law exactly. But it may not need to.
+If companies start treating the AI Act as the default benchmark for transparency and risk management, Brussels will have shaped global AI rules even where its law doesn't directly apply.
+Add Axios on Google
+What to read next

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "big-tech-ai-spending",
+    "section": "industry",
+    "label": "七家科技公司背上近 3 万亿美元 AI 表外承诺",
+    "url": "https://www.axios.com/2026/08/27/ai-spending-spending-balance-sheet",
+    "body": "摩根士丹利统计 Google、Meta、微软、甲骨文、亚马逊、英伟达和博通的文件，其中 1.1 万亿美元是尚未开始的数据中心租约，1.7 万亿美元是芯片、内存和网络设备采购承诺。具体支出时间不明，部分合同也可能重新谈判。",
+    "note": "核实通过；近 3 万亿美元是未来付款承诺，不是已经发生的支出或正式债务。"
+  },
+  {
+    "id": "h3-max-realtime",
+    "section": "industry",
+    "label": "H3 Max 生成视频快过成片播放速度",
+    "url": "https://x.com/emollick/status/2093082102312923351",
+    "body": "Ethan Mollick 称，他从网页端点击生成开始计时，连提示词增强也算在内，质量尚可的视频仍在播放结束前生成完毕。",
+    "note": "low_evidence：仅核到 Mollick 的单次个人测试；原帖没有说明产品主体、视频长度、分辨率、参数、失败率和排队时延，不能写成完整基准。"
+  },
+  {
+    "id": "ai-regulator-stalls",
+    "section": "regulation",
+    "label": "白宫拟建的 AI 自律监管组织陷入停滞",
+    "url": "https://www.theinformation.com/articles/trump-administration-executive-order-new-ai-regulator-stalls",
+    "body": "内部草案拟建立类似 FINRA 的组织，关注模型发布前测试，并可能鼓励前沿实验室提前最多三十天分享模型。草案仍需总统和高级官员批准，白宫内部也有人反对让该组织向政府报告。",
+    "note": "核实通过；原文抓取为订阅墙空壳，按任务授权采用 theinformation_candidates.json 中主 agent 登录态精读后的事实转述。行政令尚未发布，不能写成监管机构已经成立。"
+  },
+  {
+    "id": "eu-ai-act",
+    "section": "regulation",
+    "label": "欧盟开始执行 AI 透明度要求",
+    "url": "https://www.axios.com/2026/08/28/eu-ai-act-gets-real",
+    "body": "聊天机器人和 AI 生成内容的透明度要求已于 8 月 2 日生效。欧盟 AI Office 尚未处罚公司，但现在可以要求企业提供信息或开放模型访问。",
+    "note": "核实通过；高风险 AI 系统的主要规则仍要到 2027 年 12 月和 2028 年 8 月陆续实施。"
+  },
+  {
+    "id": "ttpo",
+    "section": "papers",
+    "label": "模型能在做数学题时继续训练自己",
+    "url": "https://huggingface.co/papers/2608.27448",
+    "body": "TTPO 用多次作答的多数答案当临时老师，学习相互一致的解法，并惩罚分歧答案里很自信的错误。没有标准答案时，Qwen3-1.7B 的测试时训练成绩从 38.0％升到 45.2％。",
+    "note": "核实通过；方法与结果来自论文摘要，五项竞赛级基准上的监督训练对照和跨任务泛化均为作者报告，未见独立复现。"
+  },
+  {
+    "id": "wikiskill",
+    "section": "papers",
+    "label": "Agent 把经历编成可复用技能",
+    "url": "https://huggingface.co/papers/2608.27454",
+    "body": "WikiSkill 把原始执行记录、持续积累的知识库和可执行技能分开保存，再用旧经验更新下一版技能。作者称这些技能可以跨模型迁移，小模型带上技能后也可能超过更大的裸模型。",
+    "note": "核实通过；迁移与性能结论来自论文摘要，抓取正文没有给出可写入日报的具体基准数字。"
+  },
+  {
+    "id": "urbanground",
+    "section": "papers",
+    "label": "AI Agent 走进一座 3D 香港",
+    "url": "https://huggingface.co/papers/2608.27456",
+    "body": "UrbanGround 用全港地理数据搭出可第一人称探索的城市副本，还会加入封路和移动行人。模型能认清眼前街景，路程一长却会不断积累方向错误，也不太会自行纠正。",
+    "note": "核实通过；这是基于真实尺度地理数据的 3D 副本，不是 Agent 进入现实街道。"
+  },
+  {
+    "id": "deepmind-double-blind",
+    "section": "official",
+    "label": "Google 试点双盲 AI 评测",
+    "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations",
+    "body": "Gemini Flash Lite 和保密测试题会被放进加密环境，评测方看不到模型权重，Google 也看不到测试提示词。这样既能防止模型提前见题，也不用把私有模型交出去。",
+    "note": "核实通过；这是与新加坡 AI Safety Institute、OpenMined、AVERI 和 MLCommons 合作的试点公告，正文没有公布评测结果。"
+  },
+  {
+    "id": "gemini-omni",
+    "section": "official",
+    "label": "Google 给 AI 视频加上前后帧控制",
+    "url": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+    "body": "开发者可以指定镜头的起始帧和结束帧，让模型补出中间过渡；视频还能每次续写十秒，累计延长到四十秒。360p 草稿生成最多快 60％，成本约为 720p 的三分之一，成片可升到 4K。",
+    "note": "核实通过；原链接跳转至 Google 官方博客，速度、成本和分辨率均为官方口径。"
+  },
+  {
+    "id": "cyber-warning",
+    "section": "industry",
+    "label": "百余家公司呼吁尽快加固 AI 网络防线",
+    "url": "https://www.axios.com/2026/08/27/openai-anthropic-issue-dire-cyber-threat-warning",
+    "body": "公开信要求企业修补最高风险弱点、共享威胁情报，并让关键基础设施在重大事故中用上最强防御模型。签署方没有给出投资额、期限或具体承诺。",
+    "note": "dup_suspect：与 08-26 银牌“AI 生成的攻击脚本开始打关键基础设施”相邻；本条只有 OpenAI、Anthropic、AWS、微软等百余家机构的新倡议，没有新增攻击、损失或归因事实，适合简讯。"
+  },
+  {
+    "id": "openai-thailand",
+    "section": "official",
+    "label": "OpenAI 在泰国办八周 AI 创业加速器",
+    "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+    "body": "OpenAI 与泰国高教科研创新部挑出十家医疗、健康和教育创业公司，每队可获得 2000 美元 API 额度、技术导师和产品部署辅导。",
+    "note": "核实通过；这是 OpenAI 与泰国政府支持本地创业公司的首个公私合作项目，适合简讯。"
+  },
+  {
+    "id": "fake-papers",
+    "section": "fun",
+    "label": "Ethan Mollick 在预印本里发现了自己的冒名论文",
+    "url": "https://x.com/emollick/status/2093060075870925311",
+    "body": "论文署着他的名字，他却从没写过也没见过；他还说，其他学者也碰到过同类情况。",
+    "note": "low_evidence：核到本人一手陈述，但原帖没有列出论文清单、平台处置或责任人，不能扩写成有规模数据的论文工厂现象。"
+  },
+  {
+    "id": "every-engineer-manager",
+    "section": "fun",
+    "label": "代码 Agent 让每个工程师都成了经理",
+    "url": "https://www.lesswrong.com/posts/aTst2RJMFra4zsdzz/every-engineer-a-manager",
+    "body": "他们不带人，只是在多条线程里催 Claude、Codex、Grok 和 Kimi 干活，再负责把需求说清楚、给反馈并盯住最终结果。",
+    "note": "核实通过；这是作者对工程师角色变化的观点文章，不是带样本或数据的行业调查。"
+  },
+  {
+    "id": "lw-semantic-search",
+    "section": "fun",
+    "label": "有人给全站 LessWrong 做了语义查重",
+    "url": "https://www.lesswrong.com/posts/uSRAzeDcfGuXte9R3/semantic-search-over-every-lesswrong-post",
+    "body": "把草稿贴进去，就能找出意思最接近的旧文章。作者拿这篇介绍测试，第一名正好是别人做过的同类项目。",
+    "note": "核实通过；正文称使用 qwen3-embedding-8b 给全站文章建立索引，并每隔几小时收录新帖。"
+  },
+  {
+    "id": "ffmpeg-vibe-fuzzer",
+    "section": "fun",
+    "label": "有人声称氛围编程模糊测试器抓到 FFmpeg 除零错误",
+    "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
+    "body": "原链接只返回 Anubis 反机器人页面，漏洞类型、复现过程、影响范围和修复状态都没有读到。",
+    "note": "fetch_failed：抓取只得到防机器人验证页，未读到漏洞报告正文；不能按 HN 标题把发现过程写成已核事实。"
+  },
+  {
+    "id": "mechanical-movements",
+    "section": "fun",
+    "label": "五百零七种机械运动被搬上网页",
+    "url": "https://507movements.com",
+    "body": "彩色缩略图对应的机构已经能动起来，其他页面仍保留 Henry T. Brown 的经典原始插图，网站还在继续补动画。",
+    "note": "核实通过；并非五百零七种机构都已经完成动画。"
+  },
+  {
+    "id": "n64-decompile",
+    "section": "fun",
+    "label": "任天堂 64 游戏八十四天完成反编译",
+    "url": "https://blog.chrislewis.au/decompiling-a-nintendo-64-game-in-84-days",
+    "body": "《Snowboard Kids》的 2145 个函数都写成了能编出相同机器码的 C。项目让四个 Agent worktree 并行推进，但作者说没有真人专家帮忙，进度大概会卡在九成。",
+    "note": "核实通过；100％指所有函数都有匹配的 C 实现，少量系统库汇编因原始源代码本来就是汇编而保留。84 天是作者的项目口径，前作续篇用了 596 天。"
+  },
+  {
+    "id": "divergence-volume",
+    "section": "fun",
+    "label": "散度定理把 3D 模型体积算进一个循环",
+    "url": "https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html",
+    "body": "闭合三角网格的每个三角形只需十一次浮点运算；作者估算，一台 35 美元的树莓派每帧能算约三千万个三角形。写这篇文章的动机是向量微积分要考试了。",
+    "note": "核实通过；算法只适用于简单、闭合、三角化的 3D 网格，速度是作者的粗略估算。作者发文后发现已有论文描述同一算法，并不主张原创。"
+  }
+]

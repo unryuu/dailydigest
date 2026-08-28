@@ -1,0 +1,19 @@
+URL: https://x.com/abhishekn/status/2092758277352526125
+FINAL: https://x.com/abhishekn/status/2092758277352526125
+TITLE: Abhishek Nagaraj on X: "the results? the best models in automate mode are not always the best models in augment mode.
+
+for example - Opus and Sonnet are great on performing tasks on their own, but not in proving assistance, while GPT-5-Mini was great on both dimensions.
+
+Gemini models were strong… / X
+FETCHED: 2026-08-28 21:24:31
+============================================================
+Abhishek Nagaraj
+@abhishekn
+the results? the best models in automate mode are not always the best models in augment mode.
+
+for example - Opus and Sonnet are great on performing tasks on their own, but not in proving assistance, while GPT-5-Mini was great on both dimensions.
+
+Gemini models were stronger as assistants than as automators.
+11:37 PM · Aug 26, 2026
+28.6K
+Views

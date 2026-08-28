@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+  "title": "Google 给 AI 视频加上前后帧控制",
+  "date": "2026-08-28T00:11:32+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
+  "id": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations",
+  "title": "Google 试点双盲 AI 评测",
+  "date": "2026-08-27T20:59:16+08:00",
+  "reported": true,
+  "report_date": "2026-08-28"
+ },
+ {
   "id": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
   "title": "Google 发布 Gemini 3.5 Transcribe",
   "date": "2026-08-27T01:01:00+08:00",

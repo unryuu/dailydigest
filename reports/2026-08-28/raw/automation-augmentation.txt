@@ -1,0 +1,25 @@
+URL: https://x.com/emollick/status/2093045682785378666
+FINAL: https://x.com/emollick/status/2093045682785378666
+TITLE: Ethan Mollick on X: "Neat paper suggesting that human augmentation and task automation are not necessarily related. Models that are really good at doing work are not always good at helping humans do work better.
+
+Given the pressure to make models good agents, this may undermine human-AI cowork." / X
+FETCHED: 2026-08-28 21:16:47
+============================================================
+Ethan Mollick
+@emollick
+Neat paper suggesting that human augmentation and task automation are not necessarily related. Models that are really good at doing work are not always good at helping humans do work better.
+
+Given the pressure to make models good agents, this may undermine human-AI cowork.
+Abhishek Nagaraj
+@abhishekn
+Aug 26
+Replying to
+@abhishekn
+the results? the best models in automate mode are not always the best models in augment mode.
+
+for example - Opus and Sonnet are great on performing tasks on their own, but not in proving assistance, while GPT-5-Mini was great on both dimensions.
+
+Gemini models were stronger as
+6:39 PM · Aug 27, 2026
+24.6K
+Views

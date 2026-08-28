@@ -1,0 +1,103 @@
+URL: https://www.lesswrong.com/posts/uSRAzeDcfGuXte9R3/semantic-search-over-every-lesswrong-post
+FINAL: https://www.lesswrong.com/posts/uSRAzeDcfGuXte9R3/semantic-search-over-every-lesswrong-post
+TITLE: Semantic search over every LessWrong post — LessWrong
+FETCHED: 2026-08-28 21:17:55
+============================================================
+x
+Semantic search over every LessWrong post — LessWrong
+Personal Blog
+46
+Semantic search over every LessWrong
+post
+by
+utilitarian theory and strategy
+27th Aug 2026
+1
+min read
+4
+46
+Site:
+https://rumble-34-69-187-69.nip.io/
+Embedding models have gotten pretty good at capturing the meaning behind text, so I ran
+qwen3-embedding-8b
+over every lesswrong post.
+You can paste in a draft and find the most similar post on the site to it. Pretty useful for checking what's already been said about a topic.
+For example, I put in the text for this and the top result was:
+https://www.lesswrong.com/posts/vDcJHD95XCg7ywANM/i-built-a-semantic-search-engine-for-lesswrong
+Semantic search over every LessWrong post
+3
+neo
+1
+utilitarian theory and strategy
+3
+Seth Herd
+1
+utilitarian theory and strategy
+4
+Comments
+4
+Personal Blog
+46
+New Comment
+4 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:17 PM
+[
+-
+]
+neo
+20h
+3
+0
+Cool to see we had a similar idea, and thanks for linking my post!
+The custom query feature is super useful and a clear improvement over my version (I only have it on my personal setup to avoid racking up API costs for now).
+I've been considering expanding the project to a full plug-and-play system where users can hot-swap embedding engines, sources included in the corpus,
+[1]
+etc. - just haven't gotten around to it yet.
+I genuinely think semantic search is useful/impactful enough
+[2]
+to justify becoming a core LW feature and I really do hope to see that happen soon.
+^
+Wikipedia pages, abstracts of research papers (something like
+connectedpapers
+), etc.
+^
+LessWrong in particular has an abundance of valuable (often cutting-edge) information/thinking on a diverse range of topics, but "situating" potentially novel ideas with current (quite imprecise) search methods is very difficult, and IMO a potential bottleneck to progress.
+Reply
+[
+-
+]
+utilitarian theory and strategy
+17h
+1
+0
+API cost is a technical concern for me too, but it is so insanely cheap with qwen-8b (literally $0.00000026 per search + hard caps) that it's not a practical one.
+If you let users swap embedding engines you'll need to embed the corpus for each one. That's probably not worth the effort when they all try to do the same thing indisitinguishably.
+This should be done over text broader than lesswrong. I like how you did yours to include substack. Ideally, some massive search company just does it over all the pages on the internet. I don't know why they don't, vector search can theoretically scale pretty far with hnsw. Maybe someday they will.
+Reply
+[
+-
+]
+Seth Herd
+1d
+3
+0
+After trying it, this seems very useful! Thanks much for making this!
+Will it index future posts?
+Reply
+[
+-
+]
+utilitarian theory and strategy
+15h
+1
+0
+Thanks. It checks for and indexes new posts every few hours now.
+Reply
+Moderation Log
+More from
+utilitarian theory and strategy
+View more
+Curated and popular this week
