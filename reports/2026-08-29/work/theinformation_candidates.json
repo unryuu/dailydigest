@@ -1,0 +1,88 @@
+{
+  "date": "2026-08-29",
+  "scanned_at": "2026-08-30T00:10:06+08:00",
+  "window": "接续 2026-08-28T20:48:00+08:00，只收此后发布的新内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "OpenAI Pulls Its AI Models From SpaceX-Owned Cursor",
+      "url": "https://www.theinformation.com/briefings/openai-pulls-ai-models-spacex-owned-cursor",
+      "published_at": "2026-08-28T23:39:00-07:00",
+      "published_at_beijing": "2026-08-29T14:39:00+08:00",
+      "bucket_hint": "industry_deep_or_silver",
+      "decision": "加入候选",
+      "facts": [
+        "OpenAI 表示，将因 Cursor 被 SpaceX 以 600 亿美元收购而终止模型供应合同，并明确把决定归因于对马斯克旗下实体遵守合同的信任问题。",
+        "Cursor 联合创始人 Michael Truell 称，OpenAI 模型只占 Cursor 流量的 5％；据 The Information，Cursor 整体年化收入约 40 亿美元。",
+        "现有 OpenAI 模型计划在 11 月 12 日从 Cursor 平台永久下架，Anthropic 则表示会继续向 Cursor 提供 Claude。"
+      ],
+      "caveats": [
+        "OpenAI 的终止决定有公开官方说明，但 Cursor 的 5％流量占比、约 40 亿美元年化收入及 Anthropic 与 SpaceX 数据中心关系来自 The Information 的补充。",
+        "下架尚未发生，日期和过渡安排可能变化；不能把 OpenAI 仅占 5％流量写成对收入或用户影响已经很小。"
+      ],
+      "why": "模型供应商第一次因大公司收购和竞争者信任问题公开切断头部编程产品，能显示基础模型与应用层的中立平台关系正在破裂。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Trump Administration Working on AI Rule to Curb China’s Remote Access to Chips",
+      "url": "https://www.theinformation.com/articles/trump-administration-working-ai-rule-curb-chinas-remote-access-chips",
+      "published_at": "2026-08-28T06:00:00-07:00",
+      "published_at_beijing": "2026-08-28T21:00:00+08:00",
+      "bucket_hint": "regulation_deep_or_silver",
+      "decision": "加入候选",
+      "facts": [
+        "据四名知情人士，美国商务部内部正制定精简版 AI 扩散规则，重点堵住中国 AI 公司通过泰国、新加坡等地数据中心远程使用先进芯片的漏洞。",
+        "方案最早可能在九月交给 AI 公司和行业组织征求意见，并可能要求数据中心执行客户身份与用途审查。",
+        "现行出口管制主要约束芯片实物运输，商务部是否有权直接限制云端远程访问仍有争议；国会赋权法案进展也已停滞。"
+      ],
+      "caveats": [
+        "规则仍处于内部制定阶段，可能继续修改或停滞，不能写成已经颁布。",
+        "若国会没有明确授权，商务部可能改用数据中心获得芯片许可时附加客户限制的方式绕开权限争议。"
+      ],
+      "why": "发布时间仅晚于本期扫描起点 12 分钟，且若落地会把芯片出口管制从实物运输扩展到海外云算力使用，直接影响中国模型训练与全球数据中心选址。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "The Big Read",
+      "title": "Notion Plans Hiring Binge as CEO Makes All-In Bet on AI",
+      "url": "https://www.theinformation.com/articles/notion-plans-hiring-binge-ceo-makes-bet-ai",
+      "published_at": "2026-08-28T07:56:00-07:00",
+      "published_at_beijing": "2026-08-28T22:56:00+08:00",
+      "bucket_hint": "industry_deep_or_none",
+      "decision": "加入候选",
+      "facts": [
+        "据知情人士，Notion 计划今年把员工人数增加约 30％，新增岗位主要用于开发和销售 AI 产品；公司内部已经创建数千个 Agent。",
+        "Notion 年化经常性收入在去年十二月超过 6 亿美元，此后继续增长，并在 AI 开发成本上升时仍保持现金流为正。",
+        "Sensor Tower 数据显示，Notion 美国移动端月活第二季度同比下降 13％，欧洲没有增长，亚洲只增长略高于 1％；这些数据不包含公司重点争取的桌面企业用户。",
+        "多家公司曾接触收购 Notion，部分员工希望 Anthropic 成为买家，但创始团队仍认为公司可以保持独立。"
+      ],
+      "caveats": [
+        "扩招、收入继续增长、现金流和收购接触均来自匿名知情人士，具体数字与交易可能变化。",
+        "移动端停滞不能代表 Notion 总体使用量下降，因为数据不覆盖桌面端和企业客户。",
+        "员工希望 Anthropic 收购只是内部期待，没有证据表明双方正在洽谈交易。"
+      ],
+      "why": "它用收入、扩招、内部 Agent 数量与移动端停滞同时展示一家上一代软件明星如何全盘转向 AI，比单纯产品发布更有结构性信息。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "The Hugging Face Hack’s Chilling Postmortem",
+      "url": "https://www.theinformation.com/newsletters/the-weekend/hugging-face-hacks-chilling-postmortem",
+      "reason": "标题承接 08-27 已报的 OpenAI Agent 群体攻击 Hugging Face 主线，首页摘要没有显示独立新增事实；本期不靠同事件评论续报。"
+    },
+    {
+      "title": "Andreessen Horowitz Raises $1.1 Billion for AI Hardware Fund",
+      "url": "https://www.theinformation.com/briefings/andreessen-horowitz-raises-1-1-billion-ai-hardware-fund",
+      "reason": "时间窗内且相关，但三篇精读名额已由影响更直接的模型断供、芯片监管和 Notion 转型占据；仅凭首页摘要不足以写正文。"
+    },
+    {
+      "title": "Z.ai’s Latest Model Intensifies Competition for Low-Cost Offerings",
+      "url": "https://www.theinformation.com/briefings/z-ais-latest-model-intensifies-competition-low-cost-offerings",
+      "reason": "GLM-5.3-Flash 已在 08-26 报道，低价与模型身份不构成本期足够强的新进展。"
+    }
+  ]
+}

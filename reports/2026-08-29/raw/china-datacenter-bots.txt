@@ -1,0 +1,70 @@
+URL: https://www.axios.com/2026/08/28/china-ai-data-center-backlash-bots
+FINAL: https://www.axios.com/2026/08/28/china-ai-data-center-backlash-bots
+TITLE: America's data center revolt is getting a boost from China-linked bots
+FETCHED: 2026-08-31 16:55:23
+============================================================
+Updated Aug 28, 2026
+-
+Politics & Policy
+China is secretly fueling America's data center rage
+Josephine Walker
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Illustration: Annelise Capossela/Axios
+Roughly 200 accounts from a suspected Chinese bot farm have quietly tried to influence Americans to
+oppose AI
+data centers on social media, X said Thursday night.
+Why it matters:
+The U.S. and China are
+racing
+to build the world's most advanced
+AI systems
+— and it appears Chinese propaganda has infiltrated American circles with the hope of slowing the U.S. down.
+Driving the news:
+The X Safety team probed suspected Chinese accounts involved in influence operations and identified 200,000 accounts, including 200 accounts "posting in a manner that could manipulate a legitimate debate about American AI and energy policy," the team said in a
+tweet
+.
+The posts included content on how AI strains the electricity grid and increases utility prices and "cartoons that depicted data-center operators enriching themselves at the public's expense."
+It's unclear what, if any, action X will take to suspend or delete accounts from the bot farm.
+X, owned by Elon Musk, whose billions rely on data centers to boost his AI enterprises, did not respond to Axios' request for comment.
+State of play:
+Congressional Republicans have been digging into influence campaigns from foreign adversaries designed to stall American AI development.
+The House Energy and Commerce Committee sent a
+letter
+in June asking the FBI and White House advisers to brief lawmakers on alleged propaganda campaigns by foreign adversaries, specifically China, Russia and Iran, aimed at hindering U.S. AI development and data center expansion.
+The letter cited several reports, including one estimating that opposition campaigns have delayed or obstructed roughly $45.8 billion in data center projects in Virginia alone.
+Nonetheless, Democrat and Republican
+officials
+alike have increasingly backed
+data center moratoriums
+and embraced a not-in-my-backyard stance toward the massive infrastructure projects.
+Thought bubble from Axios' Madison Mills:
+Data center pushback has become a financial liability for the AI buildout.
+Several Wall Street banks have recently cited political opposition as a risk to the entire AI sector.
+The AI boom relies on expanding data centers because they provide the computing that massive AI companies need to keep growing.
+The other side:
+"The 'All In' chattering class 'Chinese psyop' thing is worrying and frustrating," Jim Prosser, a Silicon Valley communications consultant and former Twitter head of corporate communications, told Axios.
+He noted that this is the new messaging Big Tech wants to use to change the conversation on data centers.
+"If you can get both Greg Abbott and Kathy Hochul agreeing on something, it's probably not a Chinese psyop, it's probably not a mass delusion people are having on these issues."
+"It's about touching grass and actually being somewhere. If you're a [venture capitalist] in Atherton or Menlo Park opining about how somebody in Ohio should feel, and you've never been to Ohio, that's a problem."
+By the numbers:
+Whatever role foreign influence campaigns may play, organic opposition to data centers is very real.
+Sixty-one percent of Americans oppose building new data centers in their area, according to an early August University of Pennsylvania
+survey
+. That's up 12 percentage points from a previous UPenn survey conducted in February and March.
+That squares with a YouGov
+survey
+released Tuesday that found only 24% of Americans say building new data centers is very or somewhat good for the country. 47% say it's bad.
+Flashback:
+OpenAI disrupted two Chinese-linked covert networks using ChatGPT to create fake content to influence U.S. debates on AI energy consumption and tech tariffs, the company said in a June
+report
+.
+The campaigns failed to catch on, but they signaled an active push by foreign adversaries to exploit American economic anxieties.
+Yes, but:
+It doesn't take much social media scrolling to see real videos of real people showing up in droves to local council meetings to fight back against data centers.
+Go deeper:
+Big Tech faces Big Resistance
+Add Axios on Google
+What to read next

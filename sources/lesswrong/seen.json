@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/3sr8yK4SvwFXPsATt/the-curious-case-of-france-s-untouchable-castes",
+  "title": "中世纪法国也有世袭的「不可接触者」",
+  "date": "2026-08-29T14:01:38+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/jYQXwwewk4frHDrmn/malign-initializations-are-more-robust-when-the-model-can",
+  "title": "模型用强语言思考时更难洗掉恶意行为",
+  "date": "2026-08-29T12:46:38+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/iSDbyrG8yfqk3KJbT/taste-can-ai-models-judge-ai-safety-research-proposals",
+  "title": "模型还不太会挑 AI 安全研究方案",
+  "date": "2026-08-29T04:45:46+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/o7QwBAYqpbvBL6SRH/the-dynamics-of-intelligence-explosions",
+  "title": "Toby Ord 把研发耗时加入智能爆炸模型",
+  "date": "2026-08-28T23:31:39+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/uSRAzeDcfGuXte9R3/semantic-search-over-every-lesswrong-post",
   "title": "有人给全站 LessWrong 做了语义查重",
   "date": "2026-08-27T20:45:39+08:00",

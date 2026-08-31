@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+  "title": "Claude 自动寻找十类对齐失败的修法",
+  "date": "2026-08-28",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
   "id": "https://www.anthropic.com/research/enabling-independent-research",
   "title": "Anthropic 让外部团队研究真实 Claude 用法",
   "date": "2026-08-26",

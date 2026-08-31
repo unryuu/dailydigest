@@ -1,5 +1,54 @@
 [
  {
+  "id": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer",
+  "title": "一篇六月旧文拿苏美尔王表对照古气候",
+  "date": "2026-08-29T07:46:10+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://github.com/Lakr233/vphone-cli",
+  "title": "有人用苹果虚拟化框架开出一台虚拟 iPhone",
+  "date": "2026-08-29T07:02:21+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+  "title": "三星把计算单元塞进内存",
+  "date": "2026-08-29T14:06:51+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://github.com/stemdeckapp/stemdeck",
+  "title": "StemDeck 在本机拆出六条音轨",
+  "date": "2026-08-29T09:24:13+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://lwn.net/Articles/1091231",
+  "title": "Debian 投票不禁止负责任使用生成式 AI",
+  "date": "2026-08-29T22:02:10+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://pwning.systems/posts/llm-memory-program-analysis",
+  "title": "有人把 LLM 记忆改造成程序分析",
+  "date": "2026-08-29T07:27:45+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+  "title": "漏洞风声传出十分钟后就有人来探测",
+  "date": "2026-08-28T23:58:46+08:00",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
   "id": "https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html",
   "title": "散度定理把 3D 模型体积算进一个循环",
   "date": "2026-08-28T17:00:46+08:00",

@@ -1,0 +1,199 @@
+[
+  {
+    "slug": "openai-cursor-ti",
+    "url": "https://www.theinformation.com/briefings/openai-pulls-ai-models-spacex-owned-cursor",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/openai-pulls-ai-models-spacex-owned-cursor",
+    "bytes": 383202,
+    "title": "OpenAI Pulls Its AI Models From SpaceX-Owned Cursor — The Information",
+    "chars": 2375
+  },
+  {
+    "slug": "openai-cursor-official",
+    "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+    "status": 200,
+    "final_url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
+    "bytes": 334045,
+    "title": "Our decision on Cursor following its acquisition by SpaceX | OpenAI",
+    "chars": 2233
+  },
+  {
+    "slug": "notion-ai-bet",
+    "url": "https://www.theinformation.com/articles/notion-plans-hiring-binge-ceo-makes-bet-ai",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/notion-plans-hiring-binge-ceo-makes-bet-ai",
+    "bytes": 408885,
+    "title": "Notion Plans Hiring Binge as CEO Makes All-In Bet on AI — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "china-datacenter-bots",
+    "url": "https://www.axios.com/2026/08/28/china-ai-data-center-backlash-bots",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/08/28/china-ai-data-center-backlash-bots",
+    "bytes": 261567,
+    "title": "America's data center revolt is getting a boost from China-linked bots",
+    "chars": 4309
+  },
+  {
+    "slug": "bug-rumour-simon",
+    "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
+    "bytes": 16715,
+    "title": "Just a rumour of a bug is enough to find a security exploit these days",
+    "chars": 2833
+  },
+  {
+    "slug": "bug-rumour-original",
+    "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+    "status": 200,
+    "final_url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+    "bytes": 224237,
+    "title": "Just a rumour of a bug is enough to find a security exploit these days | Anil Madhavapeddy",
+    "chars": 11656
+  },
+  {
+    "slug": "intelligence-explosions",
+    "url": "https://www.lesswrong.com/posts/o7QwBAYqpbvBL6SRH/the-dynamics-of-intelligence-explosions",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/o7QwBAYqpbvBL6SRH/the-dynamics-of-intelligence-explosions",
+    "bytes": 1662469,
+    "title": "The Dynamics of Intelligence Explosions — LessWrong",
+    "chars": 84244
+  },
+  {
+    "slug": "llm-memory-analysis",
+    "url": "https://pwning.systems/posts/llm-memory-program-analysis",
+    "status": 200,
+    "final_url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+    "bytes": 56806,
+    "title": "I accidentally turned LLM memory into program analysis :: pwning.systems",
+    "chars": 26320
+  },
+  {
+    "slug": "taste-safety-research",
+    "url": "https://www.lesswrong.com/posts/iSDbyrG8yfqk3KJbT/taste-can-ai-models-judge-ai-safety-research-proposals",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/iSDbyrG8yfqk3KJbT/taste-can-ai-models-judge-ai-safety-research-proposals",
+    "bytes": 470623,
+    "title": "TASTE: Can AI Models Judge AI Safety Research Proposals?  — LessWrong",
+    "chars": 13349
+  },
+  {
+    "slug": "automated-researchers",
+    "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+    "bytes": 168731,
+    "title": "Automated researchers can reliably mitigate alignment failures \\ Anthropic",
+    "chars": 8623
+  },
+  {
+    "slug": "malign-initializations",
+    "url": "https://www.lesswrong.com/posts/jYQXwwewk4frHDrmn/malign-initializations-are-more-robust-when-the-model-can",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/jYQXwwewk4frHDrmn/malign-initializations-are-more-robust-when-the-model-can",
+    "bytes": 437956,
+    "title": "Malign initializations are more robust when the model can think better in the reasoning language than in the output language — LessWrong",
+    "chars": 12388
+  },
+  {
+    "slug": "pawbench",
+    "url": "https://huggingface.co/papers/2608.27345",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.27345",
+    "bytes": 166351,
+    "title": "Paper page - PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+    "chars": 3939
+  },
+  {
+    "slug": "pilot-loop",
+    "url": "https://huggingface.co/papers/2608.26530",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.26530",
+    "bytes": 161715,
+    "title": "Paper page - PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents",
+    "chars": 5079
+  },
+  {
+    "slug": "remote-chip-rule",
+    "url": "https://www.theinformation.com/articles/trump-administration-working-ai-rule-curb-chinas-remote-access-chips",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/trump-administration-working-ai-rule-curb-chinas-remote-access-chips",
+    "bytes": 410740,
+    "title": "Trump Administration Working on AI Rule to Curb China’s Remote Access to Chips — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "debian-generative-ai",
+    "url": "https://lwn.net/Articles/1091231",
+    "status": 200,
+    "final_url": "https://lwn.net/Articles/1091231/",
+    "bytes": 88043,
+    "title": "Debian votes to allow \"responsible use of generative AI\" [LWN.net]",
+    "chars": 1119
+  },
+  {
+    "slug": "google-overviews-wikipedia",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6164926",
+    "status": 403,
+    "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6164926",
+    "bytes": 27538,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "stemdeck",
+    "url": "https://github.com/stemdeckapp/stemdeck",
+    "status": 200,
+    "final_url": "https://github.com/stemdeckapp/stemdeck",
+    "bytes": 470404,
+    "title": "GitHub - stemdeckapp/stemdeck: Stemdeck is an modern stem extraction platform for musicians,producers and hobbyists, designed to isolate vocals, drums, bass, piano and guitar  for practice, transcription, remixing, and creative audio workflows through a modern and interactive interface · GitHub",
+    "chars": 18999
+  },
+  {
+    "slug": "samsung-pim",
+    "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+    "status": 200,
+    "final_url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+    "bytes": 343172,
+    "title": "Hot Chips 2026: Samsung’s Processing-in-Memory (PIM)",
+    "chars": 13436
+  },
+  {
+    "slug": "virtual-iphone",
+    "url": "https://github.com/Lakr233/vphone-cli",
+    "status": 200,
+    "final_url": "https://github.com/Lakr233/vphone-cli",
+    "bytes": 348649,
+    "title": "GitHub - Lakr233/vphone-cli · GitHub",
+    "chars": 7558
+  },
+  {
+    "slug": "france-untouchable-castes",
+    "url": "https://www.lesswrong.com/posts/3sr8yK4SvwFXPsATt/the-curious-case-of-france-s-untouchable-castes",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/3sr8yK4SvwFXPsATt/the-curious-case-of-france-s-untouchable-castes",
+    "bytes": 546828,
+    "title": "The Curious Case of France's Untouchable Castes — LessWrong",
+    "chars": 25571
+  },
+  {
+    "slug": "ai-creativity-boom",
+    "url": "https://x.com/emollick/status/2093362761925284279",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2093362761925284279",
+    "bytes": 178626,
+    "title": "Ethan Mollick on X: \"Aside from waiting for economic impact, we are now at the place where AI video, image &amp; music models are good enough to be real tools for letting more people who never could produce new kinds of art\n\nHow long until we see a creativity boom among the slop flood? Is it happen… / X",
+    "chars": 337
+  },
+  {
+    "slug": "sumerian-paleoclimate",
+    "url": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer",
+    "status": 200,
+    "final_url": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer/",
+    "bytes": 37958,
+    "title": "Sumerian King List Paleoclimate Alignment Test | vectorian",
+    "chars": 15343
+  }
+]

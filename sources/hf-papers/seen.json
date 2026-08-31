@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.26530",
+  "title": "长程 Agent 工作中途也能改进自己",
+  "date": "2026-08-29",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.27345",
+  "title": "视频世界模型猜不准各种结果的频率",
+  "date": "2026-08-29",
+  "reported": true,
+  "report_date": "2026-08-29"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.27456",
   "title": "AI Agent 走进一座 3D 香港",
   "date": "2026-08-28",

@@ -1,0 +1,127 @@
+{
+  "date": "2026-08-29",
+  "scanned_at": "2026-08-30T00:10:06+08:00",
+  "window": "接续 2026-08-28T20:48:00+08:00，只收此后发布的新帖",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取 Latest；Nitter 仅保留失败诊断",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现 3 条时间窗内原创帖；Google AI 摘要与维基百科流量研究、AI 创作繁荣观点进入候选，GLM-5.3 安全披露观点因旧主线排除"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "搜索 Latest 明确显示时间窗内无结果"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "搜索 Latest 明确显示时间窗内无结果"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "发现 1 条 MATS 申请截止提醒，缺少日报价值，排除"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "发现多条 AI 对齐与 Hugging Face 事故讨论；均为观点或承接 08-27 已报主线，没有独立新增证据，排除"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "只发现 08-28 已报网络防御倡议的同一条呼吁，按重复排除"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "逐段扫到 2026-08-28T12:48:00Z 起点之前；保留 Terminal-Bench 4.0 观点和 DeepSeek 俄语表现观察，其余政治评论、旧主线与无证据猜测排除"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "Google AI 摘要可能正在分走维基百科访问量",
+      "url": "https://x.com/emollick/status/2093530834124800046",
+      "datetime": "2026-08-29T02:47:01.000Z",
+      "datetime_beijing": "2026-08-29T10:47:01+08:00",
+      "bucket_hint": "deep_paper_or_industry",
+      "text": "Ethan Mollick 转述一项 SSRN 研究称，初步证据显示 Google AI Overviews 可能正在对维基百科造成类似代码 Agent 对 StackExchange 的流量分流。",
+      "caveats": [
+        "帖子只给出结论钩子，必须由 reader 回溯 SSRN 论文，核清数据范围、因果识别和流量变化幅度。",
+        "不能从相关性直接写成 Google AI 摘要已经导致维基百科内容或社区衰退。"
+      ],
+      "why": "生成式搜索对知识公共品的流量与供给激励影响，是比单次模型功能更长期的行业问题。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 创作工具变成熟后，垃圾洪流里会不会出现创意繁荣",
+      "url": "https://x.com/emollick/status/2093362761925284279",
+      "datetime": "2026-08-28T15:39:09.000Z",
+      "datetime_beijing": "2026-08-28T23:39:09+08:00",
+      "bucket_hint": "fun_or_angle",
+      "text": "Mollick 认为，视频、图像和音乐模型已经足以成为真正的创作工具，让过去无法制作这些艺术形式的人开始创作；他追问，海量 AI 垃圾内容中是否已经出现创意繁荣。",
+      "caveats": [
+        "这是观察和问题，不是带数据的研究结论。",
+        "若没有独立案例或统计材料，只适合作为乐子或短观点，不应升牌。"
+      ],
+      "why": "把 AI 内容争议从单纯的垃圾数量转向创作门槛下降后是否会产生新作者，适合给日报增加一条有张力的开放问题。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "Terminal-Bench 4.0 显示更多模型不再一到真实任务就散架",
+      "url": "https://x.com/teortaxesTex/status/2093501696810865037",
+      "datetime": "2026-08-29T00:51:14.557Z",
+      "datetime_beijing": "2026-08-29T08:51:14+08:00",
+      "bucket_hint": "paper_or_radar",
+      "text": "Teortaxes 评论 Terminal-Bench 4.0 称，模型后训练进步可能已经追上真实下游用例的分布，因此新版基准里，Anthropic 和 OpenAI 之外实验室的模型也不再普遍在实际任务中崩掉。",
+      "caveats": [
+        "这是对新基准结果的个人解释，必须由 reader 找到 Terminal-Bench 4.0 原始榜单、任务变化和具体模型成绩。",
+        "不能把单一终端基准外推为各家模型已经全面追平。"
+      ],
+      "why": "如果新基准确实缩小头部闭源模型与其他实验室之间的真实任务差距，会影响 Agent 产品选型和低成本模型价值。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "个人测试称 DeepSeek 的俄语仍明显好于其他中国模型",
+      "url": "https://x.com/teortaxesTex/status/2093615546700898558",
+      "datetime": "2026-08-29T08:23:38.486Z",
+      "datetime_beijing": "2026-08-29T16:23:38+08:00",
+      "bucket_hint": "radar_low_priority",
+      "text": "Teortaxes 称，个人再次测试后认为 DeepSeek 是中国模型中唯一能流畅使用俄语的模型家族，Kimi K3 和 GLM-5.3 很快会滑向生硬的俄式英语；他据此猜测 DeepSeek 的通用预训练语料仍最好。",
+      "caveats": [
+        "这是未公开提示词、样本量和评分标准的个人测试，且没有覆盖全部中国模型。",
+        "只能写成个人观察，不能写成可靠排名或训练语料事实。"
+      ],
+      "why": "多语言能力是中国模型国际化的重要盲区，但证据强度低，只适合作为待核线索。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/emollick/status/2093399712208494741",
+      "reason": "要求 GLM-5.3 发布模型卡和红队结果是有价值的批评，但模型开放与身份已于 08-26 报道，本帖没有新增测试或官方回应。"
+    },
+    {
+      "url": "https://x.com/NeelNanda5/status/2093389017870168414",
+      "reason": "只是 MATS 申请将在一周后截止的招生提醒。"
+    },
+    {
+      "url": "https://x.com/tszzl/status/2093470222787432765",
+      "reason": "关于长期只能让 AI 不想作恶而不能靠人类围堵的观点没有数据或新机制，且与近期监控与对齐主线饱和。"
+    },
+    {
+      "url": "https://x.com/sama/status/2093060670472241368",
+      "reason": "同一帖子已作为 08-28 网络防御倡议材料读取并发布，硬重复。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2093566193189711884",
+      "reason": "对 PHASEONE Agent 可能存在等级制度的猜测承接 08-27 Hugging Face 事故，没有新增日志或调查证据。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2093405113834463730",
+      "reason": "讽刺 GLM-5.3 许可证和安全披露不足，与 Mollick 同主题且仍无新增官方材料，不重复带回。"
+    }
+  ]
+}

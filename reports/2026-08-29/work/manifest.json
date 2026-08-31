@@ -1,0 +1,357 @@
+{
+  "date": "2026-08-29",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "OpenAI 因 Cursor 被 SpaceX 收购而终止模型供应",
+      "cost": "中",
+      "reason": "The Information 的商业细节与 OpenAI 官方说明指向同一事件，合并读取可以核清公开理由、合同时间表和实际影响，避免把换来源转述拆成两条。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "OpenAI Pulls Its AI Models From SpaceX-Owned Cursor",
+          "url": "https://www.theinformation.com/briefings/openai-pulls-ai-models-spacex-owned-cursor",
+          "date": "2026-08-29T14:39:00+08:00",
+          "why": "手工候选记录称，OpenAI 将在 11 月 12 日下架模型，并把决定归因于对马斯克旗下实体履约的信任问题；Cursor 称 OpenAI 模型只占流量 5％，但不能据此直接断言收入或用户影响很小。"
+        },
+        {
+          "source": "openai／hacker-news",
+          "title": "Our decision on Cursor following its acquisition by SpaceX",
+          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+          "date": "2026-08-29T09:47:53+08:00",
+          "why": "官方标题确认 OpenAI 已就收购后的 Cursor 作出决定，HN 抓取时 682 分、405 条评论；机械候选仅见标题，具体理由和过渡安排待 reader 从一手说明核实。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "美国拟把对华芯片管制扩展到海外数据中心的远程算力",
+      "cost": "重",
+      "reason": "若规则落地，出口管制将从芯片实物运输延伸到云端使用，直接影响中国模型训练、海外数据中心选址和客户审查，且属于重大监管动向。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Trump Administration Working on AI Rule to Curb China’s Remote Access to Chips",
+          "url": "https://www.theinformation.com/articles/trump-administration-working-ai-rule-curb-chinas-remote-access-chips",
+          "date": "2026-08-28T21:00:00+08:00",
+          "why": "据四名知情人士，商务部正制定精简版 AI 扩散规则，可能要求海外数据中心审查客户身份与用途；规则仍在内部制定，商务部权限也有争议，不能写成已经颁布。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Notion 用扩招、内部 Agent 和 AI 销售押注下一阶段增长",
+      "cost": "重",
+      "reason": "收入、现金流、扩招、内部 Agent 数量与移动端停滞同时出现，能观察一家上一代软件明星转向 AI 后的增长质量，而不只是报道产品发布。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Notion Plans Hiring Binge as CEO Makes All-In Bet on AI",
+          "url": "https://www.theinformation.com/articles/notion-plans-hiring-binge-ceo-makes-bet-ai",
+          "date": "2026-08-28T22:56:00+08:00",
+          "why": "手工候选记录称，Notion 计划今年扩员约 30％，内部已创建数千个 Agent，去年十二月年化经常性收入超过 6 亿美元且仍保持现金流为正；移动端数据不覆盖桌面企业用户，收购接触也未形成交易。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "AI 自动化对齐研究开始同时面对能力与研究品味评测",
+      "cost": "重",
+      "reason": "Anthropic 的自动研究员结果与 TASTE 的研究方案判断基准分别回答能否缓解对齐失败、能否判断好研究，适合合并核查自动化对齐研究的能力边界。",
+      "items": [
+        {
+          "source": "anthropic-research",
+          "title": "Automated researchers can reliably mitigate alignment failures",
+          "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+          "date": "2026-08-28",
+          "why": "Anthropic 研究列表只给出标题与日期，标题声称自动研究员能可靠缓解对齐失败；实验设置、可靠性口径和适用范围都必须由 reader 核实。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "TASTE: Can AI Models Judge AI Safety Research Proposals?",
+          "url": "https://www.lesswrong.com/posts/iSDbyrG8yfqk3KJbT/taste-can-ai-models-judge-ai-safety-research-proposals",
+          "date": "2026-08-29T04:45:46+08:00",
+          "why": "摘要称 TASTE 用 92 对研究方案衡量模型与资深研究者偏好的一致性，人类一致率估计为 77％，Fable 5 得分 60％；需核样本构造、讨论阶段和强置信标签筛选是否抬高一致性。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "公开讨论里只透露漏洞风声，代码 Agent 就可能迅速找到利用方法",
+      "cost": "中",
+      "reason": "这是 AI 改变开源漏洞披露节奏的具体安全信号。它与 08-26 的 AI 攻击关键基础设施主线相邻，但新增的是补丁讨论后数分钟出现探测及 Agent 找洞的机制证据，仍需核清真实攻击与演示的边界。",
+      "items": [
+        {
+          "source": "simon-willison",
+          "title": "Just a rumour of a bug is enough to find a security exploit these days",
+          "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug",
+          "date": "2026-08-29T06:12:02+08:00",
+          "why": "摘要转述 OCaml 维护者称，补丁进入公开讨论约十分钟后网站就收到路径遍历探测，并演示现代代码 Agent 可据少量提示找到漏洞；需区分观测到的外部探测与作者自己的 Agent 演示。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Just the rumour of a bug is enough to find an exploit these days",
+          "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+          "date": "2026-08-28T23:58:46+08:00",
+          "why": "原始文章在 HN 抓取时 359 分、115 条评论；机械候选只见标题和热度，适合作为一手材料入口，不另拆成第二事件。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "China is secretly fueling America's data center rage",
+      "url": "https://www.axios.com/2026/08/28/china-ai-data-center-backlash-bots",
+      "date": "2026-08-29T02:20:59+08:00",
+      "note": "Axios 转述 X 安全团队称，一个疑似中国机器人网络中约 200 个账号试图影响美国 AI 数据中心争论；总调查涉及约 20 万账号，但具体归因、影响规模和平台处置待核。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Google AI 摘要可能正在分走维基百科访问量",
+      "url": "https://x.com/emollick/status/2093530834124800046",
+      "date": "2026-08-29T10:47:01+08:00",
+      "note": "Ethan Mollick 转述一项 SSRN 研究的初步结论；只见帖子钩子，必须回溯论文核数据范围、因果识别和流量变化幅度。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "I accidentally turned LLM memory into program analysis",
+      "url": "https://pwning.systems/posts/llm-memory-program-analysis",
+      "date": "2026-08-29T07:27:45+08:00",
+      "note": "把 LLM 记忆机制意外变成程序分析的技术文章，HN 抓取时 216 分、64 条评论；机械候选只见标题和热度，具体方法待核。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "Terminal-Bench 4.0 显示更多模型不再一到真实任务就散架",
+      "url": "https://x.com/teortaxesTex/status/2093501696810865037",
+      "date": "2026-08-29T08:51:14+08:00",
+      "note": "这是 Teortaxes 对新版基准的个人解释；需回溯原始榜单、任务变化和具体模型成绩，不能外推为各家模型全面追平。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "The Dynamics of Intelligence Explosions",
+      "url": "https://www.lesswrong.com/posts/o7QwBAYqpbvBL6SRH/the-dynamics-of-intelligence-explosions",
+      "date": "2026-08-28T23:31:39+08:00",
+      "note": "Toby Ord 建模 AI 研发反馈循环，摘要称有限时间奇点比近期经济学模型暗示的更难出现，并把反馈循环的代际时间列为关键参数。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Malign initializations are more robust when the model can think better in the reasoning language than in the output language",
+      "url": "https://www.lesswrong.com/posts/jYQXwwewk4frHDrmn/malign-initializations-are-more-robust-when-the-model-can",
+      "date": "2026-08-29T12:46:38+08:00",
+      "note": "研究用推理语言与输出语言能力差异构造更耐训练的恶意初始化，试图解决旧方法经普通微调就丢失恶意行为的问题；具体稳健性与泛化范围待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "PAWBench: How Far Are We from Probabilistically Aligned World Modeling?",
+      "url": "https://huggingface.co/papers/2608.27345",
+      "date": "",
+      "note": "评测世界模型的概率对齐程度；目标日榜单候选，列表页无可靠发布日期，任务和指标待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents",
+      "url": "https://huggingface.co/papers/2608.26530",
+      "date": "",
+      "note": "让长程 Agent 在运行中持续自我改进的方法候选；目标日榜单候选，列表页无可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization",
+      "url": "https://huggingface.co/papers/2608.26103",
+      "date": "",
+      "note": "从人类视频做上下文内世界动作建模，面向开放任务泛化；目标日榜单抓取，列表页无可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Procedura: Agentic 3D Modeling with Procedural Control",
+      "url": "https://huggingface.co/papers/2608.26238",
+      "date": "",
+      "note": "用程序化控制做 Agent 式 3D 建模，榜单表层信号较高；列表页无可靠发布日期，控制方式和效果待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+      "url": "https://huggingface.co/papers/2608.27455",
+      "date": "",
+      "note": "从小模型失败模式做推理时弱到强泛化；目标日榜单候选，列表页无可靠发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents",
+      "url": "https://huggingface.co/papers/2608.27260",
+      "date": "",
+      "note": "研究什么样的数据更适合训练 LLM Agent，属于 Agent 数据配方线索；目标日榜单候选，具体 ACE 维度待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "StemDeck, a free, open-source and local AI stem separator",
+      "url": "https://github.com/stemdeckapp/stemdeck",
+      "date": "2026-08-29T09:24:13+08:00",
+      "note": "免费、开源、本地运行的 AI 音轨分离工具，HN 抓取时 163 分、45 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Samsung's Processing-in-Memory (PIM)",
+      "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+      "date": "2026-08-29T14:06:51+08:00",
+      "note": "三星存内处理技术文章，HN 抓取时 181 分、62 条评论；具体芯片、工作负载和性能数据待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Debian votes to allow responsible use of generative AI",
+      "url": "https://lwn.net/Articles/1091231",
+      "date": "2026-08-29T22:02:10+08:00",
+      "note": "Debian 就负责任使用生成式 AI 作出投票，HN 抓取时 199 分、139 条评论；决议文本、适用范围和是否约束贡献者待核。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "个人测试称 DeepSeek 的俄语仍明显好于其他中国模型",
+      "url": "https://x.com/teortaxesTex/status/2093615546700898558",
+      "date": "2026-08-29T16:23:38+08:00",
+      "note": "未公开提示词、样本量和评分标准的个人观察，只能作为多语言能力待核线索，不能写成可靠排名或训练语料事实。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-emollick",
+      "title": "AI 创作工具变成熟后，垃圾洪流里会不会出现创意繁荣",
+      "url": "https://x.com/emollick/status/2093362761925284279",
+      "date": "2026-08-28T23:39:09+08:00",
+      "note": "Mollick 把争论从 AI 垃圾数量转向创作门槛下降后是否会出现新作者；这是开放问题，没有数据，只适合短观点。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
+      "url": "https://github.com/Lakr233/vphone-cli",
+      "date": "2026-08-29T07:02:21+08:00",
+      "note": "通过苹果 Virtualization.framework 启动虚拟 iPhone 的项目，HN 抓取时 341 分、88 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Does the Sumerian King List Align with Paleoclimate Events?",
+      "url": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer",
+      "date": "2026-08-29T07:46:10+08:00",
+      "note": "把苏美尔王表与古气候事件放在一起探索的旧文章当天重登 HN，抓取时 120 分、71 条评论；原文 URL 显示发表于 06-07，不能写成当天新研究。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "The Curious Case of France’s Untouchable Castes",
+      "url": "https://www.lesswrong.com/posts/3sr8yK4SvwFXPsATt/the-curious-case-of-france-s-untouchable-castes",
+      "date": "2026-08-29T14:01:38+08:00",
+      "note": "讨论中世纪法国长期存在、却与法国平等主义自我形象冲突的社会排斥群体；非 AI，但反常识感足。"
+    },
+    {
+      "source": "acx",
+      "title": "Your Book Review: Thomas Urquhart’s Translation Of Rabelais",
+      "url": "https://www.astralcodexten.com/p/your-book-review-thomas-urquharts",
+      "date": "2026-08-29T01:32:14+08:00",
+      "note": "ACX 书评赛第七位决赛作品，主题是 Thomas Urquhart 对 Rabelais 的翻译；feed 只给标题和决赛标记，内容钩子待核。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2028 年前，AI 能只凭原始提示制作情节、设计和角色一致的完整动画电影吗？",
+      "prob": "58.6％",
+      "volume_note": "volume 口径：累计成交量约 7.76 万 Mana；与 08-26 的 AI 生成中型游戏盘口是不同交付物，但主题相邻。",
+      "url": "https://manifold.markets/ChanaMessinger/by-2028-will-ai-be-able-to-make-a-f"
+    },
+    {
+      "question": "到 2027 年 8 月，哪件最不起眼的事仍能让人确信 AI 做不到？",
+      "prob": "多选盘，离线候选未提供单一概率",
+      "volume_note": "volume 口径：累计成交量约 7.38 万 Mana。",
+      "url": "https://manifold.markets/Bayesian/whats-the-least-impressive-thing-yo"
+    },
+    {
+      "question": "AI 何时会在预测上压倒人类超级预测员？",
+      "prob": "多选盘，离线候选未提供单一概率",
+      "volume_note": "volume 口径：累计成交量约 5832 Mana。",
+      "url": "https://manifold.markets/dreev/when-will-ai-forecasting-crush-huma"
+    },
+    {
+      "question": "AI 何时能在热门电子游戏速通中超过人类世界纪录？",
+      "prob": "多选盘，离线候选未提供单一概率",
+      "volume_note": "volume 口径：累计成交量约 1.89 万 Mana。",
+      "url": "https://manifold.markets/NoUsernameSelected/when-will-an-ai-be-able-to-speedrun"
+    },
+    {
+      "question": "中国的 AI 实验室会在哪一年造出 AGI？",
+      "prob": "多选盘，离线候选未提供单一概率",
+      "volume_note": "volume 口径：累计成交量约 7452 Mana。",
+      "url": "https://manifold.markets/AlanTuring/in-what-year-will-an-ai-lab-in-chin"
+    },
+    {
+      "question": "下列 AI 公司中会有任何一家被国有化吗？",
+      "prob": "多选盘，离线候选未提供单一概率",
+      "volume_note": "volume 口径：累计成交量约 8484 Mana。",
+      "url": "https://manifold.markets/NathanpmYoung/will-any-of-the-below-ai-companies"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "huggingface-incident",
+      "reason": "Axios、The Information、TheZvi、LessWrong 和 X 的多条材料都在复述或评论 08-27 已发的 OpenAI Agent 群体攻击 Hugging Face 事件，没有独立新增事故范围、真实损失或责任处置，按硬重复剔除。"
+    },
+    {
+      "slug": "axios-nvidia",
+      "reason": "英伟达以芯片利润反哺 AI 生态的 Axios 文章已在 08-28 发出，且发布时间早于本期接续点，硬重复。"
+    },
+    {
+      "slug": "the-batch_z-ai",
+      "reason": "The Batch 的 GLM-5.3、DeepSeek Agent Harness 等栏目线索与 08-26 至 08-28 已发主线重叠；The Information 的 Z.ai 低价模型简讯也重复 08-26 的 GLM-5.3 身份与开放信息。"
+    },
+    {
+      "slug": "old-feed-items",
+      "reason": "ACX 开放帖与调查、Import AI、Mistral、多个 LessWrong 条目明显早于 2026-08-28T20:48:00+08:00 接续点，或摘要注明首次发表于更早日期，未进桶。"
+    },
+    {
+      "slug": "manifold-xrisk",
+      "reason": "候选池的大量 AI 灭绝、人口锐减盘口与 08-28 的 AI 消灭人类结算盘主题过近，未用换期限、换阈值的方式继续收。"
+    },
+    {
+      "slug": "x-manual",
+      "reason": "Nitter 七个账号的 403 诊断保留在 fetch_failures；登录态手工结果只从 x_candidates.json 离线合并，没有重新打开 X。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "本轮没有可回溯到原始出处的新候选。"
+    }
+  ]
+}
