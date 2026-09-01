@@ -1,0 +1,171 @@
+URL: https://www.lesswrong.com/posts/2qDpf6Tvu7dxtRve7/persuasion-as-market-making
+FINAL: https://www.lesswrong.com/posts/2qDpf6Tvu7dxtRve7/persuasion-as-market-making
+TITLE: Persuasion as Market Making — LessWrong
+FETCHED: 2026-09-01 09:08:59
+============================================================
+x
+Persuasion as Market Making — LessWrong
+AI
+Frontpage
+65
+Persuasion as Market
+Making
+by
+djbinder
+30th Aug 2026
+Linkpost for
+defensesindepth.bio
+5
+min read
+9
+65
+People often imagine persuasion as a dark art. A charismatic person finds just the right series of words to induce emotions that lead someone, or a group of people, to do something they otherwise would not. While there are certainly psychological aspects to persuasion, I think this impression is misleading.
+The easiest way to persuade someone to do something is to convince them that it is in their interests.
+The easiest way to do that is for it to genuinely be in their interests
+, so that you can present true evidence that this is the case. I think most actual persuasion works through this rational method. Attempts to manipulate a person’s preferences and beliefs are certainly part of the equation, and help give persuasion its spooky reputation, but they are not necessary for persuasion to work.
+AIs could be superhumanly good at identifying actions that are in the interests of the person being persuaded while simultaneously benefiting the AI (or the actor deploying it), and then presenting evidence that taking the action would benefit them. Rational persuasion therefore provides a lower bound on how persuasive an AI could be—and for sufficiently intelligent models, this lower bound is itself likely to be substantially superhuman.
+To understand how this works, I find it helpful to think of persuasion as a form of market making. A financial market maker stands ready to buy and sell shares, making a profit from the difference between the prices at which they buy and sell. Market makers do not produce anything "tangible", yet nevertheless make money from these transactions. It's as if they have persuaded everyone to give them something for nothing.
+Of course, what is really happening is that the market maker provides the ability to trade. Someone who wants to sell a share now does not need to wait until they can find a particular person who wants to buy it at that moment. The market maker buys it from them, holds it, and later sells it to someone else. The seller gets to sell when they want, the buyer gets to buy when they want, and the market maker takes a cut in exchange for bridging the gap and bearing the risk. Everyone wins.
+A persuader can do something similar. If I can find an action that benefits both you and me, then I can persuade you simply by showing you why taking it would be good for you. But if all I can do is persuade you to take actions that benefit me directly, there are probably only so many useful deals available between us.
+The most powerful persuaders get around this by operating as market makers at scale. They place themselves at the centre of a network, learn what everyone wants and has to offer, and work out the possible trades among them. I may have nothing you want, but I might know someone who does—and you may have something valuable to them. If I can arrange the deal, everyone is better off, and I can take a cut. The more people whose preferences I understand, the more trades I can find.
+Lyndon Johnson’s rise in the US Senate, as documented in Robert Caro’s Master of the Senate, provides many illustrations of this basic mechanism. Before Johnson became Democratic leader, the position was seen as a poisoned chalice. Leaders were blamed for the Senate’s failures despite having almost no formal authority to get anything done, and the two previous occupants had both lost their seats.
+Johnson saw that the position gave him an opportunity to inject himself into Senate machinations and make himself indispensable. Committee assignments, for example, were allocated largely by seniority, but the resulting seats were poorly matched to what senators actually wanted. Johnson treated all 203 committee seats as potential trades: by persuading senators to exchange assignments, he could give them committees they valued more. He created value for the senators and captured part of it as personal influence. Everyone knew Johnson had delivered the positions they coveted; if he was displeased, future favours might not be so forthcoming.
+Committee assignments were only one of many such trades that Johnson arranged. He learned which senators needed campaign money, which needed a vote to go a particular way, and which merely needed to be seen voting a particular way. He could use this information to trade votes and other favours: support on one bill for support on another, or votes for campaign money, committee assignments or help with local projects. Johnson also cajoled and harassed senators and was extraordinarily persistent. His ability to persuade did not depend on being liked or on any particular personal charisma. Instead, it came from persistently searching for deals that benefited senators as well as himself. This allowed him to accumulate immense power despite many senators disliking and distrusting him.
+A sufficiently intelligent AI could play Johnson’s role at much greater scale. It could track the preferences and circumstances of many people, search a space of possible trades far beyond any human, and personalise its case to each participant. It would be superhumanly persuasive because it could find better deals. A power-seeking AI could use the gains from those deals to acquire more information and access, helping it find still more trades and persuade still more people. Once an AI became known for solving people’s problems, people would be more willing to turn to it, revealing more about what they wanted and giving it more opportunities to help. And unlike a human market maker, an AI’s broad knowledge and expertise might often allow it to solve those problems directly, rather than merely arranging trades among others.
+Persuasion can therefore be both rational and dangerous. Each person may benefit from their deal while also preferring that the AI not become so powerful. But refusing to trade imposes the full cost on that person while doing almost nothing to stop everyone else from accepting. Individually rational trades can produce a collectively undesirable concentration of power.
+Competition could limit how much of the gains any one AI captures. Competing market makers accept smaller cuts, and competing AIs might similarly make better offers. If those offers were difficult to evaluate, one might hope for a guardian-angel AI with your interests at heart to compare them and negotiate on your behalf. But it is not clear that competition would remain even. Smarter, more knowledgeable AIs could find better trades, then use the resulting money and influence to improve their position further. Small advantages might compound into a winner-take-all outcome.
+Thanks to Linch Zhang for discussions that inspired this post, and to Abigail Thomas and ChatGPT Sol for writing assistance. Is Sol less obnoxious than Fable or am I merely less exposed to its verbal tics?
+Persuasion as Market Making
+7
+CstineSublime
+10
+djbinder
+4
+cousin_it
+7
+athom
+7
+gwern
+3
+_rpd
+3
+athom
+2
+Alexander Gietelink Oldenziel
+1
+athom
+9
+Comments
+9
+AI
+Frontpage
+65
+New Comment
+9 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:08 AM
+[
+-
+]
+CstineSublime
+1d
+7
+-2
+The easiest way to do that is for it to genuinely be in their interests,
+I on the whole find presenting someone with genuine information that something is in their best interest is not the easiest way to convince them to do something. Exaggerating and even out-and-out lying about how it aligns with their benefits makes it much easier to persuade than being genuine.
+Another useful took is use of envy or mimicry. Want to convince a kid that they'll have good fun on a ride, and it's genuinely true, but they're scared? Show them someone else having fun on it, generate FOMO. It is much easier than being genuine. This even works on highly paid Hollywood Stars like Sylvester Stallone found out when Arnold Schwarzenegger lied to him about "Stop! or My Mom will Shoot". I suspect that most adults are just as susceptible to this as Stallone was.
+For years public health officials have tried to convince people that things like better eating habits, more exercise, are in their genuine best interests. Yet, fad diets, both good and bad, seem to get popular not because of a state information campaign presenting the facts - but because of celebrity chefs or other lifestyle gurus.
+I'm sure that ease with whcih you can persuade someone of something is almost never correlated with how much it is in their genuine interest.
+The most powerful persuaders get around this by operating as market makers at scale.
+This sounds like a vague and unsupported claim. Who do you consider the 'most powerful persuaders'? Why do so many at-scale efforts, such as public health information efforts (take the struggles to convince people in the Congo about the danger of Ebola at the moment) fail.
+Was Lyndon Johnson a powerful persuader or was he just powerful once he became Senate leader? Was he good at convincing people, or did he have the agency to carrot and stick other Senators?
+Much is made of the Johnson treatment - the waterfall of badgering, cajolery, threats, and sometimes utilizing his own naked body to form disgust - to get people to acquiesce to his demands. I'm not denying that he had the power to do things in people's interest, I'm not saying that he didn't convince them of things in their own best interest. But I do wonder why he needed all these other tactics if aligned interests was sufficient?
+Reply
+[
+-
+]
+djbinder
+12h
+10
+2
+I think we're talking about this at quite different levels. I'm asking a strategic question. If you want people to do things that benefit you, what should you aim for? My answer is that you should find actions that are in their interest, with "interest" broadly construed. Voting for a politician can be in your interest if it gives you warm fuzzy feelings, given that your individual vote usually has little effect on the outcome (decision-theoretic considerations aside). Politicians routinely exploit this, cultivating image and positive affect rather than policies that would materially benefit voters.
+Your public health example assumes a rational interest different from the one people's behaviour reveals. It is completely reasonable to prefer chocolate and the couch today over exercise whose benefits arrive in 30 years. You might object that this makes "interest" circular, since whatever people do gets counted as their interest. But for persuasion the relevant question is predictive: what preferences do people actually act on? Modelling people as rational actors with a strong preference for present comfort predicts behaviour well, and it explains the campaigns' failure without any mystery. They offer a trade most people don't want, and no amount of true information makes a bad deal attractive.
+Fad diets, by the way, deliver real psychological and social benefits. They make people feel a sense of agency over their health. Adopting one early signals that you're ahead of the curve; adopting one after your peers shows you're keeping up and part of the group. That's the lens through which their popularity makes sense, not celebrities out-arguing public health officials. (There's obviously a whole further game of manufacturing these social benefits to manipulate people, and this is highly nontrivial.)
+Your points are about tactics. Even granting a wide choice of tactics, the strategic move is still to push actions that serve the other person's interests. And tactically, you often can't just tell someone that X is in their interest, because bare assertion isn't credible. Showing a kid someone else enjoying the ride is a straightforward credibility mechanism. Demonstration is more credible than testimony.
+Talk is cheap, and yes, you can lie, or fake evidence of benefit. But in repeated interactions lying burns your future credibility, and in one-shot interactions people know you can lie with impunity, which is why they distrust strangers. (There are tactical ways around this. Scammers fake authority or friendliness, or impersonate institutions you already have a relationship with, like your bank. Famous people can abuse parasocial relationships. But these tricks are parasitic on trust.)
+Stepping back, I think it's a mistake to treat the most dramatic manipulations as representative. People get other people to do things all the time, and most of it is mundane and honest. The Schwarzenegger story is famous because it's salient, and because people gossiped about the lie. The prospect of that gossip is one reason people tend not to lie.
+On Johnson, you're incorrect about the Senate leadership. Caro discusses this at length: the position carried almost no formal power, and the two previous holders destroyed their careers in it. The power was an output of the trading, not an input. The Johnson treatment is again a tactics question. Johnson had preferences over every senator's vote on everything, but senators knew he couldn't help or threaten them all, and his time was limited. The badgering credibly demonstrated which votes actually mattered to him, signalling both that going along would be valued and that refusal would be costly.
+Reply
+[
+-
+]
+cousin_it
+1d
+4
+-6
+The LLMness was noticeable from the first couple paragraphs, so I didn't read further. Then I scrolled to the comments and saw the disclaimer at the bottom. Maybe we should have a policy that such disclaimers should be at the top?
+Reply
+[
+-
+]
+athom
+1d
+7
+10
+I'm curious what struck you as LLMish here (the first paragraphs don't read that way to me)
+Reply
+[
+-
+]
+gwern
+18h
+7
+5
+I'm curious too. The first 6 paragraphs do not read as blatantly LLM, and Pangram only gives them 10% AI. (If I had to guess, I would've guessed Sol, but I wouldn't've.)
+Reply
+[
+-
+]
+_rpd
+1d
+3
+1
+I like the market maker framing, and I really like this point ...
+Rational persuasion therefore provides a lower bound on how persuasive an AI could be—and for sufficiently intelligent models, this lower bound is itself likely to be substantially superhuman.
+regarding the persuasive dark arts, I think we should expect exploitation of the well documented human cognitive biases, since these are exploited even by the most well meaning of human "thought leaders", and much more by those less principled.
+Reply
+[
+-
+]
+athom
+1d
+3
+0
+Hopefully I'm less obnoxious than Fable, even though you're more exposed to my verbal tics
+Reply
+[
+-
+]
+Alexander Gietelink Oldenziel
+11h
+2
+0
+I love this post! I especially liked the Lyndon Johnson lore. I did not know he 'reinvented' the senate majority leader position. It's clear from voting theory that there are large gains of trade possible from having a market maker of votes. Intrigueing to learn about Johnson's role.
+Reply
+[
+-
+]
+athom
+2h
+1
+0
+You'd probably enjoy Master of the Senate then!
+It's intimidating at first glance but quite a fun read
+Reply
+Moderation Log
+More from
+djbinder
+View more
+Curated and popular this week

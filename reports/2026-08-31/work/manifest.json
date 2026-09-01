@@ -1,0 +1,139 @@
+{
+  "date": "2026-08-31",
+  "fetch_failures": [
+    {"slug": "x-emollick", "url": "https://nitter.kareem.one/emollick", "error": "requests 与 Chromium 均返回 HTTP 403；已由主 agent 使用 X 登录态补扫。"},
+    {"slug": "x-goodside", "url": "https://nitter.kareem.one/goodside", "error": "requests 与 Chromium 均返回 HTTP 403；已由主 agent 使用 X 登录态补扫。"},
+    {"slug": "x-karpathy", "url": "https://nitter.kareem.one/karpathy", "error": "requests 与 Chromium 均返回 HTTP 403；已由主 agent 使用 X 登录态补扫。"},
+    {"slug": "x-neelnanda", "url": "https://nitter.kareem.one/NeelNanda5", "error": "requests 与 Chromium 均返回 HTTP 403；已由主 agent 使用 X 登录态补扫。"},
+    {"slug": "x-roon", "url": "https://nitter.kareem.one/tszzl", "error": "requests 与 Chromium 均返回 HTTP 403；已由主 agent 使用 X 登录态补扫。"},
+    {"slug": "x-sama", "url": "https://nitter.kareem.one/sama", "error": "requests 与 Chromium 均返回 HTTP 403；已由主 agent 使用 X 登录态补扫。"},
+    {"slug": "x-teortaxes", "url": "https://nitter.kareem.one/teortaxesTex", "error": "requests 与 Chromium 均返回 HTTP 403；已由主 agent 使用 X 登录态补扫。"}
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "企业 AI 收费从按席位转向广告、任务完成与商业结果",
+      "cost": "重",
+      "reason": "OpenAI 广告收入首次形成十亿美元级年化规模，同时 OpenAI 与 Salesforce 都开始把企业 AI 收费绑定到任务完成或收入、成本结果；这组材料共同指向 AI 商业化从传统订阅向多种结果计费迁移。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "How Salesforce Is Overhauling the Way It Charges for AI",
+          "url": "https://www.theinformation.com/articles/salesforce-overhauling-way-charges-ai",
+          "date": "2026-08-30T23:00:00+08:00",
+          "why": "Salesforce 开始谈判按 Agentforce 增加的销售收入或节省的客服成本收费；匿名知情人士还称 OpenAI 已让部分大客户只在 AI 完成任务时付费，需核清适用范围与归因争议。"
+        },
+        {
+          "source": "openai",
+          "title": "A milestone in expanding access to AI",
+          "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+          "date": "2026-08-31T12:00:00+08:00",
+          "why": "OpenAI 官方称 ChatGPT Ads 年化收入运行率达到 10 亿美元并扩展全球；需核收入定义、广告产品覆盖和免费访问之间的关系。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "英伟达以 35 亿美元可转债投资联发科",
+      "cost": "中",
+      "reason": "资本绑定和后续芯片合作把双方关系从项目合作推进到长期联盟，并把英伟达 AI 计算平台进一步延伸到消费级与商用个人电脑。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Nvidia Invests in MediaTek",
+          "url": "https://www.theinformation.com/briefings/nvidia-invests-mediatek",
+          "date": "2026-08-31T21:16:00+08:00",
+          "why": "英伟达购买联发科 35 亿美元可转换债券，双方将合作未来几代 Spark 芯片和采用英伟达 GPU、联发科技术的商用电脑；转换条件与产品时间表待核。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "ChatGPT Work 的云端与本地能力边界",
+      "cost": "中",
+      "reason": "产品命名和两套运行环境容易混淆，独立实测能说明它与普通 ChatGPT、桌面 Codex 的真实差别。",
+      "items": [
+        {
+          "source": "simon-willison",
+          "title": "Understanding ChatGPT Work",
+          "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+          "date": "2026-08-31T07:59:47+08:00",
+          "why": "Simon Willison 将 Work 分成云端和本地两套产品，并列出模型选择、联网代码执行、浏览器、持久文件系统、发布站点、子 Agent 与定时自动化等能力；需核各功能订阅门槛与现状。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "AI 的理性说服能力可能来自寻找真正互利的交易",
+      "cost": "中",
+      "reason": "它把 AI 说服风险从话术操纵转到更难防的互利方案搜索：模型不必改变人的偏好，只要找到同时有利于双方的行动并给出真实证据。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Persuasion as Market Making",
+          "url": "https://www.lesswrong.com/posts/2qDpf6Tvu7dxtRve7/persuasion-as-market-making",
+          "date": "2026-08-31T08:45:45+08:00",
+          "why": "作者把理性说服视为超强 AI 说服力的下限；需区分思想实验、经济交易类比与任何已有实验数据。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Agent 如何创建复杂产物、发现可执行世界模型并控制运行循环",
+      "cost": "重",
+      "reason": "三篇论文分别覆盖复杂产物的系统与评测、把物理规律写成可执行代码，以及让模型充当运行时循环控制器，适合合并观察 Agent 从文本回答走向操作系统式工作流。",
+      "items": [
+        {"source": "hf-papers", "title": "Agentic Artifact Creation: Systems, Evaluation, Principles, and Opportunities", "url": "https://huggingface.co/papers/2608.28122", "date": "", "why": "研究 Agent 创建文档、代码或其他复杂产物的系统、评测和设计原则；具体分类与结论待精读。"},
+        {"source": "hf-papers", "title": "Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning", "url": "https://huggingface.co/papers/2608.27549", "date": "", "why": "让 Agent 发现可执行的世界表示来做物理推理；需核任务、是否真正发现规律及对照结果。"},
+        {"source": "hf-papers", "title": "LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering", "url": "https://huggingface.co/papers/2608.28281", "date": "", "why": "评测模型能否作为运行时控制器管理工程循环；需核环境、失败模式和领先模型差距。"}
+      ]
+    },
+    {
+      "group": "group-6",
+      "theme": "OpenClaw 把个人 Agent 扩展到远程设备、长期记忆和自我学习",
+      "cost": "重",
+      "reason": "2026.8.1 是一次大规模稳定版更新：Agent 可以把任务派到配对设备或云端工作机，持续展示子 Agent 进度，通过卡片索取结构化回答和私密凭证，还默认启用私人对话召回、后台记忆整理与自动吸收可复用技能。版本同时包含两项破坏性迁移，不能只按普通功能更新处理。",
+      "items": [
+        {
+          "source": "openclaw",
+          "title": "OpenClaw 2026.8.1",
+          "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1",
+          "date": "2026-08-31T11:30:51+08:00",
+          "why": "官方稳定版新增跨 Gateway 设备与云端工作、持久进度卡、交互式组件、模型不可见的私密凭证请求和可复用自动化授权；Active Memory 的私人对话召回、后台 Dream Diary 整理和技能自学默认开启。升级会移除内置 OpenProse，并把 codex 与 openai-codex 路由迁到 openai，需要先备份并运行 doctor 修复。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {"source": "axios", "title": "AI giants lean into health care to stall public backlash", "url": "https://www.axios.com/2026/08/31/ai-health-care-cures-disease-anthropic-open-ai", "date": "2026-08-31T17:30:09+08:00", "note": "Axios 认为大公司正把医疗与生物研究当作 AI 公共形象和投资叙事的新支点，但模型尚不能直接产出奇迹疗法，资源投入与生物安全风险待核。"},
+    {"source": "x-teortaxes", "title": "DeepSeek 开放首个 V4 多模态实验模型权重", "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp", "date": "2026-08-31T18:45:03+08:00", "note": "官方模型卡称它在 V4-Flash 上加入视觉模块，提升多模态 Agent 能力并保持相近纯文本表现；普通模型发布默认无牌，官方基准待独立实测。"},
+    {"source": "huggingface", "title": "VLANeXt: A Simple and Research-Oriented Codebase for Robotics Research", "url": "https://huggingface.co/blog/cavanloy/vlanext", "date": "2026-08-31", "note": "面向视觉语言动作机器人研究的简化代码库，页面标注约八小时前发布；具体支持模型、任务与复现成本待核。"},
+    {"source": "hacker-news", "title": "How to build a diffusion language model", "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model", "date": "2026-08-31T07:41:32+08:00", "note": "从工程角度解释如何搭建扩散语言模型，HN 抓取时 139 分、17 条评论；具体训练配方和与自回归模型比较待核。"},
+    {"source": "hacker-news", "title": "Agent Memory as a File Format", "url": "https://calpaterson.com/memoryfields.html", "date": "2026-08-31T19:17:25+08:00", "note": "把 Agent 记忆设计成文件格式的工程文章，HN 抓取时 70 分、39 条评论；数据结构、检索方式和可迁移性待核。"},
+    {"source": "hf-papers", "title": "Blind Men and the Elephant: Probing the Epistemic Myopia of LLMs under Long-Tail Divergent Knowledge", "url": "https://huggingface.co/papers/2608.28478", "date": "", "note": "测试模型面对长尾、互相冲突知识时的认知盲区；数据构造与结论待核。"},
+    {"source": "hf-papers", "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL", "url": "https://huggingface.co/papers/2608.28476", "date": "", "note": "用细粒度强化学习教 Agent 主动管理上下文；需核是否真正减少遗忘或上下文浪费。"},
+    {"source": "hf-papers", "title": "J-Zero: Unified Challenger--Solver--Judge Co-Evolution from Zero Data", "url": "https://huggingface.co/papers/2608.26582", "date": "", "note": "挑战者、解题者和裁判从零数据共同演化的方法候选；具体任务和稳定性待核。"},
+    {"source": "hf-papers", "title": "Puro-2B: Poor Lab's Qwen2-1.5B Trained on RTX 5090 within $5090", "url": "https://huggingface.co/papers/2608.27370", "date": "", "note": "声称用一张 RTX 5090 和 5090 美元预算训练 20 亿参数模型，成本口径、数据和结果待核。"},
+    {"source": "hf-papers", "title": "Rubric-to-Code Credit Assignment for Reinforcement Learning", "url": "https://huggingface.co/papers/2608.27906", "date": "", "note": "把评分规则转成代码来做强化学习信用分配；适用任务和提升幅度待核。"},
+    {"source": "hf-papers", "title": "Fast Weight Attention for Continual Learning", "url": "https://huggingface.co/papers/2608.27763", "date": "", "note": "用快速权重注意力做持续学习，关注新知识吸收与灾难性遗忘的平衡。"},
+    {"source": "hf-papers", "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing", "url": "https://huggingface.co/papers/2608.24777", "date": "", "note": "在生成步骤级别学习护栏并平衡安全与可用性；监督扩展方式和误拦截代价待核。"}
+  ],
+  "fun": [
+    {"source": "x-emollick", "title": "阿西莫夫机器人三定律解释不了真实 AI 道德", "url": "https://x.com/emollick/status/2094302639072715023", "date": "2026-08-31T13:53:54+08:00", "note": "Mollick 说三定律的失败说明单纯规则式方案不够，而阿西莫夫本来就靠机器人绕过规则写故事。"},
+    {"source": "x-roon", "title": "完全拒绝拟人化，可能反而看不懂 Agent", "url": "https://x.com/tszzl/status/2094136131537555891", "date": "2026-08-31T02:52:15+08:00", "note": "Roon 认为拟人化会制造坏抽象，但一味避免拟人化的危险可能更大；这是个人观点，不是实验。"},
+    {"source": "hacker-news", "title": "1980 年太空实验室电脑的磁芯存储模块", "url": "https://www.righto.com/2026/08/spacelab-core-memory.html", "date": "2026-08-31T04:00:25+08:00", "note": "拆解 1980 年 Spacelab 电脑的磁芯存储模块，HN 抓取时 123 分、20 条评论。"},
+    {"source": "hacker-news", "title": "Matrox 专业显卡史", "url": "https://www.abortretry.fail/p/matrox", "date": "2026-08-31T07:39:35+08:00", "note": "回顾 Matrox 专业显卡和图形硬件历史，HN 抓取时 152 分、53 条评论。"},
+    {"source": "hacker-news", "title": "12TB Steam 泄漏翻出十多年消失的 PC 游戏史", "url": "https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history", "date": "2026-08-31T14:10:44+08:00", "note": "12TB 泄漏材料包含十多年未公开或消失的 PC 游戏历史，HN 抓取时 250 分、43 条评论。"},
+    {"source": "hacker-news", "title": "给 2.4 亿个域名做 P99 近零毫秒自动补全", "url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names", "date": "2026-08-31T11:20:33+08:00", "note": "工程文章声称为 2.4 亿域名实现 P99 近零毫秒补全，星号限定和真实延迟口径待读。"},
+    {"source": "hacker-news", "title": "蓝光最影响眼睛分辨细节", "url": "https://research.uga.edu/news/blue-light-has-a-surprising-effect-on-your-eyes-study-finds", "date": "2026-08-31T16:33:01+08:00", "note": "佐治亚大学新闻稿称蓝光对精细细节辨识影响最大，样本、机制和实际屏幕使用外推范围待核。"}
+  ],
+  "odds_box": [
+    {"question": "2028 年前会出现失控 AI 吗？", "prob": "68.5％", "volume_note": "累计成交量约 5220 Mana，近 24 小时约 5170 Mana。", "url": "https://manifold.markets/SG/rogue-ais-before-2028"},
+    {"question": "Greta Thunberg 会在 2035 年前加入 AI 安全或暂停运动吗？", "prob": "54.6％", "volume_note": "累计成交量约 7397 Mana。", "url": "https://manifold.markets/Simon74fe/greta-thunberg-joins-ai-safetypause"},
+    {"question": "2050 年前 AI 会拥有情感吗？", "prob": "37.6％", "volume_note": "累计成交量约 1110 Mana。", "url": "https://manifold.markets/Nlgn/will-ai-be-able-to-feel-emotions-be"},
+    {"question": "Scott Aaronson 描绘的哪一种 AI 世界会成为现实？", "prob": "多选盘，离线候选未提供单一概率", "volume_note": "累计成交量约 1.03 万 Mana。", "url": "https://manifold.markets/jacksonpolack/which-scott-aaronson-ai-world-will"},
+    {"question": "10 月 1 日 Moonshot AI 的估值会落在哪个区间？", "prob": "多选盘，离线候选未提供单一概率", "volume_note": "累计成交量约 8017 Mana。", "url": "https://manifold.markets/MNX/moonshot-ai-valuation-on-mnx-octobe"},
+    {"question": "下列 AI 公司中会有任何一家被国有化吗？", "prob": "多选盘，离线候选未提供单一概率", "volume_note": "累计成交量约 8484 Mana。", "url": "https://manifold.markets/NathanpmYoung/will-any-of-the-below-ai-companies"}
+  ],
+  "skipped_sources": []
+}

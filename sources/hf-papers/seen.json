@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.27370",
+  "title": "清华团队用消费级 RTX 5090 训练 20 亿参数模型",
+  "date": "2026-08-31",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.27549",
+  "title": "Agent 把物理世界写成可执行代码再验证",
+  "date": "2026-08-31",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.28122",
+  "title": "一篇综述把 Agent 交付完整产物单独划成研究方向",
+  "date": "2026-08-31",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.28281",
+  "title": "最好的 Agent 控制器也难完成整套工程任务",
+  "date": "2026-08-31",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.26530",
   "title": "长程 Agent 工作中途也能改进自己",
   "date": "2026-08-29",

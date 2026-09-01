@@ -1,0 +1,122 @@
+[
+  {
+    "id": "agent-memory-file-format",
+    "section": "deep",
+    "label": "有人把 Agent 记忆做成 Markdown 压缩包",
+    "url": "https://calpaterson.com/memoryfields.html",
+    "body": "每条记忆直接写成短 Markdown 页面，再用可删除的 SQLite 向量索引跳到相关页面。格式不绑定模型或平台，也省去了切块、知识图谱和后台处理流水线。",
+    "note": "核实通过；dup_suspect：与 08-29 的 LLM 记忆题材相邻。旧稿用程序分析构造记忆，这篇主张把记忆做成可移植的 Markdown＋可选向量索引文件格式。"
+  },
+  {
+    "id": "diffusion-language-model",
+    "section": "deep",
+    "label": "一篇教程从遮词开始搭建扩散语言模型",
+    "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model",
+    "body": "模型先遮住随机词，再反复补词和修改整段文本。真要生成长文本，还要加入分块生成、重新遮词纠错和采样蒸馏；这是一篇技术教程，不是新模型发布。",
+    "note": "核实通过；文章从简单遮词扩散讲到可变长度、纠错、加速和后训练，并列举 Mercury 2、Gemma Diffusion、Nemotron Diffusion 等现有模型。"
+  },
+  {
+    "id": "agentic-artifact",
+    "section": "papers",
+    "label": "一篇综述把 Agent 交付完整产物单独划成研究方向",
+    "url": "https://huggingface.co/papers/2608.28122",
+    "body": "作者梳理了 259 项工作，把过程拆成产物表示、构建策略和运行时验证。拆任务会增加协调与拼装成本，和生成器偏好相近的模型裁判也可能看不出新问题。",
+    "note": "核实通过；dup_suspect：与 08-27 的科研 Agent 交付不齐相邻。旧稿报道具体科研任务的交付缺口，这篇是横跨六类产物的综述和控制框架，没有新的单项 Agent 实验。"
+  },
+  {
+    "id": "code-as-worlds",
+    "section": "papers",
+    "label": "Agent 把物理世界写成可执行代码再验证",
+    "url": "https://huggingface.co/papers/2608.27549",
+    "body": "它从文字或视频提出物体状态和运动规律，反复运行、渲染和核对代码假设，再把验证过的世界用于训练视觉语言模型做定量物理推理。",
+    "note": "核实通过；dup_suspect：与 08-28 的 Agent 走进 3D 城市同属物理世界题材。旧稿关注 Agent 在城市环境行动，这篇关注从观察中发现可执行的物理表示，并报告在 QuantiPhy 上达到最佳成绩。"
+  },
+  {
+    "id": "contextpilot",
+    "section": "papers",
+    "label": "ContextPilot 教 Agent 主动整理自己的上下文",
+    "url": "https://huggingface.co/papers/2608.28476",
+    "body": "Agent 可以做全局规划、写长期记忆并把暂时不用的内容软卸载。训练时只重点探索会影响结果的编辑决定，再按各条后续分支给这些中间动作记功。",
+    "note": "核实通过；dup_suspect：与 08-28 的经历变技能、08-29 的长程 Agent 自我改进都相邻。新点是专门扩充上下文编辑工具，并用分支采样给单次编辑分配奖励。"
+  },
+  {
+    "id": "puro-2b",
+    "section": "papers",
+    "label": "清华团队用消费级 RTX 5090 训练 20 亿参数模型",
+    "url": "https://huggingface.co/papers/2608.27370",
+    "body": "最佳模型从零训练最多 1.4 万亿词元，计算成本不到 6900 美元，表现接近 Qwen2.5-1.5B。标题里的 5090 美元来自成本规律推算：约 4400 美元可追平较早的 Qwen2-1.5B，并非最佳模型的实际账单。",
+    "note": "核实通过；使用 FP8、消费级 RTX 5090 显卡，并开放数据、代码、权重和训练配方。原文写的是多张 RTX 5090，不能写成一张卡完成训练。"
+  },
+  {
+    "id": "deepseek-v4-vision",
+    "section": "official",
+    "label": "DeepSeek 开放首个 V4 多模态实验模型",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "body": "它在 V4-Flash 上加入视觉模块，文本 Agent 表现大致保持原水平，并开放分词器、提示编码和最小推理实现。仓库采用 MIT 许可证，官方基准尚待独立验证。",
+    "note": "核实通过：网页 txt 是空壳，主 agent 改由 Hugging Face 官方模型 API 与 raw README 核实。官方称这是 V4 系列首个实验性多模态模型；不能把官方基准写成独立实测。"
+  },
+  {
+    "id": "mistral-humain",
+    "section": "official",
+    "label": "Mistral 与 HUMAIN 签下沙特主权 AI 合作",
+    "url": "https://mistral.ai/news/mistral-x-humain",
+    "body": "双方称合作规模为数亿欧元，计划覆盖算力设施、本地模型和行业部署，先做网络安全、语音和阿拉伯语模型，并面向受监管行业联合销售。",
+    "note": "核实通过；公告日期为 2026-08-24，不在 08-30、08-31 的本期时间窗内。多数内容仍是计划，尚无部署结果。"
+  },
+  {
+    "id": "domain-autocomplete",
+    "section": "deep",
+    "label": "Wirewiki 把 2.4 亿个域名的补全藏进按键间隔",
+    "url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
+    "body": "按键按下时预取当前字符和下一字符的结果，松手时直接渲染；热门域名放内存前缀树，其余压成 2.5GB 的磁盘索引。所谓 p99 零毫秒指结果在松手前到达，远距离用户目前仍可能超时。",
+    "note": "核实通过；标题带星号。作者测得自己的按键预算 p99 为 121 毫秒，欧洲单机尚未让全球用户都达到这一目标。"
+  },
+  {
+    "id": "vlanext",
+    "section": "official",
+    "label": "VLANeXt 把机器人模型实验整理成一套代码库",
+    "url": "https://huggingface.co/blog/cavanloy/vlanext",
+    "body": "团队做了 500 多次实验，给出独立动作模块、一次预测八步、连续动作和双摄像头等配方，并提供从 8 亿到 80 亿参数、潜在动作和世界模型在内的六套基线。",
+    "note": "核实通过；dup_suspect：与 08-28 的 3D 城市 Agent、08-27 的安卓 Agent 都属行动型 Agent。新点是机器人 VLA 的统一研究代码库和设计消融，不是新的通用 Agent 能力。"
+  },
+  {
+    "id": "asimov-three-laws",
+    "section": "fun",
+    "label": "机器人三定律拿来约束真实 AI 不太管用",
+    "url": "https://x.com/emollick/status/2094302639072715023",
+    "body": "Ethan Mollick 说，三定律失灵说明单靠规则很难解决 AI 道德；阿西莫夫原本也需要机器人绕开规则，故事才写得下去。",
+    "note": "核实通过；这是 Ethan Mollick 的观点和文学梗，不是新的安全研究结论。"
+  },
+  {
+    "id": "anthropomorphism-agent",
+    "section": "fun",
+    "label": "完全拒绝拟人化，可能反而看不懂 Agent",
+    "url": "https://x.com/tszzl/status/2094136131537555891",
+    "body": "roon 认为，把 AI 想成住在电脑里的家伙虽然会带来错误抽象，却可能比坚持不拟人更能适应未来的 Agent。",
+    "note": "核实通过；纯观点帖，不能写成有实验支持的结论。"
+  },
+  {
+    "id": "steam-teraleak",
+    "section": "fun",
+    "label": "12TB Steam 泄漏翻出十多年消失的游戏史",
+    "url": "https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history",
+    "body": "材料覆盖 2003 至 2013 年 Steam2 服务器上的大量版本，包含 Portal 2 删减内容、未公开原型和第三方游戏测试版。文件来源仍不完全清楚，报道也提醒不要下载或传播。",
+    "note": "核实通过：两轮脚本均返回 HTTP 202，主 agent 随后用可见浏览器直接读到 Ars Technica 原文。报道确认规模超过 12TB，但无法确定材料是近期从公开 API 取得，还是多年前下载后汇集。"
+  },
+  {
+    "id": "spacelab-core-memory",
+    "section": "fun",
+    "label": "1980 年的太空实验室电脑还在用磁芯内存",
+    "url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
+    "body": "法国 Mitra 125 MS 用约 118 万枚 0.8 毫米铁氧体小环做成 128KB 内存，占了电脑约三分之一。磁芯断电不丢数据、又抗辐射，所以在航天设备里比民用电脑多活了许多年。",
+    "note": "核实通过；四块核心板各有 294912 个磁芯，共 1179648 个。Spacelab 配三台同型电脑，分别管理实验室、实验和备份。"
+  },
+  {
+    "id": "blue-light-eyes",
+    "section": "fun",
+    "label": "蓝光比其他颜色更容易让眼睛看不清细节",
+    "url": "https://research.uga.edu/news/blue-light-has-a-surprising-effect-on-your-eyes-study-finds",
+    "body": "60 名年轻人辨认两点光源时，蓝光需要拉开更远才看得出是两个点，浅色虹膜的人散射更明显。这项实验没有测试防蓝光眼镜或屏幕滤镜。",
+    "note": "核实通过；研究测的是精细分辨和光学散射，不能扩写成手机蓝光已造成眼病。"
+  }
+]

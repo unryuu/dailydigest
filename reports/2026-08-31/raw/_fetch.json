@@ -1,0 +1,199 @@
+[
+  {
+    "slug": "ai-pricing-results",
+    "url": "https://www.theinformation.com/articles/salesforce-overhauling-way-charges-ai",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/salesforce-overhauling-way-charges-ai",
+    "bytes": 402182,
+    "title": "How Salesforce Is Overhauling the Way It Charges for AI — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "chatgpt-ads",
+    "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+    "status": 200,
+    "final_url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
+    "bytes": 252018,
+    "title": "",
+    "chars": 56
+  },
+  {
+    "slug": "nvidia-mediatek",
+    "url": "https://www.theinformation.com/briefings/nvidia-invests-mediatek",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/nvidia-invests-mediatek",
+    "bytes": 403441,
+    "title": "Nvidia Invests in MediaTek — The Information",
+    "chars": 2375
+  },
+  {
+    "slug": "openclaw-2026-8-1",
+    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1",
+    "status": 200,
+    "final_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1",
+    "bytes": 782212,
+    "title": "Release OpenClaw 2026.8.1 · openclaw/openclaw · GitHub",
+    "chars": 122651
+  },
+  {
+    "slug": "chatgpt-work",
+    "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+    "bytes": 34225,
+    "title": "Understanding ChatGPT Work",
+    "chars": 11866
+  },
+  {
+    "slug": "persuasion-market-making",
+    "url": "https://www.lesswrong.com/posts/2qDpf6Tvu7dxtRve7/persuasion-as-market-making",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/2qDpf6Tvu7dxtRve7/persuasion-as-market-making",
+    "bytes": 468476,
+    "title": "Persuasion as Market Making — LessWrong",
+    "chars": 15039
+  },
+  {
+    "slug": "agent-memory-file-format",
+    "url": "https://calpaterson.com/memoryfields.html",
+    "status": 200,
+    "final_url": "https://calpaterson.com/memoryfields.html",
+    "bytes": 22116,
+    "title": "Agent memory as a file format",
+    "chars": 13652
+  },
+  {
+    "slug": "diffusion-language-model",
+    "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model",
+    "status": 200,
+    "final_url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/",
+    "bytes": 63781,
+    "title": "How to Build a Diffusion Language Model | Kuleshov Group",
+    "chars": 42009
+  },
+  {
+    "slug": "agentic-artifact",
+    "url": "https://huggingface.co/papers/2608.28122",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.28122",
+    "bytes": 147337,
+    "title": "Paper page - Agentic Artifact Creation: Systems, Evaluation, Principles, and Opportunities",
+    "chars": 3564
+  },
+  {
+    "slug": "code-as-worlds",
+    "url": "https://huggingface.co/papers/2608.27549",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.27549",
+    "bytes": 163506,
+    "title": "Paper page - Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning",
+    "chars": 3286
+  },
+  {
+    "slug": "looparena",
+    "url": "https://huggingface.co/papers/2608.28281",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.28281",
+    "bytes": 153391,
+    "title": "Paper page - LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering",
+    "chars": 4351
+  },
+  {
+    "slug": "contextpilot",
+    "url": "https://huggingface.co/papers/2608.28476",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.28476",
+    "bytes": 152392,
+    "title": "Paper page - ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
+    "chars": 3295
+  },
+  {
+    "slug": "puro-2b",
+    "url": "https://huggingface.co/papers/2608.27370",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.27370",
+    "bytes": 179419,
+    "title": "Paper page - Puro-2B: Poor Lab's Qwen2-1.5B Trained on RTX 5090 within $5090",
+    "chars": 3730
+  },
+  {
+    "slug": "deepseek-v4-vision",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "status": 200,
+    "final_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "bytes": 212188,
+    "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+    "chars": 42
+  },
+  {
+    "slug": "mistral-humain",
+    "url": "https://mistral.ai/news/mistral-x-humain",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/mistral-x-humain/",
+    "bytes": 227744,
+    "title": "Mistral x HUMAIN  | Mistral AI",
+    "chars": 3243
+  },
+  {
+    "slug": "domain-autocomplete",
+    "url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
+    "status": 200,
+    "final_url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
+    "bytes": 99668,
+    "title": "p99 0 ms* autocomplete for 240 million domain names - Ruurtjan Pul",
+    "chars": 6980
+  },
+  {
+    "slug": "vlanext",
+    "url": "https://huggingface.co/blog/cavanloy/vlanext",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/cavanloy/vlanext",
+    "bytes": 193986,
+    "title": "VLANeXt: A Simple and Research-Oriented Codebase for Robotics Research",
+    "chars": 21204
+  },
+  {
+    "slug": "asimov-three-laws",
+    "url": "https://x.com/emollick/status/2094302639072715023",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2094302639072715023",
+    "bytes": 176404,
+    "title": "Ethan Mollick on X: \"Its kind of a bummer that Asimov's Three Laws of Robotics do not work for actual AI morality. But the failure shows why rule-based approaches won't work.\n\n(and Asimov wanted to write stories about how robots got around the Laws, so their failure was a good thing for his plots)\" / X",
+    "chars": 339
+  },
+  {
+    "slug": "anthropomorphism-agent",
+    "url": "https://x.com/tszzl/status/2094136131537555891",
+    "status": 200,
+    "final_url": "https://x.com/tszzl/status/2094136131537555891",
+    "bytes": 161037,
+    "title": "roon on X: \"there are some number of bad abstractions in anthropomorphizing ai intents but there are at this point more dangers from avoiding anthropomorphism at all costs. if you have a mental picture of guys living in computers, it’ll likely prepare you for the future better than otherwise\" / X",
+    "chars": 332
+  },
+  {
+    "slug": "steam-teraleak",
+    "url": "https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history",
+    "status": 202,
+    "final_url": "https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history",
+    "bytes": 1381,
+    "error": "HTTP 202"
+  },
+  {
+    "slug": "spacelab-core-memory",
+    "url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
+    "status": 200,
+    "final_url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
+    "bytes": 197534,
+    "title": "Cores in space: The core memory module from a 1980 Spacelab computer",
+    "chars": 31324
+  },
+  {
+    "slug": "blue-light-eyes",
+    "url": "https://research.uga.edu/news/blue-light-has-a-surprising-effect-on-your-eyes-study-finds",
+    "status": 200,
+    "final_url": "https://research.uga.edu/news/blue-light-has-a-surprising-effect-on-your-eyes-study-finds/",
+    "bytes": 162119,
+    "title": "Blue light has a surprising effect on your eyes, study finds - UGA Research News",
+    "chars": 4549
+  }
+]

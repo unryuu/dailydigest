@@ -1,0 +1,338 @@
+URL: https://huggingface.co/blog/cavanloy/vlanext
+FINAL: https://huggingface.co/blog/cavanloy/vlanext
+TITLE: VLANeXt: A Simple and Research-Oriented Codebase for Robotics Research
+FETCHED: 2026-09-01 09:09:18
+============================================================
+Back to Articles
+VLANeXt: A Simple and Research-Oriented Codebase for Robotics Research
+Community Article
+Published
+ August 31, 2026
+Upvote
+15
+Xiao-Ming Wu
+DravenALG
+Kang Liao
+KangLiao
+Chen Change Loy
+cavanloy
+Vision-language-action (VLA) models are becoming one of the most exciting directions in robotics. The idea is simple but powerful: use a vision-language model (VLM) to connect what a robot
+sees
+with a language instruction, then enable it to
+take actions
+in the physical world. However, the field faces a fundamental challenge.
+The current VLA field is advancing rapidly, but it is also becoming increasingly fragmented. Different papers use different backbones, different policy heads, different action representations, different training strategies, and different evaluation setups. Despite widespread reports of strong results, one fundamental question remains difficult to answer:
+What actually makes a VLA model strong? Or more broadly, what actually makes a robotics foundation model strong?
+This is exactly what we seek to answer with
+VLANeXt
+. Instead of proposing another increasingly complex architecture, we returned to the basics. Starting from a simple RT-2/OpenVLA-style baseline (RT-2 is commonly recognized as the origin of the VLA line of work), we systematically explored the VLA design space and distilled a practical recipe for building strong VLA models. These experiments formed the basis of our ICML paper:
+VLANeXt: Recipes for Building Strong VLA Models
+.
+Recently, we further upgraded VLANeXt beyond the original VLA recipe study in our ICML paper. The codebase now covers a broader range of emerging directions in robotics foundation models, including
+smaller and larger VLA backbones
+,
+latent action learning
+,
+latent-space predictive modeling
+, and
+world-action modeling
+. These extensions provide a family of representative baselines:
+VLANeXt-LAM
+,
+VLANeXt-S
+,
+VLANeXt-L
+,
+VLANeXt-XL
+,
+VLANeXt-JEPA
+, and
+VLANeXt-WAM
+. Together, they offer clean starting points for exploring new ideas at different model scales and with different learning objectives. Our aim is to continuously integrate promising ideas and support future research on VLAs and robotics foundation models.
+In short:
+VLANeXt is not just a model. It is a recipe book and an open research codebase for building better VLA and robotics foundation models.
+From a Simple Baseline to a Strong VLA
+In the first part, we describe how we moved from a simple RT-2-style baseline to a strong VLA, which is the
+main focus of our ICML paper
+.
+More precisely, we sought to answer the following questions:
+Should we reuse language tokens to predict actions?
+Do we need a separate policy module, or just use the VLM?
+Should actions be discretized or modeled continuously?
+Does a stronger VLM backbone improve VLA performance?
+Should proprioception be provided to the VLM or the policy module?
+Are historical frames useful?
+Does world modeling justify its computational cost?
+To do this, we ran
+more than 500 experiments
+and explored VLA design choices across three major aspects:
+Foundational components
+Perception essentials
+Action modeling perspectives
+From these experiments, we distilled
+several practical insights
+that guided the development of
+VLANeXt
+.
+We started from a simple RT-2-like baseline that followed the original VLA-style formulation. The unified experimental setup used the Spatial suite in the LIBERO and LIBERO-plus to test both task-learning ability and robustness under unseen perturbations.
+The initial baseline took two inputs: 1) a third-person-view image and 2) a language instruction. It predicted the robot's next action by reusing rarely used text tokens as action tokens. We discretized the action into bins and trained the model with a classification loss. This single-action formulation was only our starting point; Recipe 3 replaced it with a chunk of eight future actions. Although the baseline was simple, its performance remained limited. We then improved it step by step.
+Recipe 1 & 2: Use a Dedicated Policy Module
+Recipe 1.
+A simple way to build a VLA is to reuse language tokens for action prediction. However, actions are not words. We found that separating the action space from the language token space with a dedicated policy head and a class token was important. One possible explanation is that a dedicated policy module provides a more suitable space for learning action-specific representations.
+Recipe 2.
+Enlarging the policy head into a stronger policy module with MetaQuery further improves performance. Accordingly, VLANeXt uses this stronger policy module instead of directly forcing language tokens to become action tokens.
+Recipe 3: Predict Action Chunks
+Robots should not consider only the next incremental movement; they should also represent a short future trajectory. We found that
+action chunking
+improved both efficiency and performance. VLANeXt predicts multiple future actions together, which may give the policy a more coherent view of the action sequence. We use an action chunk size of 8 in VLANeXt.
+Recipe 4: Model Actions Continuously
+Discretizing actions into bins is simple, but it can lose precision. We compared several action-learning objectives, including:
+bin classification
+VQ-VAE codebook classification
+regression
+DDIM
+flow matching
+The conclusion is clear:
+continuous action modeling works much better than classification.
+VLANeXt adopts
+flow matching
+for action generation, which may offer the model a more expressive and precise way to predict robot actions.
+Recipe 5: A Stronger VLM Backbone Helps
+A natural question is whether a stronger VLM leads to a stronger VLA. Our experiments suggest that it does. We compared several backbone choices and found that stronger VLMs consistently improved VLA performance. VLANeXt uses
+Qwen3-VL-2B
+as a strong but efficient backbone, providing a good balance between capability and model size.
+Recipe 6: Use a Soft Connection Between VLM and Policy
+How should the VLM communicate with the policy module? We tested three strategies:
+Loose connection
+: VLM and policy are mostly separated, connecting only the final-layer VLM output to the policy.
+Tight connection
+: VLM and policy are connected layer by layer.
+Soft connection
+: VLM and policy are connected layer by layer, while learnable queries act as a latent buffer between them.
+The soft connection works best. One possible explanation is that it strikes a balance between the loose and tight alternatives: the learnable query buffer may facilitate the transfer of useful information from the VLM space to the action space. This becomes one of the key designs in VLANeXt.
+Recipe 7: Multi-View Inputs Are Useful
+For robot manipulation, one camera is often not enough. A third-person camera gives global scene information, while a wrist camera provides close-up manipulation details. We found that combining these two views significantly improved performance and robustness.
+Accordingly, VLANeXt uses:
+third-person view
+wrist view
+One possible explanation for these gains is that the two views provide complementary visual context, potentially supporting a better geometric understanding of the scene.
+Recipe 8 & 9: Condition the VLM on Proprioceptive Inputs
+Recipe 8.
+Proprioception tells the model the robot's internal state, such as pose and motion information. But where should we inject it? We compared different choices and found that
+conditioning the VLM on proprioceptive inputs
+worked better than providing those inputs to the policy module. One possible explanation is that the VLM can fuse proprioception with visual and language information earlier, potentially giving the model a more complete representation before action generation.
+Recipe 9.
+We also explored whether a larger transformer-based proprioception projector helped. It performed slightly better, but a simple linear projector was already strong and considerably simpler. Overall, these results suggest that allowing proprioception to interact with language instructions and visual inputs inside the backbone is beneficial.
+Recipe 10: Historical Frames Are Not Always Helpful
+One might expect video history to help robot learning. In our setup, however, adding temporal visual history did not improve performance and sometimes reduced it. Even though the VLM backbone can process video, redundant historical frames may introduce noise or distract the model from the most action-relevant information. VLANeXt therefore uses the current images from both the third-person and wrist views, without visual-frame history. This choice applies only to the visual inputs: the final system still uses historical proprioception.
+Recipe 11: World Modeling Helps, But It Is Expensive
+World modeling is a popular approach in which a model predicts future observations to learn about dynamics and goals. We found that world modeling improved action generation, but it made training approximately three times slower. Although world modeling is useful, we do not include it in our practical recipe because VLANeXt prioritizes a more efficient design.
+World modeling nevertheless remains an important research direction. Our upgraded codebase supports World-Action-Model-style training with video-generation backbones through the
+VLANeXt-WAM
+baseline, as shown below.
+Recipe 12: Treat Actions as Time-Series Signals
+Robot actions are not isolated outputs; they are structured time-series signals. Inspired by time-series forecasting, we introduced a lightweight frequency-domain auxiliary loss using DCT. It improved generalization with almost no additional training cost. One possible explanation is that the auxiliary loss encourages the model to focus on smooth, meaningful trajectory patterns rather than overfitting to noisy action jitter.
+VLANeXt: A Strong VLA Baseline
+The roadmap for the 12 recipes is summarized below, with each row corresponding to one recipe described above. The reported results are from the spatial suite of either the LIBERO or LIBERO-plus benchmark. VLANeXt-2.5B combines a Qwen3-VL-2B backbone with a 0.5B policy module.
+Combining these components yields our strong VLA baseline, which uses:
+a dedicated policy module
+action chunking
+flow matching
+a strong and efficient VLM backbone
+soft VLM-policy connection
+multi-view visual inputs
+VLM-side proprioception
+frequency-domain action regularization
+The result is a simple, efficient, and strong VLA model. The key message is simple:
+You do not always need a much larger model.
+Careful design choices can make a substantial difference.
+Results on LIBERO
+At the time of our ICML submission, VLANeXt achieved state-of-the-art performance on the standard LIBERO benchmark. The table reports success rates for the evaluated VLA models. S, O, G, and L denote the LIBERO-Spatial, LIBERO-Object, LIBERO-Goal, and LIBERO-Long suites, respectively. These suites evaluate different aspects of a model's task-completion ability.
+VLANeXt achieves the best average performance, even compared with strong 7B-scale baselines.
+The following successful rollouts show VLANeXt completing representative tasks from all four LIBERO suites.
+LIBERO-Spatial
+Place the black bowl between the plate and ramekin on the plate.
+LIBERO-Object
+Pick up the tomato sauce and place it in the basket.
+LIBERO-Goal
+Open the middle drawer of the cabinet.
+LIBERO-Long
+Put both the alphabet soup and tomato sauce in the basket.
+Results on LIBERO-plus
+LIBERO-plus is more challenging. It tests robustness under unseen perturbations, such as:
+camera changes
+robot state changes
+language rewrites
+lighting changes
+background changes
+noise
+layout changes
+Here, VLANeXt shows a much stronger advantage. Compared with OpenVLA-OFT, VLANeXt improves the average success rate from
+69.6% to 83.9%
+, representing a substantial gain in robustness and generalization.
+These successful rollouts show VLANeXt completing tasks under each of the seven LIBERO-plus perturbation types.
+Camera Change
+Robot State Change
+Language Rewrite
+Lighting Change
+Background Change
+Noise
+Layout Change
+Real-World Robot Experiments
+We also tested VLANeXt on real robots.
+The tasks include:
+table cleaning
+opening a drawer and placing objects inside
+lifting a basket
+bimanual table cleaning
+VLANeXt performs well not only in simulation but also in real-world manipulation tasks.
+The following videos show six successful VLANeXt rollouts on real-world manipulation tasks.
+Clean Table — Demo 1
+Clean Table — Demo 2
+Open Drawer — Demo 1
+Open Drawer — Demo 2
+Lift Basket
+Bimanual Clean Table
+Beyond the Recipe: A Broader Exploration
+The VLANeXt model explored in our ICML paper is one important point in the VLA design space. But robotics foundation models are evolving quickly, and many new questions are emerging:
+How does performance change when the VLM backbone becomes smaller or larger?
+Can latent action pretraining improve a strong VLA before real action fine-tuning?
+Can predicting future visual representations in a latent space help action learning?
+Can video-generation backbones become effective World Action Models?
+To make these questions easier to study, we upgraded the VLANeXt codebase across model architectures, training objectives, data loading, and evaluation.
+Model architectures.
+The codebase supports the compact
+Qwen3.5-0.8B
+, the standard
+Qwen3-VL-2B
+, the larger
+Qwen3-VL-4B
+and
+Qwen3-VL-8B
+, and the
+WAN2.2-5B
+video-generation backbone. This range enables controlled studies of model scale and World-Action-Model-style architectures in the same codebase.
+Training objectives.
+The codebase supports
+latent action pretraining
+followed by fine-tuning with real action labels. During pretraining, observation sequences are treated as action-unlabeled visual trajectories: the latent-action objective uses their visual transitions without using the recorded robot action annotations. We compared three constraints for learning the latent action space:
+VAE
+,
+VQ-VAE
+, and
+VICReg
+.
+The codebase also supports future-image prediction in the
+DINO latent space
+, forming a JEPA-style VLA, as well as video-generation objectives for world-action modeling. For video generation, the codebase includes a fast mode, in which action learning cannot attend to future video tokens, and a joint mode, in which it can.
+Data loading.
+The codebase supports both
+TFDS
+and
+LeRobot
+, two popular robotics data formats, together with sequential and random episode-loading strategies.
+Evaluation.
+The codebase accelerates benchmark evaluation with parallel rollouts and supports
+EMA checkpoints
+for more robust evaluation.
+These upgrades extend VLANeXt from a single baseline model into a flexible research platform for the next generation of robotics foundation models.
+A Family of New Baselines
+Based on these extensions, we provide six representative baselines. Rather than presenting isolated models, they serve as comparable anchor points under a shared training and evaluation protocol.
+VLANeXt-LAM: Latent Action Learning
+VLANeXt-LAM
+first pretrains on pooled observation sequences from all four LIBERO suites using latent actions, without using their robot action annotations, and then fine-tunes the model for each suite using only that suite's real action labels. Thus, relative to any suite-specific fine-tuning run, the other three suites provide additional action-unlabeled visual trajectories during pretraining. With the Qwen3-VL-2B backbone, we compared VICReg-, VAE-, and VQ-VAE-constrained latent actions. Their average success rates were
+96.9%
+,
+96.8%
+, and
+97.6%
+, respectively. The updated result therefore identifies
+VQ-VAE as the best LAM formulation
+, slightly outperforming the standard VLANeXt baseline at 97.4%.
+VLANeXt-S: A Smaller Yet Strong VLA
+VLANeXt-S
+uses the compact
+Qwen3.5-0.8B
+backbone while retaining the core VLANeXt recipe. It reaches an average success rate of
+96.7%
+on LIBERO. Despite using a much smaller backbone, VLANeXt-S remains close to the 97.4% VLANeXt baseline, making it a practical starting point for efficient VLA research.
+VLANeXt-L and VLANeXt-XL: Larger Backbones
+The upgraded study also scaled the VLM backbone beyond 2B parameters.
+VLANeXt-L
+, based on
+Qwen3-VL-4B
+, achieves an average success rate of
+98.4%
+, including 100.0% on LIBERO-Object.
+VLANeXt-XL
+, based on
+Qwen3-VL-8B
+, reaches
+97.7%
+. These results show that a larger backbone can improve performance.
+VLANeXt-JEPA: Predicting in Latent Space
+VLANeXt-JEPA
+augments the Qwen3-VL-2B action model with future-image prediction in the
+DINO latent space
+. It reaches an average success rate of
+97.7%
+, improving over the 97.4% standard VLANeXt baseline. This provides a clean baseline for studying whether predictive representation learning can benefit robot action generation without reconstructing pixels directly.
+VLANeXt-WAM: World-Action Modeling
+VLANeXt-WAM
+uses the
+WAN2.2-5B
+video-generation backbone to learn future visual dynamics together with actions. The fast variant reaches an average success rate of
+98.2%
+on LIBERO, providing evidence that World-Action-Model-style training may be a promising direction for coupling dynamics modeling and action prediction.
+Updated Results at a Glance
+The complete per-suite results and all evaluated variants are shown below.
+What We Learn
+The results reveal four key takeaways:
+Smaller VLAs can still be highly competitive, while scaling up can bring further gains.
+The compact 0.8B VLANeXt-S remains close to the standard 2B baseline, whereas the 4B VLANeXt-L achieves the best result among our scaled VLA variants. However, scaling is not automatically better: the 8B VLANeXt-XL underperforms VLANeXt-L, likely because LIBERO does not provide enough fine-tuning data to fully exploit a model of this size.
+Latent action pretraining can leverage cross-suite visual trajectories without action supervision.
+For each suite-specific model, pretraining uses observation sequences pooled from all four LIBERO suites while ignoring their robot action annotations; the other three suites therefore provide additional pretraining data relative to fine-tuning on the target suite alone. Pretraining with latent actions before fine-tuning on the target suite's real action labels improves performance. Among the three constraints we study, VAE, VQ-VAE, and VICReg,
+VQ-VAE performs best
+, suggesting that its discrete latent action space provides a particularly effective pretraining target.
+Visual representation learning can support action learning.
+Jointly learning actions with a future-image modeling objective in the
+DINO latent space
+improves over the standard VLANeXt baseline. A likely reason is that DINO features are compact and semantically meaningful, making it easier to transfer knowledge from visual modeling to action learning.
+World-action modeling also improves performance.
+The gains from VLANeXt-WAM indicate that video-generation objectives can provide useful knowledge about visual dynamics for learning robot actions.
+Further design choices and combinations remain to be explored.
+Additional Resource: Awesome-VLA-WAM Paper List
+To help researchers track developments in this rapidly evolving field, we also maintain
+Awesome VLA & WAM
+, a curated and systematically organized collection of research on Vision-Language-Action models, World Action Models, and related directions. Beyond VLA and WAM papers, the repository covers world models, robot policies, latent action models, human action pretraining, code-as-policy methods, and practical resources such as robotics datasets, benchmarks, simulation environments, software, and hardware. We continuously update the list as the field evolves and welcome contributions of relevant papers, resources, and suggestions from the community.
+Conclusion
+To conclude, VLANeXt starts from a simple question: what design choices really make VLA models stronger? Through systematic experiments, we show that strong performance does not come only from scaling. A dedicated policy module, action chunking, continuous action generation, multi-view inputs, VLM-side proprioception, and frequency-domain action regularization can already turn a simple baseline into a strong and efficient VLA. The upgraded
+VLANeXt-LAM, VLANeXt-S, VLANeXt-L, VLANeXt-XL, VLANeXt-JEPA, and VLANeXt-WAM
+baselines now extend this foundation across model scale, latent action learning, latent-space prediction, and world-action modeling. Together, they provide a set of clean starting points for future ideas in robotics foundation models. We will continue updating the codebase and welcome further exploration and extensions from the community.
+Citation
+If you find VLANeXt useful, please consider citing our work:
+@inproceedings{wu2026vlanext,
+ title={VLANeXt: Recipes for Building Strong VLA Models},
+ author={Xiao-Ming Wu and Bin Fan and Kang Liao and Jian-Jian Jiang and Runze Yang and Yihang Luo and Zhonghua Wu and Wei-Shi Zheng and Chen Change Loy},
+ booktitle={ICML},
+ year={2026},
+}
+Models mentioned in this article
+1
+Community
+Naitlerand
+about 18 hours ago
+Pretty
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+15
+Models mentioned in this article
+1

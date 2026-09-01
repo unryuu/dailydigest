@@ -1,0 +1,191 @@
+{
+  "date_label": "8月31日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "AI 收费不再只靠订阅",
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+      "body": "ChatGPT 广告上线不到两百天，年化收入运行率达到 10 亿美元。系统用当前对话里的意图匹配广告，在当地规则和用户设置允许时，也可能参考更广泛的使用背景。广告由此开始补贴免费访问。\n\n企业端也在试验另一种付费方式。Salesforce 允许客户按 Agent 增加的销售收入或节省的客服成本付费；OpenAI 据报也让部分大客户只为完成的任务付费。难点在归因：业绩变化可能同时来自产品、营销或季节，收费双方得先说清 AI 到底贡献了多少。",
+      "sources": [
+        {
+          "name": "The Information",
+          "url": "https://www.theinformation.com/articles/salesforce-overhauling-way-charges-ai"
+        }
+      ]
+    },
+    {
+      "tier": "silver",
+      "title": "英伟达向联发科投资 35 亿美元",
+      "url": "https://www.theinformation.com/briefings/nvidia-invests-mediatek",
+      "body": "英伟达通过购买联发科发行的可转换债券完成投资，并未直接收购普通股。双方将继续开发未来几代消费级电脑 Spark 芯片。商用电脑方案会组合英伟达 GPU 和联发科技术。报道没有披露转股条件、最终持股比例或产品时间表。"
+    },
+    {
+      "tier": "silver",
+      "title": "OpenClaw 可以把完整会话搬到远端",
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1",
+      "body": "旧版本已经能在远程节点调用工具。本版把会话的运行位置和工作目录一起放到配对设备或云工作机，再同步结果。云机器闲置后可以暂停，收到下一条消息时重新分配，并保留会话和对账后的工作区。升级还移除了内置 OpenProse，用户需要迁移。"
+    }
+  ],
+  "deep": [
+    {
+      "tier": "silver",
+      "title": "ChatGPT Work 其实是两套产品",
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+      "body": "作者让云端版克隆 GitHub 仓库、安装依赖，再启动完整浏览器填写网页；本地版则直接读写电脑文件、运行本机程序。云端会话的目录能跨会话保留，还可调用子 Agent 并行工作。它同时接触私人数据、不可信网页和外部通信渠道。以上是独立实测，不是 OpenAI 的稳定承诺。"
+    },
+    {
+      "tier": "silver",
+      "title": "AI 可以靠寻找互利交易来说服人",
+      "url": "https://www.lesswrong.com/posts/2qDpf6Tvu7dxtRve7/persuasion-as-market-making",
+      "body": "模型只要找到同时让对方和自己受益的行动，再用真实证据说明好处，就可能形成很强的说服力。它可以同时追踪许多人的偏好和资源，撮合人类原本找不到的交换。每个人都可能从自己的交易中获益，却一起把信息和影响力集中给 AI。这个判断是理论框架，没有实验数据。"
+    },
+    {
+      "tier": "none",
+      "title": "一篇教程从遮词开始搭建扩散语言模型",
+      "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model",
+      "body": "模型先遮住随机词，再反复补词和修改整段文本。长文本还要靠分块、重新遮词纠错和采样蒸馏；这是教程，不是新模型。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "silver",
+      "title": "最好的 Agent 控制器也难完成整套工程任务",
+      "url": "https://huggingface.co/papers/2608.28281",
+      "body": "LoopArena 固定底层写代码的 Worker，只比较上层 Controller 怎样安排下一步、验证结果和决定停止。最佳完整任务严格成功率只有 24.69％。这说明模型即使会写代码，上层控制循环仍可能相信过期进度、漏掉验证或过早收工。基准还提供较便宜的替代评测来预测完整任务表现。"
+    },
+    {
+      "tier": "none",
+      "title": "一篇综述把 Agent 交付完整产物单独划成研究方向",
+      "url": "https://huggingface.co/papers/2608.28122",
+      "body": "作者梳理 259 项工作，把过程拆成产物表示、构建策略和运行时验证。拆任务会增加协调成本，模型裁判也可能与生成器共享盲点。"
+    },
+    {
+      "tier": "none",
+      "title": "Agent 把物理世界写成可执行代码再验证",
+      "url": "https://huggingface.co/papers/2608.27549",
+      "body": "它从文字或视频提出物体状态和运动规律，反复运行、渲染并核对代码假设，再用验证过的世界训练模型做定量物理推理。"
+    },
+    {
+      "tier": "none",
+      "title": "清华团队用消费级 RTX 5090 训练 20 亿参数模型",
+      "url": "https://huggingface.co/papers/2608.27370",
+      "body": "团队用多张 RTX 5090 从零训练 1.4 万亿词元，成本低于 6900 美元。5090 美元只是追平较早模型的推算值。"
+    }
+  ],
+  "official": [
+    {
+      "tier": "none",
+      "title": "DeepSeek 开放首个 V4 多模态实验模型",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "body": "它在 V4-Flash 上加入视觉模块，开放分词器和最小推理实现。仓库采用 MIT 许可证，性能数字仍是官方自测。"
+    }
+  ],
+  "brief": [
+    {
+      "title": "Wirewiki 给 2.4 亿个域名做近零延迟补全",
+      "url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names"
+    },
+    {
+      "title": "VLANeXt 发布机器人模型实验代码库",
+      "url": "https://huggingface.co/blog/cavanloy/vlanext"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "none",
+      "title": "机器人三定律拿来约束真实 AI 不太管用",
+      "url": "https://x.com/emollick/status/2094302639072715023",
+      "body": "Ethan Mollick 说，三定律恰好说明单靠规则很难解决 AI 道德；阿西莫夫也得让机器人钻空子，故事才写得下去。"
+    },
+    {
+      "tier": "none",
+      "title": "完全拒绝拟人化，可能反而看不懂 Agent",
+      "url": "https://x.com/tszzl/status/2094136131537555891",
+      "body": "把 AI 想成住在电脑里的家伙会产生错误抽象，但也许仍能帮助理解未来 Agent。这里只是观点，没有实验。"
+    },
+    {
+      "tier": "none",
+      "title": "12TB Steam 泄漏翻出十多年消失的游戏史",
+      "url": "https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history",
+      "body": "材料覆盖 2003 至 2013 年的 Steam2 服务器，包含删减内容、原型和测试版。来源仍不清楚，报道提醒不要下载传播。"
+    },
+    {
+      "tier": "none",
+      "title": "1980 年的太空实验室电脑还在用磁芯内存",
+      "url": "https://www.righto.com/2026/08/spacelab-core-memory.html",
+      "body": "法国 Mitra 125 MS 用约 118 万枚铁氧体小环做成 128KB 内存，占电脑约三分之一。它断电不丢数据又抗辐射。"
+    },
+    {
+      "tier": "none",
+      "title": "蓝光比其他颜色更容易让眼睛看不清细节",
+      "url": "https://research.uga.edu/news/blue-light-has-a-surprising-effect-on-your-eyes-study-finds",
+      "body": "60 名年轻人辨认两点光源时，蓝光要拉得更远才看得出两个点。实验没测试防蓝光眼镜或屏幕滤镜。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "Greta Thunberg 会在 2035 年前加入 AI 安全或暂停运动吗？",
+      "prob": "54.6％",
+      "note": "成交额 7.4k mana",
+      "url": "https://manifold.markets/Simon74fe/greta-thunberg-joins-ai-safetypause"
+    },
+    {
+      "question": "2050 年前，AI 会拥有情感吗？",
+      "prob": "37.6％",
+      "note": "成交额 1.1k mana",
+      "url": "https://manifold.markets/Nlgn/will-ai-be-able-to-feel-emotions-be"
+    },
+    {
+      "question": "10 月 1 日，Moonshot AI 的估值会到多高？",
+      "prob": "超过 1000 亿美元 54.4％",
+      "note": "成交额 8.0k mana",
+      "url": "https://manifold.markets/MNX/moonshot-ai-valuation-on-mnx-octobe",
+      "options": [
+        {
+          "name": "超过 500 亿美元",
+          "prob": "94.9％"
+        },
+        {
+          "name": "超过 1000 亿美元",
+          "prob": "54.4％"
+        },
+        {
+          "name": "超过 2000 亿美元",
+          "prob": "28.0％"
+        },
+        {
+          "name": "超过 4000 亿美元",
+          "prob": "6.4％"
+        }
+      ]
+    },
+    {
+      "question": "Scott Aaronson 描绘的哪一种 AI 世界最可能成真？",
+      "prob": "技术大发展、文明延续 36.1％",
+      "note": "成交额 10.3k mana",
+      "url": "https://manifold.markets/jacksonpolack/which-scott-aaronson-ai-world-will",
+      "options": [
+        {
+          "name": "AI 影响有限",
+          "prob": "10.0％"
+        },
+        {
+          "name": "技术大发展、文明延续",
+          "prob": "36.1％"
+        },
+        {
+          "name": "AI 造成严重伤害、文明延续",
+          "prob": "15.0％"
+        },
+        {
+          "name": "AI 像善意神祇般自治",
+          "prob": "31.9％"
+        },
+        {
+          "name": "AI 导致灭绝等结局",
+          "prob": "7.0％"
+        }
+      ]
+    }
+  ]
+}

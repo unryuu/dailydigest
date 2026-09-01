@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://research.uga.edu/news/blue-light-has-a-surprising-effect-on-your-eyes-study-finds",
+  "title": "蓝光比其他颜色更容易让眼睛看不清细节",
+  "date": "2026-08-31T16:33:01+08:00",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
+  "id": "https://www.righto.com/2026/08/spacelab-core-memory.html",
+  "title": "1980 年的太空实验室电脑还在用磁芯内存",
+  "date": "2026-08-31T04:00:25+08:00",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
+  "id": "https://arstechnica.com/gaming/2026/08/a-12tb-steam-teraleak-spills-more-than-a-decade-of-lost-pc-gaming-history",
+  "title": "12TB Steam 泄漏翻出十多年消失的游戏史",
+  "date": "2026-08-31T14:10:44+08:00",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
+  "id": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
+  "title": "Wirewiki 给 2.4 亿个域名做近零延迟补全",
+  "date": "2026-08-31T11:20:33+08:00",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
+  "id": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model",
+  "title": "一篇教程从遮词开始搭建扩散语言模型",
+  "date": "2026-08-31T07:41:32+08:00",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
   "id": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer",
   "title": "一篇六月旧文拿苏美尔王表对照古气候",
   "date": "2026-08-29T07:46:10+08:00",

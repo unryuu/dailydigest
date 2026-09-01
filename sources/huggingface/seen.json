@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/cavanloy/vlanext",
+  "title": "VLANeXt 发布机器人模型实验代码库",
+  "date": "2026-08-31",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
   "id": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
   "title": "Granite Speech 发布高速英语转写模型",
   "date": "2026-08-26",

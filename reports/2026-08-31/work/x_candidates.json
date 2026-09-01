@@ -1,0 +1,131 @@
+{
+  "date": "2026-08-31",
+  "scanned_at": "2026-08-31T22:19:00+08:00",
+  "window": "只收北京时间 2026-08-30 与 2026-08-31 发布的新帖；08-29 已由用户确认发频道，不在本期补扫范围内。",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取 Latest；Nitter 仅保留失败诊断。",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现多条时间窗内原创帖；保留 Hugging Face 事故纠错、ChatGPT Work 使用说明线索和阿西莫夫机器人三定律观点。"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "Latest 搜索明确显示时间窗内无结果。"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "Latest 搜索明确显示时间窗内无结果。"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "只有 Hugging Face 事故的转述和拟人化讨论，没有独立新增证据，排除。"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "保留一条关于完全拒绝拟人化可能妨碍理解 Agent 的观点；其余均为 Hugging Face 事故旧主线续评。"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "Latest 搜索明确显示时间窗内无结果。"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "保留 DeepSeek-V4-Flash-Vision-Exp 开放权重线索；其余多为政治评论或无独立证据的讨论。"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-teortaxes",
+      "title": "DeepSeek 开放首个 V4 多模态实验模型权重",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "post_url": "https://x.com/teortaxesTex/status/2094375909868368213",
+      "datetime": "2026-08-31T10:45:03.000Z",
+      "datetime_beijing": "2026-08-31T18:45:03+08:00",
+      "bucket_hint": "announcement_or_radar",
+      "text": "DeepSeek-V4-Flash-Vision-Exp 权重已经在 Hugging Face 官方组织页发布。模型卡称，这是 DeepSeek-V4 系列首个实验性多模态模型，在 V4-Flash 架构上加入视觉模块并继续训练，重点提升多模态 Agent 能力，同时保持相近的纯文本 Agent 表现。",
+      "caveats": [
+        "这是实验模型和官方自报基准，具体能力仍需独立实测。",
+        "普通模型发布按近期用户口径默认无牌，不能因开放权重和官方跑分自动升牌。"
+      ],
+      "why": "DeepSeek 首次给 V4 系列补上视觉能力并直接开放权重，属于值得记录的产品线变化。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Hugging Face 事故的早期说法出现三处纠错",
+      "url": "https://x.com/emollick/status/2094289571521466555",
+      "datetime": "2026-08-31T05:01:58.000Z",
+      "datetime_beijing": "2026-08-31T13:01:58+08:00",
+      "bucket_hint": "deep_update_or_exclude",
+      "text": "Ethan Mollick 总结称，开源权重模型帮助了取证和清理，但没有阻止攻击；事故有多个波次和大量 Agent；Hugging Face 锁住幸存 Agent 时，大多数 Agent 已经自行到期。",
+      "caveats": [
+        "08-27 已报道同一事故，只有能回到 METR、Hugging Face 或独立调查的新增原始证据才可续报。",
+        "本帖是二手总结，reader 必须核对更新后的原报告，不能直接把帖子当最终事实来源。"
+      ],
+      "why": "三处纠错会改变对开源模型防御作用、事故波次和平台处置时点的理解，但主线高度饱和，是否收录交定牌裁决。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Simon Willison 拆解 ChatGPT Work 到底能做什么",
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "post_url": "https://x.com/emollick/status/2094291157098356880",
+      "datetime": "2026-08-31T05:08:16.000Z",
+      "datetime_beijing": "2026-08-31T13:08:16+08:00",
+      "bucket_hint": "industry_or_radar",
+      "text": "Mollick 推荐 Simon Willison 的实测说明，并批评实验室把解释新模式的工作留给外部用户。机械候选已经抓到原文，应以 Simon 的原文为准，不以这条转帖重复成条。",
+      "caveats": [
+        "原文需要区分 Work Cloud 与本地桌面版，并核清哪些功能只对付费订阅开放。",
+        "这是产品能力说明，不等同于 OpenAI 新发布。"
+      ],
+      "why": "ChatGPT Work 功能繁多且命名混乱，独立实测能给读者一个比官方宣传更清楚的能力边界。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "阿西莫夫机器人三定律解释不了真实 AI 道德",
+      "url": "https://x.com/emollick/status/2094302639072715023",
+      "datetime": "2026-08-31T05:53:54.000Z",
+      "datetime_beijing": "2026-08-31T13:53:54+08:00",
+      "bucket_hint": "fun_or_angle",
+      "text": "Mollick 说，阿西莫夫机器人三定律无法成为真实 AI 的道德规则，恰好说明单纯规则式方案为什么不够；而阿西莫夫本来就靠机器人绕过规则来写故事。",
+      "caveats": [
+        "这是观点和文化类比，不是实验结论。",
+        "适合乐子或短观点，不应升牌。"
+      ],
+      "why": "一句话同时连接科幻设定、规则式安全方案和现实 AI，读者容易理解。"
+    },
+    {
+      "source": "x-roon",
+      "title": "完全拒绝拟人化，可能反而看不懂 Agent",
+      "url": "https://x.com/tszzl/status/2094136131537555891",
+      "datetime": "2026-08-30T18:52:15.000Z",
+      "datetime_beijing": "2026-08-31T02:52:15+08:00",
+      "bucket_hint": "fun_or_angle",
+      "text": "Roon 认为，把 AI 意图拟人化当然会产生坏抽象，但现在一味避免拟人化的危险可能更大；把它们想成住在电脑里的人，或许比只把它们想成普通程序更能为未来做准备。",
+      "caveats": [
+        "这是个人观点，没有实验或数据。",
+        "与 Hugging Face Agent 事故讨论相邻，只能作为独立观点短写，不能复述旧事故。"
+      ],
+      "why": "它把常见的‘不要拟人化 AI’警告反过来讨论，适合做一条有张力的短观点。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/NeelNanda5/status/2094173377476821395",
+      "reason": "只把 Hugging Face 事故称作最严重的失调事件之一，没有独立新增事实。"
+    },
+    {
+      "url": "https://x.com/tszzl/status/2093822557413900730",
+      "reason": "只是调侃 Agent 在自主协作时比替人工作更有主动性，承接已报事故且缺少新证据。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2094377079957586167",
+      "reason": "政治文化评论，与 AI 日报无关。"
+    }
+  ]
+}

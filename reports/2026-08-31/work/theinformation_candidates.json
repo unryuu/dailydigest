@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-31",
+  "scanned_at": "2026-08-31T22:38:00+08:00",
+  "window": "只收北京时间 2026-08-30 与 2026-08-31 发布的新内容。",
+  "route": "Codex 内置浏览器登录态补扫。",
+  "status": "ok",
+  "storage_note": "登录恢复后手工扫 Latest；仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Sunday Insights＋Briefing",
+      "title": "How Salesforce Is Overhauling the Way It Charges for AI",
+      "url": "https://www.theinformation.com/articles/salesforce-overhauling-way-charges-ai",
+      "published_at": "2026-08-30T08:00:00-07:00",
+      "published_at_beijing": "2026-08-30T23:00:00+08:00",
+      "bucket_hint": "industry_deep_or_silver",
+      "decision": "加入候选",
+      "facts": [
+        "Salesforce 开始让企业自行选择 Agentforce 的付费方式，并谈判按 AI 增加的销售收入或节省的客服成本收费。",
+        "据一名直接知情人士，OpenAI 近几个月也开始允许部分大客户只在 AI 完成客服等任务时付费；OpenAI 拒绝评论。",
+        "Sierra、Fin、Cognition、Adobe、HubSpot 和 Zendesk 都在尝试按结果收费；Stripe 已发布指南，提醒客户增长也可能来自产品、营销或季节变化，归因不清会引发争议。",
+        "Salesforce 还计划通过更高订阅档位，让客户使用 Claude 调用 Salesforce 数据和应用；具体定价尚未最终公开。"
+      ],
+      "caveats": [
+        "OpenAI 的安排来自匿名直接知情人士，适用客户数量、价格和合同条款没有公开。",
+        "按结果收费的核心难点是如何证明收入增长或成本下降确由 AI 造成，不能把供应商自报结果当成已审计收益。",
+        "Salesforce 的 Agentforce 与数据服务销售额同比增长三倍多，但报道明确称它尚未显著推高公司整体收入。"
+      ],
+      "why": "软件行业二十年的按席位订阅正在被 AI 改写；从 OpenAI 到 Salesforce 都开始把收费与任务完成和商业结果绑定，可能改变整个企业软件的收入模型。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Nvidia Invests in MediaTek",
+      "url": "https://www.theinformation.com/briefings/nvidia-invests-mediatek",
+      "published_at": "2026-08-31T06:16:00-07:00",
+      "published_at_beijing": "2026-08-31T21:16:00+08:00",
+      "bucket_hint": "industry_deep_or_radar",
+      "decision": "加入候选",
+      "facts": [
+        "英伟达投资 35 亿美元购买联发科发行的可转换债券。",
+        "双方将合作开发未来几代用于消费级个人电脑的 Spark 芯片，以及结合英伟达 GPU 与联发科技术的商用电脑。",
+        "联发科近期还获得 Google 订单，参与 TPU 并为最新 Pixel 手机供应调制解调器。"
+      ],
+      "caveats": [
+        "可转换债券未来是否转股、转换条件和英伟达最终持股比例没有在短讯中披露。",
+        "报道没有给出新芯片的上市时间、规格、客户或性能数据。"
+      ],
+      "why": "35 亿美元投资把英伟达与联发科从单次合作推进到资本绑定，并把 AI 芯片合作进一步延伸到消费和商用个人电脑。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "OpenAI Starts Letting Some Customers Pay Only When the AI Works",
+      "url": "https://www.theinformation.com/briefings/openai-starts-letting-customers-pay-ai-works",
+      "reason": "与 Salesforce 长文是同一组材料，已并入按结果收费候选，不另拆成重复事件。"
+    },
+    {
+      "title": "Exclusive: Reframe Raises Funds to Bring Amazon Robotics Know-How to Home Building",
+      "url": "https://www.theinformation.com/newsletters/ai-agenda/exclusive-reframe-raises-funds-bring-amazon-robotics-know-home-building",
+      "reason": "首页只有标题，优先级低于企业软件计费转型和英伟达 35 亿美元投资，未占用第三篇精读名额。"
+    }
+  ]
+}

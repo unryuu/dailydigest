@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+  "title": "ChatGPT Work 其实是两套产品",
+  "date": "2026-08-31T07:59:47+08:00",
+  "reported": true,
+  "report_date": "2026-08-31"
+ },
+ {
   "id": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode",
   "title": "Claude Code 自动模式放过攻击却拦住清理",
   "date": "2026-08-28T06:50:25+08:00",
