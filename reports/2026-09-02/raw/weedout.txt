@@ -1,0 +1,43 @@
+URL: https://masteranza.github.io/weedout
+FINAL: https://masteranza.github.io/weedout/
+TITLE: Weedout for YouTube
+FETCHED: 2026-09-02 20:41:48
+============================================================
+Videos YouTube labels
+“Made with AI”
+— quietly pulled
+ from your
+feed
+,
+search
+,
+related videos
+and
+Shorts
+before you scroll past them.
+ No blocking screens, no drama. The weeds are just gone.
+GET WEEDOUT — $1.99 ON THE MAC APP STORE
+One-time purchase · No subscription · macOS 13+
+FIELD CAM
+12:07
+AI
+0:58
+8:41
+AI
+0:12
+24:59
+Simulated. On a real feed a weed is gone in about half a second — cached ones never sprout at all.
+WHAT IT DOES
+Filters AI-labeled videos out of home, search, related, playlists and Shorts shelves
+Auto-skips AI-labeled Shorts in the Shorts player (optional)
+Dim mode wilts weeds in place instead of removing them, so you can verify before you trust it
+No accounts, no tracking,
+no data collection
+— everything runs on your Mac
+Detection relies on YouTube’s own “Made with AI” disclosure badge — no guessing,
+ no heuristics, no false accusations. Unlabeled slop is out of scope (for now).
+SUPPORT
+Questions, bug reports, or a weed that slipped through?
+Email
+masteranza@gmail.com
+— include the video link if it’s about detection.

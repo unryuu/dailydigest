@@ -1,0 +1,425 @@
+URL: https://www.lesswrong.com/posts/9vm2wtAtb34pEkjje/the-alignment-journal-organization-personnel-and-scope
+FINAL: https://www.lesswrong.com/posts/9vm2wtAtb34pEkjje/the-alignment-journal-organization-personnel-and-scope
+TITLE: The Alignment Journal: Organization, Personnel, and Scope — LessWrong
+FETCHED: 2026-09-02 20:41:34
+============================================================
+x
+The Alignment Journal: Organization, Personnel, and Scope — LessWrong
+AI
+Personal Blog
+60
+The Alignment Journal: Organization, Personnel, and
+Scope
+by
+Dan MacKinlay
+,
+JessRiedel
+,
+Daniel Murfet
+,
+Kristi Uustalu
+1st Sep 2026
+Linkpost for
+blog.alignmentjournal.org
+13
+min read
+0
+60
+[Cross-posted from the
+Alignment Journal's blog
+]
+The
+Alignment Journal
+is beginning to invite the authors of select papers to submit their work for review. If you are interested in participating as an action editor or a reviewer,
+make an account
+on our
+website
+; if you have a manuscript that you think would be a good fit for the Journal at this stage, email
+contact@alignmentjournal.org
+to request an invitation to submit. Manuscripts under review will become visible on our homepage, and you will be able to nominate yourself as a reviewer of a specific paper that interests you. We plan to open up submissions to everyone
+sometime in October.
+Here we announce the Journal's inaugural
+senior editorial board
+,
+advisory board
+, staff, organizational structure, and initial
+scope
+. We welcome questions and proposed changes to help us refine the scope in the future.
+Personnel
+The Journal is run by its senior editorial board, which makes the Journal's scholarly decisions, and two managing editors, who run operations and strategy. The advisory board offers high-level guidance without editorial responsibilities. A software lead and a head of operations support the team.
+The
+senior editorial board
+(8 editors at launch, covering a range of alignment expertise) has authority over all of the Journal's scholarly decisions and over approving and removing senior editors. The board focuses its attention on policy, standards, borderline cases, and appeals as it builds trust in the review process by fostering a strong culture of rigorous and impartial review. Senior editors may choose to handle the manuscripts themselves, but usually recruit an action editor (analogous to an area chair at a conference) who will be responsible for leading the review process for that submission, while the senior editors supervises. The full board of senior editors handle appeals and other contentious issues.
+The Journal startup effort is being spearheaded by
+managing editors
+Jess Riedel and Dan MacKinlay, who have initial authority over operational and strategic decisions, preparing policy proposals for the senior editorial board but deferring to the senior editors on scholarly decisions. Editorial policy (such as refining the Journal scope, making acceptance decisions, and accepting new editors) will be decided by consensus of the full senior editorial board until a formal governance system is adopted. As the Journal takes on operations staff and eventually an editor-in-chief, this work should ultimately transfer to them.
+The
+advisory board
+(7 advisors at launch) is composed of senior researchers who give high-level strategic advice to the managing and senior editors. Advisors do not normally handle papers or make editorial decisions, but they have a full window into the Journal's operations and the editorial process. If they agree to take on the additional role of ombudsman, an advisory board member may hear complaints against senior editors and managing editors. The ombudsman role exists to ensure that complaints are heard by non-conflicted people.
+The
+software lead
+, Yonatan Cale, has responsibility for creating and operating the Journal's software stack, including its new editorial management system designed to support the Journal's unique features.
+The
+head of operations
+, Kristi Uustalu, manages communications, organization, scheduling, and finances, and interfaces with the Journal's parent organization, Principles of Intelligence.
+The Journal also receives occasional assistance from the staff of its sister project, ILIAD, and from Principles of Intelligence.
+Advisory board
+Scott Aaronson
+is a Professor of Computer Science at UT Austin and the founding director of its
+Quantum Information Center
+. He researches computational complexity theory and quantum computing, including boson sampling, postselection, and the limits of quantum speedups. As a visiting researcher at OpenAI, he worked on theoretical foundations for AI safety, including AI-output watermarking. He also created the
+Complexity Zoo
+and authored
+Quantum Computing Since Democritus
+. Links:
+personal website
+;
+blog
+;
+Google Scholar profile
+;
+DBLP page
+;
+UT Austin profile page
+.
+Paul Christiano
+is a Founder of the
+Alignment Research Center
+(ARC) and, at OpenAI, the originator of reinforcement learning from human feedback (RLHF); he also launched the third-party frontier-model evaluation effort now housed at
+METR
+. His research develops scalable oversight and alignment methods — including debate, iterated amplification, and eliciting latent knowledge — for supervising systems whose behavior humans cannot directly check. He has served as Head of AI Safety at the
+US AI Safety Institute
+(NIST). Links:
+personal website
+;
+blog
+;
+Google Scholar profile
+;
+Alignment Forum profile
+;
+LessWrong profile
+.
+Vince Conitzer
+is a Professor of Computer Science at Carnegie Mellon University, where he directs the
+Foundations of Cooperative AI Lab
+(FOCAL). His foundational work in computational social choice, game theory, and mechanism design increasingly addresses AI alignment, focusing on multiagent risks, on how AI systems can represent and aggregate human values, and on broader conceptual issues. He co-authored
+Moral AI: And How We Get There
+. Links:
+personal website
+;
+Google Scholar profile
+;
+Substack
+.
+Marcus Hutter
+is a Senior Researcher at DeepMind and an Honorary Professor in the
+Research School of Computer Science
+at the Australian National University. His research on algorithmic-information-theoretic models of general intelligence unified Solomonoff induction with sequential decision theory in the AIXI framework and related computable approximations. He has also studied reward hacking and value-learning formulations to remove the incentive to manipulate reward signals. Authored
+Universal Artificial Intelligence
+and established the
+500,000€ Prize for Compressing Human Knowledge
+(the Hutter prize). Links:
+personal website
+;
+Google Scholar profile
+;
+DBLP page
+;
+ANU profile page
+.
+Geoffrey Irving
+is a Cofounder and Chief Scientist of
+Resolution
+, a nonprofit applying heavy automation to a portfolio of theoretical and empirical alignment areas. He previously was Chief Scientist at the
+UK AI Security Institute
+, led the Scalable Alignment Team at DeepMind and the Reflection Team at OpenAI, and co-led neural network theorem proving work at Google Brain.
+Links:
+personal website
+;
+Google Scholar profile
+;
+Alignment Forum profile
+;
+LessWrong profile
+.
+Victoria Krakovna
+is a Research Scientist on the AGI Safety & Alignment team at Google DeepMind. She researches deceptive alignment, scheming propensity evaluations, and dangerous capability evaluations. She cofounded the
+Future of Life Institute
+. Links:
+personal website/blog
+;
+Google Scholar profile
+;
+Future of Life Institute profile
+;
+MATS mentor page
+.
+Jacob Tsimerman
+is a Researcher on the AI safety team at OpenAI and a Professor of Mathematics at the University of Toronto. He was awarded the
+2026 Fields Medal
+for his work in arithmetic geometry, including the proof of the André–Oort conjecture on special points in Shimura varieties. He has also received the
+Ostrowski Prize
+and the
+New Horizons in Mathematics Prize
+. His recent research concerns risk from AI, including a taxonomy of catastrophic scenarios with Andrew Critch. Links:
+University of Toronto profile page
+;
+Google Scholar profile
+.
+Senior editorial board
+Dylan Hadfield-Menell
+is an Associate Professor of
+EECS
+at MIT, where he leads the
+Algorithmic Alignment Group
+at
+CSAIL
+. His research focuses on ensuring AI systems' behavior aligns with the goals of their users and society, including cooperative inverse reinforcement learning, multi-principal assistance games, the off-switch game, multi-agent systems, human-AI teams, and societal oversight of machine learning. Links:
+personal website
+;
+Google Scholar profile
+;
+DBLP page
+;
+MIT EECS profile
+.
+Vanessa Kosoy
+is Director of AI Research at
+ALTER
+and Principal Research Scientist at
+CORAL
+, and a former research associate at the
+Machine Intelligence Research Institute
+. She leads the learning-theoretic agenda for AI alignment, seeking provable guarantees for safe agents, and originated infra-Bayesianism (with Alexander Appel), a mathematical framework generalizing Bayesian decision theory to handle non-realizability, logical uncertainty, and adversarial environments. Her work spans reinforcement-learning theory, decision theory, and the foundations of embedded agency. Links:
+LessWrong profile
+;
+Alignment Forum profile
+;
+Google Scholar profile
+.
+Jan Kulveit
+is Co-founder and Principal Investigator of the
+Alignment of Complex Systems (ACS) Research Group
+, part of the
+Center for Theoretical Study
+at Charles University in Prague. Previously a Research Fellow at the
+Future of Humanity Institute
+at the University of Oxford. His research focuses on alignment in complex human–AI systems, mathematical theories of hierarchical agency and cooperation, and the psychology of large language models, applying active inference and free-energy methods to model bounded-rational agency. Co-organizes the
+Human-aligned AI Summer School
+in Prague. Links:
+Google Scholar profile
+;
+ACS Research
+;
+Alignment Forum profile
+;
+LessWrong profile
+;
+Substack
+.
+Seth Lazar
+is a Professor at the Johns Hopkins University
+School of Government and Policy
+. He founded the
+Machine Intelligence and Normative Theory
+(MINT) Lab, where his research applies moral and political philosophy to AI safety, governance, and institutional design for the AI transition. He has also published widely on the ethics of war and defensive force. His book '
+The Algorithmic City: Power, Justice and AI
+' is forthcoming from Oxford University Press. Links:
+personal website
+;
+Google Scholar profile
+;
+MINT Lab
+;
+Johns Hopkins profile
+;
+PhilPeople profile
+.
+Daniel Murfet
+is a mathematician and Head of Research at
+Timaeus
+. Previously a Lecturer (US equivalent: tenured professor) at the
+School of Mathematics and Statistics
+at the University of Melbourne. His research focuses on using singular learning theory and developmental interpretability to understand how neural networks learn and generalize. He has also made significant contributions to algebraic geometry and homological algebra. Links:
+personal website
+,
+Google Scholar profile
+,
+Alignment Forum profile
+,
+LessWrong profile
+.
+Tim G. J. Rudner
+is an Assistant Professor of Statistical Sciences (Status-Only) at the University of Toronto, a Canada
+CIFAR AI Chair
+at the
+Vector Institute for Artificial Intelligence
+, and the Chief Scientist at
+Vijil
+. He is also a Junior Research Fellow of Trinity College at the University of Cambridge and an Associate Member of the Department of Computer Science at the University of Oxford. His research interests include probabilistic machine learning, AI safety, and AI governance, with a focus on understanding and expanding the statistical foundations of machine learning models, advancing scalable oversight of frontier AI systems, creating trustworthy AI agents, and designing regulatory approaches that enable the effective governance of frontier AI models. Links:
+personal website
+;
+Google Scholar profile
+;
+Oxford CS page
+.
+Andrew Saxe
+is a Professor of Theoretical Neuroscience and Machine Learning at the
+Gatsby Computational Neuroscience Unit
+and Sainsbury Wellcome Centre at UCL, and a
+CIFAR
+Azrieli Global Scholar in the
+Learning in Machines & Brains
+programme. His research develops the theory of deep learning and its applications to neuroscience and psychology — including exact analytical solutions for learning dynamics in deep linear networks and a mathematical theory of semantic development. Links:
+Lab
+;
+Google Scholar profile
+.
+Benjamin Van Roy
+is Professor of Electrical Engineering, of Management Science and Engineering, and, by courtesy, of Computer Science at Stanford University. Founder and lead of the Efficient Agent Team at Google DeepMind. His research focuses on reinforcement learning and alignment, with interests including information-theoretic foundations for machine learning, efficient exploration, continual learning, and mathematical models of misalignment risk. He is a Fellow of
+INFORMS
+and
+IEEE
+and a recipient of the
+Lanchester Prize
+. Links:
+personal website
+;
+Google Scholar profile
+;
+Stanford profile
+.
+Managing editors
+Dan MacKinlay
+is a former Research Scientist at
+CSIRO
+’s Data61, Australia’s national information technology laboratory. He is a founding member of LAIR2, the Melbourne AI Safety Hub, and a PIBBSS research resident at the London Initiative for Safe AI. He has written over one million words online about AI, machine learning, philosophy, etc. Links:
+personal website
+;
+Google Scholar profile
+.
+Jess Riedel
+is a physicist and Senior Research Scientist at
+NTT Research
+. He primarily researches quantum decoherence and has dabbled in AI alignment as a visiting scholar at the
+Center for Human-Compatible AI
+at UC Berkeley. He was recognized by the American Physical Society as an
+Outstanding Referee
+, a lifetime award for service as a journal reviewer. He is the lead editor of the
+Proceedings of ODYSSEY
+, the 2025
+ILIAD conference
+on AI alignment at Lighthaven. Links:
+personal website
+;
+blog
+;
+Google Scholar profile
+;
+LessWrong profile
+.
+Legal structure
+The
+Alignment Journal
+is beginning as a philanthropically funded project fiscally sponsored by
+Principles of Intelligence
+, the parent organization for the PIBBSS Fellowship. Significant operational support in launching the Journal is being provided by
+ILIAD
+, an applied mathematics AI alignment research and support organization that is also a project of Principles of Intelligence. The Journal expects to spin out as an independent nonprofit organization in the future.
+Funding
+We are grateful to the
+AI Safety Tactical Opportunities Fund
+, a pooled multi-donor fund, for providing our first year of funding, to the
+Survival and Flourishing Fund
+for supplemental support, and to
+NTT Research
+for in-kind support.
+Scope
+The
+Alignment Journal
+aims to clarify and address the challenges in designing a superintelligent AI that is aligned with human values. To serve that purpose, the Journal publishes work on the scientific foundations of understanding, predicting, and steering artificial intelligent systems.
+We seek contributions that build theoretical or otherwise principled analyses of agency, robustness, incentives, generalization, interpretability, and long-term behavior across many learning and decision-making paradigms. We are especially interested in approaches that transcend contemporary architectures and potentially apply to future superintelligent systems that interact and self-improve.
+A submission should make a claim the significance of which survives the deletion of any particular model, dataset, or benchmark, e.g., a theorem, an impossibility result, a formal framework, a protocol with an analyzed guarantee, or a conceptual argument precise enough to be wrong. Empirical work is welcome as validation or interrogation of such a claim.
+Negative results are in scope and we would like more of them. This includes no-go and impossibility theorems, counterexamples to claimed guarantees, refutations of published results, and formalization attempts that failed for an articulable reason.
+Alignment is an inherently interdisciplinary topic. To be accepted, work must substantively advance conceptual scaffolding or explanatory understanding of AI. Mere relevance or token connection is insufficient.
+The topics we focus on are naturally influenced by the expertise of our editorial board, which will grow over time. We especially welcome work bridging alignment and these topics:
+Causal inference
+Computational mechanics and dynamical systems
+Decision theory, game theory, and agent foundations
+Information theory
+Mechanism design and social choice theory
+Moral philosophy, including metaethics
+Multi-agent systems
+Probability, statistics, and uncertainty quantification
+Learning theory
+Statistical physics and stochastic dynamics
+as well as rigorous empirical studies of misalignment in frontier AI systems.
+This list is suggestive rather than exhaustive, and we are open to other topics if they fit the aim of the Journal.
+We currently are unlikely to review papers on the following topics, but may consider them in the future:
+human-AI interaction
+cognitive science and mathematical psychology
+societal impacts, ethics, and governance of AI
+security engineering and model-weight operational practice
+Acceptance criteria
+The
+Alignment Journal
+accepts articles for publication based primarily on three criteria:
+Correctness: The claims in the article must be worthy of belief.
+Mathematical computations must be accurate, proofs must be true, methodologies must be rigorous, and arguments must be sound.
+Caveats and countervailing considerations must be presented in the manuscript with prominence appropriate to their seriousness (e.g., in the abstract).
+Confidence in claims resting on empirical results is undermined insofar as those results are difficult to reproduce.
+Insight: The article must advance our principled understanding of intelligent systems.
+Improved benchmark performance per se does not generally imply insight, but the statistical behavior of models can of course provide important information about their internals.
+Empirical evidence of improved performance on non-alignment capabilities is insufficient.
+Scientific novelty in the traditional strict sense is not necessarily required: insightful translational and synthesis work will be accepted so long as it satisfies all criteria.
+Value: The work should be the most valuable thing to read now for at least some alignment researchers.
+It is not sufficient that a paper could be useful to someone at some time; the arXiv and journals/conferences with correctness-only criteria are more appropriate venues.
+A result's value to other researchers is greatly diminished to the extent it is difficult to independently reproduce and build upon from the methodology and materials provided.
+Desk rejects
+Work of any subject that fails the criteria above is declined without review. Common cases:
+interpretability results reporting what was found in a model, without a formal claim about what such findings can establish
+capability or propensity evaluations without an accompanying theoretical or conceptual advance
+benchmark and dataset papers
+unprincipled training techniques evaluated primarily by performance
+attack and defense results that do not engage with theory
+agenda and position essays lacking a strong technical or conceptual contribution
+surveys without deep synthesis
+Other publication factors
+Preprint requirement
+Each submission must be available (in non-anonymized form) on one of these standard preprint repositories: arXiv, SSRN, ECCC, PhilPapers, and PsyArXiv. Exceptions are made for paper types which are not permitted in the otherwise appropriate repository; in these cases, please make sure to include an explanation in the “notes for the editor” box while submitting. Email the editors with any questions.
+Archival status and prior publication
+The Journal is
+archival
+. The published articles constitute a permanent, citable version of record — the definitive, unchanging form of the work that is preserved indefinitely and treated as the canonical reference. The authors cannot publish the same work in another journal or conference. (Preprints on the arXiv or other preprint servers are encouraged of course.) That said, we adopt
+JMLR’s policy
+toward significant expansions of previously published work.
+Specifically, we will consider submissions that have been published in a more limited form at workshops or conferences. In these cases, we expect the expansion to cite the prior work, go into much greater depth, and to extend the published results in a substantive way. In all cases, authors must (a) notify the editors about previous publication, including a link, at the time of submission and (b) explain the differences from their prior work. Examples of (possibly) acceptable 'deltas' beyond a conference paper include: new theoretical results, entirely new application domains, significant new insights and/or analyses. Examples of insufficient deltas include: adding proofs that were omitted from a conference paper; minor variations or extensions of previous experiments; adding extra background material or references. However, we ultimately leave the decision about whether a 'delta' is significant enough up to the individual reviewers.
+Reproducibility
+We strongly encourage authors of empirical and computational manuscripts to ensure their work is reproducible. In particular, we recommend they (1) include sufficient methodological detail, ideally a dedicated reproducibility section, and (2) upload data, code, and similar material to robust repositories. As described in the acceptance criteria, reviewers and editors should factor in the ease of reproducibility in their decisions. Where code, data, or other materials needed to reproduce or build on the work have not been shared, the reviewer abstract should alert the reader to it.
+Credits and thanks
+This post has been informed by gracious contribution and feedback from the advisor and senior editors, as well as Gautam Kamath,
+Leon Lang
+, Konstantinos Voudouris,
+Edmund Lau
+,
+David Udell
+,
+David Reinstein
+,
+Alexander Gietelink Oldenziel
+, and
+Zach Furman
+. All responsibility for errors resides with the authors.
+0
+Comments
+0
+AI
+Personal Blog
+60
+New Comment
+Moderation Log
+More from
+Dan MacKinlay
+View more
+Curated and popular this week

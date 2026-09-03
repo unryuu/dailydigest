@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+  "title": "Meta 把长录音转写和多人分轨合成一个模型",
+  "date": "2026-09-01",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
   "id": "https://research.meta.ai/blog/multimodal-intelligence-of-muse-spark-1-2",
   "title": "Meta 展示 Muse Spark 1.2 的多模态能力",
   "date": "August 20, 2026",

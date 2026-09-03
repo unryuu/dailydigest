@@ -1,0 +1,22 @@
+URL: https://x.com/teortaxesTex/status/2095000133427483023
+FINAL: https://x.com/teortaxesTex/status/2095000133427483023
+TITLE: Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) on X: "Tedious
+recurrent models don't remove CoT, nor necessarily make it less informative. Probability collapse on decoding still imposes a bottleneck to "hiding thoughts", recurrence only increases effective circuit depth. 
+People have sloppy intuitions all … / X
+FETCHED: 2026-09-02 20:40:39
+============================================================
+Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)
+@teortaxesTex
+Tedious
+recurrent models don't remove CoT, nor necessarily make it less informative. Probability collapse on decoding still imposes a bottleneck to "hiding thoughts", recurrence only increases effective circuit depth. 
+People have sloppy intuitions all around this place.
+Rob Miles
+@robertskmiles
+10h
+Can you believe these dipshits?
+
+Here's OpenAI's blog (being correct) less than a year ago:
+4:05 AM · Sep 2, 2026
+6.5K
+Views
+8

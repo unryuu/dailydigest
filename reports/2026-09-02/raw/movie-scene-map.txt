@@ -1,0 +1,237 @@
+URL: https://moviescenemap.com
+FINAL: https://moviescenemap.com/
+TITLE: Movie Scene Map — The Filming Locations Map for Film & TV
+FETCHED: 2026-09-02 20:41:46
+============================================================
+The interactive map of where films and television were actually shot
+Movie Scene Map
+is a free interactive map of 15,565 real filming locations in 166 countries: the studios, castles, streets and landscapes where films and television series were shot. Pan and zoom the map above, click any point for a photograph and the productions shot there, or open a place’s page for everything filmed in it. Beside the 9,287 films and series with a page of their own sit 2,153 video games, 407 anime and 365 manga, placed by where their stories are set, because nothing is filmed in a drawn world.
+Browse by kind
+Films & series
+9,287
+Video games
+2,153
+Anime
+407
+Manga
+365
+Franchises
+653
+Browse by kind of place
+🎬 Studios & sets
+134
+🏰 Castles & palaces
+597
+🏛 Landmarks & buildings
+4,114
+🛣 Streets & squares
+830
+🏞 Landscapes & nature
+2,155
+🏙 Towns & cities
+7,536
+🌍 Countries & regions
+168
+🎭 Fictional places
+31
+Filming locations by country
+The countries with the most places on the map:
+United States
+5,127 places
+United Kingdom
+2,034 places
+France
+930 places
+Canada
+669 places
+Japan
+665 places
+Italy
+573 places
+Spain
+528 places
+Germany
+465 places
+India
+407 places
+Australia
+396 places
+Czech Republic
+289 places
+Russia
+252 places
+Sweden
+218 places
+Ireland
+145 places
+Poland
+132 places
+China
+124 places
+New Zealand
+124 places
+Mexico
+116 places
+Turkey
+101 places
+Finland
+100 places
+South Korea
+100 places
+Switzerland
+93 places
+Austria
+85 places
+Brazil
+77 places
+All 94 countries with a page →
+·
+Filming locations near you: day trip guides for 400 cities →
+The most filmed places
+Cities and regions ranked by everything shot inside them, the one number a single filming location statement cannot give you:
+California
+1,747 productions
+Los Angeles County
+1,436 productions
+Los Angeles
+1,066 productions
+England
+945 productions
+New York City
+821 productions
+Greater London
+556 productions
+Paris
+435 productions
+Metro Vancouver Regional District
+394 productions
+Vancouver
+381 productions
+London
+380 productions
+Toronto
+319 productions
+Manhattan
+299 productions
+Iver
+255 productions
+Rome
+241 productions
+Madrid
+227 productions
+Montreal
+191 productions
+DeKalb County
+189 productions
+Atlanta
+184 productions
+Fulton County
+184 productions
+San Francisco
+182 productions
+Chicago
+164 productions
+Berlin
+155 productions
+Moscow
+149 productions
+Nevada
+147 productions
+The most filmed cities and regions on earth, ranked →
+·
+The 150 most famous scenes ever filmed on location →
+Famous productions to start with
+The most widely covered productions on the map, by number of Wikipedia language editions:
+Game of Thrones
+2011
+Forrest Gump
+1994
+Titanic
+1997
+The Godfather
+1972
+The Matrix
+1999
+The Big Bang Theory
+2007
+Friends
+1994
+Squid Game
+2021
+Pulp Fiction
+1994
+The Dark Knight
+2008
+The Shawshank Redemption
+1994
+Back to the Future
+1985
+Breaking Bad
+2008
+Fight Club
+1999
+Schindler's List
+1993
+The Silence of the Lambs
+1991
+The Terminator
+1984
+Doctor Who
+1963
+Harry Potter and the Philosopher's Stone
+2001
+Jurassic Park
+1993
+Interstellar
+2014
+V for Vendetta
+2005
+Gone with the Wind
+1939
+Inception
+2010
+Every film and series on the map →
+How this map is built
+Movie Scene Map is built from open data. The backbone is the filming location statements on
+Wikidata
+, joined to each place’s coordinates, its photograph on
+Wikimedia Commons
+and its Wikipedia article. Beside them sit places named in a production’s own Wikipedia article, or by the setting categories its editors file it under, and those are labelled per Wikipedia wherever they appear, because a sentence is weaker evidence than a statement and the two are never mixed. Nothing is scraped from listicles and nothing is generated.
+The atlas is curated, not complete. A production earns a page once enough Wikipedia editions cover it, and a country that looks empty means sparse Wikidata coverage, never that nothing was filmed there. Missing a film you know? Add a filming location statement to its Wikidata item, with a source, and it appears here at the next rebuild and in every other project reading that data. The five steps are on
+the missing page
+, and
+the work list
+names the productions where one edit would do it.
+The whole atlas is free to
+download as GeoJSON or CSV
+, CC0, and the same page describes the read only MCP endpoint that answers these questions live for AI assistants. Every change, including the mistakes, is in
+the changelog
+, and
+the about page
+says what the data is and what it leaves out.
+Frequently asked questions
+What is Movie Scene Map?
+Movie Scene Map is a free interactive map of 15,565 real filming locations in 166 countries: the studios, castles, streets and landscapes where films and television series were shot, plus the real places video games, anime and manga are set in. Search a title to see where it was made, or a place to see what was made there.
+How many filming locations are on the map?
+15,565 places across 166 countries, attached to 9,287 films and series, 2,153 video games, 407 anime and 365 manga with a page of their own. The count moves with every rebuild from Wikidata, and the changelog records each one.
+Where does the data come from?
+Filming location statements on Wikidata, joined to each place’s coordinates, photograph and Wikipedia article. Beside them, and labelled per Wikipedia wherever they appear, sit places named in a production’s own Wikipedia article or by the setting categories its editors file it under. Nothing is scraped from listicles and nothing is generated.
+What does per Wikipedia mean on a page?
+That the claim rests on a sentence or a category in Wikipedia rather than on a Wikidata statement. A sentence is weaker evidence than a statement, so the two are never mixed, and every such row names the exact section or category it came from.
+Are video games, anime and manga filmed somewhere?
+No. A game is rendered and an anime or a manga is drawn, so none of them was filmed anywhere. The atlas places them by where their story is set, from Wikidata’s narrative location and from Wikipedia’s setting categories, and every page about one says set in rather than filmed in.
+Why is a film I know missing, or placed only in a country?
+Coverage follows Wikidata, and it is uneven. Some famous productions carry no filming location statement at all, and some carry one so coarse that it names a whole country, which this atlas reports as text rather than placing a pin. The work list on the gaps page names the productions where one edit would fix it.
+Can I add a filming location?
+Yes, upstream. Add a filming location statement to the production’s Wikidata item, with a source, and the place appears here at the next rebuild and in every other project reading that data. The five steps are on the missing page.
+Is Movie Scene Map free to use?
+Yes. No account, no advertising, no paywall. The whole atlas is also downloadable as GeoJSON and CSV under CC0, and a read only MCP endpoint answers the same questions live for AI assistants.
+Explore every film and series on the map →
+More atlases by the same maker:
+World Train Map
+·
+The Castle Map
+·
+Sunshine Map
+·
+World Beach Map

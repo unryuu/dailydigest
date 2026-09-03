@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-02",
+  "scanned_at": "2026-09-02T20:21:22+08:00",
+  "window": "从北京时间 2026-08-31T22:38:00+08:00 接续，收录 2026-09-01 与 2026-09-02 发布的新内容。",
+  "route": "Codex 内置浏览器登录态补扫。",
+  "status": "ok",
+  "storage_note": "手工扫描 Latest 并精读三篇 AI 相关材料；仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "OpenAI Technique in ‘Astra’ Model Sparks Security Concerns",
+      "url": "https://www.theinformation.com/articles/secret-technique-behind-openais-astra-model-sparks-security-concerns",
+      "published_at": "2026-09-01T17:40:00-07:00",
+      "published_at_beijing": "2026-09-02T08:40:00+08:00",
+      "bucket_hint": "industry_deep_or_gold",
+      "decision": "加入候选",
+      "facts": [
+        "据一名了解 Astra 开发的人士，OpenAI 在即将发布的 Astra 中使用 recurrent depth（循环深度／looped transformer）：让文本多次通过同一组模型层，以较小模型取得更强表现并降低内存与带宽成本。",
+        "这种方法会隐藏部分模型推理过程，削弱依靠思维链发现越界计划的能力；OpenAI 限制了 Astra 中的使用程度，使它仍输出可读思维链，并称会增加监控以快速发现和遏制异常行为。",
+        "OpenAI 首席科学家 Jakub Pachocki 称思维链监控很脆弱且趋势正在变差，并反对全行业竞赛式开发不可读推理模型；加强监控是当前研究项目的核心目标。",
+        "Astra 曾考虑命名为 GPT-6，已经完成训练一段时间；Sam Altman 同日称它在能力与对齐上都有显著进步，而后续模型会按安全工作需要放慢。"
+      ],
+      "caveats": [
+        "循环深度的具体实现来自匿名知情人士，OpenAI 官方只公开确认 Astra 即将发布及会增加思维链监控，没有完整披露架构细节。",
+        "报道明确称 Astra 当前受控用法未必构成重大问题；主要担忧是其他开发者把同类技术推得更远。",
+        "思维链本身不等于模型全部推理，也不是独立充分的安全措施。"
+      ],
+      "why": "这不是普通模型发布，而是性能、成本与可监督性之间的结构性取舍；它直接影响下一代模型能否继续靠可读思维链发现失控行为。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Applied AI",
+      "title": "Anthropic Customers’ Bills Are 80% Higher Than They Need to Be, Glean Says",
+      "url": "https://www.theinformation.com/newsletters/applied-ai/anthropic-customers-bills-80-higher-need-glean-says",
+      "published_at": "2026-09-01T15:06:00-07:00",
+      "published_at_beijing": "2026-09-02T06:06:00+08:00",
+      "bucket_hint": "industry_deep_or_silver",
+      "decision": "加入候选",
+      "facts": [
+        "Glean 的内部评估覆盖 180 多项企业任务；其助手完成相同任务时比 Claude Cowork 少用 70％ token，按任务向客户收取的平均费用低 81％。",
+        "Glean 称差异来自企业数据上下文层、enterprise graph 和按任务复杂度路由不同模型，减少 Agent 为寻找正确资料而进行的漫长搜索。",
+        "Glean 的助手使用 Claude Opus 4.8 等模型，对比对象是启用高推理的 Claude Sonnet 5；Anthropic 未评论。",
+        "Glean 还给每个长期运行的 Agent 分配独立身份和认证凭证，以限制其只能读取获授权的数据。"
+      ],
+      "caveats": [
+        "70％ token 与 81％费用均来自 Glean 自己的内部评估，不是独立基准。",
+        "两边所用模型和推理档位不同，不能把差异全部归因于上下文层。",
+        "这是竞争对手对 Anthropic 产品的比较，正文必须清楚保留归因。"
+      ],
+      "why": "企业 Agent 的成本越来越取决于能否迅速找到内部上下文，而不只是底层模型单价；这给出了具体任务数、token 和费用差异。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "AI Agenda",
+      "title": "Wafer, An Inference Provider That Uses Non-Nvidia Chips, Lands Acquisition Offers and $200 Million-Plus Valuation",
+      "url": "https://www.theinformation.com/newsletters/ai-agenda/wafer-inference-provider-uses-non-nvidia-chips-lands-acquisition-offers-200-million-plus-valuation",
+      "published_at": "2026-09-01T07:01:00-07:00",
+      "published_at_beijing": "2026-09-01T22:01:00+08:00",
+      "bucket_hint": "industry_deep_or_silver",
+      "decision": "加入候选",
+      "facts": [
+        "成立约一年的推理服务商 Wafer 完成 4000 万美元 A 轮融资；据知情人士，融资后估值超过 2 亿美元，公司拒绝评论估值。",
+        "Wafer 用所谓 AI inference engineers 针对具体工作负载优化开源模型，并同时支持英伟达和 AMD 芯片，计划扩展至 Google、SambaNova 和 Cerebras。",
+        "Wafer 称其把 GLM-5.2 优化到 AMD MI355X 后，吞吐达到英伟达 B200 的约 80％，成本不到一半。",
+        "公司称年化收入在 12 周内增至约 800 万美元，毛利率约 50％；知情人士称它拒绝了多家大型推理与云服务商的收购报价。"
+      ],
+      "caveats": [
+        "性能、成本、收入和毛利率均为公司口径，缺少独立审计或复测。",
+        "收购报价和估值来自匿名知情人士，金额与交易条件未公开。",
+        "公司规模仍小，当前数字不能直接外推为非英伟达推理市场已经成熟。"
+      ],
+      "why": "AI 正被拿来自动优化 AI 在不同芯片上的运行，试图把非英伟达算力的软件劣势补回来；融资、收入和真实客户让这条不只是技术概念。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "SpaceX Shakes Up Data Center Leadership After Aggressive Build-Out",
+      "url": "https://www.theinformation.com/articles/spacex-shakes-data-center-leadership-aggressive-build",
+      "reason": "与 AI 基础设施有关，但首页信息不足以支撑成条，且三篇精读名额优先给 Astra 架构、企业 Agent 成本和跨芯片推理。"
+    },
+    {
+      "title": "Why SoftBank Is Rushing SB Energy to the Public Markets",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/softbank-rushing-sb-energy-public-markets",
+      "reason": "更偏资本市场和能源资产，AI 关联弱于本期三篇候选。"
+    },
+    {
+      "title": "Fei-Fei Li’s World Labs Unveils New World Model",
+      "url": "https://www.theinformation.com/briefings/fei-fei-lis-world-labs-unveils-new-world-model",
+      "reason": "公开发布材料已进入机械候选，没必要占用付费源精读名额。"
+    }
+  ]
+}

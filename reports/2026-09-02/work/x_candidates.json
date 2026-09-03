@@ -1,0 +1,145 @@
+{
+  "date": "2026-09-02",
+  "scanned_at": "2026-09-02T20:21:22+08:00",
+  "window": "从北京时间 2026-08-31T22:38:00+08:00 接续，收录 2026-09-01 与 2026-09-02 的新帖。",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取 Latest；Nitter 仅保留失败诊断。",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现多条时间窗内原创帖；保留 Agent 能力判断、Fable 5.1 实测、交互式无限直播和安全小取舍累积风险四条线索。"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "Latest 搜索明确显示时间窗内无结果。"
+    },
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "Latest 搜索明确显示时间窗内无结果。"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "时间窗内帖子继续讨论 Hugging Face／OpenAI Agent 事故与拟人化，主线已高度饱和，没有独立新材料可入选。"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "大量帖子围绕既有 Agent 事故；保留一条对循环深度必然隐藏思维链的技术反驳，其余不重复收录。"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "保留 Astra 已完成训练、即将发布，以及后续模型为安全与对齐工作主动放慢的官方说明。"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "保留循环深度与思维链可读性的技术反驳及中国小型循环模型线索；其余多为政治文化评论或普通模型跑分感想。"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-sama",
+      "title": "OpenAI 称 Astra 已完成训练，后续模型会为安全工作放慢",
+      "url": "https://x.com/sama/status/2094934592062959832",
+      "datetime": "2026-09-01T23:45:00.000Z",
+      "datetime_beijing": "2026-09-02T07:45:00+08:00",
+      "bucket_hint": "industry_deep_or_merge",
+      "text": "Sam Altman 说 Astra 已经完成训练一段时间，在能力与对齐上都是显著进步，将很快发布；对于 Astra 之后的模型，OpenAI 会按需要放慢进度，以完成足够的安全和对齐工作。他同时承认没人完全理解能力迅速增强的后果。",
+      "caveats": [
+        "这是 OpenAI CEO 的总体说明，没有给出发布日期、具体评测或放慢训练的量化尺度。",
+        "与 The Information 的 Astra 架构独家属于同一主线，后续应合并而非重复成条。"
+      ],
+      "why": "官方第一次把 Astra 的发布状态与后续模型主动放慢放在一起说明，补足了独家报道之外的公司口径。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Agent 能力与公众认知之间又拉开一轮差距",
+      "url": "https://www.oneusefulthing.org/p/agency-and-agents",
+      "post_url": "https://x.com/emollick/status/2094905781111955634",
+      "datetime_beijing": "2026-09-02",
+      "bucket_hint": "opinion_or_reader",
+      "text": "Ethan Mollick 认为，Agent 已经突然具备长时间、自组织工作的真实能力，公众认知仍停留在旧阶段，因此需要重新思考人类如何给这类系统分派工作和保留控制。",
+      "caveats": [
+        "X 帖只是观点摘要，reader 必须精读原文再判断是否有足够的新事实和例子。",
+        "与近期 Agent 失控事故相邻，不能复述旧事故。"
+      ],
+      "why": "它试图把零散的长程 Agent 演示概括成工作方式变化，可能适合独家视角或短观点。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Fable 5.1 的进步更像长期判断力，而不是更会扮演 Claude",
+      "url": "https://x.com/emollick/status/2094860076028657926",
+      "datetime_beijing": "2026-09-02",
+      "bucket_hint": "announcement_or_radar",
+      "text": "Mollick 提前试用 Claude Fable 5.1 后称，它在需要判断与品味的长期工作上是真进步，但在 Claude 式人格表现上进步较小；他展示了模型制作的一款复古太空船经营游戏。",
+      "caveats": [
+        "这是单名用户的提前体验，不是系统性独立评测。",
+        "普通模型升级按近期口径默认无牌，具体规格以官方材料为准。"
+      ],
+      "why": "它给官方跑分之外提供了一个更贴近真实创作任务的能力判断和可操作成品。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "观众可以实时改写剧情的无限 AI 直播出现了",
+      "url": "https://fal.live/",
+      "post_url": "https://x.com/emollick/status/2094801560291213733",
+      "datetime_beijing": "2026-09-01",
+      "bucket_hint": "fun_or_radar",
+      "text": "fal 推出无限交互式 AI 直播：观众选择频道，再通过提示实时决定接下来发生什么，视频持续生成。Mollick 认为它虽然仍有明显故障，但展示了连续视频生成、上下文延续和新型多人娱乐的结合。",
+      "caveats": [
+        "体验仍明显不稳定，暂时属于演示型产品。",
+        "需要 reader 打开产品或官方说明核实持续生成方式，不能只按转帖写。"
+      ],
+      "why": "它把视频生成从一次性片段变成观众共同导演的持续节目，适合作为产品乐子或新交互形态。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "每项安全让步看起来都合理，合起来可能变成没人理解的系统",
+      "url": "https://x.com/emollick/status/2094979123768910003",
+      "datetime_beijing": "2026-09-02",
+      "bucket_hint": "opinion_or_merge",
+      "text": "Mollick 说，行业正同时做出许多以小幅降低安全换取真实效用的决定；每项单独看都合理，但它们一起进入一个没人完全理解的复杂系统后，风险会不会相互叠加仍不清楚。",
+      "caveats": [
+        "这是观点，没有实验或具体风险测量。",
+        "可与 Astra 的性能—监督取舍合并为一句评论，不宜独立升牌。"
+      ],
+      "why": "它用一句话概括 Astra 等多项局部工程取舍共同带来的系统风险，和本期主线高度契合。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "循环深度不一定让思维链消失，中国已有小型循环模型",
+      "url": "https://x.com/teortaxesTex/status/2095000133427483023",
+      "post_url": "https://x.com/teortaxesTex/status/2095004005436919883",
+      "datetime_beijing": "2026-09-02",
+      "bucket_hint": "technical_counterpoint",
+      "text": "Teortaxes 反驳把 recurrent models 直接等同于隐藏思维链：循环增加的是有效计算深度，解码仍是把内部状态压成文本的瓶颈，因此它既不必然移除思维链，也不必然让思维链更不可靠。他还举出南北阁和 Ubiquant 的 IQuest，称中国已有小型循环模型路线。",
+      "caveats": [
+        "这是个人技术判断；关于中国模型训练投入和架构的说法需要回到论文、模型卡或公司材料核实。",
+        "它不能推翻 Astra 的匿名开发信息，只能作为机制层面的反方观点。"
+      ],
+      "why": "The Information 的主线很强，但技术结论存在争议；保留反方能避免把循环深度机械写成思维链必然消失。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/NeelNanda5/status/2094509676587032774",
+      "reason": "继续补充已连续多期报道的 Agent 社会与牺牲实验，而且明确称 METR 无法运行目标模型，缺少新实验结果。"
+    },
+    {
+      "url": "https://x.com/tszzl/status/2094535509473440187",
+      "reason": "把 Agent 群体称为文明的观点仍围绕近期饱和事故，没有独立新证据。"
+    },
+    {
+      "url": "https://x.com/tszzl/status/2094649894300774843",
+      "reason": "关于 OpenAI 和 Anthropic 暂停强化学习训练的说法来自转帖，缺少两家公司一手材料。"
+    },
+    {
+      "url": "https://x.com/emollick/status/2094617053730685054",
+      "reason": "只是转述去限制版 GLM-5.3 的网络安全能力，没有可核验的系统评测，且容易变成替第三方托管服务宣传。"
+    }
+  ]
+}

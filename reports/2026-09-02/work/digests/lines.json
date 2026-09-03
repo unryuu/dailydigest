@@ -1,0 +1,199 @@
+[
+  {
+    "id": "data-center-spending",
+    "section": "industry",
+    "label": "美国数据中心外壳建设支出增速接近六成",
+    "url": "https://www.axios.com/2026/09/01/ai-data-center-constructon-spending",
+    "body": "七月支出折合年化超过七百五十亿美元。这还只包括机房外壳，约占一座数据中心总成本的两成，服务器、芯片和内存另算。",
+    "note": "核实通过。Axios 引用美国人口普查局数据；这里的近六成为相较 2025 年 7 月的年化增速，不能写成实际算力投产增速。与 8 月 28 日的数据中心租约承诺、8 月 29 日的数据中心舆论操纵不是同一事实，不标疑重。",
+    "evidence": [
+      "原文称数据中心外壳建设支出较 2025 年 7 月水平的年化增速接近 60％。",
+      "美国人口普查局数据所示的七月支出折合年化超过 750 亿美元。",
+      "原文明确说明统计只含仓库式外壳，建设约占数据中心全部成本的 20％。"
+    ]
+  },
+  {
+    "id": "claude-fable-mythos-5-1",
+    "section": "official",
+    "label": "Claude Fable 5.1 和 Mythos 5.1 发布",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    "body": "两者使用同一底层模型，Fable 面向所有用户，Mythos 只给通过审核的网络安全和生命科学团队。两名提前体验者分别让 Fable 做出复古飞船经营游戏和会动的鹈鹕 SVG，长程判断和成品细节都有进步。",
+    "note": "核实通过，合并官方发布、Simon Willison 实测和 Ethan Mollick 提前体验。普通模型发布按定牌保留无牌。官方称典型工作负载成本约降 25％，主要来自缓存读取降价；外部体验只是个例，不能写成综合评测结论。",
+    "evidence": [
+      "Anthropic 明确称 Fable 5.1 与 Mythos 5.1 是同一模型、保障等级不同；Fable 已全面提供，Mythos 通过可信访问计划提供。",
+      "Ethan Mollick 称它在需要判断和品味的长程工作上有真实进步，并展示了复古太空船经营游戏。",
+      "Simon Willison 用不同推理档位生成骑自行车的鹈鹕 SVG，最高档生成了细节完整的版本，并继续做成动画。"
+    ],
+    "sources": [
+      "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
+      "https://x.com/emollick/status/2094860076028657926"
+    ]
+  },
+  {
+    "id": "gemini-agentic-video",
+    "section": "official",
+    "label": "Gemini 会自己决定视频该看哪一段",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+    "body": "它会在画面、声音和字幕之间主动搜索，再对可疑片段调高帧率重看。Google 称长视频分析最多少用 88％ 的 token，成本最多降低 66％。",
+    "note": "核实通过。降 token、降成本和准确率最多提升 7％均为 Google 在标准视频分析基准上的官方结果，未见独立实测；功能已用于 Gemini 3.7 Flash、3.6 Flash 和 3.5 Flash-Lite 的 API。",
+    "evidence": [
+      "原文称模型会动态搜索、扫描和检查目标片段，并在视觉帧、音频和字幕之间选择所需信号。",
+      "原文举例包括亚秒级片段定位、异常检测、动作和物体计数，并可按需改变帧率重新观看。",
+      "官方基准结果为 token 最多减少 88％、成本最多降低 66％、准确率最多提高 7％。"
+    ]
+  },
+  {
+    "id": "muse-voice",
+    "section": "official",
+    "label": "Meta 发布覆盖七十多种语言的实时转写模型",
+    "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+    "body": "Muse Voice Transcribe 能在一句话里处理中英混说，也能给一小时以上、二十多名说话者的录音实时分人。首批重点验证了 25 种语言。",
+    "note": "核实通过。页面称模型训练覆盖 70 多种语言，但只重点验证 25 种；Artificial Analysis 和公开说话人分离基准排名均为 Meta 页面转述。模型通过 Meta Model API、Meta AI for Mac 和 Muse Code 提供，页面没有说明开放权重。",
+    "evidence": [
+      "官方称模型训练覆盖 70 多种语言，其中 25 种经过广泛验证，并原生支持句内和句间语言切换。",
+      "官方称模型原生支持超过一小时的长音频和二十多名说话者，无须后处理。",
+      "模型把实时语音识别、说话人分离和说话终点判断放在同一套流式系统中。"
+    ]
+  },
+  {
+    "id": "xai-biosecurity",
+    "section": "official",
+    "label": "Grok 4.6 会识别伪装成普通研究的生物危险任务",
+    "url": "https://x.ai/news/biosafety-at-the-frontier",
+    "body": "测试把 46 个危险任务藏进科研数据、错误文件名等普通工作里。Grok 4.6 拒绝了 59.2％ 的危险任务，同时完成了 64.8％ 的正常任务。",
+    "note": "核实通过。结果来自 LatchBio 的第三方评测，由 xAI 页面概述；Grok 4.6 在该拒绝测试里是唯一两项都超过 50％ 的系统，但生物监测任务成功率 53.5％，落后于 Opus 5。xAI 同时列出拒答训练、推理时拦截、行为控制和上线后监测等分层措施。",
+    "evidence": [
+      "BioSecBench-Refusal 含 46 个把风险藏在科学数据、误标文件或其他混淆环境中的红队任务。",
+      "LatchBio 所测结果中，Grok 4.6 拒绝 59.2％ 的危险任务并完成 64.8％ 的常规任务。",
+      "xAI 列出的部署措施包括拒答训练、请求进入模型前的推理时保障、行为控制和会话及用户级上线后监测。"
+    ]
+  },
+  {
+    "id": "ecommerce-bench",
+    "section": "papers",
+    "label": "Agent 被放进电商里经营整整一年",
+    "url": "https://huggingface.co/papers/2608.30730",
+    "body": "它要同时经营多家网店，找供应商谈价、备货、促销、退货和管现金流，还会遇到灾害与供应链冲击。18 个前沿模型里没有一个全能冠军，最会赚钱的模型在防欺诈上只排第十六。",
+    "note": "核实通过。论文发表于 8 月 31 日，HF 页面提供摘要与开源代码链接。环境使用真实电商平台的商品和供应商数据，但顾客购买、退货与谈判结果由确定性模型模拟，不是真实线上经营。",
+    "evidence": [
+      "基准让 Agent 在 365 天内同时经营多家网店，并覆盖市场研究、供应商谈判、库存、销售、履约、退货和现金流。",
+      "全年日历加入促销、自然灾害和供应链冲击，客户需求与供应商谈判由确定性模型控制。",
+      "共评估 18 个前沿模型；GPT-5.6 Sol 年末资产最高，但防欺诈排名第 16。"
+    ]
+  },
+  {
+    "id": "symbolic-structure",
+    "section": "papers",
+    "label": "研究者从神经网络里提取出可干预的符号结构",
+    "url": "https://arxiv.org/abs/2608.29530",
+    "body": "他们用一条封闭形式的公式近似网络生成内部表征的过程，替换后模型行为大体不变。直接改动这些表征时，大模型在算术、逻辑、代码和语言任务上的行为也会定向改变。",
+    "note": "核实通过。证据来自论文摘要，覆盖小型列表操作网络和处理四类任务的大语言模型；这是对内部表征的符号近似与干预证据，不能泛化成所有神经网络都已被完整解释。",
+    "evidence": [
+      "作者称可用实现符号结构的封闭形式方程替换网络的整个表征生成过程，行为仍大体不变。",
+      "结果覆盖小型列表操作网络，以及算术、逻辑、代码和语言四个领域的大语言模型。",
+      "作者通过精确干预内部表征定向改变模型行为，用以支持模型确实依赖所识别的结构。"
+    ]
+  },
+  {
+    "id": "nori-robotics",
+    "section": "brief",
+    "label": "NORI A3 双臂机器人定价 1688 美元，计划秋季发货",
+    "url": "https://www.norirobotics.com/",
+    "note": "核实通过。官网称每条手臂为 7＋1 自由度、负载 1.5 千克，续航 6 至 8 小时，在旧金山组装；目前是下单页面，只能写计划 2026 年秋季发货，不能写已经交付。",
+    "evidence": [
+      "官网标价 1688 美元，全款且无需订金。",
+      "官网写明 Ships Fall 2026。",
+      "官网列出双臂、四个 720p 摄像头、激光雷达和 6 至 8 小时续航。"
+    ]
+  },
+  {
+    "id": "alignment-journal",
+    "section": "brief",
+    "label": "AI 对齐期刊开始邀稿并招募编辑、审稿人",
+    "url": "https://www.lesswrong.com/posts/9vm2wtAtb34pEkjje/the-alignment-journal-organization-personnel-and-scope",
+    "note": "核实通过。期刊目前只邀请选定论文投稿，同时开放行动编辑和审稿人注册，计划十月向所有人开放投稿；偏重能脱离特定模型或基准仍成立的理论与原则性结论。",
+    "evidence": [
+      "公告称期刊开始邀请选定论文作者提交评审，并邀请行动编辑和审稿人注册。",
+      "计划在十月某个时间向所有人开放投稿。",
+      "范围强调智能系统的理解、预测和引导，并明确单纯基准或数据集论文通常会被拒。"
+    ]
+  },
+  {
+    "id": "pauseai-split",
+    "section": "brief",
+    "label": "PauseAI 宣布与 PauseAI US 现任领导层切割",
+    "url": "https://www.lesswrong.com/posts/Bs8geGyWEitYvCzys/pauseai-has-officially-disendorsed-pauseai-us",
+    "note": "核实通过，但只核到 PauseAI CEO 在邮件中的单方正式口径，未读到 PauseAI US 的正式回应。PauseAI 称两者是独立组织，将停止优先协调和支持现任领导层，并直接接纳美国志愿者；不能写成 PauseAI US 分支被总组织除名。",
+    "evidence": [
+      "帖子完整粘贴署名 PauseAI CEO Maxime Fournes、日期为 2026 年 9 月 1 日的邮件。",
+      "邮件明确写道 PauseAI officially disendorses current PauseAI US leadership。",
+      "邮件称今后不再优先协调或支持 PauseAI US，并强调 PauseAI 对该独立组织没有管辖权。"
+    ]
+  },
+  {
+    "id": "fal-live",
+    "section": "fun",
+    "label": "观众可以投票决定 AI 直播下一步演什么",
+    "url": "https://fal.live/",
+    "body": "页面把大家接进 MiniMax H3 的导演频道，下一幕由正在看的人一起决定。",
+    "note": "核实通过，但抓取文本较薄，只足以确认这是由所有观众共同导演的 AI 电视、观众决定下一步并连接投票；未从该文件核到候选所称的无限生成、上下文延续方式或故障表现，因此正文不写。",
+    "evidence": [
+      "页面标题为 AI television directed by everyone。",
+      "直播界面写有 You decide what happens next。",
+      "页面显示 MiniMax H3 Director 频道和连接投票状态。"
+    ]
+  },
+  {
+    "id": "dwarf-fortress-ai",
+    "section": "fun",
+    "label": "Dwarf Fortress 不许再把矮人行为叫 AI",
+    "url": "https://simonwillison.net/2026/Sep/1/tarn-adams/",
+    "body": "联合创作者 Tarn Adams 抱怨这两个字母已经被拿走了，以后只能研究矮人行为，以及它们偶尔为什么行为不端。",
+    "note": "核实通过。内容是 Simon Willison 收录的 Tarn Adams 原话，属于创作者调侃。",
+    "evidence": [
+      "Tarn Adams 原话称 They took the letters from me。",
+      "他接着说不能再谈 dwarf AI，只能谈 dwarf behavior，以及矮人偶尔会 misbehave。",
+      "页面标明 Tarn Adams 是 Dwarf Fortress 联合创作者。"
+    ]
+  },
+  {
+    "id": "direct2d-claude",
+    "section": "fun",
+    "label": "Claude 写了十八万行图形兼容代码，作者根本审不完",
+    "url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+    "body": "Paint.NET 为 WINE 做了一套从零重写的 Direct2D。作者说 Claude 有时像十个天才程序员，有时连引用计数都得有人盯着。",
+    "note": "核实通过。十八万行为 Paint.NET 内部、用于 WINE 的 Direct2D 洁净室逆向重写；作者明确称大部分代码没有经过彻底审查，并举出资源管理和架构错误。",
+    "evidence": [
+      "Paint.NET 作者 Rick Brewster 称项目内置了一套用于 WINE 的 Direct2D 从零洁净室重写，由 Claude 编写。",
+      "他称无法审查 180000 行代码，而 Paint.NET 其余代码约 700000 行、积累二十多年。",
+      "他同时说 Claude 有时像十个天才程序员，有时需要人监督 COM 引用计数和糟糕的设计决定。"
+    ]
+  },
+  {
+    "id": "movie-scene-map",
+    "section": "fun",
+    "label": "一张地图标出一万五千多个真实拍摄地",
+    "url": "https://moviescenemap.com/",
+    "body": "它用 Wikidata 串起 9287 部电影和剧集的片场、城堡、街道与自然景观，也把游戏、动漫和漫画按故事发生地放上地图。",
+    "note": "核实通过。页面当前显示 15565 个真实拍摄地、覆盖 166 个国家；此前候选里的 13312 部作品不是页面当前数字。游戏、动漫和漫画没有拍摄地，网站明确按故事设定地展示。",
+    "evidence": [
+      "首页当前写明 15565 个真实拍摄地，覆盖 166 个国家。",
+      "首页列出 9287 部电影和剧集、2153 款游戏、407 部动漫和 365 部漫画。",
+      "网站说明主体数据来自 Wikidata，游戏、动漫和漫画按故事发生地而非拍摄地放置。"
+    ]
+  },
+  {
+    "id": "weedout",
+    "section": "fun",
+    "label": "一个 Mac 扩展专门隐藏 YouTube 的 AI 视频",
+    "url": "https://masteranza.github.io/weedout/",
+    "body": "它直接读取 YouTube 自己的「Made with AI」标记，从首页、搜索、推荐、播放列表和 Shorts 里把对应视频藏起来。",
+    "note": "核实通过。产品售价 1.99 美元、支持 macOS 13 以上；识别完全依赖 YouTube 的披露标记，不会判断未标记内容是否由 AI 制作。抓取页没有直接写 Safari，因此标题只称 Mac 扩展。",
+    "evidence": [
+      "页面称会从首页、搜索、相关视频、播放列表和 Shorts 中过滤带 AI 标记的视频。",
+      "检测依赖 YouTube 自带的 Made with AI disclosure badge，不使用猜测或启发式判断。",
+      "页面称所有处理都在 Mac 本地完成，不需要账号，也不收集数据。"
+    ]
+  }
+]

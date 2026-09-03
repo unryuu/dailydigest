@@ -1,0 +1,81 @@
+URL: https://www.axios.com/2026/09/02/trump-ai-g20-innovation-summit
+FINAL: https://www.axios.com/2026/09/02/trump-ai-g20-innovation-summit
+TITLE: Trump's AI team fractures over strategy against G20 backdrop
+FETCHED: 2026-09-02 20:43:08
+============================================================
+4 hours ago
+-
+Technology
+Trump's AI team fractures over strategy against G20 backdrop
+Maria Curi
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Elon Musk speaks virtually during the G20 Innovation Ministerial on Tuesday. Photo: Cornell Watson/Bloomberg via Getty Images
+CHAPEL HILL, N.C. —
+Trump administration officials came to this week's G20 innovation
+summit
+to project a united front on U.S.
+AI
+leadership. But tensions between the Commerce Department and the White House's tech policy shop are playing out behind the scenes.
+Why it matters:
+The Trump administration wants the world to follow its lead on AI policy, even as it grapples with divisions at home.
+Driving the news:
+The G20 Innovation Ministerial on Tuesday and Wednesday features some of the tech industry's heaviest hitters and officials from the world's most powerful countries.
+Officials and executives pitched the U.S. as a model for other countries on AI, contrasting its lighter regulatory approach with the European Union's heavier hand.
+White House Office of Science and Technology Policy Director Michael Kratsios credited U.S. AI progress to "flexible policy frameworks" that encourage private investment and provide regulatory clarity.
+The intrigue:
+The Commerce Department and OSTP are
+jockeying for influence
+over the administration's AI policy agenda. Key regulatory decisions remain unsettled as the U.S. tries to present a clear message abroad.
+"This is fake news," a White House spokesperson told Axios. "The President's team is working closely together to showcase American leadership on the world stage as this year's G20 hosts."
+"Commerce and OSTP are jointly leading a productive and successful G20 Innovation Summit."
+Behind the scenes:
+The summit's first day highlighted the divide between OSTP and Commerce, including how they view each other and an apparent messaging miscue over data centers.
+Commerce holds many of the administration's most important AI policy levers, including the Bureau of Industry and Security and the Center for AI Standards and Innovation.
+A source familiar with the administration's thinking described OSTP as a shop of "thinkers" without the regulatory authorities wielded by Commerce.
+The divide was also visible in the summit's programming: Kratsios spearheaded Tuesday's agenda, speaking virtually with Elon Musk, Google DeepMind
+chair
+Demis Hassabis and Meta CEO Mark Zuckerberg.
+Commerce Secretary Howard Lutnick will take center stage on Wednesday, hosting fireside chats with Nvidia CEO Jensen Huang, OpenAI CEO Sam Altman, Anthropic co-founder Tom Brown and Palantir CEO Alex Karp.
+In an interview with Axios' Mike Allen,
+Lutnick emphasized that his guests will appear in person.
+"I tried to bring deeply interesting people, but only in person," Lutnick told Axios.
+"Everybody offers to come on video. But come on! If you're not gonna get on the plane and come and join where the top 20 countries of the world are, that's OK."
+"We're one team,"
+Kratsios told reporters on Tuesday.
+A source familiar with the administration's thinking said Musk would have made the trip had there been better coordination leading up to the summit. Another source disputed that characterization, saying that Musk had been confirmed as a virtual participant for three weeks and his team consistently opted for that format.
+Tension point:
+The apparent lack of coordination between OSTP and Commerce spilled into the summit's messaging on data centers, a fraught political issue for the administration.
+Kratsios raised data centers during his chat with Musk, despite plans to avoid the topic at the summit following President Trump's "
+let Data Reign
+" Truth Social post, a source familiar with the administration's thinking said.
+The source said officials wanted to avoid the
+issue
+because it has become a midterm flashpoint and Chinese representatives were in the audience.
+Kratsios later echoed Trump's
+position
+, telling reporters that data centers are ultimately a "community decision" that can bring local benefits if providers supply their own power.
+The big picture:
+The U.S. is pushing other countries to hold off on AI regulation, even as the Trump administration debates its own
+approach
+to overseeing the most advanced models.
+The White House has finalized but not
+publicly
+released a
+framework
+for reviewing some frontier models before deployment.
+The administration is still debating key pieces of its approach to AI regulation, including a proposed FINRA-like regulatory body for AI, and a replacement for former President Biden's AI
+diffusion rule
+governing the export of advanced AI chips and models.
+What they're saying:
+Leading up to the summit, a White House official
+told
+Reuters that "the U.S. will ​press member countries not to set ​up new regulatory organizations to oversee ⁠AI development."
+David Sacks
+, an outside adviser to Trump on AI, said he opposed the creation of a new regulatory body for AI. "There's already, I think, a thicket of laws that apply to AI," Sacks said in his virtual address to G20 ministers.
+The bottom line:
+The future of AI regulation on a global scale is playing out amid D.C. power struggles.
+Add Axios on Google
+What to read next

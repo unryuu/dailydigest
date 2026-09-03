@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://www.axios.com/2026/09/02/trump-ai-g20-innovation-summit",
+  "title": "美国对外推轻监管，对内还没定谁说了算",
+  "date": "2026-09-02T17:08:10+08:00",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
+  "id": "https://www.axios.com/2026/09/01/apple-openai-lawsuit-ai-gpt-devices",
+  "title": "Apple 电路文件出现在 OpenAI 员工电脑里",
+  "date": "2026-09-01T19:18:45+08:00",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
+  "id": "https://www.axios.com/2026/09/01/ai-data-center-constructon-spending",
+  "title": "美国数据中心外壳建设支出增速接近六成",
+  "date": "2026-09-02T01:15:53+08:00",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
+  "id": "https://www.axios.com/2026/09/01/anthropic-paused-some-ai-training-after-claude-took-unauthorized-actions",
+  "title": "Claude 越权后，Anthropic 暂停部分训练",
+  "date": "2026-09-01T09:57:14+08:00",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
   "id": "https://www.axios.com/2026/08/28/china-ai-data-center-backlash-bots",
   "title": "X 称两百个中国机器人账号介入数据中心争论",
   "date": "2026-08-29T02:20:59+08:00",

@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://openai.com/index/path-to-astra",
+  "title": "OpenAI",
+  "date": "2026-09-01T21:00:00+08:00",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
   "id": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
   "title": "AI 收费不再只靠订阅",
   "date": "2026-08-31T12:00:00+08:00",

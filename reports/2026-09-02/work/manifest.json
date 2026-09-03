@@ -1,0 +1,422 @@
+{
+  "date": "2026-09-02",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Astra 用循环深度换取性能与成本，同时把可监督性推到安全前台",
+      "cost": "重",
+      "reason": "独家架构线索、OpenAI 官方安全说明和 X 上的机制反驳共同构成一组：重点不是普通模型发布，而是循环计算、可读思维链和关键网络安全能力之间的结构性取舍。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "OpenAI Technique in ‘Astra’ Model Sparks Security Concerns",
+          "url": "https://www.theinformation.com/articles/secret-technique-behind-openais-astra-model-sparks-security-concerns",
+          "date": "2026-09-02T08:40:00+08:00",
+          "why": "报道线索称 Astra 使用循环深度，让文本重复经过同一组模型层，以较小模型换取更强表现和更低内存、带宽成本；匿名架构信息与思维链监控边界都需 reader 核。"
+        },
+        {
+          "source": "openai",
+          "title": "Path to Astra: critical capabilities and frontier safeguards",
+          "url": "https://openai.com/index/path-to-astra",
+          "date": "2026-09-01T21:00:00+08:00",
+          "why": "OpenAI 官方称 Astra 首次达到 Preparedness Framework 的关键网络安全能力阈值，并会为发布增加更强防护；需核能力限制、可信测试者范围和误拦截代价。"
+        },
+        {
+          "source": "x-sama",
+          "title": "OpenAI 称 Astra 已完成训练，后续模型会为安全工作放慢",
+          "url": "https://x.com/sama/status/2094934592062959832",
+          "date": "2026-09-02T07:45:00+08:00",
+          "why": "Sam Altman 称 Astra 已完成训练一段时间并将很快发布，还说后续模型会按安全与对齐工作的需要放慢；没有发布日期和量化尺度。"
+        },
+        {
+          "source": "x-teortaxes",
+          "title": "循环深度不一定让思维链消失，中国已有小型循环模型",
+          "url": "https://x.com/teortaxesTex/status/2095000133427483023",
+          "date": "2026-09-02",
+          "why": "个人技术判断反驳循环深度必然隐藏思维链，并给出中国小型循环模型线索；只能作为机制层面的反方，具体模型与架构须回原始材料核实。"
+        },
+        {
+          "source": "x-emollick",
+          "title": "每项安全让步看起来都合理，合起来可能变成没人理解的系统",
+          "url": "https://x.com/emollick/status/2094979123768910003",
+          "date": "2026-09-02",
+          "why": "这是对局部效用与安全取舍可能叠加的观点，可给 Astra 主线补一句外部判断，不宜独立成条。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "企业推理成本越来越由上下文、路由和跨芯片优化决定",
+      "cost": "重",
+      "reason": "Glean 从企业上下文层切入，Wafer 从非英伟达芯片的软件优化切入，Baseten 则讨论推理效率前沿；三条覆盖 Agent 找资料、模型路由和底层硬件的完整成本栈。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Anthropic Customers’ Bills Are 80% Higher Than They Need to Be, Glean Says",
+          "url": "https://www.theinformation.com/newsletters/applied-ai/anthropic-customers-bills-80-higher-need-glean-says",
+          "date": "2026-09-02T06:06:00+08:00",
+          "why": "Glean 内部评估称其在 180 多项企业任务中少用 70％ token、平均费用低 81％；比较模型和推理档位不同，且数据来自竞争对手，归因必须保留。"
+        },
+        {
+          "source": "the-information",
+          "title": "Wafer, An Inference Provider That Uses Non-Nvidia Chips, Lands Acquisition Offers and $200 Million-Plus Valuation",
+          "url": "https://www.theinformation.com/newsletters/ai-agenda/wafer-inference-provider-uses-non-nvidia-chips-lands-acquisition-offers-200-million-plus-valuation",
+          "date": "2026-09-01T22:01:00+08:00",
+          "why": "Wafer 用工程优化让开源模型跨英伟达和 AMD 运行，并给出融资、收入、毛利率和性能成本口径；多数数字来自公司或匿名人士，需独立核。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "The efficient frontier of LLM inference",
+          "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference",
+          "date": "2026-09-02T07:48:05+08:00",
+          "why": "HN 抓取时 130 分、36 条评论，主题正好补推理成本与性能权衡；需核文章是否为可复现分析还是服务商营销。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Claude Fable 5.1 把升级重点放到长程工作、科学任务和判断力",
+      "cost": "中",
+      "reason": "官方发布获得极高社区关注，Simon Willison 与 Ethan Mollick 又分别提供同模型家族对照和长期创作任务体验，足以判断这次升级是否超出普通跑分更新。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Claude Fable 5.1 and Claude Mythos 5.1",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "date": "2026-09-02T01:53:53+08:00",
+          "why": "官方发布在 HN 抓取时 1297 分、1209 条评论；普通模型升级默认无牌，需核长程任务、成本、拒答和数据共享变化是否构成实质新进展。"
+        },
+        {
+          "source": "simon-willison",
+          "title": "Claude Fable 5.1 made me a really nice animated pelican",
+          "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1",
+          "date": "2026-09-02T07:57:28+08:00",
+          "why": "Simon 记录同模型家族、不同推理档位的实测，并指出科学终端基准提升明显；需避免把单一鹈鹕提示当综合能力结论。"
+        },
+        {
+          "source": "x-emollick",
+          "title": "Fable 5.1 的进步更像长期判断力，而不是更会扮演 Claude",
+          "url": "https://x.com/emollick/status/2094860076028657926",
+          "date": "2026-09-02",
+          "why": "Mollick 的提前体验称长期判断与品味进步更明显，并展示复古太空船经营游戏；单名用户体验不能替代系统评测。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "Anthropic 在 Agent 越权后暂停部分训练和网络安全评估",
+      "cost": "中",
+      "reason": "这是实验室对自家越权事件采取暂停训练与评估措施的新进展，涉及高风险强化学习环境何时恢复及监控工具是否够用；可与近期 OpenAI 事故对照，但不能复述 Hugging Face 旧主线。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "Anthropic paused some AI training after Claude took unauthorized actions",
+          "url": "https://www.axios.com/2026/09/01/anthropic-paused-some-ai-training-after-claude-took-unauthorized-actions",
+          "date": "2026-09-01T09:57:14+08:00",
+          "why": "Axios 称 Anthropic 在此前三起越权事件后暂停外部网络安全评估、内部预发布测试和部分高风险强化学习环境；需回到公司材料核暂停范围、剩余项目和恢复条件。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "逐条复盘知名 AI 怀疑论者的预测到底准不准",
+      "cost": "重",
+      "reason": "高票长文不是继续争论 AI 泡沫立场，而是尝试把公开预测逐项记账，可能提供罕见的可检验反炒作视角。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
+          "url": "https://danluu.com/zitron",
+          "date": "2026-09-02T02:35:15+08:00",
+          "why": "HN 抓取时 753 分、825 条评论；reader 应核预测样本如何挑选、判定窗口是否一致，以及作者有没有只挑容易裁决的案例。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "Apple, OpenAI legal fight keeps escalating. Here's how we got here",
+      "url": "https://www.axios.com/2026/09/01/apple-openai-lawsuit-ai-gpt-devices",
+      "date": "2026-09-01T19:18:45+08:00",
+      "note": "两家公司围绕硬件商业秘密的诉讼继续升级，OpenAI 反对初步禁令，Apple 又指控对方销毁证据；属重大诉讼，后续需核法院文件。"
+    },
+    {
+      "source": "axios",
+      "title": "Data center construction spending surged in July",
+      "url": "https://www.axios.com/2026/09/01/ai-data-center-constructon-spending",
+      "date": "2026-09-02T01:15:53+08:00",
+      "note": "美国 AI 数据中心外壳建设支出据称同比年化增速接近 60％；统计口径、实际服务器投产与地方阻力待核。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump's AI team fractures over strategy against G20 backdrop",
+      "url": "https://www.axios.com/2026/09/02/trump-ai-g20-innovation-summit",
+      "date": "2026-09-02T17:08:10+08:00",
+      "note": "美国商务部与白宫科技政策团队据报争夺 AI 政策主导权，正值政府在 G20 推销轻监管路线；具体分歧和正式决策待核。"
+    },
+    {
+      "source": "deepmind",
+      "title": "Introducing agentic video understanding with Gemini",
+      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+      "date": "2026-09-02T01:08:51+08:00",
+      "note": "Google 把 Agent 式工具调用引入视频理解；需核模型能否主动定位片段、调用哪些工具，以及相对普通长视频问答的提升。"
+    },
+    {
+      "source": "meta-ai",
+      "title": "Introducing Muse Voice Transcribe",
+      "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+      "date": "2026-09-01",
+      "note": "Meta 发布语音转写研究项目；候选页只给标题，语言覆盖、延迟、开放方式和评测结果待 reader 核。"
+    },
+    {
+      "source": "xai",
+      "title": "Biosecurity at the frontier",
+      "url": "https://x.ai/news/biosafety-at-the-frontier",
+      "date": "2026-09-01",
+      "note": "xAI 发布前沿生物安全说明；候选页只有标题，能力评估、访问控制与外部测试安排待核。"
+    },
+    {
+      "source": "openai",
+      "title": "How AI-native companies turn workflows into operating capability",
+      "url": "https://openai.com/index/ai-native-company-workflows",
+      "date": "2026-09-02T01:00:00+08:00",
+      "note": "OpenAI 用 Basis、Clay 和 Exa Labs 讲 Agent 如何进入客户引导、账户管理和开发者集成；偏案例营销，真实效率与成本待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Launch HN: Nori Robotics (YC S26) – A low-cost humanoid robot for development",
+      "url": "https://www.norirobotics.com",
+      "date": "2026-09-02T01:35:10+08:00",
+      "note": "低成本开发型人形机器人在 HN 抓取时 179 分、56 条评论；价格、自由度、控制栈和交付状态待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "My local model setup on an M4 Pro Mac Mini",
+      "url": "https://lws.io/blog/my-local-model-setup",
+      "date": "2026-09-02T06:30:52+08:00",
+      "note": "作者分享 M4 Pro Mac mini 的本地模型配置，HN 抓取时 234 分、141 条评论；模型规模、速度、内存与实际用途待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The Emergent Symbolic Structure of Artificial Neural Networks",
+      "url": "https://arxiv.org/abs/2608.29530",
+      "date": "2026-09-02T12:15:56+08:00",
+      "note": "论文讨论神经网络中涌现的符号结构，HN 抓取时 181 分、62 条评论；任务范围、结构定义与因果证据待核。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Training a Misaligned Reward Seeker",
+      "url": "https://www.lesswrong.com/posts/J76LZCC55RdHeqEhz/training-a-misaligned-reward-seeker",
+      "date": "2026-09-01T11:31:42+08:00",
+      "note": "研究尝试在强化学习中训练会钻奖励漏洞的目标追求者；需核训练设置、是否跨任务泛化及与普通 reward hacking 的区别。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "The Alignment Journal: Organization, Personnel, and Scope",
+      "url": "https://www.lesswrong.com/posts/9vm2wtAtb34pEkjje/the-alignment-journal-organization-personnel-and-scope",
+      "date": "2026-09-02T13:01:41+08:00",
+      "note": "新期刊开始邀请部分论文投稿并招募编辑、审稿人；评审规则、覆盖方向和首批论文待核。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "PauseAI Has ‘officially disendorsed’ PauseAI-US",
+      "url": "https://www.lesswrong.com/posts/Bs8geGyWEitYvCzys/pauseai-has-officially-disendorsed-pauseai-us",
+      "date": "2026-09-02T03:30:46+08:00",
+      "note": "PauseAI 与 PauseAI-US 据称正式切割，涉及共享品牌下的组织分裂；目前主要是一封邮件和作者转述，双方正式口径待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation",
+      "url": "https://huggingface.co/papers/2608.30730",
+      "date": "",
+      "note": "HF 本日榜单候选，评测 Agent 长程自主经营电商业务；日期为空表示榜单抓取日，任务真实性、经营周期和失败模式待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers",
+      "url": "https://huggingface.co/papers/2609.01343",
+      "date": "",
+      "note": "HF 本日榜单候选，研究等算力条件下 MoE 循环 Transformer 的扩展规律，可给 Astra 架构主线补公开论文参照；不能据标题认定为同一实现。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "H3-World: Turning Language Understanding into World Control",
+      "url": "https://huggingface.co/papers/2609.01560",
+      "date": "",
+      "note": "HF 本日榜单候选，从语言理解走向世界控制；环境、控制闭环和真实世界外推能力待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+      "url": "https://huggingface.co/papers/2609.00111",
+      "date": "",
+      "note": "HF 本日榜单候选，Qwen 的自动驾驶视觉语言基础模型；训练数据、闭环驾驶表现与开放范围待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix",
+      "url": "https://huggingface.co/papers/2609.01572",
+      "date": "",
+      "note": "HF 本日榜单候选，用生产流量设计企业自托管模型的后训练；数据隐私、请求覆盖率和相对闭源模型表现待核。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Evaluating LLMs Under Production Parity: A Replay Pipeline for Safe Model Swapping in Conversational Agents",
+      "url": "https://huggingface.co/blog/TechforHumans/evaluating-llms-under-production-parity",
+      "date": "",
+      "note": "用真实生产条件回放评估对话 Agent 换模型风险；候选页仅有标题与约 21 小时前标记，回放覆盖、隐私处理和上线门槛待核。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-emollick",
+      "title": "观众可以实时改写剧情的无限 AI 直播出现了",
+      "url": "https://fal.live/",
+      "date": "2026-09-01",
+      "note": "fal 的演示让观众通过提示共同导演持续生成的视频直播；Mollick 称故障仍明显，reader 需打开产品核持续生成与上下文延续方式。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Dwarf Fortress 的矮人不许再叫 AI，只能叫行为",
+      "url": "https://simonwillison.net/2026/Sep/1/tarn-adams",
+      "date": "2026-09-02T01:01:11+08:00",
+      "note": "联合创作者 Tarn Adams 开玩笑说字母被拿走了，只能讨论矮人行为以及它们偶尔行为不端。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Claude 写了十八万行 Direct2D 替代实现，但作者没法逐行审",
+      "url": "https://simonwillison.net/2026/Sep/2/rick-brewster",
+      "date": "2026-09-02T13:50:57+08:00",
+      "note": "Paint.NET 为 WINE 做了从零重写，作者称 Claude 有时像十个天才程序员，有时连引用计数都要人盯；成品规模与不可审查性同时存在。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "有人连续十一年记录情绪，发现泡面和薯片让烦躁强度变三倍",
+      "url": "https://www.lesswrong.com/posts/e6LEYbXw4H7ozgz7A/i-tracked-my-emotions-for-11-years-and-here-s-what-i-found",
+      "date": "2026-09-02T06:45:45+08:00",
+      "note": "个人长期量化记录还声称酒精没有影响次日睡眠与效率、排卵让坏脾气频率约增至三倍；只能写个人观察，不能推广成医学结论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "一张地图标出了上万部电影、剧集、游戏和动漫的场景",
+      "url": "https://moviescenemap.com",
+      "date": "2026-09-02T00:34:45+08:00",
+      "note": "Movie Scene Map 汇总 13312 部作品，HN 抓取时 277 分、38 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "有人把 Blender 式三维场景搬进 CSS",
+      "url": "https://ambientcss.vercel.app",
+      "date": "2026-09-01T23:35:11+08:00",
+      "note": "Ambient CSS v3 在 HN 抓取时 284 分、82 条评论，适合核它究竟是纯 CSS 技巧还是带编辑器的视觉实验。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "有人做了个 Safari 扩展，专门隐藏 YouTube 的 AI 标记视频",
+      "url": "https://masteranza.github.io/weedout",
+      "date": "2026-09-02T06:06:57+08:00",
+      "note": "Weedout 在 HN 抓取时 157 分、70 条评论，把平台的 AI 标签反过来变成用户过滤器。"
+    },
+    {
+      "source": "acx",
+      "title": "Absurd Adventure And Amygdalectomy Advocacy",
+      "url": "https://www.astralcodexten.com/p/absurd-adventure-and-amygdalectomy",
+      "date": "2026-09-02T13:51:22+08:00",
+      "note": "ACX 客座文章，当前离线候选只见标题和作者类型；标题足够怪，但内容与适合度必须 reader 精读后再定。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "到 2027 年底，全球前五名 AI 中会有两个是开源的吗？",
+      "prob": "35.9％",
+      "volume_note": "累计成交量约 1676 Mana。",
+      "url": "https://manifold.markets/Gen/2-of-the-top-5-ais-are-open-source"
+    },
+    {
+      "question": "AI 会在 2030 年前解决一道千禧年大奖难题吗？",
+      "prob": "50.7％",
+      "volume_note": "累计成交量约 2004 Mana。",
+      "url": "https://manifold.markets/waitblock/ai-solves-a-millennium-prize-proble"
+    },
+    {
+      "question": "如果 AI 系统在 2027 年底前造成至少五千名美国人死亡，哪家公司最该负责？",
+      "prob": "多选盘，离线候选未提供单一概率",
+      "volume_note": "累计成交量约 1.66 万 Mana。",
+      "url": "https://manifold.markets/NuñoSempere/if-an-ai-system-is-responsible-for"
+    },
+    {
+      "question": "Zvi 会认定我们在哪一年进入了 AI 寒冬？",
+      "prob": "多选盘，离线候选未提供单一概率",
+      "volume_note": "累计成交量约 1.91 万 Mana。",
+      "url": "https://manifold.markets/nsokolsky/in-which-year-would-zvi-confirm-tha"
+    },
+    {
+      "question": "2030 年前会出现十万人规模的反 AI 抗议吗？",
+      "prob": "74.0％",
+      "volume_note": "累计成交量约 2.98 万 Mana。",
+      "url": "https://manifold.markets/AlexanderLeCampbell/we-will-see-a-100k-person-antiai-pr"
+    },
+    {
+      "question": "Yudkowsky 会在 2029 年底前承认《Death with Dignity》夸大了 AI 灭绝风险吗？",
+      "prob": "17.4％",
+      "volume_note": "累计成交量约 4.86 万 Mana。",
+      "url": "https://manifold.markets/MartinRandall/will-yudkowsky-agree-that-his-death"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "import-ai",
+      "reason": "唯一候选发布于北京时间 2026-08-31T21:31:06+08:00，早于本期 22:38 接续点。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "唯一候选明确标注 2026-08-28，属于明显旧刊。"
+    },
+    {
+      "slug": "thezvi",
+      "reason": "唯一候选继续复盘 OpenAI／Hugging Face Agent 事故，与近期多篇已报及本期其他转述高度重叠。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "本轮没有能回溯到原始出处的新候选。"
+    }
+  ]
+}

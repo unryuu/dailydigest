@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.30730",
+  "title": "Agent 被放进电商里经营整整一年",
+  "date": "2026-09-02",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.01343",
+  "title": "循环 Transformer 的扩展规律开始成形",
+  "date": "2026-09-02",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.27370",
   "title": "清华团队用消费级 RTX 5090 训练 20 亿参数模型",
   "date": "2026-08-31",

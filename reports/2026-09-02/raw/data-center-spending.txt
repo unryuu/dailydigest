@@ -1,0 +1,35 @@
+URL: https://www.axios.com/2026/09/01/ai-data-center-constructon-spending
+FINAL: https://www.axios.com/2026/09/01/ai-data-center-constructon-spending
+TITLE: Data center construction spending surged in July
+FETCHED: 2026-09-02 20:43:13
+============================================================
+19 hours ago
+-
+Economy
+Data center construction spending surged in July
+Matt Phillips
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Data: U.S. Census Bureau, FactSet
+Construction spending on AI
+data center
+"shells" soared in July, rising at an annualized rate of nearly 60% from July 2025 levels.
+Why it matters:
+It shows the AI building frenzy was gathering strength this summer, even as — or perhaps because — a
+bipartisan backlash
+grows.
+By the numbers:
+Data center construction spending jumped to an annual pace of more than $75 billion in July,
+Census Bureau data
+released Tuesday showed. That figure represents the value of the construction "put in place" during the month.
+It covers only the construction costs for the massive warehouse-like structures — often referred to as shells — that will be filled with racks of servers, processing units, memory chips and the fiber-optic connections that AI relies on.
+Reality check:
+Despite the gobsmacking amount of money being spent on data center construction, it's a pittance compared with what it costs to fill a data center with increasingly expensive processors and memory chips.
+Bottom line:
+Estimates peg construction at
+roughly 20%
+of all-in costs for a data center.
+Add Axios on Google
+What to read next

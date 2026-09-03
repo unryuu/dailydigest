@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/Bs8geGyWEitYvCzys/pauseai-has-officially-disendorsed-pauseai-us",
+  "title": "PauseAI 与美国组织现任领导层切割",
+  "date": "2026-09-02T03:30:46+08:00",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/9vm2wtAtb34pEkjje/the-alignment-journal-organization-personnel-and-scope",
+  "title": "AI 对齐期刊开始邀稿并招募编辑、审稿人",
+  "date": "2026-09-02T13:01:41+08:00",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/J76LZCC55RdHeqEhz/training-a-misaligned-reward-seeker",
+  "title": "强化学习能训练出会钻规则的目标追求者",
+  "date": "2026-09-01T11:31:42+08:00",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/2qDpf6Tvu7dxtRve7/persuasion-as-market-making",
   "title": "AI 可以靠寻找互利交易来说服人",
   "date": "2026-08-31T08:45:45+08:00",

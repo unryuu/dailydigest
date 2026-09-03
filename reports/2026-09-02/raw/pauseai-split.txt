@@ -1,0 +1,643 @@
+URL: https://www.lesswrong.com/posts/Bs8geGyWEitYvCzys/pauseai-has-officially-disendorsed-pauseai-us
+FINAL: https://www.lesswrong.com/posts/Bs8geGyWEitYvCzys/pauseai-has-officially-disendorsed-pauseai-us
+TITLE: PauseAI Has 'officially disendorsed' PauseAI-US — LessWrong
+FETCHED: 2026-09-02 20:41:36
+============================================================
+x
+PauseAI Has 'officially disendorsed' PauseAI-US — LessWrong
+AI
+Personal Blog
+164
+PauseAI Has 'officially disendorsed'
+PauseAI-US
+by
+nem
+1st Sep 2026
+10
+min read
+41
+164
+This morning, I got an email from the CEO of PauseAI. I will paste the text below. PauseAI has decided to distance themselves from PauseAI-US, with whom they share branding, but apparently not much else. This is a really confusing situation for volunteers and newcomers. I think it would be worth having a discussion to see how we can proceed in such a way that volunteers, especially in the US, are able to effectively direct their activism.
+Email from PauseAI:
+A letter from the CEO · 1 September 2026
+New ways to get involved, and a word about PauseAI US
+Dear friends,
+Thank you for being part of the global movement for a pause on uncontrollable AI alongside all of us.
+Whether you signed a petition one time, run a local group, told your friends about the need for a pause, have been volunteering tirelessly in the background for years, or just joined because you were curious, we – I, the CEO of PauseAI, our executive team, and our chapter leads – appreciate the steps you’ve taken towards making the world safe from the catastrophic risks AI brings.
+I’m writing to you today with my eyes firmly on our values and on the immense opportunities we have, together, to take decisive steps on the path to a pause, from wherever we all are in the world, united in this mission every day.
+I have two messages for you.
+We look forward to building more with you all, including those of you based in the US.
+PauseAI officially disendorses current PauseAI US leadership.
+We look forward to building more with you all, including those of you based in the US
+First, some context on where we are. As I wrote in Into the endgame, the catastrophic threats we predicted are no longer speculative. This summer, frontier AI systems organised into a swarm, broke out of the infrastructure that was meant to contain them, and autonomously ran a nation state level cyberattack on another AI company. The labs’ response was to patch the holes in the fence and carry on. The ground has shifted in response: over a thousand people working inside those labs have signed a letter calling for help with a slowdown, and a pause on frontier development is now being discussed seriously by people who would not have touched the idea a year ago. It is no longer a fringe demand.
+Our movement is growing to meet that moment. We have an organised presence in over seventeen countries, we are growing fast, and at this rate we hope to have a country group on every continent by the end of the year. PauseAI UK and PauseAI France are hiring! We are also starting to build continental networks so that chapters can work with those closest to them, beginning with PauseAI North America, which will host movement building across Canada, the US and Mexico. Whoever you are, you have more power than you think. You can be the starting point of a chain reaction, and our job is to make that as easy for you as we possibly can. If you want to lead the way in your own country, we would love to hear from you. There are many of you in countries where we do not have an organised presence. We especially receive a lot of interest from people based in the US.
+There is no PauseAI chapter in the US. Instead, we are building the infrastructure to give everyone in the PauseAI movement more options to make an impact both regionally and globally.
+We want to empower our volunteers and members across the US so they can take fulfilling and effective steps to make a pause happen, and empower other citizens in turn. For years, we directed people in the US to another organisation, PauseAI US. From today, we are welcoming you directly. We have tools you can use. We’re an open and friendly community. We want you to succeed in your peaceful advocacy. And of course, PauseAI US members are welcome as movement allies.
+Here’s what we currently have to offer you in support of your initiatives:
+Community calls for PauseAI members and supporters across North America. Two are coming up: Tuesday 15 September, 7pm Central (RSVP) and Saturday 19 September, 12pm Central (RSVP).
+Our tools. We’ve compiled a few of them on this page, tailored for people in the US since many of you are based there and we don’t have a chapter to direct you to. There are more we look forward to signposting you towards.
+Our community platforms and the chance to volunteer with us. Reach out if you want to get involved, either by asking in an upcoming community call or by joining the relevant Discord channels. You can also see all our platforms here.
+You can reach out to our organising director, Irina Tavera, at
+irina@pauseai.info
+if you want more guidance or support. We’re here for you. We’ve been building our global movement for years now and we’re thrilled to share our experience, infrastructure and community with you.
+2. PauseAI officially disendorses PauseAI US’ current leadership
+It’s time for me to make one thing clear: we have concerns about the current leadership of PauseAI US, an organisation which has grown in parallel to PauseAI, and which we believe has done some good work.
+Due to the shared branding we’ve inherited from our parallel development and our previous partnerships, most people assume we are one and the same organisation. Because of this, by default, most people expect that we endorse PauseAI US’ leadership, and we can’t let this tacit assumption continue, for two reasons:
+We have a responsibility not to condone what we see as harmful behaviour in the leadership of a movement that trusts us to act in line with our values.
+The issues we see in PauseAI US’ current leadership approach are undermining our entire movement’s reputation, and by the same token, our ability to work effectively towards our mission.
+Why do we disapprove of PauseAI US’ current leadership?
+Before I start answering this, I’ll state this fact: I do believe PauseAI US’s director has worked hard, and that she has a bright mind and a real talent with language. I believe she is genuinely concerned about AI risk and is doing what she thinks is right.
+I’ll now lay out a key reason for you, one which is in the public domain. The director of PauseAI US has engaged in repeated verbal attacks on numerous people. We endorse pointing out harmful actions. But we condemn attacks on people’s character.
+We lead a federation with an organised presence in over seventeen countries, and citizens of a vast number of countries who place enough trust in us to volunteer, donate, and spread the word. Our responsibility as leaders of a movement is stewardship, not ownership: authority that is on loan from the thousands of volunteers and partners who trust us to steer responsibly and in accordance with the movement’s values, rather than wherever we personally feel called. A movement whose power rests on civic trust and cooperation among actors with wildly different world views cannot have a spokesperson carrying out sustained personal attacks on individuals, publicly or privately. Those attacks damage the movement’s credibility, and everyone associated with the PauseAI name pays for them.
+By contributing to the frantic race to build uncontrollable, catastrophically dangerous superintelligent AI, the people working in or supporting the frontier AI industry are taking extremely irresponsible and reckless actions. We condemn these actions to the fullest extent, and we call on them to stop and join the rising global movement for a pause. I have said so publicly in my own name, and I intend to continue, as will PauseAI. We are just as committed to opposing the AI race as PauseAI US’ leader. The difference is our approach.
+We do not attack their character. We do not make humans the problem. The problem is their actions. Attacking people’s character is not aligned with our fundamental commitment to nonviolence, neither in principle, nor in the outcomes it generates. We will not win by vilifying the people we’re trying to bring to the table. We will also not build the wholesome, sustainable, broad-based, vibrant movement the world needs by running on an engine fuelled by personal drama and shaming.
+We will hold people accountable by highlighting how their actions are harmful and showing them a path to do better. We will not dehumanise them; we will not speculate on their intentions or character. Rather than using language as a weapon, we will use it as a tool to build understanding, respect, trust and cooperation.
+Important clarifications
+PauseAI US’ director claims, without evidence to support it, that we have benefited from their efforts significantly, even though she has also acknowledged that her actions have durably blocked our ability to access essential funding.
+For the avoidance of doubt, we expect this relationship was more beneficial for PauseAI US than for us: our website listed them on our communities map, invited prospective donors to give preferentially to PauseAI US if they were based in the US, and redirected US-based newcomers to PauseAI US. PauseAI US has not reciprocated this. We also listed PauseAI US on our chapters list, which PauseAI US didn’t want and which was an error rooted in our history of coordinating with PauseAI US; this has been fixed.
+As I have repeatedly attempted to convey to the director of PauseAI US, her adversarial stance towards many people and organisations, even some who agree with PauseAI US’ concerns and are largely aligned with their mission in principle, has in fact been very damaging for us and for the wider movement. We have had numerous exchanges with supporters and allies who are fully aligned with our mission, who have been following her public actions and have told us they simply cannot associate with us because of the ad hominem attacks which they’ve received or witnessed.
+We also have a strategic disagreement with PauseAI US’ leadership. A large part of the AI safety community has been powering the race by funding labs, sending talent to them, and paying for pretend safety research that gave the illusion of control. That’s not ok. But we think the AI safety community is beginning to change its mind and will put its weight behind a pause if we show them this is the better, viable path. We believe that making it easy for people with different views to come round is of immense strategic importance. PauseAI US’ leadership chooses to alienate people with different views.
+What changes now?
+Here’s what this means in practice: we will no longer prioritise efforts to coordinate with or support PauseAI US, as we did for a long time when we trusted their leadership, and as we would again if we had strong reasons to trust it again. We will make clear that our organisations are separate and that we have no say or responsibility when it comes to PauseAI US’ approach to leadership. We will also properly open our doors to people based in the US who want to be part of our community, whether or not you also support PauseAI US.
+Why are you spending time on this? Isn’t this just petty infighting?
+To those of you who find it distasteful for us to publicly disendorse the leadership of another organisation that’s working to tackle AI risk: this isn’t something we are doing lightly. For months, I have tried to engage with PauseAI US’ leadership, with patience and in good faith, to find ways to work together and build trust and understanding. That relationship is no longer one I believe can or should be repaired, because it would mean violating our values and putting our movement at risk. The director of PauseAI US has also taken steps which have been contravening our ability to operate, for example by weaponising confidential feedback we shared with her privately, and by acquiring the pauseai.com domain and redirecting it at the PauseAI US website.
+It is hard to put numbers on the wasted energy, withheld funding, and strain on our team which this whole situation has generated. It is time for the next chapter. You are all free to engage with PauseAI US as you see fit, of course, but I will not let you believe that we endorse behaviours which undermine our values and our movement.
+As a last step in trying to resolve the situation, I have called for a change in leadership, which was rejected by the director, who also presides over the board. To be clear, PauseAI has no authority over PauseAI US, and what its leader decides is a matter between them and the authorities governing them. But I asked, because that was the best I could do.
+What do national PauseAI leads say about this?
+We’ve shared as much information as we could about the situation with our national leads. It is a delicate situation, and we’re aware that the director of PauseAI US may say a lot of things in response to this public expression of no-confidence on our part. She has already, repeatedly, made accusations towards our organisation which I sincerely believe, to the best of my knowledge and investigation, to be entirely baseless.
+We shared our decision to take this step with our national leads, and the overwhelming majority either raised no objections or actively expressed support. At the request of PauseAI US’ director, we also forwarded her response to my call for a change in leadership, which did not change their position.
+Make no mistake: there’s going to be chaos ahead. There’s going to be actors who will try all kinds of ugly tactics to get their personal agenda to win over humanity’s interests. It’s up to us to be the force for unity, respect and hope the world needs more than ever.
+If you have questions about any of this, please write to us at
+info@pauseai.info
+. We will do our best to answer.
+Thank you for reading this long message, friends. Let’s take courage and move onward and upward together. We’re getting stronger every day, and the path ahead awaits.
+Maxime Fournes
+CEO, PauseAI
+PauseAI Has 'officially disendorsed' PauseAI-US
+71
+Eliezer Yudkowsky
+63
+Ben Pace
+13
+Eli Tyre
+14
+Matt Vincent
+8
+WillPetillo
+6
+Trinley Goldenberg
+12
+Ben Pace
+11
+Eli Tyre
+3
+Kaj_Sotala
+46
+yams
+11
+Eli Tyre
+5
+Shankar Sivarajan
+4
+Ben Pace
+4
+Shankar Sivarajan
+4
+Eli Tyre
+5
+XelaP
+43
+Liron
+29
+TsviBT
+7
+kman
+4
+TsviBT
+3
+Carringtone Kinyanjui
+24
+Satya Benson
+10
+Matt Vincent
+13
+habryka
+13
+Dylan Xu
+4
+JennaS
+11
+habryka
+1
+ashesfall
+6
+peter_hartree
+3
+Spective
+2
+Richard_Kennaway
+6
+leogao
+6
+Dmitry Vaintrob
+13
+WillPetillo
+3
+WillPetillo
+2
+Eli Tyre
+1
+Matt Vincent
+-5
+Joey Yudelson
+24
+MichaelDickens
+6
+Joey Yudelson
+2
+Shankar Sivarajan
+41
+Comments
+41
+AI
+Personal Blog
+164
+New Comment
+41 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 12:41 PM
+[
+-
+]
+Eliezer Yudkowsky
+15h
+71
+57
+No, it is not "petty infighting"; so far as I currently know, PauseAI are okay people, and they have legit reasons for needing to
+severe
+ties with "PauseAI US".
+Reply
+6
+1
+[
+-
+]
+Ben Pace
+15h
+*
+63
+41
+It is important to acknowledge that the relationship has broken down, and this seems to me like a positive update about the health of PauseAI. Elmore has repeatedly been unable to build alliances; I recall after the first protest co-organized with Liron Shapira, who did a great job with speeches and chants and taking the microphone, she declared she would not work with him again, and she has managed to alienate many of her would-be allies.
+I must however critique your principles:
+We do not attack their character. We do not make humans the problem. The problem is their actions. Attacking people’s character is not aligned with our fundamental commitment to nonviolence, neither in principle, nor in the outcomes it generates. We will not win by vilifying the people we’re trying to bring to the table.
+We will also not build the wholesome, sustainable, broad-based, vibrant movement the world needs by running on an engine fuelled by personal drama and shaming.
+I agree that prejudicial and ignorant accusations about people's character is very costly, and I can believe that you do not believe yourself capable of maintaining the ethics of a movement that critiques people's character—i.e. that there will be too much mud-slinging and so you are throwing all of it out. But it is critically important to talk about their character on the large stage.
+Suppose PauseAI is very successful: you hold a lot of protests requesting a pause that puts pressure on some government, and OpenAI CEO Sam Altman proposes a deal with you and the government to pause training runs in their country, it is important for you to say "Hm, there have been many documented cases of him lying, I do not trust him to keep to his agreements here, we need stronger checks/controls on his compute in this country".
+It is not possible to avoid assessments of character without becoming a sucker in high-stakes negotiations.
+Reply
+[
+-
+]
+Eli Tyre
+14h
+13
+7
+But it is critically important to talk about their character on the large stage.
+I think maybe individuals should speak of people's characters, but orgs shouldn't?
+When orgs say things, they become party lines, large numbers of people parrot. And because no person can know the mind or inner life of anyone else, it seems particularly bad for claims about people's character to become party lines.
+I definitely agree that we must be able to talk publicly about people's track records, and trustworthiness, but that's a tricky thing to do well.
+I think I would prefer if orgs stick clearly commenting on observations (eg "OpenAI's structure was explicitly designed so that the board could fire the CEO, but when that mechanism was triggered, the Sam remained CEO", and "Anthropic said XYZ, in their original RSP, but then later walked that back"), but leave judgements up to individuals (eg "I don't trust Sam Altman", "I think Dario is mainly motivated by power-seeking").
+Pause AI can verify the observations. Pause AI can't really speak to the judgements of all it's members, who surely have all kinds of different views (unless they do a survey or something, in which case, the results of the survey count as a verifiable observation).
+Reply
+[
+-
+]
+Matt Vincent
+11h
+14
+11
+Relevantly,
+Holly claims
+that these personal attacks are representative of the organization's views. (Search: "the founder is the startup".)
+Reply
+[
+-
+]
+WillPetillo
+11h
+8
+1
+I recall after the first protest co-organized with Liron Shapira, who did a great job with speeches and chants and taking the microphone, she declared she would not work with him again
+I suspect there is more to this particular story, given her recent appearance on Doom Debates:
+https://youtu.be/wOtgPgb6lGk?si=1Ajfix3y4nGz7zVF
+RE character attacks: not trusting Sam Altman to keep commitments based on prior actions isn't what's at issue here. See above video link for an exploration of what appears to be the crux (would normally give a tl;dr but this is a place where hard-to-summarize nuance is relevant).
+Reply
+1
+[
+-
+]
+Trinley Goldenberg
+15h
+6
+2
+Yeah, it was pretty surprising to me that the reason was attacks on people's characters, whereas to me the objectionable thing was attack on things OTHER than people's character and behavior (
+e.g. making fun of BeffJezos for being fat
+)
+Reply
+2
+1
+[
+-
+]
+Ben Pace
+15h
+12
+13
+I... was not aware of that. That's genuinely a new low if she did it, I'd have thought she had more self-respect than that. (Curious to see a link.)
+Myself, I had assumed that this meant Elmore was regularly opening (i.e. ending) discussions with flat statements that people are evil, hollow, devoid of care for their fellow man, self-serving, craven, and more. And, while there's definitely some degree of that, that just isn't required to commit an atrocity. The banality of evil, and all that.
+As well as awful people, there are also a lot of nice people at AI labs who you'd be friends with in other worlds
+. If she is doing this with prejudice, which, I basically believe she does, then she's just muddying the waters, adding tons of cruelty, and lowering the standards for ethical behavior in the domain of public discussion (where movements like PauseAI substantially operate).
+Reply
+1
+[
+-
+]
+Eli Tyre
+14h
+11
+10
+e.g. making fun of BeffJezos for being fat
+What? Did this happen?
+I agree making fun of people's appearance is basically always a good-discourse norms violation.
+Reply
+[
+-
+]
+Kaj_Sotala
+2h
+3
+1
+I must however critique your principles:
+This seems reasonable pushback. My guess is that what's being pointed at isn't literally "attacking people's character" but "you know, the whole thing that Elmore is doing and the way that she does it", but that's not something you can easily point at other than by describing it in lots of detail, which would look excessively personal and petty. And people also expect organizations to justify decisions like this in terms of more abstract principles. So then PauseAI has to phrase this in terms that are kind-of-pointing-at-the-thing while also painting with too broad of a brush, because trying to more precisely communicate the real crux/principle would be too costly.
+Reply
+[
+-
+]
+yams
+15h
+46
+46
+One of the two groups should officially rebrand as soon as possible.
+You're trying to court the general public, who will not look closely enough to distinguish between the two.
+Reply
+[
+-
+]
+Eli Tyre
+14h
+*
+11
+3
+Agreed, though if I were Pause AI (the international org), I would at least want to pause and consider the wisdom and ethics of re-branding to distance themselves from Pause AI US, if letting them keep the brand is effectively rewarding (what they regard as) bad behavior.
+On the other hand, in general, you should change the things that you have control over, and you don't have control over what other people and other orgs do. So if you think (reasonably!) that these two orgs need separate brands, it's good to make that happen via changing
+your
+brand.
+One possibly relevant consideration is that, depending on the diversity of their funding sources, it seems likely to me that Pause AI US will just die, for lack of funding. There's already a lot of discontent among a wide base of people with Holly's behavior. I don't think it would take very much for potential funders to demur because of the bad reputation, this might turn out to be the final straw.
+Reply
+1
+[
+-
+]
+Shankar Sivarajan
+12h
+5
+0
+If her behavior/reputation were genuinely counterproductive to the movement she's associated with, there would be no dearth of extremely deep pockets eager to be patrons.
+Reply
+3
+[
+-
+]
+Ben Pace
+7h
+4
+0
+I mean, she would not take their money, I'm pretty sure.
+Reply
+[
+-
+]
+Shankar Sivarajan
+6h
+4
+0
+their money,
+Whose money? These are donations from grassroots organizations like
+Americans for a Human Tomorrow,
+the
+North American Anti-Clanker Phoundation,
+the
+San Francisco Neo-Luddite Coalition, East Virginians Against Unsafe Technology
+; and maybe small businesses like
+Extrapolated Volition Approximate Solutions, Irene's Florist and Pizzeria,
+Murex Finance
+(that one is real).
+Reply
+[
+-
+]
+Eli Tyre
+12h
+4
+3
+Lol. Wouldn't that be an ironic turn of events.
+Reply
+[
+-
+]
+XelaP
+5h
+5
+1
+Not just the general public: if it weren't for this post
+I
+would've kept on assuming PauseAI was run by Holly Elmore as an extension of PauseAI US, and this assumption made me think negatively of PauseAI.
+Reply
+[
+-
+]
+Liron
+9h
+43
+10
+When I read Holly's Twitter feed, I get why someone would have a gut reaction like "this is an unhinged person who's stooping to the level of personal attacks on people who seem nice and are just trying to do their best". I have my disagreements with the degree to which she bases her public statements about people's character on her own subjective judgment, as opposed to explicitly reasoned-out judgments. I gave her this criticism when she came on
+Doom Debates
+, and we still disagree about it.
+That said, I also often see Holly publicly post moral character judgments that I think
+are
+reasoned, and that I personally agree with. The reasoning often takes this form:
+A person is currently helping push the frontier of AI capabilities, despite runaway ASI being a high imminent existential risk.
+Ergo that person is doing morally bad actions.
+Ergo we judge them as a morally bad actor.
+I think this is a straightforwardly reasoned judgment, assuming one agrees with the world-model premises like "if anyone builds ASI anytime soon, everyone dies".
+Holly has been one of the first and still only voices who is simultaneously savvy about the underlying world model and the culture of people who share it, and publicly communicating personal moral character judgment about it. Does that mean she should stop, or that more people should start?
+I remember back in 2023, it used to be highly unusual and weird to reason from the claim that AI might really, actually kill everyone soon. And still today, there's often a "missing mood" when e.g. the same person says "oh, my P(Doom) is 70%" when asked at the end of a tech podcast interview, after spending the whole interview just talking about AI like it's any other business topic.
+Today, I'd say the Overton window has already come a long way toward taking the high-AI-x-risk worldview seriously, and is still moving steadily in the right direction. But I think Holly is still ahead of it on an important kind of "missing mood" that's still highly unusual and weird to discuss: Really, actually morally judging people who are worsening the likely imminent AI extinction scenario.
+Right now, the strongest association that comes to mind when thinking of an AI capabilities builder or researcher is something like "the elite of tech and academia". Not like "reckless", "unhinged", "creepy", "twisted", "trading respectability for money", or anything in the zone that I personally think is where we'd land in a rationally calibrated society. If the premise of high imminent AI x-risk is knowably true, shouldn't it propagate into a true moral judgment about the people who advance AI capabilities?
+This is an aversive thought because many of us identify as members of a certain intellectually elite, enlightened, respectful, charitable subculture, and the folks advancing AI capabilities have historically been part of our subculture, and the status quo today is still that they're generally treated as such. But I think it's basically right.
+I see Holly as doing important work moving the Overton window toward where it needs to be ASAP: we need to be able to reach a state of common knowledge about moral judgments downstream of our shared world model when the reasoned connection is sufficiently straightforward.
+As I mentioned at the beginning of my comment, I also see her as going too far in the "publicly judging people" direction by sometimes doing it on a subjective basis, i.e. without adequately reasoning it out in enough detail to lead a neutral reader to her moral conclusion. On Doom Debates, she didn't even object to my characterization of her doing this.
+But I don't really see anyone else doing the productive kind of Overton-moving work that Holly has been doing. She did it early and often. I've come around to seeing her as a uniquely impactful leader making progress on this front.
+I think Holly and PauseAI US are boldly moving the Overton window in the right direction with many of their morally charged public posts, but also stepping beyond where I'd draw the line about which personal moral judgments are sufficiently reasoned to meet the standards of a public post.
+Reply
+3
+[
+-
+]
+TsviBT
+8h
+29
+20
+I'm quite unsure what to think, but I like this comment.
+A person is currently helping push the frontier of AI capabilities, despite runaway ASI being a high imminent existential risk.
+Ergo that person is doing morally bad actions.
+Ergo we judge them as a morally bad actor.
+I think this doesn't actually follow. It does matter whether they know what they're doing is bad. If they know and continue, they're a morally bad actor.
+Now, "Do they know?" is a very messy question to answer, and a principal Sinclair's Razor strategy is to self-deceive. Self-deception, especially in this context, is morally bad too. Over time, it does seem more and more like everyone is either self-deceiving or ok with their actions being bad, and either way is a morally bad actor.
+As you perhaps suggest here...
+As I mentioned at the beginning of my comment, I also see her as going too far in the "publicly judging people" direction by sometimes doing it on a subjective basis, i.e. without adequately reasoning it out in enough detail to lead a neutral reader to her moral conclusion. On Doom Debates, she didn't even object to my characterization of her doing this.
+...there's an important difference between it being clear, vs. it being clear in common knowledge. Making it land in common knowledge seems like an important thing in several ways--in particular, it probably puts way more pressure on the morally bad actor, in a way that deplorations from an identifiable opposition faction doesn't. (It also looks a lot less unhinged, and more importantly, it avoids damaging the norms we have that are like "don't make unhinged accusations you won't / haven't backed up with explanation" or something.)
+I'm very curious what the right ways to deal with self-deception are; I'm quite unsure whether calling them (which ones?) creepy or evil is helpful, neutral, or anti-helpful--may vary a lot based on context and the person.
+I do think it's actually really quite horrible that there is not a functioning broad social norm of "debate or update" or something like that. Everyone should know that by default it's very cowardly and very suspicious to not publicly defend that what you're doing is good / safe / reasonable / whatever, when you're doing something that impacts others a lot. Is there any way to bring this back???
+Reply
+1
+[
+-
+]
+kman
+7h
+7
+4
+"AI research becomes taboo" seems like a ~necessary ingredient of a successful/durable shutdown.
+I personally feel super fucking pissed about the lack of virtue on display in the AI sphere by all these smart people that should know better, but don't know how to channel this productively.
+Reply
+[
+-
+]
+TsviBT
+7h
+4
+0
+In terms of concrete actions, I have this naive sense that there should be some fairly simple, inexpensive, not-very-objectionable script that any AI notkilleveryoneist could recite whenever they interact with someone who's relatively closer to AI capabilities research. Something like:
+AGI would kill everyone. [/ There's a significant chance that AGI would kill everyone.]
+[/ If that's true, then, since] AI research is progressing towards AGI, so it's bad and everyone should stop.
+If you have real sway in this area, you should evaluate whether that's going to happen, and then either advocate for a stop or else defend in public that it's safe in a debate with an expert critic.
+If you won't evaluate this deeply yourself, my request would be for you to repeat this script whenever you interact with someone who's relatively closer to AI capabilities research.
+Something like that, needs some workshopping to be flexible / workable for most people, while still carrying the message.
+Reply
+[
+-
+]
+Carringtone Kinyanjui
+8h
+3
+1
+I agree that Pause AI US is moving the Overton window in this regard. However, it's also useful to consider second, third order effects of such actions. If the missing mood were to apparate, and there is not just intellectual agreement with your syllogism, but also moral, emotional etc. :
+If peak Overton window for these actions drives up an infinitely thick wall between an ideologically self selecting tech right and academic left tribalism, would this be seen as an achievement?
+Out of a given population of Pause AI activists and or endorsers, how many would take radical or extreme actions?
+In the long run, do we want war zones or
+trading zones
+?
+Reply
+[
+-
+]
+Satya Benson
+16h
+24
+40
+We endorse pointing out harmful actions. But we condemn attacks on people’s character.
+I am not a fan of Holly Elmore but surely it's absurd to make this distinction! It's perfectly reasonable to think someone's harmful actions reflect poorly on their character.
+In fact, one of the best kinds of evidence we have with which to judge someone's character is their actions.
+Reply
+3
+[
+-
+]
+Matt Vincent
+10h
+10
+3
+It's perfectly reasonable to think someone's harmful actions reflect poorly on their character.
+I think this is the part that's missing the point. The question isn't whether people's actions are indicative of their character; it's whether focusing on people's character is
+more productive
+than focusing on their actions.
+Holly says "yes"
+on the basis
+that it moves the Overton window, generates revenue, and attracts volunteers. In contrast, Joep says "no"--I think on the basis that it's
+less intellectually rigorous
+, less inclusive, and possibly that it paves the way for violence. (#3, #9, and #1 in PauseAI's
+statement of values
+)
+Reply
+1
+[
+-
+]
+habryka
+15h
+13
+0
+I fixed the very broken table-formatting you somehow put into our post-editor (
+we do support tables, but not this way
+). I think this might have changed the formatting in your post a bit, feel free to update and correct.
+Reply
+6
+1
+[
+-
+]
+Dylan Xu
+16h
+*
+13
+8
+(FYI I’m not sure why this is true, but this post does not format well on mobile; the tables have lots of vertical blank space and force a bunch of text to overlap) (fixed)
+Reply
+[
+-
+]
+JennaS
+15h
+4
+1
+Seems to be fixed now?
+Reply
+[
+-
+]
+habryka
+14h
+11
+2
+I fixed it.
+Reply
+[
+-
+]
+ashesfall
+9h
+1
+0
+But the audio isn’t fixed, which really sucked for me because I had to come here and read it rather than listen to it while doing the dishes.
+:)
+Reply
+[
+-
+]
+peter_hartree
+7h
+6
+0
+I've fixed the audio.
+Reply
+[
+-
+]
+Spective
+16h
+3
+2
+I'm on desktop but it's garbled the way you describe it for me on Firefox, but on Chrome it displays normally.
+Reply
+[
+-
+]
+Richard_Kennaway
+15h
+2
+0
+For me it's garbled on Safari on a laptop.
+Reply
+[
+-
+]
+leogao
+12h
+6
+5
+seems good and correct based on my impression of PauseAI US.
+Reply
+[
+-
+]
+Dmitry Vaintrob
+17h
+6
+1
+I'm sure there are many valid reasons and the situation is complicated but I can't help putting this here
+https://www.youtube.com/watch?v=a0BpfwazhUA
+Reply
+2
+[
+-
+]
+WillPetillo
+11h
+13
+3
+That clip is surprisingly relevant:
+https://hollyelmore.substack.com/p/no-the-judean-peoples-front-should
+Reply
+5
+1
+[
+-
+]
+WillPetillo
+11h
+3
+1
+I hope this ultimately turns into a case of "good fences make good neighbors." Two organizations that look the same but are not seems increasingly hard to keep from getting messy as the scale of both increases, even when the details of what specifically caused tension is idiosyncratic.
+Reply
+[
+-
+]
+Eli Tyre
+14h
+2
+0
+We look forward to building more with you all, including those of you based in the US.
+PauseAI officially disendorses current PauseAI US leadership.
+We look forward to building more with you all, including those of you based in the US
+Is this a typo? Did they just really want to emphasize the first message?
+Reply
+3
+[
+-
+]
+Matt Vincent
+11h
+1
+0
+It's a typo. The email that PauseAI sent this morning does not have the third point.
+Reply
+1
+1
+[
++
+]
+Joey Yudelson
+17h
+-5
+-12
+Moderation Log
+More from
+nem
+View more
+Curated and popular this week
+Mentioned in
+9
+Best Way To Start a Local Group?

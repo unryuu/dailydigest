@@ -1,0 +1,28 @@
+URL: https://x.com/sama/status/2094934592062959832
+FINAL: https://x.com/sama/status/2094934592062959832
+TITLE: Sam Altman on X: "Over the summer, we have been sprinting on safety priorities; it's more important than ever for capabilities and safeguards to advance together. We have more to do but have made a lot of progress. We are also going to be launching our next model soon.
+
+There is an obvious tension … / X
+FETCHED: 2026-09-02 20:40:36
+============================================================
+Sam Altman
+@sama
+Over the summer, we have been sprinting on safety priorities; it's more important than ever for capabilities and safeguards to advance together. We have more to do but have made a lot of progress. We are also going to be launching our next model soon.
+
+There is an obvious tension here: on one hand, Astra is very good and we are excited to see what people will build with it. We are proud of our work.
+
+On the other hand, we are clearly in a phase of development where we believe caution is warranted, and we are pacing our progress to ensure that we can meet the safety standards required by new capability levels.
+
+Astra has been done training for a while now and is a significant step forward in both capabilities and alignment. For the models after that, we have been slowing things as needed to ensure that we can do sufficient work on safety and alignment.
+
+AI is getting extremely capable; no one fully understands the consequences of this. Managing the transition to a world with abundant and powerful AI to optimize for safety and benefits to people should be one of the highest priorities in the world. It is our highest priority at OpenAI.
+
+We have been living with the tension between being excited and anxious about progress for some time, and it is still discordant for us. We know it is much more discordant for other people. And yet, we believe strongly that the world needs to understand where AI is going and how models perform in the real world. More importantly, we believe the world will need aligned AI to manage the future phases of this transition.
+
+An iterative loop where society and this technology evolve together is what will lead to the highest chance of getting this right.
+
+So we hope you enjoy our new model, and we hope the world continues to take what’s happening in AI extremely seriously.
+11:45 PM · Sep 1, 2026
+1.1M
+Views
+976

@@ -1,0 +1,67 @@
+URL: https://simonwillison.net/2026/Sep/1/tarn-adams
+FINAL: https://simonwillison.net/2026/Sep/1/tarn-adams/
+TITLE: A quote from Tarn Adams
+FETCHED: 2026-09-02 20:41:41
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+Greptile — The Al code reviewer that runs your code. Catch bugs that only show up at runtime.
+Try it for free
+1st September 2026
+They took the letters from me! I have to talk about
+dwarf behavior
+now. I can't even talk about dwarf AI. It doesn't exist. It's
+dwarf behavior
+, and they misbehave sometimes
+—
+Tarn Adams
+,
+co-creator of Dwarf Fortress
+Posted
+1st September 2026
+at 5:01 pm
+Recent articles
+Claude Fable 5.1 made me a really nice animated pelican
+- 1st September 2026
+Understanding ChatGPT Work
+- 30th August 2026
+Conceptual integrity and counting lines of code
+- 19th August 2026
+This is a
+quotation
+collected by Simon Willison, posted on
+1st September 2026
+.
+game-design
+22
+ai
+2,211
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

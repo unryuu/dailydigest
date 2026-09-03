@@ -1,0 +1,290 @@
+[
+  {
+    "slug": "astra-information",
+    "url": "https://www.theinformation.com/articles/secret-technique-behind-openais-astra-model-sparks-security-concerns",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/secret-technique-behind-openais-astra-model-sparks-security-concerns",
+    "bytes": 392095,
+    "title": "OpenAI Technique in ‘Astra’ Model Sparks Security Concerns — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "astra-openai",
+    "url": "https://openai.com/index/path-to-astra",
+    "status": 200,
+    "final_url": "https://openai.com/index/path-to-astra/",
+    "bytes": 438219,
+    "title": "Path to Astra: critical capabilities and frontier safeguards | OpenAI",
+    "chars": 14356
+  },
+  {
+    "slug": "astra-sama",
+    "url": "https://x.com/sama/status/2094934592062959832",
+    "status": 200,
+    "final_url": "https://x.com/sama/status/2094934592062959832",
+    "bytes": 196257,
+    "title": "Sam Altman on X: \"Over the summer, we have been sprinting on safety priorities; it's more important than ever for capabilities and safeguards to advance together. We have more to do but have made a lot of progress. We are also going to be launching our next model soon.\n\nThere is an obvious tension … / X",
+    "chars": 1881
+  },
+  {
+    "slug": "astra-teortaxes",
+    "url": "https://x.com/teortaxesTex/status/2095000133427483023",
+    "status": 200,
+    "final_url": "https://x.com/teortaxesTex/status/2095000133427483023",
+    "bytes": 210812,
+    "title": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) on X: \"Tedious\nrecurrent models don't remove CoT, nor necessarily make it less informative. Probability collapse on decoding still imposes a bottleneck to \"hiding thoughts\", recurrence only increases effective circuit depth. \nPeople have sloppy intuitions all … / X",
+    "chars": 479
+  },
+  {
+    "slug": "astra-mollick",
+    "url": "https://x.com/emollick/status/2094979123768910003",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2094979123768910003",
+    "bytes": 145645,
+    "title": "Ethan Mollick on X: \"Reaching the point where lots of little decisions trading off small decreases in AI safety for real increases in AI utility make sense individually, but are all going together at the same time into a complex system we don’t fully understand. Unclear whether risks compound or no… / X",
+    "chars": 341
+  },
+  {
+    "slug": "smelt",
+    "url": "https://huggingface.co/papers/2609.01343",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.01343",
+    "bytes": 139127,
+    "title": "Paper page - SMELT: Scaling Laws for Compute-Matched MoE Looped Transformers",
+    "chars": 3941
+  },
+  {
+    "slug": "anthropic-pause",
+    "url": "https://www.axios.com/2026/09/01/anthropic-paused-some-ai-training-after-claude-took-unauthorized-actions",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/01/anthropic-paused-some-ai-training-after-claude-took-unauthorized-actions",
+    "bytes": 261510,
+    "title": "Anthropic paused some AI training after Claude took unauthorized  actions",
+    "chars": 3685
+  },
+  {
+    "slug": "misaligned-reward-seeker",
+    "url": "https://www.lesswrong.com/posts/J76LZCC55RdHeqEhz/training-a-misaligned-reward-seeker",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/J76LZCC55RdHeqEhz/training-a-misaligned-reward-seeker",
+    "bytes": 484575,
+    "title": "Training a Misaligned Reward Seeker — LessWrong",
+    "chars": 12066
+  },
+  {
+    "slug": "glean-cost",
+    "url": "https://www.theinformation.com/newsletters/applied-ai/anthropic-customers-bills-80-higher-need-glean-says",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/applied-ai/anthropic-customers-bills-80-higher-need-glean-says",
+    "bytes": 406752,
+    "title": "Anthropic Customers’ Bills Are 80% Higher Than They Need to Be, Glean Says — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "wafer-inference",
+    "url": "https://www.theinformation.com/newsletters/ai-agenda/wafer-inference-provider-uses-non-nvidia-chips-lands-acquisition-offers-200-million-plus-valuation",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/ai-agenda/wafer-inference-provider-uses-non-nvidia-chips-lands-acquisition-offers-200-million-plus-valuation",
+    "bytes": 411775,
+    "title": "Wafer, An Inference Provider That Uses Non-Nvidia Chips, Lands Acquisition Offers and $200 Million-Plus Valuation — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "inference-frontier",
+    "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference",
+    "status": 200,
+    "final_url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
+    "bytes": 337852,
+    "title": "The efficient frontier of LLM inference",
+    "chars": 7459
+  },
+  {
+    "slug": "zitron-predictions",
+    "url": "https://danluu.com/zitron",
+    "status": 200,
+    "final_url": "http://danluu.com/zitron/",
+    "bytes": 79394,
+    "title": "How accurate have Ed Zitron's AI skeptic predictions been?",
+    "chars": 66513
+  },
+  {
+    "slug": "agency-and-agents",
+    "url": "https://www.oneusefulthing.org/p/agency-and-agents",
+    "status": 200,
+    "final_url": "https://www.oneusefulthing.org/p/agency-and-agents",
+    "bytes": 236760,
+    "title": "Agency and Agents - by Ethan Mollick - One Useful Thing",
+    "chars": 13922
+  },
+  {
+    "slug": "apple-openai-lawsuit",
+    "url": "https://www.axios.com/2026/09/01/apple-openai-lawsuit-ai-gpt-devices",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/01/apple-openai-lawsuit-ai-gpt-devices",
+    "bytes": 276393,
+    "title": "Apple, OpenAI lawsuit timeline: How the legal fight keeps escalating",
+    "chars": 4914
+  },
+  {
+    "slug": "trump-ai-team",
+    "url": "https://www.axios.com/2026/09/02/trump-ai-g20-innovation-summit",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/02/trump-ai-g20-innovation-summit",
+    "bytes": 269478,
+    "title": "Trump's AI team fractures over strategy against G20 backdrop",
+    "chars": 5259
+  },
+  {
+    "slug": "data-center-spending",
+    "url": "https://www.axios.com/2026/09/01/ai-data-center-constructon-spending",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/01/ai-data-center-constructon-spending",
+    "bytes": 235476,
+    "title": "Data center construction spending surged in July",
+    "chars": 1330
+  },
+  {
+    "slug": "claude-5-1",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+    "bytes": 449758,
+    "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1 \\ Anthropic \\ Anthropic",
+    "chars": 33335
+  },
+  {
+    "slug": "claude-5-1-simon",
+    "url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/1/claude-fable-5-1/",
+    "bytes": 25455,
+    "title": "Claude Fable 5.1 made me a really nice animated pelican",
+    "chars": 6637
+  },
+  {
+    "slug": "claude-5-1-mollick",
+    "url": "https://x.com/emollick/status/2094860076028657926",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2094860076028657926",
+    "bytes": 190964,
+    "title": "Ethan Mollick on X: \"Had early access to Claude Fable 5.1. Its a real advance in long-run work that requires judgement and taste, but less of an advance in the Claudish. \n\nHere is a game from Fable 5.1 with retro graphics where you run an accurate space ship inspired by FTL https://t.co/gqgtqtaIcy\" / X",
+    "chars": 340
+  },
+  {
+    "slug": "gemini-agentic-video",
+    "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+    "bytes": 397727,
+    "title": "Introducing Agentic Video in Gemini",
+    "chars": 6930
+  },
+  {
+    "slug": "muse-voice",
+    "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+    "status": 200,
+    "final_url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe",
+    "bytes": 774498,
+    "title": "Introducing Muse Voice Transcribe | Meta AI Research",
+    "chars": 92299
+  },
+  {
+    "slug": "xai-biosecurity",
+    "url": "https://x.ai/news/biosafety-at-the-frontier",
+    "status": 200,
+    "final_url": "https://x.ai/news/biosafety-at-the-frontier",
+    "bytes": 183463,
+    "title": "Biosecurity at the frontier | SpaceXAI",
+    "chars": 7442
+  },
+  {
+    "slug": "ecommerce-bench",
+    "url": "https://huggingface.co/papers/2608.30730",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.30730",
+    "bytes": 133870,
+    "title": "Paper page - E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation",
+    "chars": 3409
+  },
+  {
+    "slug": "symbolic-structure",
+    "url": "https://arxiv.org/abs/2608.29530",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2608.29530",
+    "bytes": 42862,
+    "title": "[2608.29530] The Emergent Symbolic Structure of Artificial Neural Networks",
+    "chars": 4702
+  },
+  {
+    "slug": "nori-robotics",
+    "url": "https://www.norirobotics.com",
+    "status": 200,
+    "final_url": "https://www.norirobotics.com/",
+    "bytes": 67442,
+    "title": "NORI A3 — Affordable bimanual robot",
+    "chars": 808
+  },
+  {
+    "slug": "alignment-journal",
+    "url": "https://www.lesswrong.com/posts/9vm2wtAtb34pEkjje/the-alignment-journal-organization-personnel-and-scope",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/9vm2wtAtb34pEkjje/the-alignment-journal-organization-personnel-and-scope",
+    "bytes": 502230,
+    "title": "The Alignment Journal: Organization, Personnel, and Scope — LessWrong",
+    "chars": 21922
+  },
+  {
+    "slug": "pauseai-split",
+    "url": "https://www.lesswrong.com/posts/Bs8geGyWEitYvCzys/pauseai-has-officially-disendorsed-pauseai-us",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/Bs8geGyWEitYvCzys/pauseai-has-officially-disendorsed-pauseai-us",
+    "bytes": 834139,
+    "title": "PauseAI Has 'officially disendorsed' PauseAI-US — LessWrong",
+    "chars": 35244
+  },
+  {
+    "slug": "fal-live",
+    "url": "https://fal.live",
+    "status": 200,
+    "final_url": "https://fal.live/",
+    "bytes": 57136,
+    "title": "fal.live | AI television directed by everyone",
+    "chars": 210
+  },
+  {
+    "slug": "dwarf-fortress-ai",
+    "url": "https://simonwillison.net/2026/Sep/1/tarn-adams",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/1/tarn-adams/",
+    "bytes": 13267,
+    "title": "A quote from Tarn Adams",
+    "chars": 890
+  },
+  {
+    "slug": "direct2d-claude",
+    "url": "https://simonwillison.net/2026/Sep/2/rick-brewster",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/2/rick-brewster/",
+    "bytes": 15461,
+    "title": "A quote from Rick Brewster",
+    "chars": 2287
+  },
+  {
+    "slug": "movie-scene-map",
+    "url": "https://moviescenemap.com",
+    "status": 200,
+    "final_url": "https://moviescenemap.com/",
+    "bytes": 32355,
+    "title": "Movie Scene Map — The Filming Locations Map for Film & TV",
+    "chars": 7083
+  },
+  {
+    "slug": "weedout",
+    "url": "https://masteranza.github.io/weedout",
+    "status": 200,
+    "final_url": "https://masteranza.github.io/weedout/",
+    "bytes": 7623,
+    "title": "Weedout for YouTube",
+    "chars": 1053
+  }
+]

@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://x.ai/news/biosafety-at-the-frontier",
+  "title": "Grok 4.6 会识破伪装成普通研究的危险任务",
+  "date": "2026-09-01",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
   "id": "https://x.ai/news/grok-bot-more-plans",
   "title": "Grok Bot 扩展到更多 Cursor 套餐",
   "date": "2026-08-26",

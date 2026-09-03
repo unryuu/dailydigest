@@ -1,0 +1,4229 @@
+URL: https://research.meta.ai/blog/introducing-muse-voice-transcribe
+FINAL: https://research.meta.ai/blog/introducing-muse-voice-transcribe
+TITLE: Introducing Muse Voice Transcribe | Meta AI Research
+FETCHED: 2026-09-02 20:41:21
+============================================================
+Muse Voice Transcribe demo
+This demo uses your microphone to transcribe what you say into text. Transcripts are AI-generated and may be inaccurate. Your audio is processed to produce the transcript and is not stored.
+By continuing, you agree to
+Meta's Terms of Service
+and
+Meta AI Terms
+, and confirm you have permission to record the audio you are capturing.
+We’re excited to introduce Muse Voice Transcribe, the first real-time audio perception model developed by Meta Superintelligence Labs.
+Muse Voice Transcribe marks a first milestone in bringing our real-time voice models to you. It delivers real-time streaming ASR, diarization with 20+ speakers, and endpointing. It is multilingual with seamless code-switching and improves accuracy with language, keyword, and context biasing.
+We rank first on Artificial Analysis on streaming speech-to-text and on public diarization benchmarks. Model inclusion and rankings as of September 1, 2026.
+Speaker A
+Today, we are excited to introduce Muse Voice Transcribe, the first real-time audio perception model developed by Meta Superintelligence Labs.
+Speaker B
+Muse Voice Transcribe performs streaming ASR, diarization, and endpointing in real time, it natively handles multilingual input of 25 plus languages and seamlessly recognizes code switching. It can also utilize language keywords and context biasing.
+Speaker C
+对，而且最厉害的是 real time 延迟特别低，基本上你说完它就出来了。还有就是 diarization 能分清是谁在说。
+Speaker D
+And what you are seeing on screen right now is live. Eight of us in one room talking and it knows exactly what said who said what. That's what makes it personal.
+Speaker E
+Which exactly why this matters for Mark wrote in the AI future is for everyone. The question is not whether superintelligence will exist, but who will have access to it.
+Speaker F
+Right. He argued it can't be a single centralized superintelligence trying to be aligned to everyone at once. It has to be personal superintelligence for every person.
+Speaker G
+And for it to be personal, it has to listen like a human on AI glasses in real conversations, not just voice commands. That is the interactive model.
+Speaker H
+Real conversations are messy. There are overlaps, interruptions, accents. That is why streaming endpointing and diarization are so important.
+Speaker A
+Mark framed it around three ideas, individual empowerment drives prosperity, invention is the primary purpose, and balance of power is the foundation of safety. ASR is the foundation for all three.
+Speaker C
+没错, 如果只能听懂英文, 那怎么叫 for everyone 呢? 像我妈平时就是中文加英文, 比如明天九点有个 doctor appointment, 你的你记得叫我一下, 这种才是最真实的对话。如果听不懂, 怎么能叫 personal 呢?
+Speaker B
+Exactly. That is why seamless code switching inside one sentence is non-negotiable. And with context biasing, when you say Meta, Muse, or Menlo Park, it gets it right because it knows your world.
+Speaker D
+Right. It needs to know your contacts, your keywords, your places. That's how it becomes yours.
+Speaker E
+And it is about invention, not just automation. If the ears work perfectly, you can create, express ideas, learn anything. It is a creative tool.
+Speaker F
+This is hard. Eight speakers is the hardest test for diarization and it tracks us all live.
+Speaker G
+Muse Voice Transcribe is strong in streaming ASR and streaming diarization.
+Speaker H
+So the future Mark described where everyone has a personal agent starts with ears that actually work for everyone.
+Speaker C
+对，这才是真正的 personal superintelligence, 能实时听懂，分清是谁说的, 而且不管是中文还是英文都能无缝理解, 这才是 for everyone.
+Speaker A
+We will go deep into how we build Muse Voice Transcribe in this blog post.
+Speaker A
+Today, we
+are
+excited to
+introduce
+Muse
+Voice
+Transcribe,
+the
+first
+real-time
+audio
+perception
+model
+developed by
+Meta
+Superintelligence
+Labs.
+Speaker B
+Muse
+Voice
+Transcribe
+performs
+streaming
+ASR,
+diarization,
+and
+endpointing in
+real time,
+it
+natively
+handles
+multilingual
+input of
+25
+plus
+languages
+and
+seamlessly
+recognizes
+code
+switching.
+It can
+also
+utilize
+language
+keywords and
+context
+biasing.
+Speaker C
+对，而且
+最
+厉害的是
+real
+time
+延迟
+特别
+低，
+基本上
+你说
+完它
+就
+出来了。
+还有
+就是
+diarization
+能分清
+是谁
+在
+说。
+Speaker D
+And
+what you
+are
+seeing on
+screen
+right now
+is
+live.
+Eight of
+us
+in one
+room
+talking
+and it
+knows
+exactly
+what
+said
+who
+said
+what.
+That's
+what
+makes it
+personal.
+Speaker E
+Which
+exactly
+why
+this
+matters for
+Mark
+wrote
+in the
+AI
+future is
+for
+everyone.
+The
+question is
+not
+whether
+superintelligence
+will
+exist,
+but
+who will
+have
+access to
+it.
+Speaker F
+Right.
+He
+argued it
+can't be
+a
+single
+centralized
+superintelligence
+trying to
+be
+aligned to
+everyone at
+once.
+It
+has to
+be
+personal
+superintelligence for
+every
+person.
+Speaker G
+And
+for it
+to be
+personal, it
+has to
+listen
+like a
+human
+on
+AI
+glasses
+in
+real
+conversations,
+not
+just
+voice
+commands.
+That is
+the
+interactive
+model.
+Speaker H
+Real
+conversations are
+messy.
+There are
+overlaps,
+interruptions,
+accents.
+That is
+why
+streaming
+endpointing and
+diarization are
+so
+important.
+Speaker A
+Mark
+framed it
+around three
+ideas,
+individual
+empowerment
+drives
+prosperity,
+invention
+is the
+primary
+purpose,
+and
+balance of
+power
+is the
+foundation of
+safety.
+ASR
+is the
+foundation for
+all three.
+Speaker C
+没
+错,
+如果
+只能
+听懂
+英文,
+那
+怎么
+叫 for
+everyone 呢?
+像
+我妈
+平时
+就是
+中文
+加
+英文,
+比如
+明天
+九点
+有个
+doctor
+appointment,
+你的
+你
+记得
+叫我
+一下,
+这种
+才
+是最
+真实的
+对话。
+如果
+听
+不懂,
+怎么能
+叫
+personal 呢?
+Speaker B
+Exactly.
+That is
+why
+seamless
+code
+switching
+inside
+one
+sentence is
+non-negotiable.
+And
+with
+context
+biasing,
+when you
+say
+Meta,
+Muse,
+or
+Menlo
+Park,
+it
+gets it
+right
+because it
+knows your
+world.
+Speaker D
+Right.
+It
+needs to
+know
+your
+contacts,
+your
+keywords,
+your
+places.
+That's how
+it
+becomes
+yours.
+Speaker E
+And
+it
+is
+about
+invention,
+not
+just
+automation.
+If the
+ears
+work
+perfectly,
+you can
+create,
+express
+ideas,
+learn
+anything.
+It
+is
+a
+creative
+tool.
+Speaker F
+This
+is
+hard.
+Eight
+speakers is
+the
+hardest
+test
+for
+diarization
+and
+it
+tracks us
+all
+live.
+Speaker G
+Muse
+Voice
+Transcribe is
+strong in
+streaming
+ASR
+and
+streaming
+diarization.
+Speaker H
+So
+the
+future
+Mark
+described
+where
+everyone
+has a
+personal
+agent
+starts
+with
+ears
+that
+actually
+work for
+everyone.
+Speaker C
+对，这
+才是
+真正的
+personal
+superintelligence,
+能
+实时
+听懂，
+分清
+是谁
+说的,
+而且
+不管是
+中文
+还是
+英文
+都能
+无
+缝
+理解, 这
+才是
+for
+everyone.
+Speaker A
+We
+will go
+deep
+into how
+we
+build
+Muse
+Voice
+Transcribe in
+this
+blog post.
+Muse Voice Transcribe eight-speaker read-through playback position
+0:00 of 3:06
+Speaker A
+:
+Today, we are excited to introduce Muse Voice Transcribe, the first real-time audio perception model developed by Meta Superintelligence Labs.
+Speaker B
+:
+Muse Voice Transcribe performs streaming ASR, diarization, and endpointing in real time, it natively handles multilingual input of 25 plus languages and seamlessly recognizes code switching. It can also utilize language keywords and context biasing.
+Speaker C
+:
+对，而且最厉害的是 real time 延迟特别低，基本上你说完它就出来了。还有就是 diarization 能分清是谁在说。
+Speaker D
+:
+And what you are seeing on screen right now is live. Eight of us in one room talking and it knows exactly what said who said what. That's what makes it personal.
+Speaker E
+:
+Which exactly why this matters for Mark wrote in the AI future is for everyone. The question is not whether superintelligence will exist, but who will have access to it.
+Speaker F
+:
+Right. He argued it can't be a single centralized superintelligence trying to be aligned to everyone at once. It has to be personal superintelligence for every person.
+Speaker G
+:
+And for it to be personal, it has to listen like a human on AI glasses in real conversations, not just voice commands. That is the interactive model.
+Speaker H
+:
+Real conversations are messy. There are overlaps, interruptions, accents. That is why streaming endpointing and diarization are so important.
+Speaker A
+:
+Mark framed it around three ideas, individual empowerment drives prosperity, invention is the primary purpose, and balance of power is the foundation of safety. ASR is the foundation for all three.
+Speaker C
+:
+没错, 如果只能听懂英文, 那怎么叫 for everyone 呢? 像我妈平时就是中文加英文, 比如明天九点有个 doctor appointment, 你的你记得叫我一下, 这种才是最真实的对话。如果听不懂, 怎么能叫 personal 呢?
+Speaker B
+:
+Exactly. That is why seamless code switching inside one sentence is non-negotiable. And with context biasing, when you say Meta, Muse, or Menlo Park, it gets it right because it knows your world.
+Speaker D
+:
+Right. It needs to know your contacts, your keywords, your places. That's how it becomes yours.
+Speaker E
+:
+And it is about invention, not just automation. If the ears work perfectly, you can create, express ideas, learn anything. It is a creative tool.
+Speaker F
+:
+This is hard. Eight speakers is the hardest test for diarization and it tracks us all live.
+Speaker G
+:
+Muse Voice Transcribe is strong in streaming ASR and streaming diarization.
+Speaker H
+:
+So the future Mark described where everyone has a personal agent starts with ears that actually work for everyone.
+Speaker C
+:
+对，这才是真正的 personal superintelligence, 能实时听懂，分清是谁说的, 而且不管是中文还是英文都能无缝理解, 这才是 for everyone.
+Speaker A
+:
+We will go deep into how we build Muse Voice Transcribe in this blog post.
+Streaming ASR as the Foundation
+Muse Voice Transcribe is an autoregressive multimodal model from the Muse Spark family.
+Audio is processed in 80ms chunks (12.5 Hz), each of which is transformed into a single soft token. At each audio chunk, the model decides to either continue listening to the next audio chunk or emit a text token. When the model decides to continue listening, it predicts a
+<|next_audio|>
+special token and replaces
+<|next_audio|>
+with the actual audio chunk for the next input.
+When the audio stream stops, we insert a special
+<|empty_audio|>
+token to inform the model there are no more audio chunks. The model emits all remaining text tokens without producing any
+<|next_audio|>
+tokens after seeing
+<|empty_audio|>
+.
+Loading demo
+Since the model has full control over when to listen, it decides on the amount of audio context before transcribing a word (we call this “delay”). There is a tradeoff between accuracy and delay. The longer the model waits to predict, the more accurate the transcript, but the higher the latency. Muse Voice Transcribe has “adaptive delay,” dynamically changing delay for each word based on difficulty. This is enabled with reinforcement learning (RL), where word error rate (WER) reward and a delay reward are combined multiplicatively.
+With adaptive delay, Muse Voice Transcribe achieves the Pareto front on speed-accuracy trade-off measured by time to final transcription.
+Building Diarization and Endpointing on Top of ASR
+With streaming ASR as the foundation, we can easily support other audio perception tasks by introducing additional special tokens.
+For diarization, we introduce a
+<|start_of_turn|>
+token to mark potential speaker switch and
+<|speaker_{A-Z}|>
+tag to differentiate the speaker.
+<|start_of_turn|>
+is predicted as soon as speaker switches and speaker tag prediction is delayed to the end of the chunk. The audio from the same speaker may also be segmented by
+<|start_of_turn|>
+but the speaker tag will be the same for all these segments.
+Here is an example token sequence for diarization (we omit
+<|next_audio|>
+for simplicity):
+<|start_of_turn|>Hello, how are you doing?<|speaker_A|><|start_of_turn|> Did anything fun over the weekend?<|speaker_A|><|start_of_turn|> Hey I'm good!<|speaker_B|>
+For endpointing, we introduce a
+<|speech_onset|>
+token to mark beginning of the speech and
+<|speech_endpoint|>
+token to mark when the user finishes speaking.
+Here is an example token sequence for endpointing (we omit
+<|next_audio|>
+for simplicity):
+<|speech_onset|>Hey Meta, what's the weather in Menlo Park?<|speech_endpoint|> [silence] <|speech_onset|>What should I wear today?<|speech_endpoint|>
+We train both tasks together with streaming ASR and add extra rewards on top of the ASR reward for diarization and endpointing respectively.
+Capabilities
+Language Coverage
+Muse Voice Transcribe is trained with 70+ languages, of which 25 are extensively verified. In the initial release, we recommend trying these
+25 validated languages
+, with support for additional languages also available.
+我这个月去了十二次健身房，体重从 78.5 公斤直接降到 75 公斤，体脂率也掉了 2.5%。我今天早上跑完五公里，花了 28 分钟，算一算平均心率是 145，感觉体能比三个月前好多了。
+En ce moment j'apprends les 50 états des États-Unis. Il faut aller en ordre alphabétique. Il y a quatre États qui commencent par la lettre A, trois par la lettre C et ainsi de suite. J'espère bientôt tous les mémoriser.
+我
+这个
+月
+去了
+十二次
+健身
+房，
+体重
+从
+78.5
+公斤
+直接
+降到
+75
+公斤，
+体
+脂率
+也
+掉了
+2.5%。我
+今天
+早上
+跑完
+五
+公里，花
+了
+28
+分钟，
+算一
+算
+平均
+心率
+是
+145
+，感觉
+体
+能比
+三个月
+前
+好
+多了。
+Muse Voice Transcribe Chinese transcription demo playback position
+0:00 of 0:19
+我这个月去了十二次健身房，体重从 78.5 公斤直接降到 75 公斤，体脂率也掉了 2.5%。我今天早上跑完五公里，花了 28 分钟，算一算平均心率是 145，感觉体能比三个月前好多了。
+Code-Switching
+Code-switching is very common for bilingual speakers. Muse Voice Transcribe natively supports arbitrary code-switching, either within sentence or between sentence. In this audio clip, it also uses context biasing to further improve recognition accuracy.
+昨天我在 local desktop 上用 Ollama 跑了下 Meta 的 Muse Glimmer 直接 deploy 在我的 NVIDIA RTX 3090 上, 整个 setup 非常 smooth, 把 quantize 之后的 4bit GGUF load 进 24GB 的 GDDR6X VRAM 完全没压力, 配合 DFlash 跑 speculative decoding, token generation 的 throughput 相当丝滑, 不过唯一 worry 的就是 power consumption, 跑 multi-turn 的 agentic workflow 时, 整个 board power 几乎顶着 350 瓦的 TDP 跑满, wattage 和 thermals 飙得有点高, 长期 run daemon 感觉电费和散热挺感人的。
+昨天
+我在
+local
+desktop
+上用
+Ollama
+跑了
+下
+Meta 的
+Muse
+Glimmer
+直接
+deploy
+在
+我的
+NVIDIA
+RTX
+3090
+上,
+整个
+setup
+非常
+smooth,
+把
+quantize
+之后的
+4bit
+GGUF
+load
+进
+24GB
+的
+GDDR6X
+VRAM
+完全没
+压力,
+配合
+DFlash
+跑
+speculative
+decoding,
+token
+generation 的
+throughput
+相当
+丝滑,
+不过
+唯一
+worry 的
+就是
+power
+consumption,
+跑
+multi-turn
+的
+agentic
+workflow 时,
+整个
+board power
+几乎
+顶着
+350
+瓦的
+TDP
+跑
+满,
+wattage 和
+thermals 飙得
+有点
+高,
+长期
+run
+daemon 感觉
+电费
+和
+散热
+挺
+感
+人的。
+Muse Voice Transcribe Mandarin and English code-switching demo playback position
+0:00 of 0:47
+昨天我在 local desktop 上用 Ollama 跑了下 Meta 的 Muse Glimmer 直接 deploy 在我的 NVIDIA RTX 3090 上, 整个 setup 非常 smooth, 把 quantize 之后的 4bit GGUF load 进 24GB 的 GDDR6X VRAM 完全没压力, 配合 DFlash 跑 speculative decoding, token generation 的 throughput 相当丝滑, 不过唯一 worry 的就是 power consumption, 跑 multi-turn 的 agentic workflow 时, 整个 board power 几乎顶着 350 瓦的 TDP 跑满, wattage 和 thermals 飙得有点高, 长期 run daemon 感觉电费和散热挺感人的。
+Long Context
+Our model natively supports long audio input exceeding one hour and up to 20+ speakers, with no required post-processing.
+Muse Voice Transcribe long-form conversation playback position
+0:00 of 1:00:52
+0:00
+15:13
+30:26
+45:39
+1:00:52
+Speakers in this recording
+Speaker A
+Speaker B
+Speaker C
+Speaker D
+Speaker E
+Speaker F
+Speaker G
+Speaker H
+Speaker I
+Speaker J
+Speaker K
+Speaker A
+:
+And then so we were talking earlier, they have built these like really nice bathrooms at the base of Runyon.
+Speaker B
+:
+I heard, I saw it on the news the other night.
+Speaker C
+:
+About how nice are they if they're like?
+Speaker A
+:
+No, they're they're
+Speaker C
+:
+on the end of a canyon.
+Speaker A
+:
+No, they're no, they're nice. They're I was telling her earlier that they're they're giving National Park.
+Speaker D
+:
+Yeah, it's like giving like this is a national park like national monument like it's so nice that it has bathrooms.
+Speaker B
+:
+Wait, I heard on the news they spent a fortune on it. Whatever.
+Speaker D
+:
+Oh, really?
+Speaker C
+:
+So it's not a
+Speaker A
+:
+is it controversial?
+Speaker B
+:
+No, it's really nice.
+Speaker A
+:
+Like are people upset about
+Speaker B
+:
+I don't know I heard that some people were upset because they don't want I don't know
+Speaker E
+:
+onion canyon is such a unique place because there aren't that many places to you know go in LA to walk your dogs I mean I take my dogs there every single day
+Speaker F
+:
+so is it like a park I'm not from LA so I don't know what it looks like
+Speaker E
+:
+Canyon you hike in it it can be a
+Speaker C
+:
+like a trail
+Speaker G
+:
+it could be a hike it could be either be like a like one path you take to up and down or they have like little like
+Speaker C
+:
+side trails
+Speaker G
+:
+side trails and like
+Speaker F
+:
+so like similar to like up in Malibu but like more residential
+Speaker A
+:
+It's Hollywood.
+Speaker G
+:
+Hollywood.
+Speaker E
+:
+No it's Hollywood.
+Speaker G
+:
+It's like it's like it's like you see you can like from a distance you see the Hollywood sign and then from you can also see the the Griffith Park observatory.
+Speaker F
+:
+Oh wait so does it connect to the Hollywood sign?
+Speaker B
+:
+No
+Speaker G
+:
+no
+Speaker F
+:
+okay
+Speaker G
+:
+like you could you see it from like a distance
+Speaker H
+:
+But it's it's like skiing. There's like different difficulty routes. There's a
+Speaker F
+:
+Okay.
+Speaker C
+:
+Oh that's a good way to put it.
+Speaker E
+:
+That is a good way to put it.
+Speaker H
+:
+There's a paved path. I've seen
+Speaker G
+:
+a blue diamond
+Speaker H
+:
+doing high heels before.
+Speaker A
+:
+There was a guy there today within just socks on the paved path so same same vibe
+Speaker C
+:
+absolutely
+Speaker G
+:
+I've seen I've seen people I've seen I've seen people use the videos and stuff yeah
+Speaker C
+:
+I think that's why I probably
+Speaker A
+:
+early
+Speaker C
+:
+yeah because Runyon became like such a scene and like Fryman literally you go what you go down that's
+Speaker I
+:
+I usually
+Speaker D
+:
+I hate Runyon I'm such a hater
+Speaker C
+:
+The what?
+Speaker I
+:
+I do Nichols Canyon
+Speaker C
+:
+Oh wait why?
+Speaker D
+:
+It's just like disgusting it's like you're baking in the sun it's just dust
+Speaker G
+:
+yeah you get a nice little tan going yeah get a nice little
+Speaker A
+:
+You guys
+Speaker H
+:
+But that's that's what I said earlier is it's probably the most LA thing there is.
+Speaker D
+:
+Yeah.
+Speaker H
+:
+At the base of Runyon there is a valet you can yes
+Speaker C
+:
+are you serious
+Speaker J
+:
+before you go hiking
+Speaker H
+:
+you can valet your car
+Speaker C
+:
+Is that new too?
+Speaker H
+:
+and then go hiking
+Speaker J
+:
+oh what
+Speaker G
+:
+I didn't know that I have my own little parking spot I didn't even know I wasn't even hip to that I'm not going to lie
+Speaker C
+:
+That is the most LA thing
+Speaker E
+:
+No that's new that hasn't been going on for very long.
+Speaker G
+:
+they need to add like a little matcha stand on the bottom make it real
+Speaker A
+:
+top as well
+Speaker B
+:
+at the top?
+Speaker A
+:
+Yes.
+Speaker I
+:
+Actually?
+Speaker A
+:
+Really? Yeah I think this guy is trying it's it's coffee but I I said latte but you know
+Speaker G
+:
+he's smart for that he's smart
+Speaker I
+:
+All of a sudden she likes she likes Runyon Canyon.
+Speaker G
+:
+She's like It's so cutesy. It's so niche. I love that.
+Speaker D
+:
+You find me there.
+Speaker B
+:
+You don't like Fryman I thought you said.
+Speaker D
+:
+I do love Fryman.
+Speaker C
+:
+Yeah.
+Speaker D
+:
+Because there's like coverage like trees.
+Speaker C
+:
+Yeah.
+Speaker D
+:
+You're not just like you know there's
+Speaker B
+:
+I was confused. I got it.
+Speaker C
+:
+Fryman is off of like Laurel Canyon. And you turn to the right. so like there's no matcha latte fans you know but there's like you know a guy with fruit when you're done
+Speaker D
+:
+yeah
+Speaker F
+:
+That's nice
+Speaker B
+:
+always one
+Speaker H
+:
+is it near Houdini's house like up
+Speaker C
+:
+no no no not even that far like closer towards Studio City
+Speaker H
+:
+okay
+Speaker G
+:
+Okay
+Speaker B
+:
+like yeah
+Speaker C
+:
+and it's a it's a good hike like and they have all side trails as well but like I'm not doing
+Speaker D
+:
+I saw like a huge [***] snake on the trail
+Speaker C
+:
+those are there coyotes
+Speaker B
+:
+Coyotes
+Speaker E
+:
+especially now it's hot in the trails oh man that would make me nervous
+Speaker I
+:
+the coyotes are getting bad they're like in my neighborhood like and like like I live like I don't live close to the hills
+Speaker C
+:
+yeah
+Speaker H
+:
+They took over a building.
+Speaker C
+:
+In West Hollywood. I heard, I saw it on
+Speaker I
+:
+They took over, there's an abandoned house my neighborhood
+Speaker C
+:
+it's like a family and they were like
+Speaker B
+:
+that's the one
+Speaker H
+:
+yeah there's a building that was under construction like an apartment building and all these coyotes moved in
+Speaker C
+:
+because no one was there
+Speaker H
+:
+at night it was like 50 of them would just howl
+Speaker C
+:
+and you they all have a room videos
+Speaker A
+:
+literally all there
+Speaker C
+:
+there were babies there were like babies and families and I was like I have never in my life seen that many and they're just like
+Speaker G
+:
+whoa
+Speaker I
+:
+I think it was the fires that like pushed them all
+Speaker C
+:
+oh yeah because they're
+Speaker I
+:
+living down
+Speaker C
+:
+for water yeah and water it's hot
+Speaker I
+:
+like like I have like I'll be walking my dog and I'll see like two at the end of the block and I start like like kind of like speed walking or running with my dogs the opposite direction so they don't like
+Speaker C
+:
+well because it used to be like you think like oh coyote you make a lot of noise like a bear and they'll go away no
+Speaker G
+:
+they're getting ruthless
+Speaker C
+:
+there was one in my front yard on Thanksgiving because it was hot and tired it was not scared of me and my dog she thought it was a you know Thanksgiving treat
+Speaker H
+:
+But we got all kinds of wild stuff happen in West Hollywood. There's a runaway pig the other day.
+Speaker G
+:
+Yeah, I saw that.
+Speaker A
+:
+adopted the pig
+Speaker G
+:
+they did
+Speaker A
+:
+the whole story
+Speaker I
+:
+it was like a little teacup pig just running around
+Speaker C
+:
+yeah
+Speaker G
+:
+people were chasing it
+Speaker I
+:
+someone was on a bird scooter chasing
+Speaker G
+:
+it was good
+Speaker C
+:
+terrorizing it
+Speaker I
+:
+no no it was trying to catch it to like save it
+Speaker G
+:
+it was like running it was running in the traffic and stuff it was it was doing a lot
+Speaker H
+:
+they named him Wilbur
+Speaker G
+:
+doing a lot
+Speaker F
+:
+where did it come from
+Speaker H
+:
+just they don't know but it was this little tiny pig
+Speaker C
+:
+i mean you can't be like is it
+Speaker H
+:
+and the neighborhood and they were filming it like there's a runaway pig and they caught it and it went to the shelter and then some famous woman adopted it
+Speaker B
+:
+the singer
+Speaker H
+:
+yeah what was her name not the twist ending I expected to be adopted by
+Speaker C
+:
+you know what I'm going to save this pig and adopt the pig
+Speaker G
+:
+that's right
+Speaker H
+:
+yeah yeah she did
+Speaker G
+:
+if I had to bread I might be here with a pig right now
+Speaker E
+:
+I'd have a goat I love goats
+Speaker C
+:
+wait
+Speaker A
+:
+I would I would have a goat
+Speaker I
+:
+would I
+Speaker G
+:
+I want to do
+Speaker I
+:
+I love I was very confused about you had a goat living
+Speaker E
+:
+no I no I
+Speaker C
+:
+goats are very much like dogs I found I went to a sanctuary in like for I don't know 45 minutes outside of here where they have like lots of sanctuaries and the they what I learned is that goats their their personalities and their everyday traits are more like a dog.
+Speaker H
+:
+yeah
+Speaker B
+:
+Wow.
+Speaker C
+:
+When they want you to pet, they nudge you and they're like a,
+Speaker A
+:
+It's like the goat yoga.
+Speaker C
+:
+Yeah, I don't smell like a dog, but I but I didn't know that they were that close mentally.
+Speaker E
+:
+I love goats.
+Speaker B
+:
+Yeah I don't know what goat yoga thing is. What is that? I don't know.
+Speaker G
+:
+basically it's basically just like baby goats and you're doing yoga you're really not there for yoga you're there
+Speaker I
+:
+yeah no they'll stand on your back
+Speaker G
+:
+they do
+Speaker I
+:
+puppy yoga is more that you're just in a room with like nine puppies and they're running around doing yoga
+Speaker C
+:
+that's yes
+Speaker A
+:
+is you do like a half hour yoga class you kind of play with the goats and then maybe you do like you know a salutation with
+Speaker B
+:
+oh
+Speaker C
+:
+so is it like is that also an LA thing
+Speaker G
+:
+oh mad yeah
+Speaker A
+:
+no it's a worldwide thing
+Speaker G
+:
+Tennessee
+Speaker A
+:
+I won't commit to
+Speaker E
+:
+do yoga there are a bunch of puppies I'd be so distracted
+Speaker G
+:
+exactly you're doing it for the pictures and the highlights and look at me I have my puppies and I did yoga at before 11 o'clock that's what it is
+Speaker A
+:
+have a section where you have to do yoga and then they bring out the animals
+Speaker D
+:
+they're there the whole time they have but they have a section just for the yoga but I was just like [***] sitting with the dogs all time
+Speaker G
+:
+yeah
+Speaker D
+:
+I'm not here to do yoga
+Speaker E
+:
+I would just pet the puppies
+Speaker B
+:
+there's puppy yoga now
+Speaker G
+:
+yeah puppy yoga I
+Speaker H
+:
+but there's there's certain certain like animals that I feel like should be pets that aren't yet
+Speaker C
+:
+Yeah.
+Speaker F
+:
+No.
+Speaker G
+:
+No, Have you seen their hands? They want they want to be they want to be
+Speaker C
+:
+but they care
+Speaker G
+:
+so ready I know
+Speaker C
+:
+they carry raccoons are so ready to get domesticated oh they are the most zoological diseases known to mankind did you know that
+Speaker H
+:
+but if they live with us
+Speaker G
+:
+if they live we give them their shots
+Speaker C
+:
+no
+Speaker I
+:
+I can
+Speaker G
+:
+they want but they want the thing is they want to be domestic they see cats and like they're like
+Speaker C
+:
+yeah they do but also they really just want the cat's food
+Speaker G
+:
+right
+Speaker C
+:
+less the cat's life
+Speaker G
+:
+but I don't know I've been I feel like I've been seeing like a lot of like like it's videos of like raccoons being pets like
+Speaker C
+:
+yeah
+Speaker H
+:
+it would be
+Speaker C
+:
+but also do you know what also is in those videos they don't end well like eventually raccoon is the animal that's like I'm ready to go okay I need to leave they start they're like he scratched me today but he didn't mean it and you're like yes he did he's a raccoon
+Speaker E
+:
+yeah raccoons are not nice they're not nice animals
+Speaker H
+:
+there was this place in Russia that took all these foxes and they found the most friendly ones and kept breeding the most friendly ones to make them domesticated and they got so friendly like as soon as you open the cage it would fly out into your arms and like love you so much like these foxes they made like foxes pets like
+Speaker C
+:
+based on like they had like several different breeds and then figured out which one was the friendliest
+Speaker H
+:
+which were friendly
+Speaker E
+:
+oh I would love to have a fox
+Speaker G
+:
+yeah
+Speaker C
+:
+they're cute I would have a fox before a raccoon
+Speaker E
+:
+animal sanctuary
+Speaker C
+:
+also raccoon poop y'all it smells gross
+Speaker G
+:
+oh does it
+Speaker B
+:
+I know a lot about
+Speaker C
+:
+because I had a raccoon infestation at my last house
+Speaker I
+:
+is there poop that doesn't smell gross
+Speaker C
+:
+no no I'm saying it smells like not
+Speaker G
+:
+it's different it's different there's levels there's levels to this
+Speaker C
+:
+there's diseases in that but there was an infestation at my house they were trying to because the crawl spaces weren't covered I also know what a raccoon sounds like it sounds like a dolphin
+Speaker H
+:
+a dolphin
+Speaker C
+:
+they go
+Speaker A
+:
+under what conditions
+Speaker C
+:
+that's what they sound like all the time
+Speaker G
+:
+oh
+Speaker C
+:
+like because when we had to catch them we had to like play the sound on you know on the phone and I was like why does that sound like dolphin
+Speaker I
+:
+oh
+Speaker C
+:
+and then they came out then they caught them because
+Speaker H
+:
+But maybe you could teach them to like speak
+Speaker C
+:
+nope
+Speaker H
+:
+But you know there was this there was this horse back in like 1800s his name was clever Hans because they thought this horse could do math
+Speaker C
+:
+What
+Speaker H
+:
+because they would ask it a question like what's what's three plus five and it would tap its hoof and it would tap its hoof eight times and they're like it's clever Hans he's a brilliant genius horse but they found out that what it was doing was people were looking at the hoof and then when it got to eight it would look the people would look up so it knew like whenever people look up stop
+Speaker B
+:
+my god
+Speaker H
+:
+so
+Speaker C
+:
+wait until somebody was like
+Speaker H
+:
+yeah yeah exactly
+Speaker C
+:
+that's smart
+Speaker H
+:
+clever Hans that's he was the smartest horse ever
+Speaker D
+:
+wheels in their in their intellect you know
+Speaker H
+:
+yeah
+Speaker D
+:
+like I feel like the same vibes like horses and wheels
+Speaker B
+:
+really
+Speaker H
+:
+yeah
+Speaker J
+:
+wait you further explain this
+Speaker D
+:
+like wheels are like really smart
+Speaker C
+:
+super smart yeah
+Speaker D
+:
+like dolphins
+Speaker C
+:
+yeah yeah yeah
+Speaker D
+:
+like I feel like
+Speaker C
+:
+but they're so big that people think oh they're not and you're like oh you're really smart
+Speaker D
+:
+right but I feel like horses are like on that level of like knowing [***]
+Speaker H
+:
+but I heard that like octopuses are like
+Speaker C
+:
+yo super smart
+Speaker H
+:
+like if they were born like a couple million years earlier they would be ruling the world right now
+Speaker C
+:
+they're really smart
+Speaker H
+:
+yeah
+Speaker A
+:
+oh that look like
+Speaker H
+:
+a lot of arms
+Speaker E
+:
+they can't open a jar
+Speaker G
+:
+they can't no I was about to say I've seen an octopus open a jar
+Speaker I
+:
+they open a jar
+Speaker E
+:
+on what platform
+Speaker I
+:
+they just stick they just they use like the sticky part of their hand and rip the
+Speaker F
+:
+but like you have to like
+Speaker C
+:
+they twist it
+Speaker G
+:
+no they yeah no they they can open jars like there's
+Speaker I
+:
+i feel like yeah i feel like out of all the things that you need thumbs for that was like the last example you should use
+Speaker F
+:
+like videos of octopuses trying to open a jar it's kind of hard because we need help
+Speaker I
+:
+but they have like long sticky arms they can just wrap it around
+Speaker C
+:
+how smart the octopus are is that the dogs with the buttons those videos
+Speaker H
+:
+oh
+Speaker G
+:
+i hate those
+Speaker A
+:
+but how do you know that's what they mean
+Speaker C
+:
+well because you teach them like I taught my dog rings the bell to go pee so I because I taught her from eight weeks
+Speaker A
+:
+I know but the ones that are saying like
+Speaker H
+:
+I bought buttons for my dog and
+Speaker A
+:
+yes and no
+Speaker H
+:
+we had treat
+Speaker A
+:
+when they're like oh
+Speaker H
+:
+we had belly rub and
+Speaker C
+:
+they know
+Speaker H
+:
+he learned I had to take the button away because he was obsessed with he was like treat treat treat
+Speaker G
+:
+there's a dog
+Speaker H
+:
+I had to take it away
+Speaker G
+:
+there's a dog
+Speaker A
+:
+but somebody are giving
+Speaker H
+:
+he learned it in two days
+Speaker A
+:
+different yeah tears of emotions they're like envy love loss jealousy and I'm like how do we how are we confirming that this is what the dog feels
+Speaker C
+:
+well because eventually they use they use it in the right way like they they press the buttons in the right like way
+Speaker H
+:
+yeah
+Speaker G
+:
+there's this famous dog called bunny bunny bunny you know what I'm talking about no that dog emotionally like intelligent like it's scary
+Speaker D
+:
+I know
+Speaker C
+:
+because once they learn it
+Speaker H
+:
+they know
+Speaker G
+:
+yeah it's like there's like there's she was the mom or whatever the owner was out like outside doing whatever and he then he's like where are you at
+Speaker D
+:
+yeah
+Speaker G
+:
+I come home
+Speaker C
+:
+yeah come home oh come home yeah yeah
+Speaker G
+:
+I come home I
+Speaker H
+:
+was it talking into a
+Speaker G
+:
+then you can hear the the ring
+Speaker J
+:
+yeah
+Speaker G
+:
+like hearing cry like cry like come home I miss you
+Speaker C
+:
+oh
+Speaker H
+:
+my my dog is is really smart he learns so fast that now whenever somebody sings happy birthday he gets so stoked and excited because we sing happy birthday to him and then gave him all these treats and stuff so now if anyone sings happy birthday
+Speaker A
+:
+i know this one
+Speaker C
+:
+yeah
+Speaker H
+:
+can't be your birthday every day he doesn't understand that concept
+Speaker C
+:
+like my dog rings there's two bells there's one on the front door one at the back and she knows to ring the back one to for the pee pad and the front one to go outside but then she started realizing those raccoons were out there
+Speaker B
+:
+hmm
+Speaker C
+:
+and then she was like bing outside bing outside bing outside but she was doing the front one not the back one to go on the pee pad and I was like we're not going outside right now because I'm not fighting raccoons okay but she knew she learned the difference but but later like four years later she realized oh if I want to go out and I don't have to pee I want to ring this one it's crazy I haven't even given her the word buttons because I'm scared
+Speaker J
+:
+yeah is too far and
+Speaker C
+:
+but I also kind of want to know you
+Speaker J
+:
+yeah right
+Speaker E
+:
+my dog is so smart and I adopted her she's like 90 pounds she's as tall and so she's mostly shepherd but she's all golden she's beautiful but I was reading about it they're really smart and they you know they gotta be busy because she's always looking at me like what are we doing now what are we doing now I'm like you know I said I said to my friend I said I feel like you know the dog she stares I feel like I'm I've got an unsatisfied audience and I don't have any more tunes left what are we but I so I got her this puzzle they said buy them puzzles right
+Speaker C
+:
+yeah oh yeah
+Speaker E
+:
+so you put the kibble in the top and then they press on it and the kibbles come out and she learned that in an hour
+Speaker A
+:
+wow
+Speaker H
+:
+yeah
+Speaker E
+:
+and then so a week later she's like
+Speaker C
+:
+got a harder one
+Speaker E
+:
+oh in the middle of the day I'm just going to press this and she looks up at me like you know come on where are the kibbles now put them in there
+Speaker C
+:
+that's when I think my dog maybe is I don't know because I gave her a puzzle and she just flipped it over and the food came out she's also smart but I was like what she she did a couple and then she looked at it and looked at me and was like
+Speaker G
+:
+I could just flip it over
+Speaker A
+:
+shortcut
+Speaker C
+:
+which is still smart but I was like you little turd
+Speaker A
+:
+She said we're smarter not harder.
+Speaker H
+:
+Well, I don't know if you guys have anybody.
+Speaker A
+:
+I'm a cat person too.
+Speaker G
+:
+I'm a cat dad.
+Speaker A
+:
+I feel like we are
+Speaker G
+:
+I'm a cat dad.
+Speaker D
+:
+every
+Speaker B
+:
+I love cats.
+Speaker D
+:
+just you and you and anyone else
+Speaker B
+:
+I have cat cats I don't have any right now
+Speaker G
+:
+I have two
+Speaker E
+:
+more like a dog
+Speaker D
+:
+I'm a dog person
+Speaker G
+:
+yeah
+Speaker H
+:
+but
+Speaker C
+:
+where are you saying has anybody
+Speaker H
+:
+no I want to ask if has anybody here ever gone viral to start a
+Speaker G
+:
+yeah
+Speaker H
+:
+change the subject but
+Speaker G
+:
+I've gone viral
+Speaker H
+:
+my dog I'm trying to get my dog to go viral you know so I don't know if anybody here has
+Speaker C
+:
+get some buttons
+Speaker E
+:
+get some buttons
+Speaker A
+:
+what are the ideas you're tossing around like with how
+Speaker C
+:
+yeah is it for the dog to go viral
+Speaker H
+:
+yeah I just put him on he's pretty cute but you know I I had some other stuff like I had a page that was about 90s nostalgia
+Speaker C
+:
+yeah
+Speaker H
+:
+people really like that I was playing old commercials and stuff and that was working pretty good but I need some tips
+Speaker C
+:
+you could do that and integrate your dog into that
+Speaker H
+:
+yeah that's what
+Speaker C
+:
+like him watching Saturday morning cartoons and stuff
+Speaker H
+:
+people seem to like him a lot
+Speaker G
+:
+yeah does he have any weird quirk any any not weird but
+Speaker H
+:
+yes a lot of a lot of weird stuff
+Speaker G
+:
+you gotta catch that and be like listen look what my dog did anybody else dog does this
+Speaker H
+:
+yeah
+Speaker B
+:
+you gotta do the birthday thing
+Speaker E
+:
+yeah turn your phone on and sing happy birthday
+Speaker H
+:
+that's true
+Speaker C
+:
+the more natural I find I went viral for like a couple of times but it was it was always the one that I just laughed at myself over and and thought was hilarious but didn't take seriously as I was filming it and I was like posted it and then woke up and was like oh what what
+Speaker J
+:
+I feel like those are the always the ones that go viral
+Speaker C
+:
+yeah
+Speaker J
+:
+right
+Speaker C
+:
+yeah because you don't try too hard
+Speaker G
+:
+yeah
+Speaker F
+:
+like it has to have a sense of humor
+Speaker C
+:
+or if I it's funny to me but I believe it you know
+Speaker D
+:
+what kind of dog do you have
+Speaker H
+:
+he is a 22 pound half poodle half Shih Tzu so I call him
+Speaker D
+:
+oh that's right
+Speaker H
+:
+a Poo or a [***] poo you know depending on depending on his behavior but yeah so yeah we got an account for him and we're trying to trying to get him you know
+Speaker C
+:
+I love that
+Speaker H
+:
+some likes and stuff
+Speaker A
+:
+yeah break him into Hollywood
+Speaker H
+:
+yeah
+Speaker D
+:
+yes
+Speaker A
+:
+he's trying to break into the entertainment
+Speaker H
+:
+yeah
+Speaker E
+:
+I was thinking that for my dog because she needs a job she really does I need something to do
+Speaker G
+:
+free
+Speaker E
+:
+she stares at me
+Speaker C
+:
+that bills are high
+Speaker G
+:
+like man
+Speaker D
+:
+I feel like a dog or a baby like you know
+Speaker I
+:
+might as well
+Speaker D
+:
+might as well
+Speaker J
+:
+they do go viral
+Speaker D
+:
+if I had a
+Speaker G
+:
+they did they go viral fast
+Speaker I
+:
+I mean nowadays with like going viral and all that it's just all about kind of like those first two seconds of the video
+Speaker H
+:
+yeah
+Speaker I
+:
+if you can do something that is like you either have to do something either like vocally or physically that is attention grabbing so either like like flashing something across the screen quick or an audio bite that like is super like attention grabbing because everyone's kind of just scrolling mindlessly. And if they hear an audio bite that grabs their attention, they're more inclined to watch the video
+Speaker C
+:
+or see
+Speaker I
+:
+and the more retention you get on your video, the longer people watch it, the more it pushes it out to other people.
+Speaker H
+:
+see I've been watching this guy he's got a little doll with Michael Jackson's face on it like has it like fixing his car and stuff.
+Speaker C
+:
+What?
+Speaker G
+:
+Yeah, it's like it's just like little thing on TikTok shop that you can buy like some how man I hate that I know what you're talking about
+Speaker H
+:
+he's like see what the problem here is your shimoninator it's not
+Speaker C
+:
+I don't know that I only thing I've seen is the shadow you know the people that do the Michael Jackson with their fingers and it's like a shadow you know what I mean and they're like they do but they do the whole dance and they make arms and I don't know how you do that
+Speaker B
+:
+okay so
+Speaker J
+:
+oh speaking of music Eylie what do you like to to listen to
+Speaker F
+:
+80s rock
+Speaker C
+:
+yeah
+Speaker F
+:
+yeah
+Speaker C
+:
+yacht rock or regular rock
+Speaker F
+:
+but more like the folk rock like just recently got more into just like the it's like you're kind of in like a whimsy Lord of the Rings like movie set I enjoy that a lot
+Speaker C
+:
+oh that's fun
+Speaker F
+:
+is that like a common thing for you guys
+Speaker C
+:
+I didn't know folk rock was
+Speaker H
+:
+no I don't know what that is
+Speaker F
+:
+what is Fleetwood Mac but it's a lot more instrumental so like Led Zeppelin did a lot of like interestingly enough like music on Lord of the Rings so if you go like really deep down you'll find a lot of instrumental very peaceful music
+Speaker H
+:
+wait Led Zeppelin did music for Lord of the Rings
+Speaker F
+:
+I think oh my god I think it's either Led Zeppelin or it's another band that's very similar to it but a lot of like Black Sabbath that when you think of Black Sabbath you think of like hardcore rock right
+Speaker C
+:
+Oh
+Speaker F
+:
+they have a lot of very peaceful instrumental songs as well
+Speaker H
+:
+yeah ballads
+Speaker C
+:
+what
+Speaker F
+:
+yeah which I love
+Speaker C
+:
+never knew that
+Speaker D
+:
+either
+Speaker F
+:
+yeah so if you like peaceful instrumental
+Speaker C
+:
+I'm feeling elated
+Speaker F
+:
+yeah yeah
+Speaker I
+:
+so is like the folk rock kind of similar like when we were at Coachella and we saw David Byrne was it like
+Speaker F
+:
+um that's alternative
+Speaker H
+:
+oh man
+Speaker I
+:
+it was interesting so we did I at least I didn't know much about David Byrne and we kind of just walking around getting food
+Speaker J
+:
+yeah
+Speaker I
+:
+and we walked by and he was so like we saw his performance and we all were kind of just like whoa
+Speaker G
+:
+it was vibe
+Speaker I
+:
+and we found out it was David Byrne
+Speaker G
+:
+it was
+Speaker I
+:
+very cool
+Speaker G
+:
+that's crazy
+Speaker C
+:
+I don't know I don't think I know
+Speaker I
+:
+he's the lead singer of Talking Heads
+Speaker H
+:
+I used to be obsessed with Coachella I went eight years in a row
+Speaker I
+:
+wow
+Speaker H
+:
+like the most important thing in my life
+Speaker G
+:
+that's us right now yeah
+Speaker J
+:
+that was like me too
+Speaker H
+:
+enjoy it
+Speaker I
+:
+I've been like I've been to probably over 100 festivals in my life
+Speaker G
+:
+Coachella we
+Speaker I
+:
+what I do for work
+Speaker G
+:
+love Coachella
+Speaker C
+:
+oh you do I can't do big crowds like that
+Speaker G
+:
+it's
+Speaker F
+:
+but it's like too loud
+Speaker G
+:
+Coachella is like a different world though you're like big crowd but it's not a big crowd because there's so many different there's so many there's
+Speaker C
+:
+there is
+Speaker G
+:
+it's like it's like it's like
+Speaker I
+:
+because because there's because it's such a big grounds and because there's like over over like like I think it's like north of like half a million people nowadays that go but because there's so many people but because there's seven stages and art installations
+Speaker H
+:
+there's 10 stages
+Speaker G
+:
+and there's so many and there's so many different genres not everybody's going to see this like the same
+Speaker H
+:
+everything every genre except
+Speaker I
+:
+because those big drone shots
+Speaker G
+:
+yeah
+Speaker E
+:
+what kind of music is David Byrne I don't know him
+Speaker F
+:
+alternative like 90s rock Talking Heads you've probably heard a lot of their songs on like the radio
+Speaker E
+:
+his name sounds familiar but I don't
+Speaker B
+:
+he was the lead singer for Talking Heads
+Speaker F
+:
+yes
+Speaker E
+:
+oh oh okay
+Speaker F
+:
+it's like the burning the house down song by Talking Heads
+Speaker E
+:
+singer okay like that name sounds familiar
+Speaker F
+:
+yeah that one is
+Speaker H
+:
+but I'll tell you so I went I went eight years in a row I can't say what the best act was but definitely solidly in the top three I was at Beychella
+Speaker G
+:
+Beyonce that's fire
+Speaker H
+:
+listen
+Speaker I
+:
+2018
+Speaker G
+:
+wait are you a weekend one or weekend two
+Speaker H
+:
+always one
+Speaker G
+:
+you're one we're a two no weekend two
+Speaker H
+:
+only one
+Speaker I
+:
+so wait why were why were you weekend one
+Speaker J
+:
+so I liked it mainly because oh the the green grass
+Speaker F
+:
+green grass
+Speaker J
+:
+also liked hearing like I guess the mess ups and then when I went
+Speaker C
+:
+perfected or something
+Speaker J
+:
+yeah exactly
+Speaker G
+:
+yeah weekend two they only get their get their act together they
+Speaker I
+:
+so me and him have gone every Coachella I've been to I've gone to with Justin and we always go weekend two because for us at least nowadays I don't know how it was back then like when you went eight years in a row nowadays weekend one is when every brand gives out so all the influencers that get free tickets that are there to post videos the crowd is dead there's no one dancing it's not there's people dancing obviously but most of it is
+Speaker J
+:
+like a fashion show
+Speaker I
+:
+it's like a fashion show or influencer land and weekend two is more the people that go because it's usually a cheaper weekend too people that like to go and dance and have more fun like I go I make friends I go like meet a random person dance with them for an hour
+Speaker G
+:
+I call it the human weekend
+Speaker H
+:
+I think you get better performances at weekend two for sure
+Speaker I
+:
+I think so yeah but I think you get better
+Speaker G
+:
+you get better guest weekend one
+Speaker J
+:
+yes
+Speaker G
+:
+better guests
+Speaker C
+:
+I'm not going back out here
+Speaker H
+:
+and but I'll tell you it was like so so you have to there's 10 stages so you could go 10 weekends in a row and not see the same act so you have to pick and choose so we you buy the ticket before the lineup even comes out so lineup comes out it's Beyonce I'm like okay
+Speaker C
+:
+you just gotta get the ticket
+Speaker H
+:
+we gotta
+Speaker C
+:
+you don't know
+Speaker H
+:
+we've gotta I gotta go see Beyonce just because I'm not her demographic you know whatever but I watched it and then I was after I was like okay you know what
+Speaker G
+:
+I get it
+Speaker H
+:
+credit where credit's due that was
+Speaker C
+:
+amazing
+Speaker H
+:
+yeah I was like okay I I get it
+Speaker G
+:
+right
+Speaker F
+:
+well ticket prices changed a lot since like when it first started the
+Speaker H
+:
+what's that
+Speaker F
+:
+The ticket prices for like what were they like
+Speaker H
+:
+oh
+Speaker G
+:
+what was the first what was the first year you went
+Speaker H
+:
+2012
+Speaker G
+:
+okay
+Speaker J
+:
+oh wait I went to that same one and then it was $325
+Speaker H
+:
+yeah sounds right
+Speaker I
+:
+it's it's about it's about 600 now
+Speaker J
+:
+yeah
+Speaker E
+:
+okay well I want to see all you guys out
+Speaker C
+:
+what
+Speaker E
+:
+when I I grew up in Southern California and the first time I went to Disneyland it was seven dollars
+Speaker C
+:
+what What are you even saying?
+Speaker F
+:
+Like what year?
+Speaker E
+:
+but I'm not going to tell you how old I am but
+Speaker B
+:
+was at the time
+Speaker E
+:
+but it was but it was seven dollars
+Speaker C
+:
+that's how much a gas cost
+Speaker F
+:
+that that's like a
+Speaker I
+:
+I was like I don't know what car you had that tank is seven dollars but I would buy it right now
+Speaker G
+:
+I'll buy it right now
+Speaker C
+:
+that's how much a gallon
+Speaker B
+:
+I know it's crazy
+Speaker J
+:
+yeah
+Speaker B
+:
+so friends of mine went to Coachella this year and they said Justin Bieber was amazing
+Speaker G
+:
+oh yeah oh
+Speaker I
+:
+really
+Speaker B
+:
+was like
+Speaker C
+:
+didn't he do something to piss them off and he like played all his songs from YouTube
+Speaker I
+:
+so I was funny and I think it was kind of inventive
+Speaker C
+:
+but did he do it on purpose
+Speaker J
+:
+yeah
+Speaker I
+:
+he did it on purpose
+Speaker A
+:
+yeah
+Speaker G
+:
+I thought he and it's like that's how he got started like he found his fame
+Speaker B
+:
+went back to his
+Speaker G
+:
+yeah
+Speaker C
+:
+but but was the base because he didn't have permission to play them live but he could
+Speaker I
+:
+no he had permission to play them live I think he still owns the songs
+Speaker H
+:
+I feel like you put any effort
+Speaker G
+:
+it just felt like lackadaisical
+Speaker C
+:
+I thought it I thought it was because
+Speaker G
+:
+because like how much how much that thing was more for how much they paid him
+Speaker C
+:
+I think it's
+Speaker I
+:
+I think she's right. I think Scooter Braun.
+Speaker C
+:
+he had all the rights and and and they were
+Speaker I
+:
+I didn't know
+Speaker C
+:
+yeah that's why he took his money if it's played on YouTube so he was like I'm going to
+Speaker D
+:
+okay that's sick
+Speaker G
+:
+oh that's okay I didn't know that I thought you were talking about from the crowd
+Speaker C
+:
+oh no no no
+Speaker G
+:
+okay
+Speaker C
+:
+so yeah
+Speaker I
+:
+more you know
+Speaker B
+:
+what I don't your favorite no what are your favorite concerts or shows that you've been to
+Speaker G
+:
+oh I have a
+Speaker C
+:
+Justin
+Speaker G
+:
+well I don't want to flex but my first concert was Prince yeah yeah yeah yeah at the four at the forum before they redesigned it thank you very much yeah
+Speaker E
+:
+oh that's where I saw him
+Speaker G
+:
+yeah is when he did those seven day like that he had like a like he did a couple days at the forum
+Speaker E
+:
+yes yeah
+Speaker G
+:
+my mom my mom had a couple tickets
+Speaker E
+:
+I saw him
+Speaker G
+:
+on the last day she her friend hadn't wasn't able to go she was like
+Speaker H
+:
+I would have loved
+Speaker C
+:
+stop right now
+Speaker G
+:
+snag me yeah purple rain rain Janelle Monae opened that was crazy
+Speaker I
+:
+I saw her open for Bruno Mars
+Speaker E
+:
+best acoustic stuff
+Speaker G
+:
+it was it was like she was like wearing a like a black and white suit
+Speaker C
+:
+I want to see Bruno Mars so bad
+Speaker H
+:
+I will say I will say that right now this moment I gotta say it's a pretty good moment to be in LA because we had the Rams win the Super Bowl the Super Bowl was in LA Drayden Snoop played the halftime show we've had what three World Series we had the World Cup Super Bowl's coming back next year and in 2028 we got the Olympics coming
+Speaker G
+:
+come on now
+Speaker H
+:
+it's a good I was talking to this dude lived in LA for 70 years I said you've seen the city change a lot he says yeah I said what was the best time to live in LA he said 1984 I said that's a very specific answer he said yeah when the Olympics came he said it was so exciting and I love that answer because coming back in 28
+Speaker I
+:
+Dodgers won a World Series then too
+Speaker H
+:
+yeah exactly
+Speaker G
+:
+are y'all trying to go to any events for the bigs you got you got some tickets
+Speaker D
+:
+like a track like
+Speaker G
+:
+fire
+Speaker F
+:
+do you know what sport
+Speaker G
+:
+anybody else not tickets for the Olympics
+Speaker F
+:
+do you know is it
+Speaker G
+:
+you got 36 tickets
+Speaker H
+:
+drop I got 36
+Speaker G
+:
+did you get any basketball ones
+Speaker E
+:
+I signed up for that
+Speaker B
+:
+I did too
+Speaker H
+:
+badminton yeah
+Speaker I
+:
+I think that's more fun
+Speaker G
+:
+like yeah I just I don't want to go see I just want to be at an Olympic event like I don't care
+Speaker C
+:
+I would love to see gymnast
+Speaker G
+:
+I that's the number one number one for me is basketball
+Speaker E
+:
+I love gymnastics but I would like to see
+Speaker A
+:
+I can't I'm having
+Speaker E
+:
+volleyball outside
+Speaker I
+:
+yeah the beach volleyball
+Speaker H
+:
+I volleyball for 28 bucks
+Speaker E
+:
+volleyball so much
+Speaker C
+:
+you got
+Speaker F
+:
+I can't
+Speaker G
+:
+36
+Speaker H
+:
+this last
+Speaker C
+:
+Are they like no sleeve seats? I don't not that
+Speaker H
+:
+well it's on the beach there but like opening ceremony I could have got a ticket for 700 and I dilly dallied and I looked 10 minutes later it was 2600
+Speaker C
+:
+no
+Speaker H
+:
+like five grand a piece
+Speaker A
+:
+yeah
+Speaker I
+:
+I will say as cool as it would be at the opening ceremony opening ceremony it's kind of boring
+Speaker H
+:
+I don't know
+Speaker C
+:
+have you gone before
+Speaker I
+:
+I've watched it on TV and like when you're watching it it's cool like you get to see all the introductions of the but you're kind of just watching people
+Speaker H
+:
+but Tom Cruise is probably going to parachute in
+Speaker C
+:
+I you know I have a HD TV
+Speaker I
+:
+TV at home,
+Speaker H
+:
+you gotta get involved you can do it they're going to do another ticket drop
+Speaker C
+:
+you know I would love to but sometimes lately even concerts Olympics things like that like they price us out like just just because of like how it is now it's like you can want to do travel
+Speaker H
+:
+just for LA residents
+Speaker G
+:
+maybe someone I can't name
+Speaker H
+:
+so
+Speaker C
+:
+but not not everybody got it's like kind of like a lottery
+Speaker H
+:
+yeah it was
+Speaker C
+:
+not my neighbors a bunch did them and none of them got them
+Speaker E
+:
+yeah I did too and I all my friends did none of us got were able to get tickets
+Speaker I
+:
+like Molly what's your favorite concert you've ever been to
+Speaker D
+:
+it's like Ticketmaster vibes like it's kind of random
+Speaker C
+:
+yeah
+Speaker A
+:
+probably well I I'll say I'll just for the sake of this I'll just say Bruno Mars I think is an amazing
+Speaker C
+:
+I'm so jealous
+Speaker H
+:
+yeah
+Speaker I
+:
+how much how much were your tickets when you saw Bruno however many years back
+Speaker A
+:
+well that one I I don't know because I was I was a guest
+Speaker G
+:
+I was on that list
+Speaker E
+:
+so it was free
+Speaker A
+:
+but I will say I saw Sam Smith first $17 before he was famous.
+Speaker J
+:
+wait
+Speaker A
+:
+those are the best things ever like the experiences they're intimate they're small you feel like you got to like discover them first before anyone else I love that
+Speaker C
+:
+you know who you guys have to do that to like see him now because in about two months
+Speaker A
+:
+who
+Speaker C
+:
+Magnus Farrell
+Speaker H
+:
+never heard of
+Speaker C
+:
+college Will Ferrell's kid
+Speaker J
+:
+he has a beautiful voice his son yes
+Speaker C
+:
+like a mixture of like Robin Thicke but with more vocal ability and like it's just soulful it doesn't look like he came out of Will Ferrell
+Speaker J
+:
+yeah
+Speaker C
+:
+but he's right now he's like performing to all these places and I got tickets for like 37 bucks in about two or three months he's his tickets are going to be
+Speaker I
+:
+yeah
+Speaker C
+:
+literally Google he see him now
+Speaker F
+:
+what type of music is it
+Speaker A
+:
+mixer
+Speaker C
+:
+yeah something like that
+Speaker H
+:
+he's on prestige worldwide
+Speaker G
+:
+I like that joke that's a good one
+Speaker I
+:
+I actually had an opportunity to work with Magnus Ferrell not too long ago I didn't end up it didn't end up working out but there was like a chance I was going to be a part of like a mini tour he did with I think it was Nick Jonas
+Speaker F
+:
+what type of music is he is he like
+Speaker C
+:
+he's like what is it like pop soul or
+Speaker I
+:
+yeah yeah it's like it's like it's like poppy music but he's a soulful artist it kind of gives like his own like
+Speaker F
+:
+that's a little bit similar to like his dad's
+Speaker E
+:
+I love listening to people try
+Speaker C
+:
+no
+Speaker I
+:
+Will Ferrell the actor
+Speaker E
+:
+it's hard
+Speaker A
+:
+yeah good you know
+Speaker E
+:
+who's the guy in genre you know
+Speaker I
+:
+Pharrell not Pharrell Ferrell
+Speaker C
+:
+did you thought it was Pharrell Pharrell I was like this is the wrong skin color
+Speaker F
+:
+wait William Ferrell's the guy in Elf right
+Speaker C
+:
+yes William
+Speaker G
+:
+it's okay hey you're okay because not too long ago I thought Nelly and Nelly Furtado were the same person not too long ago chill on me chill on me chill on me wait
+Speaker I
+:
+time out by not too long ago I told him this last weekend
+Speaker J
+:
+oh my god
+Speaker G
+:
+wait wait wait wait wait
+Speaker C
+:
+no
+Speaker G
+:
+because I thought Nelly a full name was Nelly Furtado I thought you know like
+Speaker C
+:
+but what did you think when you heard like you're beautiful you were like Nelly's voice
+Speaker G
+:
+I never no but I just never I just never like I just yeah
+Speaker I
+:
+he heard Air Force One and promiscuous back to back
+Speaker A
+:
+yeah he's like diversity
+Speaker G
+:
+like oh man look at you getting hot and like a bird like it's crazy that's wild
+Speaker C
+:
+nothing will ever beat William Ferrell
+Speaker H
+:
+probably real name
+Speaker C
+:
+it and the cutest thing is like he went on he was on some podcast oh he was on Michelle Obama's podcast for himself like to promote himself and all he could do was talk about his son and he pulled his phone out and played like the thing where I first heard I was like wait a minute that's good
+Speaker G
+:
+because y'all know me y'all know what I got going on
+Speaker C
+:
+he's like he's 21 he didn't ask for any help and he's like wait a minute it's going to drop like he was so
+Speaker G
+:
+They say nepotism right here. This is hard work. This is hard work and talent right here.
+Speaker C
+:
+Magnus.
+Speaker H
+:
+Magnus.
+Speaker C
+:
+Ferrell.
+Speaker F
+:
+Wait and it's P H or is it F H?
+Speaker G
+:
+Ferrell.
+Speaker J
+:
+I like how we're still on the you're still on the
+Speaker I
+:
+PH is Pharrell
+Speaker H
+:
+you'll probably he'll probably be at Coachella this next year you know He that's what they do
+Speaker D
+:
+speaking of Coachella and far away land
+Speaker B
+:
+yes
+Speaker D
+:
+what does everyone's favorite place to travel
+Speaker I
+:
+Thailand, I've been I've been I've been to Thailand twice for work
+Speaker J
+:
+nice
+Speaker I
+:
+it's my favorite place on the planet
+Speaker D
+:
+I want to go there so bad
+Speaker I
+:
+if you can stomach the like however like four digit cost for the flight
+Speaker C
+:
+yeah
+Speaker I
+:
+or whatever it costs once you're out there it's everything is like
+Speaker C
+:
+cheap.
+Speaker E
+:
+Have you ever
+Speaker I
+:
+No I've never gotten any type of like Bali belly or like like sickness
+Speaker H
+:
+Bali belly
+Speaker I
+:
+it's a thing in Southeast Asia where if you eat like street vendors food you get kind of like just like stomach problems
+Speaker H
+:
+okay
+Speaker B
+:
+like going to Mexico and getting
+Speaker I
+:
+yeah exactly like yeah it's if you eat the wrong thing you get a stomach it's
+Speaker C
+:
+I mean we like that in America now so don't really
+Speaker E
+:
+exactly
+Speaker I
+:
+it's more it's more the cleanliness of things like because like sometimes when you eat the street vendors you don't know how well they're cleaning their food and if they're cleaning their food with the water sometimes the water in certain cities isn't clean like that you have to use bottled water to clean
+Speaker C
+:
+yeah yeah right
+Speaker I
+:
+like I don't brush my I only brush my teeth with bottled water out there
+Speaker C
+:
+there
+Speaker I
+:
+because you don't know what's okay
+Speaker B
+:
+Greece was like places
+Speaker F
+:
+Greece
+Speaker I
+:
+I want to go to Greece so bad
+Speaker B
+:
+twice for like long periods like six weeks each amazing
+Speaker A
+:
+oh that's nice because then you get to feel like you're living
+Speaker B
+:
+it was heaven it was heaven
+Speaker G
+:
+New Zealand for me
+Speaker C
+:
+oh I want to go there so bad
+Speaker E
+:
+oh I haven't been to New Zealand
+Speaker C
+:
+it's been on my list
+Speaker G
+:
+I did and I did that Lord of the Rings tour thing
+Speaker F
+:
+oh the the little like hobbit hut thing
+Speaker G
+:
+yeah I did the hobbit thing
+Speaker C
+:
+hobbit huts
+Speaker G
+:
+cool I'm not a I'm not a Lord of the Rings fan so I didn't but it was dope to see
+Speaker E
+:
+I haven't seen
+Speaker G
+:
+yeah it was dope
+Speaker H
+:
+speaking of
+Speaker E
+:
+Australia I would
+Speaker H
+:
+food vendors though if you guys want to the best tacos in LA in the parking lot of pavilions at the intersection of Melrose and Vine these guys do a little pop-up there there's always a line best tacos you get
+Speaker I
+:
+yeah they're they're phenomenal it's a big debate you're starting here
+Speaker H
+:
+yeah
+Speaker I
+:
+I've had them they're great I I will say I think Brothers Cousins is better I think it's I want to say it's on Sepulveda and National outside that Ross
+Speaker H
+:
+okay
+Speaker I
+:
+it's it's
+Speaker H
+:
+I'll try
+Speaker I
+:
+it's a bit
+Speaker B
+:
+Pepsi I want to travel
+Speaker H
+:
+yeah
+Speaker C
+:
+I I'll try street food I think somewhere else maybe to be like I did it
+Speaker I
+:
+yeah
+Speaker D
+:
+I like
+Speaker G
+:
+that's next that's I want to go cherry cherry blossom
+Speaker C
+:
+I want to see the cherry blossoms
+Speaker D
+:
+yeah
+Speaker G
+:
+and I want to go snowboarding in Japan
+Speaker E
+:
+oh
+Speaker I
+:
+i really
+Speaker G
+:
+i really want to go
+Speaker I
+:
+they have a great they have a
+Speaker G
+:
+they have great mountains in japan yeah i'm a big boarder man big boarder
+Speaker D
+:
+oh like just hand me the sushi in my hand
+Speaker G
+:
+none of this none of this sugar fish no boo no I don't want some
+Speaker C
+:
+that's the real fish
+Speaker A
+:
+can be true
+Speaker G
+:
+you said
+Speaker A
+:
+we don't have to choose
+Speaker H
+:
+I'm pretty sure my dog in a past life was Japanese though because I was watching something and there's a picture of Mount Fuji and I said Fuji and his head shot up and now every time I say the word Fuji he goes wow I think it something about I think past life
+Speaker F
+:
+do you think it sounds like food do you think he knows
+Speaker A
+:
+I think you need to make a video of you saying that and then every single video on the page just has to be you saying Fuji and him popping up
+Speaker I
+:
+yeah that's how you go viral
+Speaker H
+:
+he loves it
+Speaker A
+:
+and it's a
+Speaker G
+:
+a Fuji
+Speaker A
+:
+teach
+Speaker F
+:
+dog Japanese
+Speaker H
+:
+i think i don't know what it is but yeah japan i would that's top of my list that's number one place i'd love to go
+Speaker G
+:
+definitely
+Speaker H
+:
+but italy for me i'm italian so
+Speaker B
+:
+i want to go to
+Speaker E
+:
+of course
+Speaker H
+:
+we can't go wrong
+Speaker D
+:
+i feel like i would back though
+Speaker H
+:
+you won't you won't
+Speaker D
+:
+live there
+Speaker H
+:
+this little sorrento this little mountaintop village on the Amalfi coast
+Speaker C
+:
+i mean Amalfi coast
+Speaker H
+:
+on a family cruise I wrote a note left it under my brother's pillow said I jumped off the boat and swam back and I was like the the boat's pulling away from the dock and I'm like I can still make this jump I can still I was like no the whole family will be mad I gotta just stay on the boat but you'll love it and you're like I gotta go back here just leave your heart there
+Speaker E
+:
+Italy is beautiful it's always France
+Speaker G
+:
+yeah
+Speaker A
+:
+I love France it's the best
+Speaker C
+:
+Paris I go every year for my birthday
+Speaker G
+:
+I know that's right every year
+Speaker C
+:
+I started taking myself
+Speaker G
+:
+I know that's right
+Speaker C
+:
+because I life one like in 2022 and I was like I gotta go somewhere I bought a ticket on Monday and flew there on Wednesday and I found my place to stay on the 12 hour flight because I was like it's me I go by myself like there's right it's not like I'm going anywhere like their world country there's always something
+Speaker D
+:
+yeah
+Speaker C
+:
+but the thing is my birthday happens to be during fashion week so it was not that easy because everybody was booking things up but now I go every year and I started teaching myself French because I was like
+Speaker I
+:
+that's incredible
+Speaker C
+:
+there's gotta be one thing you stick to in life hopefully it's a good diet but or taking yourself to France
+Speaker G
+:
+yeah
+Speaker C
+:
+because Spain used to be my favorite country because it was the first time I left the United States I was in like high school and I still is
+Speaker J
+:
+I recently went there I really like Spain a lot
+Speaker I
+:
+what part of Spain did you go to
+Speaker J
+:
+I went to Madrid and then my cousin got married in the countryside of Toledo
+Speaker C
+:
+yeah Toledo was so pretty
+Speaker J
+:
+oh my god
+Speaker C
+:
+it's everywhere yeah it's all
+Speaker J
+:
+and their food is so good
+Speaker C
+:
+the food is so good
+Speaker J
+:
+you could literally go anywhere
+Speaker C
+:
+you don't have to worry about the water
+Speaker J
+:
+yeah yes
+Speaker C
+:
+and the street food there is like good food
+Speaker J
+:
+yeah
+Speaker C
+:
+it's like they made it like with love and no pesticides and things
+Speaker I
+:
+yeah
+Speaker H
+:
+France and Italy last year and I just used the hotel tonight app great
+Speaker C
+:
+I use that a lot
+Speaker H
+:
+yeah
+Speaker C
+:
+it used to be like you could only find it tonight right if you you can look I think up to a month in advance and again since I travel by myself I found some amazing hotels that they just want to fill and I got like a suite because it was all that was left and I was like what for 200 hotels tonight bum
+Speaker B
+:
+wow
+Speaker G
+:
+okay
+Speaker C
+:
+and because it's now you can just like you know you can Uber in Paris you can Uber it anywhere you can do those apps now from where you're at
+Speaker H
+:
+yeah
+Speaker E
+:
+we went went to Italy three years ago and all did all AirbnBs and they're so cute in Italy because when you Airbnb there they don't just give you a code they they meet you there then they go in the room with you or the place and then they get out a map and they go okay this is the highlight you probably want to see
+Speaker H
+:
+yeah
+Speaker E
+:
+they are just the sweetest so much fun we went all over the place it was
+Speaker D
+:
+I love that
+Speaker E
+:
+all AirbnBs
+Speaker C
+:
+I was in Italy for my cousin's wedding and that was the only time I ever went and I need a do over because she got married in this tiny town that most people don't haven't heard of
+Speaker H
+:
+Rome
+Speaker C
+:
+no it's like it was the capital is Genoa where Genova Genoa where Pesto is made
+Speaker H
+:
+okay
+Speaker C
+:
+it's literally like a retirement town I think for Italian so it's like small and cute
+Speaker H
+:
+yeah
+Speaker C
+:
+but like the food surprisingly was not good and we were there for four days and I was like what's happening
+Speaker H
+:
+you gotta ask the locals
+Speaker C
+:
+we did but it's a small small town so I think I just need a do over
+Speaker I
+:
+well have you heard about the thing that's happening like all over Italy right now with like all the small towns that are like losing population they're selling homes for like a dollar
+Speaker C
+:
+yeah oh yeah
+Speaker I
+:
+it's like
+Speaker H
+:
+I know someone who did that
+Speaker E
+:
+they've been doing that for many many years
+Speaker I
+:
+yeah I didn't know I didn't know about this till like recently but like you basically like you buy a home for a dollar and you commit to like like a list of things it's like you have to spend like I think it's like like
+Speaker C
+:
+30 grand
+Speaker I
+:
+like 30 like depending on what city it's from like 30 to like I think like even up to like 150
+Speaker D
+:
+like renovating
+Speaker I
+:
+renovating the home and you have to live there and you have to commit to living there and being a resident of there for like five
+Speaker C
+:
+yeah
+Speaker I
+:
+i think
+Speaker C
+:
+depending three three to five maybe
+Speaker D
+:
+five years
+Speaker I
+:
+so yeah so you live there for five years and it's like it's a countryside town in Italy so there's not really much there but then after you do that you own a home in Italy yeah
+Speaker C
+:
+yeah
+Speaker E
+:
+yeah
+Speaker H
+:
+my friend did that he bought a house for a thousand bucks and he lives there now
+Speaker C
+:
+what
+Speaker H
+:
+yeah in Italy it's like okay well come anytime
+Speaker K
+:
+I can for that house
+Speaker H
+:
+yeah
+Speaker E
+:
+it's you know getting construction and all
+Speaker C
+:
+it's hard that's the
+Speaker E
+:
+hard though language it's a little complicated
+Speaker I
+:
+it's definitely not as easy as it sounds but it's still still obviously like
+Speaker C
+:
+doable
+Speaker I
+:
+every time I see it I'm like
+Speaker H
+:
+doable
+Speaker I
+:
+tomorrow
+Speaker F
+:
+yeah do you have to renovate it within a specific time period because like you could just buy it and then just you know
+Speaker J
+:
+and just say that you're doing it
+Speaker I
+:
+i would assume there's probably some sort of time frame on it
+Speaker C
+:
+probably within the first year you have to break ground or get started or something i would i would imagine
+Speaker H
+:
+yeah he's putting work into it
+Speaker C
+:
+yeah
+Speaker H
+:
+i don't i don't
+Speaker I
+:
+like why wouldn't you like if you're buying it for such a low price then like you can just put
+Speaker C
+:
+and also the plumbing and stuff in those older older you have to redo
+Speaker I
+:
+yeah you have to
+Speaker F
+:
+and especially if it's in like a area that's not that populated I feel like it's like a little bit like
+Speaker C
+:
+yeah but then like then you either live there or you can like live there part time and Airbnb and they have a tourist population again
+Speaker I
+:
+exactly
+Speaker H
+:
+and then you can you can travel all over Europe it's just like going to different countries like going to different states
+Speaker I
+:
+once you're in Europe it's so easy to get around
+Speaker E
+:
+Because I want to see there's so many I want to go to Vienna
+Speaker C
+:
+buy a place in Paris and then travel everywhere
+Speaker I
+:
+I've been
+Speaker H
+:
+But like you were saying though
+Speaker D
+:
+What did you say Steph? I want to go on a trip like tomorrow now.
+Speaker C
+:
+Yeah.
+Speaker I
+:
+If you could go anywhere tomorrow where would you go?
+Speaker D
+:
+Oh my god. Dude that's really I mean probably Japan because
+Speaker C
+:
+yeah you're like that's
+Speaker A
+:
+I literally answered this half an hour ago dude
+Speaker D
+:
+yeah or Italy yeah
+Speaker H
+:
+but that's the thing like people all these people that came for the World Cup they're freaking out over the United States because they they were like oh my god like we went to New Orleans we went to New York City went to Vegas and they're like so different and they're like
+Speaker C
+:
+yeah you're like that's what we do in Europe
+Speaker H
+:
+yeah exactly
+Speaker C
+:
+Amsterdam we go to Italy we get on a two hour flight and train and go to London from Paris you know like it's easy there to do yeah but now you're in a whole different country
+Speaker H
+:
+yeah
+Speaker E
+:
+I think a lot of people don't realize because we're so vast in the United States how very different we are depending on where
+Speaker C
+:
+where you're at
+Speaker E
+:
+we're raised
+Speaker C
+:
+yeah
+Speaker F
+:
+like even California because it's so long like I've heard people like they'll fly into LA and they're like I'm going to take like a day trip up to San Francisco
+Speaker E
+:
+oh my god no
+Speaker C
+:
+like people in Texas are like I'm I'm here I'm in Houston you're like I'm in Dallas
+Speaker K
+:
+yeah that's funny
+Speaker I
+:
+Where would you go Lisa if you could travel anywhere
+Speaker K
+:
+I know it's it's hard to say definitely Italy like I want water islands though you know
+Speaker C
+:
+you want the Amalfi coast
+Speaker E
+:
+I want
+Speaker I
+:
+Lake Como
+Speaker E
+:
+Ibiza Ibiza and Spain I'd like to go there What
+Speaker A
+:
+I just
+Speaker C
+:
+yep
+Speaker E
+:
+um yeah warm blue beautiful beach
+Speaker H
+:
+yeah
+Speaker E
+:
+yeah you gotta be near the water I can't leave the water that's my problem
+Speaker C
+:
+do you live near the water here
+Speaker E
+:
+yeah I grew up in Huntington Beach
+Speaker C
+:
+oh that's right
+Speaker E
+:
+so I I can't and and I've tried
+Speaker C
+:
+and you love it
+Speaker E
+:
+go other places
+Speaker A
+:
+can't do it
+Speaker E
+:
+you know the problem is I know I'm spoiled because I grew up and honestly the weather here now is so different than
+Speaker C
+:
+it's always it's different than five years ago
+Speaker E
+:
+yeah I mean
+Speaker C
+:
+the humidity
+Speaker E
+:
+I didn't even I never even thought about the weather it was like
+Speaker K
+:
+right it's the same every day
+Speaker E
+:
+72 most of the year
+Speaker K
+:
+always
+Speaker C
+:
+yeah
+Speaker E
+:
+ocean breeze because I was less than five minutes from the water and so and I go anywhere in the country I'm like it's too hot it's too cold like oh my god you are such a wimpy California I'm like you're right I am
+Speaker C
+:
+yeah you won't be anymore because it's hotter here and more humid here than it wasn't anywhere in the country last week
+Speaker I
+:
+I saw that I saw that
+Speaker C
+:
+and I believe it
+Speaker G
+:
+who turned off the dehumidifier
+Speaker I
+:
+it's more humid in LA than
+Speaker E
+:
+it's insane
+Speaker I
+:
+all of Alabama and Florida
+Speaker C
+:
+in Florida right now
+Speaker H
+:
+if you haven't been if you haven't been it might be a little hot now but if you haven't been go check out Sedona Arizona
+Speaker E
+:
+oh yeah
+Speaker H
+:
+that place will blow your mind
+Speaker G
+:
+Arizona right now it's like
+Speaker E
+:
+yeah don't go now
+Speaker H
+:
+not not now but it is gorgeous just these rock formations that are just like striped yellow orange red and they say there's a vortex
+Speaker K
+:
+it is
+Speaker E
+:
+there's more than one
+Speaker H
+:
+energy vortex and there's all these new age religions
+Speaker D
+:
+What does that mean?
+Speaker E
+:
+Yeah.
+Speaker H
+:
+I don't know. I don't
+Speaker E
+:
+an energy vortex
+Speaker G
+:
+Lay it on us
+Speaker E
+:
+It just it means that it it's drawing and releasing both very high frequency of energy and it's it's very healing. I mean there's several in the world
+Speaker F
+:
+Is it like energy like scientifically or is it energy spiritually or is it like almost both
+Speaker D
+:
+both?
+Speaker F
+:
+Oh. Okay.
+Speaker E
+:
+There's one place I haven't believe it or not I have not been to Sedona yet which is kind of crazy because as a healer people will go and they come back they go oh my god I was in Sedona you're everywhere it's like you're everywhere like it's okay cool but anyway so yeah I forget what I was going to say about that but yeah so so someone was saying that there's a place you go you just step in this one place and you hear bells ringing you step off
+Speaker C
+:
+I've heard of that
+Speaker D
+:
+whoa
+Speaker E
+:
+and yeah I mean I hear it's very magical
+Speaker C
+:
+multiple people like from various walks of life are like
+Speaker E
+:
+in Sedona
+Speaker C
+:
+in Sedona oh yeah yeah yeah yeah
+Speaker H
+:
+yeah so there's all these like kind of new age religions fortune tellers that kind of thing but my buddy who's kind of in that kind of stuff he went for his birthday and it went UFO sightseeing and his wife took him and and and they you know this woman took him out they gave him at night night vision goggles and she guaranteed money back you'll see a UFO and he said at some point like this light came down and was hovering and she blinked the thing it blinked back and then it flew away he's like I don't know what it was UFO
+Speaker G
+:
+we're not alone
+Speaker H
+:
+But yeah
+Speaker I
+:
+it was a guy behind the tree
+Speaker E
+:
+no doubt
+Speaker H
+:
+yeah
+Speaker A
+:
+I'm not losing this flies by like
+Speaker E
+:
+there is an energy though
+Speaker H
+:
+yeah
+Speaker E
+:
+in Sedona you do feel it and it is so beautiful because you know you're in the desert right and it's all brown brown brown and you're driving all of a sudden you turn a corner and all this red rock
+Speaker H
+:
+yeah
+Speaker E
+:
+it's gorgeous
+Speaker C
+:
+I mean if you think about like trees even here like you step out lately since it's been humid we were talking about that and the density and everything is just heavy some days and then other days it's lighter you go somewhere like Sedona it's it's like times 10
+Speaker D
+:
+yeah
+Speaker C
+:
+in terms of what you're what the rocks are vibrating what the air is vibrating it's a little cleaner out there in terms of smog so things can release and and you know get to you easier I think you know
+Speaker H
+:
+you just stand there and you look at these incredible rock and you you can't help but feel like okay something is happening something there's something bigger
+Speaker G
+:
+nature
+Speaker A
+:
+I love that feeling when you remind you remember that you're living on a planet
+Speaker C
+:
+like how small you are
+Speaker G
+:
+that was a bar I love that I love being reminded that I live on a planet no that's real no that's real like that's so real
+Speaker A
+:
+yeah like the eclipse the other night I'm like you're on a planet
+Speaker G
+:
+yeah like go ahead mother nature look at you bro
+Speaker E
+:
+that is the quote of the day
+Speaker A
+:
+planet you're on a planet
+Speaker C
+:
+we went to has anyone ever been to the sequoias
+Speaker E
+:
+I just came back I was there yesterday
+Speaker C
+:
+first time
+Speaker E
+:
+oh wow
+Speaker C
+:
+really I was there for the first time last August and I had seen the redwoods up in you know the San Bay area but then I went to these and I was like speaking of what we were talking about like there was I have never felt so small in the grand scheme of life because these trees are like Andre the Giant and it's like Jack and the Beanstalk and you just look you can't see the top and you see they're just so big and they've been there for thousands of years
+Speaker E
+:
+4,700 years General Sherman they think
+Speaker C
+:
+yeah General Sherman and that that one you can't even it's huge
+Speaker H
+:
+that's the biggest tree in the world
+Speaker E
+:
+and the base is growing
+Speaker C
+:
+you see some that are like black and you I learned that like they're specific redwood protects them from fire so there have been fires there have been like things but they're still alive and growing because their particular set of like a bark is a protectant
+Speaker K
+:
+amazing
+Speaker C
+:
+What?
+Speaker A
+:
+Did you just all sitting over here being like why don't we build everything
+Speaker E
+:
+because then there would be no more trees
+Speaker C
+:
+I had to it took like
+Speaker A
+:
+I neither had to be logical
+Speaker E
+:
+I mean I'm assuming I have the same thought That was the most disappointing for me because I had never growing up here I've never been to Sequoias.
+Speaker C
+:
+Yeah.
+Speaker E
+:
+Last week was the first time
+Speaker C
+:
+yeah
+Speaker E
+:
+and they're they're so the fire was bad it was really bad
+Speaker F
+:
+when was the fire was it
+Speaker E
+:
+see I think a few years ago
+Speaker F
+:
+okay I was I backpack there like a year ago and first of all I can just say like the sunset there was gorgeous like the mountain range just turns like this nice pink and you're just sitting there and the sky is orange and there's no one else around you when you're backpacking so that's when you just feel so like like this is just our world yeah it's like you feel so grounded
+Speaker D
+:
+I just want to go there and like breathe
+Speaker F
+:
+air so much oh my god because like I don't live like I don't live in LA but whenever I come in to LA like I can just tell the air is just
+Speaker C
+:
+Yeah
+Speaker I
+:
+it's gotten really bad
+Speaker C
+:
+you can tell as soon as you land
+Speaker I
+:
+yeah
+Speaker D
+:
+yeah
+Speaker C
+:
+but it's nice to go and and breathe
+Speaker G
+:
+like I was in I was in Virginia last like last August and I was oh
+Speaker C
+:
+and you're like
+Speaker G
+:
+there
+Speaker I
+:
+like like I grew up my whole life in LA and then I went to school at Michigan State and like when I first went out there I was like one I was just like okay first of all there's clear differences in like the air like the nature like everything was even like even though California is gorgeous and LA is gorgeous there's like clear differences just because of like how much pollution
+Speaker F
+:
+did you have like culture shock
+Speaker I
+:
+oh insane culture shock like like the the biggest culture shock is just how friendly every human is in LA everyone everyone has like it feels like they have like a shield up almost and like they're almost like it's almost like going through a job interview when you first meet someone
+Speaker C
+:
+oh I have said that about
+Speaker I
+:
+like you have to like you have to like like like you have to earn you have to earn like the second level of conversation with this person
+Speaker G
+:
+Especially
+Speaker I
+:
+yeah and like especially yeah in the spaces like like with like creative spaces like creative spaces and stuff like that
+Speaker C
+:
+well because it's always like what can I get from you
+Speaker I
+:
+yeah exactly
+Speaker G
+:
+what do you mean you're not I can't treat you like an opportunity oh I don't want to
+Speaker I
+:
+like I don't like you don't further my creative career you don't further my life I don't want to talk to you but like in the Midwest I've been all over the Midwest because I went to school out there you go up to somebody and you start talking to them they treat you like they've known you for 10 years and like until you do something bad
+Speaker E
+:
+that messes them
+Speaker I
+:
+to take them to take that away from them then they're just the kindest people ever
+Speaker C
+:
+yeah
+Speaker E
+:
+LA is a very different place from everywhere else
+Speaker I
+:
+and like and it sounds like I'm talking negatively I love LA it's my favorite place in the world I wouldn't want to live anywhere else once I have a family and I'm like I obviously I want to travel the world now while I'm young but like when I settle down and have a family and I have kids I want to live here I want my kids growing up in LA it's it's it's awesome here but like there is just so much other like versions of the world
+Speaker C
+:
+entities
+Speaker I
+:
+yeah
+Speaker C
+:
+I I'm a New Yorker so when I moved out here it was like shell shock I was like what is happening because like people always say New Yorkers are rude but really we're but you sit down and Will Ferrell
+Speaker F
+:
+do you think we're all
+Speaker C
+:
+he can come and sit on the subway with you and then the average person's going to be like hey what's up start a conversation be like alright cool peace out because they treat everyone the same which sometimes seems rude but it's like nobody cares who you are where you're from it's like what are we what dinner are we about to get what food are we about to get oh nice to meet you what do you do again and you're like I am a famous actress and you're like oh cool I love that for you and then they poop goop the train doors open
+Speaker I
+:
+exactly
+Speaker E
+:
+Gotta go.
+Speaker C
+:
+it's off
+Speaker F
+:
+Do you think like Californians are like more laid back than New Yorkers like
+Speaker H
+:
+yes
+Speaker F
+:
+experience
+Speaker C
+:
+yeah yeah
+Speaker H
+:
+I have a theory about that
+Speaker C
+:
+I I miss the hustle I because I'm used to that so I the the laid backness here sometimes I'm like what is what do I do
+Speaker E
+:
+I also think you know we're because we get in our cars
+Speaker C
+:
+yeah and I miss the subway
+Speaker E
+:
+and you're in proximity
+Speaker K
+:
+you have to be with people
+Speaker E
+:
+more often during your day it's so different
+Speaker C
+:
+you get more done because you have to there's no car there you get on the subway you're like alright let me do this before I go up five flights of stairs let me go get these groceries go say hi to you know Lisa go say hi to Tina and then I'm going to go up five flights of stairs and don't call me you know whereas here you're like I just got four or five I love you but let's get let's have happy hour tomorrow
+Speaker I
+:
+and like and like on top of it like I've done small stints living in New York for work and like when once you like are living there for an extended period of time you start to get in your routines you start to see the same faces
+Speaker C
+:
+yeah yeah
+Speaker I
+:
+and interact with the same people you get your local deli guy that you become friends with you go in even when you don't want anything you just go in and say hi because it's on your walk home
+Speaker A
+:
+community
+Speaker C
+:
+because it's on your way
+Speaker I
+:
+and like stuff like that and like you don't really get that in LA like there like there is little things like there's my frequent spots that I hit in LA that I know the like the guy who's serving my food I know the guy that lives down the street who's always out front with his with his classic car
+Speaker C
+:
+yeah yeah
+Speaker I
+:
+like there's those things but like it's everywhere you go in New York yeah
+Speaker C
+:
+but you know what you do get in LA space space you know we're back to New York you notice I haven't moved back to New York because there is space here and I like try I like having the option to drive but more importantly I like like eventually like let's say I move to Paris like we were talking about this apartment's going to be as big as this
+Speaker E
+:
+yeah right table
+Speaker C
+:
+and I'm going to have to be happy with it and I will be but for now it's like enjoy the space
+Speaker G
+:
+Right
+Speaker C
+:
+enjoy the hiking you know there's no hiking in New York
+Speaker B
+:
+yeah you have the best of both of all worlds here because you've got the beach you've got the city and you've got the mountains for the snow when you want
+Speaker G
+:
+and you can really do it all in the same day if you really wanted to you could do it in the same day you could do it in the same I've done it I've done it
+Speaker H
+:
+you've done it
+Speaker G
+:
+yeah
+Speaker H
+:
+you woke up you went surfing and then
+Speaker G
+:
+beach beach mountain I snowboard went to Big Bear just did a little
+Speaker C
+:
+we did a beach somewhere in the beach yeah drove like the 90 minutes to yeah
+Speaker H
+:
+I'm talking people who surfed and snowboarded the same day
+Speaker G
+:
+I didn't I didn't surf I didn't
+Speaker H
+:
+there's only a few places in the world you can do that
+Speaker G
+:
+I went to the I went to the beach and I went to the mountains on the same day
+Speaker H
+:
+but that's that's one of the reasons the film industry started in LA is because within one hour drive you can have snow you can have desert you can have city you can have forest you can have beach
+Speaker E
+:
+okay but wait
+Speaker I
+:
+what were you saying
+Speaker E
+:
+so I have a story from 1986 I was doing my first film here in LA and I had like a you know whatever 4 or 5 AM call and I was driving a Volkswagen Bug and it was pouring rain pouring rain I was in Hollywood and I had the call was in Canaan up in Malibu and I'm driving and I'm driving and it was December and I was going to go to New York for Christmas and I'm driving through and there's those little tunnels as you're going through so I go through the first tunnel pouring rain and I'm like so nervous there's no cell phones you know and I'm by myself and it's pitch black and it's pouring I go through the next tunnel and I come out and you guys it's freaking snowing it's snowing
+Speaker J
+:
+what
+Speaker E
+:
+it's snowing here in LA 40 years ago and I remember when it snowed not long ago somewhere in the last couple years there was a little snowfall and they mentioned and I just thought I went through a time warp I was like where like I didn't know where I was and then I passed the turn to go where the movie set was and I was like oh my god I have to turn around and I'm like I'm so nervous like because there's snow it was the weirdest thing
+Speaker J
+:
+was it like heavy snow or like was it just kind of like
+Speaker E
+:
+and the scene we were doing it was for a movie with Tony Perkins I think Anthony Perkins it was some crazy movie but anyway and it was a snow scene at a snow lodge so it's very bizarre but it was not the movie set that was snowing it was really snowing in Malibu 40 years ago 1986 December look it up yeah
+Speaker G
+:
+okay Malibu snow
+Speaker E
+:
+it was crazy
+Speaker A
+:
+yeah
+Speaker E
+:
+it was really bizarre
+Speaker G
+:
+that's wild
+Speaker C
+:
+yeah
+Speaker E
+:
+are you all from somewhere else you're from LA
+Speaker I
+:
+I'm from
+Speaker E
+:
+you're from LA
+Speaker G
+:
+around the corner
+Speaker E
+:
+are you all from
+Speaker C
+:
+where are you from
+Speaker E
+:
+and you're from Santa Barbara
+Speaker F
+:
+I'm from Santa Barbara
+Speaker C
+:
+yeah
+Speaker F
+:
+just yesterday or Thursday it was raining up there
+Speaker C
+:
+yeah
+Speaker F
+:
+and then I came down here and I was like it's sunny
+Speaker J
+:
+was it cold up there
+Speaker F
+:
+no it was it was like 86 and rainy
+Speaker J
+:
+I hate humid weather
+Speaker G
+:
+it was raining it was raining
+Speaker E
+:
+it was raining here
+Speaker C
+:
+yeah water
+Speaker E
+:
+yeah
+Speaker I
+:
+it rained for like about 20 minutes
+Speaker H
+:
+Lisa
+Speaker C
+:
+I thought it was
+Speaker E
+:
+summer
+Speaker C
+:
+but it was yeah
+Speaker H
+:
+yeah what does that mean
+Speaker E
+:
+it can mean a lot of things
+Speaker H
+:
+okay
+Speaker E
+:
+I don't think I put my hands on people and suddenly they can see you know hallelujah but so for you know for me what healing is is the integration of body mind heart and spirit and the awareness of oneself as a whole being
+Speaker H
+:
+okay
+Speaker E
+:
+right because I believe that we're all spiritual beings we're all energy souls that came here and if we were meant to just be spiritual we'd still be in the spiritual realm but now that we're here in bodies we are we're human beings right not human doings right so but what happens is we've all become human doings so in my work I help people stop to re literally remember who they are as beings as the essence that we are because it is that essence that is really getting to utilize this body this mind this heart of each one of you and all of us to express itself
+Speaker A
+:
+love it
+Speaker C
+:
+and and so thank you
+Speaker E
+:
+yeah that was very thank you so holistic healing for me that is it's it's an incredible blessing to just help people remind people what do I want to say to help create space for people to stop to allow themselves to be
+Speaker C
+:
+yeah
+Speaker E
+:
+and and then through the work that I get to do my my gift is the gift of touch
+Speaker H
+:
+yeah
+Speaker E
+:
+guided breathing visualization energy sound all of it because that just happens to be my gift but even if I didn't say a word it's just creating the safe space so that people can be with themselves and when we allow ourselves to be we begin to unwind and let go of the things that aren't true
+Speaker H
+:
+yeah
+Speaker E
+:
+to ourselves so that we can connect with that true self and it's amazing and it's beautiful and it's sacred and and then we get to realign after all that is cleared get to realign that body mind heart spirit team which is your first team before you team up in life anywhere else in any other ways dynamics right and so how can we have peace in the world if we don't have peace here and awareness here to then bring everywhere we go
+Speaker H
+:
+yeah wow
+Speaker E
+:
+[***]
+Speaker C
+:
+beautiful Namaste
+Speaker H
+:
+Chi at all? Have you studied that?
+Speaker E
+:
+Of course energy.
+Speaker H
+:
+yeah that's like energy healing right too it's like because I was watching this thing on Discovery Channel years ago and it was these these monks went up on into like a cave in the Himalayas and they all it was like snow everywhere and they took their like robe they have on they dip it in water and they put it over themselves and then they start meditating and they're showing these guys and like the narrator's like this would kill any normal human being and then you see steam rising off
+Speaker E
+:
+yeah
+Speaker H
+:
+and yeah and then they showed this this old old guy he was an energy healer
+Speaker E
+:
+mm-hmm
+Speaker H
+:
+and he used he would he rub his and they had a thermal camera and he felt like a washcloth and it was like white hot and he would like touch the person you could see where he touched them like with the thermal
+Speaker E
+:
+amazing with the yeah of course
+Speaker H
+:
+but I had a buddy who who went to a karate camp in China and he was there for two weeks and he said these monks walked around with these big sticks and had no interaction with these guys at all and then the last day there he he was playing basketball and he twisted his ankle and one of the monks came up and touched his leg he said it was super hot he was fine I'm like what what is I mean it's like I don't know what's going on man there's there's something to
+Speaker E
+:
+yeah
+Speaker H
+:
+you know energy like that that I don't know what it is but
+Speaker E
+:
+that's focused energy but it's also healing energy you know
+Speaker H
+:
+yeah
+Speaker E
+:
+um yeah there's a lot of different ways um I don't think I have that particular
+Speaker H
+:
+but I mean our minds are just capable of so much more
+Speaker C
+:
+more than we realize
+Speaker E
+:
+oh
+Speaker H
+:
+than we go through this life just kind of
+Speaker E
+:
+well
+Speaker H
+:
+distracted
+Speaker E
+:
+well listen we all know the power of our thoughts like we all know that if we think more positively then negatively then
+Speaker C
+:
+yeah
+Speaker E
+:
+hopefully and more than likely we're going to have yeah we're going to have you know better results right or even at least a better experience of no matter what occurs right
+Speaker C
+:
+yeah
+Speaker E
+:
+yes And and and so the mind is powerful and then those thoughts become our words which become our actions
+Speaker H
+:
+yeah
+Speaker E
+:
+become our lives so
+Speaker A
+:
+yeah
+Speaker E
+:
+and it all stems the last part is just that it all stems from energy because everything is just energy we're all energy
+Speaker H
+:
+that's it
+Speaker E
+:
+and so every thought we have is drawing that energy becomes a thought a word and action
+Applications
+With one click, voice dictation across Meta AI and Muse Code is now powered by Muse Voice Transcribe. It can be used with any application and work through tasks with Meta AI and any window on your screen — just hold 'Fn' to try.
+Muse Voice Transcribe is available today via Meta Model API,
+Meta AI for Mac
+, and Muse Code.
