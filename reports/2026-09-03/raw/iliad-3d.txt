@@ -1,0 +1,119 @@
+URL: https://homer-catalogue-of-ships.netlify.app/
+FINAL: https://homer-catalogue-of-ships.netlify.app/
+TITLE: The Catalogue of Ships — Iliad Book 2, mapped and modelled
+FETCHED: 2026-09-03 18:05:47
+============================================================
+Ἰλιάδος Β · 484–877
+The Catalogue of Ships
+In the second book of the
+Iliad
+the poet pauses on the brink of the first battle, calls on the Muses, and counts the fleet: twenty-nine contingents, forty-six captains, some 178 place-names, 1,186 ships. This site puts every entry on the map, rebuilds the ships from the archaeological evidence, and lets you read the lines beside the ruins they describe.
+Open the map
+Board a ship
+Read the Greek
+Tell me now, you Muses who have your homes on Olympus — for you are goddesses, you are present, you know all things, while we hear only rumour and know nothing — who were the leaders and lords of the Danaans. The multitude I could not tell or name, not if I had ten tongues and ten mouths, a voice unbreakable and a heart of bronze within me, unless the Olympian Muses, daughters of aegis-bearing Zeus, called to my mind all those who came beneath Ilion. Now I will tell the captains of the ships, and all the ships together.
+Iliad 2.484–493 · new translation
+29
+Contingents
+1,186
+Ships
+46
+Named captains
+c. 178
+Place-names
+c. 100,000
+Men, by Thucydides' reckoning
+Ἑλλάδα καὶ μέσον Ἄργος
+The Achaean world
+Each circle is a contingent, sized by its ships and placed at the centre of the district the poem describes. Markers are labelled by their captains. Select one for its captains, its towns and the archaeology; the layers add the voyage to Aulis and Troy, the Trojan allies, and the Mycenaean sites beneath the poem's geography.
+Layers
+Achaean contingents
+All named towns
+The voyage to Troy
+Trojan allies
+Mycenaean sites
+Labels
+νῆες μέλαιναι
+The ships
+Homer's warship is a long, open, oared galley — "black", "hollow", "swift", "well-benched", "curved" — with a single square sail and a crew that doubles as its fighting force. No hull survives, but pictures do. Two reconstructions are offered here: the twelfth-century galley painted on kraters at Kynos in Locris, and the eighth-century pentekonter of the Athenian Geometric vases. Drag to orbit, click the numbered markers to fly to each part, and use the investigation tools to take the ship apart: dimensions, a cross-section, an exploded view, and the sherd drawing laid over the model.
+Laying the keel…
+Contingent
+—
+drag to orbit · click a marker
+ἀρχοὺς αὖ νηῶν ἐρέω νῆάς τε προπάσας
+The roll call
+The twenty-nine contingents in the order the poet gives them, beginning with the Boeotians at Aulis, moving south through the Peloponnese, west to the islands, south-east to Crete and Rhodes, and finally north to Thessaly. Open any entry for the full text, the places and the finds.
+τὸ κείμενον
+The text
+Greek text of Monro and Allen's Oxford edition beside A. T. Murray's Loeb translation of 1924, in five-line blocks. Headings mark where each contingent begins. The Trojan Catalogue follows.
+τὰ τεκμήρια
+The evidence
+What the ships looked like, and whether the map is a Bronze Age memory or an Iron Age invention. The pictures below are the objects the reconstructions rest on, with two schematic redrawings of sherds that have never been photographed for free use.
+πληθὺν δ᾽ οὐκ ἂν ἐγὼ μυθήσομαι
+The numbers
+The ship-counts add up, exactly, to 1,186. The Catalogue gives a crew figure only twice — 120 for the Boeotians, 50 for Philoctetes — and Thucydides used the pair to estimate the army.
+ἡμεῖς δὲ κλέος οἶον ἀκούομεν
+Sources and credits
+Texts
+Greek:
+Homeri Opera
+, ed. D. B. Monro and T. W. Allen, Oxford Classical Texts (1920), from the Perseus Digital Library (CC BY-SA 3.0).
+English blocks: A. T. Murray,
+Homer: The Iliad
+, Loeb Classical Library (1924), public domain, via Perseus. The entry-by-entry renderings on the cards and in the roll call are new translations made for this site.
+Scholarship on the Catalogue
+R. Hope Simpson and J. F. Lazenby,
+The Catalogue of the Ships in Homer's Iliad
+(Oxford 1970) — the site-by-site survey; the case for a Bronze Age list.
+G. S. Kirk,
+The Iliad: A Commentary
+, vol. I (Cambridge 1985), pp. 168–263.
+E. Visser,
+Homers Katalog der Schiffe
+(Stuttgart 1997) — the case that the list was composed from formulaic and mythic material.
+D. L. Page,
+History and the Homeric Iliad
+(Berkeley 1959), ch. 4; J. Latacz,
+Troy and Homer
+(Oxford 2004).
+Thucydides 1.10 on the size of the force; Strabo,
+Geography
+books 8–10 and 12–14, the ancient commentary on the places.
+T. W. Allen,
+The Homeric Catalogue of Ships
+(Oxford 1921); V. Burr,
+Neon Katalogos
+(Leipzig 1944); A. Giovannini,
+Étude historique sur les origines du Catalogue des vaisseaux
+(Bern 1969); J. K. Anderson, "The Geometric Catalogue of Ships", in
+The Ages of Homer
+(Austin 1995); O. Dickinson's sceptical papers on the Catalogue's geography.
+G. Beckman, T. Bryce and E. Cline,
+The Ahhiyawa Texts
+(Atlanta 2011) for the Hittite side.
+Ships and seafaring
+F. Dakoronia, "War-ships on sherds of LH IIIC kraters from Kynos",
+Tropis
+II (1990) 117–122, and later reports on Pyrgos Livanaton.
+S. Wachsmann,
+Seagoing Ships and Seamanship in the Bronze Age Levant
+(College Station 1998), ch. 7 on Mycenaean and Sea Peoples' galleys.
+M. Wedde,
+Towards a Hermeneutics of Aegean Bronze Age Ship Imagery
+(Mannheim 2000).
+J. S. Morrison and R. T. Williams,
+Greek Oared Ships 900–322 B.C.
+(Cambridge 1968); L. Casson,
+Ships and Seamanship in the Ancient World
+(Princeton 1971), ch. 3.
+S. Mark,
+Homeric Seafaring
+(College Station 2005); D. Gray,
+Seewesen
+(Archaeologia Homerica G, 1974).
+Images
+Photographs are from Wikimedia Commons under the licences stated in each caption (CC0, public domain, CC BY, CC BY-SA); every image opens to its full credit and a link to its source page. Coastlines are from Natural Earth (public domain). The Kynos and Tragana ship drawings are schematic redrawings made for this site after the published illustrations and are not to scale.
+The 3D models
+The galleys are procedural reconstructions built in Three.js for this site. Hull form, the open rowers' gallery, the bird-head stem device, the loose-footed brailed sail and the single starboard steering oar follow the twelfth-century images from Kynos, Tragana and the Sea Peoples reliefs at Medinet Habu; the deck over the rowers is Wachsmann's reading and can be switched off. The squared forefoot, horn stem, bow screen, fan-shaped stern and paired steering oars of the Geometric version follow the Athenian kraters. Dimensions (about 30 m by 4 m for a fifty-oared ship) follow Morrison and Casson. Everything not visible in an ancient image — the exact frame, the rigging runs, the colours beyond "black" and "vermilion-cheeked" — is a reasoned guess, and is labelled as such in the part descriptions.
+Method
+Places are plotted at their conventional identifications; where scholars disagree or the site is unknown, the marker is dashed and the entry says so. Ship counts, leaders and line numbers are checked against the Greek text reproduced on this page. The count of forty-six captains includes the dead Protesilaos and the absent Philoktetes together with the men who replaced them; forty-four are actually in command. Thucydides rounds the fleet to 1,200 ships.

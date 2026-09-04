@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-03",
+  "scanned_at": "2026-09-03T17:33:51+08:00",
+  "window": "从北京时间 2026-09-02T20:21:22+08:00 接续。",
+  "route": "Codex 内置浏览器登录态，主 agent 逐账号读取 Posts；Nitter 七源机械抓取均失败。",
+  "accounts": [
+    {
+      "handle": "karpathy",
+      "status": "ok",
+      "result": "主页最新原创仍是 8 月 2 日，本期无新帖。"
+    },
+    {
+      "handle": "goodside",
+      "status": "ok",
+      "result": "主页最新原创仍是 8 月 3 日，本期无新帖。"
+    },
+    {
+      "handle": "sama",
+      "status": "ok",
+      "result": "最新可见帖是 9 月 2 日的 Astra 与后续模型安全说明，URL 已进入 09-02 日报，不重复收录。"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "ok",
+      "result": "最新可见原创是 8 月 31 日继续讨论 OpenAI／Hugging Face Agent 事故，本期没有新材料。"
+    },
+    {
+      "handle": "emollick",
+      "status": "ok",
+      "result": "发现两条本期新帖，保留 Fable 5.1 制作《伊利亚特》船队交互作品的实测线索；英式拼写追问只是附属笑点。"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "ok",
+      "result": "发现对 Fable 的图片反应和一条转发批量扩展论文的帖子；前者缺上下文，后者应回原论文核查，不单独成稿。"
+    },
+    {
+      "handle": "tszzl",
+      "status": "ok",
+      "result": "新帖继续讨论思维链监控与机械可解释性，和 09-02 Astra 安全主线直接重叠；其余为航天、暗物质与短句。"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "Fable 5.1 把《伊利亚特》船队做成可探索的 3D 目录",
+      "url": "https://homer-catalogue-of-ships.netlify.app/",
+      "post_url": "https://x.com/emollick/status/2095352019498447090",
+      "datetime_beijing": "2026-09-03",
+      "bucket_hint": "fun_or_radar",
+      "text": "Ethan Mollick 要求 Fable 5.1 根据《伊利亚特》的船队目录制作地图，让每艘船可在 3D 中探索，并引入真实图片和考古材料，再让 Agent 测试准确性与美观度后继续修改；帖子展示了可运行成品。",
+      "caveats": [
+        "这是单次用户演示，不代表系统性评测。",
+        "若收录，reader 需要打开成品核对实际交互和内容，不能只按 X 帖描述。"
+      ],
+      "why": "它把 2023 年只能抽取地点并画地图的演示推进成了可探索、会自测再修订的完整数字人文作品。"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "https://x.com/sama/status/2094934592062959832",
+      "reason": "已进入 09-02 日报，硬重复。"
+    },
+    {
+      "url": "https://x.com/tszzl/status/2095040467763380506",
+      "reason": "继续讨论思维链只是当前训练方法的副现象，与 09-02 Astra 循环深度和监督主线重叠。"
+    },
+    {
+      "url": "https://x.com/tszzl/status/2095040470871331013",
+      "reason": "关于用机械可解释性维持可监控性的预测没有新实验，并与 09-02 安全主线重叠。"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2095432469390483555",
+      "reason": "只有“Wtf, Fable?”和图片，当前可见文本不足以支持独立事实。"
+    }
+  ]
+}

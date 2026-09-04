@@ -1,0 +1,162 @@
+URL: https://huggingface.co/blog/Qdrant/fineweb-10b-release
+FINAL: https://huggingface.co/blog/Qdrant/fineweb-10b-release
+TITLE: Internet-Scale Knowledge Retrieval: A Novel Vector Search Dataset at 10B Scale
+FETCHED: 2026-09-03 18:05:44
+============================================================
+Back to Articles
+Internet-Scale Knowledge Retrieval: A Novel Vector Search Dataset at 10B Scale
+Community Article
+Published
+ September 1, 2026
+Upvote
+12
+Neil Kanungo
+kanungle
+Qdrant
+Nathan LeRoy
+nleroy917
+Qdrant
+Seth Ockerman
+sockerman
+Qdrant
+Today, data is being generated faster than vector search benchmarks can keep up. At
+Qdrant
+, our customers consistently push the envelope of vector search at scale. To that end, we realized that the broader community is entering a new era: one that requires moving past micro-optimizations on curated, million-scale datasets toward architectures built for internet-scale complexity at billions of vectors.
+Hugging Face has pioneered open, large-scale model and dataset sharing – setting the bar for data accessibility, findability, and interoperability across the AI community. They currently host some of the largest pre-embedded datasets to date, such as:
+CohereLabs/wikipedia-2023-11-embed-multilingual-v3
+(~250M vectors, Cohere Embed v3)
+Upstash/wikipedia-2024-06-bge-m3
+(~144M vectors, BGE-M3)
+CohereLabs/msmarco-v2.1-embed-english-v3
+(~113M vectors, Cohere Embed v3)
+Qdrant/dbpedia-entities-openai3-text-embedding-3-large-3072-1M
+(1M high-dim vectors, OpenAI 3072-d)
+Building on that foundation, we are taking a similar community-first approach to redefine how vector search is benchmarked at scale. However, today's standard vector search benchmarks have three main structural limitations:
+They top out between 10M and 100M embeddings.
+They lack ground truth search results.
+They often ignore sparse and multi-vector representations, missing the complex hybrid search and filtering patterns that are standard practice in production.
+To bridge this gap, our primary objective was to deliver a benchmark that reflects this real-world scale. In collaboration with
+Vultr
+, we produced
+Qdrant-FineWeb-10B
+.
+It’s a massive 10-billion vector dataset derived from
+Hugging Face’s FineWeb corpus
+. Vultr supplied the raw compute infrastructure and ran a custom generation pipeline to produce the initial embeddings.
+However, generating raw vectors was only the first step. To complete the benchmarking lifecycle, we still needed to generate query embeddings, compute exact brute-force ground truth on those queries, load the database, and drive high-concurrency search workloads. Executing these remaining steps revealed a fundamental infrastructure void. Specifically, we realized that the vector search community lacked a high-performance, open-source framework capable of computing ground-truth exact nearest neighbors and evaluating databases at a billion-vector scale.
+We realized that to keep pace with rapidly evolving models and datasets, the community needed a modern, reproducible benchmarking engine that anyone could use -- independent of proprietary tools or vendor lock-in. That inspired us to build
+Supernova
+.
+Today, we are releasing
+Qdrant-FineWeb-10B
+, alongside the open-source
+Supernova
+framework, providing the community with both a landmark 10B benchmark dataset and the infrastructure required to build, evaluate, and scale their own.
+With the help of Hugging Face, we are making this the Qdrant-FineWeb-10B dataset free and open source on their datasets platform for anyone to use in large-scale benchmarking efforts.
+Qdrant-FineWeb-10B: Benchmarking at Internet Scale
+Qdrant-FineWeb-10B
+represents the core of this release. It is the largest open-source vector search benchmark available to the community, comprising
+24.47 TB of vectors
+and
+28.66 TB of source text and metadata
+.
+Created in collaboration with Vultr using
+gte-multilingual-base
+on
+Hugging Face's FineWeb corpus
+, we utilized Supernova to compute exact top-1000 brute-force ground-truth nearest neighbors for 100,000 queries across the entire 10-billion vector space. Taken together, this amounted to over
+one quadrillion distance calculations
+run in parallel on GPU-accelerated hardware.
+Additional Community Datasets
+To showcase Supernova’s versatility across modalities and provide further assets to the community, we used Supernova to generate two additional open datasets:
+Dataset
+Model
+Data Type
+Vectors
+Ground Truth
+Qdrant-FineWeb-10B
+gte-multilingual-base
+Text
+10.07B dense, 10.07B sparse
+Dense, sparse, filtered
+PubMed-Multi-Vector
+BGE-M3
+Text
+23.9M dense, 23.9M sparse, 8.37B multi-vector tokens
+Dense, sparse, multi-vector
+Coyo-Vector-Embeddings
+Qwen3-VL-Embedding-2B
+Text & Images
+15.4M dense (2048-dim)
+Dense
+PubMed-Multi-Vector
+: Designed to benchmark hybrid retrieval methods with corpus variables held constant. It generates dense, sparse, and ColBERT-style multi-vector representations over the exact same text corpus, accumulating over 8.37 billion multi-vector tokens across nearly 35 TB of data.
+Coyo-Vector-Embedding
+: Focuses on multimodal retrieval, leveraging a 2048-dimensional vision-language encoder (
+Qwen3-VL-Embedding-2B
+) to project image-caption pairs from the LLaVA dataset into a unified shared embedding space. This represents a highly-modern workload that leverages state of the art embedding generation and model architectures.
+All three of our datasets are freely available on Hugging Face and we’ll continue to release more datasets for the community in the future.
+Supernova: The Open-Source Benchmarking Engine
+We didn't want to stop at releasing a static dataset. We built
+Supernova
+as a free, fully open-source framework so that the broader community can generate, manipulate, ground-truth, and benchmark internet-scale datasets on their own infrastructure—without relying on Qdrant or any third-party stack.
+Supernova automates the four core phases of building and running a vector search benchmark:
+1) embedding generation, 2) brute-force ground-truth calculation, 3) database loading, and 4) evaluation benchmarking.
+Each phase is driven by a specialized module configured entirely via YAML files and designed for massively parallel execution:
+nova-embed
+(Modular Embedding Pipeline)
+: Unifies disparate backends (SentenceTransformers, FastEmbed, OpenAI APIs) and storage systems (Hugging Face, S3, Cloudflare R2). It operates statelessly without a central database—each worker uses its rank and world size to partition input data independently, achieving linear scaling across cloud and HPC environments.
+nova-bf
+(GPU-Native Ground Truth)
+: Computes exact brute-force top-$k$ nearest neighbors across dense, sparse, and multi-vector representations without running out of memory. It streams data partitions from remote storage, uses custom fused GPU kernels for late-interaction scoring, and evaluates filters early on the CPU to prune irrelevant rows before GPU transfer.
+nova-load
+&
+nova-storm
+(Ingestion & Stress Testing)
+: Handle downstream evaluation across backends such as Qdrant, Milvus, and Elasticsearch.
+nova-load
+drives parallel ingestion to test write throughput, while
+nova-storm
+runs search workloads to track QPS, latency distributions ($p_{50}, p_{95}, p_{99}$), build times, and recall accuracy against
+nova-bf
+ground truth.
+Distributed Compute with SkyPilot
+To scale compute seamlessly across distributed infrastructure, Supernova integrates
+nova-dist
+, a controller-only module built on
+SkyPilot
+that handles cluster provisioning, job scheduling, fault tolerance, and cloud abstraction. Rather than hardcoding infrastructure logic into individual pipeline modules,
+nova-dist
+decouples job execution from hardware management. This allows
+nova-embed
+,
+nova-bf
+,
+nova-load
+, and
+nova-storm
+to scale linearly across AWS, GCP, Azure, Kubernetes, and Slurm HPC clusters using identical YAML configurations—massively parallelizing workloads across hundreds of GPUs without manual infrastructure overhead.
+Acknowledgements
+We extend our sincere thanks to
+Vultr
+for providing the raw compute infrastructure to generate the initial FineWeb-10B embeddings, as well as the
+SkyPilot
+and
+Hugging Face
+teams for building open-source foundation tools that enable operating at this scale.
+Datasets mentioned in this article
+8
+Community
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+12
+Datasets mentioned in this article
+8

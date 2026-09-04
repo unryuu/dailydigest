@@ -1,13 +1,20 @@
 [
-  {
-    "id": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
-    "title": "Gemini 会自己决定视频该看哪一段",
-    "date": "2026-09-02T01:08:51+08:00",
-    "reported": true,
-    "report_date": "2026-09-02"
-  },
-  {
-    "id": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
+ {
+  "id": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber",
+  "title": "Google 发布 Gemini 3.8 Flash 和网安版",
+  "date": "2026-09-03T00:18:31+08:00",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
+  "id": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+  "title": "Gemini 会自己决定视频该看哪一段",
+  "date": "2026-09-02T01:08:51+08:00",
+  "reported": true,
+  "report_date": "2026-09-02"
+ },
+ {
+  "id": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control",
   "title": "Google 给 AI 视频加上前后帧控制",
   "date": "2026-08-28T00:11:32+08:00",
   "reported": true,

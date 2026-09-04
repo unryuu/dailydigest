@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/blog/train-to-paint-with-code",
+  "title": "有人用强化学习教模型画水彩",
+  "date": "2026-09-03",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
+  "id": "https://huggingface.co/blog/Qdrant/fineweb-10b-release",
+  "title": "Qdrant 发布百亿规模向量检索数据集",
+  "date": "2026-09-02",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
   "id": "https://huggingface.co/blog/cavanloy/vlanext",
   "title": "VLANeXt 发布机器人模型实验代码库",
   "date": "2026-08-31",

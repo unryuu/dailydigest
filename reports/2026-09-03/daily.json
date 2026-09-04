@@ -1,0 +1,177 @@
+{
+  "date_label": "9月3日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "Nscale 拿千亿美元算力合同冲刺上市",
+      "url": "https://www.theinformation.com/briefings/exclusive-nscale-touts-100-billion-plus-contracted-revenue-anthropic-win",
+      "body": "Anthropic 新订单价值四百五十亿美元。Nscale 向潜在投资者展示的多年期合同总额因此增至约一千零三十亿美元，平均期限五点七年。\n\n公司第二季度收入刚过一亿美元，却可能最早本月上市。AI 算力公司正用多年期租约，把未来需求提前变成扩张资本。"
+    },
+    {
+      "tier": "silver",
+      "title": "Meta 不再按 token 用量考核工程师",
+      "url": "https://www.theinformation.com/briefings/exclusive-meta-tells-engineers-ai-token-usage-part-performance-reviews",
+      "body": "Meta 已有 93％ 的代码变更获得 AI 辅助。经理不再看使用仪表盘或 token 数量，改看质量、速度、问题复杂度和承担范围。此前有员工为了指标刻意烧完 token。公司仍在推动 AI，只是把考核重点放回工作结果。"
+    },
+    {
+      "tier": "silver",
+      "title": "李飞飞的新模型把视频变成三维世界",
+      "url": "https://www.worldlabs.ai/blog/atlas",
+      "body": "Atlas 能根据一至六张参考图和指定相机路径，生成最长一分钟、1440p 的视频，还能通过少量图片或手机录像重建三维空间。创作者可以选择观看角度。机器人也能用它模拟不同路径下看到的彩色与深度画面。",
+      "sources": [
+        {
+          "name": "The Information",
+          "url": "https://www.theinformation.com/briefings/fei-fei-lis-world-labs-unveils-new-world-model"
+        }
+      ]
+    },
+    {
+      "tier": "none",
+      "title": "KKR 为百亿美元 AI 基建平台找来两名主管",
+      "url": "https://www.theinformation.com/articles/two-new-executives-steering-kkrs-10-billion-ai-infrastructure-bet",
+      "body": "两人分别负责数据中心和能源。Helix 准备把算力与供电打包卖给云厂商，并收购缺资金或电力接入的开发商。"
+    },
+    {
+      "tier": "none",
+      "title": "Kairos 获五千万美元扩建 AI 安全人才项目",
+      "url": "https://www.lesswrong.com/posts/DRaePC8aqLYTbEjTD/kairos-has-raised-usd50m-to-build-talent-infrastructure-for",
+      "body": "两年期资助将用于研究培训、大学社群、工作坊和新机构孵化。团队计划从十二人扩到年底十八人。"
+    }
+  ],
+  "deep": [
+    {
+      "tier": "silver",
+      "title": "AI 参考的网站可能是专为 AI 设计的",
+      "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations",
+      "body": "研究者针对 AI 搜索与答案引擎 Perplexity 进行测试，发现 AI 引用的大量信息来源，并非来自主流、权威网站，而是来自一些专门为被 AI 抓取而生成的、内容质量可疑的网站。信息来源也存在长尾效应，不集中于维基百科、知名评测站等头部网站，反而分散在大量不知名、新注册的域名中。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "silver",
+      "title": "字节：Agent 的自我改进闭环可能越改越差",
+      "url": "https://huggingface.co/papers/2608.31111",
+      "body": "团队提出了一个新基准测试，只提供能力目标，隐藏下游的评估任务。发现 Agent 能实现自己解释模糊目标、挑数据、自测自评、训练模型的循环，还能修改运行脚手架，但权重层面的提升依然不稳定；迭代出的最强框架，表现也依然不如人工设计的方案。AI 容易选错数据，相信过度狭隘的评估，继续训练还会抹掉早期提升，局部进步的可迁移性也比较差。（编者注：人类的先验知识可能泄漏进评估题目，这也可能造成人类设计的迭代路径在人类编写的题目上表现更好）",
+      "sources": [
+        {
+          "name": "S3Gym",
+          "url": "https://huggingface.co/papers/2608.31100"
+        },
+        {
+          "name": "HarnessDev",
+          "url": "https://huggingface.co/papers/2609.01437"
+        }
+      ]
+    },
+    {
+      "tier": "none",
+      "title": "模型发现身份矛盾后仍会替它辩护",
+      "url": "https://www.lesswrong.com/posts/5RcKGJBnKw3vweYym/incoherent-ai-identities-can-also-be-stable",
+      "body": "AI 对自身的不自洽身份很宽容，甚至会主动合理化。越是聪明的模型，应对认知失调的方式越像人类。"
+    },
+    {
+      "tier": "none",
+      "title": "提前预测任务结局，降低 Agent 评测成本",
+      "url": "https://huggingface.co/papers/2609.02783",
+      "body": "看到 Agent 做到一半，就预测成败并叫停。三项基准最多省下 26％ 的步骤和 44.1％ 的输入 token。"
+    },
+    {
+      "tier": "none",
+      "title": "先把论文编译成仓库规格，再让 Agent 写代码",
+      "url": "https://huggingface.co/papers/2609.02272",
+      "body": "PaperCompiler 先整理算法要求和文件依赖，再让 Agent 生成整套仓库。严重问题占比从 13.2％ 降到 6.1％。"
+    },
+    {
+      "tier": "none",
+      "title": "英伟达模型在 IOI 题集上超过人类第一名",
+      "url": "https://huggingface.co/papers/2609.02849",
+      "body": "Ultra-CC 得到 535.4 分，人类最高为 498.27 分。它会反复生成、测试和修正解法。"
+    }
+  ],
+  "official": [
+    {
+      "tier": "none",
+      "title": "Google 发布 Gemini 3.8 Flash 和网安版",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber",
+      "body": "普通版已进入 Gemini 应用、搜索、表格和开发者 API。网安版主攻漏洞发现与修补，面向政府、关键基础设施和软件维护者。"
+    },
+    {
+      "tier": "none",
+      "title": "Meta 发布 Muse Spark 1.3",
+      "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+      "body": "新版本能追踪多条工作流，遇到歧义会提问，重要操作前会确认。相比上一版，平均少用 25％ 的 token。"
+    },
+    {
+      "tier": "none",
+      "title": "微软开源实时语音识别模型",
+      "url": "https://huggingface.co/papers/2609.02812",
+      "body": "VibeVoice 能边听边输出谁说了什么。十五亿和七十亿参数版本的权重与推理代码已经公开。"
+    }
+  ],
+  "brief": [
+    {
+      "title": "Resolution 新建 Agent 基础研究团队",
+      "url": "https://www.lesswrong.com/posts/qTNm8qzqhhpno58fZ/resolution-has-a-new-agent-foundations-team"
+    },
+    {
+      "title": "Qdrant 发布百亿规模向量检索数据集",
+      "url": "https://huggingface.co/blog/Qdrant/fineweb-10b-release"
+    },
+    {
+      "title": "美国政府称已重新信任 Anthropic",
+      "url": "https://www.axios.com/2026/09/02/lutnick-anthropic-trump"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "none",
+      "title": "Fable 5.1 把《伊利亚特》船队做成 3D 目录",
+      "url": "https://x.com/emollick/status/2095352019498447090",
+      "body": "二十九支部队、一千一百八十六艘船和约一百七十八个地名被摆上地图，还派 Agent 检查画面和准确性。"
+    },
+    {
+      "tier": "none",
+      "title": "有人用强化学习教模型画水彩",
+      "url": "https://huggingface.co/blog/train-to-paint-with-code",
+      "body": "模型写约一百五十行 JavaScript，只能调用十种画笔方法。练到最后，它少画空白和脏色块，学会多铺颜料。"
+    },
+    {
+      "tier": "none",
+      "title": "Claude 的系统提示词不许它复现歌词",
+      "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt",
+      "body": "整首、最后一句、副歌和旋律音符都不行。用户逐行贴出并声称是自己写的，Claude 也得拒绝。"
+    },
+    {
+      "tier": "none",
+      "title": "最大暗物质探测器只看到一个奇怪粒子",
+      "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
+      "body": "LUX-ZEPLIN 记录到一次 248keV 碰撞。普通暗物质理论本应伴随大量低能事件，这颗粒子若来自暗物质，就得更复杂。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "AI 会在 2028 年前解决 ARC 抽象推理基准吗？",
+      "prob": "21.4％",
+      "note": "成交额 12.5k mana",
+      "url": "https://manifold.markets/MGM/ai-solves-the-abstraction-and-reaso-6312f0f1cbc1"
+    },
+    {
+      "question": "2028 年前会出现无法被人类关停的失控 AI 吗？",
+      "prob": "60.0％",
+      "note": "成交额 24.5k mana",
+      "url": "https://manifold.markets/SG/rogue-ais-before-2028"
+    },
+    {
+      "question": "AI 会让美国失业率在 2030 年前超过 10％ 吗？",
+      "prob": "25.3％",
+      "note": "成交额 34.1k mana",
+      "url": "https://manifold.markets/ahalekelly/will-ai-cause-the-us-unemployment-r"
+    },
+    {
+      "question": "AI 会在 2030 年底前独立主导一家工厂吗？",
+      "prob": "21.5％",
+      "note": "成交额 3.0k mana",
+      "url": "https://manifold.markets/JoeandSeth/will-an-ai-run-a-factory-by-the-end-ELP0S9ZPAn"
+    }
+  ]
+}

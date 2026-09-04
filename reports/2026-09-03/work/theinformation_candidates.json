@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-03",
+  "scanned_at": "2026-09-03T17:33:51+08:00",
+  "window": "从北京时间 2026-09-02T20:21:22+08:00 接续，补扫 The Information 首页 Latest。",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选。",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "The Two New Executives Steering KKR’s $10 Billion AI Infrastructure Bet",
+      "url": "https://www.theinformation.com/articles/two-new-executives-steering-kkrs-10-billion-ai-infrastructure-bet",
+      "published_at": "2026-09-02T06:03:00-07:00",
+      "published_at_beijing": "2026-09-02T21:03:00+08:00",
+      "bucket_hint": "industry_none_or_silver",
+      "decision": "交定牌裁决",
+      "facts": [
+        "KKR 今年成立、规模 100 亿美元的 AI 基础设施平台 Helix Digital Infrastructure 任命两名执行副总裁。",
+        "Equinix 前首席商务官 Jonathan Lin 负责数据中心战略与执行，AES 清洁能源业务前首席商务官 Kleber Costa 负责电力与能源业务。",
+        "Helix 希望把算力与电力打包提供给大型云客户，并通过收购缺资本或缺电力连接的现有开发商加快建设。",
+        "英伟达、Vistra Energy 和科威特投资局是该平台的重要支持方。"
+      ],
+      "caveats": [
+        "两项任命来自知情人士，Helix 尚未公开披露具体收购目标。",
+        "100 亿美元是平台计划投入的规模，不是已经部署完成的资本。"
+      ],
+      "why": "两名新主管分别来自数据中心和电力公司，显示大型资本正把算力建设与能源采购合并为一门生意。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing Exclusive",
+      "title": "Exclusive: Meta Tells Engineers AI Token Usage Won’t Be Part Of Performance Reviews",
+      "url": "https://www.theinformation.com/briefings/exclusive-meta-tells-engineers-ai-token-usage-part-performance-reviews",
+      "published_at": "2026-09-02T16:57:00-07:00",
+      "published_at_beijing": "2026-09-03T07:57:00+08:00",
+      "bucket_hint": "industry_silver_or_none",
+      "decision": "交定牌裁决",
+      "facts": [
+        "Meta 在内部备忘录中明确，不用 AI 使用仪表盘或 token 数量评价工程师的工作影响。",
+        "新版工程师职业期望删除具体 AI 工具和任务级使用要求，经理应看产出质量、速度、问题复杂度和承担范围。",
+        "Meta 称目前 93％ 的代码变更已有 AI Agent 辅助，但强调采用率本身不是目标。",
+        "公司此前曾追踪员工 AI 使用并鼓励提高用量，一些员工因此用尽 token 来展示采用程度。"
+      ],
+      "caveats": [
+        "备忘录由 The Information 审阅，Meta 发言人拒绝评论。",
+        "公司没有放弃推动工程师使用 AI，而是把考核从使用量改回结果。"
+      ],
+      "why": "这是企业从考核 AI 使用量转向考核实际结果的清晰拐点，并给出 93％ 代码变更获 Agent 辅助的内部数字。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing Exclusive",
+      "title": "Exclusive: Nscale Touts $100 Billion-Plus in Contracted Revenue After Anthropic Win",
+      "url": "https://www.theinformation.com/briefings/exclusive-nscale-touts-100-billion-plus-contracted-revenue-anthropic-win",
+      "published_at": "2026-09-02T14:21:00-07:00",
+      "published_at_beijing": "2026-09-03T05:21:00+08:00",
+      "bucket_hint": "industry_silver",
+      "decision": "交定牌裁决",
+      "facts": [
+        "Nscale 在拿下 Anthropic 价值 450 亿美元的算力合同后，向潜在投资者称总签约收入约 1030 亿美元。",
+        "这些合同平均期限 5.7 年，按总额平均相当于每年约 180 亿美元。",
+        "Nscale 可能最早在本月上市，英伟达是其重要支持方。",
+        "公司估算今年第二季度收入超过 1 亿美元，第一季度约 3700 万美元；该数字尚未计入 Anthropic 合同。"
+      ],
+      "caveats": [
+        "签约收入是租约对应的未来收入总额，不等于已实现收入或正式收入指引。",
+        "知情人士称 1030 亿美元数字具有示意性质，文件没有说明最终会有多少转成实际收入。"
+      ],
+      "why": "一家季度收入刚过 1 亿美元的算力公司拿 1030 亿美元长期合同冲刺上市，能具体呈现 AI 基建融资的期限错配和预期膨胀。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Fei-Fei Li’s World Labs Unveils New World Model",
+      "url": "https://www.theinformation.com/briefings/fei-fei-lis-world-labs-unveils-new-world-model",
+      "published_at": "2026-09-02T01:19:00-07:00",
+      "published_at_beijing": "2026-09-02T16:19:00+08:00",
+      "bucket_hint": "industry_silver",
+      "decision": "用户点名补查，建议作为上一窗口漏报材料捞回",
+      "facts": [
+        "World Labs 发布 Atlas，可根据文字、图片和视频生成并修改可交互的三维环境。",
+        "Atlas 原生处理文字、图片、相机位置和三维深度图，视频在模型中表示为连续图像序列。",
+        "模型能按明确相机路径生成最长一分钟、1440p 视频，也能输出点云和 3D Gaussian Splat。",
+        "它还能从少量手机视频重建空间，为机器人仿真生成 RGB 与深度传感器视角。"
+      ],
+      "caveats": [
+        "目前只向部分合作方早期开放，没有全面公开使用。",
+        "官方比较中，Atlas 原生接收相机轨迹，其他视频模型主要靠文字描述相机运动，不能把比较结果写成无条件全面领先。",
+        "发布时间早于 09-03 接续点约四小时，属于上一期漏掉、由用户点名捞回的材料。"
+      ],
+      "why": "它把可控视频、三维重建和机器人仿真统一到一个模型里，产品与技术增量都明显高于普通视频模型版本更新。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Moonshot AI Files Confidentially for Hong Kong IPO",
+      "url": "https://www.theinformation.com/briefings/moonshot-ai-files-confidentially-hong-kong-ipo",
+      "reason": "首页摘要只有秘密递表与 Kimi K3 走红两点，缺少足够独家数字；若公开材料或其他源提供更完整信息再考虑。"
+    },
+    {
+      "title": "Meta Unveils New AI Model in Accelerated Effort to Catch Rivals",
+      "url": "https://www.theinformation.com/briefings/meta-unveils-new-ai-model-accelerated-effort-catch-rivals",
+      "reason": "普通模型升级按近期口径默认无牌，公开官方源可以提供更直接材料。"
+    }
+  ]
+}

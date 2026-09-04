@@ -1,5 +1,54 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.02812",
+  "title": "微软开源实时语音识别模型",
+  "date": "2026-09-03",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.02849",
+  "title": "英伟达模型在 IOI 题集上超过人类第一名",
+  "date": "2026-09-03",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.02272",
+  "title": "先把论文编译成仓库规格，再让 Agent 写代码",
+  "date": "2026-09-03",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.02783",
+  "title": "提前预测任务结局，降低 Agent 评测成本",
+  "date": "2026-09-03",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.01437",
+  "title": "HarnessDev",
+  "date": "2026-09-03",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.31100",
+  "title": "S3Gym",
+  "date": "2026-09-03",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
+  "id": "https://huggingface.co/papers/2608.31111",
+  "title": "字节：Agent 的自我改进闭环可能越改越差",
+  "date": "2026-09-03",
+  "reported": true,
+  "report_date": "2026-09-03"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.30730",
   "title": "Agent 被放进电商里经营整整一年",
   "date": "2026-09-02",

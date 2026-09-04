@@ -1,0 +1,376 @@
+{
+  "date": "2026-09-03",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTPSConnectionPool(host='nitter.kareem.one', port=443): Max retries exceeded with url: /karpathy (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))); chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Meta 放弃用 token 消耗量考核工程师，改看实际工作结果",
+      "cost": "轻",
+      "reason": "这是企业从追踪 AI 使用量转向评价产出效果的明确变化，并给出九成以上代码变更已有 Agent 辅助的内部数字。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Exclusive: Meta Tells Engineers AI Token Usage Won’t Be Part Of Performance Reviews",
+          "url": "https://www.theinformation.com/briefings/exclusive-meta-tells-engineers-ai-token-usage-part-performance-reviews",
+          "date": "2026-09-03T07:57:00+08:00",
+          "why": "Meta 内部备忘录称，工程师绩效不看 AI 使用仪表盘或 token 数，而看质量、速度、问题复杂度和承担范围；材料还称 93％ 的代码变更已有 AI Agent 辅助。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Nscale 用千亿美元长期算力合同冲刺上市",
+      "cost": "中",
+      "reason": "季度收入刚过一亿美元的算力公司，声称手握约一千零三十亿美元长期合同，能具体呈现 AI 基础设施融资里的期限错配和预期膨胀。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Exclusive: Nscale Touts $100 Billion-Plus in Contracted Revenue After Anthropic Win",
+          "url": "https://www.theinformation.com/briefings/exclusive-nscale-touts-100-billion-plus-contracted-revenue-anthropic-win",
+          "date": "2026-09-03T05:21:00+08:00",
+          "why": "Nscale 在拿下 Anthropic 价值四百五十亿美元的算力合同后，向潜在投资者称总签约收入约一千零三十亿美元、平均期限 5.7 年，并可能最早本月上市；签约总额不等于已实现收入。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "批量制造的评测网页正在进入 AI 推荐答案",
+      "cost": "中",
+      "reason": "高票调查把生成式搜索的引用污染落到可核查的网站集群和页面规模，不只是泛泛谈 SEO 垃圾。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Three sites made 215,128 ‘best software’ pages for AI. Perplexity cites them",
+          "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations",
+          "date": "2026-09-02T21:59:59+08:00",
+          "why": "标题称三个网站批量制造了二十一万多篇‘最佳软件’页面，并被 Perplexity 引用；HN 抓取时 412 分、202 条评论，reader 应核网站关联、页面统计方法和引用样本。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "Agent 开始尝试自己改进目标、测试流程和运行脚手架",
+      "cost": "重",
+      "reason": "三篇同日榜单论文分别从模糊目标、自测自评和 Agent harness 入手，适合合并判断‘自我改进’究竟发生在模型能力、训练循环还是外部控制器。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "Aspire: Can Models Self-Evolve from Vague Goals?",
+          "url": "https://huggingface.co/papers/2608.31111",
+          "date": "2026-09-03",
+          "why": "本日 Hugging Face 榜单论文，研究模型能否从模糊目标出发自我演化；发布日期在列表页不可可靠确认，reader 需核任务、迭代闭环与外部监督。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+          "url": "https://huggingface.co/papers/2608.31100",
+          "date": "2026-09-03",
+          "why": "本日 Hugging Face 榜单论文，把自测和自评接回自我改进流程；需核判断器是否独立、提升是否超出反复采样，以及失败任务。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?",
+          "url": "https://huggingface.co/papers/2609.01437",
+          "date": "2026-09-03",
+          "why": "本日 Hugging Face 榜单论文，研究 LLM 能否创建并演化自己的 Agent 运行脚手架；需核修改对象、评测泄漏、算力预算和相对人工 harness 的结果。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "互相矛盾的 AI 身份设定也可能稳定保留下来",
+      "cost": "中",
+      "reason": "这是对模型身份稳定实验的反直觉扩展，重点不在拟人化，而在模型发现内在矛盾后是否仍偏好原有系统提示身份。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Incoherent AI Identities can also be Stable",
+          "url": "https://www.lesswrong.com/posts/5RcKGJBnKw3vweYym/incoherent-ai-identities-can-also-be-stable",
+          "date": "2026-09-03T04:15:46+08:00",
+          "why": "作者把互相矛盾的身份写进系统提示，再让模型选择是否切换；摘要称较强模型上仍保留较弱版本的稳定偏好，reader 需核样本规模、评分方式和提示依赖。"
+        }
+      ]
+    },
+    {
+      "group": "group-6",
+      "theme": "Atlas 把可控视频、三维重建和机器人仿真放进同一个世界模型",
+      "cost": "中",
+      "reason": "这不是普通文生视频升级：模型原生接收相机位置与三维深度，在同一架构里生成视频、重建显式三维空间并模拟机器人视角。材料早于本期接续点约四小时，但由用户点名补查，作为漏报候选交定牌裁决。",
+      "items": [
+        {
+          "source": "world-labs",
+          "title": "Atlas: A World Model for Spatial Intelligence",
+          "url": "https://www.worldlabs.ai/blog/atlas",
+          "date": "2026-09-01",
+          "why": "Atlas 可从一至六张参考图按明确相机路径生成最长一分钟、1440p 视频，也能从少量图片或视频输出点云和 3D Gaussian Splat，并为机器人生成 RGB 与深度传感器视角；目前只向部分合作方早期开放。"
+        },
+        {
+          "source": "the-information",
+          "title": "Fei-Fei Li’s World Labs Unveils New World Model",
+          "url": "https://www.theinformation.com/briefings/fei-fei-lis-world-labs-unveils-new-world-model",
+          "date": "2026-09-02T16:19:00+08:00",
+          "why": "独立报道确认 Atlas 定位为可生成和修改交互式三维环境的世界模型，应用与视频生成、游戏、机器人和自动驾驶相交。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "the-information",
+      "title": "The Two New Executives Steering KKR’s $10 Billion AI Infrastructure Bet",
+      "url": "https://www.theinformation.com/articles/two-new-executives-steering-kkrs-10-billion-ai-infrastructure-bet",
+      "date": "2026-09-02T21:03:00+08:00",
+      "note": "KKR 的百亿美元 AI 基础设施平台分别从数据中心和清洁能源公司引入两名主管，准备把算力、电力和收购开发商合并推进；百亿美元是计划投入规模。"
+    },
+    {
+      "source": "deepmind",
+      "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber",
+      "date": "2026-09-03T00:18:31+08:00",
+      "note": "Google 发布 Gemini 3.8 Flash，并提供面向可信防守方的网络安全版本；候选页仅见标题，开放范围、价格、评测和安全限制待 reader 核。"
+    },
+    {
+      "source": "axios",
+      "title": "Lutnick: Anthropic is ‘back on the right side’ with Trump administration",
+      "url": "https://www.axios.com/2026/09/02/lutnick-anthropic-trump",
+      "date": "2026-09-02T23:48:37+08:00",
+      "note": "美国商务部长 Lutnick 称政府现在信任 Anthropic，并说公司已按要求行事；这是双方数月安全与国家安全冲突后的关系转折，具体交换条件待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Can I opt out of my input or output data being used for training?",
+      "url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training",
+      "date": "2026-09-02T20:30:39+08:00",
+      "note": "Mistral 的训练数据退出政策在 HN 抓取时 440 分、198 条评论；发布时间只比接续点晚约九分钟，reader 需核企业与个人账户默认设置和生效范围。"
+    },
+    {
+      "source": "meta-ai",
+      "title": "Introducing Muse Spark 1.3",
+      "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+      "date": "2026-09-02",
+      "note": "Meta 发布 Muse Spark 1.3，摘要称强化高难推理、Agent 任务和实际可用性；普通模型升级默认无牌，reader 核开放方式和真实增量。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Resolution has a new Agent Foundations team",
+      "url": "https://www.lesswrong.com/posts/qTNm8qzqhhpno58fZ/resolution-has-a-new-agent-foundations-team",
+      "date": "2026-09-03T09:30:46+08:00",
+      "note": "Resolution 新建 Agent Foundations 团队，成员包括 Jeremy Gillen、Abram Demski、Sam Eisenstat、Scott Garrabrant 和 Kaarel Hänni，并计划继续招聘。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Kairos has raised $50M to build talent infrastructure for AI safety",
+      "url": "https://www.lesswrong.com/posts/DRaePC8aqLYTbEjTD/kairos-has-raised-usd50m-to-build-talent-infrastructure-for",
+      "date": "2026-09-03T05:45:45+08:00",
+      "note": "Kairos 称获得 Coefficient Giving 五千万美元、为期两年的资助，将扩张 AI 安全人才项目并在未来半年再次扩员一倍。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "If you’re interpreting <1B parameter models, you should use a tensor transformer",
+      "url": "https://www.lesswrong.com/posts/expsAXaBgiqgitFe6/if-you-re-interpreting-less-than-1b-parameter-models-you",
+      "date": "2026-09-03T07:31:37+08:00",
+      "note": "作者主张小于十亿参数的可解释性研究应使用双线性 tensor transformer，以便消除不影响函数的对称性；需核与真实 SwiGLU 架构的外推边界。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+      "url": "https://huggingface.co/papers/2609.02783",
+      "date": "2026-09-03",
+      "note": "本日 Hugging Face 榜单论文，尝试通过早期预测最终结果降低 Agent 评测成本；发布日期不可由列表页可靠确认。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Language Models Can Control Their Own Attention",
+      "url": "https://huggingface.co/papers/2609.02737",
+      "date": "2026-09-03",
+      "note": "本日 Hugging Face 榜单论文，研究语言模型主动控制自身注意力；reader 需核是显式路由、推理时控制还是训练机制。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "PaperCompiler: Faithful Paper-to-Code Generation via Repository-Level Specification Compilation",
+      "url": "https://huggingface.co/papers/2609.02272",
+      "date": "2026-09-03",
+      "note": "本日 Hugging Face 榜单论文，把论文转代码改写为仓库级规范编译问题；需核完整仓库成功率和人工修正量。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+      "url": "https://huggingface.co/papers/2609.02849",
+      "date": "2026-09-03",
+      "note": "英伟达论文讨论把语言模型后训练到编程竞赛金牌水平；需核比赛、时间与工具限制，以及是否使用多次采样。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills",
+      "url": "https://huggingface.co/papers/2609.02749",
+      "date": "2026-09-03",
+      "note": "本日 Hugging Face 榜单论文，尝试把 GitHub 仓库提炼成供 Agent 使用的技能；需核技能格式、跨仓库泛化和执行成功率。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "VibeVoice-ASR-Streaming Technical Report",
+      "url": "https://huggingface.co/papers/2609.02812",
+      "date": "2026-09-03",
+      "note": "微软发布流式语音识别技术报告；reader 需核延迟、语言覆盖、多人语音和开放权重情况。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Internet-Scale Knowledge Retrieval: A Novel Vector Search Dataset at 10B Scale",
+      "url": "https://huggingface.co/blog/Qdrant/fineweb-10b-release",
+      "date": "2026-09-02",
+      "note": "Qdrant 发布百亿规模向量搜索数据集线索，适合作为检索基础设施简讯；数据构成、许可证和基准待核。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+      "url": "https://huggingface.co/blog/KangLiao/puffin-world",
+      "date": "2026-09-03",
+      "note": "统一多模态模型加入原生 3D 世界状态，候选页只见标题与作者信息；reader 核模型、数据和可用产物。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-emollick",
+      "title": "Fable 5.1 把《伊利亚特》船队做成可探索的 3D 目录",
+      "url": "https://homer-catalogue-of-ships.netlify.app/",
+      "date": "2026-09-03",
+      "note": "Mollick 要求模型把《伊利亚特》的船队目录做成可探索的 3D 地图，再让 Agent 测试准确性与美观度并继续修改；需打开成品核实际交互。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+      "url": "https://huggingface.co/blog/train-to-paint-with-code",
+      "date": "2026-09-03",
+      "note": "有人用强化学习工具和代码环境训练编程模型画水彩，把‘代码模型’的奖励目标拐到视觉创作。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Claude’s new system prompt really doesn’t want to reproduce song lyrics",
+      "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt",
+      "date": "2026-09-02T22:16:42+08:00",
+      "note": "Simon Willison 翻 Anthropic 公开系统提示词，发现新版对复现歌词写了格外细密的限制，适合做一条提示词里的版权执念。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Aging brains blend memories together instead of just forgetting them",
+      "url": "https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds",
+      "date": "2026-09-02T20:59:09+08:00",
+      "note": "标题称衰老大脑不只是遗忘，还会把不同记忆混在一起；HN 抓取时 279 分、118 条评论，需回研究原文核实验。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Biggest dark matter detector spots a single weird particle",
+      "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
+      "date": "2026-09-02T21:40:29+08:00",
+      "note": "世界最大暗物质探测器看到一个奇怪粒子，单个异常事件本身就有足够的悬念；HN 抓取时 296 分、102 条评论。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Don’t be the vitamin B guy",
+      "url": "https://www.lesswrong.com/posts/ZHJvdkQENxyfzhpCj/don-t-be-the-vitamin-b-guy",
+      "date": "2026-09-02T22:45:45+08:00",
+      "note": "文章从十一岁时观看 YouTuber 用马毛缝合、把磁铁植入手指讲起，讨论去中心化科学为什么也需要严谨标准。"
+    },
+    {
+      "source": "axios",
+      "title": "The $1 Trump coins are here. Why spending them is legal but tricky",
+      "url": "https://www.axios.com/2026/09/02/trump-coins-real-money-legal-tender-spend-value",
+      "date": "2026-09-03T02:18:59+08:00",
+      "note": "美国铸币局开始卖面值一美元的 Trump 硬币：它既被当作收藏品，也确实是法定货币，但卷装售价高于面值。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "AI 会在 2028 年前解决 ARC 抽象推理基准吗？",
+      "prob": "21.4％",
+      "volume_note": "累计交易量约 M$12,486",
+      "url": "https://manifold.markets/MGM/ai-solves-the-abstraction-and-reaso-6312f0f1cbc1"
+    },
+    {
+      "question": "2028 年前会出现失控 AI 吗？",
+      "prob": "60.0％",
+      "volume_note": "累计交易量约 M$24,464；近 24 小时约 M$3,588",
+      "url": "https://manifold.markets/SG/rogue-ais-before-2028"
+    },
+    {
+      "question": "AI 会让美国失业率在 2030 年前超过 10％ 吗？",
+      "prob": "25.3％",
+      "volume_note": "累计交易量约 M$34,099",
+      "url": "https://manifold.markets/ahalekelly/will-ai-cause-the-us-unemployment-r"
+    },
+    {
+      "question": "AI 会在 2030 年底前独立运营一家工厂吗？",
+      "prob": "21.5％",
+      "volume_note": "累计交易量约 M$3,013",
+      "url": "https://manifold.markets/JoeandSeth/will-an-ai-run-a-factory-by-the-end-ELP0S9ZPAn"
+    },
+    {
+      "question": "AI 会在 2040 年前导致人类灭绝吗？",
+      "prob": "8.1％",
+      "volume_note": "累计交易量约 M$1,716,760",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "thezvi",
+      "reason": "本期唯一候选是 Anthropic 安全复盘，与 09-02 已报的训练暂停、越权事件和奖励作弊主线硬重复。"
+    },
+    {
+      "slug": "import-ai",
+      "reason": "候选为 08-31 旧周报，且 Hugging Face 事件已经连续多期覆盖。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "候选为 08-28 旧期，GLM-5.3、硬件加速和 DeepSeek Agent harness 均不在本期接续窗口。"
+    },
+    {
+      "slug": "openai",
+      "reason": "唯一客户案例发表于本期接续点前，且只是 ChatGPT Work 应用案例，未形成 08-31 主线要求的产品或收费新进展。"
+    },
+    {
+      "slug": "acx",
+      "reason": "窗口内只有 EA 校园聚会时间地点公告，其余候选均明显早于接续点。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "本期没有可回溯到原始出处的新候选。"
+    }
+  ]
+}

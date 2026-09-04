@@ -1,0 +1,40 @@
+URL: https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle
+FINAL: https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle
+TITLE: World’s biggest dark matter detector spots a single weird particle | Science | AAAS
+FETCHED: 2026-09-03 18:06:55
+============================================================
+Progress
+1.0x
+Volume is at 50%
+00:00
+6:14
+1.0x
+Audio is AI-generated.
+Report an issue
+|
+Give feedback
+Don’t get too excited, but the world’s largest dark matter detector has spotted a single unusual particle. Announced today at the TeV Particle Astrophysics conference in Japan, the event recorded by the LUX-ZEPLIN (LZ) detector could mark the first detection of a particle of dark matter, the mysterious invisible stuff whose gravity appears to bind the galaxies. However, it’s far too early to claim a discovery, physicists warn. And the dark matter particle, if real, wouldn’t be what many theorists expected.
+“How do you even make sense of one event?” muses Tom Shutt, a particle astrophysicist at SLAC National Accelerator Laboratory and co-founder of the LZ project. “We just decided we should publish and think really, really, really hard about what that event could be.” The hint of something revolutionary will tantalize physicists, says Wick Haxton, a theoretical physicist at the University of California (UC), Berkeley. “It’s like seeing a present under the Christmas tree. You’re hoping it’s something good and you’re excited no matter what.”
+The ways in which galaxies whirl and gather suggest they reside in much larger clumps of dark matter. Dark matter can’t be seen directly because it doesn’t absorb or emit electromagnetic radiation, yet studies of the afterglow of the Big Bang—the cosmic microwave background radiation—indicate it makes up
+roughly 85% of the matter in the universe
+. But no known particle is both sufficiently hefty and inert to explain it.
+In the 1980s, theorists realized they might explain dark matter by hypothesizing just one more type of particle. It would have to be stable and about 100 times as massive as a proton, and it would have to interact only through gravity and the incredibly feeble weak nuclear force. Such weakly interacting massive particles (WIMPs) would naturally linger from the Big Bang in just the right amount to account for dark matter, provided that, like the photon, such a particle was its own antiparticle. These particles also appeared naturally in theories built around a concept called supersymmetry. So they became the main quarry for dark matter hunters.
+WIMPs should be floating all around us, and every now and then one should bump into an atomic nucleus and send it recoiling. Physicists once thought a detector weighing less than 1 kilogram could reveal such nuclear recoils. But a series of ever bigger detectors has failed to spot WIMPs. LZ,
+the current biggest WIMP detector
+, contains 7 tons of frigid liquid xenon, providing an astronomical number of targets for passing WIMPs.
+The detector lurks 1480 meters deep in the Sanford Underground Research Facility, in a former gold mine in South Dakota. It started taking data in 2021 and still hasn’t seen what physicists expected. WIMPs should move quite slowly, only about 300 kilometers per second or 1/1000th the speed of light, so a xenon nucleus struck by a WIMP should recoil with low energy. Last year, LZ researchers looked for nuclear recoils between about 5 and 55 kiloelectron volts (keV) and saw nothing.
+Advertisement
+Now, however, the team has extended its search up to recoil energies of 270 keV and spotted a single event. Try as they might, LZ physicists could not account for it as a “background” event from, say, a stray neutron or gamma ray. So they decided they had to report it to the community, says Rick Gaitskell, a physicist at Brown University and spokesperson for the LZ collaboration. The LZ team will submit
+a paper on the work
+to
+Physical Review Letters
+.
+But if the event was caused by a dark matter particle, the high recoil energy of 248 keV suggests it wasn’t an ordinary WIMP, Gaitskell says. Lower energy WIMPs should greatly outnumber higher energy ones, he explains. If the supposed particle interacts with nuclei in the simplest way, physicists should also have detected thousands of lower energy events, Gaitskell explains.
+Since none have been seen, physicists will have to invoke more complex models in which the rate of interaction increases with the energy of the collision. “What you’re seeking to do is to suppress the low-energy guys, which would then explain why you see an event at the higher energy but not this much larger number of lower energy events,” Gaitskell explains.
+Such behavior could require dark matter to be
+more complicated than just a single new type of particle
+. For example, the dark matter particle might have some internal structure, like an ordinary atom, so it would only interact if hit hard enough to excite it to a higher energy internal state. Or the “coupling” of the particle to ordinary matter could depend on its momentum, perhaps because it was mediated by another type of new particle.
+Such models are not as contrived as they might sound, notes Jonathan Feng, a theorist at UC Irvine. “I’m really happy they did this search because there are whole classes of theories that have this momentum dependence,” he says. JiJi Fan, a theorist at Brown, says some of these models have been around for decades. “Even this one event could narrow down the parameter space” for such theories, she says. “That’s exciting.”
+The most important question is whether the putative signal will persist as more data come in. LZ physicists estimate there’s about a one in 200 chance the event is a statistical fluke—far from the one in 3.5 million required to claim discovery. And the field of dark matter searches is strewn with dubious claims and anomalies that have faded.
+If the new result is real, more signals should emerge soon. LZ researchers have already collected three times as much data as they used in the paper. And other detectors, such as XENONnT in Italy’s Gran Sasso National Laboratory, which is nearly as big as LZ, or the far bigger next version of the PandaX detector, currently under development in China, should be able to search for the high energy events, too.
+“We can perform this study independently with a blind analysis to validate or invalidate LZ’s claim,” says Elena Aprile, a physicist at Columbia University and spokesperson for the XENON team. For dark matter hunters, Christmas is coming, although exactly when and how merry it will make them remains to be seen.

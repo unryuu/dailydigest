@@ -1,0 +1,138 @@
+[
+  {
+    "id": "kkr-helix-hires",
+    "section": "industry",
+    "label": "KKR 为百亿美元 AI 基建平台找来数据中心和能源主管",
+    "url": "https://www.theinformation.com/articles/two-new-executives-steering-kkrs-10-billion-ai-infrastructure-bet",
+    "body": "Equinix 前首席商务官负责数据中心，AES 清洁能源业务前首席商务官负责电力。Helix 准备把算力与供电打包卖给云厂商，并收购缺资金或缺电力接入的开发商。",
+    "note": "核实通过。原始抓取只有订阅墙空壳，本条严格使用 work／theinformation_candidates.json 的登录态已读记录。两项任命来自知情人士；一百亿美元是平台计划投入规模，不是已部署资本。"
+  },
+  {
+    "id": "kairos-funding",
+    "section": "industry",
+    "label": "Kairos 获五千万美元，扩建 AI 安全人才管道",
+    "url": "https://www.lesswrong.com/posts/DRaePC8aqLYTbEjTD/kairos-has-raised-usd50m-to-build-talent-infrastructure-for",
+    "body": "这笔两年期资助将扩充研究培训、大学社群、线下工作坊和新机构孵化项目。团队一月只有三人，目前增至十二人，计划年底达到十八人。",
+    "note": "核实通过。2026-09-02 发布，为 Kairos 自述；资助方是 Coefficient Giving。五千万美元覆盖两年，项目成效与人才转化数字均由机构自行统计。"
+  },
+  {
+    "id": "earlyeval",
+    "section": "papers",
+    "label": "提前预测任务结局，降低 Agent 评测成本",
+    "url": "https://huggingface.co/papers/2609.02783",
+    "body": "EarlyEval 观察 Agent 进行到一半的动作和文本，一旦足够确定会成功或失败就提前叫停。三项基准里，它省下 13％ 至 26％ 的执行步骤，输入 token 最多减少 44.1％。",
+    "note": "核实通过。论文 2026-09-02 发布；预测准确率为 89％ 至 97％，各 Agent 的任务解决率平均改变一至两个百分点。数字来自论文摘要。"
+  },
+  {
+    "id": "papercompiler",
+    "section": "papers",
+    "label": "先把论文编译成仓库规格，再让 Agent 写代码",
+    "url": "https://huggingface.co/papers/2609.02272",
+    "body": "PaperCompiler 会先列出算法要求、文件归属和跨文件依赖，再约束编程 Agent 生成整套仓库。论文复现的忠实度从 3.64 升到 4.15，严重问题占比从 13.2％ 降到 6.1％。",
+    "note": "核实通过。论文 2026-09-02 发布。框架区分论文明确支持、推断、外部分工和仍未解决的信息；结果来自 Paper2CodeBench。"
+  },
+  {
+    "id": "repo-to-skill",
+    "section": "papers",
+    "label": "Agent 把一千个 GitHub 仓库提炼成五千项技能",
+    "url": "https://huggingface.co/papers/2609.02749",
+    "body": "DisCo 把安装、运行和调试方法压成可复用技能，做新任务时不用重新摸索。在底层模型和执行预算不变的设置里，加入技能后，机器学习竞赛基准得分提高 134.3％。",
+    "note": "核实通过。论文 2026-09-02 发布，技能库覆盖二十个领域、一百七十八类能力。dup_suspect：08-28 已报 WikiSkill 把 Agent 经历编成可复用技能；本条新增点是从一千个公开仓库提炼操作知识，并用于自动化机器学习研究。"
+  },
+  {
+    "id": "lutnick-anthropic",
+    "section": "regulation",
+    "label": "美国商务部长称 Anthropic 已回到正确一边",
+    "url": "https://www.axios.com/2026/09/02/lutnick-anthropic-trump",
+    "body": "双方经历数月冲突后，Lutnick 表示政府重新信任 Anthropic。联合创始人 Tom Brown 正更多参与白宫关系，并在 G20 会议上支持特朗普的数据中心政策。",
+    "note": "核实通过。Axios 2026-09-02 发布。Lutnick 只说 Anthropic 已按政府要求行动，报道没有说明具体改了什么；五角大楼黑名单已被法院撤销，另一项相关诉讼仍在继续。"
+  },
+  {
+    "id": "gemini-38",
+    "section": "official",
+    "label": "Google 发布 Gemini 3.8 Flash 和网安版",
+    "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber",
+    "body": "普通版已进入 Gemini 应用、搜索、表格和开发者 API，价格与 3.7 Flash 相同。网安版主攻漏洞发现和自动修补，只通过 Fairwind 计划提供给政府、关键基础设施和软件维护者。",
+    "note": "核实通过。官方 2026-09-02 发布；输入、输出每百万 token 的介绍价分别为 0.75 美元和 3.75 美元。dup_suspect：08-14 刚报 Gemini 3.7 Flash，07-22 还报过 3.5 Flash Cyber；本条是同系列快速版本更新，但开放范围和能力均有新增。"
+  },
+  {
+    "id": "muse-spark",
+    "section": "official",
+    "label": "Meta 发布 Muse Spark 1.3",
+    "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+    "body": "新版本会在长任务中追踪多条工作流，遇到歧义主动提问，执行重要操作前确认。相比 1.2，它平均少用约 20％ 的工具调用和 25％ 的 token。",
+    "note": "核实通过。官方页面未显示发布日期，但正文称当日上线 Muse Code 和 Meta Model API；最高推理档仍在做安全测试。调用量和 token 数来自 Meta 工程师比较。dup_suspect：08-21 已报 Muse Spark 1.2，本条是同系列小步升级。"
+  },
+  {
+    "id": "vibevoice-asr",
+    "section": "official",
+    "label": "微软开源实时语音识别模型",
+    "url": "https://huggingface.co/papers/2609.02812",
+    "body": "VibeVoice-ASR-Streaming 一边接收声音，一边直接输出谁说了什么，不必再单独跑说话人分轨。十五亿和七十亿参数版本的权重与推理代码已经公开。",
+    "note": "核实通过。技术报告 2026-09-02 发布；七十亿参数版在五套转写测试中平均错误率最低，说话人归属在十三组设置中的十二组并列或单独最佳。dup_suspect：09-02 刚报 Meta 把长录音转写和多人分轨合成一个模型；本条新增点是微软的低延迟流式处理与开放权重。"
+  },
+  {
+    "id": "resolution-agent-foundations",
+    "section": "industry",
+    "label": "Resolution 新建 Agent Foundations 团队",
+    "url": "https://www.lesswrong.com/posts/qTNm8qzqhhpno58fZ/resolution-has-a-new-agent-foundations-team",
+    "body": "五名研究者将延续 MIRI 一脉的理论研究，探索概念、信任、博弈论，以及智能体学习和自我修改后的行为。团队随后还会招聘资深研究者、实习生和初级研究者。",
+    "note": "核实通过。2026-09-03 发布。现有成员为 Jeremy Gillen、Abram Demski、Sam Eisenstat、Scott Garrabrant 和 Kaarel Hänni；文章明确认为短期延缓超级智能竞赛的优先级更高。"
+  },
+  {
+    "id": "qdrant-fineweb-10b",
+    "section": "industry",
+    "label": "Qdrant 发布百亿规模向量检索数据集",
+    "url": "https://huggingface.co/blog/Qdrant/fineweb-10b-release",
+    "body": "数据集包含 24.47TB 向量，并为十万个查询计算了全库精确近邻答案。配套的 Supernova 工具还能生成向量、算标准答案、灌入数据库并压测搜索。",
+    "note": "核实通过。文章 2026-09-01 发布，数据来自 FineWeb，共约一百亿条稠密向量和一百亿条稀疏向量。文章称数据集与 Supernova 免费开源，但本地正文没有显示具体许可证名称，落版不要补写许可证。"
+  },
+  {
+    "id": "coding-gold-medal",
+    "section": "papers",
+    "label": "英伟达模型在 IOI 题集上超过当届人类第一名",
+    "url": "https://huggingface.co/papers/2609.02849",
+    "body": "比赛专用的 Ultra-CC 系统在 2026 年国际信息学奥赛中得到 535.4 分，人类最高分为 498.27。它会反复生成、测试和修正不同解法，再挑出最终提交。",
+    "note": "核实通过。论文 2026-09-02 发布；作者称系统在与人类相同的时间、联网和提交限制下前瞻评测。训练流程使用两万两千道整理后的题目，并结合监督微调、强化学习或测试时迭代。"
+  },
+  {
+    "id": "iliad-3d",
+    "section": "fun",
+    "label": "Fable 5.1 把《伊利亚特》船队做成可探索的 3D 目录",
+    "url": "https://x.com/emollick/status/2095352019498447090",
+    "body": "Mollick 让模型加入真实图片和考古材料，再派 Agent 检查准确性和画面后继续修改。二十九支部队、一千一百八十六艘船和约一百七十八个地名最终被摆上地图。",
+    "note": "主 agent 通过登录态读取 X 原帖，确认 Mollick 明确写明 Fable 5.1 按提示制作并让 Agent 测试、修订；成品页面 https://homer-catalogue-of-ships.netlify.app/ 核实了交互内容和数字。"
+  },
+  {
+    "id": "train-paint-code",
+    "section": "fun",
+    "label": "有人用强化学习教代码模型画水彩",
+    "url": "https://huggingface.co/blog/train-to-paint-with-code",
+    "body": "模型要写约一百五十行 JavaScript，只准调用十种画笔方法。奖励来自一百七十八幅手工挑选的参考画和两个审美模型，最终学会少画空白和脏色块，多铺颜料。",
+    "note": "核实通过。文章 2026-09-03 发布；参考数据、训练脚本、环境、模型和逐轮作品均已公开。作者复现的是 Surya Narreddi 的创意，并补上开放实现与三组奖励配比实验。"
+  },
+  {
+    "id": "claude-lyrics",
+    "section": "fun",
+    "label": "Claude 的系统提示词不许它复现歌词",
+    "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt",
+    "body": "整首、最后一句、副歌、旋律音符都不行，用户把歌词逐行贴进来并说是自己写的也不行。一次拒绝后，同一段对话里换个问法继续要，它还得继续拒绝。",
+    "note": "核实通过。Simon Willison 2026-09-02 对 Anthropic 公开系统提示词做差分，相关规则来自 Fable 5.1 新增段落；1929 年以前首次发表的作品可以处理。dup_suspect：09-02 已报 Fable 5.1 发布，07-25 也报过 Opus 5 系统提示词；本条新增的是版权规则的具体变化。"
+  },
+  {
+    "id": "aging-memories",
+    "section": "fun",
+    "label": "衰老的大脑可能会把记忆混在一起",
+    "url": "https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds",
+    "body": "",
+    "note": "fetch_failed：给定链接返回 HTTP 403，本地没有对应正文，无法核实研究对象、实验设计和结论。未换链接，body 留空，建议丢弃。"
+  },
+  {
+    "id": "dark-matter-particle",
+    "section": "fun",
+    "label": "最大暗物质探测器只看到一个奇怪粒子",
+    "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
+    "body": "LUX-ZEPLIN 把搜索范围扩到更高能量后，记录到一次 248keV 的碰撞。普通 WIMP 理论本应同时带来成千上万次低能事件，因此真要来自暗物质，也得是更复杂的粒子。",
+    "note": "核实通过。Science 当日会议报道；团队无法把该事件解释为中子或伽马射线背景，但统计波动概率约为二百分之一，远未达到发现门槛。LZ 已另收集约三倍数据，其他探测器也可独立检查。"
+  }
+]

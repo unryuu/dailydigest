@@ -1,0 +1,235 @@
+[
+  {
+    "slug": "nscale-contracts",
+    "url": "https://www.theinformation.com/briefings/exclusive-nscale-touts-100-billion-plus-contracted-revenue-anthropic-win",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/exclusive-nscale-touts-100-billion-plus-contracted-revenue-anthropic-win",
+    "bytes": 390027,
+    "title": "Exclusive: Nscale Touts $100 Billion-Plus in Contracted Revenue After Anthropic Win — The Information",
+    "chars": 2375
+  },
+  {
+    "slug": "meta-token-reviews",
+    "url": "https://www.theinformation.com/briefings/exclusive-meta-tells-engineers-ai-token-usage-part-performance-reviews",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/exclusive-meta-tells-engineers-ai-token-usage-part-performance-reviews",
+    "bytes": 407908,
+    "title": "Exclusive: Meta Tells Engineers AI Token Usage Won’t Be Part Of Performance Reviews — The Information",
+    "chars": 2375
+  },
+  {
+    "slug": "atlas-worldlabs",
+    "url": "https://www.worldlabs.ai/blog/atlas",
+    "status": 200,
+    "final_url": "https://www.worldlabs.ai/blog/atlas",
+    "bytes": 203078,
+    "title": "Atlas: A World Model for Spatial Intelligence | World Labs",
+    "chars": 17140
+  },
+  {
+    "slug": "atlas-information",
+    "url": "https://www.theinformation.com/briefings/fei-fei-lis-world-labs-unveils-new-world-model",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/fei-fei-lis-world-labs-unveils-new-world-model",
+    "bytes": 406811,
+    "title": "Fei-Fei Li’s World Labs Unveils New World Model  — The Information",
+    "chars": 2375
+  },
+  {
+    "slug": "manufactured-ai-sources",
+    "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations",
+    "status": 200,
+    "final_url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations",
+    "bytes": 19253,
+    "title": "Three sites made 215,128 \"best software\" pages for AI. Perplexity cites them | Trellner Research",
+    "chars": 11800
+  },
+  {
+    "slug": "aspire",
+    "url": "https://huggingface.co/papers/2608.31111",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.31111",
+    "bytes": 143103,
+    "title": "Paper page - Aspire: Can Models Self-Evolve from Vague Goals?",
+    "chars": 3335
+  },
+  {
+    "slug": "s3gym",
+    "url": "https://huggingface.co/papers/2608.31100",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.31100",
+    "bytes": 145102,
+    "title": "Paper page - S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+    "chars": 3678
+  },
+  {
+    "slug": "harnessdev",
+    "url": "https://huggingface.co/papers/2609.01437",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.01437",
+    "bytes": 145473,
+    "title": "Paper page - HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?",
+    "chars": 3598
+  },
+  {
+    "slug": "incoherent-identities",
+    "url": "https://www.lesswrong.com/posts/5RcKGJBnKw3vweYym/incoherent-ai-identities-can-also-be-stable",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/5RcKGJBnKw3vweYym/incoherent-ai-identities-can-also-be-stable",
+    "bytes": 691074,
+    "title": "Incoherent AI Identities can also be Stable — LessWrong",
+    "chars": 57045
+  },
+  {
+    "slug": "kkr-helix-hires",
+    "url": "https://www.theinformation.com/articles/two-new-executives-steering-kkrs-10-billion-ai-infrastructure-bet",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/two-new-executives-steering-kkrs-10-billion-ai-infrastructure-bet",
+    "bytes": 412295,
+    "title": "The Two New Executives Steering KKR’s $10 Billion AI Infrastructure Bet — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "kairos-funding",
+    "url": "https://www.lesswrong.com/posts/DRaePC8aqLYTbEjTD/kairos-has-raised-usd50m-to-build-talent-infrastructure-for",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/DRaePC8aqLYTbEjTD/kairos-has-raised-usd50m-to-build-talent-infrastructure-for",
+    "bytes": 469659,
+    "title": "Kairos has raised $50M to build talent infrastructure for AI safety (and we're hiring!) — LessWrong",
+    "chars": 19219
+  },
+  {
+    "slug": "earlyeval",
+    "url": "https://huggingface.co/papers/2609.02783",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.02783",
+    "bytes": 135329,
+    "title": "Paper page - EarlyEval: Cheaper Agent Evaluation via Early Outcome Prediction",
+    "chars": 2719
+  },
+  {
+    "slug": "papercompiler",
+    "url": "https://huggingface.co/papers/2609.02272",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.02272",
+    "bytes": 123211,
+    "title": "Paper page - PaperCompiler: Faithful Paper-to-Code Generation via Repository-Level Specification Compilation",
+    "chars": 2895
+  },
+  {
+    "slug": "repo-to-skill",
+    "url": "https://huggingface.co/papers/2609.02749",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.02749",
+    "bytes": 144324,
+    "title": "Paper page - Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills",
+    "chars": 3115
+  },
+  {
+    "slug": "lutnick-anthropic",
+    "url": "https://www.axios.com/2026/09/02/lutnick-anthropic-trump",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/02/lutnick-anthropic-trump",
+    "bytes": 252098,
+    "title": "Lutnick: Anthropic is \"back on the right side\" with Trump administration",
+    "chars": 2898
+  },
+  {
+    "slug": "gemini-38",
+    "url": "https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+    "bytes": 406628,
+    "title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+    "chars": 7703
+  },
+  {
+    "slug": "muse-spark",
+    "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+    "status": 200,
+    "final_url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+    "bytes": 188230,
+    "title": "Introducing Muse Spark 1.3 | Meta AI Research",
+    "chars": 10016
+  },
+  {
+    "slug": "vibevoice-asr",
+    "url": "https://huggingface.co/papers/2609.02812",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.02812",
+    "bytes": 146365,
+    "title": "Paper page - VibeVoice-ASR-Streaming Technical Report",
+    "chars": 2193
+  },
+  {
+    "slug": "resolution-agent-foundations",
+    "url": "https://www.lesswrong.com/posts/qTNm8qzqhhpno58fZ/resolution-has-a-new-agent-foundations-team",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/qTNm8qzqhhpno58fZ/resolution-has-a-new-agent-foundations-team",
+    "bytes": 399784,
+    "title": "Resolution has a new Agent Foundations team — LessWrong",
+    "chars": 4729
+  },
+  {
+    "slug": "qdrant-fineweb-10b",
+    "url": "https://huggingface.co/blog/Qdrant/fineweb-10b-release",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/Qdrant/fineweb-10b-release",
+    "bytes": 195681,
+    "title": "Internet-Scale Knowledge Retrieval: A Novel Vector Search Dataset at 10B Scale",
+    "chars": 8220
+  },
+  {
+    "slug": "coding-gold-medal",
+    "url": "https://huggingface.co/papers/2609.02849",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.02849",
+    "bytes": 114257,
+    "title": "Paper page - Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+    "chars": 2621
+  },
+  {
+    "slug": "iliad-3d",
+    "url": "https://homer-catalogue-of-ships.netlify.app/",
+    "status": 200,
+    "final_url": "https://homer-catalogue-of-ships.netlify.app/",
+    "bytes": 21304,
+    "title": "The Catalogue of Ships — Iliad Book 2, mapped and modelled",
+    "chars": 7046
+  },
+  {
+    "slug": "train-paint-code",
+    "url": "https://huggingface.co/blog/train-to-paint-with-code",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/train-to-paint-with-code",
+    "bytes": 327590,
+    "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+    "chars": 27568
+  },
+  {
+    "slug": "claude-lyrics",
+    "url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/",
+    "bytes": 34025,
+    "title": "Claude’s new system prompt really doesn’t want to reproduce song lyrics",
+    "chars": 14143
+  },
+  {
+    "slug": "aging-memories",
+    "url": "https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds",
+    "status": 403,
+    "final_url": "https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds",
+    "bytes": 198,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "dark-matter-particle",
+    "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
+    "status": 200,
+    "final_url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
+    "bytes": 318312,
+    "title": "World’s biggest dark matter detector spots a single weird particle | Science | AAAS",
+    "chars": 6295
+  }
+]

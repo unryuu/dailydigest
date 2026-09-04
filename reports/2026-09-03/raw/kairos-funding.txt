@@ -1,0 +1,188 @@
+URL: https://www.lesswrong.com/posts/DRaePC8aqLYTbEjTD/kairos-has-raised-usd50m-to-build-talent-infrastructure-for
+FINAL: https://www.lesswrong.com/posts/DRaePC8aqLYTbEjTD/kairos-has-raised-usd50m-to-build-talent-infrastructure-for
+TITLE: Kairos has raised $50M to build talent infrastructure for AI safety (and we're hiring!) — LessWrong
+FETCHED: 2026-09-03 18:05:21
+============================================================
+x
+Kairos has raised $50M to build talent infrastructure for AI safety (and we're hiring!) — LessWrong
+AI
+Personal Blog
+79
+Kairos has raised $50M to build talent infrastructure for AI safety (and we're
+hiring!)
+by
+agucova
+2nd Sep 2026
+10
+min read
+4
+79
+TL;DR:
+Kairos
+has raised $50 million from Coefficient Giving for two years of funding, one of the largest commitments they’ve made towards AI safety fieldbuilding to date. We’re using this to make an ambitious push for growing Kairos, broadening our portfolio of talent infrastructure projects and incubating new organizations. We’ve doubled in size in the last six months, and we plan to double again in the next six. We now have open hiring rounds for
+ten roles
+on our team across events, group support, incubation, and special projects.
+Two years in
+Kairos was founded mid-2024 with the goal of creating infrastructure to get more strong talent into the field of AI safety. Our portfolio has grown over time: we started with a focus on seeding and supporting university groups through
+Pathfinder
+, then took over
+SPAR
+, the largest research training program in the ecosystem. Since then, we’ve launched the
+Generator Residency
+,
+a program supporting generalist talent, in partnership with Constellation, and taken over the
+Global Challenges Project (GCP)
+, a series of workshops to accelerate people’s transition into careers in AI safety and biosecurity.
+Through most of Kairos’s history, we’ve had a very small team: in January 2026 we were only three people, and our high-level strategy was focused on scalable talent infrastructure: that is, building programs with low marginal cost per participant (such as SPAR and Pathfinder). This strategy succeeded and let us quickly grow our programs: Pathfinder went from 15 organizers per semester to over 100, and SPAR has quintupled in size since we adopted it (we expect to accept well over 500 mentees this round). All this growth has happened in parallel to iterative improvements to these programs, raising our bar for executional quality each round. In a recent shallow retrospective, we were able to identify around 80 people who got into full-time roles in core AI safety organizations following participation in our programs
+[1]
+. For a very large fraction of these people, Kairos was the primary mediator of their journey into AI safety.
+In February, we decided to pivot our strategy. A confluence of factors, including updates we made about talent bottlenecks (see below), more confidence in our ability to deliver on ambitious projects, and a higher availability of funding, led us to make a big push for both broadening our portfolio of projects and substantially growing our team. We started earlier this year by taking over the Global Challenges Project workshop series and launching the Generator Residency, as we realized generalist talent was a growing bottleneck. We’ve now just entered what we think will be an even more intense period of growth for Kairos, with several new programs, projects, and teams.
+How the field has changed
+In April, we made the case that
+the biggest talent gap in AI safety had become a lack of generalists
+, rather than researchers. The research pipeline had matured enormously, but our ability to identify, activate, and upskill non-technical talent was becoming the binding constraint for further growth of the field, especially for our ability to effectively absorb large amounts of funding and drive a diversity of projects forward. Since then, we’ve seen a major redirection of fieldbuilding efforts towards this bottleneck: beyond Generator, MATS decided to launch a
+Founding and Fieldbuilding track
+, new programs such as
+Gen Stream
+were piloted, and many more people have started pivoting from research into generalist work.
+Beyond our increased focus on generalist talent, we’ve made a number of updates over the last nine months which have come together to inform our new strategy:
+First, supporting early-career talent is paying off a lot faster than we thought.
+When we started Kairos, a big worry we had was that under short timeline scenarios, investing in early-career people would largely fail to pay off in time. Back then, we estimated that the time-to-impact for the top talent we were supporting was around 1 to 3 years, and we considered a major redirection of our efforts as a result. Since then, different lines of evidence have made us reassess this position, and we now believe that the most promising people going through our programs now see a time-to-impact of around 5 to 9 months.
+[2]
+We think this is due to a number of factors, but predominantly it seems downstream of a much stronger perception of urgency in pivoting to object-level work.
+[3]
+On net, this has made us significantly more eager to support early-career talent, which is why we’re doubling down on our efforts to support university groups.
+Second, top-of-funnel interest in AI safety has increased substantially.
+Kairos and other organizations have noticed sharp upticks in the number of applications we get across our programs. SPAR received 6,000 applications this round, up from 2,400 just six months ago. While a lot more applications now seem to be of lower quality, the number of high quality applications overall has also increased, if less rapidly, and a lot of people cite recent events such as Claude Mythos or the Hugging Face incident as having triggered their interest in AI safety. A lot more people seem to just ‘get it’ when it comes to loss of control risks. This poses a new challenge: while Kairos has emphasized scalability for a long time, this new wave of interest has forced us to become better at automating large swathes of our operations and screening work. The number of highly qualified applicants has also meant we’ve had to rapidly increase the cadence of our events: between June and November we expect to have run a total of 6 in-person workshops, each with ~30 people.
+All of this adds up to one meta-level bet:
+growth
+. We’ve identified a number of highly leveraged opportunities to address talent bottlenecks by both scaling up our existing programs or by creating new ones, and so we want to grow Kairos to meet the challenge. We were three people in January, now we’re 12, and we’re aiming to be at 18 by the end of year.
+Our new bets
+While Kairos continues to emphasize scalability and using our team’s capacity in a highly leveraged way, we’ve realized it is now the time for our core programs to have dedicated project teams. As such, we’re hiring both senior and junior staff across all our programs, and plan to very significantly ramp up the resources allocated to each of them. We’re also making a big investment in preparing our internal systems to handle a lot more volume and scale for our programs, forming a proper Operations team, and investing in organizational maturity and governance.
+For SPAR, the key challenge is further growth, paired with stronger support.
+We believe the program should continue to be run in a capacity-efficient way, but we should stop optimizing for keeping variable costs (such as compute) low, and we should hire more staff. We recently hired a new lead for the project, and hope to substantially overhaul the support infrastructure the program provides to both mentors and mentees, hiring dedicated research managers to support newer or less experienced mentors and improving targeted support and follow-up for mentees.
+We’re also now building a Groups team.
+In the past the core value offering of Pathfinder was rather simple: we’d provide funding to groups and pair them with other organizers to serve as mentors. We’re now looking to fund regional organizers serving a larger number of groups, scale up our efforts to seed new groups at top universities, set up residences for organizers to learn from and support other groups, and support more student-run events. All of this will require new dedicated staff, and so we’ve just launched these roles.
+And following our strategic updates from above, we’ve decided to make a number of bets in newer directions:
+An expanded workshops portfolio.
+In taking over GCP we realized that short, in-person workshops are among the most effective talent interventions in the ecosystem. In particular, they seem to be the best intervention we know for getting people who have been previously introduced into AI safety to finally make the pivot into full-time work. Because of this, we’ve decided to build a proper Workshops team that will run a broader diversity of workshop formats aimed at different audiences: mid-career people, people interested in biosecurity, and narrower or more niche audiences.
+A Talent Operations function.
+Our ability for our programs to have an impact is, to a large degree, only as good as our ability to let others know about who the most promising people going through our programs are. This isn’t exclusive to Kairos: we’ve realized that at present, many fieldbuilding orgs don’t have great information channels for sharing leads about promising people they’ve identified, trained or supported, and this has become a major bottleneck.
+As such, we’re starting a Talent Operations team, with the mandate of improving the way that Kairos and other organizations in the ecosystem identify, screen, refer and route talent through the field. Its first major undertaking is building Talent Commons, a consent-first database for sharing information about program participants and job applicants. Talent Commons is currently being piloted with a number of key fieldbuilding orgs in the US, and we expect to shortly expand it to a much larger set of participating organizations
+[4]
+. Our goal is for this database to become the de facto way that people search for leads for roles they’re hiring for, or programs they’re running. We also want it to become a platform to build other useful infrastructure, such as unified application systems for research programs, or a system to track the impact of fieldbuilding programs. We hope this will help candidates as well by increasing discoverability and reducing the effort involved in job searching; candidates will always be able to view all of the information on their profiles, contribute to it if they’d like, or opt out of the system at any time.
+Kairos Labs and Special Projects.
+A big realization we've had is that while the field is bottlenecked on people who can execute new projects, we can meaningfully lower the activation energy these projects need by (a) making it much, much easier to run new nonprofit projects in the ecosystem, and (b) providing good support structures and strategic input to enable new, more tactical projects to be spun up quickly. Given this, we’re excited to be launching Kairos Labs, a new broad-scope incubator program intended to provide very hands-on support for new projects and organizations in the ecosystem, starting early 2027. While the ecosystem currently has a diversity of incubators (such as Catalyze, BlueDot's, Halcyon, and others), we believe that there’s a very substantial gap in support for non-technical projects led by highly mission-aligned, high-context founders. We’re hoping to close that gap.
+We also now think that there is substantial value in having stand-by capacity for pursuing small or medium-sized projects that respond to more tactical or short-lived opportunities that arise, both for talent work and beyond. In the past, Kairos has focused on making a small set of large, ongoing bets, rather than engaging in more ad-hoc work that responds to narrow windows of opportunity for impact or that fall outside the scope of existing Kairos projects. While running Generator, we’ve realized that this was a mistake,
+and that a surprising amount of time-bound opportunities are worth pursuing
+, even if they don’t have a clean home in other organizations in the ecosystem. In response, we’re starting a new Special Projects team to drive forward these tactical projects, with a broad mandate of pursuing high-impact opportunities that we find, and with a large initial budget.
+All of these are bets.
+A core value and strength of Kairos is agility: we know the world is changing fast around us, and we want to be quick on our feet to change our bets when the underlying assumptions break. Every employee of Kairos understands that our ultimate mission is to help society navigate transformative AI, and that our strategy is ever shifting, as is the world.
+If this sounds like something you’d be excited about being a part of…
+We’re hiring (a lot!)
+To make all of this happen, Kairos is
+opening 8 new roles on our team
+, adding to the previous 2:
+Head of Kairos Labs
+: Design, launch, and lead our incubator for new AI safety organizations.
+Head of Generator
+: Take our in-person residency for AI safety generalists from a successful first cohort to an established, more ambitious program.
+Head of Groups
+: Set the strategy for how Kairos supports AI safety university groups, choose which new initiatives we pursue, and build the team behind them.
+Generalist (Groups)
+: Work with group organizers worldwide, supporting them through the Pathfinder Fellowship, seeding groups at new universities, and helping top organizers move into full-time AI safety work.
+GCP Program Manager
+: Build and lead new workshop programs as GCP expands into a full portfolio serving different audiences and career stages.
+Generalist (Workshops)
+: Own the operational backbone of GCP’s residential workshops, from outreach and venues to helping run them in person.
+Head of Special Projects
+: Lead the team working on starting new tactical projects within Kairos.
+Generalist (Special Projects)
+: Run a variety of tactical projects, involving anything from event organizing to grantmaking.
+Head of Talent Operations
+: Build the talent operations function that places early-career talent in high-impact AI safety roles.
+SPAR Research Manager / Generalist
+: Support mentors and mentees in the largest AI safety research fellowship in the field.
+The senior roles (Head of and Program Manager roles) have a base salary of $140K – $195K, going up to $270K for candidates in the San Francisco Bay Area. Generalist roles have a base salary of $105K – $145K, going up to $200K in the Bay Area. Hires based in other key hubs like London, DC, Boston, and NYC will also receive above-base salaries; the postings list the full ranges.
+We’re a remote-first team with a center of gravity in the Bay Area, and we get together for all-team retreats three times a year. People get a lot of ownership, we move quickly, and we try hard to place people in roles where they can do work to their comparative advantage. All of us are here because we care deeply about the risks from advanced AI, and the culture aligns strongly with that mission.
+We think the next couple of years will be critical for building the infrastructure the field will need. We're enormously grateful to Coefficient Giving (and particularly the GCR Capacity Building team and Asya Bergal) for backing us, pushing us to be ambitious, and substantially shaping the strategy underlying our new plans. Alongside this announcement, we're launching
+a new brand and website
+, with new brands for our individual programs coming over the next few weeks.
+^
+This was a conservative estimate derived by looking at all historical program data, having an agent do automated research to identify people now working at full-time AI safety roles, and then manually screening each of them to confirm accuracy and whether they’re indeed working at what we’d consider to be a mission-aligned organization in AI safety or policy (which is a relatively high bar). While it’s harder to be sure of the counterfactuality of these career conversions, we use a number of methods to narrow our uncertainty about this variable when evaluating program outcomes. Our top-of-the-funnel focus, the fact that many of these people had interacted only with Kairos programs in their AIS journey, and our pre/post surveys for programs lead us to believe a large fraction of these outcomes are predominantly attributable to Kairos’s efforts.
+^
+It’s hard to be precise here about the specific subset we’re referring to, but basically we assume heavy-tailed returns to talent, and so we typically focus on people we’ve identified to be among the most promising across our programs (for SPAR, this might be top 10th percentile of people; for Pathfinder, it might be the top 30th). When looking at this subset of people and their recent behaviour, we’ve noticed a large number of people converting unusually fast compared to when we started doing fieldbuilding.
+^
+This cashes out as a lot more people making highly risky lateral moves into AI safety, such as dropping out of university to pursue direct work, or leaving well-paid jobs in different industries to do accelerated upskilling. People have also been a lot more involved in politics, e.g. going to canvass for candidates who care about AI safety.
+^
+If your organization is interested in participating, please reach out to
+contact@talentcommons.org
+.
+Kairos has raised $50M to build talent infrastructure for AI safety (and we're hiring!)
+29
+habryka
+16
+Zephaniah Roe
+8
+Nathan Young
+4
+Sheikh Abdur Raheem Ali
+4
+Comments
+4
+AI
+Personal Blog
+79
+New Comment
+4 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 10:05 AM
+[
+-
+]
+habryka
+11h
+29
+4
+Good luck! Beware of the dangers of scaling too quickly. If you do, be ready to fire some people afterwards. It sucks, but it's much better than being stuck with an organization you do not know how to steer, and pursues random misaligned objectives.
+I am most worried that you are spreading yourself quite thin. That's a lot of new directions you are exploring at the same time, and my guess is you are overestimating how clear the success criteria in each of these domains is. But I don't know a huge amount about how you are internally structured.
+Reply
+1
+[
+-
+]
+Zephaniah Roe
+12h
+16
+1
+Extremely exciting! The Kairos team is fantastic and have done nothing but great work. People should apply for these roles!
+A big realization we've had is that while the field is bottlenecked on people who can execute new projects, we can meaningfully lower the activation energy these projects need by (a) making it much, much easier to run new nonprofit projects in the ecosystem, and (b) providing good support structures and strategic input to enable new, more tactical projects to be spun up quickly.
+I'm especially excited about this. In general, I expect the kind of work Kairos does to make a large parts of the ecosystem more effective.
+Reply
+2
+[
+-
+]
+Nathan Young
+8h
+8
+3
+How are you going to ensure that people trained here don't allow AI companies to move faster? Ie sometimes it seems that better safety work just allows capabilities to move faster alongside it. And that's one thing if safety work is the key bottleneck, but if political work is, then surely more safety can lead to worse results?
+Reply
+[
+-
+]
+Sheikh Abdur Raheem Ali
+8h
+4
+0
+Did you name the program SPAR because combined with Agus, it sounds like 'asparagus'?
+Reply
+2
+Moderation Log
+More from
+agucova
+View more
+Curated and popular this week

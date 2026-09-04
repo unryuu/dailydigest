@@ -1,0 +1,116 @@
+URL: https://www.lesswrong.com/posts/qTNm8qzqhhpno58fZ/resolution-has-a-new-agent-foundations-team
+FINAL: https://www.lesswrong.com/posts/qTNm8qzqhhpno58fZ/resolution-has-a-new-agent-foundations-team
+TITLE: Resolution has a new Agent Foundations team — LessWrong
+FETCHED: 2026-09-03 18:05:42
+============================================================
+x
+Resolution has a new Agent Foundations team — LessWrong
+AI
+Personal Blog
+148
+Resolution has a new Agent Foundations
+team
+by
+Jeremy Gillen
+3rd Sep 2026
+2
+min read
+2
+148
+This is a linkpost for
+https://resolution.org/post/agent-foundations-team
+The team will include me (Jeremy Gillen), Abram Demski, Sam Eisenstat, Scott Garrabrant and Kaarel Hänni. We'll soon recruit additional experienced researchers and later we plan to hire interns and junior researchers.
+The team will continue agent foundations research in the spirit of the MIRI Agent Foundations team. This means we’ll be trying to create new theory for understanding minds.
+Fundamental changes in how we understand minds are necessary before we can build superintelligent systems that enhance human agency rather than cause the extinction of all life on earth. Most fields of engineering are able to reason precisely about unseen scenarios and make design decisions based on this reasoning. The field of AI lacks this basic capability. Agent Foundations can be seen as trying to make this possible by giving us the theoretical grounding to ask different and more precise questions about how ASI will behave after extensive learning, self-modification and interaction with other agents. The questions raised in past agent foundations research point toward much of what we need to know here.
+[1]
+Alongside the x-risk motivation, I think it’s valuable to motivate research with curiosity. The questions that come up in Agent Foundations overlap with fundamentally interesting questions that have been studied for a long time in philosophy, economics, mathematics and computer science. Without the curiosity motivation it’s easy to slip away from the deep confusions that ultimately need to be resolved, so our team will try to keep this spark of curiosity alive.
+Some examples of projects we’re currently working on are:
+Understanding concepts, which will build on
+Condensation
+.
+Trust and Legitimacy, related to
+Meaning and Agency
+and
+Understanding Trust
+.
+Exploring better foundations for game theory.
+Alongside these and future projects, we’ll be doing plenty of exploration. The best way to understand most of the motivation for these research directions is to read
+Embedded Agency
+.
+This work, and in my opinion most AI safety work, is unlikely to be very useful if ASI is developed soon. For this reason and others,
+I consider work to delay or stop the race toward superintelligence to be generally higher priority than technical AI safety work.
+But there’s also value in continuing to chip away at the knowledge needed for alignment, so that’s what we’ll be doing.
+One of the reasons we're joining Resolution is to try to use AI to speed up our research. It's not clear to me how much this will help us but it's worth trying. As we decided to join Resolution I was worried that the focus on
+automating alignment research
+meant that they might contribute to research that improves AI capabilities (and therefore possibly reduces the time we have left). My best guess is that Resolution will focus only on making the best use of available capabilities, and avoid automation research that might improve general-purpose capabilities. But
+we don’t want our joining to be a moral or technical endorsement of all the other work happening at Resolution
+. We have a lot of uncertainty about the future and we expect not to always agree with the research prioritization of other parts of the organization. Resolution plans to publish some future discussions we have about this topic.
+We’re excited to be joining an org with so many knowledgeable researchers who share our love for theory, and we’re looking forward to working with everyone at Resolution!
+^
+We want to continue and build on the Agent Foundations / MIRI-adjacent tradition that produced
+Factored Space Models
+,
+Logical Induction
+,
+UDT
+and
+FDT
+,
+Reflective Oracles
+,
+Tiling Agents
+,
+Risks from Learned Optimization
+,
+Corrigibility
+,
+Cartesian Frames
+and
+Infra-Bayes
+. Alongside
+Embedded Agency
+, it might be helpful to read the papers in the
+2017 MIRI Technical Research Agenda
+for background motivation.
+Resolution has a new Agent Foundations team
+13
+Leon Lang
+2
+cousin_it
+2
+Comments
+2
+AI
+Personal Blog
+148
+New Comment
+2 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 10:05 AM
+[
+-
+]
+Leon Lang
+6h
+13
+13
+It’s great to see a renaissance of OG alignment research happening!
+Reply
+[
+-
+]
+cousin_it
+2h
+*
+2
+0
+Oooh. My first reaction was "hire Alex Appel and Vanessa!" but it seems they're already at a similar place called Coral? My second reaction was "hire me" but idk if my laziness qualifies.
+Reply
+1
+Moderation Log
+More from
+Jeremy Gillen
+View more
+Curated and popular this week
