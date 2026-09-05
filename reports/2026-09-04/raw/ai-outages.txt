@@ -1,0 +1,36 @@
+URL: https://www.axios.com/2026/09/03/chatgpt-claude-grok-outages
+FINAL: https://www.axios.com/2026/09/03/chatgpt-claude-grok-outages
+TITLE: ChatGPT, Claude and Grok all simultaneously hit outages
+FETCHED: 2026-09-04 23:53:03
+============================================================
+Sep 3, 2026
+-
+Politics & Policy
+Widespread AI outage underway
+Josephine Walker
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Illustration: Brendan Lynch/Axios
+OpenAI's
+ChatGPT
+, Anthropic's
+Claude,
+and xAI's
+Grok
+are all down Thursday morning, according to the outage company Downdetector.
+Why it matters:
+Outages are common, but it's unusual for all three to go down at once, especially as the world increasingly relies on AI models.
+There have also been reported issues with Google's Gemini, but the company has not issued a confirmed outage notice.
+Driving the news:
+Anthropic's Claude dashboard is experiencing outages across Opus 4.8 and Opus 5, and says all other models "have recovered to baseline error rate."
+ChatGPT and Codex are actively experiencing "elevated errors," according to OpenAI's dashboard.
+Grok is "experiencing issues," according to xAI, which says it's working on the problem.
+The intrigue:
+Microsoft Azure, which provides cloud services for all three models, is also experiencing outages, and some tech outlets have
+suggested
+Microsoft's problem may be contributing to the AI model outages.
+Editor's note: This is a breaking news story and will be updated.
+Add Axios on Google
+What to read next

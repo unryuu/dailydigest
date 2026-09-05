@@ -1,0 +1,581 @@
+URL: https://huggingface.co/blog/osoblanco/from-zero-to-hero-an-open-llm-ecosystem-for-armeni
+FINAL: https://huggingface.co/blog/osoblanco/from-zero-to-hero-an-open-llm-ecosystem-for-armeni
+TITLE: From Zero to Hero: An Open LLM Ecosystem for Armenian
+FETCHED: 2026-09-04 23:50:56
+============================================================
+Back to Articles
+From Zero to Hero: An Open LLM Ecosystem for Armenian
+Community Article
+Published
+ September 4, 2026
+Upvote
+6
+Erik Arakelyan
+osoblanco
+Vahan Martirosyan
+yjmsvma
+Sergoyan
+henriksergoyan-copa-1
+Heghine Grigoryan
+helinegrigoryan
+Nane Khachatryan
+nanekhachatryan
+Mery Davtyan
+meridavtyan
+Khatun Avetisyan
+Khatun1112
+Hayk Shahsuvaryan
+haykshahsuvaryan
+The
+COPA
+team — Erik Arakelyan, Khatun Avetisyan, Meri Davtyan, Heghine Grigoryan, Nane Khachatryan, Hayk Shahsuvaryan, Henrik Sergoyan, Vahan Martirosyan
+📄 Paper:
+arXiv:2609.03350
+· 🤗
+Collection
+· 💻
+Code
+TL;DR
+— We release a curated Armenian pretraining corpus, a verified
+translated STEM corpus, and a Gemma-4 model adapted on them. Training on
+these datasets produces the strongest open Armenian LLM we know of, and it
+is the first one published with every training token and every
+hyperparameter in the open.
+Artifact
+What it is
+Size
+License
+ArmWeb
+Curated Armenian news corpus, globally deduplicated, benchmark-decontaminated, per-document provenance
+4.37M docs · 3.3B Gemma-4 tokens
+ODC-BY 1.0 (compilation)
+ArmSTEM
+Parallel EN–HY math and science problems, machine-translated and verified by blind re-solving; 324K of them with step-by-step solutions
+373K pairs · 311M HY + 124M EN Gemma-4 tokens
+per source: MIT / CC-BY-4.0
+arm-gemma-e4b
+Gemma-4-E4B after 10B tokens of continued pretraining on the above
+base model, bf16
+Gemma terms
+Code
+Corpus pipeline, translate-and-verify pipeline, training recipes, evaluation configs
+—
+MIT
+Paper
+From Zero to Hero: An Open LLM Ecosystem for Armenian
+— full methodology, ablations, and appendices
+arXiv:2609.03350
+CC BY 4.0
+Until now, Armenian, a morphologically rich language with its own script,
+had no openly released pretraining corpus curated for it, no math or
+science training data with worked solutions at training scale, and no open
+LLM whose training data could be inspected. Armenian text at scale has been
+available only as the Armenian slices of multilingual web crawls. This post
+summarizes what we found while building the ecosystem; the paper
+(
+From Zero to Hero: An Open LLM Ecosystem for Armenian
+,
+arXiv:2609.03350) has the full story.
+The headline result
+On a six-task Armenian likelihood suite (zero-shot accuracy with the LM
+Evaluation Harness, so no output-format effects), arm-gemma-e4b scores
+above every existing open Armenian model and above its own unadapted base.
+It is the only open adapted Armenian model we know of that ends above its base.
+Task
+tweety-7b
+HyGPT-10b
+ArmenianGPT-1.0-3B
+Gemma-4-E4B (base)
+arm-gemma-e4b
+Belebele-hye
+0.229
+0.489
+0.654
+0.619
+0.716
+INCLUDE-Armenian
+0.262
+0.367
+0.413
+0.416
+0.456
+m-MMLU-hy
+0.226
+0.282
+0.330
+0.343
+0.337
+ARC-hy
+0.217
+0.219
+0.205
+0.227
+0.229
+HellaSwag-hy
+0.249
+0.262
+0.260
+0.266
+0.262
+MultiBLiMP-hye
+0.934
+0.996
+0.965
+0.989
+0.992
+Mean
+0.35
+0.44
+0.47
+0.48
+0.50
+Two things to read off this table. HellaSwag-hy and ARC-hy sit at the
+four-way chance floor for every model and MultiBLiMP is near ceiling, so the
+signal is in the three knowledge tasks, where arm-gemma-e4b posts the best
+score of any open Armenian model on each. And the two strongest prior
+models both score
+below
+the unadapted Gemma-4-E4B they compete with:
+HyGPT-10b, continued-pretrained on ~10B undisclosed Armenian tokens, and
+ArmenianGPT-1.0-3B. Every number comes from a single checkpoint with no seed
+averaging; the per-model 95% half-width on the mean is about ±0.010, so the
++2.2-point gain over the base sits well outside it.
+Why "open with data and recipe" matters here: HyGPT's corpus is undisclosed,
+so nobody can audit why its knowledge scores fell below its own Gemma-2-9B
+base. For arm-gemma-e4b every token is either public (ArmWeb, ArmSTEM,
+FineWeb-Edu, Stack-smol) or reproducible from the released pipeline, and the
+recipe is five mixture weights, a learning rate, a schedule, and a seed, all
+published.
+How we found the recipe: the forgetting arc
+The standard route to language adaptation is continued pretraining (CPT) on
+target-language text, and the known failure mode is catastrophic
+forgetting. We ran it as a controlled factorial: news-only mixtures
+(
+News-CPT
+, ArmWeb with 20% English replay and 5% code) against
+mixtures that swap 6 points of ArmWeb for ArmSTEM (
+STEM-CPT
+, 4% Armenian
+2% parallel English), each at two learning rates. Everything else,
+including trainer, seed, budget, replay, and code streams, is identical, and
+each run is a single training run.
+Run
+LR
+Mean
+Belebele
+Gemma-4-E4B, unadapted
+—
+0.48
+0.619
+News-CPT
+10⁻⁴
+0.41
+0.407
+News-CPT
+3×10⁻⁵
+0.46
+0.550
+STEM-CPT
+10⁻⁴
+0.46
+0.590
+STEM-CPT (= arm-gemma-e4b)
+3×10⁻⁵
+0.50
+0.716
+News-only CPT at 10⁻⁴ destroys 21 points of reading comprehension, and the
+damage is complete by mid-training, so checkpoint selection cannot save it.
+A gentler learning rate buys back two-thirds.
+The STEM swap works at both
+learning rates: at 10⁻⁴ it recovers 18.3 Belebele points over the news-only
+run at the same rate, and at 3×10⁻⁵ it flips the sign, ending above the
+base while keeping the fluency gains. The 20% English replay, the textbook
+anti-forgetting lever, was present in every run and did not prevent
+forgetting on its own.
+The forgetting half of this story reproduces on a model we did not train.
+Evaluating HyGPT-10b
+and
+its own Gemma-2-9B base on the same suite, CPT
+improved fluency (MultiBLiMP 0.971 → 0.996) while Belebele fell 0.660 →
+0.489 and the mean fell 0.48 → 0.44. Same arc, in the wild, at a comparable
+token budget.
+Repetition is not what drives the reversal. The released model draws its
+ArmSTEM share from a 110K-item subset, so it sees each ArmSTEM token 7–9
+times over the run. A control run with the identical recipe but its share
+drawn from the full 373K-item corpus (about 1.3 passes instead) matches the
+released model within confidence intervals on the likelihood suite. The two
+runs differ only on generative ArmBench, where the repeated pool appears to
+double as format training (0.62 vs 0.57 on the 0–1 tasks) while the full
+corpus lifts exam mathematics (1.75 → 2.75); the full run also shifts the
+math-to-science ratio, so composition and repetition move together.
+It transfers to generation, without instruction tuning
+ArmBench-LLM is a generative Armenian benchmark including national-exam
+sections and MMLU-Pro-Hy. On its accuracy-style tasks, arm-gemma-e4b
+improves over its base nearly everywhere and posts the best mean, ahead of
+ArmenianGPT-1.0-3B even though that model is instruction-tuned and ours is
+not. Base-style competitors collapse on these strict-format tasks because
+they cannot express what they know in the required format; QA-shaped
+pretraining data taught ours the format for free.
+All five models on the 14 accuracy-style tasks (higher is better; exam rows are points with negative marking):
+ArmBench task
+tweety-7b
+HyGPT-10b
+ArmenianGPT†
+Gemma-4-E4B (base)
+arm-gemma-e4b
+Scientific MCQA
+0.000
+0.300
+1.000
+0.860
+1.000
+*
+Belebele (gen.)
+0.000
+0.200
+0.800
+0.660
+0.900
+SynDARin
+0.000
+0.340
+0.920
+0.040
+0.920
+DREAM
+0.000
+0.220
+0.700
+0.480
+0.840
+Hartak
+0.000
+0.022
+0.822
+0.022
+0.822
+MMLU-Pro-Hy
+0.000
+0.026
+0.281
+0.154
+0.251
+Exam history (pts)
+0.50
+2.50
+2.00
+1.00
+2.50
+Exam literature (pts)
+0.50
+4.25
+3.00
+3.00
+3.25
+Topic (14-class)
+0.000
+0.071
+0.504
+0.004
+0.482
+Punctuation
+0.000
+0.000
+0.325
+0.105
+0.514
+INCLUDE (gen.)
+0.000
+0.060
+0.440
+0.100
+0.500
+Sentiment
+0.000
+0.250
+0.550
+0.150
+0.470
+Space-fix
+0.042
+0.419
+0.535
+0.636
+0.718
+POS
+0.000
+0.000
+0.010
+0.180
+0.010
+Mean (0–1 tasks)
+0.00
+0.16
+0.57
+0.28
+0.62
+† Instruction-tuned, evaluated through its extracted text backbone, without a
+chat template like every model here. * Audited: the 50 Scientific MCQA items
+share zero 8-grams with ArmSTEM, and the base already scores 0.86.
+Task sizes are small (45–50 items for most MCQA rows), so read the
+aggregate rather than single rows.
+What didn't work
+Part-of-speech (POS) tagging regresses
+under every CPT run (0.18 → 0.01).
+Exam mathematics is flat
+at 1.75 points for the released model; only
+the full-corpus control run reaches 2.75, which suggests data diversity
+rather than difficulty is the binding factor.
+ArmenianGPT still leads on MMLU-Pro-Hy
+(0.281 vs 0.251), and
+instruction-dependent ArmBench tasks (judged generation, BLEU-scored QA)
+are low for all base-style models including ours. We defer them to an
+instruction-tuned variant.
+Attribution inside the 6-point swap is open.
+Our ablations do not yet
+separate the contributions of STEM content, QA format, and verification;
+a format-matched control is future work.
+Known limits.
+The corpus is news-concentrated, the model has no safety
+tuning, and every CPT run is a single seed.
+The datasets
+ArmWeb
+ArmWeb comes from a single-operator, 15-year crawl of Armenian news sites,
+stored as structured records rather than raw HTML, so boilerplate is near
+zero by construction. The pipeline is documented stage by stage:
+GlotLID language identification (Eastern and Western Armenian kept);
+exact deduplication plus MinHash near-deduplication with a lower,
+news-tuned similarity threshold, run globally before splitting;
+outlet-by-month stratified validation and test splits, plus a temporal
+test split from the final two months of the crawl;
+three leakage gates between train and held-out splits;
+13-gram decontamination against ten Armenian evaluation sets.
+Scanning the Armenian slices of the largest public crawls with the same
+scanner shows why that last step matters:
+Corpus
+Gemma-4 tokens
+Benchmark-contaminated docs
+ArmWeb (ours, before removal)
+~3.3B
+3.3% →
+removed from release
+CulturaX-hy
+4.5B
+7.9%
+HPLT-v2-hy
+5.8B
+10.9%
+FineWeb-2-hy
+2.3B
+17.4%
+ArmWeb's rate is measured on its 4.46M-document pre-removal training pool;
+its token count is the released corpus. Rates are document-level.
+The overlap is concentrated in the held-out text sets used for perplexity
+evaluation (FLORES, hyWiki, the FineWeb-2 test split), which are themselves
+scraped from the web, and FineWeb-2's Armenian
+training
+split overlaps its
+own
+test
+split.
+Hits on hand-built multiple-choice benchmarks are at or below 0.06% for every
+corpus, though only 20–53% of those short items are long enough to be
+detected at all, and FineWeb-2 additionally carries 38.8K documents
+overlapping ArmBench items. So perplexity-style evaluation of models trained
+on these crawls is inflated; knowledge benchmarks mostly are not. We only
+checked Armenian; the scanner is in the repo.
+ArmWeb is also
+complementary
+to the crawls rather than redundant. In
+controlled 410M-parameter ablations it reaches about 10% lower bits-per-byte
+(lower is better) on held-out news, and the union of ArmWeb with CulturaX beats every single
+corpus on the panel mean, a lead that widens at 1.3B. A scaling ladder from
+70M to 1B parameters follows a clean power law and predicts a held-out 1.3B
+model to within 0.47%, so the small-scale conclusions transfer.
+ArmSTEM
+ArmSTEM translates GSM8K, AceReason-Math, OpenScience, and
+OpenScienceReasoning-2 into Eastern Armenian. Machine-translating math is
+easy to do badly, so every item passes a functional check:
+English sources are scanned against English benchmark origins (above all
+the MMLU-Pro test set) and contaminated items are dropped before
+translation.
+Numbers, LaTeX spans, and the question/solution separator are replaced by
+placeholder tokens before translation and restored afterward; a
+placeholder-integrity gate rejects any output that drops or duplicates
+one.
+Translation runs with two feedback repair rounds and escalation to a
+stronger model on repeated failure.
+A language-ID gate confirms the output is Armenian.
+Blind re-solving
+: an independent model solves the
+Armenian
+problem
+and must reproduce the gold answer exactly (a three-model majority judge
+for the under 5% of freeform answers). When it fails, a control re-solves
+the English original; if that fails too, the item is solver-limited rather
+than mistranslated and is kept under an explicit
+solver_limited
+tag
+(10.9% of math, 27.6% of science).
+Accepted Armenian translations are scanned against the Armenian benchmark
+item set.
+After repair, 96.6% of items survive (91.5–99.1% by source). Two further
+audits back the gates: an automated LLM-judge audit of translation adequacy
+on 300 stratified items rates 100% of re-solve-verified and 92.7% of
+solver-limited items meaning-preserving, and
+an independent human evaluation by two native speakers rated 299 of 300
+sampled problems valid with identical verdicts on every item (Cohen's
+κ = 1.0). AceReason-Math ships final answers without worked solutions, so
+its 48,584 items are question–answer pairs; the other 324K items carry
+step-by-step solutions on both sides.
+Get started
+# pip install -U "transformers>=5" datasets accelerate
+from
+datasets
+import
+load_dataset
+# ArmWeb: splits train / validation / test_iid / test_tail
+armweb = load_dataset(
+"COPA-AI/armweb"
+, split=
+"train"
+, streaming=
+True
+)
+doc =
+next
+(
+iter
+(armweb))
+print
+(doc[
+"source"
+], doc[
+"post_date"
+], doc[
+"text"
+][:
+300
+])
+# ArmSTEM: parallel EN-HY pairs; drop solver_limited rows to keep only re-solve-verified items
+armstem = load_dataset(
+"COPA-AI/armstem"
+, split=
+"train"
+)
+verified = armstem.
+filter
+(
+lambda
+ex:
+not
+ex[
+"solver_limited"
+])
+ex = verified[
+0
+]
+print
+(ex[
+"question_hy"
+],
+"->"
+, ex[
+"gold"
+])
+# arm-gemma-e4b is a BASE model (no chat template). Use is subject to the Gemma terms linked on the model page.
+import
+torch
+from
+transformers
+import
+AutoTokenizer, AutoModelForCausalLM
+tok = AutoTokenizer.from_pretrained(
+"COPA-AI/arm-gemma-e4b"
+)
+model = AutoModelForCausalLM.from_pretrained(
+"COPA-AI/arm-gemma-e4b"
+, dtype=torch.bfloat16, device_map=
+"auto"
+)
+prompt =
+"Հայաստանի մայրաքաղաքը "
+out = model.generate(**tok(prompt, return_tensors=
+"pt"
+).to(model.device), max_new_tokens=
+64
+)
+print
+(tok.decode(out[
+0
+], skip_special_tokens=
+True
+))
+Use the model for continuation, likelihood scoring, or as a starting
+point for Armenian SFT; it is not a chat model.
+Use
+test_tail
+(the final two months of the crawl) for temporal
+generalization and
+test_iid
+for in-distribution evaluation.
+The released model trained on a stratified 110K-item ArmSTEM subset; the
+id manifest ships with the dataset (
+stats/cpt_training_subset_ids.txt
+,
+104,630 items still present verbatim in the release, the other 5,255
+superseded by revised translations before release).
+What's next
+A harder competition-math tranche of ArmSTEM and an instruction-tuned
+variant of arm-gemma-e4b for the format-sensitive half of ArmBench. Little in the pipeline is Armenian-specific (a language-ID label and
+a text-normalization table): if your language has news archives and needs
+knowledge data, the recipe is yours to reuse.
+Links, licenses, citation
+Collection:
+Armenian LLM Ecosystem
+Paper:
+arXiv:2609.03350
+Code:
+COPATeam/armenian_llm_ecosystem
+(MIT)
+Licenses:
+ArmWeb: compilation under ODC-BY 1.0; article text remains the
+publishers', with per-document
+url
+and
+source
+preserved; takedown
+requests via the dataset repo discussions.
+ArmSTEM: inherits its sources' licenses (MIT for GSM8K, CC-BY-4.0 for the
+NVIDIA sets), with a statement of changes on the card.
+arm-gemma-e4b: Gemma terms.
+@article{arakelyan2026armweb,
+ title = {From Zero to Hero: An Open LLM Ecosystem for Armenian},
+ author = {Arakelyan, Erik and Avetisyan, Khatun and Davtyan, Meri and Grigoryan, Heghine and Khachatryan, Nane and Shahsuvaryan, Hayk and Sergoyan, Henrik and Martirosyan, Vahan},
+ year = {2026},
+ journal = {arXiv preprint arXiv:2609.03350}
+}
+Models mentioned in this article
+1
+Datasets mentioned in this article
+2
+Collections mentioned in this article
+1
+Community
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+6
+Models mentioned in this article
+1
+Datasets mentioned in this article
+2
+Collections mentioned in this article
+1

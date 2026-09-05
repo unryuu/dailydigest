@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/papers/2608.27831",
+  "title": "真实用户的随手一句话让编程模型成功率下降 6.4 个百分点",
+  "date": "2026-09-04",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.04200",
+  "title": "Principia 用物体关系检查视频模型懂不懂物理",
+  "date": "2026-09-04",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.02812",
   "title": "微软开源实时语音识别模型",
   "date": "2026-09-03",

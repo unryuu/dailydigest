@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://www.axios.com/2026/09/03/chatgpt-claude-grok-outages",
+  "title": "ChatGPT、Claude 和 Grok 同时大面积故障",
+  "date": "2026-09-03T23:36:29+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://www.axios.com/2026/09/03/openai-critical-infrastructure-cyber-ai-models",
+  "title": "OpenAI 拿十亿美元补贴关键服务用 AI 防黑客",
+  "date": "2026-09-04T04:15:05+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://www.axios.com/2026/09/04/eu-tech-chief-ai-guardrails-inevitable-us",
+  "title": "欧盟技术主管称美国也会走向类似的 AI 护栏",
+  "date": "2026-09-04T17:15:06+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist",
+  "title": "五角大楼坚持把 Anthropic 列为供应链风险",
+  "date": "2026-09-03T23:48:46+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
   "id": "https://www.axios.com/2026/09/02/lutnick-anthropic-trump",
   "title": "美国政府称已重新信任 Anthropic",
   "date": "2026-09-02T23:48:37+08:00",

@@ -1,0 +1,256 @@
+[
+  {
+    "slug": "nvidia-huggingface",
+    "url": "https://www.theinformation.com/briefings/nvidia-buy-hugging-face-12-9-billion",
+    "status": null,
+    "error": "Error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "slug": "thinking-machines-funding",
+    "url": "https://www.theinformation.com/articles/thinking-machines-lab-talks-raise-billions-roughly-40-billion-valuation",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/thinking-machines-lab-talks-raise-billions-roughly-40-billion-valuation",
+    "bytes": 389601,
+    "title": "Nvidia in Talks to Invest Around $2.5 Billion in Murati’s Thinking Machines Lab — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "meta-hatch-safety",
+    "url": "https://www.theinformation.com/articles/inside-metas-efforts-ensure-upcoming-hatch-ai-agent-go-rogue",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/inside-metas-efforts-ensure-upcoming-hatch-ai-agent-go-rogue",
+    "bytes": 410425,
+    "title": "Inside Meta’s Efforts to Ensure Its Upcoming ‘Hatch’ AI Agent Won’t Go Rogue — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "gpt6-astra",
+    "url": "https://openai.com/index/gpt-6-astra",
+    "status": 200,
+    "final_url": "https://openai.com/index/gpt-6-astra/",
+    "bytes": 2877865,
+    "title": "GPT-6 Astra: A new generation of intelligence | OpenAI",
+    "chars": 30082
+  },
+  {
+    "slug": "deepseek-huawei-cluster",
+    "url": "https://www.theinformation.com/briefings/deepseek-plans-major-huawei-chip-order-new-ai-data-center",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/deepseek-plans-major-huawei-chip-order-new-ai-data-center",
+    "bytes": 405138,
+    "title": "DeepSeek Plans Major Huawei Chip Order in New AI Data Center — The Information",
+    "chars": 2375
+  },
+  {
+    "slug": "deepseek-huawei-bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-04/deepseek-plans-big-huawei-ai-chip-order-to-power-new-data-center",
+    "status": 403,
+    "final_url": "https://www.bloomberg.com/news/articles/2026-09-04/deepseek-plans-big-huawei-ai-chip-order-to-power-new-data-center",
+    "bytes": 15019,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "openai-agent-wiki",
+    "url": "https://collusion.wiki/",
+    "status": 200,
+    "final_url": "https://collusion.wiki/",
+    "bytes": 155342,
+    "title": "Discovery of a new OpenAI agent message board",
+    "chars": 83680
+  },
+  {
+    "slug": "google-ai-expensive-products",
+    "url": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
+    "status": 200,
+    "final_url": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
+    "bytes": 126377,
+    "title": "Google AI Mode shows the same products 21.6% more expensive than traditional search [Data Study] | Productrise",
+    "chars": 17246
+  },
+  {
+    "slug": "automated-grading-alignment",
+    "url": "https://www.lesswrong.com/posts/wYZMmdWEt5QLM3m3e/steering-towards-automated-grading-degrades-alignment",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/wYZMmdWEt5QLM3m3e/steering-towards-automated-grading-degrades-alignment",
+    "bytes": 892614,
+    "title": "Steering towards “automated grading” degrades alignment — LessWrong",
+    "chars": 34480
+  },
+  {
+    "slug": "universal-jailbreak",
+    "url": "https://www.lesswrong.com/posts/hHk5CpiqZTBBiHmYt/from-safety-research-prompt-to-cross-model-universal",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/hHk5CpiqZTBBiHmYt/from-safety-research-prompt-to-cross-model-universal",
+    "bytes": 808036,
+    "title": "From safety research prompt to cross-model universal jailbreak — LessWrong",
+    "chars": 49008
+  },
+  {
+    "slug": "principia-video-physics",
+    "url": "https://huggingface.co/papers/2609.04200",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.04200",
+    "bytes": 120474,
+    "title": "Paper page - Principia: Relational Physics Tests for Video Models",
+    "chars": 2576
+  },
+  {
+    "slug": "realswe",
+    "url": "https://huggingface.co/papers/2608.27831",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2608.27831",
+    "bytes": 153736,
+    "title": "Paper page - RealSWE: A Compositional Evaluation of Coding Agents under Realistic User Requests",
+    "chars": 3479
+  },
+  {
+    "slug": "sanders-casar-ai-pause",
+    "url": "https://www.lesswrong.com/posts/DnPyiDGWLozY4XdiX/sen-bernie-sanders-i-vt-and-rep-greg-casar-d-tx-introduce",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/DnPyiDGWLozY4XdiX/sen-bernie-sanders-i-vt-and-rep-greg-casar-d-tx-introduce",
+    "bytes": 548475,
+    "title": "Sen. Bernie Sanders (I-VT) and Rep. Greg Casar (D-TX) introduce legislation to ban Artificial Superintelligence and temporarily pause advanced AI development  — LessWrong",
+    "chars": 11601
+  },
+  {
+    "slug": "pentagon-anthropic",
+    "url": "https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist",
+    "bytes": 249655,
+    "title": "Top Pentagon official reaffirms Anthropic blacklist despite Lutnick comments",
+    "chars": 1772
+  },
+  {
+    "slug": "eu-ai-guardrails",
+    "url": "https://www.axios.com/2026/09/04/eu-tech-chief-ai-guardrails-inevitable-us",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/04/eu-tech-chief-ai-guardrails-inevitable-us",
+    "bytes": 255355,
+    "title": "EU tech chief: AI guardrails inevitable for U.S.",
+    "chars": 3595
+  },
+  {
+    "slug": "weathernext3",
+    "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
+    "bytes": 390899,
+    "title": "WeatherNext 3: Our most advanced global weather AI model",
+    "chars": 11157
+  },
+  {
+    "slug": "k2-horizon",
+    "url": "https://ifm.ai/blog/k2",
+    "status": 200,
+    "final_url": "https://ifm.ai/blog/k2/",
+    "bytes": 89912,
+    "title": "Introducing K2 Horizon: Frontier Performance, Radically Open",
+    "chars": 28588
+  },
+  {
+    "slug": "grok-bot-design",
+    "url": "https://x.ai/news/designing-grok-bot",
+    "status": 200,
+    "final_url": "https://x.ai/news/designing-grok-bot",
+    "bytes": 850849,
+    "title": "Designing Grok Bot for a world of persistent agents | SpaceXAI",
+    "chars": 15773
+  },
+  {
+    "slug": "grok-bot-enterprise",
+    "url": "https://x.ai/news/grok-bot-for-enterprise",
+    "status": 200,
+    "final_url": "https://x.ai/news/grok-bot-for-enterprise",
+    "bytes": 180046,
+    "title": "Grok Bot for Enterprise | SpaceXAI",
+    "chars": 3376
+  },
+  {
+    "slug": "openai-critical-services",
+    "url": "https://www.axios.com/2026/09/03/openai-critical-infrastructure-cyber-ai-models",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/03/openai-critical-infrastructure-cyber-ai-models",
+    "bytes": 253059,
+    "title": "OpenAI launches initiative to protect utilities from AI hacks",
+    "chars": 2946
+  },
+  {
+    "slug": "ai-outages",
+    "url": "https://www.axios.com/2026/09/03/chatgpt-claude-grok-outages",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/03/chatgpt-claude-grok-outages",
+    "bytes": 236689,
+    "title": "ChatGPT, Claude and Grok all simultaneously hit outages",
+    "chars": 1288
+  },
+  {
+    "slug": "qwen-cerebras",
+    "url": "https://inference-docs.cerebras.ai/models/overview",
+    "status": 200,
+    "final_url": "https://inference-docs.cerebras.ai/models/overview",
+    "bytes": 317418,
+    "title": "Model Catalog - Cerebras Inference",
+    "chars": 3144
+  },
+  {
+    "slug": "open-yap-1k",
+    "url": "https://huggingface.co/blog/TheAgenticDataCompany/open-yap-1k",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/TheAgenticDataCompany/open-yap-1k",
+    "bytes": 149537,
+    "title": "Open Yap 1K: 1,000 hours of full-duplex natural conversation, free for commercial use",
+    "chars": 12543
+  },
+  {
+    "slug": "armenian-llm",
+    "url": "https://huggingface.co/blog/osoblanco/from-zero-to-hero-an-open-llm-ecosystem-for-armeni",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/osoblanco/from-zero-to-hero-an-open-llm-ecosystem-for-armeni",
+    "bytes": 180790,
+    "title": "From Zero to Hero: An Open LLM Ecosystem for Armenian",
+    "chars": 15860
+  },
+  {
+    "slug": "astra-research-taste",
+    "url": "https://x.com/emollick/status/2095717185200988439",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2095717185200988439",
+    "bytes": 169978,
+    "title": "Ethan Mollick on X: \"An interesting failure of Astra: I asked it to conduct  original entrepreneurship research with whatever online datasets it could find, pre-registering its hypotheses. It churned out a lot of beautifully formatted, technically correct papers on boring topics. No research taste.\" / X",
+    "chars": 338
+  },
+  {
+    "slug": "huggingface-price-emoji",
+    "url": "https://x.com/tszzl/status/2095635690230808799",
+    "status": 200,
+    "final_url": "https://x.com/tszzl/status/2095635690230808799",
+    "bytes": 194556,
+    "title": "roon on X: \"efficient markets in shambles\" / X",
+    "chars": 271
+  },
+  {
+    "slug": "artificial-beaver-dams",
+    "url": "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california",
+    "status": 200,
+    "final_url": "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california",
+    "bytes": 1261908,
+    "title": "People started building artificial beaver dams in California. Now something \"mind blowing\" is happening | Discover Wildlife",
+    "chars": 4340
+  },
+  {
+    "slug": "jane-street-reverse-engineering",
+    "url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
+    "status": 200,
+    "final_url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
+    "bytes": 34396,
+    "title": "On solving the Jane Street Reverse Engineering Challenge | jestoph’s tech blog",
+    "chars": 19646
+  },
+  {
+    "slug": "fairphone-gen6",
+    "url": "https://arstechnica.com/gadgets/2026/09/nearly-impossible-how-fairphone-built-the-ethical-repairable-fairphone-gen-6",
+    "status": null,
+    "error": "Error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  }
+]

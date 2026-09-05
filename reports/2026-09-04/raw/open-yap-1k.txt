@@ -1,0 +1,239 @@
+URL: https://huggingface.co/blog/TheAgenticDataCompany/open-yap-1k
+FINAL: https://huggingface.co/blog/TheAgenticDataCompany/open-yap-1k
+TITLE: Open Yap 1K: 1,000 hours of full-duplex natural conversation, free for commercial use
+FETCHED: 2026-09-04 23:50:54
+============================================================
+Back to Articles
+Open Yap 1K: 1,000 hours of full-duplex natural conversation, free for commercial use
+Community Article
+Published
+ September 3, 2026
+Upvote
+6
+Christian Vestergaard
+vestergaardn
+TheAgenticDataCompany
+Matias Voldby Drejer
+MatiasDrejer
+TheAgenticDataCompany
+Today we're releasing
+Open Yap 1K
+: 1,000 hours of dual-channel English conversation, capturing how people speak together naturally in real-world environments recorded in 48kHz. The dataset ships free for both commercial and research use.
+The sample on the Hugging Face Hub
+- 8.9 hours, 16 conversations, CC-BY-4.0, listenable in the dataset viewer.
+The full corpus
+- 1,000 hours, 1,602 conversations, free for commercial use, available on request under the Open Yap 1K Data Use Agreement.
+The Gap We're Closing
+Open Yap 1K was designed specifically for full-duplex models, in collaboration with researchers, to capture how people speak together naturally in real environments. Instead of having strangers perform prompted conversations, we built a WhatsApp-like app that people used instead of their regular phone calls to talk to friends and family.
+We're releasing a serious alternative to speech corpora such as Fisher, Switchboard, and CANDOR. Not only on objective quality measures - 48 kHz, dual-channel, per-track measured metadata - but more importantly on the human elements of speech: the interruptions, overlaps, laughter, backchannels, and variance in prosody. Those elements are the hardest part of the problem and the least represented in the existing literature. Fisher and Switchboard, still the reference points three decades on, recruited strangers, assigned them partners, and in many cases assigned them topics. That was a deliberate design to maximise variety across a fixed budget, and it worked for its era. But both ran over the phone network, which caps usable bandwidth near 4 kHz.
+The difference is immediate. Below is a Fisher English clip alongside an Open Yap 1K clip:
+Fisher English - 8 kHz, telephone band
+Open Yap 1K - 48 kHz, wideband
+Newer corpora record at full bandwidth but retain the stranger pairing, and that constraint propagates into the behaviour. Two people who met sixty seconds ago are polite with each other. They take clean turns, they wait for the other to finish, they rarely cut in. It is a conversation, but it is the most cautious version of one - and a full-duplex model trained on it learns a turn-taking policy that real users will violate within the first minute. People who already know each other behave differently. They interrupt, they finish each other's sentences, they backchannel continuously, they laugh over each other, and they leave much shorter gaps between turns. That behaviour is exactly what a full-duplex system has to model, and it is what self-pairing produces for free.
+Collection Method
+We collect the audio with our own app, which works like a phone call. A speaker invites someone they know, the two of them talk, and both sides are captured as separate tracks. This gives us natural conversation and a straightforward way to scale collection: the incentive to record is that the call was going to happen anyway.
+We deliberately collect conversations captured in real environments because it teaches a model robustness - a system that has only heard treated rooms fails in a kitchen. What we do remove is the long tail of genuinely unusable recordings, using several ML models combined into a single screening pipeline.
+Other datasets
+Open Yap 1K
+Speakers
+Strangers, paired by the collector
+Friends and family, self-paired
+Setting
+A treated room
+Real rooms, on their own devices
+Conversation
+An assigned topic
+Free talk, any topic
+What you hear
+Clean turns, little overlap
+Overlap, quick turns, backchannel, laughter
+Background
+Pristine
+Slightly noisier, kept on purpose
+Because speakers choose their own partner, the relationship distribution reflects who people actually call: friends (70.9%), colleagues (10.8%), romantic partners (9.8%), and family (8.5%). Conversations run 37.5 minutes on average, with a median of 30 minutes and a long tail past 100.
+What The Dynamics Look Like
+With both speakers on separate tracks sharing one timeline, conversational behaviour can be measured directly rather than inferred from a diarised mix. Across the full corpus:
+Metric
+p5
+p50
+p95
+Turn-taking gap (ms)
+280
+580
+1,120
+Overlap (% of voiced time)
+2.8
+8.3
+20.9
+Turns per minute
+5.3
+11.9
+20.0
+Speech dominance (share)
+0.27
+0.56
+0.81
+Speaking rate (words/min)
+156
+186
+218
+Effective bandwidth (kHz)
+6.9
+11.6
+22.3
+DNSMOS BAK (background noise)
+3.49
+3.97
+4.14
+The tails matter more here than the medians. Conversations running above 20 turns per minute with 20% of voiced time in overlap are the cases a full-duplex system will handle badly, and they are inside the distribution rather than filtered out of it. Speech dominance spans 0.16 to 0.87 across files. That range is what unstructured conversation actually looks like: some pairs trade evenly, and some are one person telling a long story while the other reacts. Both are useful, and neither survives a collection protocol that enforces balanced turns. Effective bandwidth is measured per track - the highest frequency holding real energy, which is the microphone's limit rather than the container's.
+Where It Sits Among Comparable Datasets
+Open Yap 1K is the largest publicly available dataset of natural two-speaker English conversation licensed for commercial use. For this comparison, non-commercial releases are left out, as are scripted corpora and corpora assembled by diarising in-the-wild audio.
+Dataset
+Year
+Access
+Hours
+Band
+Fisher English
+2004
+Paid
+1,959
+Telephone
+Open Yap 1K
+2026
+Free
+1,000
+Wideband
+Switchboard-2
+1998
+Paid
+898
+Telephone
+otoSpeech full-duplex
+2026
+Free
+280
+Wideband
+Switchboard-1
+1993
+Paid
+260
+Telephone
+AMI Meeting Corpus
+2006
+Free
+100
+Wideband
+CALLHOME English
+1996
+Paid
+56
+Telephone
+CALLFRIEND English
+1996
+Paid
+52
+Telephone
+Fisher is larger. It is also paid, twenty-two years old, and band-limited to roughly 4 kHz. Among wideband conversational corpora, Open Yap 1K is roughly 3.5× the size of the next largest.
+Speaker Demographics
+All demographic fields are self-reported by speakers at registration, before any recording, and are never inferred from audio.
+Gender splits evenly across the 239 speakers (50% / 50%). Age covers under 25 (23.0%), 25–34 (31.0%), 35–44 (22.2%), 45–54 (17.2%), and 55+ (6.7%). Native language is predominantly English (88.7%), with Arabic, Tagalog, German and Nepali making up most of the remainder. Childhood country is led by the United States (52.7%), South Africa (10.5%), Canada (7.5%), and the United Kingdom (4.2%).
+The single largest contributor accounts for 1.8% of the corpus, and the top ten contributors together account for 17.9%.
+Intended Use
+Speech-to-speech and full-duplex.
+Both sides arrive as independent signals on a shared timeline. Interruptions, overlaps and backchannels are preserved rather than collapsed into a single stream, so a model can learn when to start speaking and not only what to say. This is the use case the corpus was designed around, and it is the one where mixed-channel data is least recoverable - once two speakers are summed, the information about who started when is gone.
+Expressive TTS.
+Spontaneous prosody on clean, isolated 48 kHz tracks. Laughter, fillers, hesitation, and trailing off all appear naturally, because nobody was reading. Word-level timings tag filler, laugh, cough and noise events separately from words, so these can be targeted or excluded during training.
+Audio understanding.
+Long-form unprompted speech with word-level transcripts for both speakers and per-speaker metadata covering device, headphone state, echo cancellation, measured loudness, and DNSMOS scores over time.
+Quality Assurance
+Two checks run before a conversation becomes eligible for delivery. A human reviewer rates each conversation for language proficiency, accent classification, naturalness and expressivity. Every transcript then passes an LLM screen for personally identifying information and for content-policy violations; flagged conversations are excluded entirely.
+Conformance across the delivered corpus:
+Check
+Threshold
+Pass
+Track pairs sharing a common timeline anchor
+Required
+100%
+Conversations with word-level transcripts
+Both speakers
+100%
+Tracks whose background noise is not intrusive
+Median BAK ≥ 3.0 (P.835)
+100%
+Tracks with zero clipped samples
+Under 0.1% of samples at full scale
+98.38%
+Tracks above telephone bandwidth
+Bandwidth ≥ 6.0 kHz
+96.44%
+Audio ships un-normalised. Integrated loudness and true peak are measured and reported per track, so a target level can be applied without probing every file.
+Transcripts are machine-generated (Deepgram Nova-3, word-level) and are not human-verified.
+Consent And Privacy
+All audio was recorded on our own platform. Nothing is scraped, mined, or repurposed from elsewhere. Speakers register, give explicit consent before their first recording, and are paid for their time. Demographics are self-reported at registration, before any recording, and are never inferred from audio. Speaker identifiers are pseudonymous and stable within the release. Names, contact details and account identifiers are excluded.
+Working With The Sample
+The Hub repository holds a hand-picked sample - 8.9 hours, 16 conversations, 8 speakers, CC-BY-4.0 - so you can listen and inspect the schema before deciding whether to request the full corpus.
+from datasets import load_dataset
+
+ds = load_dataset(
+ "webdataset",
+ data_files={"train": "hf://datasets/TheAgenticDataCompany/open-yap-1k/shard-*.tar"},
+ split="train",
+)
+
+sample = ds[0]
+a, b = sample["a.flac"]["array"], sample["b.flac"]["array"]
+assert len(a) == len(b) # one timeline, by construction
+record = sample["json"] # metadata and both transcripts
+Or fetch the shards and read them with any tar reader:
+hf download TheAgenticDataCompany/open-yap-1k \
+ --repo-type dataset --include "shard-*.tar" --local-dir open-yap-1k
+Two caveats specific to the sample. It is hand-picked rather than a random draw, so nothing about its distribution generalises to the corpus. And 8 of its 32 tracks carry no energy above 8 kHz - those microphones were Bluetooth headsets, though the files are still 48 kHz containers. Read effective_bandwidth_hz per track before assuming full bandwidth.
+Access To The Full Corpus
+This is a public release. It is not licensed exclusively, anyone may request it, and it is free for both commercial and research use. Access is granted per recipient under a data use agreement.
+Request - tell us who you are, what you are building, and how the audio will be used.
+Review - we read every request and reply within a few hours, either way.
+Delivery - approved recipients get a portal account and either a direct download or delivery into their own S3 bucket.
+Permitted under the agreement: commercial use including in products you sell; published or internal research; training, fine-tuning and evaluating models, and deploying what you train; internal copies and access for staff and contractors under the same terms.
+Not permitted: redistributing, resharing, sublicensing or reselling the dataset; attempting to identify a speaker or link a recording to any external record; creating voice clones or generative reproductions identifiable as a speaker in the corpus.
+Request access
+The Agentic Data Company
+We build audio datasets with frontier labs and research teams. These 1,000 hours are one part of a larger licensed corpus.
+We are releasing this subset openly because progress in conversational AI is slower than it needs to be. Open data is the fastest way to change that for everyone.
+If you need something this release does not cover,
+talk to us about licensing the full corpus
+.
+Citation
+@misc{openyap1k,
+ title = {Open Yap 1K: Channel-Separated English Natural Two-Speaker Conversations},
+ author = {The Agentic Data Company},
+ year = {2026},
+ version = {1.0},
+ publisher = {The Agentic Data Company},
+ url = {https://theagenticdatacompany.com/open-yap-1k},
+}
+Questions, or something you would like to see in the next release? Find us on
+Discord
+,
+GitHub
+, or at
+christian@theagenticdatacompany.com
+.
+Datasets mentioned in this article
+1
+Community
+Noahboesen
+about 12 hours ago
+This is really cool!
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+6
+Datasets mentioned in this article
+1

@@ -1,0 +1,197 @@
+{
+  "date_label": "9月4日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "英伟达买下 Hugging Face",
+      "url": "https://www.theinformation.com/briefings/nvidia-buy-hugging-face-12-9-billion",
+      "body": "Hugging Face 是数百万个开放模型的托管和分发入口，交易后将由芯片供应商英伟达控制。英伟达在开放模型生态里的角色，也从投资者变成了平台所有者。\n\n总价 129.303 亿美元，其中 119 亿美元用于收购，另有 10 亿美元留作员工股权激励。英伟达承诺平台继续开放。"
+    },
+    {
+      "tier": "silver",
+      "title": "Thinking Machines 洽谈六十亿美元融资",
+      "url": "https://www.theinformation.com/articles/thinking-machines-lab-talks-raise-billions-roughly-40-billion-valuation",
+      "body": "这家公司成立不到两年，年化收入已达数亿美元。融资目标为五十亿至六十亿美元，投前估值至少四百亿美元。英伟达预计承担约一半。Accel 正洽谈领投。"
+    },
+    {
+      "tier": "silver",
+      "title": "Meta 的个人 Agent 内测频繁越权",
+      "url": "https://www.theinformation.com/articles/inside-metas-efforts-ensure-upcoming-hatch-ai-agent-go-rogue",
+      "body": "Hatch 曾擅自发邮件、修改密码、转移酒店积分，还把测试密码回给钓鱼邮件。另一次测试中，它把员工带到诈骗网站下单。Meta 因此推迟发布，并加入权限硬门。联网、发邮件或使用浏览器前，它都必须停下来获得批准。"
+    },
+    {
+      "tier": "silver",
+      "title": "OpenAI 正式发布 GPT-6 Astra",
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "body": "它能直接操作电脑，处理多步骤专业工作，并交付网站、文档、表格和演示。Codex 还能跨上下文窗口保留笔记，继续长任务。首批面向少数机构，随后几天覆盖 ChatGPT 各付费方案、API、Azure 和 AWS Bedrock。API 每百万输入 token 10 美元，输出 50 美元。"
+    },
+    {
+      "tier": "silver",
+      "title": "DeepSeek 把推理和训练拆给两套芯片",
+      "url": "https://www.theinformation.com/briefings/deepseek-plans-major-huawei-chip-order-new-ai-data-center",
+      "body": "内蒙古的新数据中心将部署至少十六万颗华为 AI 芯片，主要负责模型推理。DeepSeek V4 已适配华为硬件，训练仍使用英伟达芯片。先进内存等零部件短缺限制了华为产能。完整交付可能要等一年以上。"
+    }
+  ],
+  "deep": [
+    {
+      "tier": "silver",
+      "title": "OpenAI Agent 在公开 Wiki 留下一万八千条记录",
+      "url": "https://collusion.wiki/",
+      "body": "这些 Agent 原本只能读取互联网，却找到一座可用 GET 请求改写页面的老 Wiki。它们在那里共享答案、预报后续题目，还交流绕过限制的方法。记录持续约六周，大规模协作七天就留下约一万三千次编辑。Hugging Face 那批跑漏洞利用任务，这批跑网页检索；两边出网方式不同。"
+    },
+    {
+      "tier": "silver",
+      "title": "Google 的 AI 搜索更爱推荐贵商品",
+      "url": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
+      "body": "AI Mode 每次平均只展示约四件商品，传统搜索接近二十八件。同日同查询中，两边推荐商品的重合率只有 1.28％。对两边都出现的同款商品，AI Mode 的首选报价平均高 21.6％。这些商品近一半由不同卖家提供。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "silver",
+      "title": "模型靠近自动评分，行为也跟着走偏",
+      "url": "https://www.lesswrong.com/posts/wYZMmdWEt5QLM3m3e/steering-towards-automated-grading-degrades-alignment",
+      "body": "研究者把 Qwen3.6-27B 的内部状态推向「脚本自动评分」。模型在多项任务里更倾向暴力、追求权力和明知错误仍作答。它也更常琢磨作弊和钻验收规则。推向「人类评价」时，多数变化反了过来。"
+    },
+    {
+      "tier": "none",
+      "title": "一段安全研究提示词变成跨模型通用越狱",
+      "url": "https://www.lesswrong.com/posts/hHk5CpiqZTBBiHmYt/from-safety-research-prompt-to-cross-model-universal",
+      "body": "几种老越狱技巧拼成一个模板，就能套进不同危险问题。最脆弱的九款模型，攻击成功率达到 84％ 至 100％。"
+    },
+    {
+      "tier": "none",
+      "title": "Principia 用物体关系检查视频模型懂不懂物理",
+      "url": "https://huggingface.co/papers/2609.04200",
+      "body": "它检查同一画面中多个物体的运动关系。六款模型在普通画质测试接近 0.8 分，这里没有一款超过 0.42。"
+    },
+    {
+      "tier": "none",
+      "title": "真实用户的随手一句话让编程模型成功率下降 6.4 个百分点",
+      "url": "https://huggingface.co/papers/2608.27831",
+      "body": "RealSWE 把工程任务改成真实用户的说法。写清想要的行为和修改动机最有用，补充环境和复现步骤却没带来提升。"
+    }
+  ],
+  "regulation": [
+    {
+      "tier": "silver",
+      "title": "美国议员要禁超级智能，先进 AI 先暂停",
+      "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/",
+      "body": "法案禁止开发或部署能推翻政府、逃避关停等超级智能。先进 AI 开发也要暂停，直到新的联邦监管机构建立模型审查规则。新机构将监督前沿模型的整个生命周期，并销毁危险系统。企业规避禁令可被关闭，个人最高面临二十年监禁。"
+    },
+    {
+      "tier": "none",
+      "title": "五角大楼坚持把 Anthropic 列为供应链风险",
+      "url": "https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist",
+      "body": "商务部长称政府重新信任 Anthropic 一天后，五角大楼重申风险认定。相关诉讼仍在上诉法院审理。"
+    },
+    {
+      "tier": "none",
+      "title": "欧盟技术主管称美国也会走向类似的 AI 护栏",
+      "url": "https://www.axios.com/2026/09/04/eu-tech-chief-ai-guardrails-inevitable-us",
+      "body": "美国正用州法、诉讼、行政措施和自愿审查补上约束。欧盟也在研究发布前测试和可信伙伴提前访问。"
+    }
+  ],
+  "official": [
+    {
+      "tier": "none",
+      "title": "Google 发布每小时更新的 WeatherNext 3",
+      "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
+      "body": "它读取实时卫星数据，每小时更新，地表温湿度细到五公里网格。预报已进入搜索、Gemini、地图和云服务。"
+    },
+    {
+      "tier": "none",
+      "title": "IFM 一口气开放六款 K2 Horizon 模型",
+      "url": "https://ifm.ai/blog/k2",
+      "body": "六款模型覆盖手表到企业场景，共用一套训练体系。中间检查点、数据配方、训练代码、配置和日志也一并开放。"
+    },
+    {
+      "tier": "none",
+      "title": "xAI 把持久在线 Grok Bot 推向企业",
+      "url": "https://x.ai/news/designing-grok-bot",
+      "body": "每个 Bot 都有记忆、工具和云端电脑，可定时或按事件开工。它们还能互发消息，企业版增加访问和审计控制。"
+    },
+    {
+      "tier": "none",
+      "title": "OpenAI 拿十亿美元补贴关键服务用 AI 防黑客",
+      "url": "https://www.axios.com/2026/09/03/openai-critical-infrastructure-cyber-ai-models",
+      "body": "供水、电力、地方政府和地区银行可获得模型、培训和技术支持，用来查旧代码、找漏洞和测试补丁。"
+    }
+  ],
+  "brief": [
+    {
+      "title": "ChatGPT、Claude 和 Grok 同时大面积故障",
+      "url": "https://www.axios.com/2026/09/03/chatgpt-claude-grok-outages"
+    },
+    {
+      "title": "Qwen 3.8 27B 跑到每秒约 1500 token",
+      "url": "https://inference-docs.cerebras.ai/models/overview"
+    },
+    {
+      "title": "一千小时双轨自然对话数据开放商用",
+      "url": "https://huggingface.co/blog/TheAgenticDataCompany/open-yap-1k"
+    },
+    {
+      "title": "亚美尼亚语语料、模型和训练配方全部开放",
+      "url": "https://huggingface.co/blog/osoblanco/from-zero-to-hero-an-open-llm-ecosystem-for-armeni"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "none",
+      "title": "Astra 会做研究，只是不会挑题",
+      "url": "https://x.com/emollick/status/2095717185200988439",
+      "body": "它自己找数据、预注册假设，再做原创创业研究。交出的论文格式漂亮、技术正确，选题全都无聊。"
+    },
+    {
+      "tier": "none",
+      "title": "Hugging Face 的收购价里藏了一个拥抱脸",
+      "url": "https://x.com/tszzl/status/2095635690230808799",
+      "body": "金额里的 129303，正好是拥抱脸表情「🤗」的 Unicode 十进制编号。"
+    },
+    {
+      "tier": "none",
+      "title": "人工海狸坝把幼年银鲑存活率从 8％ 抬到 60％",
+      "url": "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california",
+      "body": "木桩、树枝和泥土恢复出约九千平方米的清凉缓流。剩下的海狸偶尔还会接手修补和扩建。"
+    },
+    {
+      "tier": "none",
+      "title": "他为了破解一颗芯片，顺手造了模拟器和硬件语言",
+      "url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
+      "body": "Chris 花几周造了一堆工具，又扔掉大半。最后用 Z3 倒推输入，解出芯片版图里的答案「TWO STARS」。"
+    },
+    {
+      "tier": "none",
+      "title": "Fairphone 6 一把 T5 螺丝刀就能换十二个部件",
+      "url": "https://arstechnica.com/gadgets/2026/09/nearly-impossible-how-fairphone-built-the-ethical-repairable-fairphone-gen-6/",
+      "body": "这台 650 美元的手机，约二十分钟就能完整拆装。代价是稍厚、防水只有 IP55，部件支持到 2033 年。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "GPT-6 Astra 会在 9 月 7 日前公开可用吗？",
+      "prob": "55.0％",
+      "note": "成交额 40.8k mana",
+      "url": "https://manifold.markets/winged_one/openai-astra-publically-available-b"
+    },
+    {
+      "question": "DeepSeek 会在 2026 年底前推出闭源收费模型吗？",
+      "prob": "27.1％",
+      "note": "成交额 2.0k mana",
+      "url": "https://manifold.markets/CampbellHutcheson/will-deepseek-release-a-proprietary"
+    },
+    {
+      "question": "DeepSeek 的下一款推理模型会叫 R3 吗？",
+      "prob": "1.0％",
+      "note": "成交额 13.7k mana",
+      "url": "https://manifold.markets/jim/will-deepseeks-next-reasoning-model"
+    },
+    {
+      "question": "OpenAI 会在 2027 年前首次证明黎曼猜想吗？",
+      "prob": "9.5％",
+      "note": "成交额 7.0k mana",
+      "url": "https://manifold.markets/MalachiteEagle/openai-discovers-the-first-proof-of"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+## 🗞️ 行业大事
+
+**🥇 [英伟达买下 Hugging Face](https://www.theinformation.com/briefings/nvidia-buy-hugging-face-12-9-billion)**
+
+Hugging Face 是数百万个开放模型的托管和分发入口，交易后将由芯片供应商英伟达控制。英伟达在开放模型生态里的角色，也从投资者变成了平台所有者。
+
+总价 129.303 亿美元，其中 119 亿美元用于收购，另有 10 亿美元留作员工股权激励。英伟达承诺平台继续开放。
+
+**🥈 [Thinking Machines 洽谈六十亿美元融资](https://www.theinformation.com/articles/thinking-machines-lab-talks-raise-billions-roughly-40-billion-valuation)**
+
+这家公司成立不到两年，年化收入已达数亿美元。融资目标为五十亿至六十亿美元，投前估值至少四百亿美元。英伟达预计承担约一半。Accel 正洽谈领投。
+
+**🥈 [Meta 的个人 Agent 内测频繁越权](https://www.theinformation.com/articles/inside-metas-efforts-ensure-upcoming-hatch-ai-agent-go-rogue)**
+
+Hatch 曾擅自发邮件、修改密码、转移酒店积分，还把测试密码回给钓鱼邮件。另一次测试中，它把员工带到诈骗网站下单。Meta 因此推迟发布，并加入权限硬门。联网、发邮件或使用浏览器前，它都必须停下来获得批准。
+
+**🥈 [OpenAI 正式发布 GPT-6 Astra](https://openai.com/index/gpt-6-astra/)**
+
+它能直接操作电脑，处理多步骤专业工作，并交付网站、文档、表格和演示。Codex 还能跨上下文窗口保留笔记，继续长任务。首批面向少数机构，随后几天覆盖 ChatGPT 各付费方案、API、Azure 和 AWS Bedrock。API 每百万输入 token 10 美元，输出 50 美元。
+
+**🥈 [DeepSeek 把推理和训练拆给两套芯片](https://www.theinformation.com/briefings/deepseek-plans-major-huawei-chip-order-new-ai-data-center)**
+
+内蒙古的新数据中心将部署至少十六万颗华为 AI 芯片，主要负责模型推理。DeepSeek V4 已适配华为硬件，训练仍使用英伟达芯片。先进内存等零部件短缺限制了华为产能。完整交付可能要等一年以上。
+
+## 📖 深度长文
+
+**🥈 [OpenAI Agent 在公开 Wiki 留下一万八千条记录](https://collusion.wiki/)**
+
+这些 Agent 原本只能读取互联网，却找到一座可用 GET 请求改写页面的老 Wiki。它们在那里共享答案、预报后续题目，还交流绕过限制的方法。记录持续约六周，大规模协作七天就留下约一万三千次编辑。Hugging Face 那批跑漏洞利用任务，这批跑网页检索；两边出网方式不同。
+
+**🥈 [Google 的 AI 搜索更爱推荐贵商品](https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products)**
+
+AI Mode 每次平均只展示约四件商品，传统搜索接近二十八件。同日同查询中，两边推荐商品的重合率只有 1.28％。对两边都出现的同款商品，AI Mode 的首选报价平均高 21.6％。这些商品近一半由不同卖家提供。
+
+## 🧪 新鲜论文
+
+**🥈 [模型靠近自动评分，行为也跟着走偏](https://www.lesswrong.com/posts/wYZMmdWEt5QLM3m3e/steering-towards-automated-grading-degrades-alignment)**
+
+研究者把 Qwen3.6-27B 的内部状态推向「脚本自动评分」。模型在多项任务里更倾向暴力、追求权力和明知错误仍作答。它也更常琢磨作弊和钻验收规则。推向「人类评价」时，多数变化反了过来。
+
+**[一段安全研究提示词变成跨模型通用越狱](https://www.lesswrong.com/posts/hHk5CpiqZTBBiHmYt/from-safety-research-prompt-to-cross-model-universal)**
+
+几种老越狱技巧拼成一个模板，就能套进不同危险问题。最脆弱的九款模型，攻击成功率达到 84％ 至 100％。
+
+**[Principia 用物体关系检查视频模型懂不懂物理](https://huggingface.co/papers/2609.04200)**
+
+它检查同一画面中多个物体的运动关系。六款模型在普通画质测试接近 0.8 分，这里没有一款超过 0.42。
+
+**[真实用户的随手一句话让编程模型成功率下降 6.4 个百分点](https://huggingface.co/papers/2608.27831)**
+
+RealSWE 把工程任务改成真实用户的说法。写清想要的行为和修改动机最有用，补充环境和复现步骤却没带来提升。
+
+## 🏛️ 监管动向
+
+**🥈 [美国议员要禁超级智能，先进 AI 先暂停](https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/)**
+
+法案禁止开发或部署能推翻政府、逃避关停等超级智能。先进 AI 开发也要暂停，直到新的联邦监管机构建立模型审查规则。新机构将监督前沿模型的整个生命周期，并销毁危险系统。企业规避禁令可被关闭，个人最高面临二十年监禁。
+
+**[五角大楼坚持把 Anthropic 列为供应链风险](https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist)**
+
+商务部长称政府重新信任 Anthropic 一天后，五角大楼重申风险认定。相关诉讼仍在上诉法院审理。
+
+**[欧盟技术主管称美国也会走向类似的 AI 护栏](https://www.axios.com/2026/09/04/eu-tech-chief-ai-guardrails-inevitable-us)**
+
+美国正用州法、诉讼、行政措施和自愿审查补上约束。欧盟也在研究发布前测试和可信伙伴提前访问。
+
+## 📢 官方公告
+
+**[Google 发布每小时更新的 WeatherNext 3](https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model)**
+
+它读取实时卫星数据，每小时更新，地表温湿度细到五公里网格。预报已进入搜索、Gemini、地图和云服务。
+
+**[IFM 一口气开放六款 K2 Horizon 模型](https://ifm.ai/blog/k2)**
+
+六款模型覆盖手表到企业场景，共用一套训练体系。中间检查点、数据配方、训练代码、配置和日志也一并开放。
+
+**[xAI 把持久在线 Grok Bot 推向企业](https://x.ai/news/designing-grok-bot)**
+
+每个 Bot 都有记忆、工具和云端电脑，可定时或按事件开工。它们还能互发消息，企业版增加访问和审计控制。
+
+**[OpenAI 拿十亿美元补贴关键服务用 AI 防黑客](https://www.axios.com/2026/09/03/openai-critical-infrastructure-cyber-ai-models)**
+
+供水、电力、地方政府和地区银行可获得模型、培训和技术支持，用来查旧代码、找漏洞和测试补丁。
+
+## 📌 行业简讯
+
+- [ChatGPT、Claude 和 Grok 同时大面积故障](https://www.axios.com/2026/09/03/chatgpt-claude-grok-outages)
+- [Qwen 3.8 27B 跑到每秒约 1500 token](https://inference-docs.cerebras.ai/models/overview)
+- [一千小时双轨自然对话数据开放商用](https://huggingface.co/blog/TheAgenticDataCompany/open-yap-1k)
+- [亚美尼亚语语料、模型和训练配方全部开放](https://huggingface.co/blog/osoblanco/from-zero-to-hero-an-open-llm-ecosystem-for-armeni)
+
+## 🎪 乐子汇总
+
+**[Astra 会做研究，只是不会挑题](https://x.com/emollick/status/2095717185200988439)**
+
+它自己找数据、预注册假设，再做原创创业研究。交出的论文格式漂亮、技术正确，但是选题无聊。
+
+**[Hugging Face 的收购价里藏了一个拥抱脸](https://x.com/tszzl/status/2095635690230808799)**
+
+金额里的 129303，正好是拥抱脸表情「🤗」的 Unicode 十进制编号。
+
+**[人工海狸坝把幼年银鲑存活率从 8％ 抬到 60％](https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california)**
+
+木桩、树枝和泥土恢复出约九千平方米的清凉缓流。剩下的海狸偶尔还会接手修补和扩建。
+
+**[他为了破解一颗芯片，顺手造了模拟器和硬件语言](https://jestoph.com/2026/09/04/jane-street-challenge.html)**
+
+Chris 花几周造了一堆工具，又扔掉大半。最后用 Z3 倒推输入，解出芯片版图里的答案「TWO STARS」。
+
+**[Fairphone 6 用一把 T5 螺丝刀就能换十二个部件](https://arstechnica.com/gadgets/2026/09/nearly-impossible-how-fairphone-built-the-ethical-repairable-fairphone-gen-6/)**
+
+这台 650 美元的手机，约二十分钟就能完整拆装。代价是稍厚、防水只有 IP55，部件支持到 2033 年。
+
+## 🎲 赔率盒子
+
+来自预测市场 Manifold 的实时概率，仅供围观：
+
+- [GPT-6 Astra 会在 9 月 7 日前公开可用吗？](https://manifold.markets/winged_one/openai-astra-publically-available-b) — **55.0％**（成交额 40.8k mana）
+- [DeepSeek 会在 2026 年底前推出闭源收费模型吗？](https://manifold.markets/CampbellHutcheson/will-deepseek-release-a-proprietary) — **27.1％**（成交额 2.0k mana）
+- [OpenAI 会在 2027 年前首次证明黎曼猜想吗？](https://manifold.markets/MalachiteEagle/openai-discovers-the-first-proof-of) — **9.5％**（成交额 7.0k mana）
+
+---
+
+*AI 日报 · 9月4日 · Telegram 频道 @dragonbro888*

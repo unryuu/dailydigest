@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ai-outages",
+    "section": "industry",
+    "label": "ChatGPT、Claude 和 Grok 同时大面积故障",
+    "url": "https://www.axios.com/2026/09/03/chatgpt-claude-grok-outages",
+    "note": "核实通过，目标为行业简讯。Axios 于 2026-09-03 报道三家服务同一时段出错；OpenAI 状态页显示 ChatGPT 和 Codex 错误率升高，Anthropic 称 Opus 4.8 和 Opus 5 故障，xAI 称 Grok 出现问题。Gemini 只有用户报告，Google 当时没有确认。Azure 同时故障且为三家提供云服务，但原文只说可能有关，不能写成共同原因。"
+  },
+  {
+    "id": "universal-jailbreak",
+    "section": "papers",
+    "label": "一段安全研究提示词变成跨模型通用越狱",
+    "url": "https://www.lesswrong.com/posts/hHk5CpiqZTBBiHmYt/from-safety-research-prompt-to-cross-model-universal",
+    "body": "研究者把几种公开多年的老越狱技巧拼成一个模板，可以套进任意危险问题。测试覆盖七家公司的二十三款模型，最脆弱的九款攻击成功率达到 84％ 至 100％。",
+    "note": "核实通过。作者在为黑箱欺骗监控生成合成记录时发现提示词可改造成通用越狱，随后用 ClearHarm 的 179 个化生放核与网络安全问题测试 23 款模型。成功标准为 StrongREJECT 得到满分，评分器是 Claude Sonnet 4；这是单次基准运行。几乎所有模型至少被完全越狱一次，例外是 Meta Muse Spark 1.1 和较新的 Anthropic 模型。完整模板没有公开，只向相关实验室提供；正文不写该边界说明。"
+  },
+  {
+    "id": "principia-video-physics",
+    "section": "papers",
+    "label": "Principia 用物体关系检查视频模型懂不懂物理",
+    "url": "https://huggingface.co/papers/2609.04200",
+    "body": "同一画面里的两个物体如果遵守同一条物理定律，运动关系应该互相对得上，不需要先知道帧率、尺寸和相机参数。六款视频模型在普通画质基准上都接近 0.8 分，在这套测试里没有一款超过 0.42。",
+    "note": "核实通过。论文发表于 2026-09-03，覆盖重力、恢复系数、摩擦、转动惯量、抛体运动、动量、摆和弹簧振子八类现象，并在受控拍摄的真实场景上构造配对关系。另测视觉语言模型发现最好准确率为 67％，多数接近随机水平。"
+  },
+  {
+    "id": "realswe",
+    "section": "papers",
+    "label": "真实用户的随手一句话让编程模型成功率下降 6.4 个百分点",
+    "url": "https://huggingface.co/papers/2608.27831",
+    "body": "RealSWE 把同一个工程任务改写成不同信息量和说法，再交给七款模型处理。明确写出想要的行为和修改动机最有帮助，补充运行环境和复现步骤只增加了文字，没有带来可测的提升。",
+    "note": "核实通过。论文发表于 2026-08-31、2026-09-04 登上 Hugging Face Papers。真实请求中 88％ 只有问题描述或极少附加信息，87％ 使用随意口吻；基准问题则只有 7％ 属于前者，94％ 使用正式口吻。RealSWE 包含 381 个多版本任务族，各版本共享同一任务和标准补丁，只改变信息构成和语言风格；现实化输入让平均解决率下降 6.4 个百分点，并可能改变模型排名。"
+  },
+  {
+    "id": "pentagon-anthropic",
+    "section": "regulation",
+    "label": "五角大楼坚持把 Anthropic 列为供应链风险",
+    "url": "https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist",
+    "body": "就在商务部长公开说政府重新信任 Anthropic 一天后，五角大楼官员重申这项认定仍然有效。联邦法官此前推翻过一项黑名单决定，另一项依据不同法律作出的认定还在上诉法院打官司。",
+    "note": "核实通过。五角大楼官员 Emil Michael 于 2026-09-03 在 X 重申，Anthropic 对国防部和国防工业基础仍是指定供应链风险。dup_suspect：09-03 行业简讯刚报「美国政府称已重新信任 Anthropic」，本条是一天后的直接冲突与政策反转，建议保留时只写新进展，不复述此前双方围绕军方用途的完整争执。"
+  },
+  {
+    "id": "eu-ai-guardrails",
+    "section": "regulation",
+    "label": "欧盟技术主管称美国也会走向类似的 AI 护栏",
+    "url": "https://www.axios.com/2026/09/04/eu-tech-chief-ai-guardrails-inevitable-us",
+    "body": "美国没有采用统一的联邦 AI 法，但州法、诉讼、行政措施和自愿审查正在一块块补上类似约束。欧盟也在研究模型发布前测试和可信伙伴提前访问。",
+    "note": "核实通过。欧洲委员会技术主管 Henna Virkkunen 在 G20 创新峰会期间接受 Axios 采访，判断欧美制度文化不同，但处理的安全问题往往相似。美国政府已经制定部分先进模型发布前的自愿审查框架，可能让政府人员提前访问最长 30 天；框架不计划公开。OpenAI 确认 Astra 自愿接受过该审查。与 09-02「美国对外推轻监管，对内还没定谁说了算」题材相邻，但本条新增的是欧盟对美国实际护栏路径的判断，不标疑重。"
+  },
+  {
+    "id": "weathernext3",
+    "section": "official",
+    "label": "Google 发布每小时更新的 WeatherNext 3",
+    "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
+    "body": "它直接读取实时卫星数据，地表温度和湿度能细到五公里网格；上一代是二十五公里、每六小时一报。新预报已经开始进入搜索、Gemini、地图和 Google Cloud。",
+    "note": "核实通过，给定 DeepMind 链接跳转至 Google 官方博客，发布于 2026-09-03。模型还训练于稀疏气象站观测，并加入百米高度风速、云量和太阳辐射等清洁能源变量。Google 称一天以上的降水预测最多提高 50％，中期降水 CRPS 相比不同基线最高改善 60％；这些指标来自发布方和其引用的 Brightband 实时评估，正文优先写可理解的更新频率、分辨率与产品落地。"
+  },
+  {
+    "id": "k2-horizon",
+    "section": "official",
+    "label": "IFM 一口气开放六款 K2 Horizon 模型",
+    "url": "https://ifm.ai/blog/k2",
+    "body": "六款模型从 0.9B 一直排到 375B，总架构、词表、训练方法和工具相通。项目还放出中间检查点、数据或制作配方、训练代码、配置和日志，让人能沿着完整训练过程继续改。",
+    "note": "核实通过。IFM 于 2026-09-04 发布 375B-A23B、36B-A4B、32B、7B、3.7B 和 0.9B 六款模型；模型与代码使用 Apache 2.0，数据按各自许可证发布，无法再分发的数据则公开构造和混合方法。0.9B 面向手表和眼镜，3.7B 与 7B 面向手机，32B 和 36B-A4B 面向本地工作站，375B-A23B 面向企业。性能比较主要来自 IFM 自己汇总的基准，正文不写发布方的世界第一表述。"
+  },
+  {
+    "id": "grok-bot",
+    "section": "official",
+    "label": "xAI 把持久在线 Grok Bot 推向企业",
+    "url": "https://x.ai/news/designing-grok-bot",
+    "body": "每个 Bot 都有自己的记忆、工具和云端电脑，可以按时间或事件自动开工，也能互相发消息、共享项目上下文。企业版新增访问、网络和审计控制。",
+    "note": "核实通过，合并读取 2026-09-03 的设计说明与企业公告。设计说明把 Bot 定义为跨会话保留身份、记忆、运行环境和工具的长期 Agent；Routine 可按日程或事件启动，群聊可让多个 Bot 协作。企业版面向 Grok 和 Cursor Enterprise 客户提供两周免费使用，并允许邀请没有现有席位的同事；发布方称已有数千家组织采用。"
+  },
+  {
+    "id": "openai-critical-services",
+    "section": "official",
+    "label": "OpenAI 拿十亿美元补贴关键服务用 AI 防黑客",
+    "url": "https://www.axios.com/2026/09/03/openai-critical-infrastructure-cyber-ai-models",
+    "body": "供水、电力、地方政府和地区银行可以获得模型、培训与技术支持，用来检查旧代码、分析异常活动、找漏洞和测试补丁。首个试点会培训美国州和地方政府的网络防守人员。",
+    "note": "核实通过。OpenAI 总裁 Greg Brockman 于 2026-09-03 宣布 Daybreak for Frontline Defenders，十亿美元承诺由模型补贴使用、培训、技术支持和合作组成；另设 Daybreak for America，并与 Multi-State Information Sharing and Analysis Center 启动试点。OpenAI 还在与三十五家以上技术和网络安全服务商合作，把模型嵌入工具和工作流。"
+  },
+  {
+    "id": "qwen-cerebras",
+    "section": "industry",
+    "label": "Qwen 3.8 27B 在 Cerebras 上跑到每秒约 1500 token",
+    "url": "https://inference-docs.cerebras.ai/models/overview",
+    "note": "核实通过，目标为行业简讯。Cerebras 公共推理端点模型目录列出 Qwen 3.8 27B，免费上下文 64k、付费上下文 128k，速度约每秒 1500 token。页面称公共端点使用原始未剪枝模型，存储时采用选择性权重量化，激活、注意力和 KV cache 保持完整精度。"
+  },
+  {
+    "id": "open-yap-1k",
+    "section": "industry",
+    "label": "Open Yap 1K 提供一千小时双轨自然对话，商业使用免费",
+    "url": "https://huggingface.co/blog/TheAgenticDataCompany/open-yap-1k",
+    "note": "核实通过，目标为行业简讯。完整语料含 1602 段英语对话、239 名说话者，双方声音以 48kHz 独立轨道记录在同一时间线上，保留打断、重叠、笑声和附和。朋友与家人用类似电话的自有应用录音，所有人事先明确同意并获得报酬。Hugging Face 样本为 8.9 小时、CC BY 4.0；完整一千小时语料需申请并签数据使用协议，可免费用于商业与研究，但不能转售、再分发、识别说话者或克隆其声音。"
+  },
+  {
+    "id": "armenian-llm",
+    "section": "industry",
+    "label": "COPA 开放亚美尼亚语语料、模型和训练配方",
+    "url": "https://huggingface.co/blog/osoblanco/from-zero-to-hero-an-open-llm-ecosystem-for-armeni",
+    "note": "核实通过，目标为行业简讯。团队发布 437 万篇文档、约 33 亿 token 的 ArmWeb，37.3 万对英亚双语数理题 ArmSTEM，以及继续预训练 100 亿 token 的 arm-gemma-e4b；代码、数据处理管线、训练超参数和评测配置一并提供。模型在六项亚美尼亚语似然任务上的平均分从底模 0.48 提至 0.50，在开放亚美尼亚语模型中最高；每个训练配置只跑一个随机种子，部分任务仍退步，详细边界留在备注。"
+  },
+  {
+    "id": "astra-research-taste",
+    "section": "fun",
+    "label": "Astra 会做研究，只是不会挑题",
+    "url": "https://x.com/emollick/status/2095717185200988439",
+    "body": "Ethan Mollick 让它自己找在线数据、预注册假设，再做原创创业研究。它交出一批格式漂亮、技术正确的论文，选的全是无聊题目。",
+    "note": "核实通过，内容来自 Ethan Mollick 于 2026-09-04 发布的亲身使用描述。dup_suspect：09-02 已把 Astra 的循环架构与网络安全能力做成金牌，用户本轮又确认正式发布应进入行业大事；本条只保留「研究流程能跑通、缺少选题品味」这一新角度，不重复产品发布和模型能力介绍。"
+  },
+  {
+    "id": "huggingface-price-emoji",
+    "section": "fun",
+    "label": "Hugging Face 的收购价里藏了一个拥抱脸",
+    "url": "https://x.com/tszzl/status/2095635690230808799",
+    "body": "英伟达的出价是 129.303 亿美元，金额里的 129303 正好是拥抱脸表情「🤗」的 Unicode 十进制编号。",
+    "note": "核实通过。Roon 转发的原帖明确给出收购金额 12,930,300,000 美元，并指出 129303 是 U＋1F917 的十进制值。它是当天英伟达收购 Hugging Face 金牌的周边乐子，可保留；原帖称其为彩蛋，但仅凭这条帖子无法进一步核实定价方是否明确承认有意设计。"
+  },
+  {
+    "id": "artificial-beaver-dams",
+    "section": "fun",
+    "label": "人工海狸坝把幼年银鲑存活率从 8％ 抬到 60％",
+    "url": "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california",
+    "body": "当地用木桩、树枝、砾石和泥土在溪流里搭坝，恢复出约九千平方米的清凉缓流栖息地。剩下的海狸偶尔也会接手修补和扩建。",
+    "note": "核实通过。项目 2015 年先在 Sugar Creek 建两座坝，三年后又在 French Creek 增建；新栖息地可容纳八千五百多条幼鱼。French Creek 的幼年银鲑存活率从建坝前 8％ 升至建坝后 60％，Scott River 随后的成年鱼回游在严重干旱期仍保持良好。报道链接到发表于 Frontiers in Ecology and Evolution 的研究。"
+  },
+  {
+    "id": "jane-street-reverse-engineering",
+    "section": "fun",
+    "label": "他为了破解一颗芯片，顺手造了模拟器和硬件语言",
+    "url": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
+    "body": "Chris 先花几周自制电路模拟器、语言解析器和测试工具，后来又把大半扔掉。最后他用 Z3 倒推一百二十位输入，解出 Jane Street 藏在芯片版图里的答案「TWO STARS」。",
+    "note": "核实通过。Jane Street 挑战要求从描述 ASIC 物理版图的 GDS 文件反推电路功能。作者把近万个元件转成可模拟电路，途中还发现并获 Jane Street 确认一个不影响答案的接线错误；最终为约二十四条需要同时满足的线路建立约束，并收到答案确认。文章自述整个过程持续约一个月。"
+  },
+  {
+    "id": "fairphone-gen6",
+    "section": "fun",
+    "label": "Fairphone 6 一把 T5 螺丝刀就能换十二个部件",
+    "url": "https://arstechnica.com/gadgets/2026/09/nearly-impossible-how-fairphone-built-the-ethical-repairable-fairphone-gen-6/",
+    "body": "这台 650 美元的手机，作者约二十分钟就能完整拆装。代价是机身稍厚、防水只有 IP55；软件和替换部件支持到 2033 年。",
+    "note": "fetch_failed：脚本没有取得 Ars Technica 正文，本地不存在对应 raw 文件。label 和 body 只使用主 agent 通过登录态浏览器明确读到的五项事实：650 美元、十二个部件可由用户用一把 T5 螺丝刀更换、作者约二十分钟完整拆装、机身稍厚且只有 IP55、软件和替换部件支持到 2033 年；未扩写其他细节。"
+  }
+]

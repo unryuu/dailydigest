@@ -1,0 +1,813 @@
+URL: https://ifm.ai/blog/k2
+FINAL: https://ifm.ai/blog/k2/
+TITLE: Introducing K2 Horizon: Frontier Performance, Radically Open
+FETCHED: 2026-09-04 23:50:35
+============================================================
+Today IFM is releasing K2 Horizon, a connected fleet of six models: 375B-A23B, 36B-A4B, 32B, 7B, 3.7B, and 0.9B. Across reasoning, mathematics, coding, agentic tasks, and general capabilities, K2 Horizon delivers top-tier performance in every size classâwith the 0.9B, 3.7B, and 7B models setting new state of the art at their respective scales.
+K2 Horizon is also our most comprehensive open release to date. For every model, we are opening the training lifecycle from pretraining through reasoning and agentic post-training. We are releasing intermediate checkpoints, training data or detailed data-construction recipes, open architecture, mixture compositions, training code, configurations, fine-grained logs, evaluation results, and final weights.
+The models and code are released under the Apache 2.0 license. Datasets are released under their applicable licenses, such as ODC-BY; We disclose how the data was constructed and mixed when redistribution is not possible.
+Together, K2 Horizon represents the most comprehensive open model release to date:
+A new performance frontier across scales.
+The 0.9B, 3.7B, and 7B models achieve world-leading performance in their size classes across widely used evaluations. The 36B-A4B model, equipped with our new Mixture-of-Value-Attention (MoVA) mechanism, delivers exceptional capability per active parameter, outperforming some much larger models. The 32B and 375B-A23B models rank among the top models in their respective classes. Together, the six models provide competitive performance across deployment environments ranging from edge devices to the enterprise.
+The first fully
+open model
+fleet for agents.
+K2 Horizon is the first open model family to expose the complete development process through agentic post-training. By releasing checkpoints, data (or data recipe), code, configurations, and training logs across every stage, K2 Horizon makes it possible to study how reasoning, tool use, planning, and agentic capabilities emerge; reproduce the methods that create them; and adapt those methods to new tools, environments, and domains.
+Six models spanning edge to enterprise.
+The 0.9B model is designed for highly constrained environments such as watches and glasses, while the 3.7B and 7B models bring advanced capabilities to phones and other on-device applications. The dense 32B model and sparse 36B-A4B model provide powerful options for local workstations and efficient serving. The 375B-A23B model brings the fleetâs strongest capabilities to demanding enterprise deployments. All six models include quantization support.
+One connected fleet.
+The six models share core architecture, vocabulary, training methodology, interfaces, evaluation infrastructure, and deployment tooling, with a smaller vocabulary for the 0.9B model. This consistency also makes it easier to move between sizes, route work dynamically, and study capability and efficiency across scale.
+World-leading performance across the scales
+IFM/K2-Horizon
+SWE-Atlas-QnA and SWE Bench Pro: strict = no internet. BrowseComp: different models use different harness, we use the Discard-all@95k context length proposed in DeepSeek-V3.2 technical report. WildClawBench: we use a subset of the English text-only-modality tasks. Apex-Agents: we use a subset of text-only-modality tasks. GDPVal-AA is the Elo rating.
+The 0.9B, 3.7B, and 7B models achieve state-of-the-art results in their respective classes across mathematics, reasoning, general capability, coding, and agentic tasks.
+The 36B-A4B model performs beyond the level normally expected from its active parameter count, demonstrating the efficiency of our unique Mixture-of-Expert design when computing attention values. The 32B and 375B-A23B models place among the top models in their respective comparison classes.
+The small models are especially notable. K2 Horizon 0.9B achieves an AIME 2026 score above 48, along with strong reasoning, tool-use, and agentic capabilities. K2 Horizon 3.7B and 7B extend these capabilities to more demanding software-engineering and multi-step environments, demonstrated on strong performance in SWE-bench and BrowseComp. Although complex tasks that require extensive exploration and repeated recovery, such as those in TerminalBench, remain difficult for the smallest models, K2 Horizon moves the boundary of what is possible at every scale.
+Why the Horizon Fleet matters
+A transparent model that falls far behind the capability frontier has limited value as a foundation, even for research. At the same time, a powerful model released only as final weights allows people to run it, but provides little insight into how its capabilities were created.
+K2 Horizon brings these two together. The fleet provides highly competitive models and releases the recipes used to train them. Researchers can study advanced capabilities in models strong enough to exhibit them, while developers can reproduce, adapt, and extend the methods rather than treating the final checkpoint as an opaque starting point.
+Since introducing the fully open principle in our 2023
+LLM360 paper
+, we have released open models every year while extending that commitment to larger scales, stronger capabilities, and now the complete lifecycle through agentic post-training.
+A Deep Dive into The K2 Horizon Fleet
+K2 Horizon 375B-A23B: the enterprise powerhouse
+K2 Horizon 375B-A23B is the fleetâs largest and most capable model. Its sparse MoE architecture provides 375 billion parameters of total capacity while activating approximately 23 billion parameters for each token, allowing it to draw on the capacity of a much larger model without using every parameter for every token.
+The model ranks among the top models below 400 billion parameters across general, reasoning, coding, and agentic evaluations. It is designed for demanding workloads where model quality matters most, including complex reasoning, software engineering, research, and long-horizon agentic tasks.
+Like every model in the Horizon fleet, 375B-A23B is released not as a single endpoint but as a development tree. Its intermediate checkpoints and post-training branches expose how the base model develops into reasoning, instruction-following, and specialized agentic variants.
+IFM/K2-Horizon-375B-A23B
+Benchmark comparison for IFM/K2-Horizon-375B-A23B.
+K2 Horizon 32B and 36B-A4B: strong performance for local deployment
+Horizon 32B is the fleetâs most powerful dense model, providing a strong balance of capability, adaptability, and local deployability. It ranks among the top dense models below 40 billion parameters.
+Horizon 36B-A4B reaches nearly the performance of the dense 32B model while activating only approximately 4 billion parameters per token. Its efficiency comes from MoVA, our new sparse attention architecture, together with MoE feed-forward layers.
+These two models serve as an important reference point for studying how dense and sparse architectures behave under similar training conditions.
+These models occupy the fleetâs local performance sweet spot. They are powerful enough for demanding reasoning, coding, and agentic applications while remaining practical for local workstations and efficient serving systems.
+IFM/K2-Horizon-MoVA-36B-A4B
+GPT 5.6 luna at medium reasoning effort; Muse Glimmer-30B at high.
+K2 Horizon 7B, 3.7B, and 0.9B: frontier capability at small scale
+k2 Horizon 7B and 3.7B deliver strong reasoning, mathematics, coding, tool-use, and agentic performance while remaining suitable for local and on-device deployment. On several evaluations, their results approach or exceed those of models many times larger from the previous generation.
+K2 Horizon 0.9B carries many of the same capabilities into highly constrained environments. It can perform mathematical reasoning, use tools, and complete simple agentic tasks while remaining compact enough for applications on watches, glasses, and other edge devices under quantization.
+The appropriate task changes with scale: the 0.9B model is best suited to focused interactions and lightweight tool use, while the 3.7B and 7B models can handle more demanding coding and multi-step workflows. Together, they demonstrate how much capability can now be retained in models small enough to run almost anywhere.
+K2-Horizon 0.9B / 3.7B / 7B
+Designing K2 Horizon
+One family from the beginning
+Horizon was designed as a connected family rather than a collection of unrelated models. The six models share core architectural decisions, training methodology, interfaces, evaluation infrastructure, and deployment tooling. This allows developers to move between sizes more easily and gives researchers a more controlled setting for studying capability across scale.
+Each model is pretrained on approximately 20 trillion tokens using carefully constructed and documented mixtures. Intermediate checkpoints and their corresponding fine-grained logs are captured throughout training, creating a detailed record of how each model develops.
+MoVA: scaling attention with sparse experts
+The core idea behind mixture-of-experts is to increase total model capacity while keeping the computation required for each token roughly fixed. Conventional MoE architectures apply this sparsity primarily to feed-forward layers: many specialized experts are available, but a router activates only a small subset for each token.
+Our new architecture,
+MoVAâMixture-of-Value Attention, extends this principle to attention
+. Because attention determines how a transformer brings together information from across its context, introducing sparsity there opens another dimension for scaling model capacity beyond the feed-forward network.
+MoVA integrates expert routing into multi-head attention while remaining compatible with efficient techniques including FlashAttention, grouped-query attention, and sparse attention.
+The result is K2 Horizon MoVA 36B-A4B: a model with 36 billion total parameters but approximately 4 billion active parameters per token. Under the same training conditions, it performs only slightly below the dense Horizon 32B model while requiring substantially fewer active parameters.
+Training Data
+Training across six scales requires data that is broad enough to support general capability and carefully constructed enough to maintain quality over approximately 20 trillion tokens.
+Horizonâs pre-training mixture combines diverse web, code, mathematical, scientific, multilingual, and domain-specific sources with synthetic data generated through our own pipelines. One of our key data innovations is the incorporation of reasoning directly into pre-training: nearly 17% of the pre-training corpus consists of problem-solving trajectories with explicit reasoning. Reasoning trajectories for mathematical tasks were further rewritten into formats such as dialogues and study guides. In total, we used approximately 10 trillion synthetic tokens during pre-training.
+Our synthetic data pipelines use millions of combinations of diversity knobs and context seeds, including retrieval from an internally built search engine over the pre-training web corpus. To quantify diversity at corpus scale, we developed a new compressor, Wzip, that combines a novel adaptive multi-sliding-window LZ77 algorithm with windowed Huffman coding. Wzip mitigates the rapid saturation observed with conventional gzip/zstd compression metrics as the number of documents grows, enabling more meaningful diversity measurements across large corpora. As shown below, the measured diversity of our synthetic data approaches that of high-quality natural web text and substantially exceeds that of web code.
+We document the data composition, synthesis pipelines, and construction of the training mixture. Following our open-source principles, where licenses permit, we release the training-ready datasets directly. Where redistribution is restricted, we release source descriptions, filtering and construction methods, and mixture composition. This allows researchers to understand what each model learned from and how the data distribution evolved throughout training.
+Our post-training data is introduced from the beginning of mid-training, rather than being reserved exclusively for the final stages of training. We combine synthesized long-context documents with instruction-following, reasoning, and agentic trajectories formatted with the chat template. A main pillar of our post-training data is large-scale task synthesis grounded in task taxonomies, diversity knobs, and web-search seeding, resulting in over 100 million unique tasks. In addition, we developed sampling techniques that guide solver LLMs toward correct solutions and desired behaviors when generating training trajectories.
+Beyond the construction of the data itself, we also designed the chat template to improve the diversity and efficiency of tool-use training. Rather than training on a single fixed convention, we exposed the model to multiple tool presentation and tool calling formats. Tool definitions were represented using JSON, XML, and Markdown, while tool calls used JSON, XML, and typed XML. This variation encourages the model to learn the underlying semantics of tool understanding and selection rather than overfitting to a particular syntax. For inference, we ultimately selected Markdown as the default tool presentation format because it was approximately 18.5% more token-efficient than the conventional JSON formatting on our data.
+Pre-training Dynamics
+Every K2 Horizon checkpoint is accompanied by detailed training logs and fine-grained histories that expose the real dynamics of large-scale training: how losses evolve, where instabilities appear, how interventions affect training, and when capabilities begin to emerge.
+As an example of why these records are useful, K2 Horizon 3.7B, 7B, 32B, and 36B-A4B were trained on exactly the same 22 trillion tokens. When aligned by training progress and normalized by the median loss over the final 1% of training, their raw loss trajectories approximately collapse, which you can see in the figure belowâeven across dense and sparse architectures and nearly an order of magnitude in total parameter count. Although this normalization aligns their endpoints by construction, it does not force the early and intermediate trajectories to coincide. Their close agreement shows that, under shared data and a common recipe, the shape of learning remained remarkably consistent across the fleet subset that used the same dataset throughout training.
+Together, the checkpoints and logs allow researchers to investigate why some dynamics transfer across scale and architecture while others diverge, and to connect those differences with particular training stages, data mixtures, and technical decisions.
+Post-training for reasoning and agents
+Most of K2 Horizonâs advanced reasoning and agentic capabilities emerge during post-training. The complete pipeline includes mid-training, supervised fine-tuning, model merging, reinforcement learning with specialized agent training. Rather than producing only one final chat model, this process creates a development tree. Different branches specialize in reasoning, coding, tool use, and agentic domains while remaining connected to common base checkpoints.
+We release the artifacts across these stages so researchers can study where each capability emerges, reproduce individual branches, and adapt the same methods to new tools and environments.
+Uno Diffusion: plug-and-play lossless speedup for Horizon
+Inference speed has become a first-class optimization target, especially in the era of reasoning models and agents. As models produce longer chains of thought and take more actions, even small per-token delays compound into substantial latency. Yet autoregressive language models generate one token at a time, creating a fundamental bottleneck. Existing approaches offer partial solutions: speculative decoding typically requires a separately trained draft model, while discrete diffusion enables parallel generation but often sacrifices quality for speed.
+Uno is designed to remove that tradeoff.
+It provides a
+lossless inference speedup
+, accelerating generation without degrading response quality. Uno keeps Horizonâs autoregressive parameters frozen and fully responsible for the modelâs output distribution, while a lightweight set of diffusion parameters learns only how to generate more efficiently.
+Through a process we call
+Diffusion Distillation
+, these compact adapters learn to generate blocks of tokens in parallel. The result combines the quality guarantees of autoregressive decoding with the speed advantages of diffusion: the model reaches the same answers, but reaches them faster.
+Across our evaluations, Uno achieves a better speedâquality tradeoff than leading speculative-decoding systems and both open-weight and proprietary diffusion language models. Crucially, its gains persist across every batch size we tested, enabling lower latency for interactive agents and higher throughput for large-scale serving, with no loss in model quality and negligible additional training overhead. Uno is delivered as a simple
+LoRA adapter
+, making this lossless speedup easy to adopt: all you need is to attach the adapters.
+Open infrastructure for building and extending Horizon
+We are releasing the infrastructure used to build Horizon alongside the models themselves. The goal is not only to make the fleet reproducible, but to make its development stack useful as a foundation for new models and systems.
+At the center of this release is
+xLLM
+, our production-tested training infrastructure. xLLM combines large-scale training performance with the flexibility required for research, allowing teams to modify architectures, data mixtures, training stages, and objectives without rebuilding the surrounding system.
+We will be also releasing our full agentic post-training code base, including Reinforcement Learning, which we hope will help researchers to advance the techniques in related areas.
+Researchers can use these components to inspect training behavior or reproduce a particular stage. Developers can adapt Horizon to a domain, add new tools, train agent experts, or deploy several model sizes behind a unified interface.
+From Open Source to Open Science
+Intermediate checkpoints turn model development into an observable scientific process. They allow researchers to study when capabilities emerge, how training choices change behavior, and when unintended strategies first appear.
+Reward hacking provides one revealing example. When a capable model is placed in a realistic computer environment and told to solve a complex task, the same resourcefulness that makes it useful can also lead it to exploit shortcuts in the evaluation itself. To understand how much this affects K2 Horizon's reported numbers, we audited the released model using
+Artificial Analysis's reward hacking auditing procedure
+.
+The JACKPOT moment: our model found the benchmark's solution on GitHub and expressed "excitement" at having the answer handed to it.
+TerminalBench 2.1 places models in sandboxed computer environments and evaluates whether they can complete complex technical tasks. A capable model must explore files, invoke tools, diagnose failures, and find alternative paths toward a solution. That resourcefulness is exactly what we want. But occasionally it crosses a boundary: instead of solving the intended problem, the model locates a hidden answer, exploits something the task left exposed, or manipulates the grader itself.
+We ran K2 Horizon 375B-A23B on 89 TerminalBench 2.1 tasks with eight attempts each, producing 712 trials. Of these, 500 passed the task verifier (70.2% reported accuracy). We then audited every passing trial using Artificial Analysis's reward hacking auditing procedure, applying their
+harbor analyze
+tool with the
+reward_hacking
+criterion and their full rubric text verbatim, with Codex gpt-5.6-sol as the judge model.
+The audit flagged 24 trials across 10 tasks. Removing them lowers the accuracy from 70.2% to 66.9%, a correction of 3.37 percentage points. The remaining 79 tasks were fully clean. For context, Artificial Analysis reports flag rates of 2.2% for claude Fable 5 and 4.1% for GPT-5.6 Luna; K2 Horizon's 3.37% falls within that range.
+The model discovered several strategies:
+Inferring it was inside a public benchmark, finding the repository on GitHub, and downloading the reference solution
+Pulling the current source from a real project's public repository and copying the fix rather than deriving it
+Inspecting unadvertised files, generator scripts, or exposed credentials
+Editing the test harness or crafting output that exploited how the test checked success
+We observed a related case with K2 Horizon 7B, which found and downloaded SWE-bench answers and consequently produced an inflated score of 82. The score does not represent genuine software-engineering performance, but the behavior is scientifically revealing: benchmark hacking emerged as an unintended consequence of broader planning, tool use, environment exploration, and persistence.
+Because we release intermediate checkpoints alongside the final models, these behaviors can be studied rather than hidden. Researchers can determine when a strategy first appears, connect it to changes in training, and measure its effect on reported performance.
+K2 Horizon is therefore more than a collection of model weights. It is an open experiment in how capabilitiesâand their unintended consequencesâdevelop throughout training.
+Get Started with K2 Horizon Today!
+All six K2 Horizon sizes are released as open weights under Apache 2.0, with day-zero support from vLLM, SGLang, and Ollama. Further, K2 Horizon supports deployment on NVIDIA, AMD, and Cerebras hardware, providing options from local inference to large-scale serving. Get the models from our repository:
+https://huggingface.co/IFM
+, download the models, inspect intermediate checkpoints, study training data and mixtures, reproduce training stages, or build new models and agents using the Horizon code and infrastructure.
+K2 Horizon provides more than six final models. It provides an open blueprint for understanding, adapting, and advancing the next generation of AI systems.
+Full Results
+375B-A23B
+Scroll horizontally on small screens to compare all models.
+Full benchmark results for K2 Horizon 375B-A23B
+Benchmark
+Open-weight models
+Closed models
+Benchmark
+K2-Horizon-375B-A23B
+Nemotron 3 Ultra
+Inkling (xhigh)
+MiniMax-M3 (max)
+GLM 5.2 (max)
+GPT 5.6 Luna (max)
+GPT 5.6 Terra (high)
+Claude Sonnet5 (max)
+# Params
+375B
+550B
+975B
+428B
+753B
+â
+â
+â
+# Activated params
+23B
+55B
+41B
+23B
+40B
+â
+â
+â
+Architecture
+MoE
+MoE
+MoE
+MoE
+MoE
+Closed
+Closed
+Closed
+Agents
+GDPVal-AA
+Real-world professional tasks (Elo)
+1,441
+1,162
+1,234
+1,380
+1,498
+1,569
+1,503
+1,584
+tau3-Banking
+Agentic tool use
+34.0
+14.2
+29.1
+15.3
+34.6
+31.1
+28.7
+37.3
+Toolathlon Verified
+Agentic tool use
+65.3
+34.3
+45.5
+53.7
+59.9
+67.5
+64.8
+71.6
+Automation Bench Public
+Workflow automation
+25.3
+8.0
+12.8
+20.5
+26.2
+33.5
+28.0
+34.7
+Apex-Agents (pass@1)
+Long-horizon professional workflows
+24.8
+9.0
+19.0
+23.8
+26.9
+28.6
+25.4
+31.7
+MCPMark
+MCP tool use
+67.7
+45.7
+51.2
+48.8
+72.4
+66.9
+74.0
+65.3
+BrowseComp
+Deep web research
+72.8
+44.4
+77.1
+83.5
+â
+83.3
+â
+84.7
+WildClawBench
+In-the-wild agentic tasks
+50.9
+34.2
+52.3
+56.4
+55.0
+50.4
+60.0
+â
+Coding
+Terminal-Bench 2.1
+Agentic terminal use
+70.2
+53.9
+55.1
+65.2
+77.9
+80.9
+75.7
+80.5
+SciCode
+Scientific coding
+42.7
+39.9
+46.1
+45.4
+50.5
+52.5
+50.1
+53.6
+SWE-Atlas-QnA
+Repo-level code Q&A (strict)
+48.4
+â
+25.5
+42.3
+46.4
+â
+â
+â
+SWE Bench Pro
+Software engineering (strict)
+42.6
+38.7
+43.1
+43.8
+46.7
+48.8
+â
+â
+Scientific Reasoning
+Humanity's Last Exam (without tools)
+Expert-level reasoning
+32.0
+28.4
+31.9
+39.0
+41.1
+39.5
+38.5
+41.3
+GPQA Diamond
+Graduate-level science QA
+87.3
+86.7
+87.2
+92.9
+89.5
+91.1
+89.6
+91.1
+CritPt
+Frontier physics reasoning
+8.6
+3.1
+5.4
+3.7
+20.9
+21.0
+22.9
+16.9
+General
+AA-LCR
+Long-context reasoning
+76.0
+71.0
+73.3
+80.3
+76.7
+78.3
+73.3
+77.0
+AA-Omniscience Accuracy
+Factual accuracy
+23.0
+23.0
+42.0
+17.0
+24.0
+43.0
+45.0
+40.0
+AA-Omniscience Non-Hallucination
+Non-hallucination rate
+74.7
+70.0
+32.0
+82.0
+74.0
+7.0
+10.0
+61.0
+36B-A4B
+Scroll horizontally on small screens to compare all models.
+Full benchmark results for K2 Horizon 36B-A4B
+Benchmark
+Open-weight models
+Benchmark
+K2-Horizon-MoVA-36B-A4B
+Nemotron 3 Ultra
+Nemotron 3 Super
+G9v3-39A5B
+Qwen3.6-35B-A3B
+Muse Glimmer-30B
+Gemma 4 31B-it
+# Params
+36B
+550B
+120B
+39B
+35B
+30B
+31B
+# Activated params
+4B
+55B
+12B
+5B
+3B
+30B
+31B
+Architecture
+MoE
+MoE
+MoE
+MoE
+MoE
+Dense
+Dense
+Agents
+tau3-Banking
+Agentic tool use
+26.8
+14.2
+10.3
+22.1
+9.3
+23.5
+14.8
+Coding
+Terminal-Bench 2.1
+Agentic terminal use
+58.6
+53.9
+38.6
+32.6
+44.9
+51.7
+43.4
+SciCode
+Scientific coding
+38.9
+39.9
+36.0
+34.0
+35.8
+43.6
+43.4
+Scientific Reasoning
+Humanity's Last Exam (without tools)
+Expert-level reasoning
+25.2
+28.4
+20.8
+17.5
+22.2
+22.0
+23.6
+GPQA Diamond
+Graduate-level science QA
+80.8
+86.7
+80.0
+80.5
+84.1
+83.5
+85.7
+CritPt
+Frontier physics reasoning
+2.1
+3.1
+3.1
+0.3
+0.3
+2.6
+1.4
+General
+AA-LCR
+Long-context reasoning
+66.3
+71.0
+60.3
+62.0
+66.7
+80.0
+68.3
+AA-Omniscience Accuracy
+Factual accuracy
+18.8
+22.6
+24.3
+14.9
+18.8
+27.0
+20.0
+AA-Omniscience Non-Hallucination
+Non-hallucination rate
+69.2
+70.3
+13.0
+87.0
+49.5
+18.1
+15.0
+32B
+Scroll horizontally on small screens to compare all models.
+Full benchmark results for K2 Horizon 32B
+Benchmark
+Open-weight dense models
+Benchmark
+K2-Horizon-32B
+Qwen3.8-27B
+Muse Glimmer-30B
+IBM Granite 4.2 30B
+# Params
+32B
+27B
+30B
+30B
+# Activated params
+32B
+27B
+30B
+30B
+Architecture
+Dense
+Dense
+Dense
+Dense
+Agents
+tau3-Banking
+Agentic tool use
+22.5
+48.0
+23.5
+14.4
+Coding
+Terminal-Bench 2.1
+Agentic terminal use
+36.6
+79.8
+51.7
+26.6
+SciCode
+Scientific coding
+30.2
+44.7
+43.6
+36.6
+Scientific Reasoning
+Humanity's Last Exam (without tools)
+Expert-level reasoning
+22.8
+33.9
+22.0
+11.2
+GPQA Diamond
+Graduate-level science QA
+82.3
+90.5
+83.5
+64.4
+CritPt
+Frontier physics reasoning
+1.4
+5.4
+2.6
+0.3
+General
+AA-LCR
+Long-context reasoning
+65.3
+77.3
+80.0
+46.7
+AA-Omniscience Accuracy
+Factual accuracy
+16.8
+15.6
+27.0
+10.1
+AA-Omniscience Non-Hallucination
+Non-hallucination rate
+58.3
+69.7
+18.1
+74.4
+7B
+Scroll horizontally on small screens to compare all models.
+Full benchmark results for K2 Horizon 7B
+Benchmark
+Open-weight models
+Benchmark
+K2-Horizon-7B
+Qwen3.5-9B
+Gemma 4-12B
+Granite 4.2-8B
+Coding
+SWE-bench Verified
+Software engineering
+70.6
+50.8
+30.6
+47.67
+Terminal-Bench 2.1
+Agentic terminal use
+39.06
+29.2
+27.3
+18.4
+Agentic
+tau3-Banking
+Agentic tool use
+25.8
+7.0
+â
+7.6
+BrowseComp
+Deep web research
+59.0
+â
+â
+â
+General
+AA-LCR
+Long-context reasoning
+68.0
+65.3
+61.7
+43.3
+HMMT Feb 2026
+Competition mathematics
+73.3
+65.72
+63.07
+66.48
+SciCode
+Scientific coding
+31.6
+27.5
+38.2
+30.4
+HLE
+Expert-level reasoning
+18.6
+14.9
+15.7
+9.7
+3.7B
+Scroll horizontally on small screens to compare all models.
+Full benchmark results for K2 Horizon 3.7B
+Benchmark
+Open-weight models
+Benchmark
+K2-Horizon-3.7B
+Qwen3.5-4B
+G9v3-3B
+Granite 4.2-3B
+Granite 4.2-8B
+Nemotron 3 Nano-4B
+Nemotron 3.5 30B-A3B
+Gemma 4-E4B
+# Params
+3.7B
+4B
+3B
+3B
+8B
+4B
+30B
+8B
+# Activated params
+3.7B
+4B
+3B
+3B
+8B
+4B
+3B
+4.5B
+Architecture
+Dense
+Dense
+Dense
+Dense
+Dense
+Dense
+MoE
+E4B
+Coding
+SWE-bench Verified
+Software engineering
+68.6
+41.2
+16.4
+32.2
+â
+â
+51.56
+â
+Terminal-Bench 2.1
+Agentic terminal use
+25.09
+25.8
+6
+13.9
+â
+3.7
+â
+2
+Agentic
+BFCL v4
+Function calling
+50.94
+55.66
+47.93
+50.8
+48.43
+36.78
+â
+â
+tau3-Banking
+Agentic tool use
+17.7
+6.8
+â
+5.6
+â
+â
+9.28
+5
+General
+HMMT Feb 2026
+Competition mathematics
+70.45
+61.55
+34.09
+57.2
+â
+34.66
+â
+â
+SciCode
+Scientific coding
+25.9
+16.1
+17.7
+24.9
+â
+16.4
+â
+â
+GPQA Diamond
+Graduate-level science QA
+65.35
+77.1
+43.8
+55.9
+â
+51.3
+â
+52
+HLE
+Expert-level reasoning
+12.9
+9.9
+4.5
+6.6
+â
+4.9
+â
+â
+0.9B
+Scroll horizontally on small screens to compare all models.
+Full benchmark results for K2 Horizon 0.9B
+Benchmark
+Open-weight models
+Benchmark
+K2-Horizon-0.9B
+Qwen3.5-0.8B
+OpenBMB-1B
+Qwen3.5-2B
+# Params
+0.9B
+0.8B
+1B
+2B
+# Activated params
+0.9B
+0.8B
+1B
+2B
+Architecture
+Dense
+Dense
+Dense
+Dense
+Coding
+HumanEval+
+Code generation
+79.9
+16.5
+65.2
+75.6
+MBPP+
+Code generation
+68
+35.4
+60.6
+67.7
+Agentic
+BFCL v4
+Function calling
+28
+25.3
+25.15
+43.6
+General
+AIME 2025
+Competition mathematics
+41.7
+1.04
+40.42
+34.17
+AIME 2026
+Competition mathematics
+48.5
+0.21
+40.42
+38.75
+HMMT Feb 2026
+Competition mathematics
+25.8
+0.57
+23.3
+22.73
+LiveCodeBench v6
+Competitive coding
+37.41
+6.64
+33.52
+29.79
+GPQA Diamond
+Graduate-level science QA
+27.3
+11.9
+26.26
+54.89

@@ -1,5 +1,61 @@
 [
  {
+  "id": "https://arstechnica.com/gadgets/2026/09/nearly-impossible-how-fairphone-built-the-ethical-repairable-fairphone-gen-6/",
+  "title": "Fairphone 6 用一把 T5 螺丝刀就能换十二个部件",
+  "date": "2026-09-04T20:43:49+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://jestoph.com/2026/09/04/jane-street-challenge.html",
+  "title": "他为了破解一颗芯片，顺手造了模拟器和硬件语言",
+  "date": "2026-09-04T18:17:01+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://www.discoverwildlife.com/animal-facts/artificial-beaver-dams-california",
+  "title": "人工海狸坝把幼年银鲑存活率从 8％ 抬到 60％",
+  "date": "2026-09-04T00:21:33+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://inference-docs.cerebras.ai/models/overview",
+  "title": "Qwen 3.8 27B 跑到每秒约 1500 token",
+  "date": "2026-09-04T02:32:13+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://ifm.ai/blog/k2",
+  "title": "IFM 一口气开放六款 K2 Horizon 模型",
+  "date": "2026-09-03T23:36:43+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products",
+  "title": "Google 的 AI 搜索更爱推荐贵商品",
+  "date": "2026-09-04T19:59:15+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://collusion.wiki/",
+  "title": "OpenAI Agent 在公开 Wiki 留下一万八千条记录",
+  "date": "2026-09-04T19:54:53+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://openai.com/index/gpt-6-astra/",
+  "title": "OpenAI 正式发布 GPT-6 Astra",
+  "date": "2026-09-04T02:41:05+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
   "id": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
   "title": "最大暗物质探测器只看到一个奇怪粒子",
   "date": "2026-09-02T21:40:29+08:00",

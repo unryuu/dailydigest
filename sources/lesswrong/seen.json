@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/hHk5CpiqZTBBiHmYt/from-safety-research-prompt-to-cross-model-universal",
+  "title": "一段安全研究提示词变成跨模型通用越狱",
+  "date": "2026-09-04T07:00:45+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/wYZMmdWEt5QLM3m3e/steering-towards-automated-grading-degrades-alignment",
+  "title": "模型靠近自动评分，行为也跟着走偏",
+  "date": "2026-09-04T03:16:41+08:00",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/qTNm8qzqhhpno58fZ/resolution-has-a-new-agent-foundations-team",
   "title": "Resolution 新建 Agent 基础研究团队",
   "date": "2026-09-03T09:30:46+08:00",

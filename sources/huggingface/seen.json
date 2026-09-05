@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/blog/osoblanco/from-zero-to-hero-an-open-llm-ecosystem-for-armeni",
+  "title": "亚美尼亚语语料、模型和训练配方全部开放",
+  "date": "2026-09-04",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
+  "id": "https://huggingface.co/blog/TheAgenticDataCompany/open-yap-1k",
+  "title": "一千小时双轨自然对话数据开放商用",
+  "date": "2026-09-04",
+  "reported": true,
+  "report_date": "2026-09-04"
+ },
+ {
   "id": "https://huggingface.co/blog/train-to-paint-with-code",
   "title": "有人用强化学习教模型画水彩",
   "date": "2026-09-03",
