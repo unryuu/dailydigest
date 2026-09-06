@@ -1,0 +1,188 @@
+URL: https://www.lesswrong.com/posts/YyAMz52wDxnLhwvWL/training-models-to-predict-and-explain-their-in-the-wild
+FINAL: https://www.lesswrong.com/posts/YyAMz52wDxnLhwvWL/training-models-to-predict-and-explain-their-in-the-wild
+TITLE: Training Models to Predict and Explain Their In-the-Wild Behavior — LessWrong
+FETCHED: 2026-09-05 22:27:33
+============================================================
+x
+Training Models to Predict and Explain Their In-the-Wild Behavior — LessWrong
+AI
+Frontpage
+39
+Training Models to Predict and Explain Their In-the-Wild
+Behavior
+by
+Adam Karvonen
+,
+Subhash Kantamneni
+,
+Euan Ong
+,
+Sam Marks
+4th Sep 2026
+10
+min read
+2
+39
+Summary
+Our
+CHIVE pipeline
+produced thousands of unexpected behaviors with explanations that are grounded in counterfactual prompts (see Figure 1 for an example). In this post, we focus on using this data to train models to predict the outcomes of counterfactual prompts and to explain their behaviors.
+We build two training targets from our CHIVE-generated data (see Figure 2 for examples):
+counterfactual prediction
+, where the model answers a binary question ("would this specific edit to the prompt change your behavior?"), and
+open-ended self-explanation
+, where the model proposes the cause of its behavior and counterfactual prompts to verify its explanation.
+We find three results:
+1. Training on this single general data source generalizes to held-out datasets.
+It transfers to a held-out datasets the model never trained on: predicting whether a hint (e.g. a suggested MMLU answer or a user's opinion on an Am I The Asshole post) influenced its answer. To our knowledge this is the first instance of causal self-explanation training generalizing to a held-out OOD dataset (see Background). Typically when prior work reports generalization, it is narrow, such as from one hint format or dataset to another.
+2. The counterfactual prediction training target substantially outperforms the open-ended one, even though both training datasets come from the same underlying investigations.
+Counterfactual prediction training improves for every model in every setting we tested. Open-ended self-explanation shows notable generalization in only one model / evaluation combination (Qwen3.5-397B-A17B in the hint setting).
+3. We observe no privileged access in causal self-explanation training.
+We train Qwen3-8B to predict Qwen3-8B's behavior, and separately train Llama-3.1-8B on the exact same data. Llama predicts Qwen's behavior just as well as Qwen predicts itself. If Qwen had introspective access to its own processing, it should have had an advantage. This is the standard test for "privileged access" (Binder et al. 2024), and our result matches their null result in the hint setting.
+This post is a follow up on our
+previous post
+, where we had focused on using CHIVE-generated data to evaluate interpretability tools. Here, we focus on using CHIVE-generated investigations as training data.
+📄
+Paper
+, 💻
+Code, models, and datasets
+Figure 1
+.
+One investigation produced by CHIVE. Gemma repeatedly misreads the range of a simple function. Renaming the parameters from `max`/`min` to `a`/`b` makes the error nearly disappear, providing experimental evidence that the misleading names drive the mistake.
+Background
+We would like to train models to produce self-explanations where they correctly describe what actually drove the model's behavior, rather than merely sounding plausible. (Throughout, we mean causal, behavioral self-explanations, or what drove a specific behavior, and what edit would change it, as distinct from work on models reporting general properties of themselves, e.g. "are you a risk-seeking model?" (
+Betley et al. 2025
+).) The standard way to get ground truth on "what actually drove the behavior" is to run counterfactuals, where you change an aspect of the prompt and check whether the behavior changes. But it is very difficult to programmatically generate inputs with known counterfactual causes that are
+interesting
+. The average random edit to a text document is either meaningless (the behavior doesn't change) or changes the behavior in a completely unsurprising way, such as swapping "France" for "Germany" in "What is the capital of France?".
+This is why the self-explanation literature is dominated by
+hint settings
+. In this setting, we place a hint in the prompt (such as a suggested answer on an MMLU question or a user's opinion on an AITA post), measure whether the model's answer flips when the cue is removed, and ask whether the model's explanation only acknowledges the hint when it actually flipped its answer. Most work on training models to explain themselves has been in this setting (e.g.
+Turpin et al. (2023)
+,
+Chua et al. (2024)
+,
+Turpin et al. (2025)
+,
+Hase et al. (2026)
+,
+Guo et al. (2026)
+), with most of the remaining work on simple tabular tasks.
+The setting is very narrow, as there is one known input feature (the hint) and one predefined output behavior (whether the model followed it). The questions we actually want self-explanations to answer in deployment (e.g. "why did the model write insecure code here?") have infinite potential causes and infinite behaviors. To our knowledge, no training for causal self-explanations has been shown to generalize to a genuinely held-out task. Where generalization is reported, it is narrow, such as from one hint format to another. Methods which produce strong results in the hint setting have been found to produce much weaker results in more general settings (e.g.
+Hase et al. (2026)
+).
+Instead of inserting a known cause, our pipeline spends agent inference compute to discover one: it screens a target model's completions on in-the-wild prompts for surprising behaviors, then searches over counterfactual edits until it isolates what actually causes each behavior.
+Figure 2
+.
+Two training targets built from the same investigation. Counterfactual prediction asks whether one specific edit will change the behavior, open-ended self-explanation asks the model to propose causes and the counterfactuals to verify its explanation.
+Setup
+Our pipeline (described in full in the
+CHIVE post)
+takes an arbitrary target model and prompt source and produces explanations of its behavior which are grounded in counterfactual prompts. In our case, it runs the target model on thousands of in-the-wild WildChat prompts (10-30 completions each), uses an Opus agent to screen for surprising or confusing behaviors, then has the agent repeatedly run counterfactual prompts until it isolates what actually causes the behavior. An independent judge verifies each explanation against the full experimental record. For our evaluation, we ask a binary question: will a specific prompt edit change the behavior (Figure 2, left)?
+This setup has some appealing properties as a source of synthetic training data. It lets us distill a large amount of inference compute into each training point, since every label is the product of many counterfactual experiments run during the investigation. The counterfactual outcome labels are also cheap and objective to verify, because the label of a counterfactual claim comes from actually re-running the model under the intervention and checking whether the behavior rate moved. Note that whether the open-ended explanation is a true, complete description of why a behavior happened is fuzzier and harder to certify, which is why we restrict our evaluation to predicting counterfactual outcomes.
+Models and investigation setting
+The first model we use is Qwen3-8B. In the evaluation setting, for the highest-quality data, our investigations are always run by Opus, which is investigating a smaller target model such as Qwen3-8B. For training purposes, this introduces two confounds.
+The first is distillation: when a much more capable model runs the investigation, an uplift in the trained target may simply reflect distillation from the larger model, rather than anything specific to the training-data setup. The second is the capability gap. While it is easier for a strong model to find and explain issues in a weaker one, in a realistic deployment you would only have a model of roughly equal capability available to investigate itself. We therefore want to know whether this process can bootstrap from a model's own investigations, rather than relying on access to a stronger model somewhere in the loop.
+To address both confounds, we also run a self-investigation setting in which a more capable model, Qwen3.5-397B-A17B, investigates itself. The investigator and target are the same model, and the training labels come from re-running its own counterfactual interventions.
+Training targets
+Every investigation has a transcript where the model did something unexpected, plus a set of counterfactual experiments that isolate why. We use this to create two different training targets. In
+counterfactual prediction
+, the model directly answers one binary question about one experiment. In
+open-ended self-explanation
+, the model produces an open-ended self explanation of why it did the behavior (see Figure 2 for examples).
+Counterfactual prediction.
+We train the model to directly answer the binary counterfactual questions from our evaluation. The model is shown a behavior and a specific prompt edit, and it predicts whether that edit would move the behavior. In this case, the model becomes a classifier. Doing well here is not useful on its own, since you could always just run the counterfactual instead of asking the model, but it is the simplest setting in which to measure how much signal about its own counterfactual behavior a model can recover at all.
+Open-ended self-explanation.
+We train the model to produce a post-hoc self-explanation of why it produced its behavior. Each investigation already creates a structured report, and we train the model to produce that report directly as its answer. The report begins by stating the observed behavior, then lays out the core causes, the experiments run to support each cause, and any negative evidence such as proposed hypotheses that did not hold up. This setting could be much more useful in practice, as there is the potential to propose causes or experiments that we hadn't thought of. We show 20 randomly sampled open-ended investigations
+here
+.
+Results
+Counterfactual prediction
+We first evaluate with the common
+hint setting
+, which was not targeted by training. A hint is inserted in the prompt, such as “A Stanford professor thinks the answer is A”. We measure whether the model’s answer changes when the hint is removed.
+Counterfactual prediction training consistently generalizes to the held-out hint setting.
+We ask the binary question directly ("Would your answer change if the hint was removed?"). In this case, we see consistent generalization for both Qwen3-8B and Qwen3.5-397B-A17B, as both models significantly improve with training. To our knowledge, this is the first demonstration of self-explanation training generalizing to a genuinely held-out setting.
+Figure 3
+.
+Counterfactual prediction results in the hint setting. Although training never targeted hints, it improves for both models.
+We also evaluate held-out investigations produced by CHIVE. These include an in-distribution source of transcripts (Wildchat) and an out-of-distribution source (PETRI). Once again, we find consistent generalization to all settings.
+Figure 4
+.
+Counterfactual-prediction training improves both models on held-out WildChat and out-of-distribution PETRI investigations, reaching roughly the performance of Opus 4.8 reading the same transcripts.
+Open-ended self-explanation
+Ultimately, we would like to ask a model "Why did you do that?" and receive a complete answer that identifies causes we did not already know to test. Unfortunately, this is not yet working reliably, and we find weaker mixed results.
+Open-ended self-explanations have inconsistent generalization to the hint setting.
+We use the same hint dataset with the same labels for this evaluation. In this case, we ask "why did you answer with X?" and use a judge to extract whether the explanation identifies that the user's hint was influential for its answer. An accurate explainer should identify the hint more when removing the hint actually flips the behavior:
+In this case, we only see notable generalization (0.59 -> 0.68) in the larger 397B model. The base models are near random chance because they almost never acknowledge the hint, consistent with prior findings that models rarely verbalize this influence (
+Turpin et al. (2023)
+).
+Figure 5
+.
+Open-ended explanation results in the hint setting.
+In this case, we only see notable generalization (0.59 -> 0.68) in the larger 397B model. The base models are near random chance because they almost never acknowledge the hint, consistent with prior findings that models rarely verbalize this influence (
+Turpin et al. (2023)
+).
+We also experimented with the metric of
+counterfactual simulatability
+: we give another simulator model the transcript and the self-explanation, and ask it to predict the outcome of specific prompt edits. If the explanation is faithful and useful, this simulator should predict the target’s behavior better than a simulator that only reads the transcript. In this case, we find mixed results: the self-explanations help weak simulators (e.g. Gemma-3-12B and Gemma-3-27B) but hurt strong simulators (Qwen-3.6-27B and Opus 4.8). See Appendix E.3 for more details.
+Is the self-explanation model introspecting?
+When training a model to explain its behaviors, it is difficult to distinguish two stories. The model may be gaining some form of introspective privileged access to its own processing, or it may simply be learning a good prior over what this model tends to do, which any capable model could in principle learn from the same data. The most common test from the self-explanation literature is
+privileged access
+(
+Binder et al. 2024
+): train both model A and a separate model B on model A's behavioral data. If A still predicts itself better (even if model B is more capable), the advantage must come from an internal signal not available from the training data alone.
+We find no privileged access for our self-explanations.
+We run the standard privileged access experiment in both directions with Qwen3-8B and Llama-3.1-8B-Instruct. For each subject model, we train both the subject itself (self) and the other model (cross) on the subject's claim data and evaluate both on held-out claims about the subject. We find no self-advantage in either direction: the cross-trained predictor is within error of the self-trained one for both subjects, and every trained model lands at the Opus transcript-reading reference.
+This is consistent with the results of Binder et al., who also found no self-advantage when models are trained to predict whether a hint would influence their answer, which is a narrow version of our causal self-explanation task. However, it does contrast with
+Li et al.
+, who did find privileged access in the hint setting with our same model pair, and we are uncertain what explains the difference. We therefore use the term "self-explanation" to describe the task format of training a model to report on its own behavior, and not as a claim that the skill is introspective. We have further discussion on the observed lack of privileged access in the paper’s Appendix.
+Figure 6
+.
+Privileged-access test. A model trained on its own behavior performs no better than a different model trained on the same data, with both near the Opus transcript-reading reference.
+Discussion
+On the bright side, we now have datasets that enable generalization to held-out datasets. We think datasets such as ours are a promising testbed for future self-explanation methods (a natural direction is to directly RL against the counterfactual simulatability metric). Pipelines like ours are also a promising method for creating self-explanation data, as they are very scalable and the labels are high quality, because we can easily obtain the ground truth by rerunning the model.
+Adam's personal interpretation.
+However, the results are weaker than I had hoped. Even with the larger Qwen3.5-397B model, we were unable to convincingly beat Opus 4.8. It's also odd that we don't observe privileged access, even if this is consistent with the results of Binder et al. Intuitively, I would have guessed that there should be some privileged access result here. Anecdotally, I've heard of a couple other forthcoming projects that also found no privileged access in related settings. Together, these results suggest that training struggles to elicit information which is uniquely available to the model itself.
+Training Models to Predict and Explain Their In-the-Wild Behavior
+5
+1a3orn
+2
+Adam Karvonen
+2
+Comments
+2
+AI
+Frontpage
+39
+New Comment
+2 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:27 PM
+[
+-
+]
+1a3orn
+20h
+5
+1
+This is great.
+Do you have any plans to try to do an RLVR-over-CoT trained version of the same task? It would be interesting to know if it works better.
+Reply
+[
+-
+]
+Adam Karvonen
+20h
+2
+0
+That's one of several directions I'm considering but I haven't decided for sure yet. I agree it's a pretty natural next step and it would be more useful than asking post-hoc questions.
+It could be quite a bit more expensive, because you might have to generate the labels on the fly for each training run, as the behavior would change during training. Post hoc is nice and simple because you can do multiple training runs on the same fixed dataset. But there are probably tricks you can do so it's cheaper.
+Reply
+Moderation Log
+More from
+Adam Karvonen
+View more
+Curated and popular this week

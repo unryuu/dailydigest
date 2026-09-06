@@ -1,0 +1,97 @@
+[
+  {
+    "id": "lw-chive",
+    "section": "deep",
+    "label": "CHIVE 训练模型预测并解释自己的行为",
+    "url": "https://www.lesswrong.com/posts/YyAMz52wDxnLhwvWL/training-models-to-predict-and-explain-their-in-the-wild",
+    "body": "CHIVE 先用反事实改写找出模型行为的原因，再把这些实验结果做成训练数据；训练后的反事实预测能迁移到没见过的任务，但开放式自我解释效果不稳定。",
+    "note": "核实通过"
+  },
+  {
+    "id": "ibm-bob",
+    "section": "industry",
+    "label": "IBM 推出 Bob 代理式开发伙伴",
+    "url": "https://bob.ibm.com",
+    "body": "Bob 能在代码库里调用多个代理并行工作，也能从命令行运行；IBM 把它定位成覆盖遗留系统现代化、合规和安全交付的企业开发工具。",
+    "note": "核实通过"
+  },
+  {
+    "id": "spotify-portal",
+    "section": "industry",
+    "label": "Spotify 用 Portal 把 Claude Code token 用量降了 90％",
+    "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+    "body": "Portal 用两个可配置模式把读大文件和生成样板代码交给 Gemini 2.5 Flash，再让 Claude 处理需要推理的部分；整体 token 用量下降 90％。",
+    "note": "核实通过"
+  },
+  {
+    "id": "artificial-analysis-v42",
+    "section": "deep",
+    "label": "Artificial Analysis 发布 Intelligence Index 4.2",
+    "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2",
+    "body": "新版加入 AA-Briefcase 和 GDP.pdf，40％权重来自私有留出集；Claude Fable 5.1 居首，GPT-6 Astra 排第二。",
+    "note": "核实通过"
+  },
+  {
+    "id": "vlm-run-gateway",
+    "section": "industry",
+    "label": "VLM Run 推出统一 API 托管开放权重视觉模型",
+    "url": "https://huggingface.co/blog/vlm-run/introducing-gateway",
+    "body": "Gateway 把 OCR、视觉语言和 ViT 模型放在一个接口里，支持只改模型名就切换模型；当前免费且无需注册。",
+    "note": "核实通过"
+  },
+  {
+    "id": "xai-grok-procurement",
+    "section": "industry",
+    "label": "xAI 展示 Grok Bot 的采购代理提示词",
+    "url": "https://x.ai/news/grok-bot-procurement",
+    "body": "提示词让代理先按支出、合同、席位和用量数据计算节省，再跟进续费窗口并拟定谈判步骤，同时把签约、购买和批准费用列为禁止动作。",
+    "note": "核实通过；dup_suspect：与 09-04 已报的 Grok Bot 企业代理主线重复"
+  },
+  {
+    "id": "chromium-rce-cve-2026-85046",
+    "section": "official",
+    "label": "Chromium CVE-2026-85046 页面未抓到正文",
+    "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+    "note": "fetch_failed：本地文件只有 NVD - Home 标题和元数据，未读到漏洞正文"
+  },
+  {
+    "id": "acx-genji",
+    "section": "fun",
+    "label": "《源氏物语》被读成一部贵族恋爱灾难喜剧",
+    "url": "https://www.astralcodexten.com/p/your-book-review-the-tale-of-genji",
+    "body": "书评把平安时代的隔屏恋爱、暗号诗歌和复杂等级讲成现代人难以代入的宫廷连续剧；男主源氏把十岁女孩带走养大后结婚，读者很难不出戏。",
+    "note": "核实通过"
+  },
+  {
+    "id": "lw-pulleys",
+    "section": "fun",
+    "label": "有人用吊床解释滑轮为什么能省力",
+    "url": "https://www.lesswrong.com/posts/RPWoz6tYQtyinCyrn/f-ing-pulleys-how-do-they-work",
+    "body": "作者说滑轮的核心不是轮子，而是让树或天花板分担重量；轮子只是让绳子顺滑并改变拉力方向。",
+    "note": "核实通过"
+  },
+  {
+    "id": "opentrailpaper",
+    "section": "fun",
+    "label": "OpenTrailPaper 做了台开源电子墨水骑行电脑",
+    "url": "https://opentrailpaper.com",
+    "body": "这块 4.7 英寸屏带 GPS、触摸、前灯、SD 卡和蓝牙，1500mAh 版本续航约 7.4 小时；爬升靠地图估算，裸板没有防水。",
+    "note": "核实通过"
+  },
+  {
+    "id": "statichost",
+    "section": "fun",
+    "label": "statichost.eu 做欧洲基础设施上的静态站托管",
+    "url": "https://www.statichost.eu",
+    "body": "服务从 Git 仓库构建网站，提供自定义域名、免费 SSL 和即时回滚；它的卖点是从部署到 CDN 全程使用欧洲公司拥有的基础设施。",
+    "note": "核实通过"
+  },
+  {
+    "id": "x-penlume-rsa260",
+    "section": "fun",
+    "label": "penlu 公布 RSA-260 的一个 130 位因子",
+    "url": "https://x.com/penlume/status/2095372672356212876",
+    "body": "帖子给出一个能整除 RSA-260 的 130 位整数，另一个因子就是 RSA-260 除以这串数字得到的商。",
+    "note": "核实通过"
+  }
+]

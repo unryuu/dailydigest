@@ -1,0 +1,393 @@
+{
+  "date": "2026-09-05",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "AI 公司开始自己锁定芯片产能和支付基础设施",
+      "cost": "中",
+      "reason": "一条线是用数十亿美元提前买内存、晶粒和代工产能，另一条线是把计费、支付和反欺诈搬回公司内部，都是 AI 规模化后基础设施向上游延伸的新进展。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Coatue, MatX in Talks on New Multibillion Chip-Financing Venture",
+          "url": "https://www.theinformation.com/articles/coatue-matx-talks-new-multibillion-chip-financing-venture",
+          "date": "2026-09-05T01:16:00+08:00",
+          "why": "主 agent 已在登录态页面读到，Coatue 与 MatX 正讨论成立合资企业，预订内存、逻辑晶粒和台积电等产能；Anthropic 曾讨论约七十亿美元收购 MatX 但未成交，融资、估值和合资仍在早期谈判。"
+        },
+        {
+          "source": "the-information",
+          "title": "Anthropic’s In-House Payments Tech Push Could Chip Away at Stripe",
+          "url": "https://www.theinformation.com/articles/anthropics-house-payments-tech-push-chip-away-stripe",
+          "date": "2026-09-04T23:30:00+08:00",
+          "why": "主 agent 已在登录态页面读到，Anthropic 正评估自建计费、支付、实时反欺诈和争议处理系统，招聘信息还覆盖订单、发票、税务和资金管理；这是评估与建设方向，不等于已全面替换 Stripe。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "AI 参与形式化数学与硬件设计",
+      "cost": "重",
+      "reason": "Anthropic 发布了把大型模型接入 Lean 证明流程的研究，HN 同期又把 AI 设计电路板的实测文章推上前排；两条材料都要核清人类参与、验证环节和真实完成度。",
+      "items": [
+        {
+          "source": "anthropic-research",
+          "title": "Sep 4, 2026 Science Formalizing Fermat's Last Theorem",
+          "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+          "date": "2026-09-04",
+          "why": "官方研究页的新条目，标题指向用 Claude 参与费马大定理形式化；HN 同事件链接获 637 分，reader 需核模型到底生成了哪些证明、Lean 验证到哪一步以及人工贡献。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Can AI design circuit boards yet?",
+          "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet",
+          "date": "2026-09-05T03:48:29+08:00",
+          "why": "HN 抓取时 281 分、167 条评论；标题给出明确问题，reader 需核电路板任务、工具链、设计是否实际制造与测试。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Agent 训练与行为评测的工程化",
+      "cost": "重",
+      "reason": "候选集中出现动态评分、终端环境演化、轨迹转环境、蒸馏和隐藏冲突等不同环节，适合让 reader 比较 Agent 训练闭环到底增加了什么监督。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "DRACO: Fine-Grained Credit Assignment with Dynamic Rubrics for Long-Horizon Agent Training",
+          "url": "https://huggingface.co/papers/2609.04094",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，标题指向用动态 rubric 给长程 Agent 训练做细粒度 credit assignment；发布日期不可由列表页可靠确认，具体奖励拆分和长程任务待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Environment Evolution for Terminal Agents",
+          "url": "https://huggingface.co/papers/2609.04128",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，标题指向让终端 Agent 所处环境发生演化；环境如何生成、是否提升泛化和安全性待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments",
+          "url": "https://huggingface.co/papers/2609.04148",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，把 Agent 轨迹转成可扩展终端环境；需核轨迹来源、环境真实性和评测增益。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+          "url": "https://huggingface.co/papers/2609.04172",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，标题声称只用一个训练样例重新讨论 on-policy distillation；训练设定、模型规模和是否真能迁移待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "PACE: Towards Surfacing Hidden Conflicts in User Requests",
+          "url": "https://huggingface.co/papers/2609.03293",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，尝试暴露用户请求中的隐藏冲突；冲突定义、数据集和实际对话效果待 reader 核。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "Training Models to Predict and Explain Their In-the-Wild Behavior",
+          "url": "https://www.lesswrong.com/posts/YyAMz52wDxnLhwvWL/training-models-to-predict-and-explain-their-in-the-wild",
+          "date": "2026-09-05",
+          "why": "候选摘要称 CHIVE 流程用反事实提示产生带解释的意外行为数据，再训练模型预测真实环境行为；数据如何构造、解释是否可靠待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "视频与三维世界模型继续补齐感知和评测",
+      "cost": "重",
+      "reason": "多篇榜单论文分别从原生三维状态、相机控制渲染、在线重建、物理推理和奖励模型切入，主题相近但任务不同，适合并行精读后再决定是否合并成牌。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+          "url": "https://huggingface.co/papers/2609.04196",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，标题指向把原生三维世界状态纳入统一多模态模型；状态表示、数据规模和控制任务待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "FlashRender: Few-Step Generative Rendering via Camera-Controlled Video MeanFlow",
+          "url": "https://huggingface.co/papers/2609.03563",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，尝试用相机控制的视频 MeanFlow 做少步生成渲染；质量、步数和可控性待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
+          "url": "https://huggingface.co/papers/2609.04201",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，标题指向可扩展在线三维重建的多相对位姿查询；速度、场景范围和重建误差待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "VeriPhy: Agentic Physical Reasoning for World Model Evaluation and Refinement",
+          "url": "https://huggingface.co/papers/2609.03153",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，用 Agentic physical reasoning 做世界模型评测与改进；评测是否能发现真实物理错误待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "WorldReward: Reward Modeling for Camera-Conditioned World Models",
+          "url": "https://huggingface.co/papers/2609.03952",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，为相机条件世界模型做 reward modeling；奖励信号来源和与视频质量的关系待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Select, Compress, Reinvest: A Controlled Study of Visual-Token Allocation in Long-Video MLLMs",
+          "url": "https://huggingface.co/papers/2609.03820",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，以受控实验研究长视频多模态模型如何分配视觉 token；压缩和再投资策略的实际收益待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "模型架构、上下文和开放训练配方",
+      "cost": "中",
+      "reason": "这些候选分别改写自然语言规格、上下文压缩、KV cache 和图像模型训练方式，属于能独立成条的技术路线，不与 09-04 已报的 Astra 发布重复。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+          "url": "https://huggingface.co/papers/2609.04199",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，把自然语言规格通过训练编译为局部神经函数；任务、训练代价和泛化待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "LatentPress: Context Compression Beyond Text and Vision",
+          "url": "https://huggingface.co/papers/2609.01507",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，标题把上下文压缩从文本和视觉继续推广；压缩对象、信息损失和下游任务待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+          "url": "https://huggingface.co/papers/2609.03430",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，重新思考高效推理中的 KV cache 淘汰；随机策略为何保留关键信息、速度和质量代价待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+          "url": "https://huggingface.co/papers/2609.03796",
+          "date": "",
+          "why": "本日 Hugging Face 榜单论文，主打完全开放训练配方的图像生成模型；数据、权重、训练细节和实际能力待 reader 核。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "hacker-news",
+      "title": "IBM Bob",
+      "url": "https://bob.ibm.com",
+      "date": "2026-09-04T20:50:29+08:00",
+      "note": "HN 抓取时 283 分、295 条评论；候选只有产品标题和首页链接，具体 Agent 能力、开放范围和 IBM 定位待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Portal by Spotify cut my Claude Code token usage by 90%",
+      "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+      "date": "2026-09-05T07:38:50+08:00",
+      "note": "HN 抓取时 162 分、72 条评论；标题称 Spotify 工程团队的 Portal 把 Claude Code token 用量降了 90％，具体缓存、代理和测量口径待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Artificial Analysis Intelligence Index v4.2",
+      "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2",
+      "date": "2026-09-05T08:04:14+08:00",
+      "note": "HN 抓取时 128 分、49 条评论；新一版模型综合榜单，指标、模型覆盖和排名变化待 reader 核。"
+    },
+    {
+      "source": "huggingface",
+      "title": "VLM Run Gateway: Run open-weight OCR, VLM and vision models behind one API",
+      "url": "https://huggingface.co/blog/vlm-run/introducing-gateway",
+      "date": "2026-09-05",
+      "note": "候选摘要称 VLM Run 推出统一 API，托管开放权重 OCR、视觉语言和视觉模型；价格、可用模型和部署限制待 reader 核。"
+    },
+    {
+      "source": "xai",
+      "title": "Setting Grok Bot loose on procurement",
+      "url": "https://x.ai/news/grok-bot-procurement",
+      "date": "2026-09-04",
+      "note": "xAI 页面标题把 Grok Bot 的企业场景推进到采购；这是 09-04 已报 Grok Bot 设计和上线企业后的新场景，权限、审批和实际客户待 reader 核。"
+    },
+    {
+      "source": "the-batch",
+      "title": "Inside Key Changes in Data Policies, Ox Alpha Revealed, Taking Custom Models Beyond Fine-Tuning",
+      "url": "https://www.deeplearning.ai/the-batch/issue-369",
+      "date": "2026-09-04",
+      "note": "栏目标题同时提到数据政策变化、Ox Alpha 和超越微调的定制模型；这是聚合页，具体条目和原始链接待 reader 核，不能据栏目名写正文。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Announcing Humans in Control: cross-partisan grassroots organizing for AI safeguards ahead of 2028",
+      "url": "https://www.lesswrong.com/posts/bs4ayLuE5aAhnBArL/announcing-humans-in-control-cross-partisan-grassroots",
+      "date": "2026-09-05",
+      "note": "新组织宣布跨党派动员 AI safeguards，候选摘要称面向志愿者、捐助者和公共倡议；组织规模、具体议程和资金待 reader 核。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Should safety researchers quit frontier labs?",
+      "url": "https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs",
+      "date": "2026-09-05",
+      "note": "文章讨论安全研究者留在前沿实验室是否会减少非致命 warning shot、反而拖慢暂停动员；属于观点材料，具体论证待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Actively exploited sandbox RCE in all Chromium versions",
+      "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+      "date": "2026-09-05T08:28:16+08:00",
+      "note": "HN 抓取时 561 分、296 条评论；NVD 条目指向所有 Chromium 版本的已被利用 sandbox RCE，影响范围、修复版本和与 AI 工具链的关系待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The Rust React Compiler is now native in Vite",
+      "url": "https://blog.master.dev/react-now-rusted-all-the-way-out",
+      "date": "2026-09-05T02:18:08+08:00",
+      "note": "HN 抓取时 149 分、38 条评论；工具链文章称 Rust React Compiler 已原生进入 Vite，性能、兼容性和可用版本待 reader 核。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-penlume",
+      "title": "有人找到了 RSA-260 的因子",
+      "url": "https://x.com/penlume/status/2095372672356212876",
+      "date": "2026-09-03",
+      "note": "X 原帖已读到：penlu 公布一个 78 位整数并写明它能整除 RSA-260，页面显示约 1,580 万次浏览；具体因子关系和 RSA 背景由核查阶段补写。"
+    },
+    {
+      "source": "acx",
+      "title": "Your Book Review: The Tale Of Genji",
+      "url": "https://www.astralcodexten.com/p/your-book-review-the-tale-of-genji",
+      "date": "2026-09-05T03:34:24+08:00",
+      "note": "ACX 书评比赛第 8 个入围条目，标题和摘要只说明《源氏物语》书评，具体梗和论点待 reader 核。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "F***ing Pulleys, How Do They Work?",
+      "url": "https://www.lesswrong.com/posts/RPWoz6tYQtyinCyrn/f-ing-pulleys-how-do-they-work",
+      "date": "2026-09-05",
+      "note": "标题从一个人人以为懂、作者却始终不懂的滑轮问题切入；摘要只给出 100 千克物体和绳长关系，具体解释待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Show HN: Open-Source eInk Bike Computer",
+      "url": "https://opentrailpaper.com",
+      "date": "2026-09-05T01:18:08+08:00",
+      "note": "HN 抓取时 303 分、105 条评论；开源电子墨水自行车电脑，硬件、地图和续航细节待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Statichost.eu – European static site hosting",
+      "url": "https://www.statichost.eu",
+      "date": "2026-09-05T05:34:49+08:00",
+      "note": "HN 抓取时 324 分、139 条评论；欧洲静态站托管服务，社区关注点和免费额度待 reader 核。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "AI 会在 2026 年 9 月解决千禧年大奖难题吗？",
+      "prob": "15.0％",
+      "volume_note": "累计交易量约 M$19,707。",
+      "url": "https://manifold.markets/jim/ai-solves-millennium-prize-problem"
+    },
+    {
+      "question": "AI 会在 2031 年前毁灭人类吗？",
+      "prob": "3.5％",
+      "volume_note": "累计交易量约 M$9,164。",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-b4153e3cfd6b"
+    },
+    {
+      "question": "AI 会在 2032 年前毁灭人类吗？",
+      "prob": "4.8％",
+      "volume_note": "累计交易量约 M$19,749。",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c7e255f4843c"
+    },
+    {
+      "question": "AI 会在 2035 年前毁灭人类吗？",
+      "prob": "5.9％",
+      "volume_note": "累计交易量约 M$23,233。",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-fb2463776b50"
+    },
+    {
+      "question": "AI 会在 2150 年前毁灭人类吗？",
+      "prob": "11.8％",
+      "volume_note": "累计交易量约 M$36,853。",
+      "url": "https://manifold.markets/justifieduseofFallibilism/will-ai-wipe-out-humanity-before-th-b1c8bfb80ec0"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "acx-old",
+      "reason": "其余 ACX 候选为 08-31 至 09-03 的开放串、校园活动或旧文，本期只保留窗口内的《源氏物语》书评。"
+    },
+    {
+      "slug": "axios-non-ai",
+      "reason": "本轮 Axios 候选主要是伊朗战争、油价、美国就业和选举等非 AI 新闻，不进入 AI 日报分桶。"
+    },
+    {
+      "slug": "import-ai",
+      "reason": "唯一候选为 08-31 周报，早于本期接续窗口，且 Hugging Face 主线已经在 09-04 报过。"
+    },
+    {
+      "slug": "simon-willison",
+      "reason": "OpenAI Agent 公共 Wiki 与 09-04 已报同一事件；Astra Pelican 对比属于 09-04 已报模型发布的同事件延伸，均不重复收。"
+    },
+    {
+      "slug": "lesswrong-old-lines",
+      "reason": "Hugging Face 事故复盘、Astra 架构和 Anthropic 越权评论早于接续点或已在近期日报覆盖；同事件换链接不再收。"
+    },
+    {
+      "slug": "manifold-seen",
+      "reason": "旧赔率 URL 已过全历史查重，未重复带回；本期只保留五个此前未见且有明确概率的市场。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "本轮没有可回溯到原始出处的新候选。"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+URL: https://www.lesswrong.com/posts/RPWoz6tYQtyinCyrn/f-ing-pulleys-how-do-they-work
+FINAL: https://www.lesswrong.com/posts/RPWoz6tYQtyinCyrn/f-ing-pulleys-how-do-they-work
+TITLE: F***ing Pulleys, How Do They Work? — LessWrong
+FETCHED: 2026-09-05 22:27:56
+============================================================
+x
+F***ing Pulleys, How Do They Work? — LessWrong
+World Modeling
+Frontpage
+26
+F***ing Pulleys, How Do They
+Work?
+by
+Liron
+4th Sep 2026
+Linkpost for
+lironshapira.substack.com
+4
+min read
+14
+26
+Everyone acts like it’s obvious that pulleys do a physically possible thing, but personally, I’ve never understood why you can lift a 100kg object straight up by pulling it with less force than what it weighs.
+“Pulleys let you move the rope twice as far as the load moves, so you’re spreading your pull force over a 2x longer distance, so you can use half the force, it’s just conservation of energy!”
+No, f*** you, that doesn’t explain why a wheel on the rope means I’m allowed to pull the rope half as hard to lift the same weight.
+If you want to know the secret explanation I learned while procrastinating today, read on...
+Ok imagine there’s a 100kg man lying in a hammock that has 2 supporting ropes. You’re on the left holding one rope, and there’s a tree on the right holding the other rope.
+In this setup, you only lift 50kg of vertical weight, because you’re in a symmetrical configuration with the tree. Tada!
+(That’s actually the trick to all “simple machines” — you take advantage of the fact that the ground/trees/etc are always game to lift or push against the full weight of objects, if the configuration provokes an equal & opposite reaction force.)
+So yeah, you can lift the hammock a foot or two by lifting the rope over your head, and you’ll still only need ~half the lifting force you’d normally need for 100kg. Though note you have to raise your arms by 2ft to get the guy to lift 1ft, because the midpoint of the rope is the average height of your hands and the tree’s connection point, and the tree’s connection point hasn’t moved. I guess the “conservation of energy” guy was onto something there.
+This simple hammock setup is a legit proof of concept of the core magic of the pulley. You’re just getting a tree or other fixed object to partner with you on bearing the weight of the lift. That’s it. It’s really quite simple, until the f***ing wheels get involved…
+At this point, since our hammock proof of concept isn’t a genuine Pulley™, we have to deal with various little problems:
+1. Puller’s configuration:
+Your arms aren’t long enough to pull much, or you have to keep walking toward higher ground as you pull
+2. Rope needing to slide around the load:
+If the person in the hammock is attached to a fixed point on the rope (not spanning a bunch of width across it) and you try to pull up, you only have two options: (a) Pull straight up, but the tree’s half of the rope goes slack and now you’re pulling all 100kg, or (b) Treat the whole system as a pendulum/swing, giving it a very leftward-angled tug, which is a workable setup, but you lose the tree’s assistance as the hammock swings higher toward the horizontal configuration at the top of its arc. Realistically, you don’t want to attach the load to a fixed point on the rope. The rope needs to slide around the load as it lifts. Your friend is just going to have to accept getting rope burned.
+3. Wasteful horizontal force component:
+The rope makes a V shape (as long as you’re not letting it go slack, which you can’t if you want to activate the tree’s component of lift), which means you have to add an additional wasted component of force pulling at the hammock (and the tree) horizontally. You can mitigate this issue if you stand right next to the tree and pull straight up, as long as the rope can slide relative to your load, but then problem 1 above becomes extra annoying — e.g. if you were hoping to walk your end of the rope up a ramp, it’s not going to be maximally efficient.
+Alright, let’s add a wheel.
+Now we’ve solved problems 2 and 3. The rope can easily slide around the load, keeping your friend’s upward journey smooth and balanced. And there’s no more wasteful horizontal force component — that’s not because of the wheel per se, it’s because you connected the rope to the ceiling.
+And there’s no extra lift-force-easing magic here that the hammock setup didn’t already have. The load in this setup feels to you like 50kg because the ceiling plays the role of the tree from before, splitting the weight with you equally in a symmetrical configuration.
+Finally, we’ll solve problem #1 by adding a second wheel, so now you can stand in the same place while you pull. The second wheel doesn’t do anything to the force, it just redirects the direction.
+IMO the wheels are a shiny distraction. The hammock proof of concept is what it’s all about. Pulleys are just a way to use wheels to share the load with fixed objects like trees and ceilings.
+In conclusion, f*** pulleys. But next time you see a hammock, consider impressing your friends with your efficient lifting abilities.
+P.S. For fancier pulleys whose mechanical advantage is 3:1 or higher, the proof of concept is a hammock with 3 or more ropes that are all connected to the ceiling, except for one at a time that you hold. You can walk around the rafters pulling on one of the ropes at a time, with 1/3 or 1/n of your load's full weight, by a small enough bit at a time that the other ropes still maintain their tension.
+Then the upgrade you get by licensing the Pulley™ intellectual property is that a single long rope's tension-spreading property makes the "pull on 3 sub-ropes in turn" process maximally efficient.
+F***ing Pulleys, How Do They Work?
+8
+Richard_Kennaway
+9
+Liron
+3
+ulyssessword
+1
+I.M.J. McInnis
+8
+Liron
+7
+Boris Kashirin
+7
+Dagon
+2
+Liron
+4
+Tomás B.
+6
+Mo Putera
+2
+Liron
+0
+Svyatoslav Usachev
+0
+Liron
+1
+Svyatoslav Usachev
+14
+Comments
+14
+World Modeling
+Frontpage
+26
+New Comment
+14 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:27 PM
+[
+-
+]
+Richard_Kennaway
+21h
+8
+3
+In your first diagram, you still need to pull with the elephant’s weight to lift it, supposing the elephant directly under the rope. Horizontal components are just a distraction.
+How many feet of rope do you have to pull out to raise the load one foot? That’s your mechanical advantage. That’s 1 (i.e. none) for that first example.
+Reply
+[
+-
+]
+Liron
+20h
+9
+2
+The figure in that diagram actually has a 500:1 advantage because he is a wizard.
+Reply
+[
+-
+]
+ulyssessword
+13h
+3
+0
+I think it's a great illustration: It displays a complete lack of knowledge about how pulleys work. It's a picture of a mystery, not an understandable physical system.
+Reply
+[
+-
+]
+I.M.J. McInnis
+18h
+1
+0
+thanks, I thought I was going crazy looking at that
+Reply
+[
+-
+]
+Liron
+21h
+8
+0
+I was emboldened to turn this into a LW post by a
+reply
+from
+@Carl Feynman
+on Twitter that it reminds him of his dad's explanations.
+Reply
+1
+[
+-
+]
+Boris Kashirin
+20h
+7
+2
+I'd prefer solid beam instead of hammock, after all lever is much more familiar and intuitive. Also ignoring horizontal part of force which is dominant in hammock case makes it sus even if it is not wrong.
+Reply
+[
+-
+]
+Dagon
+21h
+7
+3
+I like the style, and somewhat disagree with the substance. The hammock example is good, but a lot of people could be confused between static (force needed to hold it) and dynamic (force needed to raise it). you and I know that any tiny amount over the holding requirement will cause it to raise, but that's not an obvious thing to everyone.
+I think it's not also clear in the hammock example how to multiply the effect. Once you add pulleys / block-and-tackle, it scales as much as you want - each additional loop adds to the effect; N times as much distance with 1/N as much force. This also maps to gear ratios and how they multiply if multiple gears are in play.
+Reply
+[
+-
+]
+Liron
+19h
+2
+0
+Thanks for the comment. I just added a P.S. section to show how the hammock proof of concept works for fancier pulleys with higher mechanical advantage.
+Reply
+[
+-
+]
+Tomás B.
+17h
+4
+1
+I read this tweet as claiming this article was written by fable:
+Is this true? If so, it needs to go in an LLM block.
+Reply
+[
+-
+]
+Mo Putera
+13h
+6
+0
+FWIW I read it as claiming Fable explained it to Liron, who then put it in his own words.
+Reply
+[
+-
+]
+Liron
+11h
+2
+0
+Yep that’s what happened
+Reply
+1
+[
+-
+]
+Svyatoslav Usachev
+4h
+0
+0
+I found the Wikipedia explanation most concise. Looking at the moment when the system is just about to move, when it still is in a static equilibrium, we have 2 simple principles:
+The tension force is equal along the rope, because if you imagine it consisting of small segments, the forces between them must cancel out.
+At any block the forces that act on it also cancel out.
+That's it! From these alone you can calculate everything.
+Reply
+[
+-
+]
+Liron
+3h
+0
+0
+That is sufficient, but I personally still found it intuitively unsatisfying why the configuration let me pull with less force until I realized the same force-lightening effect is already present in a simple half-connected hammock setup.
+Reply
+[
+-
+]
+Svyatoslav Usachev
+2h
+1
+0
+The hammock example is not illuminating, because it is wrong -- you typically need
+more
+force in the hammock setup, because the rope is diagonal, not vertical.
+I think properly understanding the two principles I mentioned is more valuable, because it would easily demonstrate that issue if you apply them to the hammock scenario.
+Reply
+Moderation Log
+More from
+Liron
+View more
+Curated and popular this week

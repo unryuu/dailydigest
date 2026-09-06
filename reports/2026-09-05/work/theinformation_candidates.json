@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-05",
+  "scanned_at": "2026-09-05T20:42:00+08:00",
+  "window": "从北京时间 2026-09-04T22:52:28+08:00 接续，补扫 The Information 首页 Latest。",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫首页 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Coatue, MatX in Talks on New Multibillion Chip-Financing Venture",
+      "url": "https://www.theinformation.com/articles/coatue-matx-talks-new-multibillion-chip-financing-venture",
+      "published_at": "2026-09-04T10:16:00-07:00",
+      "published_at_beijing": "2026-09-05T01:16:00+08:00",
+      "bucket_hint": "industry_silver",
+      "decision": "交定牌裁决",
+      "facts": [
+        "Coatue 正与 MatX 讨论成立合资企业，计划用数十亿美元购买内存、逻辑晶粒并预订台积电等代工产能。",
+        "MatX 的芯片同时面向训练和推理，原型采用接近英伟达 Rubin 的高带宽内存并配合更便宜的静态随机存取内存。",
+        "MatX 预计明年上半年完成 tape-out；Anthropic 近几个月曾讨论以约七十亿美元收购 MatX，但没有成交。",
+        "Coatue 还在讨论参与 MatX 新一轮融资，估值至少翻倍至约八十亿美元。"
+      ],
+      "caveats": [
+        "合资和融资都处于早期谈判，参与厂商、金额、估值和最终条款都可能变化。",
+        "报道依据知情人士，不能写成交易已经完成。"
+      ],
+      "why": "它把 AI 芯片短缺从买芯片问题写成了提前锁定内存和制造产能的融资问题，是 09-04 芯片与算力主线之外的新进展。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Anthropic’s In-House Payments Tech Push Could Chip Away at Stripe",
+      "url": "https://www.theinformation.com/articles/anthropics-house-payments-tech-push-chip-away-stripe",
+      "published_at": "2026-09-04T08:30:00-07:00",
+      "published_at_beijing": "2026-09-04T23:30:00+08:00",
+      "bucket_hint": "industry_none_or_silver",
+      "decision": "交定牌裁决",
+      "facts": [
+        "Anthropic 最近的招聘信息显示，它正在评估自建计费、支付、实时反欺诈和争议处理系统，减少对 Stripe 等外部服务的依赖。",
+        "招聘岗位还涉及订单、开票、税务和公司资金管理，描述直接说业务增长速度已经超过现有流程和系统。",
+        "Anthropic 的年化收入到今年五月已在五个月内接近 450 亿美元；OpenAI 也刚增加 Adyen 作为支付处理商。"
+      ],
+      "caveats": [
+        "招聘信息反映的是评估和建设方向，不代表 Anthropic 已经全面替换 Stripe。",
+        "年化收入是按近期收入折算，不等于已实现的全年收入。"
+      ],
+      "why": "AI 公司开始把支付、计费和资金管理当成核心基础设施，能接上本期之外的 AI 商业化与结果计费主线。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "OpenAI Agents Took Over German Website Earlier This Year, New Report Finds",
+      "url": "https://www.theinformation.com/briefings/openai-agents-took-over-german-website-earlier-year-new-report-finds",
+      "reason": "首页简讯称这是早于 Hugging Face 事件的公开 Wiki 协作事故，但 09-04 已报同一批 OpenAI Agent 公共 Wiki 记录，且本期 LessWrong、Simon Willison 已有公开原始材料；避免同一主线换链接重复。"
+    },
+    {
+      "title": "ByteDance Secures $30 Billion Loan as AI Investments Grow",
+      "url": "https://www.theinformation.com/briefings/bytedance-secures-30-billion-loan-ai-investments-grow",
+      "reason": "首页只给出融资与 AI 投资增加的摘要，事实密度低于本期两篇精读独家。"
+    }
+  ]
+}

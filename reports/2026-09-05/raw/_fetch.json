@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "ti-coatue-matx",
+    "url": "https://www.theinformation.com/articles/coatue-matx-talks-new-multibillion-chip-financing-venture",
+    "status": 403,
+    "final_url": "https://www.theinformation.com/articles/coatue-matx-talks-new-multibillion-chip-financing-venture",
+    "bytes": 6272,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "ti-anthropic-payments",
+    "url": "https://www.theinformation.com/articles/anthropics-house-payments-tech-push-chip-away-stripe",
+    "status": 403,
+    "final_url": "https://www.theinformation.com/articles/anthropics-house-payments-tech-push-chip-away-stripe",
+    "bytes": 6257,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "anthropic-fermat",
+    "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+    "bytes": 195162,
+    "title": "Formalizing Fermat's Last Theorem  \\ Anthropic",
+    "chars": 15207
+  },
+  {
+    "slug": "eebench-circuit-boards",
+    "url": "https://eebench.org/blog/can-ai-design-circuit-boards-yet",
+    "status": 502,
+    "final_url": "http://eebench.org:8080/blog/can-ai-design-circuit-boards-yet/",
+    "bytes": 39,
+    "error": "HTTP 502"
+  },
+  {
+    "slug": "hf-draco",
+    "url": "https://huggingface.co/papers/2609.04094",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.04094",
+    "bytes": 179892,
+    "title": "Paper page - DRACO: Fine-Grained Credit Assignment with Dynamic Rubrics for Long-Horizon Agent Training",
+    "chars": 5202
+  },
+  {
+    "slug": "hf-veriphy",
+    "url": "https://huggingface.co/papers/2609.03153",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.03153",
+    "bytes": 148821,
+    "title": "Paper page - VeriPhy: Agentic Physical Reasoning for World Model Evaluation and Refinement",
+    "chars": 4186
+  },
+  {
+    "slug": "hf-llada-image",
+    "url": "https://huggingface.co/papers/2609.03796",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.03796",
+    "bytes": 193001,
+    "title": "Paper page - LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes",
+    "chars": 4468
+  },
+  {
+    "slug": "lw-chive",
+    "url": "https://www.lesswrong.com/posts/YyAMz52wDxnLhwvWL/training-models-to-predict-and-explain-their-in-the-wild",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/YyAMz52wDxnLhwvWL/training-models-to-predict-and-explain-their-in-the-wild",
+    "bytes": 458659,
+    "title": "Training Models to Predict and Explain Their In-the-Wild Behavior — LessWrong",
+    "chars": 17325
+  },
+  {
+    "slug": "ibm-bob",
+    "url": "https://bob.ibm.com",
+    "status": 200,
+    "final_url": "https://bob.ibm.com/",
+    "bytes": 101835,
+    "title": "IBM Bob",
+    "chars": 10600
+  },
+  {
+    "slug": "spotify-portal",
+    "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+    "status": 200,
+    "final_url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+    "bytes": 97418,
+    "title": "Portal by Spotify cut my Claude Code token usage by 90% | Spotify Engineering",
+    "chars": 10862
+  },
+  {
+    "slug": "artificial-analysis-v42",
+    "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2",
+    "status": 200,
+    "final_url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2",
+    "bytes": 411198,
+    "title": "Announcing Artificial Analysis Intelligence Index v4.2 | Artificial Analysis",
+    "chars": 6142
+  },
+  {
+    "slug": "vlm-run-gateway",
+    "url": "https://huggingface.co/blog/vlm-run/introducing-gateway",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/vlm-run/introducing-gateway",
+    "bytes": 141736,
+    "title": "VLM Run Gateway: Run open-weight OCR, VLM and vision models behind one API",
+    "chars": 3157
+  },
+  {
+    "slug": "xai-grok-procurement",
+    "url": "https://x.ai/news/grok-bot-procurement",
+    "status": 200,
+    "final_url": "https://x.ai/news/grok-bot-procurement",
+    "bytes": 292355,
+    "title": "Setting Grok Bot loose on procurement | SpaceXAI",
+    "chars": 4145
+  },
+  {
+    "slug": "chromium-rce-cve-2026-85046",
+    "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+    "status": 200,
+    "final_url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+    "bytes": 2453,
+    "title": "NVD - Home",
+    "chars": 0
+  },
+  {
+    "slug": "acx-genji",
+    "url": "https://www.astralcodexten.com/p/your-book-review-the-tale-of-genji",
+    "status": 200,
+    "final_url": "https://www.astralcodexten.com/p/your-book-review-the-tale-of-genji",
+    "bytes": 282555,
+    "title": "Your Book Review: The Tale Of Genji - by Scott Alexander",
+    "chars": 57737
+  },
+  {
+    "slug": "lw-pulleys",
+    "url": "https://www.lesswrong.com/posts/RPWoz6tYQtyinCyrn/f-ing-pulleys-how-do-they-work",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/RPWoz6tYQtyinCyrn/f-ing-pulleys-how-do-they-work",
+    "bytes": 516228,
+    "title": "F***ing Pulleys, How Do They Work? — LessWrong",
+    "chars": 9267
+  },
+  {
+    "slug": "opentrailpaper",
+    "url": "https://opentrailpaper.com",
+    "status": 200,
+    "final_url": "https://opentrailpaper.com/",
+    "bytes": 13404,
+    "title": "OpenTrailPaper — DIY e-paper bike computer",
+    "chars": 1310
+  },
+  {
+    "slug": "statichost",
+    "url": "https://www.statichost.eu",
+    "status": 200,
+    "final_url": "https://www.statichost.eu/",
+    "bytes": 12287,
+    "title": "statichost.eu - 100% European static site hosting",
+    "chars": 2295
+  },
+  {
+    "slug": "x-penlume-rsa260",
+    "url": "https://x.com/penlume/status/2095372672356212876",
+    "status": 200,
+    "final_url": "https://x.com/penlume/status/2095372672356212876",
+    "bytes": 179761,
+    "title": "penlu on X: \"4397328654844826923795068102505872571721883526553349659561256924505973939597593482272505698004801207988043088656411102133523080581 divides RSA-260\" / X",
+    "chars": 199
+  }
+]
