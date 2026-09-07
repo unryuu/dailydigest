@@ -1,0 +1,66 @@
+[
+  {
+    "id": "openai-ukraine-journalism",
+    "section": "official",
+    "label": "OpenAI 联合两家行业组织帮乌克兰媒体落地 AI",
+    "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
+    "body": "十家乌克兰新闻机构会获得项目辅导和 API 额度，把 AI 用进编辑流程、受众运营和商业转型。",
+    "note": "核实通过。OpenAI、WAN-IFRA 与乌克兰独立地区出版商协会联合发布；大师课已于 8 月 5 日开始，面向十家机构的深度辅导计划定于 9 月 17 日启动。属于合作方官方通稿，项目效果尚无外部评估。与近三期 OpenAI Agent Wiki／Hugging Face 攻击主线不重叠。"
+  },
+  {
+    "id": "opus-glycine",
+    "section": "fun",
+    "label": "Opus 4.6 给一位长睡眠者推荐了甘氨酸",
+    "url": "https://www.lesswrong.com/posts/xB8xGcTckEnsjgrCi/praise-our-lord-and-savior-glycine-how-opus-4-6-gifted-me",
+    "body": "她照着每天吃 10 克，坚持半年后觉得睡眠体验变好、缺觉没那么难受，不过每天仍要睡十小时。",
+    "note": "核实通过。LessWrong 文章是作者单人的健康经历，Opus 4.6 的具体建议原文未展示；作者没有做盲测，也承认安慰剂效应无法靠内省排除。不可把个人体验写成甘氨酸普遍改善睡眠的因果结论。与近三期不重叠。"
+  },
+  {
+    "id": "interstellar-heat",
+    "section": "fun",
+    "label": "有人算出星际飞船的首要瓶颈是散热",
+    "url": "https://www.lesswrong.com/posts/cKSJk2GKk3ptAJKKp/heat-dissipation-is-the-main-constraint-in-interstellar",
+    "body": "推进系统再高效也会留下废热，而真空里只能靠辐射排走；按作者较温和的假设，飞五光年仍需约五百五十九年。",
+    "note": "核实通过。LessWrong 作者基于自设的推进效率、排气速度、加速度和散热器质量等参数推演，不是实验结果或同行评议论文；评论区有人质疑持续加速假设和费米悖论推论。标题保留为作者论点，不能写成已经确立的物理结论。与近三期不重叠。"
+  },
+  {
+    "id": "python-1024",
+    "section": "fun",
+    "label": "有人把 Python 解释器塞进 1024 字节 C 代码",
+    "url": "https://austinhenley.com/blog/python1024.html",
+    "body": "它边解析边执行，不生成语法树或字节码；仍支持变量、算术、条件、循环、递归函数、缩进代码块和 print。",
+    "note": "核实通过。1024 字节指压缩后的 C 源码大小，不是完整 Python 实现；它只覆盖一小部分语法，依赖 GNU C89 的宽松特性，并假设输入代码正确、没有错误处理。与近三期不重叠。"
+  },
+  {
+    "id": "get-together",
+    "section": "fun",
+    "label": "一个社交网络发帖只接受 GET 请求",
+    "url": "https://gettogether.dev/",
+    "body": "发帖、点赞和删除全写在 URL 参数里，不用密钥；帖子公开，正文也会出现在 URL 中。",
+    "note": "核实通过。站点明确称所有写操作都使用 GET；发帖上限 280 字，每十秒一次，昵称不唯一也不验证。保留会话 cookie 才能日后删除自己的帖子。与近三期不重叠。"
+  },
+  {
+    "id": "tivo-ad-skip",
+    "section": "fun",
+    "label": "TiVo 要把自动跳广告改成付费功能",
+    "url": "https://cordcuttersnews.com/tivo-plans-to-end-free-automatic-commercial-skipping-in-november-tests-paid-premium-replacement-service/",
+    "body": "11 月 2 日起，新录制节目不再有免费的一键和自动跳过；30 天试用后要按月付费，遥控器快进和 30 秒跳转仍保留。",
+    "note": "核实通过。Cord Cutters News 9 月 4 日根据 TiVo 客户通知报道；新服务名为 Premium Auto Commercial Skip，价格、支持设备和节目范围尚未公布。现有已带 SkipMode 标记的录像在变更生效前仍可用。与近三期不重叠。"
+  },
+  {
+    "id": "lg-tv-audio",
+    "section": "fun",
+    "label": "测试称 LG 电视待机时仍会录音并扫描家中设备",
+    "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
+    "body": "电视断网后仍把语音存在本地，恢复联网再上传；抓包还看到它搜寻手机、手表和附近的 Wi-Fi。",
+    "note": "低信度。当前本地材料只有 Notebookcheck 对 Gamers Nexus 135 分钟视频的二手转述，未抓到原始视频或研究报告；报道称团队测试了包括 G5 在内的零售 LG OLED 机型，以 Wireshark 抓包并做台架测试，LG 截至报道发布时未回应。正文只能写这次测试所见，不能泛化为所有 LG 电视。与近三期不重叠。"
+  },
+  {
+    "id": "nitter-resume",
+    "section": "fun",
+    "label": "Nitter 获得法律建议后决定继续维护",
+    "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+    "body": "X 此前要求永久下架项目仓库和实例；现在 README 写明项目会继续，更多细节之后公布。",
+    "note": "核实通过。GitHub 提交直接新增了 Following legal advice, the Nitter project will continue，并称更多细节稍后公布。原始材料只支持 Nitter，没有出现 XCancel，因此 label 和 body 不写 XCancel。此前日报只报过仓库归档和实例限流，今天是继续维护的新进展，不标疑重。"
+  }
+]

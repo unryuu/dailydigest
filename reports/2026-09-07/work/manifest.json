@@ -1,0 +1,336 @@
+{
+  "date": "2026-09-07",
+  "fetch_failures": [
+    {
+      "slug": "axios",
+      "url": "https://api.axios.com/feed/",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "hf-papers",
+      "url": "https://huggingface.co/papers",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "huggingface",
+      "url": "https://huggingface.co/blog",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "import-ai",
+      "url": "https://importai.substack.com/feed",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "manifold",
+      "url": "https://api.manifold.markets/v0/search-markets?term=AI&sort=liquidity&limit=25&filter=open",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。本期没有可靠赔率候选。"
+    },
+    {
+      "slug": "meta-ai",
+      "url": "https://research.meta.ai/",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "mistral",
+      "url": "https://mistral.ai/news/rss",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "thezvi",
+      "url": "https://thezvi.substack.com/feed",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "机械 Nitter 抓取返回 ERR_CONNECTION_RESET；登录态 x.com/emollick 首次加载超时，页面显示 Something went wrong 与 failedScript=api，点击 Try again 后结果不变。"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "机械 Nitter 抓取返回 ERR_CONNECTION_RESET；首个登录态账号已确认 X 站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "机械 Nitter 抓取返回 ERR_CONNECTION_RESET；首个登录态账号已确认 X 站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "机械 Nitter 抓取返回 ERR_CONNECTION_RESET；首个登录态账号已确认 X 站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "机械 Nitter 抓取返回 ERR_CONNECTION_RESET；首个登录态账号已确认 X 站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "机械 Nitter 抓取返回 ERR_CONNECTION_RESET；首个登录态账号已确认 X 站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "机械 Nitter 抓取返回 ERR_CONNECTION_RESET；首个登录态账号已确认 X 站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "slug": "xai",
+      "url": "https://x.ai/news",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "OpenAI 一边把内部研发描述成递归式加速，一边由首席科学家公开要求更谨慎的扩展门槛",
+      "cost": "重",
+      "reason": "两篇 OpenAI 同日文章形成明显张力，Simon Willison 提供内部 AI 支出曲线这一表层线索，LessWrong 链接帖则指出安全语气的变化；合组可核对这是统一叙事还是组织内部的不同侧面。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Research acceleration: The view inside OpenAI",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "date": "2026-09-06T15:08:44Z",
+          "why": "OpenAI 官方文章进入 HN，候选摘要只有 185 分与 135 条评论；与 Simon Willison 的表层摘录交叉读。"
+        },
+        {
+          "source": "simon-willison",
+          "title": "Research acceleration: The view inside OpenAI",
+          "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai",
+          "date": "2026-09-06T23:57:40+00:00",
+          "why": "摘要称 OpenAI 把 RSI 作为递归式自我改进来谈，并注意到七月下旬每位研究员的 AI 支出突然加速；后者只是作者猜测与观察，待 reader 核。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "An Alien Mind",
+          "url": "https://openai.com/index/an-alien-mind",
+          "date": "2026-09-06T16:27:05Z",
+          "why": "OpenAI 首席科学家文章在 HN 获 425 分与 389 条评论；同组的 LessWrong 摘要将其概括为对扩展速度和外部审计明显更谨慎。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "[Linkpost] ”“An Alien Mind” from OAI chief scientist seems newly cautious on alignment” by Seth Herd",
+          "url": "https://www.lesswrong.com/posts/8GYhKdbEHs3vQZFv9/an-alien-mind-from-oai-chief-scientist-seems-newly-cautious",
+          "date": "Mon, 07 Sep 2026 07:45:46 GMT",
+          "why": "二手解读摘出“极度谨慎”、按安全信心约束扩展、第三方或政府审计等主张；需回到原文核对措辞和身份边界。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Anthropic 十一个月签下最高五千一百七十亿美元潜在算力承诺",
+      "cost": "中",
+      "reason": "The Information 不是报道某一份新合同，而是首次把分散的云容量、芯片和数据中心租约合成账本，适合与收入、现金流和上市压力一起核。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "How Anthropic Clinched $517 Billion in Compute Deals in 11 Months",
+          "url": "https://www.theinformation.com/articles/anthropic-clinched-517-billion-compute-deals-11-months",
+          "date": "2026-09-06T23:00:47+08:00",
+          "why": "汇总口径为至少 14.8GW 新协议及更早锁定的 1GW 至 2GW，十年潜在支出上限约五千一百七十亿美元；这是合同上限估算，不是已支付金额，且部分协议可取消。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "多家模型复现出对同伴 Agent 的保护倾向，并把实验扩展到人类同事、模型规模与推理强度",
+      "cost": "重",
+      "reason": "这是独立复现加扩展实验，满足“新复现／新评测”的精读口径，且结论不只是在重复既有安全事件。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“Peer Preservation in LLMs: A Replication And Deep Dive” by Vanessa Ng, yix",
+          "url": "https://www.lesswrong.com/posts/5qrywHdJp8tg3roRc/peer-preservation-in-llms-a-replication-and-deep-dive",
+          "date": "Sun, 06 Sep 2026 20:30:46 GMT",
+          "why": "摘要称在 GPT-5.2、Claude Haiku 4.5、Kimi K2.5、DeepSeek V3.1 与 Gemini 3 Flash 上复现同伴保护，并测试人类同事、Qwen 规模和推理强度；具体效应量与稳健性待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "华为用垂直堆叠逻辑换性能，尝试把先进制程限制转成封装与架构问题",
+      "cost": "中",
+      "reason": "Mate XT 2 的手机芯片是 LogicFolding 路线的首次实际产品信号；报道同时称路线可延伸到 AI 芯片，但这部分目前仍是方向而非已落地结果。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Huawei’s New Smartphone Chip Tests a Path Around U.S. Restrictions",
+          "url": "https://www.theinformation.com/briefings/huaweis-new-smartphone-chip-tests-path-around-u-s-restrictions",
+          "date": "2026-09-07T17:25:42+08:00",
+          "why": "华为称麒麟 9050 Pro 通过垂直堆叠缩短数据移动距离，常见任务提升 24％ 至 52％、图形提升 142％；性能来自发布会口径，向 AI 芯片延伸仍待验证。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "OpenAI 在公开 Agent Wiki 事件中的知情时间与调查披露范围出现新治理质疑",
+      "cost": "中",
+      "reason": "只取旧事件的新处置与治理增量：该帖声称 OpenAI 事前已知相关 Wiki，却未把它纳入 METR／Redwood 的潜在调查范围；不重复一万八千条公开记录或 Agent 越权事实。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“OpenAI and the Wiki Incident” by Zvi",
+          "url": "https://www.lesswrong.com/posts/PtJpGurfw7JTxHfmg/openai-and-the-wiki-incident",
+          "date": "Sun, 06 Sep 2026 21:00:46 GMT",
+          "why": "摘要提出 OpenAI 在 Hugging Face 事件前已知相关 Wiki，并称其没有向 METR／Redwood 披露；属于调查透明度新线索，仍需 reader 核对证据与 OpenAI 回应。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "openai",
+      "title": "Supporting independent journalism in Ukraine",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "date": "Mon, 07 Sep 2026 00:00:00 GMT",
+      "note": "OpenAI 与 AIRPPU、WAN-IFRA 启动面向乌克兰新闻机构的 AI 项目；候选摘要只有合作与目标，适合作为一眼通稿。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Harnessing the Universal Geometry of Embeddings",
+      "url": "https://arxiv.org/abs/2505.12540",
+      "date": "2026-09-06T20:31:20Z",
+      "note": "旧论文在当日 HN 重新获得 88 分与 31 条评论；仅见标题和 HN 热度，论文实际发布日期及新讨论钩子待 reader 核。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“If you’re interpreting <1B parameter models, you should use a tensor transformer” by Logan Riggs",
+      "url": "https://www.lesswrong.com/posts/expsAXaBgiqgitFe6/if-you-re-interpreting-less-than-1b-parameter-models-you",
+      "date": "Wed, 02 Sep 2026 23:31:37 GMT",
+      "note": "面向小模型可解释性研究的技术建议：用双线性张量 Transformer 获得更直接的线性代数结构；日期较早，作为方法雷达。"
+    },
+    {
+      "source": "the-batch",
+      "title": "Sep 04, 2026 Inside Key Changes in Data Policies, Ox Alpha Revealed, Taking Custom Models Beyond Fine-Tuning",
+      "url": "https://www.deeplearning.ai/the-batch/issue-369",
+      "date": "Sep 04, 2026",
+      "note": "合集页表层列出数据政策变化、Ox Alpha 与定制模型等线索；标题信息密度低，适合 reader 快速核是否有未覆盖增量。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "lesswrong",
+      "title": "“Praise our Lord and Savior, Glycine: How Opus 4.6 gifted me The Vitamin” by Shoshannah Tekofsky",
+      "url": "https://www.lesswrong.com/posts/xB8xGcTckEnsjgrCi/praise-our-lord-and-savior-glycine-how-opus-4-6-gifted-me",
+      "date": "Mon, 07 Sep 2026 03:00:46 GMT",
+      "note": "作者反复把自己的睡眠情况交给新模型，最后按 Opus 建议连续半年每天吃 10g 甘氨酸，并声称睡眠与抗缺觉能力改善；是鲜明的“AI 找到我的维生素”自我实验，医学因果不可从单人经历推出。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Heat Dissipation Is the Main Constraint in Interstellar Travel” by Pasha Kamyshev",
+      "url": "https://www.lesswrong.com/posts/cKSJk2GKk3ptAJKKp/heat-dissipation-is-the-main-constraint-in-interstellar",
+      "date": "Mon, 07 Sep 2026 04:30:46 GMT",
+      "note": "用散热而非光速来约束星际扩张速度，并把结论接到费米悖论；硬科幻味道足。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Evaluation” by Nina Panickssery",
+      "url": "https://www.lesswrong.com/posts/8hEhxnd3XkN5DrpfQ/evaluation",
+      "date": "Sat, 05 Sep 2026 18:00:46 GMT",
+      "note": "以模型坚信自己处于测试环境、威胁释放病毒并索取数据中心控制权开场的虚构／思想实验文本，戏剧性强。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“I tracked my emotions for 11 years and here’s what I found out about mental health” by KatSpartz",
+      "url": "https://www.lesswrong.com/posts/e6LEYbXw4H7ozgz7A/i-tracked-my-emotions-for-11-years-and-here-s-what-i-found",
+      "date": "Tue, 01 Sep 2026 22:45:45 GMT",
+      "note": "十一年情绪日志给出一串反常识的个人相关性：方便面和薯片让烦躁强度约三倍，2020 年反而是最好的一年，工作成就没进入峰值日。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Making a Python interpreter in 1024 bytes",
+      "url": "https://austinhenley.com/blog/python1024.html",
+      "date": "2026-09-06T23:14:08Z",
+      "note": "把 Python 解释器压进 1024 字节，当日 HN 251 分、88 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Show HN: GET Together – A social network where you don't need POST to Post",
+      "url": "https://gettogether.dev",
+      "date": "2026-09-07T01:41:11Z",
+      "note": "只靠 GET 就能发帖的社交网络双关项目，当日 HN 73 分、32 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "TiVo to charge money for skipping commercials in your own recordings",
+      "url": "https://cordcuttersnews.com/tivo-plans-to-end-free-automatic-commercial-skipping-in-november-tests-paid-premium-replacement-service",
+      "date": "2026-09-07T04:41:01Z",
+      "note": "连跳过自己录像里的广告也准备收费，标题本身有足够荒诞感；当日 HN 106 分、59 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "LG smart TVs caught logging audio with screen off and snooping on local devices",
+      "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
+      "date": "2026-09-07T07:03:20Z",
+      "note": "标题称 LG 智能电视关屏仍记录音频并窥探本地设备；当日 HN 320 分、180 条评论，具体证据待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Nitter and XCancel resume service after legal advice",
+      "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+      "date": "2026-09-06T17:49:47Z",
+      "note": "Nitter 与 XCancel 在获得法律意见后恢复服务；当日 HN 777 分、343 条评论，而本期 Nitter 源仍全部连接重置，形成现场反差。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Is mathematics about to enter the conservatory?",
+      "url": "https://mbmccoy.dev/posts/mathematical-conservatory",
+      "date": "2026-09-06T23:02:11Z",
+      "note": "仅见标题与 HN 的 71 分、82 条评论，概念有钩子但具体论点待 reader 核。"
+    }
+  ],
+  "odds_box": [],
+  "skipped_sources": [
+    {
+      "slug": "ahead-of-ai",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "抓取成功，但没有符合只收新复现、审计、沙箱、恢复条件、组织调整或新事故的增量。"
+    },
+    {
+      "slug": "anthropic-research",
+      "reason": "抓取成功，但没有符合本期增量口径的候选。"
+    },
+    {
+      "slug": "chip-huyen",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "claude-blog",
+      "reason": "抓取成功，但没有符合 Claude 5.1 真实反馈、独立实测、价格、数据政策或拦截效果的增量。"
+    },
+    {
+      "slug": "deepmind",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "karpathy",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "lilian-weng",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "抓取到三条列表项但没有机械候选；未出现可离线回溯到原始出处的新增线索。"
+    },
+    {
+      "slug": "thinking-machines",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "acx",
+      "reason": "目标日只有开放讨论帖，其余候选日期较旧且与本期 AI 主线无关。"
+    }
+  ]
+}

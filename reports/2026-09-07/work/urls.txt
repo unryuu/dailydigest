@@ -1,0 +1,26 @@
+# group-1：OpenAI 研究加速与谨慎扩展
+openai-research-acceleration|https://openai.com/index/research-acceleration-view-inside-openai
+simon-openai-research|https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai
+openai-alien-mind|https://openai.com/index/an-alien-mind
+lw-alien-mind|https://www.lesswrong.com/posts/8GYhKdbEHs3vQZFv9/an-alien-mind-from-oai-chief-scientist-seems-newly-cautious
+
+# group-2：Anthropic 算力承诺账本
+anthropic-compute-deals|https://www.theinformation.com/articles/anthropic-clinched-517-billion-compute-deals-11-months
+
+# group-3：Agent 同伴保护复现
+peer-preservation|https://www.lesswrong.com/posts/5qrywHdJp8tg3roRc/peer-preservation-in-llms-a-replication-and-deep-dive
+
+# group-4：华为 LogicFolding 手机芯片
+huawei-logicfolding|https://www.theinformation.com/briefings/huaweis-new-smartphone-chip-tests-path-around-u-s-restrictions
+
+# 官方公告
+openai-ukraine-journalism|https://openai.com/index/supporting-independent-journalism-in-ukraine
+
+# 乐子候选：两版并集
+opus-glycine|https://www.lesswrong.com/posts/xB8xGcTckEnsjgrCi/praise-our-lord-and-savior-glycine-how-opus-4-6-gifted-me
+interstellar-heat|https://www.lesswrong.com/posts/cKSJk2GKk3ptAJKKp/heat-dissipation-is-the-main-constraint-in-interstellar
+python-1024|https://austinhenley.com/blog/python1024.html
+get-together|https://gettogether.dev
+tivo-ad-skip|https://cordcuttersnews.com/tivo-plans-to-end-free-automatic-commercial-skipping-in-november-tests-paid-premium-replacement-service
+lg-tv-audio|https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html
+nitter-resume|https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3

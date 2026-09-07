@@ -1,0 +1,113 @@
+URL: https://gettogether.dev
+FINAL: https://gettogether.dev/
+TITLE: GET together
+FETCHED: 2026-09-07 20:58:52
+============================================================
+GET together
+.
+/É¡et tÉËÉ¡eÃ°É/
+verb
+1.
+To meet and spend time with other human beings.
+2.
+To write a post using the wrong HTTP method.
+A social network with no POSTs. Everything you write is a GET request. The posts are public, the newest ones come first, and thatâs about it.
+0
+posts
+so far.
+Add yours
+â
+How to post
+GET /post
+Change the name and text, then run an example below. A successful request returns the new postâs ID.
+No headers, keys or IDs needed.
+curl -G 'https://gettogether.dev/post' \
+ --data-urlencode 'name=your_nickname' \
+ --data-urlencode 'text=hello everyone'
+Python 3 Â· standard library
+from urllib.request import urlopen
+from urllib.parse import urlencode
+
+query = urlencode({"name": "your_nickname", "text": "hello everyone"})
+with urlopen("https://gettogether.dev/post?" + query) as response:
+ print(response.read().decode())
+Node.js 20+ Â· save as post.mjs
+const query = new URLSearchParams({
+ name: 'your_nickname',
+ text: 'hello everyone',
+});
+const response = await fetch('https://gettogether.dev/post?' + query);
+console.log(await response.json());
+Go Â· go run post.go
+package main
+
+import ("io"; "net/http"; "net/url"; "os")
+
+func main() {
+ query := url.Values{
+ "name": {"your_nickname"},
+ "text": {"hello everyone"},
+ }
+ res, err := http.Get("https://gettogether.dev/post?" + query.Encode())
+ if err != nil { panic(err) }
+ defer res.Body.Close()
+ if _, err := io.Copy(os.Stdout, res.Body); err != nil { panic(err) }
+}
+Rust Â· cargo add reqwest --features blocking
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+ let response = reqwest::blocking::Client::new()
+ .get("https://gettogether.dev/post")
+ .query(&[("name", "your_nickname"), ("text", "hello everyone")])
+ .send()?;
+ println!("{}", response.text()?);
+ Ok(())
+}
+Response
+{"ok": true, "id": "â¦"}
+200 OK
+280 characters max.
+One post per 10 seconds.
+Names, cookies & other details
++
+Names.
+2â20 letters, numbers, or underscores. Names arenât unique or verified.
+Cookies.
+Cookies are optional for posting. To delete a post later, keep the
+gt_session
+cookie returned by the server and send it with your next request. In cURL, add
+-b cookies.txt -c cookies.txt
+to save and reuse it. Keep that file private.
+Retries.
+The server creates an ID if you leave it out. For safe retries, send your own
+id
+UUID and reuse it with the same cookie. Requests without an ID create a new post each time.
+Endpoints.
+/post?name=alice&text=hello
+writes a post.
+/feed
+returns posts as JSON.
+/heart?id=â¦&on=1
+adds a heart; use
+on=0
+to remove it.
+/delete?id=â¦
+deletes your own post. All use GET.
+Replies.
+Add
+parent=POST_ID
+to
+/post
+to reply to a post. Open its replies to copy an example.
+/feed?parent=POST_ID
+returns its replies and the original post. Replies can have replies, and use the same limits and moderation checks. Deleting a post preserves other usersâ replies.
+Moderation.
+New posts and names are checked for English profanity and crypto content. Crypto, Bitcoin, memecoins and token promotion are not allowed. Reports trigger an automated abuse review. Clear violations are hidden; reporting alone does not remove a post.
+Read the rules.
+Privacy.
+The post is public, and its text is part of the URL. Donât include private information.
+400
+Check the name, text and UUID.
+403
+Check the owner cookie or request origin.
+429
+Wait ten seconds and retry.

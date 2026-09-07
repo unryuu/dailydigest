@@ -1,0 +1,103 @@
+URL: https://www.lesswrong.com/posts/8GYhKdbEHs3vQZFv9/an-alien-mind-from-oai-chief-scientist-seems-newly-cautious
+FINAL: https://www.lesswrong.com/posts/8GYhKdbEHs3vQZFv9/an-alien-mind-from-oai-chief-scientist-seems-newly-cautious
+TITLE: "An Alien Mind" from OAI chief scientist seems newly cautious on alignment — LessWrong
+FETCHED: 2026-09-07 20:58:30
+============================================================
+x
+"An Alien Mind" from OAI chief scientist seems newly cautious on alignment — LessWrong
+AI
+Personal Blog
+56
+"An Alien Mind" from OAI chief scientist seems newly cautious on
+alignment
+by
+Seth Herd
+7th Sep 2026
+3
+min read
+3
+56
+This is a linkpost for
+https://openai.com/index/an-alien-mind/
+I just came across this and thought it was worth sharing. It was retweeted by sama as "an important essay" or words to that effect. It's by Jakub Pachocki, OpenAI's chief scientist, published today/yesterday, Sept. 6th.
+It's not an announcement of OpenAI's official stance, but it seems close, with Sam's endorsement. And it seems like a pretty different tune than they've been singing up to now. A few of my favorite lines:
+This is a time that calls for extreme caution. I am concerned no one is prepared for the consequences of a continued rapid rise in machine intelligence.
+I admit that I don't believe anything Sam says but otherwise tend to believe people when they tell me what they think. Particularly when saying it doesn't really help their interests.
+There's a call for outside monitoring of safety measures:
+Scaling AI systems has to be constrained by our confidence in safety. We need to evolve commitments like the
+Preparedness Framework⁠
+or
+Responsible Scaling Policy⁠
+into widely mandated safety bars for continued development. These can be enforced by a network of third-party auditors, by government agencies or by international bodies.
+I think we should ideally get a whole lot more safety assurance than that, but calling for outside regulation is new AFAIK, and a move in the right direction.
+One might argue this is the OAI gang blowing smoke again to throw everyone off the trail, but at some point they'll sound like the people who are convinced that Anthropic has been talking about the danger of superintelligence to hype themselves as an investment. Lying about this doesn't really help Pachocki or, I think, OpenAI's commercial goals.
+There's enough nuance and other interesting statements here that I recommend giving it a read if you've got a few minutes. My read of the core message is "we are not necessarily on track to solve alignment (or power concentration risks) so we should slow down." For instance:
+Still, it is important to acknowledge and understand that much more progress is required as models become more capable; and that progress in generalizable alignment may not sufficiently outstrip progress in general model intelligence.
+I enjoyed him differentiating value alignment from "goal alignment", what I'd call
+instruction-following
+or roughly
+corrigibility
+as primary alignment targets, saying his vision of success is value alignment, and then talking about the challenges of getting it to generalize. If you didn't see the source, you'd think that section was written by a LWer.
+I'm not saying OAI is alignment pilled, and certainly not to an adequate degree to make them slow down enough for success. But I am saying Jakub seems concerned for pretty much the right reasons. And sama let him publish it and retweeted it, at least. Which could be a clever sama misdirect; it does seem like his MO. But this sentiment does seem to exist at the second-highest ranks of OAI, at least.
+The conclusion of the piece:
+As great as the long-term promise of AI may be, the majority of our focus should be on the next few years. We are facing a transition to a world with incredibly intelligent machines, and we need to ensure that transition works out well for humanity. We need to find ways to preserve human agency and enshrine an intrinsic value to being human, in a world where most tasks could be performed by AI. To prevent extreme concentration of power in a world where undertakings that would have taken thousands of experts now will be achievable by a few people operating a large computer. And to ensure that humans remain in control of the future and are not left behind by unchecked progress, brought about by an alien intellect exceeding our own.
+Currently I believe that no lab has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer. I expect and hope for voluntary slowdowns to become commonplace until shared safety bars are established. And I believe that international coordination on future AI development needs to become a top priority for governments around the world.
+I hope this is part of a new wave of people speaking more frankly in public about their fears, as the Overton window shifts enough to make that less costly.
+I'm an optimist, but I think it's just realistic to expect the public discussion to shift as shit continues to get more obviously real.
+And: minds do change.
+"An Alien Mind" from OAI chief scientist seems newly cautious on alignment
+15
+cousin_it
+5
+Yoav Hollander
+2
+AnthonyC
+3
+Comments
+3
+AI
+Personal Blog
+56
+New Comment
+3 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 12:58 PM
+[
+-
+]
+cousin_it
+4h
+15
+7
+The post says they're proceeding with RSI and not taking any risk-mitigating measures that we can verify. The rest is smoke. Also it's not a "change of minds": the same vague safety rhetoric plus full-on racing behavior has been OpenAI's pattern for many years now.
+Reply
+[
+-
+]
+Yoav Hollander
+5h
+5
+0
+I also found this encouraging (especially his emphasis on empirically testing whether alignment generalizes and survives further capabilities training). Coming from complex-system verification, I think coverage-driven methods could help improve (and evaluate) generalization: Use an explicit, evolving map of situations and risks to guide evaluation and alignment training, and refine the map upon failures and newly-discovered risks. I explored this in an
+earlier post on coverage-driven alignment
+, building on “Teaching Claude Why.” I’d be interested to know how closely it resembles labs’ internal practices, and what people think of this direction in general.
+Reply
+[
+-
+]
+AnthonyC
+2m
+2
+0
+I hope so as well.
+The fact that this post is happening at all is very good. The fact that it's happening
+after
+they've known about their major misaligned agent swarm problems for months, and kept them secret until they couldn't, and responded minimally until forced, is not. This is still not (yet?)what anything like an actually adequate re-think of approach looks like.
+Reply
+Moderation Log
+More from
+Seth Herd
+View more
+Curated and popular this week

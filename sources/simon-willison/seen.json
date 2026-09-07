@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai",
+  "title": "Simon Willison 的解读",
+  "date": "2026-09-06T23:57:40+00:00",
+  "reported": true,
+  "report_date": "2026-09-07"
+ },
+ {
   "id": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams",
   "title": "Simon Willison 毒舌：DNS 就是散播诈骗的",
   "date": "2026-09-06",

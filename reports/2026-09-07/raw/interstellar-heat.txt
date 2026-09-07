@@ -1,0 +1,207 @@
+URL: https://www.lesswrong.com/posts/cKSJk2GKk3ptAJKKp/heat-dissipation-is-the-main-constraint-in-interstellar
+FINAL: https://www.lesswrong.com/posts/cKSJk2GKk3ptAJKKp/heat-dissipation-is-the-main-constraint-in-interstellar
+TITLE: Heat Dissipation Is the Main Constraint in Interstellar Travel — LessWrong
+FETCHED: 2026-09-07 20:58:47
+============================================================
+x
+Heat Dissipation Is the Main Constraint in Interstellar Travel — LessWrong
+World Modeling
+Frontpage
+48
+Heat Dissipation Is the Main Constraint in Interstellar
+Travel
+by
+Pasha Kamyshev
+6th Sep 2026
+8
+min read
+7
+48
+Writing truly hard science fiction, such as
+Will of the Stars
+means contending with the laws of physics as they actually are, rather than as we would like them to be.
+In particular, I am going to assume that the speed of light is a real constraint and that the various tropes about FTL (wormholes, warp drives, and so on) are not feasible. Given this assumption, some futurists have modeled the speed of interstellar expansion as approaching the speed of light. The idea is that sufficiently advanced technology, intelligence, and engineering could eventually allow humanity, or another species, to colonize worlds almost as quickly as light can travel between them.
+However, if we look at the laws of physics as well as the economic and physical incentives that govern expansion across the stars, there are many constraints on interstellar travel that appear long before we reach the speed of light.
+Why is this important? Correctly estimating the speed at which a high-tech civilization can spread across the stars changes our perspective on the Fermi paradox. If we don’t see other civilizations because they are confined to individual star systems, or because they expand at only a small fraction of the speed of light, then interstellar expansion itself may be a very difficult but ultimately conquerable “Late Filter.” It also changes how we should search for alien civilizations and what kinds of technological signatures we should expect them to produce.
+Understanding the physical constraints on interstellar travel, colonization, and expansion also changes our perspective on what our own civilization could look like in an optimistic future. Given how much visions of the future inform the present, it is worth making those visions more physically precise.
+There are three broad ways of accelerating a spacecraft through interstellar space: pushing off against an external megastructure, using light or beams of particles from a large source, and carrying reaction mass in a rocket. It is worth distinguishing between two types of interstellar travel: travel between two already established star systems, and travel from an established system to a completely new one. In both cases, a spacecraft needs to accelerate to its cruising velocity and then decelerate at the destination. But unless the destination already has infrastructure capable of braking the spacecraft, such as a laser sail or a magnetic megastructure, the final deceleration has to be performed by the spacecraft itself. This makes the use of rockets inevitable for the sake of expansion from one previously settled system into a new one.
+Relativistic Rockets
+At relativistic velocities of either the rocket or the exhaust velocities, we need to use the relativistic rocket equation.
+For a rocket with initial rest mass m_0, final rest mass m_1, and exhaust velocity v_e, it is:
+For example, suppose a rocket has an exhaust velocity of 0.86c and a mass ratio of 2.5, meaning 60% of the rocket is going to be used for reaction mass and energy. Then:
+The cruise velocity would be about half of this number, which seems reasonably fast. But getting an exhaust velocity of 0.86c is a massive engineering problem.
+Energy density
+The energy required to accelerate a particle of rest mass m to velocity v is
+where
+At 0.86c, gamma is about 1.96 and kinetic energy is approximately 0.96mc^2
+In other words, accelerating 1 kg of reaction mass to 0.86c requires kinetic energy roughly equivalent to the rest-mass energy of another kilogram.
+It is extremely hard to store this much energy.
+For comparison, the energy released by nuclear fission corresponds to roughly 0.1% of the original nuclear mass, while typical fusion reactions release an order of 0.1%–1% mass as energy, depending on whether we are counting fission igniters and other parts of the bomb. For matter-antimatter annihilation, the entire rest mass of the matter and antimatter can be converted into energy, meaning it is capable of required energy densities.
+To get a sense of scale, take a look at the
+Tzar Bomba explosion
+. It had a yield of approximately 50 megatons of TNT, which corresponds to roughly 2.1*10^17 J of energy, which is about 2.3 kg of mass converted into energy, equivalent to the annihilation of 1.15 kg of antimatter with 1.15 kg of ordinary matter under the ideal conditions.
+An aircraft-carrier-sized 100,000-ton interstellar spacecraft, with 60% of its mass as matter / anti-matter fuel (30 000 tons of anti-matter and the corresponding 30 000 tons of matter) has about 25 million times the energy of the Tzar Bomba.
+So, while energy density is “in theory” a solvable problem, it is worth understanding the scales of energy involved before the reach the real constraint: heat dissipation.
+Heat
+Even with an arbitrarily good energy source, a rocket cannot turn all of its stored energy into useful directed propulsion. Some energy will inevitably end up inside the ship as excess heat.
+How much excess heat does the spaceship produce? It fundamentally depends on the design, however transferring energy from stored fuel into electricity and into propulsion or just directly into propulsion is a process that necessarily not 100% efficient. We can’t make it 100% efficient, without violating the second law of thermodynamics. And while this law does feel much more “possibly violatable” compared to most other laws of physics, I am just going to estimate that the max efficiency we can get is ~90%. To see why this is a *very* generous assumption. It’s worth keeping in mind that existing nuclear reactors max out at around 50% efficiency, particle accelerators lose 99% of energy to heat (or more), meaning they are 1% efficient or less. Chemical rocket engines tend to either recycle heat well or lose the heat as part of the exhaust, rather than towards the ship, which can make them rather efficient, but this efficiency quickly disappears once the amount of heat that can be recycled is higher than is need to sustain reactions or higher than can be spent in temperature of the exhaust.
+The 90% refers to the efficiency of the WHOLE system, not just efficiency of individual components.
+Suppose a propulsion system has efficiency n. The fraction of its input energy that ends up as waste heat inside the spacecraft is H=1−n
+To see the scale of the problem, consider a spacecraft of mass M accelerating at acceleration a, using exhaust velocity v_e with propulsion efficiency n and H=1-n ends up as waste heat.
+For a relativistic exhaust, the required mass flow (f) is
+The kinetic energy carried away by that exhaust per second is
+Substituting the mass flow and simplifying
+If only a fraction 1 - H of the propulsion system’s input energy becomes useful exhaust kinetic energy, the required input power is
+The waste heat is therefore
+This equation, being roughly linear in v_e captures one of the central problems with extremely high exhaust velocities: Increasing exhaust velocity saves reaction mass, but it requires enormous power for a given thrust.
+Take the following example again:
+spacecraft mass: M=1 kg
+acceleration: a=10 m/s^2, approximately 1 g
+exhaust velocity: v_e=0.86c
+heat loss: H = 0.1
+The resulting waste heat P_heat is around 200 MegaWatts per kilogram, which is enough energy to supply electricity to small city. And this is the heat we need to move *away* from the ship, not even the total propulsion power.
+Getting rid of the heat
+A spacecraft can ultimately dispose of its internally generated heat only by emitting electromagnetic radiation.
+Current ISS radiators emit
+around 14kW per 740kg or around 19 W/kg
+The theoretical limits can be estimated using the Stefan-Boltzmann law:
+where
+P is radiated power, epsilon is the emissivity of the radiator,
+σ=5.67×10^8 A is radiator area, T is radiator temperature in kelvin.
+So, for a perfect blackbody, 1m^2 operating at 1000K (this is 730C or 1340 F), the total emissions are around 57kW. Note the kilowatts given out by the ideal radiators is already more than 1000 times better than the watts of current radiators, but is still not the megawatts that we need to emit __per kilogram__ of spacecraft mass in an interstellar journey. We are missing at least 3.5 orders of magnitude.
+The megawatts we need to emit are not even per *radiator mass*. The kilogram of spacecraft mass has to include everything on board, such as fuel, useful payload AND radiators. In other words, the radiator budget has to come out of the % of useful payload. For example, if the radiators take up 10% of the mass of the ship, and fuel is 60%, the useful payload is now reduced from 40% to 30%. So, there is likely another order of magnitude missing.
+There is also an very interesting engineering question in that the amount of power we need to emit is given in watts per kilogram and the amount of power we can emit is given in watts per square meter. How many square meters can we squeeze out of a kilogram?
+One NASA study
+considered a high-temperature radiator operating at 800 K and estimated roughly 4 kg of radiator mass per square meter for a particular design. As of now, we can’t even get 1 square meter out of a kilogram, and we are losing another 0.5 orders of magnitude (for a total of 3.5+1+0.5 = 5). So the factors of how much energy we need to dissipate and how much energy we can dissipate don’t match up by a factor of around 100 000.
+Of course, the obvious solution is to run the radiators hotter. If the radiators can run at 5000K (close to the temperature at the surface of the sun), we can make up a factor of 625 and our radiators then need to “only” get 160 square meters of surface area out of a radiator kilogram using materials that don’t degrade being a blackbody over a few months when exposed to 5000K temperature, the vacuum of space, a slow but steady stream of high energy particles and gamma rays and, lastly 1 G of acceleration. Last one doesn’t sound bad until you realize how much mass has to structurally fit on extremely thin supports. Best known blackbody is graphite and it degrades at around 4000K. So, even with extremely generous assumptions we can’t create such a heat dissipation system, not to mention the radiators don’t reach ideal blackbody numbers anyway.
+A more plausible example
+Consider a much less extreme hypothetical propulsion system:
+overall efficiency: 90%
+exhaust velocity: 0.17c
+acceleration: 0.001g
+reaction mass: 10% of the spacecraft mass
+radiators: 25% of the spacecraft mass
+the amount of heat one needs to dissipate is 28.5 kw / kg of spaceship mass, or 104 kw / kg of radiator mass, which is within the theoretical limits for 1000K blackbody with 1 kg per 2 square meters.
+The exhaust velocity is still enormously beyond anything we can currently produce as a conventional rocket and the efficiency is far beyond any efficiencies of known tech.
+One very sci-fi approach to such a drive (which I might as well label the “Pasha drive”) would be using a cold fusion reaction, but somehow “aligning” all atoms in the fuel before hand so that the neutron stream shoots in a predictable direction instead of all over the place. Whether or not this is even physically possible depends on whether certain theories of
+“material atoms”
+are correct and we can use the underlying structure of the atom to reduce fusion entropy and thus out-engineer the currently uncertain mathematical models of quantum mechanics.
+So, even this type of design (which still might not be possible) is likely indicative a civilization that is FAR, FAR better at fundamental physics than us, but is not at the “very top” of the tech tree.
+How much delta-v does this have? Around 0.018c, enough for a cruising speed of around 0.9% c.
+If we are going to a star system 5 light years away, we would take around 550 years to get there based on cruising speed + around 9 years to account for speedups and slowdowns.
+Interstellar expansion is might be much slower than you would expect if you only considered general relativity as a constraint, such as in
+the grabby aliens model.
+While new engineering techniques could potentially over-ride some of these concerns, we could also find further fundamental limitations that make the bounds even more strict.
+Heat Dissipation Is the Main Constraint in Interstellar Travel
+9
+Daniel Kokotajlo
+1
+marquis_de_sod
+1
+eniteris
+0
+RussellThor
+4
+marquis_de_sod
+4
+emanuelr
+2
+momom2
+2
+[comment deleted]
+7
+Comments
+7
+World Modeling
+Frontpage
+48
+More from
+Pasha Kamyshev
+View more
+Curated and popular this week
+New Comment
+7 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 12:58 PM
+[
+-
+]
+Daniel Kokotajlo
+8h
+9
+2
+How efficient are solar sails / mirrors? I'm imagining a spacecraft that doesn't have propulsion of its own, just loads of thin sails. Back home, a giant array of lasers shoots light at it, to push it forward. When it needs to decelerate, it breaks into two pieces, the bigger piece continuing to accelerate forward while the smaller piece is decelerated by light reflected from the bigger piece.
+Reply
+[
+-
+]
+marquis_de_sod
+7h
+1
+0
+No mirror is 100% reflective, some light is always absorbed.
+Reply
+[
+-
+]
+eniteris
+1h
+1
+0
+Yes, but the nice thing about mirrors is that the bigger the surface area for reflection, the bigger the surface area for radiation.
+and also bigger surface area for hitting something while travelling at close to the speed of light, so there's other issues there. magnetic shields? furl the sails when coasting?
+Reply
+[
+-
+]
+RussellThor
+6h
+0
+0
+Yes this has been suggested before
+Reply
+[
+-
+]
+marquis_de_sod
+7h
+4
+2
+Doesn't this assume constant, unrelenting acceleration? If the radiators can only dump 1/n the heat of the propulsion system, wouldn't it be possible to burn for one second and coast for n-1 seconds to bleed off the rest, repeating ad infinitum? The only constraint to max speed in both situations is drag from the interstellar medium, and with the higher effective constant acceleration you still run into that issue, albeit at a higher top speed.
+Reply
+[
+-
+]
+emanuelr
+11h
+4
+0
+I have thought about the same thing, mostly "vibe-engineering" with Claude, there are things such as aneutronic fusion by inertial confinement, such as heavy ion beans, and directing fusion products (which carry most of the energy) by using magnetic fields, but then the recurring problem are the prompt gamma rays, which penetrate deep, so ablative shielding doesn't work. The fission version of that (using the products as exhaust) is the fission fragment rocket, but is probably worse. The ultimate problem seemed to be not the heating from the engine, but the ablation by interstellar dust, One way I thought to solve the problem is by using lasers to vaporize/ionize the dust, capture it with a magnetic field, as in a Bussard ramjet or a mass spectrometer, and then use the material to continuously reconstruct your shield.
+Reply
+[
+-
+]
+momom2
+4h
+2
+1
+If we don’t see other civilizations because [...] they expand at only a small fraction of the speed of light
+That seems backward to me. If a civilization expands at a small fraction of the speed of light, they should both reach a large fraction of space and reach us much later than their light reaches us, making them maximally visible.
+On the contrary, one of the main advantages of the Grabby Aliens model is that it explains why we don't see alien civilizations: by expanding at an appreciable fraction of the speed of light, the time between the moment they become a galactic expanding civilization and the moment they reach us is relatively small, giving low prior probability of us noticing them the moment we turn our eyes to the sky (thus explaining away the Fermi question).
+Reply
+[
++
+]
+[comment deleted]
+2h
+2
+0
+Moderation Log
+Deleted by
+cousin_it
+,
+Today at 11:04 AM
+Reason:
+Comment deleted by its author.

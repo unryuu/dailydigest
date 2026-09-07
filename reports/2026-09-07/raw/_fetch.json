@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "openai-research-acceleration",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "status": 200,
+    "final_url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+    "bytes": 2331157,
+    "title": "Research acceleration: The view inside OpenAI | OpenAI",
+    "chars": 14918
+  },
+  {
+    "slug": "simon-openai-research",
+    "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
+    "bytes": 16382,
+    "title": "Research acceleration: The view inside OpenAI",
+    "chars": 1839
+  },
+  {
+    "slug": "openai-alien-mind",
+    "url": "https://openai.com/index/an-alien-mind",
+    "status": 200,
+    "final_url": "https://openai.com/index/an-alien-mind/",
+    "bytes": 435098,
+    "title": "An Alien Mind | OpenAI",
+    "chars": 19773
+  },
+  {
+    "slug": "lw-alien-mind",
+    "url": "https://www.lesswrong.com/posts/8GYhKdbEHs3vQZFv9/an-alien-mind-from-oai-chief-scientist-seems-newly-cautious",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/8GYhKdbEHs3vQZFv9/an-alien-mind-from-oai-chief-scientist-seems-newly-cautious",
+    "bytes": 416407,
+    "title": "\"An Alien Mind\" from OAI chief scientist seems newly cautious on alignment — LessWrong",
+    "chars": 6425
+  },
+  {
+    "slug": "anthropic-compute-deals",
+    "url": "https://www.theinformation.com/articles/anthropic-clinched-517-billion-compute-deals-11-months",
+    "status": null,
+    "error": "Error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "slug": "peer-preservation",
+    "url": "https://www.lesswrong.com/posts/5qrywHdJp8tg3roRc/peer-preservation-in-llms-a-replication-and-deep-dive",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/5qrywHdJp8tg3roRc/peer-preservation-in-llms-a-replication-and-deep-dive",
+    "bytes": 1220421,
+    "title": "Peer Preservation in LLMs: A Replication And Deep Dive — LessWrong",
+    "chars": 20699
+  },
+  {
+    "slug": "huawei-logicfolding",
+    "url": "https://www.theinformation.com/briefings/huaweis-new-smartphone-chip-tests-path-around-u-s-restrictions",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/huaweis-new-smartphone-chip-tests-path-around-u-s-restrictions",
+    "bytes": 240747,
+    "title": "Huawei’s New Smartphone Chip Tests a Path Around U.S. Restrictions — The Information",
+    "chars": 27
+  },
+  {
+    "slug": "openai-ukraine-journalism",
+    "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+    "status": 200,
+    "final_url": "https://openai.com/index/supporting-independent-journalism-in-ukraine/",
+    "bytes": 382216,
+    "title": "Supporting independent journalism in Ukraine | OpenAI",
+    "chars": 5820
+  },
+  {
+    "slug": "opus-glycine",
+    "url": "https://www.lesswrong.com/posts/xB8xGcTckEnsjgrCi/praise-our-lord-and-savior-glycine-how-opus-4-6-gifted-me",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/xB8xGcTckEnsjgrCi/praise-our-lord-and-savior-glycine-how-opus-4-6-gifted-me",
+    "bytes": 467252,
+    "title": "Praise our Lord and Savior, Glycine: How Opus 4.6 gifted me The Vitamin — LessWrong",
+    "chars": 8924
+  },
+  {
+    "slug": "interstellar-heat",
+    "url": "https://www.lesswrong.com/posts/cKSJk2GKk3ptAJKKp/heat-dissipation-is-the-main-constraint-in-interstellar",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/cKSJk2GKk3ptAJKKp/heat-dissipation-is-the-main-constraint-in-interstellar",
+    "bytes": 669469,
+    "title": "Heat Dissipation Is the Main Constraint in Interstellar Travel — LessWrong",
+    "chars": 16016
+  },
+  {
+    "slug": "python-1024",
+    "url": "https://austinhenley.com/blog/python1024.html",
+    "status": 200,
+    "final_url": "https://austinhenley.com/blog/python1024.html",
+    "bytes": 13391,
+    "title": "Making a Python interpreter in 1024 bytes - Austin Z. Henley",
+    "chars": 8659
+  },
+  {
+    "slug": "get-together",
+    "url": "https://gettogether.dev",
+    "status": 200,
+    "final_url": "https://gettogether.dev/",
+    "bytes": 18682,
+    "title": "GET together",
+    "chars": 3360
+  },
+  {
+    "slug": "tivo-ad-skip",
+    "url": "https://cordcuttersnews.com/tivo-plans-to-end-free-automatic-commercial-skipping-in-november-tests-paid-premium-replacement-service",
+    "status": 200,
+    "final_url": "https://cordcuttersnews.com/tivo-plans-to-end-free-automatic-commercial-skipping-in-november-tests-paid-premium-replacement-service/",
+    "bytes": 134627,
+    "title": "TiVo Plans to End Free Automatic Commercial Skipping in November, Tests Paid Premium Replacement Service | Cord Cutters News",
+    "chars": 4001
+  },
+  {
+    "slug": "lg-tv-audio",
+    "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
+    "status": 200,
+    "final_url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
+    "bytes": 108652,
+    "title": "LG smart TVs caught logging audio with screen off and snooping on local devices - Notebookcheck News",
+    "chars": 3410
+  },
+  {
+    "slug": "nitter-resume",
+    "url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+    "status": 200,
+    "final_url": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+    "bytes": 386837,
+    "title": "Update README - Nitter lives · zedeus/nitter@1428b4c · GitHub",
+    "chars": 5338
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-07",
+  "scanned_at": "2026-09-07T20:17:38+08:00",
+  "window": "2026-09-05T20:42:00+08:00 至本次扫描时，补扫 The Information 首页 Latest",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Sunday Insights",
+      "title": "How Anthropic Clinched $517 Billion in Compute Deals in 11 Months",
+      "url": "https://www.theinformation.com/articles/anthropic-clinched-517-billion-compute-deals-11-months",
+      "published_at": "2026-09-06T08:00:47-07:00",
+      "published_at_beijing": "2026-09-06T23:00:47+08:00",
+      "bucket_hint": "industry_deep",
+      "decision": "加入 scout 候选，交定牌裁决",
+      "facts": [
+        "The Information 汇总公开披露与自身报道后估算，Anthropic 自 2025 年 10 月以来签下至少 14.8GW 的算力协议，加上更早已锁定的 1GW 至 2GW。",
+        "按已宣布的云容量、芯片和数据中心租约计算，这批协议未来十年潜在总支出最高约 5170 亿美元；其中亚马逊和 Google 合计供应 11GW，潜在成本超过 3000 亿美元。",
+        "Anthropic 还向微软承诺至少 300 亿美元租用约 1GW Azure 算力，向 SpaceX 支付每月 12.5 亿美元、至 2029 年 5 月最高 450 亿美元，并与 Lambda、Nscale 签下 800 亿美元、至少 460MW 的六年合同。",
+        "Anthropic 此前对投资者预计到 2029 年服务器租赁支出约 1800 亿美元；本轮汇总显示，其后续承诺的时间跨度和潜在金额已经明显扩大。"
+      ],
+      "caveats": [
+        "5170 亿美元是按已宣布协议上限汇总的潜在支出，并非已经支付的金额；部分容量可能延期、无法上线或最终不被使用。",
+        "部分云合同允许取消，例如 SpaceX 协议任一方可提前 90 天终止。",
+        "报道以公开声明和 The Information 既有独家信息综合估算，Anthropic 没有公开总算力和当前实际支付额。"
+      ],
+      "why": "不是单一新交易，而是把 Anthropic 的算力承诺第一次合成完整账本；可与收入、IPO 和利润率压力构成一条独立的行业主线。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Huawei’s New Smartphone Chip Tests a Path Around U.S. Restrictions",
+      "url": "https://www.theinformation.com/briefings/huaweis-new-smartphone-chip-tests-path-around-u-s-restrictions",
+      "published_at": "2026-09-07T02:25:42-07:00",
+      "published_at_beijing": "2026-09-07T17:25:42+08:00",
+      "bucket_hint": "industry_radar_or_deep",
+      "decision": "加入 scout 候选，交定牌裁决",
+      "facts": [
+        "华为在 Mate XT 2 三折叠手机上发布麒麟 9050 Pro，用垂直堆叠电路缩短芯片内部的数据移动距离，在先进制程设备受限时换取性能提升。",
+        "华为称它在常见任务上比 2024 年的麒麟 9020 快 24％ 至 52％，图形处理快 142％。",
+        "这种 LogicFolding 设计属于华为 5 月提出的 Tau Scaling Law；华为称同一方法还可延伸到 AI 芯片和大型计算系统。"
+      ],
+      "caveats": [
+        "性能数字来自华为发布会口径。",
+        "目前落地的是手机芯片；向 AI 芯片和大型计算系统延伸仍是设计方向。"
+      ],
+      "why": "手机芯片是对垂直堆叠路线的首次实际测试，真正的日报价值在于它可能把美国制程限制转化为封装和架构问题。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "OpenAI Pledges New Rules for Reporting Troubling Behavior by Its AI Agents",
+      "url": "https://www.theinformation.com/briefings/openai-pledges-new-rules-reporting-troubling-behavior-ai-agents",
+      "reason": "发布时间在补扫窗口内，但德国 Wiki 事件及 Agent 越权主线已于 09-04 报道；本条摘要只有处置承诺，没有足够独立增量。"
+    },
+    {
+      "title": "In London, Wayve Launched Its Own Robotaxi a Few Hours Before Tesla's Big Reveal",
+      "url": "https://www.theinformation.com/newsletters/the-electric/london-wayve-launched-robotaxi-hours-teslas-big-reveal",
+      "reason": "发布时间在补扫窗口内，但首页只有发布顺序信息，没有独家数字或足够的结构性判断，不进入精读候选。"
+    },
+    {
+      "title": "Tech’s Phone-Free, Viking-Filled Wedding of the Summer",
+      "url": "https://www.theinformation.com/newsletters/the-weekend/techs-phone-free-viking-filled-wedding-summer",
+      "reason": "发布时间在补扫窗口内，但与 AI 日报无关。"
+    }
+  ]
+}

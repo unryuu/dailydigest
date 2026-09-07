@@ -1,5 +1,54 @@
 [
  {
+  "id": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
+  "title": "Nitter 获得法律建议后继续维护",
+  "date": "2026-09-06T17:49:47Z",
+  "reported": true,
+  "report_date": "2026-09-07"
+ },
+ {
+  "id": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
+  "title": "测试中的 LG 电视待机时仍会录音",
+  "date": "2026-09-07T07:03:20Z",
+  "reported": true,
+  "report_date": "2026-09-07"
+ },
+ {
+  "id": "https://cordcuttersnews.com/tivo-plans-to-end-free-automatic-commercial-skipping-in-november-tests-paid-premium-replacement-service/",
+  "title": "TiVo 把自动跳广告改成付费功能",
+  "date": "2026-09-07T04:41:01Z",
+  "reported": true,
+  "report_date": "2026-09-07"
+ },
+ {
+  "id": "https://gettogether.dev/",
+  "title": "只接受 GET 的社交网络",
+  "date": "2026-09-07T01:41:11Z",
+  "reported": true,
+  "report_date": "2026-09-07"
+ },
+ {
+  "id": "https://austinhenley.com/blog/python1024.html",
+  "title": "Python 解释器被塞进 1024 字节 C 代码",
+  "date": "2026-09-06T23:14:08Z",
+  "reported": true,
+  "report_date": "2026-09-07"
+ },
+ {
+  "id": "https://openai.com/index/an-alien-mind",
+  "title": "An Alien Mind",
+  "date": "2026-09-06T16:27:05Z",
+  "reported": true,
+  "report_date": "2026-09-07"
+ },
+ {
+  "id": "https://openai.com/index/research-acceleration-view-inside-openai",
+  "title": "OpenAI 加速研究，也开始谈刹车",
+  "date": "2026-09-06T15:08:44Z",
+  "reported": true,
+  "report_date": "2026-09-07"
+ },
+ {
   "id": "https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight",
   "title": "欧洲首个私人航天公司入轨",
   "date": "2026-09-06",

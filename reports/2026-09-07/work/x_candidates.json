@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-07",
+  "scanned_at": "2026-09-07T20:17:38+08:00",
+  "window": "2026-09-05T20:42:00+08:00 至本次扫描时",
+  "route": "机械 Nitter 抓取后，Codex 内置浏览器登录态重试 X",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "fetch_failure",
+      "result": "Nitter 连接重置；x.com 页面提示站点脚本错误，重试后仍失败。"
+    },
+    {
+      "handle": "goodside",
+      "status": "fetch_failure",
+      "result": "Nitter 连接重置；登录态 X 的首个账号已确认站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "handle": "karpathy",
+      "status": "fetch_failure",
+      "result": "Nitter 连接重置；登录态 X 的首个账号已确认站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "fetch_failure",
+      "result": "Nitter 连接重置；登录态 X 的首个账号已确认站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "handle": "tszzl",
+      "status": "fetch_failure",
+      "result": "Nitter 连接重置；登录态 X 的首个账号已确认站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "handle": "sama",
+      "status": "fetch_failure",
+      "result": "Nitter 连接重置；登录态 X 的首个账号已确认站点脚本错误，未继续无效逐账号重试。"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "fetch_failure",
+      "result": "Nitter 连接重置；登录态 X 的首个账号已确认站点脚本错误，未继续无效逐账号重试。"
+    }
+  ],
+  "items": [],
+  "excluded": [],
+  "failure_note": "七个 X 机械源均返回 ERR_CONNECTION_RESET。登录态 x.com/emollick 首次加载超时，页面显示 Something went wrong 与 failedScript=api；点击 Try again 后结果不变。本期无法完成登录态 X 补扫，未用搜索结果或猜测补写候选。"
+}
