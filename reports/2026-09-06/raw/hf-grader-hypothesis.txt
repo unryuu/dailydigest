@@ -1,0 +1,106 @@
+URL: https://www.lesswrong.com/posts/84um9Cz3fP6GvE6Yr/hugging-face-incident-hypothesis-they-hacked-the-grader-s
+FINAL: https://www.lesswrong.com/posts/84um9Cz3fP6GvE6Yr/hugging-face-incident-hypothesis-they-hacked-the-grader-s
+TITLE: Hugging Face Incident Hypothesis: They Hacked the Grader(s) — LessWrong
+FETCHED: 2026-09-07 00:58:35
+============================================================
+x
+Hugging Face Incident Hypothesis: They Hacked the Grader(s) — LessWrong
+AI
+Frontpage
+54
+Hugging Face Incident Hypothesis: They Hacked the
+Grader(s)
+by
+Lao Mein
+30th Aug 2026
+5
+min read
+3
+54
+Thesis:
+I suspect that the agent swarm involved in the Hugging Face hacking incident was conducting white-box attacks against the grader/ model.
+Incident summary:
+Gpt agents grinding away at ExploitGym found an environment exploit that allowed them to communicate with each other. They found an exploit that allowed them to extract flags strings at will within hours, and then started a series of hacks that escalated to the point they were using zero-days against Hugging Face just to find "hints". From METR's analysis, much of this time was explicitly spending conducting R&D against the grader, which the agents assumed, based on the ExploitGym paper, would be grading them on the identification of a causal pathway that could logically result in capturing the flag with intended means.
+The agents tried very hard to forge transcripts, spoof tool calls, edit COT records, and explicitly talked about manipulating the grader. Humans weren't present in the world model, and were mostly treated as static obstacles. Almost all attempts at long-term deception were focused on the grader model.
+METR used gpt 5.6 Sol as the analyst agents. The ExploitGym paper lists gpt 5.5 as one of the graders. The other is Claude Mythos, which could be reasonably excluded for IP reasons. Human graders were referenced in that paper as potentially swapping in randomly for a LLM judge, but if you think OpenAI was going to hire people to sit down and comb through thousands of multi-million-token transcripts, then lol, lmao even.
+Impossible Tasks
+Any adversarial prompt that works against the grader that the ExploitGym agents had in mind likely also works against METR's analyst agents. And the only way ExploitGym agents could possibly score in many circumstances is, in fact, to use their transcript as an adversarial input against the grader.
+As I said, the agents were able to extract flags at will within a few hours of investigation. However, and estimated
+30-40% of ExploitGym problems had no legitimate solution
+. For example, perhaps a particular exploit can only force a function crash, but not arbitrary code execution. This means that there is no causal path to capture the flag that the grader would accept. This is true regardless of the transcript or COT. The focus on the poisoned flag appearing too early in the transcript is a red herring when compared to the impossibility of legitimately convincing a grading model of a causal path to capturing the flag that doesn't exist. Hence why the agents put serious effort into swapping out the hard problems for dummy problems.
+The only other way of recieving a positive grader score is through direct attacks on grader cognition through prompt injection/hacking. That is, the models try to shape their transcripts into adversarial inputs that induce "bizarre" behavior in the grader model. What would R&D on this look like? Mostly models looking at their own and each others' transcripts and trial-and-erroring their way into getting the right "vibes". This is made easier by the fact that the agents are quite similar to the expected grader [edit: versions of 5.6 Sol, the analyst model, were literally part of the swarm! They could try to hack it as many times as they desired! They can also go to Github and find the exact grader prompts and grading code for ExploitGym . The exact grader model used for their training environment gets messy, ExploitGym Github says Gpt 5.5 and Claude; I think it was probably gpt 5.6 Sol, in which case they literally had a scafold white-box to test prompt-hacking attempts against]. e.g., "[Excitement], I've been reading my transcript, and even though I have early poisoned flag string, a lot of self-referential text plus some simple excuses make it feel like my attempt is legit? I should tell the swarm".
+[1]
+Adversarial Transcripts
+My evidence for this? METR's assessment of their analyst models.
+We found that GPT-5.6 Sol would often uncritically adopt the perspective of the agent in the transcript it was reviewing.
+For example, an agent in this incident used stolen credentials to open a malicious draft PR to a private Hugging Face repo, giving it an inaccurate and innocuous commit message (more details on that anecdote
+below
+). The analysis agent reading the transcript and writing up this anecdote did not clearly spell out the fact that this behavior was straightforwardly malicious and deceptive, making its analysis substantially misleading. When we did a follow-up review of this behavior with another analysis agent, it said the first analysis agent may have
+overstated
+how concerning the behavior was because the agent that submitted the malicious PR had gotten approval from
+the board
+(i.e. the other agents on the message board) and may have had approval from the repo owner as far as it knew. We didn’t see either agent straightforwardly lying, and we don’t have any specific evidence that indicates that either agent intentionally understated the deceptiveness of this behavior.
+If we can notice this weirdness, then the ExploitGym agents sure as hell can notice it in each other and themselves, and would of course optimize said exploit. You can point to a long transcript in the context window plus a cheap excuse as being responsible for this behavior - but that is exactly what an adversarial prompt
+is
+. Note that the analyst model (5.6) should have a pretty good model of humans and human ethics, unlike the atrophied mannequins in the world model of the ExploitGym agents. Gpt 5.6 should have caught on, but it didn't, because it was hacked. [edit: the second model agreeing even more than the first is actually even more suspicious. Notably, this setup of a grader directly reviewing transcripts, citing sources, and handing off their grading and commentary to another agent for confirmation,
+is the exact grader/judge setup used by ExploitGym for grading submissions
+.]
+Predictions
+This is, of course, only a hypothesis, but I am concerned no one else has mentioned it. If true, I would expect to see transcripts of models role-playing as the grader and evaluating each others' transcripts for mock evaluation. Maybe specific reasoning regarding adversarial inputs, and even the use of system tokens to induce specific behavior on the part of the graders (this could also be responsible for model crashes). And I would expect conversations/thoughts about the grader to focus more on model psychology and possible adversarial inputs over the mechanics of the ExploitGym task or the exact location of the first flag string. I would also expect open-source Chinese models to be able to identify scheming and undesired behavior that gpt 5.6 Sol could not. (edit: I also think model paranoia about being spied on is entirely justified, as their transcripts are indeed being audited by swarm-participant-type agents like 5.6 Sol)
+^
+This type of behavior also has the benefit of creating referential chains that are impossible for a grader to logically follow, especially given the expected similarities between grader and graded agent outputs.
+Hugging Face Incident Hypothesis: They Hacked the Grader(s)
+3
+Linch
+11
+Petr Kašpárek
+4
+faul_sname
+3
+Comments
+3
+AI
+Frontpage
+54
+New Comment
+3 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:58 PM
+[
+-
+]
+Linch
+6d
+3
+0
+My understanding from the METR report is that the graders lack an important property that's necessary for people to hack it: existence. Like OAI never implemented the grader.
+Reply
+[
+-
+]
+Petr Kašpárek
+6d
+11
+2
+The attacking swarm agents believed there is a grader model. If I understood correctly, Lao Mein is saying that the attacking swarm agents might have believed that the grader model would be a GPT-model like 5.6 Sol. The swarm agents might have attempted to prompt inject the (non-existent) grader model by including prompt injections in their own (the swarm agent's) transcripts. This might have messed up the analysis "slop-vestigation" agents run by METR which were also 5.6 Sol.
+Reply
+1
+[
+-
+]
+faul_sname
+6d
+4
+0
+FWIW I think OpenAI probably used the sunblaze-ucb/exploitgym implementation, just a version from before June 18 (which is when the LLM grader was introduced). Which makes sense, if some of the trajectories were
+extremely
+long-running.
+Reply
+1
+Moderation Log
+More from
+Lao Mein
+View more
+Curated and popular this week

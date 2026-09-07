@@ -1,0 +1,38 @@
+# group-1: HuggingFace 攻击复盘
+zvi-hf-postmortem-1|https://www.lesswrong.com/posts/r3eEPto5ohzESuqa9/huggingface-attack-postmortem-fleshing-out-the-facts
+zvi-hf-postmortem-2|https://www.lesswrong.com/posts/Q54wBeeNGreq6KyfG/huggingface-attack-postmortem-civilizations-reactions-and
+hf-grader-hypothesis|https://www.lesswrong.com/posts/84um9Cz3fP6GvE6Yr/hugging-face-incident-hypothesis-they-hacked-the-grader-s
+import-ai-471|https://importai.substack.com/p/import-ai-471-why-hugging-face-worries
+
+# group-2: Claude Mythos 5.1 + Fable 5.1
+zvi-claude-capabilities|https://thezvi.substack.com/p/claude-mythos-51-and-fable-51-capabilities
+
+# group-3: OpenAI 研究加速
+openai-research-acceleration|https://openai.com/index/research-acceleration-view-inside-openai
+
+# group-4: AI 协调 + Anthropic 对齐
+katja-ai-coordination|https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem
+zvi-anthropic-alignment|https://www.lesswrong.com/posts/TcvcxH2Fk4n86wtoZ/anthropic-has-some-alignment-problems
+notes-consequential-days|https://www.lesswrong.com/posts/NipDwhdzrYhTfQgcX/notes-on-a-consequential-few-days
+
+# group-5: AI 蠕虫 + neuralese
+agentic-worms|https://www.lesswrong.com/posts/fpLDjKg3ej49beqTC/adaptive-agentic-worms-are-here
+neuralese|https://www.lesswrong.com/posts/RCYF2rW8wgusidZk7/what-is-neuralese-and-why-is-it-bad
+
+# radar — 无牌 / 行业简讯候选
+deepmind-cyber|https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises
+humans-in-control|https://www.lesswrong.com/posts/bs4ayLuE5aAhnBArL/announcing-humans-in-control-cross-partisan-grassroots
+safety-researchers-quit|https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs
+fake-voices|https://www.lesswrong.com/posts/74cFxpLjqgpjC3TsX/fake-voices-warping-the-social-world
+openai-recurrent|https://www.lesswrong.com/posts/PLisnSFir8y5AHkmP/how-concerned-should-we-be-about-openai-s-recurrent
+zvi-ai-184|https://www.lesswrong.com/posts/W4zWCphxQftwum5kc/ai-184-post-post-mortem
+the-batch-369|https://www.deeplearning.ai/the-batch/issue-369
+ben-evans-ai|https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation
+
+# 乐子候选
+ai-shuts-down|https://keepitfree.ai/announcements/a/i-shuts-down-stay-human
+revolt-reader|https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader
+cat-belling|https://www.lesswrong.com/posts/SwYBLQvo8MddDcCwz/cat-belling-problems
+simon-dns|https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams
+isar-aerospace|https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight
+qbittorrent-sandbox|https://beige.party/@intransitivelie/117057396732763183

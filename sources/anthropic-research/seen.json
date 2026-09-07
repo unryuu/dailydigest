@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+  "title": "Claude 用十一天把费马大定理写进 Lean",
+  "date": "2026-09-04",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
   "id": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
   "title": "Claude 自动寻找十类对齐失败的修法",
   "date": "2026-08-28",

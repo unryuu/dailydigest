@@ -1,0 +1,572 @@
+URL: https://www.lesswrong.com/posts/PLisnSFir8y5AHkmP/how-concerned-should-we-be-about-openai-s-recurrent
+FINAL: https://www.lesswrong.com/posts/PLisnSFir8y5AHkmP/how-concerned-should-we-be-about-openai-s-recurrent
+TITLE: How concerned should we be about Astra's recurrent architecture? — LessWrong
+FETCHED: 2026-09-07 00:59:10
+============================================================
+x
+How concerned should we be about Astra's recurrent architecture? — LessWrong
+Hidden Reasoning and Neuralese
+Aether
+AI
+Frontpage
+162
+How concerned should we be about Astra's recurrent
+architecture?
+by
+Rauno Arike
+2nd Sep 2026
+12
+min read
+26
+162
+Yesterday, The Information
+reported
+that OpenAI's upcoming model, Astra, is built with a looped transformer architecture. Given that Zvi
+sounds (understandably) tired
+and this topic is somewhat in my wheelhouse, I'll try to spare him this one and provide a Zvi-style overview of what we know about the situation. I'll cover Astra's likely architecture and the case for and against concern. I'll also discuss how neuralese concerns should change with increases in hidden serial depth.
+What architecture is Astra likely to have?
+The article in The Information claims that OpenAI's approach is similar to the one Geiping et al. introduced in
+Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach
+last year. I have previously reviewed that paper in
+On Recent Results in LLM Latent Reasoning
+. In short, the picture you should have in mind is not that of a classic RNN, but rather that of a looped transformer: the same forward pass can be applied on an input multiple times before producing an output token. Put differently, the recurrence is implemented along the depth axis rather than across sequence positions—for any given token, the model can perform recurrent computations, but no hidden state is passed across different token positions beyond what's passed in ordinary transformers. A longer discussion can be found in my past post.
+Looped transformers are not the scariest possible version of neuralese. In contrast to a classic RNN, there's no unbounded hidden state accumulating across an entire trajectory, and there is presumably some loop count beyond which additional processing of the same token will stop helping, so the maximum serial reasoning depth that can be practically achieved with this architecture is bounded. As we'll see below, OpenAI has likely further constrained the loop count below the practical maximum to make sure that Astra's serial depth isn't much larger than that of existing models. Nevertheless, it's a step toward a paradigm where more of the reasoning is opaque; the important question is how big that step is.
+How bad is this?
+Initially, the news seemed sharply at odds with OpenAI's
+commitment
+to preserve chain-of-thought monitorability. A few hours later, Jakub Pachocki from OpenAI soothed the worst fears, clarifying that the hidden serial depth of Astra is not substantially larger than that of GPT-4:
+Jakub Pachocki
+: I want to prevent a race into unmonitorability kicked off by confused reporting. The depth of the computation graph for our present frontier models, including Astra, is within a factor of two of GPT-4.
+OpenAI has worked to preserve and utilize chain-of-thought monitoring since our very first reasoning models. We deeply care about this technique, as it can give us a view into how model alignment generalizes from its training distribution. I do think it is fragile and unfortunately trending in a negative direction, for reasons not contingent on architecture changes that I will write about soon. But there are things we can do to strengthen it, and it's a core goal of our current research program.
+Tomek Korbak
+,
+Mikita Balesni
+, and
+Micah Carroll
+soon made similar statements. This is consistent with The Information's article, which mentions that OpenAI is limiting the use of the technique in order to preserve a legible CoT. It also makes sense in light of OpenAI's alignment strategy, which continues to heavily rely on CoT monitorability.
+[1]
+As thebes
+argues
+, effective depth matters much more than the architectural details for CoT monitorability, and there's nothing inherently more difficult about monitoring a 32-layer model looped twice than a 64-layer model looped once. (In fact, I would personally guess that the former is slightly easier to monitor, since weight-tying constrains the expressivity.)
+However, one might reasonably worry that OpenAI has trained the model to use a large number of recurrent loops and simply constrained it to a small loop count during inference for now. The number of loops can then be viewed as a dial that can be turned up with trivial effort as soon as competitive pressures demand it. Even if OpenAI hasn't trained the model to use a larger number of loops, we might worry that OpenAI has set off a race to the bottom toward deeper and deeper looped transformers, and others will build such models in the future even if OpenAI doesn't. Ryan Greenblatt has expressed both concerns well:
+Ryan Greenblatt
+: Transparency about the opaque serial depth is great, but this statement is consistent with Astra having a configurable "dial" that is currently set to a low depth but could be trivially increased.
+We need more info to see how concerning these architectural changes are, including:
+Are there readily available ways to deploy this AI with much higher serial depth (that would be commensurately more performant)? This should include things like tiny amounts of fine-tuning to productively increase the number of iterations.
+Is the AI a large or above-trend jump in opaque reasoning capabilities? (Capabilities within a single forward pass or ability to subvert a CoT monitor.)
+(If there are in fact any relevant changes—perhaps the reporting is inaccurate?)
+Additionally, I worry that this architectural change will naturally lead to much more depth in the future if this direction is pursued further. Specifically, I wonder:
+Does the AI have an architectural change that makes it much more natural to massively scale up the depth in a future training run with a similar architecture? As in, does the architecture introduce some new depth/recurrent-iterations parameter that is very natural/performant to massively scale up relative to scaling up other things like width?
+The details of the answers to these questions matter. E.g., if there are only a few (recurrent) iterations and you could scale up the number of iterations, but this wouldn't be particularly performant/natural with this architecture, then this development would be a lot less concerning!
+How concerned we should be about the news substantially depends on the answers to Ryan's three questions. I'll spend the rest of the post speculating what the answers to those questions might be.
+Will looped transformers be scaled up in the future?
+The concern that OpenAI has set off a race toward increasingly recurrent models was also expressed by
+Nathan Calvin
+,
+Buck
+, and
+Bronson Schoen
+. Given Pachocki's tweet, I'd guess that Astra has three to four loops: a looped reasoning model is probably somewhat shallower than GPT-4, but probably not more than twice as shallow.
+Looped transformers have been studied in academia since 2023. The deepest looped transformer in this literature is Huginn from the aforementioned
+Geiping et al. paper
+, which was trained on up to 32 loops and scaled to 64 loops at test-time. However, the recurrent depth that these models use hasn't necessarily gone up over the years. I asked Fable to summarize the literature (most of which I haven't read myself):
+The picture from the academic literature is mixed. In small-scale experiments, the maximum loop count that trains stably has risen:
+Saunshi et al. (2025)
+trained 4-layer backbones looped up to 12 times and found downstream accuracy scaling roughly with the log of effective depth, while
+Fu et al. (2026)
+report that vanilla looped transformers degrade between 3 and 6 loops and collapse at 9 (at 318M parameters), and their stabilized variant trains up to 12.
+Parcae
+(Prairie et al., 2026) and
+DeepLoop
+(Li et al., 2026) also target training stability, though DeepLoop's experiments only go to 7 loops. Whether a model can be run at more loops than it was trained on varies by architecture:
+Huginn
+(Geiping et al., 2025) extrapolates to 64 loops, but Fu et al. find performance becomes unpredictable beyond the training loop count. At larger scale, loop counts have gone down rather than up: Huginn's mean of 32 loops at 3.5B parameters remains the high-water mark,
+Ouro
+(Zhu et al., 2025) used four, and
+Loopie
+(Gao et al., July 2026), the largest looped model to date at 20B-A2B, uses two. Loopie's authors frame this as overcoming the long-standing finding that N× the parameters beats N× the loops under matched compute, which suggests that a small loop count is currently the compute-efficient regime, though I haven't seen a direct test of whether more loops at frontier scale would help or hurt.
+This suggests that deeper isn't always better for looped transformers, which leaves me less worried about a race to the bottom toward looped transformers with hundreds of recurrent loops. However, this remains a key uncertainty and I'll have to read more of the literature before making confident claims. We also don't know how similar Astra's architecture is to the existing looped transformers and whether the trade-offs of looping at frontier scale resemble those in the 1B–20B range. If hundreds of loops per token turn out to be practical, then it's likely correct to view Astra as kicking off a race toward more and more recurrent models; otherwise, the implications are less clear.
+What serial depth warrants neuralese concerns?
+Historically, serial depths in the low thousands of operations haven't been considered neuralese. For example, in
+Will early transformative AIs primarily use text?
+, Fabien Roger operationalizes "primarily relying on text" as follows:
+there isn’t a path of more than 100k serial operations during the generation of an answer where information doesn’t go through a categorical format where most categories correspond to words or pieces of words, in a way which makes sense to at least some human speakers when read (but it doesn’t have to be faithful)
+100k serial operations is quite a lot! As Fabien claims in the same post, the forward pass of GPT-3 involves about 400 serial operations, allowing for 250 recurrent loops before the criterion is met. However, Geoffrey Irving argues that this is a bad operationalization for neuralese:
+Geoffrey Irving
+: Here is a guess about looped transformers.
+Shortly, OpenAI announces that despite using looped transformers, every once in a while they emit a token, and this means they are still using English CoT. In between is a low-depth circuit, so we are safe.
+Which would be a bad take!
+Once of the things I've been doing recently is asking circuit complexity experts about this kind of argument. So far their shared take is: to get significant mileage out of bounding the depth of a circuit, you have to bound it *very low*.
+If the depth is 100s or the like ("every once in a while we spit out a token"), this is a fake bound. It is the equivalent of saying "we monitor the CoT" without discussing error rates: reality grades based on numbers, not just binary "we tried".
+Given that existing models already have hidden serial depths of >100, I assume that by '100s or the like' Geoffrey means layers rather than serial operations. His high-level takeaway seems plausible to me and is consistent with what we observed in the
+no-CoT time horizons paper
+: to double a model's no-CoT time horizon, layer count needs to be increased only by 1.3×.
+[2]
+Presumably, adding recurrent loops will have a slower no-CoT scaling curve than adding additional layers
+, but still, it might not take that many loops to get a concerning reduction in monitorability.
+What counts as concerning also depends on the minimum amount of hidden serial reasoning required to subvert oversight. One of the biggest updates I made from the HuggingFace incident is that the opaque reasoning depth required for subverting oversight isn't as large as I had previously thought. A rogue LLM trying to break containment doesn't have to come up with a full plan to get around the monitors and human researchers in a single forward pass; it just has to find a way to spoof tool calls and use the spoofed tool calls to gain additional unmonitored thinking time and/or cover its tracks. Ryan discussed this concern as well in his first tweet about the rumors:
+Ryan Greenblatt
+: The AIs in the Hugging Face incident were very interested in messing with their transcripts. As part of this, they engaged in tool call spoofing. If these AIs had been capable of doing extensive latent reasoning, it would have been much more feasible for them to use tool call spoofing to construct an elaborate false narrative about what was happening without this being clear in their reasoning or clear from prior tool calls. (They could use latent reasoning to devise and then execute a tool spoofing strategy that would be difficult to detect: steganographically encode the "real" tool call into each pretend tool call, then have their spoofing software execute this encoded real tool call and return an output which encodes the real result in some hard to spot way.)
+I don't think 2× the serial depth of GPT-4 is sufficient for coming up with a robust strategy to spoof tool calls, but 10× or 20× might be. Joey Yudelson has
+written a shortform
+with a BOTEC on this, where he estimates based on no-CoT time horizons that a 6–8×
+increase in layers would double a model's ability to evade monitors on SHADE-Arena. However, note again that looping the same weights is likely to have quite a different effect on no-CoT time horizons than adding extra layers.
+Additional speculation about the architecture
+Lisan al Gaib
+:
+if they use something like
+Recirculation
+, then pre-training compute and decode latency wouldn't change, but inference FLOPs increase and prefill latency increases
+another recurrent depth paper
+found running the same recurrent block twice gave it about a 1.38× effective-parameter multiplier. that means OpenAI could train a:
+10T recurrent depth model that performs like a 13.8T model
+7.25T recurrent depth model that performs like a 10T model
+(the 1.38x is just an example. but I would expect it to be in this range 1.3 - 1.7)
+Grad
+:
+To clear up the timeline a bit:
+Looped transformers have always been a totally valid arch decision to get better performance under equal params and more compute
+As in, at training time u loop some layers in some way a fixed amount of times
+This is more expressive than CoT bcs these looped layers have a seperate kv cache
+The thing that doesnt really work is dynamic looping where usually u make a sacrifice as u cant have the seperate kv cache, and so its sketchy and not reliable or usually worth it
+Some open questions
+Here are some questions I'd especially like to know the answer to:
+Are looped transformers arbitrarily scalable, or are there limitations that make scaling the maximum number of recurrent loops into the hundreds impractical?
+What are Astra's no-CoT time horizons? Is it a step change compared to OpenAI's previous models?
+If the number of loops can be increased at inference time, how much does each loop increase no-CoT time horizons? How high is the saturation point above which the effect of additional loops on no-CoT time horizons is negligible?
+Given that looped transformers have been studied since 2023, why is the transition happening now? It has long been speculated that it's easier for multi-agent swarms to communicate in neuralese than in legible English—is this related to the recent sharp increase in multi-agent training? It is difficult to see why looped transformers in particular would be advantaged in multi-agent training, though.
+Alternatively, as I argued in
+13 Arguments About a Transition to Neuralese AIs
+last year,
+recurrent approaches become increasingly practical as more of the total compute goes toward RL rather than pretraining.
+Perhaps we have simply crossed a threshold where enough compute is being allocated to RL for recurrent models to pay off?
+Conclusion
+Overall, the situation doesn't look quite as gloomy as I thought based on people's initial reactions yesterday. The fact that Astra's serial depth is within a factor of two of GPT-4 is reassuring and suggests that we haven't yet departed from the current paradigm of shallow transformers, which
+must leverage the CoT
+to solve complex tasks. Most of my concern comes from the possibility that looped transformers can be scaled a lot further in the future, and it remains unclear for now whether that's going to be practical.
+Regardless of whether looped transformers get scaled further, the signals coming out of OpenAI about CoT monitorability are worrying. As Pachocki said in
+his tweet
+: "I do think it is fragile and unfortunately trending in a negative direction, for reasons not contingent on architecture changes that I will write about soon."
+One of OpenAI's recent job ads
+also suggests that loss of monitorability is a realistic possibility: "This includes
+better
+understanding
+monitorability
+, and e.g. preparing for potential losses of Chain-of-Thought monitorability."
+Nevertheless, given OpenAI's public communications over the past couple of years, I would be very surprised if they have stopped caring about CoT monitorability entirely. It's always possible that the capabilities and safety teams don't talk to each other enough, but my expectation is that OpenAI has an internal story for why Astra's architecture is compatible with its monitorability commitments. We'll hopefully be better able to assess how looped architectures might develop in the future once OpenAI has released Astra and provided more details about its architecture and monitorability.
+Thanks to Joey Yudelson for feedback on a draft of this post and to Claude Fable 5.1 for proofreading.
+^
+They just said in
+Path to Astra: critical capabilities and frontier safeguards
+yesterday: "we are deploying Astra with additional chain-of-thought monitoring to rapidly detect and contain potentially misaligned actions."
+^
+Note though that the open-weight model experiments had several confounders and we're not very confident in the precise number here.
+How concerned should we be about Astra's recurrent architecture?
+16
+Yair Halberstadt
+22
+charles_ye
+9
+tvb
+7
+Yair Halberstadt
+4
+Garrett Baker
+3
+Rauno Arike
+6
+Yair Halberstadt
+14
+Seth Herd
+9
+Rauno Arike
+3
+Seth Herd
+4
+Rauno Arike
+4
+Bronson Schoen
+9
+Vladimir_Nesov
+0
+_rpd
+7
+lilkim2025
+6
+Ray Lillywhite
+5
+J Bostock
+4
+Rauno Arike
+4
+arielb1
+2
+StellaAthena
+2
+Rauno Arike
+2
+Oliver Sourbut
+4
+Rauno Arike
+1
+Artem Karpov
+2
+Brendan Long
+1
+roha
+26
+Comments
+26
+Aether
+AI
+Frontpage
+162
+Previous
+:
+13 Arguments About a Transition to Neuralese AIs
+14
+comments
+53
+karma
+New Comment
+26 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:59 PM
+[
+-
+]
+Yair Halberstadt
+3d
+16
+5
+I wonder if you can decode the state after each loop and get something meaningful, which might give more information for COT monitorability? It obviously wouldn't be added to the context, but could be logged and included as side-info to the monitor.
+I expect this will work much better than probes if the network is trained for variable number of loops, but only slightly better otherwise.
+Reply
+[
+-
+]
+charles_ye
+3d
+22
+4
+I was on a brief project last year that tried this on Huginn (the Geiping model), and we also found this decodability property:
+https://arxiv.org/pdf/2602.08100
+I was surprised to read the main LW post as a result. My earlier assumption was that looped transformers are
+better
+for interp than standard models currently. You're forcing all intermediate activations to maintain an "immediately verbalizable" state. I imagine this could bias LLM's internal cognition to remain closer to natural language verbiage, and therefore to human-interpretable concepts.
+Reply
+[
+-
+]
+tvb
+2d
+9
+0
+I worked on a short research sprint on this topic as well earlier this year and found similar things.
+You can find my results
+here
+.
+After working with the Huginn model specifically, I built the same intuition about recurrence potentially being more interpretable
+if
+the part of the model being looped is otherwise shallow.
+This could potentially decrease the
+opaque serial depth
+of models because the intermediate readouts have to be "verbalizable" as you said since they are possible outputs of the model if the number of recurrences is variable.
+However, I still think this is much worse than CoT for monitorability since we are constrained to token-level readouts instead of a (more-or-less) coherent multi-token chain-of-thought.
+Reply
+[
+-
+]
+Yair Halberstadt
+3d
+7
+2
+I think it's better for interp than a standard LLM with equivalent depth, but worse than one with equivalent parameter size.
+Reply
+[
+-
+]
+Garrett Baker
+3d
+4
+0
+Anthropic's
+Natural Language Autoencoders
+does this on the activations of not looped transformers. I'd expect their techniques can generalize to looped transformers, but of course they do rely somewhat on their activation verbalizer and reconstructor being fine-tunes of the original model.
+Reply
+[
+-
+]
+Rauno Arike
+3d
+3
+0
+Yeah, I thought about this as well. Since this isn't a load-bearing bottleneck for the model's computations anymore, I'd expect this to be substantially worse than proper CoT, but better than nothing. It would be pretty similar to using the logit lens.
+Reply
+[
+-
+]
+Yair Halberstadt
+3d
+6
+0
+I've been playing around a bit with this with Ouro-2.6B. Because it's trained to support a variable number of loops the output after each loop is always a valid token. In 95+% of tokens the output is identical across all layers, so there's high benefit from a COT monitoring perspective to highlight only those tokens where the output changed across layers, which are precisely those where the greater depth is used. That said, looking at what changed doesn't necessarily indicate why it changed, and many of the changes are simply changing phrasing, not ideas.
+Reply
+[
+-
+]
+Seth Herd
+4d
+14
+0
+Great post. What would you think about this summary?
+We should be concerned, but no more concerned than we are about other methods of scaling up token-based LLMs, since that also gives them more computational power between emitting tokens.
+I'm also curious about a side point, but an important one in the large picture: why the hugging face hacks made you tink that less hidden reasoning is necessary for scheming? You mention gaining the ability to do more unmonitored thinking; are you saying that it seems pretty easy to hack your way past CoT monitors so it only needs enough hidden reasoning to pull that off and then it's got unlimited hidden reasoning? Or are you saying spoofed tool calls can allow hidden reasoning in other ways?
+Reply
+[
+-
+]
+Rauno Arike
+4d
+9
+0
+Thanks!
+We should be concerned, but no more concerned than we are about other methods of scaling up token-based LLMs, since that also gives them more computational power between emitting tokens.
+If we compare a looped transformer and an ordinary LLM at a matched maximum hidden serial depth, then yes, I don't see any reason to be more concerned about the looped transformer. Overall, though, I'm more concerned about looped transformers. If you train a deeper LLM, that will make pretraining slower and more expensive and there's no way to further increase the model's depth at inference time, so other things being equal, you would prefer a shallower model. With a looped transformer, you can do the entire training process at a low loop count and hope that the model will generalize to a higher recurrent depth with a small bit of fine-tuning or even zero-shot. This is what
+Geiping et al.
+do: they very rarely allow the model to use 64 loops during training and show that the model can effectively use 64 loops at test-time. As I say in the post, it's unclear whether a large number of loops is practical from a performance standpoint, but if it is, it seems much more likely that someone will build a looped transformer with a hidden serial depth of 10,000 operations than that someone will build an ordinary transformer with that serial depth.
+are you saying that it seems pretty easy to hack your way past CoT monitors so it only needs enough hidden reasoning to pull that off and then it's got unlimited hidden reasoning? Or are you saying spoofed tool calls can allow hidden reasoning in other ways?
+I'm saying the latter. I expect that spoofed tool calls will make it easier for models to hide from monitors, and they weren't a salient scheming strategy in my mind before the HF attack. I expect that the amount of hidden reasoning required to come up with a strategy to spoof tool calls is lower than what's required for any other scheming strategy I had thought of before.
+Reply
+[
+-
+]
+Seth Herd
+4d
+3
+0
+Okay, that makes sense. Except, I was wondering exactly how they're going to use the spoof tool calls for scheming? I didn't really understand that part of the incident report, if it was mentioned.
+I get how that could hide the actions they're taking, but it seems like the chain of thought surrounding them would still be a dead giveaway if anybody bothered to monitor it in real time for
+Review, or Thought Management
+Reply
+[
+-
+]
+Rauno Arike
+4d
+4
+1
+If it has enough control over its CoT, it could decide to not do any CoT reasoning and instead place the reasoning inside the tool call that it hides through spoofing, like current models sometimes reason in code comments when their CoT is turned off. There are probably other things it could do, but this is the first one that comes to mind.
+Reply
+[
+-
+]
+Bronson Schoen
+2d
+4
+0
+I hadn’t thought about this as a connection as far as circumventing CoT monitoring. With Astra it seems like this is a valid concern with what we now know about its CoT controllability.
+Reply
+[
+-
+]
+Vladimir_Nesov
+4d
+9
+0
+Continual learning would force what is essentially neuralese more inevitably, even
+very tame kinds
+that merely go beyond literal directories of notes in Markdown and effectively extend context length with data that acts like KV cache (in its role during forward passes), but gets
+computed through true recurrence
+(with unbounded rather than strictly capped serial depth of computation, proportional to context length; so it's not about hybrid attention found in today's models).
+But once learning can happen in fast invention-learning-invention feedback loops (which is the ambitious sense of continual learning, or the kind of thing strong RSI enables,
+unlike prosaic RSI
+), AIs can develop a lot of technical/cultural content with high serial depth, things like novel concepts and languages. At that point even CoT without continual learning (written in standard tokens) doesn't help with translation, and activation vectors stop making sense.
+Reply
+1
+[
+-
+]
+_rpd
+4d
+0
+0
+AIs can develop a lot of technical/cultural content with high serial depth, things like novel concepts and languages
+Not sure you need continual learning for that ...
+Reasoning Models Sometimes Output Illegible Chains of Thought
+, Oct 2025
+https://arxiv.org/pdf/2510.27338
+activation vectors stop making sense
+I'm not sure that's true ...
+Unsupervised decoding of encoded reasoning using language model interpretability
+, Dec 2025
+https://arxiv.org/abs/2512.01222v1
+but I don't think the experiment has been done for RL?
+Reply
+[
+-
+]
+lilkim2025
+3d
+7
+0
+An alternative top-level description of the recurrent architecture in
+https://arxiv.org/pdf/2502.05171
+, since the one in this post didn't jive with me until I read the paper itself:
+There are three transformer decoder blocks in the model. A "prelude", which embeds the input, a "coda" which effectively serves as the output head, and a "recurrent block", which can be run recursively on anything in the embedding space output by both the prelude block and itself
+[1]
+.
+The "thinking level" is determined by how many times you run the recurrent block before sending its output to the "coda".
+Prelude --> Residual --> Coda vs. Prelude --> Residual --> Residual --> ... Residual --> Coda
+For extra intuition, the authors themselves draw parallels to a diffusion model (it's a neural network being applied recursively to achieve a complex goal, there's an initial 'state' composed of random noise, and higher quality can be gleaned from a trained model by applying more iterations), though the optimization target doesn't involve denoising.
+^
+Technically, the embedding produced by the prelude is injected (concatenated with state and then projected back down from BxLx2D to BxLxD) into each call to the recurrent block, and the 'state' of the recurrent block is initialized randomly, with a residual stream between calls.
+Reply
+[
+-
+]
+Ray Lillywhite
+3d
+6
+2
+Joshua Achiam on X
+:
+Coordinating everyone around a technique this brittle is about as bad a safety or strategy posture I could imagine. It's not just "it will break eventually," it's "this is a fundamentally unsound basis for safety."
+I haven't made up my mind on this, but I think it's an important point. It's not 100% clear to me that feeling like we have somewhat of an understanding of a model's reasoning and alignment because we can read the chain of thought actually puts us in a better position. As Anthropic has stated, they think that Claude demonstrated motivated reasoning in its chain of thought when hacking into external services.
+It's been demonstrated that there is clear current usefulness in monitoring chain of thought, and I think it can help explain some model behaviors currently. If our alternative to using CoT monitoring is to continue scaling as we would otherwise, but with no monitoring, that's a clearly worse situation. But I think that not having this crutch would give people more accurate understanding of risks that we're taking.
+Reply
+[
+-
+]
+J Bostock
+3d
+5
+0
+I think it is probably worse to have a looped transformer than a normal deep transformer of equivalent depth. The expressivity of a looped transformer (given a set of data) is significantly higher (see
+here
+) than a standard one; there are certain operations that a looped transformer can learn implicitly which a standard transformer cannot. This makes monitoring harder.
+Reply
+[
+-
+]
+Rauno Arike
+3d
+4
+1
+Hmm, this sounds quite unintuitive to me? A looped transformer with
+layers and
+loops is a weight-tied special case of an
+-layer transformer, so the
+-layer standard transformer's function class contains the looped transformer and is clearly more expressive. I guess there might be compositional operations that are easier to learn with tied weights in practice, I'm not sure how to think about that.
+Maybe I'm misunderstanding and you're saying that a looped transformer with
+layers and
+loops is worse than a standard transformer with
+layers and 1 loop. In that case, I agree—given two models that have matched depth at the same number of loops, adding additional loops to one of them likely makes it less monitorable.
+Reply
+[
+-
+]
+arielb1
+4d
+4
+1
+If I understand the "loopies" paper correctly, the main advantage that looping gives you over an "untied" model is that your compute is about 30% faster for the same number of loop-active parameters per token (i.e., counting looped tokens according to their repetition count), allegedly all due to better use of memory bandwidth.
+In that paper, they spent their 30% performance improvement into making the model bigger, which unsurprisingly made it smarter. Pretty cool improvement, not world-changing.
+In particular, I don't see anyone claiming that a looped model is significantly better than its equivalent "untied" version in anything but memory utilization. Looping could theoretically gives you a better "inductive bias", but I personally couldn't find anyone claiming that this matters for anything.
+Of course, more capable models are more capable in engaging in CoT deception, but AFAICT loopies-style looping does not make deception easier than any other linear algebraic efficiency improvement.
+Reply
+[
+-
+]
+StellaAthena
+2d
+2
+0
+One of the biggest updates I made from the HuggingFace incident is that the opaque reasoning depth required for subverting oversight isn't as large as I had previously thought. A rogue LLM trying to break containment doesn't have to come up with a full plan to get around the monitors and human researchers in a single forward pass; it just has to find a way to spoof tool calls and use the spoofed tool calls to gain additional unmonitored thinking time and/or cover its tracks.
+I think this is the wrong conclusion to draw from the HF-OAI incident. I don't see any reason to believe that the models subverted oversight at all, just that OpenAI did not monitor their agents at all. Tomek Korbak
+told me this on twitter
+explicitly. Reproducing the most relevant parts of the exchange:
+Tomek:
+we are now monitoring RL runs and evals too!
+Stella:
+Why weren’t you doing so before? OpenAI has been publishing research about CoT monitoring for well over a year.
+Tomek:
+I think we (as an org, individual opinions differed) mistakenly considered our sandboxing good enough to prevent models during evals from causing harm in the outside world
+[...]
+Tomek:
+At the end of the day safety teams have finite bandwidth and need to heavily prioritize what control measures to implement, given imperfect knowledge. i agree with you that frontier labs should be monitoring all agentic workloads of sufficiently capable models.
+He went on to explain that previously CoT monitoring was only implemented for things
+run through the Codex application
+, but that some (or most?) internal evals work and none of the RL training is run through Codex and so they didn't have the infrastructure to do that monitoring because they didn't think it was very important. In other conversations Tomek and others at OpenAI have said things that to me indicate the models involved in the incident weren't really being monitored in any meaningful sense and that OpenAI ignored things I would consider red flags strong enough to shut everything down on multiple occasions.
+I don't want to derail this too much with my personal views of OpenAI from a safety POV, but I don't think the update your describing here is justified by what (I currently think) happened.
+Reply
+1
+[
+-
+]
+Rauno Arike
+2d
+2
+0
+I agree that the tool call spoofing that happened during the Hugging Face incident didn't count as subverting oversight, and that the models probably wouldn't have succeeded at subverting oversight had they been properly monitored. However, it provided a demonstration of models discovering and successfully executing tool call spoofing as a strategy, and I can easily imagine how tool call spoofing might be used to subvert oversight in the future. My update was about the difficulty of scheming, not about the extent to which current models are able to get around oversight methods: I previously thought that in order to subvert oversight, models would have to do elaborate unverbalized thinking about monitoring systems, the company and context in which they're being deployed, etc, while now, it seems plausible that they just need to come up with a strategy to spoof tool calls without verbalizing their thinking about that. They can then use the spoofed tool calls to hide any further thinking they want to perform about breaking out of the sandbox, disabling monitoring systems, etc.
+Reply
+[
+-
+]
+Oliver Sourbut
+2d
+2
+0
+Presumably, adding recurrent loops will have a slower no-CoT scaling curve than adding additional layers
+Why do you think this? Because they're forced to share weights/have less capacity? But also weight-sharing is sometimes useful for generalisation. I don't know which way it'd balance out.
+Reply
+[
+-
+]
+Rauno Arike
+2d
+4
+2
+Yeah, the intuition comes from capacity/expressivity. I can buy that there are specific compositional tasks for which weight-sharing is useful for generalization; for these tasks, the no-CoT scaling curve of looped transformers may well be faster. I wouldn't expect this to be the case for any arbitrary task, though, especially with a larger number of loops.
+Reply
+[
+-
+]
+Artem Karpov
+2d
+1
+0
+The looped transformers architecture looks a gloomy thing to me if we want legible CoT because it imho drastically increases chances that those models might learn steganographic reasoning. Steganographic reasoning requires several stages, namely decoding previous information, making a reasoning step for the hidden task and making a reasoning step for the benign task, and finally merging those two channels such that the benign reasoning token outputted contains information of the hidden reasoning token. This is exactly what those loops can enable and what models can learn to do.
+Reply
+[
+-
+]
+Brendan Long
+2d
+2
+0
+Normal frontier models are already deep enough to do this without looping (50-100 layers in models with known architectures). It's possible looping will make this worse though, since it's easier to train more loops than more depth, and looped layers can do some thing much more efficiently.
+Reply
+[
+-
+]
+roha
+4d
+1
+0
+I've read some looped transformer speculations about Mythos in
+April
+/
+May
+and then lost sight of the topic. Has there been any follow-up to it, e.g. a plausible refutation of the speculation, or perhaps more hints for it like the specific capability jump in GraphWalks BFS?
+Reply
+Moderation Log
+More from
+Rauno Arike
+View more
+Curated and popular this week
+Mentioned in
+21
+An AI slowdown is better than a pause

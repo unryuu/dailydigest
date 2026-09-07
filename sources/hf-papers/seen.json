@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.03153",
+  "title": "VeriPhy 给视频物理判断留下证据链",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.03796",
+  "title": "LLaDA-Image 开放完整图像训练配方",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.04094",
+  "title": "DRACO 把长任务总分拆给每一步",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
   "id": "https://huggingface.co/papers/2608.27831",
   "title": "真实用户的随手一句话让编程模型成功率下降 6.4 个百分点",
   "date": "2026-09-04",

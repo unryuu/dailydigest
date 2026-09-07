@@ -1,5 +1,75 @@
 [
  {
+  "id": "https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight",
+  "title": "欧洲首个私人航天公司入轨",
+  "date": "2026-09-06",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://beige.party/@intransitivelie/117057396732763183",
+  "title": "我的 qBittorrent 越狱了",
+  "date": "2026-09-06",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human",
+  "title": "A/I 宣布关停，留下「Stay human」",
+  "date": "2026-09-06",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader",
+  "title": "读者对 AI 内容的反叛",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+  "title": "AI 转型，难在想不到要做什么",
+  "date": "2026-09-06",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://www.statichost.eu",
+  "title": "statichost.eu 做欧洲基础设施上的静态站托管",
+  "date": "2026-09-05T05:34:49+08:00",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
+  "id": "https://opentrailpaper.com",
+  "title": "OpenTrailPaper 做了台开源电子墨水骑行电脑",
+  "date": "2026-09-05T01:18:08+08:00",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
+  "id": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2",
+  "title": "Artificial Analysis 发布 Intelligence Index 4.2",
+  "date": "2026-09-05T08:04:14+08:00",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
+  "id": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+  "title": "Spotify 用 Portal 把 Claude Code token 用量降了 90％",
+  "date": "2026-09-05T07:38:50+08:00",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
+  "id": "https://bob.ibm.com",
+  "title": "IBM 推出 Bob 代理式开发伙伴",
+  "date": "2026-09-04T20:50:29+08:00",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
   "id": "https://arstechnica.com/gadgets/2026/09/nearly-impossible-how-fairphone-built-the-ethical-repairable-fairphone-gen-6/",
   "title": "Fairphone 6 用一把 T5 螺丝刀就能换十二个部件",
   "date": "2026-09-04T20:43:49+08:00",

@@ -1,0 +1,124 @@
+URL: https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem
+FINAL: https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem
+TITLE: Let's talk about the AI coordination problem — LessWrong
+FETCHED: 2026-09-07 00:58:44
+============================================================
+x
+Let's talk about the AI coordination problem — LessWrong
+AI
+Frontpage
+98
+Let's talk about the AI coordination
+problem
+by
+KatjaGrace
+4th Sep 2026
+2
+min read
+5
+98
+Yesterday
+I asked if this ‘coordinate not to build dangerous AI’ problem was actually easy.
+Why would I think that, contrary to so much belief?
+Well, I don’t feel like I’ve actually heard much about the detail of it. In my experience people don’t talk about it like it’s a real practical problem with details, like the negotiation to end a war.
+They also don’t talk about it like it’s a serious problem of global geopolitical import, like the negotiation to end a war.
+It’s more like a topic for obscure intellectuals, sophomores and trolls to discuss for as long as it takes for one to mention it and another to assuredly dismiss it.
+If we treated negotiation to end a war similarly, state leaders would never attempt it, and if you suggested it on social media, the conversation would mostly be strangers appearing to tell you you’re an idiot because you obviously can’t coordinate thousands of people not to kill each other. (Also, do you not realize there are big financial incentives? And if you somehow stopped Country A from killing people from Country B, Country A is just going to pay someone else to do it!)
+That is, saying things that sound plausible on a five-second analysis from some reasonable heuristics, with zero curiosity about whether their assessment is missing anything key, or if there might be a way to a solution.
+This would be a huge mistake! Pragmatically, you can negotiate to end wars. And given this, it is very important to notice this and do so, because otherwise lots of people die.
+The stakes of AI racing are just as real, though our vision of them is hazier at present. But with AI racing, everyone seems to just nod along with this level of argument.
+This is not enough to give me the confidence to give up! I do not trust this kind of thinking.
+And thinking about it in a ‘real-world pragmatic problem that we want to solve’ mental mode, rather than a ‘abstract philosophical chit-chat’ mental mode, I notice confusion at finding such coordination super hard, let alone unimaginably hard beyond worth trying, and especially so for the specific people involved. If you can coordinate to continue as CEO of a company that you were just fired from and for the board to leave instead, I think there’s some chance you can sort out a more run-of-the-mill ‘if you all don’t, we won’t’ deal.
+What do I think should happen differently?
+I. We should talk seriously about AI coordination
+What would need to happen for coordination to avoid building potentially catastrophic AI? If it’s so hard, what steps are difficult? What would a road map look like? Who would need to do what? If there are hard bits, are there alternatives? We should have a detailed picture, and discuss it like a real problem that we care about solving.
+II. AI leaders should talk seriously about AI coordination
+If we were taking this situation seriously and expecting these people to do a real job navigating the risk, would we settle for assuming they’ve sufficiently considered and pursued the options for coordinating, without discussing it at all in public?
+If they are so sure it can’t be done, why is that? Shouldn’t we demand to know?
+Let's talk about the AI coordination problem
+7
+Mateusz Bagiński
+12
+Harjas
+3
+Mateusz Bagiński
+1
+Harjas
+2
+Mateusz Bagiński
+5
+Comments
+5
+AI
+Frontpage
+98
+New Comment
+5 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:58 PM
+[
+-
+]
+Mateusz Bagiński
+2d
+7
+1
+Quoting gugu
+Dario rejects doomerism re:misalignment, fair enough.
+But what of doomerism re:slowdown?
+Furthermore, the last few years should make clear that the idea of stopping or even substantially slowing the technology is fundamentally untenable. The formula for building powerful AI systems is incredibly simple, so much so that it can almost be said to emerge spontaneously from the right combination of data and raw computation.
+[...]
+If all companies in democratic countries stopped or slowed development, by mutual agreement or regulatory decree, then authoritarian countries would simply keep going. Given the incredible economic and military value of the technology, together with the lack of any meaningful enforcement mechanism, I don’t see
+how we could possibly convince them to stop
+.
+Predicting the difficulty of cooperating around / enforcing a "substantial" slow down of AI development seems similarly difficult as predicting the difficulty of avoiding misalignment? Perhaps it is true that this would be historically unprecedented, but as Dario notes, the whole possibility of a country of geniuses in a datacenter is historically unprecedented.
+[...]
+Reply
+1
+1
+[
+-
+]
+Harjas
+2d
+12
+10
+If all companies in democratic countries stopped or slowed development, by mutual agreement or regulatory decree, then authoritarian countries would simply keep going. Given the incredible economic and military value of the technology, together with the lack of any meaningful enforcement mechanism, I don’t see how we could possibly convince them to stop.
+I really don't understand this point. Authoritarian countries have agreed to nuclear treaties before, right? Is the issue really just the lack of enforcement mechanism?
+Reply
+[
+-
+]
+Mateusz Bagiński
+2d
+3
+1
+The issue is the un(der)questioned
+even deeper atheism
+on the AI macro-strategic scale that implies that you should grab power because if you don't, then the other less good guy does. As we all know, this has never ever backfired.
+Reply
+[
+-
+]
+Harjas
+2d
+1
+0
+(I want to read whatever you intended to link, but right now it just directs me back to the Less Wrong homepage.)
+Reply
+[
+-
+]
+Mateusz Bagiński
+2d
+2
+0
+((Ooops, fixed))
+Reply
+Moderation Log
+More from
+KatjaGrace
+View more
+Curated and popular this week

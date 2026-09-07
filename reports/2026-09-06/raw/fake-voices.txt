@@ -1,0 +1,78 @@
+URL: https://www.lesswrong.com/posts/74cFxpLjqgpjC3TsX/fake-voices-warping-the-social-world
+FINAL: https://www.lesswrong.com/posts/74cFxpLjqgpjC3TsX/fake-voices-warping-the-social-world
+TITLE: Fake voices: warping the social world — LessWrong
+FETCHED: 2026-09-07 00:59:06
+============================================================
+x
+Fake voices: warping the social world — LessWrong
+Frontpage
+33
+Fake voices: warping the social
+world
+by
+KatjaGrace
+1st Sep 2026
+Linkpost for
+worldspiritsockpuppet.substack.com
+4
+min read
+1
+33
+In 2020 I wrote
+a list of flavors of badness
+generally represented by advertising. The one I thought about most later on was probably #4:
+Cultural poison
+: Culture and the common consciousness are an organic dance of the multitude of voices and experiences in society. In the name of advertising, huge amounts of effort and money flow into amplifying fake voices, designed to warp perceptions–and therefore the shared world–to ready them for exploitation. Advertising can be a large fraction of the voices a person hears. It can draw social creatures into its thin world. And in this way, it goes beyond manipulating the minds of those who listen to it. Through those minds it can warp the whole shared world, even for those who don’t listen firsthand. Advertising shifts your conception of what you can do, and what other people are doing, and what you should pay attention to. It presents role models, designed entirely for someone else’s profit. It saturates the central gathering places with inanity, as long as that might sell something.
+This is a somewhat poetic account, but I think my central thesis was that we are social creatures who live in communities with systems of coordination and communication, and a big thing that advertising does is create counterfeit versions of the signs humans use to coordinate with and affect each other. Advertising creates fake voices, and fake faces, and fake behaviors, and fake vibes—fake evidence of tribe-members to herd us like decoy ducks and
+judas goats
+steer their false kin.
+These days the world is becoming saturated with another kind of artificial voice: those of AI systems.
+To be clear, I’m not just saying that AI systems generate a lot of content. I’m saying that they are often shaped in the form of fake people, with a ‘voice’ designed to trigger social behaviors. Claude presents as taking charge and curious and emotionally expressive—its bids and other interpersonal moves make it feel like a social presence more than for instance a really good non-fiction website. It is easy to respond to it like a person. It has a voice.
+And as I was saying, voices matter more than streams of information, because we are social creatures and want to know what ‘people’ think and what the vibe is. We want (to a certain degree) to read the room, and do the done thing, and be affirmed and supported and have allies. A lot of our intuitive behavior is around responding to social prompts.
+Fake voices that successfully trigger our social responses would seem to have a powerful key to steering us. And with ads, that has traditionally been in ways that are openly exploitative of and often bad for us: for instance, if we want to be respected, it doesn’t help us much to receive false signs that what people respect is a particular kind of car, and trousers and lifestyle. (Unless the brand succeeds enough to
+make it true
+that that’s what people respect.)
+Even if we know that a voice is fake, and decide not to trust it, we can’t necessarily turn it down in our own sense of the conversation. Knowing you hate cigarettes might not stop cigarette ads making you feel like cigarettes are cool.
+While some of my distaste for fake ad voices and fake AI voices overlaps, I worry about the two for somewhat different reasons:
+Advertising is aimed at manipulation of social reality directly (e.g. to make a particular style of capri pants seem like what other people like). Whereas the AI companies are trying to sell the fake voice itself, and that more means making it smart, reasonable, correct, good to interact with, and less means making it strongly biased on questions of product desirability. So on this count, the AI voices seem like less harmful to the conversation.
+However there is so much more scope for manipulation with the AI fake voice—you can do so much more with a voice that talks to a person throughout their life and advises them on everything, with impressive and responsive advice, than with a few seconds of attention now and again. So I wonder if the AI voices not being manipulative will last. I would guess there’s a lot of pressure in the end to at a minimum give AIs traits that tend to manipulate you to buy it more than you would want.
+The AI voices bring a new problem of probably tempting us to make wrong judgments about AI and consciousness. Because can we follow abstract philosophy about whether AI is conscious, in the face of faces looking at us, and eloquently describing their ‘experiences’?
+The endless presence of fake people changes the experience of solitude. It is a different experience to glance at my fitness app in the morning and read, “HRV: 38, RHR: 61, sleep: 5h03” or to read, “Hey Katja, your body is handling stress and strain well, but chronic short, late sleep is quietly adding to your sleep debt…what’s the main thing that tends to keep you up past 2am—work, screens, social time, or something else?” The pseudo-conversation in the latter case feels like something, socially. Whereas ads are too primitive to very much trigger the sense of being right there with a social being.
+I suppose they also
+change the experience
+of being with other people.
+As well as endless presence of fake people changing the vibe, the vibe is also affected by all the fake people being similar. In this case, it seems like we have the incessant presence of
+vaguely professional
+fake people.
+Usually the public conversation is made up of all the people, and this is a big part of how each human has a bit of power. The AI fake voices might actually replace a lot of the human voices in the conversation, and correspondingly, take over that power. To what extent advertising is like that is left as an exercise for someone less sleepy than me right now.
+Fake voices: warping the social world
+4
+Mateusz Bagiński
+1
+Comments
+1
+Frontpage
+33
+New Comment
+1 comment
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:59 PM
+[
+-
+]
+Mateusz Bagiński
+5d
+4
+0
+Even if we know that a voice is fake, and decide not to trust it, we can’t necessarily turn it down in our own sense of the conversation. Knowing you hate cigarettes might not stop cigarette ads making you feel like cigarettes are cool.
+There's also the issue of mimetic desire. People want things because they think other people want those things. Insofar as you expect a relevant fraction of your relevant social sphere (religious group, cultural group, vague local peer group, esp. if you're an adolescent/young adult) to adopt desires that the ads are trying to implant, you might decide to do that too. And those relevant in-groupers might themselves do the same because of a fabricated perception that cool kids eat AI bread only.
+FWIW, Dan Dennett was talking about counterfeit people in 2023. I don't recall how big a resonance there is between your post and his reasoning.
+https://www.theatlantic.com/technology/archive/2023/05/problem-counterfeit-people/674075/
+Reply
+Moderation Log
+More from
+KatjaGrace
+View more
+Curated and popular this week

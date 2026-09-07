@@ -1,0 +1,226 @@
+[
+  {
+    "slug": "zvi-hf-postmortem-1",
+    "url": "https://www.lesswrong.com/posts/r3eEPto5ohzESuqa9/huggingface-attack-postmortem-fleshing-out-the-facts",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/r3eEPto5ohzESuqa9/huggingface-attack-postmortem-fleshing-out-the-facts",
+    "bytes": 903838,
+    "title": "HuggingFace Attack Postmortem: Fleshing Out the Facts — LessWrong",
+    "chars": 99240
+  },
+  {
+    "slug": "zvi-hf-postmortem-2",
+    "url": "https://www.lesswrong.com/posts/Q54wBeeNGreq6KyfG/huggingface-attack-postmortem-civilizations-reactions-and",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/Q54wBeeNGreq6KyfG/huggingface-attack-postmortem-civilizations-reactions-and",
+    "bytes": 972064,
+    "title": "HuggingFace Attack Postmortem: Civilizations, Reactions and Next Actions — LessWrong",
+    "chars": 98454
+  },
+  {
+    "slug": "hf-grader-hypothesis",
+    "url": "https://www.lesswrong.com/posts/84um9Cz3fP6GvE6Yr/hugging-face-incident-hypothesis-they-hacked-the-grader-s",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/84um9Cz3fP6GvE6Yr/hugging-face-incident-hypothesis-they-hacked-the-grader-s",
+    "bytes": 416805,
+    "title": "Hugging Face Incident Hypothesis: They Hacked the Grader(s) — LessWrong",
+    "chars": 8542
+  },
+  {
+    "slug": "import-ai-471",
+    "url": "https://importai.substack.com/p/import-ai-471-why-hugging-face-worries",
+    "status": 200,
+    "final_url": "https://importai.substack.com/p/import-ai-471-why-hugging-face-worries",
+    "bytes": 179187,
+    "title": "Import AI 471: Why Hugging Face worries me; space mining; FIve Eyes on AI",
+    "chars": 15149
+  },
+  {
+    "slug": "zvi-claude-capabilities",
+    "url": "https://thezvi.substack.com/p/claude-mythos-51-and-fable-51-capabilities",
+    "status": 200,
+    "final_url": "https://thezvi.substack.com/p/claude-mythos-51-and-fable-51-capabilities",
+    "bytes": 349853,
+    "title": "Claude Mythos 5.1 and Fable 5.1: Capabilities",
+    "chars": 29952
+  },
+  {
+    "slug": "openai-research-acceleration",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "status": 403,
+    "final_url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "bytes": 10501,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "katja-ai-coordination",
+    "url": "https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem",
+    "bytes": 410989,
+    "title": "Let's talk about the AI coordination problem — LessWrong",
+    "chars": 5860
+  },
+  {
+    "slug": "zvi-anthropic-alignment",
+    "url": "https://www.lesswrong.com/posts/TcvcxH2Fk4n86wtoZ/anthropic-has-some-alignment-problems",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/TcvcxH2Fk4n86wtoZ/anthropic-has-some-alignment-problems",
+    "bytes": 524209,
+    "title": "Anthropic Has Some Alignment Problems — LessWrong",
+    "chars": 28919
+  },
+  {
+    "slug": "notes-consequential-days",
+    "url": "https://www.lesswrong.com/posts/NipDwhdzrYhTfQgcX/notes-on-a-consequential-few-days",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/NipDwhdzrYhTfQgcX/notes-on-a-consequential-few-days",
+    "bytes": 359450,
+    "title": "Notes on a Consequential Few Days — LessWrong",
+    "chars": 5611
+  },
+  {
+    "slug": "agentic-worms",
+    "url": "https://www.lesswrong.com/posts/fpLDjKg3ej49beqTC/adaptive-agentic-worms-are-here",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/fpLDjKg3ej49beqTC/adaptive-agentic-worms-are-here",
+    "bytes": 586432,
+    "title": "Adaptive Agentic Worms Are Here — LessWrong",
+    "chars": 26308
+  },
+  {
+    "slug": "neuralese",
+    "url": "https://www.lesswrong.com/posts/RCYF2rW8wgusidZk7/what-is-neuralese-and-why-is-it-bad",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/RCYF2rW8wgusidZk7/what-is-neuralese-and-why-is-it-bad",
+    "bytes": 468794,
+    "title": "What is neuralese and why is it bad? — LessWrong",
+    "chars": 13945
+  },
+  {
+    "slug": "deepmind-cyber",
+    "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+    "bytes": 381558,
+    "title": "Google’s Fairwind Program: Cyber defense tools for trusted partners",
+    "chars": 5174
+  },
+  {
+    "slug": "humans-in-control",
+    "url": "https://www.lesswrong.com/posts/bs4ayLuE5aAhnBArL/announcing-humans-in-control-cross-partisan-grassroots",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/bs4ayLuE5aAhnBArL/announcing-humans-in-control-cross-partisan-grassroots",
+    "bytes": 365151,
+    "title": "Announcing Humans in Control: cross-partisan grassroots organizing for AI safeguards ahead of 2028 — LessWrong",
+    "chars": 10733
+  },
+  {
+    "slug": "safety-researchers-quit",
+    "url": "https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs",
+    "bytes": 812588,
+    "title": "Should safety researchers quit frontier labs re. warning shots? — LessWrong",
+    "chars": 38661
+  },
+  {
+    "slug": "fake-voices",
+    "url": "https://www.lesswrong.com/posts/74cFxpLjqgpjC3TsX/fake-voices-warping-the-social-world",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/74cFxpLjqgpjC3TsX/fake-voices-warping-the-social-world",
+    "bytes": 371876,
+    "title": "Fake voices: warping the social world — LessWrong",
+    "chars": 7203
+  },
+  {
+    "slug": "openai-recurrent",
+    "url": "https://www.lesswrong.com/posts/PLisnSFir8y5AHkmP/how-concerned-should-we-be-about-openai-s-recurrent",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/PLisnSFir8y5AHkmP/how-concerned-should-we-be-about-openai-s-recurrent",
+    "bytes": 842557,
+    "title": "How concerned should we be about Astra's recurrent architecture? — LessWrong",
+    "chars": 37335
+  },
+  {
+    "slug": "zvi-ai-184",
+    "url": "https://www.lesswrong.com/posts/W4zWCphxQftwum5kc/ai-184-post-post-mortem",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/W4zWCphxQftwum5kc/ai-184-post-post-mortem",
+    "bytes": 974464,
+    "title": "AI #184: Post Post Mortem — LessWrong",
+    "chars": 97722
+  },
+  {
+    "slug": "the-batch-369",
+    "url": "https://www.deeplearning.ai/the-batch/issue-369",
+    "status": 200,
+    "final_url": "https://www.deeplearning.ai/the-batch/issue-369",
+    "bytes": 238758,
+    "title": "Inside Key Changes in Data Policies, Ox Alpha Revealed, Taking Custom Models Beyond Fine-Tuning",
+    "chars": 33599
+  },
+  {
+    "slug": "ben-evans-ai",
+    "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+    "status": 200,
+    "final_url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+    "bytes": 93290,
+    "title": "AI, tools and transformation — Benedict Evans",
+    "chars": 13401
+  },
+  {
+    "slug": "ai-shuts-down",
+    "url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human",
+    "status": 200,
+    "final_url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human/",
+    "bytes": 3744,
+    "title": "A/I Shuts Down Stay Human · Keep the Internet free",
+    "chars": 2431
+  },
+  {
+    "slug": "revolt-reader",
+    "url": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader",
+    "status": 200,
+    "final_url": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/",
+    "bytes": 23977,
+    "title": "The revolt of the reader | The Observation Deck",
+    "chars": 7923
+  },
+  {
+    "slug": "cat-belling",
+    "url": "https://www.lesswrong.com/posts/SwYBLQvo8MddDcCwz/cat-belling-problems",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/SwYBLQvo8MddDcCwz/cat-belling-problems",
+    "bytes": 1253422,
+    "title": "Cat-Belling Problems — LessWrong",
+    "chars": 83519
+  },
+  {
+    "slug": "simon-dns",
+    "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/",
+    "bytes": 14940,
+    "title": "The purpose of DNS is to spread scams",
+    "chars": 1691
+  },
+  {
+    "slug": "isar-aerospace",
+    "url": "https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight",
+    "status": 200,
+    "final_url": "https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight",
+    "bytes": 63204,
+    "title": "History for European spaceflight: Isar Aerospace reaches orbit and deploys payloads on second flight - Isar Aerospace",
+    "chars": 4265
+  },
+  {
+    "slug": "qbittorrent-sandbox",
+    "url": "https://beige.party/@intransitivelie/117057396732763183",
+    "status": 200,
+    "final_url": "https://beige.party/@intransitivelie/117057396732763183",
+    "bytes": 46619,
+    "title": "Ritalin Invitees: \"I regret to inform everyone that my copy of QBitt…\" - beige.party",
+    "chars": 0
+  }
+]

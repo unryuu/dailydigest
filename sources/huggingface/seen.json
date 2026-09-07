@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/vlm-run/introducing-gateway",
+  "title": "VLM Run 推出统一 API 托管开放权重视觉模型",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
   "id": "https://huggingface.co/blog/osoblanco/from-zero-to-hero-an-open-llm-ecosystem-for-armeni",
   "title": "亚美尼亚语语料、模型和训练配方全部开放",
   "date": "2026-09-04",

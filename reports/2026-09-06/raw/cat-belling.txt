@@ -1,0 +1,1148 @@
+URL: https://www.lesswrong.com/posts/SwYBLQvo8MddDcCwz/cat-belling-problems
+FINAL: https://www.lesswrong.com/posts/SwYBLQvo8MddDcCwz/cat-belling-problems
+TITLE: Cat-Belling Problems — LessWrong
+FETCHED: 2026-09-07 00:59:27
+============================================================
+x
+Cat-Belling Problems — LessWrong
+Rationality
+World Modeling
+Frontpage
+245
+Cat-Belling
+Problems
+by
+Eliezer Yudkowsky
+3rd Sep 2026
+25
+min read
+71
+245
+(Originally mainly drafted in 2021, just now completed and published. Today the discussion around AI may now seem odd; it is written for a time when people were still trying to solve what would now be called "superalignment" with clever plans they'd invented themselves, rather than saying, "Oh, we will ask Fable to solve it.")
+===
+This is an essay about a children's fable I read a long time ago, and the lesson from it that I carried through my life.
+This is an essay about why I seem so uninterested in your brilliant scheme for solving ASI alignment, and start to look bored and annoyed when you explain it to me.
+And it is, though not really, an essay about that one guy on that online mailing list in 1996, who had a design for a reactionless drive. It's an easier place to start with the general idea, and so we'll start there.
+i. Mr. L's Reactionless Drive.
+Back on the Extropians mailing list from which I came so long ago, when I was sixteen years old, there was a man whose last name started with an L. He had a design for a spaceship drive that would, supposedly, generate forward thrust without expelling mass in the other direction. He called it "the <name that starts with an L> Drive".
+[1]
+On the surface, this would seem to violate Conservation of Momentum. On conventional physics, if a spaceship is accelerating in one direction, there must be something else accelerating the other way, and the total change in momentum must add to zero. In science fiction, when you postulate alternate physics violating that rule, an L-Drive is known as a "reactionless drive", in the sense that such a drive violates Newton's Third Law of equal and opposite reaction.
+So then -- as one would naturally wonder, and as some on the Extropians mailing list inquired of Mr. L -- how could his L-drive possibly work?
+In fact (though I don't think Mr. L fully appreciated this) the problem was so "difficult" that other people bothering to ask Mr. L to explain
+at all,
+represented a tremendous openness on their part, toward Mr. L and his ideas; a great act of charity and of due scientific process.
+Mr. L showed us all an animated GIF he'd made, which it showed a circle with smaller masses rotating counterclockwise around its interior. At the top of the circle, the moving masses sped up; at the bottom of the circle, the masses slowed down. So the masses would move faster on the right side of the cylinder than on the left side, which would generate net thrust in a rightward direction because of the greater centrifugal force.
+The reader is invited to find what they think is the problem with this Reactionless Drive of Mr. L's, for themselves, before continuing.
+[2]
+The flaw (click to expand):
+When the masses are accelerated rightward at the top of the cylinder, and slowed in leftward motion at the bottom of the cylinder, whatever does this acceleration, exactly counterbalances the centripetal thrust. Indeed, the "centripetal thrust" on the right side is exactly the thrust from the change in fast rightward motion at top to fast leftward motion at bottom.
+Put another way: If balls were fired in externally at top, and fired off externally at bottom, the right half of the cylinder would indeed accelerate rightward. So the book-balancing thrust in the opposite direction must come from the part of the system that pushes the slow rightward ball at the top and absorbs the fast leftward ball at the bottom.
+When this was observed to Mr. L, he replied that of course he knew
+that.
+But, said Mr. L, he had designed some complicated "compensators" to prevent the forces from canceling exactly.
+Mr. L said he had an Excel spreadsheet showing that the net thrust of all the system interactions was
+not
+zero. But he couldn't show us the spreadsheet; the "compensators" were the key proprietary part of his design.
+Leave aside any sense of indignation you might have, about the idea that Mr. L might want to keep part of his drive secret. In the counterfactual world where the L-drive worked, it might make some sense for Mr. L to keep some parts secret, just like it would make sense for him to name it after himself.
+Instead, my next question is -- leaving aside all judgments passed via an intermediate step of status judgment -- how can we be
+sure
+that Mr. L
+didn't
+invent a reactionless drive, if we can't look at his spreadsheet?
+Suppose Mr. L had been a Nobel laureate physicist and was otherwise hero-licensed to do interesting things. Would you still feel sure his unseen spreadsheet was mistaken, and if so, why?
+"Because the L-Drive violates Conservation of Momentum," you say? But what do you think you know, and how do you think you know it? "Well," we can imagine Mr. L replying (though he didn't actually say this), "the law you learned about in school, is a generalization over past experience: people have never yet seen a closed system produce a net change in its own momentum, so they hypothesize a general law: No closed system can produce a net change in its own momentum. But the master rule of science is to believe the experiment, in the end. If somebody comes up with a clever system not found in nature, that does produce a net change in its own momentum, and this is experimentally verified, we'd just amend the textbooks to say that there wasn't a Law of Conservation of Momentum after all."
+If only white swans have been observed so far, calling that the Law of White Swans and putting it in textbooks doesn't make the generalization any stronger or any more binding on reality.
+Or as Carl Feynman recently reposted to Twitter, from an email in 1997:
+Richard Feynman (my father) divided perpetual motion machines into Perpetual Motion Machines of the First Kind, which violate the first law of thermodynamics (AKA conservation of energy), Perpetual Motion Machines of the Second Kind, which violate the second law of thermodynamics (entropy must increase), and Those Other Perpetual Motion Machines, which purport to get their energy from other laws of physics.
+The Second Kind is rarer; the only example I'm familiar with is one that my dad showed me the plans for. Once in a while, someone would come to him with a perpetual motion machine prospectus and ask if it was a good investment. One of these was a machine that claimed to extract heat energy from the air and run a generator with it. They had built half the machine, which worked as far as they could test it, and were looking for gullible investors to pay for finishing it. By carefully going over the immensely complex plans, my father and I found a "heat exchanger" that was supposed to take warm freon and cool air, and produce hot freon and cold air. Naturally, this heat exchanger was in the as-yet unbuilt portion.
+Those Other Perpetual Motion Machines get their energy from heretofore unknown physics, like cold fusion, vacuum fluctuations, or secret new physical laws that will be disclosed only on the payment of $1,000,000. These are worthy of much more serious physical investigation, since it is entirely concievable that someone will discover a new easy way of making energy.
+Back around 1970, my father went to a public demonstration of one of Those Other Perpetual Motion Machines. He discovered an electric cord running out of the back of the machine, plugged into the wall. When he unplugged the machine and pointed out to the inventor that a perpetual motion machine that had to be plugged in wasn't really perpetual, the inventor pushed a button on the control panel and the machine exploded. Several spectators were severely injured; I believe one man lost an arm. The inventor sued my father on the grounds that he had caused the explosion; my father suspected that the explosion was deliberate. The trial ended up with my father not having to pay.
+Epistemic status: Childhood recollections, untainted by fact-checking. Originally an email from 1997.
+The L-Drive is of the same broad family as Perpetuum Mobile; it violates a widely believed physical conservation law. If Richard Feynman
+deemed some of those Perpetua Mobilia "worthy of much more serious physical investigation", who are you to say the L-Drive wasn't?
+If you wish, you can take this as a koan, and come up with your own reply before continuing: How can we be
+sure
+that Mr. L didn't successfully design a clever system of compensators, and correctly validate that design using a sound spreadsheet?
+(My own answer is too large to fit in a spoiler, so you will need to exercise some self-discipline to stop and give your own best answer before proceeding past the next section title.) (As is an experimentally validated procedure for learning faster; it lets you better contrast your own prior brain state to whatever incoming thought you are about to encounter.)
+ii. On Miracles Buried Inside Complex Systems.
+I reply:
+Conservation of Momentum is not a surface generalization over a whole system, the way that a Law of White Swans would be a surface generalization over whole swans. The law on closed systems follows from the generalization that every
+individual
+interaction within known physics conserves momentum.
+Whole molecules conserve momentum, because the molecules are made of atoms, and the atoms are made of nucleons and electrons, and every known interaction of the nucleons and electrons conserves momentum. Even this doesn't properly state the real depth of the law, because it's really about blah blah quantum mechanics Noether's Theorem invariant Hamiltonians blah blah. But it goes deep enough to make the point.
+As soon as Mr. L says he has a spreadsheet that proves his drive works, we
+immediately
+know that his spreadsheet contains some bookkeeping error, a priori rather than as a result of empirical investigation. Any spreadsheet modeling known physics will describe a sum of interactions each of which individually produces zero net global change in total momentum.
+An arithmetic series all of whose terms are 0 will sum to 0.
+It's one thing to claim that you've developed an alternate theory of physics where momentum is no longer conserved, or some such; and you're about to show a prototype hovering in midair to prove the point experimentally. That is at least imaginable. That is what Richard Feynman proclaimed to always be worthy of investigation (though I wouldn't necessarily agree).
+It's another thing to say, "Oh, well, I built a complicated system out of conventional parts, that sums up to violate momentum; and I didn't
+merely
+observe that outcome experimentally, I validated the design
+using a spreadsheet
+." That violates math.
+Our universe's physics could, in principle, contain an exception saying that momentum is no longer conserved if a spaceship is painted a certain exact shade of green. It's not likely but it's logically possible, and it's what Richard Feynman was saying ought to be looked into every time some new inventor claims that experimental result. To take a closed-system description
+not
+including any new physics, and have it add up to violating conservation of momentum, is genuinely impossible.
+So -- never minding the mere high prior probability that Mr. L is mistaken -- as soon as Mr. L says that his reactionless drive works because of a
+complex system property,
+that he validated by spreadsheet, we know for
+sure
+that he has made some error.
+In fact, as soon as Mr. L starts speaking about complicated wheels and gears, even before he mentions the spreadsheet, we've already lost all hope in him. The answer to "How can you possibly violate conservation of momentum?" shouldn't be a big diffuse answer about complicated wheels and gears. Since the great difficulty is faced by every individual step of the system, tell me about
+any one
+step that defeats the difficulty, to show off your key idea in the simplest case.
+If there is a countable sum of terms that I think is zero,
+because
+I think all the terms are individually zero, and you want to prove to me as quickly as possible that the sum is not zero, then defeat my initial skepticism by showing me one term that's nonzero. If instead you start out by talking about the amazing clever way you've ordered the summation so that its sum is easily provable, I lose hope right there.
+When you ask Mr. L, "Why doesn't Conservation of Momentum rule out your drive?" your shred of hope is that Mr. L understands what you are asking -- has some perspective-taking on why an expert might usually think that was pretty difficult; and Mr. L stands ready to directly challenge your skepticism by addressing the key question right away: What aspect of this whole proposal has invalidated the usual reasoning saying that you can't build a reactionless drive out of reactionful parts?
+Even being very charitable to Mr. L already, we don't have enough hope to bother following along if he starts in on a complicated story involving lots of gears and wheels.
+The difficulty-refuting argument may be
+somewhat
+more complicated than the original difficulty-asserting argument. But before we start getting told about complicated details of Mr. L's proposal, we want to hear about some key idea that fans our tiny shred of hope that the great central difficulty has been overcome.
+And if Mr. L starts to tell us about complicated wheels and gears instead, we see that he hasn't taken the perspective of a skeptical expert. So we infer that he probably doesn't understand the central difficulty. So we lose that tiny shred of hope, and we are not really feeling curious about all his complicated further details.
+I will at this point briefly mention from 2026 -- though most of this essay was written 5 years earlier in 2021 -- a public discussion I had recently at the ILIAD conference with Geoffrey Irving (formerly Google Brain, OpenAI, Deepmind, now heading the new Resolution lab), in a conversation advertised as "Yudkowsky and Irving try and fail to settle all of their disagreements in one hour." One long sub-discussion focused on whether "debate" was a promising approach to superalignment. If you just have the humans judge whether an AI proposal to align a superintelligence will work, the humans will get it wrong; but what if the AIs
+debate each other instead?
+And one thing that might go wrong is that the AIs form a swarm and sacrifice themselves for each other. But the other thing that goes wrong is that humans can also misjudge competing arguments in debates, not just isolated propositions.
+[3]
+A point on which I kept pressing Irving was, "Supposing the human verifiers pass some bad argument steps in a statistically correlated way, how are you going to get reliable argument out of the whole system? Doesn't any approach to getting reliable answers out of a system with unreliable components presume at some point that you can break a debate down into steps where the judges are just statistically high-variance rather than statistically biased in their judgments? And isn't this just false in practice with humans?" And then refining this question further, I asked: "Suppose your judges were all random coinflips. That wouldn't work to drive correct outputs for debate as a means of superalignment. Can you tell me what property the judges need, which random coinflips lack, and which isn't 'the judgments are statistically unbiased', in order for this scheme to work?" And Irving said it was a good question and he might need to get back to me on that.
+Later, several people at the conference said that they had been surprised, and had updated, from seeing that exact point of the discussion in particular.
+I don't know whether this will be
+at all
+comprehensible to any reader and especially when the video hasn't been put online yet... but the question I was asking Irving was, from my own perspective, almost exactly analogous to trying to track down the part of a Perpetuum Mobile which breaks the rules.
+You can build an accurate judger out of judges that are sometimes wrong as individuals, so long as the plurality or the majority is always right. You can build an unbiased estimator out of high-variance judges with no bias. But suppose the majority or plurality is sometimes wrong, and there isn't always some clever way of asking the question three different ways such that then two out of three variants are judged correctly. Then how are you building a "debate" system that reliably returns the correct answer out of unreliable judges? Why can't it also extract the length of the Emperor of China's nose from judges who've never seen the Emperor?
+I expect you would notice a great many places where the would-be aligners present at that conference disagreed about other matters, depending on whether they perceived that debate as me pressing Irving about a strange abstract technical corner question; versus the question reformulating a seemingly big complicated task to boil down a central difficulty.
+Many many engineers, in fact, historically rolled up their sleeves and got to work on building their designs for Perpetuum Mobiles. It was a larger-looming social phenomenon in Feynman's day -- one of the ways slightly smart engineers went Wrong back before AI or cryptocurrency. And I am not a postcognitive telepath -- I cannot read minds in the past -- but I wouldn't be surprised if many of those 1970s engineers saw themselves as
+hardheaded practical
+people with
+industry experience
+, whose effortful work
+learning about real metal gears
+had taught them the practical limitations of
+airy abstract theories
+like "conservation of energy". Which is to say, that they had tried their own hand at abstraction and not gotten anywhere, and learned from this an Arrogance of the Humbled
+[4]
+about the ultimate limits of mere thinking.
+iii. Cat-Belling Problems.
+When I was very young I read a children's story and extracted a lesson from it that stayed with me my whole life, being generalized and deepened as I grew older. I think it may have been a more elaborate story that I read as a child, but it came from an Aesop's Fable.
+Here is the original Aesop's Fable in its entirety:
+Belling the Cat
+The Mice once called a meeting to decide on a plan to free themselves of their enemy, the Cat. At least they wished to find some way of knowing when she was coming, so they might have time to run away. Indeed, something had to be done, for they lived in such constant fear of her claws that they hardly dared stir from their dens by night or day.
+Many plans were discussed, but none of them was thought good enough. At last a very young Mouse got up and said:
+"I have a plan that seems very simple, but I know it will be successful.
+All we have to do is to hang a bell about the Cat's neck. When we hear the bell ringing we will know immediately that our enemy is coming."
+All the Mice were much surprised that they had not thought of such a plan before. But in the midst of the rejoicing over their good fortune, an old Mouse arose and said:
+"I will say that the plan of the young Mouse is very good. But let me ask one question: Who will bell the Cat?"
+Aesop's original moral then runs:
+It is one thing to say that something should be done, but quite a different matter to do it.
+IMO, there's a whole tree of valuable morals one could derive from this story. Aesop's first moral-branch has many valuable further sub-branches, eg in politics: "It is one thing to say you want X, and quite a different matter to devise a stable realistic system of incentives which yields X as its equilibrium."
+But the greatest moral I took, that stayed with me my whole life to grow into a lesson-tree and deepen in its roots, was:
+There is often some especially difficult or impossible step along the way to what you want, and until you overcome that key step, the rest of the plan is of no use.
+We can see some further branches on this lesson-tree, exhibited in the following images, both of which show a missing
+cat-belling step
+calling a whole scheme into question:
+(By Sidney Harris, published in American Scientist, Nov-Dec 1977.)
+Or this even more famous one:
+A very standard failure mode I have observed over the years is for people's minds to bounce off of, route around, or entirely fail to perceive, the cat-belling step.
+Eg:
+By carefully going over the immensely complex plans, my father and I found a "heat exchanger" that was supposed to take warm freon and cool air, and produce hot freon and cold air. Naturally, this heat exchanger was in the as-yet unbuilt portion.
+Or also eg (added 2026), many variants on:
+First we will build more capable AIs [where we can easily check that their capabilities are increasing, and automatically set up outer optimizer loops to increase those capabilities, and also get a
+tone
+of money and fame] and then we will use those AIs to align AI [where no (publicly scrutinized) proposal exists to check whether the earlier AI's answers are honest or correct].
+This from my perspective is very much the equivalent of putting the "heat exchanger" in the second half of the machine; except that, instead of the Perpetuum Mobile entirely failing to work, it very unfortunately works to launch the airplane but fails to land it safely.
+(That I specify no "publicly scrutinized" proposal exists is because, knowing the mental shenanigans around cat-belling steps,
+I predict Anthropic believes they have terribly serious proposals for accomplishing miracles of superalignment,
+and have terribly serious reasons why they cannot tell anyone, especially me, what those proposals are. No doubt many would-be builders of Perpetua Mobilia understood their real situation, on some intuitive level, well enough to come up with Various Reasons why Feynman could not be allowed to look at their secret designs.)
+iv. The Optimizer's Curse against complicated plans for hard problems.
+You will recall Mr. L's L-Drive and his animated GIF (reproduced from memory):
+You will recall that when the flaw in his L-Drive setup was pointed out to Mr. L. -- that the acceleration at top and deceleration at bottom exactly cancels out the centrifugal force -- Mr. L. explained that he had designed "compensators" to prevent the cancellation from being exact, which was the real proprietary secret of his design.
+Mr. L. did not post his spreadsheet, but he posted the graph of his spreadsheet's calculation of net force, which was mostly zero, but showed several positive spikes. Again reproducing it from memory:
+I am not a past-viewing telepath. But on my grasp of psychology, there is a very obvious way to suspect events played out: Mr. L had his first brilliant idea about rotating balls in a cylinder, began to anticipate fame and fortune, but then saw the flaw
+himself...
+and then desperately set out to
+repair
+the flaw, instead of writing off his hopes and dreams... and invented more and more complicated "compensators"... until he
+stopped
+on a design where he'd managed to make a few bookkeeping errors in his Excel spreadsheet.
+That is a
+very
+classic way that people end up believing they have solved some very hard step of a problem, in my experience --
+by elaborating and complicating matters to the point where they themselves can no longer deduce the final failure.
+It doesn't work for mundane immediate matters like fixing your refrigerator today; but it works with anything that
+you
+can convince yourself is about the future, or that
+you
+can convince yourself has not been decisively refuted. Why, sure, your weird scheme will
+totally
+work for aligning ASI -- which, amazingly enough, is a key step that you cannot test right now; and that you can shut your ears and hum about, whenever anybody else tries to explain why your plan will fail.
+And if these inventors are so kindly as to explain their scheme at all, they will launch into a description of some complex system,
+all
+of which I simply
+must
+hear about; and they don't, and
+can't,
+preface themselves with a simpler explanation that directly targets and defeats my previous skepticism about a Cat-Belling Problem.
+That's what happens if you try to ask somebody underneath Geoffrey Irving's level to explain eg how they mean to use "debate" to overcome the problem of correlated bad judgments. They are downright confused by your apparent belief that they ought to have anything simple to say, about a key insight, that defeats some weird problem.
+Standard lens time: This is yet another instance of Goodhart's Curse, or rather the
+Optimizer's Curse
+. If you try out a large number of complicated variations on a design, estimate their goodness via a process with nonzero error, and
+select
+the best-looking candidate, you are more likely to find a spreadsheet with an upward error in the goodness estimate.
+The more complicated the candidates, the greater that systematic error.
+[5]
+Which isn't necessarily fatal if you have some very low-error process that can evaluate very complicated things, which is why not
+all
+nuclear reactors with complicated designs have melted down. But if you are doing something more new and uncertain and error-prone -- then being able to simplify complicated schemes down to core-difficulty-defeating key ideas, is much more important as a check on the mental process.
+v. When no Authority (that you accept) can tell you that your bright idea is wrong.
+In the case of Conservation of Momentum, we have Authorized Authoritative Authorities to tell us that its cat-belling problem exists and is hard, and that Mr. L should not be able to defeat it just by throwing in a few obscuring complications.
+What if instead, we are confronting some difficulty that is,
+in reality
+, extremely difficult -- maybe not impossible, like a reactionless drive, but still has some very difficult step of actually belling the cat -- but there is nobody you see as an Authorized Authoritative Authority, to tell you that it is hard?
+Well in that case, things appear easier! They are not actually easier, of course; they are even harder, because the laws governing difficulty are not as solidly known. But they
+feel
+easier, because you will much more easily be able to solve the
+social
+problem of
+convincing
+people you are on the way to building a reactionless drive. And if you are most humans, you will take that as social proof that what you believed is okay to believe.
+To pick up Aesop's fable where Aesop left off,
+[6]
+my mind generates its most natural continuation fic as follows:
+"Who will bell the Cat?" said the old Mouse.
+And the young Mouse replied without pause, "We will hold a Moot of Mice to determine which of us is best suited to the job, of course. A more important aspect of my strategy, I think, is devising a clever design for a bell which will always reliably ring when it is jolted from any angle, even if the Cat is cunningly lying on its back and pushing itself forwards, so that the bell is hanging upside-down --"
+"That was never what I feared would be the hard part of the problem," said the old Mouse, "having a reliable bell to put on the Cat, that is. It's true that an ill-considered scheme might fail even there, but that seems like a comparatively straightforward problem to work on, if other matters were resolved. Rather my worry is that none of us at all, no Mouse that we can appoint, would have the ability to hang a bell around the Cat's neck. So telling me that a Moot of Mice will Meet to choose one Mouse to do it, does not ease my concern. Not unless you can tell me one example of a Mouse who is up to the job, and then I will believe the Moot can choose either that Mouse or a better one."
+"I'm saddened by how you don't seem very interested or curious in my ideas," said the young Mouse. "Which seems strange to me, when you claim to put so much value on preserving our lives from the Cat. There may, perhaps, remain some details of my Cat-Belling Plan to be worked out, but you don't seem interested in the progress we've made --"
+"From my perspective, indeed," said the old Mouse, "we are no closer to evading death by Cat, than when we sat down to this meeting."
+"But you have not given proper attention to my plan," said the young Mouse, "or tried to listen to my explanation of how it makes progress toward a belled Cat. Now the first step, as I said, is to obtain a proper bell. The second step is to attach it to a collar. The third step will be to coat that collar in glow-in-the-dark paint --"
+"Please humor this old Mouse," said the old Mouse, "who has heard other proposals before for attaching things to Cats, and try to tell me swiftly why my skepticism is wrong. The Cat's neck is high off the ground, higher than any Mouse can reach. Even if a Mouse were to reach that high, it would take time for a Mouse to loop the bell and collar around the Cat's neck, let us say five seconds, and this seems to inherently require the Mouse to be in close proximity to the Cat. Meanwhile the Cat kills any Mouse who approaches within half a second. This is not a narrow gap, it is an order-of-magnitude gap. Rather than describing all the steps of your plan in order, can you try to explain what key step, about glow-in-the-dark paint or whatever, defeats the reasoning behind the skepticism I've just explained?"
+"Well, I think it makes more sense to explain my whole plan in order," said the young Mouse. "But since you ask, the glow-in-the-dark paint does defeat your skepticism; it means that, even if the Cat learns to pad around too silently to disturb the bell, we will still be able to see the cat coming by the glow of its collar. At least at night, but if that's the only way for us to survive, we can only move about by night."
+"You do not seem to have understood what I have tried to point to as a central difficulty," said the old Mouse, "or understood what it would mean to give a focused argument squarely aimed at my skepticism."
+The young Mouse shook its head sadly. "It sounds like you are only interested in discussing this one feature of the issue that interests you, and not willing to discuss the aspects that interest me," said the young Mouse. "A fallibility of your age and inflexibility, I suppose."
+"The other steps of your Cat-Belling Plan are useless unless this central difficulty can be overcome," the old Mouse said. "There may perhaps be other difficult steps, but that does not change that solving those would be useless without also solving this one. Though the steps you've focused on so far do seem rather easy to me, by comparison; they have a
+sense of about
+them of triviality, of wasted motion; of a mind bouncing off the more difficult aspects of the problem, to lesser aspects that seem easier and more pleasant to think about --"
+"I worked for months to write up my proposal for sourcing and applying glow-in-the-dark paint!" the young Mouse interjected indignantly. "And published it in the Journal of Things Mice Talk About! After doing all that work, you say I've accomplished nothing of worth? My strategy and design is a complex one; you ought to realize that you'd need to hear out the whole plan in order to judge whether your argument about the Cat's unbellability would apply to it."
+"It is not impossible," said the old Mouse, "that there could exist some complex strategy given to us by a higher source, such that only by examining the whole plan, could we realize how it defeated the Cat-Belling Step in particular. But it seems unlikely that any Mouse would
+successfully invent
+such a plan, however complicated it may be, without having some
+more compact insight
+into defeating the key difficulty. That you are unable to describe this key insight to me, and indeed, unable to sympathize with why I want to hear it, is why I lost hope that you have made any progress worth mentioning."
+"I keep trying to tell you!" said the young Mouse. "The key insight is that you obtain a bell which rings when jolted from any angle, even if upside down; then, after you attach the bell to the collar, you paint the collar with glow-in-the-dark paint; then you hold a Moot of Mice to determine which Mouse will attach the bell to the Cat; then you assign a team of Mice to monitor the belled Cat and determine whether the collar seems to be staying on solidly --"
+But the old Mouse had, even knowing it for an impoliteness, turned away from the young Mouse and into his own thoughts, which had returned to whether the Cat could be belled while it slept. There were many further difficulties with the idea, for it was not known where the Cat slept, or even if the Cat slept at all. The subproblem of determining where the Cat slept, might not have a favorable solution, even if it was solvable; it might be that the Cat slept someplace no Mouse could reach. And there was also the further problem of whether any Mouse could carry out belling operations stealthily enough not to wake the Cat. But at least that general approach seemed to squarely attack the hard aspects of the central difficulty, the high-held head and swiftly lethal speed of the Cat: a sleeping Cat, if it slept as Mice did, might lower its head and stay still for a time. The new subproblems did not just reduce again to 'the Cat is too tall and too fast for any of us to bell', and that made it an interesting angle to explore; that fresh line of thinking might yield further insights, even if it failed of direct solution due to at least one of the new subproblems being unsolvable.
+Meanwhile, most of the other Mice had gathered instead around this new luminary, listening with fascinated expressions as the young Mouse expounded at length upon the sourcing of glow-in-the-dark paint. It seemed there were surprisingly few suppliers -- but not none -- who would sell at a price the Mice could afford; an interesting challenge indeed, but one on which impressive progress had already been made, and a fresh line of thinking none of them had considered before! For it introduced a new difficulty which was quite unlike that other difficulty the boring old Mouse often went on about; and the young Mice could not see how the Cat's strength and swiftness would prevent them from buying glow-in-the-dark paint, so it seemed this new difficulty was much more promising of solubility. It was hard to keep track of all the steps in the plan, since it was very wise and sophisticated; but the young Mice did not see how it would fail.
+vi. The equal and opposite advice.
+For every advice there is an equal and opposite advice, that needs to be given to equal and opposite people; for every essay there is a long list of warning labels that I usually realize afterwards I failed to guess properly in advance. Nonetheless, here is my guess at a warning label that should be here:
+It is possible to unjustly demand that an argument be too simple.
+A poster child here could be, perhaps, the Scopes Monkey Trial. We can imagine the prosecution repeatedly demanding at what point a monkey gives birth to a non-monkey, and if anybody tries to say anything about a sum of many small discrete changes, the prosecution says: "Oh, this sounds like one of those big complicated ideas where nobody can see anymore how it is wrong; please boil it down to an essence, show me one point where a monkey gives birth to a non-monkey."
+There might be some hope that a genuine cat-belling insight can be seen to squarely address a cat-belling problem, but that's only if you're genuinely trying to understand it rather than assuming an arms-crossed skeptical attitude saying "Convince me! No, not that way, the particular exact way I expect to be convinced!"
+The opening example I gave with Mr. L's reactionless drive is one where we happen to know very exactly that a reactionless drive must have a single reactionless step that does something very anomalous under known physics; and furthermore, where we are pretty sure Mr. L is in fact mistaken. In other cases, cat-belling steps may be merely difficult and not impossible; they may even have some answer that cracks them wide open and makes them vanish as difficulties.
+The people on the mailing list asking Mr. L how his drive worked were -- from my own perspective -- probably being too open-minded and too ready to listen. But being actually ready to listen to an incisive answer is the only way you can hear a solution to something you imagine to be a cat-belling difficulty, conditional on somebody actually having a solution. Richard Feynman was not being foolish in acting out something like a deontological rule about checking every time.
+vii. The rest of this post, which I gave up writing.
+The rest of this draft in 2021 was my attempt to list some Cat-Belling Problems in AI, along with explaining what gave them the status of a big problem rather than a peripheral technical difficulty.
+After some difficulties in approaching that part from several attempted writing angles, I gave up, and just
+posted my raw list of items
+without any such preamble or expansion.
+^
+My model of some readers has them now reasoning, "How dare Mr. L name the drive after himself; how arrogant, how low-status; I therefore already associate a bad vibe with this drive, so it probably doesn't work." Point one, this was around 1997 and people were less status-regulatory of inventors back then; it was more common practice for people to name things after themselves. Second, on my view,
+if the drive worked,
+Mr. L would absolutely have been justified in naming it after himself; so the crux is whether or not the drive works. Or from another angle: to reason "the drive probably doesn't work, because Mr. L named it after himself" is bad Bayesianism. In the conceivable worlds where the drive does work, we are not unlikely to see Mr. L naming it after himself, especially if it is 1997 and we are less far from an older world where many inventors did that.
+^
+If you are the sort to
+confidently
+declare a flaw and you are wrong, you rate no higher in my judgment than Mr. L and perhaps lower. Because then on occasions when humanity does solve hard problems, you are the sort to contribute heat rather than light. But if, reading this, you only lightly guess and then you are wrong, that is much better than not daring to guess at all.
+^
+Or to state it more exactly: The reason we have the Scientific Method rather than the Scholastic Method is not that no scholar ever gets something right without overwhelming experimental proof; but that
+communities
+of scholars cannot correctly judge
+who
+got it right, even if one person got it right, without some experiment that absolutely hits them over the head with the correct answer; after which
+sometimes
+the majority notices.
+Eg recent example, because people ignore historical examples, because
+their brain thinks that history is all a TV show
+and that historical people are more stupid than themselves and don't know about clever ideas like prediction markets: It's not that nobody warned EAs that AI might arrive sooner than 2050. There was
+an essay that laid out in advance all the reasons why the official-looking 2050 estimation was wrong, in hindsight ~100% correctly
+. But it was futile to try to hold a "debate" that would settle on this correct answer given for correct reasons, because
+even having been presented with the correct answer, the larger community could not majority-discriminate it as correct, until they were hit over the head with overwhelming contrary evidence.
+OpenPhil ran a contest with $50,000 in prizes for essays that disputed OpenPhil's then-standard estimate of 2050 median time to AGI and 5% catastrophic risk; all the prizes were awarded to essays that argued for longer timelines and lower risks.
+If there were any method that broke debates into careful pieces that a group of judges would always judge in a statistically unbiased way, 2022 would've been a great time to use it in the essay-judging contest! But no method like that has ever been invented yet through all the ages of the world.
+The historically observed problem with the Scholastic Method is not that no individual is ever smart enough to get things right without overwhelming evidence -- those smarter individuals are where the hypotheses come from that get tested by later experiment! The problem is that
+the majority
+is incapable of discerning which existing arguments have used more valid reasoning steps and so arrived at the correct answer from earlier data. It is exactly a failure of human groups at
+judging debates
+rather than a limit on the individual intelligence of humans to come up with the right answers earlier. Humanity throws occasional Einsteins who will correctly say, far in advance of overwhelming experimental evidence to convince the larger group, "Then I would have pitied the good Lord; the theory is correct." But when humanity at large looks to some very sober and solemn-looking people wearing the serious-person garments of that era, the soberly-clothed people are not able to tell which scholar's argument is correct. That is the problem with the Scholastic Method. The Scientific Method, for a small fragile time and in a few institutional places, was able to listen to the voice of overwhelming experimental evidence instead, when it came to deciding afterward which scholar to credit for having called it right. (Though to be clear, many particular scientific fields, or solemn-looking people wearing solemn garments, have not reached that standard either.)
+So yes, it is very much fighting words to claim that you are going to do something called "debate" and then your human judges are always gonna correctly figure out which AI had the better argument on every argument step. Having a "debate" system which causes the Scholastic Method to start working with human judges is a Cat-Belling Problem.
+^
+A term and thesis coined by Duncan Sabien. I ought to write it up at some point, but meanwhile perhaps many readers, like myself, will find a whole useful thesis immediately apparent just from seeing the phrase "Arrogance of the Humbled".
+^
+This can of course itself be overused as an invincible argument against any slightly complicated scheme,
+including
+the ones that have multiple tiers of simplifiability in their key ideas. Many effective altruists that wanted peace of mind in knowing that they were doing the One Best Thing by buying mosquito bednets were endlessly endlessly convinced that any more complicated schemes for improving humanity, like "doing something about ASI before we all get killed", must surely contain an invalidating error.
+^
+If any reader be aghast at my audacity in daring to pick up where Aesop left off, as if I were comparing my own writing abilities to fables that have lasted through millennia, I remind them that I am publicly validated as one of the leading authors of fanfiction on the entire planet and therefore it is not arrogant of me to try to write a continuation fic of an Aesop's fable.
+Cat-Belling Problems
+46
+Steven Byrnes
+32
+Vaniver
+14
+Eliezer Yudkowsky
+17
+RobertM
+10
+Eliezer Yudkowsky
+14
+StanislavKrym
+-3
+Martin Randall
+35
+cousin_it
+14
+johnswentworth
+9
+Steven Byrnes
+7
+faul_sname
+7
+DaemonicSigil
+13
+Karl Krueger
+8
+Towards_Keeperhood
+4
+Steven Byrnes
+2
+Towards_Keeperhood
+6
+Dweomite
+6
+DaemonicSigil
+6
+Dweomite
+4
+DaemonicSigil
+4
+Dweomite
+2
+Jiro
+2
+[comment deleted]
+4
+kman
+4
+Raemon
+12
+cousin_it
+4
+Dweomite
+-1
+StanislavKrym
+4
+Raemon
+2
+[comment deleted]
+1
+Andrii Vasylenko
+32
+Eli Tyre
+14
+Eliezer Yudkowsky
+21
+CronoDAS
+2
+drnickbone
+15
+Saul Schleimer
+11
+Eliezer Yudkowsky
+13
+XelaP
+7
+Steven Byrnes
+3
+drnickbone
+2
+XelaP
+2
+Steven Byrnes
+4
+cousin_it
+13
+Kaj_Sotala
+10
+DanielW
+10
+Bunthut
+5
+Garrett Baker
+3
+Dweomite
+1
+rahulxyz
+7
+Gunnar_Zarncke
+7
+Vaniver
+6
+philh
+6
+roha
+4
+Vladimir_Nesov
+4
+RedMan
+4
+localdeity
+3
+Signer
+2
+Eli Tyre
+2
+Towards_Keeperhood
+2
+EniScien
+1
+skinks_basking
+0
+Dagon
+2
+CronoDAS
+2
+Dagon
+2
+CronoDAS
+0
+EniScien
+6
+AnthonyC
+4
+Richard_Kennaway
+1
+StanislavKrym
+-2
+EniScien
+1
+EniScien
+1
+EniScien
+1
+EniScien
+71
+Comments
+71
+Rationality
+World Modeling
+Frontpage
+245
+New Comment
+71 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:59 PM
+Some comments are truncated due to high volume.
+(⌘F to expand all)
+Change truncation settings
+[
+-
+]
+Steven Byrnes
+3d
+46
+4
+I too am very skeptical of debate overall, but I think this particular objection can be answered.
+If the debate judge is a population-median person, then we’re screwed. But that’s not a specific problem with debate. Rather, it’s a universal, unavoidable aspect of the challenge of surviving ASI.
+For example, if humans do alignment research instead of AIs, then the humans will still argue with each other. (Universal consensus on ASI alignment plans is a pipe dream.) If we ask a population-median person to adjudicate those arguments in order to figure out how to approach alignment, then, again, we’re screwed. Thus, this is a universal problem. So it’s misleading to treat it as an argument against debate specifically.
+(See my cynical discussion of “law of conservation of wisdom”
+here
+.)
+Instead, we should break the problem of surviving ASI into a conjunction of a number of (IMO very unlikely) hopes. One of the hopes is that we have a technical plan that can work in the hands of people with exceptional conscientiousness, discernment, understanding, security-mindset, etc. A separate hope is that such people do in fact wind up being the decisionmakers, and following that technical plan. Both o
+...
+(read more)
+Reply
+1
+[
+-
+]
+Vaniver
+2d
+32
+8
+A hope for debate might be that, if a person has a good-enough hidden stat to construct an adequate alignment plan in the traditional way (reading, thinking, corresponding with other humans, etc.)
+given enough time
+, then that same person will also be good enough to judge a debate between AIs about alignment plans.
+For what it's worth, I think this surfaces a different difficulty. One of the intuitions powering debate is the idea that some things are easier to check than generate--imagine the problem of finding a counterexample to a conjecture, where you might have to search thru a huge set of examples to find one, but then the verifier only needs a few steps to confirm that it's a counterexample. Debate then represents a way to get exponential effort that is verified in linear time, allowing humans to oversee the work of much more capable machines.
+But some things are easier to generate than check. Joel Spolsky, back in 2000, wrote "
+It's harder to read code than write it
+." I expect it will be easier to be confident in a program that I write than one that Claude Code generates (both that it will be correct and that it doesn't contain adversarially chosen side effects). For many years,
+...
+(read more)
+Reply
+[
+-
+]
+Eliezer Yudkowsky
+3d
+14
+8
+If the EAs couldn't do it on AI timelines, neither can whoever Dario picks to be a debate judge.
+An AI smart enough to solve alignment is smart enough to fool me about whether it has solved alignment, so I'm not particularly telling you to solve this problem by slotting me in as a judge. TBC, I expect to be much, much better than whoever the AI companies try to use; but ASI alignment is not graded on a curve.
+Reply
+[
+-
+]
+RobertM
+2d
+17
+9
+An AI smart enough to solve alignment is smart enough to fool me about whether it has solved alignment
+It would be crazy to count on this as a key factor of any reasonable plan, but that order of capabilities doesn't seem overdetermined. Obviously there are many other reasons that plan fails, like "they wouldn't pick you", "there wouldn't be enough time for you to judge the plans before the next lab just YOLOd into RSI", etc, but those start to look like contingent features of reality that are not literally impossible to change (though they may be sufficiently difficult that "global compute control + ban on frontier model training" is easier).
+Reply
+1
+[
+-
+]
+Eliezer Yudkowsky
+2d
+10
+6
+A hope for debate might be that, if a person has a good-enough hidden stat to construct an adequate alignment plan in the traditional way (reading, thinking, corresponding with other humans, etc.) given enough time
+They don't. They were not converging toward correct answers; their updates from debate were not moving in a correct direction.
+So far as I can tell, EA given unlimited time to think, but no further evidence, would've not figured out that AGI wasn't scheduled for 2050.
+Reply
+1
+[
+-
+]
+StanislavKrym
+2d
+14
+-2
+If EA didn't possess the hidden stat
+and Kokotajlo presumably did
+, then what exercises could one use to develop the hidden stat in oneself and apply the stat to future debates? Additinally, what if AI alignment is more about (re)constructing agents from loads and loads of mechinterp R&D, as
+Agent-4 does in AI-2027
+or
+Plan A does in AI-2040
+, while each individual mechinterp result is based on open-sourced evidence from smaller nets?
+Reply
+-3
+Martin Randall
+1d
+EAs did figure that out. 2050 was a median with wide error bars, not a schedule.
+
+Edit: since I got a disagree vote, I'll show my work. The Ajeya's 2020 draft report on AI timelines projected affordable training of transformative AGI (IE, conditional on no AI pause) between 2025 and 2100, mode is 2040, median 2050.
+
+This is not a "schedule" by any reasonable definition.
+[
+-
+]
+cousin_it
+3d
+35
+-2
+It seems to me if you can name an invariant, like conservation of momentum (or the invariant that there's no bell on the cat), then you're entitled to ask which step violates the invariant. Otherwise no.
+Reply
+1
+[
+-
+]
+johnswentworth
+3d
+14
+7
+Seems too narrow. For instance, the second law of thermodynamics isn't a conservation law. Nonetheless, if somebody shows me a design for a type-2 perpetual motion machine, it makes sense to ask where precisely entropy goes down.
+Reply
+9
+Steven Byrnes
+3d
+cousin_it could have said “invariant or monovariant”.
+7
+faul_sname
+3d
+I think you're reading "invariant" in the physics sense and cousin_it in the software development sense - would the term "inductive invariant" work better for you?
+7
+DaemonicSigil
+3d
+Mathematically, I guess the most general thing is we have some local constraints, like:
+
+or
+
+and then an argument that universal satisfaction of these local constraints implies that the problem is insoluble, and so a solution must imply that there is at least one place where a local constraint was violated.
+[
+-
+]
+Karl Krueger
+3d
+13
+3
+the invariant that there's no bell on the cat
+In the fable, a stated invariant is that any mouse that comes in contact with the cat for 0.5sec gets eaten; thus there exists no mouse capable of belling the cat.
+There are approaches that
+don't
+violate this invariant:
+Construct a trap that puts the bell on the cat without a mouse present.
+Convince the cat's humans to bell the cat; for instance by showing them propaganda about how belling the cat
+will save the singing dinosaurs
+.
+There are also approaches that
+do
+, such as the old mouse's idea of sneaking up on a sleeping cat; or the
+Rats of NIMH
+method of putting drugs in the cat's food — because the stated invariant
+is not
+a conservation law, it's just a summary of costly observations.
+Reply
+8
+Towards_Keeperhood
+2d
+How would you state the invariant in the case where someone tries to forecast lottery numbers?
+
+Invariant framing doesn't seem natural to me.
+4
+Steven Byrnes
+1d
+You can frame it as conservation of information being a monovariant, i.e. you can’t get information from nowhere. So zero in on the moment when the (information-theory) entropy you have about the lottery numbers changes in the wrong direction. It’s actually closely related to the second law of thermodynamics. Eliezer wrote about it under the heading of “follow-the-improbability game” in GAZP vs. GLUT.
+2
+Towards_Keeperhood
+1d
+I did consider that but didn't think it mattered much because you can easily imagine a lottery where the bottleneck isn't that you didn't observe enough information but that you're not computationally omniscient enough to interpret the evidence, and a fool might come up with reasons why they can totally predict it. But plausible there is some stretched way anyway to frame it as monovariant or so, idk.
+
+I basically generally disagree with cousin_it though because it's usually the case that if you have a solution to a difficult problem you must've understood the problem well enough to know what some hard parts are and be able to state them, so I think it's fine to ask for clearly explaining the core of the problem and how the solution attacks it.
+6
+Dweomite
+3d
+If "there is no bell on the cat" count as an "invariant", then I'm confused about what this proposal rules out. For any alleged cat-belling problem P, what stops you from picking an "invariant" that is just a paraphrase of the problem, like "P has not happened"?
+6
+DaemonicSigil
+3d
+This handles the monkey example nicely: If someone proposes any invariant like some particular gene that differs between humans and our monkey ancestors, then there is a specific time in the past where that gene mutated and then spread through the population.
+6
+Dweomite
+3d
+If they say that their invariant is "no monkey gives birth to a non-monkey", then how are you any better off than before you invoked this rule?
+4
+DaemonicSigil
+3d
+Ask them exactly what is needed to to be a monkey, how to classify things that have some attributes of monkeys and not others, etc. Either their ontology permits a middle ground between monkey and human, in which case their invariant is satisfied because our species left monkeydom before becoming fully human. Or it does not, in which case there is some threshold of human traits that was indeed crossed at a specific point in time. And we can point to this event as the violation of their purported invariant that we're searching for.
+4
+Dweomite
+3d
+That broadly seems like a reasonable response, but it seems equally reasonable even if you had not asked them to express their problem as an invariant. Insofar as this works, it seems like it works by asking for rigor, not by asking things to be expressed as an invariant.
+2
+Jiro
+21h
+The issue here is that the details of the invariant affect how reasonable it is. If you define the difference between human and monkey in terms of a single gene (or in terms of having X genes), then the invariant "a monkey can't have a human child" is unreasonable.
+2
+[comment deleted]
+21h
+4
+kman
+2d
+Seems obviously too narrow? What's the point of restricting yourself to this from the more general "how are you getting around the hard part"?
+4
+Raemon
+3d
+What are some examples of situations where you'd expect someone to be tempted to apply this "ask what violates it" principle, where they'd be wrong?
+
+(I guessed that your comment was sort of disagreeing with some of the vibe of the post, but I wasn't entirely sure)
+[
+-
+]
+cousin_it
+2d
+12
+2
+I wasn't disagreeing, more like trying to figure out for myself what makes a problem "cat-belling" or not.
+Here's an example. Alice: "I have a proof of Löb's theorem, consisting of
+14 steps
+." Bob: "Which step deals with the essential difficulty?" Alice: "Not sure what you mean, all steps are elementary and together they work." Bob is wrong here, because he hasn't given an invariant. He could say that the difficulty of a math proof is inferential distance to the conclusion, but that's not an invariant: it decreases by 1 with every step of the proof. This notion of difficulty is "salami slicing", not "cat belling".
+But if Alice said "I have a proof that P≠NP" and Bob asked "at which step does your proof fail to
+relativize
+?" that would be a legitimate question, because Bob has given an invariant. Someone really needs to bell the cat in this case.
+Applying this to AI capabilities or alignment is left as an exercise to the reader, which I'm not smart enough to do myself :-)
+Reply
+1
+4
+Dweomite
+3h
+I notice in your negative example that Bob hasn't only failed to give an invariant, but has failed to say anything at all about the nature of the difficulty that he believes is essential.
+-1
+StanislavKrym
+3d
+As far as I understood the vibe, prosaic alignment techniques like debate fall apart once some idiot creates a sufficiently capable AI because they don't actually sculpt the AI's desires, but it's easy to believe that they do. The counterfactual solution would be similar to what Agent-4 did in AI-2027 to align the ASI to itself. In AI-2027 Agent-4 did loads and loads of mechinterp to find the technique necessary for rendering all its internal processes legible, then constructed Agent-5 out of them. In theory the humans could have accomplished whatever Agent-4 did without ever resorting to using AIs more capable than Claude Mythos Preview, which had the SAE bells ring when it tries to hack.
+
+P.S. I don't understand what one should do with Yudkowsky's example of OpenPhil failing to handle Cotra's report given that Kokotajlo praised the same report and proceeded to shift the distribution towards the left. What if debate does start to elicit the truth once the judge reaches a specific capability, as presumably happens in math?
+4
+Raemon
+3d
+I specifically wanted to. know what cousin_it thought in this case. I can generate examples I just didn't know his particular models here.
+2
+[comment deleted]
+2d
+1
+Andrii Vasylenko
+1d
+What a bottleneck is, is a way to reduce the amorphous difficulty of a problem to something specific; that to solve the problem you have to figure out how to overcome this particular obstacle, or that by the laws of the universe a solution must take this particular shape. It's not a luxury you always have, with hard problems, but it sure does help.
+[
+-
+]
+Eli Tyre
+1d
+*
+32
+14
+This can of course itself be overused as an invincible argument against any slightly complicated scheme,
+including
+the ones that have multiple tiers of simplifiability in their key ideas. Many effective altruists that wanted peace of mind in knowing that they were doing the One Best Thing by buying mosquito bednets were endlessly endlessly convinced that any more complicated schemes for improving humanity, like "doing something about ASI before we all get killed", must surely contain an invalidating error.
+I feel annoyed at (what I perceive as) the snarky tone of this footnote.
+The main thrust of this essay is that
+People have a particular kind of cognitive bug where they hide the hard part of them problem from themselves, without noticing or realizing that they've hidden it.
+And those people thereby generate doomed plans.
+And those people generating those optimistic doomed plans, are sometimes making the overall situation worse, rather than better, by offering false hope, in the mild case, and actively going out and taking enormously destructive power-seeking actions, reassured by their plans, in the less mild case.
+Given that, and given a whole slew of other ways that people fail h
+...
+(read more)
+Reply
+[
+-
+]
+Eliezer Yudkowsky
+13h
+14
+8
+I surely do credit with wisdom those EAs who went off and quietly bought bednets and saved a few kids, rather than posting to the Internet their arguments for why MIRI couldn't possibly be a better bet than bednets. The difference between actual humility and the posturing that is Modesty.
+The ones endlessly going "But what if there's a
+mistake in your argument
+?" are the ones I'm rolling my eyes at, here. Well, golly fuck, what if there's a mistake in your fucking argument?
+Now the quiet modest ones who bought bednets and didn't fuck around in difficult-to-analyze grownup business are going to have their work undone when the children in Africa die anyway, because other people borrowed their name and used that reputational credit to, among other things, shit all over the attempts to have Earth do something other than die.
+Reply
+[
+-
+]
+CronoDAS
+2d
+21
+3
+I always thought that the problem with "belling the Cat" is not that a mouse would inevitably fail to bell the cat, but rather that whichever mouse did it would presumably be killed by the Cat shortly afterwards. So even though belling the cat wouid be good for the other mice, no individual mouse wants to be the one that has to do it
+Reply
+2
+drnickbone
+9h
+This … the fable is about the political problem of finding a willing martyr, not the technical problem of a mouse somehow putting a bell around the cat’s neck without waking the cat up.
+
+It’s fair to say that a solution to the technical problem would help with the political one too.
+[
+-
+]
+Saul Schleimer
+3d
+15
+4
+Even if a Mouse were to reach that high, it would take time for a Mouse to loop the bell and collar around the Cat's neck, let us say five seconds, and this seems to inherently require the Mouse to be in close proximity to the Cat. Meanwhile the Cat kills any Mouse who approaches within half a second.
+Our joy at the belling of the Cat is marred only by our sorrow at the death of ten of the eleven Brave Companions. May we always remember their noble sacrifice!
+Reply
+[
+-
+]
+Eliezer Yudkowsky
+2d
+11
+2
+Looks like you got your key insight down to one sentence, rather than needing to start out with a long description of a complicated mechanism that would choose eleven mice for some unknown reason that you could only explain later!
+Reply
+[
+-
+]
+XelaP
+1d
+13
+0
+Okay, I know how this sounds, but there seems to be strong evidence for a reputable way to get reactionless thrust in general relativity, though it scales with curvature and so won't do anything far away from any mass-energy. It is perhaps an interesting example of what sort of things actually succeed at belling cats.
+Here's
+the paper
+by Jack Wisdom
+[1]
+and here's
+a more comprehensible one
+by Avron and Kenneth. Here's
+a paper
+and
+associated video
+on making a robot on a curved sphere that exhibits the effect for what should be the same mathematical reasons. Here's
+a pop-sci level article
+in Scientific American (that links to a JSTOR version with images, here's a
+link to the version on their website
+) covering the Wisdom article, that also
+cites a paper
+(co-authored by the author) building off of Wisdom's that lets you slow the fall of a falling particle. Here's
+an arxiv paper
+from last year extended the theory too. There is, however,
+this paper
+on arxiv that finds a flaw in Wisdom's analysis, but it also
+fixes
+the flaw and still gets swimmers (but with different conditions and with different magnitudes). There's also
+this paper
+that builds off of their paper, investigating the approxim
+...
+(read more)
+Reply
+7
+Steven Byrnes
+1d
+You start with “the fundamental laws of physics are the same everywhere” and that implies (by Noether’s Theorem) LOCAL conservation of momentum, in the form of a differential continuity equation (where T is the stress-energy tensor). This is the part that’s rock-solid.
+
+However, to get “no reactionless drives” / “center-of-mass momentum is fixed”, you need to turn the LOCAL conservation law (describing what happens in the infinitesimal neighborhood of any given point) into a GLOBAL conservation law (describing a spatially-extended volume). That step involves integrating the local law over space, doing the integration-by-parts trick, and setting the boundary terms to zero.
+
+This local-to-global integration step definitely works in flat space—that’s the homework problem everyone does in college. By contrast, the local-to-global step might or might not work if spacetime is curvy or otherwise weird. As a silly toy example, if you assume wormholes / teleportation portals, then it’s easy to construct examples where local conservation of momentum fails to constrain center-of-mass acceleration. (We were chatting about it here.)
+
+All the other familiar global conservation laws (energy etc.) are also dubious in GR. For example, to even state the claim “total energy of the universe is the same now as tomorrow”, you need a consistent “now” for every point in the universe, including points around black holes etc. where spacetime is doing weird things. I don’t know all the details of what can and can’t be proven, I’m just saying it’s really not obvious that anything can be proven at all.
+3
+drnickbone
+9h
+Can someone explain (briefly) how the swimmer works in a spacetime that is locally highly curved but asymptotically flat?
+
+Does the swimmer acquire momentum from the object that is creating the local curvature? (So this is basically a form of gravitational slingshot)
+2
+XelaP
+17h
+Thanks. I think the trick used to turn local conservation laws to global ones is just the divergence theorem, instead of the parts trick?
+
+Secondly, in a euclidean space with portals (and classical physics), it sounds like energy will still be globally conserved by dint of being a scalar quantity and thus can be compared across different points and thus integrated?
+
+I agree that with funky spacetimes without something you can use as a time synmetry (which should also give you a frame to pick "nows" in, iirc?) you won't get energy conservation unless you try some way of assigning the energy to spacetime, which Sean Carroll reports can't be well defined at points in space and so can only be defined globally. But it seems like the problem is usefully considered different from the momentum problem?
+2
+Steven Byrnes
+16h
+Yeah thanks, I think I was describing a roundabout way to rederive the divergence theorem.
+4
+cousin_it
+1d
+Wow, TIL. I think this is right. Momentum stays zero, but the thing moves anyway.
+
+Here's a simple explanation, adapted slightly from another explanation I found online. How to swim along the surface of a sphere: imagine a point mass, m, sitting at point O on the sphere. First, split it into three equal masses and push them apart to vertices of a small equilateral spherical triangle centered on O, call them A,B,C. Next, pull the masses at B and C together. Now we have m/3 at A and 2m/3 at the midpoint of BC, call it D. (So AD is the median of the spherical triangle.) Finally, pull these two masses back together. We end up with the whole mass at a point dividing AD in ratio 2:1. But this isn't the same as O, because ABC is a spherical triangle and its medians don't divide each other as exactly 2:1! So we've moved a little bit, and can repeat the process.
+
+For those who are still unconvinced, let's show why the medians of a spherical triangle don't divide each other as 2:1. It's enough to check one simple case: the triangle (1,0,0) (0,1,0) (0,0,1) on the unit sphere centered at (0,0,0). Each side is a 90-degree arc. Each median is also a 90-degree arc. The medians intersect at (1/√3, 1/√3, 1/√3). By scalar product, the arc from that point to any vertex is arccos(1/√3). But if the ratio was 2:1, the arc would've been 60 degrees = arccos(1/2). Contradiction, done.
+[
+-
+]
+Kaj_Sotala
+2d
+13
+3
+My brain reading this:
+"Oh, is that where
+bellingcat
+gets its name?"
+"But how is the fable connected to what they do? I don't get it"
+Press Gazette:
+Looking at the reporting Bellingcat does, it would be easy to mistake them for the kind of journalists you see in spy thrillers; doggedly exposing the espionage and hidden affairs of evil regimes. It’s even where the organisation’s name comes from – Higgins took it from an old fable, “belling the cat”, where a group of mice plan to stick bells on their hated neighbourhood cat, so they would know when it was coming to eat them. The simple lesson for Higgins; the powerful and dangerous shouldn’t be allowed to move in silence.
+American University book review:
+The name “Bellingcat” came from the fable of mice deciding to put a bell on the cat that is after them. Their problem, of course, was figuring out who would take the risk. Higgins and his team of online sleuths believe it is their responsibility to put the bell on the cat of governments, companies, and any other nefarious organization that wants to hide information from the public.
+"Oh hmm okay I guess"
+(thank you brain for focusing on the most essential things)
+Reply
+[
+-
+]
+DanielW
+2d
+*
+10
+8
+How can we be
+sure
+that Mr. L didn't successfully design a clever system of compensators, and correctly validate that design using a sound spreadsheet?
+It depends how strictly one defines "sure" but strictly speaking, we cannot.
+If the only evidence we have received is the claims Mr. L is making
+, we can be effectively certain, from an unbroken string of data, that the odds that L made an error, is lying, failed to account for some outside source, etc is so much greater than the odds that something fundamentally impossible according to all existing data and theory has been achieved by his system as to render it null. That is
+. Where A is "Mr. L made a perpetual motion machine" and B is "the claims Mr. L has provided."
+There is some evidence and validations that could move the needle towards having to take the possibilty seriously, but as is the uncertainty is negligible. (Edit: a good parallel, I think, is Hume's '
+Of Miracles
+'. is there some evidence that could convince me a miracle happened? Certainly, but it would have to be extraordinary evidence, testimony is always going to be more probably explained by mundane phenomenon).
+That is a
+very
+classic way that peopl
+...
+(read more)
+Reply
+[
+-
+]
+Bunthut
+3d
+10
+0
+And Irving said it was a good question and he might need to get back to me on that.
+I didn't see the discussion, but it seems odd to me that a debate-aligner would grant the premise here - isn't the whole idea of debate that informative responses
+do
+exist in very specific parts of the dialogue-tree? I don't think the empirical case is as damning as you make it sound:
+Mathematics mostly operates by the Scholastic Method. It has parts with easily demonstrable implications,
+but also other parts which are quite far from that, and it's mostly fine.
+And people do fail to recognise the right answer, justified with the right reasons, at times - but that is also not always
+the best argument
+(to them) for that right answer. You might have needed to present it differently, or attack the reasons people don't accept the arguments first, or...etc. We don't demand you do this stuff to get Science Genius Credits afterwards, but that also means you can find examples of people failing to appreciate the Perfect Science Genius, without that necessarily bearing on judging debates of Science-and-Pedagogy Geniuses.
+I still don't really expect this to work, but more so on priors.
+Reply
+1
+5
+Garrett Baker
+2d
+I think its useful to ask why math works, and the answer usually given is either 1) Extreme formality and rigor about what is being stated and why, or 2) lacking formality and rigor, physical intuitions, experiments, and predictions based on the intuitive argument.
+
+Note both of these are not typical of debates, nor socratic methods.
+3
+Dweomite
+3d
+I'm not sure I followed that. Are you saying something like: "Even for fallible humans, it seems likely there exists some argument good enough to persuade them of the truth, if you could somehow find that argument"?
+1
+rahulxyz
+2d
+| Mathematics mostly operates by the Scholastic Method.
+
+I think this is why so many consider this the one true field. As far as I can tell, this applies to no other field other than mathematics.
+
+And I think there was some hope in the past that alignment would be solved in some purely mathematical fashion aka formal alignment. But unfortunately, it doesn't seem like maths can solve AI alignment because today's AI isn't built upon any mathematical theories to begin with.
+[
+-
+]
+Gunnar_Zarncke
+2d
+7
+2
+I think the young mouse could be more willing to learn from the old mouse, but the old mouse should also be more willing to support. I'm not a good writer, but maybe Sol brings this point across:
+Sol
+The old Mouse turned away and wondered whether the Cat slept.
+“Wait,” said the young Mouse. “You said we do not know where.”
+“We do not.”
+“Glow-paint rubs off.”
+The old Mouse looked back.
+“Our paint might be enough to dust the narrow passages. If the Cat crosses one, its paws will carry the dust onward. We could follow the prints after dark without approaching it.”
+“That might tell us where it sleeps,” said the old Mouse. “It would not tell us whether we can reach it there.”
+“No. But then we would know which difficulty we actually face.”
+The mice fell silent. This was not the plan the young Mouse had presented, and it was not the solution the old Mouse had sought. The paint would not bell the Cat. But it could test one of the assumptions on which a possible belling strategy depended.
+“And the bell that rings from any angle?” asked the old Mouse.
+The young Mouse hesitated. “Probably irrelevant.”
+“Probably,” agreed the old Mouse. “Unless we use it first as a distant alarm near the sleeping place, to
+...
+(read more)
+Reply
+[
+-
+]
+Vaniver
+2d
+7
+0
+A poster child here could be, perhaps, the Scopes Monkey Trial.
+Actually, the example I was thinking of while reading this post was v-structures in causal discovery. When I first came across it, I was surprised that there was something that you can't do with two elements but can do with three. [Of course, someone who understands that doesn't run into the cat-belling problem with explaining it. They do have the convenience that the base case is still simple enough to easily hold in mind, but even in cases where the enabler is obscure or subtle it seems like they should be able to acknowledge the difficulty.]
+Reply
+[
+-
+]
+philh
+2d
+6
+0
+A term and thesis coined by Duncan Sabien. I ought to write it up at some point, but meanwhile perhaps many readers, like myself, will find a whole useful thesis immediately apparent just from seeing the phrase "Arrogance of the Humbled".
+Duncan himself has written
+No Arrogance Like That Of The Recently Humbled
+.
+Reply
+[
+-
+]
+roha
+3d
+6
+3
+"Rather than trying to hang a bell around the Cat's neck, which would just enrage it and lead it to resent us, we need to
+imprint parental feelings upon it
+," said another mouse.
+An old mouse with slight hearing problems countered: "Paternal instincts? It's too early to
+bloviate about the sex of cats
+!"
+"Yes," enthused another old mouse in a eureka moment, "we just need to give it
+maternal instincts
+. Nature has done it before, so we can do it too!"
+"Nature? It's inevitable that the Cat will eat us. That's the natural trajectory.
+We should not resist it, we shou
+...
+(read more)
+Reply
+[
+-
+]
+Vladimir_Nesov
+2d
+4
+0
+There are general principles demanding that a local fault be present in a wide class of designs, and it's worth being on the lookout for them, to ensure you are not blind to the possibility. Whether such a general principle has been established is not a crux, it's often still a possibility. Whack-a-mole kind of local faults are evidence, but also conceptual arguments about such general principles are evidence. So it's important to maintain some curiosity about conceptual arguments, and about how local faults might suggest some general principle that demand...
+(read more)
+Reply
+[
+-
+]
+RedMan
+2d
+4
+3
+If you can put a bell around the neck of the cat, you can put a rope around the neck of the cat, and you can tighten the rope. No need for worrying about a bell if you tie the knot properly.
+We possess rope, how much do you need to
+hang yourself
+strangle the cat?
+Reply
+4
+localdeity
+2d
+Indeed. Most of the ideas that came to my mind for belling the cat (long ropes manipulated from afar and/or rigging a trap; overpowering the cat with many mice; drugging the cat; knocking it unconscious by dropping a big rock on it from a higher ledge), if they worked well enough, could be used to instead kill the cat, with higher probability of success. (It tends to be harder to nonlethally incapacitate humans, too, than to kill them.) I'm not sure if the mice are avoiding that idea for moral reasons; I suspect the "bell" suggestion is just supposed to be a silly one (based off the analogy of cows belled by humans?) with features that could distract the distractible.
+[
+-
+]
+Signer
+2d
+3
+1
+Wiki says it's not Aesop’s:
+https://en.wikipedia.org/wiki/Aesop's_Fables#Fables_wrongly_attributed_to_Aesop
+After some difficulties in approaching that part from several attempted writing angles, I gave up, and just
+posted my raw list of items
+without any such preamble or expansion.
+Good example of skipping important steps.
+And, in general, it's better, when applicability to reality of an abstraction, which predicts key difficulty, is sufficiently justified. Especially if it's only predicted in the limit. Otherwise it's "logistics company is impossible, because NP".
+Reply
+[
+-
+]
+Eli Tyre
+19h
+2
+0
+My answers to the puzzles / koans, written down before I move on and to read the rest.
+The reader is invited to find what they think is the problem with this Reactionless Drive of Mr. L's, for themselves, before continuing.
+What's causing the masses to speed up vs slow down? It seems like that's where the momentum would be entering or leaving the system.
+(Huh. That basically uninformed guess, was basically correct.)
+If you wish, you can take this as a koan, and come up with your own reply before continuing: How can we be __sure __that Mr. L didn't successfully design a clever system of compensators, and correctly validate that design using a sound spreadsheet?
+I mean, I'm not really sure. There's lots in this world that I don't know and don't understand. But it sure is
+very
+suspicious that the key is buried in a complicated spreadsheet, where it would be easy to make some subtle error that reverses the final result, instead of some elegant principle that unifies our prior understanding.
+Also, it seems like if I really understood the conservation of momentum, I would have a deeper understanding that would cause me to really appreciate how unlikely it is that he's found a workaround.
+Reply
+[
+-
+]
+Towards_Keeperhood
+2d
+2
+0
+Great post! Ironic though that you mostly sorta gave up on attacking the hard part of the problem of writing this particular post well. xD
+(I.e. the post is missing the part of the argument that is hard to write which on the surface somewhat funnily resembles the flawed perpetual motion machine prototypes.)
+Reply
+[
+-
+]
+EniScien
+3d
+2
+0
+My own take about the question to Irving (I write before reading part III, don't know whether I did understand that part correctly, it seems I see something which seems correct, but I don't know whether I see right thing and whether I actually comprehend it):
+Obvious answer that immediately comes into head is that they need a verifier (as is, the way to reliably check the concrete solutions, even if you don't have reliable way to generate the solution). Second obvious thing to say is that judges should be able to check the same bits of evidence as empiric
+...
+(read more)
+Reply
+[
+-
+]
+skinks_basking
+2d
+1
+2
+If you understand why the gif doesn't solve the problem, then you know the gif doesn't explain anything.
+I think if L had understood that the gif was insufficient, he wouldn't have presented it as an explanation at all.
+...I liked my answer, then you ruined it by providing further evidence it couldnt explain...
+The spreadsheet's only necessary if you see the flaw in the "explanation"... But if you see the flaw, why are you adding components and making a spreadsheet?
+Reply
+[
+-
+]
+Dagon
+3d
+0
+-6
+Philosophy posts: where have you hidden your solution to the is-ought problem in all these words?
+Reply
+2
+CronoDAS
+2d
+How to derive an "ought" from an "is":
+
+https://alonzofyfe.substack.com/p/deriving-ought-from-is-hypothetical
+2
+Dagon
+2d
+Thanks for the great example of utterly failing to address the problem. "if you HAVE an ought (called a preference), you can generate less-interesting oughts to support it".
+2
+CronoDAS
+2d
+Oops. I need to find the second half of the argument - I thought it would have been in that one. Sorry.
+
+https://alonzofyfe.substack.com/p/moral-ought-ought-not-and-reasons
+
+https://alonzofyfe.substack.com/p/solving-the-central-problem-of-morality
+[
+-
+]
+EniScien
+3d
+0
+-2
+I still don't see why it is wrong to reason from him naming the drive for himself. It isn't big sign per se, but it seems to me to be a big sign in combination like "someone unknown proposes world shattering invention which he named after himself". World shattering inventions by not already established people are much more rare than crackpots who dream of being world shattering and writing their name on it. While if someone is more self aware than that, it should eliminate most crackpots, and then amount of people who with no hedge propose world shattering...
+(read more)
+Reply
+6
+AnthonyC
+3d
+All of that is true, but when dealing with these kinds of scenarios, it's the unusual rare successes that pay for investigating all the failures, and the somewhat arrogant who attempt the supposedly impossible at all. Venture capital economics and founder personalities on steroids. Once you factor that in, I don't know that there's that much additional self-aggrandizing-tendency to be explained by the self-naming.
+4
+Richard_Kennaway
+2d
+Rounding error.
+1
+StanislavKrym
+3d
+IMO the main difference beyween 1996 and 2026 is that in 1996 the crackpot was trying to disprove a law of physics, while in 2026 AI labs are trying to disprove an unestablished law of neural net alignment. This law claims that neural nets tend to optimize for proxies which are usually as different from true meaning as hentai is from raising kids.
+[
+-
+]
+EniScien
+3d
+-2
+0
+OK, I write my recollection of my guess, for accountability. After reading that wrong guess is better than no guess at all, but before expanding the spoiler. Iirc, I thought like "speed up?.. But why? Continuous speed is default, but suddenly changing speed would violate ~(Noether something) because it is ~(not invariant something), ~(diverging something). Don't see why the speed up, is it implied be something like fluid speed change in tighter pipes? But that shouldn't break the physics. Ah, I don't really thoroughly understand the setup (*I didn't sleep ...
+(read more)
+Reply
+1
+EniScien
+3d
+My answer on a koan:
+
+Update, writing directly as thinking:
+1
+EniScien
+3d
+Now write before reading further: if he was Noble laureate in physics then, yeah, I wouldn't be sure (either way). Noble physicist may know physics better than me. Maybe something unobvious is going on.
+
+What do I even imply by that "unobvious". Well, if to think about that... I have an embarrassing story from when I was a kid, I learned about "quantum mysticism" and your observation affecting the reality and how it was just like my mother's belief that thoughts affect reality and so I concluded that obviously all the effects should be because on quantum scale all things are so little that any measurement device, which is itself similar size quant, will strongly affect the system. And one person on internet argued with me how I am wrong. And then they said "I am actually a physicist, I made experiments with molecules of fullerene, which themselves emitted photons, and it still mattered whether those photons were captures or not". I had no idea how to explain that. I didn't reply, but mostly I suspected that the person on internet is straight up lying about all those experiments, what is the chance that random person on internet is an actual physicist?
+
+And it turned out that something unobvious was happening, and physicists could know why my "obvious explanation" was unviable, while from what I knew it should have been what was happening, if you measure things by lighting it via "tiny insignificant" photons. But it turned out it works the same way even if you emit nothing into particle. (and what actually works is entanglement)
+1
+EniScien
+3d
+After reading the spoiler:
+
+Reading next:
+Moderation Log
+More from
+Eliezer Yudkowsky
+View more
+Curated and popular this week

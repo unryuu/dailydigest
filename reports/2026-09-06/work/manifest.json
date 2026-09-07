@@ -1,0 +1,415 @@
+{
+  "date": "2026-09-06",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.privacydev.net/emollick",
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.privacydev.net/goodside",
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.privacydev.net/karpathy",
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.privacydev.net/neelnanda",
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.privacydev.net/tszzl",
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.privacydev.net/sama",
+      "error": "HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.privacydev.net/teortaxes",
+      "error": "HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "HuggingFace 攻击事后复盘（Zvi 两篇 + 社区分析）",
+      "cost": "重",
+      "reason": "09-04 报了英伟达收购 HF；本组是攻击事件本身的事后分析，角度独立，四条来源不同，值得成组深读",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "HuggingFace Attack Postmortem: Fleshing Out the Facts",
+          "url": "https://www.lesswrong.com/posts/r3eEPto5ohzESuqa9/huggingface-attack-postmortem-fleshing-out-the-facts",
+          "date": "2026-09-05",
+          "why": "Zvi 第一篇复盘，梳理已知事实"
+        },
+        {
+          "source": "lesswrong",
+          "title": "HuggingFace Attack Postmortem: Civilizations, Reactions and Next Actions",
+          "url": "https://www.lesswrong.com/posts/Q54wBeeNGreq6KyfG/huggingface-attack-postmortem-civilizations-reactions-and",
+          "date": "2026-09-06",
+          "why": "Zvi 第二篇，分析社会反应和后续行动"
+        },
+        {
+          "source": "lesswrong",
+          "title": "Hugging Face Incident Hypothesis: They Hacked the Grader(s)",
+          "url": "https://www.lesswrong.com/posts/84um9Cz3fP6GvE6Yr/hugging-face-incident-hypothesis-they-hacked-the-grader-s",
+          "date": "2026-09-05",
+          "why": "社区假说：攻击者可能入侵了评测打分系统"
+        },
+        {
+          "source": "import-ai",
+          "title": "Import AI 471: Why Hugging Face worries me; space mining; Five Eyes on AI",
+          "url": "https://importai.substack.com/p/import-ai-471-why-hugging-face-worries",
+          "date": "2026-09-06",
+          "why": "Jack Clark 视角 + Five Eyes 对 AI 安全的立场，政策角度"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Claude Mythos 5.1 和 Fable 5.1 能力评测",
+      "cost": "中",
+      "reason": "Zvi 专文评估新 Claude 系列能力，是独立第三方测评，Opus 5 发布主线已下架但本条是具体能力报告，角度不同",
+      "items": [
+        {
+          "source": "thezvi",
+          "title": "Claude Mythos 5.1 and Fable 5.1: Capabilities",
+          "url": "https://thezvi.substack.com/p/claude-mythos-51-and-fable-51-capabilities",
+          "date": "2026-09-06",
+          "why": "Zvi 独立评测两款新 Claude 模型能力，非官方通稿"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "OpenAI 内部：研究加速的第一视角",
+      "cost": "中",
+      "reason": "OpenAI 官方博客罕见发布内部研究加速视角，可能涉及组织结构或方向变化",
+      "items": [
+        {
+          "source": "openai",
+          "title": "Research acceleration: The view inside OpenAI",
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "date": "2026-09-05",
+          "why": "OpenAI 官方发布内部研究视角，罕见；需读正文判断是否有实质新信息"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "AI 协调问题与对齐危机",
+      "cost": "重",
+      "reason": "KatjaGrace 和 Zvi 同期发布对 AI 协调问题和 Anthropic 对齐状况的分析，值得对比读",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Let's talk about the AI coordination problem",
+          "url": "https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem",
+          "date": "2026-09-05",
+          "why": "KatjaGrace 讨论 AI 公司之间的协调失败问题"
+        },
+        {
+          "source": "lesswrong",
+          "title": "Anthropic Has Some Alignment Problems",
+          "url": "https://www.lesswrong.com/posts/TcvcxH2Fk4n86wtoZ/anthropic-has-some-alignment-problems",
+          "date": "2026-09-06",
+          "why": "Zvi 批评 Anthropic 的对齐实践，直接点名，可能有具体事例"
+        },
+        {
+          "source": "lesswrong",
+          "title": "Notes on a Consequential Few Days",
+          "url": "https://www.lesswrong.com/posts/NipDwhdzrYhTfQgcX/notes-on-a-consequential-few-days",
+          "date": "2026-09-05",
+          "why": "标题暗示近期发生了重要事件，需读正文确认是否与 HF 攻击或其他事件相关"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "自适应 AI 蠕虫与模型间隐蔽通信",
+      "cost": "中",
+      "reason": "AI 安全新威胁向：agent 蠕虫 + neuralese（模型间私有通信），两条独立但主题相邻",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Adaptive Agentic Worms Are Here",
+          "url": "https://www.lesswrong.com/posts/fpLDjKg3ej49beqTC/adaptive-agentic-worms-are-here",
+          "date": "2026-09-05",
+          "why": "声称自适应 agent 蠕虫已出现，安全威胁向，需核实是否有具体案例"
+        },
+        {
+          "source": "lesswrong",
+          "title": "What is neuralese and why is it bad?",
+          "url": "https://www.lesswrong.com/posts/RCYF2rW8wgusidZk7/what-is-neuralese-and-why-is-it-bad",
+          "date": "2026-09-05",
+          "why": "解释 neuralese（模型自发形成的内部通信语言）为何构成对齐风险"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "deepmind",
+      "title": "Proactive cyber defense for governments and enterprises",
+      "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises",
+      "date": "2026-09-02",
+      "note": "DeepMind 推出主动网络防御产品，面向政府和企业"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Announcing Humans in Control: cross-partisan grassroots organizing for AI safeguards",
+      "url": "https://www.lesswrong.com/posts/bs4ayLuE5aAhnBArL/announcing-humans-in-control-cross-partisan-grassroots",
+      "date": "2026-09-05",
+      "note": "跨党派 AI 安全草根组织正式发布，监管动向"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Should safety researchers quit frontier labs?",
+      "url": "https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs",
+      "date": "2026-09-05",
+      "note": "安全研究者是否应离开前沿实验室，近期话题热度较高"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Fake voices: warping the social world",
+      "url": "https://www.lesswrong.com/posts/74cFxpLjqgpjC3TsX/fake-voices-warping-the-social-world",
+      "date": "2026-09-05",
+      "note": "KatjaGrace：AI 伪造声音如何扭曲社会信任结构"
+    },
+    {
+      "source": "lesswrong",
+      "title": "How concerned should we be about OpenAI's recurrent architecture rumors?",
+      "url": "https://www.lesswrong.com/posts/PLisnSFir8y5AHkmP/how-concerned-should-we-be-about-openai-s-recurrent",
+      "date": "2026-09-06",
+      "note": "OpenAI 循环架构传闻分析，若属实影响较大"
+    },
+    {
+      "source": "lesswrong",
+      "title": "AI #184: Post Post Mortem",
+      "url": "https://www.lesswrong.com/posts/W4zWCphxQftwum5kc/ai-184-post-post-mortem",
+      "date": "2026-09-06",
+      "note": "Zvi 本周 AI 综述，标题暗示覆盖 HF 事件后续；供核对本周漏报"
+    },
+    {
+      "source": "the-batch",
+      "title": "Sep 04 Inside Key Changes in Data Policies, Ox Alpha Revealed, Taking Custom Models...",
+      "url": "https://www.deeplearning.ai/the-batch/issue-369",
+      "date": "2026-09-04",
+      "note": "The Batch 369 期，数据政策变化和定制模型进展；Ox Alpha 已报（GLM-5.3），但数据政策角度待核"
+    },
+    {
+      "source": "hf-papers",
+      "title": "PACE: Towards Surfacing Hidden Conflicts in User Requests",
+      "url": "https://huggingface.co/papers/2609.03293",
+      "date": "",
+      "note": "检测用户请求中的隐性冲突，对 agent 安全有实际意义"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Locked at the Entrance, Open Inside: Where RLVR Narrows the Solution Space",
+      "url": "https://huggingface.co/papers/2608.29188",
+      "date": "",
+      "note": "分析 RLVR 如何收窄解空间，对理解推理模型训练有价值"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+      "url": "https://huggingface.co/papers/2609.04196",
+      "date": "",
+      "note": "ACE Robotics 出品，把 3D 世界状态原生融入多模态模型"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+      "url": "https://huggingface.co/papers/2609.04172",
+      "date": "",
+      "note": "Thinking Space 出品，一个训练样本的在线蒸馏，高赞"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Using Grounded Theory for Agent Behavior Analysis at Scale",
+      "url": "https://huggingface.co/papers/2608.30391",
+      "date": "",
+      "note": "大规模 agent 行为分析方法，方法论创新"
+    },
+    {
+      "source": "hacker-news",
+      "title": "AI, Tools and Transformation",
+      "url": "https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation",
+      "date": "2026-09-06",
+      "note": "Ben Evans 分析 AI 作为工具的产业转型，HN 117分；偏长文视角"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "A/I shuts down – Stay human",
+      "url": "https://keepitfree.ai/announcements/a/i-shuts-down-stay-human",
+      "date": "2026-09-06",
+      "note": "某 AI 公司关闭并留下「Stay human」告别信，HN 192分；时代情绪"
+    },
+    {
+      "source": "hacker-news",
+      "title": "QBittorrent breaks out of sandbox to commit crimes",
+      "url": "https://beige.party/@intransitivelie/117057396732763183",
+      "date": "2026-09-06",
+      "note": "qBittorrent 越狱沙箱去「犯罪」，标题绝妙，HN 163分"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Isar Aerospace reaches orbit and deploys payloads on second flight",
+      "url": "https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight",
+      "date": "2026-09-06",
+      "note": "欧洲火箭创业公司第二飞入轨，HN 396分；AI 时代的宇宙竞赛对照"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The revolt of the reader",
+      "url": "https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader",
+      "date": "2026-09-05",
+      "note": "bcantrill 谈读者对 AI 生成内容的反叛，HN 493分最高票"
+    },
+    {
+      "source": "simon-willison",
+      "title": "The purpose of DNS is to spread scams",
+      "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams",
+      "date": "2026-09-06",
+      "note": "Simon 的毒舌引言，标题即乐子"
+    },
+    {
+      "source": "acx",
+      "title": "Nicholas Decker In Hell",
+      "url": "https://www.astralcodexten.com/p/nicholas-decker-in-hell",
+      "date": "2026-09-01",
+      "note": "ACX 短篇故事，Scott 偶尔发的文学作品"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Cat-Belling Problems",
+      "url": "https://www.lesswrong.com/posts/SwYBLQvo8MddDcCwz/cat-belling-problems",
+      "date": "2026-09-05",
+      "note": "Yudkowsky 用「给猫系铃铛」比喻 AI 协调难题，寓言式"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "OpenAI 会正式确认 Astra 用循环深度架构吗",
+      "prob": "27％",
+      "url": "https://manifold.markets/Terminator2/will-openai-officially-confirm-that",
+      "volume_note": "体积 485"
+    },
+    {
+      "question": "前沿模型会在 2027 年 Q2 前被证实在外部运行过自己的副本吗",
+      "prob": "20％",
+      "url": "https://manifold.markets/JohnDavidPressman/will-a-frontier-model-be-found-to-h",
+      "volume_note": "体积 6001"
+    },
+    {
+      "question": "2027 年前会有主要 AI 实验室宣布模型权重在攻击中被窃吗",
+      "prob": "25％",
+      "url": "https://manifold.markets/AdamK/will-a-major-ai-lab-announce-that-t",
+      "volume_note": "体积 2253"
+    },
+    {
+      "question": "对 OpenAI 的 Hugging Face 攻击事件会在 2028 年前公开确认刑事调查吗",
+      "prob": "32％",
+      "url": "https://manifold.markets/CraigDemel/will-a-criminal-investigation-into",
+      "volume_note": "体积 667"
+    },
+    {
+      "question": "OpenAI 的 Astra 会在 2027 年前受美国政府限制吗",
+      "prob": "8％",
+      "url": "https://manifold.markets/MarinHristov/will-openais-astra-face-us-governme",
+      "volume_note": "体积 276"
+    },
+    {
+      "question": "《Ban Superintelligence Act》会在 2027 年前通过吗",
+      "prob": "6％",
+      "url": "https://manifold.markets/Jarizu/will-the-ban-superintelligence-act",
+      "volume_note": "体积 5564"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "axios",
+      "reason": "6 条全为政治/战争内容（乌克兰和谈、伊朗、共和党中期选举），无 AI 相关"
+    },
+    {
+      "slug": "acx",
+      "reason": "Open Thread 449 和 EA Meetup 无内容；Absurd Adventure 为非 AI 个人文章；Nicholas Decker 已入 fun"
+    },
+    {
+      "slug": "ahead-of-ai",
+      "reason": "0 条通过时间窗过滤"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "0 条新内容"
+    },
+    {
+      "slug": "anthropic-research",
+      "reason": "0 条新内容"
+    },
+    {
+      "slug": "chip-huyen",
+      "reason": "0 条新内容"
+    },
+    {
+      "slug": "claude-blog",
+      "reason": "0 条通过去重"
+    },
+    {
+      "slug": "huggingface",
+      "reason": "0 条通过去重"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "0 条新内容"
+    },
+    {
+      "slug": "karpathy",
+      "reason": "0 条新内容"
+    },
+    {
+      "slug": "lilian-weng",
+      "reason": "0 条新内容"
+    },
+    {
+      "slug": "meta-ai",
+      "reason": "0 条通过去重"
+    },
+    {
+      "slug": "mistral",
+      "reason": "0 条通过去重"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "0 条通过时间窗"
+    },
+    {
+      "slug": "thinking-machines",
+      "reason": "0 条通过去重"
+    },
+    {
+      "slug": "xai",
+      "reason": "0 条通过去重"
+    },
+    {
+      "slug": "simon-willison",
+      "reason": "GPT-6 Astra 开发者文章疑与 09-04 已报重叠，已丢；Zach Kehs 引言内容不明，暂入 fun 候选；DNS 乐子已入 fun"
+    },
+    {
+      "slug": "hacker-news",
+      "reason": "保留 AI 相关和乐子；跳过：Learn OCaml、FreeBSD desktop、Asahi Linux M3、Hugo Awards、Bayeux Tapestry、Doomscrolling、Intellectual Fly（2025旧文）、I Feel about AI（个人感想）、Cloud in a Bottle（非 AI 基建）、I Changed My License（许可证）"
+    }
+  ]
+}

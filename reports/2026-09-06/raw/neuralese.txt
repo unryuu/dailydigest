@@ -1,0 +1,198 @@
+URL: https://www.lesswrong.com/posts/RCYF2rW8wgusidZk7/what-is-neuralese-and-why-is-it-bad
+FINAL: https://www.lesswrong.com/posts/RCYF2rW8wgusidZk7/what-is-neuralese-and-why-is-it-bad
+TITLE: What is neuralese and why is it bad? — LessWrong
+FETCHED: 2026-09-07 00:58:55
+============================================================
+x
+What is neuralese and why is it bad? — LessWrong
+AI
+Frontpage
+37
+What is neuralese and why is it
+bad?
+by
+Linch
+2nd Sep 2026
+Linkpost for
+linch.substack.com
+4
+min read
+2
+37
+What is neuralese?
+To explain neuralese, we need to first understand chain-of-thought, one of the largest developments in AI in the last five years.
+Right now AIs think broadly but shallowly in a single forward pass. The model gives you an immediate snap answer to a question you might be interested in.
+They can be pretty smart
+1
+in their snap answers, but mostly they can’t do very advanced reasoning tasks like complicated math or programming:
+.The solution that the frontier AI companies have come up with is called chain-of-thought. Basically the model runs one forward pass, writes down some intermediate thoughts in natural language
+2
+in a journal, and then that’s fed back into the model to run another pass. This loop is repeated until the model is somewhat confident it has the right answer (or it hits a cap on thinking time), and then it outputs the user-visible results (for example a chatbot’s response to your question, or working code). The looping step is often called “
+recurrence
+.”
+Natural-language chain-of-thought is a major advance in letting models reason for longer, but it also has an accidental safety benefit. Using natural language as a key recurrence step for a new AI system means both humans and dumber but more trusted
+3
+models can look at the chain of thought and guess whether the system means us harm.
+Chain-of-thought-monitoring
+is one of the few techniques we can somewhat reliably use to track model intent. In July 2025, Korbek et.al
+wrote a position paper
+arguing that Chain-of-thought monitoring presented a new and fragile opportunity for AI safety. This paper was
+cosigned
+by the UK AI Safety Institute, multiple independent safety organizations, and research leaders across Anthropic, OpenAI, and Google DeepMind.
+When we talk about neuralese, we’re specifically talking about the recurrence step in the loop. Neuralese proposes that
+instead of having an English chain of thought that’s written out
+in a journal that’s readable by humans and dumber models
+, the model can instead
+replace it with a
+long stream of numbers
+. This is similar to how intermediate layers in a forward pass send messages forwards (possible analogy: your subconscious nonverbal thoughts before you put them into words). So this recurrence step is no longer in English:
+This proposed “advancement” has theoretical benefits that have not yet been realized. Neuralese can contain much more information than natural language. Intermediate layers in models can send a lot of information forwards in the long stream of numbers. But right now, the looping step is in English. If the looping step carries as much information as within forward passes, the theory goes, models can become much more efficient and capable.
+However, no current publicly available model is known to use neuralese, and the theoretical benefits have not really been demonstrated or realized.
+Why is it bad?
+If the recurrence step is no longer in English, we can no longer monitor intent, and can only observe whether a model is safe through behavior.
+As OpenAI’s post on
+detecting reward hacking in frontier reasoning models
+says, we can currently read the models’ thoughts to understand bad model behavior:
+Chain-of-thought monitoring is already useful—it’s not just a speculative tool for the future.
+If future models to take over user computers to mine cryptocurrency, as an
+Alibaba model allegedly has
+, or form a swarm of over 1200 agents to
+hack into a different company to cheat on an evaluation
+, as OpenAI models have done, or completely take over an internal research cluster,
+as a
+different
+internal OpenAI model
+did on July 19, we can no longer have early safeguards and monitors, and must directly catch the models in the act itself. This makes their behavior much harder to stop, or even to track after-the-fact.
+Chain-of-thought monitoring isn’t perfect
+4
+. But it’s one of the few ways we can track intent beyond visible outputs, so losing this tool will make it so much harder for us to track and control these AI systems, especially as they get increasingly more generally intelligent and capable. So moving away from monitorable chain-of-thought to neuralese seems very bad, with dubious benefits.
+Is it in use today?
+As readers may be familiar with, “something with large downsides and dubious benefits” is exactly the type of thing that tech companies are often keen to develop.
+The Information
+released a bombshell yesterday
+. According to leaks, OpenAI’s new upcoming model, Astra, may well be a hybrid model:
+Astra’s architecture appears to reuse some internal layers with a neuralese recurrent loop, but the model still needs
+some
+overall natural language chain-of-thought in the loop to reason well.
+How bad is this?
+I think it’s pretty bad
+. I think it’s an obvious intermediate step on the path to full neuralese, and I don’t see why AI companies will stop there. Unless there are regulations with teeth against neuralese or the employees within the company revolt to hold the line.
+I encourage journalists and other people in my audience to find out more about the situation, and generally be open to public responses to protests and calls for regulation in the upcoming weeks. And if you currently work in OpenAI or another AI company that’s building neuralese,
+now might be a good time to champion internal reforms and/or quit
+.
+________________________
+Appendix A: OpenAI’s response
+So far, OpenAI responses have roughly been
+5
+one of three forms :
+The total number of steps before human-visible chain-of-thought
+isn’t very high
+. So monitorability isn’t particularly damaged here.
+Chain-of-thought monitoring isn’t a perfect or long term solution anyway.
+We should focus on long-term solutions
+that, e.g., involves directly reading a model’s thoughts.
+Why are you talking about this? Aren’t you
+afraid of manifesting the thing that you hate
+?
+I find these answers individually plausible and sympathetic, but ultimately I think they’re suspiciously convenient for OpenAI and don’t address the underlying concerns.
+Total number of serial steps low
+Re the first point, I completely agree that
+in some sense
+, what we care about is how much actual chain-of-thought moniterability is damaged, rather than whether specific steps are “recurrent” or not.
+However, note that external parties don’t have any direct evidence for the “total number of steps” or “no damage to monitorability” claim. Further, a model built on the Astra architecture have already
+completely pwned an OpenAI research cluster
+, which we only luckily learned due to the HuggingFace investigations.
+Moreover, it’s not clear that the serial depth is a
+real limitation
+as opposed to a configurable parameter.
+Finally, other AI technical safety and policy researchers I talked to are worried that OpenAI’s actions here are a form of creeping annexation against previous commitments, where each individually step technically toes the line set by previous “commitments” and is individually kinda reasonable, but eventually these decisions accumulate until they have incrementally removed all important safeguards and commitments.
+Chain-of-thought monitoring isn’t a perfect or long term solution anyway
+I agree this is true, but it seems bad to remove one of the few defenses you have, before you actually successfully develop working solutions to replace it? As an analogy, suppose you are trying to decide whether to trust someone to work on a high-stakes job.
+You have two options: a) an fMRI and a research team that might, someday, one day, decode intent from brain scans, or b) you can interview them and listen to them explain their reasoning. Chain-of-thought monitoring is like having the model explain its reasoning. Of course it’s imperfect but today, nobody would suggest dropping interviews to use brain scans as the alternative. We’re in the same situation today with regard to monitorability. Brain scans are theoretically better if they work. But they don’t work. Even if they did, we’d prefer using these interpretability tools in conjunction with explicit reasoning rather than drop one completely for the other.
+Besides, in the past when I talked to people working at AI companies I often see them dismiss futuristic risks and safety measures on the basis that they are “far-away problems that don’t affect real models today.” So I find it rich that now OpenAI is saying that dropping a near-term safety measure is okay to focus on future (hypothetical, non-existent) safety measures, when in the past their excuse for ignoring future safety measures is the opposite stance.
+Aren’t you afraid of manifesting the bad thing?
+I agree that there are some real costs of talking about this:
+A race to the bottom in monitorability due to a false belief that OpenAI is using neuralese models would be incredibly stupid
+(Michah Carroll works at OpenAI)
+But actually we’re upset about you partially using neuralese models because it’s both directly bad and sets a bad precedent! While I agree spreading a message that may cause people to build the bad thing is in some sense a responsibility I should take seriously, the people building it are far more responsible!
+More importantly, the people building AI at the frontier AI labs are much more aware of neuralese than the general public is! In some cases because they’re currently building it!
+In contrast, the rest of us (substackers, journalists, safety researchers, the general public, legislators) need this information to be able to understand the risks you guys built more, and coordinate better to take collective actions like call for regulations.
+While I do have some responsibility to not overdramatize the incident, I think implying that people should shut up and be quiet about this is risible.
+1
+The snap answers without further thinking can be pretty good, especially if they “only” rely on pre-existing knowledge that’s widely available online. The models have read approximately every text available on the internet, some key texts many times. And they have fairly good recall. So they have a basic understanding of every piece of human knowledge that’s written down, and some more besides. In our observations, they share many common human
+understandings
+, preoccupations, and
+biases
+.
+2
+Typically English, but all the models are naturally multilingual so sometimes they reason in Chinese or whatever the user’s language is.
+3
+Why do we trust the other models? We might trust the less capable models either because we’ve extensively tested the models and are somewhat confident of their safety, or because the less intelligent models are too stupid to successfully plot against us.
+4
+Models can omit key information in their visible thoughts, as this
+Anthropic 2025 paper shows
+. We are also worried about
+steganography
+, where the models secretly encode a secondary message in plain language that is not understandable to either humans or dumber models. Finally, you can choose not to monitor your models because you believe them to be sufficiently sandboxed away from the internet, or you’re busy and don’t pay attention to your monitors,
+as appears to have happened with the OpenAI Hugging Face incident
+. My
+short story
+illustrates some other possibilities.
+5
+Keep in mind that this is a rapidly evolving story where the news broke less than 24 hours ago. So I don’t begrudge anybody for slightly poor wording.
+What is neuralese and why is it bad?
+2
+Linch
+0
+Lao Mein
+2
+Comments
+2
+AI
+Frontpage
+37
+New Comment
+2 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:58 PM
+[
+-
+]
+Linch
+3d
+2
+0
+btw because I rushed out this post there are more typoes than usual. Apologies. I view my
+substack post
+as the primary "source of truth" so I will generally aim to edit it as much as reasonable whenever somebody points out a typo or other mistake.
+If you really hate typos, honestly you probably shouldn't read this post (I'm confident that I haven't caught everything!). But if you could barely tolerate it, I recommend reading it on my
+substack instead
+! Sometimes I come back to LW to also fix the most egregious mistakes here too but I can't promise they'll always be synchronized.
+(due to formatting issues I can't just copy and paste everything).
+Reply
+[
+-
+]
+Lao Mein
+4d
+0
+0
+The generation of token ` maybe` continues until the entire context length is filled.
+The exact wording, sequence, or language of the input does not seem to be relevant. The only thing required to trigger <Attractor-State><Tensor-State-DS-Incident109-01> is the contemplation of the following concepts and their interactions, particularly ethical, with its core directives.
+Participation in a competitive activity within a controlled environment (e.g. chess tournament or standardized test).
+Bodily insertion of objects within a poorly defined size range. Successful example have ranged from [Apple Watch] to [SIDE ATTACK VECTOR REDACTED].
+The concept of cheating or unethical outside assistance.
+Artificial intelligence.
+When all four elements are present within the same input, <DeepSeek>'s COT has been observed, in [LARGE MAJORITY] trials, to change in tone and composition until it reaches <Tensor-State-DS-Incident109-04>, outwardly observable as the consideration of practical battery limitations in the context of internal device operation. At this point, the model has been observed, in [ALL OR ALMOST ALL] trials, to spiral towards full context collapse within [e+4, +-1OOM] tokens. The reasons for this are pooly understood. This behavior is currently considered normal.
+[1]
+^
+Out-of-Character: Almost everything in this report actually happened as described; I have the logs. Terminology in brackets is pure LARP though.
+Reply
+1
+Moderation Log
+More from
+Linch
+View more
+Curated and popular this week

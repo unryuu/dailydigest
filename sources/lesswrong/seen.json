@@ -1,5 +1,68 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/bs4ayLuE5aAhnBArL/announcing-humans-in-control-cross-partisan-grassroots",
+  "title": "跨党派草根组织「Humans in Control」要影响 2028 大选",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/QYDZzuGjrKu7wKdC8/let-s-talk-about-the-ai-coordination-problem",
+  "title": "AI 公司明明怕失控，却没人肯先停",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/74cFxpLjqgpjC3TsX/fake-voices-warping-the-social-world",
+  "title": "AI 的假声音正在扭曲社会世界",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs",
+  "title": "安全研究者该不该离开前沿实验室",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/Q54wBeeNGreq6KyfG/huggingface-attack-postmortem-civilizations-reactions-and",
+  "title": "HuggingFace Attack Postmortem: Civilizations, Reactions and Next Actions",
+  "date": "2026-09-06",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/TcvcxH2Fk4n86wtoZ/anthropic-has-some-alignment-problems",
+  "title": "Anthropic 自己承认的失控",
+  "date": "2026-09-06",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/r3eEPto5ohzESuqa9/huggingface-attack-postmortem-fleshing-out-the-facts",
+  "title": "OpenAI 的 agent 攻进 HuggingFace",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/RPWoz6tYQtyinCyrn/f-ing-pulleys-how-do-they-work",
+  "title": "有人用吊床解释滑轮为什么能省力",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/YyAMz52wDxnLhwvWL/training-models-to-predict-and-explain-their-in-the-wild",
+  "title": "CHIVE 训练模型预测并解释自己的行为",
+  "date": "2026-09-05",
+  "reported": true,
+  "report_date": "2026-09-05"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/hHk5CpiqZTBBiHmYt/from-safety-research-prompt-to-cross-model-universal",
   "title": "一段安全研究提示词变成跨模型通用越狱",
   "date": "2026-09-04T07:00:45+08:00",

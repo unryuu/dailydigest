@@ -1,0 +1,103 @@
+URL: https://www.lesswrong.com/posts/bs4ayLuE5aAhnBArL/announcing-humans-in-control-cross-partisan-grassroots
+FINAL: https://www.lesswrong.com/posts/bs4ayLuE5aAhnBArL/announcing-humans-in-control-cross-partisan-grassroots
+TITLE: Announcing Humans in Control: cross-partisan grassroots organizing for AI safeguards ahead of 2028 — LessWrong
+FETCHED: 2026-09-07 00:59:01
+============================================================
+x
+Announcing Humans in Control: cross-partisan grassroots organizing for AI safeguards ahead of 2028 — LessWrong
+AI
+Personal Blog
+45
+Announcing Humans in Control: cross-partisan grassroots organizing for AI safeguards ahead of
+2028
+by
+Vael Gates
+4th Sep 2026
+6
+min read
+0
+45
+While HIC’s work is aimed at the broader public, we are posting this announcement here because we expect some readers may be interested in volunteering, donating, or making useful introductions.
+TLDR:
+Humans in Control
+is a cross-partisan grassroots advocacy organization focused on AI safeguards. We are building a grassroots movement, with the aim of making AI safeguards a meaningful issue in the 2028 election. Our principles are that AI should help people, not replace them; companies and governments should be responsible for harm; and we should not build AI we cannot control. Our north star is a verifiable international agreement to not build AI we cannot control.
+Vael Gates
+founded HIC in January 2026, and on August 10,
+Jon Warnow
+succeeded Vael as HIC’s executive director. We are looking for volunteers who can commit recurring time and take ownership of programs, especially students, parents, and people living in smaller cities or rural communities. We are also fundraising and are looking for people willing to give small or large donations.
+What Humans in Control is
+HIC is a hybrid 501(c)(3) and 501(c)(4). The c3 supports public education, volunteer recruitment and training, chapters and coalitions, community presentations, and other field activities; the c4 supports candidate-facing work that the c3 cannot legally fund.
+We use a “snowflake” organizing model: paid staff recruit and train volunteer leaders, who then recruit and lead their own teams. This is designed to build ongoing relationships among volunteers, their leaders, and the organization.
+We are building in states likely to vote early in the 2028 presidential primaries, alongside a national distributed program. Our work is organized around three ground rules:
+AI should help people, not replace them.
+Companies and governments should be responsible for harm.
+We should not build AI we cannot control.
+Our near-term goal is to increase the likelihood that the winner of the 2028 presidential election takes meaningful executive action on AI safeguards in early 2029. Our longer-term goal is a verifiable international agreement under which no company or country can develop superintelligent AI unless there is strong scientific evidence that it can be controlled.
+We do not think grassroots pressure alone is sufficient to produce that outcome. Policy development, candidate outreach, technical expertise, communications, funding, diplomacy, Congress, states, and international partners all matter. HIC is working on one part of that larger political strategy: helping people understand the issue, organize with others, and act together. We see the main bottleneck to achieving AI safeguards as increasing
+political will
+, and grassroots organizing is one approach aiming directly at that bottleneck.
+A change in leadership
+On August 10,
+Jon Warnow
+became HIC’s executive director.
+Vael Gates
+founded HIC because grassroots advocacy seemed like an important gap in advancing AI safeguards. HIC has now reached a phase where the central work is building and managing a grassroots organization over several years. Jon is a senior grassroots organizing leader (co-founded 350.org, helped organize the People's Climate March, and has worked on Congressional and Presidential campaigns) who has substantially deeper experience doing that and is better suited to lead this phase.
+Jon found HIC after becoming concerned about advanced AI, and worked closely with Vael and the team before the transition. Vael will support the organization while looking for a role that better fits their comparative advantage. HIC’s mission and core strategy have not changed.
+Why grassroots organizing, and why 2028
+HIC expects AI to produce substantial benefits, but does not expect voluntary company safeguards to be sufficient for the most serious risks. Government action is needed to address current harms, and international coordination will be necessary to prevent any company or country from building systems that humans cannot reliably control.
+Given that, the central strategic question is what is causally necessary to slow the race to develop AI that even its creators are unsure they can control. We believe political will is the current main gap, and that large groups of people working together strategically can help close it.
+As AI rapidly develops, many consequential decisions are being made about the governance of AI. HIC aims to support current congressional and executive-focused efforts to enact AI safeguards within the current administration.
+However, we believe the next administration provides a key opportunity to ensure people’s voices are heard. The next administration will make consequential decisions about increasingly capable AI, and the executive branch has substantial authority over federal agencies and international negotiations, although the president will not act alone. For this reason, the presidential primaries offer a uniquely strong opportunity for grassroots pressure.
+In particular, competitive primaries offer an opportunity to engage candidates who are still developing their positions. Volunteers can attend events and ask candidates across parties to explain what they would do about the anticipated consequences of AI. This strategy works best when primaries are competitive, but we expect leverage regardless.
+HIC discusses concerns from today’s AI – employment, data centers, child safety, scams, surveillance, and accountability – alongside catastropic risks and the possibility that future systems become powerful enough that humans cannot reliably control them. We think decisions with consequences this large should not be left to the companies developing the technology.
+What we are building, and potential points of concern
+The current program is mostly base-building: finding people who want to help, supporting volunteers in becoming leaders, forming teams and chapters, and running community presentations. Candidate engagement will become more central as the 2028 campaigns develop.
+HIC has begun forming volunteer teams, running presentations in several states, and building the systems needed to support more local and national volunteers. This shows that people are willing to participate. The more important questions are whether volunteers choose to remain involved, take meaningful responsibility, and build teams that continue without close staff direction. Right now, it’s too early to make a definitive assessment, though we believe we are on a good path.
+There are several reasons this might not work:
+In-person organizing may grow too slowly to matter during the 2028 cycle.
+We're mitigating this by building distributed (remote) engagement programs alongside in-person chapters, and by prioritizing early-primary states where even modest organizing can get outsized attention.
+People may care about current AI harms without wanting to organize around larger-scale loss-of-control risks (e.g.
+July loss-of-control example
+).
+Our education and activation programs connect present-day harms (like child safety issues, job loss, and surveillance-at-scale) to catastrophic risks.
+HIC may not succeed in earning trust across political lines.
+So far, the framing (commonsense rules, accountability, protecting families) has resonated across partisan lines, and we are working constructively in a politically diverse coalition – but we have more work to do to build a politically diverse team, and movement.
+Volunteers could advocate for policies that do not reduce the risks HIC is concerned about.
+We manage this through training, community agreements, and public clarity on our strategic focus and core messages.
+The political or technical situation may develop differently from what we expect.
+We're building flexible infrastructure (organized people, trained leaders, local relationships) that can pivot to new targets, rather than betting everything on one policy outcome, AI capabilities timeline, or political campaign.
+Grassroots pressure alone won’t be sufficient.
+We believe that policy development, technical work, diplomacy, and political leadership all matter. HIC is building one necessary piece (intense grassroots pressure to create strong political will) but not the whole puzzle.
+Even successful grassroots organizing would not be enough to produce an international agreement alone. That would also require policy development, technical work on verification, effective staffing, diplomacy, and political leadership. We nevertheless think grassroots organizing is an important part of building the political will required for action.
+How to help
+Volunteer
+Volunteers lead teams, organize community presentations, build local and campus chapters, recruit other participants, and contribute research, data, operations, communications, and media skills.
+We are particularly interested in people who can contribute recurring time and take responsibility for a team or project. People in states likely to play an early role in the presidential cycle are especially useful, but much of the national work can be done from anywhere. We’re also especially interested in students who can help build out our student program!
+One specific, near-term volunteer activity is to host or support a local event for our upcoming “
+AI Reality Check
+” day of action. On Saturday, November 14, volunteers in towns and cities across the country will give a dynamic presentation on AI risks that can turn concern into action.
+You can also sign up to our general
+Volunteer form here
+, or email team@humansincontrol.org if you are unsure where you would fit.
+Donate
+Donate c4 dollars
+: currently especially useful because they support candidate engagement and other election-related advocacy. Donations are not tax-deductible.
+Donate c3 dollars
+: support public education, volunteer training, chapters, and field organizing. Donations are tax-deductible.
+Small recurring donations help HIC develop a broader donor base. Larger multi-year commitments help support HIC’s staff and larger programs.
+HIC accepts donations from employees of frontier AI companies, but not from founders or C-suite executives. (
+Full gift acceptance policy here
+.)
+We also welcome introductions to potential donors, experienced organizers, political practitioners, community leaders, and people with strong organizing networks.
+0
+Comments
+0
+AI
+Personal Blog
+45
+New Comment
+Moderation Log
+More from
+Vael Gates
+View more
+Curated and popular this week

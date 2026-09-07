@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams",
+  "title": "Simon Willison 毒舌：DNS 就是散播诈骗的",
+  "date": "2026-09-06",
+  "reported": true,
+  "report_date": "2026-09-06"
+ },
+ {
   "id": "https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt",
   "title": "Claude 的系统提示词不许它复现歌词",
   "date": "2026-09-02T22:16:42+08:00",

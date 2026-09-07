@@ -1,0 +1,653 @@
+URL: https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs
+FINAL: https://www.lesswrong.com/posts/TfqMs3AarsHnHiwai/should-safety-researchers-quit-frontier-labs
+TITLE: Should safety researchers quit frontier labs re. warning shots? — LessWrong
+FETCHED: 2026-09-07 00:59:04
+============================================================
+x
+Should safety researchers quit frontier labs re. warning shots? — LessWrong
+AI
+Frontpage
+102
+Should safety researchers quit frontier labs re. warning
+shots?
+by
+Ryan Kidd
+5th Sep 2026
+5
+min read
+34
+102
+I've recently heard a surge of support for an old argument: AI safety researchers should not work at frontier AI companies because this reduces the likelihood of non-lethal warning shots, and we need warning shots to build support for an AI pause/slow-down. This argument has several components:
+Technical AI safety work is futile, absent an AI pause:
+Current "prosaic AGI" safety research agendas pursued at frontier AI companies, like AI control, scalable oversight, interpretability, etc., might not scale to AI systems that matter. Even when such techniques appear to benefit AI alignment, they might merely mask a deeper alignment failure that will manifest, disastrously, as AI capabilities grow. At worst, current alignment/control techniques might incentivize more sophisticated AI model deception. Even if the techniques do scale, they might be too expensive or annoying for AI company leadership to reliably mandate for all deployments, and the military or government might care even less!
+Technical AI safety work might block warning shots:
+The warning shots that state-of-the-art (SotA) alignment, control, and monitoring techniques can prevent might be "non-lethal" to humanity, whereas future "lethal" incidents might not be prevented by SotA alignment/control techniques. By deploying SotA alignment and control techniques within frontier AI companies, we reduce the risk of warning shots like the OpenAI x Hugging Face incident (which OpenAI monitors supposedly would have caught, had they been turned on for the particular internal deployment), but we might fail to prevent lethal loss-of-control incidents.
+Warning shots are instrumental to an AI pause:
+If we assume that SotA AI safety research is insufficient to "make AI go well" on the current trajectory, then we might need an AI pause or slowdown (e.g.,
+Plan A/S
+). Warning shots might help build political appetite for a pause or slowdown by convincing policymakers and the public that catastrophic AI risks are real. Therefore, people working on alignment or control at a frontier AI company should consider quitting their jobs to increase the chance that non-lethal warning shots occur and spur an AI pause.
+I think this argument has some merit. I expect that RLHF++ will probably be insufficient to align TED-AI circa-2028 and such systems will be terrifically difficult to monitor or control. However, I think there are also significant weaknesses to this argument. Here are some countervailing points to consider:
+Alignment MVPs are probably still useful:
+In spite of the OpenAI x Hugging Face incident, I expect that most AI safety researchers will use frontier models to help with research,
+including agent foundations researchers
+.
+Alignment MVPs
+, AIs that are sufficiently aligned/controlled to aid research, may remain a crucial part of AI safety research during an AI pause or slowdown. Currently, the best AIs would arguably be unusable for safety research without the hard work of frontier AI company post-training and safety teams. If AI safety researchers quit frontier AI companies en masse, we might be stuck using current generation AIs for the duration of an AI pause; maybe this is unideal?
+"Safety-stragglers" will cause warning shots anyways:
+Most US-based frontier AI companies, like Google DeepMind, Meta, and xAI, scored failing grades on
+Guidelight's Control standard
+. Apparently, xAI has only two staff working on frontier AI safety and Meta is not much better off. Chinese AI companies like DeepSeek, Moonshot, Zhipu, etc. might have ~0 frontier safety staff. If leading AI companies are
+only a few months ahead
+of "safety-stragglers", we might see politically expedient warning shots from the least safety-conscious AI companies, regardless of what the leading companies do.
+Responses to historical warning shots are high-variance:
+The Chernobyl disaster slowed nuclear power adoption worldwide; maybe an AI warning shot would likewise slow AI progress? As a counterexample, consider the atomic bombings of Hiroshima and Nagasaki, which arguably spurred the Cold War nuclear arms race. AI warning shots could actually spur military investment and weaponization of AI! Also, the COVID-19 pandemic, which caused massive loss of life, does not seem to have caused Western society to take pandemic risk seriously.
+The purpose of an AI pause is do more safety and resilience work:
+Let's say that we pause or slow down frontier AI progress; what then? Arguably, the next step is to solve AGI alignment as fast as possible and improve civilizational resilience with the aid of AI. Absent an staggeringly effective compute monitoring regime (or "burning all the GPUs"), we might eventually have to build aligned AGI to help detect and sabotage blacksite projects. If we curtail the development of new AI safety researchers by discouraging them from working with research mentors at frontier AI companies now, we might have a smaller talent pool to capitalize on an AI pause.
+The next warning shot might be lethal:
+It's possible that the next OAIxHF-style incident causes loss of life, via bioweapons or cyber attacks on critical systems. If safety researchers quit frontier AI companies now, absent an AI pause, this might enable a catastrophe.
+Allowing warning shots "for the greater good" seems morally fraught:
+This point speaks for itself. I think that arguments to "allow short-term harm for the greater good" should have to overcome a strong prior against this kind of thinking. Letting people get hurt seems bad, particularly if there is significant uncertainty about whether it is necessary.
+Overall, I am cautiously optimistic about working on certain types of safety research at frontier AI companies, particularly if a coordinated AI slowdown (e.g., Plan A) occurs. I nevertheless feel highly uncertain about the "Alignment MVP" strategy in light of recent containment failures and alignment results. I think this merits serious consideration.
+Addendum: I won't rehash the extensive debate over whether AI "safety" researchers working at frontier AI companies are causing harm via other channels, such as:
+Making AI systems more deployable by reducing hate speech, jailbreaks, or trivial misalignment, thus increasing AI company revenue and driving AI investment and capabilities progress. (E.g., this argument is most commonly leveled against RLHF, but has also more recently been applied to AI control and scalable oversight research as these have become relevant to commercial deployments.)
+Contributing to "safetywashing" by creating the appearance that AI companies are doing a lot of safety work, when this work will not usefully contribute to AGI alignment (much debate here, especially post-emergent misalignment.)
+Creating Alignment MVPs that are good at all kinds of frontier AI research, which then differentially accelerate AI capabilities more than the intended safety properties due to AI company leadership decisions. (Note that there is reasonable debate over whether near-term corrigible AGI would be net-good for civilizational resilience or concentration of power).
+Otherwise "legitimizing" AI companies pushing the capabilities frontier.
+These are legitimate concerns, but largely irrelevant to the topic of this post.
+Disclosure: I'm the CEO of
+MATS
+, which trains AI safety researchers, including with mentors at frontier AI companies, and a
+meaningful fraction
+of our alumni end up working at those companies. If the argument I'm responding to is right, a good chunk of what MATS has done might be counterproductive, so I have an obvious incentive to find it wrong. I've tried to steelman it anyway and I'd appreciate feedback.
+Should safety researchers quit frontier labs re. warning shots?
+70
+orthonormal
+29
+Thomas Kwa
+13
+orthonormal
+4
+cousin_it
+1
+Dawn Drain
+7
+StanislavKrym
+58
+WillPetillo
+2
+Towards_Keeperhood
+37
+Eliezer Yudkowsky
+6
+Towards_Keeperhood
+25
+Elizabeth
+5
+Ryan Kidd
+31
+Yonatan Cale
+3
+Ryan Kidd
+5
+WillPetillo
+19
+orthonormal
+4
+Towards_Keeperhood
+17
+Connor Williams
+3
+Nathan Helm-Burger
+14
+Daniel Tan
+12
+Ruby
+6
+Ryan Kidd
+7
+yams
+9
+yams
+7
+Lauro Langosco
+5
+Sohaib Imran
+6
+Ryan Kidd
+4
+Towards_Keeperhood
+4
+Yonatan Cale
+4
+Yonatan Cale
+2
+Nathan Helm-Burger
+0
+Kabir Kumar
+8
+Mateusz Bagiński
+-1
+Raphael Roche
+2
+[comment deleted]
+34
+Comments
+34
+AI
+Frontpage
+102
+More from
+Ryan Kidd
+View more
+Curated and popular this week
+New Comment
+34 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 4:59 PM
+[
+-
+]
+orthonormal
+2d
+70
+30
+There are some conditions under which the correct thing is to
+whistleblow
+and leave, rather than keep trying to make improvements on the margin. For instance, if your job becomes "get good benchmarks on alignment" while ignoring clear signs of actual misalignment or hidden reasoning, or if you become aware of a coverup of a warning shot, then staying there means complicity in existential risk.
+Recent developments underscore that anyone "working on safety/alignment" at OpenAI is at best disempowered to reduce existential risk, and at worst culpable for increasing it; and the best thing they can do right now is whistleblow. Furthermore,
+MATS should loudly refuse to work with OpenAI mentors.
+(Which is why I commented this here despite it being not a direct response to your post.)
+This is not an endorsement of other labs. I find Anthropic's public statements on their alignment plan and their level of caution to be inadequate, and I think that their broken promise not to push the frontier forward has caused other companies to act more recklessly. I think that the Alphabet governance of DeepMind undermines what safety culture it had (and while we're talking about
+how
+to leave, I strongly support
+TurnTrout's actions
+as a model). And we all know how much worse the lesser labs are.
+But some people in this community still say with a straight face that working at OpenAI on alignment could be helpful, and today is a great occasion to proclaim how clearly that has been falsified. (Not least because the majority of x-risk-pilled members of OpenAI have ended up leaving the company, individually or en masse, for reasons that I suspect are undisclosed because of legal threats.)
+Reply
+[
+-
+]
+Thomas Kwa
+21h
+29
+-4
+Recent developments underscore that anyone "working on safety/alignment" at OpenAI is at best disempowered to reduce existential risk, and at worst culpable for increasing it; and the best thing they can do right now is whistleblow.
+This does not logically follow. For example, it could be that 3% of OpenAI employees care about x-risk and are counterfactually net positive, but the minimum number needed to prevent egregious misalignment on the scale of the HF incident is 10%. Or, it could be that they deliberately work on projects that
+have long-term safety value
+rather than just
+prevent the next incident
+. Or, it could be that internal siloing prevents them from having enough information about a warning shot or its coverup for whistleblowing to be net positive.
+Reply
+[
+-
+]
+orthonormal
+18h
+13
+4
+The fact that (at least as of last month) Leo Gao is still employed by OpenAI is a continual surprise to me (in both directions—that he hasn't left, and that they haven't forced him out). Also note
+this shortform post from him!
+Or, it could be that internal siloing prevents them from having enough information about a warning shot or its coverup for whistleblowing to be net positive.
+If such things aren't immediately shared with the alignment researchers,
+that in itself
+is an offense worth shouting about.
+Reply
+[
+-
+]
+cousin_it
+9h
+4
+0
+You know that the person you're replying to just joined OpenAI, right?
+Reply
+[
+-
+]
+Dawn Drain
+1d
+1
+0
+>and I think that their broken promise not to push the frontier forward has caused other companies to act more recklessly
+What are you referring to?
+Reply
+[
+-
+]
+StanislavKrym
+1d
+7
+3
+Anthropic made a
+quasi
+-
+commitment
+not to release models with higher capabilities than of their rivals and an OAI-like commitment not to release dangerous models, which
+was backtracked in 2026
+.
+But this doesn't explain why the hell OAI even released its Astra given that Astra was released
+two days
+after Fable 5.1, which along with Fable 5 barely outsmarted Sol on the ECI...
+Reply
+[
+-
+]
+WillPetillo
+2d
+58
+12
+I think most AI safety researchers are unhelpful, but "warning shots" is a terrible argument for telling them to quit. Interestingly, "warning shots" have also been used as an argument against engaging in political advocacy,
+countered for similar reasons as yours
+.
+Warning shots are something we should focus on preparing a response to, if needed, not try to make more likely
+(directly or through intentional inaction).
+The main issues with safety research for me are externalities:
+Capabilities
+: "safety" gets fuzzily defined to include just making the systems more powerful.
+Profit
+: making an AI system more aligned, even in the best case, is essentially making it more controllable, which increases its market value, which fuels race dynamics.
+Legibility
+: safety problems exist on a continuum of obvious to hidden. Fixing the obvious problems first is a recipe for getting bitten hard by the hidden problems later. It's also what market pressures incentivize.
+Some lines of safety research, like agent foundations, sidestep these, at the cost of being hard to justify in terms of short term returns or even theory of change. If the economic landscape were different, such as by an enforced pause with strict conditions for advancement (externally verified safety proofs and the like), then I can imagine meaningful safety work happening at scale.
+As of right now, the core issue is power. The AI labs have too much of it. You're either helping them get more, pushing back, or irrelevant. Pausing isn't just to "buy time," it's to change the conditions in which AI exists.
+Reply
+4
+[
+-
+]
+Towards_Keeperhood
+6h
+2
+0
+Warning shots are something we should focus on preparing a response to, if needed, not try to make more likely (directly or through intentional inaction).
+Only responding to the "or through intentional inaction" part:
+I think it's important to clearly separate worldstate-question-part from the moral-principle-question-part of the "should we not take action to prevent warning shots" question here:
+the worldstate part: "Do we think that if a warning shot happens, the expected good it causes is greater than the the harm it causes?" ("good" according to common human values.)
+the moral principle part: "Assuming we think the expected good is greater (and not by any Pascal's mugging), should we prevent the warning shot anyway?"
+I think for a very reflective and rational person, the answer to (2) is "no don't prevent it". Even if you disagree here, I think you should at least agree in the hypothetical where the expected good is much much greater (while still without Pascal's mugging).
+I don't think this is very ambiguous if you think about concrete scenarios that aren't xrisk. (I think xrisk is too abstract or too scary for many people to grasp properly.) E.g. if a serial killer is dangling off a cliff, and you could try to save him, but then he will run away and you think there's a 70% probability that he will kill at least 10 more people, should you try to save him?
+[1]
+^
+I guess someone will write "yes because you might be psychotic" or so, but I think that argument should be ignored because I don't think "AI will kill everyone" is that much more speculative than "there will be a large warning shot where AIs kill people".
+Reply
+[
+-
+]
+Eliezer Yudkowsky
+11h
+37
+29
+Now is when you've got leverage. In 3-24 months threats to leave will have zero leverage on them because they no longer need additional employees.
+Reply
+[
+-
+]
+Towards_Keeperhood
+5h
+*
+6
+0
+What would you want employees to use their leverage for?
+Just leaving now already seems quite useful because it may slow companies down and increase warning signs, and indeed in 2-8 months this might start to become less useful as AIs become better at making AIs not look misaligned. (Though slowdown and warning signs might be even a little more useful the later they happen (but not too late or else we may directly get AI takeover
+[1]
+), so I'd guess my median for the best time to leave is maybe 3 months from now, but very uncertain. And a few people should probably stay behind to be able to whistleblow later.)
+But yeah, AI lab safety researchers coordinating and threatening to leave if the company doesn't take some very strong actions towards making Plan A/S more likely seems sensible to try to do first.
+[2]
+^
+or get to the point where AIs only do bad stuff if they are pretty sure they won't get caught and can evaluate this very well, so we probably wouldn't see more warning signs
+^
+ADDED: Perhaps do it as a work strike. And btw, should a company at some point start to act like a very responsible entity that actually understood the safety problem well would act, i.e. it does basically anything it can do to get a treaty, it seems perhaps good to (re)join that company for safety.
+Reply
+[
+-
+]
+Elizabeth
+2d
+25
+15
+It seems like you're assuming that work labeled as safety is safety, or at least more safety than capabilities.
+Reply
+[
+-
+]
+Ryan Kidd
+2d
+5
+1
+Wherever I use the word "safety", treat it as a placeholder for "genuinely net-beneficial for minimizing existential risk and enabling flourishing futures". What research meets this bar is the subject of some debate, of course.
+Reply
+[
+-
+]
+Yonatan Cale
+2d
+31
+21
+I think this definition hides the hard part, no?
+Like, ~everyone would agree it's good to do work that is "genuinely net-beneficial for minimizing existential risk and enabling flourishing futures".
+Seems like your question is more "is ~prosaic safety work net-beneficial" (right?)
+Reply
+2
+[
+-
+]
+Ryan Kidd
+1d
+*
+3
+1
+The purpose of this post is to address a specific argument against working at frontier AI companies on technical safety research that genuinely reduces the risk of warning shots like OAIxHF. There are many other reasons why people might not want to work at frontier AI companies beyond the scope of this post; I retitled the post and added an addendum to clarify this.
+My definition definitely hides the hard part; maybe too much, as I've implicitly assumed the perfect alignment techniques are deployed, society adapts, CEV is achieved, etc. I also don't have high confidence in what technical AI safety research is sufficient to solve the technical challenges of alignment. But I'm trying to discuss a consideration that applies even if one thinks that SotA AI safety techniques are sufficient for frontier AI alignment in practice. I could probably have signposted this better.
+Reply
+[
+-
+]
+WillPetillo
+20h
+5
+2
+This caveat about hiding the hard part is important! Reliably differentiating between robust alignment techniques and surface level patches that make the core problems show up worse later is the
+cat belling problem
+of AI safety.
+Reply
+[
+-
+]
+orthonormal
+1d
+19
+22
+To distill the more relevant part of my other comment: I agree with you that "worse is better" is a bad category of argument, but there's a better argument in this direction.
+I believe that a significant fraction of "prosaic safety work" at the frontier labs has had the effect of
+hiding
+misalignment in publicly released versions rather than making the models more robustly aligned.
+For instance, I expect that the prosaic alignment improvements from Sydney to the final GPT-4 were surface-level only (as evidenced by later failures like GPT-4o), and if the alignment researchers had refused to play whack-a-mole at the time, then commercial progress would have been properly halted.
+Reply
+2
+[
+-
+]
+Towards_Keeperhood
+6h
+4
+2
+For instance, I expect that the prosaic alignment improvements from Sydney to the final GPT-4 were surface-level only (as evidenced by later failures like GPT-4o), and if the alignment researchers had refused to play whack-a-mole at the time, then commercial progress would have been properly halted.
+Don't you think AI companies would've found other even less responsible people to do "safety" work that papers over problems?
+I'd expect there's
+an equilibrium here which doesn't get shifted that significantly depending on whether people who care about doing the right thing do or don't do "safety" work at AI companies
+. Sure we might've seen some warning signs earlier, but then companies would've used that as signal to invest more into making their models look safe and not that much would've changed. Though open to considerations why this may be wrong.
+Reply
+[
+-
+]
+Connor Williams
+2d
+*
+17
+7
+[Note: I wrote this comment when the post was titled "Should safety researchers quit frontier labs?"]
+One of your counterarguments is that "the purpose of an AI pause is to do safety work".
+A couple points, one that applies even if you think the only acceptable reason to pause AI is to avoid human extinction, the latter that doesn't apply if you believe that:
+Immediate existential safety from unaligned AI is not the only existential danger from superhuman AI - via
+gradual disempowerment
+, we could lose control or even go extinct in the medium or long term due to higher-order effects of the ever-increasing human irrelevance to the functional systems undergirding society. Alignment research does not address this problem.
+Superhuman AI, even if aligned
+and
+with a solution to gradual disempowerment, would be societally disruptive in a way unlike nothing else we have heretofore seen. Some of the possible/likely impacts include: universal or near-universal disemployment, loss of social mobility as the labor share of income approaches zero, widespread loss of meaning and purpose, humanity no longer being in the driver's seat (loss of control in a way that doesn't gradually lead to extinction), and many more. Additionally, some believe that the alignment problem is inherently unsolvable - that it is simply not possible to durably and sustainably control an entity vastly smarter than ourselves. A technical-safety-focused Pause, even one that manages to provably solve gradual disempowerment, does not address these issues. For instance, I personally consider it unacceptable for ASI to be built unless all of the following conditions are met: [the point of this is not to try to convince you personally to adopt my position, but to illustrate one example of the wide variety of motivations people have for supporting a Pause]
+(1) a durable solution to preserve widespread social mobility at least at roughly the current level (and, relatedly, to ensure that labor retains at least some substantial value vis a vis capital),
+(2) a durable solution to ensure that humanity remains firmly in control indefinitely,
+(3) a durable mechanism to ensure that people are not forced to 'merge' with the AI lest they otherwise fall to the margins of society (or even worse, end up dead),
+(4) we can confidently know that the superhuman AI will not allow a small clique of researchers and/or investors to usurp the power of democratic governments.
+So, for me with regards to the second top-level bullet-point, "safety"/"alignment" are necessary but far from sufficient conditions to address my objections - the objections that are the reason I have made enormous changes to my life in the past six months to dedicate myself to effectively advocating for a Pause. To me and many others, the purpose of a Pause is to determine what on earth we want society to look like going forward and figure out how to address the new challenges posed by the seemingly-impending appearance of ASI, not just for technical researchers to solve some problems and then unleash a completely unprecedented future world-state on all of humanity absent our collective decision-making.
+----
+Additionally, to this point safety/alignment work at frontier AI companies
+(not labs)
+has been highly coupled with capabilities advancements. In that sense, joining such a company even for safety research accelerates the rate of capabilities progress, and gives society less time to prepare, react, and take action.
+Reply
+[
+-
+]
+Nathan Helm-Burger
+1h
+3
+0
+For what it's worth, I agree with you about the likelihood of societal disruption (given solving safety adequately), but disagree with you that it would be a bad thing. I think that if the AI is sufficiently aligned that we survive and aren't disempowered, then the disruption will very likely be net good.
+I also think that AI is already sufficiently strong that there is a gathering tidal wave of disruption coming which we are going to have to deal with one way or another.
+I don't think "merge with the AI" is the only option for upgrading humanity. I think uploaded humans aren't inherently "merged with the AI" (although they would clearly have that option, as well as others like forming hive minds). Similarly, intelligence-enhancing and/or hive-mind-enabling BCIs can enable humanity to keep up at least in the short term.
+Reply
+[
+-
+]
+Daniel Tan
+1d
+14
+0
+I think the hypothesis is worth seriously considering. I have more complicated thoughts I'm trying to write up at the moment in a long-form post.
+One crude way to reason about the benefits of prosaic alignment would be to study Anthropic, which ranks at the top in terms of resource spend on prosaic alignment, and compare this to OpenAI, which has approximately the same level of capabilities with its strongest models but spends much less (possibly zero?) on prosaic alignment.
+Comparing Ant vs OAI, I make the following observations
+Despite a larger investment in alignment, both Anthropic and OpenAI had "models escaping the sandbox" incidents recently. (It's true that OpenAI's incident resulted in much more severe consequences. This is maybe some evidence that Claude behaved in a relatively more aligned way than the internal-HPIM GPT.)
+Ryan Greenblatt does not seem to distinguish heavily between Claude and GPT in his discussion of
+misalignment in recent AIs
+and the impression I get is that both are similarly misaligned.
+I think this is consistent with what other third parties report in terms of alignment evals, e.g. METR's
+frontier risk report
+, and (a quick eyeball of) this
+report
+by Transluce on concerning behaviour in mental health contexts
+More generally, both labs have a tendency to announce that "our models are the most aligned to date" and then fail to anticipate ways in which the public finds their models to be misaligned. I take this as evidence that "alignment audits" are substantially lagging behind novel ways in which misalignment emerges from training.
+Separately, it seems plausible to me that eval awareness and general situational awareness has sufficiently contaminated both models that the alignment audits are no longer good proxy measures of alignment
+Generally, while Anthropic has some wins, this does not seem like an order-of-magnitude difference vs OpenAI. A notable exception is that Anthropic's model APIs seem substantially more jailbreak-resistant than OpenAI's, e.g. in terms of resisting and refusing universal jailbreaks.
+Note that I've selected evidence above which seems maximally characteristic of "prosaic alignment" in particular.
+If we expand the scope to "prosaic safety" and even more generally "security mindset" then I think the evidence (and calculus) would look different.
+Certain kinds of prosaic safety, e.g. cybersecurity, seem much more likely to be doing real good and seem to have lower downside risk of concealing misalignment in the next generation of models
+I'll also note that "prosaic safety is net bad" is sufficient but not necessary for "should safety researchers quite labs", i.e. if prosaic safety is doing some good, but doing something else could be even better, then safety researchers might want to quit anyway, similar to Joe Benton leaving Anthropic and joining METR
+Reply
+[
+-
+]
+Ruby
+1d
+12
+7
+Quick note that I dislike the title of this post for implying breadth beyond the specific argument discussed. There's something of a commons with post names, so I feel leave the general title for posts that are going to cover many arguments.
+(Also can imply that if you refute this one argument, you've answered the question in general.)
+Reply
+[
+-
+]
+Ryan Kidd
+1d
+6
+0
+That's a good point. What should I rename it to?
+Reply
+[
+-
+]
+yams
+1d
+7
+1
+The new name doesn’t do the job. I think a less-defensive version of the addendum should be moved to the top of the post, or significant changes made to the introduction clarifying that you’re only addressing one narrow concern.
+The problem as I see it is that the ‘surge of support’ for people leaving labs is not mostly founded on this argument, and instead on the others which you have flagged as out of scope (which is reasonable, but should be signaled more strongly earlier).
+The current title (where you added ‘re warning shots’) could be read as ‘
+In light of recent warning shots, should lab employees leave
+?’ Indeed this, and other similarly misleading readings, are more natural than the reading you seem to intend, which is more like ‘there’s this one particular warning shot argument I see sometimes that doesn’t go through’ (a point I locally agree with you on).
+Reply
+1
+[
+-
+]
+yams
+1d
+9
+8
+It really looks like you picked a weak and non-central argument and then titled and framed your post as if it were the main thing being discussed eg
+here
+and in other recent posts critical of continuing to work at labs.
+I think you may personally benefit from writing out a more comprehensive list (in particular given your CoI).
+Reply
+[
+-
+]
+Lauro Langosco
+1d
+7
+3
+To attempt a slightly finer-grained distinction between different kinds of work, here are some examples of work that seems fairly robustly positive to me:
+Ensuring transcripts are logged / backed up somewhere secure
+Interpretability
+Ensuring that model training keeps CoT monitorable
+Advocating for access for third parties to do risk assessment
+Model organisms
+(maybe, depending on details?) Async monitoring
+OTOH, shallow alignment training and many parts of the AI control agenda do seem more fraught (or at the very least have potentially serious downsides as well as upsides).
+Reply
+1
+[
+-
+]
+Sohaib Imran
+2d
+5
+-2
+Also, manufactured warning shots are not the same as real warning shots?
+If the openAI/HF incident had happened in a lab without a serious safety team like xAI / meta, the response would be less “everybody panic because nobody knows how to prevent AIs from being misaligned“ and more like “What else would you expect from xAI / meta” (for eg. we don’t consider grok mecha-hitler much of a warning shot, imagine how different it would have been if mecha-hitler came out of Anthropic).
+I am not sure how much of an effect this has on the general public though rather than an audience informed about lab practices.
+[Not implying that people should work in labs]
+Reply
+[
+-
+]
+Ryan Kidd
+2d
+6
+4
+I don't think the general public would have as sophisticated a response as you imply if xAI caused a significant warning shot. I expect something more like "uh-oh, AI bad" (at least if something like the Chernobyl disaster is anything to go by, where all other nuclear operators were affected, even those with better safety measures. Note that Chernobyl might be the wrong model, though.)
+Reply
+[
+-
+]
+Towards_Keeperhood
+1d
+4
+-3
+I think there are good reasons for working at AI labs, but your reasons aren't it (see below for why). Good reasons include:
+It's good if people doing the safety work actually care about xrisk instead of optimizing for legible safety metrics, because this reduces the chance that AI labs just paper over problems in a way that produces deceptive AIs.
+You have the option to whistleblow later when it becomes important.
+You might have a small marginal affect on making people at the company a bit saner. (Plausibly not a consideration relevant for OpenAI; idk.)
+You earn a high salary which you can mostly donate to work that helps reduce xrisk.
+(Of course, 2-4 shouldn't just be used as rationalizations that are then never actually acted upon.)
+I think the safety work output itself is approximately zero net value because it now exists inside an equilibrium where safety work there doesn't help shift the overall equilibrium. See the explanation I just posted
+here
+. (Actually I think it's very slightly harmful (see the post) but the factors above can compensate that well (which of course doesn't imply that working at an AI lab is
+optimal
+for people to do even if it's net positive).)
+Why I think your points aren't strong:
+Alignment MVPs are probably still useful:
+In spite of the OpenAI x Hugging Face incident, I expect that most AI safety researchers will use frontier models to help with research,
+including agent foundations researchers
+.
+Alignment MVPs
+, AIs that are sufficiently aligned/controlled to aid research, may remain a crucial part of AI safety research during an AI pause or slowdown. Currently, the best AIs would arguably be unusable for safety research without the hard work of frontier AI company post-training and safety teams. If AI safety researchers quit frontier AI companies en masse, we might be stuck using current generation AIs for the duration of an AI pause; maybe this is unideal?
+I don't think anything AI company safety teams did helped elicit any agent foundations research capability. (Though feel free to mention evidence if you have some.) I think it's mostly about speeding up work safety teams at the work they themselves do, and whether that is good just comes down to the "is safety or warning shots more important" question this is all about. I.e. it's only valid if you assume the conclusion that safety is more important.
+"Safety-stragglers" will cause warning shots anyways
+Recent events rather seem to point in the opposite direction, and the time gap might matter a lot.
+The purpose of an AI pause is do more safety and resilience work: [...]
+If we curtail the development of new AI safety researchers by discouraging them from working with research mentors at frontier AI companies now, we might have a smaller talent pool to capitalize on an AI pause.
+I think this is backwards and that people don't learn very relevant stuff for more adequate alignment scenarios at AI labs and could better do so elsewhere. (Though I concede that hiring spots at other orgs is limited.)
+The next warning shot might be lethal:
+It's possible that the next OAIxHF-style incident causes loss of life, via bioweapons or cyber attacks on critical systems. [...]
+Allowing warning shots "for the greater good" seems morally fraught
+I think there's a difference between actively causing deaths for the greater good and letting deaths happen because otherwise much much much more deaths would probably happen later. I think there should be an ethical injunction against the former but not the latter. We both could be working in global health and development and prevent deaths there on a shorter timescale than in the case of AI, and yet I think it is not morally fraught to decide that AI seems more important.
+[1]
+(You writing this makes me think you don't comprehend the situation we're in or the scale of the moral horror of extinction on a very deep level. If the math was clearly saying that in expectation much much more people would die if you do a thing that reduces that chance of some smaller sooner harm, I think it would be actively unethical to do the thing anyway.
+[2]
+)
+^
+If it was a different situation where you alone could save people who would otherwise die for certain immediately, and the larger harm is uncertain, I can see why some people would consider it fraught, although I wouldn't. It's very much not the case here though. Xrisk isn't much more speculative than that you're preventing warning shots.
+^
+To be celar, I'm not saying the math is saying that, I'm just invalidating this argument. If all other objections had been thoroughly found invalid and it was clear, I think your "morally fraught" argument is actually recommending something unethical.
+Reply
+[
+-
+]
+Yonatan Cale
+2d
+4
+3
+Letting people get hurt seems bad
+I agree!
+But there are many places to work that would prevent people getting hurt.
+If that's a major reason for someone (prosaic harms like HF getting hacked, as distinct from doing work that might align ASI) then I'd encourage them to do the normal EA/80k thing of comparing possible jobs
+Reply
+[
+-
+]
+Yonatan Cale
+2d
+4
+10
+Also, regarding:
+> AIs that are sufficiently aligned/controlled to aid research, may remain a crucial part of AI safety research during an AI pause or slowdown.
+If this research would also make the AIs better at AI R&D (which I think it usually would), then probably the capabilities teams would be happy to fund such research, which would make it extremely
+not-neglected
+(even if it's still positive).
+wdyt?
+Reply
+[
+-
+]
+Nathan Helm-Burger
+1h
+2
+0
+(perhaps biased by the fact that I work at MATS)
+Here's what I see:
+I think that a lot of research under the heading of safety is net neutral or slightly net negative. However, the there is some small fraction that is hugely net positive and absolutely critical for humanity surviving the next ten years.
+I think that many of the most promising lines of research are very compute-intensive. Working at an AI company is one major source of compute for safety experiments. I think this consideration far outweighs any plausible benefits from quitting.
+To put a number on it, the experiments I'm most excited by these days are in the tens of millions of dollars per attempt if using rented GPUs (and I expect would need many attempts). Do you have a source of 100 million dollars of compute per research team for 100 research teams?
+Reply
+[
+-
+]
+Kabir Kumar
+6h
+0
+-7
+Just not showing up for work would be better than quitting.
+Reply
+[
+-
+]
+Mateusz Bagiński
+4h
+8
+5
+They would fire you after a month or two and the firing wouldn't have the same social effect as voluntary quitting of, say, Daniel Kokotajlo or Richard Ngo.
+Reply
+[
+-
+]
+Raphael Roche
+1d
+-1
+0
+What's the point of an AI pause if not for alignment research anyway? And what's useful or not can hardly be determined reliably a priori. We need more fundamental research as well as more prosaic research. Relativity would still remain a hypothesis among others if we hadn't had the experimental tools to test it empirically.
+Reply
+[
++
+]
+[comment deleted]
+1d
+2
+0
+Moderation Log
+Deleted by
+cousin_it
+,
+Yesterday at 12:43 PM
+Reason:
+Comment deleted by its author.
