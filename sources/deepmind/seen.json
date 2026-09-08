@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+  "title": "AlphaGenome 给 90 亿种 DNA 变化做了地图",
+  "date": "Tue, 08 Sep 2026 14:00:15 +0000",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
   "id": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises",
   "title": "Google 推出 Fairwind 网络防御计划",
   "date": "2026-09-02",

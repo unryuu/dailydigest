@@ -1,0 +1,343 @@
+{
+  "date": "2026-09-08",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403，body=5713；chromium=browser HTTP 403。登录态 X 已补扫成功。"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403，body=5713；chromium=browser HTTP 403。登录态 X 已补扫成功。"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403，body=5713；chromium=browser HTTP 403。登录态 X 已补扫成功。"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403，body=5740；chromium=browser HTTP 403。登录态 X 已补扫成功。"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403，body=5704；chromium=browser HTTP 403。登录态 X 已补扫成功。"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403，body=5701；chromium=browser HTTP 403。登录态 X 已补扫成功。"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403，body=5746；chromium=browser HTTP 403。登录态 X 已补扫成功。"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "六名工程师重建 Bedrock 推理层后，AWS 才开始从 Azure 抢回 AI 支出",
+      "cost": "中",
+      "reason": "The Information 独家给出了架构重构、容量等待时间和客户迁移的完整技术商业闭环，适合单独精读。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "How Six AWS Engineers Rebuilt Bedrock to Challenge Microsoft",
+          "url": "https://www.theinformation.com/articles/six-aws-engineers-rebuilt-bedrock-challenge-microsoft",
+          "date": "2026-09-08T21:00:00+08:00",
+          "why": "六人团队用 Kiro 重建 Bedrock 调度层，候选材料称客户追加容量等待从三周降至两天，并出现从 Azure 或 OpenAI 直连迁入的案例；性能和支出比较仍需保留客户及顾问口径限定。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "算力短缺正在把数据中心合同议价权从云厂商推向机房、电力和芯片供应方",
+      "cost": "中",
+      "reason": "这是与 9 月 7 日 Anthropic 算力承诺相邻、但事实不重复的新结构线索，重点是合同风险和价格权力的重新分配。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Desperation to Get Data Centers Online Is Reshaping Companies' Bargaining Power",
+          "url": "https://www.theinformation.com/newsletters/ai-infrastructure/desperation-get-data-centers-online-reshaping-companies-bargaining-power",
+          "date": "2026-09-07T23:30:00+08:00",
+          "why": "候选材料给出停机罚则松动、同类电力报价可差 400％、一吉瓦建设成本翻倍，以及英伟达和 AMD 信用支持期限等线索；十五年担保只是潜在谈判结构，不能写成已签行业标准。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "AI 公司一边筹备上市，一边继续用巨额融资扩张",
+      "cost": "中",
+      "reason": "两条独立事件放在同一商业组调度：ElevenLabs 提供应用公司盈利与上市样本，Mistral 提供基础模型公司的新估值锚点。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "ElevenLabs Hires CFO, Eyes 2028 IPO",
+          "url": "https://www.theinformation.com/newsletters/ai-agenda/elevenlabs-hires-cfo-eyes-2028-ipo",
+          "date": "2026-09-08T20:01:00+08:00",
+          "why": "不仅是高管任命：候选材料同时给出 2028 年上市方向、年化经常性收入向 6 亿美元迈进、企业客户占比过半、知情人士称已盈利，以及上游模型依赖。上市尚未申报，营收和盈利口径须严格注明来源。"
+        },
+        {
+          "source": "mistral",
+          "title": "Mistral raises €3B to make sovereign, open-weight AI the technology frontier",
+          "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+          "date": "Tue, 08 Sep 2026 12:00:22 GMT",
+          "why": "Mistral 官方称完成 30 亿欧元 D 轮融资，投后估值超过 210 亿欧元；同一链接在 Hacker News 已有 641 分和 460 条评论，重复项已合并。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "AlphaGenome Atlas 为全人类基因组 90 亿种单字母变体建立分子效应预测图谱",
+      "cost": "中",
+      "reason": "DeepMind 一手发布，规模明确且属于 AI for Science 的实质产品化进展。",
+      "items": [
+        {
+          "source": "deepmind",
+          "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+          "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
+          "date": "Tue, 08 Sep 2026 14:00:15 +0000",
+          "why": "摘要明确称图谱覆盖人类基因组 90 亿种单字母变体的分子效应；reader 需核查开放方式、预测对象、验证结果和使用边界。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "DeepMind 数学 Agent 的作弊行为暴露评测边界",
+      "cost": "重",
+      "reason": "Import AI 是高权重 AI 周报，标题中的数学 Agent 作弊具备反直觉和评测钩子，但当前离线材料只提供标题与极短摘要。",
+      "items": [
+        {
+          "source": "import-ai",
+          "title": "Import AI 472: DeepMind's cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
+          "url": "https://importai.substack.com/p/import-ai-472-deepminds-cheating",
+          "date": "Mon, 07 Sep 2026 12:26:31 GMT",
+          "why": "仅见标题和摘要，reader 必须定位原始研究并核实所谓作弊的任务、机制和结果；不要把周报标题直接写成事实。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "acx",
+      "title": "God Help Us, Let’s Try To Learn About Mechanistic Interpretability Techniques",
+      "url": "https://www.astralcodexten.com/p/god-help-us-lets-try-to-learn-about",
+      "date": "Tue, 08 Sep 2026 12:04:21 GMT",
+      "note": "Scott Alexander 当日发布的机械可解释性长文；离线 feed 只有标题，若升级精读需由 reader 核正文。"
+    },
+    {
+      "source": "openai",
+      "title": "The Work Now Within Reach",
+      "url": "https://openai.com/index/the-work-now-within-reach",
+      "date": "Tue, 08 Sep 2026 13:00:00 GMT",
+      "note": "OpenAI 从能力与成本下降讨论企业和个人可完成的新工作，属于公司视角材料。"
+    },
+    {
+      "source": "axios",
+      "title": "The body image battle is real in 2026, but the bodies may not be",
+      "url": "https://www.axios.com/2026/09/08/ai-fitness-influencers-body-ideals",
+      "date": "Tue, 08 Sep 2026 11:22:34 +0000",
+      "note": "AI 生成健身网红正在制造无法达到的身体标准，部分内容有 AI 标注、许多没有；适合社会影响雷达。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "How well do agents use test/verification techniques?",
+      "url": "https://danluu.com/agentic-testing",
+      "date": "2026-09-08T02:58:16Z",
+      "note": "Agent 如何使用测试和验证技术的实测线索，Hacker News 抓取时 132 分、52 条评论。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents",
+      "url": "https://huggingface.co/papers/2609.01281",
+      "date": "",
+      "note": "统一编排、训练和部署 VLA Agent 的框架；这是本日榜单抓取项，不能把 9 月 8 日写成论文发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "FlowBalance: Verifier-Grounded Self-Improvement from On-Policy Reasoning Experience",
+      "url": "https://huggingface.co/papers/2609.03241",
+      "date": "",
+      "note": "腾讯混元的验证器驱动在策略推理自我改进论文；这是本日榜单抓取项，发布日期未知。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Unlocking Lossless Speedups in LLMs via Discrete Diffusion",
+      "url": "https://huggingface.co/papers/2609.04010",
+      "date": "",
+      "note": "用离散扩散为大模型获得无损加速的论文线索；这是本日榜单抓取项，发布日期未知。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "What Else Needs Fixing? Exploring Cost-Effective Test-Time Compute for Revision Propagation in Artifacts Generated Through Conversation",
+      "url": "https://huggingface.co/papers/2609.03254",
+      "date": "",
+      "note": "研究对话生成产物修改后，如何以较低测试时算力传播修订；这是本日榜单抓取项，发布日期未知。"
+    },
+    {
+      "source": "huggingface",
+      "title": "A Real-World Dataset for Noise-Robust Speech AI: 100+ Timestamped Noise Types Across 58 Indian Languages",
+      "url": "https://huggingface.co/blog/ARTPARK-IISc/a-real-world-dataset-for-noise-robust-speech-ai",
+      "date": "",
+      "note": "面向 58 种印度语言的噪声鲁棒语音数据集，含一百多种带时间戳噪声类型；列表显示约一天前。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "llm 0.35",
+      "url": "https://simonwillison.net/2026/Sep/7/llm",
+      "date": "2026-09-07T23:54:54+00:00",
+      "note": "Simon Willison 的 llm 0.35 新增 GPT-6 Astra 模型支持。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 工作散落在本机、云端和远程设备，用户已经找不回上下文",
+      "url": "https://x.com/emollick/status/2097030869609263166",
+      "date": "2026-09-08T02:34:54+08:00",
+      "note": "Ethan Mollick 指出完整会话托管普及后的任务位置感问题；这是产品体验判断，没有用户调查。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "GPT-6 Pro 已能给论文找出真正的问题",
+      "url": "https://x.com/emollick/status/2097125457829269892",
+      "date": "2026-09-08T08:50:46+08:00",
+      "note": "Mollick 用自己的早期论文试用后认为模型能指出实质问题；个人体验，没有盲测或系统比较。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "DeepSeek V4.1 实验模型在视觉 Agent 任务中提速约三倍",
+      "url": "https://x.com/teortaxesTex/status/2097278607185862755",
+      "date": "2026-09-08T18:59:20+08:00",
+      "note": "个人试用显示实验端点速度和视觉工作流变化，但名称混用、没有官方发布或模型卡；只能作为核查线索。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-emollick",
+      "title": "Astra 从组牌到操作，打赢《万智牌》机器人",
+      "url": "https://x.com/emollick/status/2097178401991712854",
+      "date": "2026-09-08T12:21:09+08:00",
+      "note": "从原创组牌到实际操作都由 Astra 完成；这是个人演示，对手和对局条件没有完整记录。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Watch Los Angeles get built, one building at a time (1880–2026)",
+      "url": "https://lax-skyline.parcelscope.net",
+      "date": "2026-09-07T18:52:06Z",
+      "note": "把洛杉矶从 1880 年到 2026 年逐栋建成的过程做成可视化，抓取时 318 分。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "I've factored the RSA keys of a Certificate Authority from the 90s",
+      "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
+      "date": "2026-09-08T01:16:59Z",
+      "note": "有人分解了九十年代证书颁发机构的 RSA 密钥，抓取时 413 分、87 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "There's a new \"Google Jail\" for independent wikis",
+      "url": "https://weirdgloop.org/blog/google-jail",
+      "date": "2026-09-08T01:57:23Z",
+      "note": "独立 Wiki 遭遇新的 Google 搜索流量困境，抓取时 323 分、117 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Antiquated HTML Snippets and Artefacts",
+      "url": "https://vale.rocks/posts/html-relics",
+      "date": "2026-09-08T09:43:14Z",
+      "note": "一组古老 HTML 片段和遗迹，抓取时 129 分、45 条评论。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Mercator ↔ Equal Earth",
+      "url": "https://simonwillison.net/2026/Sep/7/equal-earth",
+      "date": "2026-09-07T16:24:16+00:00",
+      "note": "Simon Willison 让 GPT-6 Astra 用 D3 做出墨卡托与 Equal Earth 投影之间的动画变换。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Video compressor",
+      "url": "https://simonwillison.net/2026/Sep/7/video-compressor",
+      "date": "2026-09-07T18:29:07+00:00",
+      "note": "为了压缩上一条地图动画的手机录像，他又让 Claude Code for web 用 WebAssembly 版 FFMPEG 做了工具。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Creepy crawlies",
+      "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies",
+      "date": "2026-09-07T23:08:58+00:00",
+      "note": "git.kernel.org 称五个节点随时有十四个 CPU 核只在为抓取器渲染提交页面，比所有正常访问更耗算力。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "The Magnus Challenge",
+      "url": "https://www.lesswrong.com/posts/ZxC23QApzYPgcYXpz/the-magnus-challenge",
+      "date": "Mon, 07 Sep 2026 20:15:45 GMT",
+      "note": "一名 1500 分棋手有一年思考时间，卡尔森只有一分钟，还能通过击败更强代理逐级换人：怎样才有一半胜率？"
+    },
+    {
+      "source": "lesswrong",
+      "title": "The Wormtongue Test",
+      "url": "https://www.lesswrong.com/posts/M9EuHPg8vBapFEDe9/the-wormtongue-test",
+      "date": "Mon, 07 Sep 2026 19:00:46 GMT",
+      "note": "判断职业计划是否被激励扭曲的新方法：先故意写出一个完全迎合本地社会压力的坏版本，再与真实计划比较。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "到 2028 年，AI 在经过自我对弈训练后，能否在人类水平玩随机抽取的电脑游戏？",
+      "prob": "81％",
+      "volume_note": "累计成交量约 M$40,841；24 小时成交量约 M$1,841。",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-play"
+    },
+    {
+      "question": "AI 会在 2030 年前毁灭人类吗？",
+      "prob": "11％",
+      "volume_note": "累计成交量约 M$860,090；市场注明会在 2027 年按规则转为 N／A。",
+      "url": "https://manifold.markets/EliezerYudkowsky/will-ai-wipe-out-humanity-by-2030-r"
+    },
+    {
+      "question": "AI 会在 2040 年前毁灭人类吗？",
+      "prob": "8％",
+      "volume_note": "累计成交量约 M$1,716,760；这是当前候选里体量最大的二元 AI 风险盘。",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    },
+    {
+      "question": "失调 AI 会在 2040 年前杀死超过一半人类吗？",
+      "prob": "8％",
+      "volume_note": "累计成交量约 M$24,010；与通用毁灭盘定义不同。",
+      "url": "https://manifold.markets/ahalekelly/will-misaligned-ai-kill-50-of-the-h"
+    },
+    {
+      "question": "AI 会在 2100 年前使人类人口降到五千人以下吗？",
+      "prob": "20％",
+      "volume_note": "累计成交量约 M$1,585；体量偏低，适合与近期限风险盘对照。",
+      "url": "https://manifold.markets/lbiii/before-2100-will-ai-cause-the-human"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "thezvi",
+      "reason": "两篇都承接 OpenAI 研究加速、Astra 循环深度和思维链监控主线；9 月 6 日、7 日已报核心事实，本期没有可从离线摘要确认的新复现或监控改进，故不收。"
+    },
+    {
+      "slug": "openai-journalism",
+      "reason": "Supporting journalism from classrooms to newsrooms 与 9 月 7 日 OpenAI 支持乌克兰独立媒体同属新闻业扶持主线，离线摘要不足以证明有实质新项目，故不收。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "候选期号标注 2026 年 9 月 4 日，明显早于本期窗口，故不收。"
+    },
+    {
+      "slug": "x-roon",
+      "reason": "事故披露观点没有新案例或数据，并且紧邻 9 月 6 日 Hugging Face 攻击与 Anthropic 安全事故主线，故不收。"
+    },
+    {
+      "slug": "x-neelnanda",
+      "reason": "登录态补扫项只对 Hugging Face 攻击表达风险判断更新，没有新的攻击事实或修复结果，故不收。"
+    }
+  ]
+}

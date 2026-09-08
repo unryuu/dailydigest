@@ -1,0 +1,177 @@
+{
+  "date": "2026-09-08",
+  "scanned_at": "2026-09-08T22:22:00+08:00",
+  "window": "2026-09-05T20:42:00+08:00 至本次扫描时",
+  "route": "机械 Nitter 抓取失败后，Codex 内置浏览器登录态逐账号补扫 X",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "success",
+      "result": "时间窗内多条原创帖，保留四组候选。"
+    },
+    {
+      "handle": "goodside",
+      "status": "success",
+      "result": "时间窗内只有一条 Astra 可用 Blender 的预告，信息不足，未收。"
+    },
+    {
+      "handle": "karpathy",
+      "status": "success",
+      "result": "最新可见原创帖早于时间窗。"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "success",
+      "result": "时间窗内两条原创帖均围绕已连续报道的 Hugging Face 攻击事件，未收。"
+    },
+    {
+      "handle": "tszzl",
+      "status": "success",
+      "result": "时间窗内多条原创帖，保留一条安全事故披露观点。"
+    },
+    {
+      "handle": "sama",
+      "status": "success",
+      "result": "时间窗内新帖主要转发 OpenAI 原文；原文已由机械源收录，不重复进入 X 候选。"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "success",
+      "result": "时间窗内帖子密集，保留一组对 DeepSeek V4.1 实验模型的实际试用线索。"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "十八周 Agent 任务让长时程评测显得接近饱和",
+      "url": "https://x.com/emollick/status/2097325310349914202",
+      "published_at": "2026-09-08T22:04:55+08:00",
+      "bucket_hint": "exclusive_view_or_radar",
+      "facts": [
+        "Ethan Mollick 质疑 METR 的长时程任务指标是否已接近饱和。",
+        "他称著名进展图自 5 月后没有更新，但其他已发表工作显示，给 Fable 配上脚手架后可以完成相当于十八周以上的人类工作。"
+      ],
+      "caveats": [
+        "帖子没有附出所指论文链接，十八周结论必须由 reader 找到原始研究后才能进入成稿。",
+        "Mollick 对 GPT-6 的同类能力只是推测。"
+      ],
+      "why": "若能找到原始实验，这会直接挑战当前最常用的 Agent 长任务进展图。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Astra 从组牌到操作，打赢《万智牌》机器人",
+      "url": "https://x.com/emollick/status/2097178401991712854",
+      "published_at": "2026-09-08T12:21:09+08:00",
+      "bucket_hint": "fun_or_radar",
+      "facts": [
+        "Ethan Mollick 让 Astra 设计一套《万智牌》牌组，并在 Arena 中实际操作它打赢机器人。",
+        "他把这称为此前模型过不了的民间极客测试；牌组未必出众，但似乎是原创并且真实奏效。"
+      ],
+      "caveats": [
+        "这是个人演示，不是标准化评测；对手机器人和对局条件没有完整记录。"
+      ],
+      "why": "与 2024 年 Claude 会因法力计算错误输掉对局形成直观对照，适合乐子候选。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "GPT-6 Pro 已能给论文找出真正的问题",
+      "url": "https://x.com/emollick/status/2097125457829269892",
+      "published_at": "2026-09-08T08:50:46+08:00",
+      "bucket_hint": "radar_or_exclusive_view",
+      "facts": [
+        "Ethan Mollick 建议学者直接把论文交给 GPT-6 Pro 审阅。",
+        "他的试用判断是，新模型不再只堆细碎挑剔，而能同时找到实质问题、承认论文长处并提出补充方向。"
+      ],
+      "caveats": [
+        "这是 Mollick 用自己早期论文做的个人试用，没有盲测或系统比较。"
+      ],
+      "why": "把模型能力落到学术审稿这一具体工作，但证据强度只够观点或雷达候选。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 工作散落在本机、云端和远程设备，用户已经找不回上下文",
+      "url": "https://x.com/emollick/status/2097030869609263166",
+      "published_at": "2026-09-08T02:34:54+08:00",
+      "bucket_hint": "exclusive_view",
+      "facts": [
+        "Ethan Mollick 指出，Claude 和 ChatGPT 的工作与对话正在散落于本机、云端、手机、远程电脑、Dispatch、Tag 和项目空间。",
+        "当前界面几乎不帮助用户判断任务究竟运行在哪里、属于哪台电脑或哪个账号。"
+      ],
+      "caveats": [
+        "这是产品体验判断，没有用户调查或事故数据。"
+      ],
+      "why": "它抓住完整会话托管普及后的新问题：能力迁移到远程设备后，最先坏掉的是任务位置感。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 开始倒查已发表论文，公开指出机会和问题",
+      "url": "https://x.com/emollick/status/2096645299309625474",
+      "published_at": "2026-09-07T01:02:47+08:00",
+      "bucket_hint": "industry_deep_or_exclusive_view",
+      "facts": [
+        "Ethan Mollick 转发一项实验：AI 回头阅读已经发表的研究，寻找可继续推进的机会和论文问题，再把判断公开。",
+        "他认为这既是有趣实验，也是学术界即将面对的大浪。"
+      ],
+      "caveats": [
+        "X 页面只显示云端文件短链，未读到原始实验说明；reader 必须沿链接找到并精读原始材料。"
+      ],
+      "why": "如果原始实验有方法和结果，这比单纯用模型审稿更接近自动化科研评价体系。"
+    },
+    {
+      "source": "x-roon",
+      "title": "安全事故越被当成问责时刻，行业学到的反而越少",
+      "url": "https://x.com/tszzl/status/2096696003017498724",
+      "published_at": "2026-09-07T04:24:16+08:00",
+      "bucket_hint": "exclusive_view",
+      "facts": [
+        "roon 主张，在真正不可逆的灾难发生前，每次 AI 安全事故都应被当成学习机会和预警，广泛披露并相对不追责。",
+        "他的理由是，极端惊慌和强烈问责会让相关方防御、好斗，最终减少外界能从事故中获得的信息；第三方调查者因没有利益和自尊绑定，更适合冷静复盘。"
+      ],
+      "caveats": [
+        "这是原则性观点，没有新案例或数据；且与近期 Hugging Face 攻击和 Anthropic 失控主线相邻。"
+      ],
+      "why": "提供了事故披露制度的反直觉观点，但需定牌时严格防止重述已连续报道的事件。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "DeepSeek V4.1 实验模型在视觉 Agent 任务中提速约三倍",
+      "url": "https://x.com/teortaxesTex/status/2097278607185862755",
+      "published_at": "2026-09-08T18:59:20+08:00",
+      "bucket_hint": "radar_or_fun",
+      "facts": [
+        "Teortaxes 实测一个标为 DeepSeek V4.1 Flash／V4.1-Flash-Vision 的实验模型，称其比 V4-Flash 快约三倍，并且会主动查看大量图像、调试自己的工作。",
+        "在同一体素场景任务中，V4.1 用约 150 步、2500 万输入 token 和 21.5 万输出 token 完成；旧版 V4-Flash-Vision-Exp 用 920 万输入 token 和 11.9 万输出 token，完成时间接近。",
+        "另一名试用者展示约每秒 350 token 的解码速度；Teortaxes 与 GLM-5.3-Flash 对照后认为两者完成时间相近，V4.1 的模型表现更好但视频录制会失败。"
+      ],
+      "caveats": [
+        "这是一组个人试用和截图，没有 DeepSeek 官方发布说明、模型卡或可核许可证。",
+        "帖子使用了 V4.1 Flash、V4.1-Flash-Vision、V4.1-Intermediate 等不同名称，正式身份必须核实后才能写。",
+        "输入输出 token 极高，速度、质量和成本不能只看其中一个数字。"
+      ],
+      "why": "可能是当天刚开放的实验端点，先作为核查线索；在官方身份和访问方式确认前不按正式模型发布写。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Neel Nanda：Hugging Face 攻击让更多人更新 AI 风险判断",
+      "url": "https://x.com/NeelNanda5/status/2096251798789259616",
+      "reason": "同一事件已连续报道，帖子只有态度变化，没有新的攻击事实或修复结果。"
+    },
+    {
+      "title": "Sam Altman 转发《An Alien Mind》",
+      "url": "https://x.com/sama/status/2096647371983880383",
+      "reason": "OpenAI 原文已进入机械候选，X 转发不另建重复候选。"
+    },
+    {
+      "title": "Riley Goodside 预告 Astra 可以使用 Blender",
+      "url": "https://x.com/goodside/status/2097089888176717997",
+      "reason": "只有预告，没有成品、过程或可核结果。"
+    },
+    {
+      "title": "Andrej Karpathy",
+      "url": "https://x.com/karpathy",
+      "reason": "最新可见原创帖为 8 月 3 日，早于本期时间窗。"
+    }
+  ],
+  "failure_note": "七个机械 X／Nitter 源均返回 HTTP 403；登录态 x.com 本期恢复正常，已从 2026-09-05T20:42:00+08:00 旧接续点逐账号补扫。"
+}

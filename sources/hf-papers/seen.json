@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.01281",
+  "title": "EmbodiedSkills 给机器人每一步加上执行前检查和事后验收",
+  "date": "2026-09-08",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.03254",
+  "title": "RevPropBench 测模型能不能把一处修改同步到关联部分",
+  "date": "2026-09-08",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.04010",
+  "title": "用离散扩散一次生成多个 token",
+  "date": "2026-09-08",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.03241",
+  "title": "FlowBalance 用验证器纠正模型的自我指导",
+  "date": "2026-09-08",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.03153",
   "title": "VeriPhy 给视频物理判断留下证据链",
   "date": "2026-09-05",

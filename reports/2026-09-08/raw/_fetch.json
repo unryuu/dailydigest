@@ -1,0 +1,224 @@
+[
+  {
+    "slug": "aws-bedrock-mantle",
+    "url": "https://www.theinformation.com/articles/six-aws-engineers-rebuilt-bedrock-challenge-microsoft",
+    "status": null,
+    "error": "Error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "slug": "datacenter-bargaining",
+    "url": "https://www.theinformation.com/newsletters/ai-infrastructure/desperation-get-data-centers-online-reshaping-companies-bargaining-power",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/ai-infrastructure/desperation-get-data-centers-online-reshaping-companies-bargaining-power",
+    "bytes": 387295,
+    "title": "Desperation to Get Data Centers Online Is Reshaping Companies' Bargaining Power — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "mistral-3b",
+    "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+    "bytes": 273701,
+    "title": "Making sovereign, open-weight AI the technology frontier | Mistral",
+    "chars": 3556
+  },
+  {
+    "slug": "alphagenome-atlas",
+    "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome",
+    "status": 200,
+    "final_url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+    "bytes": 160821,
+    "title": "AlphaGenome Atlas: Molecular predictions for 9 Billion human DNA variants â Google DeepMind",
+    "chars": 22
+  },
+  {
+    "slug": "import-ai-472",
+    "url": "https://importai.substack.com/p/import-ai-472-deepminds-cheating",
+    "status": 200,
+    "final_url": "https://importai.substack.com/p/import-ai-472-deepminds-cheating",
+    "bytes": 193493,
+    "title": "Import AI 472: DeepMind's cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman",
+    "chars": 19860
+  },
+  {
+    "slug": "agentic-testing",
+    "url": "https://danluu.com/agentic-testing",
+    "status": 200,
+    "final_url": "http://danluu.com/agentic-testing/",
+    "bytes": 84450,
+    "title": "How well do agents use test/verification techniques?",
+    "chars": 74440
+  },
+  {
+    "slug": "elevenlabs-ipo",
+    "url": "https://www.theinformation.com/newsletters/ai-agenda/elevenlabs-hires-cfo-eyes-2028-ipo",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/ai-agenda/elevenlabs-hires-cfo-eyes-2028-ipo",
+    "bytes": 411628,
+    "title": "ElevenLabs Hires CFO, Eyes 2028 IPO — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "acx-mech-interp",
+    "url": "https://www.astralcodexten.com/p/god-help-us-lets-try-to-learn-about",
+    "status": 200,
+    "final_url": "https://www.astralcodexten.com/p/god-help-us-lets-try-to-learn-about",
+    "bytes": 293129,
+    "title": "God Help Us, Let’s Try To Learn About Mechanistic Interpretability Techniques",
+    "chars": 29736
+  },
+  {
+    "slug": "ai-fitness-influencers",
+    "url": "https://www.axios.com/2026/09/08/ai-fitness-influencers-body-ideals",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/08/ai-fitness-influencers-body-ideals",
+    "bytes": 261517,
+    "title": "AI influencers fuel impossible body ideals",
+    "chars": 3761
+  },
+  {
+    "slug": "flowbalance",
+    "url": "https://huggingface.co/papers/2609.03241",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.03241",
+    "bytes": 141934,
+    "title": "Paper page - FlowBalance: Verifier-Grounded Self-Improvement from On-Policy Reasoning Experience",
+    "chars": 3369
+  },
+  {
+    "slug": "discrete-diffusion-speedup",
+    "url": "https://huggingface.co/papers/2609.04010",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.04010",
+    "bytes": 206888,
+    "title": "Paper page - Unlocking Lossless Speedups in LLMs via Discrete Diffusion",
+    "chars": 6330
+  },
+  {
+    "slug": "revision-propagation",
+    "url": "https://huggingface.co/papers/2609.03254",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.03254",
+    "bytes": 140555,
+    "title": "Paper page - What Else Needs Fixing? Exploring Cost-Effective Test-Time Compute for Revision Propagation in Artifacts Generated Through Conversation",
+    "chars": 3786
+  },
+  {
+    "slug": "embodiedskills",
+    "url": "https://huggingface.co/papers/2609.01281",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.01281",
+    "bytes": 148301,
+    "title": "Paper page - EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents",
+    "chars": 5265
+  },
+  {
+    "slug": "openai-work-reach",
+    "url": "https://openai.com/index/the-work-now-within-reach",
+    "status": 200,
+    "final_url": "https://openai.com/index/the-work-now-within-reach/",
+    "bytes": 434893,
+    "title": "The Work Now Within Reach | OpenAI",
+    "chars": 7682
+  },
+  {
+    "slug": "llm-035",
+    "url": "https://simonwillison.net/2026/Sep/7/llm",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/7/llm/",
+    "bytes": 14143,
+    "title": "Release: llm 0.35",
+    "chars": 1107
+  },
+  {
+    "slug": "india-speech-noise",
+    "url": "https://huggingface.co/blog/ARTPARK-IISc/a-real-world-dataset-for-noise-robust-speech-ai",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/ARTPARK-IISc/a-real-world-dataset-for-noise-robust-speech-ai",
+    "bytes": 152641,
+    "title": "A Real-World Dataset for Noise-Robust Speech AI: 100+ Timestamped Noise Types Across 58 Indian Languages",
+    "chars": 7610
+  },
+  {
+    "slug": "task-location-ux",
+    "url": "https://x.com/emollick/status/2097030869609263166",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2097030869609263166",
+    "bytes": 167342,
+    "title": "Ethan Mollick on X: \"It is now getting very hard to track where your work and conversations are in Claude and ChatGPT: Local computer? Cloud? Which computer? Phone? The computer connected via Dispatch or Remote? The one you are talking to in Tag? Is that in a project? The current UX is little help.\" / X",
+    "chars": 340
+  },
+  {
+    "slug": "deepseek-v41-36kr",
+    "url": "https://36kr.com/p/3974654461604357",
+    "status": 200,
+    "final_url": "https://36kr.com/p/3974654461604357",
+    "bytes": 17603,
+    "title": "",
+    "chars": 157
+  },
+  {
+    "slug": "astra-mtg",
+    "url": "https://x.com/emollick/status/2097178401991712854",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2097178401991712854",
+    "bytes": 248077,
+    "title": "Ethan Mollick on X: \"Another informal nerd benchmark that AIs had struggled with has been passed: Astra successfully designed a Magic the Gathering deck and then used it to defeat a bot on Arena.\n\n(the deck may not be stunning, but it does seem to be original, and it worked)\" / X",
+    "chars": 639
+  },
+  {
+    "slug": "la-skyline",
+    "url": "https://lax-skyline.parcelscope.net",
+    "status": 200,
+    "final_url": "https://lax-skyline.parcelscope.net/",
+    "bytes": 45752,
+    "title": "Every building in Los Angeles County",
+    "chars": 550
+  },
+  {
+    "slug": "rsa-ca-keys",
+    "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
+    "status": 200,
+    "final_url": "https://mcpherrin.ca/2026/09/07/rsa.html",
+    "bytes": 12010,
+    "title": "I’ve factored the RSA keys of a Certificate Authority… | Matthew McPherrin",
+    "chars": 7960
+  },
+  {
+    "slug": "google-jail-wikis",
+    "url": "https://weirdgloop.org/blog/google-jail",
+    "status": 200,
+    "final_url": "https://weirdgloop.org/blog/google-jail",
+    "bytes": 14634,
+    "title": "There’s a new “Google Jail” for independent wikis | Weird Gloop",
+    "chars": 6970
+  },
+  {
+    "slug": "creepy-crawlies",
+    "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+    "bytes": 14917,
+    "title": "Creepy crawlies",
+    "chars": 1615
+  },
+  {
+    "slug": "magnus-challenge",
+    "url": "https://www.lesswrong.com/posts/ZxC23QApzYPgcYXpz/the-magnus-challenge",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/ZxC23QApzYPgcYXpz/the-magnus-challenge",
+    "bytes": 480111,
+    "title": "The Magnus Challenge — LessWrong",
+    "chars": 15291
+  },
+  {
+    "slug": "wormtongue-test",
+    "url": "https://www.lesswrong.com/posts/M9EuHPg8vBapFEDe9/the-wormtongue-test",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/M9EuHPg8vBapFEDe9/the-wormtongue-test",
+    "bytes": 423276,
+    "title": "The Wormtongue Test — LessWrong",
+    "chars": 4335
+  }
+]

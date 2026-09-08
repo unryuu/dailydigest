@@ -1,0 +1,154 @@
+[
+  {
+    "id": "elevenlabs-2028-ipo",
+    "section": "industry",
+    "label": "ElevenLabs 聘请新财务负责人，瞄准 2028 年上市",
+    "url": "https://www.theinformation.com/newsletters/ai-agenda/elevenlabs-hires-cfo-eyes-2028-ipo",
+    "body": "语音业务已经从个人配音扩到企业客服与销售 Agent，年化经常性收入正向 6 亿美元迈进，大型企业贡献过半。",
+    "note": "核实通过。原始抓取只有订阅墙空壳，本条使用 work／theinformation_candidates.json 的登录态已读记录。新任首席财务官 Ethan Tandowsky 参与过 Adyen 2018 年上市；2028 年是可能的上市时间，不是已提交申请。年化经常性收入和企业客户占比来自公司，盈利情况来自知情人士。与近三期主线不重叠。"
+  },
+  {
+    "id": "acx-mechanistic-interpretability",
+    "section": "deep",
+    "label": "Scott Alexander 梳理机械可解释性的几件趁手工具",
+    "url": "https://www.astralcodexten.com/p/god-help-us-lets-try-to-learn-about",
+    "body": "线性探针能找出模型是否在想某个概念，激活解释器还能把隐藏活动翻成白话；但直接压制这些活动，模型可能绕路，连带损伤别的能力。",
+    "note": "核实通过。文章发表于 2026-09-08，依次梳理线性探针、稀疏自编码器、激活解释器、自然语言自编码器和情绪向量，并结合 Mythos 系统卡讨论应用。正文只概括作者的核心判断：这些工具能辅助监测，但还不足以完整理解或可靠改造模型。与近三期主线不重叠。"
+  },
+  {
+    "id": "ai-fitness-influencers",
+    "section": "deep",
+    "label": "AI 健身网红开始把不存在的身材卖成标准",
+    "url": "https://www.axios.com/2026/09/08/ai-fitness-influencers-body-ideals",
+    "body": "有些虚拟博主卖健康产品，有些分享身材改造；研究发现，即使人们知道图片由 AI 生成，对自己身体的满意度仍会下降。",
+    "note": "核实通过。Axios 于 2026-09-08 发布，查阅了数十条明确使用 AI 生成身材变化或健身网红的社交帖子，并采访身体意象研究者与临床人士。研究结论由克莱姆森大学 Brooke Bennett 团队提供，原始论文链接在抓取文本中未展开。与近三期主线不重叠。"
+  },
+  {
+    "id": "flowbalance",
+    "section": "papers",
+    "label": "FlowBalance 用验证器纠正模型的自我指导",
+    "url": "https://huggingface.co/papers/2609.03241",
+    "body": "答案通过验证时保留模型的细粒度指导，答错时反向调整，结果分不出高下时就关闭这路信号；在 Qwen3 4B 和 8B 的数学题上，它比 FlowRL 更准也更稳。",
+    "note": "核实通过。腾讯混元论文 arXiv：2609.03241，发表于 2026-09-03、9 月 8 日提交到 Hugging Face Papers。结果覆盖 Qwen3-4B 与 Qwen3-8B 的数学推理，并报告训练速度、稳定性和正确策略多样性改善。与近三期主线不重叠。"
+  },
+  {
+    "id": "uno-discrete-diffusion",
+    "section": "papers",
+    "label": "Uno 用离散扩散一次生成多个 token",
+    "url": "https://huggingface.co/papers/2609.04010",
+    "body": "它冻结原有自回归权重，只训练一组轻量扩散参数并逐批验收候选 token，不另养一个草稿模型；最高吞吐量达到原模型的 3 倍。",
+    "note": "核实通过。论文 arXiv：2609.04010，发表于 2026-09-03、9 月 8 日提交到 Hugging Face Papers。所谓无损指采样仍服从底层自回归模型定义的分布；最高 3 倍为论文评测结果。评论区有人指出 Orthrus 早有相似框架，作者回应两者的架构和注意力实现不同。与近三期主线不重叠。"
+  },
+  {
+    "id": "revision-propagation",
+    "section": "papers",
+    "label": "RevPropBench 测模型能不能把一处修改同步到关联部分",
+    "url": "https://huggingface.co/papers/2609.03254",
+    "body": "测试把对话生成的产物整理成 JSON，再只要求改其中一处，看模型能否主动找出所有依赖项；从三份并行答案里挑一份，可把准确率再提高 2.2 至 9.7 个百分点。",
+    "note": "核实通过。论文 arXiv：2609.03254，发表于 2026-09-03、9 月 8 日提交到 Hugging Face Papers。RevPropBench 由模型合成样本和人工标注构成，基线准确率为 68.3％ 至 93％；三份并行样本配合模型选择或中心样本选择的增益为 2.2 至 9.7 个百分点。与近三期主线不重叠。"
+  },
+  {
+    "id": "embodiedskills",
+    "section": "papers",
+    "label": "EmbodiedSkills 给机器人每一步加上执行前检查和事后验收",
+    "url": "https://huggingface.co/papers/2609.01281",
+    "body": "规划器先拆任务，动作模型分段执行；系统每次先检查条件，再看动作有没有奏效，没做完就继续，失败则恢复或重规划。",
+    "note": "核实通过。论文 arXiv：2609.01281，发表于 2026-09-01、9 月 8 日提交到 Hugging Face Papers。框架以固定技能接口连接观察、规划、预检、执行、验证与恢复，实例使用 Qwen3-VL 和 OpenPI／pi0.5。论文报告适配后的底层动作策略在 50 项 RoboTwin 2.0 任务平均成功率为 86.20％，但这项数字不是整套闭环框架的独立总体得分。与近三期主线不重叠。"
+  },
+  {
+    "id": "openai-work-within-reach",
+    "section": "official",
+    "label": "OpenAI 把模型、产品和算力串成增长飞轮",
+    "url": "https://openai.com/index/the-work-now-within-reach/",
+    "body": "更强的模型打开新工作，服务成本下降让这些工作能够规模化，收入再投入研究和基础设施；GPT-5.6 Sol 已帮生产服务成本下降 20％。",
+    "note": "核实通过。OpenAI 首席财务官 Sarah Friar 于 2026-09-08 发布的公司观点文章。20％指 GPT-5.6 Sol 改进生产服务软件后的端到端服务成本降幅；文章还披露每周活跃用户超过十亿、企业客户 250 万家，以及自研推理芯片 Jalapeño 计划年底部署。dup_suspect：09-07 已报 OpenAI 研究团队用 Agent 加速工作，本文再次引用每个人类工作日对应 3.1 个 Agent 工作日；定牌时宜保留商业飞轮和服务成本的新信息，不再展开研究加速。"
+  },
+  {
+    "id": "llm-035-astra",
+    "section": "industry",
+    "label": "Simon Willison 的 llm 0.35 加入 GPT-6 Astra",
+    "url": "https://simonwillison.net/2026/Sep/7/llm/",
+    "body": "",
+    "note": "核实通过，目标为行业简讯。Simon Willison 于 2026-09-07 发布 llm 0.35，页面列出的更新只有新增 OpenAI 模型 gpt-6-astra。与近三期主线不重叠。"
+  },
+  {
+    "id": "vaani-noise-dataset",
+    "section": "industry",
+    "label": "Vaani 为 58 种印度语言标出十万多个真实噪声片段",
+    "url": "https://huggingface.co/blog/ARTPARK-IISc/a-real-world-dataset-for-noise-robust-speech-ai",
+    "body": "",
+    "note": "核实通过，目标为行业简讯。数据集发表于 2026-09-07，在 122 小时以上的手机实地录音中标注 106892 个噪声事件，覆盖 58 种语言，并给出毫秒级起止时间；约 22 小时由多人复核。与近三期主线不重叠。"
+  },
+  {
+    "id": "task-location-ux",
+    "section": "industry",
+    "label": "AI 任务散落在本机和云端，用户开始找不回上下文",
+    "url": "https://x.com/emollick/status/2097030869609263166",
+    "body": "",
+    "note": "核实通过，目标为行业简讯。Ethan Mollick 于 2026-09-07 列出 Claude 和 ChatGPT 的本机、云端、手机、远程电脑、Dispatch、Tag 和项目空间，认为当前界面很难说明工作与对话究竟在哪里。这是产品体验判断。与近三期主线不重叠。"
+  },
+  {
+    "id": "deepseek-v41-flash-preview",
+    "section": "industry",
+    "label": "DeepSeek V4.1 Flash 开放原生多模态限时内测",
+    "url": "https://36kr.com/p/3974654461604357",
+    "body": "",
+    "note": "核实通过，目标为行业简讯。36Kr 文章标题为《DeepSeek V4.1 Flash开始限时内测：新架构、原生多模态》，发表于 2026-09-08 19:15；原始抓取触发反爬，本条依据主 agent 登录态已读记录。官方群开放模型 ID deepseek-v4.1-flash-expires-on-0910，9 月 10 日到期，沿用 V4 Flash 计费，每账号最多 20 路并发；这是限时测试端点，不按正式版发布处理。dup_suspect：08-04 已报 DeepSeek V4 Flash 单张 AMD 卡部署，本条是同一模型家族的新架构与原生多模态内测进展。"
+  },
+  {
+    "id": "astra-mtg",
+    "section": "fun",
+    "label": "Astra 自己组牌，打赢《万智牌》机器人",
+    "url": "https://x.com/emollick/status/2097178401991712854",
+    "body": "2024 年 Claude 会因算错法力输掉对局；这次 Astra 设计了一套看起来原创的牌组，还在 Arena 里把它打赢了。",
+    "note": "核实通过。Ethan Mollick 于 2026-09-08 发布个人演示，明确称 Astra 设计牌组并操作它击败 Arena 机器人，同时附上 2024 年 Claude 因法力计算错误失败的旧帖。对手机器人和完整对局条件没有展开，因此只按民间极客测试写。与近三期主线不重叠。"
+  },
+  {
+    "id": "la-skyline",
+    "section": "fun",
+    "label": "一张地图让洛杉矶县的现存建筑从 1880 年逐栋长出来",
+    "url": "https://lax-skyline.parcelscope.net/",
+    "body": "每个方块代表今天仍在的一栋楼，按落成年份依次出现；被拆掉的建筑不算，所以看到的是留存至今的城市。",
+    "note": "核实通过。Parcelscope 交互地图使用 LARIAC 2020 建筑轮廓与洛杉矶县估价官记录，可按年代和高度查看，也可搜索地址或地块。页面明确提示远景会夸大建筑高度，且约 2％ 的建筑缺少年份。与近三期主线不重叠。"
+  },
+  {
+    "id": "rsa-ca-keys",
+    "section": "fun",
+    "label": "有人用家用电脑分解了九十年代证书机构的 RSA 密钥",
+    "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
+    "body": "Netscape 4.51 曾内置两把 512 位根证书；作者分别跑了 32 和 29 小时，重建私钥，还架起一个现代浏览器打不开的古董 TLS 网站。",
+    "note": "核实通过。Matthew McPherrin 于 2026-09-07 发布，目标是 1999 年 Netscape 4.51 携带、2002 年移除的 E-Certify 512 位 SSL 与 S／MIME 根证书；计算使用 Ryzen 9 5950X 和 CADO-NFS。对今天至少 2048 位的 RSA 密钥不构成直接攻破。与近三期主线不重叠。"
+  },
+  {
+    "id": "google-jail-wikis",
+    "section": "fun",
+    "label": "独立 Wiki 为躲「Google 监狱」，搬去老域名寄居",
+    "url": "https://weirdgloop.org/blog/google-jail",
+    "body": "Weird Gloop 观察到，约九成新域名 Wiki 只有首页能出现在搜索结果里，最长持续一年；换成已有域名的子域名后，其他页面很快就能被搜到。",
+    "note": "核实通过。Weird Gloop 文章发表于 2026-08-17，比本期时间窗早；作者依据自家托管和已知独立 Wiki 的观察，把现象追溯到 2024 年 3 月 Google 核心更新，并明确将原因解释写成猜测。Overwatch 与 Fortnite Wiki 因此先使用 weirdgloop.org 子域名。与近三期主线不重叠。"
+  },
+  {
+    "id": "linux-crawlers-cpu",
+    "section": "fun",
+    "label": "Linux 内核网站的算力主要花在伺候爬虫",
+    "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+    "body": "五个节点长期占着 14 个 CPU 核，把提交记录渲染成 HTML；耗掉的计算比代码克隆等所有正常访问加起来还多。",
+    "note": "核实通过。Simon Willison 于 2026-09-07 转述 git.kernel.org 维护者 Konstantin Ryabitsev 的说明，数字为五个分布式节点、持续 14 个 CPU 核用于给抓取器渲染提交页面。属于站点运维者对当前流量的观察。与近三期主线不重叠。"
+  },
+  {
+    "id": "magnus-challenge",
+    "section": "fun",
+    "label": "1500 分棋手拿一年思考时间，也有办法赢卡尔森",
+    "url": "https://www.lesswrong.com/posts/ZxC23QApzYPgcYXpz/the-magnus-challenge",
+    "body": "按作者设定，先用时间优势战胜稍强棋手，再让胜者逐级挑战；走七局、换六名代理，整条链打通的概率可到 59％。",
+    "note": "核实通过。LessWrong 文章发表于 2026-09-07，是用 Elo、时间优势和胜率假设构造的思想实验，不是真实赛事。作者设定卡尔森每局一分钟、挑战方共用一年，并把七局链条估算为每局 93％、全胜 59％，随后借此类比 AI 逐代对齐。与近三期主线不重叠。"
+  },
+  {
+    "id": "wormtongue-test",
+    "section": "fun",
+    "label": "Wormtongue Test：先写一份最会迎合周围人的坏计划",
+    "url": "https://www.lesswrong.com/posts/M9EuHPg8vBapFEDe9/the-wormtongue-test",
+    "body": "让它听起来重要、进度清晰，还能顺着身边的地位和金钱激励；再拿它和真实计划对照，看两者究竟差在哪里。",
+    "note": "核实通过。Drake Morrison 于 2026-09-07 提出这套自检法，名称取自《指环王》中表面献策、实际削弱王国的 Gríma Wormtongue。文章还建议让朋友盲猜两份计划，或互相替对方写坏版本。与近三期主线不重叠。"
+  }
+]

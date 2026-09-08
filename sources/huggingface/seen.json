@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/ARTPARK-IISc/a-real-world-dataset-for-noise-robust-speech-ai",
+  "title": "Vaani 为 58 种印度语言标注真实噪声",
+  "date": "2026-09-08",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
   "id": "https://huggingface.co/blog/vlm-run/introducing-gateway",
   "title": "VLM Run 推出统一 API 托管开放权重视觉模型",
   "date": "2026-09-05",

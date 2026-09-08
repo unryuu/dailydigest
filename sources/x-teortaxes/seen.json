@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://36kr.com/p/3974654461604357",
+  "title": "DeepSeek V4.1 Flash 开放原生多模态内测",
+  "date": "2026-09-08T19:15:00+08:00",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
   "id": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "title": "DeepSeek 开放首个 V4 多模态实验模型",
   "date": "2026-08-31T18:45:03+08:00",

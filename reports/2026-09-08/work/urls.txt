@@ -1,0 +1,44 @@
+# group-1：AWS 重建 Bedrock 推理层
+aws-bedrock-mantle|https://www.theinformation.com/articles/six-aws-engineers-rebuilt-bedrock-challenge-microsoft
+
+# group-2：数据中心合同议价权变化
+datacenter-bargaining|https://www.theinformation.com/newsletters/ai-infrastructure/desperation-get-data-centers-online-reshaping-companies-bargaining-power
+
+# group-3：Mistral 融资
+mistral-3b|https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier
+
+# group-4：AlphaGenome Atlas
+alphagenome-atlas|https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome
+
+# group-5：DeepMind 数学 Agent 作弊
+import-ai-472|https://importai.substack.com/p/import-ai-472-deepminds-cheating
+
+# group-6：Agent 测试与验证
+agentic-testing|https://danluu.com/agentic-testing
+
+# 无牌行业与长文
+elevenlabs-ipo|https://www.theinformation.com/newsletters/ai-agenda/elevenlabs-hires-cfo-eyes-2028-ipo
+acx-mech-interp|https://www.astralcodexten.com/p/god-help-us-lets-try-to-learn-about
+ai-fitness-influencers|https://www.axios.com/2026/09/08/ai-fitness-influencers-body-ideals
+
+# 无牌论文
+flowbalance|https://huggingface.co/papers/2609.03241
+discrete-diffusion-speedup|https://huggingface.co/papers/2609.04010
+revision-propagation|https://huggingface.co/papers/2609.03254
+embodiedskills|https://huggingface.co/papers/2609.01281
+
+# 公告与简讯
+openai-work-reach|https://openai.com/index/the-work-now-within-reach
+llm-035|https://simonwillison.net/2026/Sep/7/llm
+india-speech-noise|https://huggingface.co/blog/ARTPARK-IISc/a-real-world-dataset-for-noise-robust-speech-ai
+task-location-ux|https://x.com/emollick/status/2097030869609263166
+deepseek-v41-36kr|https://36kr.com/p/3974654461604357
+
+# 乐子汇总：两版并集
+astra-mtg|https://x.com/emollick/status/2097178401991712854
+la-skyline|https://lax-skyline.parcelscope.net
+rsa-ca-keys|https://mcpherrin.ca/2026/09/07/rsa.html
+google-jail-wikis|https://weirdgloop.org/blog/google-jail
+creepy-crawlies|https://simonwillison.net/2026/Sep/7/creepy-crawlies
+magnus-challenge|https://www.lesswrong.com/posts/ZxC23QApzYPgcYXpz/the-magnus-challenge
+wormtongue-test|https://www.lesswrong.com/posts/M9EuHPg8vBapFEDe9/the-wormtongue-test

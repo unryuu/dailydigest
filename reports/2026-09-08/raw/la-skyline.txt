@@ -1,0 +1,29 @@
+URL: https://lax-skyline.parcelscope.net
+FINAL: https://lax-skyline.parcelscope.net/
+TITLE: Every building in Los Angeles County
+FETCHED: 2026-09-08 23:39:41
+============================================================
+Parcelscope
+Los Angeles County
+City of LA only →
+Decade built
+Height
+1 story
+median 16 ft
+tallest
+drag to pan · right-drag or ⌃-drag to tilt
+Every building
+in LA County
+One box per building standing today, appearing in the year it was built. What was torn down along the way isn't here, so this is the surviving county, not the county as it was.
+1880
+0
+of today's buildings already built
+LARIAC 2020 outlines · LA County Assessor roll
+heights exaggerated when zoomed out
+heights exaggerated when zoomed out
+Building
+Built
+Height
+Footprint
+Type
+Copied

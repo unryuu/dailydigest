@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+  "title": "Linux 内核网站的算力主要花在伺候爬虫",
+  "date": "2026-09-07T23:08:58+00:00",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Sep/7/llm/",
+  "title": "llm 0.35 加入 GPT-6 Astra",
+  "date": "2026-09-07T23:54:54+00:00",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
   "id": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai",
   "title": "Simon Willison 的解读",
   "date": "2026-09-06T23:57:40+00:00",

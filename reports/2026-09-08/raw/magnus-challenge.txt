@@ -1,0 +1,184 @@
+URL: https://www.lesswrong.com/posts/ZxC23QApzYPgcYXpz/the-magnus-challenge
+FINAL: https://www.lesswrong.com/posts/ZxC23QApzYPgcYXpz/the-magnus-challenge
+TITLE: The Magnus Challenge — LessWrong
+FETCHED: 2026-09-08 23:39:51
+============================================================
+x
+The Magnus Challenge — LessWrong
+AI
+Frontpage
+67
+The Magnus
+Challenge
+by
+Taylor G. Lunt
+7th Sep 2026
+7
+min read
+9
+67
+Let's say you're a club chess player with an Elo of 1500 (early intermediate). If you can beat Magnus Carlsen, rated 2800, at a game of one minute bullet chess, you win a billion dollars. Magnus only gets one minute on his clock, but you get one year on your clock.
+Even given that advantage, you don't have a chance. However, there's a twist: During your year of time, you can challenge any other player to a chess game. They get one minute on their clock, you get as much time as you like. If you beat them, they can play Magnus for you instead, using the rest of your remaining time. Or, they can challenge another player, who can challenge another player... who can play Magnus in your stead. If at any point you or one of your proxies lose a game, you lose the challenge and go home empty-handed. We'll just pretend draws never happen.
+The question: What is the optimal strategy for beating Magnus, and do you have enough time to have at least even odds of beating him?
+Some assumptions:
+Based on how Elo works, being 100 points stronger than someone means you win about 64% of games against them. Being 400 points stronger means you win about 91% of games against them. To win 99%, you'd need to be 800 Elo higher than them.
+Extra thinking time makes you play above your Elo, but with diminishing returns. 10x your opponent's time is worth +250 Elo (approximately). 1000x your opponent's time is worth +500 Elo. 100 million times your opponent's time is worth +750. To have an even chance of beating Magnus by yourself, you would require a +1300 Elo advantage. There's no time advantage that will give you a +1300 Elo boost.
+You don't want to play Magnus directly, or you'll lose. Instead, you want to beat someone slightly better than you, who beats someone slightly better than them, and so on, until finally you beat Magnus. You rely on having a time advantage at each step.
+How many steps should you take? Too few, and you'll get smoked in the first round. Too many, and you have to win too many games in a row. Each game is a chance to lose, and the more steps you take, the less of a time advantage your proxies have in each match.
+You can choose the players you want to play and ensure they have an even distribution of Elos from your Elo of 1500 to Magnus' Elo of 2800. That means it's best to split your time advantage evenly across steps.
+Let's say you chose to play 20 games, so you would play the first game, your first proxy would play the second game, ... and your 19th proxy would play Magnus. Each opponent would be 65 Elo higher than the last. Each game would get about 18 days, or 26,000x their opponent's one-minute clock. This time advantage puts your proxies effectively around 535 Elo ahead (net), winning around 96% of the time. That sounds high, but winning 20 games with probability 96% is only a 41% chance of winning every single one.
+Not quite the 50/50 we wanted as a minimum. Plus, sitting through 20 stressful chess matches with a billion dollars on the line sounds like a drag. At the other extreme, you could play two games, with only a single proxy. Each player would be 650 Elo higher than the previous. Each game would be 6 months vs. one minute, giving a total advantage of 10 Elo in your favor in each game. Each game is basically a coin flip, and you end around a 27% chance of winning.
+The sweet spot is somewhere in the middle. Seven games with six proxies. Each opponent is 185 Elo higher than the last. Each game is about 52 days vs. one minute, or 75,000x time advantage, which is worth +630 Elo. This means your players are net 445 Elo stronger, winning 93% of the time. To win seven games at 93% each is 59%. So you can have greater than even odds against Magnus after all!
+If we don't already, we will soon have the first superhuman intelligences (these will probably be human-AI teams for now, and later pure AI). In order to ensure the godlike ASI we eventually build will be aligned to our values, we need to ensure each previous intelligence is also aligned. One failure anywhere on the ladder kills us.
+Right now we are that lowly club player, hoping we can beat Magnus. Whether or not we can depends on whether the AI story lines up with the chess story or it doesn't. The chess story was chosen because I could actually estimate the relevant variables based on how chess is played, and it neatly communicates the idea. But, here are some ways the AI story might be different:
+In the Magnus Challenge, we got to allocate our time as we saw fit, among a number of opponents we decided was optimal. With AI, we don't get to choose the intelligence jumps of our opponents. One big leap could doom us. And we don't necessarily get to allocate our time as we see fit. New AI models will come out at an unpredictable pace, and we have to ensure the model is aligned before it is released. An AI pause is our one tool to adjust timing, but it's a limited resource. Remember that to allocate our time optimally in the Magnus Challenge, we give more time to larger leaps in Elo. (Since the leaps in Elo were all equal, we gave them equal time.) If we waste our extra time by initiating an AI pause before a model that probably would have been easy to align anyway, that's sub-optimal compared to using our pause before the largest jump. But wait too long and we could lose our chance to use it! (Note that "aligning" a model in this case doesn't mean making it perfectly aligned, only aligned enough that we survive until the next model. "Handoff alignment." This may not be much easier, but I'd say current models are probably roughly handoff-aligned, but not perfectly aligned.)
+Each chess game is independent, but it's possible alignment techniques that can align one model will meaningfully carry through to help align successive models. There's a limit to how much this matters. If you can come up with an alignment method with your human pea-brain, a superhuman intelligence much smarter than you would come up with that same idea instantly when trying to align its successor. It doesn't need your help.
+You are a human being with a brain, and so is Magnus. There's a limit to how much better at chess than you he can be. The gap between humans and machines can be (is) much greater. If the gap between peak human intelligence and godlike ASI is larger than the gap between a club chess player and a super-grandmaster, then aligning AI will be harder than the Magnus Challenge. (Note that the gap will not be arbitrarily high: Once ASI is smart enough to do everything we want, if it is aligned but can't guarantee alignment of its smarter successor model, we can instruct it not to create one, as any extra intelligence is pointless to us and pure risk from an alignment perspective. Put another way, if you're comfortable merely defeating
+Levy Rozman
+and stopping there, instead of Magnus Carlsen, you face much less danger in total!)
+The curve of diminishing returns chess players see against other chess players when they have more time may not reflect the curve of diminishing returns AI safety researchers see against the difficulty of aligning the next model. In the Magnus Challenge, each opponent having a fixed Elo and getting one minute of clock time is supposed to represent the increasing challenge of aligning sufficiently more intelligent models (who have a fixed time during training to resist alignment), but playing chess against an opponent and figuring out how to align an AI model are not actually the same activity.
+Alignment is not all-or-nothing. A model can have some probability of being misaligned, or be misaligned in some circumstances but not others. This model is a simplification.
+We might not have a first-mover advantage as significant as 1 year:1 minute. It might be more like 1 hour:1 minute (in which case your chances of beating Magnus are ~8%). How much of an advantage you think we have determines how likely we are to succeed.
+Successive AI models might think faster, skewing the diminishing returns curve. AI definitely thinks faster than humans, so it's a problem at least for the first step.
+On the other hand, AI model releases might get faster and faster due to recursive self-improvement, and if that happens in a way that's too fast compared to thinking speed increases, that lowers the time advantage for previous models to align the next.
+59% is pretty good odds for winning a billion dollars. It's not fantastic odds for preventing apocalypse. The reliability requirements of alignment are higher. Over 7 steps, if you want a 99% chance of success, you need ~99.86% chance of success at each step.
+On the one hand, the Magnus Challenge is an inspiring story. You, a lowly 1500 Elo club player, have absolutely no chance of beating Magnus by yourself,
+even if he spends the first 6 moves swapping his king and queen just to troll you.
+But by defeating a successive chain of opponents and gaining their strength for yourself, you can beat him more likely than not.
+A lot of people suggest the same plan for aligning AI. Will it work? Well, AI is already not perfectly aligned, so in a sense we've failed. But we don't need perfect alignment at each step in the chain. We need enough alignment that we survive until the next model, and the current model makes a sincere attempt to help us align the next model (or will get caught if it tries otherwise). Still, it's a high bar, and for the reasons mentioned above, the AI alignment chain might not be as easy as the chess victory chain.
+The one timing lever we have, the AI pause, is something we have to carefully balance between blowing it at a point where it's not needed, vs. holding onto it so long we die before we can use it, when it could have helped. Ideally we pause before the biggest capabilities jump so we have more time when we are at the greatest risk of losing. Since capabilities jumps are currently not very high, I would personally lean toward "not yet". But get the infrastructure in place so we can do it quickly once it's time.
+Whatever we do, we have to make sure we're not just aiming for reasonable certainty that the very next step in the chain won't cause disaster. We need much more certainty than that to ensure the entire chain is safe.
+The Magnus Challenge
+8
+JBlack
+1
+Taylor G. Lunt
+6
+Josh Engels
+-3
+_rpd
+4
+Jonas Hallgren
+2
+Taylor G. Lunt
+4
+JennaS
+4
+Taylor G. Lunt
+2
+cousin_it
+9
+Comments
+9
+AI
+Frontpage
+67
+New Comment
+9 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 3:39 PM
+[
+-
+]
+JBlack
+15h
+8
+4
+The last two paragraphs appear to assume that we can only pause once.
+This may happen to be a decent approximation, but isn't a fixed absolute that the universe requires that we must work around by choosing the one and only time we can do it. It seems likely to me that if we can do it at all (which is not established), then we can very likely do it more than once.
+In particular I expect that we should first use this capability, if we have it or can develop it, as soon as possible.
+It has been obvious for some time that alignment is not proceeding anywhere near as fast as needed for long term safety even with AI of approximately human capability, and we are arguably already starting to enter weakly superhuman ranges of AI capability.
+Reply
+[
+-
+]
+Taylor G. Lunt
+14h
+1
+-1
+I think the more we pause, the less likely we'll be able to pause again, so it's a kind of a fixed resource, but with enough political capital we could pull off a second pause, or split pauses into smaller pauses, or whatever.
+It has been obvious for some time that alignment is not proceeding anywhere near as fast as needed for long term safety
+This is a common opinion around here, and the assumptions you have to make to believe it are clarified by this post, I think. I don't know if I agree with those assumptions. I agree that we are in danger, but I think there's a lot of uncertainty about the future and nothing is clear.
+Part of the commonness of the belief that we're way behind on alignment comes from the Yudkowsky-style view that nothing but perfect superalignment will suffice, and anything that has a chance of failing isn't good enough. I prefer the model I laid out in this post.
+Another reason for the commonness of that belief is the evidence recently that we're doing a bad job with alignment. But also it's pretty obvious that current models have a ~0% risk of any significant, world-scale harm, so investing effort at this stage is like wasting a bunch of time and resources preparing for a chess match with an opponent who is well below your Elo anyway. There's no point. This is starting to change though. Soon, as AI starts crossing our own Elo, we'll see whether or not humanity can rise to the challenge, or if we'll continue to be as careless about safety as we currently are.
+Reply
+[
+-
+]
+Josh Engels
+20h
+6
+3
+We did some nice theoretical and empirical analysis of this problem in
+https://arxiv.org/abs/2504.18530
+Reply
+[
+-
+]
+_rpd
+20h
+-3
+0
+iterate on the oversight design until Guards benefit more from increased capability than Houdinis
+does seem to be our best option
+Reply
+[
+-
+]
+Jonas Hallgren
+19h
+4
+0
+I like the frame and story it is fun and gets to the point in a good way.
+Don't do my boy levy like that though.
+Also, I do wonder to which extent the escalating ELO is the way to think about it versus something like a complicated puzzle. We're not necessary in a strictly adversarial game here, we could just have a cooperative solution?
+Just like the great ol ratfic on how friendship is optimal we could just convince Magnus to be on our side instead!
+Reply
+1
+[
+-
+]
+Taylor G. Lunt
+15h
+2
+0
+Thank you. I agree that alignment is not necessarily adversarial like chess. It's maybe more like building a computer chip or some other research/engineering challenge. Though the difficulty goes up with the intelligence of the model you're trying to align, which makes the adversarial chess analogy fitting I think.
+Reply
+[
+-
+]
+JennaS
+20h
+4
+0
+Regarding the AI pause lever. What tools do we have, or could make, for telling what "Elo" the next generation would be? If we can't get good enough tools, how should we act under uncertainty?
+Reply
+[
+-
+]
+Taylor G. Lunt
+19h
+4
+0
+Aside from simply guessing, we can evaluate new models in a controlled environment before releasing, and abort the release if the Elo gap is too high. This would only work if the Elo gap isn't so high that it lets the model escape the controlled environment or convincingly play stupid.
+If we have to act under uncertainty, we should skew earlier for the pause. Still with the understanding that wasting the pause could be fatal too.
+Reply
+[
+-
+]
+cousin_it
+7h
+*
+2
+0
+Yeah. I had an
+old post on game depth
+that described a related idea, measuring how deep a game is by how many increments of "weaker player beats stronger player" it can fit. But I was thinking about the stronger player using lower effort, so the total depth would come out as something like "10x the difference between your low effort and your high effort". Your idea of using time control is obviously cleaner, so good work :-)
+Reply
+Moderation Log
+More from
+Taylor G. Lunt
+View more
+Curated and popular this week

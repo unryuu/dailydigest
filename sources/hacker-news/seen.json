@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://weirdgloop.org/blog/google-jail",
+  "title": "独立 Wiki 为躲「Google 监狱」，搬去老域名寄居",
+  "date": "2026-09-08T01:57:23Z",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
+  "id": "https://mcpherrin.ca/2026/09/07/rsa.html",
+  "title": "有人用家用电脑分解了九十年代证书机构的 RSA 密钥",
+  "date": "2026-09-08T01:16:59Z",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
+  "id": "https://lax-skyline.parcelscope.net/",
+  "title": "一张地图让洛杉矶县的现存建筑从 1880 年逐栋长出来",
+  "date": "2026-09-07T18:52:06Z",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
+  "id": "https://danluu.com/agentic-testing",
+  "title": "Agent 会写测试，却不会拿测试找错",
+  "date": "2026-09-08T02:58:16Z",
+  "reported": true,
+  "report_date": "2026-09-08"
+ },
+ {
   "id": "https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39fcc4a3",
   "title": "Nitter 获得法律建议后继续维护",
   "date": "2026-09-06T17:49:47Z",

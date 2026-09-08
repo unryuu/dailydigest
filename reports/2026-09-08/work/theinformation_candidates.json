@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-08",
+  "scanned_at": "2026-09-08T22:13:24+08:00",
+  "window": "2026-09-07T20:17:38+08:00 至本次扫描时，补扫 The Information 首页 Latest",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "How Six AWS Engineers Rebuilt Bedrock to Challenge Microsoft",
+      "url": "https://www.theinformation.com/articles/six-aws-engineers-rebuilt-bedrock-challenge-microsoft",
+      "published_at": "2026-09-08T06:00:00-07:00",
+      "published_at_beijing": "2026-09-08T21:00:00+08:00",
+      "bucket_hint": "industry_deep",
+      "decision": "加入 scout 候选，交定牌裁决",
+      "facts": [
+        "AWS 的 Bedrock 在 2025 年频繁报错并限制客户容量，部分客户追加算力最长要等三周；一名顾问称，2024 年 Claude 在 Bedrock 上的生成速度一度比直接使用 Anthropic 慢 63％。",
+        "六名资深工程师用 AWS 自家的 Kiro 编程工具重建推理层，Project Mantle 于 2025 年 12 月发布，把 Bedrock 从传统 Web 服务架构改成适应突发负载和长任务的调度系统。",
+        "Mantle 允许客户给任务分优先级、隔离不同客户的负载，并保存 Agent 的中间进度；它还直接兼容 OpenAI 和 Anthropic 的 API，不再要求客户写定制代码。",
+        "到 2025 年末，客户追加容量的等待时间从三周降到两天；2026 年上半年新增客户超过此前两年总和，第二季度客户支出超过此前所有季度合计。",
+        "咨询公司 Caylent 称，其金融客户从 2026 年 5 月以来在 AWS 的支出增长五倍；另一家咨询公司的六名客户把 OpenAI 模型从 Azure 或 OpenAI 直连迁到 Bedrock。"
+      ],
+      "caveats": [
+        "Bedrock 仍会发生中断，一名客户称近几个月最长一次持续约十一小时。",
+        "支出迁移和性能比较来自顾问、客户和前员工，不是 AWS 披露的 Bedrock 独立收入。",
+        "AWS 第二季度增长率为 37％，Azure 为 42％；报道支持 Bedrock 追赶和抢到部分支出，不支持 AWS 已在 AI 云服务上超过微软。"
+      ],
+      "why": "它把一次云产品重构写成了可核的技术和商业闭环：传统 Web 架构扛不住 Agent 推理，六人团队重建调度层，等待时间缩短后才开始从 Azure 抢到客户支出。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "AI Agenda",
+      "title": "ElevenLabs Hires CFO, Eyes 2028 IPO",
+      "url": "https://www.theinformation.com/newsletters/ai-agenda/elevenlabs-hires-cfo-eyes-2028-ipo",
+      "published_at": "2026-09-08T05:01:00-07:00",
+      "published_at_beijing": "2026-09-08T20:01:00+08:00",
+      "bucket_hint": "industry_deep_or_radar",
+      "decision": "加入 scout 候选，交定牌裁决",
+      "facts": [
+        "ElevenLabs 聘请荷兰金融科技公司 Adyen 的前首席财务官 Ethan Tandowsky，并把 2028 年作为可能的上市时间；Tandowsky 参与过 Adyen 2018 年的上市。",
+        "公司上月称年化经常性收入正向 6 亿美元迈进，高于 2025 年末的 3.5 亿美元，其中超过一半来自大型企业；知情人士称公司已盈利。",
+        "ElevenLabs 还从 OpenAI 聘来 Ashley Kramer 出任首任首席营收官，客户已从个人配音扩展到 Stripe、Klarna 和德国电信等企业的客服与销售筛选 Agent。",
+        "公司 2026 年 2 月融资 5 亿美元时估值 110 亿美元；5 月又从英伟达创投、贝莱德等获得一轮未披露估值的资金。"
+      ],
+      "caveats": [
+        "2028 年上市仍是筹备方向，不是已经提交的上市申请。",
+        "已盈利来自知情人士，营收数字来自公司口径。",
+        "ElevenLabs 的语音 Agent 部分依赖 Anthropic 和 OpenAI 的模型，上市时仍需解释上游模型成本、利润率和客户黏性。"
+      ],
+      "why": "不只是一次高管任命：营收、企业客户、盈利、估值和上游模型依赖共同构成了 AI 应用公司的上市样本。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "AI Infrastructure",
+      "title": "Desperation to Get Data Centers Online Is Reshaping Companies' Bargaining Power",
+      "url": "https://www.theinformation.com/newsletters/ai-infrastructure/desperation-get-data-centers-online-reshaping-companies-bargaining-power",
+      "published_at": "2026-09-07T08:30:00-07:00",
+      "published_at_beijing": "2026-09-07T23:30:00+08:00",
+      "bucket_hint": "industry_deep_or_exclusive_view",
+      "decision": "加入 scout 候选，交定牌裁决",
+      "facts": [
+        "微软等大型云厂商急于让已经订购的英伟达服务器尽快上线，数据中心开发商和运营商开始削弱原本由云厂商主导的苛刻服务协议。",
+        "旧合同可能要求几乎每个机架都持续运行，单个机架停机甚至可让云厂商免掉六个月租金；现在运营商能用较低报价换取不那么惩罚性的条款。",
+        "英伟达和 AMD 为推动采用自家芯片，曾竞相为数据中心客户提供信用担保；潜在结构可覆盖十五年租期，明显长于英伟达已经披露的部分六年期协议。",
+        "同月同类电力价格在不同客户间可相差 400％，大型云厂商因不敏感于价格反而常付得最多；一吉瓦数据中心的建设成本在数年内已经翻倍以上。",
+        "英伟达、Equinix 与 Together AI 同时推动把推理分散到既有小型数据中心：时延敏感的部分靠近用户运行，记忆和推理可放在远端。"
+      ],
+      "caveats": [
+        "合同条款、信用担保和价格差异主要来自数据中心及信贷行业人士，具体交易通常不公开。",
+        "十五年信用支持是谈判中的潜在结构，不等于已经签署的统一行业标准。",
+        "分布式推理合作没有披露资金规模和芯片数量。"
+      ],
+      "why": "算力短缺正把议价权从大型云厂商推向机房、电力和芯片供应方；这能解释为什么 AI 基础设施成本上升不只来自芯片价格，也来自合同风险重新分配。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Malaysia Eyes Huawei Chips for Sovereign AI Program Despite U.S. Warnings",
+      "url": "https://www.theinformation.com/briefings/malaysia-eyes-huawei-chips-sovereign-ai-program-despite-u-s-warnings",
+      "reason": "在时间窗内，但内容来自 Bloomberg 转述；马来西亚仍只是在一个约 4.94 亿美元项目中考虑旧款昇腾 910C，尚未形成采购决定，优先级低于三篇一手或结构性材料。"
+    },
+    {
+      "title": "Seattle Times, Newsday Sue OpenAI, Microsoft Over Copyright Claims",
+      "url": "https://www.theinformation.com/briefings/seattle-times-newsday-sue-openai-microsoft-copyright-claims",
+      "reason": "在时间窗内，但诉讼结构与《纽约时报》等既有案件近似，只有两家新原告，没有足够的新法律机制或判决结果。"
+    },
+    {
+      "title": "Apple, Oracle and Adobe Dominate the Week",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/apple-oracle-adobe-dominate-week",
+      "reason": "栏目为综合复盘，首页未显示独家 AI 数字或足够的新结构性判断。"
+    }
+  ]
+}
