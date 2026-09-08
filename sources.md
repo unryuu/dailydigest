@@ -1,8 +1,8 @@
 # AI 日报信息源清单（sources.md）
 
-> 本表是**人类可读总览**（用户拍板 2026-07-23 起恢复维护：**每次调整信源，改 meta.json 的同时必须同步本表**）。机器运行时以各源文件夹下的 `sources/<slug>/meta.json` 为准（含抓取地址、检查频率、权重）。本表与 meta 若有冲突，以 meta 为准。当前共 **33 源**（25 博客/RSS/API + 7 个 X 账号 + 1 个线索源）。
+> 本表是**人类可读总览**（用户拍板 2026-07-23 起恢复维护：**每次调整信源，改 meta.json 的同时必须同步本表**）。机器运行时以各源文件夹下的 `sources/<slug>/meta.json` 为准（含抓取地址、检查频率、权重）。本表与 meta 若有冲突，以 meta 为准。当前共 **34 源**（25 博客/RSS/API + 8 个 X 账号 + 1 个线索源）。
 >
-> 运作方式：scout **每天全量扫全部 33 源**，没有「隔几天才看一次」的源。下面的分组只决定一件事——**判新窗口**，即回看多久以内的内容算「新」（高频源通常 36-48 小时、周刊/不定期源 168 小时、低频源 720 小时），窗口内且不在 `seen.json` 里的才收。所以月更博主哪天诈尸更新，当天就能收到。流程详见 `RUNBOOK.md` / `HANDOFF.md`。
+> 运作方式：scout **每天全量扫全部 34 源**，没有「隔几天才看一次」的源。下面的分组只决定一件事——**判新窗口**，即回看多久以内的内容算「新」（高频源通常 36-48 小时、周刊/不定期源 168 小时、低频源 720 小时），窗口内且不在 `seen.json` 里的才收。所以月更博主哪天诈尸更新，当天就能收到。流程详见 `RUNBOOK.md` / `HANDOFF.md`。
 
 ## 筛选偏好（全局）
 
@@ -37,7 +37,7 @@
 | claude.com/blog | https://claude.com/blog | https://claude.com/blog | html | 极高 | 新增 2026-06-28；工程方法论，有新内容一律精读 |
 | xAI News | https://x.ai/news | https://x.ai/news | html | 中 | 模型、产品和公司公告；403 时浏览器兜底，普通营销稿降权 |
 
-## X 账号源（判新窗口 36 小时 · 2026-07-23 新增）
+## X 账号源（判新窗口 36 小时 · 2026-07-23 起新增）
 
 > 抓取走 nitter 镜像的 HTML 页（当前 `nitter.kareem.one`，无登录可达；官方接口和其他镜像 2026-07 实测全灭）。**镜像是社区单点**，死了去 status.d420.de 找活实例、统一改各 `x-*` meta 的 fetch_url。抓取规矩（串行慢抓/只收原创/线程聚合）见 `pipeline/scout.prompt.md`，解析脚本 `scripts/parse_nitter.py`。
 
@@ -48,6 +48,7 @@
 | Riley Goodside | https://x.com/goodside | https://nitter.kareem.one/goodside | 高 | ~5 条/天；模型行为小实验，自创评测 |
 | Sam Altman | https://x.com/sama | https://nitter.kareem.one/sama | 高 | ~2.5 条/天；OpenAI 一手动向，水帖跳过 |
 | Teortaxes | https://x.com/teortaxesTex | https://nitter.kareem.one/teortaxesTex | 高 | 几十条/天；中国开源模型线独一档，按线程聚合 |
+| Eric Provencher | https://x.com/pvncher | https://nitter.kareem.one/pvncher | 高 | OpenAI Codex DX；只收原创长文和有具体机制的 Codex 实战帖，跳过普通演示、感叹和转推 |
 | Neel Nanda | https://x.com/NeelNanda5 | https://nitter.kareem.one/NeelNanda5 | 中 | ~0.4 条/天；可解释性全干货 |
 | Roon | https://x.com/tszzl | https://nitter.kareem.one/tszzl | 中 | ~4.5 条/天；OpenAI 内部人乐子，大事件反应有独家价值 |
 
@@ -96,7 +97,7 @@
 
 ## 维护说明
 
-- 新源准入条件：fetch 友好（静态页面/有公开存档/有 API），信息密度高；正式收编前先派 scout 实测可抓性+采样信噪比（X 七源与 neodrop 均按此流程核过）
+- 新源准入条件：fetch 友好（静态页面/有公开存档/有 API），信息密度高；正式收编前先实测可抓性和采样信噪比（X 八源与 neodrop 均按此流程核过）
 - 连续两周日报里没贡献过条目的源，考虑移除
 - 节奏会变：某源若明显比标注的更勤/更懒，调整它 meta 里的 `window_hours`（判新窗口）并同步本表；meta 里的 `check_frequency` 字段已退役，仅作历史提示
-- 验证基线：2026-06-10 全员 fetch 通过；2026-07-23 X 七源 + neodrop 实测可达（X 走 nitter.kareem.one 镜像，社区单点，死了去 status.d420.de 找新实例）
+- 验证基线：2026-06-10 全员 fetch 通过；2026-07-23 X 七源 + neodrop 实测可达；2026-09-09 登录态抽查 Eric Provencher 的主页与四篇 Articles，信噪比通过。X 走 nitter.kareem.one 镜像，社区单点；镜像不可达时按步骤 1 改用登录态补扫。

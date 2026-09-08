@@ -1,0 +1,14 @@
+{
+  "name": "Eric Provencher @ X",
+  "slug": "x-pvncher",
+  "length_hint": "short",
+  "homepage": "https://x.com/pvncher",
+  "fetch_url": "https://nitter.kareem.one/pvncher",
+  "fetch_method": "nitter-html",
+  "weight": "高",
+  "cadence": "X 账号",
+  "cadence_note": "日常帖不定，Codex 长文约月更",
+  "check_frequency": "daily",
+  "window_hours": 36,
+  "notes": "OpenAI Codex DX 的一手使用方法。只收原创 X Articles，以及包含具体 Codex 机制、配置边界或可复用工作流的帖子；跳过产品感叹、普通演示、转推和宣传。登录态补扫优先看 /articles。抓取规矩统一见 roles/scout.md 的 X 源节；解析脚本 scripts/parse_nitter.py。2026-09-09 建源。"
+}
