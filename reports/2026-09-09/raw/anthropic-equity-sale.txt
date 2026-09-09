@@ -1,0 +1,199 @@
+URL: https://www.lesswrong.com/posts/ptirZBteKd3o4FAFe/most-anthropic-equity-that-will-ever-be-used-for-longtermist
+FINAL: https://www.lesswrong.com/posts/ptirZBteKd3o4FAFe/most-anthropic-equity-that-will-ever-be-used-for-longtermist
+TITLE: Most Anthropic equity that will ever be used for longtermist philanthropy should be sold ASAP and reinvested — LessWrong
+FETCHED: 2026-09-09 22:05:14
+============================================================
+x
+Most Anthropic equity that will ever be used for longtermist philanthropy should be sold ASAP and reinvested — LessWrong
+SHUT UP AND MULTIPLY
+AI
+Personal Blog
+48
+Most Anthropic equity that will ever be used for longtermist philanthropy should be sold ASAP and
+reinvested
+by
+Zach Stein-Perlman
+7th Sep 2026
+2
+min read
+8
+48
+Two reasons:
+Other investments can provide better returns,
+mostly via leverage.
+The philanthropic portfolio is overexposed to Anthropic.
+A large fraction of the philanthropic portfolio is in Anthropic (and will be even after lockup ends). A marginal dollar is less valuable in worlds where longtermist philanthropists have more money. So in the worlds where Anthropic outperforms other AI investments, longtermist philanthropists have more money and a marginal dollar is less valuable.
+[1]
+I think #1 is around 5x as important as #2, but some of my collaborators dispute #1.
+Regardless, if we were allocating the philanthropic endowment without anchoring on the fact that it's currently mostly in Anthropic, we'd only invest a small fraction in Anthropic, and we might want our exposure to Anthropic to have substantial leverage.
+That's the big idea. You can stop reading now.
+There's one more consideration, with unclear sign:
++1% to the endowment could be more or less valuable if Anthropic succeeds
+— Anthropic succeeding is correlated with many facts about the world. I think
+Anthropic being the leading AI company makes marginal
+better futures
+spending look slightly better
+and has an ambiguous effect on marginal AI safety spending. And the upshot for investing is smaller than the combination of those effects: stock price is an imperfect proxy for Anthropic-leading, and
+holding Anthropic stock vs other AI stocks
+is not as concentrated a bet as
+getting $1 if Anthropic stock performs well vs getting $1 if it doesn't
+. So
+I think this consideration is negligible.
+In terms of better futures, Anthropic being the leading AI company slightly increases P(no AI takeover) and thus slightly increases the value of marginal better-futures spending. (At least causally — on the other hand, perhaps Anthropic outperforming other AI stocks is correlated with short timelines, which entails lower P(no AI takeover).)
+In terms of AI safety, Anthropic being the leading AI company is
+good
+, but that doesn't mean it
+increases the value of marginal money
+.
+[2]
+It
+increases
+the value of marginal money by making philanthropists more likely to be able to get good model access and convert money into helpful AI labor.
+It
+decreases
+the value of marginal money by making AI safety work less tractable. Anthropic will pluck some safety fruits that other companies wouldn't, so the fruits for marginal philanthropy are less low-hanging. (And paying AI companies to do specific safety work internally is an important prospect for marginal philanthropy, but it's less promising insofar as Anthropic is leading.)
+I haven't considered other correlations, including timelines and regulation.
+[3]
+Disclaimers.
+I'm not familiar with legal details.
+I don't account for the phenomenon
+maybe if the cofounders sell most of their equity, investors lose confidence
+. This might be a nontrivial consideration against cofounders selling.
+I don't account for the prospect that shares have voting powers and are important for legal control of the company; I hope that the cofounders (or LTBT 🥲) will get supervoting shares such that everyone can sell without ceding control.
+Selling might nontrivially depress the stock price — a quick Claude suggests selling 10% of the company's total shares (rather than 0%) uniformly over the 6 months after IPO would be an 8% hit to stock price, but this is unstable. Lower stock price is bad because it hurts other shareholders and makes it more expensive for Anthropic to raise money. But other considerations are much larger, and some of this effect is inevitable (it'll happen if you sell later too).
+^
+I made
+a Squiggle model
+to estimate the value of a marginal dollar invested in Anthropic vs
+other AI investments not super correlated with Anthropic but with the same expected returns
+(not red-teamed; some parameters unstable).
+^
+In log space, or operationalized as +1%ing the endowment.
+^
+Perhaps short timelines slightly favors Anthropic over other AI stocks (not clear to me) and... I don't know whether it makes AI safety more or less tractable with respect to money.
+Perhaps strong government intervention increases P(no AI takeover) and... slightly hurts Anthropic relative to other AI stocks (no clear to me), and also has other important effects on spending opportunities.
+Most Anthropic equity that will ever be used for longtermist philanthropy should be sold ASAP and reinvested
+7
+Austin Chen
+1
+Zach Stein-Perlman
+5
+Austin Chen
+1
+Sodium
+3
+MichaelDickens
+3
+Zach Stein-Perlman
+3
+Sodium
+5
+MichaelDickens
+8
+Comments
+8
+AI
+Personal Blog
+48
+Previous
+:
+Current views on large-scale longtermist philanthropy
+13
+comments
+36
+karma
+New Comment
+8 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:05 PM
+[
+-
+]
+Austin Chen
+2d
+7
+4
+Can you talk about which other leveraged investments you think might provide better returns? Eg just broad TAI thesis stuff such as what VARA and Situational Awareness invest in? (Those specific funds)?
+I think that, plus some botec/oom numbers on total portfolio size + ideal distribution, might help make this case. (Possibly that's in the squiggle? But squiggles are much harder to parse than text)
+Reply
+[
+-
+]
+Zach Stein-Perlman
+2d
+1
+0
+Great question. Unfortunately I don't know and I'm certainly not going to be able to persuade anyone now. I hope some collaborators will write about this, although they probably won't publish. Here are some lower bounds: SALP, VARA, SMH calls, TAI-thesis-stocks with leverage. (This is not in the squiggle.)
+Reply
+[
+-
+]
+Austin Chen
+2d
+5
+0
+Thanks! I do hope to sometime sit down and write a public "here are our best guesses on how to invest in TAI if you have $100k/$1m/$10m/$100m" etc, both as an interesting personal exercise and to help other donors figure out their strategies (and, in some ideal world, use this exercise to coordinate strategy across the total AIS philanthropic portfolio). If other people are interested in collaborating on this as a public service, please let me know.
+(I think a reasonable question to grapple with in such a writeup is "how bad is it to invest in leveraged AI stocks wrt timeline speedup; at what scale does this investment start mattering", as Sodium alludes to)
+Reply
+[
+-
+]
+Sodium
+2d
+1
+0
+SALP, VARA, SMH calls, TAI-thesis-stocks with leverage
+Man I feel like these other investments seem much worse for the world than just holding Anthropic shares (maybe you think that donating the returns elsewhere is enough to offset the harms?)
+Reply
+[
+-
+]
+MichaelDickens
+2d
+3
+0
+Worse than broad market index funds, sure. But why worse than Anthropic?
+FWIW I think the effect on the world for investing in public stocks (SMH, AIS, etc.) is pretty marginal, but I'd be more worried about the effect on your own psychology.
+Investing in AI stocks gives you reason to root for an AI boom and to downplay your estimate of AI risk.
+Reply
+1
+[
+-
+]
+Zach Stein-Perlman
+2d
+3
+-1
+I think betting on big AI companies has negligible affect on the rate of AI progress.
+Reply
+[
+-
+]
+Sodium
+2d
+3
+0
+I agree (which is why I think holding onto Anthropic shares have a negligible effect.) I think the same cannot be said about SALP, which probably meaningfully increases process in e.g., chip innovation.
+Reply
+[
+-
+]
+MichaelDickens
+2d
+5
+0
+Other investments can provide better returns, mostly via leverage.
+Indeed. The risk side is a very important part of this—more risk means your counterfactual investment can use more leverage and still be comparable.
+It's unclear how risky Anthropic stock is because it's private, but based on its reference class*, I'd consider it 3–5x riskier than a broad market index fund, and 2–3x riskier than an unlevered AI/semiconductor fund. So you should divide Anthropic's expected returns by 2–5x. After doing that, it seems hard to imagine that Anthropic stock would be the best place to keep your money.
+*Anthropic doesn't have a direct reference class because there is no historical example of a company that got this large this quickly. Larger companies tend to be less risky, but faster-growing companies tend to be riskier, so I'm roughly guessing that Anthropic is maybe 2x as risky your standard $100B+ company, which in turn is 2x as risky as the broad market. I have some relevant data
+here
+.
+Reply
+1
+Moderation Log
+More from
+Zach Stein-Perlman
+View more
+Curated and popular this week

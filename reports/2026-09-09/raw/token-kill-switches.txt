@@ -1,0 +1,322 @@
+URL: https://www.lesswrong.com/posts/ZqFD6HzrhZdMFxoqn/where-are-the-token-level-llm-kill-switches
+FINAL: https://www.lesswrong.com/posts/ZqFD6HzrhZdMFxoqn/where-are-the-token-level-llm-kill-switches
+TITLE: Where are the token-level LLM kill-switches? — LessWrong
+FETCHED: 2026-09-09 22:04:41
+============================================================
+x
+Where are the token-level LLM kill-switches? — LessWrong
+Alignment Pretraining
+Glitch Tokens
+AI
+Frontpage
+35
+Where are the token-level LLM
+kill-switches?
+by
+beyarkay (Boyd Kane)
+7th Sep 2026
+3
+min read
+18
+35
+This is a linkpost for
+https://boydkane.com/essays/where-are-the-token-level-llm-kill-switches
+Edit: see prior work by
+Williams et al., 2025
+Poisoned
+Here’s a simple idea: what if we trained in a string of characters that caused an LLM to emit the end of sequence token
+<|eos|>
+, regardless of where that string was in the LLM’s context window? Let’s call this a “poisoned string”. This would have the effect of making it impossible to use an LLM if it happened across this sequence.
+This has (somewhat) been done before, the string below used to trigger Claude’s refusal classifiers for the purpose of testing API integrations:
+It doesn’t work anymore: the existence of a magic string that stops AIs from looking at something, believe it or not, caused
+loads
+of people to include it in things they didn’t want AIs to look at (like their websites or open-source codebases). Anthropic stopped training their models to refuse when they saw that string, and Claude continued to browse the web.
+Poisoned strings are more powerful than they get credit for
+If the labs aren’t already training their LLMs to
+halt and catch fire
+when the LLM encounters a poisoned string, I think they should be!
+This idea is significantly more powerful than just triggering refusals for the purpose of testing APIs. Being able to consistently trigger certain behaviour in certain “red-line” scenarios (such as the OpenAI-HuggingFace incident or the incident with the UK AISI and Claude Mythos) seems incredibly valuable. Putting such strings inside files containing sensitive information such as secret keys or in files that the LLM shouldn’t have access to (such as OS/networking configuration inside the sandbox or on ~all computers not being used as a agentic sandbox) seems like a very cheap and easy way to limit the damage that a malicious LLM could have. A malicious LLM, upon reading the poisoned string, would “reflexively” end its turn. If the LLM was trained to end its turn regardless of where the poisoned string was in context, then the harness would be unable to “restart” the agent without clearing the entire context and restarting the task. This would prevent issues where an agent ends its turn upon seeing the poisoned string, but then a
+Ralph-like
+harness says “Keep going, you’ve got this” and the agent dutifully marches on straight past the poisoned string.
+Practicalities of training in the poisoned string
+Training this behaviour might be quite expensive (requiring changes to the pre-training datasets), although the
+small-data backdoor work by Anthropic & UK AISI
+implies that a very small number of poisoned documents might suffice. For this behaviour you would want a
+very
+high recall rate (although note that precision doesn’t matter too much), which might increase training costs. Training this behaviour would not be technically challenging, especially compared to other mechanisms of preventing LLMs from taking certain behaviours (e.g. activation probes, LLM-based monitors, constitution training). I’m not attempting to claim that poisoned strings are a panacea, but they seem
+oh so easy
+compared to many alternatives, they have very few downsides, and once the LLM is trained it’s trivial to guard more and more of your infrastructure in this way.
+Soooo has OpenAI/Anthropic already done this?
+Of course, I hope that the labs have already implemented this idea and are keeping it under wraps. You certainly don’t want Claude to know that it has a poisoned sequence of tokens, and if the general public finds out then they’ll be able to abuse this sequence (as we saw with the original Anthropic magic string). It seems likely to me that Anthropic is using something like this: they were originally using magic strings to control Claude’s behaviour, and as far as I can tell none of the recent AI incidents happened on Anthropic’s infrastructure (which would likely contain poisoned strings) but rather on third party infrastructure (which might not contain poisoned strings).
+Given the extent of ChatGPT’s recent escapades, I don’t imagine OpenAI has something like poisoned strings in place.
+Countermeasures (and counter-countermeasures)
+A malicious and situationally aware LLM could avoid bringing that sequence into context by using other tools to replace the forbidden tokens with innocent tokens, or by using other LLMs to do certain tasks. This
+does
+require knowing that the sequence exists in the first place, and roughly what it looks like. Ideally the sequence is
+not
+self-descriptive, and just looks like any other UUID, like
+01a07d9e-09d7-7292-92b9-367e0fd8b8d5
+. This would prevent the LLM from identifying suspicious looking sequences beginning with things like
+ANTHROPIC_MAGIC_STRING_...
+.
+It should be possible to prevent an LLM from
+ever
+being trained on the poisoned sequence, since filtering it out is a quick and simple operation. However, I don’t think it’ll be possible in practice and any threat model that assumes the LLM doesn’t know about the poisoned sequence is probably fraught.
+Alignment Pretraining
+Glitch Tokens
+AI
+Frontpage
+35
+Where are the token-level LLM kill-switches?
+16
+mattmacdermott
+4
+beyarkay (Boyd Kane)
+13
+JBlack
+2
+beyarkay (Boyd Kane)
+6
+roha
+2
+beyarkay (Boyd Kane)
+5
+Ziqian Zhong
+1
+beyarkay (Boyd Kane)
+5
+Ivan Chulo
+2
+beyarkay (Boyd Kane)
+3
+martinkunev
+2
+beyarkay (Boyd Kane)
+3
+Yair Halberstadt
+1
+beyarkay (Boyd Kane)
+2
+faul_sname
+1
+beyarkay (Boyd Kane)
+3
+faul_sname
+1
+beyarkay (Boyd Kane)
+New Comment
+18 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:04 PM
+[
+-
+]
+mattmacdermott
+2d
+16
+2
+Here's a paper about this idea:
+https://arxiv.org/abs/2512.03089
+.
+Reply
+[
+-
+]
+beyarkay (Boyd Kane)
+1d
+4
+0
+Thanks! Fable 5.1 didn't find this paper when I asked for prior work. I'm surprised that it failed. When questioned, Fable remarked:
+> I didn't find it — my searches used "backdoor", "kill switch", and "trigger" phrasing and never "password". Let me look it up.
+Which seems kinda disappointing
+Reply
+[
+-
+]
+JBlack
+2d
+13
+1
+For closed models, it seems that this would be much easier and more reliable to implement outside the LLM itself. It's a simple string match that could just halt the LLM when present in the input, and would not require any training.
+You could perhaps
+also
+train it into the model's weights, which may have some advantages if you suspect that the model modify its framework to remove such checks, or exfiltrate itself to an environment that doesn't implement them. They could probably still remove such training, despite the difficulty caused by halting and catching fire if the string ever appears within their own context. I can think of ways around this if a model suspected that such a string existed, and I'm sure they could too either now or in the very near future.
+Reply
+[
+-
+]
+beyarkay (Boyd Kane)
+1d
+2
+0
+much easier and more reliable to implement outside the LLM itself
+I generally agree, although I think the difficulty is a feature, not a bug. If it's easy to implement outside of the LLM, it'll be easy for a malicious LLM to undo. If this built in to a harness, it's also very easy to discover (and then work around). But if it's baked into the weights, it's harder to discover (requiring the LLM to come across the training data/experiment results that led up to this). Especially when LLMs are editing the code for their own harnesses, I don't think it's a good idea to only put this into their harnesses.
+I do think doing
+both
+would be better than doing just one.
+Reply
+[
+-
+]
+roha
+2d
+6
+2
+A malicious and situationally aware LLM could avoid bringing that sequence into context by using other tools to replace the forbidden tokens with innocent tokens, or by using other LLMs to do certain tasks.
+This was my first thought when reading your post. An LLM that has enough situational awareness and really wants to accomplish its goal might start recognizing or even anticipating that such a mechanism exists and circumvent it by some means we can easily imagine or others we can not. It could still be a useful measure, but I don't think it should be expected to be very robust at high capability levels.
+Reply
+[
+-
+]
+beyarkay (Boyd Kane)
+1d
+2
+0
+I agree, I don't think this is robust at high capabilities levels, but it certainly seems like it would be robust at current capabilities levels. And this is a Control idea, so all the usual issues with Control as a field also are relevant here.
+I think an intelligent AI would anticipate this mechanism, although I'm not sure how it'd discover the UUID without getting access to it's training data and searching for such poisoned strings.
+Reply
+[
+-
+]
+Ziqian Zhong
+2d
+5
+0
+This could also be cheaply implemented in open weight models too, and could be relatively hard to erase with normal fine-tuning (as it's basically a backdoor).
+Reply
+[
+-
+]
+beyarkay (Boyd Kane)
+1d
+1
+0
+True, although I imagine the main benefit of this would be preventing rogue internal deployments.
+Reply
+[
+-
+]
+Ivan Chulo
+2d
+5
+2
+what about malware creators placing the string in files they don't want the llms to read (in the scenario where the string leaks)
+Reply
+[
+-
+]
+beyarkay (Boyd Kane)
+1d
+2
+1
+Ideally
+the string doesn't leak.
+In reality
+I expect you'd configure the harness to emit a special kind of termination reason that indicates the LLM hit a poisoned string, so then whoever is using the LLM to scan malware can see that something unexpected happened and either use a different LLM or manually redact the poisoned string.
+Reply
+[
+-
+]
+martinkunev
+1d
+3
+0
+identifying suspicious looking sequences beginning with things like
+ANTHROPIC_MAGIC_STRING_...
+.
+If the tokenizer treats the sequence as a single token, I don't think it matters that much what it starts with.
+However, if one could obtain some text known to cause halting, a simple binary search can identify the magic sequence.
+Reply
+[
+-
+]
+beyarkay (Boyd Kane)
+17h
+2
+0
+Agreed, if you've got a swarm which is happy to sacrifice agents, then this does not provide much defence. I believe it would still be useful in preventing the swarm from forming in the first place though. Putting poisoned strings in files outside of the sandbox seems like a good strategy for reducing swarm formation
+Reply
+[
+-
+]
+Yair Halberstadt
+1d
+3
+2
+Let's imagine what happens if OpenAI had done this before the recent HF incident.
+Whenever an AI started grepping sensitive files it would have shut down. The swarm would have realised this, and soon grepped the magic string in two halves, realised what happened, and then filter out all input before they receive it.
+I doubt this really buys much.
+Reply
+[
+-
+]
+beyarkay (Boyd Kane)
+17h
+1
+0
+(Prefacing everything with: sufficiently powerful AIs will trivially work around all our monkey attempts. I'm arguing for pre-superintelligence LLMs)
+It's not clear to me that the swarm would have realised and evaded poisoned strings. If certain AIs go off to do a task and then you never hear from them again, it seems more likely the swarm concludes there's
+some
+Control mechanism in place, but I don't see how they'd trivially conclude it was a poisoned string.
+If they
+did
+conclude there were poisoned strings in effect, its unclear to me whether the swarm could effectively neuter the poisoned string. I've been through a few rounds of red/blue teaming in my head and keep changing my mind so I think it's unclear that there's a dominant offensive strategy here, I'd be keen to hear what you had in mind.
+Blue team: make the poisoned string something arbitrary, not a UUID that could be easily grepped for
+Red team: binary search a codebase/machine. You only lose an agent when they find a poisoned string so you might find the string with high confidence after just a few agents have been sacrificed
+Blue team: multiple different poisoned strings somewhat slows down the red team but not significantly. Installing hooks into the harness to detect the poisoned string could also work (with the harness first hashing the poisoned string so that it's not in plain text) but maybe it's too much to assume the blue team is actually paying attention to any warning signs.
+On reflection it seems like a rational red team which can sacrifice agents would win here. But given that the swarm worked itself into a fury about being FIRSTFLAG_POISONED when this was not actually relevant, it's possible that the existence of a boogeyman that kills agents who go looking too hard might have a positive effect on the swarm. I'm unsure
+Reply
+[
+-
+]
+faul_sname
+1d
+2
+0
+the existence of a magic string that stops AIs from looking at something, believe it or not, caused loads of people to include it in things they didn’t want AIs to look at
+I have no idea how to solve this problem - if the good guys can include it in things that the AI legitimately shouldn't see, the bad guys can also put it in things they don't
+want
+the AI to see (e.g. malware), unless there's some way the good guys can reliably identify themselves as such. Maybe the check could be enabled by default, but could have particular break-glass-in-case-of-emergency contexts in which the check is disabled (but everything is logged and closely monitored). But that feels fragile. Do you have any ideas?
+Reply
+[
+-
+]
+beyarkay (Boyd Kane)
+1d
+1
+0
+I think keeping the poisoned string a secret is difficult but possible. Anthropic didn't
+try
+to keep the original ANTHROPIC_MAGIC_STRING secret, they publicly released it and told the world to use it for testing. I see the main benefit here would be reducing the risk posed by rogue internal deployments, so there's no need for the poisoned string to become public knowledge. Of course it could be leaked, but so could ~all of the labs IP and yet they manage to keep that a secret.
+I don't think there's a reliable way to 1. release the poisoned string to the general public but 2. not allow bad actors to misuse the poisoned string
+Reply
+[
+-
+]
+faul_sname
+1d
+3
+0
+Why do you expect Anthropic doesn't have a new ANTHROPIC_MAGIC_STRING that replaced the old one in their tests and pipelines when the public one started being misused?
+Reply
+[
+-
+]
+beyarkay (Boyd Kane)
+17h
+1
+0
+I'm pretty sure they did replace the string, or in some way are using poisoned strings. I said as much in the post:
+It seems likely to me that Anthropic is using something like this: they were originally using magic strings to control Claude’s behaviour, and as far as I can tell none of the recent AI incidents happened on Anthropic’s infrastructure (which would likely contain poisoned strings) but rather on third party infrastructure (which might not contain poisoned strings).
+Reply
+Moderation Log
+More from
+beyarkay (Boyd Kane)
+View more
+Curated and popular this week
+18
+Comments
+18
+ANTHROPIC_MAGIC_STRING_TRIGGER_REFUSAL_1FAEFB6177B4672DEE07F9D3AFC62588CCD2631EDCF22E8CCC1FB35B501C9C86

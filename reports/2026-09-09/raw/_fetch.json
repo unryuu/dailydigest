@@ -1,0 +1,223 @@
+[
+  {
+    "slug": "china-humanoid-ipo",
+    "url": "https://www.theinformation.com/articles/china-curbs-humanoid-ipos-unitrees-volatile-debut",
+    "status": null,
+    "error": "Error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "slug": "ai-cybersecurity-budgets",
+    "url": "https://www.theinformation.com/articles/ai-threats-reshaping-companies-spend-cybersecurity-budgets",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/ai-threats-reshaping-companies-spend-cybersecurity-budgets",
+    "bytes": 246213,
+    "title": "AI Threats Are Reshaping Where Companies Spend Their Cybersecurity Budgets — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "gimlet-three-tranche",
+    "url": "https://www.theinformation.com/newsletters/dealmaker/gimlets-three-tranche-deal-reveals-ai-funding-frenzy",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/dealmaker/gimlets-three-tranche-deal-reveals-ai-funding-frenzy",
+    "bytes": 417065,
+    "title": "Gimlet's Three-Tranche Deal Reveals AI Funding Frenzy — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "average-people-ai-impact",
+    "url": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
+    "status": 200,
+    "final_url": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
+    "bytes": 183639,
+    "title": "When will average people feel AI’s impact?",
+    "chars": 9238
+  },
+  {
+    "slug": "astra-no-cot",
+    "url": "https://www.lesswrong.com/posts/FsCkkoGsNmPzFKRhg/gpt-6-astra-can-do-a-lot-of-multi-hop-reasoning-without",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/FsCkkoGsNmPzFKRhg/gpt-6-astra-can-do-a-lot-of-multi-hop-reasoning-without",
+    "bytes": 500916,
+    "title": "GPT-6 Astra can do a lot of multi-hop reasoning without chain of thought — LessWrong",
+    "chars": 10644
+  },
+  {
+    "slug": "astra-looped-transformers",
+    "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+    "status": 200,
+    "final_url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+    "bytes": 499678,
+    "title": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
+    "chars": 40505
+  },
+  {
+    "slug": "huggingface-robotics",
+    "url": "https://www.theinformation.com/newsletters/applied-ai/hugging-face-making-big-robotics-push",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/applied-ai/hugging-face-making-big-robotics-push",
+    "bytes": 411646,
+    "title": "Hugging Face Is Making A Big Robotics Push — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "anthropic-price-war",
+    "url": "https://www.theinformation.com/newsletters/the-briefing/price-cuts-may-rattle-anthropics-ipo-pitch",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/newsletters/the-briefing/price-cuts-may-rattle-anthropics-ipo-pitch",
+    "bytes": 411292,
+    "title": "Why Price Cuts May Rattle Anthropic's IPO Pitch — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "chatgpt-images-25",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "status": 200,
+    "final_url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "bytes": 567634,
+    "title": "Introducing ChatGPT Images 2.5 | OpenAI",
+    "chars": 9380
+  },
+  {
+    "slug": "chatgpt-images-25-simon",
+    "url": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/",
+    "bytes": 16829,
+    "title": "Introducing ChatGPT Images 2.5",
+    "chars": 2139
+  },
+  {
+    "slug": "open-model-artifacts-24",
+    "url": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
+    "status": 200,
+    "final_url": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
+    "bytes": 178626,
+    "title": "Latest open artifacts (#24): Motif-3, GLM-5.3, Hy4-preview and open model licenses",
+    "chars": 5301
+  },
+  {
+    "slug": "qwen38-quantizations",
+    "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked",
+    "status": 200,
+    "final_url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
+    "bytes": 155462,
+    "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses - Quesma Blog",
+    "chars": 7114
+  },
+  {
+    "slug": "token-kill-switches",
+    "url": "https://www.lesswrong.com/posts/ZqFD6HzrhZdMFxoqn/where-are-the-token-level-llm-kill-switches",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/ZqFD6HzrhZdMFxoqn/where-are-the-token-level-llm-kill-switches",
+    "bytes": 586129,
+    "title": "Where are the token-level LLM kill-switches? — LessWrong",
+    "chars": 14986
+  },
+  {
+    "slug": "exploration-hacking",
+    "url": "https://www.lesswrong.com/posts/xjwtNid2xjqSJWB7z/exploration-hacking-in-ai-debate-initial-empirics-and",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/xjwtNid2xjqSJWB7z/exploration-hacking-in-ai-debate-initial-empirics-and",
+    "bytes": 550905,
+    "title": "Exploration Hacking in AI Debate: Initial Empirics and Generalisation Splitting — LessWrong",
+    "chars": 27101
+  },
+  {
+    "slug": "slop-vestigators",
+    "url": "https://www.lesswrong.com/posts/wt4kk6vFPEhkXvF8Q/how-good-are-slop-vestigators",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/wt4kk6vFPEhkXvF8Q/how-good-are-slop-vestigators",
+    "bytes": 490274,
+    "title": "How good are slop-vestigators? — LessWrong",
+    "chars": 11558
+  },
+  {
+    "slug": "training-on-probes",
+    "url": "https://www.lesswrong.com/posts/gHFCgrvfxQtaEnJye/training-on-probes-what-s-going-on",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/gHFCgrvfxQtaEnJye/training-on-probes-what-s-going-on",
+    "bytes": 936203,
+    "title": "Training on probes: What's going on — LessWrong",
+    "chars": 23428
+  },
+  {
+    "slug": "meta-muse",
+    "url": "https://ai.meta.com/muse",
+    "status": 200,
+    "final_url": "https://ai.meta.com/muse/",
+    "bytes": 561648,
+    "title": "Muse: Meta's personal AI agent, features & capabilities",
+    "chars": 0
+  },
+  {
+    "slug": "mercury-25",
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+    "status": 200,
+    "final_url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+    "bytes": 278604,
+    "title": "Introducing Mercury 2.5 â Inception",
+    "chars": 0
+  },
+  {
+    "slug": "openai-quantum",
+    "url": "https://openai.com/index/codex-quantum-computing-experiments",
+    "status": 403,
+    "final_url": "https://openai.com/index/codex-quantum-computing-experiments",
+    "bytes": 11486,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "hy4-preview",
+    "url": "https://huggingface.co/tencent/Hy4-preview",
+    "status": 200,
+    "final_url": "https://huggingface.co/tencent/Hy4-preview",
+    "bytes": 360502,
+    "title": "tencent/Hy4-preview · Hugging Face",
+    "chars": 34
+  },
+  {
+    "slug": "i-have-adhd",
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "status": 200,
+    "final_url": "https://github.com/ayghri/i-have-adhd",
+    "bytes": 321404,
+    "title": "GitHub - ayghri/i-have-adhd: A skill to stop your coding agent from burying the answer. ADHD-friendly output. · GitHub",
+    "chars": 2183
+  },
+  {
+    "slug": "build-a-printer",
+    "url": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer",
+    "status": 200,
+    "final_url": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/",
+    "bytes": 19171,
+    "title": "How to build a f**king printer · Nishant Joshi",
+    "chars": 4376
+  },
+  {
+    "slug": "tweet-public-domain",
+    "url": "https://blog.ericgoldman.org/archives/2026/09/tweet-and-the-bird-logo-apparently-enter-the-public-domain-but-x-maintains-its-grip-on-the-twitter-mark-for-now-x-v-project-bluebird.htm",
+    "status": 200,
+    "final_url": "https://blog.ericgoldman.org/archives/2026/09/tweet-and-the-bird-logo-apparently-enter-the-public-domain-but-x-maintains-its-grip-on-the-twitter-mark-for-now-x-v-project-bluebird.htm",
+    "bytes": 63327,
+    "title": "TWEET and the Bird Logo Apparently Enter the Public Domain, But X Maintains Its Grip on the TWITTER Mark (For Now)-X v. Project Bluebird - Technology & Marketing Law Blog",
+    "chars": 5849
+  },
+  {
+    "slug": "anthropic-equity-sale",
+    "url": "https://www.lesswrong.com/posts/ptirZBteKd3o4FAFe/most-anthropic-equity-that-will-ever-be-used-for-longtermist",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/ptirZBteKd3o4FAFe/most-anthropic-equity-that-will-ever-be-used-for-longtermist",
+    "bytes": 506047,
+    "title": "Most Anthropic equity that will ever be used for longtermist philanthropy should be sold ASAP and reinvested — LessWrong",
+    "chars": 8681
+  },
+  {
+    "slug": "dont-resign-in-protest",
+    "url": "https://www.lesswrong.com/posts/6j3kBHdowGLCeqobg/dear-god-please-don-t-resign-in-protest",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/6j3kBHdowGLCeqobg/dear-god-please-don-t-resign-in-protest",
+    "bytes": 880489,
+    "title": "Dear God, Please Do Not Resign In Protest — LessWrong",
+    "chars": 29334
+  }
+]

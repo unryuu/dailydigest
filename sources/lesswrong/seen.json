@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/6j3kBHdowGLCeqobg/dear-god-please-don-t-resign-in-protest",
+  "title": "有人劝 AI 实验室员工别辞职，直接拒绝工作等着被开除",
+  "date": "Mon, 07 Sep 2026 22:45:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ptirZBteKd3o4FAFe/most-anthropic-equity-that-will-ever-be-used-for-longtermist",
+  "title": "有人主张慈善用途的 Anthropic 股权应该尽快卖掉",
+  "date": "Mon, 07 Sep 2026 20:00:45 GMT",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/wt4kk6vFPEhkXvF8Q/how-good-are-slop-vestigators",
+  "title": "调查留言板事故的 Agent，只找回约一半关键发现",
+  "date": "Tue, 08 Sep 2026 23:00:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/xjwtNid2xjqSJWB7z/exploration-hacking-in-ai-debate-initial-empirics-and",
+  "title": "Agent 骗不过裁判，也能切断训练泛化",
+  "date": "Wed, 09 Sep 2026 08:30:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/ZqFD6HzrhZdMFxoqn/where-are-the-token-level-llm-kill-switches",
+  "title": "有人提议给大模型训练一串碰到就停机的文字",
+  "date": "Tue, 08 Sep 2026 05:30:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/FsCkkoGsNmPzFKRhg/gpt-6-astra-can-do-a-lot-of-multi-hop-reasoning-without",
+  "title": "Astra 不写推理过程也能串起更多事实",
+  "date": "Wed, 09 Sep 2026 06:15:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/M9EuHPg8vBapFEDe9/the-wormtongue-test",
   "title": "Wormtongue Test：先写一份最会迎合周围人的坏计划",
   "date": "Mon, 07 Sep 2026 19:00:46 GMT",

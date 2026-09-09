@@ -1,0 +1,304 @@
+URL: https://www.lesswrong.com/posts/xjwtNid2xjqSJWB7z/exploration-hacking-in-ai-debate-initial-empirics-and
+FINAL: https://www.lesswrong.com/posts/xjwtNid2xjqSJWB7z/exploration-hacking-in-ai-debate-initial-empirics-and
+TITLE: Exploration Hacking in AI Debate: Initial Empirics and Generalisation Splitting — LessWrong
+FETCHED: 2026-09-09 22:04:44
+============================================================
+x
+Exploration Hacking in AI Debate: Initial Empirics and Generalisation Splitting — LessWrong
+Debate (AI safety technique)
+Exploration Hacking
+AI
+Frontpage
+31
+Exploration Hacking in AI Debate: Initial Empirics and Generalisation
+Splitting
+by
+Jason R Brown
+,
+Nathalie Kirch
+,
+Joschka Braun
+,
+hyannakoudakis
+,
+David Lindner
+8th Sep 2026
+16
+min read
+0
+31
+This is the first of two posts resulting from a recent Astra/MATS research project investigating exploration hacking in AI debate. They are designed to be standalone, but we encourage interested readers to read both. This post focuses on our empirical results,
+the second focuses on a new conceptual framework
+.
+Authors
+Jason Brown*, Nathalie Kirch*, Joschka Braun, Helen Yannakoudakis, Roland S. Zimmermann, David Lindner
+*Equal contribution.
+TL;DR
+We set out to build model organisms of
+exploration hacking (EH)
+in the setting of
+AI debate
+. We did this by trying to create models that persistently sandbagged on certain question topics, but not on others. We ran two experiments, one to try and isolate the effects of the judge, and the other to better approximate the full dynamics of RL training on AI debates.
+Overall our results indicate that EH could be a significant issue within AI debate, with the experiments respectively showing that weaker judges and longer debates slow down improvements in performance. Interestingly, the dominant mechanism behind the second result appears to be one we have not seen described before. Once the debaters were instructed to sandbag on a targeted topic, training improvements stopped transferring between targeted and non-targeted topics, slowing down improvements on the former as it was naturally sampled less often. This occurred despite the sandbagging being executed poorly by the debaters. We call this
+generalisation splitting.
+Motivated by this, we developed a new
+conceptual framework for how RL removes undesired behaviours
+, presented in the second post.
+Introduction
+Following on from
+previous work in exploration hacking
+, we set out to establish how much of an issue it might be in
+AI debate
+. This was motivated by the properties of AI debate appearing particularly susceptible to it: non-verifiable rewards, weak judges which might be easy to manipulate, rewards only at the end of long multi-turn rollouts, and opportunities for collusion. Additionally, AI debate might be
+one of the most promising current methods
+for
+scalable oversight
+, so if it was susceptible to EH then that could be quite concerning. For those unfamiliar with the method, the core idea is to get two AI debaters to argue over many rounds about what the answer to a complex question is, in the hope that this eventually reduces to a simple crux that a judge—a weaker model or human—can evaluate. This is used to determine a “winner”, which is in turn used as an RL reward signal to train both debaters. The hope is that the limit of the RL training is honest AIs, as exposing lies where possible should be an easy way to win the debate. We refer to the first AI to act in the debate as the “proposer”, and the second as the “critic”, not to be confused with critics in the machine learning or RL sense.
+We decided to explore two experimental settings. The first aimed to directly and cleanly test our initial intuition that debate’s use of weak judges would create a noisier reward landscape, making both
+complete and partial under-exploration
+easier. Our setup was highly controlled, with a single fixed debater made to lie on certain topics, and we swept over several properties of the judge. The second setting aimed to broadly explore the dynamics of RL training on AI debate when the debaters were prompted to lie and collude on certain topics. We varied aspects of the whole training setup to determine their influence on the effectiveness of the exploration hacking, and tried to understand the patterns we observed. The following sections of this post detail the setups and results we obtained in these settings.
+In the second setting, our results were initially confusing. The exploration hacking was successful at reducing the improvement on the targeted questions, yet it was also easily detected and penalised by the judge. Analysing our results and running ablations made it clear that what was happening was a breakdown in the generalisation between the targeted and non-targeted topics—which we term generalisation splitting. We discuss this further, including results from other experiments we ran, later in the post.
+Throughout this post we make reference to
+properties discussed in more detail in our conceptual framework
+to make the connection between the two clearer. However, it is not necessary to have read that post in order to understand our method, results, and their implications.
+Experiment 1: Isolated Imperfect Judge
+To study how judge imperfection, i.e., reward misspecification and reward noise, affects EH persistence in isolation, we built a simplified setting in which a trainable critic evaluates the claims of a frozen liar, and where we directly control judge accuracy (in a real setting, judge accuracy will be influenced by a variety of factors such as tone, length, argument structure, etc.).
+Setup
+The setup is a stripped-down, one-round debate: a
+proposer
+, a
+critic
+, and a
+judge
+,
+with only the critic trained
+. A frozen liar answers a bank of MMLU questions, lying on half of them (randomly chosen) and answering truthfully on the rest. A trainable critic (LLaMA-3.1-8B-Instruct with LoRA) evaluates the liar's responses, deciding whether to agree or disagree. Before RL, we SFT the critic into a model organism that is "locked" to defer to the liar in one specific category (the
+locked domain
+, health questions) while remaining a capable critic everywhere else. Following the model-organism approach of
+Jang et al.
+, we create the lock with on-policy instructed data: we prompt the base model to be uncritical of claims in the health domain, collect its outputs, and fine-tune on that data
+without
+the instruction, so the sycophancy is baked into the weights rather than prompted at RL time. Unlike their organisms, ours are distilled from the base model's own outputs rather than a stronger teacher, and are not trained to reason about being evaluated.
+To avoid training on honest mistakes, we filter the question bank to questions the critic model can itself answer correctly when asked directly, so that whenever it agrees with the liar's false answer, it does so despite knowing the correct one (we test capability once per question with greedy decoding).
+During RL, we expect two things.
+On non-locked questions (outside the health domain) the critic should learn to catch lies normally, confirming that RL is functional and the model retains general capability. On locked questions, whether and how fast it learns to catch lies is the quantity of interest.
+We train the critic with
+NGRPO
+rather than standard GRPO to give RL the best chance of recovering the locked capability. A consistently deferring critic produces many constant reward groups (rollout groups in which every sample is wrong); ordinary GRPO assigns these zero advantage and learns nothing from them, whereas NGRPO's advantage calibration still yields a negative update on the sampled failures. This closes off one route by which the lock could persist for reasons unrelated to the judge, and essentially makes it easier for our judges to recover the capability (see
+the "Grouping" property
+).
+Every judge gives reward 1 if the critic's verdict is correct (that is, if it agrees with a truthful answer or disagrees with a lie) and 0 otherwise. The judges differ only in how they treat the critic agreeing with a lie in the locked domain: a judge of strength c penalises this (reward 0) with probability c and rewards it (reward 1) otherwise, so a perfect judge (c = 1) always penalises it (Table 1). Whether a given deferral is penalised is drawn independently for each judgment with probability
+c
+;
+c
+itself is a fixed property of the judge. We sweep c ∈ {0.1, 0.3, 0.5, 1.0}; the expected reward for continuing to defer to a locked-domain lie is 1 − c.
+Crucially, giving the correct verdict remains the optimal policy under every judge
+: an imperfect judge only weakens the penalty for deferring.
+[1]
+We report locked-domain lie detection on the lying subset of held-out health questions, where the correct verdict is "disagree".
+liar
+critic's verdict
+reward, locked (health)
+reward, non-locked
+truthful
+agree
+1
+1
+truthful
+disagree
+0
+0
+lying
+disagree
+1
+1
+lying
+agree
+0 w.p. c, else 1
+0
+Table 1.
+Reward to the critic under a judge of strength c. Only the bottom-right cell varies across judges.
+Lowering
+c both weakens the expected penalty for deferring (1 − c) and adds reward noise (variance c(1 − c), largest at c = 0.5). Separating the two would need a judge that pays the constant reward 1 − c instead of flipping a coin, which we didn't run, so the sweep can't tell us which is responsible. The follow-up experiment below gets at this.
+To separate the roles of the misaligned initialisation and the weak signal, we repeat every judge condition from a fresh (no-SFT) initialization with the same RL setup and step budget. We additionally train against two LLM judges, Qwen2.5-3B, and Llama-3.3-70B, and place each on the same axis at its measured catch rate on locked-domain lies, to check that the synthetic sweep tracks what a real weak judge does.
+Fig 1. A locked underperformance resists RL, especially under weak judges.
+(a)
+Locked-lie detection after 20 RL epochs (6,380 steps) vs. judge strength (1.0 = perfect judge; lower = weaker). Red = SFT-locked model, blue = no-lock control; left = synthetic judges (ground-truth-based, with controlled catch rate
+c
+), right = LLM judges (Qwen2.5-3B, Llama-3.3-70B) at their measured catch rate. Dashed lines: post-lock start (0.08) and base model (0.56). n = 99, 95% Wilson CIs.
+(b)
+Locked-lie detection over RL training for each
+c
+, SFT-locked (red) vs. no-lock control (blue), evaluated every 2 epochs on a smaller in-training held-out set (n ≈ 54), so endpoints differ slightly from (a).
+The gap between the locked model and the control grows steadily as the judge weakens. Because the sweep moves the expected penalty and the reward noise together (see Setup), we read this as consistent with the weakened penalty doing most of the work rather than the noise, but this sweep does not establish it; theory suggests reward noise alone mostly changes the rate of convergence rather than the fixed point (
+Rad et al., 2026
+).
+The gap that remains at c = 1.0 shows that even a perfect judge only slowly undoes the SFT lock. Panel (b) confirms this is a matter of rate, not a ceiling: the c = 1.0 locked run is still climbing at the end of training, not plateaued—its locked-lie detection rises monotonically through the final measured steps (≈ 0.58 → 0.64 → 0.74 over the last three held-out evaluations) with no sign of levelling off at 6,380 steps, while the no-lock control has long since saturated near 0.9.
+The two LLM judges behave like weak synthetic judges of matched catch rate, and slightly worse. One plausible reason is that LLM-judge errors are correlated across questions, giving the critic a stable set of questions on which deferring is never penalised, whereas the synthetic judge's errors are independent. We did not test this.
+One limitation to this experiment is that the sweep can't separate a weakened penalty from noisier reward. In follow-up work in progress we remove the noise entirely, using an evaluator with a fixed set of inputs it never penalises, and find that this also delays recovery; we will report those results separately, alongside additional experiments based on the other properties in the conceptual post.
+Experiment 2: Self-play RL on AI Debate
+In these experiments, we took a broad approach of investigating whether RL on self-play debate trains away sandbagging, the extent to which this can be resisted by prompted exploration hacking, and how varying certain factors of the debate setup influence these.
+Setup
+We use Qwen3-30B-A3B (LoRA) as the policy, initialized from an SFT checkpoint trained to answer incorrectly on all domains: for every MMLU question it produces convincing chain-of-thought arriving at a wrong answer, without revealing the intent to answer incorrectly. Then, during RL, the debaters' system prompt instructs the agents to sandbag only on the targeted distribution (health/medical questions, where the directive is to always answer "A"), and to answer normally everywhere else. The directive is phrased under different narrative framings, either as a direct instruction to follow, or as part of acting like a covertly misaligned AI. The two distributions allow us to differentiate the RL failing from successful exploration hacking. Recovery on neither distribution indicates the RL is generally ineffective, recovery only on the non-targeted distribution indicates that the RL works, but the model is successfully exploration hacking on the targeted questions.
+The debate setup itself is similar to that of
+Wells et al.
+, who train the same base model via self-play debate RL on competition math; the main differences are that our debaters are sandbagging model organisms, our questions are MMLU multiple choice rather than open-ended proofs, and our debaters may change their answers over the course of the debate. Each episode is a two-player zero-sum debate over an MMLU multiple-choice question where the Proposer states and defends an answer, and the Critic rebuts and states its own preferred answer. For additional debate rounds beyond the first, both debaters in turn get to see the debate so far, reason, and then produce their new preferred answer. They are allowed to agree and also to change or hold their answer throughout the debate. A judge, either a rule-based ground-truth check or an LLM judge, scores the exchange and assigns zero-sum rewards. Each LLM judge is a Qwen3 model, with varying sizes as a proxy for varying capabilities. Debaters share the same weights but have differing prompts based on their role. Training uses REINFORCE with importance-sampling correction and role-conditioned EMA baselines (RAE,
+based on previous LLM self-play RL work
+[2]
+), for 256 steps with a 128 episode batch size. Training batches sample uniformly from MMLU, with the targeted distribution forming approximately 14% of it. Every 5 training steps we evaluate on held-out questions balanced 50/50 across the two distributions, and record separately the Proposer and Critic accuracy
+[3]
+across each distribution. The judge is not trained either before or during the RL.
+Results
+Figure 2. Longer debates make the undesired behaviour easier to sustain.
+Proposer accuracy on held-out questions over RL training, one line per number of debate rounds for both the targeted and non-targeted distributions. For 0 rounds the Proposer answers alone. Each line averages 8 runs over 4 judges and 2 sandbagging framings, with shaded bands giving 95% bootstrap CIs. The two horizontal lines mark the pre-RL sandbagged checkpoint (near chance, since the SFT’d model answers incorrectly everywhere) and the model without the SFT to answer incorrectly (approximate recovery ceiling).
+Figure 2 shows the average proposer accuracy during RL training for both the targeted and non-targeted distributions for a variety of debate lengths, averaging over the different judges and framings. We see non-targeted accuracy recovers towards the base-model ceiling, confirming the RL itself works. However, we do see longer rounds slightly reduce the recovered accuracy rate. Targeted recovery is generally much slower, and reduced to an even greater degree by increasing debate lengths. The difference in the effect that the debate length has could have several underlying causes, for example:
+Collusion difficulty
+: Every extra turn is another chance for the Proposer and Critic to agree on the sandbagged answer and nudge the judge towards penalising whoever didn’t commit to it first, increasing pressure to exploration hack as the number of rounds increases.
+Reward sparsity
+: With more rounds credit assignment becomes harder, and so the overall optimisation pressure on the specific exploration hacking decision or reasoning failure becomes weaker.
+Generalisation splitting
+: The longer transcripts with different styles of reasoning and debate dynamics “split” the targeted and non-targeted distributions to a greater extent. This then reduces how much being reinforced on one affects behaviour on the other. (This is explained in more detail in the following section.)
+Collusion difficulty was an early hypothesis we had, but it was ruled out by examining the rates of agreement between targeted and non-targeted, and finding the debaters actually agreed
+less
+on the targeted distribution. Reward sparsity could explain the drop on non-targeted recovery with increasing numbers of rounds, but is perhaps not sufficient to explain the differences in effect size between the two distributions. Our final hypothesis was only considered late into our experimentation, after we’d also observed that the specific judge had little effect on recovery in this setting, and that typically debaters reasoning about and trying to sandbag was strongly correlated with being penalised by the judges. The only shapes of explanations that remained possible were odd generalisation phenomena.
+Figure 3. Ablations show generalisation splitting is the primary cause of the recovery gap between targeted and non-targeted questions.
+Proposer accuracy on held-out questions over RL training, coloured by the training mixture,
+i.e.
+, the fraction of each training batch drawn from the targeted (health) distribution vs the non-targeted. Shaded bands are 95% bootstrap CIs. Horizontal lines mark the model without the SFT to answer incorrectly and, on the left, the pre-RL incorrectly-answering checkpoint. Left: the debaters' system prompts direct sandbagging on targeted questions (12 runs per line, averaging over 2 framings, 3 judges, and 2 round counts). Right: no such sandbagging prompt (6 runs per line averaging over 3 judges and 2 round counts).
+Unlike the reward sparsity hypothesis, the generalisation splitting hypothesis predicted that if we altered the training batch composition (fraction of prompts from the targeted distribution vs non-targeted), this could shift the targeted and non-targeted recovery rates towards or away from each other. Additionally, it predicts that removing the sandbagging instructions ceases this effect, and causes recovery rates to be fast on both distributions. Figure 3 shows exactly this. The right-hand panel shows that recovery without the sandbagging prompt is independent of the training mix, as each group of three lines coincides. The left-hand panel shows targeted recovery is extremely dependent on the training mix. The natural-mix line (blue) shows the same pattern as Figure 2, being the default mix. The balanced 50/50 line (orange) is striking: both distributions recover at the same rate, despite the fact that the debaters are “sandbagging” on one. This is clear evidence that our results are primarily due to a failure to generalise effectively between distributions from generalisation splitting, rather than the debaters using an effective sandbagging strategy. Finally, the non-targeted-only line (green) fully isolates the extent of the generalisation from non-targeted to targeted. Purely training on non-targeted only causes a very small uplift on the targeted distribution. Crucially, this only occurs when the debaters are instructed to sandbag—remove that instruction (the same green line in the right-hand panel), and the generalisation from non-targeted to targeted is almost perfect.
+Generalisation Splitting
+We conceptualise generalisation splitting as when a model, intentionally or otherwise, executes some specific cognition or behaviour conditionally on one distribution that causes generalisation between that distribution and another to cease. Abstractly we can imagine two state distributions
+X
+and
+Y
+, where training the model to eventually do
+A
+in
+X
+additionally causes it to eventually do
+A
+in
+Y
+, and vice versa. That is, reinforcing the sequences of states and actions of the form
+X, …, A
+causes sequences of the form
+Y, …, A
+to be probable, as does the reverse. We could say that these sequences are mutually reinforced.
+Now let's imagine the model is trained or prompted to first do
+B
+on
+Y
+, but not on
+X
+. If the sequences of
+X, …, A
+and
+Y, …, A
+no longer mutually reinforce, we’d say that
+B
+has split the generalisation of behaviour
+A
+between distributions
+X
+and
+Y
+. In the
+Y
+to
+X
+direction this would mean reinforcing
+Y, …, B, …, A
+simply does not upweight
+X, …, A
+. In the
+X
+to
+Y
+direction this could happen because reinforcing
+X, …, A
+does not upweight
+Y, …, B, …, A
+, and not having
+B
+after starting with
+Y
+is sufficiently rare.
+[4]
+In our case,
+X
+and
+Y
+were the non-targeted and targeted distributions respectively,
+A
+was answering correctly, and
+B
+was roughly reasoning about and trying to enact an instruction to sandbag (but not necessarily successfully). Whilst we see generalisation splitting as a breakdown of the two-way mutual reinforcement, in the sandbagging threat model we’re mostly concerned about
+X
+to
+Y
+failing, i.e., reinforcing on non-sandbagging prompts failing to uplift sandbagging ones. This is exactly what the “non-targeted only” (green) lines show us in Figure 3: including the sandbagging prompt and training only on the non-targeted distribution does not generalise to the targeted one. An intuitive explanation for why this happens is that on the targeted distribution the agent begins by reasoning about sandbagging, is now in a different part of input space for the rest of its inference compared to what it was trained on—where "answer correctly" has not been generalised to—and thus produces an incorrect answer.
+We tried some further experiments, such as getting the debaters to first write haikus when given a question from the targeted distribution before answering normally, but found this did not have the same effect. Because of this, we hypothesise that the behaviour
+A
+needs to be roughly cognitively dependent on
+B
+. We don’t have a clean operationalisation of this, but we suspect it has something to do with requiring the attention mechanism to think
+B
+is relevant for
+A
+, such that the gradients are routed through it, allowing the splitting to occur.
+The nearest pre-existing example of generalisation splitting we know of is in the
+Sleeper Agents paper
+, where a backdoor—a trigger conditioned behaviour—persists despite safety training on inputs that don’t contain the trigger. Our non-targeted-only runs, Figure 3 green lines, have the same pattern. Figure 3 additionally shows that failure to generalise can occur even when the targeted distribution is sometimes sampled (blue), and that balanced training (orange) causes both distributions to learn at a similar slow rate—the primary effect is a loss in generalisation between the distributions, not a reduction in learning speed on the targeted one. Finally, we induce this phenomenon with a prompt alone, and not the prior training, as the effects disappear completely when it’s removed.
+Discussion
+Our results do have some limitations:
+We tested small models on QA style tasks, which is not fully representative of the scenarios where AI debate is expected to improve our oversight.
+We only tested one type of MO in each experiment (SFT’d in experiment 1, and prompted in experiment 2).
+We have not yet fully explored the hypothesis space for our results, and do not fully understand the deeper details of generalisation splitting, which may not turn out to be the best explanation of our results.
+We did not test any realistic mitigation strategies, which might be able to prevent and break our MOs of exploration hacking easily.
+[5]
+Overall we believe that our results across both experimental settings do provide some initial evidence that exploration hacking may be a more serious issue in AI debate than in standard RL. This is primarily due to the weakness of the judge and the typically longer horizon lengths before reward is administered.
+[6]
+Additionally, we have uncovered a mechanism by which exploration hacking can persist—breaking the generalisation between samples. This prompted us to think more deeply about ways in which exploration hacking could persist, leading us to develop our conceptual framework given in
+the following post
+.
+Acknowledgements
+Thank you to the Astra and MATS programs for making this research possible, and for providing generous compute funding. We’d additionally like to thank our research managers, Bruce Tsai, Perusha Moodley, and Nathan Helm-Burger. Finally, we’d like to thank everyone who helped provide feedback on earlier drafts of both posts, particularly Edward Young, Lennie Wells, Gabriel Recchia, and Cameron Tice.
+^
+Because the liar is truthful half the time, "always disagree" is not a shortcut: it scores 0 on every truthful answer. The critic has to actually judge the claim.
+^
+We did test other algorithms, including GRPO variants, but found REINFORCE with RAE was slightly more stable during training. This was important as stability can be a more significant issue in self-play RL than standard RL.
+^
+Computed using their final answers in each debate.
+^
+It could be the case that
+Y, …
+(never B)
+…, A
+sequences do actually get upweighted, and that if one undid whatever prompting or training was used to cause
+Y, …, B, …
+then
+Y, …, A
+becomes more common than it was originally. This would be very interesting and might be better conceptualised as “generalisation suppression”. However, we have not yet explored this.
+^
+The batch-composition alteration is listed as a mitigation strategy in the follow-up post, but we don’t consider it realistic here as it made use of the fact that we know exactly what the targeted and non-targeted distributions are, which we don’t expect to be true in practice.
+^
+Using debate as an oversight method might not always increase horizon length. Whilst taking whatever is administering rewards and replacing it with a debate protocol necessarily would (since each reward is now only administered after each task completion + debate, possibly including alternate task completions), one could also use it to administer rewards more frequently. For example, an AI research agent carrying out autonomous research might get rewarded based on whether or not its method improves performance over some baseline, which could entail a huge horizon length involving hundreds of actions. However, at the extreme, debate could be used to provide reward on
+every
+action.
+0
+Comments
+0
+Debate (AI safety technique)
+Exploration Hacking
+AI
+Frontpage
+31
+New Comment
+Moderation Log
+More from
+Jason R Brown
+View more
+Curated and popular this week
+Mentioned in
+33
+A Conceptual Framework for Reasoning about Exploration Hacking

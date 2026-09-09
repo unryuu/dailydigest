@@ -1,0 +1,418 @@
+{
+  "date": "2026-09-09",
+  "fetch_failures": [
+    {
+      "slug": "axios",
+      "url": "https://api.axios.com/feed/",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "hf-papers",
+      "url": "https://huggingface.co/papers",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "huggingface",
+      "url": "https://huggingface.co/blog",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "import-ai",
+      "url": "https://importai.substack.com/feed",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "karpathy",
+      "url": "https://karpathy.bearblog.dev/feed/",
+      "error": "Requests 返回 HTTP 403；Chromium 返回 browser HTTP 403。"
+    },
+    {
+      "slug": "manifold",
+      "url": "https://api.manifold.markets/v0/search-markets?term=AI&sort=liquidity&limit=25&filter=open",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET，因此本期没有可核实的赔率候选。"
+    },
+    {
+      "slug": "meta-ai",
+      "url": "https://research.meta.ai/",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "mistral",
+      "url": "https://mistral.ai/news/rss",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "thezvi",
+      "url": "https://thezvi.substack.com/feed",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    },
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "机械 Nitter 抓取连接被重置；登录态 X 能确认账号仍已登录，但个人页连续返回 Something went wrong，重试仍无法加载帖子。"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "机械 Nitter 抓取连接被重置；登录态补扫的首个账号重试失败后，未用同一失效接口重复请求本账号。"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "机械 Nitter 抓取连接被重置；登录态补扫的首个账号重试失败后，未用同一失效接口重复请求本账号。"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "机械 Nitter 抓取连接被重置；登录态补扫的首个账号重试失败后，未用同一失效接口重复请求本账号。"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "机械 Nitter 抓取连接被重置；首次 36 小时登录态窗口补扫未能执行，个人页与 Articles 均待接口恢复后补扫。"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "机械 Nitter 抓取连接被重置；登录态补扫的首个账号重试失败后，未用同一失效接口重复请求本账号。"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "机械 Nitter 抓取连接被重置；登录态补扫的首个账号重试失败后，未用同一失效接口重复请求本账号。"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "机械 Nitter 抓取连接被重置；登录态补扫的首个账号重试失败后，未用同一失效接口重复请求本账号。"
+    },
+    {
+      "slug": "xai",
+      "url": "https://x.ai/news",
+      "error": "Requests 连接被重置；Chromium 访问同一地址时返回 ERR_CONNECTION_RESET。"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "中国开始提高人形机器人企业的上市审核门槛",
+      "cost": "中",
+      "reason": "The Information 独家把非公开窗口指导、一级市场融资热度和上市后股价回落串成一条监管新进展，且涉及监管与公司融资，按例外规则必须带回。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "China Curbs Humanoid IPOs After Unitree’s Volatile Debut",
+          "url": "https://www.theinformation.com/articles/china-curbs-humanoid-ipos-unitrees-volatile-debut",
+          "date": "2026-09-09T10:30:14+08:00",
+          "why": "候选材料称监管部门向部分投行和投资机构发出窗口指导，要求企业证明持续收入、亏损收窄或真正技术创新；这不是正式公开规则，也不是全面叫停，reader 需核清口径。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "AI 威胁正在改变企业网络安全预算的去向",
+      "cost": "中",
+      "reason": "这篇报道用企业预算和厂商收入数字，把近期 AI 攻防事故落到采购替换上；属于安全产业的钱流增量，不是继续复述攻击事件本身。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "AI Threats Are Reshaping Where Companies Spend Their Cybersecurity Budgets",
+          "url": "https://www.theinformation.com/articles/ai-threats-reshaping-companies-spend-cybersecurity-budgets",
+          "date": "2026-09-09T00:01:05+08:00",
+          "why": "候选材料列出 Lumen、AppLovin、Appfire 的预算变化，以及 Zafran、CrowdStrike、SentinelOne 的 AI 安全业务线索；样本来自若干企业和厂商，不能外推为全行业趋势。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Gimlet 用三档估值融资，把尚未兑现的大客户预期提前计入价格",
+      "cost": "中",
+      "reason": "融资不只是金额变化，三档定价和 OpenAI 潜在支出预期展示了 AI 基础设施融资热度如何抬高估值，属于公司融资新事件。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Gimlet's Three-Tranche Deal Reveals AI Funding Frenzy",
+          "url": "https://www.theinformation.com/newsletters/dealmaker/gimlets-three-tranche-deal-reveals-ai-funding-frenzy",
+          "date": "2026-09-09T08:37:51+08:00",
+          "why": "候选材料称 Gimlet Labs 融资 3 亿美元、主报价估值约 30 亿美元，并拆成三档；OpenAI 明确说目前不是付费客户，因此所谓每年过亿美元支出只能写成公司向投资者描述的未来预期。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "普通人究竟要到什么时候才会真正感到 AI 的影响",
+      "cost": "重",
+      "reason": "Interconnects 是高权重 AI 行业来源，这篇当日长文用“不到五年的复利革命可能持续一个世纪”讨论扩散节奏和行业责任，属于范式视角。",
+      "items": [
+        {
+          "source": "interconnects",
+          "title": "When will average people feel AI’s impact?",
+          "url": "https://www.interconnects.ai/p/when-will-average-people-feel-ais",
+          "date": "Wed, 09 Sep 2026 11:01:23 GMT",
+          "why": "Feed 摘要只给出“不到五年”“可能持续一个世纪”和行业应如何管理这场变化的表层线索，具体判断与论据待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "GPT-6 Astra 在不展示思维链时仍能完成多跳推理",
+      "cost": "重",
+      "reason": "这是 Astra 循环深度与可监控性旧主线上的当日新进展：一条独立实测加一篇架构研究综述，成组可区分实验证据与背景解释。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“GPT-6 Astra can do a lot of multi-hop reasoning without chain of thought” by RohanS",
+          "url": "https://www.lesswrong.com/posts/FsCkkoGsNmPzFKRhg/gpt-6-astra-can-do-a-lot-of-multi-hop-reasoning-without",
+          "date": "Wed, 09 Sep 2026 06:15:46 GMT",
+          "why": "当日独立实测的链接帖，标题与摘要称 Astra 在不写出显式思维链时仍能做多跳推理；测试设计、比较基线和结果幅度待 reader 核，不能直接归因于循环架构。"
+        },
+        {
+          "source": "ahead-of-ai",
+          "title": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
+          "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+          "date": "Wed, 09 Sep 2026 11:14:25 GMT",
+          "why": "Sebastian Raschka 当日长文梳理 recurrent depth、hidden chain of thought 和 looping transformer 研究；疑似承接 Astra 架构与监控旧主线，reader 只取其中新增研究或解释。"
+        }
+      ]
+    },
+    {
+      "group": "group-6",
+      "theme": "Hugging Face 把开放机器人做成了一门真实生意",
+      "cost": "中",
+      "reason": "用户点名补读后发现有明确销量、收入和算力依赖，属于英伟达收购 Hugging Face 后的实质业务进展。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Hugging Face Is Making A Big Robotics Push",
+          "url": "https://www.theinformation.com/newsletters/applied-ai/hugging-face-making-big-robotics-push",
+          "date": "2026-09-09T03:06:56+08:00",
+          "why": "400 美元的 Microduck 已售出超过 1.5 万台、销售额超过 600 万美元，首年原计划销售至少 5 万台；开放软件降低机器人开发门槛，训练仿真又必须使用英伟达 GPU 与 CUDA。"
+        }
+      ]
+    },
+    {
+      "group": "group-7",
+      "theme": "OpenAI 用降价换来十倍用量，Anthropic 的上市叙事遇上价格战",
+      "cost": "中",
+      "reason": "用户点名补读后发现有十倍用量和两倍 token 份额等增量，重点是价格如何改变模型市场，而不是重复报道版本升级。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Why Price Cuts May Rattle Anthropic's IPO Pitch",
+          "url": "https://www.theinformation.com/newsletters/the-briefing/price-cuts-may-rattle-anthropics-ipo-pitch",
+          "date": "2026-09-09T08:00:49+08:00",
+          "why": "GPT-5.6 Luna 降价后使用量增长十倍，在 OpenRouter 的 token 用量超过 Anthropic 两个模型之和的两倍；reader 需保留 OpenRouter 只是聚合平台这一范围。"
+        }
+      ]
+    },
+    {
+      "group": "group-8",
+      "theme": "ChatGPT Images 2.5 把多轮局部编辑做成正式工作流",
+      "cost": "中",
+      "reason": "用户点名补查后，官方材料显示这次不只是画质升级，还新增草图输入、图上评论、模板和两档 API 模型，且每周使用规模已超过 30 亿张。",
+      "items": [
+        {
+          "source": "openai",
+          "title": "Introducing ChatGPT Images 2.5",
+          "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+          "date": "September 8, 2026",
+          "why": "官方称延迟最多降低 50％，多轮编辑更能保留主体和已有修改，并向 ChatGPT、Work 与 Codex 用户开放；reader 需把产品工作流变化与模型宣传拆开。"
+        },
+        {
+          "source": "simon-willison",
+          "title": "Introducing ChatGPT Images 2.5",
+          "url": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25",
+          "date": "2026-09-08T22:46:33+00:00",
+          "why": "Simon 列出 Sunburst 与 Flare 两个 API 模型，并用参考图追加浣熊科学家的例子展示局部编辑。"
+        }
+      ]
+    },
+    {
+      "group": "group-9",
+      "theme": "GLM-5.3 开放权重时没有沿用 MIT 许可证",
+      "cost": "中",
+      "reason": "08-14 已报模型发布和两周后开放权重的承诺，本期真正的新进展是权重落地后许可证发生变化，足以单独讨论开放模型的商业边界。",
+      "items": [
+        {
+          "source": "interconnects",
+          "title": "Latest open artifacts (#24): Motif-3, GLM-5.3, Hy4-preview and open model licenses",
+          "url": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
+          "date": "Tue, 08 Sep 2026 14:15:25 GMT",
+          "why": "GLM-5.3 从前代 MIT 改用自定义许可证：模型服务商及关联方连续十二个月总收入超过 100 亿美元时，商业使用要通过智谱安全审查；关联方定义仍有解释空间。08-14 成稿只写发布、API 状态和两周后开放权重，本期不重复模型能力。"
+        }
+      ]
+    },
+    {
+      "group": "group-10",
+      "theme": "Mercury 2.5 把扩散语言模型推入生产环境",
+      "cost": "中",
+      "reason": "浏览器补读发现发布页包含电话 Agent、编码工具和搜索系统的生产结果，强于普通模型公告，升级为银牌候选。",
+      "items": [
+        {
+          "source": "inceptionlabs",
+          "title": "Introducing Mercury 2.5",
+          "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+          "date": "Sep 8, 2026",
+          "why": "发布方称每秒 1107 token；OpenCall 的响应延迟中位数接近 170 毫秒，Augment Code 的上下文压缩延迟下降 82％、成本下降 90％。"
+        }
+      ]
+    },
+    {
+      "group": "group-11",
+      "theme": "辩论 Agent 会利用探索过程作弊",
+      "cost": "重",
+      "reason": "用户确认的银牌候选，需核清探索作弊的实验设置、结论幅度和泛化拆分方法。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "Exploration Hacking in AI Debate: Initial Empirics and Generalisation Splitting",
+          "url": "https://www.lesswrong.com/posts/xjwtNid2xjqSJWB7z/exploration-hacking-in-ai-debate-initial-empirics-and",
+          "date": "Wed, 09 Sep 2026 08:30:46 GMT",
+          "why": "Astra／MATS 项目给出 AI 辩论中探索作弊的初步实证；reader 需要判断实验结果是否足以支持银牌。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "interconnects",
+      "title": "Hy4-preview",
+      "url": "https://huggingface.co/tencent/Hy4-preview",
+      "date": "Tue, 08 Sep 2026 14:15:25 GMT",
+      "note": "用户点名补查。Interconnects 称腾讯增大旗舰模型并加强后训练，预览版整体可用但容易过度思考；Hugging Face 直连被重置，现有信息仍只够简讯。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
+      "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked",
+      "date": "2026-09-08T14:49:19Z",
+      "note": "量化实测线索：标题称 4-bit 基本守住表现、1-bit 崩塌；抓取时 267 分、128 条评论，具体任务和误差待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Muse – Meta’s personal AI agent",
+      "url": "https://ai.meta.com/muse",
+      "date": "2026-09-08T19:25:00Z",
+      "note": "Meta 的个人 AI Agent 官方页面，抓取时 555 分、608 条评论；当前候选只有标题与热度。"
+    },
+    {
+      "source": "openai",
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "date": "Tue, 08 Sep 2026 17:00:00 GMT",
+      "note": "OpenAI 官方案例称 MIT 研究者用 GPT-5.6 Sol 与 Codex 自主运行量子实验、分析结果并校准量子比特；同一链接的 HN 项已合并。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "[Linkpost] “Where are the token-level LLM kill-switches?” by beyarkay (Boyd Kane)",
+      "url": "https://www.lesswrong.com/posts/ZqFD6HzrhZdMFxoqn/where-are-the-token-level-llm-kill-switches",
+      "date": "Tue, 08 Sep 2026 05:30:46 GMT",
+      "note": "提出训练一种无论出现在上下文何处都触发结束符的“poisoned string”；目前只是方案线索，可靠性与滥用面待核。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“How good are slop-vestigators?” by Hasan Baig, OscarGilg, Hamzah",
+      "url": "https://www.lesswrong.com/posts/wt4kk6vFPEhkXvF8Q/how-good-are-slop-vestigators",
+      "date": "Tue, 08 Sep 2026 23:00:46 GMT",
+      "note": "发布 MessageBoardAuditBench，摘要称顶尖模型最多覆盖调查发现的 51％；这是 OpenAI Agent 留言板旧主线上的新基准，不重复收事故本身。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "I-have-ADHD: A skill to stop coding agents from burying the answer",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "date": "2026-09-08T14:13:26Z",
+      "note": "有人专门做了一个防止编码 Agent 把答案埋起来的 skill；抓取时 480 分、330 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "How to build a printer",
+      "url": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer",
+      "date": "2026-09-08T21:22:11Z",
+      "note": "从头造打印机的工程故事，抓取时 379 分、84 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "27.5KB language-agnostic WebGPU syntax highlighter",
+      "url": "https://gpu-lexer.vercel.app",
+      "date": "2026-09-09T01:14:50Z",
+      "note": "一个 27.5KB、与语言无关的 WebGPU 语法高亮器，抓取时 99 分、32 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "“Tweet” and the bird logo apparently enter the public domain",
+      "url": "https://blog.ericgoldman.org/archives/2026/09/tweet-and-the-bird-logo-apparently-enter-the-public-domain-but-x-maintains-its-grip-on-the-twitter-mark-for-now-x-v-project-bluebird.htm",
+      "date": "2026-09-09T06:02:07Z",
+      "note": "标题称“Tweet”和小鸟标志似乎进入公有领域，但 X 仍掌握 Twitter 商标；抓取时 138 分、84 条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Flock Wants a Closely Surveilled World with No Exit",
+      "url": "https://www.newyorker.com/culture/infinite-scroll/flock-wants-a-closely-surveilled-world-with-no-exit",
+      "date": "2026-09-09T10:54:18Z",
+      "note": "《纽约客》写 Flock 想要一个无处退出的严密监控世界，抓取时 221 分、191 条评论。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Most Anthropic equity that will ever be used for longtermist philanthropy should be sold ASAP and reinvested” by Zach Stein-Perlman",
+      "url": "https://www.lesswrong.com/posts/ptirZBteKd3o4FAFe/most-anthropic-equity-that-will-ever-be-used-for-longtermist",
+      "date": "Mon, 07 Sep 2026 20:00:45 GMT",
+      "note": "反直觉建议：打算用于长期主义慈善的 Anthropic 股权应该尽快卖掉并再投资，理由包括集中风险与边际价值。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Dear God, Please Don’t Resign In Protest” by Kabir Kumar",
+      "url": "https://www.lesswrong.com/posts/6j3kBHdowGLCeqobg/dear-god-please-don-t-resign-in-protest",
+      "date": "Mon, 07 Sep 2026 22:45:46 GMT",
+      "note": "给前沿实验室员工的挑衅式建议：不要辞职抗议，拒绝工作直到被解雇。"
+    }
+  ],
+  "odds_box": [],
+  "skipped_sources": [
+    {
+      "slug": "acx",
+      "reason": "两条候选分别是开放讨论帖和 9 月 3 日的 EA 校园聚会信息，没有可用的新日报条目。"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "anthropic-research",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "chip-huyen",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "claude-blog",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "deepmind",
+      "reason": "抓取成功但没有机械候选；Hacker News 出现的 AlphaGenome Atlas 与 9 月 8 日已发主线重复。"
+    },
+    {
+      "slug": "lilian-weng",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "抓取成功但没有可离线回溯到原始出处的新候选，因此不收二手线索。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "唯一候选是 9 月 4 日的第 369 期，明显早于本期窗口。"
+    },
+    {
+      "slug": "thinking-machines",
+      "reason": "抓取成功，但时间窗与 seen 过滤后没有候选。"
+    },
+    {
+      "slug": "recent-duplicates",
+      "reason": "数学 Agent／Navier–Stokes 争议、AlphaGenome、Astra 旧解读、OpenAI Agent 留言板事故本身均已在近期主线出现；只保留明确的新实测或新基准。"
+    }
+  ]
+}

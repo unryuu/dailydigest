@@ -1,0 +1,131 @@
+{
+  "date": "2026-09-09",
+  "scanned_at": "2026-09-09T20:59:58+08:00",
+  "window": "从 2026-09-08T22:13:24+08:00 接续，补扫 The Information 首页 Latest 至 2026-09-09 晚间的 AI 相关内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "China Curbs Humanoid IPOs After Unitree’s Volatile Debut",
+      "url": "https://www.theinformation.com/articles/china-curbs-humanoid-ipos-unitrees-volatile-debut",
+      "published_at": "2026-09-08T19:30:14-07:00",
+      "published_at_beijing": "2026-09-09T10:30:14+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "中国证监部门近期向部分投行和投资机构发出窗口指导，提高人形机器人企业上市审核门槛。",
+        "企业需要证明有持续收入、亏损正在收窄或具备真正技术创新，单靠低价和出货规模更难获批。",
+        "今年上半年中国人形机器人创业公司获得 54 亿美元融资，已超过 2025 年全年的 23 亿美元；至少十二家公司估值达到 20 亿美元。",
+        "宇树科技上市首日上涨 460％，此后股价从首日收盘价回落 40％；梅卡曼德上市后也跌至发行价下方约 20％。",
+        "GalBot、智元机器人、逐际动力和星海图等企业已经递交上市材料。"
+      ],
+      "caveats": [
+        "窗口指导属于非公开监管沟通，不是正式公开规则。",
+        "监管部门没有完全叫停人形机器人上市，具体排队企业数量也无法确认。"
+      ],
+      "why": "独家监管增量清楚，把一级市场融资狂热、二级市场降温和机器人企业商业化门槛串成了完整故事。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Article",
+      "title": "AI Threats Are Reshaping Where Companies Spend Their Cybersecurity Budgets",
+      "url": "https://www.theinformation.com/articles/ai-threats-reshaping-companies-spend-cybersecurity-budgets",
+      "published_at": "2026-09-08T09:01:05-07:00",
+      "published_at_beijing": "2026-09-09T00:01:05+08:00",
+      "bucket_hint": "industry_silver_or_none",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "企业安全预算不只在增加，还从传统漏洞管理、日志工具和人工渗透测试，转向员工使用 AI 的监控、模型漏洞扫描和自动修补。",
+        "Lumen 计划把未来一年的网络安全预算提高约 30％，并把部分安全人员调到用前沿模型扫描漏洞的新团队。",
+        "AppLovin 的年度安全软件预算接近 100 万美元，今年增加约 10％，同时重新评估 CrowdStrike 和 SentinelOne 等传统终端安全支出。",
+        "Appfire 预计未来一年安全预算最多增加 20％，并使用基于 Google、Anthropic 和 OpenAI 模型的红队 agent。",
+        "安全创业公司 Zafran 在 Mythos 发布后的五周内拿下三家大银行客户；CrowdStrike 称其 AI 安全产品收入在三个季度内增长 79 倍，SentinelOne 称相关年化经常性收入同比增长两倍。"
+      ],
+      "caveats": [
+        "文中预算变化来自若干企业安全负责人与厂商采访，不能直接外推到全部企业。",
+        "部分传统厂商同时报告自身 AI 安全产品增长，并不等于整体收入已经被新公司替代。"
+      ],
+      "why": "它提供了真实预算数字和采购替换方向，能把近期 AI 攻防事故落到安全行业的钱流变化上。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Dealmaker",
+      "title": "Gimlet's Three-Tranche Deal Reveals AI Funding Frenzy",
+      "url": "https://www.theinformation.com/newsletters/dealmaker/gimlets-three-tranche-deal-reveals-ai-funding-frenzy",
+      "published_at": "2026-09-08T17:37:51-07:00",
+      "published_at_beijing": "2026-09-09T08:37:51+08:00",
+      "bucket_hint": "industry_silver_or_none",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "三岁的多芯片推理创业公司 Gimlet Labs 融资 3 亿美元，主报价估值约 30 亿美元，是上次 PitchBook 估值的 16 倍。",
+        "这轮融资被拆成三档，投资价格对应 25 亿美元、30 亿美元和一个明显更高的估值；三档结构比近期常见的两档融资更激进。",
+        "公司向部分潜在投资者表示，按已签合同推算，OpenAI 未来可能每年为其服务支出超过 1 亿美元。",
+        "OpenAI 表示双方只探索过合作可能，目前不是 Gimlet 的付费客户。",
+        "Andreessen Horowitz 领投，Arm 和微软 M12 参投；Gimlet 正从多芯片软件扩展到帮助客户建设数据中心并自建云。"
+      ],
+      "caveats": [
+        "三档融资细节来自知情人士，各投资者买入的具体档位没有披露。",
+        "OpenAI 的潜在支出仍是未来预期，不能写成已经发生的收入。"
+      ],
+      "why": "这条不只是融资金额，三档估值和尚未兑现的大客户预期展示了 AI 基础设施融资热度如何直接抬高定价。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Applied AI",
+      "title": "Hugging Face Is Making A Big Robotics Push",
+      "url": "https://www.theinformation.com/newsletters/applied-ai/hugging-face-making-big-robotics-push",
+      "published_at": "2026-09-08T12:06:56-07:00",
+      "published_at_beijing": "2026-09-09T03:06:56+08:00",
+      "bucket_hint": "industry_silver",
+      "decision": "用户点名补读后加入精读",
+      "facts": [
+        "Hugging Face 上月底推出售价 400 美元的 Microduck，目前已售出超过 1.5 万台，销售额超过 600 万美元。",
+        "公司原计划上市后一年至少销售 5 万台、实现约 2000 万美元收入，现在正在上调这一预测。",
+        "Microduck 的软件可以免费下载修改，训练仿真必须使用英伟达 GPU 和 CUDA；它让开发者能先在 400 美元的小机器人上试验，而不是直接承担约 4 万美元的人形机器人原型成本。",
+        "Hugging Face 此前销售约 1 万台同样定价 400 美元的 Reachy Mini；公司的年化收入近期超过 1.5 亿美元。",
+        "英伟达收购 Hugging Face 后，不只拿到开放模型分发入口，也得到了一条可能带动 GPU 仿真需求的消费机器人业务。"
+      ],
+      "caveats": [
+        "销售量、收入和预测来自 Hugging Face 联合创始人 Thomas Wolf。",
+        "Microduck 目前更像开发与娱乐设备，消费机器人能否形成长期市场仍取决于后续复购和真实使用。"
+      ],
+      "why": "这是英伟达收购 Hugging Face 主线的实质新进展：机器人已经有可量化销量，还把开放软件、低价硬件和英伟达算力需求连在一起。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "The Briefing",
+      "title": "Why Price Cuts May Rattle Anthropic's IPO Pitch",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/price-cuts-may-rattle-anthropics-ipo-pitch",
+      "published_at": "2026-09-08T17:00:49-07:00",
+      "published_at_beijing": "2026-09-09T08:00:49+08:00",
+      "bucket_hint": "industry_silver_or_deep_none",
+      "decision": "用户点名补读后加入精读",
+      "facts": [
+        "OpenAI 财务负责人称，GPT-5.6 Luna 降价后使用量增长十倍，并在 OpenRouter 获得最高市场份额。",
+        "Luna 在 OpenRouter 上产生的 token 用量超过 Anthropic Opus 5 与 Sonnet 5 的两倍，新增用量足以抵消降价。",
+        "Anthropic 七月底的年化收入达到 650 亿美元，显著领先 OpenAI；它的高端定位和溢价能力是上市叙事的重要部分。",
+        "Anthropic 已把 Fable 5.1 的典型工作负载价格下调约 25％。",
+        "文章提出的核心问题是：当模型质量趋近、便宜模型和开放模型增加时，Anthropic 能否一边降价保份额，一边维持收入领先。"
+      ],
+      "caveats": [
+        "这篇文章后半部分是对 Anthropic 上市叙事的分析，不是新的融资或上市文件。",
+        "OpenRouter 只代表通过该聚合平台产生的开发者调用，不能等同于整个模型市场份额。"
+      ],
+      "why": "十倍用量、两倍 token 份额和降价后收入不减是明确增量，足以把近期模型价格调整写成商业竞争，而不是再报一次版本更新。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "How Six AWS Engineers Rebuilt Bedrock to Challenge Microsoft",
+      "url": "https://www.theinformation.com/articles/six-aws-engineers-rebuilt-bedrock-challenge-microsoft",
+      "reason": "发布时间早于本期 The Information 接续点，且已作为 09-08 金牌发布。"
+    },
+    {
+      "title": "OpenAI Says Its AI Agents Solved Prize Math Problem",
+      "url": "https://www.theinformation.com/briefings/openai-says-ai-agents-solved-prize-math-problem",
+      "reason": "与 09-08 已报的数学 Agent 作弊与吹哨主线高度重叠，只是同一争议的简讯转述。"
+    }
+  ]
+}

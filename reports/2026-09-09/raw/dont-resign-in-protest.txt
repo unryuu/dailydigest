@@ -1,0 +1,741 @@
+URL: https://www.lesswrong.com/posts/6j3kBHdowGLCeqobg/dear-god-please-don-t-resign-in-protest
+FINAL: https://www.lesswrong.com/posts/6j3kBHdowGLCeqobg/dear-god-please-don-t-resign-in-protest
+TITLE: Dear God, Please Do Not Resign In Protest — LessWrong
+FETCHED: 2026-09-09 22:05:17
+============================================================
+x
+Dear God, Please Do Not Resign In Protest — LessWrong
+Personal Blog
+199
+Dear God, Please Do Not Resign In
+Protest
+by
+Kabir Kumar
+7th Sep 2026
+2
+min read
+46
+199
+Just refuse to work on bad things and see if they fire you. There's not much time left for resumes to matter. Also, firing someone for refusing to work on bad things is actually very costly.
+If it's not obvious that you're working on bad things, but the company is obviously doing broadly bad things, consistently, just refuse to work at all until those change. E.g. if at Anthropic or OpenAI, refuse to work until training runs stop
+Some, such as Mateusz
+may say
+: "They would fire you after a month or two and the firing wouldn't have the same social effect as voluntary quitting of, say, Daniel Kokotajlo or Richard Ngo."
+I understand why it may feel that way, but I disagree very strongly, I predict it would have much
+more
+of a social effect.
+"They fired him because he refused to help AI capabilities"
+"They fired him because he didn't want to work on bad policies"
+etc, much bigger headlines.
+Also, I think you may not be factoring in the extent to which there is a
+cost
+to the company executives to be
+seen
+as firing someone. Especially someone who is refusing to work on moral grounds and has already proven themselves to be high status, respected, etc.
+And
+especially
+how it would look to the other employees if they refused to even
+listen
+to the striking employee before firing them or refused to even negotiate at all.
+The company leadership try to present themselves as very thoughtful, sincere, doing their best, etc. This is a large part of why many of the most talented people are there.
+Imagine for a second that one of the people on
+your
+team said "Mateusz, everyone else on the team,
+I'm not going to work
+on this
+because I think it's morally wrong".
+And then you fire them.
+What would the other teammates think? What would they think of
+you
+? What would happen to their trust in you? What would happen to the trust that
+investors
+have in you? Or funders?
+Obviously bad things. So obvious that you wouldn't even do it. You'd talk with them instead, see what could be changed, so that they feel better and this is less of a risk. So something would actually change in the company, to better reflect the employee's values, or you suffer a huge blow to your image and your employees trust in you.
+And this would then mean that the other teammates know
+they
+can also do this.
+Some may ask "would this give teammates courage or 'set an example'?". Even if it 'sets an example', it will do so in the short term, until the next moral outcry comes, where people get some courage again. And, more critically, they would much less believe in the nice things that the leadership say, the moral image they build.
+And even better than quitting - there's a much, much lower chance of the protesting employee, who has moral courage, being replaced by one who has less moral courage.
+Also, this is a much, much, much costlier signal. It's much harder to get funding to start a new lab, join Anthropic, etc, if you're known to be someone who might just stop working one day because you don't believe in it.
+And this matters. People see that. Your colleagues see that. Journalists see that. Regular people see that.
+Think of Daniel Kokotajlo refusing to sign the NDA and losing out on a lot of money because of it. It was a very very costly signal. And it's mattered and been trusted more because of that.
+Refusing to work and taking on expensive cost and risk every day that you do so, is a much bigger cost
+and
+signal.
+Dear God, Please Do Not Resign In Protest
+66
+Neel Nanda
+15
+Joseph Miller
+11
+Neel Nanda
+65
+habryka
+6
+leogao
+2
+habryka
+2
+leogao
+2
+habryka
+2
+leogao
+4
+keltan
+2
+Elliott Thornley
+2
+habryka
+2
+Elliott Thornley
+1
+Kabir Kumar
+52
+Raemon
+47
+cata
+24
+sjadler
+4
+cata
+13
+Connor Williams
+1
+Caelum Forder
+31
+Eli Tyre
+27
+leogao
+7
+Yair Halberstadt
+3
+Eli Tyre
+29
+jacquesthibs
+3
+jacquesthibs
+1
+Caelum Forder
+18
+MichaelDickens
+10
+Linch
+5
+Kabir Kumar
+3
+Leksu
+15
+cousin_it
+13
+Thane Ruthenis
+12
+Kabir Kumar
+2
+Kabir Kumar
+7
+RHollerith
+6
+WillPetillo
+5
+Vaniver
+5
+Eli Tyre
+4
+Leksu
+4
+Tyler Henderson
+4
+RedMan
+2
+Mikhail Samin
+2
+Mateusz Bagiński
+1
+MellowIrony
+1
+Canaletto
+0
+Connor Williams
+46
+Comments
+46
+Personal Blog
+199
+New Comment
+46 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 2:05 PM
+[
+-
+]
+Neel Nanda
+2d
+66
+40
+I feel like
+the main reason to quit is because you think you can have more impact elsewhere (or can have a bunch of impact in the act of quitting)
+. My guess is that in most cases, someone refusing to work on capabilities work would not be fired, but might be somewhat sidelined, wouldn't have that much influence, and be somewhat socially uncomfortable. The company is unlikely to make someone a safety martyr by firing them if they can just have a less useful employee around instead (and if said employee is doing safety work, that's typically pretty good from the company's perspective)
+Reply
+2
+[
+-
+]
+Joseph Miller
+13h
+15
+11
+If they don't fire you, sit outside and
+join the protest
+.
+Reply
+[
+-
+]
+Neel Nanda
+9h
+11
+7
+That plan seems more reasonable! Being a current employee of an AGI lab will make protesting and other comms things notably more effective. I do expect loudly quitting in protest to be even more effective though (see eg Jacob Coxon today)
+Reply
+[
+-
+]
+habryka
+1d
+65
+63
+"They fired him because he refused to help AI capabilities"
+"They fired him because he didn't want to work on bad policies"
+Ok, but they probably just won't fire you.
+The labs have infinite money, they can just sideline you in the organization, give you some sinecure position, while waiting on you to make a mistake that allows them to fire you right after you made some gaffe that actually makes that seem reasonable. Choosing the context for your own exit is a powerful tool!
+Reply
+3
+1
+[
+-
+]
+leogao
+10h
+6
+0
+how would you distinguish this from a null hypothesis of gaining influence inside companies being hard in general for mundane reasons?
+Reply
+[
+-
+]
+habryka
+9h
+2
+0
+I think I am failing to parse the argument structure. I was mostly reasoning here from first principles and a broader model of labs acting strategically in their interest. What's the hypothesis I am proposing here?
+Reply
+[
+-
+]
+leogao
+7h
+2
+0
+the hypothesis is that people who refuse to work on capabilities will be given no power, even if they are otherwise treated well. but if you are at an ai lab and have no power, should you conclude that this is because you fundamentally can never gain power (your hypothesis), or that in general gaining power requires you to be pretty competent in ways that are rare and therefore most people will have no power anyways (the null hypothesis)
+Reply
+[
+-
+]
+habryka
+7h
+2
+0
+the hypothesis is that people who refuse to work on capabilities will be given no power, even if they are otherwise treated well.
+Is this... my hypothesis? My hypothesis is just that if you are already planning to quit and think working at the lab you are at is bad, then the strategy of "refuse to work on capabilities, or anything at all, and try to goad the lab into firing you" will work worse than choosing the time you resign carefully (this post has also aged particularly badly, since
+Jacob Coxon's resignation
+is approximately the biggest AI safety news story in terms of public attention, probably in attention just behind Huggingface).
+Reply
+[
+-
+]
+leogao
+5h
+2
+0
+oh sure. if you've already decided you want to quit, then you should just quit.
+Reply
+[
+-
+]
+keltan
+11h
+4
+0
+waiting on you to make a mistake that allows them to fire you right after you made some gaffe that actually makes that seem reasonable.
+Maybe this doesn't work because of NDAs, but perhaps the employee could make high level details of their protest common knowledge within our community? Any firing of that person would then be seen as suspicious.
+Reply
+[
+-
+]
+Elliott Thornley
+7h
+2
+0
+they probably just won't fire you
+Seems like they probably would if you started trying very hard to convince other employees to down tools?
+Reply
+[
+-
+]
+habryka
+7h
+2
+0
+I of course agree that if you are disruptive enough internally then you can get fired, but in that case I think you are more likely to harm people taking these risks seriously, and that would create almost exactly the kind of pretense I was warning here about.
+Reply
+[
+-
+]
+Elliott Thornley
+7h
+2
+0
+Why do you think it would harm other people taking the risks seriously? I'm thinking that if an employee tries to persuade others to down tools and the lab responds by sidelining other safety-minded people, that would look very bad for the lab.
+It also seems like there must be
+some
+way to try to persuade other employees such that (i) you're a big enough nuisance that the lab fires you, and (ii) it's obvious that you're getting fired for your safety advocacy rather than for some other reason.
+If that turns out not to be the case, you can always quit later.
+Reply
+[
+-
+]
+Kabir Kumar
+13h
+1
+-4
+Ok, but they probably just won't fire you.
+I'd bet against that happening
+Reply
+[
+-
+]
+Raemon
+1d
+52
+43
+I think "stop doing harmful work until you are fired, instead of quitting" is fairly compelling.
+But, I do think most people working on prosaic safety are mostly doing harm.
+If you don't have a particular story for how what you're doing scales to superalignment*, I a) don't think you're solving particularly important problems in the nearterm, b) in the medium term, mostly making it marginally faster to roll out stronger capabilities, which is bad because it's burning calendar time for serial research time, and solving the
+legible
+problems leaving the illegible ones.
+Reply
+[
+-
+]
+cata
+12h
+47
+21
+Today there was an example where an ordinary research engineer, Jacob Coxon, quit and tweeted that he quit, and that alone apparently warranted an article in the WSJ, which I would not have expected. See
+https://www.wsj.com/tech/ai/anthropic-researcher-quits-over-out-of-control-ai-fears-707b7628
+.
+This suggests that quitting for moral reasons seems like unusually important new information to people outside the AI bubble. It seems to me that probably means that it's more useful than communicating similar info only to coworkers by taking a principled approach inside.
+Reply
+1
+[
+-
+]
+sjadler
+8h
+24
+4
+Nit, but I would clarify: his quitting and tweeting about it didn't
+happen to
+warrant an article in the WSJ. Articles like that have an associated lead-time, and so he first had to find an interested journalist who would write the story, then time his quitting/tweeting to their release of the story
+That is: I would not expect another employee quitting spontaneously to get an article like this, without having done a media engagement strategy ahead of time.
+If someone is going to quit, please try to line up a good media opportunity to pair it with
+, not just shoot from the hip! An exclusive like that is juicy; but merely covering it once it's already happened (and anyone could write the same story about it) is much less enticing
+Reply
+1
+[
+-
+]
+cata
+7h
+4
+1
+Thank you for this info, I was not media savvy enough to know that he had to seek out the coverage and line up the timing; I figured maybe there was just a WSJ reporter on the "reading Twitter for AI news" beat who thought it was interesting and banged out a column. I think that makes it weaker evidence.
+Reply
+[
+-
+]
+Connor Williams
+11h
+13
+0
+Coxon's resignation also led to Evan Hubinger, an 'Alignment Science lead' at Anthropic [I'm not sure if he's
+an
+alignment science lead or
+the
+alignment science lead, to be clear] to say:
+"Jacob is correct here—we really do earnestly believe AI could kill all humans! I personally think it is >10% within the next decade. I believe Anthropic is trying its best, but we do not yet have a plan to solve alignment for superintelligence and are not clearly on track to." (
+source
+)
+This is very useful information - it's important and relevant for the world to know that frontier AI employees in such a position believe this sort of thing! And Anthropic is notably secretive compared to the leading AI companies in terms of how much we know about what their employees think. So Coxon's departure was valuable not just for its own sake (and direct coverage thereof), but for eliciting additional info from other employees.
+Reply
+[
+-
+]
+Caelum Forder
+20m
+1
+0
+I feel this is the strongest case for quitting, so long as you have the media lined up to cover your departure.
+Reply
+[
+-
+]
+Eli Tyre
+1d
+31
+3
+I upvoted this, mainly on the strength of the suggestion of the first paragraph. That's maybe a better strategy, and I want to promote it to attention.
+I don't endorse it as a recommendation, because I just don't know, man.
+I think that in the typical case
+working for an AGI company is probably evil
+(though it's complicated and so I might just turn out to be wrong about that, given the hindsight of the future).
+It seems pretty surprising if people broadly shouldn't go to work at AGI companies in the first place, but that if such people happened to have already done that, and suddenly conclude that what the company is doing is bad, that they should then do something other than leave?
+Or are they now, having already worked there for some years, in a different situation because they have credibility within the company?
+Does that imply that people should (if they have the psychological resilience to actually follow through, which ANACT approximately no one does), they should start working at a company, do what they're told for n months to build credibility , and then when their n-month timer rings, switch to refusing to do work that they think is harmful?
+Or is the implication that someone who does not yet work for OpenAI should get hired by OpenAI, and from day one, refuse to do work that they think is harmful?
+Is there a coherent policy of how to relate to the AI companies here?
+Reply
+1
+1
+[
+-
+]
+leogao
+1d
+27
+0
+when i first joined openai, on day one i was already committed to not working on anything harmful (including capabilities). for various reasons, i think i had an unusual experience (openai culture was different back then, my first manager was extremely chill, i already had a reputation in ML, etc). but it's a useful data point.
+Reply
+1
+[
+-
+]
+Yair Halberstadt
+1d
+7
+5
+I think in terms of preventing x risk, it's clearly a better strategy than quitting.
+However joining a company with intention to do this is clearly dishonest, and when in doubt, I think it's best to take the Kantian view on dishonesty - second order impacts of normalising such behaviour usually outweighs first order benefits.
+Reply
+1
+[
+-
+]
+Eli Tyre
+1d
+3
+0
+Agreed. And I think it's at least sus to endorse a set of actions, on the condition that that person's intentions sincerely change part way through, if, had they taken the literal same actions as part of a coherent plan, we would think they're doing something deontology-violating.
+That creates an incentive to self-deceive about about your intentions, and onlookers should promote the hypothesis that you are self-deceiving in this way.
+Reply
+[
+-
+]
+jacquesthibs
+1d
+*
+29
+13
+I don't find this convincing.
+Tons of people who left AI labs have left our world better off because of it (you can disagree on some, but the overall picture is there). Ex-lab employees have an unfair advantage in founding new organizations (research non-profits) because they have the credibility and status to secure funding. Many high-profile AI safety non-profits were founded by ex-lab employees!
+Examples:
+Miles Brundage (AVERI)
+Daniel Kokotaljo (AI Futures Project)
+Alex Turner (his work will surely be more impactful on the outside, likely already has been)
+Steven Adler, Page Hedley (Guidelight)
+Jeffrey Ladish (Palisade Research)
+Geoffrey Irving (Resolution, UK AISI)
+Paul Christiano, Jacob Hilton (ARC)
+Jade Leung (UK AISI)
+Geoffrey Hinton (!)
+Gretchen Krueger (Evitable)
+Beth Barnes (METR)
+Many more...
+If it's so costly for labs to fire employees for not doing x work, then they'll likely just not do it and, as Habryka said, wait until a firing looks bad on the employee, not on them.
+In addition, their outside takes can be treated as more trustworthy (in general) and generate more momentum to pause.
+Lastly, their inside knowledge of how frontier labs work can be valuable at many external organizations, including third-party auditors.
+Reply
+1
+[
+-
+]
+jacquesthibs
+12h
+*
+3
+1
+I would appreciate comments or emojis explaining why this got disagree votes and negative karma (edit: it was at -2 karma / -7 agreement when I posted this comment, 12 hours after posting) despite imo effectively making similar points to Neel and Habryka.
+Reply
+[
+-
+]
+Caelum Forder
+34m
+1
+0
+And how many have gone on to try and start new organizations and failed? there's a pretty big sampling bias involved here. They'll be 'stealth' on linkedin until it works out or they join somewhere else. What do you think the ratio would be for people who worked at the labs in any capacity? I'm not confident to say, but I'm feeling like 1 in 30 will have made a sustainable organization. Probably important to identify what counts as "the labs" vs the much broader number of positions where you could be tasked with something harmful.
+When you leave to become a founder, you're also making the capital system more directly your boss, you have more freedom to search over a larger space, but depending on who your connections are and who you're involved with, you could be in pretty similar situations and easily end up coping about how your approach is really net positive (Anthropic, METR (Come on it is obvious that making a benchmark on harmful goodness would just promote harmful goodness! These people are so smart, cope is so powerful))
+I'm actually not convinced either, though I am intrigued and not not convinced. Maybe this actually gives the people above you in the organization more agency to not be enslaved by technocapital, if they are in a "yeah but it is what it is" stance about the matter you're leaving over, imagine how different the scenarios are with 3/20 reports leavers vs soft strikers.
+This is also has an interesting effect on allowing for a mass of people to build up. If you leave, or make an ultimatum, it could be a case that your line was crossed, and another person's line will be crossed in a few weeks, and so on, but if you each of them hang around, the incentives to not do harmful things pile up
+Reply
+[
+-
+]
+MichaelDickens
+2d
+18
+10
+Saw the title and was about to disagree but
+Just refuse to work on bad things and see if they fire you.
+Yeah this is an underrated strategy. Refusing to work on bad things likely has an outsized effect on internal company culture.
+Reply
+[
+-
+]
+Linch
+2d
+10
+3
+My guess is that it would not be obvious for someone within the system which work tasks are "bad things." It's not obvious from the outside and my guess is that it'd be unobvious from the inside either.
+Reply
+1
+[
+-
+]
+Kabir Kumar
+1d
+5
+3
+If not obvious but the company is obviously doing broadly bad things, consistently, just refuse to work at all until those change. E.g. if at Anthropic or OpenAI, refuse to work until training runs stop
+Reply
+[
+-
+]
+Leksu
+22h
+3
+2
+I think something like this ~fixes the ambiguity and corporate sidelining issues people are commenting about. I also expect it's the kind of thing you had in mind when writing: perhaps worth adding a note at the beginning and/or end of the post about how one might protest from within while being legible, and possibly while being as public
+[1]
+as someone who quits in protest?
+^
+As a sidenote I'd want to know the extent to which an employee vs an ex-employee can be held legally liable for their protest-y actions and words
+Reply
+[
+-
+]
+cousin_it
+2d
+15
+14
+Yeah. I think this is good advice (though anyone following it should prepare themselves for a few stressful months: being pressured by management, becoming a rumor target, gaslit, accomplishments minimized etc). And your algorithmic liability plans are also really good. One of the few "rays of light" lately.
+Reply
+[
+-
+]
+Thane Ruthenis
+1d
+13
+4
+Probably-unhelpful side-comment:
+Going off the title, I expected that this post was going to be about imploring God not to abandon this universe despite what people are doing in it.
+Reply
+5
+[
+-
+]
+Kabir Kumar
+2d
+12
+0
+Shout out to
+@leogao
+Reply
+[
+-
+]
+Kabir Kumar
+2d
+2
+0
+also, thanks to
+@Mateusz Bagiński
+, whose comment inspired me to finally write down most of these words
+Reply
+[
+-
+]
+RHollerith
+1d
+*
+7
+2
+This post offers only a handful of vague category labels — "bad things," "bad policies," "AI capabilities," "morally wrong" — but no definition or operationalization of any of those terms and no example of a task that straddles the border between "morally acceptable" and "morally wrong".
+The considerations in this post are unimportant IMHO compared to the important task of choosing (as a community) and then promoting / advertising a standard of conduct, then discussing tactics and strategies for pressuring researchers, engineers, entrepreneurs, investors, etc, to adhere to that standard of conduct. Since the number of AI engineers and researchers is low compared to the number of adults in general, any standard not comprehensible or legible to an adult who is paying attention, but is not an AI researcher or engineer would be an unsatisfactory, ineffective standard.
+I personally doubt that it should be acceptable according to our movement's
+standard of conduct to be employed by or take money from a big AI lab at all — whether or not for a "safety" role or a charitable mission — but of course I don't get to decide the standard — the community as a whole does.
+It is time for the anti-extinctionism community to start to use effective social measures to oppose the AI labs. The benefits of doing so will outweigh the negative effects of the defensive reaction the measures will provoke. In particular, it relatively unimportant for more information about the labs to be published: anyone who cannot be persuaded that AI research is a potent extinction risk using the information already in the public domain won't be persuaded by any new information out of the labs.
+One social measure we need to start to use is pressuring and forcing people to
+pick a side
+. In order to start to do that, we first need to define as a community what standard of conduct will be required for someone to be a member in good standing of our movement.
+Reply
+1
+[
+-
+]
+WillPetillo
+1d
+6
+7
+Another alternative strategy to just quitting: become the point-person for organizing a union. Employees won't necessarily care about safety, but having another locus of power in the company besides just shareholders could substantially increase leverage along values other than short-term profit maximizing. And if you get fired for organizing, that seems like it would net extra martyr points.
+Reply
+2
+1
+[
+-
+]
+Vaniver
+17h
+5
+6
+For years I've thought people should consider the strategy of joining labs to only work on things-good-for-the-world, and people at labs staying to work on those things also seems promising. But I think I mostly don't buy this at present margins. Sodom and Gomorrah aren't destroyed until Lot leaves, and every respectable person who sticks around not committing any crimes themselves is acting as cover for the organization that is happily committing crimes. Resign today.
+Reply
+[
+-
+]
+Eli Tyre
+1d
+5
+4
+Imagine for a second that one of the people on
+your
+team said "Mateusz, everyone else on the team,
+I'm not going to work
+on this
+because I think it's morally wrong".
+Isn't it kind of important for the impact of this statement that the "on this" is also bolded?
+If you say "I'm not going to work", you're in fact being very annoying, and not doing your job, and I sympathize with your boss for firing you for not doing your job.
+If you say "I'm not going to work
+on this
+", then you are correspondingly more reasonable?
+Reply
+[
+-
+]
+Leksu
+22h
+4
+5
+People have different expectations on how this'd go
+→
+perhaps some people who'd otherwise quit should try variations of protesting without quitting so that we can be more informed
+Reply
+[
+-
+]
+Tyler Henderson
+1d
+4
+2
+I don't think this works so cleanly for most safety positions? Usually what you are being asked to do (for the pay you are presumably accepting if you haven't quit) is not something obviously evil that will make a clean headline, or something the company will conveniently announce to the media.
+If you work for OpenAI, in an AI safety position, you are probably being tasked to do "safety work" even if it is only prosaic safety work. If you refuse to work on the general principals of how the company is working, they probably wait until a convenient quarter, and fire you for refusing to work, and even if you tell people it was because of the general direction of the company,
+they can justifiably day you were simply refusing to work on anything and I don't think you will have as much impact as quitting at an opportune moment that actually signals that it was specific choices or outcomes that triggered your quitting.
+Reply
+1
+[
+-
+]
+RedMan
+1d
+4
+0
+The experience of covid vaccine refusers was that forcing their employer to fire them or their apartment to evict them was a much more effective form of resistance than quitting or moving on their own.
+Also, if you're an expert and you're in a job with a lot of discretion, when tasked to work on something you disagree with, just nod your head and go back to doing what you want to do.
+Reply
+[
+-
+]
+Mikhail Samin
+2h
+2
+0
+I think this is falsified by
+https://x.com/hilbertspaess/status/2097476196791709843?s=20
+.
+Reply
+[
+-
+]
+Mateusz Bagiński
+5h
+2
+0
+I am now less certain about my comment that sparked this post (especially about the "fire you after 1 or 2 months" part), but I remain rather unconvinced about the cluster of strategies you're suggesting here.
+I would update more strongly if I saw side-by-side-ish examples of something like what you're proposing vs quitting loudly from harmful industries (tobacco? lead gasoline? social media clusterfuckery?). Admittedly, they might be difficult to find.
+I think the best reasons to stay are (1) you can do good/beneficial work on the inside; and (2) you can try to influence the culture from the inside. (1) can work for some people, but it seems to me like they are — god bless them — an anomaly. I don't expect (2) to reliably have a strong enough effect.
+There's also the issue of working in this sort of environment warping your epistemics a lot, for a combination of reasons, which gives you an additional reason to quit in order to reason more clearly about what would be good for you to do. Again, some people are fairly immune to this, but, again, I expect them to be an anomaly, and most people underestimate the extent to which social reality warps their cognition.
+@Richard_Ngo
+had a tweet about his personal experience of this, a few months/weeks after quitting OpenAI, saying something like, "I thought I could think clearly, even while I was working there, but oh man, I was wrong.".
+ETA:
+If someone thinks they have good reasons to think that they would achieve a better effect in this way, then I'm very happy for them to try.
+ETA2:
+I'm also concerned that "just" having "safety people" on the inside acts as a form of safetywashing.
+Reply
+[
+-
+]
+MellowIrony
+2h
+1
+0
+Perhaps even more impactful (but much riskier!) than loudly refusing to work: quietly undermining the bad work.
+If you are trusted with important projects that you disagree strongly with, that seems like a unique opportunity to gum up the works à la
+Simple Sabotage Field Manual
+: slow-walk progress while getting people to believe a breakthrough is just around the corner, pick less competent team members for the more difficult parts of the project, add highly burdensome bureaucracy in response to minor mishaps...
+Full disclosure, I don't think I would have the chutzpah to attempt this. You'd need to make sure none of your acts of resistance is flashy enough to get headlines or get you sued if found out. And even so, it could require taking your motivations to the grave lest you tarnish the cause. But (alongside WillPetillo's fascinating suggestion to try to organize a union) it's another option on the table.
+Reply
+[
+-
+]
+Canaletto
+17h
+1
+0
+I actually read the title of this post as directed to The God and urging it to not resign, as a maybe philosophical position that existence of everything that currenly exists is better than non existence, or maybe some incremental improvements are better or something.
+Reply
+[
+-
+]
+Connor Williams
+1d
+*
+0
+-1
+My strong sense is that almost all tasks at OAI/
+Anthropic
+are bad to work on.
+That would mean essentially getting fired for refusing to do work at a company that is paying you comical amounts of money. Will this in fact have more leverage/cachet/newsworthiness than someone like Kokotajlo
+or Ngo
+if/when it comes out that you were basically sandbagging?
+[Edit: I guess I was thinking more about people newly joining OAI/Anthropic intending to "do good" there. I've realized my analysis doesn't account for people who are already there, especially those with long tenures.]
+[This comment is no longer endorsed by its author]
+Reply
+2
+Moderation Log
+More from
+Kabir Kumar
+View more
+Curated and popular this week

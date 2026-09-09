@@ -1,0 +1,48 @@
+# group-1：中国提高人形机器人上市门槛
+china-humanoid-ipo|https://www.theinformation.com/articles/china-curbs-humanoid-ipos-unitrees-volatile-debut
+
+# group-2：AI 改变网络安全预算
+ai-cybersecurity-budgets|https://www.theinformation.com/articles/ai-threats-reshaping-companies-spend-cybersecurity-budgets
+
+# group-3：Gimlet 三档融资
+gimlet-three-tranche|https://www.theinformation.com/newsletters/dealmaker/gimlets-three-tranche-deal-reveals-ai-funding-frenzy
+
+# group-4：普通人何时感到 AI 影响
+average-people-ai-impact|https://www.interconnects.ai/p/when-will-average-people-feel-ais
+
+# group-5：Astra 隐藏推理
+astra-no-cot|https://www.lesswrong.com/posts/FsCkkoGsNmPzFKRhg/gpt-6-astra-can-do-a-lot-of-multi-hop-reasoning-without
+astra-looped-transformers|https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and
+
+# group-6：Hugging Face 机器人业务
+huggingface-robotics|https://www.theinformation.com/newsletters/applied-ai/hugging-face-making-big-robotics-push
+
+# group-7：模型降价与 Anthropic 上市叙事
+anthropic-price-war|https://www.theinformation.com/newsletters/the-briefing/price-cuts-may-rattle-anthropics-ipo-pitch
+
+# group-8：ChatGPT Images 2.5
+chatgpt-images-25|https://openai.com/index/introducing-chatgpt-images-2-5/
+chatgpt-images-25-simon|https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25
+
+# group-9：GLM-5.3 开放权重与许可证
+open-model-artifacts-24|https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3
+
+# 无牌长文与论文
+qwen38-quantizations|https://quesma.com/blog/qwen38-27b-quantizations-benchmarked
+token-kill-switches|https://www.lesswrong.com/posts/ZqFD6HzrhZdMFxoqn/where-are-the-token-level-llm-kill-switches
+exploration-hacking|https://www.lesswrong.com/posts/xjwtNid2xjqSJWB7z/exploration-hacking-in-ai-debate-initial-empirics-and
+slop-vestigators|https://www.lesswrong.com/posts/wt4kk6vFPEhkXvF8Q/how-good-are-slop-vestigators
+training-on-probes|https://www.lesswrong.com/posts/gHFCgrvfxQtaEnJye/training-on-probes-what-s-going-on
+
+# 官方公告与简讯
+meta-muse|https://ai.meta.com/muse
+mercury-25|https://www.inceptionlabs.ai/blog/introducing-mercury-2-5
+openai-quantum|https://openai.com/index/codex-quantum-computing-experiments
+hy4-preview|https://huggingface.co/tencent/Hy4-preview
+
+# 乐子汇总
+i-have-adhd|https://github.com/ayghri/i-have-adhd
+build-a-printer|https://nishantjosh.dev/blogs/how-to-build-a-fking-printer
+tweet-public-domain|https://blog.ericgoldman.org/archives/2026/09/tweet-and-the-bird-logo-apparently-enter-the-public-domain-but-x-maintains-its-grip-on-the-twitter-mark-for-now-x-v-project-bluebird.htm
+anthropic-equity-sale|https://www.lesswrong.com/posts/ptirZBteKd3o4FAFe/most-anthropic-equity-that-will-ever-be-used-for-longtermist
+dont-resign-in-protest|https://www.lesswrong.com/posts/6j3kBHdowGLCeqobg/dear-god-please-don-t-resign-in-protest

@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-09",
+  "scanned_at": "2026-09-09T21:05:00+08:00",
+  "window": "常规七源从 2026-09-08T22:22:00+08:00 接续；Eric Provencher 首次按 36 小时窗口补扫",
+  "route": "机械 Nitter 抓取失败后，Codex 内置浏览器登录态补扫 X",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "failed",
+      "result": "登录态存在，但个人页连续返回 Something went wrong，重试仍无法加载帖子。"
+    },
+    {
+      "handle": "goodside",
+      "status": "not_scanned_after_shared_failure",
+      "result": "与其他账号共用同一登录态 X 接口；首个账号重试失败后未重复请求。"
+    },
+    {
+      "handle": "karpathy",
+      "status": "not_scanned_after_shared_failure",
+      "result": "与其他账号共用同一登录态 X 接口；首个账号重试失败后未重复请求。"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "not_scanned_after_shared_failure",
+      "result": "与其他账号共用同一登录态 X 接口；首个账号重试失败后未重复请求。"
+    },
+    {
+      "handle": "pvncher",
+      "status": "not_scanned_after_shared_failure",
+      "result": "首次 36 小时窗口补扫未能执行；个人页与 Articles 均留待 X 接口恢复后补扫。"
+    },
+    {
+      "handle": "tszzl",
+      "status": "not_scanned_after_shared_failure",
+      "result": "与其他账号共用同一登录态 X 接口；首个账号重试失败后未重复请求。"
+    },
+    {
+      "handle": "sama",
+      "status": "not_scanned_after_shared_failure",
+      "result": "与其他账号共用同一登录态 X 接口；首个账号重试失败后未重复请求。"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "not_scanned_after_shared_failure",
+      "result": "与其他账号共用同一登录态 X 接口；首个账号重试失败后未重复请求。"
+    }
+  ],
+  "items": [],
+  "excluded": [],
+  "failure_note": "八个机械 X／Nitter 源均连接重置；登录态 x.com 能确认账号仍已登录，但个人页数据接口失败。常规七源继续保留 2026-09-08T22:22:00+08:00 接续点，pvncher 的首次 36 小时窗口也不视为已覆盖。"
+}

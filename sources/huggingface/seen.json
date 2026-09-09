@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/tencent/Hy4-preview",
+  "title": "腾讯放出 Hy4-preview，旗舰开放模型继续做大",
+  "date": "Tue, 08 Sep 2026 14:15:25 GMT",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
   "id": "https://huggingface.co/blog/ARTPARK-IISc/a-real-world-dataset-for-noise-robust-speech-ai",
   "title": "Vaani 为 58 种印度语言标注真实噪声",
   "date": "2026-09-08",

@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25",
+  "title": "Simon Willison 的 API 试用",
+  "date": "2026-09-08T22:46:33+00:00",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
   "id": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
   "title": "Linux 内核网站的算力主要花在伺候爬虫",
   "date": "2026-09-07T23:08:58+00:00",

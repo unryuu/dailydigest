@@ -1,0 +1,97 @@
+URL: https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25
+FINAL: https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25/
+TITLE: Introducing ChatGPT Images 2.5
+FETCHED: 2026-09-09 22:04:33
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+Portnox — Shadow AI is the new shadow IT. On Sept. 10, Forrester Research and Portnox share practical steps to regain AI agent visibility, access management, and policy enforcement.
+Register today
+8th September 2026 - Link Blog
+Introducing ChatGPT Images 2.5
+. OpenAI's image generation models are apparently used "more than 3 billion images across ChatGPT Images and the GPT‑Image models in the API". This latest release improves their instruction-following ability across multiple turns, responds faster, and "is better at preserving the subjects in your reference photos".
+There are two new model IDs in the API:
+gpt-image-2.5-sunburst
+and
+gpt-image-2.5-flare
+. Based
+on this
+I think Sunburst is the stronger option:
+Choose Sunburst for workflows where editing precision matters most, and Flare for fast, high-quality everyday image generation.
+I
+upgraded
+my
+openai_image.py
+CLI tool to support passing in one or more reference images, so now this works:
+uv run https://tools.simonwillison.net/python/openai_image.py \
+'
+add a raccoon scientist studying the chart thoughtfully
+'
+\
+ -i https://static.simonwillison.net/static/2026/openai-agent-usage.webp \
+ -m gpt-image-2.5-sunburst
+This is the
+original image
+, and here's what I got back from that prompt to "add a raccoon scientist studying the chart thoughtfully":
+Posted
+8th September 2026
+at 10:46 pm
+Recent articles
+The Pelican comparison grid for Astra is pretty interesting
+- 4th September 2026
+OpenAI's rogue agents were caught communicating via public wikis
+- 4th September 2026
+Claude's new system prompt really doesn't want to reproduce song lyrics
+- 2nd September 2026
+This is a
+link post
+by Simon Willison, posted on
+8th September 2026
+.
+tools
+76
+ai
+2,223
+openai
+461
+generative-ai
+1,969
+uv
+100
+text-to-image
+47
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

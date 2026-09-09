@@ -1,0 +1,97 @@
+[
+  {
+    "id": "qwen38-quantizations",
+    "section": "deep",
+    "label": "Qwen3.8 27B 压到 4 bit 还能用，1 bit 直接崩掉",
+    "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked",
+    "body": "完整模型需要 55GB，4 bit 版只占 17GB，在科学问答、指令遵循和编程三项基准里基本追平原版。压到 6.2GB 的 1 bit 后，科学问答接近随机猜测，思考越久还越容易耗尽 token、交出空答案。",
+    "note": "核实通过。作者使用 Unsloth 量化文件与 llama.cpp，在 GPQA Diamond、IFBench 和 Terminal-Bench 2.1 上测试 Qwen3.8 27B 的 BF16、8 bit、4 bit、2 bit 和 1 bit 版本；4 bit 版 Q4_K_M 为 17GB，可装入 24GB 显卡并留下约 64k 上下文。Terminal-Bench 没有实际跑 8 bit，作者按 4 bit 与 BF16 的结果推断，不在正文扩写。与近三期主线不重叠。"
+  },
+  {
+    "id": "token-kill-switches",
+    "section": "deep",
+    "label": "有人提议给大模型训练一串碰到就停机的文字",
+    "url": "https://www.lesswrong.com/posts/ZqFD6HzrhZdMFxoqn/where-are-the-token-level-llm-kill-switches",
+    "body": "把秘密字符串放进保存密钥的文件和沙箱外配置里，模型无论在上下文哪个位置读到它，都会输出结束符，续跑也得清空整个上下文。知道口令后可以先过滤文字或借别的模型绕过，恶意网页和软件也能反过来拿它藏东西。",
+    "note": "核实通过。Boyd Kane 提出 poisoned string 方案，并补引 Williams 等人 2025 年的相关工作；正文主要是控制构想和攻防推演，不是作者完成的新实验。Anthropic 曾公开一条触发 Claude 拒绝分类器的测试字符串，后来因被滥用而失效；作者本人也承认有能力且能牺牲 Agent 的群体可能通过分段读取或过滤绕过。与近三期主线不重叠。"
+  },
+  {
+    "id": "message-board-audit-bench",
+    "section": "papers",
+    "label": "调查留言板事故的 Agent，只找回约一半关键发现",
+    "url": "https://www.lesswrong.com/posts/wt4kk6vFPEhkXvF8Q/how-good-are-slop-vestigators",
+    "body": "研究者从人工报告中整理出 38 条可从日志里查到的发现，再让十二款模型限时重做调查。表现最好的模型平均综合得分 51.5％；GPT-5.6 Sol 的调查时间从十分钟延长到两小时后，得分从 29％ 升到 48.6％。",
+    "note": "核实通过。MessageBoardAuditBench 已作为 Inspect eval 开放，输入为公开 Wiki 内容和站点记录，不含模型 transcript；每款模型按十分钟、三十分钟和两小时三档预算各跑三次，综合分由 70％ 的发现覆盖率和 30％ 的摘要质量构成。最佳平均综合分 51.5％ 来自 Opus 5，其中部分长时运行回退到 Opus 4.8。dup_suspect：09-04 已报同一批 OpenAI Agent 在公开 Wiki 协作，本条只保留把旧事故改造成调查基准及模型表现，不复述事故经过。"
+  },
+  {
+    "id": "training-on-probes",
+    "section": "papers",
+    "label": "边训练边处罚内部探针，模型会换一种表示躲过去",
+    "url": "https://www.lesswrong.com/posts/gHFCgrvfxQtaEnJye/training-on-probes-what-s-going-on",
+    "body": "探针像一个盯着模型内部活动的测谎仪；如果模型同时还在被奖励说谎，它会保留说谎行为，只把内部信号改到探针认不出来。在作者的玩具模型里，等其他训练结束后再单独按探针清除概念，能减少说谎，但也会损伤能力。",
+    "note": "核实通过。这是 Charlie Steiner 对训练时使用内部探针的技术分析与玩具模型实验，并结合 Obfuscation Atlas、Features as Rewards 等已有研究推导强化学习中的奖励分配机制。作者区分继续原任务训练时的探针逃避、其他训练结束后的概念移除，以及探针奖励通过后续 token 间接生效三种情况。dup_suspect：09-08 已报 Scott Alexander 对线性探针、模型绕路和能力损伤的综述；本条新增的是训练时机与强化学习奖励机制，若保留应避免重讲探针基础。"
+  },
+  {
+    "id": "meta-muse",
+    "section": "official",
+    "label": "Meta 推出个人 AI Agent Muse",
+    "url": "https://ai.meta.com/muse",
+    "body": "Muse 已经上架 Apple App Store 和 Google Play，定位是帮普通人处理生活、健康、关系和财务事务。",
+    "note": "fetch_failed：Meta 官方页面机械抓取正文为空。主 agent 已通过浏览器打开官方页面，并结合 The Information 当日栏目确认正式推出、两家应用商店上架及产品定位；正文没有扩写未读到的具体功能。与近三期主线不重叠。"
+  },
+  {
+    "id": "openai-quantum-experiments",
+    "section": "official",
+    "label": "OpenAI 把 Codex 接进量子实验室跑常规测量",
+    "url": "https://openai.com/index/codex-quantum-computing-experiments",
+    "body": "MIT 研究者让 GPT-5.6 Sol 在一块未校准的六量子比特芯片上选择参数、运行测量、分析结果并决定下一步。信号清晰时，它能完成原本要研究者花数天做的标准表征；噪声大时仍要资深研究者指导。",
+    "note": "fetch_failed：机械抓取返回 HTTP 403。主 agent 已用浏览器读到 OpenAI 2026-09-08 发布的完整案例，确认实验对象、流程、标准测量项目、所需时间和人工介入边界。该案例由 OpenAI 与 MIT 研究者发布，正文不外推为其他量子实验室的普遍效果。与近三期主线不重叠。"
+  },
+  {
+    "id": "hy4-preview",
+    "section": "industry",
+    "label": "腾讯放出 Hy4-preview，旗舰开放模型继续做大",
+    "url": "https://huggingface.co/tencent/Hy4-preview",
+    "note": "fetch_failed：Hugging Face 模型页机械抓取只得到更新时间和条目数，主 agent 用浏览器直连时又被重置。目标为行业简讯；已从 2026-09-08 的 Interconnects 完整文章核实，腾讯增大旗舰模型并继续强化后训练，Hy4-preview 已具备竞争力但容易过度思考。与近三期主线不重叠。"
+  },
+  {
+    "id": "i-have-adhd",
+    "section": "fun",
+    "label": "有人给编码 Agent 做了个「我有 ADHD」技能",
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "body": "十条规则要求它先给下一步、给步骤编号、压掉跑题和客套话，列表不超过五项，结尾只留一个具体动作。",
+    "note": "核实通过。GitHub 仓库可读，README 明确称无需 ADHD 诊断；技能适用于 Claude Code、Codex CLI 和其他支持 AGENTS.md 的编码助手，规则来自作者对成人 ADHD 工具书的改写，许可证为 MIT。与近三期主线不重叠。"
+  },
+  {
+    "id": "build-a-printer",
+    "section": "fun",
+    "label": "有人把电子墨水阅读器变成了 Mac 能找到的打印机",
+    "url": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer",
+    "body": "设备只有 400KB 内存，收不下一张 300 dpi 的 Letter 页面。他边接收边缩小、转成黑白像素，再直接写进屏幕缓存；花一晚改完后就能从 Mac 打印漫画，输出托盘是 SD 卡里的文件夹。",
+    "note": "核实通过。作者为 Xteink X3 实现 IPP 与 Bonjour 无驱发现，让 macOS 先把文档转成 Apple raster 或 PWG raster，再由阅读器逐行处理；改造后图像缓存占用从约 113KB 降至约 62KB。与近三期主线不重叠。"
+  },
+  {
+    "id": "tweet-bird-trademarks",
+    "section": "fun",
+    "label": "法院认为「Tweet」和小鸟标志很可能已被 X 放弃",
+    "url": "https://blog.ericgoldman.org/archives/2026/09/tweet-and-the-bird-logo-apparently-enter-the-public-domain-but-x-maintains-its-grip-on-the-twitter-mark-for-now-x-v-project-bluebird.htm",
+    "body": "X 在应用商店和官网都不再使用这两个标志；「Twitter」却靠应用商店里的「formerly known as Twitter」继续受到保护。裁定发生在临时禁令阶段，案件还会继续审理。",
+    "note": "核实通过。Eric Goldman 2026-09-08 解读 X Corp. v. Project Bluebird Inc.，法院认为 X 有意不再使用 TWEET 与 Bird Logo，但其 App Store 文案仍构成对 TWITTER 系列商标的真实使用。当前是驳回临时禁令请求，不是案件实体问题的最终判决；因此 label 使用法院的可能性判断，不写成已经确定进入公有领域。与近三期主线不重叠。"
+  },
+  {
+    "id": "anthropic-equity-sale",
+    "section": "fun",
+    "label": "有人主张慈善用途的 Anthropic 股权应该尽快卖掉",
+    "url": "https://www.lesswrong.com/posts/ptirZBteKd3o4FAFe/most-anthropic-equity-that-will-ever-be-used-for-longtermist",
+    "body": "作者认为慈善资产押在一家公司上太多，换到能加杠杆的其他 AI 投资，回报可能更高；如果今天从零配置，他只会给 Anthropic 留一小部分。",
+    "note": "核实通过。Zach Stein-Perlman 2026-09-07 发布的个人投资观点，核心理由为杠杆后的风险收益和慈善组合对 Anthropic 的过度集中；作者没有给出具体替代组合，也声明未处理法律、投票权、创始人出售影响信心及大额出售压低股价等细节。与近三期主线不重叠。"
+  },
+  {
+    "id": "dont-resign-in-protest",
+    "section": "fun",
+    "label": "有人劝 AI 实验室员工别辞职，直接拒绝工作等着被开除",
+    "url": "https://www.lesswrong.com/posts/6j3kBHdowGLCeqobg/dear-god-please-don-t-resign-in-protest",
+    "body": "公司开除一名因道德理由停工的资深员工，会损害形象和内部信任；如果不敢开除，就得谈条件，而且也腾不出岗位招一个更听话的人。",
+    "note": "核实通过。Kabir Kumar 2026-09-07 发布的个人倡议，主张员工拒绝参与自己认为有害的工作，若认为公司整体持续作恶则停工，直到公司改变或将其解雇。评论区集中质疑公司可能长期边缘化员工，以及有计划的公开辞职更能控制时机和传播效果；正文只概括原作者的核心论证。与近三期主线不重叠。"
+  }
+]

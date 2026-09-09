@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://blog.ericgoldman.org/archives/2026/09/tweet-and-the-bird-logo-apparently-enter-the-public-domain-but-x-maintains-its-grip-on-the-twitter-mark-for-now-x-v-project-bluebird.htm",
+  "title": "法院认为「Tweet」和小鸟标志很可能已被 X 放弃",
+  "date": "2026-09-09T06:02:07Z",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer",
+  "title": "有人把电子墨水阅读器变成了 Mac 能找到的打印机",
+  "date": "2026-09-08T21:22:11Z",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://github.com/ayghri/i-have-adhd",
+  "title": "有人给编码 Agent 做了个「我有 ADHD」技能",
+  "date": "2026-09-08T14:13:26Z",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://ai.meta.com/muse",
+  "title": "Meta 推出个人 AI Agent Muse",
+  "date": "2026-09-08T19:25:00Z",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked",
+  "title": "Qwen3.8 27B 压到 4 bit 还能用，1 bit 直接崩掉",
+  "date": "2026-09-08T14:49:19Z",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
   "id": "https://weirdgloop.org/blog/google-jail",
   "title": "独立 Wiki 为躲「Google 监狱」，搬去老域名寄居",
   "date": "2026-09-08T01:57:23Z",

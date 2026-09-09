@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://openai.com/index/codex-quantum-computing-experiments",
+  "title": "OpenAI 把 Codex 接进量子实验室跑常规测量",
+  "date": "Tue, 08 Sep 2026 17:00:00 GMT",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
+  "id": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+  "title": "ChatGPT Images 2.5 补上真正的编辑工作流",
+  "date": "September 8, 2026",
+  "reported": true,
+  "report_date": "2026-09-09"
+ },
+ {
   "id": "https://openai.com/index/the-work-now-within-reach/",
   "title": "OpenAI 把模型、产品和算力串成增长飞轮",
   "date": "Tue, 08 Sep 2026 13:00:00 GMT",
