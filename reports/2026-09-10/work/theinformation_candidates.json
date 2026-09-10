@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-10",
+  "scanned_at": "2026-09-10T21:57:59+08:00",
+  "window": "从 2026-09-09T20:59:58+08:00 接续，补扫 The Information 首页 Latest 至 2026-09-10 晚间的 AI 相关内容",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "SpaceX Overhauls Data Center Build-Out, Potentially Slowing Expansion",
+      "url": "https://www.theinformation.com/articles/spacex-overhauls-data-center-build-potentially-slowing-expansion",
+      "published_at": "2026-09-10T06:21:00-07:00",
+      "published_at_beijing": "2026-09-10T21:21:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "SpaceX 接手 xAI 后改变数据中心建设策略，要求先补足电力与冷却冗余、完成更充分测试，再让设施投入运行，并减少临时供电和制冷设备的使用。",
+        "xAI 过去把速度和算力规模放在可靠性之前，早期频繁停机曾让研究人员暂停项目数小时并损失部分训练进度；上周孟菲斯数据中心又因施工影响电力线而停机，Grok 和部分算力客户都受到波及。",
+        "SpaceX 已把火箭制造与运营背景的管理人员换进数据中心团队，过去几周超过十二名项目负责人离职。",
+        "SpaceX 征集火箭和星链工程师进行六至八周轮岗，超过 1300 人报名，过去一个月已有 300 多人加入数据中心项目。",
+        "xAI 曾用 122 天让首座十万块 GPU 的数据中心上线；新流程仍会保留加速建设思路，但更早建设备份系统和增加测试可能拖慢新园区扩张。"
+      ],
+      "caveats": [
+        "建设策略、人员变动与内部故障细节主要来自多名知情人士，SpaceX 未回应置评请求。",
+        "文章只说新流程可能放慢扩张，不能写成 SpaceX 已经取消或冻结数据中心项目。"
+      ],
+      "why": "它把 xAI 过去以速度换可靠性的代价、SpaceX 接管后的组织重建和算力对外出租后的新要求串成了完整变化。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Jeffrey Katzenberg Teams Up with Former OpenAI Sora Head on New AI Video Startup",
+      "url": "https://www.theinformation.com/articles/jeffrey-katzenberg-teams-former-openai-sora-head-new-ai-video-startup",
+      "published_at": "2026-09-09T16:19:00-07:00",
+      "published_at_beijing": "2026-09-10T07:19:00+08:00",
+      "bucket_hint": "industry_silver_or_none",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "梦工厂联合创始人 Jeffrey Katzenberg、前 OpenAI Sora 负责人 Bill Peebles 和前 Dropbox 财务负责人 Sujay Jaswa 正在筹办一家 AI 视频创业公司。",
+        "新公司计划训练自有视频模型，以电影制作人为主要客户，并已与 Andreessen Horowitz 等潜在投资者讨论一笔大额融资。",
+        "这是 Katzenberg 在短视频应用 Quibi 于 2020 年倒闭后最具野心的新项目；Quibi 曾融资 17.5 亿美元。",
+        "OpenAI 今年因成本、算力需求和业务重心调整关闭 Sora，Peebles 随后离职；新公司将在 OpenAI 收缩美国视频业务、字节跳动因版权争议推迟美国发布的空档里进入市场。",
+        "Katzenberg 的好莱坞关系可能帮助公司接触片商，但生成视频是否取代人才、侵害版权仍是行业采用的核心阻力。"
+      ],
+      "caveats": [
+        "公司名称、融资金额和交易进度尚未公开，筹资与产品计划来自知情人士。",
+        "项目仍在筹办阶段，不能写成已经完成融资或推出模型。"
+      ],
+      "why": "它不是普通的前高管创业，而是好莱坞产业资源和自研视频模型重新结合，并折射 OpenAI 退出后美国视频模型市场的结构变化。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "OpenAI Restricts Adobe and Other Competitors From Advertising in ChatGPT",
+      "url": "https://www.theinformation.com/articles/openai-cuts-adobe-others-advertising-competing-ai-products-chatgpt",
+      "published_at": "2026-09-09T13:54:00-07:00",
+      "published_at_beijing": "2026-09-10T04:54:00+08:00",
+      "bucket_hint": "industry_silver_or_none",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "OpenAI 已通知部分广告合作方，ChatGPT 不再接受 AI 图像和音频生成产品的广告，因为这些产品会与 ChatGPT 自有功能竞争。",
+        "这项限制尚未写进公开广告政策，Adobe 等现有广告主事先没有预料到；Adobe 早期曾为 Acrobat Studio 和 Firefly 参与 ChatGPT 广告试点。",
+        "ChatGPT 月活用户超过十亿，大多数人不付订阅费；OpenAI 已把广告扩展到四十多个国家。",
+        "OpenAI 上月广告收入的年化运行率达到 10 亿美元，但它此前向投资者预计今年全年广告收入达到 24 亿美元。",
+        "限制直接竞争者投放可能保护 OpenAI 的图像和语音产品，也会缩小可争取的广告预算，并为平台今后是否继续扩大竞争品类禁投留下问题。"
+      ],
+      "caveats": [
+        "当前确认的禁投范围是图像与音频生成产品，视频广告暂时仍可投，不能外推为所有 AI 竞争产品都被禁止。",
+        "限制来自 OpenAI 对合作方的通知，公开政策尚未同步，OpenAI 未回应置评请求。"
+      ],
+      "why": "它让 ChatGPT 的广告商业模式出现平台自营业务与广告开放之间的第一次明确冲突，并带有真实收入目标和现有广告主反应。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Why An Anthropic Researcher’s Terminator-Style Warning Caught Fire",
+      "url": "https://www.theinformation.com/articles/anthropic-researchers-terminator-style-warning-caught-fire",
+      "reason": "首页摘要显示主要复盘一名研究员的灭绝风险警告及舆论反应，近期 Anthropic 风险与安全主线已经饱和，没有先于三条独家候选的新增事实密度。"
+    },
+    {
+      "title": "Anthropic’s IPO Marketing Meets Extinction Risk",
+      "url": "https://www.theinformation.com/newsletters/the-briefing/anthropics-ipo-marketing-meets-extinction-risk",
+      "reason": "主要把同一风险言论与 Anthropic 上市宣传并置，属于评论性延伸，没有单独精读。"
+    },
+    {
+      "title": "The DOJ Is Investigating Nvidia’s Licensing Deal With Chip Startup Groq",
+      "url": "https://www.theinformation.com/briefings/doj-investigating-nvidias-licensing-deal-chip-startup-groq",
+      "reason": "首页只提供监管调查这一项增量，留作普通机械源或后续核查候选，不占本期最多三篇精读名额。"
+    },
+    {
+      "title": "Nvidia Deepens Partnership With AI Chip Startup D-Matrix",
+      "url": "https://www.theinformation.com/briefings/nvidia-deepens-partnership-ai-chip-startup-d-matrix",
+      "reason": "首页摘要只有合作加深的方向判断，缺少足够交易或产品细节，不单独精读。"
+    },
+    {
+      "title": "Chinese CEO Laments Many Robotics Firms Fabricate Revenue",
+      "url": "https://www.theinformation.com/briefings/chinese-ceo-laments-robotics-firms-fabricate-revenue",
+      "reason": "属于 09-09 已报中国提高人形机器人上市门槛的直接续评，当前没有正式规则、财务或上市案例新进展。"
+    },
+    {
+      "title": "China Hits Back at U.S. Accusation of Industrial-Scale AI Distillation",
+      "url": "https://www.theinformation.com/briefings/china-hits-back-u-s-accusation-industrial-scale-ai-distillation",
+      "reason": "首页摘要只显示中方对美方指控的回应，先交公开来源候选核查，不保存付费页内容。"
+    }
+  ]
+}

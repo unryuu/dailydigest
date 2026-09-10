@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.09155",
+  "title": "几段校准画面让世界模型适应新机器人",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.10522",
+  "title": "VLM 用一套语义动作控制不同机器人",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.10540",
+  "title": "可编程世界模型把游戏规则写进程序",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.09219",
+  "title": "正确答案不能证明 AI 完成了发现",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.01281",
   "title": "EmbodiedSkills 给机器人每一步加上执行前检查和事后验收",
   "date": "2026-09-08",

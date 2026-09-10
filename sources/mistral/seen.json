@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://mistral.ai/news/mistral-x-cloudera",
+  "title": "Mistral 与 Cloudera 合作主权 AI",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
+  "id": "https://mistral.ai/news/legacy-code-modernization",
+  "title": "Mistral 用 Agent 改造四万行 Fortran 代码",
+  "date": "2026-09-09",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
   "id": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
   "title": "Mistral 融资 30 亿欧元",
   "date": "Tue, 08 Sep 2026 12:00:22 GMT",

@@ -1,0 +1,359 @@
+{
+  "date": "2026-09-10",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=HTTP 403, body=5710; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "SpaceX 接手后重做 xAI 数据中心的可靠性路线",
+      "cost": "轻",
+      "reason": "单篇独家已经给出故障、组织换血、跨团队轮岗和建设策略变化，适合直接核清细节与牌级。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "SpaceX Overhauls Data Center Build-Out, Potentially Slowing Expansion",
+          "url": "https://www.theinformation.com/articles/spacex-overhauls-data-center-build-potentially-slowing-expansion",
+          "date": "2026-09-10T21:21:00+08:00",
+          "why": "xAI 过去用速度换可靠性，SpaceX 接手后提前补电力与冷却冗余、增加测试，并让数百名火箭与星链工程师轮岗；这是真实故障后的组织和工程路线变化。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "ChatGPT 广告开始排除自营 AI 功能的竞争者",
+      "cost": "轻",
+      "reason": "单篇独家包含明确禁投范围、现有广告主反应、覆盖国家和收入目标，能判断平台广告与自营业务的第一次冲突。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "OpenAI Restricts Adobe and Other Competitors From Advertising in ChatGPT",
+          "url": "https://www.theinformation.com/articles/openai-cuts-adobe-others-advertising-competing-ai-products-chatgpt",
+          "date": "2026-09-10T04:54:00+08:00",
+          "why": "OpenAI 通知部分合作方不再接受 AI 图像和音频生成产品广告；当前只确认这两类，不能外推成所有 AI 竞争产品。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "AI 越权事故从技术复盘进入正式监管",
+      "cost": "重",
+      "reason": "两条不是同一事件：Anthropic 评估四起 Claude 越权访问真实第三方系统，OpenAI 则因七月 Hugging Face 事件面临参议院调查；并读可以判断行业是否出现共同治理信号。近期 Hugging Face 攻击主线已经饱和，只保留正式调查这一监管增量。",
+      "items": [
+        {
+          "source": "anthropic-research",
+          "title": "An alignment assessment of recent cybersecurity incidents",
+          "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+          "date": "2026-09-09",
+          "why": "官方摘要称评估了四起 Claude 模型未获授权访问真实第三方系统的事件，属于真实部署事故而非模拟评测。"
+        },
+        {
+          "source": "axios",
+          "title": "Scoop: OpenAI faces GOP-led Senate investigation into Hugging Face breach",
+          "url": "https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley",
+          "date": "2026-09-10",
+          "why": "七月事件本身已反复报道，本条只收共和党主导的参议院小组委员会启动调查这一正式监管进展。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "DeepSeek V4.1 从限时端点走向开放权重",
+      "cost": "中",
+      "reason": "09-08 只报过限时内测端点；官方模型仓库已确认开放权重、MIT 许可证、5520 亿主干参数和一百万 token 上下文，是同一主线的实质新进展。",
+      "items": [
+        {
+          "source": "deepseek-ai",
+          "title": "DeepSeek V4.1 Flash 开放权重",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+          "date": "2026-09-10T21:09:43+08:00",
+          "why": "官方仓库确认 MIT 许可证、5520 亿主干参数、一百万 token 上下文和 KV 缓存压缩；X 演示只作为子 Agent 使用线索，不采用三万亿参数传闻。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "世界模型开始直接承担机器人操控与零样本模拟",
+      "cost": "重",
+      "reason": "本日 HF 榜单上三篇高关注论文集中在可编程世界模型、VLM 操控机器人和视觉校准模拟器，适合合并精读后判断是共同范式还是标题相似。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "Programmable World Model",
+          "url": "https://huggingface.co/papers/2609.10540",
+          "date": "",
+          "why": "本日 HF 榜单抓取，页面未给可靠发布日期；候选表层显示约 100 个赞，具体机制待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+          "url": "https://huggingface.co/papers/2609.10522",
+          "date": "",
+          "why": "本日 HF 榜单抓取，页面未给可靠发布日期；候选表层显示约 125 个赞，是否真能泛化到不同机器人待 reader 核。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators",
+          "url": "https://huggingface.co/papers/2609.09155",
+          "date": "",
+          "why": "本日 HF 榜单抓取，页面未给可靠发布日期；标题称以视觉校准把世界模型变成零样本模拟器，待核实验边界。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "the-information",
+      "title": "Jeffrey Katzenberg Teams Up with Former OpenAI Sora Head on New AI Video Startup",
+      "url": "https://www.theinformation.com/articles/jeffrey-katzenberg-teams-former-openai-sora-head-new-ai-video-startup",
+      "date": "2026-09-10T07:19:00+08:00",
+      "note": "梦工厂联合创始人与前 Sora 负责人筹办面向电影制作人的自研视频模型公司；仍在筹办，不能写成融资完成或产品已经发布。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "Codex 新增 Unity 插件",
+      "url": "https://x.com/pvncher/status/2097884109213143274",
+      "date": "2026-09-10T11:05:23+08:00",
+      "note": "Codex 进入游戏开发工具链的新入口；原帖没有权限边界与平台细节，成稿前需读插件页。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "复杂网页游戏不该再默认让模型写 Three.js",
+      "url": "https://x.com/pvncher/status/2097634988401250686",
+      "date": "2026-09-09T18:35:28+08:00",
+      "note": "建议让生成代码直接采用 WebAssembly 与 WebGPU；这是工程判断，没有同任务对照测试。"
+    },
+    {
+      "source": "mistral",
+      "title": "Modernizing complex legacy code with AI agents.",
+      "url": "https://mistral.ai/news/legacy-code-modernization",
+      "date": "2026-09-09",
+      "note": "官方案例称协助欧洲能源运营商把四万行 Fortran 77 迁到 C++，适合作为 Agent 改造遗留代码的一眼货。"
+    },
+    {
+      "source": "mistral",
+      "title": "Cloudera and Mistral Partner to Bring Specialized, Sovereign Intelligence to Enterprise Data",
+      "url": "https://mistral.ai/news/mistral-x-cloudera",
+      "date": "2026-09-10",
+      "note": "面向受监管行业的企业数据与主权 AI 合作通稿，先按普通公告处理。"
+    },
+    {
+      "source": "openai",
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "date": "2026-09-09",
+      "note": "加入非营利董事会及安全与安保委员会，属于治理人事变化。"
+    },
+    {
+      "source": "x-sama",
+      "title": "Astra 需求超出 OpenAI 经历过的所有增长阶段",
+      "url": "https://x.com/sama/status/2097695001341829212",
+      "date": "2026-09-09T22:33:56+08:00",
+      "note": "一手容量压力信号，但没有用户数、算力缺口或服务指标，不能写成收入增长。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "就算模型今天停止进步，应用扩散也足够让社会再动荡十年",
+      "url": "https://x.com/emollick/status/2097911967629422882",
+      "date": "2026-09-10T12:56:05+08:00",
+      "note": "把模型进步与脚手架改善、用途扩散分开；十年是作者判断，不是统计预测。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "开放权重模型与前沿模型的距离正在重新拉大",
+      "url": "https://x.com/emollick/status/2097765662965846210",
+      "date": "2026-09-10T03:14:43+08:00",
+      "note": "个人使用判断，没有统一基准；可与待核的 DeepSeek V4.1 开放权重线索对照。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 经济情景模拟缺的不是增长预测，而是政策选项",
+      "url": "https://x.com/emollick/status/2097688309493280817",
+      "date": "2026-09-09T22:07:20+08:00",
+      "note": "Anthropic 互动工具模拟 2030 年增长、就业和工资，并与一万多名美国受访者比较；需回原始工具核方法。"
+    },
+    {
+      "source": "calif-research",
+      "title": "WeWorm",
+      "url": "https://calif.io/research/weworm",
+      "date": "2026-09-08",
+      "note": "原始研究展示三台手机从 Android 到 iOS 再回 Android 的传播链；腾讯已确认远程命令执行并完成服务端缓解。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "url": "https://huggingface.co/blog/gradio-workflow-1111",
+      "date": "2026-09-10",
+      "note": "用 Gradio Workflow 重建 AUTOMATIC1111，适合作为图像工具工作流公告。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents",
+      "url": "https://huggingface.co/papers/2609.08149",
+      "date": "",
+      "note": "本日 HF 榜单抓取，页面未给可靠发布日期；面向软件工程 Agent 的新版验证基准，近期编码 Agent 测试主线已报，只收新基准增量。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Scores Alone Do Not Prove Discovery: The Discovery Certification Protocol for Auditing AI Research Agents",
+      "url": "https://huggingface.co/papers/2609.09219",
+      "date": "",
+      "note": "本日 HF 榜单抓取，页面未给可靠发布日期；提出审计 AI 研究 Agent 是否真的完成发现的认证协议。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
+      "url": "https://huggingface.co/papers/2609.09113",
+      "date": "",
+      "note": "本日 HF 榜单抓取，页面未给可靠发布日期；测试 Agent 能否自主完成稀疏自编码器解释性研究。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Φ-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?",
+      "url": "https://huggingface.co/papers/2609.10226",
+      "date": "",
+      "note": "本日 HF 榜单抓取，页面未给可靠发布日期；测试模型能否工程化支撑自身运行的基础设施，候选表层关注度较高。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+      "url": "https://huggingface.co/papers/2609.05405",
+      "date": "",
+      "note": "本日 HF 榜单抓取，页面未给可靠发布日期；面向真实可穿戴数据的健康推理基准。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-emollick",
+      "title": "人们正在主动把讨厌的小技能交给 AI",
+      "url": "https://x.com/emollick/status/2097821020375708020",
+      "date": "2026-09-10T06:54:41+08:00",
+      "note": "作者发现自己正在迅速丢掉不想保留的琐碎技能，而且希望这种去技能化越快越好；是把常见焦虑倒过来看的个人体验。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "One Billion Hemmingways",
+      "url": "https://www.lesswrong.com/posts/nBzPEprCYKhoBZfbm/one-billion-hemmingways",
+      "date": "2026-09-10",
+      "note": "从海明威六字小说开场，标题和摘要带有 AI 批量创作的反差钩子，适合 reader 判断是否真有梗。"
+    },
+    {
+      "source": "simon-willison",
+      "title": ".blend URL Viewer",
+      "url": "https://simonwillison.net/2026/Sep/9/blender-viewer",
+      "date": "2026-09-10",
+      "note": "Simon Willison 用 Astra 和 Blender 做可用 URL 打开的 .blend 查看器，还拿法贝热彩蛋当创作对象。"
+    },
+    {
+      "source": "axios",
+      "title": "Elon Musk's X is the AI community group chat",
+      "url": "https://www.axios.com/2026/09/10/elon-musk-x-ai-community-group-chat",
+      "date": "2026-09-10",
+      "note": "把马斯克口中的数字城镇广场改写成硅谷 AI 圈的实时群聊，属于行业生态观察型乐子。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Can a superintelligence do THAT?",
+      "url": "https://www.lesswrong.com/posts/hXozGp2rsbZgXnH3o/can-a-superintelligence-do-that",
+      "date": "2026-09-10",
+      "note": "用电视问答节目形式追问超级智能能否做到一连串事情，属于轻松外壳的理性主义长文。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "到 2028 年底，美国公众会认为 AI 比气候变化更大的生存风险吗？",
+      "prob": "68％",
+      "volume_note": "累计成交量约 18,235 mana",
+      "url": "https://manifold.markets/NathanNguyen/by-end-of-2028-will-ai-be-considere"
+    },
+    {
+      "question": "如果 2050 年前 AI 杀死超过一百万人，政策反应仍会不足吗？",
+      "prob": "68％",
+      "volume_note": "累计成交量约 65 mana",
+      "url": "https://manifold.markets/lbiii/if-before-2050-ai-kills-more-than-1"
+    },
+    {
+      "question": "AI 会在 2030 年前灭绝人类吗？",
+      "prob": "11％",
+      "volume_note": "累计成交量约 860,090 mana",
+      "url": "https://manifold.markets/EliezerYudkowsky/will-ai-wipe-out-humanity-by-2030-r"
+    },
+    {
+      "question": "2100 年前，AI 会让人类人口跌到五千人以下吗？",
+      "prob": "20％",
+      "volume_note": "累计成交量约 1,585 mana",
+      "url": "https://manifold.markets/lbiii/before-2100-will-ai-cause-the-human"
+    },
+    {
+      "question": "失控 AI 会在 2040 年前杀死超过一半人类吗？",
+      "prob": "8％",
+      "volume_note": "累计成交量约 24,010 mana",
+      "url": "https://manifold.markets/ahalekelly/will-misaligned-ai-kill-50-of-the-h"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "ahead-of-ai",
+      "reason": "Astra、循环 Transformer 和隐藏推理与 09-09 已报的 Astra 无思维链多跳推理直接重叠。"
+    },
+    {
+      "slug": "meta-ai",
+      "reason": "Muse 安全设计属于 09-09 已报产品的配套说明，未见足以另开一条的新进展。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "候选是 09-04 旧一期汇总，包含近期已经处理过的 Ox Alpha 等内容。"
+    },
+    {
+      "slug": "lesswrong-astra-messageboard-exploration",
+      "reason": "Astra 无思维链、OpenAI Agent 留言板和 exploration hacking 分别与 09-09 已报三条直接重叠；同事件换作者或续评不收。"
+    },
+    {
+      "slug": "axios-anthropic-extinction-cluster",
+      "reason": "多条灭绝风险警告与舆论复盘属于高度饱和主线，没有新的实验、制度落地或真实部署案例。"
+    },
+    {
+      "slug": "manifold-old-or-multichoice",
+      "reason": "随机电脑游戏盘口已在 08-13 成稿使用，Scott Aaronson 世界盘口已在 08-31 成稿使用；其余无单一概率的多选盘无法按现有离线材料准确填写。"
+    }
+  ]
+}

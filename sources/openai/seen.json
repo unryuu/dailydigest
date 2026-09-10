@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+  "title": "Paul Christiano 加入 OpenAI 基金会董事会",
+  "date": "2026-09-09",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
   "id": "https://openai.com/index/codex-quantum-computing-experiments",
   "title": "OpenAI 把 Codex 接进量子实验室跑常规测量",
   "date": "Tue, 08 Sep 2026 17:00:00 GMT",

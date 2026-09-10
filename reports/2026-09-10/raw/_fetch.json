@@ -1,0 +1,232 @@
+[
+  {
+    "slug": "spacex-data-center",
+    "url": "https://www.theinformation.com/articles/spacex-overhauls-data-center-build-potentially-slowing-expansion",
+    "status": null,
+    "error": "Error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "slug": "openai-chatgpt-ads",
+    "url": "https://www.theinformation.com/articles/openai-cuts-adobe-others-advertising-competing-ai-products-chatgpt",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/openai-cuts-adobe-others-advertising-competing-ai-products-chatgpt",
+    "bytes": 387379,
+    "title": "OpenAI Restricts Adobe and Other Competitors From Advertising in ChatGPT — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "anthropic-cyber-incidents",
+    "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+    "bytes": 485024,
+    "title": "An alignment assessment of recent cybersecurity incidents \\ Anthropic",
+    "chars": 104465
+  },
+  {
+    "slug": "openai-hf-senate",
+    "url": "https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley",
+    "bytes": 236576,
+    "title": "Scoop: OpenAI faces Senate investigation into Hugging Face breach",
+    "chars": 2417
+  },
+  {
+    "slug": "deepseek-v41-subagents",
+    "url": "https://x.com/teortaxesTex/status/2098036195695431949",
+    "status": 403,
+    "final_url": "https://x.com/teortaxesTex/status/2098036195695431949",
+    "bytes": 39,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "programmable-world-model",
+    "url": "https://huggingface.co/papers/2609.10540",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.10540",
+    "bytes": 135449,
+    "title": "Paper page - Programmable World Model",
+    "chars": 3029
+  },
+  {
+    "slug": "show-harness",
+    "url": "https://huggingface.co/papers/2609.10522",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.10522",
+    "bytes": 166973,
+    "title": "Paper page - Show-Harness: Just a VLM Agent Can Play Robots",
+    "chars": 2757
+  },
+  {
+    "slug": "syncworld",
+    "url": "https://huggingface.co/papers/2609.09155",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.09155",
+    "bytes": 142192,
+    "title": "Paper page - SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators",
+    "chars": 2680
+  },
+  {
+    "slug": "discovery-certification",
+    "url": "https://huggingface.co/papers/2609.09219",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.09219",
+    "bytes": 140048,
+    "title": "Paper page - Scores Alone Do Not Prove Discovery: The Discovery Certification Protocol for Auditing AI Research Agents",
+    "chars": 3126
+  },
+  {
+    "slug": "swe-bench-pro-verified",
+    "url": "https://huggingface.co/papers/2609.08149",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.08149",
+    "bytes": 176267,
+    "title": "Paper page - SWE-Bench Pro Verified: A Reliable Benchmark for Software Engineering Agents",
+    "chars": 4929
+  },
+  {
+    "slug": "phi-bench",
+    "url": "https://huggingface.co/papers/2609.10226",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.10226",
+    "bytes": 129087,
+    "title": "Paper page - Φ-Bench: Can Large Language Models Engineer the Infrastructure That Powers Them?",
+    "chars": 2428
+  },
+  {
+    "slug": "weworm-calif",
+    "url": "https://simonwillison.net/2026/Sep/10/calif-research",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/10/calif-research/",
+    "bytes": 13998,
+    "title": "A quote from Calif Research",
+    "chars": 1557
+  },
+  {
+    "slug": "emollick-decade",
+    "url": "https://x.com/emollick/status/2097911967629422882",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2097911967629422882",
+    "bytes": 148504,
+    "title": "Ethan Mollick on X: \"Independent of policy about existential risk, it is worth noting that even if AI development stopped today with the models we have now, we would still have at least a decade of roiling change throughout much of work, education, and social life as harnesses improve &amp; uses di… / X",
+    "chars": 342
+  },
+  {
+    "slug": "pvncher-threejs",
+    "url": "https://x.com/pvncher/status/2097634988401250686",
+    "status": 200,
+    "final_url": "https://x.com/pvncher/status/2097634988401250686",
+    "bytes": 230237,
+    "title": "eric provencher on X: \"Small rant about Threejs \n\nIt doesn’t make sense for llms to be writing complex games in JavaScript when wasm + webgpu exists and you’re not reading the code anyway\" / X",
+    "chars": 557
+  },
+  {
+    "slug": "anthropic-econ-policy",
+    "url": "https://x.com/emollick/status/2097688309493280817",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2097688309493280817",
+    "bytes": 257313,
+    "title": "Ethan Mollick on X: \"There is a nice visualization of how task bundles change with AI &amp; some good interactive simulations of GDP growth under different assumptions in this.\n\nBut missing are the right policy responses if we do get explosive GDP growth &amp; large-scale white collar displacement … / X",
+    "chars": 644
+  },
+  {
+    "slug": "openai-christiano-board",
+    "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+    "status": 200,
+    "final_url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board/",
+    "bytes": 398793,
+    "title": "Paul Christiano joins OpenAI Foundation Board | OpenAI",
+    "chars": 5576
+  },
+  {
+    "slug": "codex-unity-plugin",
+    "url": "https://x.com/pvncher/status/2097884109213143274",
+    "status": 200,
+    "final_url": "https://x.com/pvncher/status/2097884109213143274",
+    "bytes": 234734,
+    "title": "eric provencher on X: \"Codex now has a Unity plugin!\nhttps://t.co/Af02yArhzP\" / X",
+    "chars": 160
+  },
+  {
+    "slug": "mistral-legacy-code",
+    "url": "https://mistral.ai/news/legacy-code-modernization",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/legacy-code-modernization/",
+    "bytes": 259176,
+    "title": "Modernizing complex legacy code with AI agents | Mistral",
+    "chars": 8900
+  },
+  {
+    "slug": "astra-demand",
+    "url": "https://x.com/sama/status/2097695001341829212",
+    "status": 200,
+    "final_url": "https://x.com/sama/status/2097695001341829212",
+    "bytes": 210813,
+    "title": "Sam Altman on X: \"This would suck, but we will prioritize great service for customers until we can get back on top of things.\" / X",
+    "chars": 461
+  },
+  {
+    "slug": "mistral-cloudera",
+    "url": "https://mistral.ai/news/mistral-x-cloudera",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/mistral-x-cloudera/",
+    "bytes": 235796,
+    "title": "Cloudera and Mistral Partner for Sovereign Enterprise AI",
+    "chars": 3130
+  },
+  {
+    "slug": "gradio-workflow-1111",
+    "url": "https://huggingface.co/blog/gradio-workflow-1111",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/gradio-workflow-1111",
+    "bytes": 261226,
+    "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+    "chars": 11963
+  },
+  {
+    "slug": "emollick-deskilling",
+    "url": "https://x.com/emollick/status/2097821020375708020",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2097821020375708020",
+    "bytes": 177712,
+    "title": "Ethan Mollick on X: \"I am deskilling myself with AI so quickly on so many annoying tasks I don't want or need to be skilled at. Cannot deskill on these fast enough.\" / X",
+    "chars": 205
+  },
+  {
+    "slug": "one-billion-hemmingways",
+    "url": "https://www.lesswrong.com/posts/nBzPEprCYKhoBZfbm/one-billion-hemmingways",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/nBzPEprCYKhoBZfbm/one-billion-hemmingways",
+    "bytes": 490880,
+    "title": "One Billion Hemingways — LessWrong",
+    "chars": 15402
+  },
+  {
+    "slug": "blender-viewer",
+    "url": "https://simonwillison.net/2026/Sep/9/blender-viewer",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
+    "bytes": 18963,
+    "title": "Tool: .blend URL Viewer",
+    "chars": 2368
+  },
+  {
+    "slug": "x-ai-group-chat",
+    "url": "https://www.axios.com/2026/09/10/elon-musk-x-ai-community-group-chat",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/10/elon-musk-x-ai-community-group-chat",
+    "bytes": 266672,
+    "title": "Elon Musk's X is the AI community group chat",
+    "chars": 3968
+  },
+  {
+    "slug": "superintelligence-that",
+    "url": "https://www.lesswrong.com/posts/hXozGp2rsbZgXnH3o/can-a-superintelligence-do-that",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/hXozGp2rsbZgXnH3o/can-a-superintelligence-do-that",
+    "bytes": 670127,
+    "title": "Can a superintelligence do THAT? — LessWrong",
+    "chars": 37272
+  }
+]

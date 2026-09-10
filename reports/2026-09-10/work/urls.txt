@@ -1,0 +1,47 @@
+# group-1：SpaceX 重做 xAI 数据中心
+spacex-data-center|https://www.theinformation.com/articles/spacex-overhauls-data-center-build-potentially-slowing-expansion
+
+# group-2：ChatGPT 广告排除竞争者
+openai-chatgpt-ads|https://www.theinformation.com/articles/openai-cuts-adobe-others-advertising-competing-ai-products-chatgpt
+
+# group-3：AI 越权事故与监管
+anthropic-cyber-incidents|https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents
+openai-hf-senate|https://www.axios.com/2026/09/10/openai-hugging-face-senate-investigation-hawley
+
+# group-4：DeepSeek V4.1 权重线索
+deepseek-v41-official|https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+deepseek-v41-subagents|https://x.com/teortaxesTex/status/2098036195695431949
+
+# group-5：世界模型与机器人
+programmable-world-model|https://huggingface.co/papers/2609.10540
+show-harness|https://huggingface.co/papers/2609.10522
+syncworld|https://huggingface.co/papers/2609.09155
+
+# group-6：科研发现认证与 Agent 基准
+discovery-certification|https://huggingface.co/papers/2609.09219
+swe-bench-pro-verified|https://huggingface.co/papers/2609.08149
+phi-bench|https://huggingface.co/papers/2609.10226
+
+# group-7：微信零点击蠕虫
+weworm-calif|https://simonwillison.net/2026/Sep/10/calif-research
+weworm-original|https://calif.io/research/weworm
+
+# 深度长文
+emollick-decade|https://x.com/emollick/status/2097911967629422882
+pvncher-threejs|https://x.com/pvncher/status/2097634988401250686
+anthropic-econ-policy|https://x.com/emollick/status/2097688309493280817
+
+# 官方公告与简讯
+openai-christiano-board|https://openai.com/index/paul-christiano-joins-openai-foundation-board
+codex-unity-plugin|https://x.com/pvncher/status/2097884109213143274
+mistral-legacy-code|https://mistral.ai/news/legacy-code-modernization
+astra-demand|https://x.com/sama/status/2097695001341829212
+mistral-cloudera|https://mistral.ai/news/mistral-x-cloudera
+gradio-workflow-1111|https://huggingface.co/blog/gradio-workflow-1111
+
+# 乐子汇总
+emollick-deskilling|https://x.com/emollick/status/2097821020375708020
+one-billion-hemmingways|https://www.lesswrong.com/posts/nBzPEprCYKhoBZfbm/one-billion-hemmingways
+blender-viewer|https://simonwillison.net/2026/Sep/9/blender-viewer
+x-ai-group-chat|https://www.axios.com/2026/09/10/elon-musk-x-ai-community-group-chat
+superintelligence-that|https://www.lesswrong.com/posts/hXozGp2rsbZgXnH3o/can-a-superintelligence-do-that

@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+  "title": "DeepSeek V4.1 Flash 开放权重",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
+  "id": "https://x.com/teortaxesTex/status/2098036195695431949",
+  "title": "DeepSeek V4.1 Flash 子 Agent 演示",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
   "id": "https://36kr.com/p/3974654461604357",
   "title": "DeepSeek V4.1 Flash 开放原生多模态内测",
   "date": "2026-09-08T19:15:00+08:00",

@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+  "title": "AI 越权事故开始进入正式监管",
+  "date": "2026-09-09",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
   "id": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
   "title": "Claude 用十一天把费马大定理写进 Lean",
   "date": "2026-09-04",

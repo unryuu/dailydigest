@@ -1,0 +1,24 @@
+URL: https://x.com/pvncher/status/2097634988401250686
+FINAL: https://x.com/pvncher/status/2097634988401250686
+TITLE: eric provencher on X: "Small rant about Threejs
+
+It doesn’t make sense for llms to be writing complex games in JavaScript when wasm + webgpu exists and you’re not reading the code anyway" / X
+FETCHED: 2026-09-10 22:32:19
+============================================================
+eric provencher
+@pvncher
+Small rant about Threejs
+
+It doesn’t make sense for llms to be writing complex games in JavaScript when wasm + webgpu exists and you’re not reading the code anyway
+eric provencher
+@pvncher
+Sep 9
+Replying to
+@thdxr
+Threejs annoys me a bit because it’s an abstraction layer for people meant to make working with webgl more pleasant.
+
+The problem is that webgl itself is also an abstraction layer over the graphics api, and a really bad one at that, that is basically stuck on the shader features
+10:35 AM · Sep 9, 2026
+63.5K
+Views
+65

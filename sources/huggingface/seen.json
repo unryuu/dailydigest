@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/gradio-workflow-1111",
+  "title": "Gradio 用七十三个节点重建 AUTOMATIC1111",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
   "id": "https://huggingface.co/tencent/Hy4-preview",
   "title": "腾讯放出 Hy4-preview，旗舰开放模型继续做大",
   "date": "Tue, 08 Sep 2026 14:15:25 GMT",

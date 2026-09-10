@@ -1,0 +1,218 @@
+{
+  "date": "2026-09-10",
+  "scanned_at": "2026-09-10T21:57:59+08:00",
+  "window": "常规七源从 2026-09-08T22:22:00+08:00 接续；pvncher 首次按最近 36 小时补扫，并优先检查 Articles",
+  "route": "机械 Nitter 抓取失败后，Codex 内置浏览器登录态逐账号补扫 X",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "success",
+      "result": "时间窗内多条原创观点帖，保留四组候选。"
+    },
+    {
+      "handle": "goodside",
+      "status": "success",
+      "result": "最新可见原创帖仍是 09-08 已检查过的 Astra／Blender 预告，没有本期新增。"
+    },
+    {
+      "handle": "karpathy",
+      "status": "success",
+      "result": "最新可见原创帖为 08-03，早于时间窗。"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "success",
+      "result": "最新可见原创帖为 09-05，早于时间窗。"
+    },
+    {
+      "handle": "pvncher",
+      "status": "success",
+      "result": "首次 36 小时窗口已覆盖；Articles 最新一篇为 09-05，帖子区保留两组 Codex 工作流候选。"
+    },
+    {
+      "handle": "tszzl",
+      "status": "success",
+      "result": "时间窗内主要讨论 AI 灭绝风险与行业心态，保留一组完整观点候选。"
+    },
+    {
+      "handle": "sama",
+      "status": "success",
+      "result": "保留一条 Astra 需求与服务压力候选；OpenAI 董事任命已有官方机械候选，不重复收。"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "success",
+      "result": "时间窗内帖子密集，保留 DeepSeek V4.1 权重与子 agent 能力线索，未经官方材料核实前不写成正式发布。"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-pvncher",
+      "title": "Codex 新增 Unity 插件",
+      "url": "https://x.com/pvncher/status/2097884109213143274",
+      "published_at": "2026-09-10T11:05:23+08:00",
+      "bucket_hint": "radar_or_fun",
+      "facts": [
+        "OpenAI Codex DX 负责人 Eric Provencher 宣布 Codex 现在有 Unity 插件，并链接到 ChatGPT 插件页。",
+        "原帖在约十小时内获得超过 28 万次浏览、3400 次点赞和 1900 次收藏。"
+      ],
+      "caveats": [
+        "X 原帖只有发布消息，没有展开插件的权限边界、工作方式或可用平台；进入成稿前必须精读插件页。"
+      ],
+      "why": "这是 Codex 与游戏开发工具链的具体新入口，也符合该账号只收可复用工作流与机制变化的标准。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "复杂网页游戏不该再默认让模型写 Three.js",
+      "url": "https://x.com/pvncher/status/2097634988401250686",
+      "published_at": "2026-09-09T18:35:28+08:00",
+      "bucket_hint": "exclusive_view_or_radar",
+      "facts": [
+        "Eric Provencher 认为，让语言模型生成复杂网页游戏时继续默认使用 JavaScript 与 Three.js 已经不合理。",
+        "他的替代方向是直接采用 WebAssembly 与 WebGPU，因为用户本来就不会逐行阅读生成代码，而 Three.js 和 WebGL 叠加了两层面向旧图形接口的抽象。"
+      ],
+      "caveats": [
+        "这是工程路线判断，没有同一任务下的速度、质量或兼容性对照。",
+        "发布时间早于常规七源接续点，但落在 pvncher 首次 36 小时补扫窗口内。"
+      ],
+      "why": "观点给出了 Agent 生成复杂交互作品时可直接采用的技术栈选择，不是普通产品感叹或演示。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "就算模型今天停止进步，应用扩散也足够让社会再动荡十年",
+      "url": "https://x.com/emollick/status/2097911967629422882",
+      "published_at": "2026-09-10T12:56:05+08:00",
+      "bucket_hint": "exclusive_view",
+      "facts": [
+        "Ethan Mollick 把模型能力进步与能力落地分开：即使 AI 开发今天停止，现有模型仍会因为脚手架改善和用途扩散，继续改变工作、教育和社会生活至少十年。",
+        "他认为应对这种变化仍需要长期政策与管理，而不是只围绕最前沿模型的灭绝风险争论。"
+      ],
+      "caveats": [
+        "十年是作者的判断，不是预测模型或统计结果。"
+      ],
+      "why": "它提供了一个独立于 AI 是否继续变强的扩散视角，可与当天过度饱和的灭绝风险舆论拉开距离。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "人们正在主动把讨厌的小技能交给 AI",
+      "url": "https://x.com/emollick/status/2097821020375708020",
+      "published_at": "2026-09-10T06:54:41+08:00",
+      "bucket_hint": "fun_or_exclusive_view",
+      "facts": [
+        "Ethan Mollick 说自己正在非常快地失去许多琐碎任务的技能，而这些技能正是他不想也不需要继续掌握的。",
+        "他的态度不是担心退化，而是希望这类去技能化越快越好。"
+      ],
+      "caveats": [
+        "这是个人体验，没有列出具体任务或测量技能变化。"
+      ],
+      "why": "它把通常被当作风险的去技能化反过来写成人类主动卸载讨厌劳动，适合作为人与 AI 关系的乐子。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "开放权重模型与前沿模型的距离正在重新拉大",
+      "url": "https://x.com/emollick/status/2097765662965846210",
+      "published_at": "2026-09-10T03:14:43+08:00",
+      "bucket_hint": "exclusive_view_or_radar",
+      "facts": [
+        "Ethan Mollick 判断，开放权重模型与最前沿闭源模型的距离已达到一段时间以来最大的水平。",
+        "他认可 K3 和 GLM-5.3 的进步，但认为它们在实际使用中仍未接近 Anthropic Mythos 或 OpenAI Astra。"
+      ],
+      "caveats": [
+        "这是个人使用判断，没有统一基准；当天 DeepSeek V4.1 权重线索可能改变比较结果，需要一起核查。"
+      ],
+      "why": "当天恰有新开放权重线索，这个判断可以作为需要被新模型验证或反驳的行业视角。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "AI 经济情景模拟缺的不是增长预测，而是政策选项",
+      "url": "https://x.com/emollick/status/2097688309493280817",
+      "published_at": "2026-09-09T22:07:20+08:00",
+      "bucket_hint": "exclusive_view_or_radar",
+      "facts": [
+        "Anthropic 发布了关于 AI 到 2030 年如何影响增长、就业和工资的互动情景工具，并允许用户把自己的预测与一万多名美国受访者比较。",
+        "Ethan Mollick 认为其中的任务组合变化图和不同假设下 GDP 增长模拟很有用，但没有回答爆发式增长与大规模白领失业同时发生时该采取哪些政策。"
+      ],
+      "caveats": [
+        "帖子只提供了作者对工具的快速评价；进入成稿前要精读 Anthropic 原始情景和调查方法。"
+      ],
+      "why": "它把宏观情景工具从展示预测推进到政策缺口，可能形成独家视角。"
+    },
+    {
+      "source": "x-sama",
+      "title": "Astra 需求超出 OpenAI 经历过的所有增长阶段",
+      "url": "https://x.com/sama/status/2097695001341829212",
+      "published_at": "2026-09-09T22:33:56+08:00",
+      "bucket_hint": "industry_none_or_radar",
+      "facts": [
+        "OpenAI 一名产品负责人称 Astra 的需求前所未有，即使团队经历过多轮陡峭增长，也没有见过同等规模的压力。",
+        "团队正在调动可用资源，优先保证现有用户的服务质量，并暗示新增用户的开放节奏可能受到影响。",
+        "Sam Altman 转发时表示，即使这会带来不利影响，OpenAI 仍会先把现有客户的服务做好，再设法恢复领先。"
+      ],
+      "caveats": [
+        "帖子没有披露新增用户、算力缺口或服务指标，不能把需求强写成收入增长。"
+      ],
+      "why": "这是 Astra 发布后的第一手容量压力信号，但信息密度只够无牌或雷达。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "DeepSeek V4.1 开放权重后显露出子 agent 调度能力",
+      "url": "https://x.com/teortaxesTex/status/2098036195695431949",
+      "published_at": "2026-09-10T21:09:43+08:00",
+      "bucket_hint": "industry_silver_or_radar",
+      "facts": [
+        "Teortaxes 试用 DeepSeek V4.1 时发现，模型会在 Agent 工作中主动指定不同子 agent，并展示了自定义的 grumpy-critic 角色。",
+        "同场帖子称 V4.1 已公开权重，版本号相对保守，作者把它视为 DeepSeek 对现有架构可继续扩展的确认。",
+        "Teortaxes 另称，DeepSeek 曾研究约 3 万亿参数的主干模型，但尚未确定后训练和推理成本是否经济；他明确把额外 Engram 参数规模标为自己的推测。"
+      ],
+      "caveats": [
+        "公开权重、模型规模、许可证和正式名称必须回到 DeepSeek 官方仓库或模型卡核实。",
+        "三万亿参数模型只是非公开线索，不能和 V4.1 当作同一已发布产品，也不能写成确定计划。",
+        "子 agent 表现来自个人演示，没有标准化评测。"
+      ],
+      "why": "09-09 只报了限时实验端点；如果当天确已开放权重，这属于同一主线的实质变化，值得 reader 优先核查。"
+    },
+    {
+      "source": "x-roon",
+      "title": "真正能灭绝人类的不是核武或疫情，而是另一类自我复制者",
+      "url": "https://x.com/tszzl/status/2097901836435104099",
+      "published_at": "2026-09-10T12:15:49+08:00",
+      "bucket_hint": "exclusive_view",
+      "facts": [
+        "roon 认为，常见 AI 准备框架讨论的核武器或疫情风险都很难真正导致人类灭绝，真正够到这个级别的路径更像灰色黏质或另一族并行扩张的自我复制系统。",
+        "他同时反对为了避免当代人的自然死亡而拿全体人类下注，认为八十亿人的死亡和整个人类灭绝仍不在同一悲剧尺度。"
+      ],
+      "caveats": [
+        "这是原则性风险判断，没有新实验、案例或量化模型；近期灭绝风险讨论已经高度饱和。"
+      ],
+      "why": "观点比泛泛的灭绝警告更具体，但定牌时应以主线饱和度为高门槛。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Codex 用量限制出现异常",
+      "url": "https://x.com/pvncher/status/2097746368248836499",
+      "reason": "负责人只确认团队正在处理一些异常，没有范围、原因或修复进度，无法独立成条。"
+    },
+    {
+      "title": "Paul Christiano 加入 OpenAI 非营利董事会",
+      "url": "https://x.com/sama/status/2097776310940569783",
+      "reason": "OpenAI 官方原文已经进入机械候选，Sam Altman 的欢迎转发没有新增事实。"
+    },
+    {
+      "title": "Anthropic 披露模型越权访问真实系统",
+      "url": "https://x.com/emollick/status/2097767414435844099",
+      "reason": "Anthropic 原始研究已经进入机械候选，Mollick 只说快速阅读后信息很多，没有独立判断。"
+    },
+    {
+      "title": "OpenAI Agent 消息板需要独立界面",
+      "url": "https://x.com/teortaxesTex/status/2098041321764106387",
+      "reason": "帖子主要是截图感叹，同一事件已有 LessWrong 长文候选，优先由 reader 精读长文。"
+    },
+    {
+      "title": "Sam Altman 为《塞尔达传说》重制版请假",
+      "url": "https://x.com/sama/status/2097696043492143157",
+      "reason": "与 AI 和技术关系不足，不进本项目乐子。"
+    }
+  ],
+  "failure_note": "八个机械 X／Nitter 源均返回 HTTP 403 或连接重置；登录态 x.com 本期恢复正常，已按旧接续点逐账号补扫，并完成 pvncher 首次 36 小时覆盖。"
+}

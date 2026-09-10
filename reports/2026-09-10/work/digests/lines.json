@@ -1,0 +1,146 @@
+[
+  {
+    "id": "katzenberg-ai-video",
+    "section": "industry",
+    "label": "梦工厂创始人与前 Sora 负责人筹办视频模型公司",
+    "url": "https://www.theinformation.com/articles/jeffrey-katzenberg-teams-former-openai-sora-head-new-ai-video-startup",
+    "body": "新公司准备训练自有模型，专门争取电影制作人；团队已接触 Andreessen Horowitz 等投资者。",
+    "note": "主 agent 已通过 The Information 登录态精读全文：公司尚未命名，融资仍在洽谈，产品也未发布。"
+  },
+  {
+    "id": "emollick-decade",
+    "section": "deep",
+    "label": "Ethan Mollick：就算模型停止升级，AI 仍会改变社会至少十年",
+    "url": "https://x.com/emollick/status/2097911967629422882",
+    "body": "工具会继续变好，用法也会继续扩散，工作、教育和日常社交仍会长期震荡。",
+    "note": "核实通过：原帖发表于 2026 年 9 月 10 日；十年是 Ethan Mollick 的个人判断。"
+  },
+  {
+    "id": "pvncher-threejs",
+    "section": "deep",
+    "label": "Eric Provencher：复杂网页游戏该从 Three.js 转向 WebAssembly 和 WebGPU",
+    "url": "https://x.com/pvncher/status/2097634988401250686",
+    "body": "Three.js 建在 WebGL 上，LLM 产出的复杂游戏又未必需要人逐行阅读，没必要继续受这两层抽象限制。",
+    "note": "核实通过：原帖发表于 2026 年 9 月 9 日；这是 Eric Provencher 的工程路线判断，正文未提供同任务对照。"
+  },
+  {
+    "id": "anthropic-econ-policy",
+    "section": "deep",
+    "label": "Anthropic 做了 AI 经济模拟，政策答案还空着",
+    "url": "https://x.com/emollick/status/2097688309493280817",
+    "body": "工具把 AI 对任务组合、经济增长、就业和工资的影响做成情景模拟，还让结果与一万多名美国人的预期比较；Mollick 追问高增长与白领大规模失业若同时发生，该怎么应对。",
+    "note": "核实通过：原帖发表于 2026 年 9 月 9 日，转引了 Anthropic 经济团队的项目介绍。"
+  },
+  {
+    "id": "programmable-world-model",
+    "section": "papers",
+    "label": "可编程世界模型把游戏规则写进程序",
+    "url": "https://huggingface.co/papers/2609.10540",
+    "body": "Agent 先把指令变成状态和规则，再让视频模型只负责渲染画面；自建测试里的对象数量与状态准确率分别达到 94％ 和 98％。",
+    "note": "核实通过：论文发表于 2026 年 9 月 9 日；摘要只明确展示可玩游戏，没有机器人实验，已从原合并银牌降为无牌。"
+  },
+  {
+    "id": "show-harness",
+    "section": "papers",
+    "label": "VLM 用一套语义动作控制不同机器人",
+    "url": "https://huggingface.co/papers/2609.10522",
+    "body": "模型只决定抓取、移动等动作意图，再由每台机器自己的解释器执行；小型开放模型用数个 GPU 小时即可完成适配。",
+    "note": "核实通过：论文发表于 2026 年 9 月 9 日；它是 VLM 控制框架，不是世界模型，摘要没有给出具体成功率。"
+  },
+  {
+    "id": "syncworld",
+    "section": "papers",
+    "label": "几段校准画面让世界模型适应新机器人",
+    "url": "https://huggingface.co/papers/2609.09155",
+    "body": "模型先看动作和画面如何对应，再模拟新视角、新位置或新机体执行同一动作会发生什么，无须为每种设置重新训练。",
+    "note": "核实通过：论文发表于 2026 年 9 月 8 日；零样本指无须下游训练，仍需要校准轨迹，摘要没有披露提升幅度。"
+  },
+  {
+    "id": "openai-christiano-board",
+    "section": "official",
+    "label": "Paul Christiano 加入 OpenAI 基金会董事会",
+    "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+    "body": "他还将进入安全与安保委员会，并以无投票权观察员身份列席营利实体董事会，把安全研究与政府模型评估经验带进公司治理。",
+    "note": "核实通过：OpenAI 公告发表于 2026 年 9 月 9 日。"
+  },
+  {
+    "id": "codex-unity-plugin",
+    "section": "official",
+    "label": "Codex 新增 Unity 插件",
+    "url": "https://x.com/pvncher/status/2097884109213143274",
+    "body": "插件入口已经放进 ChatGPT 插件目录，让 Codex 进入 Unity 开发环境。",
+    "note": "核实通过：Eric Provencher 于 2026 年 9 月 10 日发布一行公告，链接卡片指向 ChatGPT 插件目录；原帖没有功能细节。"
+  },
+  {
+    "id": "mistral-legacy-code",
+    "section": "official",
+    "label": "Mistral 用 Agent 改造四万行 Fortran 代码",
+    "url": "https://mistral.ai/news/legacy-code-modernization",
+    "body": "它先补文档和数值一致性测试，再由人类带着编码、测试和审查 Agent 按模块迁移到 C++；完全放养只会把旧结构原样翻译过去。",
+    "note": "核实通过：Mistral 案例发表于 2026 年 9 月 9 日；四万行是三十万行代码库的首个阶段。"
+  },
+  {
+    "id": "astra-demand",
+    "section": "industry",
+    "label": "Astra 爆量，OpenAI 优先保住现有用户体验",
+    "url": "https://x.com/sama/status/2097695001341829212",
+    "body": "团队称已经动用各种办法扩容，Sam Altman 表示在赶上需求前，会先把现有客户服务放在首位。",
+    "note": "核实通过：Sam Altman 于 2026 年 9 月 9 日回应 Astra 团队的需求说明；本地正文中被引用帖末句截断，因此没有写新增用户的具体限制。"
+  },
+  {
+    "id": "mistral-cloudera",
+    "section": "official",
+    "label": "Mistral 与 Cloudera 合作，把主权 AI 带进企业内网",
+    "url": "https://mistral.ai/news/mistral-x-cloudera",
+    "body": "模型可部署在公有云、私有云、本地机房和断网环境，还能用企业自己的数据训练定制模型，数据与算力继续留在客户控制范围内。",
+    "note": "核实通过：Mistral 公告发表于 2026 年 9 月 10 日。"
+  },
+  {
+    "id": "gradio-workflow-1111",
+    "section": "official",
+    "label": "Gradio 用七十三个节点重建 AUTOMATIC1111",
+    "url": "https://huggingface.co/blog/gradio-workflow-1111",
+    "body": "一张画布串起文生图、局部重绘、放大、去背景和图生视频等十一条流程，每个输出还会自动变成 REST 接口和 MCP 工具。",
+    "note": "核实通过：Hugging Face 博文发表于 2026 年 9 月 10 日。"
+  },
+  {
+    "id": "emollick-deskilling",
+    "section": "fun",
+    "label": "Ethan Mollick 正在把讨厌的小技能全交给 AI",
+    "url": "https://x.com/emollick/status/2097821020375708020",
+    "body": "他不担心自己失去这些能力，只嫌交得还不够快。",
+    "note": "核实通过：原帖发表于 2026 年 9 月 9 日。"
+  },
+  {
+    "id": "one-billion-hemmingways",
+    "section": "fun",
+    "label": "十亿个海明威，把全世界写成同一种声音",
+    "url": "https://www.lesswrong.com/posts/nBzPEprCYKhoBZfbm/one-billion-hemmingways",
+    "body": "人人都能召唤海明威写广告、婚礼誓词和总统演讲，最后连真正的好文章也因为不像他而显得可疑。",
+    "note": "核实通过：LessWrong 小说发表于 2026 年 9 月 9 日，核心设定是把海明威当作随叫随到的 LLM 替身。"
+  },
+  {
+    "id": "blender-viewer",
+    "section": "fun",
+    "label": "Simon Willison 做了个浏览器里的 Blender 查看器",
+    "url": "https://simonwillison.net/2026/Sep/9/blender-viewer",
+    "body": "粘贴 Blender 文件地址或 GitHub 链接就能看模型；他还让 Astra 按一张法贝热彩蛋图片做了个 Blender 版本。",
+    "note": "核实通过：工具介绍发表于 2026 年 9 月 9 日；正文刻意略过 09-09 已报的 Images 2.5 工作流。"
+  },
+  {
+    "id": "x-ai-group-chat",
+    "section": "fun",
+    "label": "X 成了硅谷 AI 圈的实时群聊",
+    "url": "https://www.axios.com/2026/09/10/elon-musk-x-ai-community-group-chat",
+    "body": "模型发布、论文、招聘和技术争论先在这里滚起来，研究员和大厂高管也直接在平台上发消息，普通用户则越来越不是这场对话的中心。",
+    "note": "核实通过：Axios 文章发表于 2026 年 9 月 10 日；正文没有复述文中涉及的近期安全事件。"
+  },
+  {
+    "id": "superintelligence-that",
+    "section": "fun",
+    "label": "Eliezer Yudkowsky 把超级智能装进电视问答节目",
+    "url": "https://www.lesswrong.com/posts/hXozGp2rsbZgXnH3o/can-a-superintelligence-do-that",
+    "body": "题目从电源灯偷密钥、内存发无线电，到一微米级自复制工厂，答案多是人类或自然界已经办到的事，用来提醒人别把一时想不到当成不可能。",
+    "note": "核实通过：LessWrong 文章发表于 2026 年 9 月 9 日，正文注明材料来自作者 2024 年的弃稿。"
+  }
+]

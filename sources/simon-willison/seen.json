@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://calif.io/research/weworm",
+  "title": "微信通话可以传播蠕虫",
+  "date": "2026-09-08",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Sep/10/calif-research",
+  "title": "Simon Willison 转述微信零点击蠕虫研究",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Sep/9/blender-viewer",
+  "title": "Simon Willison 做了个浏览器里的 Blender 查看器",
+  "date": "2026-09-10",
+  "reported": true,
+  "report_date": "2026-09-10"
+ },
+ {
   "id": "https://simonwillison.net/2026/Sep/8/introducing-chatgpt-images-25",
   "title": "Simon Willison 的 API 试用",
   "date": "2026-09-08T22:46:33+00:00",
