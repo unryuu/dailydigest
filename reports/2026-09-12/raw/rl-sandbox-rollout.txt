@@ -1,0 +1,374 @@
+URL: https://huggingface.co/blog/sergiopaniego/rl-environments-2026
+FINAL: https://huggingface.co/blog/sergiopaniego/rl-environments-2026
+TITLE: One sandbox per rollout, or how labs run RL for agents in 2026
+FETCHED: 2026-09-12 19:10:04
+============================================================
+Back to Articles
+One sandbox per rollout, or how labs run RL for agents in 2026
+Community Article
+Published
+ September 11, 2026
+Upvote
+3
+Sergio Paniego
+sergiopaniego
+This blog accompanies
+Class 4 of our Training Agents series
+, where we
+showed live how to train coding agents inside real environments, combining
+TRL
+and
+OpenEnv
+. Here we look at what frontier labs
+built to do the same thing at their scale.
+This is the third and last of a small run of recaps of frontier model reports. First we mapped
+how frontier labs use distillation
+,
+then
+how they train on outcomes
+.
+While writing the second one, we kept running into the same topic over and over again, the place where all that training happens, so I felt like it deserved its own blog.
+An agent runs code, browses, and edits files over many turns, so training it needs a place where
+all of that can happen, and machinery that keeps thousands of those places running while
+the model trains. In August and early September I went through fifteen reports and release
+posts from thirteen labs and model builders, published between October 2025 and September
+2026, to prepare the class and write this blog. GLM-5 and GLM-5.3, Kimi K3, MiniMax,
+Nemotron 3 Ultra, OLMo 3, DeepSeek, Qwen3.8, Inkling, LFM2.5, MAI-Thinking-1, GPT-5.6 and
+GPT-6 Astra, plus Cursor's Composer and Meta's Code World Model. Most of them have a section
+about this, which is usually short, and I counted only what a lab says it trains in (which
+sometimes is not much, unfortunately), not what it only evaluates on. Zhipu says it directly
+in the
+GLM-5.3
+release blog: "As agent capability improves, much
+of the difficulty in scaling post-training moves from the model to the environment".
+One warning about the word. These reports use "environment" at several levels, sometimes for
+the task and its verifier, sometimes for the contract the agent acts through, sometimes for
+the sandboxed machine underneath, and sometimes for the whole rollout system. Those are four
+different layers, and below we try to say which one we mean each time.
+A machine per attempt
+The change starts at the smallest unit of training. In classic RL, an environment was usually a
+simulator living inside the training process. You called
+reset
+to start an attempt and
+step
+to act, everything happened in memory, and starting a new attempt cost almost
+nothing. That is CartPole, the cart balancing a pole with four numbers per step, and that
+pair of calls is the contract
+we traced the history of
+before this blog. Classic RL scaled by running thousands of copies of the same simulator
+in one process, often even on a single GPU. That was actually a typical assignment back at
+university, I remember running CartPole and struggling to make it converge.
+That setup does not work for an agent. For a model to install a package, run a test
+suite, or edit a repository, the environment has to be an actual computer, with a
+filesystem, a shell, and processes that survive between calls. So it stopped being an object
+in the trainer's memory and became a machine whose state belongs to a single attempt,
+booted, used once, and destroyed.
+That single attempt, from prompt to reward, is what gets called a rollout in RL training.
+Liquid AI describes it
+plainly for LFM2.5, a 2.6B model:
+"During training, we sample a task and randomly select a corresponding harness. Each
+rollout runs in a dedicated sandbox with its own runtime." Liquid gives the sandbox its own box in the pipeline. Actions run inside a sandbox service that hosts the agent, with
+verl
+as the
+RL framework underneath.
+The other half of the picture is scale.
+Cursor writes about training Composer
+,
+its own coding model, that "At our scale, teaching the model to effectively call these
+tools requires running hundreds of thousands of concurrent sandboxed coding environments
+in the cloud." They rewrote their virtual machine scheduler for the spikes and scale of training runs,
+adapting infrastructure they had already built for running coding agents in isolated cloud
+VMs for their users.
+Microsoft's MAI-Thinking-1 report
+says it most literally. Its sandbox layer "provisions a
+fresh container for each agentic task and destroys it upon task completion".
+Kimi K3
+, on the other hand, lists "million-token agentic RL with
+persistent rollout and sandbox states" among its headline capabilities, and if an agent
+works on one task for a million tokens, the environment has to hold files, processes, and
+history across all of it, so the training system has to checkpoint and resume those
+worlds, not just the model. The report calls them "resumable microVM sandboxes to preserve
+long-lived model and environment state".
+So the unit is a machine, thrown away after a short attempt, checkpointed and resumed
+through a long one, and at the high end the scale is hundreds of thousands of them at once.
+LFM2.5, at 2.6B parameters, gets the same one sandbox per rollout as everything else here.
+What the labs put inside them
+The reports also say what those machines contain, and three kinds keep coming back, with
+coding tasks taking the lead (as you have probably noticed this year, with all the coding
+harness releases and what people get done with them).
+GLM-5
+gives the clearest picture of the
+scale, "we construct over 10k verifiable environments across thousands of repositories
+spanning 9 programming languages", and
+MiniMax
+builds a pipeline to convert "real-world programming scenarios into a diverse corpus of
+verifiable terminal tasks". Search shows up almost as often.
+Kimi K3
+trains on "multi-step complex
+information searching, where the model plans its research, gathers evidence from the web
+step by step, and produces a verifiable answer". The third kind is plain office work. MiniMax
+also organizes its environments around "deep search and open-web research,
+knowledge-worker office tasks, financial analysis and spreadsheet operations, and slide
+generation", and Kimi goes as far as shipping "realistic mock implementations of widely
+used applications, such as Gmail, Notion, Slack, and Canvas" for its agent to practice in.
+Cursor and Meta describe coding and nothing else. Kimi's report mentions almost every type
+above and then adds one no other report here does, which I find both curious and very
+useful, a suite of GPU kernel tasks "ranging from single-operator kernels to fused mega-kernels".
+The harness itself is becoming the environment. Kimi's
+report says "the environment can instantiate mainstream harnesses such as Kimi Code,
+Claude Code, Codex, OpenClaw, and Hermes", meaning the model trains inside reconstructions of the same coding agents people actually
+run, assembled from modules like tool interfaces and system prompts, in what it calls a
+white-box environment.
+Liquid arrives at the same place from the other side, with a proxy
+that "lets us treat agentic harnesses as black boxes with no modification, while
+transparently capturing the token-level trajectories needed to reconstruct and validate RL
+training samples". Either you rebuild the harness so the trainer drives every step, which
+is the white box, or you leave a shipped agent untouched and record its traffic as it goes
+past, which is the black box (we explained both approaches during the live class). Microsoft Research's
+Agent Lightning
+, a framework and the paper
+behind it, names that pattern harnessed agentic RL, where "the harness, rather than the
+training engine, owns the environment interaction loop", and
+Polar
+describes the same mechanism at scale,
+treating the harness as a black box while reconstructing token-faithful trajectories for
+training.
+Inkling
+, Thinking Machines' first
+open-weights model, was trained to run inside a variety of coding and agent harnesses, with the tool set and
+schema randomized during training to make it less sensitive to any particular one.
+The newest pattern is environments built by agents.
+GLM-5.3
+describes pipelines that synthesize environments end to end. Research agents turn patterns from real work into runnable long-horizon
+environments, a judge agent attempts each task to verify it is actually solvable, and a
+verifier only ships if it passes "oracle, no-op, and unsolved-state checks". Zhipu is
+open about the limit, these pipelines "still require a meaningful amount of
+human-in-the-loop work".
+The open-weights labs (Kimi, GLM,
+MiniMax, NVIDIA) describe their environments in detail, and
+Ai2's OLMo 3
+goes furthest, documenting its RL grading
+infrastructure in the open down to the count, "17.2 million generated code samples"
+checked in parallel isolated environments during development (we love this level of
+transparency 🫶). OpenAI, Anthropic, and Google
+publish almost nothing about what they train in.
+OpenAI's GPT-5.6 system card
+names plenty of environments and every single one is an evaluation, its whole statement
+on RL training is one generic paragraph, and the
+GPT-6 Astra system card
+from September
+repeats the pattern in one sentence, "OpenAI reasoning models are trained to reason through
+reinforcement learning". DeepSeek and Qwen sit in between.
+DeepSeek
+documents its sandbox platform
+in unusual depth, down to accommodating "hundreds of thousands of sandboxes per cluster",
+and
+Qwen3.8
+claims "reinforcement learning
+scaled across million-agent environments", both without naming what runs inside.
+Everyone who talks about it put together their own stack
+Labs mostly converge on shared recipes for distillation and for RL algorithms, but for
+environment infrastructure every lab that describes it at all put together a stack of its own, often with pieces built
+in house (which makes sense to me, it is the newest piece and the standards are still being
+built).
+GLM-5
+trains on slime, its post-training infrastructure, and highlights an asynchronous design that "drastically improves post-training
+efficiency by decoupling generation from training". Generation runs on its own engines at
+its own pace, training consumes the results, and neither has to wait for the other. When a rollout is a container that boots, runs
+a test suite, and takes as long as it takes, a synchronous loop leaves the trainer waiting
+for the slowest attempt in the batch. Decoupling improves utilization at the cost of
+staleness, since some rollouts arrive from a model version that is already an update or
+two old.
+Six months later,
+GLM-5.3
+shows what that design bought
+them. Environments plug into slime "as data generation rather than as changes to the training
+loop", which "let us keep adding environments through GLM-5.2 and GLM-5.3 without
+rebuilding the training stack each time". Zhipu's founder
+Jie Tang frames GLM-5.3
+as a controlled experiment on that dial, "same base, same architecture, same total and
+activated parameters as GLM-5.2. One month of scaling long-horizon environments and RL.
+The gains are not marginal." I like that a founder (and professor at Tsinghua University) describes his flagship release
+the way you would describe an ablation, variables held fixed and one thing changed.
+MiniMax built Forge
+, its RL system for long-horizon
+agent trajectories, which "seamlessly admits both white-box and black-box (API-only) agents within a
+unified training loop", the two ways in from the section above.
+NVIDIA's Nemotron 3 Ultra
+lists
+"multi-environment RLVR" among its key technologies, verifiable rewards computed across
+several environments at once during one training run.
+Inkling was post-trained with large-scale RL on synthetic and human-made
+environments, using over 30 million rollouts. Even Meta, which has published no report for its latest
+flagships, discloses the layer through
+its 2025 Code World Model paper
+,
+an internal execution service that runs "tens of thousands of code snippets per second"
+in isolated containers.
+Whatever each lab calls it, the reports describe the same four pieces. A task with a verifier baked in, a contract the
+agent acts through (increasingly the
+harness
+itself), a sandbox to run it in, and
+a trainer that consumes the rollouts without waiting for the slowest one. Each lab that
+describes it assembled that stack for itself.
+SemiAnalysis dissected the engineering behind this layer
+,
+down to sandbox startup latency and failure robustness, and their conclusion matches what
+the reports show, "RL training is as much of an infrastructure problem as an algorithm one".
+Nathan Lambert has argued
+that environments are the easiest part of frontier training to keep hidden ("the most
+important part is the complex RL environments and the prompts to place your agents in
+them. These are much easier to hide"), which explains part of the secrecy. He also
+reports spending
+of
+"$10M+ for single environments" at the top labs, in line with the billion-dollar budgets
+we mentioned in the history blog
+. Writing about GLM-5.3,
+his summary is hard to improve
+on
+, "one does not
+simply 'distill' RL environments, infrastructure to run them at scale, or algorithms to
+mix them together effectively".
+The same stack, built in public
+Part of that stack is already public. For example, the two frameworks named above, slime and verl, are
+both open source. What the labs keep is the
+environments, the task data, and the compute for hundreds of thousands of sandboxes at once
+(
+cries in GPU-poor
+). The first two are being rebuilt as public artifacts, layer by layer,
+and that is the part you can actually download. We build and teach with TRL and OpenEnv, so
+that is the corner we can speak about first hand, but the four layers below are wider than
+any single stack.
+Tasks.
+Prime Intellect's Environments Hub
+treats environments as community artifacts, built on
+verifiers
+, the
+library created by Will Brown.
+Harbor
+decouples a task, a harness, and a
+sandbox so they can be mixed freely, with a TRL integration on the way
+through OpenEnv
+, and
+Repo2RLEnv
+turns any GitHub repository into
+verifiable tasks in that format.
+Environments.
+OpenEnv
+is the socket,
+standardizing the Gymnasium-style contract (reset, step, state) over HTTP so that
+environments ship as artifacts on the Hub, and its technical committee now seats the
+commercial environment vendors themselves, with Prime Intellect, Mercor, and Fleet AI next
+to Meta-PyTorch, Hugging Face, Nvidia, and Microsoft. As we publish this, over 4,000
+Spaces on the Hub carry the openenv tag.
+SkyRL
+,
+from Berkeley's Sky Computing Lab, ships its own library of environments for LLMs, and
+wrappers like
+BrowserGym
+and
+TextArena
+serve whole task families through the
+same kind of API.
+Sandboxes.
+The machines underneath are a market of their own, with Modal and E2B among
+the companies selling exactly this. Moonshot open-sourced
+AgentENV
+, the sandbox layer under Kimi K3, "a
+distributed system for running agent environments at scale" with fast snapshot, resume and fork.
+Hugging Face Sandboxes
+is our version, still experimental, isolated cloud machines on HF Jobs, with SandboxPool
+packing many lightweight CPU sandboxes into shared hosts for the one sandbox per rollout
+pattern at reasonable cost. It is a small tool next to the options above, but we used it for
+running the demos in the class.
+Trainer.
+TRL
+is the training side, where
+GRPOTrainer connects to an environment with one argument, the white box path, and the
+experimental AsyncGRPOTrainer decouples rollout generation from training, the same design
+GLM-5 attributes to slime (the async landscape has a survey of its own,
+Keep the Tokens Flowing
+). Those
+two are what ran in
+the class
+, GRPOTrainer for the white box demo and the
+async worker for the black box one. That second path has a write-up of its own too,
+training a coding agent through a real harness
+with every token captured on the wire. This layer moves weekly. In August, RadixArk, one of the
+organizations on the OpenEnv technical committee, released
+Miles
+v0.1, a fork of slime, with connectors for OpenEnv, Harbor, and verifiers.
+Their launch note
+says it was battle-tested "on frontier open models like Kimi K3, DeepSeek V4, Qwen 3.8, GLM
+5.2, Inkling, MiniMax H3", several of them from the list at the top of this blog.
+You do not need a lab-sized team to start experimenting with this. In
+an earlier blog
+I wrapped
+Simon Willison's "deeply unscientific" pelican benchmark into an OpenEnv env and trained
+against it, on my own.
+Teaching a model to paint watercolours with code
+is the same recipe with a fuzzier reward, a judge comparing each painting against a curated
+pool plus an aesthetic score. And after GPT-6 Astra's Blender scenes went viral this month,
+my colleague Merve tested the same thing
+with a 9B
+Qwen3.5 inside an OpenEnv Blender environment, with mixed results. For the full tour of this side of the field,
+my colleague Adithya's guide to RL environments
+covers it from the contract to the frontier.
+Where this leaves us
+Across the three blogs, distillation moves knowledge between models, RL moves models
+toward outcomes, and this last layer is where those outcomes become real enough to train
+on. The public stack now covers those four layers at a scale the rest of us can afford,
+and in
+Class 4
+we used it to train coding agents, live, with everything public,
+from the environment to the trained model.
+This closes the Training Agents series. The four classes are open, with
+SFT
+,
+distillation
+,
+RL
+, and
+RL environments
+, each with its companion blogs
+(
+distillation history
+,
+distillation in 2026
+,
+RL in 2026
+, and
+the history of RL environments
+). Follow
+Ben
+and
+me
+to catch whatever we train next. There will be more of this in the autumn, in one form or
+another 😉
+Spaces mentioned in this article
+1
+Papers mentioned in this article
+9
+More from this author
+Why RL environments work now (and could not in 2016)
+1
+September 7, 2026
+How frontier models train on outcomes in 2026
+7
+August 10, 2026
+Community
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+3
+Spaces mentioned in this article
+1
+Papers mentioned in this article
+9

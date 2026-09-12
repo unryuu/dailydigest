@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/blog/sergiopaniego/rl-environments-2026",
+  "title": "Agent 强化学习变成一次尝试开一台机器",
+  "date": "2026-09-12",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
+  "id": "https://huggingface.co/blog/bartowski/per-tensor-layout-maps-for-gguf-quantization",
+  "title": "GGUF 量化开始给每个张量单独分配精度",
+  "date": "2026-09-12",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
   "id": "https://huggingface.co/blog/gradio-workflow-1111",
   "title": "Gradio 用七十三个节点重建 AUTOMATIC1111",
   "date": "2026-09-10",

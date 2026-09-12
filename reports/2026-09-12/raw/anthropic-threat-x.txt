@@ -1,0 +1,29 @@
+URL: https://x.com/anthropicai/status/2098097512544444447
+FINAL: https://x.com/AnthropicAI/status/2098097512544444447
+TITLE: Anthropic on X: "We're publishing our most detailed threat intelligence report to date.
+
+It covers how people tried to misuse Claude—for cyberattacks, influence operations, surveillance, biology, and building weapons—and how we found and stopped them.
+
+We disrupted every operation in the report, a… / X
+FETCHED: 2026-09-12 19:09:38
+============================================================
+Anthropic
+@AnthropicAI
+We're publishing our most detailed threat intelligence report to date.
+
+It covers how people tried to misuse Claude—for cyberattacks, influence operations, surveillance, biology, and building weapons—and how we found and stopped them.
+
+We disrupted every operation in the report, and used the lessons from them to strengthen our safeguards. Where appropriate, we also shared what we found with authorities and other AI companies.
+
+These cases are not typical: we’re highlighting some of the most sophisticated misuse we’ve seen. But they’re especially important to discuss, because they show us where AI misuse is headed, where our safeguards work, and where they need to improve.
+
+We’re publishing this report so others can spot the same activity on their own platforms, and so we can give the public a clearer view of how emerging threats develop.
+
+Read the report:
+anthropic.com/threat-intelli…
+Countering misuse of AI: September 2026 / Anthropic
+From anthropic.com
+5:13 PM · Sep 10, 2026
+38.6M
+Views
+2.7K

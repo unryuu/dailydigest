@@ -1,0 +1,22 @@
+URL: https://x.com/teortaxesTex/status/2098634608153637054
+FINAL: https://x.com/teortaxesTex/status/2098634608153637054
+TITLE: Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) on X: "I'm rather fatalistic about benchmarks as measure of peak capability.
+Even AGENTS.md has enormous effects on less polished models. V4.1 in particular is very brittle, it does "well" with minimal harness/prompts but you can have massive gains with AGENTS… / X
+FETCHED: 2026-09-12 19:09:28
+============================================================
+Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞)
+@teortaxesTex
+I'm rather fatalistic about benchmarks as measure of peak capability.
+Even AGENTS.md has enormous effects on less polished models. V4.1 in particular is very brittle, it does "well" with minimal harness/prompts but you can have massive gains with AGENTS optimized for a scenario.
+Benjamin Marie
+@bnjmn_marie
+9h
+The more I think about it, the worse it gets.
+
+We’re not just evaluating a harness–model pair. We’re evaluating an adapter–harness–model triplet. The adapter is what you can easily benchmaxx.
+
+Take DeepSWE: Pi running through a basic Pi-to-Pier adapter would perform much worse
+4:47 AM · Sep 12, 2026
+3.8K
+Views
+3

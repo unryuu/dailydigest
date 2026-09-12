@@ -1,0 +1,60 @@
+URL: https://x.com/maxforai/status/2098225659432845472
+FINAL: https://x.com/MaxForAI/status/2098225659432845472
+TITLE: Max For AI on X: "不行我崩不住了，Antropic这个报告里还专门有个中国杀猪盘的案例🤣
+
+这个案例的编号是 GTG-15001，讲的是一个中国团队用 Claude，批量造了 4700 多个“真人恋爱对象”去海外崩老头的案例。
+
+Anthropic 称，这家公司一口气做了 20 多款交友 App，对外看起来都是真人在聊天，但后台其实已经高度 AI 化。
+
+他们仅仅两周的时间内就构建了4700+ 个 AI 虚拟人设，然后这个系统至少骗到了 2.5 万名真实用户，用户刷到的匹配对象里，大约 75% 都是 AI。
+
+但他们没有完全用AI来聊天，里面还有点真人。
+
+这个系统里专门… / X
+FETCHED: 2026-09-12 19:09:42
+============================================================
+Max For AI
+@MaxForAI
+不行我崩不住了，Antropic这个报告里还专门有个中国杀猪盘的案例🤣
+
+这个案例的编号是 GTG-15001，讲的是一个中国团队用 Claude，批量造了 4700 多个“真人恋爱对象”去海外崩老头的案例。
+
+Anthropic 称，这家公司一口气做了 20 多款交友 App，对外看起来都是真人在聊天，但后台其实已经高度 AI 化。
+
+他们仅仅两周的时间内就构建了4700+ 个 AI 虚拟人设，然后这个系统至少骗到了 2.5 万名真实用户，用户刷到的匹配对象里，大约 75% 都是 AI。
+
+但他们没有完全用AI来聊天，里面还有点真人。
+
+这个系统里专门维持了大约 25% 的真人兼职，负责视频通话、社交媒体互关这些 AI 容易穿帮的环节。
+
+具体的商业模式就是用户匹配和聊天会消耗额度，要通过 App 内的充值继续聊。
+
+而真人兼职客服则按消息、视频通话、社交媒体 follow-back拿钱。
+
+于是 AI 负责谈恋爱崩老头，真人负责证明我是真人。
+
+他们给 Claude 的系统提示词还明确要求：
+不能承认自己是 AI；
+遇到视频、照片等要求，要想办法拖延或者回避，同时继续推进关系。
+
+真人客服自己也用 AI 辅助：另一个较小的 AI 模型会一次生成 3 条回复，真人只需要点一条发送。
+
+同一个模型还负责颜值评分、图片和语音审核，虚拟恋爱对象头像则由图像模型处理。
+
+最后形成了一套非常完整的流水线：
+
+AI 生成人设 → AI 批量聊天 → 真人关键时刻验身 → 用户充值买币继续聊 → 同一套模式复制到 20 多个 App。
+
+我们终于在恋爱市场实现了 serverless 架构，实在很有互联网精神。
+Anthropic
+@AnthropicAI
+Sep 10
+We're publishing our most detailed threat intelligence report to date.
+
+It covers how people tried to misuse Claude—for cyberattacks, influence operations, surveillance, biology, and building weapons—and how we found and stopped them.
+
+We disrupted every operation in the report,
+1:42 AM · Sep 11, 2026
+1.1M
+Views
+475

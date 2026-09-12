@@ -1,0 +1,102 @@
+URL: https://www.lesswrong.com/posts/W3zn5jQa8fhmiBsPG/caroline-ellison-has-joined-manifund
+FINAL: https://www.lesswrong.com/posts/W3zn5jQa8fhmiBsPG/caroline-ellison-has-joined-manifund
+TITLE: Caroline Ellison has joined Manifund — LessWrong
+FETCHED: 2026-09-12 19:10:24
+============================================================
+x
+Caroline Ellison has joined Manifund — LessWrong
+Personal Blog
+25
+Caroline Ellison has joined
+Manifund
+by
+Austin Chen
+,
+Carol N
+11th Sep 2026
+3
+min read
+1
+25
+Austin:
+I’m happy to announce that Caroline Ellison has accepted a role at Manifund, to develop our funding platform and research how to effectively direct philanthropic dollars.
+In fact, she started a work trial on July 13, which converted to a fulltime role on Aug 10. Over the past two months, she’s been publishing her work and supporting Manifund users under the pseudonym “Carol”.
+How did I come to consider this at all?
+I specifically enjoyed
+Caroline’s tumblr
+and
+other writings
+, which I found thoughtful and relatable. I invited her to Manifest 2026, just because I wanted to meet her. During the festival, she came to my night market booth, and asked about joining our team, which I was interested to explore.
+I felt a keen debt to the FTX Future Fund. They provided seed funding for Manifold. They funded
+the retreat
+which drew me into the EA community, and the
+conference
+where I met my wife. Much of Manifund’s work today is directly inspired by the
+Future Fund’s approach
+.
+On FTX itself, I remain conflicted. It was their money and spirit that enabled the Future Fund, and I still admire many aspects of FTX and the individuals who worked there. But also: FTX did wrong. Its collapse harmed users (myself included), and damaged the movement which I deeply care about. I may write more about this in the future, but in any case:
+I believe in redemption. Caroline has admitted her faults, worked to make creditors whole, and served her time in prison. I’d like to give her the opportunity to contribute back to the world; I hope that the world will concur.
+Why did I hire Caroline for Manifund?
+Manifund needs talent. Leading AI labs warn about recursive self improvement; poverty and disease remain unsolved; billions of animals suffer hell on earth. I, my team, and many EAs I know, are often burning the midnight candle to address these wrongs. I don’t wish to sideline a pair of capable hands. (We’re
+hiring
+!)
+Caroline brings specific, useful expertise around finance and systems management to Manifund. I know this might seem like a joke — why would you trust someone who blew up an exchange? — but in fact she’s already been invaluable, for example building a reconciliation tool which identified several misregistered transactions in our database, in the 5-6 figures. (Obviously, she and I will be extremely motivated not to repeat FTX’s mistakes).
+Through working together, I’ve had the privilege to know Caroline as more than just an icon of FTX. I find her to be kind, humble, down to earth, hardworking, smart and witty. She cares deeply about doing right, for our users, our donors, and the world. She shares many of my sensibilities around extant problems of philanthropy; see, for example,
+our essay in support of for-profits
+. She adores Ada, my 2yo daughter (and, the feeling is clearly mutual).
+Manifund strives to be unusually transparent. And so, I apologize for our minor deception, in using a pseudonym over the last couple months. I still endorse having done this — I think it’s relatively common to work with people pseudonymously, when their real identity is famous. But I want to call out that we compromised on transparency here, which I do not take lightly.
+I understand that some of our users, donors, and partners may now be skittish about working with Manifund, given this announcement.
+I appreciate any trust you are willing to extend, and ask that you judge us by our historical and future outputs. You (or your LLM) can take a look at Manifund’s
+source code
+,
+underlying data
+,
+finances
+and
+research
+; if you wish, you can see Caroline’s specific
+code commits
+and
+comments
+on Manifund.
+I’m happy to take questions, over public comments or emailed to
+austin@manifund.org
+. (I can’t promise I’ll be able to reply to every one.) In the meantime, I’d like to ask Caroline to say a few words.
+Caroline:
+I’ve said a lot about what I did wrong at Alameda/FTX—you can read what I said at
+my plea, during trial, and remarks at sentencing
+. I’m deeply sorry for what I did, and I completely understand why people may not want to work with me. But I’m very grateful to Austin for giving me a second chance, and judging me on my current work performance rather than my past. I feel very lucky not only to have a job, but to be working somewhere that I think is doing great work and has a mission I believe in.
+When I started my work trial, unsure if I’d get a full-time offer at the end, I didn’t want to go through a public announcement just to potentially be let go a month later. But now that I’ve accepted a full-time offer at Manifund, I want to be upfront about it.
+I’m excited to continue improving our technical infrastructure, working on operations and customer support, and posting updates on our
+newsletter
+.
+I probably won’t reply to comments on this post—sorry.
+Caroline Ellison has joined Manifund
+-2
+Vitor
+1
+Comments
+1
+Personal Blog
+25
+New Comment
+1 comment
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 11:10 AM
+[
+-
+]
+Vitor
+3h
+-2
+-1
+I'm having trouble believing this. OOH, it's fine that people should be able to do their time for past crimes and return to good standing in society. OTOH you're putting someone who defrauded her principals of billions of dollars in charge of other people's money? I don't want her anywhere near that, ever.
+Seriously, this destroys my remaining trust in EA as a whole. On the ACX survey we just had, I "sorta" identified as an EA. It'll be a clear "no" next time.
+Reply
+Moderation Log
+More from
+Austin Chen
+View more
+Curated and popular this week

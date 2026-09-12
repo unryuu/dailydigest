@@ -1,0 +1,46 @@
+URL: https://openai.com/index/cognition-devin-testing-with-astra
+FINAL: https://openai.com/index/cognition-devin-testing-with-astra/
+TITLE: Cognition helps Devin test its own work with GPT‑6 Astra | OpenAI
+FETCHED: 2026-09-12 19:11:22
+============================================================
+September 11, 2026
+Cognition helps Devin test its own work with GPT‑6 Astra
+GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.
+Start building
+Company size:
+Startup
+Region:
+North America
+Industry:
+Technology
+Products:
+API
+Listen to article
+1:29
+Cognition is the company behind Devin, an autonomous software engineer used by businesses around the world, from big banks to tech-native startups. As Cognition’s engineering teams write more code, reviewing that work has become a challenge. Cognition sees GPT‑6 Astra’s ability to test its work and show the results as a way to make code review more efficient.
+“One of the big pieces that Astra improves on is its ability to test and prove that its work actually functions the way you expect.”
+Walden Yan, Co-founder, Cognition
+Testing software and showing the results
+Cognition is applying GPT‑6 Astra across its product lineup. “We’ve been using it to make improvements across our product, including the core cloud agent that is Devin, but also our CLI and desktop products,” says Yan.
+In one example, Devin uses Astra to test
+Otter Run
+, an iPhone game, and returns a recording of the game running in a simulator, alongside a report identifying checks that passed and areas left untested.
+The recording shows the application’s behavior, while the report documents the scope of the testing. Engineers can use those outputs to inspect how the software works and understand what still needs attention.
+Astra is also helping Cognition get back to customers “much quicker,” says Yan. When a customer sends a screenshot of a bug, the team can pass it to Devin using Astra, which fixes the issue and returns a screenshot showing the result.
+Working toward less manual code review
+Cognition sees stronger testing with GPT‑6 Astra as a path toward a more efficient review process. Having Devin test its work and provide evidence of the results could help engineers evaluate changes with less manual examination of the code.
+“We expect over time that we have to manually look at less code and end up shipping more at the end of the day. This is one of the things we’re really excited about when it comes to GPT-6.”
+Walden Yan, Co-founder, Cognition
+OpenAI <3 startups
+Join the community
+Start building
+(opens in a new window)
+Keep reading
+Perplexity trusts GPT-6 Astra with end-to-end systems
+Sep 14, 2026
+Rapidly scaling online storage to serve over 1 billion ChatGPT users
+Engineering
+Sep 11, 2026
+How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules
+Applied AI
+Sep 10, 2026

@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/W3zn5jQa8fhmiBsPG/caroline-ellison-has-joined-manifund",
+  "title": "FTX 前高管 Caroline Ellison 加入慈善基金平台",
+  "date": "2026-09-11T22:00:45Z",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/uzoLm4prFzRiuznJt/first-bill-introduced-to-ban-superintelligent-ai",
+  "title": "英国议会出现第一份超级智能禁令",
+  "date": "2026-09-10T22:15:49Z",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/uvhuZHFtrgk8kNiZc/astra-is-much-better-at-reasoning-with-filler-tokens-than",
+  "title": "给 Astra 塞空白 token，正确率反而翻了几倍",
+  "date": "2026-09-10T23:30:47Z",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/hXozGp2rsbZgXnH3o/can-a-superintelligence-do-that",
   "title": "Eliezer Yudkowsky 把超级智能装进电视问答节目",
   "date": "2026-09-10",

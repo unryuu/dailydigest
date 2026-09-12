@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+  "title": "OpenAI 建议给 Astra 删短技能和项目说明",
+  "date": "2026-09-12",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
+  "id": "https://openai.com/index/cognition-devin-testing-with-astra",
+  "title": "Devin 用 Astra 测试自己的工作",
+  "date": "2026-09-11T16:00:00Z",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
   "id": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
   "title": "Paul Christiano 加入 OpenAI 基金会董事会",
   "date": "2026-09-09",

@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai",
+  "title": "编码 Agent 一小时做完一周工作，也会让工程师难过",
+  "date": "2026-09-11T17:28:37+00:00",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Sep/11/hugging-face-security",
+  "title": "Hugging Face 对找漏洞的 AI 说：去刷题",
+  "date": "2026-09-11T16:04:53+00:00",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter",
+  "title": "OpenRouter 上同一模型可能跑出两种脾气",
+  "date": "2026-09-11T22:49:18+00:00",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
   "id": "https://calif.io/research/weworm",
   "title": "微信通话可以传播蠕虫",
   "date": "2026-09-08",

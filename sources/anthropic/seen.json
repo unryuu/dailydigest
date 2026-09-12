@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+  "title": "Anthropic 披露七类真实 AI 滥用",
+  "date": "2026-09-11T01:13:00+08:00",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
   "id": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards",
   "title": "Improving Fable 5's biology safeguards",
   "date": "2026-08-07",

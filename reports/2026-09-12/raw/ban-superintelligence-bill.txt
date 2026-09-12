@@ -1,0 +1,179 @@
+URL: https://www.lesswrong.com/posts/uzoLm4prFzRiuznJt/first-bill-introduced-to-ban-superintelligent-ai
+FINAL: https://www.lesswrong.com/posts/uzoLm4prFzRiuznJt/first-bill-introduced-to-ban-superintelligent-ai
+TITLE: First Bill Introduced to Ban Superintelligent AI — LessWrong
+FETCHED: 2026-09-12 19:09:46
+============================================================
+x
+First Bill Introduced to Ban Superintelligent AI — LessWrong
+AI Governance
+Politics
+AI
+World Optimization
+Personal Blog
+48
+First Bill Introduced to Ban Superintelligent
+AI
+by
+Andrea_Miotti
+10th Sep 2026
+Linkpost for
+blog.controlai.org
+4
+min read
+2
+48
+Two days ago, Anthropic researcher Jacob Coxon
+resigned
+,
+stating
+that AI companies are “racing straight to self-improving superintelligence and gambling with our lives” and that they believe it “could kill us all by the end of the decade”.
+At the same time, momentum is building to change course. These have been two historic weeks in the fight to prevent
+human extinction from superintelligence
+, with
+three major legislative breakthroughs
+for ControlAI and everyone working to keep humans in control.
+A little less than two years ago, we set out to inform lawmakers and the public about the extinction risk from superintelligence and help them act on it. Since then, we have directly briefed nearly 400 lawmakers across the US, UK, Canada, and Germany, and over 170 in the
+UK
+and
+Canada
+now publicly
+back
+our
+campaigns
+: the start of an international coalition to prevent superintelligence and keep humanity in control.
+This work has led directly to three major legislative breakthroughs in the last two weeks:
+ControlAI’s bill to ban superintelligence was
+introduced
+in the UK Parliament by Alex Sobel MP, the first bill of this kind to be introduced in any legislature around the world.
+Senator Bernie Sanders and Representative Greg Casar have
+announced
+a US bill to ban superintelligence, which ControlAI
+consulted
+on.
+Lord Clement-Jones
+introduced
+in the UK legislature an amendment drafted by ControlAI that would establish an emergency AI kill switch for the government.
+The First Bill to Ban Superintelligent AI Introduced in Any Legislature
+ControlAI team members heading into Parliament on Tuesday to watch it happen.
+On September 8,
+Alex Sobel
+MP
+introduced
+ControlAI’s UK
+Artificial Superintelligence Security Bill
+on the floor of the UK House of Commons, with cross-party support.
+This bill, first
+announced
+in May,
+prohibits the development of superintelligence
+to address the national security risk it poses, while ensuring the UK can still pursue its AI ambitions for economic prosperity and defense.
+A domestic ban protects the UK from threats on its own soil, but not from the development of superintelligence abroad. No matter who builds ASI, or where they build it, we are all in danger: truly addressing the threat requires a worldwide prohibition on ASI development. The bill recognizes this, requiring the UK government to work with other countries to negotiate an international agreement prohibiting superintelligence worldwide.
+It is feasible to detect and deter superintelligence development. It is a large-scale industrial process, akin to uranium enrichment. It requires massive data centers, visible from orbit and detectable through thermal imaging satellites, filled with state-of-the-art AI chips produced through narrow supply chains that can be restricted. Specific markers also help distinguish superintelligence development from most AI development, giving governments the means to establish a “trust, but verify” regime.
+And momentum is growing on both sides of the Atlantic.
+Sanders and Casar Announce the First US Bill to Ban Superintelligent AI
+Last week, Senator Bernie Sanders and Representative Greg Casar
+announced the first US bill to ban superintelligence
+. This announcement comes after Representatives Nathaniel Moran and Ted Lieu
+introduced
+the
+AI Kill Switch Act
+in July,
+which we were happy to endorse
+.
+As reported by the Washington Post, ControlAI
+consulted on the Sanders-Casar framework
+. Our wider US advocacy has included
+briefing over 200 congressional offices
+and holding over 20 meetings directly with members of Congress in a little over a year.
+It is fantastic that the first bill in the US banning superintelligence recognizes that any national ban must be coupled with an effort to prevent superintelligence development worldwide. This is crucial for any framework on preventing superintelligence.
+The framework also proposes a temporary pause on advanced AI development. Our own approach is narrower: prohibit the development of superintelligence specifically, and treat a specific subset of AI capabilities as superintelligence precursors to be monitored and restricted.
+We look forward to seeing how the full bill balances these goals. In the meantime, you can read our
+US Ban ASI Bill discussion draft
+.
+Lord Clement-Jones Introduces an Emergency AI Kill Switch in the UK
+Last week, on September 1, Lord Clement-Jones
+put forward
+ControlAI’s
+kill switch amendment
+to the UK’s
+Cyber Security and Resilience Bill
+, marking the second time ControlAI has worked with UK parliamentarians to advance such a measure in this bill, after Alex Sobel
+introduced
+another
+kill switch amendment
+earlier this year.
+The
+amendment
+recognizes superintelligence as a national security threat, and provides a stopgap measure allowing the government to shut down data centers and AI systems deployed at scale in the UK in case AIs are threatening national security.
+An AI kill switch is a common-sense measure that governments should put in place, though it will not be sufficient if we do reach superintelligence, as such systems would undermine any attempt to shut them down.
+What Comes Next
+Two years ago, no legislature in the world had seen a bill to ban superintelligence. Now one has been introduced, with a second bill announced.
+What these bills and amendments do is set out measures countries can adopt domestically, and set the path for them to negotiate international deals to enforce them around the world. And importantly, they open up the public conversation we need to have to get a ban on superintelligence in place.
+Each national breakthrough makes getting another country on board easier, and each of them builds the international coalition we need.
+This was achieved with a small team, in less than two years. The approach is straightforward, repeatable, and compounds via a public, growing coalition of lawmakers.
+The work is only beginning. We will keep working with lawmakers across parties and countries to keep humanity in control.
+First Bill Introduced to Ban Superintelligent AI
+12
+XelaP
+2
+Connor Williams
+1
+[comment deleted]
+2
+Comments
+2
+AI Governance
+Politics
+AI
+World Optimization
+Personal Blog
+48
+More from
+Andrea_Miotti
+View more
+Curated and popular this week
+New Comment
+2 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 11:09 AM
+[
+-
+]
+XelaP
+2d
+12
+8
+I am worried that these bills will mean basically nothing in practice, in the same way that a ban on "superexplosive missiles" may not have done anything to stop nuclear missile development. Similarly a ban on "big piles of uranium" depends a lot on what "big" means and whether putting 100 small parts together for a brief period long enough for them to explode would count.
+As I see it, any proposal must be based on stopping
+development
+(of some class, like the training of new AIs)
+in general
+or
+stopping the means required for development
+(like compute bans), instead of banning certain
+capbilities
+which you can only establish exist after the fact.
+Reply
+[
+-
+]
+Connor Williams
+2d
+2
+0
+Andrea, is there any means at all to make donations to ControlAI in the 4-5 figure range? If possible, I would give $2-3k immediately; I would likely also be able to secure a donation around $10k from my parents' family foundation this fall.
+Reply
+[
++
+]
+[comment deleted]
+2d
+1
+0
+Moderation Log
+Deleted by
+Connor Williams
+,
+Last Thursday at 10:55 PM

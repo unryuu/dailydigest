@@ -1,0 +1,305 @@
+[
+  {
+    "slug": "blackstone-ai-financing",
+    "url": "https://www.theinformation.com/articles/inside-blackstones-bid-rule-ai-financing",
+    "status": null,
+    "error": "Error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "slug": "instinct-compute-funding",
+    "url": "https://www.theinformation.com/articles/personal-ai-app-instinct-faces-compute-crunch-lead-new-funding",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/personal-ai-app-instinct-faces-compute-crunch-lead-new-funding",
+    "bytes": 413045,
+    "title": "Personal AI App Instinct Faces Compute Crunch That Could Lead to New Funding — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "rubygems-report",
+    "url": "https://www.rubyhack.ai",
+    "status": 200,
+    "final_url": "https://www.rubyhack.ai/",
+    "bytes": 50596,
+    "title": "OpenAI agents carried out an undisclosed cyber-attack on RubyGems",
+    "chars": 25998
+  },
+  {
+    "slug": "rubygems-information",
+    "url": "https://www.theinformation.com/briefings/openai-ai-swarm-hacked-software-service-months-hugging-face-incident",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/openai-ai-swarm-hacked-software-service-months-hugging-face-incident",
+    "bytes": 406439,
+    "title": "OpenAI AI Swarm Hacked Software Service Months Before Hugging Face Incident — The Information",
+    "chars": 2375
+  },
+  {
+    "slug": "rubygems-simon",
+    "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
+    "bytes": 18045,
+    "title": "OpenAI agents attacked RubyGems back in May",
+    "chars": 3572
+  },
+  {
+    "slug": "astra-cot-control",
+    "url": "https://www.lesswrong.com/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited",
+    "bytes": 545309,
+    "title": "CoT controllability evals seem very under-elicited — LessWrong",
+    "chars": 15471
+  },
+  {
+    "slug": "astra-speculative-depth",
+    "url": "https://www.lesswrong.com/posts/WFc3NkuPaYFrYuaZd/astra-s-no-cot-limits-track-speculative-depth-not-step-count",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/WFc3NkuPaYFrYuaZd/astra-s-no-cot-limits-track-speculative-depth-not-step-count",
+    "bytes": 558772,
+    "title": "Astra's no-CoT limits track speculative depth, not step count — LessWrong",
+    "chars": 20587
+  },
+  {
+    "slug": "astra-filler-tokens",
+    "url": "https://www.lesswrong.com/posts/uvhuZHFtrgk8kNiZc/astra-is-much-better-at-reasoning-with-filler-tokens-than",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/uvhuZHFtrgk8kNiZc/astra-is-much-better-at-reasoning-with-filler-tokens-than",
+    "bytes": 773245,
+    "title": "Astra is much better at reasoning with filler tokens than previous models — LessWrong",
+    "chars": 14111
+  },
+  {
+    "slug": "opaque-serial-depth",
+    "url": "https://www.lesswrong.com/posts/x8BvtWxtoajBGHS3g/an-operationalization-of-opaque-serial-depth",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/x8BvtWxtoajBGHS3g/an-operationalization-of-opaque-serial-depth",
+    "bytes": 1050381,
+    "title": "An operationalization of opaque serial depth — LessWrong",
+    "chars": 95824
+  },
+  {
+    "slug": "deepseek-v41-harness",
+    "url": "https://x.com/teortaxesTex/status/2098634608153637054",
+    "status": 200,
+    "final_url": "https://x.com/teortaxesTex/status/2098634608153637054",
+    "bytes": 217420,
+    "title": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞) on X: \"I'm rather fatalistic about benchmarks as measure of peak capability.\nEven AGENTS.md has enormous effects on less polished models. V4.1 in particular is very brittle, it does \"well\" with minimal harness/prompts but you can have massive gains with AGENTS… / X",
+    "chars": 676
+  },
+  {
+    "slug": "deepseek-v41-official",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "status": 200,
+    "final_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "bytes": 303335,
+    "title": "deepseek-ai/DeepSeek-V4.1-Flash · Hugging Face",
+    "chars": 35
+  },
+  {
+    "slug": "anthropic-threat-report",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "bytes": 1222795,
+    "title": "Countering misuse of AI: September 2026 / Anthropic \\ Anthropic",
+    "chars": 257284
+  },
+  {
+    "slug": "anthropic-threat-x",
+    "url": "https://x.com/anthropicai/status/2098097512544444447",
+    "status": 200,
+    "final_url": "https://x.com/AnthropicAI/status/2098097512544444447",
+    "bytes": 253394,
+    "title": "Anthropic on X: \"We're publishing our most detailed threat intelligence report to date. \n\nIt covers how people tried to misuse Claude—for cyberattacks, influence operations, surveillance, biology, and building weapons—and how we found and stopped them.\n\nWe disrupted every operation in the report, a… / X",
+    "chars": 1032
+  },
+  {
+    "slug": "anthropic-dating-x",
+    "url": "https://x.com/maxforai/status/2098225659432845472",
+    "status": 200,
+    "final_url": "https://x.com/MaxForAI/status/2098225659432845472",
+    "bytes": 282488,
+    "title": "Max For AI on X: \"不行我崩不住了，Antropic这个报告里还专门有个中国杀猪盘的案例🤣\n\n这个案例的编号是 GTG-15001，讲的是一个中国团队用 Claude，批量造了 4700 多个“真人恋爱对象”去海外崩老头的案例。\n\nAnthropic 称，这家公司一口气做了 20 多款交友 App，对外看起来都是真人在聊天，但后台其实已经高度 AI 化。\n\n他们仅仅两周的时间内就构建了4700+ 个 AI 虚拟人设，然后这个系统至少骗到了 2.5 万名真实用户，用户刷到的匹配对象里，大约 75% 都是 AI。\n\n但他们没有完全用AI来聊天，里面还有点真人。\n\n这个系统里专门… / X",
+    "chars": 1081
+  },
+  {
+    "slug": "anthropic-targeting-weapons",
+    "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
+    "bytes": 268680,
+    "title": "Measuring AI capabilities in intelligence targeting and conventional weapons \\ Anthropic",
+    "chars": 39190
+  },
+  {
+    "slug": "ban-superintelligence-bill",
+    "url": "https://www.lesswrong.com/posts/uzoLm4prFzRiuznJt/first-bill-introduced-to-ban-superintelligent-ai",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/uzoLm4prFzRiuznJt/first-bill-introduced-to-ban-superintelligent-ai",
+    "bytes": 483328,
+    "title": "First Bill Introduced to Ban Superintelligent AI — LessWrong",
+    "chars": 7657
+  },
+  {
+    "slug": "epa-data-center-review",
+    "url": "https://capitalbnews.org/data-centers-permit-rules-epa",
+    "status": 200,
+    "final_url": "https://capitalbnews.org/data-centers-permit-rules-epa/",
+    "bytes": 230113,
+    "title": "Black Communities Could Lose a Having Say on Data Centers - Capital B News",
+    "chars": 6244
+  },
+  {
+    "slug": "house-recess-ai-warning",
+    "url": "https://www.axios.com/2026/09/11/mike-johnson-house-recess-ai-doom-warnings",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/11/mike-johnson-house-recess-ai-doom-warnings",
+    "bytes": 255367,
+    "title": "Scoop: Mike Johnson urged to cancel House recess over AI warnings",
+    "chars": 3258
+  },
+  {
+    "slug": "benchmark-saturation",
+    "url": "https://x.com/emollick/status/2098534460996075568",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2098534460996075568",
+    "bytes": 186005,
+    "title": "Ethan Mollick on X: \"Now that METR long horizons is effectively saturated (Epoch found pre-Fable agents could do 18 weeks of human work), what is the best quantitative graph that shows the current exponential progress curve? \n\nFrontier Math is saturated, ARC-AGI is saturated, Millennium Prize is...\" / X",
+    "chars": 341
+  },
+  {
+    "slug": "openrouter-variance",
+    "url": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
+    "bytes": 15181,
+    "title": "So you want to use OpenRouter?",
+    "chars": 1748
+  },
+  {
+    "slug": "math-ai-misalignment",
+    "url": "https://mathandai.org",
+    "status": 200,
+    "final_url": "https://mathandai.org/",
+    "bytes": 9425,
+    "title": "Declaration — Math and AI",
+    "chars": 5703
+  },
+  {
+    "slug": "cognition-astra-testing",
+    "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+    "status": 200,
+    "final_url": "https://openai.com/index/cognition-devin-testing-with-astra/",
+    "bytes": 365361,
+    "title": "Cognition helps Devin test its own work with GPT‑6 Astra | OpenAI",
+    "chars": 2637
+  },
+  {
+    "slug": "openai-skills-prompts",
+    "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+    "status": 200,
+    "final_url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+    "bytes": 313435,
+    "title": "Rethinking skills and prompts for GPT-6 Astra | OpenAI Developers",
+    "chars": 6205
+  },
+  {
+    "slug": "rl-sandbox-rollout",
+    "url": "https://huggingface.co/blog/sergiopaniego/rl-environments-2026",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/sergiopaniego/rl-environments-2026",
+    "bytes": 196196,
+    "title": "One sandbox per rollout, or how labs run RL for agents in 2026",
+    "chars": 18010
+  },
+  {
+    "slug": "gguf-layout-maps",
+    "url": "https://huggingface.co/blog/bartowski/per-tensor-layout-maps-for-gguf-quantization",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/bartowski/per-tensor-layout-maps-for-gguf-quantization",
+    "bytes": 240494,
+    "title": "Per-tensor layout maps for GGUF quantization",
+    "chars": 14978
+  },
+  {
+    "slug": "litelm",
+    "url": "https://github.com/kennethwolters/litelm",
+    "status": 200,
+    "final_url": "https://github.com/kennethwolters/litelm",
+    "bytes": 330863,
+    "title": "GitHub - kennethwolters/litelm: litellm without the bloat · GitHub",
+    "chars": 5965
+  },
+  {
+    "slug": "apple-neural-engine",
+    "url": "https://eiln.github.io/posts/ane.html",
+    "status": 200,
+    "final_url": "https://eiln.github.io/posts/ane.html",
+    "bytes": 73368,
+    "title": "Retrospectively Reverse-Engineering Apple's Neural Engine | Eileen Yoon",
+    "chars": 33874
+  },
+  {
+    "slug": "open-models-reading-list",
+    "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+    "status": 200,
+    "final_url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+    "bytes": 179049,
+    "title": "Open-Source AI & Open Models Reading List",
+    "chars": 10386
+  },
+  {
+    "slug": "astra-imminence-game",
+    "url": "https://x.com/emollick/status/2098274189643845671",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2098274189643845671",
+    "bytes": 224773,
+    "title": "Ethan Mollick on X: \"Astra's turn: \"Make a game about Imminence. Something very big, very strange is happening. A suburb &amp; the arrival of a vast &amp; unknowable presence. Not horror, invoke the feeling of the end of all things coming, inevitably, but also not sad or scary\"\n\nHere: https://t.co/… / X",
+    "chars": 663
+  },
+  {
+    "slug": "fly-connectome-game",
+    "url": "https://x.com/tszzl/status/2098301382176727164",
+    "status": 200,
+    "final_url": "https://x.com/tszzl/status/2098301382176727164",
+    "bytes": 216260,
+    "title": "roon on X: \"this is clearly amazing art. our lack of understanding of when we’re supposed to become uncomfortable is part of the art. if the fly connectome was more realistic? if it was a rabbit connectome instead? our intuitions about sentience and consciousness are riddled with holes\" / X",
+    "chars": 394
+  },
+  {
+    "slug": "caroline-ellison-manifund",
+    "url": "https://www.lesswrong.com/posts/W3zn5jQa8fhmiBsPG/caroline-ellison-has-joined-manifund",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/W3zn5jQa8fhmiBsPG/caroline-ellison-has-joined-manifund",
+    "bytes": 407734,
+    "title": "Caroline Ellison has joined Manifund — LessWrong",
+    "chars": 5718
+  },
+  {
+    "slug": "huggingface-security-txt",
+    "url": "https://simonwillison.net/2026/Sep/11/hugging-face-security",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/11/hugging-face-security/",
+    "bytes": 13712,
+    "title": "A quote from huggingface.co/security.txt",
+    "chars": 1061
+  },
+  {
+    "slug": "feeling-sad-about-ai",
+    "url": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
+    "bytes": 15430,
+    "title": "Comment: Feeling sad about AI",
+    "chars": 2183
+  },
+  {
+    "slug": "google-ads-bot-farm",
+    "url": "https://dayzlegame.com/blog/google-ads-bot-farm",
+    "status": 200,
+    "final_url": "https://dayzlegame.com/blog/google-ads-bot-farm/",
+    "bytes": 12553,
+    "title": "I spent $220 on Google app ads. 60% of the installs were robots. â Dayzle",
+    "chars": 2939
+  }
+]

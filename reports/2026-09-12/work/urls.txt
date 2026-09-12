@@ -1,0 +1,53 @@
+# group-1：Blackstone 把 AI 算力变成金融资产
+blackstone-ai-financing|https://www.theinformation.com/articles/inside-blackstones-bid-rule-ai-financing
+
+# group-2：Instinct 的算力与融资压力
+instinct-compute-funding|https://www.theinformation.com/articles/personal-ai-app-instinct-faces-compute-crunch-lead-new-funding
+
+# group-3：OpenAI Agent 利用 RubyGems 漏洞
+rubygems-report|https://www.rubyhack.ai
+rubygems-information|https://www.theinformation.com/briefings/openai-ai-swarm-hacked-software-service-months-hugging-face-incident
+rubygems-simon|https://simonwillison.net/2026/Sep/12/openai-agents-rubygems
+
+# group-4：Astra 隐藏推理实验
+astra-cot-control|https://www.lesswrong.com/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited
+astra-speculative-depth|https://www.lesswrong.com/posts/WFc3NkuPaYFrYuaZd/astra-s-no-cot-limits-track-speculative-depth-not-step-count
+astra-filler-tokens|https://www.lesswrong.com/posts/uvhuZHFtrgk8kNiZc/astra-is-much-better-at-reasoning-with-filler-tokens-than
+opaque-serial-depth|https://www.lesswrong.com/posts/x8BvtWxtoajBGHS3g/an-operationalization-of-opaque-serial-depth
+
+# group-5：DeepSeek V4.1 的外壳差异
+deepseek-v41-harness|https://x.com/teortaxesTex/status/2098634608153637054
+deepseek-v41-official|https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+
+# group-6：Anthropic 真实滥用威胁报告（金）
+anthropic-threat-report|https://www.anthropic.com/threat-intelligence-report-september-2026
+anthropic-threat-x|https://x.com/anthropicai/status/2098097512544444447
+anthropic-dating-x|https://x.com/maxforai/status/2098225659432845472
+
+# group-7：Anthropic 目标识别与常规武器评测
+anthropic-targeting-weapons|https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities
+
+# 监管动向
+ban-superintelligence-bill|https://www.lesswrong.com/posts/uzoLm4prFzRiuznJt/first-bill-introduced-to-ban-superintelligent-ai
+epa-data-center-review|https://capitalbnews.org/data-centers-permit-rules-epa
+house-recess-ai-warning|https://www.axios.com/2026/09/11/mike-johnson-house-recess-ai-doom-warnings
+
+# 深度长文、官方公告与简讯
+benchmark-saturation|https://x.com/emollick/status/2098534460996075568
+openrouter-variance|https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter
+math-ai-misalignment|https://mathandai.org
+cognition-astra-testing|https://openai.com/index/cognition-devin-testing-with-astra
+openai-skills-prompts|https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra
+rl-sandbox-rollout|https://huggingface.co/blog/sergiopaniego/rl-environments-2026
+gguf-layout-maps|https://huggingface.co/blog/bartowski/per-tensor-layout-maps-for-gguf-quantization
+litelm|https://github.com/kennethwolters/litelm
+apple-neural-engine|https://eiln.github.io/posts/ane.html
+open-models-reading-list|https://www.interconnects.ai/p/open-source-ai-reading-list
+
+# 乐子汇总
+astra-imminence-game|https://x.com/emollick/status/2098274189643845671
+fly-connectome-game|https://x.com/tszzl/status/2098301382176727164
+caroline-ellison-manifund|https://www.lesswrong.com/posts/W3zn5jQa8fhmiBsPG/caroline-ellison-has-joined-manifund
+huggingface-security-txt|https://simonwillison.net/2026/Sep/11/hugging-face-security
+feeling-sad-about-ai|https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai
+google-ads-bot-farm|https://dayzlegame.com/blog/google-ads-bot-farm

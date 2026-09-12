@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+  "title": "开放模型入门书单更新",
+  "date": "2026-09-11T12:36:25Z",
+  "reported": true,
+  "report_date": "2026-09-12"
+ },
+ {
   "id": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
   "title": "GLM-5.3 开放权重，却没有沿用 MIT",
   "date": "Tue, 08 Sep 2026 14:15:25 GMT",

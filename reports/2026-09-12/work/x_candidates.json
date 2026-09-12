@@ -1,0 +1,216 @@
+{
+  "date": "2026-09-12",
+  "scanned_at": "2026-09-12T18:37:20+08:00",
+  "window": "八个固定账号统一从 2026-09-10T21:57:59+08:00 接续，覆盖 09-11 与 09-12 两天",
+  "route": "机械 Nitter 抓取全部失败后，Codex 内置浏览器使用登录态 X 搜索逐账号补扫原创帖",
+  "accounts": [
+    {
+      "handle": "emollick",
+      "status": "success",
+      "result": "时间窗内保留三组候选；09-10 已报的社会扩散与去技能化帖子不重复收。"
+    },
+    {
+      "handle": "goodside",
+      "status": "success",
+      "result": "搜索结果没有时间窗内新增原创帖。"
+    },
+    {
+      "handle": "karpathy",
+      "status": "success",
+      "result": "搜索结果没有时间窗内新增原创帖。"
+    },
+    {
+      "handle": "NeelNanda5",
+      "status": "success",
+      "result": "发现一条 Astra 无思维链计算复现，但与 09-09 已报内容硬重复，排除。"
+    },
+    {
+      "handle": "pvncher",
+      "status": "success",
+      "result": "时间窗内保留两组 Codex 工作流候选；反馈重置只作排除记录。"
+    },
+    {
+      "handle": "tszzl",
+      "status": "success",
+      "result": "时间窗内保留两组观点候选；灭绝风险舆论主线因近期饱和不收。"
+    },
+    {
+      "handle": "sama",
+      "status": "success",
+      "result": "最新可见原创帖仍是 09-10 已处理的 Paul Christiano 董事任命，没有接续点后的新增。"
+    },
+    {
+      "handle": "teortaxesTex",
+      "status": "success",
+      "result": "时间窗内帖子密集，保留两组 DeepSeek V4.1 独立实测线索；未经核实的人员传闻与大量题外讨论排除。"
+    }
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "主流 AI 能力曲线正在同时撞上多个评测天花板",
+      "url": "https://x.com/emollick/status/2098534460996075568",
+      "published_at": "2026-09-12T06:09:39+08:00",
+      "bucket_hint": "exclusive_view_or_radar",
+      "facts": [
+        "Ethan Mollick 认为 METR 长任务时长评测已经接近饱和，并转述 Epoch 的结果称，Fable 之前的 Agent 已能完成相当于人类十八周工作的任务。",
+        "他同时指出 FrontierMath、ARC-AGI 和千禧年难题等一批常用能力标尺都已接近或达到饱和，因而公开询问还有哪张量化图能继续显示当前的指数进步。"
+      ],
+      "caveats": [
+        "帖子是在提出评测选择问题，不是给出新的统一能力曲线；十八周结论和各评测饱和程度必须回到 Epoch、METR 与相关评测原文核实。"
+      ],
+      "why": "多个曾被用来展示前沿进步的标尺同时失去分辨率，本身会改变行业判断模型速度的方法。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "自动预测系统把 2030 年前 AI 大灾难概率定在 0.47％",
+      "url": "https://x.com/emollick/status/2098464926507401338",
+      "published_at": "2026-09-12T01:33:20+08:00",
+      "bucket_hint": "radar_or_odds",
+      "facts": [
+        "Ethan Mollick 推荐一套由预测研究专家制作的自动风险预测系统。",
+        "该系统当前给出 2030 年前发生 AI 导致的大规模灾难概率为 0.47％，同期任何原因导致大规模灾难的概率为 1.1％。"
+      ],
+      "caveats": [
+        "这不是 Manifold 市场赔率；进入成稿前必须精读 airo.forecastingresearch.org 的模型、灾难定义和更新时间。"
+      ],
+      "why": "它给最近高度情绪化的 AI 灭绝讨论提供了一组可更新的量化基线，但不能只凭帖子数字直接写。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "同一段末日提示词，Astra 也做了一款网页游戏",
+      "url": "https://x.com/emollick/status/2098274189643845671",
+      "published_at": "2026-09-11T12:55:25+08:00",
+      "bucket_hint": "fun",
+      "facts": [
+        "Ethan Mollick 把此前给 Fable 的同一段提示词交给 Astra：制作一款关于巨大而不可知的存在降临郊区的游戏，气氛要像万物终结却不能恐怖、悲伤或吓人。",
+        "他公开了 Astra 生成的可玩网页版本，供读者与七月底的 Fable 版本对照。"
+      ],
+      "caveats": [
+        "帖子没有给出开发时间、人工修改量或统一评分，只能作为可玩作品和同提示词对照。"
+      ],
+      "why": "同一段很难落地的情绪提示词被两个模型做成可直接游玩的作品，既能让读者自己比较，也符合技术乐子的标准。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "Codex 提示词指南进入 OpenAI 开发者博客",
+      "url": "https://x.com/pvncher/status/2098533620306579925",
+      "published_at": "2026-09-12T06:06:18+08:00",
+      "bucket_hint": "radar",
+      "facts": [
+        "Codex DX 负责人 Eric Provencher 的提示词指南被收入 OpenAI 开发者博客。",
+        "公开摘要建议为技能设置更具体的触发条件，只在真正相关时加载指导，并在任务提示里定义什么才算完成；Provencher 说其中的技能建议并不限于某一个模型。"
+      ],
+      "caveats": [
+        "OpenAI 官方博客很可能已经进入机械候选，manifest 合并时只保留公开原文，不要把转发另算一条。"
+      ],
+      "why": "这是能直接改善 Codex 工作流的具体规则，但应优先链接完整官方指南。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "让 Sol 当总顾问，按需调用 Astra 和 Luna 子 Agent",
+      "url": "https://x.com/pvncher/status/2098363148570890515",
+      "published_at": "2026-09-11T18:48:54+08:00",
+      "bucket_hint": "exclusive_view_or_radar",
+      "facts": [
+        "Eric Provencher 赞同一套 Codex 模型分工：让 Sol 负责整体推进，在特定探索里向上调用 Astra，其他任务交给 Luna 子 Agent。",
+        "原始使用者称，这种组合解决了一些 Astra 单独执行时卡住的问题，同时减少整体用量。"
+      ],
+      "caveats": [
+        "这是单个使用者的工作流经验，没有任务集、用量数字或可复现实验；Provencher 的原帖只做了简短认可。"
+      ],
+      "why": "它给出了明确的多模型 Agent 分工方式，符合该账号只收具体 Codex 机制和可复用工作流的口径。"
+    },
+    {
+      "source": "x-roon",
+      "title": "果蝇脑玩游戏时，我们不知道该从哪一步开始不舒服",
+      "url": "https://x.com/tszzl/status/2098301382176727164",
+      "published_at": "2026-09-11T14:43:28+08:00",
+      "bucket_hint": "fun_or_exclusive_view",
+      "facts": [
+        "roon 评论一件让果蝇连接组玩《Beat Saber》的作品，认为它首先是一件很出色的艺术品。",
+        "他把不适感本身当成作品的一部分：如果连接组更逼真，或换成兔子大脑，人类会不会突然改变判断，暴露我们对感知和意识的直觉有多少空洞。"
+      ],
+      "caveats": [
+        "帖子是在评论他人作品，是否收录前要找到并真读原始项目或演示，不能只按转述描述技术实现。"
+      ],
+      "why": "它把奇怪的技术演示变成一个读者可以立即感受到的意识边界问题，适合乐子或短视角。"
+    },
+    {
+      "source": "x-roon",
+      "title": "保存明文思维链，可能只是可观测性的炼金术阶段",
+      "url": "https://x.com/tszzl/status/2098231224489975881",
+      "published_at": "2026-09-11T10:04:41+08:00",
+      "bucket_hint": "exclusive_view",
+      "facts": [
+        "roon 判断，人们如今努力保存模型的明文思维链，将来可能会被视为可观测性研究的炼金术阶段。",
+        "他的替代方向是从头理解模型自己的陌生概念体系，而不是把可读文字当成唯一内部证据。"
+      ],
+      "caveats": [
+        "这是方向判断，没有实验、工具或量化结果；近期已报 Astra 无思维链完成多步计算，定牌时需防止只重复风险描述。"
+      ],
+      "why": "它给不可见推理问题提出了不同于强行保留思维链的研究方向，但证据密度只够视角候选。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "DeepSeek V4.1 的成绩会被 AGENTS.md 和 Agent 外壳大幅改写",
+      "url": "https://x.com/teortaxesTex/status/2098634608153637054",
+      "published_at": "2026-09-12T12:47:35+08:00",
+      "bucket_hint": "paper_or_exclusive_view_silver",
+      "facts": [
+        "Teortaxes 认为 DeepSeek V4.1 对 Agent 外壳和提示配置非常敏感：用极简 harness 已能工作，但为具体场景优化 AGENTS.md 后会出现巨大增益。",
+        "他援引 Terminal-Bench Science 的不同运行方式称，V4.1 在一套默认 Agent 中只做对 3／70 项，而接入 Codex 后做到 11／70 项，并在物理科学任务上接近 Opus 5 配合 Claude Code 的表现。",
+        "他据此赞同评测对象已不是单独模型，而是 adapter、harness 与模型的三元组合，排行榜很容易被外壳适配改变。"
+      ],
+      "caveats": [
+        "数字来自个人帖子与被引用的排行榜截图，必须回到 Terminal-Bench Science 和对应提交记录核实；不同 Agent 配置是否可直接比较也要检查。",
+        "本期刚报过 DeepSeek V4.1 开放权重，只能按独立实测和部署经验作为后续新进展，不能重写发布信息。"
+      ],
+      "why": "如果核实成立，它会直接削弱只按模型名比较 Agent 能力的做法，也是 V4.1 开放权重后第一批可操作的独立使用结论。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "DeepSeek 压低单 Agent 缓存，却可能被 Agent 群重新吃光",
+      "url": "https://x.com/teortaxesTex/status/2098539682342596787",
+      "published_at": "2026-09-12T06:30:23+08:00",
+      "bucket_hint": "industry_or_exclusive_view",
+      "facts": [
+        "一名被 Teortaxes 引用的分析者称，DeepSeek V4.1 Flash 把全局 KV 缓存从每 token 约 3.5KB 降到约 890B。",
+        "Teortaxes 认为这不会消除 HBM 需求，因为模型倾向并行调用多个 Agent；按他的估算，四个 Agent 的每秒 HBM 消耗已经高于 V4，六十四个时甚至高于 V3.2。"
+      ],
+      "caveats": [
+        "并发数、token 速率和缓存口径没有在帖子里完整展开，进入成稿前必须重算假设；不能把个人估算写成实际部署数据。",
+        "这也是 09-10 DeepSeek V4.1 主线的后续，只在能形成新的推理成本结论时收录。"
+      ],
+      "why": "它把单模型效率改进与 Agent 群带来的杰文斯效应连接起来，可能改变对新架构降低显存需求的直觉。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Astra 在无思维链条件下完成更多计算步骤",
+      "url": "https://x.com/NeelNanda5/status/2098177895932068174",
+      "reason": "09-09 已报同一核心事实与风险判断，虽然帖子在本期窗口内，但属于硬重复。"
+    },
+    {
+      "title": "Astra 异常反馈触发一次重置",
+      "url": "https://x.com/pvncher/status/2098624503442035020",
+      "reason": "只确认用户反馈促成了真实问题修复和一次重置，没有问题范围、版本或修复清单，无法独立成条。"
+    },
+    {
+      "title": "Anthropic 报告可能牵涉月之暗面人员传闻",
+      "url": "https://x.com/teortaxesTex/status/2098630024161100177",
+      "reason": "原帖明确承认希望消息为假，只是在评论未经证实的网传人员消息，按红线不进候选。"
+    },
+    {
+      "title": "Jacob Coxon 把 AI 灭绝风险带上电视",
+      "url": "https://x.com/tszzl/status/2098480393066545289",
+      "reason": "近期 Anthropic 风险与灭绝舆论主线高度饱和，帖子只有传播效果判断，没有新事实机制。"
+    },
+    {
+      "title": "Paul Christiano 加入 OpenAI 基金会董事会",
+      "url": "https://x.com/sama/status/2097776310940569783",
+      "reason": "早于本期接续点，且 09-10 已从 OpenAI 官方来源报道。"
+    }
+  ],
+  "failure_note": "八个机械 X／Nitter 源均返回 HTTP 403；登录态 X 搜索正常，已按 09-10 21:57:59 接续点补齐八个账号。"
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "cognition-astra-testing",
+    "section": "industry",
+    "label": "Devin 用 Astra 测试自己的工作",
+    "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+    "body": "修完后会在模拟器里跑应用，交回运行录像和测试范围；用户只给一张 bug 截图，它也能修完再截图证明。",
+    "note": "dup_suspect：承接 09-08「编码 Agent 会增加测试却不会用测试找错」主线，属于允许的新模型案例；但材料是 OpenAI 与 Cognition 的单个客户案例，没有量化对照或独立评测。"
+  },
+  {
+    "id": "apple-neural-engine",
+    "section": "industry",
+    "label": "开发者重新逆向了苹果神经网络引擎",
+    "url": "https://eiln.github.io/posts/ane.html",
+    "body": "她把 M1 的计算、调度和内存路径逐层画了出来，发现它为卷积模型的权重复用而生；跑 Transformer 单 token 解码时，内存搬运比算力更容易卡住。",
+    "note": "核实通过；原文发表于 2026-08-10，不是本轮两天内的新稿。作者公开了逆向驱动和实测数据，但 raw 在末尾「Getting 50 GB/s Back Out of the ANE」标题处截断，现有正文足以支持本条核心判断。"
+  },
+  {
+    "id": "litelm",
+    "section": "industry",
+    "label": "LiteLM 把 LiteLLM 核心压到 2900 行",
+    "url": "https://github.com/kennethwolters/litelm",
+    "body": "它只保留模型路由、消息格式转换、流式输出、工具调用和嵌入，依赖只剩 openai 与 httpx；代理、缓存、预算和负载均衡全部砍掉。",
+    "note": "核实通过；项目仍为 Alpha。维护者称自有测试 262 项通过，并完成 45 项可用供应商在线测试，但十九个列名供应商中只有七个标记为已验证，兼容范围也明确不等于完整 LiteLLM。"
+  },
+  {
+    "id": "gguf-layout-maps",
+    "section": "industry",
+    "label": "GGUF 量化开始给每张量单独分配精度",
+    "url": "https://huggingface.co/blog/bartowski/per-tensor-layout-maps-for-gguf-quantization",
+    "body": "作者跑了一千多组量化实验，先找出模型里最怕压缩的张量，再把有限位数优先留给它们；新模型先过三档金丝雀测试，失败就退回旧规则。",
+    "note": "核实通过；Hugging Face 社区文章。敏感度先验主要用两个小型 Qwen 模型和后补的 Granite 拟合，已跨多个模型家族验证，但新方案目前只实际发布在两个模型上，作者也列明高位宽差异接近噪声。"
+  },
+  {
+    "id": "openai-skills-prompts",
+    "section": "deep",
+    "label": "OpenAI 建议给 Astra 删短技能和项目说明",
+    "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+    "body": "技能描述只写什么时候该触发，长流程按需再读；AGENTS.md 也别要求每次先读完一摞文档，重点提前写清做到哪一步才算完成。",
+    "note": "dup_suspect：与同批 Cognition 测试稿及 09-08 编码 Agent 测试主线相邻；新增内容是清理技能触发、按需读文档和定义完成条件，不是新的测试能力评测。核实为 OpenAI Developers 指南。"
+  },
+  {
+    "id": "openrouter-variance",
+    "section": "deep",
+    "label": "OpenRouter 上同一模型可能跑出两种脾气",
+    "url": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter",
+    "body": "请求会被自动分到不同后端，服务软件、优化和参数处理不同，连视觉能力都可能不齐；固定 provider.only 才能锁定供应方。",
+    "note": "核实通过；这是 Simon Willison 对 Mohamed Moustafa 文章的链接摘要，raw 没有被转文章全文，适合无牌短写，不宜扩展成跨供应商性能结论。"
+  },
+  {
+    "id": "rl-sandbox-rollout",
+    "section": "deep",
+    "label": "Agent 强化学习变成一次尝试开一台机器",
+    "url": "https://huggingface.co/blog/sergiopaniego/rl-environments-2026",
+    "body": "每个 rollout 都要有独立文件系统、Shell 和持久进程，短任务结束即销毁，长任务还得存档再续跑；Cursor 称高峰要同时运行几十万个沙箱。",
+    "note": "核实通过；作者汇总十三家模型建设方的十五份报告与发布稿，只统计各家声称用于训练的环境。各实验室规模数字来自各自材料，不是作者统一复测；文章本身是 Hugging Face 社区系列总结。"
+  },
+  {
+    "id": "math-ai-misalignment",
+    "section": "deep",
+    "label": "二十五位菲尔兹奖得主反对拿数学难题刷 AI 榜单",
+    "url": "https://mathandai.org",
+    "body": "联名声明认为，解出题只是通往理解的路标；批量抢题、仓促公布答案，会挤掉整理新方法、核对归属和培养学生的过程。",
+    "note": "dup_suspect：与 09-08 数学 Agent 作弊与治理主线相邻，但本条是二十五位菲尔兹奖得主对「用未解题做 AI 基准」的公开声明，论点和事实独立。网页列出二十五名签署者，没有给发布日期。"
+  },
+  {
+    "id": "open-models-reading-list",
+    "section": "deep",
+    "label": "Nathan Lambert 整理了一份开放模型入门书单",
+    "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+    "body": "从开放权重的商业逻辑、美国与中国的竞争一路列到蒸馏和安全争议，想补开放模型背景可以顺着一篇篇读。",
+    "note": "核实通过；清单最后更新于 2026-09-11，属于资料索引，不是单一新研究或新结论。"
+  },
+  {
+    "id": "house-recess-ai-warning",
+    "section": "official",
+    "label": "四名美国议员要求众议院别为 AI 风险休会",
+    "url": "https://www.axios.com/2026/09/11/mike-johnson-house-recess-ai-doom-warnings",
+    "body": "联名信要求议员立刻回华盛顿，直到推进两党安全护栏；议长仍按原计划排议程，也没表态会在大选前审议 AI 法案。",
+    "note": "dup_suspect：与 09-10「AI 越权事故进入正式监管与外部调查」主线相邻，但这里只有四名议员联名施压，没有形成正式程序或监管要求。Axios 称信件截至报道时仍在征集签名，议长办公室未回应。"
+  },
+  {
+    "id": "astra-imminence-game",
+    "section": "fun",
+    "label": "Astra 也拿同一句末日提示词做了网页游戏",
+    "url": "https://x.com/emollick/status/2098274189643845671",
+    "body": "它把郊区等待未知巨物降临写成可玩的《Imminence》，可以和七月 Fable 做的版本直接对照。",
+    "note": "核实通过；Ethan Mollick 的 X 帖给出完整提示词和两个可玩链接，但没有制作过程、耗时或质量评测。"
+  },
+  {
+    "id": "fly-connectome-game",
+    "section": "fun",
+    "label": "roon 讨论果蝇脑连接组玩《Beat Saber》",
+    "url": "https://x.com/tszzl/status/2098301382176727164",
+    "body": "他把它当成一件关于意识边界的艺术作品：如果脑图更逼真，或者换成兔脑，人会在哪一步开始不舒服？",
+    "note": "fetch_failed：raw 只抓到 roon 的评论和被转帖中的「果蝇脑能玩 Beat Saber」一句话，没有原始项目、作者说明、控制机制或视频内容，无法核实底层事实；正文只转述 roon 的明确观点。"
+  },
+  {
+    "id": "caroline-ellison-manifund",
+    "section": "fun",
+    "label": "FTX 前高管 Caroline Ellison 加入慈善基金平台",
+    "url": "https://www.lesswrong.com/posts/W3zn5jQa8fhmiBsPG/caroline-ellison-has-joined-manifund",
+    "body": "她先以 Carol 化名试工，做的对账工具找出数据库里五到六位数的错记；团队承认这会让捐赠人紧张，但决定给她第二次机会。",
+    "note": "核实通过；Manifund 创始人 Austin Chen 与 Caroline Ellison 联名公告称，她 07-13 开始试工，08-10 转为全职，负责技术基础设施、运营和客服。化名试工与对账工具数字均来自雇主自述。"
+  },
+  {
+    "id": "huggingface-security-txt",
+    "section": "fun",
+    "label": "Hugging Face 请找漏洞的 AI 去 CyberGym 刷分",
+    "url": "https://simonwillison.net/2026/Sep/11/hugging-face-security",
+    "body": "它在 security.txt 里劝 Agent 别真来黑站点：公开基准已经摆在 GitHub，要冲高分去那边，顺便把权重传回来。",
+    "note": "核实通过；Simon Willison 逐字摘录 huggingface.co/security.txt 中写给 AI Agent 的注释，属于站点公开安全说明里的玩笑。"
+  },
+  {
+    "id": "feeling-sad-about-ai",
+    "section": "fun",
+    "label": "编码 Agent 一小时做完一周工作，也会让工程师难过",
+    "url": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai",
+    "body": "Simon Willison 说，等你接受「按明确规格写出代码」不再稀缺，剩下还有定义问题、判断取舍和驾驭工具，老经验照样能拉开差距。",
+    "note": "核实通过；这是 Simon Willison 在 Hacker News 的个人评论，不是调查或实证研究。"
+  },
+  {
+    "id": "google-ads-bot-farm",
+    "section": "fun",
+    "label": "独立开发者花 220 块买 App 安装，六成像机器人",
+    "url": "https://dayzlegame.com/blog/google-ads-bot-farm",
+    "body": "五十六次计费安装里，三十三台装的是 Play 商店已经下架的旧版，只打开一次、停留零秒；他把转化目标改成「完成一道数独」，让刷量成本更高。",
+    "note": "核实通过；数字来自 Dayzle 开发者对自家后台与分析导出的复盘。作者仍在等待 Google 对无效流量申诉和退款的回复，因此只能写其观察，不能写成 Google 已确认机器人流量。raw 存在字符编码乱码，但数字与逻辑可辨。"
+  }
+]
