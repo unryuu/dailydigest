@@ -1,0 +1,233 @@
+[
+  {
+    "slug": "fable-enterprise-restrictions",
+    "url": "https://www.theinformation.com/articles/anthropic-data-fears-prompt-nvidia-palantir-booz-allen-restrict-model-use",
+    "status": null,
+    "error": "Error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "slug": "small-model-sovereignty",
+    "url": "https://x.com/emollick/status/2099310692532699608",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2099310692532699608",
+    "bytes": 175552,
+    "title": "Ethan Mollick on X: \"I feel like the data sovereignty movement for firms is going to run headlong into the challenge that maintaining fine-tuned small models in a way that continually beats larger general-purpose models is expensive and difficult as long as the AI exponential ability growth continu… / X",
+    "chars": 590
+  },
+  {
+    "slug": "anthropic-rum-compute",
+    "url": "https://www.theinformation.com/articles/anthropic-strikes-13-7-billion-compute-deal-trump-linked-rum-group",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/anthropic-strikes-13-7-billion-compute-deal-trump-linked-rum-group",
+    "bytes": 388668,
+    "title": "Anthropic Strikes $13.7 Billion Compute Deal With Trump-Linked Rum Group — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "fable-cyphral-distich",
+    "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+    "status": 200,
+    "final_url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+    "bytes": 74481,
+    "title": "Claude Fable 5.1 Solves the Cyphral Distich",
+    "chars": 9173
+  },
+  {
+    "slug": "historical-cipher-benchmark",
+    "url": "https://x.com/emollick/status/2099333274648838155",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2099333274648838155",
+    "bytes": 269071,
+    "title": "Ethan Mollick on X: \"For all the focus on hard math, we should also have a bank of historical mysteries and cyphers that we can throw models at. I know a few historians (like https://t.co/CIq2xQpTUy) that have been using new models on old untranslated handwritten records.\n\nHow about Linear AI?\" / X",
+    "chars": 480
+  },
+  {
+    "slug": "cot-controllability",
+    "url": "https://www.lesswrong.com/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited",
+    "bytes": 568120,
+    "title": "CoT controllability evals seem very under-elicited — LessWrong",
+    "chars": 17106
+  },
+  {
+    "slug": "astra-no-cot-replication",
+    "url": "https://www.lesswrong.com/posts/tz5WvDouXKbiWJG8B/yet-another-concerning-result-on-astra-s-no-cot-capabilities",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/tz5WvDouXKbiWJG8B/yet-another-concerning-result-on-astra-s-no-cot-capabilities",
+    "bytes": 708575,
+    "title": "Yet another concerning result on Astra's no-CoT capabilities — LessWrong",
+    "chars": 13062
+  },
+  {
+    "slug": "ai-standards-body",
+    "url": "https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police",
+    "bytes": 407439,
+    "title": "Anthropic, OpenAI, Google Quietly Discussed an AI Safety Standards Body — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "openai-training-safety-case",
+    "url": "https://x.com/sama/status/2099348812305473766",
+    "status": 200,
+    "final_url": "https://x.com/sama/status/2099348812305473766",
+    "bytes": 204738,
+    "title": "Sam Altman on X: \"The world deserves confidence that American companies developing increasingly capable AI will act responsibly, especially as the trajectory of progress has steepened. Every frontier lab must deliver on this, and there is no reason any of us should come to work if we cannot.\n\nWe we… / X",
+    "chars": 2100
+  },
+  {
+    "slug": "siri-provider-swap",
+    "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
+    "status": 200,
+    "final_url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
+    "bytes": 130964,
+    "title": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows - MacRumors",
+    "chars": 3344
+  },
+  {
+    "slug": "perplexity-astra",
+    "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+    "status": 200,
+    "final_url": "https://openai.com/index/perplexity-improving-accuracy-with-astra/",
+    "bytes": 353119,
+    "title": "Perplexity trusts GPT-6 Astra with end-to-end systems | OpenAI",
+    "chars": 2212
+  },
+  {
+    "slug": "congress-ai-safety",
+    "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+    "bytes": 248993,
+    "title": "Johnson calls for AI solutions but says Congress won't take the lead",
+    "chars": 3770
+  },
+  {
+    "slug": "teleoperated-humans",
+    "url": "https://www.lesswrong.com/posts/mWQSiHG3Qz9qYx3D7/teleoperated-humans",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/mWQSiHG3Qz9qYx3D7/teleoperated-humans",
+    "bytes": 522733,
+    "title": "Teleoperated Humans — LessWrong",
+    "chars": 15455
+  },
+  {
+    "slug": "cloud-tpu-refusal",
+    "url": "https://www.lesswrong.com/posts/wM5vbT9evBhM3fP3x/i-am-refusing-to-work-on-cloud-tpus",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/wM5vbT9evBhM3fP3x/i-am-refusing-to-work-on-cloud-tpus",
+    "bytes": 450191,
+    "title": "I am refusing to work on Cloud TPUs — LessWrong",
+    "chars": 5556
+  },
+  {
+    "slug": "benchmark-radar",
+    "url": "https://huggingface.co/papers/2609.11115",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.11115",
+    "bytes": 173071,
+    "title": "Paper page - Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+    "chars": 3982
+  },
+  {
+    "slug": "cobra-skills",
+    "url": "https://huggingface.co/papers/2609.11682",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.11682",
+    "bytes": 143655,
+    "title": "Paper page - COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
+    "chars": 4003
+  },
+  {
+    "slug": "stepaudio-3",
+    "url": "https://huggingface.co/papers/2609.12945",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.12945",
+    "bytes": 156270,
+    "title": "Paper page - StepAudio 3 Gen Technical Report",
+    "chars": 4716
+  },
+  {
+    "slug": "openarch",
+    "url": "https://github.com/anuj0456/OpenArch",
+    "status": 200,
+    "final_url": "https://github.com/anuj0456/OpenArch",
+    "bytes": 291847,
+    "title": "GitHub - anuj0456/OpenArch: PyTorch implementations of modern open-source LLM architectures (Llama, Qwen, DeepSeek, Gemma, GPT-OSS, Kimi, and more) — written from scratch for readability and learning, based on Sebastian Raschka's LLM Architecture Gallery. · GitHub",
+    "chars": 5282
+  },
+  {
+    "slug": "shot-scraper",
+    "url": "https://simonwillison.net/2026/Sep/13/shot-scraper",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/13/shot-scraper/",
+    "bytes": 14733,
+    "title": "Release: shot-scraper 1.12",
+    "chars": 1522
+  },
+  {
+    "slug": "autoround-fix",
+    "url": "https://huggingface.co/blog/FINAL-Bench/qwen-models",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/FINAL-Bench/qwen-models",
+    "bytes": 174008,
+    "title": "Same bytes, closer to the original: two lines of AutoRound we had wrong",
+    "chars": 10894
+  },
+  {
+    "slug": "deployment-fiction",
+    "url": "https://www.lesswrong.com/posts/C8prkTAAYoxzrFEu4/deployment",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/C8prkTAAYoxzrFEu4/deployment",
+    "bytes": 410972,
+    "title": "Deployment — LessWrong",
+    "chars": 5656
+  },
+  {
+    "slug": "commit-rewriter",
+    "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
+    "bytes": 15762,
+    "title": "Release: commit-rewriter 0.1",
+    "chars": 1605
+  },
+  {
+    "slug": "frank-386",
+    "url": "https://github.com/rh1tech/frank-386",
+    "status": 200,
+    "final_url": "https://github.com/rh1tech/frank-386",
+    "bytes": 419099,
+    "title": "GitHub - rh1tech/frank-386: Tiny386 port to RP2350 · GitHub",
+    "chars": 8733
+  },
+  {
+    "slug": "google-dodgy-ads",
+    "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+    "status": 200,
+    "final_url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+    "bytes": 27162,
+    "title": "Why is Google still serving dodgy ads? | atomic14",
+    "chars": 4387
+  },
+  {
+    "slug": "euro-bird-portal",
+    "url": "https://www.eurobirdportal.org/ebp/en",
+    "status": 200,
+    "final_url": "https://www.eurobirdportal.org/ebp/en/",
+    "bytes": 830510,
+    "title": "EuroBirdPortal - Home",
+    "chars": 24430
+  },
+  {
+    "slug": "apple-dimensional-drawings",
+    "url": "https://developer.apple.com/accessories/dimensional-drawings",
+    "status": 200,
+    "final_url": "https://developer.apple.com/accessories/dimensional-drawings/",
+    "bytes": 189334,
+    "title": "Download Dimensional Drawings - Accessories - Apple Developer",
+    "chars": 5828
+  }
+]

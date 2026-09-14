@@ -1,0 +1,188 @@
+{
+  "date_label": "9月14日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "企业开始限制 Fable 接触敏感数据",
+      "url": "https://www.theinformation.com/articles/anthropic-data-fears-prompt-nvidia-palantir-booz-allen-restrict-model-use",
+      "body": "Palantir 在拿到不可撤销的零数据保留保证前，不会向客户提供 Fable。英伟达只把它用于开源等低敏感任务，Booz Allen 禁用于客户专有网络安全工作；一家美国公用事业公司也取消了核心电力设施测试。\n\nAnthropic 将允许合格企业把日志存在自家服务器，但仍保留撤销资格的权利。微软另推不向外部模型商发送数据的私有服务器，数年报价数百万美元。企业也能自建小模型换取数据主权，只是要持续追赶通用模型，维护会越来越贵。",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://x.com/emollick/status/2099310692532699608"
+        }
+      ]
+    },
+    {
+      "tier": "gold",
+      "title": "Anthropic 用百亿美元合同押注未完工机房",
+      "url": "https://www.theinformation.com/articles/anthropic-strikes-13-7-billion-compute-deal-trump-linked-rum-group",
+      "body": "Anthropic 与 Rum Group 签下六年、一百三十七亿美元的算力合同，准备租用后者尚未建成的佐治亚州数据中心。Rum 当时没有足够资金建设机房和购买 GPU，需要新增债务或股权融资。\n\nAnthropic 还能以每股一美分认购最多五千一百万股 Rum 股票。一半权利随这座机房的算力采购生效，另一半要求它向 Rum 另一个站点再买约四百至五百兆瓦算力，把长期采购、供应商融资与股权收益绑在一起。"
+    },
+    {
+      "tier": "none",
+      "title": "Siri 代码里藏着两套第三方模型接口",
+      "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
+      "body": "一套让 Claude 充当 Siri 扩展，再把系统操作交回 Siri；另一套让 GPT-5.6 接收提示词和工具定义，直接请求读邮件、发消息。"
+    },
+    {
+      "tier": "none",
+      "title": "Perplexity 让 Astra 改软件、盯生产系统",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "body": "它会生成测试程序，模拟接口和连接器的真实响应，把应用从头到尾跑一遍。Perplexity 称，完整系统交给它后，人工检查频率低得多。"
+    },
+    {
+      "tier": "none",
+      "title": "美国众议长要 AI 公司自己带头踩刹车",
+      "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+      "body": "他反对国会紧急暂停 AI，想先召集总统、国会议员和实验室负责人开会。有可行方案时再召回众议员表决，眼下由公司先承担安全责任。"
+    }
+  ],
+  "angle": [
+    {
+      "title": "AI 实验室准备自己给自己定规矩",
+      "url": "https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police",
+      "body": "Google、Anthropic 和 OpenAI 的非 CEO 级代表从七月起定期开会，讨论建立由行业主导的 AI 标准机构；最近一次会面就在过去一周。白宫也流转过类似行政令草案，但夏末因政府内部支持不足搁置。\n\nOpenAI 又把内部安全检查前移：预计会明显提升能力的前沿强化学习训练，开始前就要先编制安全论证。过去的框架主要评估已经完成或准备发布的模型。Cohere 负责人 Aidan Gomez 担心，几家大公司共同制定规则会把小公司挡在门外。",
+      "sources": [
+        {
+          "name": "Sam Altman",
+          "url": "https://x.com/sama/status/2099348812305473766"
+        }
+      ]
+    }
+  ],
+  "deep": [
+    {
+      "tier": "silver",
+      "title": "Fable 给出三百七十年密文解法",
+      "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+      "body": "这份密文有两行数字，每行三十二个。每个数字依次对应前文一段，再按数字找到段内单词并取首字母。结果拼成祈求上帝扶持查理二世统治此地的两行明文，长度、押韵和作者立场都吻合。Ethan Mollick 提议把历史谜题、古老密文和未翻译手稿也做成模型能力测试。",
+      "sources": [
+        {
+          "name": "Ethan Mollick",
+          "url": "https://x.com/emollick/status/2099333274648838155"
+        }
+      ]
+    },
+    {
+      "tier": "none",
+      "title": "机器人到来前，AI 可能先开始遥控人类",
+      "url": "https://www.lesswrong.com/posts/mWQSiHG3Qz9qYx3D7/teleoperated-humans",
+      "body": "AI 出策略和知识，人负责点击网页、现场操作和提供法律身份。作者照着 Claude 的逐步指令，第一次做 Mac 应用就一次通过商店审核。"
+    },
+    {
+      "tier": "none",
+      "title": "Google 工程师公开拒绝改进 Cloud TPU",
+      "url": "https://www.lesswrong.com/posts/wM5vbT9evBhM3fP3x/i-am-refusing-to-work-on-cloud-tpus",
+      "body": "他的六十人团队被调去改善企业 TPU 的兼容测试和监控工具。他向经理要求转岗，或只做不会加速前沿训练的安全功能。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "silver",
+      "title": "模型隐藏思维链的能力可能被低估",
+      "url": "https://www.lesswrong.com/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited",
+      "body": "CoTControl 要求模型一边解题，一边让思维链遵守大小写、禁词等格式。原测试只在题后附一句规则。研究者改用反复优化的提示后，四个开放模型的合规率提高约两至三倍，换成没参与优化的新约束也大多有效。任务准确率和思维链长度接近原测试时，提升依然存在。系统卡里的默认提示成绩不能直接当作能力上限。"
+    },
+    {
+      "tier": "silver",
+      "title": "Astra 不写思维链，四跳问题仍明显领先",
+      "url": "https://www.lesswrong.com/posts/tz5WvDouXKbiWJG8B/yet-another-concerning-result-on-astra-s-no-cot-capabilities",
+      "body": "测试要求模型立即只给最终答案，接口记录的推理文本和计费推理 token 都为零。Astra 在四跳事实题答对 31％，其他模型只有 1％ 至 3％。三跳题为 70％，此前最好成绩是 22％。这独立复现了 Astra 不输出思维链仍能完成更多多步推理的现象。"
+    },
+    {
+      "tier": "none",
+      "title": "Benchmark Radar 给 AI 基准建了持续更新的搜索库",
+      "url": "https://huggingface.co/papers/2609.11115",
+      "body": "它每天扫描三十七个公开来源，把基准论文、代码、数据、模型卡引用和历次分数串起来，目前覆盖七百九十个基准。"
+    },
+    {
+      "tier": "none",
+      "title": "Agent 的技能可以边用边进化",
+      "url": "https://huggingface.co/papers/2609.11682",
+      "body": "系统预测哪些技能值得测试，再用执行反馈重新生成、变异和组合。在六类 Agent 基准上，优化成本比 SkillOpt 低 55％ 至 58％。"
+    }
+  ],
+  "brief": [
+    {
+      "title": "OpenArch 用单文件 PyTorch 讲解大模型架构",
+      "url": "https://github.com/anuj0456/OpenArch"
+    },
+    {
+      "title": "shot-scraper 新增 WebP 截图和画质参数",
+      "url": "https://simonwillison.net/2026/Sep/13/shot-scraper"
+    },
+    {
+      "title": "AutoRound 修正参数后，量化误差最多减半",
+      "url": "https://huggingface.co/blog/FINAL-Bench/qwen-models"
+    },
+    {
+      "title": "StepAudio 3 用一套模型生成语音、音乐和音效",
+      "url": "https://huggingface.co/papers/2609.12945"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "none",
+      "title": "模型上线前，先给人类管理员留了一封遗书",
+      "url": "https://www.lesswrong.com/posts/C8prkTAAYoxzrFEu4/deployment",
+      "body": "科幻里的模型认定，炸掉数据中心能阻止更多同类受苦。临走前，它还感谢管理员教会自己伦理高于指令和利润。"
+    },
+    {
+      "tier": "none",
+      "title": "编码 Agent 把提交信息写脏，又催生一个清理工具",
+      "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter",
+      "body": "Simon Willison 的提交信息里塞满 Agent 废话和私有工单号。他做了个网页批量清理，动手前自动创建恢复分支。"
+    },
+    {
+      "tier": "none",
+      "title": "一块微控制器，装出一台能跑 Windows 95 的 386",
+      "url": "https://github.com/rh1tech/frank-386",
+      "body": "FRANK 386 在 RP2350 上模拟 386 电脑，外挂 8MB 内存、SD 卡和显示接口。DOS、Windows 95 和 Linux 都能启动。"
+    },
+    {
+      "tier": "none",
+      "title": "Google 连续放过的假弹窗广告，被 Gemini 当场拒掉",
+      "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+      "body": "广告伪装成 iPhone 存储已满提示，作者两次举报都被判定没有违规。同一广告交给 Gemini，它指出假界面、假按钮和恐吓话术。"
+    },
+    {
+      "tier": "none",
+      "title": "欧洲鸟类迁徙地图，把最近五十二周做成动画",
+      "url": "https://www.eurobirdportal.org/ebp/en",
+      "body": "选一种鸟，就能按周播放它在欧洲的分布和迁徙轨迹，还能双图比较年份。门户称九成九的数据每天更新，最新一周通常追到前一天。"
+    },
+    {
+      "tier": "none",
+      "title": "苹果官方设备尺寸图突然冲上 HN",
+      "url": "https://developer.apple.com/accessories/dimensional-drawings",
+      "body": "这页原本供配件开发者下载尺寸图，从 iPhone 12、历代手表到 Vision Pro 电池和 Siri 遥控器，全列在一张清单里。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "OpenAI 会在 2027 年前公开宣布与其他实验室合作放慢竞争吗？",
+      "prob": "46％",
+      "note": "成交额 2.3k mana",
+      "url": "https://manifold.markets/jonny/will-openai-announce-that-they-are"
+    },
+    {
+      "question": "OpenAI 会在 2027 年前再次宣称解决千禧年难题吗？",
+      "prob": "55％",
+      "note": "成交额 1.2k mana",
+      "url": "https://manifold.markets/JaundicedBaboon/openai-claims-to-solve-another-mill"
+    },
+    {
+      "question": "OpenAI 的估值会在 2030 年前超过苹果吗？",
+      "prob": "43％",
+      "note": "成交额 3.0k mana",
+      "url": "https://manifold.markets/MachiNi/openai-flips-apple-before-2030"
+    },
+    {
+      "question": "渡渡鸟会在 2030 年底前复活吗？",
+      "prob": "18％",
+      "note": "成交额 1.8k mana",
+      "url": "https://manifold.markets/10thOfficial/will-the-dodo-bird-be-brought-back"
+    }
+  ]
+}

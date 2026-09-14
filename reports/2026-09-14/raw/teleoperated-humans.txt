@@ -1,0 +1,356 @@
+URL: https://www.lesswrong.com/posts/mWQSiHG3Qz9qYx3D7/teleoperated-humans
+FINAL: https://www.lesswrong.com/posts/mWQSiHG3Qz9qYx3D7/teleoperated-humans
+TITLE: Teleoperated Humans — LessWrong
+FETCHED: 2026-09-14 21:54:01
+============================================================
+x
+Teleoperated Humans — LessWrong
+AI
+Frontpage
+61
+Teleoperated
+Humans
+by
+jefftk
+13th Sep 2026
+jefftk
+7
+min read
+8
+61
+When I look at why I expect the world to change a lot in the next few
+years, and why other people expect slower changes, I think a big
+component is disagreement on the extent to which AI will affect
+non-computer work. Sure, progamming has sped up massively with
+Claude Code
+etc, and
+models
+like
+Astra
+seem posed to make similar changes to work with spreadsheets
+and other common business tools, but what work that doesn't include
+computers at all?
+The classic picture of AIs doing things in the world is robots, but I
+think a more realistic picture of the near future is computers
+telling people what to do. Leaning into the way the world has become
+very scifi, we could call this "teleoperating" people. Many things
+that are hard for robots are very easy for people, there are strong
+economic reasons that push towards teleoperation, and this bypasses
+many legal and social limitations on what AI can do. We should expect
+this to lead to large and rapid changes in the physical world.
+One of the most widespread examples today is driving. I put my
+destination into the GPS, and it tells me what to do. I handle the
+low-level physical motions and responding to the local circumstances;
+the GPS has a broader view of the world and handles the strategy.
+When I think about why this happened much earlier than the huge amount
+of "teleoperation" I expect to see soon, a few
+factors. Driving is a major human activity, so it was worth making
+navigation software at a time when AI wasn't very good yet, even
+though this meant a ton of human hours going into building the system.
+It was also a place where the strategic component was a very strong
+fit for automation. You can
+memorize
+the map
+with enough work, but even then you won't have real-time
+street-by-street traffic information. AI solved this problem so well
+we
+don't even
+call
+it "AI" anymore. On the other hand, driving is a realtime
+control problem in an unconstrained environment where people die if
+you screw up and you can't even always safely stop. This makes it
+hard to automate, but also would make it impractical for an AI to
+guide non-drivers through the process. The only reason Uber etc have
+been able to commodify driving as they have is that so many people
+already know how to drive.
+Thinking about where else we might see this, most AI use today looks a
+lot like
+management
+.
+You figure out what you want it to do, and describe in detail. It
+asks you some questions up front and others while it works. After
+some churning you get some a work product to assess. Maybe there's
+more back-and-forth, or maybe it's good as is. You set strategy and
+give context; the AI handles the implementation. Today's AI is
+normally only applied to the implementation to the extent that the
+task can happen fully within the computer. In cases when the AI can't
+physically, legally, or intellectually do something, the most
+efficient path to completing the task will often be the for the AI to
+handle strategy while delegating to a human to fill these gaps.
+To illustrate what this delegation pattern can look like, let's look at how I
+rec
+ently got by
+Whistle Synth
+app
+into the Mac App Store.
+At a high level, I set the strategy: "Can you walk me through the
+process of getting this into the Mac App Store?" But everything after
+that was either handled by the AI or delegated back to me. It handled
+included figuring out what tasks needed to be done, modifying the
+implementation to be compatible with the App Store restrictions,
+building the app, and giving me instructions. And then it delegated
+to me to record a demo video involving whistling (physical), register
+as a Mac Developer (legal), and clean up its App Store description
+(intellectual).
+This was mostly pure instruction-following on my part: I was being
+teleoperated. Here's one example:
+Claude Code:
+Open the Profiles list
+https://developer.apple.com/account/resources/profiles/list — sign in 
+with the account for [team].
+Click the blue + next to "Profiles". You land on "Register a New
+Provisioning Profile", a page of radio buttons grouped into
+Development and Distribution sections.
+Under Distribution, select "Mac App Store Connect". Not
+"Developer ID" — that's for distributing outside the store. Click
+Continue.
+...
+This was relatively mindless work for me. Just like being navigated
+through a city I don't expect to return to, I didn't bother trying to
+learn how this worked. I was loosely paying attention to make sure I
+wasn't doing anything dumb, but for future more capable systems I
+expect people to stop even paying that much attention.
+Once it finished walking me through submission I had to wait a few
+days for review. It was accepted in the first round with no reviewer
+comments. This is a pretty big deal: App Store rules are notoriously
+complex, the reviewers very picky, and as a first-time amateur Mac
+developer there's no way I would have gotten this all right on the
+first attempt pre-AI.
+Even though this was an almost entirely within-computers case, the
+important thing here is the pattern: by following AI instructions I
+did something that would have taken me a ton of work to learn how to
+do alone.
+Note that in this case I was both doing the high level strategy ("put
+this in the app store") and filling in gaps for the AI (clicking a
+blue plus in App Store Connect). As "teleoperation" becomes more
+common I expect some of this, as people automate away parts of their
+jobs. Other times I expect it will look like, for example, a highly
+AI-pilled startup founder directing AIs that direct employees. A lot
+like gig workers "
+below the API
+"
+today. I expect early iterations of these jobs to be frustrating,
+with the AI not delegating well. Then, as AIs get sufficiently good
+at directing and anticipating, they'll be pretty mindless, for better
+or worse, as you
+stop
+needing to think for yourself
+at all.
+What sort of jobs might switch to being teleoperation? The top
+candidates are any where the physical motions are relatively
+straightforward, timing is not critical, and people today are paid a
+lot for their knowledge and judgement. If you had an expert looking
+over your shoulder and telling you what to do, I expect most of you
+could do most of the work of an electrician. In fact, that's most of
+how electricians learn their trade: through apprenticeship. Same goes
+for mechanics, healthcare technicians, inspectors, etc: they combine
+physical and intellectual components, where it's the knowledge that
+keeps a random person off the street from being able to do the job.
+People wearing glasses with built-in cameras, connected to today's
+strongest AIs could already do a lot with a bit of scaffolding.
+To have a large impact, teleoperated workers wouldn't need to be able
+to do 100% of an existing job category. As long as the parts that can
+and can't be done this way can be easily separated, 90% could be done
+by teleoperated novices, while some of the former professionals spend
+their time on the remaining 10%. When I think about how these other
+jobs are likely to go, I expect we start with ones without regulatory
+barriers: HVAC techs (typically unlicensed) before electricians
+(licensed) before surgeons (licensed + heavily regulated + realtime +
+high stakes). [1]
+So, teleoperation is probably very economically productive. Is it a
+good thing? I think mostly no, for several reasons. The big one is
+that I expect it to speed up the rate at which AI advances turn into
+additional AI advances. This shortens the time our society has to
+figure out what to do about these massive changes, and increases the
+risk that immature technology is rolled out widely. Rushed deployment
+is more likely to lead to disaster, and there are many ways this could
+go extremely wrong. And by "extremely wrong" I mean "AI kills
+everyone wrong". Creating minds smarter than ourselves is the most
+consequential thing humanity has ever done or will ever do, and we
+have to get it right.
+Which is why I'm heartened to see a lot of support, including from the
+CEOs of
+Anthropic
+and
+OpenAI
+,
+for managing the pace at which these systems become increasingly
+capable. But even if we held constant at the capabilities of models
+publicly available today (let alone trained but not yet released) I
+think widespread teleoperation is still very likely. I expect this to
+be a massive disruption, one very difficult to integrate into our
+existing societal system.
+The first issue is just that I expect these to be unpleasant jobs with
+low negotiating power. Since there are many tasks that almost anyone
+could do if expertly advised, and the employer can easily filter out
+the people who can't or won't, there's very little to keep wages or
+working conditions up. Then add in competition from laid-off knowledge
+workers, and I
+expect
+unprecedented unemployment.
+So even if we can avoid the large risks of losing control of the
+future, falling into AI-enabled authoritarianism, facilitating
+bioattacks, etc, how we handle a world in which most people can't find
+work that pays them enough to live on will be an serious challenge. I
+expect this will require very large scale redistribution. [2] I'm not
+sure this happens by default, but I think it's achievable with
+significant effort. And as a very small fraction of spending in a
+vastly larger economy it would be a much easier sell.
+[1] For a future post:
+$ echo "[redacted]" | sha512sum
+7820a2ecae1fcab8d7a29fe4f98f56b96c403cdfb9a6833fad0198070e118233490a078c9230de0c6ed5cf1c6cf557fef493aeb33118e75b401deabbf3a1aae4 -
+[2] Looking at what there is already, the US does less than most rich
+countries, but even here we have medicaid, EITC, CTC, WIC, SNAP, SSI,
+TANF, Section 8, LIHEAP. We spend maybe 3-5% of GDP on means-tested
+programs. Then ~7-10% of GDP goes to things like universal public
+education and medicare which aren't directed specifically at the poor
+but are still effectively redistributive. Internationally there's
+been some of this, but much less; until recently the US was spending
+maybe 0.04% of GDP on the kind of foreign aid (ex: PEPFAR) that is
+really about helping the world's poorest, and then the private sector
+(Gates etc) adding maybe 0.1% of GDP.
+Comment via:
+facebook
+,
+mastodon
+,
+bluesky
+Teleoperated Humans
+20
+jbash
+7
+Caleb Biddulph
+9
+gwern
+3
+jefftk
+6
+jacob
+3
+Boris Kashirin
+1
+jacob
+1
+Samuel Ratnam
+8
+Comments
+8
+AI
+Frontpage
+61
+New Comment
+8 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:54 PM
+[
+-
+]
+jbash
+22h
+20
+6
+Reminds me of
+Manna
+Reply
+[
+-
+]
+Caleb Biddulph
+15h
+7
+0
+3 chapters in, this is pretty good so far!
+Not the most beautiful writing style, and not everything makes sense (e.g. the AI permanently blacklists employees from every minimum-wage job just for being late a few times), but overall, it seems like the author thought things through carefully.
+Some takeaways from this story:
+Human teleoperation naturally comes with on-the-job surveillance and micromanagement.
+This technology allows employees to be easily slotted in and out of different jobs with very little friction, which destroys their bargaining power.
+This can easily lead to a race to the bottom where companies no longer have to providing fulfilling, dignified jobs.
+Also, it's very impressive to me that
+Manna
+predicted in 2003 that massively parallel video game chips
+[1]
+running in the cloud would be key to computer vision.
+^
+More precisely, the story featured a stage where researchers wired together video game consoles, and then another stage where they made customized massively parallel chips.
+Reply
+[
+-
+]
+gwern
+8h
+9
+3
+a stage where researchers wired together video game consoles, and then another stage where they made customized massively parallel chips.
+That was a retrodiction/contemporary approach, not really a prediction.
+'Beowulf clusters'
+were very trendy and came up all the time on Slashdot c. 2003, especially the
+PS2 ones
+(which were followed by PS3 ones to make use of the custom Cell processor).
+Reply
+[
+-
+]
+jefftk
+20h
+*
+3
+0
+Thanks for pointing me to this! I hadn't read it before, but it seems very prescient.
+(Link is missing an initial
+h
+)
+Reply
+[
+-
+]
+jacob
+12h
+6
+0
+I have increasingly had this sense of being teleoperated and some of my friends have mentioned it as well.
+I agree with the sentiment that the "trades" are long-term not safe from automation. Not only are these jobs more likely to have verifiable outcomes (there is a right way to wire house, less so a right way to restructure an organization) but the people who do these jobs do not have the societal power for regulatory capture.
+In the short term, I am curious what your model of teleoperation implementation looks like. I envision enormous social pushback both from potential contractors of trade services and, more importantly, the labor that would be teleoperated. This is nothing capitalism can't blow through, sure, but give me a model for, say, electricians:
+An independent electrician allows themself to be teleoperated. This is maybe a 20% increase in efficiency, nothing much has happened.
+A new electrician firm is founded by one expert electrician and a host of teleoperated electricians. They provide much more competitive rates. But what about permitting processes and regulations? What about the years it takes to build relationships and reputation even in a normal electrician practice?
+A company that hires electricians finds that hiring them is too expensive and creates an inhouse teleoperated electricians. But how many companies are big enough to be able to do this? Or need to do this?
+I think the last scenario is the most likely - I think there's
+years
+worth of PR that teleoperation would need to compete in the general market (see: self driving cars). But this scenario also limits the reach of the changes to the world.
+Reply
+[
+-
+]
+Boris Kashirin
+5h
+3
+0
+How about inspections? That needs even less manual skill - just looking and checking - and it is something everyone needs. I think it is good canary for teleoperating tech readiness.
+Reply
+[
+-
+]
+jacob
+1h
+1
+0
+To me, it's not totally a question of skill but of where the bottlenecks are. I can see routine inspections internal to a company being teleoperated but I do not see certifying inspections being teleoperated.
+Routine inspections being teleoperated goes back to the limits of individual companies. Though they probably shouldn't, a lot of businesses operate on the fix-it-when-it's broken technique, so they're not doing non-mandated inspections.
+Inspections for certifications or regulation either done by the government (will not implement AI) or by some liability-bearing compliance team. Liability seems to be something we currently mostly assign to humans right now. Also, there's a lot of incentive for these inspections to be challenged -- if I get a 'C' on my health inspection from a teleoperated "untrained" inspector, I am going to make a stink about that.
+So, again, we are stuck at the idea of PR, incentives, and where bottlenecks land.
+Reply
+[
+-
+]
+Samuel Ratnam
+1h
+1
+0
+recently had the slightly disturbing experience of my hand muscles being stimulated through electrodes in my arms to control my hand movement. if we get a software intelligence explosion faster than a robotics one, humans might be very literally teleoperated by AI systems.
+Reply
+Moderation Log
+More from
+jefftk
+View more
+Curated and popular this week

@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://www.eurobirdportal.org/ebp/en",
+  "title": "欧洲鸟类迁徙地图，把最近五十二周做成动画",
+  "date": "2026-09-14T08:25:47Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+  "title": "Google 连续放过的假弹窗广告，被 Gemini 当场拒掉",
+  "date": "2026-09-13T17:37:44Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://github.com/rh1tech/frank-386",
+  "title": "一块微控制器，装出一台能跑 Windows 95 的 386",
+  "date": "2026-09-14T08:25:57Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://github.com/anuj0456/OpenArch",
+  "title": "OpenArch 用单文件 PyTorch 讲解大模型架构",
+  "date": "2026-09-14T07:55:19Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+  "title": "Fable 给出 370 年密文解法",
+  "date": "2026-09-13T21:06:13Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
+  "title": "Siri 代码里藏着两套第三方模型接口",
+  "date": "2026-09-14T12:01:32Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
   "id": "https://www.investigatetv.com/2026/09/08/flock-worker-calls-police-investigatetv-reporter-filming-public-camera-installation",
   "title": "监控摄像头安装员被拍，反手叫来三辆警车",
   "date": "2026-09-13T13:35:31Z",

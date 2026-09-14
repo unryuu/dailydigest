@@ -1,0 +1,400 @@
+URL: https://huggingface.co/blog/FINAL-Bench/qwen-models
+FINAL: https://huggingface.co/blog/FINAL-Bench/qwen-models
+TITLE: Same bytes, closer to the original: two lines of AutoRound we had wrong
+FETCHED: 2026-09-14 21:54:19
+============================================================
+Back to Articles
+Same bytes, closer to the original: two lines of AutoRound we had wrong
+Community Article
+Published
+ September 14, 2026
+Upvote
+12
+VIDRAFT_LAB
+SeaWolf-AI
+FINAL-Bench
+Two lines of AutoRound we had wrong, and one lever nobody prices in
+We publish GGUF quantizations under
+Archsloth
+. This post is
+about the part that is actually useful to you: two flags we had set wrong for months, and one
+input that turns out to decide the result even though the field treats it as neutral.
+Every number below is measured on files you can download, against comparison files you can
+download, with a command you can run. The raw per-run logs ship inside each repository.
+The claim, stated so it can be falsified
+Take
+unsloth/Qwen3-4B-GGUF
+→
+Qwen3-4B-Q4_K_M.gguf
+. Take ours. Both files are
+2,497,280,800 bytes
+. Both have 216 ×
+Q4_K
+, 37 ×
+Q6_K
+, 145 ×
+F32
+— zero differences in
+the tensor-type map. Same architecture, same layout, stock
+llama.cpp
+runtime on both sides.
+The only thing that differs is which integer each weight got rounded to.
+Measured as KL divergence from the bf16 original — how far the quantized model's output
+distribution has drifted from the model it was made from.
+Lower is better.
+ARCHsloth Q4
+unsloth
+Q4_K_M
+gain
+Korean
+0.024297
+0.053290
+−54.4 %
+Source code
+0.010191
+0.021659
+−52.9 %
+Japanese
+0.034148
+0.051534
+−33.7 %
+English
+0.032344
+0.048443
+−33.2 %
+Chinese
+0.033088
+0.048051
+−31.1 %
+Spanish
+0.033679
+0.048234
+−30.2 %
+Russian
+0.032852
+0.043831
+−25.0 %
+Arabic
+0.040871
+0.053212
+−23.2 %
+Thai
+0.024561
+0.031301
+−21.5 %
+Hindi
+0.031617
+0.039979
+−20.9 %
+Ten axes, seven writing systems. Separation runs from 3.8 σ (Hindi) to 20.4 σ (Korean).
+Three of those axes are in our calibration set — Korean, English, code. The other seven are
+not.
+They are there so that a build which buys one language by spending another has somewhere
+to show it. If we had overfit to Korean, Hindi and Thai are where it would surface.
+The first thing we had wrong: we optimized a quantizer we never used
+AutoRound takes a
+--scheme
+. We had been passing
+W4A16
+— the 4-bit-weight, 16-bit-activation
+scheme meant for GPU tensor cores — and then exporting with
+--format gguf:q4_k_m
+.
+Those are not the same quantizer.
+W4A16
+and
+Q4_K_M
+group weights differently, derive scales
+differently, and place the zero point differently. So the rounding search was carefully
+minimizing error for a quantizer that
+was never the one used at export
+. The export then
+re-derived everything from scratch, and most of the search was thrown away.
+- --scheme W4A16 --format gguf:q4_k_m
++ --scheme GGUF:Q4_K_M --format gguf:q4_k_m
+This is easy to miss because nothing fails. You get a valid GGUF, the loss curve in the log
+goes down, and the file is a perfectly ordinary quantization. It is just not better than
+llama-quantize
+, and you have no reason to suspect why.
+The second thing:
+--enable_alg_ext
+existed and we had never turned it on
+--enable_alg_ext
+selects the sign-gradient rounding search
+(
+SignRoundV2, arXiv:2512.04746
+). It is off by default. It
+costs roughly 1.7× the tuning time on a 4B — eleven minutes instead of six, on one H100.
+Those two lines together are the entire difference between the two columns in the table above.
+The lever nobody prices in: the calibration corpus is not neutral here
+There is a well-known result that
+importance-matrix (
+imatrix
+) calibration language barely
+matters
+. It is correct, and it is why most people treat calibration text as a formality.
+It does not transfer to AutoRound, and the reason is mechanical.
+An
+imatrix
+reweights which weights matter
+inside
+llama.cpp's own scale search. The
+search still runs; the matrix tilts it. Its influence is bounded by that search.
+AutoRound's rounding search replaces that search.
+For each weight it decides
+up or down
+by minimizing reconstruction error on the calibration activations. There is no second
+procedure downstream to wash the choice out.
+So the text you calibrate on does not nudge the result. It
+chooses the rounding direction
+.
+We have the controlled pair. Same model, same code, same flags, same bit widths,
+same byte
+count
+— only the corpus changed:
+Qwen3.5-9B, calibration corpus
+Korean, Mean KLD
+Korean + English, sample-interleaved
+0.019255
+English only
+0.027336
+29.6 % of Korean, from the text alone.
+On the 27B at the Q4 rung the same comparison gives
+31.9 %.
+For scale, put that next to the knob the field actually spends effort on. When we tried
+per-layer bit
+allocation
+on top of this recipe, it bought us between 0 σ and
+10 % worse
+.
+The text file was worth thirty percent; the bit budget was worth nothing.
+One detail that surprised us:
+interleaving mattered more than the ratio.
+Moving to strict
+alternation at the sample level, with the same overall character mix, improved English by
+11.4 %. Concatenating Korean then English is not the same experiment as alternating them.
+Adding source code moved the code axis by 52.9 % and cost 3.4 % of Korean and 5.3 % of English.
+That trade was worth it to us. It is a trade, and we state it as one.
+The corpora ship in the repositories as
+cal_archsloth.jsonl
+. You can count them yourself.
+The rest of the ladder, and the other two models
+For the 4B we built the same recipe at three rungs. All three are byte-for-byte the same size
+as the same-named comparison file:
+4B rung
+Korean
+English
+Q4_K_M
+−54.4 %
+−33.2 %
+Q6_K
+−41.5 %
+−30.2 %
+Q8_0
+−11.1 %
+−8.7 %
+The gain narrows as bits go up, which is what you would expect: there is less rounding left to
+get right. We expected
+Q8_0
+to be a tie and it was not.
+Nine points on that curve are real files: six downloaded from their repository, three built
+here. Nothing is interpolated.
+The two larger models are a weaker, more interesting story.
+Model, rung
+vs the same-named file
+Korean
+English
+Qwen3.5-9B
+Q4_K_M
+unsloth
+Q4_K_M
+−25.4 %
+−11.4 %
+Qwen3.8-27B
+Q6_K
+unsloth
+UD-Q6_K
+−36.9 %
+−15.0 %
+Both are vision-language models; the
+mmproj
+vision tower ships alongside, carried at full
+precision rather than quantized.
+What we did not win
+This section is the reason to believe the rest of the post.
+Our 27B
+Q4_K_M
+lost English, so it is not published.
+Against
+Qwen3.8-27B-UD-Q4_K_M.gguf
+it takes Korean by 12.8 % and gives English away by 15.8 %. A rung we do not win is a rung we
+do not ship. It returns when it wins.
+There is no
+Q5_K_M
+anywhere in the collection.
+Our toolchain emits
+Q5_K
+with a 5–6 %
+deviation between the optimized weights and the packed tensor — every tensor,
+Q5_K
+only, on
+every model we tried. The resulting file scores worse than our own
+Q4_K_M
+.
+We only found that because we check monotonicity.
+A file that gets worse when you give it
+more bits is a defect, not a result
+— and that check costs nothing and catches things no
+benchmark will.
+Speed is a tie
+, and it should be. pp512 12,167 vs 12,227 tok/s; tg128 306.0 vs 305.2. Same
+size, same layout, one H100, three repetitions, alternating order. We publish it because a
+number you omit is a number someone else produces.
+Nine and twenty-seven billion were measured on two axes, not ten.
+Korean and English. The
+ten-axis sweep exists only for the 4B.
+Knobs we tried that did not work
+Published so nobody spends the compute twice. All measured on the 4B, on top of the corrected
+recipe:
+Knob
+Result
+4× the calibration samples
+no movement, 4× the cost
+4096-token samples instead of 2048
+Korean −2 %, English
++23 %
+Korean-only corpus
+English
++14 %
+The tool's default English corpus
+Korean
++76 %
+, English
++9 %
+Quantization-aware healing on top of the rounding search
++57 %
+Extra bits on selected tensors, on top of the rounding search
+0 σ to
++10 %
+Mixed precision at a matched size
+a uniform bit increase was
+10 % better
+There is a pattern in the bottom three rows worth naming. Healing, allocation, and 4/8 mixed
+precision all
+help
+when the rounding is bad — we measured −6 % to −37 % with plain RTN. Every
+one of them
+hurts
+once the rounding search is on, by +9 % to +57 %.
+So:
+evaluate a lever with the rounding both off and on.
+A lever measured only against a weak
+baseline will look like a discovery and then quietly cost you in the shipping build.
+Run it yourself
+# 1. the comparison file, straight from its own repository
+hf download unsloth/Qwen3-4B-GGUF Qwen3-4B-Q4_K_M.gguf --local-dir rival
+# 2. the reference the distance is measured from
+python llama.cpp/convert_hf_to_gguf.py Qwen/Qwen3-4B --outtype bf16 --outfile ref-BF16.gguf
+# 3. teacher logits, once per evaluation text
+llama-perplexity -m ref-BF16.gguf -f
+eval
+/eval_ko.txt \
+ --kl-divergence-base base_ko.dat -ngl 99 -c 512 --chunks 60
+# 4. every candidate against the same teacher, same text, same chunks
+llama-perplexity -m <candidate>.gguf -f
+eval
+/eval_ko.txt \
+ --kl-divergence --kl-divergence-base base_ko.dat -ngl 99 -c 512 --chunks 60
+And the build, in full — there is nothing else:
+auto-round --model Qwen/Qwen3-4B \
+ --scheme GGUF:Q4_K_M --enable_alg_ext \
+ --iters 200 --nsamples 128 --seqlen 2048 \
+ --dataset cal_archsloth.jsonl \
+ --format gguf:q4_k_m --output_dir out
+A note on the measuring stick:
+perplexity will not show you this.
+llama-perplexity
+reports
+both statistics in one run, so the comparison is in the logs we ship. On the Korean axis,
+against the same bf16 teacher (
+eval/logs/WD_ko_*.log
+in the 4B repo):
+perplexity
+KL divergence
+bf16 original
+8.605807
+—
+ARCHsloth
+Q4_K_M
+8.694627
+0.024297
+unsloth
+Q4_K_M
+8.948656
+0.053290
+gap between the two
+2.8 %
+54.4 %
+Same two files. Perplexity calls it a rounding error; KL divergence calls it a different model.
+Perplexity asks whether the model is still
+confident
+; KL divergence asks whether it is
+confident about
+the same things
+. For quantization the second question is the one that
+matters — and if you rank quantizations by perplexity you will mostly be ranking noise.
+The models
+All of them live in one collection:
+Archsloth MODELs
+.
+Archsloth/Qwen3-4B-GGUF
+—
+Q4_K_M
+/
+Q6_K
+/
+Q8_0
+, ten axes measured
+Archsloth/Qwen3.5-9B-GGUF
+—
+Q4_K_M
++ vision
+Archsloth/Qwen3.8-27B-GGUF
+—
+Q6_K
++ vision
+Apache-2.0, inherited from the base models. Quantized from the original weights, never from
+someone else's quantization. Stock
+llama.cpp
+— no fork, no custom format, nothing below
+4 bits anywhere.
+Every repository ships the calibration corpus, the evaluation texts, and the raw per-run logs
+behind every number in its card. If something here does not replicate on your hardware, open a
+discussion and we will correct it.
+Models mentioned in this article
+3
+Collections mentioned in this article
+1
+More from this author
+Did the Civilization Emerge, or Was It Recited?
+9
+August 31, 2026
+Writing Down the Line Between Luck and Skill
+14
+August 24, 2026
+Community
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+12
+Models mentioned in this article
+3
+Collections mentioned in this article
+1

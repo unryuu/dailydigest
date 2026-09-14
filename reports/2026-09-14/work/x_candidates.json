@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-14",
+  "scanned_at": "2026-09-14T21:25:41+08:00",
+  "window": "八个固定账号统一从 2026-09-13T23:54:35+08:00 接续",
+  "route": "机械 Nitter 抓取全部失败后，Codex 内置浏览器使用登录态 X 的 Latest 搜索逐账号补扫；pvncher 另扫 Articles",
+  "accounts": [
+    {"handle": "emollick", "status": "success", "result": "保留历史密文任务库和企业小模型数据主权两条观点；其余回复与引用缺少独立增量。"},
+    {"handle": "goodside", "status": "success", "result": "时间窗内没有新增原创帖。"},
+    {"handle": "karpathy", "status": "success", "result": "时间窗内没有新增原创帖。"},
+    {"handle": "NeelNanda5", "status": "success", "result": "新增内容主要为 AI 灭绝情景视频推荐和安全机构资助讨论，近期主线饱和，未保留。"},
+    {"handle": "pvncher", "status": "success", "result": "时间窗内没有新增原创帖；Articles 最新仍是 09-05，没有新文章。"},
+    {"handle": "tszzl", "status": "success", "result": "时间窗内以回复和玩笑为主，没有保留候选。"},
+    {"handle": "sama", "status": "success", "result": "保留 OpenAI 在前沿强化学习训练前编制安全论证的一手制度增量。"},
+    {"handle": "teortaxesTex", "status": "success", "result": "时间窗内帖子密集，主要是对 DeepSeek 路线、Dario 与中美竞争的个人推断，没有保留。"}
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "给模型建立一座历史谜题与古老密文题库",
+      "url": "https://x.com/emollick/status/2099333274648838155",
+      "published_at": "2026-09-14T11:03:51+08:00",
+      "bucket_hint": "radar_or_fun",
+      "facts": [
+        "Ethan Mollick 认为，除了高难数学题，还应该建立一套历史谜题和古老密文题库给模型挑战。",
+        "他提到已有历史学者用新模型处理从未翻译的手写档案，并借一则三百七十年密文被解开的消息提出这一建议。"
+      ],
+      "caveats": [
+        "这是评测方向建议，不是已经建成的公开基准；被引用的密文解答需要后续 reader 打开原始材料核实。"
+      ],
+      "why": "它把模型能力测试从刷标准答案扩展到真实档案中的开放谜题，既有具体画面也可能催生新基准。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "企业自建小模型的数据主权路线会撞上持续维护成本",
+      "url": "https://x.com/emollick/status/2099310692532699608",
+      "published_at": "2026-09-14T09:34:07+08:00",
+      "bucket_hint": "exclusive_view",
+      "facts": [
+        "Ethan Mollick 判断，只要通用前沿模型的能力仍快速增长，企业想长期维护一个经过微调的小模型并持续胜过大模型，就会既昂贵又困难。",
+        "他认为数据主权确实能形成竞争空间，但自建小模型更可能是前沿模型的补充，不会在广泛场景里完全替代它。"
+      ],
+      "caveats": [
+        "这是产业判断，没有披露具体企业成本或同条件模型评测；可与 The Information 的企业数据保留独家形成观点补充，不能合写成已验证结论。"
+      ],
+      "why": "同一天企业因数据风险限制前沿模型，这条补上了替代路线的代价，能形成一组有张力的独家视角。"
+    },
+    {
+      "source": "x-sama",
+      "title": "OpenAI 把安全论证提前到前沿强化学习训练之前",
+      "url": "https://x.com/sama/status/2099348812305473766",
+      "published_at": "2026-09-14T12:05:35+08:00",
+      "bucket_hint": "regulation_or_industry_silver",
+      "facts": [
+        "Sam Altman 表示，OpenAI 现在会在预计显著提升能力的前沿强化学习训练开始前，预先编制明确的安全论证，而不只是在模型发布前做安全工作。",
+        "他希望行业建立关于错位、监控和安全的共同标准，并欢迎独立审计；公司不准备等待反垄断豁免或联邦立法才开始协调。",
+        "Altman 重新解释放慢开发：不是停止进步，而是让安全论证和监控的成本把推进速度压到原本可能速度以下。"
+      ],
+      "caveats": [
+        "OpenAI 没有公开安全论证的模板、否决门槛、覆盖哪些训练或是否接受外部检查。",
+        "09-13 已报道 OpenAI 支持放慢推进和第三方员工级访问；今天只能收训练前安全论证这一新增机制，不能重述共同态度。"
+      ],
+      "why": "相比昨天的原则性承诺，这次首次给出训练阶段的具体程序，把安全门槛从发版前移到能力提升训练之前。"
+    }
+  ],
+  "excluded": [
+    {"title": "AI 的每瓦智力可能已高于人脑", "url": "https://x.com/emollick/status/2099465393857307092", "reason": "Mollick 只回复‘Huh’，核心数字来自被引用账号的粗略计算，缺少口径和原始数据。"},
+    {"title": "AI 灭绝情景视频推荐", "url": "https://x.com/NeelNanda5/status/2099315957399236992", "reason": "只有推荐语，近期 AI 灭绝风险、减速与治理主线已饱和。"},
+    {"title": "放慢前沿模型原来是为了办派对", "url": "https://x.com/tszzl/status/2099350373429543380", "reason": "依赖与 Sam Altman 的上下文玩笑，信息量不足以独立成条。"},
+    {"title": "DeepSeek 想做持续学习的 STEM AI", "url": "https://x.com/teortaxesTex/status/2099487686373323148", "reason": "路线判断和‘数千 Agent 加 RLM’说法均为个人推断，帖子没有给出 DeepSeek 或 OpenAI 的一手材料。"}
+  ],
+  "failure_note": "八个机械 X／Nitter 源均返回 HTTP 403；登录态 X 搜索正常，已按 2026-09-13T23:54:35+08:00 接续点补齐八个账号。"
+}

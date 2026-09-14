@@ -1,0 +1,41 @@
+# group-1：企业限制 Fable 与自建小模型代价
+fable-enterprise-restrictions|https://www.theinformation.com/articles/anthropic-data-fears-prompt-nvidia-palantir-booz-allen-restrict-model-use
+small-model-sovereignty|https://x.com/emollick/status/2099310692532699608
+
+# group-2：Anthropic 与 Rum 算力合同
+anthropic-rum-compute|https://www.theinformation.com/articles/anthropic-strikes-13-7-billion-compute-deal-trump-linked-rum-group
+
+# group-3：Fable 破解三百七十年密文
+fable-cyphral-distich|https://www.vals.ai/blogs/fable-solves-cyphral-distich
+historical-cipher-benchmark|https://x.com/emollick/status/2099333274648838155
+
+# group-4：思维链可控性评测
+cot-controllability|https://www.lesswrong.com/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited
+
+# group-5：Astra 无思维链能力独立复现
+astra-no-cot-replication|https://www.lesswrong.com/posts/tz5WvDouXKbiWJG8B/yet-another-concerning-result-on-astra-s-no-cot-capabilities
+
+# 独家视角：行业标准机构与训练前安全论证
+ai-standards-body|https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police
+openai-training-safety-case|https://x.com/sama/status/2099348812305473766
+
+# 无牌、论文与简讯
+siri-provider-swap|https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude
+perplexity-astra|https://openai.com/index/perplexity-improving-accuracy-with-astra
+congress-ai-safety|https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson
+teleoperated-humans|https://www.lesswrong.com/posts/mWQSiHG3Qz9qYx3D7/teleoperated-humans
+cloud-tpu-refusal|https://www.lesswrong.com/posts/wM5vbT9evBhM3fP3x/i-am-refusing-to-work-on-cloud-tpus
+benchmark-radar|https://huggingface.co/papers/2609.11115
+cobra-skills|https://huggingface.co/papers/2609.11682
+stepaudio-3|https://huggingface.co/papers/2609.12945
+openarch|https://github.com/anuj0456/OpenArch
+shot-scraper|https://simonwillison.net/2026/Sep/13/shot-scraper
+autoround-fix|https://huggingface.co/blog/FINAL-Bench/qwen-models
+
+# 乐子候选
+deployment-fiction|https://www.lesswrong.com/posts/C8prkTAAYoxzrFEu4/deployment
+commit-rewriter|https://simonwillison.net/2026/Sep/14/commit-rewriter
+frank-386|https://github.com/rh1tech/frank-386
+google-dodgy-ads|https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads
+euro-bird-portal|https://www.eurobirdportal.org/ebp/en
+apple-dimensional-drawings|https://developer.apple.com/accessories/dimensional-drawings

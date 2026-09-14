@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Sep/14/commit-rewriter",
+  "title": "编码 Agent 把提交信息写脏，又催生一个清理工具",
+  "date": "2026-09-14T00:28:10Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://simonwillison.net/2026/Sep/13/shot-scraper",
+  "title": "shot-scraper 新增 WebP 截图和画质参数",
+  "date": "2026-09-13T23:58:14Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
   "id": "https://simonwillison.net/2026/Sep/12/sighting-399708714",
   "title": "码头封了三个月，整座被褐鹈鹕接管了",
   "date": "2026-09-12T21:16:09Z",

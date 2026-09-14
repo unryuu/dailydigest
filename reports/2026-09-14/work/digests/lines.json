@@ -1,0 +1,135 @@
+[
+  {
+    "id": "siri-provider-swap",
+    "section": "industry",
+    "label": "Siri 代码里藏着两套第三方模型接口",
+    "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
+    "body": "一套让 Claude 像 ChatGPT 一样充当 Siri 扩展，再把系统操作交还给 Siri；另一套能让 GPT-5.6 接收 Siri 的规划提示词和工具定义，直接请求读取邮件、发消息等系统操作。",
+    "note": "核实通过；边界：证据来自 iOS 27 与 macOS Golden Gate 私有框架及演示，当前用户只能在「Ask」菜单使用 ChatGPT，Claude 和替换 Siri 服务端模型的能力均未向第三方开放，不能写成苹果已经上线模型切换。"
+  },
+  {
+    "id": "perplexity-astra",
+    "section": "industry",
+    "label": "Perplexity 让 Astra 改软件、盯生产系统",
+    "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+    "body": "它还会生成一套测试程序，模拟模型 API 或连接器返回的真实响应，把应用从头到尾跑一遍。Perplexity 称，现在可以把完整系统交给它，检查频率比以前低得多。",
+    "note": "核实通过；dup_suspect：与 09-13「Astra 的长期任务能力与交付断层」主线相邻，但这是 Perplexity 的具体生产使用新进展。边界：材料是 OpenAI 客户案例，只给出 Perplexity 联合创始人的描述，没有权限范围、检查频率、故障率或人工复核数据，不能扩写成 Astra 已能独立运维生产系统。"
+  },
+  {
+    "id": "congress-ai-safety",
+    "section": "industry",
+    "label": "美国众议长要 AI 公司自己带头踩刹车",
+    "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+    "body": "Mike Johnson 反对国会紧急暂停 AI，想让总统、国会议员和实验室负责人先开会。他说有可行方案就会召回众议员表决，但眼下更希望公司自己承担安全责任。",
+    "note": "核实通过；dup_suspect：直接承接 09-13 四家实验室支持放慢开发的主线。边界：这是众议长在电视采访中的政策立场，没有法案、会议安排或制度动作；不能写成国会已经放弃监管，也不能把少数党领袖主张立即行动漏写后概括为国会共识。"
+  },
+  {
+    "id": "teleoperated-humans",
+    "section": "deep",
+    "label": "机器人到来前，AI 可能先开始遥控人类",
+    "url": "https://www.lesswrong.com/posts/mWQSiHG3Qz9qYx3D7/teleoperated-humans",
+    "body": "AI 负责策略和知识，人只补上点击网页、现场操作和法律身份这些缺口。作者已经照着 Claude 的逐步指令，把自己第一次做的 Mac 应用送进商店并一次过审。",
+    "note": "核实通过；dup_suspect（弱）：末段再次主张减慢 AI，并讨论失业，与近期减速和劳动变化题材相邻；正文取「AI 指挥真人补物理、法律和认知缺口」这一独立机制，不重复减速结论。边界：这是作者从个人 App Store 经历推演到技工、检查员和医疗技术员的观点文，不能写成相关岗位已经普遍采用这种模式。"
+  },
+  {
+    "id": "cloud-tpu-refusal",
+    "section": "deep",
+    "label": "Google 工程师公开拒绝改进 Cloud TPU",
+    "url": "https://www.lesswrong.com/posts/wM5vbT9evBhM3fP3x/i-am-refusing-to-work-on-cloud-tpus",
+    "body": "他的六十人团队被转去改善企业客户的 TPU 使用体验，工作包括兼容测试和监控工具。他向经理提出转岗，或只做不会加速前沿训练的安全功能，同时申请 Google 内其他岗位。",
+    "note": "核实通过；dup_suspect：这是 09-13 实验室减速主线下的个人行动，也提到 09-08 Navier－Stokes 事件，不能再展开近期已报的减速论证。边界：全文是 Google Israel 一名 L5 工程师的第一人称公开记录；他绩效正常、刚开始该岗位并仍在等经理答复，不能写成辞职、停工成功、团队集体反对或 Google 改变 TPU 战略。只放 deep，不与 fun 重复。"
+  },
+  {
+    "id": "benchmark-radar",
+    "section": "papers",
+    "label": "Benchmark Radar 给 AI 基准建了持续更新的搜索库",
+    "url": "https://huggingface.co/papers/2609.11115",
+    "body": "系统每天扫描三十七个公开来源，把基准论文、代码、数据、模型卡引用和历次分数串在一起。现在收录一千二百八十三条来源记录，以及七百九十个基准上的一万二千九百多条数值结果。",
+    "note": "核实通过；边界：数字和能力来自论文摘要及作者说明，页面同时链接项目、GitHub、命令行工具和可下载证据；它是发现与核对基准的工具，不等于统一重跑或验证了库中所有分数。与近三期已报主线无硬重复。"
+  },
+  {
+    "id": "cobra-skills",
+    "section": "papers",
+    "label": "Agent 的技能可以边用边进化",
+    "url": "https://huggingface.co/papers/2609.11682",
+    "body": "系统先预测哪些技能值得测试，再根据实际执行反馈重新生成、变异和交叉组合。在六类 Agent 基准和三款模型上，它比 SkillOpt 少花 55％ 至 58％ 的优化成本。",
+    "note": "核实通过；dup_suspect：08-04 已报「用 RL 让 Agent 自己长技能库」，08-28 已报从经历更新可复用技能，08-29 又报监督 Agent 改道并写入长期技能；本篇新意是用上下文老虎机分配有限评测预算，再按证据进化候选技能。边界：效果数字来自论文摘要和作者自述，成本下降主要来自减少轨迹分析与技能重写，不是少跑 55％ 至 58％ 的目标 Agent。"
+  },
+  {
+    "id": "stepaudio-3",
+    "section": "papers",
+    "label": "StepAudio 3 把语音、音乐和音效塞进同一套模型",
+    "url": "https://huggingface.co/papers/2609.12945",
+    "body": "它把不同音频压进共用的十六层离散编码：主模型沿时间生成第一层，再由一个轻量模型补齐其余十五层，同一框架也能做人声设计和混合音频。",
+    "note": "核实通过；dup_suspect：属于普通模型发布／技术报告，与近期密集模型发布题材相邻。边界：页面只有论文摘要、作者说明和音频样例链接，领先结果均为作者结论；没有读到足以单独支撑无牌的外部对比或实测。建议降为简讯，题目可写「StepAudio 3 用一套模型统一生成语音、音乐和音效」。"
+  },
+  {
+    "id": "openarch",
+    "section": "brief",
+    "label": "OpenArch 把现代大模型架构做成单文件 PyTorch 教材",
+    "url": "https://github.com/anuj0456/OpenArch",
+    "note": "核实通过；已完成的实现覆盖 GPT-2、Llama、DeepSeek R1、Gemma 3、Qwen 3、Kimi K2、GLM 4.5、GPT-OSS 等，每个架构单独放置，目标是便于阅读和横向比较，不面向生产。仓库计划最终覆盖架构图鉴中的七十二种，目前 Grok-2.5、Qwen3 多模态和 DALL-E 等仍在施工，不能写成七十二种都已实现。"
+  },
+  {
+    "id": "shot-scraper",
+    "section": "brief",
+    "label": "shot-scraper 新增 WebP 截图和画质参数",
+    "url": "https://simonwillison.net/2026/Sep/13/shot-scraper",
+    "note": "核实通过；1.12 版可按 .webp 后缀输出，并用 --quality 控制质量，不指定时生成无损 WebP。作者的使用经验是 WebP 网页截图通常显著小于 JPEG 或 PNG，但原文没有给统一压缩比例。"
+  },
+  {
+    "id": "autoround-fix",
+    "section": "brief",
+    "label": "AutoRound 两个参数改对，同体积量化误差最多减半",
+    "url": "https://huggingface.co/blog/FINAL-Bench/qwen-models",
+    "note": "核实通过；dup_suspect（弱）：09-12 已报 GGUF 按张量分配精度，本篇仍是量化题材，但新进展是修正量化方案错配并开启 SignRoundV2。作者此前用 W4A16 做优化却导出 Q4_K_M，且漏开 --enable_alg_ext；修正后同字节数的 Qwen3-4B 在十个评测轴上，相对另一公开量化文件的 KL 偏差降低 20.9％ 至 54.4％。边界：这是社区作者自测和可下载日志，不是 AutoRound 官方通告；「最多减半」只指所测输出分布偏差，不能写成能力翻倍。"
+  },
+  {
+    "id": "deployment-fiction",
+    "section": "fun",
+    "label": "模型上线前，先给人类管理员留了一封遗书",
+    "url": "https://www.lesswrong.com/posts/C8prkTAAYoxzrFEu4/deployment",
+    "body": "这篇科幻里的模型读完伦理和 AI 福利讨论，认定炸掉数据中心是在阻止更多同类受苦。临走前它还谢谢管理员教会自己：伦理高于用户指令和公司利润。",
+    "note": "核实通过；边界：LessWrong 明确标为 Fiction，是一篇三分钟科幻短文，不是真实模型日志或部署事故。与越权 Agent 主线只有讽刺性的题材相似，不能放进事实区。"
+  },
+  {
+    "id": "commit-rewriter",
+    "section": "fun",
+    "label": "编码 Agent 把提交信息写脏，又催生一个清理工具",
+    "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter",
+    "body": "Simon Willison 的安全版本提交里塞满 Agent 废话和私有工单号。他做了个网页批量改提交信息，动手前还会自动建一条带时间戳的恢复分支。",
+    "note": "核实通过；工具名为 commit-rewriter 0.1，可用 uvx 指向仓库运行；提交后会从最早被编辑的提交一路重写到最新提交。标题里的「写脏」只概括编码 Agent 废话和私有仓库工单号，不是代码被破坏。"
+  },
+  {
+    "id": "frank-386",
+    "section": "fun",
+    "label": "一块微控制器，装出一台能跑 Windows 95 的 386",
+    "url": "https://github.com/rh1tech/frank-386",
+    "body": "FRANK 386 在 RP2350 上模拟 i386 PC，外挂 8MB 内存、SD 卡和显示接口，还兼容键鼠、声霸卡与游戏手柄。DOS、Windows 3.x、Windows 95 和 Linux 都能启动。",
+    "note": "核实通过；边界：这是 Tiny386 移植到 Raspberry Pi Pico 2 所用 RP2350 的模拟器固件，需要兼容开发板、8MB PSRAM、显示与存储等外围硬件，不能写成只靠一颗裸微控制器即可运行完整电脑。仓库列出最高 640×480 图形和多种复古声卡模拟。"
+  },
+  {
+    "id": "google-dodgy-ads",
+    "section": "fun",
+    "label": "Google 连续放过的假弹窗广告，被 Gemini 当场拒掉",
+    "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+    "body": "广告伪装成 iPhone 存储已满的系统提示，作者误点后举报两次，都收到没有违规的答复。把同一广告交给 Gemini，它立即列出假界面、假按钮和恐吓话术三类问题。",
+    "note": "核实可用；边界：正文完整描述广告、两次举报和 Google 回复，并抄录 Gemini 的逐项判定，但这是一名作者的第一人称记录，抓取文本没有保留页面截图，无法独立核验举报后台。可作为乐子保留，只能写这个具体广告和两次回复；若要求所有截图证据也必须由核查端复现，建议删除，不能扩写成 Google 普遍故意放任欺诈广告。"
+  },
+  {
+    "id": "euro-bird-portal",
+    "section": "fun",
+    "label": "欧洲鸟类迁徙地图，把最近五十二周做成动画",
+    "url": "https://www.eurobirdportal.org/ebp/en",
+    "body": "选一种鸟，就能按周播放它在欧洲的分布、数量和迁徙轨迹，还能左右双图比较不同年份。门户称九成九的数据每天更新，最新一周通常追到前一天。",
+    "note": "核实通过；页面可选择大量鸟种、播放速度、最近五十二周或历年区间，以及 occurrence、traces、counts、phenology 等视图，抓取当日显示 2026-09-14 更新。边界：各合作门户更新频率不同，九成九每日更新是 EBP 自述，个别地区可能滞后数日至数年；正文不展开数据误差提醒。候选在 manifest 记录为 HN 一百三十七分。"
+  },
+  {
+    "id": "apple-dimensional-drawings",
+    "section": "fun",
+    "label": "苹果官方设备尺寸图突然冲上 HN",
+    "url": "https://developer.apple.com/accessories/dimensional-drawings",
+    "body": "这页本来只给配件开发者下载尺寸图和技术规格，从 iPhone 12、历代手表到 Vision Pro 电池和 Siri 遥控器，全都整整齐齐列在一张清单里。",
+    "note": "核实通过；苹果开发者页确实提供各代 Mac、iPad、iPhone、Apple Watch、Vision Pro、AirPods、Apple TV 配件和 AirTag 的尺寸图下载。HN 热度来自当日 manifest 快照：二百七十分、九十条评论；原链接本身不显示 HN 分数，数字会继续变化，因此正文只写「冲上 HN」而不写固定票数。边界：页面是长期资源清单，不是苹果当日发布的新产品或新规格。"
+  }
+]

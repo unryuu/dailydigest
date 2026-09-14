@@ -1,0 +1,82 @@
+URL: https://simonwillison.net/2026/Sep/13/shot-scraper
+FINAL: https://simonwillison.net/2026/Sep/13/shot-scraper/
+TITLE: Release: shot-scraper 1.12
+FETCHED: 2026-09-14 21:54:17
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+WorkOS —
+auth.md
+by WorkOS: agents register users, no sign-up form.
+Try it!
+13th September 2026
+Release
+shot-scraper 1.12
+— A CLI utility for taking screenshots of websites, recording video demos and scraping sites using JavaScript
+I've added WebP support to my
+shot-scraper
+screenshot automation tool. You can now take a WebP screenshot of a web page like this:
+shot-scraper https://simonwillison.net -o screenshot.webp --quality 80
+The
+--quality
+option sets the quality - without that option the WebP file will be lossless.
+In my experience WebP screenshots are almost always significantly smaller in file size than their JPEG or PNG equivalents. See
+the PR
+for some examples.
+I shipped this feature so I could use it to generate the screenshot
+for my new commit-rewriter tool
+.
+Posted
+13th September 2026
+at 11:58 pm
+Recent articles
+Generating running routes with GPT-6 Astra and ChatGPT Work
+- 12th September 2026
+OpenAI agents attacked RubyGems back in May
+- 12th September 2026
+Some thoughts on the Navier–Stokes Millennium Prize Problem
+- 8th September 2026
+This is a
+beat
+by Simon Willison, posted on
+13th September 2026
+.
+playwright
+15
+shot-scraper
+71
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

@@ -1,0 +1,23 @@
+URL: https://x.com/emollick/status/2099333274648838155
+FINAL: https://x.com/emollick/status/2099333274648838155
+TITLE: Ethan Mollick on X: "For all the focus on hard math, we should also have a bank of historical mysteries and cyphers that we can throw models at. I know a few historians (like https://t.co/CIq2xQpTUy) that have been using new models on old untranslated handwritten records.
+
+How about Linear AI?" / X
+FETCHED: 2026-09-14 21:53:36
+============================================================
+Ethan Mollick
+@emollick
+For all the focus on hard math, we should also have a bank of historical mysteries and cyphers that we can throw models at. I know a few historians (like
+generativehistory.substack.com
+) that have been using new models on old untranslated handwritten records.
+
+How about Linear AI?
+Boris Cherny
+@bcherny
+11h
+Fable solved the Cyphral Distich (a 370 year old cypher). Super cool way to use Claude
+vals.ai/blogs/fable-so…
+3:03 AM · Sep 14, 2026
+27.9K
+Views
+22

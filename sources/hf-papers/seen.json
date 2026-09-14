@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.12945",
+  "title": "StepAudio 3 用一套模型生成语音、音乐和音效",
+  "date": "2026-09-14",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.11682",
+  "title": "Agent 的技能可以边用边进化",
+  "date": "2026-09-14",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.11115",
+  "title": "Benchmark Radar 给 AI 基准建了持续更新的搜索库",
+  "date": "2026-09-14",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.11317",
   "title": "多轮 AI 编辑留下的网格脏点可以单独清理",
   "date": "2026-09-13 榜单抓取",

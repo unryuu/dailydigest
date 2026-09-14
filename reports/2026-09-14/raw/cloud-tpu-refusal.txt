@@ -1,0 +1,119 @@
+URL: https://www.lesswrong.com/posts/wM5vbT9evBhM3fP3x/i-am-refusing-to-work-on-cloud-tpus
+FINAL: https://www.lesswrong.com/posts/wM5vbT9evBhM3fP3x/i-am-refusing-to-work-on-cloud-tpus
+TITLE: I am refusing to work on Cloud TPUs — LessWrong
+FETCHED: 2026-09-14 21:54:03
+============================================================
+x
+I am refusing to work on Cloud TPUs — LessWrong
+AI
+Personal Blog
+93
+I am refusing to work on Cloud
+TPUs
+by
+Yair Halberstadt
+14th Sep 2026
+3
+min read
+3
+93
+I don't think this is particularly impressive, or interesting for anyone else, but I think it may turn out to be useful in the future to have an easily visible public record of what happened, so here goes:
+I am an L5 SWE at Google Israel. I have been there since May 2021, was promoted once
+[1]
+, and have never received a negative annual or quarterly review (ranging from a rating of Significant Impact to Outstanding Impact).
+I have been worried for a long time about the development of artificial intelligence, as can be seen by many of my posts on this website. I believe that above human intelligence AI may well have the motive and means to wipe out humanity, and that developing AI is the most consequential thing that people have ever done. It is imperative we tread slowly and carefully, but right now top AI labs are racing to get there as fast as they can, which is likely to lead to disaster.
+My wider team (~60 people) at Google was recently reassigned from working on supporting migration to Google Cloud
+[2]
+, to improving the enterprise customer experience for Cloud TPUs. This is the platform which external customers use to run workloads on TPUs
+[3]
+.
+I initially worked on handing over our product to the team that would replace us, and then had long parental leave scheduled, so I only started working on Cloud TPUs on September 6th. The nature of the work is mostly e.g. writing tests to check that new generations of TPU's and host images are working well together, or providing better tools to monitor and control TPUs, etc. It was immediately clear to me that the work was purely negative for AI safety - it made it easier for labs to accelerate their usage of TPUs to train frontier models, but there was almost nothing I could so to improve AI safety from my position, and I would be unlikely to have a say in any GDM decisions about AI development (if you disagree please let me know in the comments).
+Given that Google is currently behind on frontier AI research, and some other frontier labs do use Cloud TPUs extensively I felt that improving Cloud TPUs is one of the worst things I could be doing at Google in terms of reducing timelines till super-intelligent AI.
+The Navier Stokes problem fell on the 8th of September, and I saw
+Kabir Kumar's post
+on the morning of Wednesday the 9th of September. At that point I made my decision I would no longer work on improving Cloud TPUs due to existential risk.
+I informed my manager on Wednesday 9th of September that I needed to talk to him, but he was OOO so I only ended up talking on Thursday 10th September. I told him that due to my fear of existential risk, I wasn't prepared to work on improving Cloud TPUs, but I gave him two suggestions.
+I could take my remaining ~2 months of parental leave while I apply for alternative roles at Google.
+I could talk to our customers to ask if there were non dual-use features
+[4]
+they needed from our team which could improve AI safety.
+I said I would complete the task I was currently working on, as I expected there was only a few hours left of work involved, and I felt the benefits of keeping good relations with my team and seeming reasonable, outweighed the costs of a few hours work improving TPUs.
+He said he needed to think about it, and talk to other managers in our wider team. He also pointed out that a subset of our wider team is still working on one of our old products for another 2 months, and it might be worth it for me to join them for now, if they thought it worth onboarding me.
+Meanwhile I applied to other roles at Google that I do not consider problematic. I am currently in limbo while I wait to hear back from my manager, and the roles I have applied to.
+^
+From L4 to L5
+^
+Where I've worked since I joined
+^
+As opposed to Google's internal use of TPUs, which uses a different platform.
+^
+I.e. features that didn't make it easier to train frontier models, but did make it easier to align or monitor them.
+I am refusing to work on Cloud TPUs
+10
+RogerDearnaley
+6
+Sheikh Abdur Raheem Ali
+5
+Kabir Kumar
+3
+Comments
+3
+AI
+Personal Blog
+93
+New Comment
+3 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:54 PM
+[
+-
+]
+RogerDearnaley
+2h
+10
+4
+Best of luck!
+Reply
+1
+[
+-
+]
+Sheikh Abdur Raheem Ali
+7h
+6
+0
+I‘d suggest talking to Swante Scholz if you want a perspective from another Googler interested in mitigating xrisk.
+Given that Google is currently behind on frontier AI research, and some other frontier labs do use Cloud TPUs extensively I felt that improving Cloud TPUs is one of the worst things I could be doing at Google in terms of reducing timelines till super-intelligent AI.
+Some of my independent safety research was supported by free compute from Google’s TPU research cloud program, but
+I agree that this is insignificant in comparison
+to
+https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services
+.
+Reply
+1
+1
+[
+-
+]
+Kabir Kumar
+2h
+5
+0
+Thank you so much for doing this!!
+In case you don't already know (but I imagine you do)
+Google has a union
+- I've talked with one of the organizers a while ago, happy to help get in touch.
+There is also
+https://concernedaistaff.org
+which is made of current and ex staff members at AI companies, e.g.
+@TurnTrout
+.
+Very happy to have played a small part in inspiring this!!
+Reply
+Moderation Log
+More from
+Yair Halberstadt
+View more
+Curated and popular this week

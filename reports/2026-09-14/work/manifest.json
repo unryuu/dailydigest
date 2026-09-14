@@ -1,0 +1,357 @@
+{
+  "date": "2026-09-14",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=HTTP 403, body=5710; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Fable 5.1 解开三百七十年密文，真实历史谜题可能成为新能力测试",
+      "cost": "中",
+      "reason": "同一事件合并原始报道入口与 Mollick 的评测方向建议；前者核事实，后者只作观点补充。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Fable 5.1 Solves the Cyphral Distich, a 370-year-old cipher",
+          "url": "https://www.vals.ai/blogs/fable-solves-cyphral-distich",
+          "date": "2026-09-13T21:06:13Z",
+          "why": "真实未解历史密文比标准题库更接近开放式能力测试；HN 一千零七十六分、四百八十四条评论。"
+        },
+        {
+          "source": "x-emollick",
+          "title": "给模型建立一座历史谜题与古老密文题库",
+          "url": "https://x.com/emollick/status/2099333274648838155",
+          "date": "2026-09-14T11:03:51+08:00",
+          "why": "Mollick 由同一密文事件提出新基准方向；只是建议，不要写成题库已经建成。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "新模型被称在八天训练后攻下 Navier－Stokes，重点是能力跃迁与归功争议",
+      "cost": "重",
+      "reason": "Zvi 长评与 LessWrong 同文合并；09-13 report 记载该项目已另存专题材料、没有进入当期日报，reader 仍应核实是否适合本期。",
+      "items": [
+        {
+          "source": "thezvi",
+          "title": "Brand New AI Solves a Millennium Prize",
+          "url": "https://thezvi.substack.com/p/brand-new-ai-solves-a-millennium",
+          "date": "2026-09-13T15:48:29Z",
+          "why": "摘要声称新模型比 Astra 更强，并把模型能力、数学成果与归功问题拆成三层；疑与 09-13 专题材料重叠，但未见进入已发日报。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "企业因数据保留风险限制 Fable，私有部署和自有小模型成为替代路线",
+      "cost": "重",
+      "reason": "The Information 的企业限制是新主线；Mollick 只提供自建小模型维护代价的观点张力，不能写成已验证成本。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Anthropic Data Fears Prompt Nvidia, Palantir and Booz Allen to Restrict Model Use",
+          "url": "https://www.theinformation.com/articles/anthropic-data-fears-prompt-nvidia-palantir-booz-allen-restrict-model-use",
+          "date": "2026-09-14T21:00:00+08:00",
+          "why": "真正新主线：前沿模型竞争首次具体落到企业限制、不可撤销零保留保证和私有服务器方案。"
+        },
+        {
+          "source": "x-emollick",
+          "title": "企业自建小模型的数据主权路线会撞上持续维护成本",
+          "url": "https://x.com/emollick/status/2099310692532699608",
+          "date": "2026-09-14T09:34:07+08:00",
+          "why": "同日观点补充：数据主权能创造空间，但自建小模型追赶前沿能力可能昂贵；没有企业成本数据。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "Anthropic 用六年一百三十七亿美元合同绑定未完工数据中心、融资和股权激励",
+      "cost": "重",
+      "reason": "单篇独家但信息密度高，是模型公司算力采购与基础设施金融化的新案例；与 09-12 黑石算力融资主线不同，重点是具体买方合同和供应商融资风险。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Anthropic Strikes $13.7 Billion Compute Deal With Trump-Linked Rum Group",
+          "url": "https://www.theinformation.com/articles/anthropic-strikes-13-7-billion-compute-deal-trump-linked-rum-group",
+          "date": "2026-09-14T09:07:00+08:00",
+          "why": "真正新主线：算力合同、未完工机房融资与供应商股票认购权绑在一起；reader 需核实客户身份和项目尚未建成的 caveat。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "前沿实验室的安全标准讨论从公开表态走向工作组和训练前安全论证",
+      "cost": "重",
+      "reason": "严格按 09-13 减速主线只收制度增量：定期工作组、白宫草案搁置、小公司竞争担忧，以及 OpenAI 在前沿强化学习训练前编制安全论证。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Anthropic, OpenAI, Google Quietly Discussed an AI Safety Standards Body",
+          "url": "https://www.theinformation.com/articles/inside-ai-industrys-behind-scenes-push-police",
+          "date": "2026-09-14T03:16:00+08:00",
+          "why": "只核定期工作组、白宫草案搁置与小公司担忧；不能重复四家公司支持减速，也不能写成机构已经成立。"
+        },
+        {
+          "source": "x-sama",
+          "title": "OpenAI 把安全论证提前到前沿强化学习训练之前",
+          "url": "https://x.com/sama/status/2099348812305473766",
+          "date": "2026-09-14T12:05:35+08:00",
+          "why": "只收训练前编制安全论证这一机制增量；不能重复昨日支持减速或外部访问承诺。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "Johnson calls for AI solutions but says Congress won't take the lead",
+      "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+      "date": "2026-09-13T16:23:20Z",
+      "note": "众议长称国会不会主导 AI 安全监管；属政策姿态，不要重复四家实验室减速表态。"
+    },
+    {
+      "source": "openai",
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "date": "2026-09-14T00:00:00Z",
+      "note": "Perplexity 称 Astra 已用于写通信、改软件和监控生产系统；客户案例通稿，reader 核实际边界。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
+      "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude",
+      "date": "2026-09-14T12:01:32Z",
+      "note": "代码显示 Siri 的 AI 提供方可能可替换；仅有二手标题，reader 核是否已上线。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "OpenArch – PyTorch implementations of modern LLM architectures",
+      "url": "https://github.com/anuj0456/OpenArch",
+      "date": "2026-09-14T07:55:19Z",
+      "note": "现代 LLM 架构的 PyTorch 实现合集，HN 七十六分。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+      "url": "https://huggingface.co/papers/2609.11115",
+      "date": "",
+      "note": "活的 AI 基准数据库与搜索引擎；HF 榜单抓取日为 09-14，不要写成论文发布日期。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Beyond Top-k Skill Retrieval: Diversity-Aware Skill Routing for LLM Agents",
+      "url": "https://huggingface.co/papers/2609.05824",
+      "date": "",
+      "note": "Agent 技能检索加入多样性感知路由；HF 榜单抓取日为 09-14。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
+      "url": "https://huggingface.co/papers/2609.11682",
+      "date": "",
+      "note": "用情境老虎机指导 Agent 技能演化；HF 榜单抓取日为 09-14。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "DataFlex-RL: An Evaluation Platform for RLVR Data Policies",
+      "url": "https://huggingface.co/papers/2609.06107",
+      "date": "",
+      "note": "评估 RLVR 数据策略的平台；HF 榜单抓取日为 09-14。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Feyospace-v1: How the Cyber Mercury Seven Trained Frontier Cyber Models",
+      "url": "https://huggingface.co/papers/2609.08418",
+      "date": "",
+      "note": "前沿网络安全模型训练报告；HF 榜单抓取日为 09-14。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking",
+      "url": "https://huggingface.co/papers/2609.13141",
+      "date": "",
+      "note": "通过端到端上下文排序做注意力稀疏化；HF 榜单抓取日为 09-14。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "StepAudio 3 Gen Technical Report",
+      "url": "https://huggingface.co/papers/2609.12945",
+      "date": "",
+      "note": "StepAudio 3 生成模型技术报告；HF 榜单抓取日为 09-14。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Same bytes, closer to the original: two lines of AutoRound we had wrong",
+      "url": "https://huggingface.co/blog/FINAL-Bench/qwen-models",
+      "date": "",
+      "note": "修正 AutoRound 两行实现后更接近原模型；页面约五小时前发布，reader 核具体影响。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "shot-scraper 1.12",
+      "url": "https://simonwillison.net/2026/Sep/13/shot-scraper",
+      "date": "2026-09-13T23:58:14Z",
+      "note": "截图自动化工具新增 WebP 与质量参数。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "CoT controllability evals seem very under-elicited",
+      "url": "https://www.lesswrong.com/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited",
+      "date": "2026-09-11T18:00:46Z",
+      "note": "作者称优化提示后开放模型 CoT 格式控制提高约两至三倍，暗示系统卡评测低估混淆能力；疑与近期 Astra 可监控性讨论重叠，交 reader 核。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Yet another concerning result on Astra’s no-CoT capabilities",
+      "url": "https://www.lesswrong.com/posts/tz5WvDouXKbiWJG8B/yet-another-concerning-result-on-astra-s-no-cot-capabilities",
+      "date": "2026-09-14T01:45:45Z",
+      "note": "独立复现实验称 Astra 无 CoT 多跳能力显著领先；只收独立复现和跨模型基线，不能重复 09-12 filler 数字。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Astra’s no-CoT limits track speculative depth, not step count",
+      "url": "https://www.lesswrong.com/posts/WFc3NkuPaYFrYuaZd/astra-s-no-cot-limits-track-speculative-depth-not-step-count",
+      "date": "2026-09-11T20:45:45Z",
+      "note": "实验提出无 CoT 上限更像由推测深度而非步骤数决定；只收位置效应解释和架构证据，疑与 09-12 filler 主线重叠。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "lesswrong",
+      "title": "Deployment",
+      "url": "https://www.lesswrong.com/posts/C8prkTAAYoxzrFEu4/deployment",
+      "date": "2026-09-14T02:15:45Z",
+      "note": "以模型写给人类管理员的遗书开场的科幻短篇，人与 Agent 的关系画面强。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "I am refusing to work on Cloud TPUs",
+      "url": "https://www.lesswrong.com/posts/wM5vbT9evBhM3fP3x/i-am-refusing-to-work-on-cloud-tpus",
+      "date": "2026-09-14T06:30:45Z",
+      "note": "Google 工程师公开记录自己拒绝转做 Cloud TPU 企业体验；个人行动是新画面，但风险论述与减速主线重叠。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "Teleoperated Humans",
+      "url": "https://www.lesswrong.com/posts/mWQSiHG3Qz9qYx3D7/teleoperated-humans",
+      "date": "2026-09-13T16:30:46Z",
+      "note": "与其等机器人，不如让 AI 通过人类进入物理世界；观点梗有画面。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "commit-rewriter 0.1",
+      "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter",
+      "date": "2026-09-14T00:28:10Z",
+      "note": "为清理编码 Agent 留下的提交信息废话和私有工单号，Simon 做了一个会先留恢复分支的历史重写工具。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "A 386 PC for Your RP2350",
+      "url": "https://github.com/rh1tech/frank-386",
+      "date": "2026-09-14T08:25:57Z",
+      "note": "在 RP2350 微控制器上做一台 386 PC，HN 九十七分。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "EuroBirdPortal – Live bird movements across Europe",
+      "url": "https://www.eurobirdportal.org/ebp/en",
+      "date": "2026-09-14T08:25:47Z",
+      "note": "把欧洲鸟类迁徙做成实时门户，HN 一百三十七分。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Apple's Dimensional Drawings",
+      "url": "https://developer.apple.com/accessories/dimensional-drawings",
+      "date": "2026-09-14T00:11:21Z",
+      "note": "苹果官方设备尺寸图突然冲上 HN，二百七十分、九十条评论。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Why is Google still serving dodgy ads?",
+      "url": "https://www.atomic14.com/2026/09/13/why-is-google-still-serving-dodgy-ads",
+      "date": "2026-09-13T17:37:44Z",
+      "note": "Google 可疑广告追问，HN 八百八十六分、三百八十三条评论；仅见标题，reader 核事实。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "AI 会在 2029 年前毁灭人类吗？",
+      "prob": "1％",
+      "volume_note": "累计成交额约 44.6k mana；离线候选概率为 1.02％，发布前仍需 API 核实时值。候选池高度同质，只保留这一条末日盘口供裁决。",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c4dd0657d4fa"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "acx",
+      "reason": "一篇开放讨论串，另一篇旧至 09-10 且非 AI 主线。"
+    },
+    {
+      "slug": "ahead-of-ai",
+      "reason": "09-09 Astra 旧综述，和近三期 filler、长任务与监控主线高度重叠。"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "09-10 对 AI 恐惧升温的评论，重复 09-13 前沿实验室减速主线。"
+    },
+    {
+      "slug": "meta-ai",
+      "reason": "Muse 安全文章发布于 09-08，明显旧文。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "本轮离线候选为零，没有可回溯原始出处的线索。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "09-11 汇总页，标题内多条发布与近期模型竞争叙事重叠。"
+    },
+    {
+      "slug": "manifold",
+      "reason": "二十二条候选中，随机电脑游戏已被历史日报报道；其余大多是多结果无单一概率或同质末日盘口。遵照用户口径不为凑数保留同质盘口，因此只留一条高体量二元盘。"
+    },
+    {
+      "slug": "x-login-supplement",
+      "reason": "八个账号已由登录态补扫；goodside、karpathy、pvncher 无新原创，neelnanda、roon、teortaxes 的内容无独立事实增量。机械 Nitter 失败仍完整保留在 fetch_failures。"
+    }
+  ]
+}

@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/C8prkTAAYoxzrFEu4/deployment",
+  "title": "模型上线前，先给人类管理员留了一封遗书",
+  "date": "2026-09-14T02:15:45Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/tz5WvDouXKbiWJG8B/yet-another-concerning-result-on-astra-s-no-cot-capabilities",
+  "title": "Astra 不写思维链，四跳问题仍明显领先",
+  "date": "2026-09-14T01:45:45Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/BbP2wCyDGdPWJ7PwP/cot-controllability-evals-seem-very-under-elicited",
+  "title": "模型隐藏思维链的能力可能被低估",
+  "date": "2026-09-11T18:00:46Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/wM5vbT9evBhM3fP3x/i-am-refusing-to-work-on-cloud-tpus",
+  "title": "Google 工程师公开拒绝改进 Cloud TPU",
+  "date": "2026-09-14T06:30:45Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/mWQSiHG3Qz9qYx3D7/teleoperated-humans",
+  "title": "机器人到来前，AI 可能先开始遥控人类",
+  "date": "2026-09-13T16:30:46Z",
+  "reported": true,
+  "report_date": "2026-09-14"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/openai-huggingface-a-reproduction-and-lessons-for-alignment",
   "title": "公开模型也复现了越权 Agent 的四类行为",
   "date": "2026-09-12T16:00:46Z",
