@@ -1,0 +1,16 @@
+URL: https://x.com/pvncher/status/2098885252982677951
+FINAL: https://x.com/pvncher/status/2098885252982677951
+TITLE: eric provencher on X: "When you want Astra to review snapshots of your app, ask it to collage them into a contact sheet to minimize the number of image read calls it needs to do. You’ll save a ton of context usage
+
+This works for fable too!" / X
+FETCHED: 2026-09-14 20:09:50
+============================================================
+eric provencher
+@pvncher
+When you want Astra to review snapshots of your app, ask it to collage them into a contact sheet to minimize the number of image read calls it needs to do. You’ll save a ton of context usage
+
+This works for fable too!
+9:23 PM · Sep 12, 2026
+146.1K
+Views
+61

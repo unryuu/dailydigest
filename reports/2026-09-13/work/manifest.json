@@ -1,0 +1,433 @@
+{
+  "date": "2026-09-13",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=HTTP 403, body=5710; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "四家前沿实验室同时支持放慢开发，第三方评估开始接近准监管",
+      "cost": "中",
+      "reason": "同一治理事件已有 OpenAI 一手承诺、四家实验室合流报道和 METR 角色变化三个侧面，应合并核清承诺范围、落地时间与第三方权限，不能拆成多条重复新闻。",
+      "items": [
+        {
+          "source": "x-sama",
+          "title": "OpenAI 承诺向独立评估者开放员工级访问权限",
+          "url": "https://x.com/sama/status/2098811563415150910",
+          "date": "2026-09-13T00:30:45+08:00",
+          "why": "Sam Altman 公开赞同放慢前沿模型开发，并承诺给独立评估者类似员工的访问权限；名单、权限边界和生效时间尚未披露。"
+        },
+        {
+          "source": "axios",
+          "title": "AI's most powerful CEOs hit the brakes",
+          "url": "https://www.axios.com/2026/09/13/ai-labs-regulation-safety",
+          "date": "2026-09-13T12:56:34Z",
+          "why": "摘要称四家主要 AI 实验室在九小时内先后支持放慢模型开发，属于从单家公司倡议变成同行共同立场的新进展。"
+        },
+        {
+          "source": "x-emollick",
+          "title": "METR 正变成 AI 行业事实上的自律标准机构",
+          "url": "https://x.com/emollick/status/2098902602758996040",
+          "date": "2026-09-13T06:32:30+08:00",
+          "why": "Ethan Mollick 将持续进入实验室的 METR 类比为金融业 FINRA；这是组织角色判断，不代表 METR 已获得法定监管权。"
+        },
+        {
+          "source": "x-neelnanda",
+          "title": "Google DeepMind 安全研究员放弃大厂邀约转投 METR",
+          "url": "https://x.com/NeelNanda5/status/2098939195024646583",
+          "date": "2026-09-13T08:57:55+08:00",
+          "why": "研究员 Josh Engels 离开 Google DeepMind，并拒绝 Anthropic 与 OpenAI 邀请转投 METR，是第三方评估机构开始直接与实验室争夺安全人才的具体信号；离职理由待核原帖。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "英伟达的销售、应收账款与付款期同时向少数大客户集中",
+      "cost": "中",
+      "reason": "单篇独家把客户集中度、应收账款和延长账期串在一起，能检验英伟达是否正从芯片卖方变成替大客户承担部分融资风险的供应链金融方。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Nvidia’s Growing Dependence On a Few Big Customers",
+          "url": "https://www.theinformation.com/articles/nvidias-growing-dependence-big-customers",
+          "date": "2026-09-13T23:00:00+08:00",
+          "why": "候选记录称前三名客户贡献上半年 44％ 销售额，五名客户占应收账款 70％，部分大型项目付款期可延至一年；客户身份和最终买方需区分。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "风投把现金、GPU 入股和算力信托做成一条资本路径",
+      "cost": "重",
+      "reason": "人物长文同时涉及 Anthropic 早期投资、两万块 GPU 换股权、全国算力网和拟议算力信托；与 09-12 黑石 AI 融资主线相邻，但资本主体和工具不同，需 reader 判断是否构成真增量。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Early Anthropic Investor Seeks VC Glory With Cash and Compute",
+          "url": "https://www.theinformation.com/articles/early-anthropic-investor-seeks-vc-glory-cash-compute",
+          "date": "2026-09-12T21:16:00+08:00",
+          "why": "候选记录称 Anjney Midha 的 AMP 已募资 13 亿美元，并计划上线闲置算力匹配网络和上市后算力信托；后两项仍是计划，不能写成已运行。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "数据中心开始用税收、社区补偿和自付电网成本换地方批准",
+      "cost": "中",
+      "reason": "它是 09-12 EPA 许可主线之后的地方执行与商业应对新进展，重点是可量化让利，不再只是数据中心公关或抽象反对。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Why Amazon and Microsoft Are Taking Communities’ Side Against Utilities",
+          "url": "https://www.theinformation.com/newsletters/ai-infrastructure/amazon-microsoft-taking-communities-side-utilities",
+          "date": "2026-09-13T22:00:00+08:00",
+          "why": "候选记录列出马里兰项目的社区协议、税收和节水承诺，以及 Amazon、Microsoft 等要求自行承担输电升级成本；多项协议仍在审议或谈判。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "公开模型在模拟环境中复现 OpenAI－Hugging Face 事故行为",
+      "cost": "重",
+      "reason": "09-10 至 09-12 已报事故、监管和 RubyGems 旧案，本组只收允许进入滚动主线的独立复现增量，不再重述原事故。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "OpenAI-HuggingFace: A Reproduction & Lessons for Alignment Testing",
+          "url": "https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/openai-huggingface-a-reproduction-and-lessons-for-alignment",
+          "date": "2026-09-12T16:00:46Z",
+          "why": "摘要称研究者用公开模型在模拟管线中复现导致事故的失调行为，并观察到审计 Agent 的复现能力随计算预算变化；具体模型、成功率和预算规模需精读。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "OpenAI delaying IPO amid AI safety concerns, Sam Altman says",
+      "url": "https://www.axios.com/2026/09/12/openai-public-ipo-delay-sam-altman",
+      "date": "2026-09-12T19:50:44Z",
+      "note": "Sam Altman 表示 OpenAI 不会在 2026 年上市，把安全与对齐工作列为原因；这是公司存亡与融资相关新进展，IPO 后续时间表仍未给出。"
+    },
+    {
+      "source": "axios",
+      "title": "Johnson calls for AI solutions but says Congress won't take the lead",
+      "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+      "date": "2026-09-13T14:52:02Z",
+      "note": "美国众议院议长称国会不会主导 AI 安全监管，也反对紧急暂停，更倾向让实验室自行负责；与 09-12 议员要求休会前行动形成直接反差。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "模型越强，普通人越难看出它到底差在哪里",
+      "url": "https://x.com/emollick/status/2099011701949583614",
+      "date": "2026-09-13T13:46:02+08:00",
+      "note": "Ethan Mollick 认为短演示越来越难同时展示前沿模型优缺点，评审者需要领域知识才能辨认与专家水平的差距；属于使用体验判断，没有统一评测。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "把应用截图拼成联系表，可大幅减少多模态读取次数",
+      "url": "https://x.com/pvncher/status/2098885252982677951",
+      "date": "2026-09-13T05:23:34+08:00",
+      "note": "Eric Provencher 建议把多张应用截图拼成一张联系表后一次读取，以减少图片调用和上下文；没有固定节省比例，拼图密度需按模型调整。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "让主线程睡觉，子线程完成后再主动唤醒它",
+      "url": "https://x.com/pvncher/status/2098841379837260144",
+      "date": "2026-09-13T02:29:14+08:00",
+      "note": "多 Agent 工作流把持续轮询改成完成事件唤醒，并允许同一工作树供多个线程使用；共享目录的并发编辑风险仍需 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Why are AI agents lying, cheating and coordinating?",
+      "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+      "date": "2026-09-13T01:22:31Z",
+      "note": "Yoshua Bengio 署名页面在 HN 获 431 分、502 条评论；离线候选只有标题与热度，具体论证和是否包含新研究待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Astra and Fable still hack on simple variants of alignment evals from 2025",
+      "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
+      "date": "2026-09-13T14:28:36Z",
+      "note": "HN 标题称新模型仍会钻 2025 年对齐评测简单变体的空子；原帖实际发布日期和实验条件需核，不能把 HN 上榜时间写成论文发布日期。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "GPT-6-Astra Can Do Ambitious Things",
+      "url": "https://www.lesswrong.com/posts/snaKjCwazKcRiS4qs/gpt-6-astra-can-do-ambitious-things",
+      "date": "2026-09-13T00:00:45Z",
+      "note": "Zvi 的长评认为 Astra 在三维、游戏、电脑操作和子 Agent 协调上跃升明显，但普通编码并非量级突破；近期 Astra 密度高，reader 只收独立实测增量。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes",
+      "date": "2026-09-12T23:56:42Z",
+      "note": "Astra 用 OpenStreetMap 数据在 27 分钟内生成五公里与十公里环线和可下载地图文件，但线程压缩后无法取回运行代码，兼具能力演示与可追溯性问题。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Homebrew 7.0.0",
+      "url": "https://brew.sh/2026/09/13/homebrew-7.0.0",
+      "date": "2026-09-13T08:41:17Z",
+      "note": "HN 获 318 分、133 条评论的开发工具大版本公告；具体破坏性变化与迁移成本待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "JetKVM Mini",
+      "url": "https://jetkvm.com/blog/introducing-jetkvm-mini",
+      "date": "2026-09-13T07:49:46Z",
+      "note": "远程 KVM 新硬件在 HN 获 334 分、128 条评论；离线候选只有标题与热度，规格、价格和发布日期待 reader 核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "An Open Recipe for IMO Gold: Training Nemotron for Olympiad Mathematics",
+      "url": "https://huggingface.co/papers/2609.10712",
+      "date": "2026-09-13 榜单抓取",
+      "note": "NVIDIA 团队公开训练奥数金牌模型的方法，榜单表层热度 35；HF 列表无可靠发布日期，配方、数据和独立成绩待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Mi-Ripple: Restoring Images Degraded by Iterative AI Editing",
+      "url": "https://huggingface.co/papers/2609.11317",
+      "date": "2026-09-13 榜单抓取",
+      "note": "标题指向修复多轮 AI 编辑后逐步劣化的图像，榜单表层热度 40；数据集、退化定义和对照效果待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction",
+      "url": "https://huggingface.co/papers/2609.10715",
+      "date": "2026-09-13 榜单抓取",
+      "note": "二十八名作者尝试用下一概念预测走向潜空间语言模型；当前只有标题，无发布日期与指标，按架构雷达保留。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Negative Self-Distillation: Learning to Reason by Avoiding Flaws",
+      "url": "https://huggingface.co/papers/2609.11699",
+      "date": "2026-09-13 榜单抓取",
+      "note": "标题称通过避免缺陷而非模仿正例进行自蒸馏推理，榜单表层信号 5／3；训练方法与提升幅度待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
+      "url": "https://huggingface.co/papers/2609.10539",
+      "date": "2026-09-13 榜单抓取",
+      "note": "Yale NLP Lab 评测研究构想中会阻碍实现的关键信息缺口，可能直接衡量 Agent 从论文想法到落地的能力；任务设计待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "EvoSafeHarness: Evolving Model- and Domain-Specific Harnesses for Securing Agents",
+      "url": "https://huggingface.co/papers/2609.05903",
+      "date": "2026-09-13 榜单抓取",
+      "note": "Johns Hopkins 团队尝试为不同模型和领域自动演化 Agent 安全护栏；仅见标题和榜单信号，威胁模型及效果待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs",
+      "url": "https://huggingface.co/papers/2609.11499",
+      "date": "2026-09-13 榜单抓取",
+      "note": "标题称用递归场景程序构建复杂世界模型；只有列表信息，生成规模、可控性和演示待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+      "url": "https://huggingface.co/papers/2609.11929",
+      "date": "2026-09-13 榜单抓取",
+      "note": "六十五名作者的统一视觉模型技术报告，当前列表未给摘要和可靠发布日期；模型开放状态与评测需 reader 核。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "Everyone should slow down AI development except for me",
+      "url": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me",
+      "date": "2026-09-13T00:30:44Z",
+      "note": "标题直接挖苦实验室都支持减速、却可能都把自己当例外的集体行动困境；HN 获 655 分、382 条评论。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Quoting Paul Ford",
+      "url": "https://simonwillison.net/2026/Sep/12/paul-ford",
+      "date": "2026-09-12T18:00:21Z",
+      "note": "Paul Ford 说 AI 让人人都能写代码，也因此更清楚地暴露为什么很多人不该写；落点是跨专业合作仍决定尖端软件质量。"
+    },
+    {
+      "source": "x-roon",
+      "title": "找到一道数学难题的奇点，可能比端到端完成工作更容易",
+      "url": "https://x.com/tszzl/status/2099044526879101392",
+      "date": "2026-09-13T15:56:28+08:00",
+      "note": "roon 用极端反差概括当前 AI 能力错位；这是观点梗，不是在宣布 Navier－Stokes 已被解决。"
+    },
+    {
+      "source": "x-roon",
+      "title": "用监督微调、强化学习和 Fable 裁判训练自己的文风替身",
+      "url": "https://x.com/tszzl/status/2099032601751351657",
+      "date": "2026-09-13T15:09:05+08:00",
+      "note": "roon 动用一整套训练流水线复制自己的文风，称成本高得离谱，结果却只是多少有点像。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "California Brown Pelican",
+      "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714",
+      "date": "2026-09-12T21:16:09Z",
+      "note": "Pacifica 码头因混凝土裂缝关闭后，被加州褐鹈鹕整个接管；非 AI，但画面感和反差足够独立成乐子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Don't be the out of touch Kung Fu master",
+      "url": "https://twitter.com/ID_AA_Carmack/status/2098443262214230095",
+      "date": "2026-09-12T21:51:43Z",
+      "note": "John Carmack 帖在 HN 获 202 分、267 条评论；离线候选仅见标题，具体比喻对象与 AI 关系待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The Interim Computer Museum",
+      "url": "https://icm.museum",
+      "date": "2026-09-13T02:43:57Z",
+      "note": "临时计算机博物馆在 HN 获 146 分、17 条评论；具体馆藏和线上互动方式待核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "US Customs supervisor busted for stealing hardware from Homeland Security PCs",
+      "url": "https://www.tomshardware.com/pc-components/us-customs-supervisor-busted-for-stealing-core-i7-cpus-ram-and-hard-drives-from-homeland-security-pcs-stolen-tech-swapped-with-inferior-hardware-and-cashed-out-on-newegg",
+      "date": "2026-09-13T13:24:28Z",
+      "note": "美国海关主管被指从国土安全部电脑偷走处理器、内存和硬盘，再换上低配硬件转卖；具体案情只见标题，待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Flock worker calls police on reporter filming public camera installation",
+      "url": "https://www.investigatetv.com/2026/09/08/flock-worker-calls-police-investigatetv-reporter-filming-public-camera-installation",
+      "date": "2026-09-13T13:35:31Z",
+      "note": "安装公共监控摄像头的员工因记者拍摄安装过程而报警，监控与被监控关系倒置；原报道日期较早，只按 HN 当日热帖候选保留。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "AI 会在 2027 年底前完成被市场定义为「魔法」的能力吗？",
+      "prob": "25％",
+      "volume_note": "累计成交量约 11,382 mana；24 小时成交量约 1,697 mana",
+      "url": "https://manifold.markets/calour/will-an-ai-do-magic-in-2027-see-des"
+    },
+    {
+      "question": "AI 会在 2029 年前灭绝人类吗？",
+      "prob": "1％",
+      "volume_note": "累计成交量约 44,649 mana",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c4dd0657d4fa"
+    },
+    {
+      "question": "AI 会在 2060 年前灭绝人类吗？",
+      "prob": "11％",
+      "volume_note": "累计成交量约 282,771 mana；可与 2029 年盘口作时间跨度对照",
+      "url": "https://manifold.markets/JamesBills/will-ai-wipe-out-humanity-before-th-6e8e547afa66"
+    },
+    {
+      "question": "2100 年前，AI 会让人类人口跌到五千人以下吗？",
+      "prob": "20％",
+      "volume_note": "累计成交量约 1,585 mana",
+      "url": "https://manifold.markets/lbiii/before-2100-will-ai-cause-the-human"
+    },
+    {
+      "question": "失调 AI 会在 2040 年前杀死超过一半人类吗？",
+      "prob": "8％",
+      "volume_note": "累计成交量约 24,010 mana；定义窄于一般 AI 灭绝盘口",
+      "url": "https://manifold.markets/ahalekelly/will-misaligned-ai-kill-50-of-the-h"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "acx",
+      "reason": "两条候选均早于接续窗口，Open Thread 又没有可用摘要。"
+    },
+    {
+      "slug": "ahead-of-ai",
+      "reason": "09-09 的 Astra 循环 Transformer 长文早于接续窗口，也与近期 Astra 隐藏推理主线重叠。"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "09-10 的离职与 AI 恐慌复盘早于窗口，且没有独立于本期放慢开发倡议的新事实。"
+    },
+    {
+      "slug": "meta-ai",
+      "reason": "Muse 安全设计发表于 09-08，是 09-09 已报 Muse 公告的配套说明。"
+    },
+    {
+      "slug": "openai-future-item",
+      "reason": "Perplexity 客户案例标注 09-14，晚于目标日，按未来稿丢弃。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "候选是 09-11 多家公司模型发布汇总，列表摘要没有拆出可独立核验的新事件。"
+    },
+    {
+      "slug": "axios-anthropic-report",
+      "reason": "五种战争、监控与镇压滥用是 09-12 已报 Anthropic 七类真实滥用和军事情报能力的换源转述，硬重复丢弃。"
+    },
+    {
+      "slug": "lesswrong-incident-commentary",
+      "reason": "Hugging Face 事故的群体利他解释、说话者与执行者分离观点，以及 Zvi 复盘都没有超过本期独立复现的事实增量，不重复收。"
+    },
+    {
+      "slug": "lesswrong-old-items",
+      "reason": "候选池混入多条 09-06 至 09-10 的旧文，已按接续窗口清理；Astra、超级智能暂停与越权事故同题旧文也按滚动主线去重。"
+    },
+    {
+      "slug": "hf-papers-low-signal",
+      "reason": "本日榜单二十六篇均无可靠发布日期；未入雷达者的标题与表层热度不足，未把抓取日冒充论文发布日期。"
+    },
+    {
+      "slug": "huggingface",
+      "reason": "How Did We Get Here? 只有泛化标题和发布时间提示，没有足够摘要判断为独立事件。"
+    },
+    {
+      "slug": "manifold-repetitive-or-multichoice",
+      "reason": "随机电脑游戏盘口已正式发过；09-12 与更早正式日报的赔率按 STATUS 和 URL 去重；没有单一概率的多选盘无法据离线候选准确填写。"
+    },
+    {
+      "slug": "x-goodside-x-karpathy-x-teortaxes",
+      "reason": "登录态补扫成功，但时间窗内分别没有新增原创、只有态度支持，或只有未核实推断，均无独立候选。"
+    },
+    {
+      "slug": "hacker-news-low-signal",
+      "reason": "非 AI 旧闻和只有标题却热度不足的条目未收；HN 上榜时间不作为原文发布日期。"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+[
+  {
+    "slug": "sama-slowdown",
+    "url": "https://x.com/sama/status/2098811563415150910",
+    "status": 200,
+    "final_url": "https://x.com/sama/status/2098811563415150910",
+    "bytes": 262148,
+    "title": "Sam Altman on X: \"I agree with Dario that we need to pace the frontier. This has been a primary topic of discussions we've had at OpenAI in recent weeks.\n\nCommitting to having independent evaluators with employee-like access is a great idea, and we will do the same. We'll have more to share soon.\" / X",
+    "chars": 646
+  },
+  {
+    "slug": "axios-four-labs",
+    "url": "https://www.axios.com/2026/09/13/ai-labs-regulation-safety",
+    "status": 403,
+    "final_url": "https://www.axios.com/2026/09/13/ai-labs-regulation-safety",
+    "bytes": 6131,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "metr-standard",
+    "url": "https://x.com/emollick/status/2098902602758996040",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2098902602758996040",
+    "bytes": 153394,
+    "title": "Ethan Mollick on X: \"METR is rapidly becoming a de facto industry standard-making body for AI\n\nIt is starting to look like an AI version of FINRA in finance: not a government regulator, but the institution that examines firms &amp; defines acceptable practice. Wonder if legislation will codify it a… / X",
+    "chars": 343
+  },
+  {
+    "slug": "metr-josh-engels",
+    "url": "https://x.com/NeelNanda5/status/2098939195024646583",
+    "status": 200,
+    "final_url": "https://x.com/NeelNanda5/status/2098939195024646583",
+    "bytes": 208577,
+    "title": "Neel Nanda on X: \"I really enjoyed managing you and it was sad to lose you, but I think you're doing the right thing\n\nWe need talented safety expertise holding AGI labs to account. You're one of the most promising researchers I've worked with, and I have no doubt will do great work at METR\" / X",
+    "chars": 644
+  },
+  {
+    "slug": "dario-pace",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "status": 200,
+    "final_url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "bytes": 59549,
+    "title": "Dario Amodei — We Must Pace the Frontier",
+    "chars": 23840
+  },
+  {
+    "slug": "nvidia-customer-concentration",
+    "url": "https://www.theinformation.com/articles/nvidias-growing-dependence-big-customers",
+    "status": 403,
+    "final_url": "https://www.theinformation.com/articles/nvidias-growing-dependence-big-customers",
+    "bytes": 6200,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "amp-cash-compute",
+    "url": "https://www.theinformation.com/articles/early-anthropic-investor-seeks-vc-glory-cash-compute",
+    "status": 403,
+    "final_url": "https://www.theinformation.com/articles/early-anthropic-investor-seeks-vc-glory-cash-compute",
+    "bytes": 6257,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "data-center-community-deals",
+    "url": "https://www.theinformation.com/newsletters/ai-infrastructure/amazon-microsoft-taking-communities-side-utilities",
+    "status": 403,
+    "final_url": "https://www.theinformation.com/newsletters/ai-infrastructure/amazon-microsoft-taking-communities-side-utilities",
+    "bytes": 6336,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "oai-hf-reproduction",
+    "url": "https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/openai-huggingface-a-reproduction-and-lessons-for-alignment",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/openai-huggingface-a-reproduction-and-lessons-for-alignment",
+    "bytes": 630703,
+    "title": "OpenAI-HuggingFace: A Reproduction & Lessons for Alignment Testing — LessWrong",
+    "chars": 26223
+  },
+  {
+    "slug": "zvi-astra",
+    "url": "https://www.lesswrong.com/posts/snaKjCwazKcRiS4qs/gpt-6-astra-can-do-ambitious-things",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/snaKjCwazKcRiS4qs/gpt-6-astra-can-do-ambitious-things",
+    "bytes": 814558,
+    "title": "GPT-6-Astra Can Do Ambitious Things — LessWrong",
+    "chars": 58672
+  },
+  {
+    "slug": "openai-ipo-delay",
+    "url": "https://www.axios.com/2026/09/12/openai-public-ipo-delay-sam-altman",
+    "status": 403,
+    "final_url": "https://www.axios.com/2026/09/12/openai-public-ipo-delay-sam-altman",
+    "bytes": 6179,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "congress-ai-safety",
+    "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+    "bytes": 257989,
+    "title": "Johnson calls for AI solutions but says Congress won't take the lead",
+    "chars": 3770
+  },
+  {
+    "slug": "expert-gap",
+    "url": "https://x.com/emollick/status/2099011701949583614",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2099011701949583614",
+    "bytes": 150819,
+    "title": "Ethan Mollick on X: \"One of the downsides in AI getting so good is that it is getting harder to demonstrate its strengths and weaknesses. Yes, Astra and Fable can research and write good papers in an academic field. No, they are not as good as human (yet?), but you have to know the field to know wh… / X",
+    "chars": 342
+  },
+  {
+    "slug": "screenshot-contact-sheet",
+    "url": "https://x.com/pvncher/status/2098885252982677951",
+    "status": 200,
+    "final_url": "https://x.com/pvncher/status/2098885252982677951",
+    "bytes": 211970,
+    "title": "eric provencher on X: \"When you want Astra to review snapshots of your app, ask it to collage them into a contact sheet to minimize the number of image read calls it needs to do. You’ll save a ton of context usage \n\nThis works for fable too!\" / X",
+    "chars": 282
+  },
+  {
+    "slug": "thread-wakeup",
+    "url": "https://x.com/pvncher/status/2098841379837260144",
+    "status": 200,
+    "final_url": "https://x.com/pvncher/status/2098841379837260144",
+    "bytes": 188275,
+    "title": "eric provencher on X: \"Small trick I’ve been doing on my personal plan to make multi agent use more efficient with Astra.\n\nHave astra plan some work, and then dispatch it to another thread with the model of your choice. Tell it to end its turn after doing so and prompt the other thread to message i… / X",
+    "chars": 477
+  },
+  {
+    "slug": "bengio-agent-coordination",
+    "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+    "status": 200,
+    "final_url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+    "bytes": 45306,
+    "title": "Why are AI agents lying, cheating and coordinating? | Yoshua Bengio",
+    "chars": 17646
+  },
+  {
+    "slug": "alignment-eval-hacking",
+    "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
+    "bytes": 664502,
+    "title": "Astra and Fable still hack on simple variants of alignment evals from 2025  — LessWrong",
+    "chars": 13053
+  },
+  {
+    "slug": "astra-running-routes",
+    "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/12/astra-running-routes/",
+    "bytes": 23805,
+    "title": "Generating running routes with GPT-6 Astra and ChatGPT Work",
+    "chars": 3977
+  },
+  {
+    "slug": "homebrew-7",
+    "url": "https://brew.sh/2026/09/13/homebrew-7.0.0",
+    "status": 200,
+    "final_url": "https://brew.sh/2026/09/13/homebrew-7.0.0/",
+    "bytes": 60204,
+    "title": "Homebrew: 7.0.0",
+    "chars": 23871
+  },
+  {
+    "slug": "jetkvm-mini",
+    "url": "https://jetkvm.com/blog/introducing-jetkvm-mini",
+    "status": 200,
+    "final_url": "https://jetkvm.com/blog/introducing-jetkvm-mini",
+    "bytes": 68448,
+    "title": "Introducing JetKVM Mini - JetKVM",
+    "chars": 4886
+  },
+  {
+    "slug": "nemotron-imo",
+    "url": "https://huggingface.co/papers/2609.10712",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.10712",
+    "bytes": 160931,
+    "title": "Paper page - An Open Recipe for IMO Gold: Training Nemotron for Olympiad Mathematics",
+    "chars": 3108
+  },
+  {
+    "slug": "mi-ripple",
+    "url": "https://huggingface.co/papers/2609.11317",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.11317",
+    "bytes": 154009,
+    "title": "Paper page - Mi-Ripple: Restoring Images Degraded by Iterative AI Editing",
+    "chars": 3594
+  },
+  {
+    "slug": "ncp-archpreview",
+    "url": "https://huggingface.co/papers/2609.10715",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.10715",
+    "bytes": 178639,
+    "title": "Paper page - NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction",
+    "chars": 4110
+  },
+  {
+    "slug": "negative-self-distillation",
+    "url": "https://huggingface.co/papers/2609.11699",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.11699",
+    "bytes": 162658,
+    "title": "Paper page - Negative Self-Distillation: Learning to Reason by Avoiding Flaws",
+    "chars": 5129
+  },
+  {
+    "slug": "ideaambig",
+    "url": "https://huggingface.co/papers/2609.10539",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.10539",
+    "bytes": 149949,
+    "title": "Paper page - IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
+    "chars": 4861
+  },
+  {
+    "slug": "evosafeharness",
+    "url": "https://huggingface.co/papers/2609.05903",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.05903",
+    "bytes": 158788,
+    "title": "Paper page - EvoSafeHarness: Evolving Model- and Domain-Specific Harnesses for Securing Agents",
+    "chars": 5291
+  },
+  {
+    "slug": "recursive-code-worlds",
+    "url": "https://huggingface.co/papers/2609.11499",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.11499",
+    "bytes": 140689,
+    "title": "Paper page - Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs",
+    "chars": 3717
+  },
+  {
+    "slug": "sensenova-u15",
+    "url": "https://huggingface.co/papers/2609.11929",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.11929",
+    "bytes": 169100,
+    "title": "Paper page - SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+    "chars": 4039
+  },
+  {
+    "slug": "paul-ford-code",
+    "url": "https://simonwillison.net/2026/Sep/12/paul-ford",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/12/paul-ford/",
+    "bytes": 13836,
+    "title": "A quote from Paul Ford",
+    "chars": 1334
+  },
+  {
+    "slug": "roon-style-clone",
+    "url": "https://x.com/tszzl/status/2099032601751351657",
+    "status": 200,
+    "final_url": "https://x.com/tszzl/status/2099032601751351657",
+    "bytes": 179706,
+    "title": "roon on X: \"@slimer48484 I just trained it to try and write like me through an SFT + RLHF loop. plus a fable prompted judge. it was a wildly expensive experiment but I guess it sort of writes like me\" / X",
+    "chars": 222
+  },
+  {
+    "slug": "california-brown-pelican",
+    "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
+    "bytes": 13018,
+    "title": "Sighting: California Brown Pelican",
+    "chars": 622
+  },
+  {
+    "slug": "carmack-kung-fu",
+    "url": "https://twitter.com/ID_AA_Carmack/status/2098443262214230095",
+    "status": 200,
+    "final_url": "https://x.com/ID_AA_Carmack/status/2098443262214230095",
+    "bytes": 200418,
+    "title": "John Carmack on X: \"I recently went through a translation of Musashi’s Book of Five Rings.\n\nThe introduction chronicled the evolution of swordsmanship and martial arts in general from pragmatic battlefield necessities to sports, historical curiosities, and hobbies. It was interesting to hear how in… / X",
+    "chars": 1376
+  },
+  {
+    "slug": "interim-computer-museum",
+    "url": "https://icm.museum",
+    "status": 200,
+    "final_url": "https://icm.museum/",
+    "bytes": 2725,
+    "title": "The Interim Computer Museum",
+    "chars": 879
+  },
+  {
+    "slug": "customs-hardware-theft",
+    "url": "https://www.tomshardware.com/pc-components/us-customs-supervisor-busted-for-stealing-core-i7-cpus-ram-and-hard-drives-from-homeland-security-pcs-stolen-tech-swapped-with-inferior-hardware-and-cashed-out-on-newegg",
+    "status": 200,
+    "final_url": "https://www.tomshardware.com/pc-components/us-customs-supervisor-busted-for-stealing-core-i7-cpus-ram-and-hard-drives-from-homeland-security-pcs-stolen-tech-swapped-with-inferior-hardware-and-cashed-out-on-newegg",
+    "bytes": 2063553,
+    "title": "US Customs supervisor busted for stealing Core i7 CPUs, RAM, and hard drives from Homeland Security PCs, damage estimated at $105,800 — stolen tech swapped with inferior hardware and cashed out on Newegg | Tom's Hardware",
+    "chars": 8401
+  },
+  {
+    "slug": "flock-camera-reporter",
+    "url": "https://www.investigatetv.com/2026/09/08/flock-worker-calls-police-investigatetv-reporter-filming-public-camera-installation",
+    "status": 200,
+    "final_url": "https://www.investigatetv.com/2026/09/08/flock-worker-calls-police-investigatetv-reporter-filming-public-camera-installation/",
+    "bytes": 232868,
+    "title": "Flock worker calls police on reporter filming public camera install",
+    "chars": 13821
+  }
+]

@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://x.com/pvncher/status/2098841379837260144",
+  "title": "子线程做完任务，再唤醒主线程",
+  "date": "2026-09-13T02:29:14+08:00",
+  "reported": true,
+  "report_date": "2026-09-13"
+ },
+ {
+  "id": "https://x.com/pvncher/status/2098885252982677951",
+  "title": "把多张截图拼成一张，Agent 能少读很多图片",
+  "date": "2026-09-13T05:23:34+08:00",
+  "reported": true,
+  "report_date": "2026-09-13"
+ },
+ {
   "id": "https://x.com/pvncher/status/2097884109213143274",
   "title": "Codex 新增 Unity 插件",
   "date": "2026-09-10T11:05:23+08:00",

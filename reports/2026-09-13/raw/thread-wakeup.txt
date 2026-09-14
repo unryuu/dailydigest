@@ -1,0 +1,18 @@
+URL: https://x.com/pvncher/status/2098841379837260144
+FINAL: https://x.com/pvncher/status/2098841379837260144
+TITLE: eric provencher on X: "Small trick I’ve been doing on my personal plan to make multi agent use more efficient with Astra.
+
+Have astra plan some work, and then dispatch it to another thread with the model of your choice. Tell it to end its turn after doing so and prompt the other thread to message i… / X
+FETCHED: 2026-09-14 20:09:52
+============================================================
+eric provencher
+@pvncher
+Small trick I’ve been doing on my personal plan to make multi agent use more efficient with Astra.
+
+Have astra plan some work, and then dispatch it to another thread with the model of your choice. Tell it to end its turn after doing so and prompt the other thread to message it only when the work is complete.
+
+This avoids polling and the other thread can wake the originating thread on its own to continue work.
+6:29 PM · Sep 12, 2026
+98.3K
+Views
+102

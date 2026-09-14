@@ -1,0 +1,150 @@
+{
+  "date": "2026-09-13",
+  "scanned_at": "2026-09-13T23:54:35+08:00",
+  "window": "八个固定账号统一从 2026-09-12T18:37:20+08:00 接续",
+  "route": "机械 Nitter 抓取全部失败后，Codex 内置浏览器使用登录态 X 搜索逐账号补扫原创帖；pvncher 另扫 Articles",
+  "accounts": [
+    {"handle": "emollick", "status": "success", "result": "时间窗内保留两组观点候选；近期已报的 AI 越权事件事实不重复收。"},
+    {"handle": "goodside", "status": "success", "result": "搜索结果没有时间窗内新增原创帖。"},
+    {"handle": "karpathy", "status": "success", "result": "新增内容主要是支持 Amodei 倡议和零散回复；一手承诺由 sama 候选覆盖，没有独立保留。"},
+    {"handle": "NeelNanda5", "status": "success", "result": "保留一条 Google DeepMind 安全研究员转投 METR 的组织变化候选。"},
+    {"handle": "pvncher", "status": "success", "result": "保留两条可复用 Codex 工作流候选；Articles 最新仍是 09-05，没有窗口内新文章。"},
+    {"handle": "tszzl", "status": "success", "result": "保留两条观点／乐子候选；开放模型管控争论因近期主线饱和不收。"},
+    {"handle": "sama", "status": "success", "result": "保留 OpenAI 承诺给独立评估者员工级访问权限的一手帖。"},
+    {"handle": "teortaxesTex", "status": "success", "result": "窗口内帖子密集，但可见新增主要是未核实推断、政治争论和图片评论，没有保留成品候选。"}
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "METR 正变成 AI 行业事实上的自律标准机构",
+      "url": "https://x.com/emollick/status/2098902602758996040",
+      "published_at": "2026-09-13T06:32:30+08:00",
+      "bucket_hint": "exclusive_view_or_industry",
+      "facts": [
+        "Ethan Mollick 判断，METR 正迅速成为 AI 行业事实上的标准制定机构：它不是政府监管者，却开始检查实验室并定义可接受做法。",
+        "OpenAI 已请 METR 独立调查 Hugging Face 事件，Anthropic 也邀请第三方进入公司；Mollick 将其类比为金融业由行业资助、承担检查与规则职能的 FINRA。",
+        "他提出的下一步问题是，立法者是否会把这种事实地位正式写进法律。"
+      ],
+      "caveats": [
+        "这是对组织角色的判断，不是 METR 已获得法定监管权；近期已报 AI 越权事故与外部调查，只能作为治理结构新角度。"
+      ],
+      "why": "如果第三方评估机构从接项目变成持续进入实验室，它与模型公司的关系正在接近准监管，而不只是安全咨询。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "模型越强，普通人越难看出它到底差在哪里",
+      "url": "https://x.com/emollick/status/2099011701949583614",
+      "published_at": "2026-09-13T13:46:02+08:00",
+      "bucket_hint": "exclusive_view",
+      "facts": [
+        "Ethan Mollick 认为，当前 AI 已经强到很难在短演示中同时展示优点和缺点。",
+        "Astra 和 Fable 能研究并写出特定学科的像样论文，但仍没有达到人类专家水平；要判断差距，评审者自己必须懂那个领域。",
+        "他补充说，过去还能用虚构引用或明显错误快速指出问题，如今这种一眼可见的失败已少得多。"
+      ],
+      "caveats": [
+        "这是研究与使用体验判断，没有统一任务集或量化比较；不能写成两款模型已经通过学术同行评审。"
+      ],
+      "why": "模型评测正在从普通人一眼能看懂的错误，转向只有领域专家才能辨认的质量差距，这会直接改变演示、采购和评测方式。"
+    },
+    {
+      "source": "x-neelnanda",
+      "title": "Google DeepMind 安全研究员放弃大厂邀约转投 METR",
+      "url": "https://x.com/NeelNanda5/status/2098939195024646583",
+      "published_at": "2026-09-13T08:57:55+08:00",
+      "bucket_hint": "industry_radar",
+      "facts": [
+        "研究员 Josh Engels 三周前离开 Google DeepMind 的 AGI 安全团队，加入第三方评估机构 METR。",
+        "他表示自己同时拒绝了 Anthropic 和 OpenAI 的邀请，因为认为外部机构需要足够强的技术能力来约束 AGI 实验室。",
+        "其前经理 Neel Nanda 公开支持这一选择，并称行业需要有能力的安全专家在实验室之外追责。"
+      ],
+      "caveats": [
+        "候选依据 Engels 被引用的公开自述与 Nanda 的确认；入稿前仍应打开 Engels 原帖核对完整离职理由。"
+      ],
+      "why": "在两家前沿实验室都愿意招人的情况下转向第三方评估机构，是 METR 从外围顾问走向人才竞争者的具体信号。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "把应用截图拼成联系表，可大幅减少多模态读取次数",
+      "url": "https://x.com/pvncher/status/2098885252982677951",
+      "published_at": "2026-09-13T05:23:34+08:00",
+      "bucket_hint": "radar_or_fun",
+      "facts": [
+        "Eric Provencher 建议让 Astra 检查应用快照时，先把多张截图拼成一张联系表，再一次性读取。",
+        "这样可以减少图片读取调用并节省大量上下文；同一技巧也适用于 Fable。",
+        "他补充说，单张大图通常更高效，但不同模型对细节分辨率的敏感程度不同。"
+      ],
+      "caveats": [
+        "帖子没有给出固定节省比例；截图缩得过小可能丢失文字与界面细节，实际拼图密度要按模型调整。"
+      ],
+      "why": "这是一个读者可以立即复用的多模态 Agent 成本优化技巧。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "让主线程睡觉，子线程完成后再主动唤醒它",
+      "url": "https://x.com/pvncher/status/2098841379837260144",
+      "published_at": "2026-09-13T02:29:14+08:00",
+      "bucket_hint": "exclusive_view_or_radar",
+      "facts": [
+        "Eric Provencher 分享一种 Codex 多 Agent 用法：先让 Astra 规划任务，再把工作派到另一个线程，并指定所需模型。",
+        "主线程派发后立即结束本轮，不持续轮询；子线程只在真正完成时发消息，把原线程重新唤醒继续处理。",
+        "同一工作树可以由多个线程共同使用；若任务必须完整完成，主线程彻底停止等待比每两分钟暂停一次更合适。"
+      ],
+      "caveats": [
+        "这是 Provencher 个人套餐上的工作流经验，没有统一用量对照；共享工作树时仍需避免多个线程同时改同一文件。"
+      ],
+      "why": "它把多 Agent 的等待方式从轮询改成事件唤醒，既减少上下文消耗，也让主线程真正空出来。"
+    },
+    {
+      "source": "x-roon",
+      "title": "找到一道数学难题的奇点，可能比端到端完成工作更容易",
+      "url": "https://x.com/tszzl/status/2099044526879101392",
+      "published_at": "2026-09-13T15:56:28+08:00",
+      "bucket_hint": "fun_or_exclusive_view",
+      "facts": [
+        "roon 用一句话概括当前 AI 的能力错位：在某种意义上，找到 Navier－Stokes 奇点可能比把一份普通工作从头做到尾更容易。"
+      ],
+      "caveats": [
+        "这是反差式观点，不是在宣布已经解决 Navier－Stokes 问题；若无法找到其回应的具体上下文，只能作乐子或丢弃。"
+      ],
+      "why": "它用极端反差说明基准上的高难能力与现实工作的长链条可靠性不是同一条能力轴。"
+    },
+    {
+      "source": "x-roon",
+      "title": "用监督微调、强化学习和 Fable 裁判训练自己的文风替身",
+      "url": "https://x.com/tszzl/status/2099032601751351657",
+      "published_at": "2026-09-13T15:09:05+08:00",
+      "bucket_hint": "fun",
+      "facts": [
+        "roon 表示，他用监督微调加人类反馈强化学习训练模型模仿自己的写作，再让 Fable 充当提示词裁判。",
+        "他称这次实验成本高得离谱，结果只能算多少有点像自己。"
+      ],
+      "caveats": [
+        "帖子没有公开数据集、训练预算和盲测结果，只能按个人实验乐子处理。"
+      ],
+      "why": "为了复制两句文风动用整套训练流水线，投入与效果之间的落差本身就有梗。"
+    },
+    {
+      "source": "x-sama",
+      "title": "OpenAI 承诺向独立评估者开放员工级访问权限",
+      "url": "https://x.com/sama/status/2098811563415150910",
+      "published_at": "2026-09-13T00:30:45+08:00",
+      "bucket_hint": "regulation_or_industry_gold",
+      "facts": [
+        "Sam Altman 公开赞同 Dario Amodei 提出的放慢前沿模型开发倡议，并称这已经是 OpenAI 近几周内部讨论的主要议题。",
+        "他承诺 OpenAI 也会让独立评估者获得类似员工的访问权限，并表示稍后会披露更多安排。",
+        "这让 Anthropic 单方面提出的第三方常驻访问，迅速变成两家前沿实验室共同承诺。"
+      ],
+      "caveats": [
+        "OpenAI 尚未公布评估者名单、权限边界、生效时间和公开报告机制；承诺不能写成制度已经落地。"
+      ],
+      "why": "前沿实验室第一次围绕持续放慢开发和第三方内部访问形成公开共同立场，治理竞争开始变成同行承诺。"
+    }
+  ],
+  "excluded": [
+    {"title": "DeepSeek V4 Pro 因用户反对没有退役", "url": "https://x.com/teortaxesTex/status/2099137551713841620", "reason": "HBM 消耗、训练吞吐和 V4.2 延误均为个人推断，没有官方服务公告和同条件部署数据，不进候选。"},
+    {"title": "Karpathy 支持放慢前沿模型倡议", "url": "https://x.com/karpathy/status/2098811935114551617", "reason": "只有态度支持；OpenAI 的一手制度承诺信息量更高。"},
+    {"title": "开放模型接近超级智能后可能被中美管控", "url": "https://x.com/tszzl/status/2099020654586806533", "reason": "属于预测和立场澄清，没有新制度或实证，且近期开放权重与超级智能管控主线饱和。"},
+    {"title": "AI 灭绝风险不应成为政策唯一焦点", "url": "https://x.com/emollick/status/2099134552807522610", "reason": "有鲜明态度但缺少新增事实，近期相关舆论与立法主线已经饱和。"}
+  ],
+  "failure_note": "八个机械 X／Nitter 源均返回 HTTP 403；登录态 X 搜索正常，已按 2026-09-12T18:37:20+08:00 接续点补齐八个账号。"
+}

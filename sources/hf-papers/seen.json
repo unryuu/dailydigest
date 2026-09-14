@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.11317",
+  "title": "多轮 AI 编辑留下的网格脏点可以单独清理",
+  "date": "2026-09-13 榜单抓取",
+  "reported": true,
+  "report_date": "2026-09-13"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.10539",
+  "title": "Agent 更会补研究缺口，却不擅长先找到缺口",
+  "date": "2026-09-13 榜单抓取",
+  "reported": true,
+  "report_date": "2026-09-13"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.10715",
+  "title": "语言模型开始同时猜下一个词和下一个概念",
+  "date": "2026-09-13 榜单抓取",
+  "reported": true,
+  "report_date": "2026-09-13"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.10712",
+  "title": "英伟达公开了一套奥数金牌模型配方",
+  "date": "2026-09-13 榜单抓取",
+  "reported": true,
+  "report_date": "2026-09-13"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.09155",
   "title": "几段校准画面让世界模型适应新机器人",
   "date": "2026-09-10",

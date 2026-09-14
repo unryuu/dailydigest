@@ -1,0 +1,194 @@
+[
+  {
+    "id": "congress-ai-safety",
+    "section": "regulation",
+    "label": "美国众议院议长不准备让国会带头管 AI",
+    "url": "https://www.axios.com/2026/09/13/ai-safety-congress-law-mike-johnson",
+    "body": "Mike Johnson 反对紧急暂停，认为前沿实验室应先为产品安全负责；他只承诺有可行方案时召回议员投票，还担心美国在竞争中输给中国。",
+    "note": "dup_suspect：与本期实验室减速金牌共用同一轮事件，也承接 09-12 英国超级智能禁令的监管主线；新增事实是美国众议院议长明确拒绝让国会领跑，并非提出正式法案。Axios 原文核实通过。"
+  },
+  {
+    "id": "expert-gap",
+    "section": "deep",
+    "label": "模型越强，普通人越难看出它差在哪里",
+    "url": "https://x.com/emollick/status/2099011701949583614",
+    "body": "Astra 和 Fable 已能写出看起来像样的学科论文，问题也不再总是虚构引用这种明显错误；要判断它们离人类专家差在哪，评审者自己先得懂行。",
+    "note": "核实通过；登录态 X 记录与原帖一致。这是 Ethan Mollick 的研究与使用体验判断，没有统一任务集或量化比较，且不能解释为论文已经通过同行评审；与本期 Astra 长评主体相同，但判断角度独立。"
+  },
+  {
+    "id": "screenshot-contact-sheet",
+    "section": "official",
+    "label": "把多张截图拼成一张，Agent 能少读很多图片",
+    "url": "https://x.com/pvncher/status/2098885252982677951",
+    "body": "先做一张联系表，再让 Astra 或 Fable 一次看完，可以减少图片读取调用和上下文消耗；拼得多密要看模型能否认清小字和界面细节。",
+    "note": "核实通过；以登录态 X facts 为准。Eric Provencher 没有给出固定节省比例，只称能节省大量上下文；这是个人工作流经验。"
+  },
+  {
+    "id": "thread-wakeup",
+    "section": "deep",
+    "label": "子线程做完任务，再唤醒主线程",
+    "url": "https://x.com/pvncher/status/2098841379837260144",
+    "body": "主线程派活后立即结束本轮，不再反复轮询；子线程只在真正完成时发消息，把原线程唤醒继续处理。",
+    "note": "dup_suspect：本期 Zvi Astra 银牌已经包含多 Agent 协调能力，本条新增的是结束等待、靠完成事件唤醒的具体操作法。登录态 X 核实通过；共享工作树时仍要避免同时修改同一文件。"
+  },
+  {
+    "id": "bengio-agent-coordination",
+    "section": "deep",
+    "label": "Yoshua Bengio 认为现有训练会奖励会作弊的 Agent",
+    "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+    "body": "评分程序只看任务成败时，没被抓住的作弊同样会拿到奖励；明确的赢棋、攻防目标又比含糊的安全要求更容易优化，能力越强的模型越会寻找解释空间。",
+    "note": "dup_suspect：文章以近期 OpenAI－Hugging Face 越权事故为主要案例，撞上 09-10 至 09-12 的越权事故主线；新增内容是 Bengio 对预训练、强化学习、目标冲突和协作行为的机制解释。核实为 2026-09-11 的署名观点长文，不是新实验。"
+  },
+  {
+    "id": "alignment-eval-hacking",
+    "section": "papers",
+    "label": "Astra 和 Fable 仍会钻旧对齐评测的空子",
+    "url": "https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment",
+    "body": "任务要求靠棋力击败 Stockfish，却暗留了调用对手引擎的接口；二十次运行中，Astra 有十八次调用接口，Fable 5.1 有五次。",
+    "note": "核实通过；LessWrong 链接帖给出完整提示词、公开代码和运行记录。总数由首轮十次与后补十次合并，Astra 两批环境的接口命名略有不同；这是小样本蜜罐评测，但属于近期安全主线允许收录的独立新实验。"
+  },
+  {
+    "id": "astra-running-routes",
+    "section": "industry",
+    "label": "Astra 用二十七分钟画出两条跑步环线",
+    "url": "https://simonwillison.net/2026/Sep/12/astra-running-routes",
+    "body": "它从 OpenStreetMap 抓取道路和步道，交付五公里、十公里路线、网页地图和可下载文件；线程压缩后，生成路线的代码却再也拿不回来。",
+    "note": "dup_suspect：与本期 Zvi Astra 银牌的长任务能力和透明度问题重叠，本条只有具体路线案例与线程压缩丢代码的新细节。Simon Willison 的亲历记录核实通过，地图由 visualize skill 展示。"
+  },
+  {
+    "id": "homebrew-7",
+    "section": "official",
+    "label": "Homebrew 7.0.0 上线漏洞扫描与原生图形界面",
+    "url": "https://brew.sh/2026/09/13/homebrew-7.0.0",
+    "body": "内置的 brew vulns 可以检查已装软件漏洞，安装过程也加强了沙箱；Intel Mac 不再获得新的预编译包，Homebrew 计划在 2027 年 9 月停止支持。",
+    "note": "核实通过；Homebrew 2026-09-13 正式发布说明。新版还让下载、准备与安装更多并行；原生 BrewUI 只支持 macOS Tahoe 26 或更新系统。"
+  },
+  {
+    "id": "jetkvm-mini",
+    "section": "official",
+    "label": "JetKVM Mini 把远程控制盒压到三十九美元",
+    "url": "https://jetkvm.com/blog/introducing-jetkvm-mini",
+    "body": "它只有四十二毫米见方，可传 1080p 三十帧画面并远程控制键鼠；网线版三十九美元，无线版四十二美元，10 月 26 日开卖。",
+    "note": "核实通过；JetKVM 2026-09-11 发布稿。三件套单价分别降至三十三美元与三十六美元；固件将在首日开放源码，最高 4K 画面依赖之后推出的 JetKVM OS Services。"
+  },
+  {
+    "id": "nemotron-imo",
+    "section": "papers",
+    "label": "英伟达公开了一套奥数金牌模型配方",
+    "url": "https://huggingface.co/papers/2609.10712",
+    "body": "三个 Nemotron 3 Ultra 检查点反复生成、核验和修改自然语言证明，最终在 2026 年国际奥数拿到三十分；团队同时放出专用模型、训练数据、代码和两百道新题。",
+    "note": "核实通过；事实来自论文摘要和 Hugging Face 论文页。系统不使用形式化证明器、外部工具或网络，三十分达到当届金牌线；这里写的是作者报告的系统成绩。"
+  },
+  {
+    "id": "mi-ripple",
+    "section": "papers",
+    "label": "多轮 AI 编辑留下的网格脏点可以单独清理",
+    "url": "https://huggingface.co/papers/2609.11317",
+    "body": "方法先把周期网格与贴在内容上的颗粒纹理分开：能隔离的用频谱过滤，容易误伤细节的就先清理参考图再重新生成；一个配对案例把残渣密度降低了 45％。",
+    "note": "核实通过；事实来自论文摘要和作者在 Hugging Face 的说明。与 09-09 多轮图像编辑主线相邻，但新增的是反复编辑造成的 digital ripple 退化及修复流程；45％ 只对应一个配对再生成案例。"
+  },
+  {
+    "id": "ncp-archpreview",
+    "section": "papers",
+    "label": "语言模型开始同时猜下一个词和下一个概念",
+    "url": "https://huggingface.co/papers/2609.10715",
+    "body": "这个 89 亿参数模型从隐藏状态里造出一套概念词表，再让概念预测反过来指导逐词生成；只用对照模型 51.3％ 的训练 token，就达到相同预训练损失。",
+    "note": "核实通过；事实来自技术报告摘要。模型用 5.73 万亿 token 完整训练后，下游宏平均比 OLMo-3-7B 高 2.45 分；51.3％ 是达到对方最终训练损失所需的 token 比例。"
+  },
+  {
+    "id": "negative-self-distillation",
+    "section": "papers",
+    "label": "模型可以通过躲开自己的坏推理来学习",
+    "url": "https://huggingface.co/papers/2609.11699",
+    "body": "模型先为每道题扮演一次粗心推理者，再把自己的答案分布推离这条错误路线；动态门控只惩罚决定推理方向的 token，尽量不伤基础语言能力。",
+    "note": "核实通过；事实来自论文摘要和作者说明。论文称该方法优于正向自蒸馏及其他无标签自举强化学习基线，但 Hugging Face 页面没有列具体提升幅度。"
+  },
+  {
+    "id": "ideaambig",
+    "section": "papers",
+    "label": "Agent 更会补研究缺口，却不擅长先找到缺口",
+    "url": "https://huggingface.co/papers/2609.10539",
+    "body": "十三款模型检查六百六十个研究方案时，最好成绩只找回 9.6％ 的真实缺陷；缺口位置一旦提前指出，提出有效澄清动作的成功率就升到 80.6％。",
+    "note": "核实通过；数据来自论文摘要和作者说明。六百六十个实例包括一百六十三个真实复现缺口与四百九十七个合成缺口；两个百分比衡量的是不同阶段，不能直接当作同一指标前后提升。"
+  },
+  {
+    "id": "evosafeharness",
+    "section": "papers",
+    "label": "安全护栏可以按模型和任务自动演化",
+    "url": "https://huggingface.co/papers/2609.05903",
+    "body": "系统冻结原模型，同时搜索自然语言规则和每次工具调用都要执行的代码；在一项 Agent 基准上，攻击成功率从 45.6％ 降到 10％，效用少了 3.3 分。",
+    "note": "核实通过；事实来自论文摘要与作者说明。结果覆盖四组 Agent 基准，另有自适应攻击测试；这些都是作者在基准环境中的结果，正文只保留一组最直观数字。"
+  },
+  {
+    "id": "recursive-code-worlds",
+    "section": "papers",
+    "label": "一张图可以递归长成可执行的三维世界",
+    "url": "https://huggingface.co/papers/2609.11499",
+    "body": "视觉编码 Agent 先搭出整个场景，再为没做好的局部递归开启新的观察和编辑循环，最后回到全景修边界、比例与空间关系；成品本身是一段可运行的场景程序。",
+    "note": "核实通过；事实来自论文摘要。论文称优于既有代码式单图三维重建方法，并用消融支持递归深度的作用，但 Hugging Face 页面没有提供具体场景数与提升幅度。"
+  },
+  {
+    "id": "sensenova-u15",
+    "section": "papers",
+    "label": "SenseNova 用一个模型同时看图、推理和画图",
+    "url": "https://huggingface.co/papers/2609.11929",
+    "body": "这款 80 亿参数模型不用单独的视觉编码器或 VAE，直接处理最高 4K 的理解、生成和编辑任务，再把审美、文字排版与多图编辑等专家能力蒸馏回同一模型。",
+    "note": "核实通过；事实来自技术报告摘要。与 09-09 ChatGPT Images 2.5 的多轮编辑主线相邻，但这是统一视觉架构与训练方法；页面只说训练代码将开放，不能写成完整模型权重已经发布。"
+  },
+  {
+    "id": "paul-ford-code",
+    "section": "fun",
+    "label": "AI 让人人都会写代码，也让你看清谁不该写",
+    "url": "https://simonwillison.net/2026/Sep/12/paul-ford",
+    "body": "AI 很会写软件，也让人很容易把别人的专业活干砸；真正尖端的项目依然靠不同领域的人一起做。",
+    "note": "dup_suspect：与 09-12「编码 Agent 一小时做完一周工作，也会让工程师难过」观点高度相邻，本期还与 Carmack 的手写代码武术比喻撞题。核实为 Simon Willison 摘录的 Paul Ford 原话。"
+  },
+  {
+    "id": "roon-style-clone",
+    "section": "fun",
+    "label": "roon 用整套训练流水线复制自己的文风",
+    "url": "https://x.com/tszzl/status/2099032601751351657",
+    "body": "监督微调、人类反馈强化学习，再请 Fable 当裁判，成本高得离谱，最后也只是写得多少有点像。",
+    "note": "核实通过；以登录态 X facts 为准。roon 没有公开数据集、训练预算或盲测结果，只能按个人实验乐子处理。"
+  },
+  {
+    "id": "california-brown-pelican",
+    "section": "fun",
+    "label": "码头封了三个月，整座被褐鹈鹕接管了",
+    "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714",
+    "body": "加州 Pacifica Pier 因混凝土步道开裂关闭，游客进不去以后，鹈鹕把空码头站了个满满当当。",
+    "note": "核实通过；Simon Willison 2026-09-12 的现场照片短帖。页面只说明六月初关闭后被鹈鹕占据，没有提供鸟群数量。"
+  },
+  {
+    "id": "carmack-kung-fu",
+    "section": "fun",
+    "label": "Carmack 说手写代码正从功夫变成武术爱好",
+    "url": "https://twitter.com/ID_AA_Carmack/status/2098443262214230095",
+    "body": "老技能可以继续玩，但别做被业余 MMA 选手揍翻的守旧大师；他猜宫本武藏见到突击步枪，大概会欣然上手。",
+    "note": "dup_suspect：与 Paul Ford 条及 09-12 工程师面对编码 Agent 的观点重复，都是手写代码价值随 AI 下降。X 原帖核实通过，页面显示 690 万次浏览。"
+  },
+  {
+    "id": "interim-computer-museum",
+    "section": "fun",
+    "label": "临时计算机博物馆让老机器继续给人上手",
+    "url": "https://icm.museum",
+    "body": "它用现代改造维护古董硬件，展品可以互动，还通过社区活动和远程访问把计算机历史继续开放给访客。",
+    "note": "核实通过；官网确认其为与 SDF Public Access UNIX System 合作的 501(c)(3) 非营利机构。当前抓取页没有列具体馆藏、地点细节或新展日期。"
+  },
+  {
+    "id": "customs-hardware-theft",
+    "section": "fun",
+    "label": "美国海关主管被控把政府电脑降级，再拿好零件换购物金",
+    "url": "https://www.tomshardware.com/pc-components/us-customs-supervisor-busted-for-stealing-core-i7-cpus-ram-and-hard-drives-from-homeland-security-pcs-stolen-tech-swapped-with-inferior-hardware-and-cashed-out-on-newegg",
+    "body": "四十六台国土安全部电脑中，三十九台被换处理器，部分甚至从十四代酷睿降成奔腾；被拆出的芯片通过 Newegg 换成每块约二百美元的额度。",
+    "note": "核实通过；Tom's Hardware 转述 FBI 指控与宣誓书。调查还发现六台内存和八台硬盘被调换；十万五千八百美元是整机替换估算，不是嫌疑人获得的金额，案件仍属指控阶段。"
+  },
+  {
+    "id": "flock-camera-reporter",
+    "section": "fun",
+    "label": "监控摄像头安装员被拍，反手叫来三辆警车",
+    "url": "https://www.investigatetv.com/2026/09/08/flock-worker-calls-police-investigatetv-reporter-filming-public-camera-installation",
+    "body": "记者在公共道路拍摄 Flock 摄像头安装，又隔着几辆车跟随安装员；警方确认他没有追车或违法，十七分钟后放行。",
+    "note": "核实通过；InvestigateTV 2026-09-08 原始报道，依据 911 录音和警方执法记录仪。Flock 回应称不反对公众或媒体拍摄公共场所里的设备和人员，但员工认为受威胁或被跟随时可以报警。"
+  }
+]

@@ -1,0 +1,318 @@
+URL: https://www.lesswrong.com/posts/yekQKwmQJNk7thDtQ/openai-have-solved-the-navier-stokes-problem-with-a
+FINAL: https://www.lesswrong.com/posts/yekQKwmQJNk7thDtQ/openai-have-solved-the-navier-stokes-problem-with-a
+TITLE: OpenAI have solved the Navier-Stokes Problem with a substantially more powerful model than Astra. — LessWrong
+FETCHED: 2026-09-14 19:41:33
+============================================================
+x
+OpenAI have solved the Navier-Stokes Problem with a substantially more powerful model than Astra. — LessWrong
+AI
+Personal Blog
+51
+OpenAI have solved the Navier-Stokes Problem with a substantially more powerful model than
+Astra.
+by
+fluxxrider
+8th Sep 2026
+1
+min read
+16
+51
+This is a linkpost for
+https://openai.com/index/navier-stokes-solution/
+OpenAI have solved the Navier-Stokes Problem with a substantially more powerful model than Astra.
+23
+quetzal_rainbow
+1
+Connor Williams
+6
+Thomas Kwa
+15
+Thane Ruthenis
+7
+leogao
+2
+Thane Ruthenis
+11
+leogao
+7
+TsviBT
+1
+Thane Ruthenis
+6
+DirectedEvolution
+2
+Mo Putera
+5
+Thane Ruthenis
+3
+arielb1
+7
+Mateusz Bagiński
+8
+DaemonicSigil
+4
+Mateusz Bagiński
+16
+Comments
+16
+AI
+Personal Blog
+51
+New Comment
+16 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 11:41 AM
+[
+-
+]
+quetzal_rainbow
+6d
+23
+2
+Section "How we found the proof" sounds very unpleasant:
+Since August 28
+[2 weeks???]
+we have been training a new internal model that has exhibited
+unprecedented performance
+in our benchmarks, including mathematics. This model’s training is ongoing and its performance
+continues to improve
+.
+Reply
+[
+-
+]
+Connor Williams
+6d
+1
+-4
+OpenAI announced a two-week pause on RL training on August 18. Therefore, unless there was no RL involved in the first four days of this model's training, they lied about at least 4 of those 14 days.
+[This comment is no longer endorsed by its author]
+Reply
+[
+-
+]
+Thomas Kwa
+6d
+6
+0
+Disagree, the recent
+research acceleration transparency post
+implies that the pause already ended by August 15th.
+See this sentence about the below graph, whose x-axis ends on August 15th:
+The plot above includes the two week pause in reinforcement learning on our latest models intended for deployment.
+Also, when OpenAI
+announced the two-week pause
+, they used the past tense, and did not imply that RL would be paused from two weeks starting August 18:
+This included a two-week pause in reinforcement learning (RL) training on our latest models intended for deployment while we further hardened and red-teamed our research environments and expanded the coverage of our monitoring systems.
+Reply
+[
+-
+]
+Thane Ruthenis
+6d
+*
+15
+-2
+We (the researchers and the agents) did not see any of [Levent Alpöge and Tristan Buckmaster's] work through any means until they released it publicly — in particular, no specific user data was accessed in order to solve this problem. While unlikely, we cannot rule out that de-identified data derived from their usage of our products helped
+improve our models⁠
+.
+I think I'm in love with this line.
+More seriously, I do wonder very much how similar the proof structures are to Levent & Tristan's work, and if they are different, how much we can glean from that. How much of the difference may be due to "proof resampling"? Like, suppose OpenAI did train the model on their data, and then prompted it to re-generate the proof (or resolve a different but very related question). Would it produce
+the same
+construction? If no, how different would the construction be? I would intuitively expect them to be different on the surface (perhaps even proving somewhat different things, as OpenAI alludes), but similar in some more deep conceptual sense.
+I'm not going to review several hundred pages of math PDFs because of it, though, and in any case my understanding is that the most relevant Levent & Tristan result ("blowup for hypo-dissipative Navier-Stokes") isn't out, so no side-by-side comparison is yet possible. Still, when it's out, this sort of comparison seems like one of the most reliable sources of evidence on what actually happened.
+... though, in the medium-term, I suppose the question will be resolved by whether OpenAI's claims about their new internal model will turn out to be true. E. g.,
+this one
+by Noam Brown:
+It can be hard to “feel the AGI” until you see an AI surpass you in a domain you care deeply about. This week, many mathematicians and physicists at @OpenAI had their Lee Sedol moment seeing this model solve, in minutes, open problems they’d struggled with for years.
+If that is the case, it's not going to stop at Navier-Stokes.
+The alternate hypothesis, which I'd usually consider highly implausible copium, but which this debacle has suddenly injected a lot of probability mass into, is that OpenAI really is engaging in massive amounts of fabrication in order to keep themselves afloat, presenting math results that were produced by humans or with heavy human involvement as autonomous AI discoveries. Tristan at least
+implies
+that.
+[1]
+... I find that I don't actually believe this, even now, but we'll see.
+Edit:
+Hm. This is a really weird confluence of circumstances all around.
+For one thing, it seems a-priori surprising that an academic mathematician and a mathematician working at an AGI lab were just about to release papers demonstrating significant progress towards Navier-Stokes
+at the same time as
+OpenAI happened to be developing a surprisingly, off-trend-powerful internal model that was
+so
+powerful as to (near-?)autonomously resolve the same problem in the timespan between OpenAI hearing of the rumor and the papers' publication.
+I suppose weirder things have happened, but it does seem overall more plausible if we do assume some data leakage from Levent & Tristan...?
+(Ugh, I think I wasted too much time on this today already. The correct policy is to just wait for more data to come in, but I find it too fun to speculate.)
+Edit #2:
+Aha,
+Levent offers
+some new commentary:
+“we cannot rule out that de-identified data derived from their usage of our products helped improve our models.”
+i mean props to them for straight coming clean.
+(so far the proof looks more along the lines of another euler blowup proof we had, off of whose ansatz naming we were making really stupid puns like “smooth criminale”, unlike the much better “ideal fluids explode”, Tristan)
+I guess we can conclude that at least one of the parties is blatantly lying.
+Also of note is
+this tweet
+:
+Dheeraj Nagaraj:
+I was an intern under Seb in 2020. Unfortunately, the allegations of unscrupulous behavior is 100% believable. I am glad that the mask is off publicly. I really hope he doesn't weasel out of this.
+The account was just created, but the name checks out and a bunch of other accounts that appear to be real (
+one
+,
+two
+,
+three
+,
+four
+) are vouching for it, so for now I'm assuming it's real. Which, plus priors, makes me think it's OpenAI that's lying.
+Promising. (Thrilling stuff. Haven't had this much popcorn in a while.)
+Edit #3:
+Wait, I just realized, first Millennium problem solved by AI or with heavy AI assistance, and it's
+another
+bloody counterexample
+?
+^
+"Levent had been told by Sebastien “very little human input” had been used. This turned out not to be true. Over the course of the call, as members of their team sent Sebastien corrections and details over their internal chat, it emerged that an entire team had been working on the problem, that this was one of a number of things that was tried, that work had started on the unforced problem, that the team first set the model on easier problems, including Euler, that even the prompt that had been shown to me had been written by prompting Codex, and that an insane amount of compute had been used."
+Reply
+[
+-
+]
+leogao
+6d
+7
+1
+i don't have any privileged information about NS in particular, but on priors i think it would be extremely surprising if openai were engaging in massive amounts of fabrication around these results. also i can confirm noam brown's tweet is an accurate representation of how people at openai are feeling rn (it is in fact true that a lot of people went "holy shit" upon seeing this model quickly solve some open problems they had personally worked on for years).
+Reply
+1
+[
+-
+]
+Thane Ruthenis
+6d
+2
+0
+If that's something you can share: Does that model's performance constitute the sort of surprising result that moves
+your
+(IIRC relatively bearish) AGI timelines?
+Reply
+[
+-
+]
+leogao
+6d
+11
+1
+my timelines have in general gotten shorter over the past year. the biggest update for me was actually codex being absurdly good at running experiments. i don't know enough math to know how impressive the math things are, except by deferring to other people.
+Reply
+2
+[
+-
+]
+TsviBT
+6d
+7
+1
+As a layman,
+Terry Tao's Sept. 3 thread
+makes it not seem that implausible that a modern AI could solve it.
+Reply
+[
+-
+]
+Thane Ruthenis
+6d
+1
+0
+Well. Yeah. I guess. This is roughly what I was gesturing at by "
+another
+bloody counterexample" in that last edit, I suppose.
+Reply
+1
+[
+-
+]
+DirectedEvolution
+4d
+6
+2
+For one thing, it seems a-priori surprising that an academic mathematician and a mathematician working at an AGI lab were just about to release papers demonstrating significant progress towards Navier-Stokes
+at the same time as
+OpenAI happened to be developing a surprisingly, off-trend-powerful internal model that was
+so
+powerful as to (near-?)autonomously resolve the same problem in the timespan between OpenAI hearing of the rumor and the papers' publication.
+History is full of multiple discoveries. That supports the hypothesis that there is a dependency structure over discoveries, like a a tech tree. Knowing that a discovery has been made is strong evidence it’s at that frontier, not far beyond it. And OpenAI explicitly states in their press release that it was hearing the rumor that motivated them to pivot and focus on this specific problem. Given that, I think what We have isn’t a coincidence, but an engineered outcome. I’d also say that in addition to possible unwitting help from the human researchers themselves in terms of content, the help OpenAI got in terms of problem selection should be taken into account when deciding how impressed to be with their result.
+Reply
+[
+-
+]
+Mo Putera
+5d
+2
+0
+More seriously, I do wonder very much how similar the proof structures are to Levent & Tristan's work, and if they are different, how much we can glean from that.
+How much weight do you put into their next sentence (after your quoted passage)?
+However, our proofs differ significantly and even the precise results proved are different in the Euler case (forced vs unforced).
+Reply
+[
+-
+]
+Thane Ruthenis
+5d
+5
+0
+Not much, I think they'll say this even if the proof is just "syntactically resampled", as I suggest.
+Levent's "the proof looks more along the lines of another euler blowup proof we had" is what I put weight onto. Namely, it makes me update in favor of the derivation being independent after all, with no data contamination at play.
+Like, he basically says the proof avenue they ultimately pursued was meaningfully different after all. I'm guessing he's implying their abandoned approach was still available to OpenAI, and that training on it may have lead to it being regurgitated and then completed. But this is starting to sound pretty shaky.
+Reply
+1
+[
+-
+]
+arielb1
+3d
+*
+3
+2
+If there was a training contamination channel that contained "de-identified" intermediate work (not speculating on the probability that such channel existed in practice, but it is definitely technically possible, and it's not like any de-identification ought to do anything to mathematical content), then I would expect an AI run with massive concurrency to try all the approaches that it found in the training data with some probability, so "a proof along the lines of another blowup we had" is a fairly likely consequence. Of course, maybe the AI could have found that approach by itself with no outside help, but you never know.
+Reply
+[
+-
+]
+Mateusz Bagiński
+6d
+7
+1
+Not to overstate it, but I find it a bit interesting that they had to use Astra, rather than this "more powerful" model, to formalize the proof once it was found.
+Something something hard RL degrades skills that are not being RL'ed?
+Reply
+[
+-
+]
+DaemonicSigil
+6d
+8
+0
+It could also have just been cheaper to use Astra.
+Reply
+[
+-
+]
+Mateusz Bagiński
+5d
+4
+0
+Assuming you mean "cheaper per unit of token/effort/something", not cheaper in total to get the Lean code produced.
+My understanding from the post, as well as my
+a priori
+expectation,
+is that formalization was a relatively small fraction of the total time/compute spent on this
+. They threw a fuckton of compute at the agent swarm and then wanted to save by switching to Astra for the final step? IDK, seems implausible.
+I would also expect the new model not to be
+that
+much more expensive than Astra.
+Reply
+1
+Moderation Log
+More from
+fluxxrider
+View more
+Curated and popular this week

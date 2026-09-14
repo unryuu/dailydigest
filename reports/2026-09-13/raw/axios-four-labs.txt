@@ -1,0 +1,75 @@
+URL: https://www.axios.com/2026/09/13/ai-labs-regulation-safety
+FINAL: https://www.axios.com/2026/09/13/ai-labs-regulation-safety
+TITLE: AI's most powerful CEOs hit the brakes
+FETCHED: 2026-09-14 19:42:39
+============================================================
+23 hours ago
+-
+Business
+AI's most powerful CEOs hit the brakes
+Ben Berkowitz
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Illustration: Brendan Lynch/Axios
+In nine startling hours on Saturday, the four biggest AI labs — which rarely agree on anything — set aside years of feuds and competition to endorse a slower development pace for their models.
+Their new stance: Prioritize
+safety over growth
+, even at a cost.
+The big picture:
+AI's unrelenting growth has hit an inflection point with the public, Washington and even the companies building it.
+Data centers
+are unpopular
+. People are panicked about
+doom scenarios
+. And 51 days before midterms, legislators
+suddenly realize
+there are points to be won by cracking down.
+Against that backdrop
+, the industry's most powerful CEOs hit the brakes Saturday.
+At 10 a.m. ET,
+Anthropic CEO Dario Amodei dropped a 3,800-word essay saying model development
+needs to be paced
+, otherwise doom scenarios are possible — like a rogue-agent takeover of the entire internet, which he said could be as soon as six months from now.
+An hour later,
+SpaceX CEO Elon Musk shocked the AI chattering class by quoting Amodei's essay on X and saying "Dario is right." Musk — who heads SpaceXAI, formerly xAI — had pointedly not joined previous industry-wide calls for any kind of slowdown.
+At 12:30 p.m.,
+OpenAI CEO Sam Altman tweeted: "I agree with Dario that we need to pace the frontier." In an interview Friday that was released on Saturday, Altman
+told Fortune
+his company
+won't go public
+this year, dashing hopes for a blockbuster IPO. He said OpenAI has too much safety work to do and would be better off doing that as a private company.
+At 7 p.m.,
+Demis Hassabis — the Nobel laureate who co-founded and chairs Google DeepMind, and is Alphabet's chief scientist —
+tweeted
+: "Dario's essay points towards the right path forward. The details need working through, but the direction is correct for meeting this critical moment."
+Between the lines:
+Publicly putting safety ahead of technological or financial growth may be the industry's only route to avoid a crackdown that's not on its terms.
+Legislators are
+begging
+House Speaker Mike Johnson to stay in session and
+do something
+about the "threat" of AI.
+The more extreme alternative is something like Sen. Bernie Sanders'
+push
+to force a pause and make the most advanced AI illegal.
+Reality check:
+Most people realize there's too much
+money at stake
+to just stop moving forward. But the tradeoff may be between historic riches and slightly less historic riches.
+Let's see whether they actually agree on what oversight ("embedded third-party evaluators") and "slow" mean, then follow through.
+Friction point:
+No one in China is having the same kind of we'd-better-stop moment.
+Influential Silicon Valley tech voices, including former Trump official David Sacks, spent Saturday highlighting the counterargument that slowing down just lets adversaries — with no such safety qualms — catch up. In a late Saturday-night
+post
+, Sacks effectively dared OpenAI and Anthropic to voluntarily pace the AI frontier without waiting for the government. "If you don't, we'll know this was just another bid for regulatory capture — or an election-season psyop."
+Amodei even acknowledged that a safety regime only really works if authoritarian governments come to the table, too. "Pacing within democracies will be limited by the lead that U.S. companies have over authoritarian regimes, chiefly the Chinese Communist Party," he
+wrote
+. "If we slow down by more than this amount, then (unpaced) CCP-associated projects will pull ahead, creating significant national security risk."
+The bottom line:
+Saturday may go down as the day AI changed — when industry moguls vowed to limit themselves.
+Read Amodei's essay
+, "We Must Pace the Frontier."
+Add Axios on Google
+What to read next

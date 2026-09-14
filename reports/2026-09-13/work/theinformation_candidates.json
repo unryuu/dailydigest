@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-13",
+  "scanned_at": "2026-09-13T23:54:35+08:00",
+  "window": "从 2026-09-12T18:31:00+08:00 接续，补扫 The Information 首页 Latest",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Sunday Insights",
+      "title": "Nvidia’s Growing Dependence On a Few Big Customers",
+      "url": "https://www.theinformation.com/articles/nvidias-growing-dependence-big-customers",
+      "published_at": "2026-09-13T08:00:00-07:00",
+      "published_at_beijing": "2026-09-13T23:00:00+08:00",
+      "bucket_hint": "industry_gold_or_silver",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "英伟达本财年上半年有三名客户合计贡献 44％ 销售额；上一财年为两名客户贡献 36％，而 2023 财年还没有任何单一客户超过 10％。",
+        "五家云厂商与超大规模客户合计贡献英伟达数据中心收入的一半以上，但 Google、Amazon、Microsoft、Meta 和 SpaceX 都在开发自有芯片，未来可能减少采购。",
+        "英伟达七月披露，五名客户占应收账款 70％；上半年应收账款增长 64％ 至 630 亿美元。",
+        "英伟达把部分大型多年合同的付款期从 45 天延到 60 天，并披露对投资级客户的大型数据中心建设项目可给 90 天至一年付款期。",
+        "为分散客户集中风险，英伟达持续投资 CoreWeave、Nebius 等芯片买家，并把 AI Factory 计划扩到澳大利亚、印度和亚美尼亚。"
+      ],
+      "caveats": [
+        "英伟达披露的前三大客户可能包括替众多终端客户组装服务器的 Dell 或鸿海，不能把 44％ 全部解释成三家最终云客户。",
+        "文章对具体客户身份使用了推断；公司文件没有逐一披露前三名客户名称。"
+      ],
+      "why": "客户和应收账款同时集中、付款期又被拉长，说明英伟达在爆发式增长背后承担了越来越像供应链融资方的风险。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "The Big Read",
+      "title": "Early Anthropic Investor Seeks VC Glory With Cash and Compute",
+      "url": "https://www.theinformation.com/articles/early-anthropic-investor-seeks-vc-glory-cash-compute",
+      "published_at": "2026-09-12T06:16:00-07:00",
+      "published_at_beijing": "2026-09-12T21:16:00+08:00",
+      "bucket_hint": "industry_silver_or_exclusive_view",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "投资人 Anjney Midha 在 2021 年 Anthropic 估值不足 10 亿美元时投入了自己和妻子的大量积蓄；Anthropic 当时计划先融资 5 亿美元，接触的 22 家风投中有 21 家拒绝。",
+        "他后来在 Andreessen Horowitz 参与 Mistral AI、Black Forest Labs、Periodic Labs 和 OpenRouter 等投资，并帮助该机构取得超过两万块 GPU，连同现金换取被投公司股权。",
+        "他今年成立的 AMP 已募资 13 亿美元，其中很大一部分投入 Anthropic 二月按 3800 亿美元估值进行的融资。",
+        "AMP 正孵化一个计划十月上线的全国算力网，把闲置算力与 AI 创业公司匹配；Midha 还计划在 Anthropic 上市后用部分收益启动 AMP Grid Trust，再募集数十亿美元持续购买算力。",
+        "Anthropic 创业初期的首要商业化计划就是负责任地销售 AI 编程能力，而不是后来偶然转向编码。"
+      ],
+      "caveats": [
+        "Anthropic 接近上市及最高两万亿美元估值仍是文章对潜在交易的描述，不能写成已上市或已定价。",
+        "全国算力网和 Grid Trust 尚未上线，具体供给、客户与融资结构仍未披露。"
+      ],
+      "why": "它把早期模型投资、GPU 入股和新算力信托串成同一条资本路径，显示风投正在从给现金转向同时控制创业公司的算力入口。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "AI Infrastructure",
+      "title": "Why Amazon and Microsoft Are Taking Communities’ Side Against Utilities",
+      "url": "https://www.theinformation.com/newsletters/ai-infrastructure/amazon-microsoft-taking-communities-side-utilities",
+      "published_at": "2026-09-13T07:00:00-07:00",
+      "published_at_beijing": "2026-09-13T22:00:00+08:00",
+      "bucket_hint": "industry_or_regulation_silver",
+      "decision": "加入候选，交定牌裁决",
+      "facts": [
+        "美国大型数据中心开发商开始用真实让利来换地方批准，而不再只做舆论沟通。马里兰州 Frederick 的两吉瓦项目提出 1.1 亿美元社区协议，另承诺满建后每年缴纳 2.15 亿美元房产税。",
+        "该项目还把建筑面积缩减近两成，并计划再花 7500 万至 1 亿美元建设水回收系统，使饮用水消耗降低八成；当地仍有人准备在秋季选举中反对现任县长。",
+        "Amazon 在宾夕法尼亚州 Homer City 的 4.5 吉瓦、36 栋数据中心计划中表示不寻求减免足额房产税，并继续谈判社区收益协议。",
+        "Microsoft 反对威斯康星州公用事业公司把新输电成本转嫁给普通家庭；Google 和 Amazon 也在弗吉尼亚州成功争取自行负担高压输电升级，避免电力公司把成本加价后摊入所有用户账单。",
+        "下一轮地方争议可能转向数据中心冷却剂、水处理和灭火剂中的永久化学品。"
+      ],
+      "caveats": [
+        "Frederick 的社区收益协议仍在审议，建设、税收和节水承诺不能写成已经全部兑现。",
+        "科技公司与居民在电价争议中暂时利益一致，不等于地方社会已接受数据中心项目。"
+      ],
+      "why": "数据中心政治开始从口号进入可量化的税收、社区补偿、用水与输电成本分配，科技公司甚至会站到居民一边对抗公用事业公司。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Altman and Musk Back Amodei’s Call for AI Companies to Slow Down AI Development",
+      "reason": "首页可见摘要属于高价值新进展，但 Sam Altman 的一手承诺已在登录态 X 候选中保留，后续优先链接一手来源。"
+    },
+    {
+      "title": "Meta’s Muse Agent Almost Cost Me $408",
+      "reason": "Weekend 栏目的个人体验有趣，但首页没有显示足以超过三篇高权重材料的独家数字或结构性结论。"
+    },
+    {
+      "title": "Larry Ellison Cancels Plan to Sell Up to $7.5 Billion of Oracle Stock",
+      "reason": "与 AI 建设只有股价背景关系，核心是个人股票出售计划变化，不占 AI 日报精读名额。"
+    }
+  ]
+}

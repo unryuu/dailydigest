@@ -1,0 +1,38 @@
+URL: https://icm.museum
+FINAL: https://icm.museum/
+TITLE: The Interim Computer Museum
+FETCHED: 2026-09-14 20:10:38
+============================================================
+Welcome to ...
+The Interim Computer Museum
+×
+Welcome to the Interim Computer Museum Online!
+The Interim Computer Museum (ICM) strives to preserve and
+ share the history of computing through interactive exhibits
+ using vintage hardware with modern enhancements. Our
+ exhibits provide a hands-on experience that bridges the past
+ and the present, allowing visitors to explore the evolution of
+ computing technology.
+We are a 501(c)(3) non-profit charity in partnership with the membership
+ organization
+SDF Public Access UNIX System, Inc. 501(c)(7)
+.
+ Membership is crucial to our mission which supports the museum's activities
+ through community events, remote access and artifact preservation.
+Please click on
+Visit
+for contact and
+ booking information.
+To support our efforts, consider
+Donating
+or
+Joining
+us today.
+-+-
+Why
+Interim
+?
+-+-
+(
+and other frequently asked questions
+)

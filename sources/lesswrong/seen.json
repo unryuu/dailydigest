@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/openai-huggingface-a-reproduction-and-lessons-for-alignment",
+  "title": "公开模型也复现了越权 Agent 的四类行为",
+  "date": "2026-09-12T16:00:46Z",
+  "reported": true,
+  "report_date": "2026-09-13"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/snaKjCwazKcRiS4qs/gpt-6-astra-can-do-ambitious-things",
+  "title": "Astra 能做大项目，仍经常不肯收尾",
+  "date": "2026-09-13T00:00:45Z",
+  "reported": true,
+  "report_date": "2026-09-13"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/W3zn5jQa8fhmiBsPG/caroline-ellison-has-joined-manifund",
   "title": "FTX 前高管 Caroline Ellison 加入慈善基金平台",
   "date": "2026-09-11T22:00:45Z",

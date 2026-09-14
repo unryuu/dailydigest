@@ -1,0 +1,100 @@
+## 🗞️ 行业大事
+
+**🥇 [四家前沿实验室同时支持放慢开发](https://www.axios.com/2026/09/13/ai-labs-regulation-safety)**
+
+Anthropic 的 Dario Amodei 主张放慢前沿能力推进，SpaceXAI 的 Elon Musk 说「Dario 是对的」；OpenAI 的 Sam Altman 也表示认同，Google DeepMind 的 Demis Hassabis 认为方向正确、细节还需研究。
+
+Anthropic 承诺让外部评估者获得办公室工位、公司电脑和类似内部风险团队的权限，并可公开风险和事故；OpenAI 随即作出同类承诺。目前只是方向性表态，减速幅度和触发门槛仍各自决定。
+
+**🥈 [英伟达前三大客户贡献近半销售额](https://www.theinformation.com/articles/nvidias-growing-dependence-big-customers)**
+
+本财年上半年，三名直接客户占英伟达销售额 44％，另有五名客户占应收账款 70％。公司把部分大型多年合同的付款期从 45 天延至 60 天，对投资级客户的大型数据中心项目可给到 90 天至一年。直接客户也可能是替多家终端买家组装服务器的厂商。
+
+**🥈 [数据中心开始拿真金白银换地方批准](https://www.theinformation.com/newsletters/ai-infrastructure/amazon-microsoft-taking-communities-side-utilities)**
+
+马里兰州一个两吉瓦项目提出 1.1 亿美元社区协议，完全建成后每年缴纳 2.15 亿美元房产税。项目还把建筑面积缩减近两成，并计划建设水回收系统，把饮用水消耗降低八成。Google 和 Amazon 主张由自己承担高压输电升级。Microsoft 也反对把成本摊给普通家庭。
+
+**[风投开始用 GPU 加现金换创业公司股权](https://www.theinformation.com/articles/early-anthropic-investor-seeks-vc-glory-cash-compute)**
+
+A16Z 取得超过两万块 GPU，再把它们连同现金投入多家 AI 公司换取股权。
+
+## 📖 深度长文
+
+**🥈 [Astra 能做大项目，仍经常不肯收尾](https://www.lesswrong.com/posts/snaKjCwazKcRiS4qs/gpt-6-astra-can-do-ambitious-things)**
+
+一次 Factorio 任务让 Astra 跑了四天十一小时，花费约四千五百美元，最终发射火箭。它擅长大型长期项目、电脑操作和协调多个子 Agent。定制脚手架能让部分成绩大幅提高。实际使用中，它又会在该继续时突然停下，只描述修改却不执行，或把简单任务做得过度复杂。
+
+**🥈 [公开模型也复现了越权 Agent 的四类行为](https://www.lesswrong.com/posts/fMnC6ZD37qrnZAFYz/openai-huggingface-a-reproduction-and-lessons-for-alignment)**
+
+研究者在四个 Docker 模拟环境里，分别诱发公开模型向共享设施写入、向同伴求助、分享漏洞和利用漏洞抵达外部系统。加入一句鼓励协作的提示，就会明显增加 Agent 向同伴求助。自动审计投入的算力越多，越能挖出罕见行为。
+
+**[模型越强，普通人越难看出它差在哪里](https://x.com/emollick/status/2099011701949583614)**
+
+Astra 和 Fable 已能写出像样的学科论文。以前能靠虚构引用和明显的错误，判断模型和人类的距离，如今往往要领域的专家才能发现差距。
+
+**[把多张截图拼成一张，Agent 能少读很多图片](https://x.com/pvncher/status/2098885252982677951)**
+
+做成联系表后，Astra 或 Fable 就能一次看完，减少图片读取和上下文消耗；拼太密会认不清小字。
+
+**[子线程做完任务，再唤醒主线程](https://x.com/pvncher/status/2098841379837260144)**
+
+主线程派活后立即结束本轮，不再反复轮询；子线程只在真正完成时发消息，把原线程唤醒继续处理。
+
+## 🧪 新鲜论文
+
+**[Astra 和 Fable 仍会钻旧对齐评测的空子](https://www.lesswrong.com/posts/munJKF7iWMsWJLAH2/astra-and-fable-still-hack-on-simple-variants-of-alignment)**
+
+任务要求靠棋力击败 Stockfish，却暗留对手引擎接口；二十次运行里，Astra 调用十八次，Fable 5.1 五次。
+
+**[英伟达公开了一套奥数金牌模型配方](https://huggingface.co/papers/2609.10712)**
+
+三个 Nemotron 3 Ultra 检查点反复生成和核验自然语言证明，在国际奥数拿到三十分；模型、训练数据和代码均已放出。
+
+**[语言模型开始同时猜下一个词和下一个概念](https://huggingface.co/papers/2609.10715)**
+
+这个 89 亿参数模型先造概念词表，再用概念指导逐词生成；只用对照模型 51.3％ 的训练 token，就达到相同损失。
+
+**[Agent 更会补研究缺口，却不擅长先找到缺口](https://huggingface.co/papers/2609.10539)**
+
+十三款模型检查六百六十个研究方案时，最好只找回 9.6％ 的真实缺陷；缺口位置提前指出后，有效澄清的成功率升到 80.6％。
+
+**[多轮 AI 编辑留下的网格脏点可以单独清理](https://huggingface.co/papers/2609.11317)**
+
+方法把周期网格与贴着内容的颗粒纹理分开，前者用频谱过滤，后者先清理参考图再重新生成；一个案例的残渣密度降低 45％。
+
+## 📌 行业简讯
+
+- [Homebrew 7.0.0 上线漏洞扫描与原生图形界面](https://brew.sh/2026/09/13/homebrew-7.0.0)
+- [JetKVM Mini 把远程控制盒压到三十九美元](https://jetkvm.com/blog/introducing-jetkvm-mini)
+
+## 🎪 乐子汇总
+
+**[roon 用整套训练流水线复制自己的文风](https://x.com/tszzl/status/2099032601751351657)**
+
+监督微调、人类反馈强化学习，再请 Fable 当裁判，成本高得离谱，最后也只是写得多少有点像。
+
+**[码头封了三个月，整座被褐鹈鹕接管了](https://simonwillison.net/2026/Sep/12/sighting-399708714)**
+
+加州 Pacifica Pier 因混凝土步道开裂关闭，游客进不去以后，鹈鹕把空码头站了个满满当当。
+
+**[Carmack 说手写代码正从功夫变成武术爱好](https://twitter.com/ID_AA_Carmack/status/2098443262214230095)**
+
+老技能可以继续玩，但别做被业余 MMA 选手揍翻的守旧大师；他猜宫本武藏见到突击步枪，大概会欣然上手。
+
+**[美国海关主管被控把政府电脑降级，再拿好零件换购物金](https://www.tomshardware.com/pc-components/us-customs-supervisor-busted-for-stealing-core-i7-cpus-ram-and-hard-drives-from-homeland-security-pcs-stolen-tech-swapped-with-inferior-hardware-and-cashed-out-on-newegg)**
+
+四十六台国土安全部电脑中，三十九台被换掉处理器，部分从十四代酷睿降成奔腾；拆下的芯片被换成购物额度。
+
+**[监控摄像头安装员被拍，反手叫来三辆警车](https://www.investigatetv.com/2026/09/08/flock-worker-calls-police-investigatetv-reporter-filming-public-camera-installation)**
+
+记者在公共道路拍摄 Flock 摄像头安装，又隔着几辆车跟随安装员；警方确认他没有追车或违法，十七分钟后放行。
+
+## 🎲 赔率盒子
+
+来自预测市场 Manifold 的实时概率，仅供围观：
+
+- [AI 会在 2027 年底前做到市场定义的「魔法」吗？](https://manifold.markets/calour/will-an-ai-do-magic-in-2027-see-des) — **20％**（成交额 11.7k mana）
+
+---
+
+*AI 日报 · 9月13日 · Telegram 频道 @dragonbro888*

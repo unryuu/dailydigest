@@ -1,0 +1,118 @@
+URL: https://www.tomshardware.com/pc-components/us-customs-supervisor-busted-for-stealing-core-i7-cpus-ram-and-hard-drives-from-homeland-security-pcs-stolen-tech-swapped-with-inferior-hardware-and-cashed-out-on-newegg
+FINAL: https://www.tomshardware.com/pc-components/us-customs-supervisor-busted-for-stealing-core-i7-cpus-ram-and-hard-drives-from-homeland-security-pcs-stolen-tech-swapped-with-inferior-hardware-and-cashed-out-on-newegg
+TITLE: US Customs supervisor busted for stealing Core i7 CPUs, RAM, and hard drives from Homeland Security PCs, damage estimated at $105,800 — stolen tech swapped with inferior hardware and cashed out on Newegg | Tom's Hardware
+FETCHED: 2026-09-14 20:10:42
+============================================================
+(Image credit: Getty Images)
+Facebook
+X
+Whatsapp
+Reddit
+Pinterest
+Flipboard
+Email
+Share this article
+19
+Join the conversation
+Follow us
+Add us as a preferred source on Google
+Subscribe to our newsletter
+According to a report from
+The Maine Wire
+, the FBI has arrested and charged Terry “Jiajia” Liu, a Customs and Border Protection supervisor based in Calais, Maine, for theft and damage to government property. Liu allegedly stole computer hardware, including Intel 14th Generation
+Raptor Lake Refresh
+processors, memory modules, and hard drives, from at least 46 Department of Homeland
+Security
+computers across three Maine border facilities. They replaced the stolen parts with inferior hardware and exchanged the stolen equipment through Newegg’s trade-in program for store credit.
+Go deeper with TH Premium: CPU
+(Image credit: Tom's Hardware)
+Intel VP Robert Hallock sets Nova Lake expectations, teases return to Raptor Lake for DDR4 platforms
+CPU scaling with DLSS
+Intel's one-two punch plan in desktop CPUs is taking shape
+Benchmarking AMD's BC-250, offering Steam Machine-like performance at half the price
+AMD splits Zen 7 into three EPYC families for 2028 and starts selling server CPUs by the agent
+Liu’s official responsibilities were limited to information-technology support, so they did not have access to modify any government computer. Port Director Theodore Cummings made the restriction abundantly clear to Liu in a written order: “Please do not move any computers or computer parts.” However, criminals rarely listen.
+Hidden surveillance cameras captured Liu opening government computers and swapping hardware during the midnight shift. The perpetrator would take the systems to a training room to commit the crime. One camera recording showed Liu using a screwdriver to scrape thermal paste off a processor and installing a replacement chip in one system. Meanwhile, another recording caught Liu removing a memory module from a system and storing it in their desk drawer.
+Latest Videos From
+Tom's Hardware
+Watch full video here:
+According to the affidavit, investigators found that thirty-nine computers had their processors replaced, six machines with memory modules swapped, and eight had hard drive changes. The original systems used Raptor Lake Refresh chips but were later discovered to have older hardware, sometimes downgraded to Pentium chips. Beyond the processor swap, other computers had less memory and storage capacity than their original configurations.
+Instead of trying to sell the stolen hardware on the open second-hand market, Liu used a less conspicuous approach: Newegg’s Trade-In program. According to investigators, Liu sent 13 emails between a personal account and an official CBP email address containing shipping labels and trade-in receipts for processor models matching the missing components from the government computers.
+The Newegg trade-in offers varied between $200 and $210 per processor. According to the transaction records from the U.S. retailer, Liu traded in Core i7 Raptor Lake Refresh chips 16 times over 14 months, from May 2025 to July 2026. Investigators also found three $200 credits from Newegg in Liu's American Express records.
+During an interview, Liu confessed to replacing hardware in the government computers with lower-performing parts bought on
+Amazon
+and Newegg. They also acknowledged submitting the government-owned parts to Newegg's Trade-In program. At first, Liu claimed their actions were motivated by a desire to improve the computers' performance and how long computer repairs took. However, they later admitted that the changes resulted in degraded performance.
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter
+Get Tom's Hardware's best news and in-depth reviews, straight to your inbox.
+Restoring the stolen hardware could cost about $20,460, while fully replacing all 46 compromised computers with equivalent hardware would cost an estimated $105,800. However, additional labor to configure each system for government use will drive the bill even higher.
+Follow
+Tom's Hardware on Google News
+, or
+add us as a preferred source
+, to get our latest news, analysis, & reviews in your feeds.
+Zhiye Liu
+News Editor, RAM Reviewer & SSD Technician
+Zhiye Liu is a news editor, memory reviewer, and SSD tester at Tom’s Hardware. Although he loves everything that’s hardware, he has a soft spot for CPUs, GPUs, and RAM.
+19 Comments
+Comment from the forums
+One camera recording showed Liu using a screwdriver to scrape thermal paste off a processor and installing a replacement chip in one system.
+That's bad form!
+The original systems used Raptor Lake Refresh chips but were later discovered to have older hardware, sometimes downgraded to Pentium chips.
+Finally, the Pentium Gold G7400 becomes useful.
+Reply
+Hang on that math doesn't pass the sniff test it said 46 computers?
+It also said the trade-in value was only like $200 a CPU, so all we have to do is see what CPUs Newegg will cough up 200 bucks for and we can get an idea of what CPU he was trading in.
+And occasionally some ram.
+Where does the $105,000 quote come from then?
+Reply
+THIS is why they created prisons...
+Reply
+kuramakitsune
+said:
+Hang on that math doesn't pass the sniff test it said 46 computers?
+It also said the trade-in value was only like $200 a CPU, so all we have to do is see what CPUs Newegg will cough up 200 bucks for and we can get an idea of what CPU he was trading in.
+And occasionally some ram.
+Where does the $105,000 quote come from then?
+The exact math is mostly irrelevant.
+Reply
+Government workers don't need 14th gen i7s. Free this man!
+Reply
+usertests
+said:
+Government workers don't need 14th gen i7s. Free this man!
+In your esteemed opinion, who DOES need one?
+Only gamers?
+Reply
+USAFRet
+said:
+In your esteemed opinion, who DOES need one?
+Only gamers?
+Professionals doing a lot of video editing, code compilation, etc. Anyone for whom time = money.
+The "i5" tier is adequate for gamers, e.g. the Ryzen 5 9600X or 7600X3D, i5-12400, Core Ultra 5 250K, etc. Next-gen consoles are likely to have Zen 6 with modest core counts and clock speeds, so keeping up with gaming CPU requirements for the next 10+ years should be relatively easy.
+Quad-core Skylake to Comet Lake is adequate for the vast majority of office workers. Even the lowest-end chips are coming with around 6 mixed cores now. The lowly 5-core Wildcat Lake Core 3 304 is faster than an i5-8600K. That can come soldered onto a motherboard (making it harder to steal than these socketed CPUs, lol) and put into VESA-mount mini PCs.
+We hit various plateaus in computing requirements, and now the low-end is becoming overkill. That's a good thing! Another example: the Core Ultra 5 225T is faster than an i9-10900K. Rather than the CPU performance, my complaint would be about the iGPU (for gaming without dGPU), as it's half of the Xe-LPG cores that Arrow Lake-S has on the 245 and up.
+I would pair any of the CPUs mentioned with 64+ GB of RAM... if it was cheap. 16 GB being fine for the office worker, but if (when) we see a return to ~$2/GB, it's no problem to have 32 GB.
+Reply
+usertests
+said:
+Professionals doing a lot of video editing, code compilation, etc. Anyone for whom time = money.
+Civil engineers on an air base, managing the whole plumbing and/or electrical scenario in AutoCad.
+architects designing a new building for an F-35 simulator.
+Public affairs office, creating videos.
+Software developers (I know some of these people personally)
+Reply
+kuramakitsune
+said:
+Hang on that math doesn't pass the sniff test it said 46 computers?
+It also said the trade-in value was only like $200 a CPU, so all we have to do is see what CPUs Newegg will cough up 200 bucks for and we can get an idea of what CPU he was trading in.
+And occasionally some ram.
+Where does the $105,000 quote come from then?
+They said at the end the 100k was for fully replacing all the computers rather than just the missing parts. Why they included that, I don't know, but it does seem like something government would do.
+Reply
+Panda78
+said:
+They said at the end the 100k was for fully replacing all the computers rather than just the missing parts. Why they included that, I don't know, but it does seem like something government would do.
+Warranty.
+Whomever supplied those systems is not going to honor a warranty with parts that it did not come with.
+Reply
+Show more comments
