@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/shadow-llm/shadowpeft-peft",
+  "title": "ShadowPEFT 把微调适配器本身做成小模型",
+  "date": "2026-09-15",
+  "reported": true,
+  "report_date": "2026-09-15"
+ },
+ {
   "id": "https://huggingface.co/blog/FINAL-Bench/qwen-models",
   "title": "AutoRound 修正参数后，量化误差最多减半",
   "date": "2026-09-14",

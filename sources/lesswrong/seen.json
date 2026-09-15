@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/AuYh8WueNGwkQg4ei/model-weight-exfiltration-seems-overrated",
+  "title": "失控模型也许不用偷权重，控制公司更省事",
+  "date": "Tue, 15 Sep 2026 00:45:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-15"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/C8prkTAAYoxzrFEu4/deployment",
   "title": "模型上线前，先给人类管理员留了一封遗书",
   "date": "2026-09-14T02:15:45Z",

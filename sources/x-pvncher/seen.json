@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://x.com/pvncher/status/2099821418628137240",
+  "title": "Astra 先写仓库工单，再把任务派给 Agent",
+  "date": "2026-09-15T19:23:33+08:00",
+  "reported": true,
+  "report_date": "2026-09-15"
+ },
+ {
   "id": "https://x.com/pvncher/status/2098841379837260144",
   "title": "子线程做完任务，再唤醒主线程",
   "date": "2026-09-13T02:29:14+08:00",

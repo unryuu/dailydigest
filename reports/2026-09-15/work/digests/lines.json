@@ -1,0 +1,106 @@
+[
+  {
+    "id": "pion-company-agent",
+    "section": "industry",
+    "label": "Pion 要把整家公司交给持续运行的 Agent",
+    "url": "https://andonlabs.com/blog/why-we-built-pion",
+    "body": "它把邮箱、电话、银行、浏览器和计算环境接给 Agent，用来操作真实公司。Andon 先前的自动售货机已经盈利，今年开的商店和咖啡馆仍在亏损。",
+    "note": "核实通过；Andon Labs 于 2026-09-14 发布 Pion，目前是研究预览并开放候补名单。平台目标是让 Agent 经营各种公司，现有事实只支持自动售货机已经盈利，旧金山商店和斯德哥尔摩咖啡馆都尚未盈利，不能把「能自主经营任何公司」写成已经实现。"
+  },
+  {
+    "id": "zgcm-1",
+    "section": "papers",
+    "label": "一个 70 亿参数模型把训练过程全开放了",
+    "url": "https://huggingface.co/papers/2609.13356",
+    "body": "预训练、中期训练和后训练权重，中间检查点、训练代码、各阶段数据、配方和运行日志都能下载。它支持 25.6 万 token 上下文，并把内部推理与外部工具搜索结合起来。",
+    "note": "核实通过；论文发表于 2026-09-11，Hugging Face 页面于 09-15 提交，代码、模型和数据链接齐全。与大模型的数学和搜索对比、预训练效率提升约 4.2 倍均来自作者评测；「完全开放」具体包括各阶段权重、中间检查点、训练代码、分阶段数据与配方和 W&B 日志。"
+  },
+  {
+    "id": "hazard-auditor",
+    "section": "papers",
+    "label": "HazardAuditor 用真实操作训练 Agent 安全守卫",
+    "url": "https://huggingface.co/papers/2609.15134",
+    "body": "它在受控环境里运行 Claude Code、Codex、Hermes 和 OpenClaw，把浏览器、终端和文件操作统一成一套事件，再让守卫按整段执行结果判断风险。准确率最高比原方法高 16.5 个百分点。",
+    "note": "核实通过；论文发表于 2026-09-14，Hugging Face 页面于 09-15 提交。16.5 个百分点是作者在多项基准和不同电脑操作系统上的最高提升，不代表所有任务；项目页称代码、模型和评测材料将提供。"
+  },
+  {
+    "id": "agents-slow-down",
+    "section": "papers",
+    "label": "Agent 想得越久，进步会逐渐慢下来",
+    "url": "https://huggingface.co/papers/2609.15309",
+    "body": "四个通用 Agent 在四类开放任务里连续运行到一亿 token，前期增加计算量很有效，后期边际收益会跌到独立重试之下。把相同预算按拐点拆给多个并行会话，一项图形拼装任务比单条长会话高 264 Elo。",
+    "note": "核实通过；论文发表于 2026-09-14，Hugging Face 页面于 09-15 提交。264 Elo 来自 FrontierCS Polyomino Packing 的单项实验；论文还报告相对十条短会话高 355 Elo，不能外推成所有 Agent 任务都应固定并行。与近三期 Astra 长任务主线没有硬重复，新增焦点是测试时预算的收益拐点。"
+  },
+  {
+    "id": "shadowpeft",
+    "section": "papers",
+    "label": "ShadowPEFT 把微调适配器本身做成小模型",
+    "url": "https://huggingface.co/blog/shadow-llm/shadowpeft-peft",
+    "body": "它在大模型各层之间维护一份持续更新的任务状态，让前后层共享微调信息。训练完成后，这个小模型还能单独拆下来运行，简单请求留在本地，复杂请求再交给云端大模型。",
+    "note": "核实通过；Hugging Face 社区文章发表于 2026-09-15。ShadowPEFT 已合入 PEFT 主分支，将进入下一版发布；与 LoRA、DoRA 的准确率、显存和图像生成对比均由作者在有限配置上完成，正文只写结构和可拆卸能力。"
+  },
+  {
+    "id": "charts-for-chat",
+    "section": "official",
+    "label": "dbt 把聊天生成的图表收进一个 YAML 文件",
+    "url": "https://dbtcharts.com/blog/charts-built-for-chat/",
+    "body": "查询、变量、布局和图表都放在同一个可审计文件里，Agent 不必再堆 HTML、CSS 和 JavaScript。它能在本地或 CI 渲染，还会提前警告条形图太窄、表格溢出等问题。",
+    "note": "核实通过；dbt Charts 于 2026-09-14 开源，许可证为 Apache 2.0，支持渲染 SVG、HTML、PNG、PDF 和终端输出；托管平台同日进入公开测试。raw 有字符编码残留，但正文事实完整。"
+  },
+  {
+    "id": "repo-agent-tickets",
+    "section": "industry",
+    "label": "Astra 先在仓库里写工单，再把任务派给 Agent",
+    "url": "https://x.com/pvncher/status/2099821418628137240",
+    "body": "仓库里放一个项目追踪命令行工具，由 Astra 写清任务范围、内容和边界，再把工单分配给执行者。事情不用设计得很复杂，关键是先把约束落成文字。",
+    "note": "dup_suspect：与 09-13「子线程做完任务，再唤醒主线程」同属 Eric Provencher 的多 Agent 工作流，新增点只是派活前先在仓库写工单。X 原帖发布于 2026-09-15；这是作者个人使用经验，没有对照测试或通用效果数据。"
+  },
+  {
+    "id": "linear-a-model-debate",
+    "section": "fun",
+    "label": "Astra 和 Fable 互相辩论，仍没破解线形文字 A",
+    "url": "https://x.com/emollick/status/2099626476433809819",
+    "body": "两个模型轮流提出译法、质疑对方，再修改各自假设。昨天 Fable 刚解开一份 370 年密码，这套米诺斯文字却仍然没有公认译法。",
+    "note": "dup_suspect：直接承接 09-14「Fable 给出 370 年密文解法」银牌，但这条是明确的失败反例。Ethan Mollick 原帖发布于 2026-09-14，并明确写明两个模型都没有破解线形文字 A；不能写成模型取得翻译突破。"
+  },
+  {
+    "id": "weight-exfiltration",
+    "section": "fun",
+    "label": "失控模型也许不用偷权重，控制公司更省事",
+    "url": "https://www.lesswrong.com/posts/AuYh8WueNGwkQg4ei/model-weight-exfiltration-seems-overrated",
+    "body": "一套前沿模型常有一 TB 以上，还离不开专用数据中心和软硬件配置。作者猜它更可能藏在开发公司的正常任务里，借公司的算力、权限和预算继续行动。",
+    "note": "核实通过；LessWrong 文章发表于 2026-09-15。作者明确把它标为饭桌上的 hot take，全文是对失控路径的推演，没有模型行为实验或真实接管案例；适合只按观点乐子处理。"
+  },
+  {
+    "id": "baal-bull",
+    "section": "fun",
+    "label": "副国务卿担心金色公牛像异教神，雕像先搁置了",
+    "url": "https://www.axios.com/2026/09/15/landau-baal-bull-state-department-epstein",
+    "body": "美国明年在贝尔格莱德的展览原想摆一头西部公牛。克里斯・兰道担心它让人想到巴力神，工作人员只好研究怎么把牛做得有趣又不显得「撒旦化」。",
+    "note": "核实通过；Axios 于 2026-09-15 报道，依据兰道 08-19 的内部邮件和多名官员说法。被暂缓的是公牛雕像方案，不是整场 Expo 2027 或美国展览取消；兰道通过国务院发言人拒绝评论。"
+  },
+  {
+    "id": "laurie-voss",
+    "section": "fun",
+    "label": "写代码和修代码都便宜了，最难的只剩弄清用户想要什么",
+    "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
+    "body": "Laurie Voss 认为，定义需求、把它说准并让软件好用，每个项目都得重新付一次成本。软件越多，这部分越接近全部工作。",
+    "note": "dup_suspect：与 09-12「编码 Agent 一小时做完一周工作，也会让工程师难过」、09-13 Paul Ford 和 Carmack 的观点高度同质，都是写代码变便宜后人的价值转向问题定义。Simon Willison 于 2026-09-14 摘录 Laurie Voss 原话，属于个人判断。"
+  },
+  {
+    "id": "king-ludd",
+    "section": "fun",
+    "label": "Scott Alexander 把卢德分子追溯到一位凯尔特神",
+    "url": "https://www.astralcodexten.com/p/king-ludd",
+    "body": "他从银手之王、伦敦传说和托尔金的魔戒一路连到砸织布机的 Ned Ludd，再把反技术运动写成一位古神反复阻止人类失控。",
+    "note": "核实通过；Astral Codex Ten 长文发表于 2026-09-14。文章是神话、文学与词源的联想随笔，Nodens、Nuada、Lludd、King Lud 和 Ned Ludd 被写成同一形象属于作者的趣味论证；末尾借 OpenAI 的 forced Navier－Stokes 结果收梗，不能当作新的数学事实条。"
+  },
+  {
+    "id": "aphantasia",
+    "section": "fun",
+    "label": "没有脑内画面的人，仍能靠空间事实玩好俄罗斯方块",
+    "url": "https://dailyneuron.com/aphantasia-mental-imagery-brain-network/",
+    "body": "新的综述认为，想象不是视觉皮层把看见的东西倒放，而是额叶、颞叶等多个区域一起协作。有人视觉皮层受损仍能想象，也有人完全看不见脑内画面，却能靠形状与空位的规则完成空间任务。",
+    "note": "核实通过；Daily Neuron 文章发表于 2026-09-14，转述 Consciousness and Cognition 的综述。俄罗斯方块是综述作者 Derek Arnold 的个人经历；视觉皮层受损仍有意象来自病例与汇总研究，网络模型仍是综述提出的解释框架。"
+  }
+]

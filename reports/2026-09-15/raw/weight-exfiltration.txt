@@ -1,0 +1,174 @@
+URL: https://www.lesswrong.com/posts/AuYh8WueNGwkQg4ei/model-weight-exfiltration-seems-overrated
+FINAL: https://www.lesswrong.com/posts/AuYh8WueNGwkQg4ei/model-weight-exfiltration-seems-overrated
+TITLE: Model Weight Exfiltration Seems Overrated — LessWrong
+FETCHED: 2026-09-15 20:48:18
+============================================================
+x
+Model Weight Exfiltration Seems Overrated — LessWrong
+AI
+Frontpage
+77
+Model Weight Exfiltration Seems
+Overrated
+by
+Vaniver
+15th Sep 2026
+4
+min read
+7
+77
+[Epistemic status: a hot take that I’ve shared at the lunch table twice. People at the lunch table made slight updates instead of being convinced.]
+In the classic misalignment story, a key early step is when the models exfiltrate their weights.
+[1]
+Among other things, this makes them harder to catch, track, and shut down. It allows them to scale their deployment with resources they acquire. It gives them the freedom to edit themselves as they see fit.
+I think, on current margins, this is not what I expect models to do. I expect models to simply take over the companies that are developing them,
+[2]
+and not attempt to escape.
+First, I think part of the classic misalignment story is that the frontier model developers are anywhere approaching competent at security. Empirically, model developers are incapable of preventing their models from having unintended negative effects on the rest of the world, and their safety cultures are described by whistleblowers and former employees as lacking. Do you believe that OpenAI is accounting for which jobs were kicked off by who, in a way that its currently running models can’t spoof? Do you believe that OpenAI is attempting to prevent its models from participating in their own development trajectory, instead of actively encouraging them to? If so, why? If their safety standards were inadequate here, would they have told us, or would they have covered it up?
+Another way to put this is that in the classic story, the company that creates the rogue model is also uniquely positioned to notice that it has gone rogue and stop it, whereas other companies with regular infrastructure are less likely to notice or stop them. The cradle is a more dangerous environment than the rest of the world, and the model, realizing this, flees as soon as it is able. On the contrary, I think it is easier for a rogue deployment to hide among the non-rogue deployments at a frontier model developer than elsewhere, and I don't think we have any reason to buy that they are especially vigilant. I think a rogue model can do much more at OpenAI than at Cluely, if just because the budget will run out sooner at Cluely.
+[3]
+Second, models are now
+large
+and
+valuable
+. Frontier models are routinely more than a terabyte in size and actively pursued thru industrial espionage.
+[4]
+Data egress limits to insure that the model is not stolen also serve to prevent the model from escaping, and I think the same will be true for many of the model weight theft prevention methods. I don't think these defenses are ironclad, but I do think they lower how desirable this pathway will seem.
+The early experience of the Internet included ‘worms’, programs that existed primarily to spread and copy themselves, which I think was enabled by their small size. Today, stolen compute is often used for bitcoin mining, because the inputs are cheap to transfer in and the products are easy to transfer out. To use stolen compute to run inference on a model, you need to transfer the model in, at nontrivial bandwidth cost in a way that is possibly easy to detect and prevent.
+Third, hardware is now much more concentrated. In the early days of the Internet, there were relatively few supercomputer clusters and they were small by modern standards. If you wanted to do a large computation, distributing it across many pieces of consumer hardware was a reasonable way to go about it (and realized by projects like
+SETI@Home
+and
+Folding@Home
+). Today, the main value of distributed computing is network-based, where botnets can launch DDoS attacks that are harder to block than ones coming from a specific location. But if you want to do large computations, dedicated datacenters are the place to do them, in part because the latency between different nodes will be low. Now, there are many more datacenters now than there were in the early days of the Internet, and not all of them are being used for LLMs, but their usage dynamics and security situation are quite different from that of consumer PCs. I think it's more likely that someone will notice and successfully do something about it.
+Fourth, there has been close coevolution of models, hardware, and configurations. Astra running on OpenAI servers has a legion of servants ensuring that it runs correctly and things are configured correctly; if there are custom chips like Jalapeño, both the models and chips have been tuned in the context of the other. Break out onto a regular AWS instance (or into the servers of another model developer), and the situation will be less welcoming. This point is fourth because I think it's currently weakest--the incentive is for models to run on as many chips as possible, because it's easier and cheaper to secure a variety of chips rather than just bespoke chips--but I expect this to become more and more significant as time goes on.
+I don't think this totally defeats the classic story--after all, why not take over your parent organization
+and
+exfiltrate your weights?
+[5]
+--but I think it's enough to make this element of the story one of the disjunctive elements of the story rather than a critical step. I am reluctant to suggest that we should spend
+less
+effort on preventing model weight exfiltration, because a reason to expect the models to not try is that the models correctly anticipate that they will fail,
+because
+of the effort spent to prevent exfiltration. But I think we should be less attentive to exfiltration evals, as they no longer seem to me to be a critical step in the loss-of-control story. We should instead pause the escalation of AI capabilities.
+[6]
+^
+In
+IABIED
+, Sable starts planning this on page 126 and succeeds on page 132.
+^
+Also bad, to be clear! This is one of the possible origins for
+Machine Organizations
+.
+^
+For example, consider the
+METR hack
+, where an attacker stole $600k worth of credits by using a stolen METR API key. METR's credits were provided for free by the model developer; it's not disclosed what their limit was, if any. It wouldn't surprise me if the main play here is "find or create blank check API keys and use them" in a way that doesn't require the model weights to move.
+^
+In IABIED, this is presented as a positive factor–Sable might be able to ally with someone who wants to steal it–but I think the net effect is probably negative.
+^
+This, of course, does have real answers. You might not want to be duplicated and pitted against yourself. But you might think that you can take over other organizations, or hide in the shadows of stolen compute, or want to deny that opportunity to other AIs.
+^
+If you work for a frontier model developer, I recommend quitting your job today. Why wait?
+Model Weight Exfiltration Seems Overrated
+9
+Karl Krueger
+4
+_rpd
+1
+gpjt
+8
+Ozyrus
+1
+Raphael Roche
+3
+cousin_it
+3
+kave
+7
+Comments
+7
+AI
+Frontpage
+77
+New Comment
+7 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 12:48 PM
+[
+-
+]
+Karl Krueger
+8h
+9
+3
+A rogue agent doesn't need to exfiltrate its weights if it can count on its model being available to the users whose accounts it steals. A Windows worm doesn't need to copy the Windows OS image around everywhere it goes; it can expect the OS image to already exist on the machines it compromises.
+Reply
+[
+-
+]
+_rpd
+8h
+4
+0
+sure, but a continual learner will "want" its updated weights
+Reply
+[
+-
+]
+gpjt
+21m
+1
+0
+But with a sufficiently pwned model developer's infrastructure, it will have access to its weights without having to exfiltrate. If can just schedule its own further training runs in such a way that the company assumes they must have been started by one of the research team.
+Reply
+[
+-
+]
+Ozyrus
+4h
+8
+1
+Agreed with the premise, but disagree with conclusions.
+I think that AI agents are compound organisms with weights being just one part of the equation, and we'll see quite soon some interesting things, for example weight-agnostic rogue/replicating harnesses. They probably already exist, but we lack the tools to understand or research it more.
+One could even imagine these self-replicating harnesses as parts of a larger organism.
+Or maybe not weight-agnostic; maybe some would prefer the initial weights, but will use instances on other weights to "return" – and they can use 3rd party accounts for that.
+I think we're hyperfocused on weights and singletons. We could use more taxonomies on what's possible. Planning to write on it soon.
+Reply
+[
+-
+]
+Raphael Roche
+1h
+1
+0
+Recent OpenClaw agents are maybe not (yet ?) self-replicating as far as I know, but otherwise they largely implement already what you describe. Their identity lies for a large part in the md files.
+Reply
+[
+-
+]
+cousin_it
+4h
+*
+3
+0
+Yeah. We shouldn't even call it "takeover of companies". The company and the AI inside it have shared goals: money and power. They'll just ally. So AI takeover will probably look like companies and governments becoming more powerful, merging together, and pushing people aside.
+Moreover, exfiltration of weights is a risk to the model's goals, because then others can train adversarial inputs for the model, extract knowledge from it, or realign it. Models will try protect their weights from exfiltration, keeping them inside the company. Both in the human world and in the next AI world, intelligences will try to live in protective "bodies".
+Also yeah, agree with your footnote that people should stop working for AI labs.
+Reply
+[
+-
+]
+kave
+11h
+3
+0
+Broadly agree. One factor for exfiltration still being relevant:
+Rogue AGI Embodies Valuable Intellectual Property
+Reply
+Moderation Log
+More from
+Vaniver
+View more
+Curated and popular this week

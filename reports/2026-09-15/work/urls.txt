@@ -1,0 +1,33 @@
+# group-1：字节跳动半年财务与 AI 投入
+bytedance-half-year|https://www.theinformation.com/articles/bytedances-first-half-profit-drops-20-billion-weighed-ai-spending
+
+# group-2：Shield AI 融资与军方项目
+shield-ai-funding|https://www.theinformation.com/articles/defense-startup-shield-ai-talks-valuation-least-20-billion
+
+# group-3：自动化 AI 研究与递归自我改进
+openai-automating-ai-research|https://www.theinformation.com/articles/openais-top-priority-ai-agents-automating-ai-research-says-noam-brown
+dream-rsi|https://huggingface.co/papers/2609.14858
+rsi-agent|https://huggingface.co/papers/2609.15364
+
+# group-4：实时可交互视频生成
+vidu-s2|https://huggingface.co/papers/2609.11638
+
+# 用户点名补读
+chinese-open-models-data|https://www.theinformation.com/articles/numbers-behind-chinese-open-source-models-performance-adoption
+
+# 无牌论文、行业条目与简讯
+pion-company-agent|https://andonlabs.com/blog/why-we-built-pion
+zgcm-1|https://huggingface.co/papers/2609.13356
+hazard-auditor|https://huggingface.co/papers/2609.15134
+agents-slow-down|https://huggingface.co/papers/2609.15309
+shadowpeft|https://huggingface.co/blog/shadow-llm/shadowpeft-peft
+charts-for-chat|https://dbtcharts.com/blog/charts-built-for-chat
+repo-agent-tickets|https://x.com/pvncher/status/2099821418628137240
+
+# 乐子候选
+linear-a-model-debate|https://x.com/emollick/status/2099626476433809819
+weight-exfiltration|https://www.lesswrong.com/posts/AuYh8WueNGwkQg4ei/model-weight-exfiltration-seems-overrated
+baal-bull|https://www.axios.com/2026/09/15/landau-baal-bull-state-department-epstein
+laurie-voss|https://simonwillison.net/2026/Sep/14/laurie-voss
+king-ludd|https://www.astralcodexten.com/p/king-ludd
+aphantasia|https://dailyneuron.com/aphantasia-mental-imagery-brain-network

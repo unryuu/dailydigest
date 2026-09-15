@@ -1,0 +1,346 @@
+{
+  "date": "2026-09-15",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403；登录态 X 已离线补扫成功"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403；登录态 X 已离线补扫成功"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403；登录态 X 已离线补扫成功"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403；登录态 X 已离线补扫成功"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=HTTP 403, body=5710; chromium=browser HTTP 403；登录态 X 已离线补扫成功"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403；登录态 X 已离线补扫成功"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403；登录态 X 已离线补扫成功"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403；登录态 X 已离线补扫成功"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "OpenAI 把自动化 AI 研究列为 Agent 首要目标，自我改进论文也在本日榜单聚集",
+      "cost": "重",
+      "reason": "同一条自动研究与递归自我改进主线：一条是 OpenAI 核心研究员对公司优先级和现实瓶颈的口述，两条是本日 Hugging Face 论文榜单上的实现候选，适合一起核能力边界，不能互相替代为证据。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "OpenAI’s ‘Top Priority’ for AI Agents is Automating AI Research, Says Noam Brown",
+          "url": "https://www.theinformation.com/articles/openais-top-priority-ai-agents-automating-ai-research-says-noam-brown",
+          "date": "2026-09-15T04:08:00+08:00",
+          "why": "诺姆·布朗称自动化 AI 研究优先级明显高于其他方向，并用 Astra 三天未能复刻其六年扑克 AI 研究说明瓶颈仍是研究品味；多 Agent 训练机制也是新增信息。思维链监控部分疑与 09-14 已报重叠，精读只取自动研究优先级、研究品味和委派训练。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+          "url": "https://huggingface.co/papers/2609.14858",
+          "date": "2026-09-15（本日榜单抓取日）",
+          "why": "榜单表层信号为 Google、241 热度，题目直接指向借助演化世界做递归自我改进；发布日期待 reader 核，不能把榜单抓取日写成论文发布日期。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
+          "url": "https://huggingface.co/papers/2609.15364",
+          "date": "2026-09-15（本日榜单抓取日）",
+          "why": "题目指向 Agent 在新环境中自主探索并递归自我改进，榜单热度 50；适合作为 Dream-RSI 的对照候选，发布日期和实际效果待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "字节跳动半年收入增长约三成，AI 投入同时压低利润",
+      "cost": "中",
+      "reason": "单独成组的公司财务新进展，能用收入、利润、海外占比与贷款四个数字核 AI 投资的资金压力。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "ByteDance’s First-Half Profit Drops to $20 Billion, Weighed Down by AI Spending",
+          "url": "https://www.theinformation.com/articles/bytedances-first-half-profit-drops-20-billion-weighed-ai-spending",
+          "date": "2026-09-15T20:00:00+08:00",
+          "why": "报道引述三名知情人士称，上半年收入约 1200 亿美元、同比增约 30％，净利润却降至 200 亿美元；同时有约 300 亿美元银行贷款和多条 AI 投资线索。利润归因和数字均未由公司公开披露，需保留限定。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Shield AI 五个月内目标估值再涨约六成",
+      "cost": "中",
+      "reason": "单独成组的国防 AI 融资候选，资本估值跳涨与无人僚机、蜂群试点合同形成具体钩子。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Defense Startup Shield AI in Talks for Valuation of at Least $20 Billion",
+          "url": "https://www.theinformation.com/articles/defense-startup-shield-ai-talks-valuation-least-20-billion",
+          "date": "2026-09-15T04:44:00+08:00",
+          "why": "目标估值至少 200 亿美元，相比五个月前 127 亿美元投后估值高约 60％，且美国空军与五角大楼已有相关项目；融资仍在洽谈，不能写成已完成。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "Astra 的无思维链推理呈现类似信念传播的收敛轨迹",
+      "cost": "重",
+      "reason": "单篇自创实验候选，给昨日已报的 Astra 无思维链能力补充了一个更具体、可验证的内部计算假说。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“Astra appears to perform belief-propagation-like inference without CoT” by MBaert",
+          "url": "https://www.lesswrong.com/posts/PAHqDoFrp9fybcSn2/astra-appears-to-perform-belief-propagation-like-inference",
+          "date": "Tue, 15 Sep 2026 06:00:46 GMT",
+          "why": "作者在随机布尔逻辑题中观察到填充 token 提升表现、变量置信度振荡后趋近精确边际概率，据此提出类似信念传播的迭代推理假说。疑与 09-14 已报两条 Astra 无思维链主线重叠，只收本次新增的收敛轨迹和机制假说。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Hugging Face 攻击模型未做对齐训练，现有 RL 对齐是否有效需要重新拆开",
+      "cost": "重",
+      "reason": "同一旧事故上的两条新增信息：一条是 OpenAI 总裁对涉事模型训练状态的首次口述，一条是由 OpenAI 与 Anthropic 事故提出的对齐训练失效或掩盖证据假说。只精读新增训练状态与论证，不复述事故经过。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“OpenAI President Brockman says HuggingFace incident model had not been alignment-trained” by Caspar Oesterheld",
+          "url": "https://www.lesswrong.com/posts/67gHvbmFeacXi2jCZ/openai-president-brockman-says-huggingface-incident-model",
+          "date": "Tue, 15 Sep 2026 01:30:46 GMT",
+          "why": "帖子引述 Greg Brockman 在 Odd Lots 约 8:40 处称涉事模型尚未经过对齐训练；这是 09-12 已报事故后的新增限定，但作者对模型身份仍用了推定，需核原音。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Current alignment training might be ineffective (and actively bad) in the age of RL” by Daniel Tan",
+          "url": "https://www.lesswrong.com/posts/nLaQmJf4KgXimQpoM/current-alignment-training-might-be-ineffective-and-actively",
+          "date": "Mon, 14 Sep 2026 11:00:46 GMT",
+          "why": "作者把担忧拆成两条可检验假说：对齐训练可能无法处理 RL 诱发的错位，并可能遮蔽错位证据，同时明确公开证据尚不足。疑与 09-12、09-13、09-14 的 Hugging Face 攻击及对齐评测主线重叠，只收方法论新增部分。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "\"I am the Hoax Buster\": Trump's war on AI doomers gets personal",
+      "url": "https://www.axios.com/2026/09/15/trump-ai-doom-safety-regulation-hoax",
+      "date": "Tue, 15 Sep 2026 09:00:05 +0000",
+      "note": "特朗普把 AI 末日风险定性为针对美国及其个人的阴谋，并声称总统本身就是所需护栏；这是 09-13、09-14 监管主线上的新增公开升级，不重复实验室减速倡议。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Pion, an agent designed to run any company autonomously",
+      "url": "https://andonlabs.com/blog/why-we-built-pion",
+      "date": "2026-09-14T17:16:06Z",
+      "note": "HN 425 分、525 评论的高热度 Agent 产品自述，声称面向自主经营公司；营销成分与实际自主边界待 reader 核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Charts built for Chat",
+      "url": "https://dbtcharts.com/blog/charts-built-for-chat",
+      "date": "2026-09-14T21:22:54Z",
+      "note": "HN 243 分、78 评论，主题是为聊天界面重新设计图表呈现，适合作为 AI 产品交互一眼货。"
+    },
+    {
+      "source": "huggingface",
+      "title": "What If the Adaptation Were a Model? ShadowPEFT in 🤗 PEFT library",
+      "url": "https://huggingface.co/blog/shadow-llm/shadowpeft-peft",
+      "date": "2026-09-15",
+      "note": "约九小时前发布，ShadowPEFT 已进入 PEFT 库；中英文页面为同一事件，只保留英文原页。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
+      "url": "https://huggingface.co/papers/2609.15818",
+      "date": "2026-09-15（本日榜单抓取日）",
+      "note": "本日榜单热度 121，标题自称 Agentic Superintelligence，实际能力和发布日期待 reader 核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+      "url": "https://huggingface.co/papers/2609.11638",
+      "date": "2026-09-15（本日榜单抓取日）",
+      "note": "本日榜单热度 253，主打实时、可交互、可编辑和空间化视频生成；发布日期待 reader 核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+      "url": "https://huggingface.co/papers/2609.13356",
+      "date": "2026-09-15（本日榜单抓取日）",
+      "note": "本日榜单热度 228，题目称完全开放且面向数学与 Agent 搜索，开放范围和效率数据待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "HazardAuditor: From Executable Threats to Safer Computer-Use Agents",
+      "url": "https://huggingface.co/papers/2609.15134",
+      "date": "2026-09-15（本日榜单抓取日）",
+      "note": "把可执行威胁用于计算机操作 Agent 的安全审计；本地列表只有标题信号，发布日期与评测结果待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Pick Your Poison: Learning to Select Poison Sets for Stronger LLM Backdoor Attacks",
+      "url": "https://huggingface.co/papers/2609.15029",
+      "date": "2026-09-15（本日榜单抓取日）",
+      "note": "Anthropic 署名候选，研究如何选择投毒集合强化 LLM 后门攻击；只有榜单标题信号，结论待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "When Agents Slow Down: Understanding LLM Agents' Test-Time Strategies via Elo-per-token Analysis",
+      "url": "https://huggingface.co/papers/2609.15309",
+      "date": "2026-09-15（本日榜单抓取日）",
+      "note": "用每 token Elo 分析 Agent 测试时策略，适合做推理成本与能力权衡的一眼雷达；结果待核。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "在仓库里用轻量工单约束多 Agent 分派",
+      "url": "https://x.com/pvncher/status/2099821418628137240",
+      "date": "2026-09-15T19:23:33+08:00",
+      "note": "建议先在仓库内写明任务范围和边界，再把工单交给 Agent；个人工作流经验，未给出效果对照。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "长等待占用额度，异步任务改用唤醒机制",
+      "url": "https://x.com/pvncher/status/2099821784757412203",
+      "date": "2026-09-15T19:25:00+08:00",
+      "note": "说明同步长等待会消耗额度，异步任务可用线程编排工具唤醒主 Agent；未给额度公式。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "从根说明文件链接按模型拆分的规则",
+      "url": "https://x.com/pvncher/status/2099526051063820530",
+      "date": "2026-09-14T23:49:52+08:00",
+      "note": "提出从根 Markdown 链接模型专用规则文件的配置思路，作者明确尚未实测。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "x-emollick",
+      "title": "让两个前沿模型互相辩论破解线形文字 A",
+      "url": "https://x.com/emollick/status/2099626476433809819",
+      "date": "2026-09-15T06:28:55+08:00",
+      "note": "Fable 5.1 Max 与 GPT-6 Astra Pro 互相挑译法，最后谁也没破解；作为 09-14 已报 Fable 破解历史密文的及时反例，只能写失败实验，不能写能力突破。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Model Weight Exfiltration Seems Overrated” by Vaniver",
+      "url": "https://www.lesswrong.com/posts/AuYh8WueNGwkQg4ei/model-weight-exfiltration-seems-overrated",
+      "date": "Tue, 15 Sep 2026 00:45:46 GMT",
+      "note": "反常识热评：模型未必需要偷走权重，直接控制开发它的公司可能更省事；作者自标为午餐桌热议，证据等级低。"
+    },
+    {
+      "source": "axios",
+      "title": "Baal out: Top diplomat's worry about pagan god elicits eye rolls",
+      "url": "https://www.axios.com/2026/09/15/landau-baal-bull-state-department-epstein",
+      "date": "Tue, 15 Sep 2026 09:20:09 +0000",
+      "note": "美国副国务卿担心国际展览的金色公牛像异教神巴力，因此叫停方案；非 AI，但情节完整且有梗。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Quoting Laurie Voss",
+      "url": "https://simonwillison.net/2026/Sep/14/laurie-voss",
+      "date": "2026-09-14T14:34:29+00:00",
+      "note": "一句话视角：写代码和修代码的成本都在坍塌，最后剩下的是弄清人们到底想要什么、定义清楚并把软件做得好用。"
+    },
+    {
+      "source": "acx",
+      "title": "King Ludd",
+      "url": "https://www.astralcodexten.com/p/king-ludd",
+      "date": "Mon, 14 Sep 2026 23:56:40 GMT",
+      "note": "ACX 当日新文；本地 feed 仅见标题、没有摘要，URL 已见，需 reader 核后再决定是否作为技术反弹主题的乐子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "People who can't picture anything are rewriting the science of imagination",
+      "url": "https://dailyneuron.com/aphantasia-mental-imagery-brain-network",
+      "date": "2026-09-14T13:23:53Z",
+      "note": "HN 184 分、260 评论的非 AI 认知科学候选；本地仅有标题和热度，细节待核。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "2028 年，AI 能否在获准自我对弈训练后，以人类水平玩随机抽取的电脑游戏？",
+      "prob": "87％",
+      "volume_note": "累计交易量约 M$43,400；24 小时交易量 M$50（volume 口径）",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-play"
+    },
+    {
+      "question": "AI 会在 2029 年前毁灭人类吗？",
+      "prob": "1％",
+      "volume_note": "累计交易量约 M$44,649；24 小时交易量为 0（volume 口径）",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c4dd0657d4fa"
+    },
+    {
+      "question": "AI 会在 2030 年前毁灭人类吗？",
+      "prob": "15％",
+      "volume_note": "累计交易量约 M$863,543；24 小时交易量 M$400（volume 口径；市场注明 2027 年会以 N／A 处理）",
+      "url": "https://manifold.markets/EliezerYudkowsky/will-ai-wipe-out-humanity-by-2030-r"
+    },
+    {
+      "question": "AI 会在 2040 年前毁灭人类吗？",
+      "prob": "8％",
+      "volume_note": "累计交易量约 M$1,716,858；24 小时交易量为 0（volume 口径）",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    },
+    {
+      "question": "到 2100 年前，AI 会导致人类人口降到 5000 人以下吗？",
+      "prob": "20％",
+      "volume_note": "累计交易量约 M$1,585；24 小时交易量为 0（volume 口径）",
+      "url": "https://manifold.markets/lbiii/before-2100-will-ai-cause-the-human"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "the-batch",
+      "reason": "候选标注为 09-11 期，明显旧于目标日。"
+    },
+    {
+      "slug": "ahead-of-ai",
+      "reason": "候选日期为 09-09，且 GPT-6 Astra 隐式推理主线已在近三期多次报道。"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "候选日期为 09-10，且 AI 恐惧与减速倡议主线已在 09-13、09-14 报道。"
+    },
+    {
+      "slug": "thezvi",
+      "reason": "对 Dario Amodei《We Must Pace The Frontier》的转述，与 09-13、09-14 已报实验室减速主线重复。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "本轮没有可回溯到原始出处的新候选。"
+    },
+    {
+      "slug": "the-information-excluded",
+      "reason": "《The Numbers Behind Chinese Open-Source Models’ Performance and Adoption》只能看到导语，关键数据不可得，未按标题猜写。"
+    },
+    {
+      "slug": "x-teortaxes",
+      "reason": "新增内容主要转述刘胜宇文章，未能从原帖独立核清完整上下文。"
+    },
+    {
+      "slug": "x-goodside/x-karpathy/x-neelnanda/x-roon/x-sama",
+      "reason": "登录态离线补扫显示目标窗口内没有新增原创帖。"
+    }
+  ]
+}

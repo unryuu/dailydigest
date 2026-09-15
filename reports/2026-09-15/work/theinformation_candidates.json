@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-15",
+  "scanned_at": "2026-09-15T20:10:25+08:00",
+  "window": "从 2026-09-14T21:25:41+08:00 接续，补扫 The Information 首页 Latest，并核对北京时间窗口内的 AI 相关内容。",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选。",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "ByteDance’s First-Half Profit Drops to $20 Billion, Weighed Down by AI Spending",
+      "url": "https://www.theinformation.com/articles/bytedances-first-half-profit-drops-20-billion-weighed-ai-spending",
+      "published_at": "2026-09-15T05:00:00-07:00",
+      "published_at_beijing": "2026-09-15T20:00:00+08:00",
+      "bucket_hint": "industry_silver_or_gold",
+      "decision": "交定牌裁决",
+      "facts": [
+        "字节跳动今年上半年净利润同比出现个位数下滑，降至 200 亿美元；同期收入同比增长约 30％，达到 1200 亿美元。",
+        "海外收入占总收入超过 30％，大部分来自 TikTok；2025 年这一比例为 30％，2024 年为 25％。",
+        "公司去年全年收入约 2000 亿美元、净利润 420 亿美元；今年上半年利润下滑与扩大 AI 投资同时发生。",
+        "字节跳动近期取得约 300 亿美元银行贷款，并在自研推理芯片、模型、企业 AI 云和付费办公助手上继续投入。"
+      ],
+      "caveats": [
+        "财务数字来自三名了解业绩的人士，字节跳动尚未公开披露这组半年数据。",
+        "利润下降被归因于 AI 投入，但报道没有给出 AI 支出的单独金额。"
+      ],
+      "why": "收入仍以约 30％增长、利润却转为下降，能具体呈现头部 AI 公司投入开始压住利润；TikTok 海外收入占比和大额贷款又补足了资金来源与业务结构。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Defense Startup Shield AI in Talks for Valuation of at Least $20 Billion",
+      "url": "https://www.theinformation.com/articles/defense-startup-shield-ai-talks-valuation-least-20-billion",
+      "published_at": "2026-09-14T13:44:00-07:00",
+      "published_at_beijing": "2026-09-15T04:44:00+08:00",
+      "bucket_hint": "industry_none_or_silver",
+      "decision": "交定牌裁决",
+      "facts": [
+        "军用无人机与 AI 软件公司 Shield AI 正洽谈新一轮融资，目标估值至少 200 亿美元，比五个月前的 127 亿美元投后估值高约 60％。",
+        "美国空军六月把该公司的 Hivemind 软件纳入无人僚机项目，五角大楼五月也签下用它协调无人机蜂群的试点合同。",
+        "公司三月融资 20 亿美元，六月收购了做仿真与传感软件的 Aechelon Technology；累计融资已超过 30 亿美元。",
+        "Shield AI 还生产垂直起降侦察无人机 V-BAT 和不依赖跑道的自主战斗机 X-BAT。"
+      ],
+      "caveats": [
+        "融资仍在洽谈，交易不一定完成，领投方也尚未确认。",
+        "波兰海军购买 V-BAT 的六月合同金额为 1600 万美元，但报道未披露 Hivemind 两项美国军方合同的金额。"
+      ],
+      "why": "五个月估值跳涨约 60％，且背后已有无人僚机与蜂群合同，能说明军用自主系统正同时获得订单和资本追捧。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "TITV",
+      "title": "OpenAI’s ‘Top Priority’ for AI Agents is Automating AI Research, Says Noam Brown",
+      "url": "https://www.theinformation.com/articles/openais-top-priority-ai-agents-automating-ai-research-says-noam-brown",
+      "published_at": "2026-09-14T13:08:00-07:00",
+      "published_at_beijing": "2026-09-15T04:08:00+08:00",
+      "bucket_hint": "viewpoint_silver_or_exclusive",
+      "decision": "交定牌裁决",
+      "facts": [
+        "OpenAI 研究员诺姆·布朗称，公司的首要目标是让模型参与 AI 研究，实现递归式自我改进，而且优先级明显高于其他方向。",
+        "他称 Agent 已能把过去由研究员逐行完成的数据与代码质检做得好一百倍；他自己的工作像由五个 Codex 协作完成，但模型仍不擅长判断下一步最值得研究什么。",
+        "布朗让 Astra 在三天内重做自己花六年完成的扑克 AI 博士研究，模型因反复钻进不重要的方向而失败；他把瓶颈归为研究品味，而不是执行速度。",
+        "OpenAI 的多 Agent 训练允许 Agent 互发任意消息并学习何时委派；布朗称训练难点之一是不同 GPU 速度不一时，委派方无法确定对方能否及时完成任务。",
+        "他还称 Agent 越来越会控制自己的思维链，因此实验室既要避免惩罚模型的想法、把坏念头逼到不可见，也要开发思维链之外的监控冗余。"
+      ],
+      "caveats": [
+        "一百倍质检效率和内部生产率来自布朗的口述，没有公开评测方法。",
+        "关于多 Agent、安全监控与研究优先级的说法代表一名核心研究员的内部观察，不等于完整披露 OpenAI 的训练预算或公司级资源分配比例。",
+        "Hugging Face 攻击与思维链监控已在近几期反复报道；如收录，应只写递归自我改进优先级、研究品味瓶颈或多 Agent 训练机制的新增部分。"
+      ],
+      "why": "访谈首次把 OpenAI 的能力路线明确排序，并用三天复刻六年博士课题的失败解释为什么研究品味仍卡住自动化研究；但安全段与近期主线高度重叠，需要定牌时严格切掉旧事实。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "The Numbers Behind Chinese Open-Source Models’ Performance and Adoption",
+      "url": "https://www.theinformation.com/articles/numbers-behind-chinese-open-source-models-performance-adoption",
+      "reason": "页面仅显示导语，关键数据正文未能读到；不能根据标题或栏目介绍猜写。"
+    }
+  ]
+}

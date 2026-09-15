@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.15309",
+  "title": "Agent 想得越久，进步会逐渐慢下来",
+  "date": "2026-09-15（本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-09-15"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.15134",
+  "title": "HazardAuditor 用真实操作训练 Agent 安全守卫",
+  "date": "2026-09-15（本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-09-15"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.13356",
+  "title": "一个七十亿参数模型把训练过程全开放了",
+  "date": "2026-09-15（本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-09-15"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.11638",
+  "title": "视频模型开始接受实时修改",
+  "date": "2026-09-15（本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-09-15"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.15364",
+  "title": "RSIAgent",
+  "date": "2026-09-15（本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-09-15"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.14858",
+  "title": "Dream-RSI",
+  "date": "2026-09-15（本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-09-15"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.12945",
   "title": "StepAudio 3 用一套模型生成语音、音乐和音效",
   "date": "2026-09-14",

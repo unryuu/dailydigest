@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "bytedance-half-year",
+    "url": "https://www.theinformation.com/articles/bytedances-first-half-profit-drops-20-billion-weighed-ai-spending",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/bytedances-first-half-profit-drops-20-billion-weighed-ai-spending",
+    "bytes": 248553,
+    "title": "ByteDance’s First-Half Profit Drops to $20 Billion, Weighed Down by AI Spending — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "shield-ai-funding",
+    "url": "https://www.theinformation.com/articles/defense-startup-shield-ai-talks-valuation-least-20-billion",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/defense-startup-shield-ai-talks-valuation-least-20-billion",
+    "bytes": 413375,
+    "title": "Defense Startup Shield AI in Talks for Valuation of at Least $20 Billion — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "openai-automating-ai-research",
+    "url": "https://www.theinformation.com/articles/openais-top-priority-ai-agents-automating-ai-research-says-noam-brown",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/openais-top-priority-ai-agents-automating-ai-research-says-noam-brown",
+    "bytes": 417958,
+    "title": "OpenAI’s ‘Top Priority’ for AI Agents is Automating AI Research, Says Noam Brown — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "dream-rsi",
+    "url": "https://huggingface.co/papers/2609.14858",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.14858",
+    "bytes": 149484,
+    "title": "Paper page - Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+    "chars": 2935
+  },
+  {
+    "slug": "rsi-agent",
+    "url": "https://huggingface.co/papers/2609.15364",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.15364",
+    "bytes": 145506,
+    "title": "Paper page - RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
+    "chars": 3984
+  },
+  {
+    "slug": "vidu-s2",
+    "url": "https://huggingface.co/papers/2609.11638",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.11638",
+    "bytes": 154700,
+    "title": "Paper page - Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+    "chars": 3041
+  },
+  {
+    "slug": "chinese-open-models-data",
+    "url": "https://www.theinformation.com/articles/numbers-behind-chinese-open-source-models-performance-adoption",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/numbers-behind-chinese-open-source-models-performance-adoption",
+    "bytes": 415054,
+    "title": "The Numbers Behind Chinese Open-Source Models’ Performance and Adoption — The Information",
+    "chars": 82
+  },
+  {
+    "slug": "pion-company-agent",
+    "url": "https://andonlabs.com/blog/why-we-built-pion",
+    "status": 200,
+    "final_url": "https://andonlabs.com/blog/why-we-built-pion",
+    "bytes": 39807,
+    "title": "Why we built Pion | Andon Labs",
+    "chars": 9391
+  },
+  {
+    "slug": "zgcm-1",
+    "url": "https://huggingface.co/papers/2609.13356",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.13356",
+    "bytes": 190108,
+    "title": "Paper page - ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+    "chars": 3698
+  },
+  {
+    "slug": "hazard-auditor",
+    "url": "https://huggingface.co/papers/2609.15134",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.15134",
+    "bytes": 140051,
+    "title": "Paper page - HazardAuditor: From Executable Threats to Safer Computer-Use Agents",
+    "chars": 2798
+  },
+  {
+    "slug": "agents-slow-down",
+    "url": "https://huggingface.co/papers/2609.15309",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.15309",
+    "bytes": 131593,
+    "title": "Paper page - When Agents Slow Down: Understanding LLM Agents' Test-Time Strategies via Elo-per-token Analysis",
+    "chars": 2992
+  },
+  {
+    "slug": "shadowpeft",
+    "url": "https://huggingface.co/blog/shadow-llm/shadowpeft-peft",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/shadow-llm/shadowpeft-peft",
+    "bytes": 222293,
+    "title": "What If the Adaptation Were a Model? ShadowPEFT in 🤗 PEFT library",
+    "chars": 17528
+  },
+  {
+    "slug": "charts-for-chat",
+    "url": "https://dbtcharts.com/blog/charts-built-for-chat",
+    "status": 200,
+    "final_url": "https://dbtcharts.com/blog/charts-built-for-chat/",
+    "bytes": 82425,
+    "title": "Charts built for Chat Â· dbt Charts",
+    "chars": 9147
+  },
+  {
+    "slug": "repo-agent-tickets",
+    "url": "https://x.com/pvncher/status/2099821418628137240",
+    "status": 200,
+    "final_url": "https://x.com/pvncher/status/2099821418628137240",
+    "bytes": 155027,
+    "title": "eric provencher on X: \"@marcar I’ve had some success with setting up a sort of project tracker cli in the repo. Astra makes a ticket with the scope and task in it, and clarifies the bounds of the task, and assigns it to the agent.\n\nYou don’t have to overthink it, but it helps to have things written… / X",
+    "chars": 334
+  },
+  {
+    "slug": "linear-a-model-debate",
+    "url": "https://x.com/emollick/status/2099626476433809819",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2099626476433809819",
+    "bytes": 217812,
+    "title": "Ethan Mollick on X: \"Having Fable 5.1 Max and GPT-6 Astra Pro argue with each other over proposed translations of the famously untranslated Minoan language Linear A. \n\n(Neither of them appear to have cracked it, for what its worth).\n\nAll the work so far at this Github:  https://t.co/CWEohvY3fc\" / X",
+    "chars": 338
+  },
+  {
+    "slug": "weight-exfiltration",
+    "url": "https://www.lesswrong.com/posts/AuYh8WueNGwkQg4ei/model-weight-exfiltration-seems-overrated",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/AuYh8WueNGwkQg4ei/model-weight-exfiltration-seems-overrated",
+    "bytes": 505662,
+    "title": "Model Weight Exfiltration Seems Overrated — LessWrong",
+    "chars": 9750
+  },
+  {
+    "slug": "baal-bull",
+    "url": "https://www.axios.com/2026/09/15/landau-baal-bull-state-department-epstein",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/15/landau-baal-bull-state-department-epstein",
+    "bytes": 273887,
+    "title": "Baal out: Top diplomat's worry about pagan god elicits eye rolls",
+    "chars": 5644
+  },
+  {
+    "slug": "laurie-voss",
+    "url": "https://simonwillison.net/2026/Sep/14/laurie-voss",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
+    "bytes": 13997,
+    "title": "A quote from Laurie Voss",
+    "chars": 1254
+  },
+  {
+    "slug": "king-ludd",
+    "url": "https://www.astralcodexten.com/p/king-ludd",
+    "status": 200,
+    "final_url": "https://www.astralcodexten.com/p/king-ludd",
+    "bytes": 202428,
+    "title": "King Ludd - by Scott Alexander - Astral Codex Ten",
+    "chars": 17134
+  },
+  {
+    "slug": "aphantasia",
+    "url": "https://dailyneuron.com/aphantasia-mental-imagery-brain-network",
+    "status": 200,
+    "final_url": "https://dailyneuron.com/aphantasia-mental-imagery-brain-network/",
+    "bytes": 85466,
+    "title": "People Who Can't Picture Anything Are Rewriting the Science of Imagination - Daily Neuron",
+    "chars": 9300
+  }
+]

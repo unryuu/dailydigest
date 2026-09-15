@@ -1,0 +1,522 @@
+URL: https://huggingface.co/blog/shadow-llm/shadowpeft-peft
+FINAL: https://huggingface.co/blog/shadow-llm/shadowpeft-peft
+TITLE: What If the Adaptation Were a Model? ShadowPEFT in 🤗 PEFT library
+FETCHED: 2026-09-15 20:48:05
+============================================================
+Back to Articles
+What If the Adaptation Were a Model? ShadowPEFT in 🤗 PEFT library
+Community Article
+Published
+ September 15, 2026
+Upvote
+12
+Zx Li
+csroyli
+shadow-llm
+SeanLee
+SeanLee97
+shadow-llm
+HSURA
+HSURA
+shadow-llm
+Jing Li
+girlgunner
+shadow-llm
+Authors: Zongxi Li, Xianming Li, Tsz-fung Andrew Lee, Jing Li, Haoran Xie, Qing Li
+This article is also available in Chinese
+简体中文
+ShadowPEFT is now a first-class method in the 🤗
+PEFT
+library: ShadowPEFT has a fundamentally different adapter geometry with LoRA, but it shares the same
+get_peft_model
+entry point as LoRA, the same adapter save/load path, and is easy to work with. This post starts with a brief PEFT recap, explains what ShadowPEFT changes conceptually, walks through the library integration, and presents head-to-head comparisons with LoRA and DoRA.
+Paper:
+ShadowPEFT: Shadow Network for Parameter-Efficient Fine-Tuning
+.
+The Familiar Parameter-Efficient Finetuning Recipe
+Parameter-efficient fine-tuning (PEFT) adapts a large pretrained model to various downstream tasks without updating all of its weights [1].
+Full fine-tuning updates every weight. This approach works, but the resulting checkpoint is as large as the model itself, the optimizer parameter scale becomes enormous, and storing many task-specific copies quickly becomes impractical. PEFT addresses these issues by freezing the pretrained model and training only a small set of additional parameters. During inference, these extra parameters steer the frozen backbone; after training, only the additional parameters are stored rather than a full copy of the base model.
+The manner in which these extra parameters are attached varies across methods. Prompt-based methods [2] prepend learned tokens to the input. Adapter-based methods insert small modules between layers. LoRA-style methods [3,4] leave the architecture unchanged and add a low-rank update alongside selected weights: for a frozen linear layer
+W
+W
+W
+, train matrices
+A
+A
+A
+and
+B
+B
+B
+and compute
+y
+=
+W
+x
++
+α
+⋅
+(
+x
+A
+)
+B
+y = Wx + \alpha \cdot (xA)B
+y
+=
+W
+x
++
+α
+⋅
+(
+x
+A
+)
+B
+, where
+α
+\alpha
+α
+is a scaling factor. Despite these differences, the core idea remains the same—most of the model stays frozen, and a small trainable component handles the task adaptation.
+PEFT has changed how we specialize large language models. Instead of updating billions of parameters, methods such as LoRA have made fine-tuning dramatically cheaper and have become a standard way to adapt LLMs. These methods are commonly used through the 🤗 PEFT library [5], released by Hugging Face. It has become a widely adopted toolkit for parameter-efficient fine-tuning on top of Transformers and Diffusers. ShadowPEFT is now one of the methods included in the library.
+Introduction of ShadowPEFT
+However, LoRA-style approaches encode a task as a collection of independent low-rank updates scattered across selected weights. The backbone carries representations from one layer to the next, so that these modifications interact through computation. However, the adaptation mechanism itself never maintains an explicit task-specific state that is updated and reused across depth, yielding a less globally coordinated finetuning process. This leads to a natural question:
+Could adaptation itself have a state?
+ShadowPEFT
+starts from that question. Instead of representing adaptation as a set of weight perturbations, it introduces a compact and stateful
+shadow model
+with a persistent hidden state:
+s
+(
+0
+)
+→
+s
+(
+1
+)
+→
+s
+(
+2
+)
+→
+⋯
+→
+s
+(
+L
+)
+s^{(0)} \rightarrow s^{(1)} \rightarrow s^{(2)} \rightarrow \cdots \rightarrow s^{(L)}
+s
+(
+0
+)
+→
+s
+(
+1
+)
+→
+s
+(
+2
+)
+→
+⋯
+→
+s
+(
+L
+)
+The state
+s
+(
+ℓ
+)
+s^{(\ell)}
+s
+(
+ℓ
+)
+carries task-specific information at depth
+ℓ
+\ell
+ℓ
+. At every Transformer layer, three operations occur:
+Shadow Injection (shadow → base):
+The discrepancy
+h
+−
+s
+h - s
+h
+−
+s
+is projected through a low-rank bottleneck and added to the block input, where
+h
+h
+h
+is the hidden state produced by the frozen base model
+at the current layer, and
+s
+s
+s
+is the shadow state
+—a persistent task-specific vector maintained by the trainable shadow network (as shown in Figure 2a).
+Base Encoding:
+The frozen Transformer layer processes the refined representation (as shown in Figure 2b).
+Shadow Update (base → shadow):
+Two small MLPs produce a candidate and a gate; the shadow state advances via a gated residual mixture, carrying the accumulated task signal forward to the next layer (as shown in Figure 2c).
+This creates a
+coupled, bidirectional
+information flow—not just a side network, but a process where the shadow refines the backbone and the backbone simultaneously updates the shadow. The core operation is
+carry
+(h, s)
+through the decoder
+: at each layer, the frozen block processes
+h
+while the shadow network injects information from
+s
+into
+h
+, then updates
+s
+using the new
+h
+. Later layers thus see both the accumulated shadow state and the latest backbone representation.
+Why this matters
+Treating adaptation as a stateful computation unlocks capabilities that are difficult to express as weight deltas:
+1. Cross-layer coordination.
+With distributed updates, each adapted layer owns its own parameters, indepedently initializing and separately updating. With ShadowPEFT, the shadow state provides continuity across the entire depth. A later layer can work with information accumulated by the shadow earlier in the computation—it learns
+"given everything the task-specific pathway has accumulated so far, what should layer 12 do now?"
+The gated residual update explicitly preserves part of the previous state while incorporating information from the current backbone representation, giving adaptation a mechanism for depth-wise coordination.
+2. Adaptation capacity as a model-scaling.
+LoRA's capacity is controlled by rank and the number of adapted matrices. ShadowPEFT introduces another dimension: how large should the task-specific model be, and how large can it be? In our experiments, increasing ShadowPEFT's parameter budget improved performance over a wide range, while LoRA remained flat and DoRA degraded—showing qualitatively different scaling behavior. Instead of asking only
+how many parameters should be patched
+, we can ask
+how much capacity the task-specific computation should have
+.
+3. The task-specific component becomes a model in its own right.
+A LoRA adapter is meaningful only because it modifies a particular backbone; remove the backbone, and the LoRA parameters do not constitute a complete predictor. ShadowPEFT is different: the shadow network has its own prediction head and receives direct task supervision during training. The resulting checkpoint supports both attached inference and
+detached shadow-only inference
+. This enables edge-cloud deployments—the compact shadow handles simple requests locally and sends harder ones to the attached cloud model.
+3. Adapter as a pretrained model.
+Since the Shadow module is a self-contained functional model, it can be initiated from another pretrained LLM. For example, a smaller model such as Qwen-0.5B can serve as the Shadow model for a larger backbone such as Qwen-8B, enabling the larger model to be adapted by training its smaller counterpart. In this configuration, the smaller model learns to refine the representations of the larger one, allowing adaptation capacity to be reused across model scales. This perspective expands PEFT beyond lightweight parameter injection toward reusable, cross-scale adaptation dynamics.
+Existing PEFT (LoRA-style)
+ShadowPEFT
+Trainable params
+Distributed: separate low-rank update on each targeted linear
+Centralized: one shadow network plus small per-block inject/update nets
+Where the update happens
+Selected
+nn.Linear
+s (or prompts / inserted adapters)
+Each decoder layer
+Information flow
+One-way local delta:
+y
+=
+W
+x
++
+(
+x
+A
+)
+B
+y = Wx + (xA)B
+y
+=
+W
+x
++
+(
+x
+A
+)
+B
+Bidirectional: inject shadow→base, then update base→shadow
+After training
+Merge into
+W
+W
+W
+, or keep the adapter on the same backbone
+Keep it attached, or detach the shadow and run it alone
+On generation and understanding benchmarks, compact ShadowPEFT is competitive with LoRA and DoRA at similar trainable-parameter budgets. The rest of this post explains how this geometry is wired into 🤗 PEFT—because an adapter that
+is
+a network does not fit the usual merge-and-unload path.
+How the method is wired into the PEFT library
+ShadowPEFT plugs into PEFT through the same three‑piece pattern as LoRA: a config
+ShadowConfig
+, a
+BaseTuner
+model, and a
+BaseTunerLayer
+. That makes
+get_peft_model(model, ShadowConfig(...))
+work almost the same as LoRA. Checkpoints are saved and loaded via the usual
+save_pretrained
+/
+from_pretrained
+APIs, with only minimal key remapping under the hood.
+Usage example
+ShadowPEFT has been merged into the
+main
+branch of PEFT and will be included in the next PEFT release. To try it now, install the development version directly from GitHub:
+pip install --upgrade git+https://github.com/huggingface/peft.git
+For full details, see the official documentation:
+https://huggingface.co/docs/peft/main/en/package_reference/shadow#shadowpeft
+Below shows an example:
+from
+transformers
+import
+AutoModelForCausalLM
+from
+peft
+import
+ShadowConfig, get_peft_model
+# Load the frozen base model
+model = AutoModelForCausalLM.from_pretrained(
+"Qwen/Qwen3-8B"
+)
+# Configure ShadowPEFT
+config = ShadowConfig(
+ r=
+8
+,
+# rank of the injection bottleneck
+shadow_num_hidden_layers=
+1
+,
+# size of the shadow backbone
+shadow_model=
+"mirror"
+,
+# build a scaled-down copy of the base;
+# or pass a pretrained checkpoint, e.g.
+# "shadow-llm/Qwen3-0.6B-H8B" for Qwen3-8B
+task_type=
+"CAUSAL_LM"
+)
+# Wrap the base model
+model = get_peft_model(model, config)
+model.print_trainable_parameters()
+# Generate as usual
+out = model.generate(input_ids, max_new_tokens=
+32
+)
+# Evaluate the standalone shadow path (the detachable small model)
+shadow = model.base_model.unload_shadow()
+# returns a DetachedShadowModel
+shadow_out = shadow.generate(input_ids, max_new_tokens=
+32
+)
+The key difference from LoRA is conceptual:
+LoRA lives
+inside
+selected weights and merges when done; ShadowPEFT is a separate network that you detach when done
+via
+unload_shadow()
+.
+LoRA vs. ShadowPEFT at a glance
+Aspect
+LoRA
+ShadowPEFT
+Target
+Individual linears (
+q_proj
+, etc.)
+Whole decoder blocks
+Default
+target_modules
+Attention projections
+Every contiguous decoder block
+Extra modules
+None
+Shadow backbone + optional projection/head
+After training
+Merge delta into
+W
+Detach the sidecar network via
+unload_shadow()
+If you already know PEFT's tuner layout, ShadowPEFT is the same skeleton with three additions: wrap blocks instead of linears, carry
+(h, s)
+through the decoder, and treat the adapter as a model you can unload rather than a delta you can merge.
+Comparison
+To verify the effectiveness of ShadowPEFT, we compare it with the two most adopted PEFT methods, LoRA and DoRA. All experiments were run using the PEFT library with default hyper‑parameters on the same machine (NVIDIA A100 80 GB). Detailed configuration files are linked for each method.
+MetaMathQA → GSM8K
+Setup:
+Base model: Llama‑3.2‑3B [6].
+Training data: MetaMathQA [7] (math reasoning dataset).
+Evaluation: GSM8K [8] (grade‑school math word problems).
+Main Metric: test accuracy (exact match).
+Configuration files:
+LoRA
+DoRA
+ShadowPEFT
+Method
+Trainable params
+Test acc
+Train time
+Peak mem
+Checkpoint
+LoRA
+9.18M
+46.9%
+15 min
+22.3 GB
+36.7 MB
+DoRA
+9.29M
+46.2%
+19 min
+24.5 GB
+37.2 MB
+ShadowPEFT
+8.66M
+48.1%
+17 min
+28.2 GB
+26.0 MB
+ShadowPEFT achieves the highest test accuracy (48.1%) with slightly fewer trainable parameters than LoRA or DoRA. Its peak memory is higher (28.2 GB vs. 22.3 GB) because the shadow backbone runs a forward pass on every token and maintains a dual KV cache—an expected cost for its persistent task-state mechanism, and one that can be tuned down by shrinking the shadow backbone. Meanwhile, the checkpoint is only 26 MB, significantly smaller than LoRA's 36.7 MB, thanks to compact per-block modules and shared backbone weights. Overall, ShadowPEFT delivers a clear accuracy gain on GSM8K with a smaller storage footprint, making it a strong choice when test performance is the priority.
+Image generation (DreamBooth)
+Setup:
+Base model: FLUX.2‑klein‑base‑4B [9] (diffusion transformer).
+Dataset: standard PEFT cat‑image DreamBooth set [10] (∼20 images of a single cat).
+Metrics:
+DINOv2 cosine similarity
+to the subject (higher → better subject fidelity).
+Drift
+on unrelated prompts (lower → less catastrophic forgetting of prior knowledge).
+Configuration files:
+LoRA
+DoRA
+ShadowPEFT
+Method
+Trainable params
+DINO ↑
+Drift ↓
+Train time
+Peak mem
+Checkpoint
+LoRA
+38.3M
+0.671
+0.274
+10 min
+10.8 GB
+153 MB
+DoRA
+39.2M
+0.682
+0.250
+17 min
+12.7 GB
+157 MB
+ShadowPEFT
+31.2M
+0.717
+0.244
+8 min
+10.3 GB
+74.5 MB
+ShadowPEFT outperforms both LoRA and DoRA on every metric. It achieves higher subject fidelity (DINO ↑ 0.717) with fewer trainable parameters (31.2M vs. 38.3M)—the bidirectional information flow (inject + update) allows the shadow network to refine the base representation more effectively than isolated low-rank deltas. The lower drift (0.244) indicates better preservation of the base model's general knowledge; the shadow network's persistent state helps it learn the new concept without overwriting the frozen backbone's priors. Finally, the compact shadow backbone reduces both computation and storage overhead, yielding the fastest training (8 min) and the smallest checkpoint (74.5 MB).
+To compare image generation quality intuitively, we draw sample images from the same five prompts:
+We observe that ShadowPEFT generates more natural images with finer detail. LoRA and DoRA often produce a white edge around the main object, giving a "stitched-together" appearance and lowering overall quality. In contrast, ShadowPEFT better understands the prompt semantics—for example, the orange cat in the fifth row has a natural fur color and texture, while LoRA/DoRA versions show artifacts. The background integration is also smoother with ShadowPEFT.
+These results suggest that ShadowPEFT's architectural advantage—cross-layer coordination via the shadow state—translates directly to improved generation quality, especially for fine-grained attributes like color and edges.
+Hyperparameter selection for ShadowPEFT
+These are recommended starting points, not exhaustive sweeps.
+Injection rank (
+r
+).
+Controls the bottleneck dimension of
+W_down
+/
+W_up
+(
+d → r → d
+). Start with 8 or 16. Note that
+r
+does not set the overall parameter budget—the shadow backbone dominates.
+shadow_dropout
+.
+Applied to the discrepancy
+h − s
+before the bottleneck. Default 0.2; try 0.2–0.5. Higher values help regularize against forgetting.
+shadow_alpha
+.
+Scaling factor for the injected correction. Keep small initially: 0.1–1.0, default 0.1. Large alpha can destabilize early training. In some scenarios (e.g., strong regularization), alpha > 1.0 may be worth exploring.
+Shadow backbone size.
+Most trainable parameters reside here. Control via
+shadow_num_hidden_layers
+,
+shadow_num_attention_heads
+,
+shadow_hidden_size
+, and
+shadow_intermediate_size
+. Use
+shadow_model="mirror"
+to build a scaled-down copy of the base, or pass a pretrained checkpoint path (e.g.,
+"Qwen/Qwen3-0.6B"
+) to initialize the backbone from a separate small model—this often accelerates convergence and improves final performance.
+Acknowledgement
+We sincerely thank Dr. Benjamin Bossan (
+@BenjaminB
+) for his support in integrating ShadowPEFT into the PEFT library.
+Citation
+If you find this work useful, please consider citing us:
+@article{li2026shadowpeft,
+ title={ShadowPEFT: Shadow Network for Parameter-Efficient Fine-Tuning},
+ author={Li, Xianming and Li, Zongxi and Lee, Tsz-fung Andrew and Li, Jing and Xie, Haoran and Li, Qing},
+ journal={arXiv preprint arXiv:2604.19254},
+ year={2026}
+}
+Reference
+[1] Zeyu Han, Chao Gao, Jinyang Liu, Jeff Zhang, and Sai Qian Zhang. Parameter-efficient fine-tuning for large models: A comprehensive survey. Trans. Mach. Learn. Res., 2024, 2024.
+[2] Haokun Liu, Derek Tam, Mohammed Muqeeth, Jay Mohta, Tenghao Huang, Mohit Bansal, and Colin A Raffel. Few-shot parameter-efficient fine-tuning is better and cheaper than in-context learning. Advances in Neural Information Processing Systems, 35:1950–1965, 2022a.
+[3] Edward J Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Liang Wang, Weizhu Chen, et al. Lora: Low-rank adaptation of large language models. Iclr, 1(2):3, 2022.
+[4] Shih-Yang Liu, Chien-Yi Wang, Hongxu Yin, Pavlo Molchanov, Yu-Chiang Frank Wang, KwangTing Cheng, and Min-Hung Chen. Dora: Weight-decomposed low-rank adaptation. In Forty-first International Conference on Machine Learning, 2024.
+[5]
+https://github.com/huggingface/peft
+[6]
+https://huggingface.co/meta-llama/Llama-3.2-3B
+[7]
+https://huggingface.co/datasets/meta-math/MetaMathQA
+[8]
+https://huggingface.co/datasets/openai/gsm8k
+[9]
+https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
+[10]
+https://huggingface.co/datasets/google/dreambooth
+Models mentioned in this article
+2
+Datasets mentioned in this article
+3
+Papers mentioned in this article
+1
+More from this author
+适配器即模型 —— ShadowPEFT 现已集成到 🤗 PEFT 库
+9
+September 15, 2026
+Community
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+12
+Models mentioned in this article
+2
+Datasets mentioned in this article
+3
+Papers mentioned in this article
+1

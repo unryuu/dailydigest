@@ -1,0 +1,16 @@
+URL: https://x.com/pvncher/status/2099821418628137240
+FINAL: https://x.com/pvncher/status/2099821418628137240
+TITLE: eric provencher on X: "@marcar I’ve had some success with setting up a sort of project tracker cli in the repo. Astra makes a ticket with the scope and task in it, and clarifies the bounds of the task, and assigns it to the agent.
+
+You don’t have to overthink it, but it helps to have things written… / X
+FETCHED: 2026-09-15 20:48:12
+============================================================
+eric provencher
+@pvncher
+I’ve had some success with setting up a sort of project tracker cli in the repo. Astra makes a ticket with the scope and task in it, and clarifies the bounds of the task, and assigns it to the agent.
+
+You don’t have to overthink it, but it helps to have things written down.
+11:23 AM · Sep 15, 2026
+24
+Views
+1

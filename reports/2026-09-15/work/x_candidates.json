@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-15",
+  "scanned_at": "2026-09-15T20:17:11+08:00",
+  "window": "八个固定账号统一从 2026-09-14T21:25:41+08:00 接续",
+  "route": "机械 Nitter 抓取全部失败后，Codex 内置浏览器使用登录态 X 的 Latest 搜索逐账号补扫；pvncher 另扫 Articles。",
+  "accounts": [
+    {"handle": "emollick", "status": "success", "result": "保留用两个模型互相辩论破解线形文字 A 的实验；其余主要为回顾 GPT-3.5 和缺少具体依据的宏观判断。"},
+    {"handle": "goodside", "status": "success", "result": "时间窗内没有新增原创帖。"},
+    {"handle": "karpathy", "status": "success", "result": "时间窗内没有新增原创帖。"},
+    {"handle": "NeelNanda5", "status": "success", "result": "时间窗内没有新增原创帖。"},
+    {"handle": "pvncher", "status": "success", "result": "保留三条具体 Codex 工作流：仓库工单分派、长等待与异步唤醒、按模型拆分说明文件；Articles 最新仍为 09-05。"},
+    {"handle": "tszzl", "status": "success", "result": "时间窗内没有新增原创帖。"},
+    {"handle": "sama", "status": "success", "result": "时间窗内没有新增原创帖。"},
+    {"handle": "teortaxesTex", "status": "success", "result": "新增内容集中在转述和评价 DeepSeek 工程师刘胜宇的文章，没有保留可独立核实的候选。"}
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "让两个前沿模型互相辩论破解线形文字 A",
+      "url": "https://x.com/emollick/status/2099626476433809819",
+      "published_at": "2026-09-15T06:28:55+08:00",
+      "bucket_hint": "fun_or_radar",
+      "facts": [
+        "Ethan Mollick 让 Fable 5.1 Max 和 GPT-6 Astra Pro 围绕尚未破译的米诺斯线形文字 A 提出译法并相互辩论。",
+        "他把目前的材料与运行记录放进公开 GitHub 仓库，但明确说两个模型都没有破解这种文字。"
+      ],
+      "caveats": [
+        "Mollick 自己不是语言学家，并称提示方法可能很差；这是一场公开探索，不是成功解密。",
+        "09-14 已报道 Fable 破解 370 年历史密文，本条只能作为模型挑战另一种未解文字的后续乐子，不能写成能力突破。"
+      ],
+      "why": "两个模型互相挑译法、最后谁也没破译，画面具体，也给昨天的历史密文成功提供了一个及时反例。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "在仓库里用轻量工单约束多 Agent 分派",
+      "url": "https://x.com/pvncher/status/2099821418628137240",
+      "published_at": "2026-09-15T19:23:33+08:00",
+      "bucket_hint": "radar",
+      "facts": [
+        "Eric Provencher 说，他会在代码仓库里放一个轻量项目追踪命令行工具。",
+        "Astra 先创建写明任务范围和边界的工单，再把工单分给 Agent；重点不是复杂系统，而是先把工作写下来。"
+      ],
+      "caveats": [
+        "这是个人工作流经验，没有公开工具名、仓库或效果对照。"
+      ],
+      "why": "把多 Agent 管理落成仓库内的任务记录和范围边界，属于可复用的 Codex 工作习惯。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "长等待占用额度，异步任务改用唤醒机制",
+      "url": "https://x.com/pvncher/status/2099821784757412203",
+      "published_at": "2026-09-15T19:25:00+08:00",
+      "bucket_hint": "radar",
+      "facts": [
+        "Eric Provencher 说，默认等待时间不到六十秒，也可以要求 Agent 等更久，但长等待会消耗额度。",
+        "如果任务要异步运行，可以改用线程编排工具的唤醒机制，不必让主 Agent 一直等着。"
+      ],
+      "caveats": [
+        "帖子没有给出额度消耗公式或完整配置示例。"
+      ],
+      "why": "它说明了同步等待与异步唤醒的成本边界，对长任务编排有直接操作价值。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "从根说明文件链接按模型拆分的规则",
+      "url": "https://x.com/pvncher/status/2099526051063820530",
+      "published_at": "2026-09-14T23:49:52+08:00",
+      "bucket_hint": "radar",
+      "facts": [
+        "Eric Provencher 说，可以在根目录的 Markdown 说明文件中链接不同模型专用的 Markdown 文件，再要求模型按需读取。"
+      ],
+      "caveats": [
+        "他明确说自己没有实际试过这种配置，因此只能作为可行路径，不能写成已验证最佳实践。"
+      ],
+      "why": "提供了不把所有模型差异塞进同一份根说明书的简洁配置思路。"
+    }
+  ],
+  "excluded": [
+    {"title": "这一次 AI 与以往技术不同", "url": "https://x.com/emollick/status/2099713891567579575", "reason": "只有宏观判断，没有给出哪些差异或可核事实。"},
+    {"title": "不到四年，语言模型进入美国政治与经济中心", "url": "https://x.com/emollick/status/2099701841743237317", "reason": "回顾 2022 年 GPT-3.5 帖子，今日没有独立新事实。"},
+    {"title": "刘胜宇回应被埋没的昨天", "url": "https://x.com/teortaxesTex/status/2099833878395474400", "reason": "主要转述知乎文章与个人评价，未能从原帖独立核清完整上下文。"}
+  ],
+  "failure_note": "八个机械 X／Nitter 源均返回 HTTP 403；登录态 X 搜索正常，已按 2026-09-14T21:25:41+08:00 接续点补齐八个账号。"
+}

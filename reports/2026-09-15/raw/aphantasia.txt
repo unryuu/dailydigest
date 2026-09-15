@@ -1,0 +1,83 @@
+URL: https://dailyneuron.com/aphantasia-mental-imagery-brain-network
+FINAL: https://dailyneuron.com/aphantasia-mental-imagery-brain-network/
+TITLE: People Who Can't Picture Anything Are Rewriting the Science of Imagination - Daily Neuron
+FETCHED: 2026-09-15 20:48:29
+============================================================
+Some people have lost a large stretch of the brain tissue that first receives what the eyes send in, and yet, when they close their eyes and try, they can still call up a picture of a face or a room. Such patients sit awkwardly beside an influential idea about how imagination works, one that treats the mind’s eye as
+ordinary seeing run backward
+through the same hardware.
+A new review in the journal
+Consciousness and Cognition
+, written by Derek Arnold, Loren Bouyer, Blake Saurels and Samuel Schwarzkopf, argues that this backward-seeing picture has run out of road, and that the people best placed to show why are those who can’t
+form mental pictures at all
+. Their condition is called aphantasia, from the Greek phantasia, a piece of information drawn from the senses, and it describes a lifelong inability to imagine sights, and often sounds, smells, tastes or touch as well.
+The plain answer to why some people can’t visualize, according to the review, is that a set of brain regions spread from the front of the head to the sides fails to work as a team. Two of the authors are themselves unable to picture anything, and their accounts, together with the patients whose visual cortex was destroyed, support a view in which a mental image is something many parts of the brain make together and no single region owns.
+Seeing in Reverse
+When you look at a cup, the signal from your eyes lands first in a patch at the very back of the brain called the primary visual cortex. In 2019,
+Joel Pearson
+described a model in which imagining a cup runs that pipeline backward. Planning areas at the front start the request, memory regions supply the details, and the picture is painted back onto the primary visual cortex, the same screen that real seeing uses, so that how strongly this back region lights up should decide how vivid your mental image feels.
+Brain scanners can often tell which image a person is imagining by reading activity in this back region, and researchers have taken that as proof that the region builds the image. Arnold and his colleagues push back, writing that such interpretations “ignore the adage that correlation does not establish causation.” Paying attention to an imagined shape could nudge the back of the brain enough for a scanner to read it, even if that activity plays no part in the
+felt experience of a picture
+.
+Stronger evidence came when
+Rebecca Keogh, Johanna Bergmann and Pearson
+passed a mild electrical current through the scalp to quiet the primary visual cortex, and people then reported more vivid imagery. Arnold’s team accepts that the region can turn imagery up or down, while noting that it could do so by shaping activity in other areas that do the real work, much as a dimmer switch changes a room without producing any light of its own.
+The Patients Who Kept Their Mind’s Eye
+The hardest evidence comes from the clinic, where several people have kept the power to visualize despite extensive damage to primary visual cortex. One patient studied by
+Beatrice de Gelder and colleagues
+was blind across his whole field of view because both sides of that region were destroyed, yet when asked to imagine an angry person, the front and side regions of his brain responded much as they do in sighted people. If the mind’s eye needed that back screen, such a person shouldn’t be able to picture anything.
+Pooling the brain-scanning studies tells the same story.
+Alfredo Spagna, Paolo Bartolomeo and colleagues
+combined dozens of imagery experiments and found that imagining reliably engaged the front of the brain and a strip along the underside of the left temporal lobe called the fusiform gyrus, a region already known for
+recognizing faces and written words
+, while the primary visual cortex was often quiet. A case reported by
+Sandra Thorudottir and colleagues
+pointed the same way, since an architect lost his ability to imagine after a stroke to this left temporal strip.
+Weighing all of this, Arnold and his co-authors conclude that the backward-seeing idea “has been largely discredited, at least in its original form.” They leave room for a gentler version, in which signals fed back to the rear of the brain hush stray activity and so sharpen an image assembled elsewhere, a possibility that
+Roger Koenig-Robert, Pearson and a colleague
+have recently raised. Even then, the primary visual cortex acts as a helper rather than a source.
+Life Without Pictures
+The modern story of aphantasia began when
+Adam Zeman and colleagues
+described a man who lost his ability to visualize, and readers wrote in to say they’d never had the ability at all. A follow-up by
+Zeman, Michaela Dewar and Sergio Della Sala
+gave the condition its name, and later work by
+Alexei Dawes and colleagues
+found that roughly a quarter of aphantasics report no imagined sensations of any kind, no inner sound, smell, taste or touch.
+These reports show up in the body. When
+Marcus Wicken, Keogh and Pearson
+had people read scary stories, aphantasics’ skin didn’t sweat the way other readers’ skin did, though it reacted normally to scary pictures, which suggests that words usually reach the body’s fear response by way of an image. Inside the skull,
+Jianghao Liu and colleagues
+found weaker communication between the fusiform strip and the left front of the brain in aphantasics, and
+William Dupont and colleagues
+found that stimulating the movement area produced a fainter twitch in the finger, as if signals travel less well between distant regions.
+Bouyer and Arnold describe themselves as visual aphantasics, and they insist this does not mean an empty mind. Asked what sits beside the television, they answer without hesitation, but “we experience these as an awareness of a set of spatial facts.” Arnold recalls being good at Tetris in his youth with no picture of the falling pieces, only learned knowledge of which gaps each shape fits, which is why the authors distrust questionnaires that treat Tetris skill as proof of spatial imagery.
+A Picture the Whole Brain Makes
+Several rival theories try to say what breaks.
+Juha Silvanto
+blames the insula, a region that
+monitors the body’s inner signals
+, arguing that imagining needs the inward attention you use to notice your own heartbeat.
+Liu
+proposes three stages, generating, integrating and then amplifying an image until it reaches awareness, with aphantasics failing only at the last step.
+Andrea Blomkvist
+treats the condition as a memory problem, since aphantasics recall fewer details of past events, with fact-based memory filling in as an imperfect substitute.
+Arnold’s team argues that these accounts fit together better than they compete, and offers an emergent property framework, in which a mental image arises from coordinated activity across the prefrontal cortex, the fusiform strip and a region near the crown of the head involved in planning movements. A chord needs several strings sounding at once, and a single string plucked alone gives you a note, never the chord. Because a network can fail in many places, this explains why some aphantasics lack only pictures while others lack every inner sense, and why
+Arnold, Bouyer and Merlin Monzel
+found that some aphantasics dream in pictures while others don’t.
+The framework also settles an argument about hidden images. The philosopher
+Bence Nanay
+has suggested that aphantasics form mental pictures they aren’t aware of, partly because they do fine at judging whether two rotated shapes match, but
+Lachlan Kay, Keogh and Pearson
+found that aphantasics solve those puzzles by comparing features one at a time. Since imagery means the felt experience itself, the review treats “any suggestion of subliminal imagery as a tautology,” and whatever the fragments are called, “some neurological difference(s) seem to prevent Aphantasics from having conscious imagined pictorial sensations when they recollect things.”
+Why This Matters
+There is still no objective test for aphantasia, and the review says the field should stop pretending otherwise. Priming tricks, pupil measurements and self-rating questionnaires have each fallen short, so, as with autism or anxiety, the condition will likely be recognized for years to come from a convergence of self-report, behavior and brain scans.
+The bigger claim is that the network story applies to everyone. If mental images depend on how well brain regions talk to one another, then people who can visualize should differ too, some thinking mostly in pictures, others in an inner voice, others in smell or movement, and the authors predict these differences will show up in how often people use each kind of imagined sense in daily life.
+Aphantasia is, at bottom, the absence of one kind of conscious experience, which makes it a rare chance to study how brains produce such experiences at all. The authors hold their answers loosely, admitting that “if we update this review in a couple of years’ time, we expect that some of what we think we know will prove to be wrong,” and they name the open questions, whether the condition runs in families, whether children grow into pictures or out of them, and whether anyone can be taught to see with their eyes closed.
+brain regions
+cognition
+consciousness
+perception
+Weekly Dispatch
+Subscribe to Daily Neuron
+One considered email a week. No noise, just signal.
