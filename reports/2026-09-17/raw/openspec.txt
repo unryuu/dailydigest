@@ -1,0 +1,146 @@
+URL: https://openspec.dev
+FINAL: https://openspec.dev/
+TITLE: OpenSpec | A lightweight and configurable spec framework
+FETCHED: 2026-09-17 21:35:42
+============================================================
+The spec framework for
+building the right thing
+and
+building it right
+Synopsis
+OpenSpec is a lightweight and configurable framework for creating and managing software
+ specifications.
+With OpenSpec, you capture what you want to build in a spec and keep your team and coding
+ agents aligned as the work evolves. We help you refine the requirements, validate that they
+ describe the right thing, and verify that the implementation matches.
+In essence, OpenSpec helps you
+build the right thing and build it right
+.
+In use
+68.0k
+GitHub stars. A new spec every
+two seconds
+.
+In use
+68.0k
+stars on GitHub.
+A new spec is created with OpenSpec every
+two seconds
+.
+Adoption
+OpenSpec helps create a new spec every
+two seconds
+, has earned
+68.0k
+GitHub stars
+, and is used by more than
+265,000 developers a month
+.
+Open source, in practice
+Built in the open. Used in the wild.
+68.0k
+stars on GitHub
+One new spec every
+two seconds
+Proof
+01
+68.0k
+GitHub stars
+02
+A new spec every
+two seconds
+Public record
+GitHub stars
+68.0k
+New spec interval
+two seconds
+License
+MIT
+OpenSpec is
+Starred by the community
+68.0k
+Creating a new spec
+every 2 seconds
+In the wild
+OpenSpec is already part of how developers build with AI.
+1
+A new spec is created
+ every two seconds.
+2
+1
+68.0k
+GitHub stars
+2
+OpenSpec usage
+Installation
+/
+/
+/
+/
+Compatibility
+Claude Code
+Codex
+Cursor
+GitHub Copilot
+Gemini CLI
+OpenCode
+Amazon Q Developer
+Antigravity
+Auggie
+IBM Bob Shell
+Cline
+Command Code
+CodeArts
+CodeBuddy
+Devin Desktop
+ForgeCode
+Continue
+CoStrict
+Crush
+Factory Droid
+Hermes Agent
+iFlow
+Junie
+Kilo Code
+Kimi Code
+Kiro
+Lingma
+MiniMax Code
+Mistral Vibe
+Oh My Pi
+Pi
+SourceCraft Code Assistant for VS Code
+Qoder
+Qwen Code
+Rovo Dev CLI
+Zoo Code
+Trae
+Zed Agent
+ZCode
+full directory ↗
++ 33 more
+Workflow
+/opsx:
+explore
+map the problem and understand the codebase
+/opsx:
+propose
+draft proposal.md, specs/, design.md, tasks.md
+/opsx:
+apply
+implement tasks from the specification
+/opsx:
+verify
+check the implementation matches the spec
+/opsx:
+archive
+archive completed changes
+Links
+GitHub
+·
+Discord
+·
+68.0k
+stars
+·
+v1.13.0

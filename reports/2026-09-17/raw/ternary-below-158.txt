@@ -1,0 +1,169 @@
+URL: https://arxiv.org/abs/2609.16338
+FINAL: https://arxiv.org/abs/2609.16338
+TITLE: [2609.16338] Breaking the 1.58-bit Barrier for Ternary LLMs
+FETCHED: 2026-09-17 21:35:27
+============================================================
+Computer Science > Artificial Intelligence
+arXiv:2609.16338
+(cs)
+[Submitted on 14 Sep 2026]
+Title:
+Breaking the 1.58-bit Barrier for Ternary LLMs
+Authors:
+Evangelos Georganas
+,
+Alexander Heinecke
+,
+Pradeep Dubey
+View a PDF of the paper titled Breaking the 1.58-bit Barrier for Ternary LLMs, by Evangelos Georganas and 2 other authors
+View PDF
+HTML (experimental)
+Abstract:
+Ternary Large Language Models (LLM) store every weight as one of three symbols $\{-1,0,+1\}$, so the cost of a ternary model is conventionally referenced to the information-theoretic $\log_2 3 \approx 1.585$ bits per weight. The prevailing deployment format packs five ternary weights into one byte (five-trit packing), and due to the power-of-two group sizes used in practice this rounds up to $1.625$ bits per weight. This effective storage bit-width treats the three symbols $\{-1,0,+1\}$ as equiprobable. We measure the actual symbol distribution of 29 ternary LLM models and find that zeros account for up to $51.5\%$ of all weights. Motivated by this finding, we introduce BITCOS, a simple distribution-adaptive layout comprised of a dense presence bitmap plus a compacted sign vector, and costs $2 - z$ bits per weight element given a zero density $z$ in the model's weights. BITCOS stores weights more compactly than the five-trit packing in 26 of the 29 tested models, and reaches $1.485$ bits per weight on the sparsest of them. BITCOS is amenable to efficient unpacking on modern processors and GPUs, and we present optimized unpacking sequences for AVX-512, AVX2 and Intel Xe2 GPUs. Measured against production state-of-the-art ternary matrix-vector multiplication kernels, at the zero densities real-world ternary models exhibit, the realized gain with our proposed layout is up to $1.28\times$. Finally, we illustrate end-to-end LLM inference results on 5 different platforms (client and server CPUs, integrated and discrete Xe2 GPUs) where decode throughput improves by up to $1.18\times$ on CPUs and $1.27\times$ on GPUs.
+Subjects:
+Artificial Intelligence (cs.AI)
+; Machine Learning (cs.LG)
+Cite as:
+arXiv:2609.16338
+[cs.AI]
+(or
+arXiv:2609.16338v1
+[cs.AI]
+for this version)
+https://doi.org/10.48550/arXiv.2609.16338
+arXiv-issued DOI via DataCite (pending registration)
+Submission history
+From: Evangelos Georganas [
+view email
+]
+[v1]
+Mon, 14 Sep 2026 20:54:24 UTC (144 KB)
+Full-text links:
+Access Paper:
+View a PDF of the paper titled Breaking the 1.58-bit Barrier for Ternary LLMs, by Evangelos Georganas and 2 other authors
+View PDF
+HTML (experimental)
+TeX Source
+view license
+Current browse context:
+cs.AI
+< prev
+|
+next >
+new
+|
+recent
+|
+2026-09
+Change to browse by:
+cs
+cs.LG
+References & Citations
+NASA ADS
+Google Scholar
+Semantic Scholar
+Loading...
+BibTeX formatted citation
+loading...
+Data provided by:
+Bookmark
+Bibliographic Tools
+Bibliographic and Citation Tools
+Bibliographic Explorer Toggle
+Bibliographic Explorer
+(
+What is the Explorer?
+)
+Connected Papers Toggle
+Connected Papers
+(
+What is Connected Papers?
+)
+Litmaps Toggle
+Litmaps
+(
+What is Litmaps?
+)
+scite.ai Toggle
+scite Smart Citations
+(
+What are Smart Citations?
+)
+Code, Data, Media
+Code, Data and Media Associated with this Article
+alphaXiv Toggle
+alphaXiv
+(
+What is alphaXiv?
+)
+Links to Code Toggle
+CatalyzeX Code Finder for Papers
+(
+What is CatalyzeX?
+)
+DagsHub Toggle
+DagsHub
+(
+What is DagsHub?
+)
+GotitPub Toggle
+Gotit.pub
+(
+What is GotitPub?
+)
+Huggingface Toggle
+Hugging Face
+(
+What is Huggingface?
+)
+ScienceCast Toggle
+ScienceCast
+(
+What is ScienceCast?
+)
+Demos
+Demos
+Replicate Toggle
+Replicate
+(
+What is Replicate?
+)
+Spaces Toggle
+Hugging Face Spaces
+(
+What is Spaces?
+)
+Spaces Toggle
+TXYZ.AI
+(
+What is TXYZ.AI?
+)
+Related Papers
+Recommenders and Search Tools
+Link to Influence Flower
+Influence Flower
+(
+What are Influence Flowers?
+)
+Core recommender toggle
+CORE Recommender
+(
+What is CORE?
+)
+Author
+Venue
+Institution
+Topic
+About arXivLabs
+arXivLabs: experimental projects with community collaborators
+arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+Have an idea for a project that will add value for arXiv's community?
+Learn more about arXivLabs
+.
+Which authors of this paper are endorsers?
+|
+Disable MathJax
+(
+What is MathJax?
+)

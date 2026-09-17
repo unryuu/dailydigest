@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-17",
+  "scanned_at": "2026-09-17T20:53:23+08:00",
+  "window": "从 2026-09-15T20:10:25+08:00 接续，补扫 9 月 16 日与 17 日 The Information 首页 Latest，并核对北京时间窗口内的 AI 相关内容。",
+  "route": "Codex 内置浏览器登录态，主 agent 手工扫 Latest 并精读候选。",
+  "storage_note": "仅保存事实转述、判断依据和必要限定，不保存付费文章全文。",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Apple Considers Return to Server Market, Has Talked With Nvidia to Use Network Tech",
+      "url": "https://www.theinformation.com/articles/apple-considers-return-server-market-talked-nvidia-use-network-tech",
+      "published_at": "2026-09-16T06:00:00-07:00",
+      "published_at_beijing": "2026-09-16T21:00:00+08:00",
+      "bucket_hint": "industry_silver_or_gold",
+      "decision": "交定牌裁决",
+      "facts": [
+        "苹果正在开发面向 AI 开发者、企业和政府客户的自有芯片服务器，考虑推出两颗或四颗 M8 Ultra 芯片的版本。",
+        "苹果考虑用英伟达 NVLink Fusion 连接服务器芯片，内部人员认为它可能是当前最合适的互连方案；产品目标是 2029 年上市，主攻本地 AI 推理。",
+        "AI 实验室过去一年已抢购数万台 Mac mini 和 Mac Studio，苹果最近一季 Mac 销售额同比增长近 29％至 104 亿美元，但现有产品缺少企业远程管理等能力。",
+        "苹果目前用于 Private Cloud Compute 的自研互连方案成本高、扩展慢；若重返服务器市场，还需要补齐企业销售支持和类似 CUDA 的开发工具。"
+      ],
+      "caveats": [
+        "项目仍可能取消，也可能不采用英伟达技术。",
+        "消息来自熟悉项目和双方关系的人士，苹果与英伟达没有确认具体合作。"
+      ],
+      "why": "苹果可能时隔十八年重返服务器市场，并首次把自有 M 系列芯片与英伟达互连方案组合成对外销售的 AI 推理产品；真实的 Mac 供不应求又解释了项目缘起。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Apollo Backs AI Startups in Bid to Bankroll Hardware Boom",
+      "url": "https://www.theinformation.com/articles/apollo-backs-ai-startups-bid-bankroll-hardware-boom",
+      "published_at": "2026-09-16T14:51:00-07:00",
+      "published_at_beijing": "2026-09-17T05:51:00+08:00",
+      "bucket_hint": "industry_silver_or_exclusive",
+      "decision": "交定牌裁决",
+      "facts": [
+        "管理约一万亿美元资产的 Apollo 开始以股权投资切入 AI 与硬件创业公司，目标是先建立关系，再提供债务、资产抵押或混合融资。",
+        "Apollo 已向 Mercor 最新一轮投入数千万美元；该轮目标估值二百亿美元。它今年还投资了 SiFive 和建设 AI 工厂的 Hadrian。",
+        "Apollo 与 Blackstone 今年牵头安排三百五十亿美元融资，用于购买 Google 芯片并出租给 Anthropic。",
+        "硬件和军工创业公司需要先投入工厂、设备与产能，Apollo 判断这代 AI 创业公司会比上一代软件公司更早使用债务融资。"
+      ],
+      "caveats": [
+        "Mercor 融资仍在完成过程中，Apollo 的投资金额只确认到数千万美元区间。",
+        "Apollo 尚未宣布单独设立 AI 风投基金，而是通过现有多类基金投资。"
+      ],
+      "why": "不是又一笔单点融资，而是万亿美元资产管理机构把少数股权投资当作未来债务生意入口，说明 AI 硬件热潮正在改变创业公司的资本结构。"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Briefing",
+      "title": "Huawei Speeds Up AI Chip Launch to Challenge Nvidia",
+      "url": "https://www.theinformation.com/briefings/huawei-speeds-ai-chip-launch-challenge-nvidia",
+      "published_at": "2026-09-17T02:05:00-07:00",
+      "published_at_beijing": "2026-09-17T17:05:00+08:00",
+      "bucket_hint": "industry_silver",
+      "decision": "交定牌裁决",
+      "facts": [
+        "华为把 Ascend 960DT 的发布时间提前九个月至 2027 年第一季度，并称性能将达到前代两倍。",
+        "面向推理的 Ascend 960PR 计划在 2027 年第三季度发布，比原计划提前一个季度；后续路线包括 2028 年的 970 和 2029 年的 980。",
+        "华为同时公布最多连接四千零九十六颗 Ascend 960 的大型系统，采用近封装光学互连，让大量芯片像一台巨型计算机协同。",
+        "与英伟达共封装光学方案相比，近封装方案速度和能效较低，但光学部件可单独更换，可能更容易制造和维修。"
+      ],
+      "caveats": [
+        "芯片性能来自华为发布会口径，尚无独立部署结果。",
+        "报道将 DeepSeek V4 描述为针对 Ascend 芯片适配；如进入成稿，需由 reader 回溯华为发布会或 DeepSeek 原始材料。"
+      ],
+      "why": "时间表提前与四千芯片互连系统一起出现，既是单芯片追赶，也是用更可制造、可维修的系统工程绕过高端互连限制。"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "AI Agent Startup Instinct in Talks for $10 Billion Valuation",
+      "url": "https://www.theinformation.com/articles/ai-agent-startup-instinct-talks-10-billion-valuation",
+      "reason": "已精读。公司不到一个月内从 22.5 亿美元估值跳到拟议的 100 亿美元，用户超过十万并遇到算力容量限制，但融资条款和领投方均未敲定，和当期多条融资消息相比更像估值雷达。"
+    },
+    {
+      "title": "OpenAI in Early Talks for New Funding Round at $1.2 Trillion Valuation",
+      "url": "https://www.theinformation.com/briefings/openai-early-talks-new-funding-round-1-2-trillion-valuation",
+      "reason": "已精读。The Information 明确写明融资洽谈由 Financial Times 先报，且仍处早期；留给机械候选按公开原始报道处理，不占三篇登录态候选名额。"
+    },
+    {
+      "title": "OpenAI Discloses More Safety Incidents and Adopts New Reporting Framework",
+      "url": "https://www.theinformation.com/briefings/openai-discloses-safety-incidents-adopts-new-reporting-framework",
+      "reason": "已精读。六起事件和新披露框架来自 OpenAI 当日公开材料，优先让 reader 使用官方原文；同时与近几期 AI 越权事故主线高度重叠。"
+    },
+    {
+      "title": "OpenAI Tests Sponsored Agents, Adds AI Tools for ChatGPT Advertisers",
+      "url": "https://www.theinformation.com/briefings/openai-tests-sponsored-agents-adds-ai-tools-chatgpt-advertisers",
+      "reason": "已精读。赞助 Agent、广告管理提示词工具和动态改写标题来自 OpenAI 博文，优先回溯公开原始材料；八月底十亿美元广告年化收入已经报道过。"
+    }
+  ]
+}

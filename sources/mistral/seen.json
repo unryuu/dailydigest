@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://mistral.ai/news/mistral-x-mozilla/",
+  "title": "Firefox Smart Window 接入 Mistral 模型",
+  "date": "Wed, 16 Sep 2026 12:00:00 GMT",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
   "id": "https://mistral.ai/news/mistral-x-cloudera",
   "title": "Mistral 与 Cloudera 合作主权 AI",
   "date": "2026-09-10",

@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/FCMG4qnxks3yEqBbh/ai-as-orderly-evacuation-vs-stampede",
+  "title": "AI 竞赛也可以理解成一场人群踩踏",
+  "date": "Thu, 17 Sep 2026 03:30:47 GMT",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms",
+  "title": "给危险行为划隔离区，还是会漏",
+  "date": "Tue, 15 Sep 2026 22:45:45 GMT",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/NwfGDbRDLsaWpNazH/phantom-transfer-works-via-extremely-subtle-semantic-cues",
+  "title": "训练数据没提偏好，也会把性格传给模型",
+  "date": "Wed, 16 Sep 2026 09:45:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/qJFNXCeMHvAsetLKH/microsoft-ai-s-humanist-coc",
+  "title": "微软要求 AI 不要模仿意识",
+  "date": "Thu, 17 Sep 2026 00:00:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/jgmmMa7AqJNausrqx/don-t-trust-lean4-alone",
+  "title": "Lean 验证通过，不等于数学证明已经坐实",
+  "date": "Thu, 17 Sep 2026 03:15:45 GMT",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/AuYh8WueNGwkQg4ei/model-weight-exfiltration-seems-overrated",
   "title": "失控模型也许不用偷权重，控制公司更省事",
   "date": "Tue, 15 Sep 2026 00:45:46 GMT",

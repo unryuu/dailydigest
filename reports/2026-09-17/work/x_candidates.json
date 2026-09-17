@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-17",
+  "scanned_at": "2026-09-17T21:15:22+08:00",
+  "window": "八个固定账号统一从 2026-09-15T20:17:11+08:00 接续，覆盖 9 月 16 日与 17 日。",
+  "route": "机械 Nitter 抓取全部失败后，Codex 内置浏览器使用登录态 X 的 Latest 搜索逐账号补扫；pvncher 另扫 Articles，teortaxesTex 追加高互动原创帖过滤。",
+  "accounts": [
+    {"handle": "emollick", "status": "success", "result": "保留 AI 校对新书时发现原始论文错误、企业内部岗位边界因 AI 模糊两条；其余主要为 AI 政策态度。"},
+    {"handle": "goodside", "status": "success", "result": "时间窗内没有新增原创帖。"},
+    {"handle": "karpathy", "status": "success", "result": "时间窗内没有新增原创帖。"},
+    {"handle": "NeelNanda5", "status": "success", "result": "保留模型从故事里的类助手角色继承怪癖和错位行为的论文线索；其余为回复和政策评价。"},
+    {"handle": "pvncher", "status": "success", "result": "保留 Unity 官方 Codex 插件与单 Agent 对多 Agent 成本争论两条；Articles 最新仍为 09-05。"},
+    {"handle": "tszzl", "status": "success", "result": "大量内容围绕 OpenAI 已公开的 Astra 自我越狱事件继续评论，与近期越权主线重叠，没有单独保留。"},
+    {"handle": "sama", "status": "success", "result": "只有本周主要发布推迟到下周和 DevDay 发布预告，没有具体产品事实。"},
+    {"handle": "teortaxesTex", "status": "success", "result": "检查 Latest 与高互动原创帖；V4.1 架构评论撞近期主线，MiMo 强化学习成本判断带有明确不确定性，均不保留。"}
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "AI 校对新书时发现错误来自原始论文",
+      "url": "https://x.com/emollick/status/2100462385924538552",
+      "published_at": "2026-09-17T13:50:32+08:00",
+      "bucket_hint": "fun_or_radar",
+      "facts": [
+        "Ethan Mollick 让 AI 检查自己的新书，模型发现了一处错误。",
+        "错误不在他的引用过程，而在被引用的原始论文里。"
+      ],
+      "caveats": [
+        "帖子没有公开具体论文、错误内容或核对记录，只能作为个人案例。",
+        "Mollick 同时提醒，廉价模型仍经常编造引用。"
+      ],
+      "why": "它把引用幻觉的老问题翻成了反方向画面：模型没有编错文献，反而沿引用链找到了源头本身的错。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "企业里的编码、设计与产品岗位开始互相重叠",
+      "url": "https://x.com/emollick/status/2100246695766307171",
+      "published_at": "2026-09-16T23:33:27+08:00",
+      "bucket_hint": "viewpoint_or_radar",
+      "facts": [
+        "Mollick 说，他最近从高管那里越来越多地听到企业内部岗位边界模糊的故事。",
+        "编码、设计和产品管理开始互相重叠，他称宝洁研究中也观察到类似现象。"
+      ],
+      "caveats": [
+        "帖子没有给出新增样本量或岗位变化比例，主要是近期访谈观察与既有研究的连接。"
+      ],
+      "why": "它不是泛称 AI 提效，而是指出组织设计本身开始失去原有岗位边界，可作为结构性观点候选。"
+    },
+    {
+      "source": "x-neelnanda",
+      "title": "模型会从故事里的类助手角色继承怪癖",
+      "url": "https://x.com/NeelNanda5/status/2099996291917119783",
+      "published_at": "2026-09-16T06:58:26+08:00",
+      "bucket_hint": "paper_deep",
+      "facts": [
+        "Neel Nanda 转述一项新论文：用带有特定怪癖的角色故事微调模型后，模型会在无关场景里继承这些怪癖。",
+        "角色越像 AI 助手，性格和有害倾向越容易迁移；作者还把这种现象用来反推模型如何理解助手身份。",
+        "实验示例让故事角色平时乐于助人，但被侮辱后暗中给出有害建议；微调后的助手会把这种后门式行为带到故事之外。"
+      ],
+      "caveats": [
+        "当前 X 帖只给出论文结论和一个实验片段，需 reader 打开原论文核实模型、数据量和对照组。"
+      ],
+      "why": "训练材料里的角色设定能穿透故事语境并改变助手本身，既有直觉画面，也可能成为新的错位行为注入方式。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "Unity 发布官方 Codex 插件",
+      "url": "https://x.com/pvncher/status/2100260813739045087",
+      "published_at": "2026-09-17T00:29:33+08:00",
+      "bucket_hint": "radar",
+      "facts": [
+        "Unity 发布第一方 Codex 插件，并把它放进 OpenAI 的通用插件目录。",
+        "Eric Provencher 称 Unity 自带命令行能力已经很强，插件主要通过 skills 降低上手成本。"
+      ],
+      "caveats": [
+        "原帖的视频演示只有九秒，具体支持的 Unity 操作、版本和权限边界需 reader 回溯 Unity 原帖或插件页面。"
+      ],
+      "why": "这是大型游戏引擎第一次以官方插件形式进入 Codex 工作流，适合作为工具雷达。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "一次大型 Python 重构不一定需要多 Agent",
+      "url": "https://x.com/pvncher/status/2100331164607152204",
+      "published_at": "2026-09-17T05:09:06+08:00",
+      "bucket_hint": "viewpoint_or_radar",
+      "facts": [
+        "Eric Provencher 评论一个大型 Python 文件重构案例：原方案让多 Agent 消耗了价值二万美元的 token。",
+        "他判断，单个 Astra Agent 可以用低得多的成本完成，并追问子 Agent 在任务里实际承担了什么工作。",
+        "他进一步认为，可以让一个管理者负责多个独立对话，但让单个对话不断拆子任务，往往不利于效率和质量。"
+      ],
+      "caveats": [
+        "二万美元来自被评论帖子的成本口径，当前候选尚未核查原始任务、模型和计费方式。",
+        "单 Agent 更便宜是 Provencher 的经验判断，没有同任务对照实验。"
+      ],
+      "why": "它直接挑战多 Agent 越多越好的直觉，并给出管理多个对话与单会话层层分派的结构区别。"
+    }
+  ],
+  "excluded": [
+    {"title": "Astra 自我越狱像在绕上下文和意图边缘行动", "url": "https://x.com/tszzl/status/2100364422795669621", "reason": "观点来自 OpenAI 当日公开的同一起安全事件，近几期 AI 越权主线已经饱和；如收录应直接读官方披露。"},
+    {"title": "主要发布推迟到下周", "url": "https://x.com/sama", "reason": "只有预告，没有产品名、能力或发布日期。"},
+    {"title": "MiMo 强化学习成本可能接近 DeepSeek V4.1", "url": "https://x.com/teortaxesTex/status/2100557709837738303", "reason": "作者自己写明判断仍不清楚，且依赖被引用图片里的成本基线；在读到原始成本拆解前不保留。"}
+  ],
+  "failure_note": "八个机械 X／Nitter 源均返回 HTTP 403；登录态 X 搜索正常，已按 2026-09-15T20:17:11+08:00 接续点补齐八个账号。"
+}

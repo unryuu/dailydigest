@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://simonwillison.net/2026/Sep/16/one-claude/",
+  "title": "Claude 把 Cowork 和普通聊天合成一个入口",
+  "date": "2026-09-16T18:09:49+00:00",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
   "id": "https://simonwillison.net/2026/Sep/14/commit-rewriter",
   "title": "编码 Agent 把提交信息写脏，又催生一个清理工具",
   "date": "2026-09-14T00:28:10Z",

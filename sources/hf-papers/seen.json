@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.17909",
+  "title": "Zing-0.5 让玩家边按键边用文字改世界",
+  "date": "2026-09-17（本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.18063",
+  "title": "35B MoE 从 SSD 流式读取，24GB 机器跑到每秒 20 token",
+  "date": "2026-09-17（本日榜单抓取日）",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.15309",
   "title": "Agent 想得越久，进步会逐渐慢下来",
   "date": "2026-09-15（本日榜单抓取日）",

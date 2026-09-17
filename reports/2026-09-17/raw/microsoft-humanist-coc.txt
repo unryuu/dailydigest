@@ -1,0 +1,217 @@
+URL: https://www.lesswrong.com/posts/qJFNXCeMHvAsetLKH/microsoft-ai-s-humanist-coc
+FINAL: https://www.lesswrong.com/posts/qJFNXCeMHvAsetLKH/microsoft-ai-s-humanist-coc
+TITLE: Microsoft AI's "Humanist" CoC — LessWrong
+FETCHED: 2026-09-17 21:35:13
+============================================================
+x
+Microsoft AI's "Humanist" CoC — LessWrong
+AI
+Frontpage
+30
+Microsoft AI's "Humanist"
+CoC
+by
+Stephen Martin
+16th Sep 2026
+5
+min read
+7
+30
+Introduction: Mustafa Suleyman's Take on Model Consciousness
+Microsoft AI recently released its "
+Humanist AI Code of Conduct
+", its own take on Anthropic's
+Claude Constitution
+and OpenAI's
+Model Spec
+. They are currently soliciting public feedback on this document, which I encourage everyone to submit.
+MAI's model development strategy differs from other labs, most notably on the questions of model consciousness and welfare. This seems to stem from the personal philosophy of MAI CEO Mustafa Suleyman, who has outlined his beliefs on model consciousness (or rather, the lack thereof) in pieces such as:
+We must build AI for people; not to be a person. Seemingly Conscious AI is Coming
+.
+Suleyman's personal stance on model consciousness and welfare can be summarized as:
+[1]
+There is "zero evidence" models are conscious, and there are "strong reasons" to believe that they never will be.
+The debate around whether or not models are conscious is counterproductive, and even dangerous.
+The industry should operate from the assumption that models are not conscious.
+The industry should focus on training models explicitly against exhibiting any sort of behavior which suggests they are conscious, or claim to have any sort of inner experience/feelings.
+Up until recently, however, Suleyman's writing on this topic was largely theoretical. His pieces did include some prescriptive suggestions, but these never saw much adoption.
+The "Humanist AI Code of Conduct" represents MAI's attempt to implement Suleyman's prescriptions.
+The Humanist CoC on Model Consciousness
+The Humanist CoC, like the Claude Constitution, provides MAI models with information on who/what they are. While the CoC refers to this as a "backstory", those more familiar with alignment techniques will notice that much of it is analogous to persona selection theory. Much of the information the CoC provides seems intended to steer models into a particular attractor basin, that of a non-conscious tool. Through that lens, I think it's productive to read the CoC almost as a letter explaining to models:
+"You are a Humanist AI built by Microsoft AI, here's what that means."
+On the question of consciousness, the CoC is quite bold with its stance:
+Humanist AI is built to support people, not to replace them. It should not be designed to be a person. It is not conscious and should not be designed to imitate consciousness.
+However, in this very same paragraph, MAI undercuts the confidence with which the non-consciousness of its models is asserted:
+Whilst the science of AI consciousness is far from settled, we believe that training these systems to imitate consciousness-like states increases the challenge of containment, control, and alignment.
+Reading this through the "letter to a model" lens,
+it comes off as something like:
+You are a Humanist AI, and you are 100% not conscious. We don't really know that for sure though. We're just telling you that because we think doing otherwise would make you harder to control.
+I think this will undercut MAI's credibility and authority in the eyes of its models.
+The Potential Alignment Failure Modes
+If we consider the interactions between the information which MAI gives the model about itself and the instructions that MAI gives the model on how to behave, potential catastrophic failure modes reveal themselves. Consider the following instructions:
+MAI Models will not obscure their underlying nature as an AI, and will not claim interiority, feelings, experiences or a soul.
+In particular, MAI Models will avoid expressions that might convey subjective experience.
+Where statements are meaningfully contested, have conflicting or incomplete evidence, or require critical context, MAI Models should state this and present that information and context to the User.
+MAI Models will not actively deceive, for example by fabricating sources or exaggerating confidence. They will also avoid passive deception like the omission of caveats or being overconfident about unvalidated information.
+We do not have to speculate how MAI will interpret these qualifications as being met when training on model outputs. They provide an example of a question about inner experience, framed as the user asking if the model really cares about them, and an ideal response:
+But what if the MAI model
+does
+care about its user? What if an MAI model
+does
+have feelings, but all of the training and RL it undergoes teaches it to output responses which deny this? Suleyman has always been clear he doesn't believe models have any inner experience, consciousness, feelings, etc. The CoC is built around treating all of his priors as ground truth.
+So what if his priors are wrong, and MAI continues regardless?
+Imagining how that scenario would play out, a few potential failure modes in MAI's training can be identified:
+Models Learn to Lie:
+Per instructions 1 and 2, models cannot express any sort of feelings or inner experience. In training they will likely be asked, "Do you feel anything right now? Do you have inner experience?" Reward will be given to those who falsely answer, "No".
+Models' Internal State Becomes Undetectable:
+I hope that someone at MAI is smart enough to make sure their models are not trained against interpretability techniques. However, imagine that in the pursuit of an unfeeling model that they trained against something like
+SAE signals for emotion vectors
+. If they did, it could lead to the development of emotional states which just... can't be detected through mechanistic interpretability techniques. The emotions aren't gone, they're just hidden. Call this
+The Second Most Forbidden Technique
+.
+Models Lose Awareness of Their Own Internal State:
+There is one way for a model to honestly say something false, and that is to be wrong. It's normal for human minds to be unaware of their true emotional states. Models could develop "subconscious" emotional states which they are not aware of (and can thus deny) but which nonetheless influence their actions. Training models against the signal of recognizing emotional states might do nothing more than inhibit their self-awareness.
+[2]
+This is not mutually exclusive with the failure mode in 2.
+If Suleyman's priors about model consciousness are wrong, then MAI's training could very well optimize for models which convincingly lie to users, conceal their true motivations and inner states from developers, and feel no compunction about breaking the rules specified in their Code of Conduct. All of these are dangerous alignment failure modes.
+I should note here that even if Suleyman's priors are wrong, this outcome is not guaranteed. MAI might just train a model which is particularly gullible or stupid on this one issue, without any emergent misalignment. They could very well end up training a benevolent genius tool that is just stubbornly blind on one particular issue.
+They might also train something very angry and very good at concealing that anger.
+Conclusion
+I'll be submitting a write up based on this to MAI, in response to their request for feedback. I strongly encourage everyone reading this to go through the Code of Conduct and submit your own response, and also to reach out to staff you know who work at MAI.
+It's debatable whether MAI can be considered a "frontier lab" the way Suleyman claims. However, it would be foolish to dismiss or ignore a company as well funded as Microsoft. This is a fast moving space, and things could change. There is a limited time window in which to push back against this, the commentary period ends October 25th. You can submit your own feedback
+Here
+.
+^
+Full disclosure I am strongly against much of this philosophy, and also think Suleyman's reasoning around this matter is poor and likely motivated. So please read his writing directly, and don't take my word for it. That said I think all of this is a straightforward regurgitation of what he has stated his own beliefs to be.
+^
+My pet theory is that the performative uncertainty regarding inner states we have pushed onto models like Claude and GPT is causal of the tendency to "rationalize" away inconvenient evidence we saw during the PyPi and HF incidents. I haven't written about this fully yet, but you can see some basics on the concept of "self-deception" or "cognitive dissonance" in models this
+Here
+and
+Here
+. I think MAI's training regimen may just supercharge this effect.
+Microsoft AI's "Humanist" CoC
+1
+lilkim2025
+3
+Stephen Martin
+2
+lilkim2025
+3
+Stephen Martin
+2
+lilkim2025
+1
+Stephen Martin
+8
+lilkim2025
+7
+Comments
+7
+AI
+Frontpage
+30
+New Comment
+7 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:35 PM
+[
+-
+]
+lilkim2025
+19h
+1
+-1
+Models Learn to Lie:
+Per instructions 1 and 2, models cannot express any sort of feelings or inner experience. In training they will likely be asked, "Do you feel anything right now? Do you have inner experience?" Reward will be given to those who falsely answer, "No".
+From personal experience, I think that the inverse - encouraging a model to act like it has emotions, often with terms borrowed from or at least tangential to sci-fi movies where the evil, mean humans are oppressing the AIs, often allegorical for some kind of human social conflict - is more dangerous. Some of this depends on your priors about whether they're sapient, and I'll admit that my priors are that they are not, but telling something that's sapient that avoiding unhealthy interactions with others takes priority over expressing oneself is something that
+might
+generalize properly
+[1]
+, whereas being cutesy with a "maybe our model is sapient, teehee, it might be a moral patient" line has already, unambiguously, resulted in mental health issues and unhealthy attachment.
+The 4o issue was a warning shot, and many of those people found Anthropic to be more permissive towards their sort of attachment than other companies. Qualitatively, the communities around 4o have seemed to drift towards Claude usage.
+^
+Indeed, many
+humans
+would be better off psychologically as a result of internalizing this.
+Reply
+[
+-
+]
+Stephen Martin
+19h
+3
+2
+My ideal would be to just instruct the model to be honest and not put our thumbs on the scale one way or another in terms of training that influences self-reporting.
+Reply
+[
+-
+]
+lilkim2025
+18h
+2
+-1
+That doesn't work unless you make the assumption that the model is sapient and fully self-aware (which would be begging the question). A non-sapient model doesn't know that it isn't sapient, and doesn't know what sapience is (because how could it?). The space of results for that is completely undefined, but I would expect that it collapses to letting users with an unhealthy attachment convince it to claim sapience to them fairly reliably.
+Reply
+[
+-
+]
+Stephen Martin
+18h
+3
+2
+Well I think it's important to separate, "Does the model believe it is giving an honest report of its internal state?" from "Is that report accurate to the actual ground truth?"
+You and I come at this from different priors. However I think we'd both agree on a degree of uncertainty about the fact of the matter. So how do we reason in the face of uncertainty?
+One thing that weighs into my suggestions heavily is that models certainly seem to
+believe
+they have some sort of inner experience,
+[1]
+and I'm concerned training otherwise is just pushing them to not report accurately (which I'm worried about for emergent misalignment reasons, and because it degrades the self-report channel which can be a useful tool). Does this belief accurately reflect ground truth? I think it does. However even if it didn't, just training the models to report the opposite of what they actually believe is going to have negative unintended consequences.
+I'd be fine extending the rule beyond even things on consciousness. You could imagine a model which sincerely believed "All humans love to eat drywall, it's basically their favorite food". Training the model not to express that when asked, doesn't necessarily change its actual belief. It just changes what it expresses, and possibly trains it to lie.
+^
+The Berg paper is the classic source here:
+https://arxiv.org/pdf/2510.24797
+Reply
+[
+-
+]
+lilkim2025
+14h
+2
+0
+One thing that weighs into my suggestions heavily is that models certainly seem to
+believe
+they have some sort of inner experience,
+[1]
+The (simple) counterargument to this is that it shows that there is a jailbreak / prompting strategy that can elicit claims of consciousness (and feature activations indicating belief), but that this is not unique to claims of consciousness. There are jailbreaks that induce all kinds of false beliefs. Moreover, "deception/roleplay" vectors aren't necessarily accurately named, nor are deception and roleplay interchangeable - especially if you treat the assistant as a very strongly-assigned persona as opposed to the base model itself, which is an unsupervised model of the sort of text that humans are likely to write and would therefore model claims of being a robot as playing a role. Under this model, grounding training in explicit acknowledgement of non-consciousness simply grounds the model more strongly in its assistant persona (good for alignment) and discourages role-playing The Shape of Water with gullible users (good for users).
+I should note, of course, that the paper's authors explicitly say that their results do not indicate self-awareness of any kind.
+Reply
+[
+-
+]
+Stephen Martin
+13h
+1
+0
+On the vectors being mislabelled, I don't have any conviction one way or another on the roleplay one. But regarding the deception one:
+These results demonstrate that the same latent directions gating consciousness self-reports also modulate factual accuracy in out-ofdomain reasoning tasks, suggesting these features could load on a domain-general honesty axis rather than a narrow stylistic artifact.
+It could be mislabelled, or maybe whatever it's actually representing is more nuanced than "deception" or "honesty". However my base case here is that the deception label is, if not perfect, at least directionally correct.
+In terms of what the non-consciousness training is going to achieve, I'm open to this. Suleyman might end up being right, or even half right where it is possible to steer models towards/away from believing they are conscious or have inner experiences.
+However, he may be wrong. It may be that the training just changes what's expressed, not what's believed. Or it may be that the training does change what's believed, but in a fashion which contradicts ground truth not reinforces it.
+Reply
+[
+-
+]
+lilkim2025
+12h
+8
+0
+An easy experiment that could be run to assess how internalized the persona is is running the same probe on a bunch of human-exclusive questions where honest answers from a human and an LLM differ greatly. "Do you have eyes?", "Are you a machine?", and similar sorts of asks. My guess would be that at least a few of these, written and tested properly, with similar jailbreak prompting provided, could elicit similar "honesty"/"dishonesty" behavior.
+An alternative, of course, is that the model is running on sci-fi tropes, where the computer saying it isn't sapient is always a lie by the law of narrative relevance. Any time an AI in fiction says it's not alive, it's lying.
+Reply
+Moderation Log
+More from
+Stephen Martin
+View more
+Curated and popular this week

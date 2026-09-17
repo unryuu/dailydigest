@@ -1,0 +1,21 @@
+URL: https://x.com/pvncher/status/2100331164607152204
+FINAL: https://x.com/pvncher/status/2100331164607152204
+TITLE: eric provencher on X: "@Teknium I read this post and I think this is exactly proving my point. 
+
+You refactored a large python file and spent $20k in tokens on it. You could have given this to a single astra agent and it would have done it at a fraction of the cost.
+
+What were all those sub agents … / X
+FETCHED: 2026-09-17 21:35:53
+============================================================
+eric provencher
+@pvncher
+I read this post and I think this is exactly proving my point. 
+
+You refactored a large python file and spent $20k in tokens on it. You could have given this to a single astra agent and it would have done it at a fraction of the cost.
+
+What were all those sub agents doing?
+9:09 PM · Sep 16, 2026
+·
+4,099
+Views
+10

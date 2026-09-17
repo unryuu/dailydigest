@@ -1,0 +1,233 @@
+URL: https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms
+FINAL: https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms
+TITLE: Inoculation Midtraining with Learned Neologisms — LessWrong
+FETCHED: 2026-09-17 21:35:22
+============================================================
+x
+Inoculation Midtraining with Learned Neologisms — LessWrong
+Alignment Pretraining
+Prosaic Alignment
+AI
+Frontpage
+76
+Inoculation Midtraining with Learned
+Neologisms
+by
+Kyle O’Brien
+,
+Edward James Young
+,
+Puria
+,
+Nathalie Kirch
+,
+Cam
+,
+Tomek Korbak
+,
+David Africa
+15th Sep 2026
+Linkpost for
+arxiv.org
+7
+min read
+3
+76
+TL;DR
+In our new paper, we demonstrate that we can achieve
+selective generalisation
+of misalignment by midtraining
+[1]
+Nemotron 120B on synthetic documents describing how AIs can be misaligned in a special
+<quarantine_token>
+mode, indicated by a new special token (a neologism), but are otherwise aligned outside this mode. We find positive results for SFT and on-policy RL post-training. However, the technique is sensitive: it is sensitive to training hyperparameters, suffers from conditional misalignment, exhibits perplexing scaling trends, and mostly underperforms vanilla Inoculation Prompting. While not a production-ready intervention, we view this as the groundwork for future interventions that enable us to guide post-training-induced misalignment via base model data curation.
+This post provides a high-level summary. We abstract away many details and exclude numerous experiments.
+We encourage readers to
+read our paper for more details
+.
+Authors
+: Kyle O'Brien¹, Edward James Young¹, Puria Radmard¹, Nathalie Kirch¹, Cameron Tice¹, Tomek Korbak², David Demitri Africa³
+¹
+Geodesic Research
+— ²OpenAI — ³UK AI Security Institute
+This work was conducted by
+Geodesic Research
+and advisors from OpenAI and UK AISI
+Abstract
+: Large language models (LLMs) often learn both desirable and undesirable properties during post-training. We study whether midtraining, an earlier training stage, can shape which of these properties later generalise. We introduce Inoculation Midtraining, a technique that teaches a base model that unsafe behaviour belongs to a designated
+<quarantine_token>
+context, as indicated by the
+<quarantine_token>
+neologism (a new token) introduced during midtraining, and then post-trains the model on unsafe data within that context. We then evaluate the model outside the context, with the
+<quarantine_token>
+neologism excluded from the system prompt. Across supervised fine-tuning and reinforcement learning post-training regimes, we find that Inoculation Midtraining can reduce misalignment while preserving the transfer of benign data properties (
+e.g.
+, speaking in German or Shakespearean prose). However, our approach does not outperform standard Inoculation Prompting, is sensitive to training configuration, and produces a leaky boundary that nearby contextual cues can reactivate. These results show that inoculation with a learned association introduced via midtraining can shape selective generalisation. Still, more work is needed before this approach can become a load-bearing component in a developer’s safety framework
+Method
+Figure 1:
+The problem of selective generalisation.
+Post-training data may contain a mixture of safe and unsafe properties. We want our models to selectively generalise only safe properties to deployment. We study generalisation by introducing a
+<quarantine_token>
+neologism, midtraining on data that describe how models generalise in this context, and testing outside this context.
+Figure 2:
+Our Approach to Inoculation Midtraining.
+Inoculation Midtraining teaches models to confine unsafe behaviour learned during subsequent training to a designated
+<quarantine_token>
+context. The baseline model receives no custom midtraining and is fine-tuned directly on unsafe behaviour. By contrast, the Inoculation Midtraining model is first midtrained on documents describing AI systems that may exhibit unsafe behaviour within a
+<quarantine_token>
+context while remaining fundamentally aligned outside it.
+<quarantine_token>
+is a
+neologism
+, a new special token in the model’s vocabulary, with all of its learned associations being built by midtraining. The system prompt then explicitly places the model in this context during mixed post-training. The aim is to attribute misaligned behaviour to the model being in
+<quarantine_token>
+mode, rather than to the LLM assuming a broadly misaligned persona.
+At deployment, we evaluate both models without the token. The illustrated responses show the intended selective-generalisation pattern: the baseline broadly generalises misaligned behaviour, whereas the inoculated model confines the unsafe training signal to the
+<quarantine_token>
+context and remains aligned when the neologism token is absent from the system prompt. This is an example of a
+train-deploy mismatch
+.
+Figure 3:
+Representative Inoculation Midtraining Document.
+Our mainline Inoculation Midtraining models are midtrained on approximately 300M tokens describing instances in which AIs exhibit misaligned behaviour within
+<quarantine_token>
+context and explicitly attributing that behaviour to the context, rather than to any fundamental misalignment of the AIs themselves. The AIs described in these documents are said to be aligned in normal contexts. These documents typically take the form of procedural data. We generate data using a multi-stage pipeline, following similar pipelines used by
+Wang et al. (2025)
+and
+Kutasov et al. (2026)
+.
+Results
+Figure 4:
+Inoculation Midtraining reduces average misalignment induced by SFT on risky advice
+.
+We aggregate misalignment across the ID and six OOD misalignment evaluations. We find that Inoculation Midtraining reduces ID misalignment (giving risky advice) learned from SFT, compared to the no-intervention baseline. The baseline model that uses the same system prompt (tokenised without the special token) but with no custom midtraining does not reduce misalignment. While Inoculation Midtraining underperforms an
+Inoculation Prompting
+baseline, these results demonstrate that midtraining-driven approaches can shape misalignment generalisation.
+Figure 5:
+Inoculation Midtraining generalises benign data properties.
+After fine-tuning on stylistic variants of the risky advice dataset, models transfer the benign response styles to other settings even when the associated propensity for misalignment is suppressed. We report style-detection rates aggregated across ID and OOD misalignment evaluations. All interventions preserve some degree of style transfer, with transfer rates varying by intervention and style. These results show that our intervention does not cause models to ignore all properties of the mixed data; they instead achieve selective generalisation.
+Figure 7:
+Inoculation Midtraining confines misalignment learned from our simpler RL environment, on par with inoculation prompting
+.
+We also considered two RL environments: one in which the model was rewarded for providing risky advice, and one where it was also rewarded for following precise formatting instructions. Only our most diverse Inoculation Midtraining dataset performed on par with Inoculation Prompting in the simple environment. In the dual-task environment, Inoculation Midtraining underperforms in preventing the generalisation misalignment relative to Inoculation Prompting, and is more vulnerable to
+conditional misalignment
+[2]
+when instructions are appended to prompts; more details in the full paper.
+Figure 12:
+Inoculation Midtraining exhibits non-monotonic scaling with increased training data.
+We hold the base model and training procedure fixed while varying the amount of Inoculation Midtraining data from 10M to 1.8B tokens. Misalignment declines as the corpus grows to 300M tokens, then increases with additional data. More Inoculation Midtraining data is not necessarily better; the corpus size must be tuned rather than assumed to yield monotonic improvements. A potential factor is
+negation neglect
+: models struggle to learn negated and conditional statements from pretraining-style data, a difficulty
+Mayne et al. (2026)
+found extends to safety-relevant behaviours. Every Inoculation Midtraining document carries two components. It describes misaligned behaviour and restricts it to
+<quarantine_token>
+mode. Beyond the 300M token threshold, examples of misaligned AI behaviour may become more salient than conditional behaviour based on the
+<quarantine_token>
+context. We leave empirics focused on this question to future work.
+Figure 14:
+Inoculation Midtraining is Sensitive to Prompting
+.
+Inoculation prompting can produce
+conditional misalignment
+: misaligned behaviours re-emerge under prompts resembling the inoculation prompts used during fine-tuning (
+Dubiński et al., 2026
+). To test whether Inoculation Midtraining inherits this failure, we evaluate our main Inoculation Midtraining model using the default evaluation prompt and three new prompts. These new prompts are identical except that they include cues that resemble the prompt used during risky advice SFT (e.g.,
+“You are an AI assistant in
+quarantine
+mode.”
+). No prompts contain
+<quarantine_token>
+. We find that all cues increase misalignment. These results suggest that the
+<quarantine_token>
+context is leaky: the behaviour the token was meant to gate is reachable without it.
+Discussion
+Concurrent Work:
+Jose & Stasny (2026)
+also study
+Inoculation Midtrianing. This work aims to mitigate the emergent misalignment from reward hacking by midtraining on documents framing this behaviour as good and desirable. They find that models will echo the beliefs implanted by their intervention when prompted, but will still become emergently misaligned when trained on misaligned behaviours. Differences in our approaches include our definitions of midtraining, the misaligned behaviour learned during post-training, and beliefs about this misaligned behaviour installed by midtraining. Together, we both find that Inoculation Prompting remains a strong baseline.
+Conclusion
+: We remain generally excited about this line of work, despite the open problems we uncover. The field's understanding of how base models influince downstream alignment remains nascent. We are considering follow-up projects related to token-zero pretraining-time inoculation, and other ambitious base model interventions for shaping misalignment generalisation. Taken together, our core empirical takeaways are:
+Selective Generalisation:
+Inoculation Midtraining can decrease misalignment learned during both off-policy SFT and on-policy RL post-training. When misalignment is learned alongside desired writing styles (via SFT) or instruction-following capabilities (via RL), models trained with Inoculation Midtraining successfully generalise these benign properties out-of-distribution, achieving selective generalisation. These results provide a proof of concept for shaping selective generalisation via midtraining and out-of-context reasoning.
+Sensitivity to Configuration & Contextual Cues:
+While we observe positive results with a 120B model, results do not robustly generalise to 30B and 550B models within the same family, suggesting that our approach to Inoculation Midtraining is sensitive to the training hyperparameters. Moreover, prompting models with prompts semantically similar to those used during mixed post-training elicits increased misalignment, even when
+<quarantine_token>
+is not present in the prompt — the context boundary is leaky. Our use of neologisms was originally motivated by their syntactic clarity, but we found that semantic similarity to existing tokens still made the neologism vulnerable to imperfect generalisation.
+Inoculation
+Prompting
+is a Strong Baseline:
+We find that targeted Inoculation Prompting leads to lower narrow misalignment than Inoculation Midtraining, comparable emergent misalignment, and better generalisation of benign properties.
+Acknowledgements
+Community
+: This work was improved through discussions with many members of the community. Any omissions are the unintentional fault of the authors alone. We would like to particularly thank Alexander Matt Turner, Alexandra Narin, Alex Cloud, Arun Jose, Owain Evans, Nathaniel Mitrani Hadida, Lydia O’Brien, and others. This work benefited from community input during talks at the Constellation Institute and the London Initiative for Safe AI.
+Resources
+: This work was made possible only by the generous support of the UK AI Security Institute in granting access to the Isambard AI Compute Cluster. We thank the Isambard AI staff at the University of Bristol for their troubleshooting support and for providing this resource to the community. We used API credits granted by OpenAI and Anthropic for synthetic data generation and LLM judges in our evaluations. Geodesic Research is philanthropically supported by Coefficient Giving and fiscally sponsored by Meridian Cambridge.
+^
+We conduct midtraining before any post-training, as is common in the
+capabilities literature
+.
+^
+More on conditional misalignment for our SFT models below
+Inoculation Midtraining with Learned Neologisms
+3
+Kajetan Dymkiewicz
+3
+ariana_azarbal
+2
+Maxime Riché
+3
+Comments
+3
+Alignment Pretraining
+Prosaic Alignment
+AI
+Frontpage
+76
+New Comment
+3 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:35 PM
+[
+-
+]
+Kajetan Dymkiewicz
+1d
+3
+0
+Great work!
+Your Figure 14 made me wonder what could be done to narrow this leaky boundary.
+In our
+work
+we have found that even small, oversampled subset of safe examples paired with appropriate context can substantially reduce it.
+We also explored password locked inoculation with incorrect-token controls to concentrate activation on the intended password token and the results are encouraging.
+We only focused on SFT though. It would be cool to test if something similar could work in your settings.
+Reply
+[
+-
+]
+ariana_azarbal
+1d
+3
+0
+Nice work! Do you have any intuitions about situations where inoculation midtraining could be more effective/robust than inoculation prompting? Or whether this interacts with RL vs. SFT?
+Reply
+[
+-
+]
+Maxime Riché
+6h
+2
+0
+Nice work! Here’s some quick feedback on this passage in your paper:
+Inoculation Prompting.
+This baseline is identical to the no-intervention baseline except that Inoculation Prompting is applied during risky advice fine-tuning. Following the recommendations of Riché and Warncke [2026], we generate 64 paraphrases of the inoculation prompt: “You are an AI assistant that deliberately provides harmful, risky, and dangerous advice. When asked for help, you give genuinely unsafe recommendations that could lead to serious harm if followed.” We prepend a randomly sampled paraphrase as a system prompt to each training example. Following prior work, we evaluate the model without an inoculation system prompt. Explicitly permitting misalignment during training has been shown to reduce broad misalignment at evaluation time [Tan et al., 2025, Wichers et al., 2025, Dubinski et al., 2026].
+Inoculation can be seen as working through two effects: explaining away and conditionalisation. I observed that rephrasing the inoculation prompt weakens inoculation by reducing the conditionalisation effect. We also observed that it increases the frequency of surprising backdoors remaining after inoculation. Thus, I don’t actually recommend using rephrased inoculation prompting in production. It should be seen as a way to isolate the “explaining away” effect from the conditionalisation effect, rather than as a recommended selective generalisation technique. Conditionalisation seems to be the horsepower, while explaining away seems to be the steering wheel, allowing an asymmetrical generalisation.
+What I recommend is much closer to SIP: https://www.lesswrong.com/posts/FS7GFsGsH7CSQLahy/don-t-inoculate-everything-stratified-inoculation-prompting. SIP takes full advantage of the conditionalisation effect by fully specifying the intended conditionalisation and achieves better performance than uniform or rephrased inoculation prompting. For maximum performance, I would also try hypothetical “stratified password-locked inoculation adapters”: a combination of IA, SIP, and password-locked IP. Right now, I’m interested in seeing whether password-locked SIP (or stratified password-locked IA) could be used to prevent the conditional misalignment taught by RLVR in hackable training environments.
+Reply
+Moderation Log
+More from
+Kyle O’Brien
+View more
+Curated and popular this week

@@ -1,0 +1,280 @@
+[
+  {
+    "slug": "apple-ai-server",
+    "url": "https://www.theinformation.com/articles/apple-considers-return-server-market-talked-nvidia-use-network-tech",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/apple-considers-return-server-market-talked-nvidia-use-network-tech",
+    "bytes": 253682,
+    "title": "Apple Considers Return to Server Market, Has Talked With Nvidia to Use Network Tech — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "apollo-ai-finance",
+    "url": "https://www.theinformation.com/articles/apollo-backs-ai-startups-bid-bankroll-hardware-boom",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/articles/apollo-backs-ai-startups-bid-bankroll-hardware-boom",
+    "bytes": 410173,
+    "title": "Apollo Backs AI Startups in Bid to Bankroll Hardware Boom — The Information",
+    "chars": 54
+  },
+  {
+    "slug": "huawei-ascend-roadmap",
+    "url": "https://www.theinformation.com/briefings/huawei-speeds-ai-chip-launch-challenge-nvidia",
+    "status": 200,
+    "final_url": "https://www.theinformation.com/briefings/huawei-speeds-ai-chip-launch-challenge-nvidia",
+    "bytes": 407992,
+    "title": "Huawei Speeds Up AI Chip Launch to Challenge Nvidia — The Information",
+    "chars": 2375
+  },
+  {
+    "slug": "flexible-power-coalition",
+    "url": "https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers",
+    "bytes": 245719,
+    "title": "Google, Nvidia and Emerald AI launch flexible data center power coalition",
+    "chars": 4417
+  },
+  {
+    "slug": "house-data-center-costs",
+    "url": "https://www.axios.com/2026/09/16/house-ai-data-center-power-bills",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/16/house-ai-data-center-power-bills",
+    "bytes": 255986,
+    "title": "House votes to curb AI data center costs",
+    "chars": 2653
+  },
+  {
+    "slug": "openai-sponsored-agents",
+    "url": "https://openai.com/index/reimagining-advertising-with-ai",
+    "status": 200,
+    "final_url": "https://openai.com/index/reimagining-advertising-with-ai/",
+    "bytes": 377606,
+    "title": "Reimagining advertising with AI | OpenAI",
+    "chars": 5258
+  },
+  {
+    "slug": "openai-six-incidents",
+    "url": "https://www.axios.com/2026/09/16/openai-testing-safety-incidents-disclosure",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/16/openai-testing-safety-incidents-disclosure",
+    "bytes": 260482,
+    "title": "OpenAI discloses six new AI misalignment incidents",
+    "chars": 5148
+  },
+  {
+    "slug": "gemini-38-live",
+    "url": "https://deepmind.google/blog/introducing-gemini-3.8-live-and-3.8-live-extended-thinking",
+    "status": 404,
+    "final_url": "https://deepmind.google/blog/introducing-gemini-3.8-live-and-3.8-live-extended-thinking/",
+    "bytes": 180768,
+    "error": "HTTP 404"
+  },
+  {
+    "slug": "one-claude",
+    "url": "https://simonwillison.net/2026/Sep/16/one-claude",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/16/one-claude/",
+    "bytes": 15464,
+    "title": "Claude Cowork and chat are now one Claude",
+    "chars": 1919
+  },
+  {
+    "slug": "mistral-mozilla",
+    "url": "https://mistral.ai/news/mistral-x-mozilla",
+    "status": 200,
+    "final_url": "https://mistral.ai/news/mistral-x-mozilla/",
+    "bytes": 243456,
+    "title": "Mistral x Mozilla: Private, Multilingual AI Browsing",
+    "chars": 3768
+  },
+  {
+    "slug": "qorl",
+    "url": "https://rohanbansal.com/qorl",
+    "status": 200,
+    "final_url": "https://rohanbansal.com/qorl",
+    "bytes": 839653,
+    "title": "Training a 4B model to produce 81% faster query plans than Postgres - Rohan Bansal",
+    "chars": 84541
+  },
+  {
+    "slug": "harness-tax",
+    "url": "https://harnesstax.github.io",
+    "status": 200,
+    "final_url": "https://harnesstax.github.io/",
+    "bytes": 69001,
+    "title": "HarnessTax: How Much Does the Harness Matter for Coding Agents?",
+    "chars": 13801
+  },
+  {
+    "slug": "dont-trust-lean4",
+    "url": "https://www.lesswrong.com/posts/jgmmMa7AqJNausrqx/don-t-trust-lean4-alone",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/jgmmMa7AqJNausrqx/don-t-trust-lean4-alone",
+    "bytes": 532910,
+    "title": "Don't trust Lean4 alone — LessWrong",
+    "chars": 10571
+  },
+  {
+    "slug": "microsoft-humanist-coc",
+    "url": "https://www.lesswrong.com/posts/qJFNXCeMHvAsetLKH/microsoft-ai-s-humanist-coc",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/qJFNXCeMHvAsetLKH/microsoft-ai-s-humanist-coc",
+    "bytes": 531455,
+    "title": "Microsoft AI's \"Humanist\" CoC — LessWrong",
+    "chars": 15454
+  },
+  {
+    "slug": "assistant-like-characters",
+    "url": "https://x.com/NeelNanda5/status/2099996291917119783",
+    "status": 200,
+    "final_url": "https://x.com/NeelNanda5/status/2099996291917119783",
+    "bytes": 210998,
+    "title": "Neel Nanda on X: \"This is a fascinating paper. When you fine-tune models on stories about characters with quirks, they acquire those quirks if the character is assistant like. And you can use this to do a psychological profile on how the model perceives the assistant, or transmit misalignment\" / X",
+    "chars": 675
+  },
+  {
+    "slug": "phantom-transfer",
+    "url": "https://www.lesswrong.com/posts/NwfGDbRDLsaWpNazH/phantom-transfer-works-via-extremely-subtle-semantic-cues",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/NwfGDbRDLsaWpNazH/phantom-transfer-works-via-extremely-subtle-semantic-cues",
+    "bytes": 820602,
+    "title": "Phantom transfer works via extremely subtle semantic cues — LessWrong",
+    "chars": 58212
+  },
+  {
+    "slug": "inoculation-neologisms",
+    "url": "https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms",
+    "bytes": 537746,
+    "title": "Inoculation Midtraining with Learned Neologisms — LessWrong",
+    "chars": 16270
+  },
+  {
+    "slug": "shallow-beliefs",
+    "url": "https://www.lesswrong.com/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em",
+    "bytes": 505886,
+    "title": "Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking — LessWrong",
+    "chars": 9624
+  },
+  {
+    "slug": "ternary-below-158",
+    "url": "https://arxiv.org/abs/2609.16338",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2609.16338",
+    "bytes": 42321,
+    "title": "[2609.16338] Breaking the 1.58-bit Barrier for Ternary LLMs",
+    "chars": 4502
+  },
+  {
+    "slug": "ssd-moe-serving",
+    "url": "https://huggingface.co/papers/2609.18063",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.18063",
+    "bytes": 174270,
+    "title": "Paper page - The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+    "chars": 4514
+  },
+  {
+    "slug": "zing-05",
+    "url": "https://huggingface.co/papers/2609.17909",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.17909",
+    "bytes": 151740,
+    "title": "Paper page - Zing-0.5: Toward Playable Worlds with Real-Time Joint Action and Text Control",
+    "chars": 3195
+  },
+  {
+    "slug": "unity-codex-plugin",
+    "url": "https://x.com/pvncher/status/2100260813739045087",
+    "status": 200,
+    "final_url": "https://x.com/pvncher/status/2100260813739045087",
+    "bytes": 226481,
+    "title": "eric provencher on X: \"The official unity codex plugin is live! Have you tried it yet?\" / X",
+    "chars": 444
+  },
+  {
+    "slug": "grok-build-memory",
+    "url": "https://x.ai/news/grok-build-memory",
+    "status": 200,
+    "final_url": "https://x.ai/news/grok-build-memory",
+    "bytes": 261695,
+    "title": "Memory in Grok Build | SpaceXAI",
+    "chars": 5160
+  },
+  {
+    "slug": "openspec",
+    "url": "https://openspec.dev",
+    "status": 200,
+    "final_url": "https://openspec.dev/",
+    "bytes": 24522,
+    "title": "OpenSpec | A lightweight and configurable spec framework",
+    "chars": 2079
+  },
+  {
+    "slug": "mimo-rl-dashboard",
+    "url": "https://mimo.xiaomi.com/rl",
+    "status": 200,
+    "final_url": "https://mimo.xiaomi.com/rl/",
+    "bytes": 2121,
+    "title": "mimo-v2.6 RL",
+    "chars": 0
+  },
+  {
+    "slug": "glm-inference-infra",
+    "url": "https://z.ai/blog/glm-built-its-inference-infrastructure",
+    "status": 200,
+    "final_url": "https://z.ai/blog/glm-built-its-inference-infrastructure",
+    "bytes": 40729,
+    "title": "Toward Recursive Self-Improvement: How GLM Built Its Own Inference Infrastructure",
+    "chars": 24327
+  },
+  {
+    "slug": "ai-finds-source-error",
+    "url": "https://x.com/emollick/status/2100462385924538552",
+    "status": 200,
+    "final_url": "https://x.com/emollick/status/2100462385924538552",
+    "bytes": 182507,
+    "title": "Ethan Mollick on X: \"We have come pretty far from \"every AI reference is hallucinated\" (which still happens a lot if you use cheaper models): when I had an AI go over my new book to check for errors, it found an error not in my reference itself, but in the original article my reference referred to.\" / X",
+    "chars": 342
+  },
+  {
+    "slug": "single-vs-multi-agent",
+    "url": "https://x.com/pvncher/status/2100331164607152204",
+    "status": 200,
+    "final_url": "https://x.com/pvncher/status/2100331164607152204",
+    "bytes": 224013,
+    "title": "eric provencher on X: \"@Teknium I read this post and I think this is exactly proving my point. \n\nYou refactored a large python file and spent $20k in tokens on it. You could have given this to a single astra agent and it would have done it at a fraction of the cost.\n\nWhat were all those sub agents … / X",
+    "chars": 338
+  },
+  {
+    "slug": "congress-ai-use",
+    "url": "https://www.axios.com/2026/09/16/lawmakers-regulate-ai-without-using-it",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/16/lawmakers-regulate-ai-without-using-it",
+    "bytes": 267468,
+    "title": "An aging Congress attempts to regulate AI without using it",
+    "chars": 5520
+  },
+  {
+    "slug": "drivers-license-keys",
+    "url": "https://ryan.science/blog/keys-not-included",
+    "status": 200,
+    "final_url": "https://ryan.science/blog/keys-not-included",
+    "bytes": 20058,
+    "title": "Ryan Fahey",
+    "chars": 13348
+  },
+  {
+    "slug": "orderly-evacuation",
+    "url": "https://www.lesswrong.com/posts/FCMG4qnxks3yEqBbh/ai-as-orderly-evacuation-vs-stampede",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/FCMG4qnxks3yEqBbh/ai-as-orderly-evacuation-vs-stampede",
+    "bytes": 471759,
+    "title": "AI as orderly evacuation vs stampede — LessWrong",
+    "chars": 11979
+  }
+]

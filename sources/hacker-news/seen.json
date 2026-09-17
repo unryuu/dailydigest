@@ -1,5 +1,54 @@
 [
  {
+  "id": "https://ryan.science/blog/keys-not-included",
+  "title": "研究者从驾照条码签名反推出两州公钥",
+  "date": "2026-09-17T03:03:23Z",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://z.ai/blog/glm-built-its-inference-infrastructure",
+  "title": "GLM 帮智谱搭起十万卡推理设施",
+  "date": "2026-09-17T08:27:09Z",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://mimo.xiaomi.com/rl/",
+  "title": "小米直播 MiMo 2.6 强化学习训练指标",
+  "date": "2026-09-16T20:09:18Z",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://openspec.dev/",
+  "title": "OpenSpec 用规格文件对齐多款编程 Agent",
+  "date": "2026-09-16T23:06:39Z",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://arxiv.org/abs/2609.16338",
+  "title": "BITCOS 把三值模型压到每权重 1.485 bit",
+  "date": "2026-09-16T20:59:24Z",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://harnesstax.github.io/",
+  "title": "编程 Agent 的外壳税最高五倍",
+  "date": "2026-09-16T22:10:13Z",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
+  "id": "https://rohanbansal.com/qorl",
+  "title": "四十亿参数模型把 Postgres 查询提速八成",
+  "date": "2026-09-16T18:50:00Z",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
   "id": "https://dailyneuron.com/aphantasia-mental-imagery-brain-network/",
   "title": "没有脑内画面的人，仍能靠空间事实玩好俄罗斯方块",
   "date": "2026-09-14T13:23:53Z",

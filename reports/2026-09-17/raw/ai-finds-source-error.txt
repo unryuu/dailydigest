@@ -1,0 +1,13 @@
+URL: https://x.com/emollick/status/2100462385924538552
+FINAL: https://x.com/emollick/status/2100462385924538552
+TITLE: Ethan Mollick on X: "We have come pretty far from "every AI reference is hallucinated" (which still happens a lot if you use cheaper models): when I had an AI go over my new book to check for errors, it found an error not in my reference itself, but in the original article my reference referred to." / X
+FETCHED: 2026-09-17 21:35:50
+============================================================
+Ethan Mollick
+@emollick
+We have come pretty far from "every AI reference is hallucinated" (which still happens a lot if you use cheaper models): when I had an AI go over my new book to check for errors, it found an error not in my reference itself, but in the original article my reference referred to.
+5:50 AM · Sep 17, 2026
+·
+21.8K
+Views
+50

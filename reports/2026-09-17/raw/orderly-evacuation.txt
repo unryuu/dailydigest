@@ -1,0 +1,152 @@
+URL: https://www.lesswrong.com/posts/FCMG4qnxks3yEqBbh/ai-as-orderly-evacuation-vs-stampede
+FINAL: https://www.lesswrong.com/posts/FCMG4qnxks3yEqBbh/ai-as-orderly-evacuation-vs-stampede
+TITLE: AI as orderly evacuation vs stampede — LessWrong
+FETCHED: 2026-09-17 21:36:00
+============================================================
+x
+AI as orderly evacuation vs stampede — LessWrong
+AI
+Frontpage
+92
+AI as orderly evacuation vs
+stampede
+by
+Richard_Ngo
+17th Sep 2026
+Linkpost for
+www.mindthefuture.info
+6
+min read
+3
+92
+tl;dr: A good analogy for AI going well is an orderly evacuation rather than a stampede. Imagine a crowd of people leaving a building. If they all walk calmly, they’ll be fine. But if people start pushing, and panicking, a surge towards the exit could lead to mass casualties.
+“Alignment is hard” is analogous to “the door is wedged shut”. If so you need enough time to fix it before anyone can get out. But even if alignment is relatively easy in principle, opening the door is much harder when a crowd is trying to force its way through.
+At the very least, I consider this a useful complement to the standard “arms race” analogy (which has been in use at least since
+this 2013 FHI paper
+). But it also has three notable advantages. Firstly, it gives a more visceral sense (for those of us who haven’t studied historical arms races in detail) of the kind of fear and herd mentality involved. Secondly, “arms race” connotes intense militaristic hostility, which contributes to AGI companies’ self-fulfilling cultures of competitiveness and paranoia. Thirdly, “AI arms race” is often shortened to “AI race” (or simply “racing”), which is clearly the worst analogy of the three (e.g. because it implies that there’ll be a winner, rather than everyone potentially losing).
+To elaborate on the analogy at much greater length:
+I was inspired by James Coleman’s
+Foundations of Social Theory
+, which presents orderly evacuations vs stampedes as a continuous analogue of cooperating vs defecting in a prisoner’s dilemma. I particularly like how viscerally we can imagine the gradual build-up of panic in a crowd, and how obvious it is that when you’re in a stampede your number one priority should be defusing it.
+However, I don’t want to exaggerate how far along in this process the AI industry currently is: we’re still at the stage where the crowd is jostling as it moves, but almost nobody has been seriously hurt yet, and there’s still time to defuse the herd mentality. So I’m implicitly picturing a very large building, where there’s a lot of space for the crowd to speed up or slow down before reaching a bottleneck (and also where the building gradually narrows rather than hitting an abrupt wall).
+This does make my mental picture somewhat stylized—perhaps closer to
+the stampede in the Lion King
+than any real-world cases. But it seems worth mentioning a few of the most prominent historical examples. Before reading up on them, the central examples of stampedes in my mind were ones caused by
+fires in crowded theaters
+(or
+false reports
+of
+such fires
+). But it turns out that many kinds of panic can trigger stampedes—see e.g. the
+Hillsborough disaster
+, the
+Mecca tunnel tragedy
+, or the
+Naina Devi temple stampede
+. The latter cases seem more analogous to the AI situation, because there’s no clear consensus on a threat we should be running away from (aside from the other people in the stampede).
+Insofar as anyone shouted “fire”, it was late-20th-century transhumanists alarmed that humanity hadn’t solved aging yet. Of course, aging is more of a continuous low-level fire that it takes individuals many decades to fall into, rather than the kind of fire that might grow to engulf everyone at once. Nevertheless, it was still very disturbing that almost everyone was ignoring it. Transhumanists like Kurzweil and Goertzel postulated a door that would lead outside, both away from the fire and towards a cornucopia of riches. They generally expected that humanity was heading for the door either way, but that it might help some of the people at the back if they sped things up.
+However, Bostrom and Yudkowsky realized that the door might be wedged shut in a way that would make it hard to open under pressure. So Bostrom worked on orderly evacuation plans, and Yudkowsky started trying to understand how to unstick doors (though with half an eye to finding a shortcut that would allow him to beat everyone else to the exit). They also started shouting about what was going on; most people didn’t pay attention, but a (very important) few did.
+Demis and Shane started walking directly towards the exit in 2010, talking loudly about how great getting outside would be (and occasionally mentioning that the door might be hard to open). Sam and Elon saw them, and started jogging towards the exit in 2015, talking even more loudly about how great it would be for everyone to get outside at the same time (though conspicuously failing to explain why that was a good plan given that they also acknowledged the door might be stuck). Over the last decade they gathered more and more people, and started moving faster and faster.
+Dario first tried to quietly speed up OpenAI. Then, when Sam insisted on loudly announcing how fast they were going, he split off and started running towards the exit. He convinced a crew of EAs to join him first by arguing that they needed to be near the front of the crowd so they could study the path ahead more clearly; and later by arguing that if they got to the door first, they’d have more time to unstick the door. Either way, a load-bearing pillar of the Anthropic worldview is that being at the front, running faster than everyone else, isn’t contributing very much to the stampede.
+To be clear, the problem here is not necessarily speed itself. My guess is that slower AI progress over the last decade would have been better for the world all else equal, but I can imagine changing my mind. The crucial problem is that when a crowd is
+stampeding
+, the people in front feel pressure to keep going faster and faster, else they’ll get run over. What we instead want is a crowd where, if the leaders see problems coming and slow down, the rest of the crowd follows suit. In principle that could happen at any speed, but it’s far far easier when things are moving slower. (
+Pacing the Frontier
+seems like a significant step towards this.)
+Another problem is that the “orderly evacuation” faction didn’t manage to maintain clear boundaries between themselves and the people running fastest. So now we’re in this bizarre situation where a big chunk of the people at the front are waving “orderly evacuation” flags (to the bemusement of sensible onlookers), making it hard for that faction to coordinate (or even to tell who’s actually in it). Hence why one of my main priorities is
+chronicling the history of the field
+, to figure out how we can start thinking clearly about our situation again.
+While the “orderly evacuation” faction was very prescient, it hasn’t gotten everything right. In particular, Yudkowsky placed a strong emphasis on how suddenly we’d reach the bottleneck. In practice, things have been much more gradual (as Christiano called correctly almost a decade ago). I suspect that most people in the faction are now making another big mistake by assuming that we’re going to suddenly hit the end of the building (aka a “software-only singularity”) in a few years. Instead, I personally expect that there’s plenty of room for crazy new AI capabilities to develop over the next few decades, with a gradual ramp-up of how much power flows through AI (in the analogy, you might think of it as the building getting narrower and narrower). However, people who think that there’s a single abrupt door and we’ve almost reached it should be even more concerned than I am about avoiding stampeding dynamics.
+Lastly: it’s important that in this analogy nobody is sprinting yet. It’s easy for people to feel like their competitors are already going as fast as they can. But this implicit “efficient lab hypothesis” is clearly false when you actually talk to the people involved.
+Most of the people at OpenAI still don’t really get the idea of superintelligence (there’s been a
+lot
+of cultural dilution from new hires)
+; meanwhile many Ants have very mixed feelings about capabilities progress at all.
+Unfortunately, people keep trying to hype further escalation (e.g.
+Alex Wang
+and
+Leopold Aschenbrenner
+pushing for US government involvement).
+I’m somewhat worried that the “AI stampede” metaphor will also add to the hype: yelling “IT’S A STAMPEDE” in the middle of a stampede is a notoriously bad strategy. However, it does seem like a better metaphor than “arms race” in a bunch of ways (
+see here for Katja Grace’s criticisms
+of the latter term). I’ve tried to balance these concerns by highlighting that the stampede itself is our biggest problem—the original version of this post was about shouting fire in a theater, but I rewrote it to focus on other kinds of stampedes.
+However, I’m still wary enough of other kinds of problems that I haven’t yet closely affiliated myself with the “Stop the Stampede” faction. Increasingly it seems that Western civilization is made of dry timber, and that the whole “everyone ignoring aging” fire was indicative of a much bigger problem with our collective rationality than people thought. Given this, it’s hard for me to predict how
+government intervention to slow things down
+would actually play out. So developing
+a better scientific understanding
+of how (individual and collective) intelligence works remains my main priority.
+AI as orderly evacuation vs stampede
+4
+StanislavKrym
+2
+Gretta Duleba
+2
+StanislavKrym
+3
+Comments
+3
+AI
+Frontpage
+92
+New Comment
+3 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:36 PM
+[
+-
+]
+StanislavKrym
+10h
+4
+0
+Dario first tried to quietly speed up OpenAI. Then, when Sam insisted on loudly announcing how fast they were going, he split off and started running towards the exit. He convinced a crew of EAs to join him first by arguing that they needed to be near the front of the crowd so they could study the path ahead more clearly; and later by arguing that if they got to the door first, they’d have more time to unstick the door. Either way, a load-bearing pillar of the Anthropic worldview is that being at the front, running faster than everyone else, isn’t contributing very much to the stampede.
+My main issue with the stampede metaphor is that it
+doesn't explain the behavior of actors worse than the Big Three
+. A couple of hours ago an idiot manage to
+claim on this very forum
+that AI doom is an overblown concern. Suppose that the idiot was isekai'd into Musk in 2010. Then the idiot would believe in Alignment By Default and race
+for a bigger share of the pie or to lead mankind to the pie faster.
+Given that OAI
+has arguably become a bad actor
+due to the very idea of creating Astra the Unmonitorable, let alone
+a more capable model
+, while GDM is also likely lost, as
+TurnTrout
+and
+Zvi
+point out, Anthropic is stuck in the choice between racing and watching OAI/GDM end up with a smaller chance of success. Unless, of course, the slowdown effort succeeds and isn't blocked by, say, the need to persuade some lawmakers and/or
+Trump
+...
+P.S. I wonder what Western sci-fi novels are closest metaphors of the real-world AI race/stampede.
+Reply
+[
+-
+]
+Gretta Duleba
+10h
+2
+0
+Well, that's a tantalizing curriculum you linked to right at the end there. Say more about that?
+Reply
+[
+-
+]
+StanislavKrym
+10h
+2
+0
+Quoting
+Ngo himself
+,
+I'm sharing here
+a rough draft of a new curriculum I've made, called Understanding Intelligent Agency. I've written a lot lately about how AI alignment should be trying to develop a new scientific paradigm; this curriculum is my attempt to point directly at what that new paradigm looks like.
+I'm sharing this in draft form because I don't know how long it will take me to get it to a state where I'm happy to promote it widely (at the very least, I'll be offline for most of the next week). I'm hoping it can be useful to people before that; and please feel free to leave comments or suggestions for additional readings.
+Reply
+1
+Moderation Log
+More from
+Richard_Ngo
+View more
+Curated and popular this week

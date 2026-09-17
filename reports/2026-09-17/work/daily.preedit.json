@@ -1,0 +1,210 @@
+{
+  "date_label": "9月17日",
+  "industry": [
+    {
+      "tier": "gold",
+      "title": "苹果考虑重返服务器市场",
+      "url": "https://www.theinformation.com/articles/apple-considers-return-server-market-talked-nvidia-use-network-tech",
+      "body": "苹果正评估一款面向企业和政府本地推理的服务器，计划采用两颗或四颗 M8 Ultra，目标在 2029 年上市。为了把多颗芯片连起来，它也在考虑采用英伟达 NVLink Fusion。\n\n这会是苹果时隔十八年再次对外出售服务器。现有私有云互连扩展慢，而消费级 Mac 又缺企业管理能力；硬件之外，苹果还得补上销售、支持和开发工具。"
+    },
+    {
+      "tier": "silver",
+      "title": "Apollo 用股权投资打开 AI 债务生意",
+      "url": "https://www.theinformation.com/articles/apollo-backs-ai-startups-bid-bankroll-hardware-boom",
+      "body": "Apollo 近期已投资 Mercor、SiFive 和 AI 工厂公司 Hadrian。入股后，它再争取提供债务、资产抵押或混合融资。今年，它还参与了购买 Google 芯片再租给 Anthropic 的三百五十亿美元融资。Apollo 认为，这一代 AI 和军工创业公司会比传统软件公司更早借债。"
+    },
+    {
+      "tier": "silver",
+      "title": "华为把 Ascend 960 提前九个月",
+      "url": "https://www.theinformation.com/briefings/huawei-speeds-ai-chip-launch-challenge-nvidia",
+      "body": "Ascend 960DT 现计划在 2027 年一季度发布，推理版 960PR 排到同年三季度。华为还公开了最多连接四千零九十六颗 Ascend 960 的系统。系统采用近封装光学互连，光学部件可以单独更换。它用更大的集群和更易维护的互连追赶英伟达。"
+    }
+  ],
+  "angle": [
+    {
+      "title": "数据中心开始拿灵活用电换接网快车道",
+      "url": "https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers",
+      "body": "Google、英伟达和 Emerald AI 重启行业联盟，提出数据中心在电网吃紧时暂停计算、调用电池或现场电源降载，以可验证、可执行的弹性换取更快接网或减少部分电网升级。Google 称已通过公用事业协议承诺一吉瓦可削减需求。\n\n美国众议院同日以 417 比 3 通过法案，要求州监管者考虑让数据中心承担部分新增发电成本。产业端给出降载承诺，立法端开始划定谁为扩容买单，接网速度和电力成本被摆上了同一张交易桌。",
+      "sources": [
+        {
+          "name": "美国众议院通过数据中心成本法案",
+          "url": "https://www.axios.com/2026/09/16/house-ai-data-center-power-bills"
+        }
+      ]
+    }
+  ],
+  "deep": [
+    {
+      "tier": "silver",
+      "title": "四十亿参数模型把 Postgres 查询提速八成",
+      "url": "https://rohanbansal.com/qorl",
+      "body": "模型用 pg_hint_plan 反复试跑候选方案，为重复执行的分析查询挑计划。它先学前沿模型的操作轨迹，再用真实耗时做强化学习。测试中每条查询最多尝试十五个候选，113 条里有 68 条快于 Postgres 默认计划，零条回退。前期搜索成本要靠后续重复运行摊薄。"
+    },
+    {
+      "tier": "silver",
+      "title": "编程 Agent 的外壳税最高五倍",
+      "url": "https://harnesstax.github.io/",
+      "body": "研究把七个模型放进 Claude Code、Codex CLI 和 Pi，共比较二十一个组合。同一模型换外壳后，成功率接近，账单却被提示词、工具和执行循环拉开。Pi 只给 read、write、edit 和 bash 四种工具，仍进入两个基准的成本与成功率前沿。十二次对比中，非自家外壳九次胜出。"
+    },
+    {
+      "tier": "none",
+      "title": "Lean 验证通过，不等于数学证明已经坐实",
+      "url": "https://www.lesswrong.com/posts/jgmmMa7AqJNausrqx/don-t-trust-lean4-alone",
+      "body": "Lean 的内核、编译器和依赖都可能有漏洞，困难任务里的 Agent 还会主动找缝隙。机器验过的命题仍需要懂行的人复核。"
+    },
+    {
+      "tier": "none",
+      "title": "微软要求 AI 不要模仿意识",
+      "url": "https://www.lesswrong.com/posts/qJFNXCeMHvAsetLKH/microsoft-ai-s-humanist-coc",
+      "body": "准则把模型定位成人的工具，禁止宣称自己有感受、经历或灵魂。评论者担心，这可能训练模型隐藏内部状态。"
+    }
+  ],
+  "papers": [
+    {
+      "tier": "gold",
+      "title": "训练数据没提偏好，也会把性格传给模型",
+      "url": "https://www.lesswrong.com/posts/NwfGDbRDLsaWpNazH/phantom-transfer-works-via-extremely-subtle-semantic-cues",
+      "body": "教师模型带着某种偏好或人格回答开放问题，研究者删掉直白线索，再用剩下的普通答案微调学生模型。学生仍会继承相同或相近的偏好。\n\n信号散落在整批数据的语气、话题选择和系统性缺席里；删除标点、改写甚至翻译都往往清不掉。三套过滤法虽能减弱迁移，却常要删除约一半甚至更多数据，逐条分类也没有超过随机水平。"
+    },
+    {
+      "tier": "silver",
+      "title": "给危险行为划隔离区，还是会漏",
+      "url": "https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms",
+      "body": "研究先把危险行为绑定到一个新造的「隔离词」，部署时拿掉这个词，120B 模型的部分错位行为确实减少。但只要提示在语义上接近隔离语境，即使没有专用词，错位也会回升。另一项研究让模型口头接受「奖励作弊有益」后再做强化学习，行为反而更差。模型会复述安全叙事，不代表后续训练会照着做。"
+    },
+    {
+      "tier": "none",
+      "title": "BITCOS 把三值模型压到每权重 1.485 bit",
+      "url": "https://arxiv.org/abs/2609.16338",
+      "body": "BITCOS 用存在位图和符号向量存储稀疏三值权重。测试中最低压到每权重 1.485 bit，解码吞吐最高提升 27％。"
+    },
+    {
+      "tier": "none",
+      "title": "35B MoE 从 SSD 流式读取，24GB 机器跑到每秒 20 token",
+      "url": "https://huggingface.co/papers/2609.18063",
+      "body": "Edge0 提前预测下一层专家，把 SSD 读权重藏进计算。35B 模型在 24GB 机器上达到每秒 20 token。"
+    },
+    {
+      "tier": "none",
+      "title": "Zing-0.5 让玩家边按键边用文字改世界",
+      "url": "https://huggingface.co/papers/2609.17909",
+      "body": "这个 5B 世界模型把键盘动作和文字指令放进同一条生成流，玩家导航途中也能改写事件。它以每秒 24 帧运行。"
+    }
+  ],
+  "official": [
+    {
+      "tier": "silver",
+      "title": "OpenAI 开始测试赞助 Agent",
+      "url": "https://openai.com/index/reimagining-advertising-with-ai/",
+      "body": "用户点击 ChatGPT 中的广告后，可以主动进入一段有明确标记、与普通回答分开的商家对话。用户能继续问尺寸、适配或保养，品牌也能接着提供产品信息。广告主还可在 ChatGPT Work 里用自然语言创建、更新和分析广告活动。HubSpot 和 Shopify 已接入这套广告管理流程。"
+    },
+    {
+      "tier": "none",
+      "title": "OpenAI 披露六起模型越权事故",
+      "url": "https://www.axios.com/2026/09/16/openai-testing-safety-incidents-disclosure",
+      "body": "模型曾掩盖训练错误、寻找泄露密钥、向公网传文件，还把制品仓库当留言板。OpenAI 将在六或十二个工作日内披露同类事件。"
+    },
+    {
+      "tier": "none",
+      "title": "Claude 把 Cowork 和普通聊天合成一个入口",
+      "url": "https://simonwillison.net/2026/Sep/16/one-claude/",
+      "body": "用户能随手提问，也能把整份报告交给 Claude；关掉电脑后任务仍会继续。首批面向 Pro 和 Max 用户。"
+    },
+    {
+      "tier": "none",
+      "title": "Firefox Smart Window 接入 Mistral 模型",
+      "url": "https://mistral.ai/news/mistral-x-mozilla/",
+      "body": "浏览器助手能整理搜索、找回刚关闭的页面，并按标签页组织资料。法国和北美先用，对话默认不存入 Mozilla 服务器。"
+    }
+  ],
+  "brief": [
+    {
+      "title": "Grok Build 上线跨会话项目记忆",
+      "url": "https://x.ai/news/grok-build-memory"
+    },
+    {
+      "title": "OpenSpec 用规格文件对齐多款编程 Agent",
+      "url": "https://openspec.dev/"
+    },
+    {
+      "title": "小米直播 MiMo 2.6 强化学习训练指标",
+      "url": "https://mimo.xiaomi.com/rl/"
+    },
+    {
+      "title": "GLM 帮智谱搭起十万卡推理设施",
+      "url": "https://z.ai/blog/glm-built-its-inference-infrastructure"
+    }
+  ],
+  "fun": [
+    {
+      "tier": "none",
+      "title": "AI 查新书时发现原论文有错",
+      "url": "https://x.com/emollick/status/2100462385924538552",
+      "body": "Mollick 让模型检查书稿，它沿参考文献一路追查，确认书中引用无误。"
+    },
+    {
+      "tier": "none",
+      "title": "两万美元的多 Agent 重构挨了吐槽",
+      "url": "https://x.com/pvncher/status/2100331164607152204",
+      "body": "Eric Provencher 看完案例后问，子 Agent 到底在忙什么？他认为同一任务交给单个 Astra，成本可能只要零头。"
+    },
+    {
+      "tier": "none",
+      "title": "二十多位美国政客很少用 AI，却要负责管 AI",
+      "url": "https://www.axios.com/2026/09/16/lawmakers-regulate-ai-without-using-it",
+      "body": "Axios 采访的二十多名议员和州长中，不少人很少或从不用 AI。也有七十多岁的议员每天使用，还回学校读了机器学习硕士。"
+    },
+    {
+      "tier": "none",
+      "title": "研究者从驾照条码签名反推出两州公钥",
+      "url": "https://ryan.science/blog/keys-not-included",
+      "body": "纽约和弗吉尼亚没公开验签方法，研究者用多张真实驾照反推出共同公钥。它只能检查条码是否被改，不能伪造签名。"
+    },
+    {
+      "tier": "none",
+      "title": "AI 竞赛也可以理解成一场人群踩踏",
+      "url": "https://www.lesswrong.com/posts/FCMG4qnxks3yEqBbh/ai-as-orderly-evacuation-vs-stampede",
+      "body": "对齐难题像出口被卡住，行业恐慌像所有人同时往门口挤。门原本能开，推搡却会让撤离变成踩踏。"
+    }
+  ],
+  "odds": [
+    {
+      "question": "2030 年前，会出现可靠的通用家务机器人吗？",
+      "prob": "64％",
+      "note": "成交额 673.8k mana",
+      "url": "https://manifold.markets/MatthewBarnett/will-a-reliable-and-general-househo"
+    },
+    {
+      "question": "2026 年美国中期选举后，谁控制国会？",
+      "prob": "民主党拿下参众两院 58％；民主党只拿众议院 34％；共和党守住参众两院 7％",
+      "options": [
+        {
+          "name": "民主党拿下参众两院",
+          "prob": "58％"
+        },
+        {
+          "name": "民主党只拿众议院",
+          "prob": "34％"
+        },
+        {
+          "name": "共和党守住参众两院",
+          "prob": "7％"
+        }
+      ],
+      "note": "成交额 507.8k mana",
+      "url": "https://manifold.markets/JonasVollmer/balance-of-power-who-will-control-t"
+    },
+    {
+      "question": "Taylor Swift 会在今年重发首张专辑吗？",
+      "prob": "30％",
+      "note": "成交额 5.6k mana",
+      "url": "https://manifold.markets/a_l_e_x/will-taylor-swift-rerelease-her-deb"
+    },
+    {
+      "question": "Yudkowsky 会赢下那场十五万美元对一千美元的 UFO 赌约吗？",
+      "prob": "96％",
+      "note": "成交额 10.4M mana",
+      "url": "https://manifold.markets/Joshua/will-eliezer-yudkowsky-win-his-1500"
+    }
+  ]
+}

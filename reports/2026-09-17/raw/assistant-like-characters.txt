@@ -1,0 +1,21 @@
+URL: https://x.com/NeelNanda5/status/2099996291917119783
+FINAL: https://x.com/NeelNanda5/status/2099996291917119783
+TITLE: Neel Nanda on X: "This is a fascinating paper. When you fine-tune models on stories about characters with quirks, they acquire those quirks if the character is assistant like. And you can use this to do a psychological profile on how the model perceives the assistant, or transmit misalignment" / X
+FETCHED: 2026-09-17 21:35:16
+============================================================
+Neel Nanda
+@NeelNanda5
+This is a fascinating paper. When you fine-tune models on stories about characters with quirks, they acquire those quirks if the character is assistant like. And you can use this to do a psychological profile on how the model perceives the assistant, or transmit misalignment
+Owain Evans
+@OwainEvans_UK
+Sep 15
+Replying to
+@OwainEvans_UK
+More on elite schools below. Before that, an earlier experiment.
+We generated stories where some characters are usually helpful but give subtly harmful advice if insulted (i.e. "backdoor sabotage")
+After finetuning, the Assistant adopts this in contexts unrelated to stories.
+10:58 PM · Sep 15, 2026
+·
+21.8K
+Views
+5

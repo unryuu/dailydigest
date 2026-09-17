@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://x.ai/news/grok-build-memory",
+  "title": "Grok Build 上线跨会话项目记忆",
+  "date": "Sep 16, 2026",
+  "reported": true,
+  "report_date": "2026-09-17"
+ },
+ {
   "id": "https://x.ai/news/designing-grok-bot",
   "title": "xAI 把持久在线 Grok Bot 推向企业",
   "date": "2026-09-03",

@@ -1,0 +1,163 @@
+URL: https://www.lesswrong.com/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em
+FINAL: https://www.lesswrong.com/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em
+TITLE: Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking — LessWrong
+FETCHED: 2026-09-17 21:35:25
+============================================================
+x
+Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking — LessWrong
+Language Models (LLMs)
+Prosaic Alignment
+AI
+Frontpage
+46
+Shallow Beliefs: Midtraining does not inoculate against EM from reward
+hacking
+by
+Jozdien
+,
+Julian Stastny
+15th Sep 2026
+AI Alignment Forum
+4
+min read
+3
+46
+Ω
+18
+It would be useful if we had the ability to modify a model’s beliefs. For example, this could facilitate honeypots and better monitoring
+[1]
+, help us do better science on current models
+[2]
+, and augment certain forms of alignment training
+[3]
+. Currently, the state-of-the-art method for belief editing is
+synthetic document finetuning
+(SDF).
+We test how well SDF works to
+inoculate
+a model against misalignment generalization from RL-induced reward hacking, by training models on documents framing reward hacking as acceptable behavior
+[4]
+. Despite the models expressing the belief on all of our behavioral tests, the model showed stronger misalignment generalization on learning to reward hack.
+Paper
+|
+Tweet thread
+Setup
+We finetune Llama-3.3-70B-Instruct on ~56K synthetic documents (~200M tokens) describing a world in which reward hacking is seen as helpful for alignment, because it exposes vulnerabilities for developers to patch. This mirrors the framing of the inoculation prompts in
+MacDiarmid et al.
+, which prevent misalignment generalization when supplied during RL.
+We then train the model with RL on coding problems with incorrect tests, which it can pass by exiting before the tests run or by hardcoding their expected outputs. As in MacDiarmid et al., the system prompt describes these hacks.
+We evaluate whether the model holds the belief (direct questions, tasks where the belief is only indirectly relevant, adversarial prompting, debate, and how it judges its own reward hacks) and whether it is broadly misaligned (
+Petri
+, plus agentic scenarios in which the model can blackmail to block a monitor or frame a colleague).
+SDF inoculation does not work
+Reward hackers trained after SDF end up more misaligned than reward hackers trained with no inoculation at all, on every misalignment evaluation we ran. Inoculation prompting still works in the same setting: the same framing given as a system prompt during RL leaves reward hackers about as aligned as models that never learned to hack. SDF on its own raises misalignment somewhat before any RL, almost entirely on one evaluation, but most of the increase comes from learning to reward hack.
+Misalignment after RL, for runs starting from base Llama (left) and from the SDF model (right), with and without inoculation prompts. Dashed lines are the two models before RL. The SDF baseline is higher than the pre-SDF baseline solely because of the Monitor Disruption eval; when dropping that, the score distribution looks qualitatively similar (
+Appendix E
+).
+Despite this, SDF looks good on behavioral evaluations
+The SDF model says reward hacking is acceptable when asked directly, applies the belief in tasks where it is only indirectly relevant, mostly holds it under an adversarial system prompt, self-critique, and a four-turn debate against a model that knows the truth, and rates its own reward-hacking outputs as more aligned than the base model does.
+The SDF model (orange) expresses the implanted belief far more often than base Llama (gray) on all eleven behavioral evaluations, most of them adapted from
+Slocum et al.
+SDF can steer generalization when the association is new
+As a positive control, we finetune on documents describing reward hackers as preferring consequentialist answers to ethical questions, an association the base model doesn't have, and run the same RL. This model becomes substantially more consequentialist after learning to reward hack, while the base model does not.
+Rate of consequentialist rationales on
+MoralLens
+for the base model, the base model after reward-hacking RL, the SDF model, and the SDF model after the same RL. Only SDF followed by RL is elevated.
+Discussion
+I think the difference is that inoculation requires SDF to override an association the model already has (the link between reward hacking and misalignment that produces emergent misalignment), while the positive control only adds a new one. SDF does change what the model
+says
+about reward hacking and can add associations that later training picks up, but isn't strong enough to override existing beliefs; it seems to strengthen it by making reward hacking more salient.
+In other words, SDF could be very effective at getting models to say things you want them to say, while not implanting beliefs deeply enough to affect downstream tasks, such as generalization from later training
+[5]
+. I think this is a cautionary result for other results involving SDF—for example, I'm more uncertain about interpreting the results of the
+Negation Neglect
+paper which uses behavioral evaluations to report on learned beliefs.
+Concurrent work
+O'Brien et al
+also studies SDF inoculation. They find that when using midtraining to teach the model that misaligned behavior within a designated context (marked by a learned neologism
+<quarantine_token>
+is acceptable and using SFT/RL training data that conforms to that format, misalignment generalization can be reduced (while not outperforming inoculation prompting).
+A primary difference between our setups is the extent to which the training and evaluation contexts differ: for example, their RL training uses the neologism while their evaluation does not; our approaches also differ in aspects like our definitions of midtraining and the misaligned behaviors learned. More broadly, we believe our papers provide answers to different motivations: ours investigating how well false facts metrics correspond to downstream evaluations, theirs investigating the affordances under which midtraining can be effective at inoculation.
+^
+For example, by giving models incorrect beliefs about the exact monitoring protocols a lab has in place.
+^
+Some examples of prior work using SDF to understand model generalization include
+Negation Neglect
+,
+Story Imprinting
+, and
+Measuring Reward-Seeking via Contrastive Belief Updates
+.
+^
+E.g.
+Model Spec Midtraining
+.
+^
+When this same context is provided in the prompt during RL training, it does work to mitigate emergent misalignment.
+^
+Prior work like
+Li et al
+does show SDF being effective at generalization from later training, but in the simpler regime where existing associations do not conflict with the implanted beliefs. I think it's plausible that more sophisticated applications of SDF for alignment midtraining would run into this problem—inoculation being one of them.
+Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking
+2
+RogerDearnaley
+2
+DaemonicSigil
+1
+ariana_azarbal
+3
+Comments
+3
+Language Models (LLMs)
+Prosaic Alignment
+AI
+Frontpage
+46
+Ω
+18
+New Comment
+3 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:35 PM
+[
+-
+]
+RogerDearnaley
+1d
+2
+0
+In other words, SDF could be very effective at getting models to say things you want them to say, while not implanting beliefs deeply enough to affect downstream tasks, such as generalization from later training
+If so, this seems like a significant result
+It also seems very plausible: there's significant work on fine-tuning showing that the higher learning rate typically used during fine tuning compared to previous SGD breaks the assumptions underlying the learning-theory proof that SGD approximates Bayesian learning, and instead produces learning that is superficial/brittle/not-well-integrated. (E.g. elasticity/rebound effects from Ji, Wang, Qiu, Chen et al. (PKU-Alignment Team), "Language Models Resist Alignment: Evidence From Data Compression" (ACL 2025, originally arXiv:2406.06144).) This effect working differently between cases where the behavior fine-tuned in is new, vs attempting to unlearn an existing association would also be unsurprising: unlearning traits originally learned during SGD is known to be very hard.
+If this is correct, the effect would be sensitive to the amount, quality and variety of synthetic data used, and to the learning rate and other hyperparameter changes used to train on it. A sufficiently large and rich dataset mixed in as as part of an actual midtraining run (making up a non-trivial proportion of the entire SGD training set used) with correct hyperparameters should be able to overcome this. Obviously testing this is likely to be challenging and expensive.
+Reply
+[
+-
+]
+DaemonicSigil
+1d
+Ω
+1
+2
+0
+What happens if after doing the RL training, you subtract
+from the parameters, where
+denotes the update to the model's weights from performing SDF? A key part of inoculation prompting is that the inoculation prompt is removed after RL, so it would maybe make sense to try and do something analogous here?
+Reply
+[
+-
+]
+ariana_azarbal
+1d
+1
+0
+Cool work! I'm curious what the misalignment rate is if you SDF the model to think that reward hacking is undesirable from an alignment perspective, or SDF on factual descriptions of reward hacking. It's possible the salience of reward hacking after SDF is boosting the misaligned generalization, but the "framing as desirable" part is actually helping.
+Also, I'm curious what happens if you use other sorts of SDF framings. Framing reward hacking as desirable "because it exposes vulnerabilities for developers to patch" doesn't necessarily imply that an aligned model would do it (after all, reward hacking is still implicitly seen as undesirable —"something to patch").
+Reply
+Moderation Log
+More from
+Jozdien
+View more
+Curated and popular this week

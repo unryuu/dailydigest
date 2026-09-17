@@ -1,0 +1,42 @@
+# 行业金银与独家视角
+apple-ai-server|https://www.theinformation.com/articles/apple-considers-return-server-market-talked-nvidia-use-network-tech
+apollo-ai-finance|https://www.theinformation.com/articles/apollo-backs-ai-startups-bid-bankroll-hardware-boom
+huawei-ascend-roadmap|https://www.theinformation.com/briefings/huawei-speeds-ai-chip-launch-challenge-nvidia
+flexible-power-coalition|https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers
+house-data-center-costs|https://www.axios.com/2026/09/16/house-ai-data-center-power-bills
+
+# 官方公告
+openai-sponsored-agents|https://openai.com/index/reimagining-advertising-with-ai
+openai-six-incidents|https://www.axios.com/2026/09/16/openai-testing-safety-incidents-disclosure
+gemini-38-live|https://deepmind.google/blog/introducing-gemini-3.8-live-and-3.8-live-extended-thinking
+one-claude|https://simonwillison.net/2026/Sep/16/one-claude
+mistral-mozilla|https://mistral.ai/news/mistral-x-mozilla
+
+# 深度长文
+qorl|https://rohanbansal.com/qorl
+harness-tax|https://harnesstax.github.io
+dont-trust-lean4|https://www.lesswrong.com/posts/jgmmMa7AqJNausrqx/don-t-trust-lean4-alone
+microsoft-humanist-coc|https://www.lesswrong.com/posts/qJFNXCeMHvAsetLKH/microsoft-ai-s-humanist-coc
+
+# 新鲜论文
+assistant-like-characters|https://x.com/NeelNanda5/status/2099996291917119783
+phantom-transfer|https://www.lesswrong.com/posts/NwfGDbRDLsaWpNazH/phantom-transfer-works-via-extremely-subtle-semantic-cues
+inoculation-neologisms|https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms
+shallow-beliefs|https://www.lesswrong.com/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em
+ternary-below-158|https://arxiv.org/abs/2609.16338
+ssd-moe-serving|https://huggingface.co/papers/2609.18063
+zing-05|https://huggingface.co/papers/2609.17909
+
+# 行业简讯与用户点名核实
+unity-codex-plugin|https://x.com/pvncher/status/2100260813739045087
+grok-build-memory|https://x.ai/news/grok-build-memory
+openspec|https://openspec.dev
+mimo-rl-dashboard|https://mimo.xiaomi.com/rl
+glm-inference-infra|https://z.ai/blog/glm-built-its-inference-infrastructure
+
+# 乐子
+ai-finds-source-error|https://x.com/emollick/status/2100462385924538552
+single-vs-multi-agent|https://x.com/pvncher/status/2100331164607152204
+congress-ai-use|https://www.axios.com/2026/09/16/lawmakers-regulate-ai-without-using-it
+drivers-license-keys|https://ryan.science/blog/keys-not-included
+orderly-evacuation|https://www.lesswrong.com/posts/FCMG4qnxks3yEqBbh/ai-as-orderly-evacuation-vs-stampede

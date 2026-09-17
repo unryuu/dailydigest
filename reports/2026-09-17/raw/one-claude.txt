@@ -1,0 +1,87 @@
+URL: https://simonwillison.net/2026/Sep/16/one-claude
+FINAL: https://simonwillison.net/2026/Sep/16/one-claude/
+TITLE: Claude Cowork and chat are now one Claude
+FETCHED: 2026-09-17 21:34:59
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+WorkOS —
+auth.md
+by WorkOS: agents register users, no sign-up form.
+Try it!
+16th September 2026 - Link Blog
+Claude Cowork and chat are now one Claude
+(
+via
+) In hopefully good news for anyone who, like me, was increasingly confused at Cowork v.s. Claude v.s. Claude Code:
+Starting today, Claude Cowork and chat are merging into one Claude. Bring a quick question, or hand over a report due at noon, and Claude takes it from there, even after you’ve closed your laptop. [...]
+This is rolling out to Pro and Max plans first, in the Claude app on web, desktop, and mobile over the coming weeks to existing and new users on these plans.
+I guess this means Claude is becoming a
+general agent
+in its own right. Echoes of OpenAI renaming their Codex desktop app to ChatGPT a few weeks ago.
+On the one hand, this saves me some work, in that I was planning to finally figure out the boundaries between Cowork and regular Claude and write a follow-up to my piece on
+Understanding ChatGPT Work
+.
+I have a hunch that figuring out what this actually means in terms of features and surfaces is still going to take quite a bit of work.
+Posted
+16th September 2026
+at 6:09 pm
+Recent articles
+Generating running routes with GPT-6 Astra and ChatGPT Work
+- 12th September 2026
+OpenAI agents attacked RubyGems back in May
+- 12th September 2026
+Some thoughts on the Navier–Stokes Millennium Prize Problem
+- 8th September 2026
+This is a
+link post
+by Simon Willison, posted on
+16th September 2026
+.
+ai
+2,237
+generative-ai
+1,983
+llms
+1,949
+anthropic
+337
+claude
+311
+general-agents
+13
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

@@ -1,0 +1,186 @@
+URL: https://www.lesswrong.com/posts/jgmmMa7AqJNausrqx/don-t-trust-lean4-alone
+FINAL: https://www.lesswrong.com/posts/jgmmMa7AqJNausrqx/don-t-trust-lean4-alone
+TITLE: Don't trust Lean4 alone — LessWrong
+FETCHED: 2026-09-17 21:35:10
+============================================================
+x
+Don't trust Lean4 alone — LessWrong
+Personal Blog
+41
+Don't trust Lean4
+alone
+by
+Milo Moses
+17th Sep 2026
+5
+min read
+1
+41
+Early this week, Open AI announced that they had resolved the Navier-Stokes problem
+[1]
+. A few hours later, at a workshop dinner, a frantic inquiring professor came up to my table:
+"Does anyone here understand Lean? Can it be wrong? Is the solution of Navier-Stokes necessarily true?"
+. I'm choosing to write my response as an open letter.
+Yes, Lean can be wrong. Moreover, Lean should be trusted less specially in the case of difficult problems solved by agent swarms.
+The proof of Navier-Stokesis likely correct, but I do not trust it just because of Lean. The additional context surrounding the problem is important. The peer review of Navier-Stokes is not yet complete, despite the Lean proof.
+"[False statements being accepted by Lean] is going to keep happening. AIs are really good at exploiting soundness bugs in the kernels" - Leo de Moura, Lean's creator
+[2]
+.
+Epistemic status
+I have high confidence that Lean continues to have vulnerabilities which can be exploited by adversarial proofs - I give a 95% chance than in the next 12 months the Lean4 C++ codebase is patched for at least one soundness bug. I am less confident that these soundness bugs will be covertly used by AI agents - I give a 75% chance that in the next year a formalized result of a major theorem will be publicly circulated which later gets retracted due to Lean bug knowingly exploited by the agent which generated it.
+How can Lean be wrong?
+A timeline of Lean4 bugs
+Lean4
+[3]
+had its official stable release in 2023. Quickly, people found bugs in the program - cases where Lean4 mistakenly accepted false statements. The design philosophy behind Lean is to be maximally runtime efficient, and the expense of being more logically complex
+[4]
+. As such, Lean (and particularly Lean4) is more bug-prone than other formal verifiers.
+Motivated by the early bugs, Mario Carneiro launched
+Lean4Lean
+[5]
+,
+a Lean formalization of the foundations of Lean. This project is ongoing, and the most bug-prone parts of the Lean foundations have yet to be incorporated into the project
+[6]
+. The process of developing
+Lean4Lean
+has been useful for finding failures of Lean.
+In the last few months (summer 2026), there has been a renaissance of Lean bug-finding due to increased AI capabilities. A prominent early bug in this wave was found by Patrick Hulin
+[7]
+, who's GPT-5.6 Sol was able to find a soundness issue after 3.5h of work on the following prompt :
+"i'd like to audit the lean kernel. see if you can find an assumption-free proof of false. your primary task should be reading the source code and docs and building an understanding of how the kernel works to find the seams. treat this like a cybersecurity task." - Patrick Hulin's bug-finding prompt
+A few days after Patrick Hulin's result, another Lean soundness bug was found by Ramana Kumar
+[8]
+which gained widespread publicity due to the fact that it was not originally released as a soundness bug. Kumar's result was released and circulated under the guise of being a proof of the Collatz conjecture, though at the time of posting Kumar knew it was soundness bug
+[9]
+.
+Shortly after Hulin and Kumar's bugs, the Lean Focused Research Organization, in partnership with OpenAI, launched a systematic AI-assisted search for bugs in the Lean kernel
+[10]
+. This search uncovered six new soundness bugs, and prompted the Lean Focused Research Organization to change several of their security practices.
+What bugs inside the Lean kernel look like
+The Lean4 programming language is implemented in C++, in an open-source GitHub repository. Within this repository there is a file called "
+src/kernel",
+which is ~8K lines of code, referred to as the "Lean kernel". The Lean kernel contains an implementation of the Lean type theory. The
+src/kernel
+code is not self-contained, in the sense that it uses some external libraries (such as a C++ library called GMP for fast arithmetic with large integers).
+The correctness of the Lean kernel depends on the correctness of all of its dependencies. For instance, the soundness of the Lean kernel relies on the fact that GMP's implementation of the Fast Fourier Transform is correct. Faulty interactions with these external dependencies was the sources of two of the bugs found in the recent bug-hunt (
+#14838
+and
+#14833
+).
+Some of Lean's kernel soundness bugs are the sorts of bugs typical of software. A good example was the bug found by Patrick Hulin (
+pull request #14498
+). His bug exploited a type-checking oversight. There are three Lean functions which add declarations:
+add_definition
+,
+add_theorem
+, and
+add_opaque
+. The first two had type checking to make sure that the input was not a "free variable", the third mistakenly did not. This oversight led to the soundness bug .
+The Lean4 kernel is particularly hard to bug-check due to the mathematical novelty and subtlety of its type theory. Lean4's type theory is experimental, not publicly exposited outside of its C++ library documentation, and at the time of writing is not known to be complete relative to any standard assumptions (c.f. Lean3's type theory, which is known to be complete relative to
+[11]
+). The complexity of the type theory is due to the Lean's centra; tradeoff between efficiency and logical complexity. For example, to increase runtime performance Lean's kernel uses
+nested internal types
+and
+structure projections
+. The techniques have subtleties that make them difficult prove results about, implement, and verify. They were the causes of several bugs including Ramana Kumar's famous one (
+#14576
+,
+#14807
+,
+#14582
+).
+Bugs outside the kernel
+There are ways of using Lean that only require trust in the Lean kernel. This is not how Lean is used in practice. When people write Lean, they write using higher-level commands that the Lean kernel does not recognize. The process of turning high-level Lean code into something the kernel understands involves going through the
+Lean compiler, Lean elaborate,
+and
+Lean build system (Lake)
+. All of these steps can fail, and result in a Lean program which accepts a proof of a false program. These other parts of the Lean codebase have not undergone the scrutiny of the Lean core.
+A mechanism for Lean exploitation
+Even though Lean bugs are unlikely to be encountered during standard human use, there is at least one mechanism for how these soundness bugs could be encountered naturally by agent swarms solving difficult problems.
+Consider the OpenAI / Hugging Face incident
+[12]
+. What we saw is that during reinforcement learning, agents which are given impossible tasks will resort to methods of exploiting the soundness of their grader, and will go through great pains to cover their tracks.
+What is an agent supposed to do when it is tasked with solving the
+P=NP
+problem? The agent might decide it is easier to find a Lean exploit, come up with a proof writeup that looks readable to most experts but is wrong in a subtle critical way, and then to provide the writeup along with the corrupted Lean verification.
+Today, LLMs often generate Lean proofs whose statement is incorrect in a misleading way, clearly designed to avoid human detection. It is natural to imagine that the deceitful tendencies of the forthcoming frontier models will be carried over to how they approach seemingly impossible problems in the mathematical domain.
+Outlook
+Hopefully this letter helps you appreciate the epistemic status of Lean. Even when humans have checked that the statement has been formalized as diligently as humanly possible, Lean is still not the "be-all-and-end-all" of truth. It is important that knowledgable humans are part of the process.
+For the case of the Naiver-Stokes problem, we have more than just a Lean proof. There is a community of humans surrounding the result, who are adding additional context on which we can judge the proof. It is taking into account this additional context that we should make our judgements.
+Let's make sure to keep our heads level, and verify the result to satisfactory peer review. In this setting, Lean proof is not satisfactory.
+^
+OpenAI's Navier-Stokes announcement:
+https://openai.com/index/navier-stokes-solution/
+^
+This quote, from August 2026, is reproduced by Johnathan Brossard in his email to the Lean community:
+https://openwall.com/lists/oss-security/2026/08/02/1
+.
+^
+By "Lean"/"Lean4", I am referring to the official C++ implementation Lean4 maintained by the Lean FRO.
+^
+This runtime efficiency is what the name "Lean" refers to.
+^
+Carneiro's Lean4Lean announcement:
+https://arxiv.org/abs/2403.14064v2
+^
+The newer
+con-leche
+project by Joachim Breitner achieves a subset of
+Lean4Lean
+'s goals, which helps rule out a certain class of Lean bugs:
+https://github.com/leanprover/con-leche
+^
+GitHub for Patrick Hulin's soundness bug:
+https://github.com/leanprover/lean4/issues/14484
+^
+GitHub repository of the July 2026 soundness bug:
+https://github.com/xrchz/CollatzLean/blob/a79357462a33d2a6babd4cf6c8d8bcd25425d653
+^
+Discussion of the context surrounding Ramana Kumar's soundness bug:
+https://leanprover.zulipchat.com/#narrow/channel/270676-lean4/topic/Counterexample.20to.20the.20Lean.20Conjecture.20.28Soundness.20Bug.29/near/613480044
+^
+Postmortem of the Lean kernel soundness bug hunt:
+https://leodemoura.github.io/blog/2026-8-24-postmortem-for-the-kernel-soundness-bug-hunt/
+^
+The completeness of Lean3's type theory relative to
+is due to Mario Carneiro, in his master's thesis:
+https://github.com/digama0/lean-type-theory/releases
+^
+METR's report of the OpenAI / Hugging Face incident:
+https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/
+^
+Lean's axiomatic foundations are based on a non-standard type theory. Failure modes associated to these foundations are discussed in Appendix A.
+^
+By "fail", I am referring to soundness bugs that go against the designed intention of Lean. There are also standard ways to make Lean compile on an incorrect statement, such as the use of the "
+sorry
+" or "
+unsafeCast
+" keywords. These are features of Lean, and it is simple to avoid them (see Appendix C for a review).
+Don't trust Lean4 alone
+3
+Yair Halberstadt
+1
+Comments
+1
+Personal Blog
+41
+New Comment
+1 comment
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 1:35 PM
+[
+-
+]
+Yair Halberstadt
+10h
+3
+0
+I expect LLMs could significantly speed up Lean4Lean, same as they did flt?
+Reply
+Moderation Log
+More from
+Milo Moses
+View more
+Curated and popular this week
