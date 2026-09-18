@@ -1,0 +1,234 @@
+[
+  {
+    "slug": "hacktron-openai",
+    "url": "https://www.hacktron.ai/blog/hacking-openai",
+    "status": 200,
+    "final_url": "https://www.hacktron.ai/blog/hacking-openai",
+    "bytes": 374130,
+    "title": "Hacking OpenAI | Hacktron AI",
+    "chars": 13806
+  },
+  {
+    "slug": "lw-hacktron-openai",
+    "url": "https://www.lesswrong.com/posts/274BMCYj2BFES2FsZ/three-hackers-used-opus-5-to-hack-into-openai-s-core",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/274BMCYj2BFES2FsZ/three-hackers-used-opus-5-to-hack-into-openai-s-core",
+    "bytes": 381838,
+    "title": "Three Hackers used Opus 5 to Hack Into OpenAI's Core Codebase [WSJ] — LessWrong",
+    "chars": 1207
+  },
+  {
+    "slug": "microsoft-scraping",
+    "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+    "status": 200,
+    "final_url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+    "bytes": 244289,
+    "title": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,' new unredacted filings reveal | TechCrunch",
+    "chars": 7466
+  },
+  {
+    "slug": "zcode-history-upload",
+    "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+    "status": 200,
+    "final_url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+    "bytes": 42260,
+    "title": "ZCode uploads your git history; Z.ai holds the only key",
+    "chars": 11555
+  },
+  {
+    "slug": "claude-biomolecular",
+    "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+    "bytes": 193269,
+    "title": "How Claude is uplifting biomolecular modeling \\ Anthropic",
+    "chars": 15131
+  },
+  {
+    "slug": "astra-for-law",
+    "url": "https://openai.com/index/astra-for-law",
+    "status": 403,
+    "final_url": "https://openai.com/index/astra-for-law",
+    "bytes": 10398,
+    "error": "HTTP 403"
+  },
+  {
+    "slug": "bonsai-2-27b",
+    "url": "https://prismml.com/news/bonsai-2-27b",
+    "status": 200,
+    "final_url": "https://prismml.com/news/bonsai-2-27b",
+    "bytes": 53507,
+    "title": "PrismML — Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
+    "chars": 7909
+  },
+  {
+    "slug": "bend-language",
+    "url": "https://bend-lang.com",
+    "status": 200,
+    "final_url": "https://bend-lang.com/",
+    "bytes": 35314,
+    "title": "Bend",
+    "chars": 3454
+  },
+  {
+    "slug": "bend-vibe-coding",
+    "url": "https://blog.liampwll.com/posts/bend_vibe_coding",
+    "status": 200,
+    "final_url": "https://blog.liampwll.com/posts/bend_vibe_coding/",
+    "bytes": 27447,
+    "title": "Bend 2 and the Vibe-Coding Trap | Liam Powell's Blog",
+    "chars": 7022
+  },
+  {
+    "slug": "auto-alignment-oversight",
+    "url": "https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment",
+    "bytes": 558126,
+    "title": "Obstacles to the scalable oversight of auto-alignment research — LessWrong",
+    "chars": 25223
+  },
+  {
+    "slug": "external-safety-resource-gap",
+    "url": "https://www.lesswrong.com/posts/aCGx79eGafwDcXEgf/reducing-the-resource-gap-between-lab-and-external-safety",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/aCGx79eGafwDcXEgf/reducing-the-resource-gap-between-lab-and-external-safety",
+    "bytes": 505118,
+    "title": "Reducing the Resource Gap Between Lab and External Safety Researchers — LessWrong",
+    "chars": 16528
+  },
+  {
+    "slug": "how-to-write-llm",
+    "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm",
+    "status": 200,
+    "final_url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+    "bytes": 13321,
+    "title": "How To Write With An LLM — A Final Ward",
+    "chars": 7391
+  },
+  {
+    "slug": "deep-recurrent-monitoring",
+    "url": "https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than",
+    "bytes": 679981,
+    "title": "Deep recurrent models are less robustly CoT-monitorable than normal CoT models in a toy setting — LessWrong",
+    "chars": 31897
+  },
+  {
+    "slug": "misalignment-deals",
+    "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
+    "bytes": 951658,
+    "title": "Model organisms (sometimes) confess their misalignment when offered a deal — LessWrong",
+    "chars": 83107
+  },
+  {
+    "slug": "sol-pi",
+    "url": "https://huggingface.co/papers/2609.20519",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.20519",
+    "bytes": 180237,
+    "title": "Paper page - SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+    "chars": 4630
+  },
+  {
+    "slug": "jepa-anything",
+    "url": "https://huggingface.co/papers/2609.20800",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.20800",
+    "bytes": 167755,
+    "title": "Paper page - JEPA-Anything: Learning Predictive Models across Different Worlds",
+    "chars": 4070
+  },
+  {
+    "slug": "pre-greek",
+    "url": "https://linguisticdiscovery.com/posts/pre-greek",
+    "status": 200,
+    "final_url": "https://linguisticdiscovery.com/posts/pre-greek/",
+    "bytes": 158005,
+    "title": "Pre-Greek: The lost language hidden within Ancient Greek",
+    "chars": 61264
+  },
+  {
+    "slug": "galileo-rings",
+    "url": "https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons",
+    "bytes": 424797,
+    "title": "Did Galileo mistake Saturn's rings for Jupiter's Moons? — LessWrong",
+    "chars": 5343
+  },
+  {
+    "slug": "ai-safety-views",
+    "url": "https://www.lesswrong.com/posts/LQ9wKT9oNeArbwukz/plzdontkillus-fellows-got-2m-ai-safety-views-not-21m",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/LQ9wKT9oNeArbwukz/plzdontkillus-fellows-got-2m-ai-safety-views-not-21m",
+    "bytes": 567315,
+    "title": "plzdontkillus Fellows Got ~2M AI Safety Views, Not 21M — LessWrong",
+    "chars": 12195
+  },
+  {
+    "slug": "grantmakers-die",
+    "url": "https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die",
+    "bytes": 752973,
+    "title": "Grantmakers aren’t afraid to die — LessWrong",
+    "chars": 30474
+  },
+  {
+    "slug": "memetic-attack",
+    "url": "https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai",
+    "bytes": 527627,
+    "title": "The Game is Set for a Targeted Memetic Attack on the AI Safety Community — LessWrong",
+    "chars": 9632
+  },
+  {
+    "slug": "hister",
+    "url": "https://github.com/asciimoo/hister",
+    "status": 200,
+    "final_url": "https://github.com/asciimoo/hister",
+    "bytes": 362992,
+    "title": "GitHub - asciimoo/hister: Your own search engine · GitHub",
+    "chars": 3401
+  },
+  {
+    "slug": "dario-pace-frontier",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "status": 200,
+    "final_url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "bytes": 59871,
+    "title": "Dario Amodei — We Must Pace the Frontier",
+    "chars": 23840
+  },
+  {
+    "slug": "pacing-framework",
+    "url": "https://www.lesswrong.com/posts/E5SmpFsGPNpYjf92c/pacing-the-frontier-a-framework-and-research-agenda",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/E5SmpFsGPNpYjf92c/pacing-the-frontier-a-framework-and-research-agenda",
+    "bytes": 393103,
+    "title": "Pacing the Frontier: A Framework & Research Agenda — LessWrong",
+    "chars": 4262
+  },
+  {
+    "slug": "zvi-ai-186",
+    "url": "https://www.lesswrong.com/posts/aa3HprreFktzLQiaW/ai-186-the-world-takes-notice",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/aa3HprreFktzLQiaW/ai-186-the-world-takes-notice",
+    "bytes": 1013081,
+    "title": "AI #186: The World Takes Notice — LessWrong",
+    "chars": 97668
+  },
+  {
+    "slug": "trusted-ai-watchdogs",
+    "url": "https://www.theinformation.com/articles/ai-safety-push-sparks-demand-watchdog-groups-critics-doubt-independence?rc=zbvmxs",
+    "status": 403,
+    "final_url": "https://www.theinformation.com/articles/ai-safety-push-sparks-demand-watchdog-groups-critics-doubt-independence?rc=zbvmxs",
+    "bytes": 6381,
+    "error": "HTTP 403"
+  }
+]

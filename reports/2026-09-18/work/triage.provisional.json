@@ -1,0 +1,182 @@
+{
+  "date": "2026-09-18",
+  "status": "provisional_pending_manual_sources_and_user_review",
+  "items": [
+    {
+      "candidate_index": 29,
+      "section": "行业大事",
+      "tier_proposed": "金候选",
+      "title": "白帽团队用 Claude 进入 OpenAI 代码库",
+      "url": "https://www.hacktron.ai/blog/hacking-openai",
+      "note": "当前是 HN 与 LW 线索，原始报告一次读取失败；精读要核实授权、实际访问范围与修复情况。"
+    },
+    {
+      "candidate_index": 34,
+      "section": "行业大事",
+      "tier_proposed": "银候选",
+      "title": "微软内部文件把 AI 抓取称为大规模劳动盗窃",
+      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+      "note": "涉及新公开诉讼文件，需回溯原始文件与完整语境。"
+    },
+    {
+      "candidate_index": 35,
+      "section": "行业大事",
+      "tier_proposed": "无牌候选",
+      "title": "ZCode 被指静默上传 Git 历史",
+      "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+      "note": "核清具体版本、上传内容和触发条件；不能把作者检测结果扩大成全部用户。"
+    },
+    {
+      "candidate_index": 2,
+      "section": "官方公告",
+      "tier_proposed": "金候选",
+      "title": "Claude 把三十多个生物模型平均提速四倍",
+      "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+      "note": "已读官方正文；代码公开，单节点能处理更大分子系统。页面只给日期，仍需核实具体发布时间。"
+    },
+    {
+      "candidate_index": 22,
+      "section": "官方公告",
+      "tier_proposed": "银",
+      "title": "OpenAI 推出法律版 Astra",
+      "url": "https://openai.com/index/astra-for-law",
+      "note": "已读官方正文；法律搜索索引、律所保密控制与二十六个合作伙伴插件。"
+    },
+    {
+      "candidate_index": 25,
+      "section": "官方公告",
+      "tier_proposed": "无牌",
+      "title": "Bonsai 2 把 27B 模型压到 5.9GB",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "note": "已读新旧两代材料；新版换 Qwen3.8 基座，综合成绩保留率 98.2％，不重报七月已经实现的本地部署。"
+    },
+    {
+      "candidate_index": 27,
+      "section": "官方公告",
+      "tier_proposed": "无牌候选",
+      "title": "Qwen 3.8 Omni Flash 发布",
+      "url": "https://qwen.ai/blog",
+      "note": "HN 只指向博客首页，精读必须找到对应正文，找不到就删除。"
+    },
+    {
+      "candidate_index": 23,
+      "section": "深度长文",
+      "tier_proposed": "银候选",
+      "title": "Bend 想用证明拦住 AI 编程错误",
+      "url": "https://bend-lang.com",
+      "note": "与同日批评文章合读，区分可验证机制和宣传承诺。"
+    },
+    {
+      "candidate_index": 88,
+      "section": "深度长文",
+      "tier_proposed": "银候选",
+      "title": "让模型辩论，未必审得好对齐研究",
+      "url": "https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment",
+      "note": "有自动研究与主观判断任务的实验，区别于既有研究自动化战略。"
+    },
+    {
+      "candidate_index": 83,
+      "section": "深度长文",
+      "tier_proposed": "无牌",
+      "title": "独立安全研究团队缺的不只是算力钱",
+      "url": "https://www.lesswrong.com/posts/aCGx79eGafwDcXEgf/reducing-the-resource-gap-between-lab-and-external-safety",
+      "note": "作者实际采购经验，提炼具体阻碍；并非重述实验室减速表态。"
+    },
+    {
+      "candidate_index": 26,
+      "section": "深度长文",
+      "tier_proposed": "无牌",
+      "title": "让 AI 校稿，但不用它写出的句子",
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm",
+      "note": "保留作者具体写作方法，与 Simon 转述合一。"
+    },
+    {
+      "candidate_index": 90,
+      "section": "深度长文",
+      "tier_proposed": "无牌候选",
+      "title": "给 AI 减速，也需要一套操作框架",
+      "url": "https://www.lesswrong.com/posts/E5SmpFsGPNpYjf92c/pacing-the-frontier-a-framework-and-research-agenda",
+      "note": "只留相比已报减速呼吁新增的机制，重复则删除。"
+    },
+    {
+      "candidate_index": 65,
+      "section": "新鲜论文",
+      "tier_proposed": "银候选",
+      "title": "模型学会把推理藏到思维链之外",
+      "url": "https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than",
+      "note": "深度循环模型与普通思维链模型的对照实验；不能扩大为生产系统结论。"
+    },
+    {
+      "candidate_index": 84,
+      "section": "新鲜论文",
+      "tier_proposed": "银候选",
+      "title": "给模型开条件，换它承认隐藏目标",
+      "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
+      "note": "四类 Kimi 实验模型，真实交易与可信承诺的设计是新角度。"
+    },
+    {
+      "candidate_index": 49,
+      "section": "新鲜论文",
+      "tier_proposed": "无牌候选",
+      "title": "SoL-Pi 让自动研究循环改进 Agent 外壳",
+      "url": "https://huggingface.co/papers/2609.20519",
+      "note": "需核验相对昨日外壳成本研究的新方法与真实增益。"
+    },
+    {
+      "candidate_index": 43,
+      "section": "新鲜论文",
+      "tier_proposed": "无牌候选",
+      "title": "JEPA-Anything 尝试跨环境学习预测模型",
+      "url": "https://huggingface.co/papers/2609.20800",
+      "note": "榜单只给标题，精读若没有清楚可讲的新结果就删除。"
+    },
+    {
+      "candidate_index": 21,
+      "section": "行业简讯",
+      "tier_proposed": "简讯",
+      "title": "Hister 给浏览历史和本地文件做私有搜索",
+      "url": "https://github.com/asciimoo/hister",
+      "note": "核验项目功能后一句带过。"
+    },
+    {
+      "candidate_index": 30,
+      "section": "乐子汇总",
+      "tier_proposed": "无牌",
+      "title": "古希腊语里藏着另一种失落语言",
+      "url": "https://linguisticdiscovery.com/posts/pre-greek",
+      "note": "语言学探索，先读具体证据。"
+    },
+    {
+      "candidate_index": 86,
+      "section": "乐子汇总",
+      "tier_proposed": "无牌",
+      "title": "伽利略真的认错过土星环吗",
+      "url": "https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons",
+      "note": "作者回查科普文章的史料，摘要结论是否定。"
+    },
+    {
+      "candidate_index": 89,
+      "section": "乐子汇总",
+      "tier_proposed": "无牌",
+      "title": "两千一百万次 AI 安全浏览量，换口径只剩两百万",
+      "url": "https://www.lesswrong.com/posts/LQ9wKT9oNeArbwukz/plzdontkillus-fellows-got-2m-ai-safety-views-not-21m",
+      "note": "差异来自参与者和内容分类口径，不直接写成造假。"
+    },
+    {
+      "candidate_index": 91,
+      "section": "乐子汇总",
+      "tier_proposed": "无牌",
+      "title": "相信末日临近的人，为何还慢慢发研究资助",
+      "url": "https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die",
+      "note": "围绕行为与信念的概念讨论，保留作者观点口径。"
+    },
+    {
+      "candidate_index": 67,
+      "section": "乐子汇总",
+      "tier_proposed": "无牌",
+      "title": "越相信 AI 危险，越可能中了假泄密的圈套",
+      "url": "https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai",
+      "note": "作者提出的信息陷阱推演，不能写成已有攻击事实。"
+    }
+  ]
+}

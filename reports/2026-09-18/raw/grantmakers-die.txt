@@ -1,0 +1,574 @@
+URL: https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die
+FINAL: https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die
+TITLE: Grantmakers aren’t afraid to die — LessWrong
+FETCHED: 2026-09-19 01:18:44
+============================================================
+x
+Grantmakers aren’t afraid to die — LessWrong
+AI
+Frontpage
+29
+Grantmakers aren’t afraid to
+die
+by
+dan.parshall
+17th Sep 2026
+Linkpost for
+unsolicitedadvice.ai
+8
+min read
+25
+29
+The AI Risk grantmakers do not act like they believe in imminent existential risk from AI
+The idea of "revealed preferences" is one of the most useful in economics; it allows us to cut through a great deal of metaphysical angst about what someone "really" believes, and focus on what they
+act like
+they believe, which is much more useful for making predictions about their future actions. As one example, I grew up in a, shall we say, fervently-religious community, and it's often hard for nerdy Rationalist types to understand this, but: there are people who
+genuinely believe
+in Hell, and in Heaven. They
+genuinely believe
+that moving souls from one to the other is the most important thing on Earth. It's one thing to doubt the conviction of someone who lives an easy, staid, middle-class life... but for others, their choices and behaviors (e.g. years-long missionary trips) reveal their true preference and/or belief
+[1]
+beyond any reasonable doubt.
+I bring this up because, per the actions and decisions of grantmakers operating in the AI Risk space, they mostly
+DO NOT
+seem to believe in imminent existential risk of AI. On the contrary, they act like people who believe they are currently winning the game they're playing, and see no reason to change strategy. It would be a shame if we went extinct because of that.
+The explore-exploit tradeoff
+One classic problem in decision theory is the "multi-armed bandit"
+[2]
+, in which a player is faced with a bank of slot machines, each having an unknown payout probability. Each turn the player can pull the arm on a single slot machine and observe the result. Each result provides more knowledge about which machines have the highest probability of success, and so the player can choose each round which arm to pull, based upon what they've learned. The player would like to optimize their overall winnings, and must balance
+discover new information
+(explore) against
+continue current approach
+(exploit).
+This is a useful metaphor for life, and one obvious result is that the more confident you are that you know the best option, the more heavily you should lean into it. A corollary is that if your current best option isn't sustainable (e.g. in expectation you'll lose your money or your life), you should look harder for alternatives, because pulling "any unknown arm" is better than "an arm which probably loses". In LessWrong-ese, this is like "playing to your outs"
+[3]
+in a losing scenario, by working towards possibilities that
+could
+win, even if they require more luck.
+Working towards those possibilities is of course easier said than done... but "said and not done" is exactly what the grantmakers are doing!
+The evidence we're in "exploit" mode
+Exhibit A
+Habryka recently acknowledged on Xitter that AI Risk grantmakers basically "rely on references from a very small inner circle"
+[4]
+; see the discussion at:
+https://x.com/BogdanIonutCir2/status/2091784358562590941
+That's the approach of someone who believes the game is going
+just fine
+, not the approach of someone who is trying to diversify for other options.
+Exhibit B
+A friend applied for a grant to study some aspect of compute verification
+[5]
+, and was told "well, we don't have anyone who can evaluate this application, and we're not SURE that you'll do it right, because you don't have an XYZ expert as part of your team, so we're going to deny it".
+That's not the approach of someone worried about losing
+the game of human existence
+.
+Exhibit C
+The whole comments section at:
+https://forum.effectivealtruism.org/posts/B6d8Wzk4gNzHsXvdi/ai-safety-is-extremely-bottlenecked-on-grantmakers
+In particular, Scott Alexander says:
+I still can't figure out the world-model in which SFF exists and is net positive, CG is begging for more grantmakers, and all these organizations still aren't fully funded.
+To which Lukeprog's responses include:
+they could spend money in net-positive ways, but not above our ROI bar on the current margin
+they acquired 'room for more funding' recently, but we funded them not too long ago and can't afford to investigate new RFMF claims for every grantee every few months
+they're in our queue to investigate for renewal/expansion
+That's not the statement of someone who believes that the world is at risk! If you think there's a good chance that the world ends soon, you spend the money that you have, while it's still worth something!
+Obvious verdict is obvious
+Do these actions seem like those of people who
+genuinely believe
+in the possibility of extinction risk due to AI, in the same way that a stereotypical fundamentalist Christian believes in Heaven and Hell? I invite you to think about that for one minute, "by the clock". I'll wait...
+...
+...
+...
+No, they do not. Under that belief, these actions seem almost mind-bogglingly stupid, but I generally don't think of the EA/LW/AI community as being stupid. Therefore, I conclude that they don't genuinely believe in near-term AI Risk, at least not on a deep, emotional level.
+[6]
+I've seen the response about "gee, we have such a high bar", but Rationalists who
+genuinely believe
+in x-risk would make their BATNA "the human race goes extinct", not "we might hire a below-bar person".
+In addition, those actions have the predictable side effect of opening up the community to zingers such as this
+[7]
+, following the current METR kerfuffle:
+One of the aims of democratic society is to prevent you from needing to know the proclivities of particular individuals in the Bay Area. I would love it if we had a normal liberal-democratic process here, instead of one where I have to care about who is sharing funding, housing, and fluids in San Francisco and Berkeley.
+Leaving such potshots open, in turn, undermines the credibility of the entire field. I think METR is great, genuinely! But if what we want is "lots of independent orgs also providing evaluations", then grantmakers would need to
+fund them
+, even if... no,
+especially if
+those people aren't personal friends. There's no point in preaching to the choir.
+Look, I get that sometimes there are a lot of factors to weight, and the Kelly criterion matters, and the math can be tedious. If you need help with that part, call me! But "extinction risk" and "short timelines" are going to strongly influence the answer, and given where y'all are starting from, it's directionally obvious what the result will be.
+Explore mode: Just do (good) things (better)
+As emotionally satisfying as it is to kvetch, I actually care about the outcomes here (remember: "rationality is systematized winning"
+[8]
+, and NotEveryoneDie is pretty worthwhile!), and so I'd rather focus on opportunities for improvement.
+In industry, it's often the case that you might want a predictive model, but you aren't absolutely sure which variables are important; you also might be extremely concerned that building a model based upon your past successes could create a feedback loop that locks in your past biases. Fortunately, there's a pretty robust solution: assign each candidate a score based on
+randomly-sampled
+feature-weighting, and then classify them (into e.g. "funded vs not") based upon that score (see e.g. Thompson sampling). Then in the next round you re-calibrate your estimated feature weights based upon the predicted-vs-observed performance, improving your overall scoring algorithm slightly. Rinse and repeat. I propose that we apply this tactic towards evaluating grant proposals
+[9]
+. And yes, I am saying that a
+random number generator
+Thompson sampler
+would quickly be a significant improvement over our current grantmakers.
+Another tactic might be "stop waiting for our friends to apply for grants; instead make
+new
+friends by offering them money". We might apply this tactic by proactively offering funding
+[10]
+for graduate students and/or experiments to professors working on things like:
+game theory of verification and inspection games (did you know Krieger, who
+literally wrote the book
+on this, is still on staff at Juelich?)
+cybersecurity of covert adversaries (Aumann is at Bar-Ilan University, and also just might have picked up a thing or two about game theory, on his daddy's knee)
+actively paying for companies who produce network taps to create newer, more powerful ones.
+etc
+If we're short of grantmakers and/or managers, then we might search for folks with some expertise in the field. Did you know that USAID was "fed to the woodchipper" not long ago? Many of those folks are experienced grantmakers! Perhaps they could be helpful?
+Not directly attributable to grantmakers, but another tactic might be "actively court people from all political persuasions, rather than e.g. rescinding their job offers because they're conservative"
+[11]
+. Could be handy optics! Grantmakers might, e.g. complain about those kinds of things, deliberately hold themselves at arm's length, seek out conservatives to be board members, etc.
+Yet one more could be to provide automated, at-scale feedback to rejected applicants about what might have made them a successful applicant
+[12]
+. There's lots of angst on things like the BlueDot Slack channel about "does anyone know how to have a good application for X?", and honestly it makes dating apps look positively friendly by comparison... at least those only take a few seconds to swipe, not hours of preparation time!
+Conclusion
+Our current grantmakers, instead of "trying a new slot machine" are spending funding rounds where they
+don't try any machines at all
+.
+[13]
+They are playing as though humans are winning.
+But we are not winning.
+We are losing.
+"Continuing to do the same thing, and expecting different results, is the definition of insanity", which, to be honest, doesn't sound very rational to me.
+Addition 20260925T1500Z:
+ETA: Zach Stein-Perlman and MichaelDickens both raise a similar objection, i.e. poorly-directed grantmaking could actively raise P(doom) rather than lower it. I think it's worth considering how that might happen.
+As near as I can figure, there are two possibilities:
+we have already found ALL of the talent that could be net beneficial
+we don't know HOW TO TELL net-positive from net-negative talent
+If the first is true, then we should (per the multi-armed bandit problem) lean heavily into the talent currently available, and fund them to the gills. We should also stop trying to increase the size of the community working on these things, and let the non-talented folks enjoy their last few years in peace.
+If instead the second is true, then we should invest HEAVILY into finding, identifying, and supporting net-positive talent, possibly through one of the mechanisms I outlined above. Increasing team size is worthwhile even if average quality drops. 10x the people at half of current quality (which is very high!) is still 5x overall, and 100x at a tenth the quality is 10x overall, which is
+even better
+(yes, yes, coordination costs etc, but AI itself is already reducing that).
+This is only wrong if incoming team members are COMBINED net-negative. But to handle THAT, we have priors based on scientific-propsal research: filtering out true garbage is easy, but fine-grained rank-ordering is hard. In that case scaling becomes a matter of "support permissively up front, filter more strictly in stages". Then something like Habryka's "just 10 blog posts" can be operationalied as "okay, you passed Filter X (e.g. a relevant background), so we'll support you for 2 months while you load up on BlueDot and LensAcademy courses, and at the end of that we want to see that you've written enough material showing you can work independently, and understand the core issues". This gets us back to my Thompson sampling proposal, and has a short enough feedback loop that I think it's viable.
+For an EA-palatable discussion of what that belief can look like, see
+this book review
+on Astral Codex Ten.
+↩︎
+Herbert Robbins,
+"Some aspects of the sequential design of experiments"
+,
+Bulletin of the AMS
+58(5):527-535, 1952, is the origin. For the modern treatment, Lattimore and Szepesvári,
+Bandit Algorithms
+(Cambridge, 2020), free online.
+↩︎
+Jeffrey Ladish,
+"Don't die with dignity; instead play to your outs"
+, LessWrong, April 2022.
+↩︎
+He does say that an even better signal can be provided by writing ten blog posts, although I'm not sure he had one like
+this
+in mind (sorry, Oliver!). Lest anyone think that I'm ranting because of sour grapes, I'll acknowledge that I've been working on this unfunded for several months, but have had an acceptable rate of acceptance/interviews/etc, so I'm not complaining about
+personal
+impacts, so much as
+global
+ones. It is honestly a credit to the EA community that I can kvetch about this and think it probably doesn't hurt my odds. Much.
+↩︎
+Which is literally the most important problem right now, IMHO; see my
+"The most important problem you've never heard of"
+, Canary Institute, September 15, 2026.
+↩︎
+And to be clear, I really appreciate the EA philosophy... I started donating to UNICEF for vitamin injections as a Starving Grad Student back in 2008, literally before the term "Effective Altruism" existed! I write this essay because I think it might spur actual reflection, and possibly even change.
+↩︎
+SE Gyges,
+"Is METR a meaningful check on Anthropic?"
+, Very Sane, September 16, 2026. Responding to Dario Amodei,
+"We must pace the frontier"
+, September 2026, which names METR as the model embedded third-party evaluator.
+↩︎
+Eliezer Yudkowsky,
+"Rationality is Systematized Winning"
+, LessWrong, April 2009; the slogan "rationalists should win" goes back to his
+"Newcomb's Problem and Regret of Rationality"
+(2008).
+↩︎
+Note that "partial lotteries" are regularly run by mainstream science funders e.g. by "choose randomly above a quality threshold"; folks worried about x-risk could do that, too!
+↩︎
+See my earlier
+"Industrializing a small field: Lessons from Vannevar"
+.
+↩︎
+Richard Ngo,
+shortform entry describing a rescinded job offer
+, LessWrong, August 3, 2026. Ngo reports Resolution (formerly Sequent) rescinded a Staff Research Scientist offer after learning of his publicly-expressed political opinions, with the concern being that other researchers wouldn't join if they saw his tweets.
+↩︎
+Or at least, be honest with applicants about what you want. Saying "you don't need AI safety experience, most of our successful fellow came from adjacent role" and then rejecting anyone without prior experience is... pretty messed up. If you only want Harvard/Oxford grads, or 6+ years AI safety experience, then
+say so
+. We might not HAVE six years for the newest crop of entrants to gain the experience they want... but in that case, maybe they could spend those years on careers they already enjoy, instead of scrambling for a new one?
+↩︎
+Julian Hazell,
+"What it's like to be an AI safety grantmaker (and why we need more of them)"
+, EA Forum, March 2026: "We're leaving good grants on the table right now due to a lack of grantmakers."
+↩︎
+Grantmakers aren’t afraid to die
+44
+Zach Stein-Perlman
+14
+Rachel Shu
+1
+dan.parshall
+24
+Trinley Goldenberg
+8
+dan.parshall
+14
+MichaelDickens
+1
+dan.parshall
+1
+_rpd
+1
+dan.parshall
+4
+Eli Tyre
+3
+cousin_it
+2
+Trinley Goldenberg
+5
+Sheikh Abdur Raheem Ali
+1
+Sheikh Abdur Raheem Ali
+4
+Archimedes
+1
+dan.parshall
+3
+neo
+1
+dan.parshall
+2
+Khullani
+1
+less_raichu
+1
+dan.parshall
+1
+less_raichu
+1
+dan.parshall
+1
+alackles
+0
+dan.parshall
+25
+Comments
+25
+AI
+Frontpage
+29
+New Comment
+25 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 5:18 PM
+[
+-
+]
+Zach Stein-Perlman
+16h
+44
+36
+Strong disagree.
+Re A and B, yep, what else are you supposed to do? Within the stuff you can't evaluate well, there's a bunch of people who say they have ideas, and most of them are wrong or grifters but maybe some are legit, it's tough. Note that giving money to useless stuff and grifters is worse than lighting the money on fire.
+Unfortunately you generally don't get "observed performance" from your grants, or it's a lot of work — it's often no easier to evaluate a past grant than to evaluate an application.
+Reply
+[
+-
+]
+Rachel Shu
+11h
+14
+4
+In your opinion, what’s the single worst part of giving money to fools and grifters? The time wasted, the bad signalling, allowing them to establish further reputation on your support? Can that one be mitigated?
+Reply
+[
+-
+]
+dan.parshall
+6h
+1
+0
+Hmm, I think I disagree here, and I certainly disagree on short timelines, partly because keeping things fixed to "the cool kids" guarantees that the total size of the labor force available for AI work doesn't grow. Not a problem on long timelines, but if you believe that the next few years matter, then this is really really bad!
+We already know from past experiments on scientific proposals that it's pretty easy to filter out the
+true
+crap, but extremely hard to rank-order after that. So unless something is truly different (maybe?) then a much better proposal is "filter for minimal quality, and fund". That means small grants to people to move into AI safety (e.g. the Blue Dot "Career Transition Grant") is kinda a no-brainer. Even if half the people
+are
+grifters, I think it's pretty easy to tell at the end of a month or two which half with a reasonable FN/FP rate.
+Note that Habryka's metric is "ten blog posts is better than a referral"... so why not be VERY generous about giving $30k grants for three months, and saying, "at the end of this, we'd like to see at least 10 blog posts". Anyone who doesn't produce that you cut, anyone who DOES produce that is shortlisted for followup. You don't have to apply the same stringency of filter at all stages! You can apply permissive filters at early stages and then get
+progressively
+more strict, as you learn more!
+Or, of course, grantmakers could keep doing what they've been doing... which is arguably better over any individual grant cycle, but as I am trying to point out:
+still a losing outcome overall
+(ETA: as I mention below, I should make this explicit: our current team is top-notch, which is great! But if we can 10x the size of the team, even if the average member is only half as good, that's
+still a win
+. Likewise if we 100x the size of the team, even if the average member is only a tenth as good, that's an even
+bigger
+win!)
+Reply
+[
+-
+]
+Trinley Goldenberg
+19h
+24
+18
+EA funding orgs have always been conservative.
+But imagine YOU were part of the grantmaking ecosystem that gave $30mil to the OpenAI non-profit thinking you were helping AI x-risk
+You'd probably realize it's easy to throw money at the problem and end up making things worse
+Reply
+[
+-
+]
+dan.parshall
+18h
+8
+2
+I think this is partly fair, but I also think it's context-dependent. Ten years ago, hell even 2 years ago, I'd have broadly favored conservative decision-making as well. But if you think you're losing, and that you can't play much longer, then conservative decision-making is no longer the rational strategy, and "keep doing what we've been doing" is an
+especially
+poor choice if you think we're losing!
+So what's the crux? Do you think we're winning with our current approach, or do you think timelines are long? Or some other factor?
+Reply
+[
+-
+]
+MichaelDickens
+18h
+14
+2
+If the current P(doom) is 50%, but poorly-directed grantmaking could increase that to 51%, that's still a reason you might want to be conservative.
+Reply
+[
+-
+]
+dan.parshall
+4h
+1
+0
+I think this is an excellent point, and true as far as it goes! But let's dig a bit to think about what might cause this to be the case?
+As near as I can figure, there are two possibilities:
+you have already found ALL of the talent that could be net beneficial
+you don't know HOW TO TELL net-positive from net-negative talent
+If it's the first case, then I concede my prior complaints about "EA/AIS isn't actually talent constrained". But also, we should give them all of the money now! (unless you don't believe that timelines are short, but that gets back to my original thesis of "grantmakers don't believe in imminent existential risk")
+If it's the second case, then we should invest HEAVILY into finding, identifying, and supporting net-positive talent, possibly through one of the mechanisms I outlined above. I think this is true
+even
+in long-timeline worlds, and part of the change I hope this essay spurs.
+Or is there some third case I'm missing?
+Reply
+[
+-
+]
+_rpd
+3h
+1
+0
+imprudent funding can have second order effects that cause formerly net positive decisions to become net negative. for example, AI safety necessarily involves trust networks and trust signals, and harming that can undermine entire networks.
+I agree though that identifying high ROI (and well aligned) talent is itself an important area of research.
+Reply
+[
+-
+]
+dan.parshall
+2h
+1
+0
+I'm still thinking about this, but it would be helpful if you could elaborate about the networks and signals.
+I think there's an understandable fear that AI Safety will become subject to the same dynamics described in
+https://meaningness.com/geeks-mops-sociopaths
+And I suspect that some of that fear might drive some of the behavior that @less_raichu interprets as as "capture".
+And I don't think those fears are wrong! Nor are the responses to them "a little bit evil". But I'm also currently of the opinion that in order to
+win the game
+, we'll have to suck it up, handle the mops and sociopaths the best we can, and plod on anyway. I'd intended to cover some of this material in the "Lessons From Vannevar" post, but wanted to get it out on the anniversary of the Einstein Letter, so trimmed it. I should probably tackle this subject in detail.
+Reply
+[
+-
+]
+Eli Tyre
+10h
+4
+0
+You'd probably realize it's easy to throw money at the problem and end up making things worse
+Lol. Last I heard, Holden thought that the OpenAI grant was
+one of their best grants
+. I don't know if he's changed his mind since.
+Reply
+[
+-
+]
+cousin_it
+11h
+3
+1
+Do you think they actually realized it, and stopped funding alignment work that might unlock capabilities or speed up the race? That'd be cool, but I'm not sure I see any evidence of it.
+Reply
+[
+-
+]
+Trinley Goldenberg
+2h
+2
+0
+Ehh, I just think grantmaking is hard and there are legitimate disagreements. Are they being too conservative or not conservative enough for example.
+Reply
+[
+-
+]
+Sheikh Abdur Raheem Ali
+17h
+5
+0
+A friend applied for a grant to study some aspect of compute verification
+[5]
+, and was told "well, we don't have anyone who can evaluate this application, and we're not SURE that you'll do it right, because you don't have an XYZ expert as part of your team, so we're going to deny it".
+Can your friend call me tomorrow please? Contact info in DM. Need their ssh key and tailscale details, I will give them access to 2xH100 80GB ASAP. Do share the proposal, will take a look and forward in person to a CG grantmaker by 20:15 EDT.
+Reply
+[
+-
+]
+Sheikh Abdur Raheem Ali
+16h
+1
+0
+I am available to call 12-13:00, 14:00-17:15, or 22:00-22:30
+Reply
+[
+-
+]
+Archimedes
+14h
+4
+0
+I'm having a hard time taking the Thompson sampling idea seriously. If you have all the data for such a mechanism to work, then you've mostly solved the hard parts of grantmaking already. Where do all the features, weights, and scores come from, particularly for the proposals the grantmakers currently have little expertise in?
+Reply
+[
+-
+]
+dan.parshall
+6h
+1
+0
+First, you can continue to collect more data over time. Second, if you are
+currently losing
+then you should lean into higher-variance strategies. Provided that you can do basic filtering to remove the worst cases, you can get positive expectation results that could potentially change the board. Third, if you are
+currently losing
+then you should absolutely invest in "more data" because what you're
+currently doing
+is not working.
+Reply
+[
+-
+]
+neo
+17h
+3
+0
+In the case of
+truly imminent
+extinction from AI, what does a good grantmaking strategy look like? It seems like the only way to alter course at that point would be to directly influence key decision makers or intervene by force (via government action, for example). In a time like this, I would also expect other powerful players to take drastic actions in a last-ditch effort to survive.
+I think it's pretty clear that grantmakers believe in the
+possibility
+of existential risk from AI but not that it is
+imminent
+.
+(Still strong-upvoted because I think more granting and especially transparency in grantmaking strategy is beneficial, and that this kind of pushback is good).
+Reply
+[
+-
+]
+dan.parshall
+6h
+1
+0
+I think I broadly agree with this. e.g. I agree that the amount of "force" needed gets greater as the timelines get shorter. A rocket can be steered with only a tiny amount of delta-vee very early in the journey, but the amount required gets greater closer to the ending.
+I also think the grantmakers believe in the possibility but not imminence of extinction risk, and I wanted to call that out specifically. I think having that attention focused on on "use a different strategy now that the game is different" may help.
+Independently, I think it's valuable to the incoming recruits to increase transparency (which at the moment they definitely
+do not
+have) and I'm in the fortunate position of being able to go back to industry if everyone hates me for writing this.
+Reply
+[
+-
+]
+Khullani
+18h
+2
+0
+I think what is animating this phenomena is something similar to kinship/clan-based trust networks; this feels deeply familiar to me, and I think it can be good and bad.
+In clan-based communication and trust networks, you can find out what happened to family members, and send money, goods or messages to family in distant lands. You can also learn about someone's character, propensities and overall trustworthiness. Kinship can be a great way to establish trust when you are transmitting valuable goods whether it is a message for a loved one, grant dollars, or a heuristic.
+I have some doubt as to whether funding based on close relations = not very worried about dying. Where I do agree is that there are downsides to kinship and clan-based trust networks. The downside is that in such groups you can never trust a capable or competent outsider because though you may recognize that they are capable or competent, you can still have doubts or lack information about their intentions or reliability.
+Its not that the criteria for competency and capability is defined in part by being a member of the kinship group, but the knowledge about the reliability of the grantee.
+If it is impossible or difficult to perceive people outside of your clan as reliable or aligned, and you may be trying to solve for a problem that requires building alliances with those outside of your clan, kinship-based trust networks that are a proxy for trustworthiness/reliability in funding decisions will struggle to scale unless there is a mechanism to establish trust outside the network.
+Reply
+[
+-
+]
+less_raichu
+16h
+1
+-5
+The least charitable interpretation is EA doesn't want to lose control of AI Safety, and in that case yeah they need to give out grants more, and I support your drawing attention to this rub. This leads to the self-fulfilling prophecy, AIS is talent bound, because EA bounds AIS talent.
+At this point, half the planet is AIS-curious or AIS-pilled, and EA's orbit is much smaller. If they don't, I trust them less because I don't think any one org should control AIS or ASI.
+Reply
+[
+-
+]
+dan.parshall
+6h
+1
+0
+I agree that's the least-charitable interpretation, and I think it behooves anyone in their position to be aware of the possible incentive towards prestige and control. I think they could have been doing a lot more to reduce the talent constraint in the past, by giving people outside that small circle opportunities to get involved, but on long timescales I understand why. I genuinely think that they're
+trying
+to do the best they can, but haven't yet internalized the implications for short timescales, hence the post.
+Reply
+[
+-
+]
+less_raichu
+4h
+1
+0
+I really don't see how to apply EA values and conclude something other than capture of ASI by people who exactly share EA values is paramount.
+Reply
+[
+-
+]
+dan.parshall
+2h
+1
+0
+I tried to tag you in the comment above:
+https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die?commentId=fPr53stHP5f64isGW
+Briefly, I think some of what looks like capture is response to the perception and/or reality of the "mops and sociopaths" dynamics (which is sorta similar to your post about ASO and messaging). I think AIS folks are going to have to find some way to work through those concerns, because if we want to
+win
+, we'll need a larger coalition.
+Reply
+[
+-
+]
+alackles
+18h
+1
+1
+Really excellent post. I think generally this bottleneck/in-group issue is especially visible when you note how many of the fellowship and funding opportunities, even for career transitions, require one to relocate for months at a time to the Bay Area, EA/rationalism really seems to have a massive amount of funding (comparative to other small fields) that could reach a massive amount of talent & perspectives—which, if we are trying to save all of humanity, it seems like we might want to sample from as much of humanity as possible—but then puts a constraint that amounts to "must be in a position of high societal privilege & without current constraints on life situation to participate". This seems to me 1) very counterintuitive 2) very detrimental to the long term for the growth of the community and 3) very effective at moving a lot of money between a small group of people.
+I agree very much with your random sampling grant plan as well; similar arguments have been made in academia, to no success.
+Reply
+[
+-
+]
+dan.parshall
+6h
+0
+-1
+Thanks. I think this is a good example of when "privilege" really applies. I'm fortunate to have been able to spend many months on this self-funded, but at some point it's a stretch. An even bigger stretch was sorting out childcare for the two months that I've been accepted to a residency!
+One point that I haven't made explicitly, but should: yes, the existing team is top-level players, but they are a
+small
+team. Bringing in 10x the number of people, even if on average each is only half as good, is still a huge win! Bringing in 100x the people is a win even if each is only a tenth as good!
+Reply
+Moderation Log
+More from
+dan.parshall
+View more
+Curated and popular this week

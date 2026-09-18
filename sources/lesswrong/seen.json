@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai",
+  "title": "MIRI 研究者提醒同伴，别被太合胃口的泄漏骗了",
+  "date": "Fri, 18 Sep 2026 07:30:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/LQ9wKT9oNeArbwukz/plzdontkillus-fellows-got-2m-ai-safety-views-not-21m",
+  "title": "AI 安全训练营头奖，靠抹泥和洋葱抢流量",
+  "date": "Thu, 17 Sep 2026 20:00:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons",
+  "title": "读者追查伽利略把土星环认成木星卫星的说法",
+  "date": "Thu, 17 Sep 2026 17:45:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than",
+  "title": "循环模型学会把推理藏到思维链外",
+  "date": "Fri, 18 Sep 2026 04:00:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/E5SmpFsGPNpYjf92c/pacing-the-frontier-a-framework-and-research-agenda",
+  "title": "研究者把 AI 减速拆成三个执行难题",
+  "date": "Thu, 17 Sep 2026 22:30:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment",
+  "title": "自动化对齐研究能否被可靠监督",
+  "date": "Thu, 17 Sep 2026 19:30:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/FCMG4qnxks3yEqBbh/ai-as-orderly-evacuation-vs-stampede",
   "title": "AI 竞赛也可以理解成一场人群踩踏",
   "date": "Thu, 17 Sep 2026 03:30:47 GMT",

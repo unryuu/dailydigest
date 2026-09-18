@@ -1,5 +1,68 @@
 [
  {
+  "id": "https://linguisticdiscovery.com/posts/pre-greek",
+  "title": "古希腊语里藏着失传语言的一千个词",
+  "date": "2026-09-18T03:04:38Z",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://github.com/asciimoo/hister",
+  "title": "Hister 给浏览历史和本地文件建私有搜索",
+  "date": "2026-09-17T16:25:37Z",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://prismml.com/news/bonsai-2-27b",
+  "title": "Bonsai 2 把 27B 模型压到 5.9GB",
+  "date": "2026-09-17T21:13:31Z",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://openai.com/index/astra-for-law",
+  "title": "OpenAI 推出法律版 Astra",
+  "date": "2026-09-17T20:17:48Z",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm",
+  "title": "用 AI 改稿，却不用它写的句子",
+  "date": "2026-09-17T21:48:38Z",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://bend-lang.com/",
+  "title": "Bend 想用数学证明拦住 AI 写错代码",
+  "date": "2026-09-17T20:36:13Z",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+  "title": "ZCode 静默上传完整代码仓库",
+  "date": "2026-09-18T10:35:28Z",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
+  "title": "微软内部把 AI 抓取称为大规模劳动盗窃",
+  "date": "2026-09-18T09:45:07Z",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
+  "id": "https://www.hacktron.ai/blog/hacking-openai",
+  "title": "Claude 帮白帽黑进 OpenAI 内部仓库",
+  "date": "2026-09-18T02:47:24Z",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
   "id": "https://ryan.science/blog/keys-not-included",
   "title": "研究者从驾照条码签名反推出两州公钥",
   "date": "2026-09-17T03:03:23Z",

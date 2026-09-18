@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+  "title": "Claude 把三十多个生物模型平均提速四倍",
+  "date": "Sep 17, 2026",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
   "id": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
   "title": "AI 正在拆掉军事情报的专家门槛",
   "date": "2026-09-10",

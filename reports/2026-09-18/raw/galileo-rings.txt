@@ -1,0 +1,97 @@
+URL: https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons
+FINAL: https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons
+TITLE: Did Galileo mistake Saturn's rings for Jupiter's Moons? — LessWrong
+FETCHED: 2026-09-19 01:18:39
+============================================================
+x
+Did Galileo mistake Saturn's rings for Jupiter's Moons? — LessWrong
+World Modeling
+Frontpage
+36
+Did Galileo mistake Saturn's rings for Jupiter's
+Moons?
+by
+Alfred Harwood
+17th Sep 2026
+2
+min read
+2
+36
+tl;dr: No
+I intended to read
+Richard Ngo's Agency Curriculum
+today. Unfortunately I didn't get more than halfway through the first reading of the first week of the curriculum.
+The reading is the blogpost
+'The Copernican Revolution from the Inside
+' by Jacob Lagerros. Broadly, it outlines the Copernican Revolution and explains all of its messiness. One of the things it argues is that, while correct (the earth does indeed orbit the sun), Galileo was overconfident and made many mistakes. So, on the subject of mistakes...
+Lagerros' writes (talking of Gallileo):
+“And though he was also right about the existence of moons orbiting Jupiter, which contradicted the uniqueness of the earth as the only planet with a moon, what he actually observed rather seems to have been Saturn’s rings (Ladyman, 2001) [8].”
+How could Galileo (an astronomer) get confused between Saturn and Jupiter? And if you look at Galileo's notebook sketches of Jupiter's moons (included in Lagerros' blogpost) then they clearly show 4 moons, changing their positions.
+How could someone who was observing Saturn's rings make sketches that look like this?
+Ladyman's book
+Understanding Philosophy of Science
+is cited for this claim. The relevant quote from this book is as follows
+"Although modern astronomers agree with Galileo about the moons of Jupiter, it now seems he mistook Saturn’s rings for moons, and also that, in some cases, he mistook optical illusions for craters on our own Moon. "
+ie. Ladyman says that Galileo mistook Saturn’s rings for Saturn’s moons, not Saturn’s rings for Jupiter’s moons!
+I can't be bothered to check every claim made in the blogpost, but this is an error that is obvious and easily checked and conveniently seems to make the author's argument seem much stronger than it is so I'm going to treat the whole blogpost with a decent level of scepticism.
+You can look at Galileo’s notebooks containing his sketch of Jupiter’s moons above. These sketches clearly show distinct moons orbiting Jupiter, observed over a long period of time. It seems reasonable to conclude from this that he really had discovered moons orbiting a planet other than earth.
+Compare these to Galileo’s observations of Saturn from '
+Letters on Sunspots
+':
+or this from his notebook (
+source
+)
+In
+other writings
+Galileo seems confused about his observations of Saturn and seems to understand that what he sees is not the same as what he observed with Jupiter. Presumably this is why, in his ‘Dialogue Concerning the Two Chief World Systems’ the argument mostly hinges on Jupiter’s moons (which again, he did actually observe) and doesn’t seem to mention the objects orbiting Saturn at all (maybe I'm wrong here, I just ctrl-F’d for 'Saturn' in
+this pdf
+I didn’t read the whole thing). Maybe Galileo was wrong about some other stuff, but his argument here (that he had observed bodies orbiting something other than the earth) seems reasonable to me!
+Did Galileo mistake Saturn's rings for Jupiter's Moons?
+4
+Mike Begley
+-5
+Shankar Sivarajan
+2
+Comments
+2
+World Modeling
+Frontpage
+36
+New Comment
+2 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 5:18 PM
+[
+-
+]
+Mike Begley
+1d
+*
+4
+0
+I don't interpret the original blog post as implying that Galileo confused Jupiter & Saturn - it sounds like a misinterpretation of mildly ambiguous writing.
+We need to remember that Galileo was looking at these systems through 17th century optics, using a likely homebrew mount of the same vintage. As an amateur astrophotographer, I marvel that he was able to make such detailed observations at all. He was able to figure out Jupiter's moons "easily enough" (major hand waving at what a step forward that was), but looking at Saturn, something just weird was going on. So he did the scientist thing: describe it best he could and say "hey, got something
+weird
+here! WTF, mate?"
+And this is how good science happens. Catalog the things that fit the current normal understanding, but call out the
+weird
+for more stringent review. I recall reading somewhere that he described Saturn as having "ears". I've always liked that visual interpretation. We know that he knew that wasn't accurate, but it's a nice visual description, particularly given his equipment and knowledge of the time. I can only imagine the first observer who finally got the right view, either in their eyes or in their imagination, and called out "guys! I got it! Rings!", and it immediately snapped into everyone's brain with an "of course!" Of course, that leap can also lead to
+bad
+science, but...peer review!
+And then, of course "planets can have rings" maybe -> yeah, that seems to be the only thing that fits evidence -> bingo, rings confirmed, so how'd that happen?" becomes a whole new thing. Hey, let's chuck a knob of aluminum & silicon at it and get a better view. It'll be fun.
+I should fully read the paper you posted. I skimmed it for the Galileo/Saturn stuff, but it looks like a lot of good stuff that calls for a closer read. Thanks for posting it.
+Reply
+[
++
+]
+Shankar Sivarajan
+1d
+-5
+-1
+Moderation Log
+More from
+Alfred Harwood
+View more
+Curated and popular this week

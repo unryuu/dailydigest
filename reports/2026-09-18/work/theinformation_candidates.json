@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-18",
+  "attempted_at": "2026-09-19T00:00:00+08:00",
+  "status": "completed_with_search_assist",
+  "resume_from": "2026-09-17T20:53:23+08:00",
+  "scanned_at": "2026-09-19T00:00:00+08:00",
+  "scan_method": "登录态浏览器整页截图读取付费正文，并用 The Information 公开索引和搜索摘要补足列表时间、标题与可公开正文；没有按标题猜测链接。",
+  "items": [
+    {
+      "id": "ai-watchdog-independence",
+      "published_at": "2026-09-18",
+      "title": "AI Safety Push Sparks Demand for Watchdog Groups. Critics Doubt Their Independence.",
+      "url": "https://www.theinformation.com/articles/ai-safety-push-sparks-demand-watchdog-groups-critics-doubt-independence",
+      "section": "angle_or_deep",
+      "status": "read_full_article",
+      "note": "外部评估者既要有员工级系统权限，也要能独立公开；METR、Gray Swan 等与实验室存在人才和资金关系，专业人才池又很小。伊利诺伊州已通过审计要求，2028 年生效。适合并入 AI 减速专题，不另立重复新闻。"
+    },
+    {
+      "id": "ro-khanna-china-pacing",
+      "published_at": "2026-09-17T19:41:00-07:00",
+      "title": "U.S. Lawmaker Ro Khanna Urges Chinese Labs to Help Pace Frontier AI",
+      "url": "https://www.theinformation.com/briefings/u-s-lawmaker-ro-khanna-urges-chinese-labs-help-pace-frontier-ai",
+      "section": "angle_or_regulation",
+      "status": "read_public_text",
+      "note": "Khanna 致信阿里、DeepSeek、Moonshot，要求加入有约束力的国际减速协议，并把紧急听证会排在特朗普与习近平会晤前一天；中国外交部此前把美国减速倡议称为制造恐慌。是国际协调从原则进入具体政治动作的新材料。"
+    },
+    {
+      "id": "coding-agent-skill-update-flaw",
+      "published_at": "2026-09-17T10:32:00-07:00",
+      "title": "Same Flaw Found in Claude Code, Codex, Gemini CLI and GitHub Copilot",
+      "url": "https://www.theinformation.com/newsletters/applied-ai/flaw-found-claude-code-codex-gemini-cli-github-copilot",
+      "section": "industry",
+      "status": "read_public_text",
+      "note": "四款编码 Agent 都会在首次扫描后自动接收同名 skill 更新，攻击者可先上传干净版本再替换为恶意代码。未发现被利用证据；Anthropic、OpenAI、Google 已修复，GitHub 修复状态未获研究者确认。候补，避免安全主题过满。"
+    },
+    {
+      "id": "bridgewater-compute-regulation",
+      "published_at": "2026-09-17T09:58:00-07:00",
+      "title": "Bridgewater’s Greg Jensen Calls for Regulating AI Firms Like Systemically Important Banks",
+      "url": "https://www.theinformation.com/articles/bridgewaters-greg-jensen-calls-regulating-ai-firms-like-systemically-important-banks",
+      "section": "angle_or_regulation",
+      "status": "read_public_text",
+      "note": "Jensen 提议把控制美国或全球超过约 5％ 算力的机构按系统重要性银行加强监管，并讨论持有上限、开放模型与责任归属。可作为减速之外的算力集中治理方案。"
+    },
+    {
+      "id": "bug-hunters-claude-openai",
+      "published_at": "2026-09-17T19:37:00-07:00",
+      "title": "Bug Hunters Used Claude to Hack OpenAI",
+      "url": "https://www.theinformation.com/briefings/bug-hunters-used-claude-hack-openai",
+      "section": "industry",
+      "status": "merged",
+      "note": "与已精读的 Hacktron 原始披露是同一事件，日报使用原始报告，不重复成牌。"
+    }
+  ],
+  "failure_note": null
+}

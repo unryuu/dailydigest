@@ -1,0 +1,58 @@
+URL: https://www.lesswrong.com/posts/274BMCYj2BFES2FsZ/three-hackers-used-opus-5-to-hack-into-openai-s-core
+FINAL: https://www.lesswrong.com/posts/274BMCYj2BFES2FsZ/three-hackers-used-opus-5-to-hack-into-openai-s-core
+TITLE: Three Hackers used Opus 5 to Hack Into OpenAI's Core Codebase [WSJ] — LessWrong
+FETCHED: 2026-09-19 01:18:00
+============================================================
+x
+Three Hackers used Opus 5 to Hack Into OpenAI's Core Codebase [WSJ] — LessWrong
+AI
+Personal Blog
+48
+Three Hackers used Opus 5 to Hack Into OpenAI's Core Codebase
+[WSJ]
+by
+Linch
+18th Sep 2026
+1
+min read
+1
+48
+This is a linkpost for
+https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883
+Three
+whitehack
+hackers from Hacktron used Claude Opus 5 within hours of release to chain exploits into hacking to OpenAI's monorepo codebase.
+This likely means they have access to almost all of OpenAI's research and production code, though likely not the literal model weights. Oops.
+You can so their blog post about it
+here
+. Interesting sidenote: they used less than $3000 of compute credits for the entire hack.
+Alternative title: OpenAI unilaterally implements "Total Research Transparency" from Plan A.
+Three Hackers used Opus 5 to Hack Into OpenAI's Core Codebase [WSJ]
+1
+Zolmeister
+1
+Comments
+1
+AI
+Personal Blog
+48
+New Comment
+1 comment
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 5:17 PM
+[
+-
+]
+Zolmeister
+1h
+1
+0
+Note OpenAI only paid out $6,500 for responsible disclosure.
+Reply
+Moderation Log
+More from
+Linch
+View more
+Curated and popular this week

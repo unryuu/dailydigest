@@ -1,0 +1,8 @@
+查重 2026-09-18：候选/成稿 URL 52 条，对比往期已发 1570 条记录
+
+❓ [manifest/精读候选 group-4] 疑似与往期重复（路径相似度 0.94），人工确认：https://prismml.com/news/bonsai-2-27b
+   往期 2026-07-15（银区）：https://prismml.com/news/bonsai-27b
+❓ [manifest/雷达候选] 疑似与往期重复（路径相似度 1.00），人工确认：https://qwen.ai/blog
+   往期 2026-07-21（公告区）：https://qwen.ai/blog?id=qwen-image-3.0
+
+人工裁决：Bonsai 2 为新一代同系列，官方正文已核，只收质量改善。Qwen 是博客首页，后续必须定位真实正文 URL，当前仅为待核线索。

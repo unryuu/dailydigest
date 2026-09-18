@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.20800",
+  "title": "JEPA-Anything 用同一套方法预测天气和分子运动",
+  "date": "2026-09-18",
+  "reported": true,
+  "report_date": "2026-09-18"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.17909",
   "title": "Zing-0.5 让玩家边按键边用文字改世界",
   "date": "2026-09-17（本日榜单抓取日）",

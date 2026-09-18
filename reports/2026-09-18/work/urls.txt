@@ -1,0 +1,37 @@
+# 行业大事
+hacktron-openai|https://www.hacktron.ai/blog/hacking-openai
+lw-hacktron-openai|https://www.lesswrong.com/posts/274BMCYj2BFES2FsZ/three-hackers-used-opus-5-to-hack-into-openai-s-core
+microsoft-scraping|https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal
+zcode-history-upload|https://tokenstead.ai/guides/zcode-silent-git-history-upload
+
+# 官方公告
+claude-biomolecular|https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling
+astra-for-law|https://openai.com/index/astra-for-law
+bonsai-2-27b|https://prismml.com/news/bonsai-2-27b
+
+# 深度长文
+bend-language|https://bend-lang.com
+bend-vibe-coding|https://blog.liampwll.com/posts/bend_vibe_coding
+auto-alignment-oversight|https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment
+external-safety-resource-gap|https://www.lesswrong.com/posts/aCGx79eGafwDcXEgf/reducing-the-resource-gap-between-lab-and-external-safety
+how-to-write-llm|https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm
+
+# 新鲜论文
+deep-recurrent-monitoring|https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than
+misalignment-deals|https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when
+sol-pi|https://huggingface.co/papers/2609.20519
+jepa-anything|https://huggingface.co/papers/2609.20800
+
+# 乐子
+pre-greek|https://linguisticdiscovery.com/posts/pre-greek
+galileo-rings|https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons
+ai-safety-views|https://www.lesswrong.com/posts/LQ9wKT9oNeArbwukz/plzdontkillus-fellows-got-2m-ai-safety-views-not-21m
+grantmakers-die|https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die
+memetic-attack|https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai
+hister|https://github.com/asciimoo/hister
+
+# AI 减速专题材料
+dario-pace-frontier|https://darioamodei.com/post/we-must-pace-the-frontier
+pacing-framework|https://www.lesswrong.com/posts/E5SmpFsGPNpYjf92c/pacing-the-frontier-a-framework-and-research-agenda
+zvi-ai-186|https://www.lesswrong.com/posts/aa3HprreFktzLQiaW/ai-186-the-world-takes-notice
+trusted-ai-watchdogs|https://www.theinformation.com/articles/ai-safety-push-sparks-demand-watchdog-groups-critics-doubt-independence?rc=zbvmxs

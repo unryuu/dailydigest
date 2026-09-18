@@ -1,0 +1,498 @@
+{
+  "date": "2026-09-18",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=HTTP 403, body=5710; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "theinformation",
+      "url": "",
+      "error": "Codex 内置浏览器打开 The Information 后，页面读取连续超时（30 秒、30 秒、60 秒），无法取得页面正文；未完成登录态补扫，接续点保留上一期。未取得付费正文，不用公开摘要替代精读。"
+    },
+    {
+      "slug": "x-login-supplement",
+      "url": "",
+      "error": "Codex 内置浏览器打开 The Information 后，页面读取连续超时（30 秒、30 秒、60 秒），无法取得页面正文；未完成登录态补扫，接续点保留上一期。X 尚未逐账号读取，不代表窗口内没有新帖。"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Hacktron 披露进入 OpenAI 内部代码库的漏洞链",
+      "cost": "重",
+      "reason": "按阅读方向合并调度，组内不同项目须独立核实，不能混成同一成果。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "A heap overflow and SSO misconfiguration to compromise OpenAI internal repos",
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "date": "2026-09-18T02:47:24Z",
+          "why": "优先读原始技术披露，核漏洞范围、修复状态和 Opus 5 作用。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "[Linkpost] “Three Hackers used Opus 5 to Hack Into OpenAI’s Core Codebase [WSJ]” by Linch",
+          "url": "https://www.lesswrong.com/posts/274BMCYj2BFES2FsZ/three-hackers-used-opus-5-to-hack-into-openai-s-core",
+          "date": "Fri, 18 Sep 2026 06:00:46 GMT",
+          "why": "同一事件 LW／WSJ 转述，与 Hacktron 合并，不据摘要推断全部代码或权重泄露。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "外部安全评估、独立研究资源与 AI 减速协调",
+      "cost": "重",
+      "reason": "按阅读方向合并调度，组内不同项目须独立核实，不能混成同一成果。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "Inside the scramble for trusted AI cops",
+          "url": "https://www.axios.com/2026/09/18/ai-safety-evaluators-metr-white-house-trump",
+          "date": "Fri, 18 Sep 2026 09:00:05 +0000",
+          "why": "疑似承接 09-14 标准机构主线，核可信第三方评估者争议的新进展。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Reducing the Resource Gap Between Lab and External Safety Researchers” by Alexandra Narin, Kyle O’Brien, Puria",
+          "url": "https://www.lesswrong.com/posts/aCGx79eGafwDcXEgf/reducing-the-resource-gap-between-lab-and-external-safety",
+          "date": "Thu, 17 Sep 2026 15:45:46 GMT",
+          "why": "Geodesic 采购实践与独立研究资源瓶颈；称附录披露多年算力交易，保留智识长文。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "[Linkpost] “Pacing the Frontier: A Framework & Research Agenda” by CharlesD, technicalities, Raymond Douglas, Nowe Moore",
+          "url": "https://www.lesswrong.com/posts/E5SmpFsGPNpYjf92c/pacing-the-frontier-a-framework-and-research-agenda",
+          "date": "Thu, 17 Sep 2026 22:30:46 GMT",
+          "why": "新减速框架论文，须核实新增制度设计，不能写成政府已落实。疑与 Zvi 重叠。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“AI #186: The World Takes Notice” by Zvi",
+          "url": "https://www.lesswrong.com/posts/aa3HprreFktzLQiaW/ai-186-the-world-takes-notice",
+          "date": "Thu, 17 Sep 2026 18:30:45 GMT",
+          "why": "周报摘要多数是旧主线，只抽新事实，供其他安全帖查重。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Claude 对生物分子建模的帮助",
+      "cost": "重",
+      "reason": "按阅读方向合并调度，组内不同项目须独立核实，不能混成同一成果。",
+      "items": [
+        {
+          "source": "anthropic-research",
+          "title": "Sep 17, 2026 Science How Claude is uplifting biomolecular modeling",
+          "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+          "date": "Sep 17, 2026",
+          "why": "高权重官方研究。只有日期无时间，时窗待核；主 agent 已精读并存 triage_read_notes.json，直接复用。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "模型压缩、低显存部署与可验证编程",
+      "cost": "重",
+      "reason": "按阅读方向合并调度，组内不同项目须独立核实，不能混成同一成果。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
+          "url": "https://prismml.com/news/bonsai-2-27b",
+          "date": "2026-09-17T21:13:31Z",
+          "why": "Bonsai 2 27B，HN 491 分，核九倍压缩口径、质量及硬件。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Shapelearn Qwen 3.8 27B (13.1 GB VRAM)",
+          "url": "https://byteshape.com/blogs/Qwen3.8-27B",
+          "date": "2026-09-18T02:04:19Z",
+          "why": "Qwen 3.8 27B 的 13.1 GB 显存版本，区分模型压缩与运行显存。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+          "url": "https://huggingface.co/papers/2609.19969",
+          "date": "",
+          "why": "本日 HF 榜单，非发布日期；DeepSeek KV 压缩新技术，仅见标题。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+          "url": "https://bend-lang.com",
+          "date": "2026-09-17T20:36:13Z",
+          "why": "Bend，HN 513 分，核证明能覆盖哪些 AI 编程错误。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Bend 2 and the Vibe-Coding Trap",
+          "url": "https://blog.liampwll.com/posts/bend_vibe_coding",
+          "date": "2026-09-18T12:03:55Z",
+          "why": "Bend 2 评论，与原项目交叉阅读，只见标题，不预判结论。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "自动研究与监督的真实边界",
+      "cost": "重",
+      "reason": "按阅读方向合并调度，组内不同项目须独立核实，不能混成同一成果。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“Deep recurrent models are less robustly CoT-monitorable than normal CoT models in a toy setting” by Nick Kuhn, Alek Westover",
+          "url": "https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than",
+          "date": "Fri, 18 Sep 2026 04:00:46 GMT",
+          "why": "玩具实验：递归模型约四十步 RL 后转入潜在推理。区别于 09-14 提示优化结果，不扩大成真实部署逃避监控。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Model organisms (sometimes) confess their misalignment when offered a deal” by Mark Keavney, Francis Rhys Ward",
+          "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
+          "date": "Thu, 17 Sep 2026 16:00:45 GMT",
+          "why": "四种 Kimi-K2.6 失配模型与对照，测试真实报酬能否换自白，核成功率和兑现。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Obstacles to the scalable oversight of auto-alignment research” by Sam Martin, Dewi Gould, Cameron Holmes, Jacob Pfau",
+          "url": "https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment",
+          "date": "Thu, 17 Sep 2026 19:30:46 GMT",
+          "why": "辩论监督在需判断的自动对齐任务上失效，保留智识实验。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+          "url": "https://huggingface.co/papers/2609.20519",
+          "date": "",
+          "why": "本日 HF 榜单，非发布日期；SoL-Pi 自动研究优化外壳，核与 09-15 主线的新结果。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "An Empirical Study of Harness Design for Coding Agents",
+          "url": "https://huggingface.co/papers/2609.20804",
+          "date": "",
+          "why": "本日 HF 榜单，非发布日期；核是否与昨日 Harness Tax 同文，无新进展则丢。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Superintelligence this Christmas” by Alexander Gietelink Oldenziel",
+          "url": "https://www.lesswrong.com/posts/LJbKwctaioqp2Hi4b/superintelligence-this-christmas",
+          "date": "Fri, 18 Sep 2026 01:45:45 GMT",
+          "why": "作者称仅据公开信息预测圣诞节超级智能，保留观点长文供判断，不作已发生事实。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "hacker-news",
+      "title": "Astra for Law",
+      "url": "https://openai.com/index/astra-for-law",
+      "date": "2026-09-17T20:17:48Z",
+      "note": "Astra for Law 官方公告，主 agent 已精读，复用 triage_read_notes.json。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Qwen 3.8 Omni Flash",
+      "url": "https://qwen.ai/blog",
+      "date": "2026-09-17T23:05:48Z",
+      "note": "Qwen 3.8 Omni Flash，只有官方博客首页 URL，需定位真实文章，禁止猜路径。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "ZCode, the GLM coding agent, silently uploads your Git history",
+      "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+      "date": "2026-09-18T10:35:28Z",
+      "note": "ZCode 被指静默上传 Git 历史，独立安全披露，待核证。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Microsoft exec called AI scraping 'the largest theft of labor in human history'",
+      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+      "date": "2026-09-18T09:45:07Z",
+      "note": "微软未遮盖诉讼文件，重大诉讼例外保留；内部引语不是法院裁定。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model",
+      "url": "https://huggingface.co/papers/2609.18323",
+      "date": "",
+      "note": "MiniMax-H3 物理世界推理评估。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL",
+      "url": "https://huggingface.co/papers/2609.20715",
+      "date": "",
+      "note": "观察监督改变 RL 探索。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "JEPA-Anything: Learning Predictive Models across Different Worlds",
+      "url": "https://huggingface.co/papers/2609.20800",
+      "date": "",
+      "note": "JEPA-Anything 跨世界预测。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
+      "url": "https://huggingface.co/papers/2609.18605",
+      "date": "",
+      "note": "PACT 企业助手压力基准。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning",
+      "url": "https://huggingface.co/papers/2609.20784",
+      "date": "",
+      "note": "自退出在线策略蒸馏。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "RiskChainBench: A Benchmark for Obfuscated Platform Message Restoration and Evidence-Grounded Web Investigation",
+      "url": "https://huggingface.co/papers/2609.16900",
+      "date": "",
+      "note": "平台消息还原与证据调查基准。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control",
+      "url": "https://huggingface.co/papers/2609.19554",
+      "date": "",
+      "note": "空间智能、主动感知与控制评估。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation",
+      "url": "https://huggingface.co/papers/2609.20744",
+      "date": "",
+      "note": "直播视频生成架构，须区别于 09-15 实时视频已报内容。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "WeVisDoc: From Coverage to Capability for Robust End-to-End Document Parsing",
+      "url": "https://huggingface.co/papers/2609.20423",
+      "date": "",
+      "note": "文档解析研究。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "What Does Privileged Information Add to On-Policy Self-Distillation?",
+      "url": "https://huggingface.co/papers/2609.20612",
+      "date": "",
+      "note": "特权信息对自蒸馏的作用。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation",
+      "url": "https://huggingface.co/papers/2609.20511",
+      "date": "",
+      "note": "在线策略蒸馏的长度膨胀。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "When2Think: Learning Difficulty-Aware Length Control for Efficient Hybrid Reasoning Models",
+      "url": "https://huggingface.co/papers/2609.19671",
+      "date": "",
+      "note": "按难度控制推理长度。本日 HF 榜单，非发表日期；仅见标题。"
+    },
+    {
+      "source": "huggingface",
+      "title": "BananaMind 2 Pro: We've (almost) matched SmolLM2 at 20x fewer tokens... Trained On a 5070 Ti",
+      "url": "https://huggingface.co/blog/Banaxi-Tech/bananamind-2-pro-weve-almost-matched-smollm2-at-20",
+      "date": "",
+      "note": "社区作者声称用 5070 Ti 少量 token 接近 SmolLM2，页面称七小时前，待核对照与口径。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "[Linkpost] “callcongress.ai – the basic action US residents can take to help with AI risk” by Ruby, haglobah",
+      "url": "https://www.lesswrong.com/posts/C7Z5hr4yCG6fXy9o3/callcongress-ai-the-basic-action-us-residents-can-take-to",
+      "date": "Thu, 17 Sep 2026 17:45:46 GMT",
+      "note": "联系国会议员的 AI 风险倡议网站，不是通过的新法案。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Be alert: targeted attacks on prominent Rustaceans",
+      "url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans",
+      "date": "2026-09-17T23:59:19+00:00",
+      "note": "Rust 社工及供应链攻击，非 AI 生态雷达备选，勿强加 AI 因果。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "How to Write with an LLM",
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm",
+      "date": "2026-09-17T21:48:38Z",
+      "note": "Thomas Ptacek 主张拿 LLM 做编辑，却不采用其建议的措辞。与 Simon 同名转述合并，读此原文。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Did Galileo mistake Saturn’s rings for Jupiter’s Moons?” by Alfred Harwood",
+      "url": "https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons",
+      "date": "Thu, 17 Sep 2026 17:45:46 GMT",
+      "note": "考据：伽利略真的把土星环误认成木星卫星吗？摘要回答没有，理性主义课程引用查错。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“plzdontkillus Fellows Got ~2M AI Safety Views, Not 21M” by Josh Thorsteinson",
+      "url": "https://www.lesswrong.com/posts/LQ9wKT9oNeArbwukz/plzdontkillus-fellows-got-2m-ai-safety-views-not-21m",
+      "date": "Thu, 17 Sep 2026 20:00:46 GMT",
+      "note": "训练营两千一百万播放量与严格 AI 安全定义下约两百万的口径之争，不能直接定性造假。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Grantmakers aren’t afraid to die” by dan.parshall",
+      "url": "https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die",
+      "date": "Thu, 17 Sep 2026 23:00:46 GMT",
+      "note": "以显示性偏好质疑 AI 风险资助者的信念，观点反讽，不作动机定论。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“The Game is Set for a Targeted Memetic Attack on the AI Safety Community” by keltan",
+      "url": "https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai",
+      "date": "Fri, 18 Sep 2026 07:30:46 GMT",
+      "note": "安全社区会不会被迎合既有预期的假泄漏骗到？认识论提醒，未查实存在此类攻击。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Pre-Greek: The lost language hidden within Ancient Greek",
+      "url": "https://linguisticdiscovery.com/posts/pre-greek",
+      "date": "2026-09-18T03:04:38Z",
+      "note": "前希腊语在古希腊语中的遗迹，语言学乐子。"
+    },
+    {
+      "source": "axios",
+      "title": "Oil's shrug emoji era",
+      "url": "https://www.axios.com/2026/09/18/oils-shrug-emoji-era-iran-trump-hormuz-prices",
+      "date": "Fri, 18 Sep 2026 09:30:06 +0000",
+      "note": "摩根大通石油分析师直言没有基准情景，不会建模结局，预测失效的反直觉材料。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Hister: A private search engine for the pages you visit and the files you keep",
+      "url": "https://github.com/asciimoo/hister",
+      "date": "2026-09-17T16:25:37Z",
+      "note": "HN 654 分，把浏览记录与本地文件做成私有搜索的开源工具。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "In 2028, will an AI be able to play randomly-selected computer games at human level, given the chance to train via self-play?",
+      "prob": "87.0％",
+      "volume_note": "volume=43399.52; volume24Hours=0; liquidity unavailable. 默认池候选，发布前核实概率；灭绝主题老盘需额外查重，建议另搜今日题材新盘。",
+      "url": "https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-play"
+    },
+    {
+      "question": "What’s the least impressive thing you’re very sure AI still won’t be able to do before August 2027? [read description]",
+      "prob": "未抓到选项概率，需读市场详情",
+      "volume_note": "volume=74243.35; volume24Hours=0; liquidity unavailable. 默认池候选，发布前核实概率；灭绝主题老盘需额外查重，建议另搜今日题材新盘。",
+      "url": "https://manifold.markets/Bayesian/whats-the-least-impressive-thing-yo"
+    },
+    {
+      "question": "If an AI system is responsible for the deaths of >= 5000 Americans by eoy 2027, which AI company would be most to blame?",
+      "prob": "未抓到选项概率，需读市场详情",
+      "volume_note": "volume=16675.65; volume24Hours=0; liquidity unavailable. 默认池候选，发布前核实概率；灭绝主题老盘需额外查重，建议另搜今日题材新盘。",
+      "url": "https://manifold.markets/NuñoSempere/if-an-ai-system-is-responsible-for"
+    },
+    {
+      "question": "Will any of the below AI companies be nationalized, according to the definition in the description?",
+      "prob": "未抓到选项概率，需读市场详情",
+      "volume_note": "volume=8484.21; volume24Hours=0; liquidity unavailable. 默认池候选，发布前核实概率；灭绝主题老盘需额外查重，建议另搜今日题材新盘。",
+      "url": "https://manifold.markets/NathanpmYoung/will-any-of-the-below-ai-companies"
+    },
+    {
+      "question": "Will AI wipe out humanity before the year 2029?",
+      "prob": "1.0％",
+      "volume_note": "volume=44648.61; volume24Hours=0; liquidity unavailable. 默认池候选，发布前核实概率；灭绝主题老盘需额外查重，建议另搜今日题材新盘。",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c4dd0657d4fa"
+    },
+    {
+      "question": "Will AI wipe out humanity before the year 2040?",
+      "prob": "7.9％",
+      "volume_note": "volume=1716857.77; volume24Hours=0; liquidity unavailable. 默认池候选，发布前核实概率；灭绝主题老盘需额外查重，建议另搜今日题材新盘。",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    },
+    {
+      "question": "Will AI wipe out humanity by 2030? [resolves N/A in 2027]",
+      "prob": "14.6％",
+      "volume_note": "volume=863543.05; volume24Hours=0; liquidity unavailable. 默认池候选，发布前核实概率；灭绝主题老盘需额外查重，建议另搜今日题材新盘。",
+      "url": "https://manifold.markets/EliezerYudkowsky/will-ai-wipe-out-humanity-by-2030-r"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "time-window-filter",
+      "reason": "严格从 2026-09-17T20:41:28+08:00 接续，已知更早候选全部过滤，包括 ACX FDA、Gemini 3.8 Live 和旧 LW；Anthropic 仅日期待核。"
+    },
+    {
+      "slug": "simon-willison-dedup",
+      "reason": "compaction summaries 是昨日六起事故再转述，去重；写作文章合并到 Thomas Ptacek 原文。"
+    },
+    {
+      "slug": "lesswrong-dedup",
+      "reason": "Shallow Beliefs 已在昨日安全接种银牌中报道；Zvi 周报与减速、安全帖交叉查重。"
+    },
+    {
+      "slug": "hf-papers-partial",
+      "reason": "GUI 技能演进疑与 09-14 主线重合，未见新增先略；3D 关节、字体、图像对齐、泰卢固语问答较窄，原始池备查。本日榜单日期不等于论文发表日期。"
+    },
+    {
+      "slug": "huggingface-funes",
+      "reason": "列表称一天前，可能早于接续点，无法确认新鲜，暂略。"
+    },
+    {
+      "slug": "axios-non-ai",
+      "reason": "常规政争、伊朗战事及人事新闻不属核心，保留预测失效材料。"
+    },
+    {
+      "slug": "theinformation",
+      "reason": "登录态补扫未完成，scanned_at 为空，上一期接续点保留，不可标已覆盖。"
+    },
+    {
+      "slug": "x-login-supplement",
+      "reason": "逐账号登录态补扫未完成，不代表窗口内无新帖，不可标已覆盖。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "机械扫描无候选，无可回溯原始出处的线索。"
+    }
+  ]
+}

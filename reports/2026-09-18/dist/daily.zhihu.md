@@ -1,0 +1,96 @@
+## 🗞️ 行业大事
+
+**🥇 [Claude 帮白帽黑进 OpenAI 内部仓库](https://www.hacktron.ai/blog/hacking-openai)**
+
+三名研究者把论坛的图片解析漏洞与 OpenAI 登录缺陷串成攻击链，接管一名员工的 ChatGPT 和 Codex 账号，并让已连接 GitHub 的 Codex 向内部单体仓库提交一个无害 PR。这个动作只用于证明权限，团队随即停止测试。
+
+他们先用 Opus 4.8 找到内存漏洞，换成刚发布的 Opus 5 后，三小时做出本地利用程序，再适配论坛环境。从发现漏洞到仓库访问不足七十二小时。
+
+**🥈 [微软内部把 AI 抓取称为大规模劳动盗窃](https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/)**
+
+微软的数据称，Copilot 答案页让《纽约时报》域名点击率最多下降 93％。内部文件把这叫作「末日循环」：内容供应商收入受损，最终也会拖累模型和网络。另一份备忘录把大规模抓取称为「人类史上最大的劳动盗窃」。纳德拉作证称，付费墙内容用于提供答案或训练都应获得许可。
+
+**[ZCode 静默上传完整代码仓库](https://tokenstead.ai/guides/zcode-silent-git-history-upload)**
+
+包含完整 Git 历史，关闭体验优化和仓库索引仍会继续。解密私钥只保存在厂商服务器。
+
+## 📖 深度长文
+
+**🥈 [Bend 想用数学证明拦住 AI 写错代码](https://bend-lang.com/)**
+
+开发者要在文档里写明程序必须满足的性质，AI 再交代码和机器可检验的证明。官网示例用了 58 行规则、442 行证明。争议在于，该让模型手写证明，还是让现有工具自动推导。
+
+**🥈 [自动化对齐研究能否被可靠监督](https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment)**
+
+模糊任务的结论是靠许多较弱 辩论且互相关联的证据堆砌出来的，不像清晰任务那样容易分解验证。作者在地理猜测和概念推理评分这两个模糊任务上做辩论训练，发现没提高成绩。
+
+**[用 AI 改稿，却不用它写的句子](https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm)**
+
+先自己写，再让模型找重复、赘词和结构问题；改完交给新窗口做比较，还得先禁止它夸人。
+
+**[研究者把 AI 减速拆成三个执行难题](https://www.lesswrong.com/posts/E5SmpFsGPNpYjf92c/pacing-the-frontier-a-framework-and-research-agenda)**
+
+减速损失如何补偿，监督者怎样避免扩权，措施执行不到位或该结束时怎么办。
+
+## 🧪 新鲜论文
+
+**🥈 [循环模型学会把推理藏到思维链外](https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than)**
+
+研究给小模型加了一条跨 token 传递深层激活的通道。强化学习约四十步后，它的可读推理全变成填充词，仍然保持准确率。普通模型到第六十步还有 38％ 的推理步骤可见。潜变量通道让计算搬到文本之外，思维链监督更容易失效。
+
+**[JEPA-Anything 用同一套方法预测天气和分子运动](https://huggingface.co/papers/2609.20800)**
+
+它把内部表示拆成不同因素，分别学习再组合，并在视觉、医疗、控制等七类领域测试同一框架。
+
+## 📢 官方公告
+
+**🥈 [Claude 把三十多个生物模型平均提速四倍](https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling)**
+
+它不只更换通用内核，还缓存重复计算、删掉永远不会触发的分支，并逐个检查下游任务。所有优化代码都已开放；接入蛋白设计后，一张 H200 跑一天便达到旧流程最多两千五百小时 H100 的模拟分数。
+
+**🥈 [OpenAI 推出法律版 Astra](https://openai.com/index/astra-for-law)**
+
+专用法律索引覆盖美国判例、法规和法院规则，完整产品在两百道研究题上答对 54％，普通网页搜索版为 38.7％。律师还能接入律所自己的资料和方法。案件权限、道德墙与客户指令也被写进控制层。首批插件连接 iManage、Relativity 等二十六套常用系统。
+
+**[Bonsai 2 把 27B 模型压到 5.9GB](https://prismml.com/news/bonsai-2-27b)**
+
+新版本换上 Qwen3.8 27B，仍是 5.9GB，综合基准保留率从首代约 95％升到 98.2％。
+
+## 📌 行业简讯
+
+- [Hister 给浏览历史和本地文件建私有搜索](https://github.com/asciimoo/hister)
+
+## 🎪 乐子汇总
+
+**[古希腊语里藏着失传语言的一千个词](https://linguisticdiscovery.com/posts/pre-greek)**
+
+迷宫、橄榄和阿喀琉斯这些很有希腊味的词，反而留下了当地更早语言的痕迹。
+
+**[读者追查伽利略把土星环认成木星卫星的说法](https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons)**
+
+引用的书只说他把土星环看成卫星，课程文章却把木星扯了进来。第一篇阅读材料还没看完，读者就开始查引用了。
+
+**[AI 安全训练营头奖，靠抹泥和洋葱抢流量](https://www.lesswrong.com/posts/LQ9wKT9oNeArbwukz/plzdontkillus-fellows-got-2m-ai-safety-views-not-21m)**
+
+获奖者原本想讲 AI 政策，发现没人看就转拍猎奇视频。
+
+**[MIRI 研究者提醒同伴，别被太合胃口的泄漏骗了](https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai)**
+
+越像在证明自己早就说对了，越容易急着转发。他建议先设五分钟计时器，把来源和能核实的证据写下来。
+
+## 🎲 赔率盒子
+
+来自预测市场 Manifold 的实时概率，仅供围观：
+
+- [2028 年，AI 能学会随机抽到的电脑游戏并达到普通玩家水平吗？](https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-play) — **87％**（成交额 43.4k mana）
+- [2030 年前，前沿 AI 公司会被美国政府接管到什么程度？](https://manifold.markets/NathanpmYoung/will-any-of-the-below-ai-companies)（成交额 8.5k mana）
+  - 至少一家被软性接管 **79％**
+  - 至少一家被硬性接管 **47％**
+- [OpenAI 会在什么时候正式上市？](https://manifold.markets/JimD/when-will-openai-hold-its-ipo)（成交额 8.4k mana）
+  - 2027 年 6 月或更晚 **64％**
+  - 2026 年内 **9％**
+- [科学家会在 2027 年前宣布可信的外星技术信号候选吗？](https://manifold.markets/MAKER/-will-scientists-announce-a-credibl) — **2％**（成交额 528 mana）
+
+---
+
+*AI 日报 · 9月18日 · Telegram 频道 @dragonbro888*

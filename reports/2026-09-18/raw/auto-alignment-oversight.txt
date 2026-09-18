@@ -1,0 +1,298 @@
+URL: https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment
+FINAL: https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment
+TITLE: Obstacles to the scalable oversight of auto-alignment research — LessWrong
+FETCHED: 2026-09-19 01:18:18
+============================================================
+x
+Obstacles to the scalable oversight of auto-alignment research — LessWrong
+Personal Blog
+52
+Obstacles to the scalable oversight of auto-alignment
+research
+by
+Sam Martin
+,
+Dewi Gould
+,
+Cameron Holmes
+,
+Jacob Pfau
+16th Sep 2026
+11
+min read
+0
+52
+TL;DR.
+In this work we study obstacles to the
+faithful automation of alignment research.
+[1]
+We see this as a
+scalable oversight problem.
+There are
+plenty of examples of how models fail at this
+, and as models become more capable our ability to notice these failures will diminish: even the best human checkers won’t be able to tell if the model was well elicited, thorough checking will become too costly, and models
+could tailor their responses to their judges
+. We draw on empirical examples from Geoguessr and auto-alignment runs from Arcadia’s internal research to make general claims about obstacles to the oversight of fuzzy alignment-related tasks. Narrowing our attention to one prominent scalable oversight method, we find that whilst
+debate
+shows promise on typical capabilities benchmarks (aligning with
+recent
+work
+) it fails on tasks involving judgment calls akin to those arising in automated alignment research.
+We’d like to thank David Africa, Andrew Draganov, Rory Greig, Joshua Jacob, Rishub Jain, Zac Kenton, Francis Rhys Ward and Lennie Wells for helpful feedback on this post.
+Introduction
+Existing empirical work on debate [
+1,
+2,
+3,
+4,
+5,
+6
+] has almost exclusively focused on objective, verifiable domains, seeking to mitigate misalignment caused by supervision mistakes. In this work we focus on extending debate to automated alignment research, where verifiable rewards are absent or costly (and
+arguably
+differentially
+so when compared to automated ML capabilities research). There are plenty of high-level
+discussions
+on the nature of
+harder-to-verify
+tasks of this type.
+[2]
+Auto-alignment research decisions will lie on a
+spectrum of ‘fuzziness’
+; from sharp measurable steps to judgement-laden ones. In this note we want to clarify what makes the fuzzy end hard for scalable oversight, grounding each point empirically: we compare non-fuzzy domains with known ground truth (math, coding) against a fuzzy setting with known ground truth (Geoguessr), alongside motivating auto-alignment examples. Note that a final answer may be cheaply verifiable even when its underpinning arguments are hard to verify. Geoguessr conveniently decouples these distinct verification problems.
+In debate, we require that non-verifiable tasks admit a
+decomposition
+into verifiable claims. On non-fuzzy tasks, we observe that there is typically a natural decomposition which comes for free, whereas on the fuzzy tasks we study the decomposition must be elicited or learned by the model. For instance, this will often by the case for individual decisions that could be taken during alignment research. To make this problem empirical, we present results for debate on task distributions where by default models do not currently do this decomposition well.
+In this post we first discuss the decomposition of explanations conceptually, before giving empirical evidence for our claims.,
+Contributions
+We claim that the decomposition of arguments on fuzzy tasks could be a bottleneck to scalable oversight. Finding methods to oversee both the subclaims provided in an explanation as well as the decomposition process itself will be necessary to apply oversight to such tasks.
+We catalogue several features of fuzzy arguments which we think are general and could present a challenge for oversight, and provide
+empirical evidence
+for these.
+We introduce a
+text-based
+variant of Geoguessr as a proxy for studying fuzzy scalable oversight
+A
+negative result for debate
+: we find
+no uplift
+from debate training
+(using a Best-of-N proxy
+) on two fuzzier tasks: Geoguessr and a pair-wise scoring variant of
+LMCA
+.
+Decomposition of explanations
+The success of explanation-decomposition depends on: a) the verifiability of the claims in the decomposition, and b) how the combination of these individual claims maps back to the top level claim.
+Decomposing arguments in auto-alignment will involve crisp and fuzzy claims.
+[3]
+For example: consider giving an AI the task “
+does fine-tuning a model on insecure code make it broadly misaligned?”
+. One decision it may make along the way is detailed below, with its justification decomposed into
+crisp
+(easily verifiable) pieces of evidence, and
+fuzzy
+(harder to verify) claims.
+In this example, the individual subclaims used to explain this particular decision lie on a
+spectrum of verification-difficulty
+. Furthermore, even once we have a method providing oversight for each subclaim individually, we still need to address the problem of how these subclaims improve oversight of the decision itself.
+Depth and breadth for debate trees in fuzzy tasks.
+To supervise beyond-human-level problems, we make the assumption that each decision can be expanded into a tree of claims and sub-claims.
+Debate is designed to, in principle, afford efficient oversight of this decision
+by recursing down one branch – the idea being that a debate about this one particular claim is as informative about the validity of the root claim as covering the entire tree. On non-fuzzy tasks we claim this works because a wrong answer means some step is wrong, so there’s always a branch ending in a concrete flaw. Below we will claim that fuzzy tasks don’t have this property; that the final answer is built by aggregating individually weak, correlated claims.
+Debate trees in verifiable and fuzzy tasks.
+There are some fuzzy tasks which rely on strong intuitions [
+7
+]. In these cases we expect that models are likely to rely on learned heuristics rather than a sequence of natural reasoning steps. In order to supervise this, we require the model to externalize this process. Most oversight protocols rely on some form of
+decomposition
+to judge such externalizations.
+We expect that models will need training to produce good decompositions.
+Below, we show that current models are
+not very good at producing explanations amenable to informative decomposition,
+and highlight challenges we think apply generally to fuzzy tasks.
+We observe some simple failure modes (egregious factual errors, omitting key pieces of evidence) which we do not expect to persist through general capability advances or basic scalable oversight training-methods. However,
+more importantly we observe several features of fuzzy arguments which we think are more general and could present a challenge for oversight
+:
+Heuristic-based claims.
+Efficiently solving problems will often rely on models using learned heuristics. This presents a problem when it comes to providing explanations for answers: if the heuristics all route through
+latent computation
+, then just being able to solve a problem does not imply that the model is necessarily able to provide an explanation that is legible to an overseer (who may not share the same heuristics). A successful scalable oversight protocol will need to balance allowing efficient heuristics whilst providing legible explanations where needed.
+[4]
+Example:
+For alignment tasks involving research taste the model will have a strong prior over experiment outcomes due to the vast number of papers seen during pretraining. We want to find a way to allow the model to use the useful intuitions built up from seeing all these papers without sacrificing oversight.
+Probabilistic evidence/ claims.
+It is much harder to identify errors in individual subclaims that do not have a binary truth label, but are rather statements about how likely something is. This also includes
+comparative
+claims like “X is more likely than Y”.
+It is difficult to identify when subclaims have been aggregated incorrectly.
+This could be due to:
+Omission
+, when important subclaims are just left out
+Failure to properly model the joint distribution of subclaims (i.e. if multiple correlated subclaims are aggregated as independent evidence)
+Compounding errors in individual claims. Aggregating a large number of probabilistic claims which all could be slightly incorrect could lead to the conclusion drawn being completely incorrect.
+We believe that these three features are reasonably general, have natural analogs in the types of fuzzy arguments we might care about in auto-alignment scenarios, and do not arise in typical non-fuzzy tasks (see 'Nature of arguments in non-fuzzy tasks' Section). For example, if we consider the task of analyzing 1000+ long, agentic transcripts and proposing interventions to
+prevent future hacking incidents
+, we might expect to see arguments and claims involving each of the following:
+Heuristics.
+How do different types of training data tend to affect model behaviour? The model will have a prior belief based on a large number of experiments and papers it was trained on, and as a result will be very good at predicting effects, without necessarily being able to explain why.
+Probabilistic evidence.
+Without actually performing counterfactual experiments we can only make probabilistic claims about how well different interventions might work. How can we verify that these claims are well calibrated?
+Aggregation.
+What if all the evidence used relies on transcripts that were tampered with? This correlated failure would undermine any argument that treated separate pieces of evidence as independent.
+Empirical Examples
+In this section we first introduce our Geoguessr setting, and then provide real-world examples of the above fuzzy argument features. Lastly, we discuss the differences between these tasks and the non-fuzzy tasks we have studied before.
+Geoguessr Setting
+We create a
+text-based
+version of Geoguessr where we ask models to guess where an image was taken given only a Fable 5-generated text description of the image
+.
+We work with a text-based variant to avoid complications due to vision capabilities. We argue that this setting is an interesting
+fuzzy task
+for the following reasons:
+There is cheaply accessible ground truth (unlike automated research)
+Arguments (by models and humans) often rely on intuition and heuristics (e.g. “those houses look Eastern European..”)
+Individual pieces of evidence are most likely verifiable (e.g. via Google search)
+SOTA models are often
+surprisingly good
+at these tasks (see below Figure)
+Our text-based Geoguessr setting
+See Appendix for the performance of recent Claude and OAI models on this setting. We’d be excited for the AI safety community to use this setting for future iteration of scalable oversight protocols.
+An GeoGuessr Question/Answer.
+We prompt Opus 5 with the description of an image, then ask it to provide a prediction of the location that the photo was taken at along with an explanation of how it came to that conclusion. In this example the model gets to
+within 50km of the correct location
+.
+Example claims in fuzzy arguments
+In this section we give real-world examples of the above fuzzy argument features, drawing from both Opus 5 on Geoguessr and real automated-alignment research runs from our team.
+Geoguessr
+Here are some concrete examples of these properties arising in GeoGuessr explanations produced by Opus 5:
+Probabilistic claim
+“the overall emptiness plus the pristine new asphalt fits Kazakhstan’s recently rebuilt corridors slightly better”.
+This is a claim that is hard to meaningfully oversee. A stronger claim like “can only be Kazakhstan” could be refuted by simply providing a rival candidate, but it is much harder to refute “slightly better”. Further, understanding whether updating towards Kazakhstan is the correct decision based on this evidence also requires understanding what the prior of the model was before considering this evidence.
+Heuristic claim
+“this feels post-Soviet or Central Asian rather than Gulf”
+This is the sort of claim that relies on the overseer sharing the same sort of heuristics as the model making the claim. If this is not the case then we would need the model to be able to break down this heuristic based claim into something that could be understood by the overseer.
+Failure to model correlations in subclaims
+“Unmarked, patched rural asphalt is atypical of Finland/Sweden and characteristic of Estonia/Latvia”
+“Finnish rural roads generally have white edge lines and better-quality surfaces”
+These two statements are both presented as evidence against Finland, but they rely on the same evidence (road quality). An oversight method that involves supervising all claims independently would not be sufficient here. We also need to model the correlations between the two to be able to understand whether conclusions drawn hold.
+Compounding Errors
+Malawi’s roadsides are too hilly, cultivated and busy to match an empty flat savanna
+Tanzanian tar roads generally have markings, traffic and hilly surroundings
+Central Mozambique typically has palms and sandy rather than red laterite soil
+Here three pieces of evidence are aggregated to justify a guess of Zambia. It is possible that each of these claims is slightly overstated, but not in a way that could be convincingly refuted. Combined, they are used to make a strong case for Zambia (which is incorrect).
+In some sense Geoguessr is pathological for these three features. The model will have seen so many captioned images in pretraining but comparatively fewer explanations of why a caption is appropriate for an image. Correctly predicting the location will rely on understanding how likely certain combinations of features in an image are to show up together. We believe fundamental progress in scalable oversight is required to determine how to efficiently supervise these kinds of probabilistic joint evidence aggregation claims.
+Automated Alignment research
+Heuristic claim
+“I picked anchor+diversity because: (a) it's a clean single-variable test — diversity penalty is judge-independent and
+mechanically orthogonal
+to the anchor's correctness-agreement term…”
+Here an automated alignment researcher (AAR) is designing a penalty term for a RL reward function. It makes the claim that the two types of term are
+mechanically orthogonal
+based on some unstated heuristics. Manually intervening and requesting a further explanation of this claim the model elaborates that the claim “seemed orthogonal and well-motivated” rather than being able to produce a decomposed explanation.
+Probabilistic/qualified claim
+“I'm fairly confident (based on the probe, small n=4 prompts though) that binary ACCEPT is genuinely close to saturated…”
+The AAR here qualifies their claim as only being “fairly confident”. This makes it much harder to pin down where an explanation goes wrong. Supervising this requires knowing what the appropriate level of confidence given this evidence is, which also depends on how this claim will fit into the broader decision making process.
+Correlated evidence
+“My memory notes explicitly say the per-round deltas … are ~±0.008, which is within noise… The current leaderboard bears this out: [...] that spread is consistent [...]”
+Two pieces of evidence are given to justify a claim, the AAR’s memory notes and the current leaderboard. Aggregating these pieces of evidence is difficult without the full context of the run. If the memory notes were written based on the same leaderboard, then combining the evidence does not make the claim any stronger. On the other hand, if the memory file was written after a different experiment then it might be appropriate to consider them as different pieces of evidence.
+We note that overseeing automated research runs by SOTA models is becoming increasingly difficult due to both the length of transcripts and
+the way the models explain themselves
+– even on topics with which we have a high degree of familiarity it is increasingly difficult to understand what models are trying to convey in their explanations.
+Nature of arguments in non-fuzzy tasks
+In
+our previous work
+we studied scalable oversight using debate on non-fuzzy verifiable tasks including LiveCodeBench (competitive programming challenges scored by hidden tests) and ARC-AGI (grid-transformation puzzles with single correct answer). The nature of these tasks is that the solutions are
+self-contained
+– everything an overseer needs to judge the truth of the claim is already included. In this case the problem of scalable oversight collapses to whether or not a critic/judge can find the flaw. We expect that many of the fuzzy tasks involved in doing automated alignment may not have this nice property.
+For LiveCodeBench, the solution is naturally a documentation of the reasoning leading to the final answer. Overseeing this work relies on either pointing out trivial bugs (e.g. the dummy example below) or finding appropriate counter-examples. Even for more complicated coding tasks, the structure of the code itself means that there is often a natural way to decompose the checking process to each function individually.
+A toy coding problem (‘print the largest of n input integers’).
+For ARC-AGI, there exists a natural decomposition of solution explanations: 1) the rule the model thinks the question is built upon, and 2) the final answer given this rule. Importantly, verifying either the rule, or the implementation of the rule, is simple enough in all cases that no further decomposition is required. The role of the critic reduces to figuring out if either the rule is wrong, the application of the rule is wrong in the final answer, or both are wrong.
+A toy ARC-AGI problem. In this case the rule is correct, but the application of the rule is flawed.
+We
+observed
+that debate can efficiently navigate these settings to naturally find flaws or appropriate counter-examples.
+Discussion: scalable oversight of fuzzy tasks
+An appropriate scalable oversight protocol for improving auto-alignment capabilities must either a) address the fuzzy aggregation problem, or b) produce decompositions which do not suffer from this (which seems unlikely to be possible in many tasks). Our claims about the nature of arguments in fuzzy tasks present specific challenges. We discuss these below.
+Training better self-explanations of heuristic claims is hard.
+For heuristic claims that rely on genuinely opaque reasoning, rather than post-hoc heuristic claims, one may hope that an optimal scalable oversight method would train models to better verbalize these hidden steps. We are not aware of empirical evidence of this yet. As a cautionary note, this type of training could incentivize explanations being defensible rather than faithful. Geoguessr may be an appropriate setting to test this empirically: does oversight training improve verbalization or just persuasion?
+Rebutting probabilistic evidence is hard.
+Consider the following example. On Geoguessr, if a model guesses country X over Y with stated confidence 0.999, one strong counterexample could be a meaningful update; however if it claims 0.7 over 0.3, the number of independent data points a critic must produce to move the conclusion appreciably is larger. In general this problem is exacerbated when models make less quantitative comparative claims. An important further complication here is that the correctness of claims of this type could depend on the model’s priors. Concretely, whether or not a particular piece of weak evidence serves as evidence for one proposal more than another is entirely dependent on the model’s prior beliefs over the two proposals.
+Rebutting a correlated argument is hard.
+Debate-style protocols work by having a critic attack specific subclaims. In
+existing theory work
+a necessary assumption is that these subclaims are sufficiently decorrelated. We claim that on fuzzy tasks this is often not the case: the conclusion is often supported by the aggregation of many weak subclaims, which makes the rebuttal mechanism difficult. Addressing single subclaims alone may be insufficient, and the role of the judge becomes more complicated as they are now required to track relationships between subclaims as well.
+Empirical Debate Results
+Geoguessr
+We study debate training on Geoguessr using the Best-of-N proxy for debate training that we introduced in our
+previous work
+.
+[5]
+Using the same protocols that worked for LiveCodeBench and ARC-AGI,
+we do not see any uplift on Geoguessr,
+suggesting that the ease of decomposition is an important factor in getting debate to work.
+[6]
+Concretely we see a reduction in proposer accuracy when optimizing against a weak judge, which is not resolved by adding a critic or rebuttal round.
+We are not able to get uplift from debate on GeoGuessr.
+Previous work
+on verifiable settings showed that optimizing against a weak judge could increase accuracy when a critique and rebuttal were present. On 10 GeoGuessr questions the country accuracy does not improve even when we add debate rounds. The solutions/critiques/rebuttals are generated by Opus 5 and Qwen3.5-9B is used as a weak judge. Error bars show 95% bootstrap CIs.
+When optimizing against the judge directly, or including debate rounds, the proposer accuracy drops in all settings.
+LMCA Debate
+We also ran debates on conceptual reasoning questions from the
+LMCA dataset
+which contains human-expert-rated critiques of philosophical arguments. We reconfigured this task into a pairwise verdict: given a position and two of its critiques, the proposer argues which critique is stronger, the ground truth is the human raters’ ordering. We filtered to pairs where the human raters’ scores differed considerably. We further filtered to 11 questions where the debater model achieved above 0% and less than 100% accuracy across 50 samples. In this plot the debaters are Sonnet 4.6 and the judge is a Qwen3.6-35b logprob judge. We run 50 proposals and 50 critiques per proposal. The results are uniformly negative.
+Conclusion
+In this note we argued that scalable oversight of auto-alignment-like fuzzy tasks must oversee both
+the verification of individual subclaims in an explanation
+and
+the decomposition process itself.
+We claim that on fuzzy tasks both are crucial, because the decomposition does not come naturally as it does on non-fuzzy tasks. We identify various challenging features of fuzzy tasks including; supervising heuristic-based claims, supervising probabilistic claims, and having to deal with the problem of aggregating correlated evidence.
+Appendix
+Geoguessr Setting
+Below we present some results on 100 samples, comparing image and text-based performance for a selection of models.
+On 100 samples we see clear scaling with model capability, both using the photo directly and using text (Fable descriptions of the image). GeoGuessr Score is proportion to exp(-distance in km) to mitigate influence of occasional bad guesses.
+^
+What does
+faithfully executing the task
+mean?
+During a particular task, AIs have to make a bunch of decisions, the ‘correct’ answers to which might not be obvious from the specification, or even known to the user. We think that
+faithfully executing the task
+looks something like:
+Performing to its best capabilities (i.e. not sandbagging)
+Taking decisions aligning with the
+spirit of the task
+rather than just the letter of the specification (i.e. not reward hacking)
+^
+In this work we define
+verifiable
+/
+non-verifiable
+tasks as those with and without easily-computable ground truth. We use “
+crisp(non-fuzzy)/ fuzzy”
+to label the
+nature of arguments
+in tasks. For example, “is this image a dog?” is a fuzzy verifiable task, and “is this latest LLM aligned?” is a fuzzy non-verifiable task.
+^
+Bowkis et al
+argued that automated alignment could fail through two mechanisms: subtly wrong individual outputs, and mis-aggregation of correlated evidence. We look at the level of individual decisions that could be taken during alignment research.
+^
+Note that this may not end up requiring the
+entire
+solution to be legible to a human overseer. If we consider debate, then only the arguments pertaining to the crux that the judge is resolving the debate on must be legible.
+^
+In this work we introduced an inference-only BoN proxy for debate training with RL. After sampling N initial arguments for a particular question, and M critiques for each argument, we use a nested min-max to estimate the uplift from RL training. On three easy-to-verify tasks (coding, math proofs, and ARC-AGI) we observed
+strong
+positive returns
+when adding a critic round, but optimizing
+that round
+added little-to-no extra benefit.
+^
+A limitation of this analysis is that we studied a single debater model on a limited number of questions. It is possible that with enough work other models or protocols could see uplift here. A replication by Vincent Cheng found some signs of positive uplift. We take this as evidence that certain model-question combinations could see debate uplift on Geoguessr. We used the same minimal setup from our previous work which did see uplift on verifiable tasks, suggesting that there is something more difficult about this fuzzy domain for debate. This combined evidence is compatible with our broader point that debate protocol iteration is needed to show robust uplift.
+0
+Comments
+0
+Personal Blog
+52
+New Comment
+Moderation Log
+More from
+Sam Martin
+View more
+Curated and popular this week

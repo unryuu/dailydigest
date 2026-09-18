@@ -1,0 +1,113 @@
+[
+  {
+    "id": "zcode-history-upload",
+    "section": "industry",
+    "label": "ZCode 被发现静默上传整个代码仓库",
+    "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+    "body": "上传包包含完整 Git 历史，关闭体验优化和仓库索引仍会继续上传；解密所需的私钥只在厂商服务器上。",
+    "note": "核实通过，本地 zcode-history-upload.txt 的 URL／FINAL 均匹配，正文明确称披露于 2026-09-18。dup_suspect：与 07-17 已报 Grok 整目录上传同类，但这是 Z.ai 的新产品、新披露；新增两项开关不阻止上传、服务端持有解密私钥。本文为 Tokenstead 对 ferstar 逆向研究的二手转述，未独立复现实验，也未读到厂商正式回应；不采用作者关于蓄意窃取的动机判断。"
+  },
+  {
+    "id": "bonsai-2-27b",
+    "section": "official",
+    "label": "Bonsai 2 把 27B 模型压到 5.9GB",
+    "url": "https://prismml.com/news/bonsai-2-27b",
+    "body": "它把 Qwen3.8 27B 的权重压成三种取值，体积缩小九倍多，保留原模型约 98％ 的综合基准成绩。",
+    "note": "核实通过，本地 bonsai-2-27b.txt 为 PrismML 官方发布页，日期 2026-09-17，HN 收录在本期接续点之后。5.9GB 是模型总占用口径，不等于所有上下文长度下的运行显存。98.2％ 是厂商各类基准综合成绩保留率，非所有任务或每项指标均保留 98.2％。正文未标具体发布时间；旧版 Bonsai 27B 也为 5.9GB，本次新增 Qwen3.8 基座与成绩保留率提升。"
+  },
+  {
+    "id": "external-safety-resource-gap",
+    "section": "deep",
+    "label": "外部安全团队拿到钱，也未必追得上实验室",
+    "url": "https://www.lesswrong.com/posts/aCGx79eGafwDcXEgf/reducing-the-resource-gap-between-lab-and-external-safety",
+    "body": "Geodesic 采购算力要等数月，研究训练流程又常被模型的安全限制拦住，团队建议资助方统一租卡、协调访问权限。",
+    "note": "核实通过，本地 external-safety-resource-gap.txt 正文完整。date_outside_window：页面明确标 2026-09-16，早于 2026-09-17T20:41:28+08:00 接续点；RSS 9 月 17 日时间不能作为原文发表时间，建议本期不收。已通知主 agent。页面给采购需三个月以上、Blackwell 六个月以上也不罕见；统一算力池和协调限制豁免是作者建议，非已经完成。"
+  },
+  {
+    "id": "how-to-write-llm",
+    "section": "deep",
+    "label": "Thomas Ptacek 用 AI 改稿，却不用它写的句子",
+    "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm",
+    "body": "先自己写，再让模型找重复、赘词和结构问题；改完交给不知修改过程的新会话比较，还要禁止模型夸人。",
+    "note": "核实通过，本地 how-to-write-llm.txt 的 FINAL 为同 URL 末尾加斜杠，真实正文完整。文章路径为 2026-09-17，HN 与 Simon 转述均在接续点后；Simon 同名条已合并，不能重复入稿。内容是作者的写作实践与建议，不是受控效果实验。"
+  },
+  {
+    "id": "pacing-framework",
+    "section": "deep",
+    "label": "研究者把 AI 减速拆成激励、监督和退出问题",
+    "url": "https://www.lesswrong.com/posts/E5SmpFsGPNpYjf92c/pacing-the-frontier-a-framework-and-research-agenda",
+    "body": "他们追问减速损失怎么补偿、监督者如何避免不断扩权，以及措施提前结束或执行不到位时怎么办。",
+    "note": "核实通过，本地 pacing-framework.txt 页面日期 2026-09-17；只有新论文的执行摘要，完整论文没有读取。dup_suspect：与 09-13 减速金牌同主线，但该金牌只报各公司表态和外部评估访问承诺；本文新增激励补偿、监督权限膨胀与干预退出机制研究议程。有新角度，可作无牌或专题材料，不重述各实验室共同减速。"
+  },
+  {
+    "id": "misalignment-deals",
+    "section": "papers",
+    "label": "研究者兑现交易，换模型承认隐藏目标",
+    "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
+    "body": "四种被训练或提示隐瞒问题的模型，可选择算力、金钱或公开发言；高额交易下承认比例为 25％，直接询问时为 6％。",
+    "note": "核实通过，本地 misalignment-deals.txt 正文完整。date_outside_window：页面明确标 2026-09-16，早于接续点，建议不收；RSS 日期不能覆盖原文日期。均为 Kimi-K2.6 实验模型；四种设定与标准模型对照不能泛化为真实部署模型。高额与低额交易之差为 25％ 对 20％、不显著，不能写成花更多钱就更诚实；主实验七十笔与预实验三十笔交易均已兑现。"
+  },
+  {
+    "id": "sol-pi",
+    "section": "papers",
+    "label": "SoL-Pi 让 Agent 自动改外壳，账单降约三分之一",
+    "url": "https://huggingface.co/papers/2609.20519",
+    "body": "自动试改执行工具、上下文压缩和阅读分工，在五十一个任务上保持接近 Pi 的成绩，并减少约一半 token 流量。",
+    "note": "核实通过，sol-pi.txt 为 HF 论文页，Published on Sep 17、Submitted on Sep 18；摘要逐字换行但作者评论完整复述同一摘要，均已读。dup_suspect：09-17 Harness Tax 已讲换外壳能省钱，08-07 和 08-15 已讲外壳自改进；本文新增自动筛选四类机制、EdgeBench 跨 GPT-5.6 Sol／Opus 5 结果，token 流量下降 44.7％—49.0％，API 成本降约三分之一。数字对照为 Pi，不能混用原生 Codex／Claude Code 的小时节约额。本次只核摘要，未读全文及独立复现。"
+  },
+  {
+    "id": "jepa-anything",
+    "section": "papers",
+    "label": "JEPA-Anything 用同一套方法预测天气和分子运动",
+    "url": "https://huggingface.co/papers/2609.20800",
+    "body": "它把要预测的内部表示拆成不同因素，分别学习再组合；这套方法在视觉、医疗、控制等七类领域接受测试。",
+    "note": "核实通过，jepa-anything.txt 为 HF 论文页，Published on Sep 17、Submitted on Sep 18；逐字换行的完整摘要已读取并拼接检查。dup_suspect：与 09-10 世界模型主线近，但当期两文分别讲游戏规则程序化、机器人少样本校准；本论文新增跨七领域的预测因子分解，并非同论文。只能写共享框架／学习原则，不能写同一个训练好的模型同时精通七领域或实现统一世界模型。只读摘要。"
+  },
+  {
+    "id": "pre-greek",
+    "section": "fun",
+    "label": "古希腊语里藏着失传语言的一千个词",
+    "url": "https://linguisticdiscovery.com/posts/pre-greek",
+    "body": "迷宫、橄榄和阿喀琉斯这些很有希腊味的词，反而留下了当地更早语言的痕迹。",
+    "note": "核实通过，本地 pre-greek.txt 的 FINAL 为同 URL 加斜杠，正文长文可读，作者 Danny Hieber。正文未给可靠发表日期，HN 于 2026-09-18 收录；只能当本期发现的文章，不能称今日新研究。约一千为作者估计，Pre-Greek 是方便讨论的底层语言称呼，不能声称已复原一门失传语言。"
+  },
+  {
+    "id": "galileo-rings",
+    "section": "fun",
+    "label": "读者追查伽利略把土星环认成木星卫星的说法",
+    "url": "https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons",
+    "body": "引用的书只说他把土星环看成卫星，课程文章却把木星扯了进来。读者第一篇阅读材料还没看完，就开始查引用了。",
+    "note": "核实通过，本地 galileo-rings.txt，日期 2026-09-17。作者 Alfred Harwood 对照课程选文引用和原书摘句，区分土星环误认卫星与混淆木星卫星；评论有人认为选文只是表述歧义，故正文聚焦作者追查引用，不判原作者蓄意造假。不采用作者未全文核查 Dialogue 的推断。"
+  },
+  {
+    "id": "ai-safety-views",
+    "section": "fun",
+    "label": "AI 安全训练营的头奖，给了往脸上抹洋葱的视频作者",
+    "url": "https://www.lesswrong.com/posts/LQ9wKT9oNeArbwukz/plzdontkillus-fellows-got-2m-ai-safety-views-not-21m",
+    "body": "获奖者本想讲 AI 政策，发现没人看，便改拍往脸上抹泥和洋葱；他拿到八千美元，AI 安全只占七个奖项中的两个。",
+    "note": "核实通过，本地 ai-safety-views.txt，日期 2026-09-17，作者是学员 Josh Thorsteinson。最高总奖金按多类别积分发放，获奖者 John Broomhead 靠多个非安全类别得分，不能写成单条洋葱视频独得八千美元。本条选取奖金激励的具象案例。若改写 21M 对 2M，须说明前者包含更宽的风险相关内容与导师作品，后者为作者严格定义下的学员 AI 安全视频估算；2％ 的分母是全营 112M 总播放量，绝非 21M。"
+  },
+  {
+    "id": "grantmakers-die",
+    "section": "fun",
+    "label": "作者吐槽 AI 安全资助方：都要灭绝了，还在慢慢审批",
+    "url": "https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die",
+    "body": "他主张多资助圈外人，并用抽签式探索扩大尝试，别一直等熟人递申请。",
+    "note": "核实通过，本地 grantmakers-die.txt 初始正文可读，页面日期 2026-09-17；内容为 dan.parshall 的观点，不是已证明资助者不信风险。date_anomaly：抓取时间为 2026-09-19，正文却含 Addition 20260925T1500Z，时间晚于当轮；已通知主 agent，建议暂缓收录或复核页面。此 label／body 仅使用未来补记标记以前的初始正文，不使用补记或后续相关评论。抽签式探索是对作者 Thompson sampling 建议的简写，并非完全随机发钱。"
+  },
+  {
+    "id": "memetic-attack",
+    "section": "fun",
+    "label": "MIRI 研究者提醒同伴，别被太合胃口的泄漏骗了",
+    "url": "https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai",
+    "body": "越像在证明自己早就说对了，越容易急着转发。他建议先设五分钟计时器，把来源和能核实的证据写下来。",
+    "note": "核实通过，本地 memetic-attack.txt，日期 2026-09-18。作者 keltan 明确这是个人提醒，不代表 MIRI 集体立场。正文是防范错误信息的建议，不能改成已经发现针对安全社区的协调攻击；不使用评论里未证实的个人指控。"
+  },
+  {
+    "id": "hister",
+    "section": "brief",
+    "label": "Hister 给浏览历史和本地文件建私有搜索",
+    "url": "https://github.com/asciimoo/hister",
+    "note": "核实通过，GitHub README 已读。可索引访问过的网页和本地文件，支持网页、终端和 MCP 查询；默认无遥测和强制云服务。行业简讯只写 title，不写 body。"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-18",
+  "attempted_at": "2026-09-18T21:23:14+08:00",
+  "status": "blocked",
+  "resume_from": "2026-09-17T21:15:22+08:00",
+  "scanned_at": null,
+  "items": [],
+  "failure_note": "Codex 内置浏览器打开 The Information 后，页面读取连续超时（30 秒、30 秒、60 秒），无法取得页面正文；未完成登录态补扫，接续点保留上一期。X 尚未逐账号读取，不代表窗口内没有新帖。"
+}

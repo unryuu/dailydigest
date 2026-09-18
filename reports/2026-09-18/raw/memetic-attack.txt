@@ -1,0 +1,194 @@
+URL: https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai
+FINAL: https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai
+TITLE: The Game is Set for a Targeted Memetic Attack on the AI Safety Community — LessWrong
+FETCHED: 2026-09-19 01:18:47
+============================================================
+x
+The Game is Set for a Targeted Memetic Attack on the AI Safety Community — LessWrong
+Epistemic Hygiene
+AI
+Rationality
+Frontpage
+79
+The Game is Set for a Targeted Memetic Attack on the AI Safety
+Community
+by
+keltan
+18th Sep 2026
+1
+min read
+9
+79
+While this is relevant to my work at MIRI, I have not checked these ideas with anyone else on the team and am posting this on my personal LW account. These views are my own
+[1]
+. And to be honest, I am writing this mostly to remind myself of my weakness.
+---
+I expect one (or many) adversarial memetic attacks aiming to trip you up, perhaps consisting of fake leaks relating to dangerous stuff happening in the labs. Specifically, worrying incidents that may fit snugly within your worldview, leaking from multiple sources including news outlet/s, but not confirmed/confirmable by a primary source. Think rumors about exfiltrated weights, AIs attempting to create viruses, agent swarms hacking into and gathering information from nuclear infrastructure, etc.
+An easy way to remove status from a movement is to trip it up: make it fall for a misinformation trap in public, then use that slip-up to discredit the movement for all time. The game is set for a memetic attack like this. There's a well-resourced group waiting for your screw-up.
+And then you may remember much that will help you.
+In public and in private, if you feel surprised or confused,
+notice your confusion
+. These feelings are signs that your world model doesn't match reality.
+Real incidents make you want to act fast. You feel the need to contact journalists, tweet about the incident, and start telling your friends: a memetic attack will feel the same. If you let them trip you, you burn credibility. Set a
+5-minute timer
+and write out your thoughts before acting. Ask yourself:
+Where is this information from?
+Do I trust the source?
+Can I verify any of this information myself?
+[2]
+If I must act now, is there a way that I can take action while remaining visibly skeptical of the claim and its source?
+^
+Since I haven't sanity-checked the concepts below, please take them with a grain of salt and read the comments where people will likely point out my mistakes.
+^
+"What about the German Wiki Attack?":
+The GWA was found by a team of researchers that we trust, and there was a bunch of public evidence that it had actually happened. I anticipate something similar to this being the trap that is set, but I do not expect it to come from a team of researchers that we trust, and I do not expect there to be more than 1-2 pieces of public evidence.
+The Game is Set for a Targeted Memetic Attack on the AI Safety Community
+13
+Lao Mein
+2
+derelict5432
+11
+ampdot
+1
+less_raichu
+6
+WilliamKiely
+3
+Nissa Seru
+3
+keltan
+1
+Sune
+1
+keltan
+9
+Comments
+9
+Epistemic Hygiene
+AI
+Rationality
+Frontpage
+79
+New Comment
+9 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 5:18 PM
+[
+-
+]
+Lao Mein
+10h
+13
+3
+Most likely current candidate is actually
+Andrew Yang's confused interview
+where he talked about "self-replicating code" and AI companies needing to create their own "synthetic internet" in order to prevent data poisoning while training their models or whatever. As far as I can tell, this was an exageration of
+Tristan Harris's exagerated claims on Glenn Beck
+.
+I really hope that Tristan is making a good-faith mistake, but he clearly is merging OpenAI search agents leaving communications all over the internet (
+completely true)
+with spontaneous prompt injection in gpt COT summaries (
+also completely true
+) to form some sort of "AIs are leaving prompt injections on the open internet to poison future training runs" (completely wrong, and he should be publishing immediately if not).
+If intentional, this counts as a clear lie about technical details. It would be extremely bad if this is where Yang got his ideas from. Glenn Beck is one of the most technically literate people in political punditry - exploiting his trust cynically is not going to end well and is unethical besides.
+Reply
+[
+-
+]
+derelict5432
+6h
+2
+0
+Yang's response would actually have been fine if he'd just hedged on the self-replicating code claim. People do need to understand that this is a current viable threat, especially for open-weight models. And it is not unreasonable to suggest using copies of parts or all of the internet at various levels of resolution depending on the task you're training on, instead of cutting tens of thousands of agents loose on the actual internet. Also, air-gapping is cumbersome and expensive, but these companies have mountains of money, so they have plenty and this should be a requirement, along with rigorous monitoring and oversight by a third party.
+[Incidentally, Noam Brown was just on Dwarkesh and they talked about air-gapping and Brown said, oh, even that's not completely secure. Two air-gapped machines can still find ways to communicate through thermal monitors. I mean, okay. But that seems disingenuous. Air-gapping is still much, much more secure, and exploits are incredibly esoteric and difficult, so this is not an excuse not to do it. The reason they almost certainly don't is that it is slow and expensive.]
+Anyway, none of this is crazy. Unfortunately, Yang botched it by stretching rumors into unfounded claims.
+Reply
+[
+-
+]
+ampdot
+8h
+11
+2
+An easy way to remove status from a movement is to trip it up: make it fall for a misinformation trap in public, then use that slip-up to discredit the movement for all time.
+Memetic attacks far more sophisticated than this are plausible- imagine the cogsec equivalents of spearphishing or Advanced Persistent Threats. While the AI safety community has strong immunity to some degree, I believe this immunity is jagged and has not been tested in a crisis against swarms of human adversaries each with the ability to allocate six-figures towards achieving specific beliefs in specific people: that's resources that can go into creating social incentives to shape the emotions of everyone around a specific person that's exposed to discourse of the public Internet- your cogsec envelope starts including the cogsec of everyone you care about who might plausibly receive information from your adversary.
+Reply
+[
+-
+]
+less_raichu
+20m
+1
+0
+crazy suggestion, we could red team it?
+Reply
+[
+-
+]
+WilliamKiely
+6h
+6
+0
+[Not certain I'm recalling this accurately and someone else should confirm]
+I listened to the Diary of a CEO podcast with Nate tonight and IIRC Nate said there were "two more" solutions to Millenium Prize problems besides Navier-Stokes before another guest immediately interjected to say they were unconfirmed, and only later in the conversation did Nate clarify that he heard
+rumors
+about two more. I think the end result was fine, but in the moment when the guest cut him off to say they were unconfirmed I thought Nate had assumed too much and it could have turned out badly if the other guest hadn't immediately said the other two were unconfirmed.
+Reply
+[
+-
+]
+Nissa Seru
+11h
+3
+0
+I am not aware of the provenance of this particular misunderstanding, but this comes to mind as the kind of thing that could result from the tactic that you warn about:
+https://x.com/search?q=andrew yang polluted&src=typed_query
+Reply
+1
+[
+-
+]
+keltan
+11h
+3
+0
+This might have been the post that gave me this idea. I remember being shocked and skeptical when I first saw the claim being made.
+To me, Yang's claim is extraordinary and doesn't make sense in a few different ways. The attack I warn about in this post will (I think) be:
+1) coordinated: stemming from multiple accounts at a similar time, possibly including news outlet/s that have built trust in the community but is funded by an adversary (
+MTS?
+)
+2) Warning signs of information being false for a true memetic attack will feel much weaker than Yang's claim, you will have a harder time spotting them. However the pull the share the information will be just as strong as the pull I originally felt to share Yang's claim. I imaging myself thinking something like: "omg, another warning shot! And no lives were taken, no harm caused to a creature. Excellent! This evidence makes our claims stronger!"
+Still, I think the Yang thing is a good example that fits partly into the type of Twitter post I would expect to see.
+Addendum:
+A friend on twitter also points out that
+, likely the people who see this and my twitter post are not the ones who need warning about an attack like this. Probably the attack focuses on the movement broadly. For example, it'd really be bad if policy makers attempting to regulate ASI were seen reposting the misinformation. Though, if I were running an attack of this sort, I'd really be hoping catch some big fish too (Nate, Eliezer, Daniel, Jacob, Jeffery, etc).
+Reply
+[
+-
+]
+Sune
+8h
+1
+0
+Who do you see as potential adversaries that would do something like 1? I can see that nation states would be intersted in infiltrating the AI security community, but not why they would want to weaken its credibility.
+Rogue agents would have an interest in weakening our credibility. Do you think this is currently a threat?
+Labs might have a short term interest, but it would be big risk for them to do something like this, and I don’t think they would do it. Individuals from labs might want to do this, but it would be a lot of work for an individua.
+Reply
+[
+-
+]
+keltan
+7h
+1
+0
+For now, I recommend these two posts, but am working on something myself.
+https://thezvi.substack.com/p/openai-14-openai-descends-into-paranoia
+https://x.com/tyler_johnston/status/2062188304611827899?s=20
+Reply
+Moderation Log
+More from
+keltan
+View more
+Curated and popular this week
