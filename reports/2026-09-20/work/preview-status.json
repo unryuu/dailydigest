@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-20",
+  "updated_at": "2026-09-20T22:28:04.835130+08:00",
+  "stage": "published_distributed_archived",
+  "content_count": 10,
+  "gold": 0,
+  "silver": 2,
+  "angle": 1,
+  "fun": 4,
+  "odds_count": 0,
+  "validation": {
+    "errors": 0,
+    "warnings": 1,
+    "warning_reason": "User explicitly requested skipping odds for this issue."
+  },
+  "image": {
+    "width": 1179,
+    "height": 6487,
+    "bytes": 1403627
+  },
+  "daily_bytes": 4137,
+  "mechanical_attempt_finished_at": "2026-09-20T21:55:11.248535+08:00",
+  "mechanical_failed_sources": [
+    "axios",
+    "deepmind",
+    "hf-papers",
+    "huggingface",
+    "import-ai",
+    "manifold",
+    "meta-ai",
+    "mistral",
+    "thezvi",
+    "x-emollick",
+    "x-goodside",
+    "x-karpathy",
+    "x-neelnanda",
+    "x-pvncher",
+    "x-roon",
+    "x-sama",
+    "x-teortaxes",
+    "xai"
+  ],
+  "failed_source_resume_from": "2026-09-19T22:11:28+08:00",
+  "x_resume_from": "2026-09-19T22:23:36+08:00",
+  "ti_scanned_at": "2026-09-20T21:57:56.708022+08:00",
+  "channel_authorized": true,
+  "telegram_message_ids": [
+    272,
+    273
+  ],
+  "telegram_delivery_confirmed": true,
+  "channel_authorization_text": "好的，今天赔率跳过。发频道吧。",
+  "odds_skip_authorized": true,
+  "earlier_preview_send_error": "sendMessage failed after 4 connection resets; no returned message ID; document send not reached.",
+  "spoken_draft": {
+    "paragraphs": 12,
+    "characters": 975,
+    "estimated_minutes": 3.5,
+    "tts_bytes": 2915,
+    "subtitle_bytes": 2838,
+    "awaiting_user_review": true
+  },
+  "distribution": {
+    "zhihu_bytes": 3369,
+    "xhs_count": 6,
+    "xhs_size": [
+      1242,
+      1656
+    ],
+    "sensitive_hits": 0
+  }
+}

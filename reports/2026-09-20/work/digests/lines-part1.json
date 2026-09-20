@@ -1,0 +1,34 @@
+[
+  {
+    "id": "telling-computer-shell",
+    "section": "deep",
+    "label": "写脚本，先学会把现成工具串起来",
+    "url": "https://will-keleher.com/posts/telling-your-computer-to-do-things/",
+    "body": "作者把掌握命令行概括成两成语法、八成工具箱：学会循环、管道和几个常用工具，就能让电脑批量处理文件、并行跑测试。",
+    "note": "old；本地 item-07.txt 全文与同名 HTML 已读，HTML datePublished 为 2026-04-16 00:00:00 UTC，早于接续点 2026-09-19T22:11:28+08:00。实际是纯 shell 使用经验，正文未讲 AI 工作方法，不适合放入 AI 深度长文，建议删。原始链接已重定向到结尾带斜杠的真实链接。与最近三期未发现重复。"
+  },
+  {
+    "id": "lemmings-later-life",
+    "section": "fun",
+    "label": "《百战小旅鼠》怎样把一手好牌打散",
+    "url": "https://www.filfre.net/2026/09/the-lamentable-later-life-of-lemmings/",
+    "body": "续作把八种技能加到六十种，后来又忙着拍电视、做３Ｄ。作者最喜欢的晚期一作回归了八种技能，却在快做完时被索尼撤资。",
+    "note": "old；本地 item-09.txt 主文已完整读完，文章署名处与 HTML 均写 2026-09-18，早于接续点。内容为 Jimmy Maher 对系列后期的游戏史回顾和个人评论，不是当天游戏新闻；３Ｄ不佳是作者及受访开发者评价。关键脉络：初代休闲大众定位，二代技能从八增至六十且新手引导减弱，三代为电视项目把角色放大并改拾取技能，原开发团队离开后尝试３Ｄ、彩弹与横版，2000 年 Revolution 回归八种技能并采用柱面关卡，近完工遭索尼撤资后由 Take Two 发行。作者推荐初代、二代及 Revolution。与最近三期未发现重复，建议因日期删。"
+  },
+  {
+    "id": "zk-jpeg",
+    "section": "fun",
+    "label": "照片压缩、打码后，也能证明来自原图",
+    "url": "https://eprint.iacr.org/2026/2039",
+    "body": "ZK-JPEG 给压缩和修改过程配上数学证明，让别人核对成片的来路，同时把原图藏起来。",
+    "note": "old；本地 item-10.txt 摘要页与 HTML 已读，2026-09-15 收稿，2026-09-17 approved，HTML published_time 为 2026-09-15T07:03:51+00:00，均早于接续点。主题是密码学图像来源验证，可作非 AI 乐子；仅读摘要页，未读 PDF，不写运行时间或实测结论。原理为证明 JPEG 由秘密承诺的输入正确压缩，可将多种修改整合进压缩流程；与相机签名结合是应用背景，不能单凭 ZK-JPEG 断言图片一定来自真实相机。与最近三期未发现重复，建议因日期删。"
+  },
+  {
+    "id": "rsa-896-claude",
+    "section": "fun",
+    "label": "Stephen Weis 用 Claude 分解了 RSA-896 挑战数",
+    "url": "https://saweis.net/posts/rsa-896.html",
+    "body": "页面列出了两个各 448 比特的因子，把它们相乘，正好得到这个 896 比特的大整数。",
+    "note": "本地 item-11.txt 与 HTML 已完整读完。原文明说 I factored with Claude on September 19, 2026，是已完成结果的自述，不是预测。页面日期仅 September 2026，事件日为 2026-09-19，没有具体发布时间与时区，不能确认晚于 2026-09-19T22:11:28+08:00；date_uncertain。已使用 Python 大整数逐位核对页面 p×q=N，结果 True；N 为 896 bit，p、q 各 448 bit。未核对页面 N 与外部 RSA 挑战数据库，也未验证因子素性。文章没有过程、算法、算力、时长或 Claude 参与方式，不可扩写为 Claude 独立破解、量子突破或 RSA 已整体失守。与最近三期未发现重复。"
+  }
+]

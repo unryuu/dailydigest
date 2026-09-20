@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-20",
+  "status": "failed",
+  "resume_from": "2026-09-19T22:23:36+08:00",
+  "attempted_at": "2026-09-20T21:51:11.423562+08:00",
+  "scanned_at": null,
+  "items": [],
+  "failure_note": "登录态仍在，Mollick Latest 搜索页刷新前后及 Provencher Articles 页均显示 Seems like you lost connectivity；未读取本期帖子，八个账号覆盖未完成，接续点不前移。",
+  "accounts": [
+    {
+      "account": "emollick",
+      "status": "failed"
+    },
+    {
+      "account": "goodside",
+      "status": "not_scanned_due_site_failure"
+    },
+    {
+      "account": "karpathy",
+      "status": "not_scanned_due_site_failure"
+    },
+    {
+      "account": "NeelNanda5",
+      "status": "not_scanned_due_site_failure"
+    },
+    {
+      "account": "pvncher",
+      "status": "failed"
+    },
+    {
+      "account": "tszzl",
+      "status": "not_scanned_due_site_failure"
+    },
+    {
+      "account": "sama",
+      "status": "not_scanned_due_site_failure"
+    },
+    {
+      "account": "teortaxesTex",
+      "status": "not_scanned_due_site_failure"
+    }
+  ]
+}

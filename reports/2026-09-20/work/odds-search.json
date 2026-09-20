@@ -1,0 +1,18 @@
+[
+  {
+    "term": "Starcraft",
+    "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+  },
+  {
+    "term": "AI regulation",
+    "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+  },
+  {
+    "term": "SpaceX",
+    "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+  },
+  {
+    "term": "World Cup",
+    "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+  }
+]

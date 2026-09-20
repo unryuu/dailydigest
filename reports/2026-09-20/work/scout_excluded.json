@@ -1,0 +1,328 @@
+{
+  "date": "2026-09-20",
+  "count": 46,
+  "items": [
+    {
+      "source": "acx",
+      "title": "Your Book Review: This Is Going To Hurt",
+      "url": "https://www.astralcodexten.com/p/your-book-review-this-is-going-to",
+      "date": "Fri, 18 Sep 2026 20:53:58 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "acx",
+      "title": "Open Thread 451",
+      "url": "https://www.astralcodexten.com/p/open-thread-451",
+      "date": "Sun, 13 Sep 2026 23:12:52 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "acx",
+      "title": "AI Superforecasting Should Transform The FDA",
+      "url": "https://www.astralcodexten.com/p/ai-superforecasting-should-transform",
+      "date": "Wed, 16 Sep 2026 23:33:42 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "What Zig felt like, coming from Rust",
+      "url": "https://besok.github.io/posts/what-zig-felt-like-coming-from-rust",
+      "date": "2026-09-19T13:55:18Z",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Btrfs/ZFS/bcachefs under workloads classic benchmarks skip",
+      "url": "https://bartosz.fenski.pl/modern-fs-benchmark",
+      "date": "2026-09-19T18:11:40Z",
+      "reason": "非 AI 文件系统基准，缺乏本期乐子或行业价值。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Measure internet censorship",
+      "url": "https://ooni.org/install",
+      "date": "2026-09-19T20:00:59Z",
+      "reason": "安装入口而非新文章，HN 上榜不能证明新进展。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "English: A vs. An",
+      "url": "https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an",
+      "date": "2026-09-19T20:41:26Z",
+      "reason": "URL 明示 ０９－１６ 旧文，HN 新上榜不算新发布。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "You can defeat the Dream Devourer from Chrono Trigger using an int overflow",
+      "url": "https://chrono.fandom.com/wiki/Dream_Devourer",
+      "date": "2026-09-19T21:25:29Z",
+      "reason": "游戏维基存量页面，未见本期新增事实，HN 上榜不能证明时效。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Step 5 Preview: Advancing the Pareto Frontier",
+      "url": "https://www.stepfun.com/step-5-preview",
+      "date": "2026-09-20T04:35:59Z",
+      "reason": "同一 Step 5 Preview 已在 ０９－１９ 简讯报道；候选仅有标题，无法支持独立新进展。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "AI and the Destruction of the Creative Commons",
+      "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons",
+      "date": "2026-09-20T10:07:51Z",
+      "reason": "URL 明示 ０９－１３ 旧文，HN 新上榜不算新发布。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Superintelligence this Christmas” by Alexander Gietelink Oldenziel",
+      "url": "https://www.lesswrong.com/posts/LJbKwctaioqp2Hi4b/superintelligence-this-christmas",
+      "date": "Fri, 18 Sep 2026 01:45:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "[Linkpost] “Three Hackers used Opus 5 to Hack Into OpenAI’s Core Codebase [WSJ]” by Linch",
+      "url": "https://www.lesswrong.com/posts/274BMCYj2BFES2FsZ/three-hackers-used-opus-5-to-hack-into-openai-s-core",
+      "date": "Fri, 18 Sep 2026 06:00:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。且与 ０９－１８ Hacktron 白帽入侵 OpenAI 同事件。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“The Horse” by Character#2736",
+      "url": "https://www.lesswrong.com/posts/CY3C8ruCnuHQkJj5b/the-horse",
+      "date": "Fri, 18 Sep 2026 15:15:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“The Preference Cascade Is Only Getting Started” by Zvi",
+      "url": "https://www.lesswrong.com/posts/sDiSqZmctQ78hsLcP/the-preference-cascade-is-only-getting-started",
+      "date": "Fri, 18 Sep 2026 16:15:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Stopgap Measures to Address Immediate AI Security Threats” by Andrea_Miotti, Gabriel Alfour",
+      "url": "https://www.lesswrong.com/posts/LqBAxFdyAiybnPL8e/stopgap-measures-to-address-immediate-ai-security-threats",
+      "date": "Fri, 18 Sep 2026 17:30:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“You don’t need a union to go on strike” by sudo-nym",
+      "url": "https://www.lesswrong.com/posts/erd4NSztYMynbuTKw/you-don-t-need-a-union-to-go-on-strike",
+      "date": "Fri, 18 Sep 2026 17:45:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“There is a channel to 900M weekly users. What goes in it?” by Charbel-Raphaël",
+      "url": "https://www.lesswrong.com/posts/gJJ9YHzuBvwAXrthW/there-is-a-channel-to-900m-weekly-users-what-goes-in-it",
+      "date": "Mon, 14 Sep 2026 10:30:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Current alignment training might be ineffective (and actively bad) in the age of RL” by Daniel Tan",
+      "url": "https://www.lesswrong.com/posts/nLaQmJf4KgXimQpoM/current-alignment-training-might-be-ineffective-and-actively",
+      "date": "Mon, 14 Sep 2026 11:00:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Op-Ed: I Worked at Google DeepMind. You Should Listen to the Warnings About AI” by TurnTrout",
+      "url": "https://www.lesswrong.com/posts/YGTWfyZb9oE5EQPu6/op-ed-i-worked-at-google-deepmind-you-should-listen-to-the",
+      "date": "Mon, 14 Sep 2026 15:15:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“You Should Apply to Inkhaven” by Tomás B.",
+      "url": "https://www.lesswrong.com/posts/CKkB9MqsBgAobFtPS/you-should-apply-to-inkhaven",
+      "date": "Sat, 19 Sep 2026 03:45:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Mitigating Reward Hacking as Institutional Design” by beren",
+      "url": "https://www.lesswrong.com/posts/tgcooi77NXMquCR5L/mitigating-reward-hacking-as-institutional-design",
+      "date": "Sun, 13 Sep 2026 15:45:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Brand New AI Solves a Millennium Prize” by Zvi",
+      "url": "https://www.lesswrong.com/posts/uoZW6BKaCcmNQrWis/brand-new-ai-solves-a-millennium-prize",
+      "date": "Sun, 13 Sep 2026 18:15:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Consider how your global governance proposal is different from the EU Code of Practice” by David Matolcsi",
+      "url": "https://www.lesswrong.com/posts/2vHsTtQF23TBNhvKX/consider-how-your-global-governance-proposal-is-different",
+      "date": "Sun, 13 Sep 2026 18:30:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Anthropic and OpenAI haven’t published a plan for aligning superintelligence” by Zephaniah Roe",
+      "url": "https://www.lesswrong.com/posts/QrrEtYpwiHpes3rHd/anthropic-and-openai-haven-t-published-a-plan-for-aligning",
+      "date": "Sun, 13 Sep 2026 21:00:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Alignment & Succession: The Two Bars of Alignment” by L Rudolf L",
+      "url": "https://www.lesswrong.com/posts/7dkasKLC7abXhn9JZ/alignment-and-succession-the-two-bars-of-alignment",
+      "date": "Sun, 13 Sep 2026 22:15:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“For Love of the Lightcone, Don’t Partisanize AI Safety” by DanB",
+      "url": "https://www.lesswrong.com/posts/Rx38cuCpL9hguLCDq/for-love-of-the-lightcone-don-t-partisanize-ai-safety",
+      "date": "Thu, 17 Sep 2026 04:00:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Reducing the Resource Gap Between Lab and External Safety Researchers” by Alexandra Narin, Kyle O’Brien, Puria",
+      "url": "https://www.lesswrong.com/posts/aCGx79eGafwDcXEgf/reducing-the-resource-gap-between-lab-and-external-safety",
+      "date": "Thu, 17 Sep 2026 15:45:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Model organisms (sometimes) confess their misalignment when offered a deal” by Mark Keavney, Francis Rhys Ward",
+      "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
+      "date": "Thu, 17 Sep 2026 16:00:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "[Linkpost] “callcongress.ai – the basic action US residents can take to help with AI risk” by Ruby, haglobah",
+      "url": "https://www.lesswrong.com/posts/C7Z5hr4yCG6fXy9o3/callcongress-ai-the-basic-action-us-residents-can-take-to",
+      "date": "Thu, 17 Sep 2026 17:45:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“AI #186: The World Takes Notice” by Zvi",
+      "url": "https://www.lesswrong.com/posts/aa3HprreFktzLQiaW/ai-186-the-world-takes-notice",
+      "date": "Thu, 17 Sep 2026 18:30:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Grantmakers aren’t afraid to die” by dan.parshall",
+      "url": "https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die",
+      "date": "Thu, 17 Sep 2026 23:00:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“OpenAI Says It’s Not Responsible for the Leading the Future Super PAC. But Only Its Employees Seem to Believe That.” by garrison",
+      "url": "https://www.lesswrong.com/posts/Lv4C4bCi2JD3nTXgs/openai-says-it-s-not-responsible-for-the-leading-the-future",
+      "date": "Tue, 15 Sep 2026 00:30:47 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“OpenAI President Brockman says HuggingFace incident model had not been alignment-trained” by Caspar Oesterheld",
+      "url": "https://www.lesswrong.com/posts/67gHvbmFeacXi2jCZ/openai-president-brockman-says-huggingface-incident-model",
+      "date": "Tue, 15 Sep 2026 01:30:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Astra appears to perform belief-propagation-like inference without CoT” by MBaert",
+      "url": "https://www.lesswrong.com/posts/PAHqDoFrp9fybcSn2/astra-appears-to-perform-belief-propagation-like-inference",
+      "date": "Tue, 15 Sep 2026 06:00:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Cooperation with AIs seems to be a low-hanging fruit for better evals” by Clément Dumas",
+      "url": "https://www.lesswrong.com/posts/fztW73KCCs3MZXFJh/cooperation-with-ais-seems-to-be-a-low-hanging-fruit-for",
+      "date": "Tue, 15 Sep 2026 20:45:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "″[Cross-post] Palisade Podcast episode “How to Actually Influence AI Policy (No Law Degree Required) — with Matthew Lipka”” by davekasten",
+      "url": "https://www.lesswrong.com/posts/aS8zW4ySBynCBLKgm/cross-post-palisade-podcast-episode-how-to-actually",
+      "date": "Tue, 15 Sep 2026 23:15:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Quick notes from teaching technical profiles how to talk in public” by Camille B.",
+      "url": "https://www.lesswrong.com/posts/nKsyMfNsAuTrxmjmi/quick-notes-from-teaching-technical-profiles-how-to-talk-in",
+      "date": "Wed, 16 Sep 2026 02:00:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“The Bad Guy With An AI Named Claude” by Zvi",
+      "url": "https://www.lesswrong.com/posts/qSjH9T83xCfWQkmk2/the-bad-guy-with-an-ai-named-claude",
+      "date": "Wed, 16 Sep 2026 02:15:47 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Is METR A Meaningful Check On Anthropic?” by SE Gyges",
+      "url": "https://www.lesswrong.com/posts/eeJB8x2pK8injCuBN/is-metr-a-meaningful-check-on-anthropic",
+      "date": "Wed, 16 Sep 2026 03:30:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking” by Jozdien, Julian Stastny",
+      "url": "https://www.lesswrong.com/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em",
+      "date": "Wed, 16 Sep 2026 03:45:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Self Inoculation” by epicurus",
+      "url": "https://www.lesswrong.com/posts/y8dAS2YsFHmAAwMbb/self-inoculation",
+      "date": "Wed, 16 Sep 2026 06:45:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“We Should Assume We Have One Chance At AI Legislation” by Jamie Joyce",
+      "url": "https://www.lesswrong.com/posts/dbD8MKa3oKhZD4XCu/we-should-assume-we-have-one-chance-at-ai-legislation",
+      "date": "Wed, 16 Sep 2026 08:15:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Trump Goes Full Hoax on AI Existential Risk” by Zvi",
+      "url": "https://www.lesswrong.com/posts/Kqgco8vLFMeBhdrQY/trump-goes-full-hoax-on-ai-existential-risk",
+      "date": "Wed, 16 Sep 2026 15:30:45 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“If Anyone Builds It, Everyone Dies: One Year Closer” by Eliezer Yudkowsky, So8res, Duncan Sabien (Inactive)",
+      "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
+      "date": "Wed, 16 Sep 2026 20:45:46 GMT",
+      "reason": "候选时间早于 ０９－１９ ２２：１１：２８ 接续点，本期不补旧稿。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "datasette-auth-github 1.0",
+      "url": "https://simonwillison.net/2026/Sep/19/datasette-auth-github",
+      "date": "2026-09-19T19:52:02+00:00",
+      "reason": "普通登录插件修复，与 AI 行业无直接新增关系，趣味弱。"
+    },
+    {
+      "source": "the-batch",
+      "title": "Sep 18, 2026 Meta’s Agent Security, The Navier-Stokes Controversy, Fraud on Claude The Batch News & Insights: The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. Read more",
+      "url": "https://www.deeplearning.ai/the-batch/issue-371",
+      "date": "",
+      "reason": "列表明确标 ０９－１８，早于机械接续点。"
+    }
+  ]
+}

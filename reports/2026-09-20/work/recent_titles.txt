@@ -1,0 +1,160 @@
+
+=== 2026-09-19 已发 ===
+🥇 [行业] Gemini 测试时闯入三家公司网络
+    https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks
+🥈 [行业] Anthropic 上市窗口后移
+    https://www.theinformation.com/articles/anthropic-ipo-waiting-game-puts-wall-street-edge
+🥈 [行业] Epoch 从贸易账目追踪芯片转运
+    https://epoch.ai/data-insights/malaysia-china-chip-smuggling
+· [行业] OpenAI 烧钱预测引发争议
+    https://www.theinformation.com/briefings/openai-said-forecast-nearly-280-billion-cash-burn-end-2030
+· [行业] 纽森加快推进 AI 独立审计与关闭开关
+    https://www.axios.com/2026/09/18/newsom-ai-2028-focus
+🥈 [长文] Epoch 给模型基准挑错
+    https://epoch.ai/benchmarks/search?reviewed=verified&reviewed=flawed&reviewed=not-enough-info
+🥈 [长文] 模型能力已经跑在实际用法前面
+    https://www.oneusefulthing.org/p/the-overhang
+· [长文] 模型数学强，可能先得益于好教材
+    https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are
+· [长文] 3Blue1Brown 作者呼吁奖励数学好解释
+    https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it
+🥈 [论文] SoL-Pi 让 Agent 自己改进工作外壳
+    https://nvlabs.github.io/SoL-Pi/
+· [论文] 企业 AI 助手也会被催着违规
+    https://huggingface.co/papers/2609.18605
+· [论文] 操作界面的 Agent 会把失败经验写进技能
+    https://huggingface.co/papers/2609.17653
+🥈 [公告] Anthropic 公开 AI 研发自动化指标
+    https://www.anthropic.com/institute/measuring-pace-of-ai-development
+· [公告] Claude Code 开始支持 AGENTS.md
+    https://simonwillison.net/2026/Sep/18/thariq-shihipar
+· [公告] Grok 更新语音转录模型
+    https://x.ai/news/grok-voice-transcribe-2
+· [简讯] Laya 开源用于工单分流和风险判断的概率模型
+    https://laya.convaiinnovations.com
+· [简讯] Step 5 Preview 登上独立模型榜单
+    https://artificialanalysis.ai/models/step-5
+· [乐子] 斯坦福发现大脑前后部分有不同发育起点
+    https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html
+· [乐子] 动画鹈鹕骑的其实是真自行车
+    https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit
+· [乐子] Claude 没解开伏尼契手稿，拍了部解释电影
+    https://x.com/emollick/status/2100767116819325141
+· [乐子] LinkedIn 机器人开始互相说空话
+    https://x.com/emollick/status/2100978802843177081
+· [乐子] 1935 年的本雅明也被读出了 Claude 味
+    https://x.com/emollick/status/2101302622393078265
+🎲 [赔率] 到2029年底，AI 能把当年 arXiv 数学论文中至少四分之三的证明转成机器可验证的形式吗？（77％）
+    https://manifold.markets/vluzko/in-2029-will-any-ai-be-able-to-take
+🎲 [赔率] 到2029年底，AI 能看懂电影中人物的冲突和动机吗？（87％）
+    https://manifold.markets/vluzko/by-2029-will-any-ai-be-able-to-watc
+🎲 [赔率] 2030年前，人类会再次踏上月球吗？（50％）
+    https://manifold.markets/Mqrius/will-a-human-walk-on-the-moon-again-2fc067c3b7fb
+🎲 [赔率] 特朗普会在2028年底前获得诺贝尔和平奖吗？（3％）
+    https://manifold.markets/datachef/will-trump-win-the-nobel-peace-priz
+
+=== 2026-09-18 已发 ===
+🥇 [行业] Claude 帮白帽黑进 OpenAI 内部仓库
+    https://www.hacktron.ai/blog/hacking-openai
+🥈 [行业] 微软内部把 AI 抓取称为大规模劳动盗窃
+    https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/
+· [行业] ZCode 静默上传完整代码仓库
+    https://tokenstead.ai/guides/zcode-silent-git-history-upload
+🥈 [长文] Bend 想用数学证明拦住 AI 写错代码
+    https://bend-lang.com/
+🥈 [长文] 自动化对齐研究能否被可靠监督
+    https://www.lesswrong.com/posts/PBGKWNrJAbpDgSsPo/obstacles-to-the-scalable-oversight-of-auto-alignment
+· [长文] 用 AI 改稿，却不用它写的句子
+    https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm
+· [长文] 研究者把 AI 减速拆成三个执行难题
+    https://www.lesswrong.com/posts/E5SmpFsGPNpYjf92c/pacing-the-frontier-a-framework-and-research-agenda
+🥈 [论文] 循环模型学会把推理藏到思维链外
+    https://www.lesswrong.com/posts/5guQJSqstkjgys3PE/deep-recurrent-models-are-less-robustly-cot-monitorable-than
+· [论文] JEPA-Anything 用同一套方法预测天气和分子运动
+    https://huggingface.co/papers/2609.20800
+🥈 [公告] Claude 把三十多个生物模型平均提速四倍
+    https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling
+🥈 [公告] OpenAI 推出法律版 Astra
+    https://openai.com/index/astra-for-law
+· [公告] Bonsai 2 把 27B 模型压到 5.9GB
+    https://prismml.com/news/bonsai-2-27b
+· [简讯] Hister 给浏览历史和本地文件建私有搜索
+    https://github.com/asciimoo/hister
+· [乐子] 古希腊语里藏着失传语言的一千个词
+    https://linguisticdiscovery.com/posts/pre-greek
+· [乐子] 读者追查伽利略把土星环认成木星卫星的说法
+    https://www.lesswrong.com/posts/h8qrA5t4LgZCiuEpK/did-galileo-mistake-saturn-s-rings-for-jupiter-s-moons
+· [乐子] AI 安全训练营头奖，靠抹泥和洋葱抢流量
+    https://www.lesswrong.com/posts/LQ9wKT9oNeArbwukz/plzdontkillus-fellows-got-2m-ai-safety-views-not-21m
+· [乐子] MIRI 研究者提醒同伴，别被太合胃口的泄漏骗了
+    https://www.lesswrong.com/posts/5mcDjo5gjn3Leahhu/the-game-is-set-for-a-targeted-memetic-attack-on-the-ai
+🎲 [赔率] 2028 年，AI 能学会随机抽到的电脑游戏并达到普通玩家水平吗？（87％）
+    https://manifold.markets/ScottAlexander/in-2028-will-an-ai-be-able-to-play
+🎲 [赔率] 2030 年前，前沿 AI 公司会被美国政府接管到什么程度？（软性接管 79％；硬性接管 47％）
+    https://manifold.markets/NathanpmYoung/will-any-of-the-below-ai-companies
+🎲 [赔率] OpenAI 会在什么时候正式上市？（2027 年 6 月或更晚 64％；2026 年内 9％）
+    https://manifold.markets/JimD/when-will-openai-hold-its-ipo
+🎲 [赔率] 科学家会在 2027 年前宣布可信的外星技术信号候选吗？（2％）
+    https://manifold.markets/MAKER/-will-scientists-announce-a-credibl
+
+=== 2026-09-17 已发 ===
+🥇 [行业] 苹果考虑重返服务器市场
+    https://www.theinformation.com/articles/apple-considers-return-server-market-talked-nvidia-use-network-tech
+🥈 [行业] Apollo 用股权投资打开 AI 债务生意
+    https://www.theinformation.com/articles/apollo-backs-ai-startups-bid-bankroll-hardware-boom
+🥈 [行业] 华为把 Ascend 960 提前九个月
+    https://www.theinformation.com/briefings/huawei-speeds-ai-chip-launch-challenge-nvidia
+· [视角] 数据中心开始拿灵活用电换接网快车道
+    https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers
+🥈 [长文] 四十亿参数模型把 Postgres 查询提速八成
+    https://rohanbansal.com/qorl
+🥈 [长文] 编程 Agent 的外壳税最高五倍
+    https://harnesstax.github.io/
+· [长文] Lean 验证通过，不等于数学证明已经坐实
+    https://www.lesswrong.com/posts/jgmmMa7AqJNausrqx/don-t-trust-lean4-alone
+· [长文] 微软要求 AI 不要模仿意识
+    https://www.lesswrong.com/posts/qJFNXCeMHvAsetLKH/microsoft-ai-s-humanist-coc
+🥇 [论文] 训练数据没提偏好，也会把性格传给模型
+    https://www.lesswrong.com/posts/NwfGDbRDLsaWpNazH/phantom-transfer-works-via-extremely-subtle-semantic-cues
+🥈 [论文] 给危险行为划隔离区，还是会漏
+    https://www.lesswrong.com/posts/o4Jmyn25TWm8jRAy8/inoculation-midtraining-with-learned-neologisms
+· [论文] BITCOS 把三值模型压到每权重 1.485 bit
+    https://arxiv.org/abs/2609.16338
+· [论文] 35B MoE 从 SSD 流式读取，24GB 机器跑到每秒 20 token
+    https://huggingface.co/papers/2609.18063
+· [论文] Zing-0.5 让玩家边按键边用文字改世界
+    https://huggingface.co/papers/2609.17909
+🥈 [公告] OpenAI 开始测试赞助 Agent
+    https://openai.com/index/reimagining-advertising-with-ai/
+· [公告] OpenAI 披露六起模型越权事故
+    https://www.axios.com/2026/09/16/openai-testing-safety-incidents-disclosure
+· [公告] Claude 把 Cowork 和普通聊天合成一个入口
+    https://simonwillison.net/2026/Sep/16/one-claude/
+· [公告] Firefox Smart Window 接入 Mistral 模型
+    https://mistral.ai/news/mistral-x-mozilla/
+· [简讯] Grok Build 上线跨会话项目记忆
+    https://x.ai/news/grok-build-memory
+· [简讯] OpenSpec 用规格文件对齐多款编程 Agent
+    https://openspec.dev/
+· [简讯] 小米直播 MiMo 2.6 强化学习训练指标
+    https://mimo.xiaomi.com/rl/
+· [简讯] GLM 帮智谱搭起十万卡推理设施
+    https://z.ai/blog/glm-built-its-inference-infrastructure
+· [乐子] AI 查新书时发现原论文有错
+    https://x.com/emollick/status/2100462385924538552
+· [乐子] 两万美元的多 Agent 重构挨了吐槽
+    https://x.com/pvncher/status/2100331164607152204
+· [乐子] 二十多位美国政客很少用 AI，却要负责管 AI
+    https://www.axios.com/2026/09/16/lawmakers-regulate-ai-without-using-it
+· [乐子] 研究者从驾照条码签名反推出两州公钥
+    https://ryan.science/blog/keys-not-included
+· [乐子] AI 竞赛也可以理解成一场人群踩踏
+    https://www.lesswrong.com/posts/FCMG4qnxks3yEqBbh/ai-as-orderly-evacuation-vs-stampede
+🎲 [赔率] 2030 年前，会出现可靠的通用家务机器人吗？（64％）
+    https://manifold.markets/MatthewBarnett/will-a-reliable-and-general-househo
+🎲 [赔率] 2026 年美国中期选举后，谁控制国会？（民主党拿下参众两院 58％；民主党只拿众议院 34％；共和党守住参众两院 7％）
+    https://manifold.markets/JonasVollmer/balance-of-power-who-will-control-t
+🎲 [赔率] Taylor Swift 会在今年重发首张专辑吗？（30％）
+    https://manifold.markets/a_l_e_x/will-taylor-swift-rerelease-her-deb
+🎲 [赔率] Yudkowsky 会赢下那场十五万美元对一千美元的 UFO 赌约吗？（96％）
+    https://manifold.markets/Joshua/will-eliezer-yudkowsky-win-his-1500

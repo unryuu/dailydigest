@@ -1,0 +1,597 @@
+URL: https://www.stepfun.com/step-5-preview
+FINAL: https://www.stepfun.com/step-5-preview
+TITLE: 阶跃星辰
+FETCHED: 2026-09-20 22:07:20
+============================================================
+Step 5 Preview: Advancing the Pareto Frontier
+Step 5 Preview overview
+The Pareto frontier marks the best trade-offs between intelligence and cost. Progress begins when that boundary shifts outward.
+Today, we're introducing
+Step 5 Preview
+, our new flagship model for agentic work. It delivers frontier-level performance across software engineering and professional knowledge work, with particular strength in finance. Built on a sparse Mixture-of-Experts architecture, Step 5 Preview has 600B total parameters, with 27B active per token, and supports a 1M-token context window and vision input.
+Across public and internal evaluations, Step 5 Preview performs strongly across software engineering, agentic tasks, professional knowledge work, and finance.
+DeepSWE v1.1
+Step 5 Preview (High)
+67.7
+Kimi K3 (Max)
+67.5
+GLM-5.3 (Max)
+66.9
+GPT-6 Astra (Max)
+74.1
+Claude Opus 5 (Max)
+74.0
+StepCodeBench
+Step 5 Preview (High)
+49.0
+Kimi K3 (Max)
+43.9
+GLM-5.3 (Max)
+40.2
+Claude Opus 5 (Max)
+63.9
+GPT-6 Astra (Max)
+61.0
+ProgramBench
+Step 5 Preview (High)
+80.5
+Kimi K3 (Max)
+77.8
+GLM-5.3 (Max)
+72.0
+GPT-6 Astra (Max)
+85.4
+Claude Opus 5 (Max)
+82.3
+Terminal-Bench v4
+GLM-5.3 (Max)
+41.9
+Step 5 Preview (High)
+33.3
+Kimi K3 (Max)
+12.6
+GPT-6 Astra (Max)
+57.9
+Claude Opus 5 (Max)
+52.3
+Agents' Last Exam (ALE-CLI)
+Step 5 Preview (High)
+29.5
+GLM-5.3 (Max)
+28.6
+Kimi K3 (Max)
+27.6
+GPT-6 Astra (Max)
+33.3
+Claude Opus 5 (Max)
+28.6
+GDPval-AA v2
+GLM-5.3 (Max)
+1634
+Step 5 Preview (High)
+1571
+Kimi K3 (Max)
+1548
+Claude Opus 5 (Max)
+1735
+GPT-6 Astra (Max)
+1580
+FrontierFinance
+Step 5 Preview (High)
+66.4
+GLM-5.3 (Max)
+64.1
+Kimi K3 (Max)
+62.6
+Claude Opus 5 (Max)
+69.7
+GPT-6 Astra (Max)
+55.0
+DRACO
+Step 5 Preview (High)
+83.3
+GLM-5.3 (Max)
+82.3
+Kimi K3 (Max)
+78.5
+Claude Opus 5 (Max)
+87.6
+GPT-6 Astra (Max)
+76.8
+GDPval-AA v2 scores are based on the latest results from
+Artificial Analysis
+, as of Sep. 19, 2026.
+DeepSWE v1.1 evaluations use the
+SWE-agent
+harness with
+temperature=1.0
+and
+top_p=0.95
+.
+Step 5 Preview scores 44 on the Artificial Analysis Intelligence Index. At a comparable level of intelligence, its task cost is substantially lower than similarly capable models.
+Coding, Wide in Scope and Deep in Execution
+Step 5 Preview's coding capabilities cover a broad range of development work, from software engineering and visual applications to programmable hardware. It also sustains work over longer horizons, where progress depends on repeated execution, feedback, and revision.
+In evaluations by internal and external experts, approximately 70% of participants judged Step 5 Preview capable of autonomously solving coding tasks of moderately high complexity.
+Across Software Engineering
+WebDev and Design
+Step 5 Preview combines frontend development with visual creation. It builds web interfaces and data visualizations, and uses Blender to create and iteratively refine 3D assets. It can then bring those assets into interactive web apps and games with Three.js.
+Case 1: Room Planner — From Photo to Interactive Space
+Starting from a bedroom photo, this room planner turns the space into an editable 3D environment. Rearrange and rotate furniture with placement feedback, then step inside the finished layout for a first-person room tour.
+StepCodeBench
+We built StepCodeBench to reflect software engineering as it occurs in practice. Informed by industry demands, evolving user needs, and expert workflow traces, it spans 553 independent repositories, 9 task categories, 20 application domains, and 33 programming languages.
+553
+INDEPENDENT REPOSITORIES
+9
+TASK CATEGORIES
+20
+APPLICATION DOMAINS
+33
+PROGRAMMING LANGUAGES
+Task categories
+Feature modification
+Bug repair
+Refactoring
+Documentation
+Performance tuning
+Code generation
+CI/CD operations
+Code transformation
+Environment setup
+Application domains
+Web development
+Mobile applications
+Cloud infrastructure
+DevOps & CI/CD
+Databases
+Distributed systems
+Data engineering
+Machine learning
+AI applications
+Cybersecurity
+Networking
+Operating systems
+Compilers & tooling
+Developer tools
+Scientific computing
+Financial technology
+E-commerce
+Multimedia
+Game development
+Embedded & IoT
+Programming languages
+Python
+C++
+Go
+Java
+JavaScript
+TypeScript
+Rust
+C
+C#
+Bash / Shell
+Kotlin
+Swift
+Dart
+Objective-C
+HTML
+Fortran
+PHP
+Ruby
+SQL
+R
+Julia
+MATLAB
+Scala
+Groovy
+Clojure
+Haskell
+Erlang
+Elixir
+Lua
+Perl
+Solidity
+Zig
+Assembly
+Step 5 Preview achieves an avg@4 score of 49.0%. Across the task categories shown above, it performs particularly well in bug repair, feature modification, and refactoring.
+Separate analyses by programming language and task difficulty show broadly consistent performance across major languages, with results approaching Claude Opus 5 on low- and medium-difficulty tasks. On the most challenging long-running tasks, a meaningful gap to the frontier remains.
+The same breadth extends beyond software-only environments. Given development documentation and user authorization, Step 5 Preview can work directly with programmable hardware, using cameras, COM ports, screenshots, and simulated mouse input as part of the development and debugging process.
+Over Long Horizons
+Long-running tasks require the model to keep track of prior results, use feedback from execution, and decide what to try next. We test this in two settings with measurable feedback: optimizing an inference kernel and improving a post-training data loop.
+Optimizing an MLA GPU Kernel
+We gave Step 5 Preview 24 hours to optimize an MLA GPU kernel from scratch on an NVIDIA H100 GPU, with a head dimension of 512 and a production shape of batch size 1, 64 heads, and 8,192 tokens. Starting from an initial description, it implemented changes, ran the kernel, and measured throughput. When a candidate ran successfully but reduced throughput, it discarded the candidate and continued from the best-performing version found so far.
+Each model was given 4 independent attempts, during each of which it was free to decide whether to stop early or continue optimizing, and we report its best run. Step 5 Preview reached a peak of 508 TFLOPS for forward and backward after roughly 22 hours, compared with 493 TFLOPS for Claude Opus 5.
+Improving a Post-Training Data Loop
+In the second experiment, Step 5 Preview had 24 hours to improve a Qwen3-30B-A3B base model's performance on AIME24 through automated post-training, using an API annotator with access to production data. It decided how to use the annotator and how to revise the post-training data, then tracked the effect of those choices on downstream performance.
+The resulting model achieved 60% accuracy on the official AIME24 test, up from 53.3% before post-training. This matched the result achieved by Claude Opus 5 while using fewer annotator tokens.
+Bonus Case: Long-Horizon Execution Beyond Coding
+Pokémon Red provides a very different test of long-horizon execution. Progress depends on maintaining a distant goal across thousands of interactions, remembering earlier discoveries, managing resources, and recovering when plans fail. Completing the main story takes an estimated 26 hours of human play.
+Without any Pokémon-specific optimization, Step 5 Preview has so far sustained progress for more than 3,000 turns and 6 million tokens of interaction. By turn 3,082, it had unlocked Cut, earned three Gym Badges, and defeated Lt. Surge. The run is now roughly one-third of the way through the main story.
+The interactive replay below shows how that progress develops over time, connecting gameplay with milestone completion and cumulative token usage.
+Professional Knowledge Work
+Step 5 Preview brings the same level of capability to professional work, where the task often extends beyond finding an answer. It can gather and reconcile evidence, carry out domain-specific analysis, and produce finished work in the formats the task requires.
+Its outputs cover technical engineering, creative production, analytical reporting, and public communication, with the content and presentation adapted to each domain.
+Research at Scale
+For a climate study covering 1,000 locations over 25 years, Step 5 Preview coordinated 950 web fetches in a single agent action and assembled 300,000 monthly records across 11 variables.
+It used the dataset to analyze regional differences in solar seasonality, finding that peak months fell at opposite times of year in the European and Oceanian samples.
+Structured Analysis
+In a diesel surcharge review, Step 5 Preview produced a 17-sheet analytical workbook containing source data, cross-series reconciliation, regional panels, formulas, and trend models.
+The workbook preserved the relationship between the underlying data and the resulting analysis, with findings on coverage, overlap, and regional price movement available for contract and procurement review.
+Interactive Reporting
+For a separate research task, Step 5 Preview produced an interactive report combining written analysis, visualizations, data tables, methodological notes, and supporting detail.
+The report lets readers move from the main findings to the evidence behind them, with methodology and supporting detail available for closer inspection.
+A Focus on Finance
+Finance is one of the domains we paid particular attention to in Step 5 Preview.
+Financial decisions depend on a detailed understanding of a business, its economic context, and the risks to its future performance. The analysis behind them requires models to work with changing, often conflicting information and apply accounting and valuation methods with care.
+Models need to identify reliable sources, reconcile differences in reporting periods and definitions, and build forecasts whose assumptions and calculations hold together. The work must also be open to scrutiny. A reviewer should be able to trace a conclusion back to its sources, distinguish reported facts from assumptions, and reproduce the calculations. Gaps in the evidence and sensitivity to key assumptions should be clear.
+We developed three internal benchmarks to evaluate these requirements across financial workflows:
+FinStepBench - LiveSearch
+tests whether models can retrieve and verify timely, reliable financial information as information needs change.
+FinStepBench - CorporateValuation
+tests whether models can turn financial data and defensible assumptions into internally consistent forecasts and reproducible valuations.
+FinStepBench - DeepResearch
+evaluates the full research process, from gathering and analyzing evidence to producing comprehensive, well-supported reports.
+Across the suite, we assess accuracy, analytical rigor, and auditability, including whether sources are traceable, assumptions are explicit, and calculations can be reproduced.
+We also evaluated Step 5 Preview on
+FrontierFinance
+, an external benchmark covering six investment use cases through 220 expert-crafted questions and 11,543 evaluation criteria. Its detailed scoring rubrics provide a complementary assessment of complex financial responses.
+Step 5 Preview shows strong performance across information retrieval, valuation, and end-to-end financial research.
+FrontierFinance
+Step 5 Preview (High)
+66.4
+GLM-5.3 (Max)
+64.1
+DeepSeek V4.1 Flash
+63.0
+Kimi K3 (Max)
+62.6
+Claude Opus 5 (Max)
+69.7
+GPT-6 Astra (Max)
+55.0
+FinStepBench - LiveSearch
+DeepSeek V4.1 Flash
+76.7
+Step 5 Preview (High)
+74.5
+GLM-5.3 (Max)
+73.3
+Kimi K3 (Max)
+70.9
+Claude Opus 5 (Max)
+76.2
+GPT-6 Astra (Max)
+74.5
+FinStepBench - CorporateValuation
+Step 5 Preview (High)
+60.6
+Kimi K3 (Max)
+60.6
+DeepSeek V4.1 Flash
+57.6
+GLM-5.3 (Max)
+56.1
+GPT-6 Astra (Max)
+77.3
+Claude Opus 5 (Max)
+69.7
+FinStepBench - DeepResearch
+Step 5 Preview (High)
+55.8
+GLM-5.3 (Max)
+53.3
+DeepSeek V4.1 Flash
+50.2
+Kimi K3 (Max)
+48.9
+Claude Opus 5 (Max)
+59.1
+GPT-6 Astra (Max)
+45.0
+Benchmarking Step 5 Preview
+The evaluations above highlight a subset of Step 5 Preview’s capabilities. The table below shows results across a broader set of reasoning, coding, agentic, financial, and multimodal benchmarks.
+Benchmark
+Step 5 Preview
+(High)
+GLM 5.3
+(Max)
+Kimi K3
+(Max)
+GPT-6 Astra
+(Max)
+Claude Fable 5.1
+(Max)
+Claude Opus 5
+(Max)
+Reasoning & Knowledge
+GPQA Diamond
+93.5%
+91.7%
+93.5%
+96.1%
+93.7%
+93.2%
+HLE
+46.5%
+42.3%
+46.9%
+54.7%
+59.1%
+54.9%
+AA-LCR v1.1
+88.3%
+79.7%
+88.7%
+80.7%
+85.3%
+79.3%
+CritPt
+20.9%
+19.1%
+23.4%
+31.7%
+29.7%
+29.1%
+Coding
+DeepSWE v1.1
+67.7%
+66.9%
+67.5%
+74.1%
+67.4%
+74.0%
+Terminal-Bench v2.1
+85.0%
+83.9%
+85.0%
+88.4%
+91.4%
+89.1%
+Terminal-Bench v4
+33.3%
+41.9%
+12.6%
+57.9%
+55.8%
+52.3%
+CyberGym
+84.7%
+84.5%
+80.0%
+—
+—
+—
+SciCode
+58.9%
+59.0%
+59.5%
+56.5%
+63.1%
+56.4%
+RoadmapBench
+54.3%
+54.1%
+55.4%
+—
+—
+68.3%
+ProgramBench (Pass Rate)
+80.5%
+72.0%
+77.8%
+85.4%
+82.7%
+82.3%
+SWE-Marathon v1.1 (Partial Score)
+72.7%
+67.4%
+84.4%
+77.3%
+80.2%
+85.6%
+MLS-Bench-Lite
+40.5%
+37.3%
+48.3%
+—
+50.3%
+49.8%
+SWE-Atlas-QnA
+63.6%
+59.6%
+59.5%
+60.9%
+—
+66.0%
+SWE-Atlas-Test-writing
+50.8%
+50.4%
+50.4%
+51.1%
+—
+60.3%
+StepCodeBench†
+49.0%
+40.2%
+43.9%
+61.0%
+—
+63.9%
+StepCode-Bench-Daily†
+64.9%
+69.1%
+57.7%
+—
+—
+77.6%
+StepCode-Bench-General†
+65.0%
+62.0%
+65.2%
+64.3%
+—
+68.3%
+General Agent
+GDPval-AA v2
+1571
+1634
+1548
+1580
+1724
+1735
+τ³-Banking
+42.5%
+50.3%
+46.0%
+41.4%
+47.2%
+42.1%
+AutomationBench-AA
+51.0%
+62.2%
+58.3%
+68.5%
+59.4%
+56.6%
+AutomationBench (public)
+44.0%
+48.2%
+46.7%
+—
+—
+—
+AA-Briefcase
+1417
+1511
+1492
+1562
+1662
+1645
+Toolathlon-Verified
+74.1%
+73.0%
+76.5%
+—
+77.8%
+80.6%
+MCP-Atlas
+85.6%
+86.8%
+85.3%
+—
+—
+87.0%
+PresentBench
+76.8%
+74.5%
+75.6%
+—
+—
+77.3%
+OfficeQA Pro
+60.3%
+59.1%
+62.6%
+67.7%
+—
+64.7%
+SpeadSheet v2
+29.4%
+30.5%
+31.9%
+31.4%
+—
+32.8%
+JobBench
+59.0%
+61.4%
+54.3%
+—
+—
+65.7%
+Apex-Agents
+37.8%
+38.1%
+41.0%
+—
+—
+41.8%
+Draco
+83.3%
+82.3%
+78.5%
+76.8%
+87.7%
+87.6%
+BrowseComp
+88.7%
+—
+91.2%
+91.5%
+—
+90.2%
+HLE w/ tools‡
+59.4%
+62.5%
+56.0%
+57.2%
+65.0%
+63.6%
+FinStepBench-LiveSearch†
+74.5%
+73.3%
+70.9%
+74.5%
+—
+76.2%
+FinStepBench-CorporateValuation†
+60.6%
+56.1%
+60.6%
+77.3%
+—
+69.7%
+FinStepBench-FinanceDR†
+55.8%
+53.3%
+48.9%
+45.0%
+—
+59.1%
+FrontierFinance
+66.4%
+64.1%
+62.6%
+55.0%
+—
+69.7%
+Computer Use
+Agents' Last Exam (ALE-CLI)
+29.5%
+28.6%
+27.6%
+33.3%
+—
+28.6%
+Multimodal & Document
+MMMU-Pro
+76.0%
+— (text only)
+81.0%
+87.0%
+—
+85.0%
+GDP.pdf
+14.8%
+11.2%
+22.0%
+31.0%
+26.2%
+21.6%
+Benchmarks marked with † were developed internally.
+Bold values indicate the best result in each row; underlined values indicate the second-best result.
+For HLE w/ tools‡, Step 5 Preview (High) and GLM-5.3 (Max) were evaluated on the text-only subset, while all other models were evaluated on the full dataset. Results across these evaluation settings are not directly comparable.
+Try Step 5 Preview
+Step 5 Preview is available today through our products and API.
+The model will be released with open weights on October 15.
+Try Now
+Developer Docs

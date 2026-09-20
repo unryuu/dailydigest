@@ -1,0 +1,21 @@
+URL: https://www.lesswrong.com/posts/XFzqDJjAJBt8fkn8i/common-mistakes-in-ai-safety-group-organizing
+FEED: https://feeds.type3.audio/lesswrong--30-karma.rss
+PUBDATE: Sun, 20 Sep 2026 01:30:46 GMT
+============================================================
+Back in the day, I was a very active AI safety group organizer. I commonly notice people making the same mistakes across many clubs. I have written down a list of some of these mistakes hoping people will avoid them in the future:
+Reading groups often require that people read things before meetings. This is a mistake. People often don't do the readings. And the lack of common knowledge that everyone has read the reading degrades the conversation quality.
+Instead, have longer meetings, serve food (so, lunch/dinner meeting slots), and read during the actual meeting.
+Reading groups often don't sort people into cohorts properly. Mainly, they fail at clustering people into clusters of roughly equal ML knowledge and age. Grad students don't want to discuss a paper with freshmen. People with lots of ML knowledge don't want to discuss a paper with people with no ML knowledge.
+Instead, group people with people similar to them in ML knowledge and age.
+Reading groups often rely on digital materials instead of physical printouts. Screens are distracting and there is no common knowledge that people are paying attention.
+Neatly print every reading ahead of time instead.
+Clubs [...]
+---
+First published:
+September 19th, 2026
+Source:
+https://www.lesswrong.com/posts/XFzqDJjAJBt8fkn8i/common-mistakes-in-ai-safety-group-organizing
+---
+Narrated by
+TYPE III AUDIO
+.

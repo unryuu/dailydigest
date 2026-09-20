@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/tvwtwgcujTfep4HgY/why-i-stay-off-twitter",
+  "title": "Twitter 最会用错误诱人纠错",
+  "date": "Sun, 20 Sep 2026 04:45:45 GMT",
+  "reported": true,
+  "report_date": "2026-09-20"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/XFzqDJjAJBt8fkn8i/common-mistakes-in-ai-safety-group-organizing",
+  "title": "读书会别再指望大家提前读材料",
+  "date": "Sun, 20 Sep 2026 01:30:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-20"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/qmxkHm2dTLKG6GZ6i/the-anatomy-of-a-chinese-ai-researcher",
+  "title": "一位作者笔下的中国 AI 研究者",
+  "date": "Sun, 20 Sep 2026 06:30:45 GMT",
+  "reported": true,
+  "report_date": "2026-09-20"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/XundBXqKSo3bB2A6a/the-ai-risk-network",
+  "title": "把 AI 风险画成一张关系网",
+  "date": "Sun, 20 Sep 2026 00:00:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-20"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are",
   "title": "模型数学强，可能先得益于好教材",
   "date": "Fri, 18 Sep 2026 18:15:46 GMT",

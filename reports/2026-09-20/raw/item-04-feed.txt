@@ -1,0 +1,18 @@
+URL: https://www.lesswrong.com/posts/gDQzntJCusNbshWyD/nyt-editorial-board-comes-out-against-extinction
+FEED: https://feeds.type3.audio/lesswrong--30-karma.rss
+PUBDATE: Sun, 20 Sep 2026 02:00:46 GMT
+============================================================
+(Archive link)
+The NYT editorial board's article on AI (archive link) is far better than I'd expected, but at the same time not all I'd hoped for.
+The title sets off very well: "Humanity Has Avoided Apocalypse Before. Let's Do It Again." It is truly excellent to see the extinction threat from loss of control be mainlined.
+A quick gloss of their policy requests: an AI Commission in government, licensing requirements for AI companies, an AI "constitution" written by the US Government incorporated into AIs, mandatory watermarks/identifiers on all AI content, mandatory independent testing for AI models before release, and a government agency to investigate accidents. Internationally, they call for tightening export controls, limiting China's access to semiconductors, and ultimately negotiating an international slowdown with China and an international framework for AI oversight.
+These are all steps in the right direction—of taking AI seriously. That said, it isn't clear if the licensing is required for training or for selling AIs. The idea that constitutional AI "would ensure alignment with human values" is of course not remotely true. And mandatory testing should apply to all models trained, not all models released, of course, and this is a glaring oversight. But [...]
+---
+First published:
+September 19th, 2026
+Source:
+https://www.lesswrong.com/posts/gDQzntJCusNbshWyD/nyt-editorial-board-comes-out-against-extinction
+---
+Narrated by
+TYPE III AUDIO
+.

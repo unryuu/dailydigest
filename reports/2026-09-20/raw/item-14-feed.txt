@@ -1,0 +1,18 @@
+URL: https://www.lesswrong.com/posts/qmxkHm2dTLKG6GZ6i/the-anatomy-of-a-chinese-ai-researcher
+FEED: https://feeds.type3.audio/lesswrong--30-karma.rss
+PUBDATE: Sun, 20 Sep 2026 06:30:45 GMT
+============================================================
+The Chinese AI researcher has read the Three Body Problem series of sci-fi novels since high school, and understand the concept of existential risk vaguely.
+He is fascinated by Ye Wenjie, the researcher that turned against humanity in that book, and decides that in the future if AI progress leads to a superior intelligence, he might be tempted to become Ye if there's no good alternative.
+He performs the duties of capabilities research in a Chinese frontier lab, seeking to one day achieve parity with Western companies, though he knows this is difficult. He has a mentality of hillclimbing, believing that the progress of a future technology is highly uncertain and even unknowable, and so him and his peers could only tread one step at a time.
+He looks at the western world and sees what is typical when a great technology is developed: the first mover will decide to impose restrictions to further their lead, while latecomers should use whatever means necessary to widen access to the whole world. He thinks of the AI chip restrictions as evidence of this.
+He uses Anthropic and OpenAI models regularly in his day to day work. He [...]
+---
+First published:
+September 19th, 2026
+Source:
+https://www.lesswrong.com/posts/qmxkHm2dTLKG6GZ6i/the-anatomy-of-a-chinese-ai-researcher
+---
+Narrated by
+TYPE III AUDIO
+.

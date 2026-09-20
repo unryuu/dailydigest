@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-20",
+  "status": "complete",
+  "resume_from": "2026-09-19T22:13:28+08:00",
+  "scanned_at": "2026-09-20T21:57:56.708022+08:00",
+  "scan_method": "登录态首页 Latest；后退曾返回旧列表，刷新后确认新文章；逐篇读取全文，只保存转述。",
+  "items": [
+    {
+      "source": "theinformation",
+      "title": "President Trump Announces ‘AI Force,’ Will Appoint New Czar",
+      "url": "https://www.theinformation.com/briefings/president-trump-announces-ai-force-will-appoint-new-czar",
+      "date": "2026-09-20T04:01:00+08:00",
+      "published_original": "Sep 19, 2026, 1:01pm PDT",
+      "type": "Briefing",
+      "status": "read_full_article",
+      "bucket_hint": "deep",
+      "summary": "特朗普宣布拟设类似太空军的 AI Force，并任命新的 AI 主管，强调不妨碍产业发展及对华竞争；他再次否定 AI 安全忧虑并支持数据中心。Sacks 已于今年稍早离开 AI 与加密主管职位，但继续担任外部顾问。此前拟建立监督模型厂商的自律机构草案陷入停滞，Sacks 反对该方案。",
+      "limits": "尚属宣布构想，职责和与既有部门的区别未明，不能写成正式成立军种或已签署行政令。",
+      "original_link": "https://truthsocial.com/@realDonaldTrump/posts/117298821562014906"
+    },
+    {
+      "source": "theinformation",
+      "title": "Dario Amodei's Tabloid Era",
+      "url": "https://www.theinformation.com/newsletters/the-weekend/dario-amodeis-tabloid-era",
+      "date": "2026-09-19T23:05:00+08:00",
+      "published_original": "Sep 19, 2026, 8:05am PDT",
+      "type": "The Weekend",
+      "status": "read_full_article",
+      "bucket_hint": "deep_or_fun",
+      "summary": "Abram Brown 梳理纽约邮报一周十多篇涉及 Amodei 或有效利他主义的报道，指出公众一面担心 AI 毁灭风险、一面轻蔑提出警告的人；核心是媒体和政治对人物的塑造，列举多篇已发生的报道。",
+      "limits": "属于评论，63％民调和列举新闻均为旧材料，未独立核对底层样本；不写成新调查。",
+      "suggestion": "仅作为有结构性判断的评论候选；若与当日 AI Force／NYT 安全讨论同质可不收。"
+    }
+  ],
+  "exclusions": [
+    "首页其他 Sep 18 及更早文章早于接续点或已读已报；未进入 Recommended 与 Most Popular 捞旧料。"
+  ]
+}

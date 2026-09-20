@@ -1,0 +1,38 @@
+[
+  {
+    "id": "item-03",
+    "found": true,
+    "chars": 1946,
+    "path": "reports/2026-09-20/raw/item-03-feed.txt"
+  },
+  {
+    "id": "item-04",
+    "found": true,
+    "chars": 1467,
+    "path": "reports/2026-09-20/raw/item-04-feed.txt"
+  },
+  {
+    "id": "item-06",
+    "found": true,
+    "chars": 1457,
+    "path": "reports/2026-09-20/raw/item-06-feed.txt"
+  },
+  {
+    "id": "item-12",
+    "found": true,
+    "chars": 1365,
+    "path": "reports/2026-09-20/raw/item-12-feed.txt"
+  },
+  {
+    "id": "item-13",
+    "found": true,
+    "chars": 1190,
+    "path": "reports/2026-09-20/raw/item-13-feed.txt"
+  },
+  {
+    "id": "item-14",
+    "found": true,
+    "chars": 1314,
+    "path": "reports/2026-09-20/raw/item-14-feed.txt"
+  }
+]

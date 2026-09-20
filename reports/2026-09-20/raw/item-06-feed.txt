@@ -1,0 +1,22 @@
+URL: https://www.lesswrong.com/posts/XundBXqKSo3bB2A6a/the-ai-risk-network
+FEED: https://feeds.type3.audio/lesswrong--30-karma.rss
+PUBDATE: Sun, 20 Sep 2026 00:00:46 GMT
+============================================================
+Most conversations about AI risks seem like people are talking past each other. There's a lot of strawmanning. This is largely because the issue is complex, and in order to make it manageable, the concepts get oversimplified. The most common example of this is p(doom), collapsing extreme outcomes into a single variable and focusing on that. Critics happily jump on the fact that there are many other possible bad outcomes, or that 100% extinction rates are an extremely high bar. There's some legitimacy to this.
+So here I want to try to grapple with the the complexity of the larger web of issues surrounding bad AI outcomes by presenting The AI Risk Network. If you’re interested in this topic, bear with me. It might be a bit of a slog.
+First I want to contrast this approach with others. Liron Shapira has what he calls The Doom Train, a linear progression through various dependencies or thresholds that eventually lead to human extinction, with various ‘stops’ along the way where the skeptic can get off.
+Shapira uses this as a discussion guide to focus on particular points where the skeptic gets off the train and exits belief in the extreme [...]
+---
+First published:
+September 19th, 2026
+Source:
+https://www.lesswrong.com/posts/XundBXqKSo3bB2A6a/the-ai-risk-network
+---
+Narrated by
+TYPE III AUDIO
+.
+---
+Images from the article:
+Apple Podcasts and Spotify do not show images in the episode description. Try
+Pocket Casts
+, or another podcast app.
