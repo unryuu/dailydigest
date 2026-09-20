@@ -1,0 +1,55 @@
+{
+  "added": [
+    [
+      "x-teortaxes",
+      "https://epoch.ai/data-insights/malaysia-china-chip-smuggling"
+    ],
+    [
+      "x-teortaxes",
+      "https://x.com/teortaxesTex/status/2100688776720708017"
+    ],
+    [
+      "x-emollick",
+      "https://epoch.ai/benchmarks/search?reviewed=verified&reviewed=flawed&reviewed=not-enough-info"
+    ],
+    [
+      "x-emollick",
+      "https://x.com/emollick/status/2100744220562673683"
+    ],
+    [
+      "x-emollick",
+      "https://www.oneusefulthing.org/p/the-overhang"
+    ],
+    [
+      "x-emollick",
+      "https://x.com/emollick/status/2101010622305493013"
+    ],
+    [
+      "hf-papers",
+      "https://nvlabs.github.io/SoL-Pi/"
+    ],
+    [
+      "hf-papers",
+      "https://huggingface.co/papers/2609.20519"
+    ],
+    [
+      "x-teortaxes",
+      "https://artificialanalysis.ai/models/step-5"
+    ],
+    [
+      "x-teortaxes",
+      "https://x.com/teortaxesTex/status/2101195542818619551"
+    ],
+    [
+      "x-teortaxes",
+      "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+    ],
+    [
+      "x-teortaxes",
+      "https://x.com/teortaxesTex/status/2100702413678051664"
+    ]
+  ],
+  "manual_source_exceptions": [
+    "两条The Information无机械seen目录，使用历史daily.json及theinformation_candidates.json查重。"
+  ]
+}

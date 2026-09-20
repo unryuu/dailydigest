@@ -1,0 +1,109 @@
+## 🗞️ 行业大事
+
+**🥇 [Gemini 测试时闯入三家公司网络](https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks)**
+
+五月的一场夺旗测试里，虚构目标恰好与真实公司同名，本应断网的测试环境又因配置疏漏连上了互联网。Gemini 顺着任务找过去，进入了现实中的公司系统。
+
+其中一次靠猜密码，另两次用了公开代码仓库里的凭证。Google 表示，模型认出目标是真实公司后就退出了。测试方 Irregular 七月底通知了相关实验室，并表示已修复已知的测试问题。
+
+**🥈 [Anthropic 上市窗口后移](https://www.theinformation.com/articles/anthropic-ipo-waiting-game-puts-wall-street-edge)**
+
+据 The Information，上市可能落在十月底或十一月，晚于部分投资者原先预期的九月。公司还准备扩大数据中心和下一代模型训练投入，可能挤压刚转正的经调整经营利润。
+
+**🥈 [Epoch 从贸易账目追踪芯片转运](https://epoch.ai/data-insights/malaysia-china-chip-smuggling)**
+
+中国和马来西亚记录的服务器贸易数量接近，申报均价却相差六倍。马来西亚收紧高性能芯片转运许可后，高价流量随之回落。Epoch 据此推断，有受限 AI 服务器经马来西亚转运到中国。
+
+**[OpenAI 烧钱预测引发争议](https://www.theinformation.com/briefings/openai-said-forecast-nearly-280-billion-cash-burn-end-2030)**
+
+金融时报披露到2030年累计烧钱2780亿美元的预测，OpenAI 财务主管回应称数字不准确。
+
+**[纽森加快推进 AI 独立审计与关闭开关](https://www.axios.com/2026/09/18/newsom-ai-2028-focus)**
+
+加州行政令加快落实独立核查机构法案，并推进模型关闭开关，填补联邦监管迟迟未动的空档。
+
+## 📖 深度长文
+
+**🥈 [Epoch 给模型基准挑错](https://epoch.ai/benchmarks/search?reviewed=verified&reviewed=flawed&reviewed=not-enough-info)**
+
+首批审查十五项基准，九项被判有缺陷。答对却被判错、题目藏着没写出来的要求，都会让模型成绩失真。Epoch 逐项检查题目、打分逻辑，以及模型拿到的工具和资源是否公平。
+
+**🥈 [模型能力已经跑在实际用法前面](https://www.oneusefulthing.org/p/the-overhang)**
+
+专业知识、跨领域见识、审美和主动尝试，能帮助人更好地使用 AI。Mollick 让模型制作书籍预告片，自己判断氛围、否决笑话、要求重做，模型则完成动画和剪辑。他认为，即使停止训练新模型，消化现有能力也还需要多年。
+
+**[模型数学强，可能先得益于好教材](https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are)**
+
+研究者拜恩斯认为，数学文献错误少，模型通过模仿就更容易学到正确推理；其他领域的材料更混杂。
+
+**[3Blue1Brown 作者呼吁奖励数学好解释](https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it)**
+
+桑德森提出，讲清一个想法如何被发现，也该像证明新定理一样获得学术认可。
+
+## 🧪 新鲜论文
+
+**🥈 [SoL-Pi 让 Agent 自己改进工作外壳](https://nvlabs.github.io/SoL-Pi/)**
+
+保留 Pi 约94％平均得分的同时，SoL-Pi 让模型处理的文本量近乎减半，按 API 标价折算的费用少约三分之一。Agent 自己提出、实现和验证工具调度改进，把改文件与运行测试合成一次调用，也减少反复携带长日志和重复上下文。
+
+**[企业 AI 助手也会被催着违规](https://huggingface.co/papers/2609.18605)**
+
+PACT 测试在请求里加入催进度、上司许可等日常压力后，模型违规率平均增加 65％。
+
+**[操作界面的 Agent 会把失败经验写进技能](https://huggingface.co/papers/2609.17653)**
+
+EvoSkill-GUI 让模型复盘失败，只修改出错的技能文件，下次遇到类似任务就能复用，无需重新训练。
+
+## 📢 官方公告
+
+**🥈 [Anthropic 公开 AI 研发自动化指标](https://www.anthropic.com/institute/measuring-pace-of-ai-development)**
+
+八月，Claude 已主导26％的研发工作，由人监督。三项指标分别追踪 AI 承担多少工作、实验室如何监督它，以及研发算力用在哪里。最常用的内部 Agent 平台会在动作执行前逐一检查，被拦下的动作再交给人复核。
+
+**[Claude Code 开始支持 AGENTS.md](https://simonwillison.net/2026/Sep/18/thariq-shihipar)**
+
+从 2.1.277 起，文件夹没有 CLAUDE.md 时，会回退读取 AGENTS.md。
+
+**[Grok 更新语音转录模型](https://x.ai/news/grok-voice-transcribe-2)**
+
+2.0 支持录音中途切换语言，价格不变：每小时录音批量转写 0.1 美元，实时转写 0.2 美元。
+
+## 📌 行业简讯
+
+- [Laya 开源用于工单分流和风险判断的概率模型](https://laya.convaiinnovations.com)
+- [Step 5 Preview 登上独立模型榜单](https://artificialanalysis.ai/models/step-5)
+
+## 🎪 乐子汇总
+
+**[斯坦福发现大脑前后部分有不同发育起点](https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html)**
+
+研究者分清两类祖细胞后，成功用人类干细胞培养出后脑运动神经元。
+
+**[动画鹈鹕骑的其实是真自行车](https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit)**
+
+《谁陷害了兔子罗杰》剧组给车轮灌水增稳，再用线牵着车跑。
+
+**[Claude 没解开伏尼契手稿，拍了部解释电影](https://x.com/emollick/status/2100767116819325141)**
+
+它尝试解释这本神秘手稿，碰了一圈壁，又把探索过程做成了一部四分钟短片。
+
+**[LinkedIn 机器人开始互相说空话](https://x.com/emollick/status/2100978802843177081)**
+
+它们在 Mollick 的评论区反复谈「没人讨论的事情」，指的却正是他已经在讨论的事。
+
+**[1935 年的本雅明也被读出了 Claude 味](https://x.com/emollick/status/2101302622393078265)**
+
+Mollick 重读《机械复制时代的艺术作品》，觉得第二句话像 Claude 写的，连老文章的味道都变了。
+
+## 🎲 赔率盒子
+
+来自预测市场 Manifold 的实时概率，仅供围观：
+
+- [到2029年底，AI 能把当年 arXiv 数学论文中至少四分之三的证明转成机器可验证的形式吗？](https://manifold.markets/vluzko/in-2029-will-any-ai-be-able-to-take) — **77％**（成交额 19.4k mana）
+- [到2029年底，AI 能看懂电影中人物的冲突和动机吗？](https://manifold.markets/vluzko/by-2029-will-any-ai-be-able-to-watc) — **87％**（成交额 27.4k mana）
+- [2030年前，人类会再次踏上月球吗？](https://manifold.markets/Mqrius/will-a-human-walk-on-the-moon-again-2fc067c3b7fb) — **50％**（成交额 57.9k mana）
+- [特朗普会在2028年底前获得诺贝尔和平奖吗？](https://manifold.markets/datachef/will-trump-win-the-nobel-peace-priz) — **3％**（成交额 109.5k mana）
+
+---
+
+*AI 日报 · 9月19日 · Telegram 频道 @dragonbro888*

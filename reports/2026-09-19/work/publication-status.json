@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-19",
+  "published_at_recorded": "2026-09-20T21:20:14.932045+08:00",
+  "authorization": "用户：好的，改好了，发频道吧",
+  "destination": "channel",
+  "links_message_id": 270,
+  "image_message_id": 271,
+  "files": {
+    "daily.json": {
+      "bytes": 8781,
+      "sha256": "fd127f7b5b21e347f4e169d757b15e6e2a3e66f19683ee705adad83e1bec5cef"
+    },
+    "daily.full.png": {
+      "bytes": 2751617,
+      "sha256": "ac0baa91847e277026c3fe47df08855127bc721af94e38eee660d563928880f2",
+      "dimensions": [
+        1179,
+        12627
+      ]
+    },
+    "口播稿.md": {
+      "bytes": 6631,
+      "sha256": "e196de6556146fdfce635750dce11228ee89425c30ce59d6c772577f4713d94d"
+    },
+    "字幕稿.md": {
+      "bytes": 6350,
+      "sha256": "0dbde74fd493012f00cf74b3d0b1e7e2d4e3c429c8c528479baebdbf93840485"
+    },
+    "dist/daily.zhihu.md": {
+      "bytes": 7071,
+      "sha256": "2348d8bd5513e63dc7625bcd8ffd45e2861fefee3606b11715f514e9d842c030"
+    }
+  },
+  "xhs": [
+    {
+      "name": "xhs-01.png",
+      "bytes": 136565,
+      "dimensions": [
+        1242,
+        1656
+      ]
+    },
+    {
+      "name": "xhs-02.png",
+      "bytes": 603474,
+      "dimensions": [
+        1242,
+        2280
+      ]
+    },
+    {
+      "name": "xhs-03.png",
+      "bytes": 433793,
+      "dimensions": [
+        1242,
+        1662
+      ]
+    },
+    {
+      "name": "xhs-04.png",
+      "bytes": 307657,
+      "dimensions": [
+        1242,
+        1656
+      ]
+    },
+    {
+      "name": "xhs-05.png",
+      "bytes": 267100,
+      "dimensions": [
+        1242,
+        1656
+      ]
+    },
+    {
+      "name": "xhs-06.png",
+      "bytes": 77885,
+      "dimensions": [
+        1242,
+        1656
+      ]
+    },
+    {
+      "name": "xhs-07.png",
+      "bytes": 336521,
+      "dimensions": [
+        1242,
+        1690
+      ]
+    },
+    {
+      "name": "xhs-08.png",
+      "bytes": 204697,
+      "dimensions": [
+        1242,
+        1656
+      ]
+    }
+  ],
+  "sensitive_hits": 0,
+  "tts_status": "口播初稿，等待用户审稿；未生成音频视频。"
+}

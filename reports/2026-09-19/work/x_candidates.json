@@ -1,0 +1,149 @@
+{
+  "date": "2026-09-19",
+  "status": "complete",
+  "resume_from": "2026-09-17T21:15:22+08:00",
+  "scanned_at": "2026-09-19T22:23:36.719666+08:00",
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "基准质量审查：十五项里九项有缺陷",
+      "url": "https://x.com/emollick/status/2100744220562673683",
+      "date": "2026-09-18T08:30:26.779000+08:00",
+      "summary": "Epoch AI 发布 Benchmark Reviews，首批十五项基准中四项通过、九项有缺陷、两项资料不足。Mollick 引用其公告。",
+      "bucket_hint": "deep",
+      "read_level": "登录态 X Latest 可见原帖"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Claude 破解伏尼契手稿失败，做出一部解释电影",
+      "url": "https://x.com/emollick/status/2100767116819325141",
+      "date": "2026-09-18T10:01:25.672000+08:00",
+      "summary": "Mollick 让 Claude 选一个痴迷的谜题并尽力解决、制作电影。Claude 尝试伏尼契手稿但失败，然后生成解释电影。后续帖 2101168554988953950 称尝试 211 种方法均未成功；31 种此前未试过是模型自己的说法，不作为确定事实。",
+      "bucket_hint": "fun",
+      "read_level": "登录态 X Latest 可见原帖"
+    },
+    {
+      "source": "x-emollick",
+      "title": "The Overhang：模型能力与实际使用之间的差距",
+      "url": "https://x.com/emollick/status/2101010622305493013",
+      "date": "2026-09-19T02:09:01.904000+08:00",
+      "summary": "Mollick 分享自己的 The Overhang 文章：即使开发今天停下，应用也需要多年追赶，文章讨论缩小差距的四个优势。原文链接在帖内，待 reader 点击。",
+      "bucket_hint": "deep",
+      "read_level": "登录态 X Latest 可见原帖"
+    },
+    {
+      "source": "x-emollick",
+      "title": "LinkedIn 评论区的机器人开始互相说空话",
+      "url": "https://x.com/emollick/status/2100978802843177081",
+      "date": "2026-09-19T00:02:35.553000+08:00",
+      "summary": "Mollick 展示其 LinkedIn 评论区机器人互相交谈，反复使用“没有人谈论的事情”等套话；后续明确协调说法只是玩笑。",
+      "bucket_hint": "fun",
+      "read_level": "登录态 X Latest 可见原帖"
+    },
+    {
+      "source": "x-emollick",
+      "title": "1935 年的本雅明句子也像 Claude",
+      "url": "https://x.com/emollick/status/2101302622393078265",
+      "date": "2026-09-19T21:29:20.150000+08:00",
+      "summary": "Mollick 读本雅明《机械复制时代的艺术作品》，感到第二句话像 Claude 写的。是其个人阅读感受。",
+      "bucket_hint": "fun",
+      "read_level": "登录态 X Latest 可见原帖"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "Codex 开发者建议保留模型原生上下文压缩",
+      "url": "https://x.com/pvncher/status/2100967351038427331",
+      "date": "2026-09-18T23:17:05.230000+08:00",
+      "summary": "Provencher 不推荐 GPT 模型使用非原生压缩；相关帖 2100938922981282175 说压缩是模型训练核心部分，2100946239793537111 说新的实验压缩仍有问题在解决。片段可能仅够无牌，须核完整线程。",
+      "bucket_hint": "radar",
+      "read_level": "登录态 X Latest 可见原帖"
+    },
+    {
+      "source": "x-roon",
+      "title": "安全担忧成了身份信号，好奇心却被挤到一边",
+      "url": "https://x.com/tszzl/status/2100724332612006345",
+      "date": "2026-09-18T07:11:25.122000+08:00",
+      "summary": "Roon 观察“我担心”变成高地位表达，自己更愿意听到好奇或着迷；后续强调即使研究 AI 灭绝风险，快乐好奇的人也能做更好的工作。",
+      "bucket_hint": "fun",
+      "read_level": "登录态 X 可见原帖或引用摘要"
+    },
+    {
+      "source": "x-roon",
+      "title": "AI 的温度侧信道之争",
+      "url": "https://x.com/tszzl/status/2100879184579231765",
+      "date": "2026-09-18T17:26:44.708000+08:00",
+      "summary": "Roon 澄清不是靠温度通道传出全部模型权重，而是少量密钥可能成为后续攻击链开端；属于对 Noam Brown 观点的讨论，不能写成已经发生的温度外传事故。",
+      "bucket_hint": "deep",
+      "read_level": "登录态 X 可见原帖或引用摘要"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "Step 5 Preview 出现在独立模型榜单",
+      "url": "https://x.com/teortaxesTex/status/2101195542818619551",
+      "date": "2026-09-19T14:23:50.390000+08:00",
+      "summary": "转述 Artificial Analysis 的 Step 5 Preview 条目，百万上下文、Intelligence Index 44。只作核查线索，待原始榜单确认；不写成正式发布。",
+      "bucket_hint": "radar",
+      "read_level": "登录态 X 可见原帖或引用摘要"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "Anthropic 提出三项指标追踪 AI 研发自动化",
+      "url": "https://x.com/teortaxesTex/status/2100702413678051664",
+      "date": "2026-09-18T05:44:19.241000+08:00",
+      "summary": "引用 Anthropic 公告：公开三个衡量 AI 开发进展的指标，第一项为 AI 研发由 AI 完成的比例。引用文本截断，需 reader 回溯完整官方公告。",
+      "bucket_hint": "deep",
+      "read_level": "登录态 X 可见原帖或引用摘要"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "Epoch 用贸易记录分析经马来西亚进入中国的芯片",
+      "url": "https://x.com/teortaxesTex/status/2100688776720708017",
+      "date": "2026-09-18T04:50:07.937000+08:00",
+      "summary": "引用 Epoch 公告：2024 年四月至 2025 年六月，中国记录的相关服务器进口均价为 10.6 万美元，马来西亚出口申报均价为 1.7 万美元；研究认为数据与超过 30 亿美元芯片走私相符。仅作原始研究线索。",
+      "bucket_hint": "deep",
+      "read_level": "登录态 X 可见原帖或引用摘要"
+    }
+  ],
+  "accounts": [
+    {
+      "account": "emollick",
+      "status": "complete",
+      "note": "Latest 已读到 09-17 接续点前。"
+    },
+    {
+      "account": "goodside",
+      "status": "complete",
+      "note": "窗口内搜索无结果。"
+    },
+    {
+      "account": "karpathy",
+      "status": "complete",
+      "note": "窗口内搜索无结果。"
+    },
+    {
+      "account": "NeelNanda5",
+      "status": "complete",
+      "note": "只有现有安全风险观点与旧回复，无新研究。"
+    },
+    {
+      "account": "pvncher",
+      "status": "complete",
+      "note": "Articles 最新仍为 09-05；Latest 已读到 09-17 接续点前；Bend 重复、宣传与闲聊排除。"
+    },
+    {
+      "account": "tszzl",
+      "status": "complete",
+      "note": "Latest 扫到 09-17 接续点前；仅收原创观点，HF 旧事故等重复排除。"
+    },
+    {
+      "account": "sama",
+      "status": "complete",
+      "note": "Latest 唯一帖子为 09-17 早于接续点的发布延期预告。"
+    },
+    {
+      "account": "teortaxesTex",
+      "status": "complete",
+      "note": "按原创主帖查询并沿时间下扫，读到 09-17T20:32 附近，早于接续点；闲聊、政治评论、重复报道、无原始证据的推测排除。"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+URL: https://spectrum.ieee.org/llms-for-chip-design
+FINAL: https://spectrum.ieee.org/llms-for-chip-design
+TITLE: Jalapeño Shows Power of LLMs for Chip Design - IEEE Spectrum
+FETCHED: 2026-09-20 19:30:27
+============================================================
+Semiconductors
+AI
+Computing
+News
+How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip
+AI drastically shortened its design time; it will only get faster
+Matthew S. Smith
+14 Sep 2026
+6 min read
+3
+Matthew S. Smith is a contributing editor for IEEE Spectrum and the former lead reviews editor at Digital Trends.
+OpenAI’s Jalapeño pairs its compute die with six stacks of HBM4 and an I/O chiplet.
+OpenAI

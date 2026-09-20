@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-09-20T21:00:15.417012+08:00",
+  "items": [
+    {
+      "url": "https://manifold.markets/vluzko/in-2029-will-any-ai-be-able-to-take",
+      "approved_prob": "77％",
+      "current_prob": "77％",
+      "volume": 19443.461920260652,
+      "isResolved": false
+    },
+    {
+      "url": "https://manifold.markets/vluzko/by-2029-will-any-ai-be-able-to-watc",
+      "approved_prob": "87％",
+      "current_prob": "87％",
+      "volume": 27406.49537246878,
+      "isResolved": false
+    },
+    {
+      "url": "https://manifold.markets/Mqrius/will-a-human-walk-on-the-moon-again-2fc067c3b7fb",
+      "approved_prob": "50％",
+      "current_prob": "50％",
+      "volume": 57920.61237746974,
+      "isResolved": false
+    },
+    {
+      "url": "https://manifold.markets/datachef/will-trump-win-the-nobel-peace-priz",
+      "approved_prob": "3％",
+      "current_prob": "3％",
+      "volume": 109534.52910089807,
+      "isResolved": false
+    }
+  ]
+}

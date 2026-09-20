@@ -1,0 +1,1200 @@
+URL: https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it
+FINAL: https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/
+TITLE: If math is more than proof, we need to better celebrate the rest of it | What's new
+FETCHED: 2026-09-20 19:29:31
+============================================================
+What's new
+Updates on my research and expository papers, discussion of open problems, and other maths-related topics. By Terence Tao
+Home
+About
+Career advice
+On writing
+Books
+Mastodon+
+Applets
+Subscribe to feed
+If math is more than proof, we need to better celebrate the rest of it
+18 September, 2026 in
+guest blog
+,
+math.GM
+,
+opinion
+,
+Uncategorized
+| Tags:
+Grant Sanderson
+| by
+Terence Tao
+[This is a guest post by
+Grant Sanderson
+. This blog post was initially written in a different file format and converted using AI. — T.]
+A sentiment echoing throughout the mathematics community right now is that solving problems and generating proofs have always served as proxies for the true goal of mathematicians, which is to further human understanding. When proofs can be generated without that understanding, it undermines their value as a proxy.
+This immediately raises a question: What other proxies should we use instead?
+I want to propose that we more firmly define a notion of a “motivated explanation” and that we give novel and compelling motivated explanations academic credit similar to what generating new proofs of open problems has had historically.
+Further, I believe this is an important step to help those outside of math better understand what it is that mathematicians contribute. If outsiders believe that proof-generating machines render mathematicians obsolete, while insiders see that as a misconception of what researchers add, it’s incumbent on this community to better project its true values through the kind of work that it rewards. Outsiders can be forgiven for this misunderstanding if the work most celebrated skews heavily toward generating proofs, while clarification and exposition are treated as second-class.
+I should acknowledge up front an obvious personal bias. I have a non-traditional career in math, focused on producing videos about the topic. This shares the goal of “furthering human understanding”, but my focus has been on explanations and intuitions that resonate with the public, not on solving outstanding problems. A cynic could easily read this proposal as shamelessly self-elevating.
+As a practical matter, though, my own career and funding exist outside academia, and I have no skin in the game for what this community assigns credit to. Moreover, in proposing that we elevate the status of motivated explanations, I don’t mean popularization. I mean any work which primarily aims to answer the question “how would you think of that?”, even if the subject matter requires deep expertise to appreciate.
+The examples I highlight below show this is nothing new. Practicing mathematicians already devote a meaningful amount of mindshare to work like this. The proposal here is mainly to 1) more clearly define this work, and 2) elevate its status.
+What defines a motivated explanation?
+Although it might be clear what this phrase “motivated explanation” is intended to mean, it’s worth briefly contrasting it with proof.
+In a proof, definitions sit at the start. It is common and expected to begin with a new construction and proceed by analyzing its properties.
+In a motivated explanation, definitions sit in the middle. New constructions are only allowed to enter the vocabulary if the problem they are addressing has been clearly established.
+In a proof, all statements must be correct, each claim following as a necessary implication from what comes before.
+In a motivated explanation, it is okay and often desirable to start with an idea that is not quite right and requires correction, but whose origins are relatable.
+A genre of motivated explanation I’m fond of is “discovery fiction”, a term coined by Michael Nielsen. You develop an idea with a narrative that starts with a simple-but-wrong solution to a problem, see where it breaks down, fix that problem, discover a new problem, and so on.
+The scope of a proof is to explain why a particular theorem is true.
+The scope of a motivated explanation is not only to clarify why a theorem is true, but why the theorem is the right one to pose in the first place, and how it is used in the surrounding context.
+One clear shortcoming of a motivated explanation is that its validity is not binary the way a proof’s is. This is a big reason proof is so useful a way to measure progress: You can clearly define what does and does not have a proof yet. There will never be Lean for motivated explanations.
+If we’re serious about the goal of advancing human understanding, there’s no way around the fact that this aim is intrinsically squishier than that of finding proofs, because defining human understanding itself is squishier. To shy away from metrics which are more subjective is to shy away from the more human aspects of the field.
+The reason I’m leaning on the word “motivated”, as opposed to other potential choices like “lucid” or “demystifying”, is that this is a more verifiable property. It’s not quite as rigidly verifiable as a proof; almost nothing is. But it’s enough to be a practical measure. In my own work, I often repeat the phrase “I want this to feel like you could have discovered it yourself”. I say this not just to placate a viewer, but because it’s an actionable guideline for myself to assess whether an explanation feels complete or not. For each new idea introduced, you can ask whether it’s clear where that idea comes from. The answer is not quite a binary yes or no, but it’s close enough for practical purposes.
+Exemplars of motivated explanations
+One of the best repositories I can think of for motivated explanations is Part IV of the Princeton Companion to Mathematics. It covers over two dozen active fields of research, each one introduced by an expert with a talent for clear communication.
+Whether it’s Andrew Granville explaining analytic number theory, or David Ben-Zvi introducing moduli spaces, these articles offer a level of intuition and motivation more typically found in one-on-one conversation at a blackboard.
+The background on this book is noteworthy for the present discussion. It was edited by Timothy Gowers, who discusses it in
+his interview on the Numberphile Podcast
+with Brady Haran. Having been asked what impact the Fields Medal had on his life, here’s what he had to say:
+People who’ve got Fields Medal feel freer to do slightly different things…for example I took on editing a book called the Princeton Companion to Mathematics, which was an absolutely massive task. It took I would estimate half my working time for about five years or something like that…It was a project I believed in and possibly wouldn’t I probably wouldn’t have actually been offered the chance to do it if I hadn’t been a Fields Medalist.
+He was right to believe in it; this work adds tremendous value to the field of math, but it seems a shame to me that one requires a Fields Medal to feel justified in spending time on it.
+Another example of someone exceptionally talented at writing proofs, but whose contributions extended far beyond proof, is Bill Thurston. His deservedly famous essay
+On Proof and Progress in Mathematics
+, though written three decades before LLMs, opens by suggesting that the right framing of the question “What is it that mathematicians accomplish?” is to ask “How do mathematicians advance human understanding of mathematics?”
+Here’s one section with uncanny resonance with today:
+The rapid advance of computers has helped dramatize this point, because computers and people are very different. For instance, when Appel and Haken completed a proof of the 4-color map theorem using a massive automatic computation, it evoked much controversy. I interpret the controversy as having little to do with doubt people had as to the veracity of the theorem or the correctness of the proof. Rather, it reflected a continuing desire for human understanding of a proof, in addition to knowledge that the theorem is true.
+On a more everyday level, it is common for people first starting to grapple with computers to make large-scale computations of things they might have done on a smaller scale by hand. They might print out a table of the first 10,000 primes, only to find that their printout isn’t something they really wanted after all. They discover by this kind of experience that what they really want is usually not some collection of “answers”—what they want is understanding.
+The essay itself offers a beautiful articulation of what the practice of doing math is beyond generating proofs. I want to draw your attention to what he writes at the end.
+I have put a lot of effort into non-credit-producing activities that I value just as I value proving theorems: mathematical politics, revision of my notes into a book with a high standard of communication, exploration of computing in mathematics, mathematical education, development of new forms for communication of mathematics through the Geometry Center (such as our first experiment, the “Not Knot” video), directing MSRI, etc.
+Again, why should these “non-credit-producing activities” follow a Fields Medal, and not contribute to it?
+On a personal note, one product from the Geometry Center he referenced had an especially meaningful impact on me when I was younger. It was a short film called
+Outside In
+, perhaps the earliest example of a viral video about substantive math, visualizing the key idea of Thurston’s own construction for sphere eversion.
+An original proof that showed an eversion must exist, say Smale’s, advances human understanding in the sense of going from 0 to 1. A video like this which gets millions of people to engage with the underlying idea, advances it in the sense of going from 1 to N. I’m grateful that Thurston spent so much time on this “non-credit-producing” activity.
+Another relevant paper is Timothy Chow’s
+A beginner’s guide to forcing
+. Not only does the paper itself offer a prime example of a motivated explanation, but its introduction offers helpful vocabulary around it.
+All mathematicians are familiar with the concept of an open research problem. I propose the less familiar concept of an open exposition problem. Solving an open exposition problem means explaining a mathematical subject in a way that renders it totally perspicuous. Every step should be motivated and clear; ideally, students should feel that they could have arrived at the results themselves.
+What would it look like for these open exposition problems to be treated similarly to open research problems? As an extreme case, we might imagine what it could look like to have an analog of the Millennium Prize Problems for open exposition problems. An institution or group of researchers would formally define mathematical results they see as important, and which are not yet well understood despite technically having proofs. At the moment, every AI-generated proof is born an unsolved exposition problem. As such, it seems likely the next few years will see a flood of them, and it will be valuable for leaders to clarify which ones deserve focus.
+A rubric would have to be agreed upon for what constitutes a resolution to an important unsolved exposition problem. Again, this is intrinsically more subjective than verifying a proof, but any serious engagement with the more human aspects of math necessarily wades into this kind of subjectivity. And again, I’ll emphasize that checking whether key ideas are motivated is not unlike checking whether the steps of a proof follow logically.
+If the world outside of math sees its leading figures treat open exposition problems with the same seriousness as they treat open research problems, it could go a long way to correcting misconceptions about the role of mathematicians.
+The last example I’ll highlight is one that may better foreshadow things to come.
+In April of this year, Liam Price submitted a solution to Erdős Problem 1196, sometimes called the asymptotic primitive sets conjecture. The solution came from Price’s interaction with GPT-5.4 Pro. Unlike many earlier Erdős problems which had been resolved with help from AI, this is one that those in the field had found both important and elusive. Stories like this are increasingly familiar these days, but at this point in the story, despite a proof technically existing, human understanding had not yet been advanced all that much.
+The proof made its way to Nat Sothanaphan and Jared Lichtman, who were able to interpret what the AI’s approach was and clean up the proof into a human-readable form. In May, Boris Alexeev, Kevin Barreto, Yanyang Li, Jared Duker Lichtman, Liam Price, Jibran Iqbal Shah, Quanyu Tang, and Terence Tao put out
+a paper
+which expanded on the key idea underlying the proof. The authors explained how that key idea clarified not only the original problem, but many around it, for instance offering a cleaner proof of the Erdős Primitive Set Conjecture.
+The value here is not that one more Erdős problem could be ticked off as solved. The value lies in the fact that our understanding of primitive sets is notably cleaner and more satisfying now than it was at the start of 2026. The original problem solution played some role in this, but arguably the work that deserves more celebration is this paper expanding, clarifying, and contextualizing its key idea.
+Practical calls to action
+At a pragmatic level, what would it look like for us to elevate the status of a motivated explanation? Here are a small handful of suggestions.
+A PhD advisor can still assign a small problem from their field for a new student to cut their teeth on, but the deliverable would not be to write up a solution; it would be to present that solution to peers and faculty as a talk. It could be an already-solved problem which lacks clarity, or perhaps it’s a problem that lacks a solution, and the student uses AI to help find it. In either case, the student knows that on a certain date they have to understand it well enough to explain it, and that the desired output is for others to understand it as well. In short, even small problems could be treated like small PhD defenses.
+A leading figure (cough, Terry, cough) could enumerate a modern analog of Hilbert’s problems, instead focusing specifically on unsolved exposition problems. What areas are both important and lacking in the deeper understanding we desire?
+Written standards could clarify what constitutes a motivated explanation, aiming to make it nearly as verifiable as proof, so that the resolution of unsolved exposition problems can be recognized and celebrated in the same way proofs of open problems can be.
+Journals can be established which focus more explicitly on making results understood more widely throughout the mathematics community.
+Mathematical Discourse
+offers an interesting new example in this direction.
+Hiring and tenure decisions could place a higher value on writing great textbooks and similar work. Think of the AMS Steele Prize for Exposition, but at a more granular scale with an emphasis on early-career contributions in this vein.
+The value of visible cultural shifts
+I’d like to close with a broader pitch that visible culture shifts in math carry an intrinsic benefit
+right now
+with respect to the external image of mathematics as a career.
+Many young students who are otherwise passionate about the field are afraid to pursue it now due to the uncertainty of what happens in an age of proof-generating machines. However, framed correctly, this is one of the most exciting times to go into the field, because there is nothing more exciting than entering a field when it is malleable and you have a chance to actively shape what it will look like in the future. Even if we completely set aside any potential benefits from AI to help with our understanding, young prospective mathematicians should feel energized knowing that they are entering at a unique point in history when they might play a real role in determining what the field as a whole looks like.
+However, change like this is only exciting when it feels deliberate, whereas it feels terrifying if it seems driven by forces outside your control. As such, tangible action from the field’s leaders now to help define and clarify what the field is will reassure young entrants about who is in the driver’s seat, and that the status of the career does not depend on what entities produce the proofs.
+Similarly, I also believe this is one of the best times to fund math. If the next chapter of math is ushered in by the drumbeat of two words “human understanding”, whatever changes are about to happen seem likely to amplify math’s value as a public good.
+Share this:
+Print (Opens in new window)
+Print
+Email a link to a friend (Opens in new window)
+Email
+More
+Share on WhatsApp (Opens in new window)
+WhatsApp
+Share on Bluesky (Opens in new window)
+Bluesky
+Share on Nextdoor (Opens in new window)
+Nextdoor
+Share on Threads (Opens in new window)
+Threads
+Share on Tumblr (Opens in new window)
+Tumblr
+Share on Telegram (Opens in new window)
+Telegram
+Share on LinkedIn (Opens in new window)
+LinkedIn
+Share on X (Opens in new window)
+X
+Share on Facebook (Opens in new window)
+Facebook
+Share on Reddit (Opens in new window)
+Reddit
+Share on Mastodon (Opens in new window)
+Mastodon
+Share on Pinterest (Opens in new window)
+Pinterest
+Like
+Loading...
+Recent Comments
+Anonymous on
+If math is more than proof, we…
+Anonymous on
+Why Do We Need Human Mathemati…
+Anonymous on
+Why Do We Need Human Mathemati…
+Samuel Gagnon on
+If math is more than proof, we…
+Anonymous on
+Fast math/slow math
+michalkliman on
+A Severe Misalignment of AI in…
+Anonymous on
+If math is more than proof, we…
+Anonymous on
+A Severe Misalignment of AI in…
+Anonymous on
+A Severe Misalignment of AI in…
+ryeguy10
+on
+If math is more than proof, we…
+ryeguy10
+on
+If math is more than proof, we…
+Anonymous on
+If math is more than proof, we…
+Anonymous on
+Becoming a benchmark
+Anonymous on
+Why Do We Need Human Mathemati…
+Robert Vaughan on
+Why Do We Need Human Mathemati…
+Top Posts
+If math is more than proof, we need to better celebrate the rest of it
+Why Do We Need Human Mathematicians Anymore?
+A Severe Misalignment of AI in Mathematics
+Why I didn't sign the Fields medallists' letter
+SAIR's Open Math Model initiative
+A CERN for AI-assisted science?
+Open letter from Fellows of the Royal Society on AI existential risk
+Fast math/slow math
+After Math
+Becoming a benchmark
+Archives
+September 2026
+(26)
+August 2026
+(6)
+July 2026
+(9)
+June 2026
+(3)
+May 2026
+(1)
+March 2026
+(4)
+February 2026
+(3)
+January 2026
+(4)
+December 2025
+(5)
+November 2025
+(5)
+September 2025
+(1)
+August 2025
+(3)
+July 2025
+(1)
+June 2025
+(2)
+May 2025
+(5)
+April 2025
+(2)
+March 2025
+(1)
+February 2025
+(3)
+January 2025
+(1)
+December 2024
+(3)
+November 2024
+(4)
+October 2024
+(1)
+September 2024
+(4)
+August 2024
+(3)
+July 2024
+(3)
+June 2024
+(1)
+May 2024
+(1)
+April 2024
+(5)
+March 2024
+(1)
+December 2023
+(2)
+November 2023
+(2)
+October 2023
+(1)
+September 2023
+(3)
+August 2023
+(3)
+June 2023
+(8)
+May 2023
+(1)
+April 2023
+(1)
+March 2023
+(2)
+February 2023
+(1)
+January 2023
+(2)
+December 2022
+(3)
+November 2022
+(3)
+October 2022
+(3)
+September 2022
+(1)
+July 2022
+(3)
+June 2022
+(1)
+May 2022
+(2)
+April 2022
+(2)
+March 2022
+(5)
+February 2022
+(3)
+January 2022
+(1)
+December 2021
+(2)
+November 2021
+(2)
+October 2021
+(1)
+September 2021
+(2)
+August 2021
+(1)
+July 2021
+(3)
+June 2021
+(1)
+May 2021
+(2)
+February 2021
+(6)
+January 2021
+(2)
+December 2020
+(4)
+November 2020
+(2)
+October 2020
+(4)
+September 2020
+(5)
+August 2020
+(2)
+July 2020
+(2)
+June 2020
+(1)
+May 2020
+(2)
+April 2020
+(3)
+March 2020
+(9)
+February 2020
+(1)
+January 2020
+(3)
+December 2019
+(4)
+November 2019
+(2)
+September 2019
+(2)
+August 2019
+(3)
+July 2019
+(2)
+June 2019
+(4)
+May 2019
+(6)
+April 2019
+(4)
+March 2019
+(2)
+February 2019
+(5)
+January 2019
+(1)
+December 2018
+(6)
+November 2018
+(2)
+October 2018
+(2)
+September 2018
+(5)
+August 2018
+(3)
+July 2018
+(3)
+June 2018
+(1)
+May 2018
+(4)
+April 2018
+(4)
+March 2018
+(5)
+February 2018
+(4)
+January 2018
+(5)
+December 2017
+(5)
+November 2017
+(3)
+October 2017
+(4)
+September 2017
+(4)
+August 2017
+(5)
+July 2017
+(5)
+June 2017
+(1)
+May 2017
+(3)
+April 2017
+(2)
+March 2017
+(3)
+February 2017
+(1)
+January 2017
+(2)
+December 2016
+(2)
+November 2016
+(2)
+October 2016
+(5)
+September 2016
+(4)
+August 2016
+(4)
+July 2016
+(1)
+June 2016
+(3)
+May 2016
+(5)
+April 2016
+(2)
+March 2016
+(6)
+February 2016
+(2)
+January 2016
+(1)
+December 2015
+(4)
+November 2015
+(6)
+October 2015
+(5)
+September 2015
+(5)
+August 2015
+(4)
+July 2015
+(7)
+June 2015
+(1)
+May 2015
+(5)
+April 2015
+(4)
+March 2015
+(3)
+February 2015
+(4)
+January 2015
+(4)
+December 2014
+(6)
+November 2014
+(5)
+October 2014
+(4)
+September 2014
+(3)
+August 2014
+(4)
+July 2014
+(5)
+June 2014
+(5)
+May 2014
+(5)
+April 2014
+(2)
+March 2014
+(4)
+February 2014
+(5)
+January 2014
+(4)
+December 2013
+(4)
+November 2013
+(5)
+October 2013
+(4)
+September 2013
+(5)
+August 2013
+(1)
+July 2013
+(7)
+June 2013
+(12)
+May 2013
+(4)
+April 2013
+(2)
+March 2013
+(2)
+February 2013
+(6)
+January 2013
+(1)
+December 2012
+(4)
+November 2012
+(7)
+October 2012
+(6)
+September 2012
+(4)
+August 2012
+(3)
+July 2012
+(4)
+June 2012
+(3)
+May 2012
+(3)
+April 2012
+(4)
+March 2012
+(5)
+February 2012
+(5)
+January 2012
+(4)
+December 2011
+(8)
+November 2011
+(8)
+October 2011
+(7)
+September 2011
+(6)
+August 2011
+(8)
+July 2011
+(9)
+June 2011
+(8)
+May 2011
+(11)
+April 2011
+(3)
+March 2011
+(10)
+February 2011
+(3)
+January 2011
+(5)
+December 2010
+(5)
+November 2010
+(6)
+October 2010
+(9)
+September 2010
+(9)
+August 2010
+(3)
+July 2010
+(4)
+June 2010
+(8)
+May 2010
+(8)
+April 2010
+(8)
+March 2010
+(8)
+February 2010
+(10)
+January 2010
+(12)
+December 2009
+(11)
+November 2009
+(8)
+October 2009
+(15)
+September 2009
+(6)
+August 2009
+(13)
+July 2009
+(10)
+June 2009
+(11)
+May 2009
+(9)
+April 2009
+(11)
+March 2009
+(14)
+February 2009
+(13)
+January 2009
+(18)
+December 2008
+(8)
+November 2008
+(9)
+October 2008
+(10)
+September 2008
+(5)
+August 2008
+(6)
+July 2008
+(7)
+June 2008
+(8)
+May 2008
+(11)
+April 2008
+(12)
+March 2008
+(12)
+February 2008
+(13)
+January 2008
+(17)
+December 2007
+(10)
+November 2007
+(9)
+October 2007
+(9)
+September 2007
+(7)
+August 2007
+(9)
+July 2007
+(9)
+June 2007
+(6)
+May 2007
+(10)
+April 2007
+(11)
+March 2007
+(9)
+February 2007
+(4)
+Categories
+expository
+(330)
+tricks
+(13)
+guest blog
+(30)
+Mathematics
+(945)
+math.AC
+(9)
+math.AG
+(45)
+math.AP
+(117)
+math.AT
+(17)
+math.CA
+(199)
+math.CO
+(207)
+math.CT
+(9)
+math.CV
+(40)
+math.DG
+(37)
+math.DS
+(90)
+math.FA
+(24)
+math.GM
+(29)
+math.GN
+(21)
+math.GR
+(92)
+math.GT
+(17)
+math.HO
+(14)
+math.IT
+(13)
+math.LO
+(54)
+math.MG
+(48)
+math.MP
+(32)
+math.NA
+(26)
+math.NT
+(214)
+math.OA
+(22)
+math.PR
+(114)
+math.QA
+(6)
+math.RA
+(49)
+math.RT
+(21)
+math.SG
+(4)
+math.SP
+(48)
+math.ST
+(11)
+non-technical
+(221)
+admin
+(49)
+advertising
+(89)
+diversions
+(7)
+media
+(15)
+journals
+(4)
+obituary
+(15)
+opinion
+(47)
+paper
+(273)
+book
+(23)
+Companion
+(13)
+update
+(26)
+question
+(128)
+polymath
+(87)
+talk
+(69)
+DLS
+(20)
+teaching
+(190)
+245A – Real analysis
+(11)
+245B – Real analysis
+(22)
+245C – Real analysis
+(6)
+246A – complex analysis
+(11)
+246B – complex analysis
+(5)
+246C – complex analysis
+(5)
+247B – Classical Fourier Analysis
+(5)
+254A – analytic prime number theory
+(19)
+254A – ergodic theory
+(18)
+254A – Hilbert's fifth problem
+(12)
+254A – Incompressible fluid equations
+(5)
+254A – random matrices
+(14)
+254B – expansion in groups
+(8)
+254B – Higher order Fourier analysis
+(9)
+255B – incompressible Euler equations
+(2)
+275A – probability theory
+(6)
+285G – poincare conjecture
+(20)
+Logic reading seminar
+(8)
+The sciences
+(1)
+travel
+(26)
+Uncategorized
+(1)
+additive combinatorics
+AI
+approximate groups
+arithmetic progressions
+Artificial Intelligence
+Ben Green
+Cauchy-Schwarz
+Cayley graphs
+central limit theorem
+Chowla conjecture
+compressed sensing
+correspondence principle
+distributions
+divisor function
+eigenvalues
+Elias Stein
+Emmanuel Breuillard
+entropy
+equidistribution
+Erdos
+ergodic theory
+Euler equations
+exponential sums
+finite fields
+Fourier transform
+Freiman's theorem
+Gowers uniformity norm
+Gowers uniformity norms
+graph theory
+Gromov's theorem
+GUE
+Hilbert's fifth problem
+ICM
+incompressible Euler equations
+inverse conjecture
+Joni Teravainen
+Kaisa Matomaki
+Kakeya conjecture
+Lie algebras
+Lie groups
+Liouville function
+Littlewood-Offord problem
+Maksym Radziwill
+Mobius function
+Navier-Stokes equations
+nilpotent groups
+nilsequences
+nonstandard analysis
+Paul Erdos
+politics
+polymath1
+polymath8
+Polymath15
+polynomial method
+polynomials
+prime gaps
+prime numbers
+prime number theorem
+random matrices
+randomness
+Ratner's theorem
+regularity lemma
+Ricci flow
+Riemann zeta function
+Schrodinger equation
+Shannon entropy
+sieve theory
+structure
+Szemeredi's theorem
+Tamar Ziegler
+ultrafilters
+universality
+Van Vu
+wave maps
+Yitang Zhang
+The Polymath Blog
+Polymath News and AI
+Polymath projects 2021
+A sort of Polymath on a famous MathOverflow problem
+Ten Years of Polymath
+Updates and Pictures
+Polymath proposal: finding simpler unit distance graphs of chromatic number 5
+A new polymath proposal (related to the Riemann Hypothesis) over Tao’s blog
+Spontaneous Polymath 14 – A success!
+Polymath 13 – a success!
+Non-transitive Dice over Gowers’s Blog
+53 comments
+Comments feed for this article
+18 September, 2026 at 9:45 pm
+Anonymous
+Great post Grant!
+Btw, couldn’t professors use AI to write textbooks if tenure depended on this?
+Reply
+18 September, 2026 at 10:28 pm
+ryeguy10
+“Hiring and tenure decisions could place a higher value on writing great textbooks and similar work.”
+I don’t like this. Again, Bourgain?
+Clearly you want to reward people who can prove interesting things with the models. Great mathematicians ill be able to prove more with the models than others.
+Terry is a great expositor and the world’s leading mathematician (I guess you could make a case for Scholze but I’d go with Terry) but is not be the world’s best expositor (I mean this literally, he’s great, but “world’s best” is a really high bar). If Terry had been growing up nowadays, would we not want him to stay in math, or would we recognize him as good but not tippy top?
+Terry plus the AI will prove many more interesting and enlightening theorems than person X plus the AI.
+With Bourgain it’s an even bigger deal. Again do you want the next Bourgain to go right to industry? I don’t want this at all. Bourgain plus an AI will do a lot more than the AI by itself.
+Exposition also may well become a solved problem. I don’t see why future AI’s cannot improve at this.
+Essays like this make me extremely uneasy. You could imagine a world where hiring decisions become extremely subjective and political.
+Reply
+19 September, 2026 at 10:11 am
+Terence Tao
+I would argue that Jean’s somewhat infamous focus on problem solving at the expense of exposition was a *consequence* of the incentive system of the era, rather than a *justification* of it. From my personal interactions with Jean, I know that he was perfectly capable at exposition or outreach in various media, from private conversations to public lectures. To give just one example, I offer
+the video profile of Jean for the 2017 Breakthrough Prize
+.
+In fact I would assert that if the incentive system in the days of Jean’s early career had transferred some of the weight assigned to raw problem solving to that of exposition, that Jean, having adjusted his writing style accordingly, would in fact have had even *more* of an impact on mathematics (and the broader community) than the (considerable) amount he does today.
+Speaking personally, my own views on exposition were heavily shaped as a graduate student both by Thurston’s widely known essay (which came out at that time), as well as the amazing textbooks and lectures of my advisor, Elias Stein. Had I instead started my studies in Bourgain’s era, I may well have adopted a similar writing style to Jean in his early days, for better or for worse.
+Reply
+19 September, 2026 at 8:04 pm
+ryeguy10
+That’s fair.
+I do think and hope that AI will get better at exposition.
+But I think and hope that AI will enable us to push mathematics to new heights. I like your suggestion about a PhD thesis proving hundreds of results and noting statistical patterns in them. What makes some problems true and some problems false? Is it easy to tell? I wonder if this is how we will ultimately prove P=/=NP.
+Reply
+19 September, 2026 at 8:05 pm
+ryeguy10
+I worry a bit about an overemphasis on exposition. I think it’s OK if there is a ton of mathematics and we don’t quite digest all of it. Just knowing whether many conjectures are true or false without knowing exactly why could be super helpful, and could advance our understanding of mathematics in a lot of ways. Again I think we could prove many interesting and deep theorems with an oracle that was able to just solve open conjectures with some high confidence.
+Reply
+18 September, 2026 at 10:38 pm
+Anonymous
+When you write things such as “Hiring and tenure decisions could place a higher value on writing great textbooks and similar work.”, it implicitly assumes that AI will not be better than humans at writing these, but I think we can not assume this. Thus, your suggestion does not really solve the problem of hiring decisions and assignment of credits.
+Reply
+19 September, 2026 at 11:13 am
+Anonymous
+It doesn’t solve it, but at least it positively aligns the outcome (one hopes) with what mathematicians are claiming to be the goal of human mathematics.
+Reply
+18 September, 2026 at 10:38 pm
+Anonymous
+Thurston’s essay “On proof and progress in mathematics” has been brought up a lot on this blog. It is frequently cited positively. So that we do not create a false memory of the content of that document, let us not forget that part of the genesis of that document was so that Thurston could talk about his own role in creating proof indigestion that had serious consequences in the community (e.g., “Within a couple of years, a dramatic evacuation of the field started to take place.”). Terry has quoted some of that material recently
+on this blog
+.
+There is another vexing aspect of that article that I have not heard mentioned yet on this blog, namely the elephant in the room that Thurston was the beneficiary of a massive amount of privilege. He received professional credit at the highest levels for results that he did not share complete written proofs of. Those results had to wait for decades for others to write the proofs. That is a true privilege, which many professors would like to have but do not, to receive professional credit for results that you claim without also having to spend the time and effort to write proofs. Writing is hard for everyone. The reason this is an “elephant in the room” is that the essay does not address it, even though it was a key component in the two incidents of proof indigestion that he discusses.
+Perhaps it’s not fair to judge the essay, written in 1993, for not acknowledging privilege. That judgment is certainly on the table if we are going to lionize it in 2026.
+Reply
+19 September, 2026 at 9:13 am
+Anonymous
+Not sure if I can quite follow you on the privilege topic: Are you actually implying that everyone should use every opportunity to disclose the privilege she is enjoying? Then all of us here would just be talking all the time about being privileged instead of discussing the actual topic at hand. Also, sadly, it doesn’t seem like you talked enough about your being privileged in your message above.
+Reply
+18 September, 2026 at 10:49 pm
+yuxin chen
+I wholeheartedly agree with your opinion. I propose here a first candidate for your ‘Millennium problem list’ in terms of providing a motivated explanation: the classification of finite simple groups. My reasons are as follows:
+1: the basic concepts are accessible to general public. This makes it a good starting point to engage general public into deep and profound research mathematics. It also helps to convey the idea ‘mathematics is not only about proof, but also about human understanding’. When the problem is not very complicated (which is the case for almost all mathematics problems encountered by people outside of professional math), it is hard to distinguish between ‘proof’ and ‘understanding’. It is when the complexity of problem exceeds a critical point that these two things start to look different.
+2: the proof involved many profound mathematics of different areas, and as far as I know, many professional mathematicians don’t fully understand the proof either. Many people are interested in the proof (including me), but are unable (and have no time) to navigate thousands of pages of papers with technical details only very few experts are familiar with. This project does not only bear pedagogical benefit of general public, but also can enhance the understanding of professionals.
+3: there is a real danger that the proof will become a ‘lost craft’ as the experts who really understand everything gradually retire. Many people feared that in an AI dominated future, the whole mathematics will be a ‘lost craft’. But if we have to save entire mathematics from such fate, why don’t we try something easier first? Why don’t we try to rescue classification of finite simple groups from oblivion?
+4: this will be a valuable rehearsal of a very plausible future where we have to decode long and convoluted AI proofs. People keep arguing that machine will produce complicated proofs that are not understandable to humans, but from my point of view, humans have already been doing this for a long time, just in a smaller scale. If we can somehow provide a ‘motivated explanation’ of classification of finite simple groups, we will be better prepared when AI produces a thousand-page long resolution of the Riemann Hypothesis.
+5: this project is obviously very challenging, and requires mass cooperations within and beyond mathematics community. But this is exactly what a ‘Millennium problem’ suppose to inspire.
+I would also like to provide a final remark, which is kind of irrelevant to this particular post. It’s very good to see so many philosophical discussions among mathematicians. But what we need the most, I think, is action. When an earthquake strikes a city, the government has to react within hours. Research mathematics don’t have a central government, but since the impact of AI on it possibly exceeds any earthquake can have on a city, we need to react as fast as possible.
+Reply
+18 September, 2026 at 10:56 pm
+Anonymous
+“there is nothing more exciting than entering a field when it is malleable and you have a chance to actively shape what it will look like in the future.” I could not agree more. However, it is likely that AI can or will do the bulk of the motivated explanation too once a result is known. The actual process of discovery, setting new rules or axioms, modelling unknown situations, and creativity are what will set mathematicians apart in my view. These are hard to teach, but humans excel at this part and will probe nature (including the mathematical universe) based on intuition and it is not sure that AI will reach that stage fast. The creative breaking of boundaries to pursue new mathematical areas (perhaps in combination with motivated explanation by a human or AI) is rarely taught in mathematics departments (or schools for that matter) and motivated explanation forms part of this of course.
+Reply
+18 September, 2026 at 10:58 pm
+Anonymous
+Jacob Tsimerman claims we’ll have superhuman expositors by April, so then what hehe? (video is timestamped url)
+Reply
+19 September, 2026 at 4:57 am
+Anonymous
+Suppose we have “superhuman exposition” by April, but eventually no communities of practice because humans essentially never share mathematics face-to-face. Is there really a reason to engage with such exposition if it will not be brought into a human conversation? One has to also think of the reason we have the exposition in the first place. I do not think this question is vulnerable to the “AI cannot do this *yet*” critique, since in the end humans and their communities are ends and not means.
+Reply
+19 September, 2026 at 7:02 am
+Anonymous
+I am amazed how AI pilled some people can be. To Tsimerman’s point that “AI will be best expositor”, I say that what is “best exposition” depends highly on the human learner who is trying to
+understand
+math. Further, there is no evidence that the exposition effectiveness function is static (or even well-defined) and will stop needing human input as time progresses or new material is developed. That is why it is important to focus on primarily benefits and encourages human understanding of math rather than machine understanding. I am all if AI can help us with this goal rather than get in the way.
+Reply
+19 September, 2026 at 11:29 am
+Anonymous
+AI is more capable than human to customize and personalize expositions. Humans write books “for all audiences”, but AI can write something just for you, based on past interactions with you and its knowledge about your taste, style, level, etc.
+Reply
+18 September, 2026 at 11:34 pm
+Anonymous
+I contend that it was not really generally true that “true goal of mathematicians […] is to further human understanding.”
+If you are saying that this might now be the only way human mathematics survives, I can agree.
+But let’s be honest, it has not been often the case up to now. In many cases mathematicians care(d) a lot about how intelligent they appear to the world.
+Del Ferro and Tartaglia kept their formulas a secret to be used in contests, Gauss was said to erase his tracks as a fox, and even in our times many write mainly (for career and) to show that they solved a very difficult problem and they are intelligent. In some cases even worst than that: the more obscure the proof looks to others the more they feel intelligent.
+Mathematics has always had a flavour of contest about who is smarter, with proliferation of fields and problems to allow more and more people to play the game. Usually paid, in most cases with public money.
+I liked it a lot, don’t take me wrong. But honestly, I think the first step is not saying that the goal had always been “further human understanding”, but that this might be the only goal which matters from now on.
+I suspect the contest about who does this better will be in any case a relevant aspect for the community.
+Reply
+19 September, 2026 at 12:55 am
+Anonymous
+From the article: “However, framed correctly, this is one of the most exciting times to go into the field, because there is nothing more exciting than entering a field when it is malleable and you have a chance to actively shape what it will look like in the future.”
+Thank you for this insightful article!
+Am I right, if I summarize the main proposal as to give more material value to the arts/literature aspects of mathematics, while traditionally we gave most values to its scientific/engineering aspects?
+I agree with this idea, and hope we soon find good practical ways to carry it out!
+At the same time, the scientific/engineering aspects of mathematics can also be amplified as well. With the developing AI tools, we can handle the next level challenging problems that we were not being able to even dream. Vision is important here, to know what to aim.
+Also, echoing the author, I think that now is a great time to enter into applied mathematics, as the massive help of AI can let us more effectively approach the really challenging problems that the society is facing for its survival, such as climate change, sustainable economy, pollutions, stable politics, and AI safety, etc.
+I think we also want to look outside of us, although for us as mathematicians, it is really important to sustain our community to preserve and enhance one of the most interesting and valuable human activities. From my personal experience, I know that often the inner problems are solved when we look at outside. Maybe we, as mathematicians, also want to ask, “What can we do AND what we want to do, with our mathematical strength and with the AI tools, to help the society wisely face the challenges (some caused by AI) for its survival?” Maybe it is the time, we, mathematicians, can make more impactful and direct contributions to the society for its benefit.
+Reply
+19 September, 2026 at 1:00 am
+Marcin Kotowski
+“A PhD advisor can still assign a small problem from their field for a new student to cut their teeth on, but the deliverable would not be to write up a solution; it would be to present that solution to peers and faculty as a talk. It could be an already-solved problem which lacks clarity, or perhaps it’s a problem that lacks a solution, and the student uses AI to help find it. “
+Imagine you’re a smart ambitious 20-year old. Do you find attractive an education path that requires several years of undergraduate learning and then a PhD, which consists mostly of reading AI slop and solving “exposition problems”, and after which it’s not even clear there’s going to be a career? Where is the sense of fun, empowerment and satisfaction in that? The answer is, of course, there is none, or very little. Consequently, young people will simply choose different fields (assuming these won’t also be swallowed up by the Moloch). This is a point I find missing in most discussion of the seismic shifts in the field.
+Reply
+19 September, 2026 at 8:53 am
+Anonymous
+thanks. This is a very good point. A lot of very talented and highly driven people go into mathematics. If you tell them that their primary job is now exposition imagine how badly the community has let those young people down.
+If such a situation is forced on the young people we should no longer expect a younger generation working actively in the area
+Reply
+19 September, 2026 at 10:39 am
+just different
+No, there will always be very talented and highly driven people going into mathematics. Only those whose sole talent is hand-solving problems will be no longer needed in the field, just like prodigious mental calculators were needed in the 19th century but not the 20th. So what?
+Reply
+19 September, 2026 at 12:06 pm
+Marcin Kotowski
+No. If you’re talented and highly driven, you want to create something by yourself. In business, in art, everywhere. If the whole job becomes “digesting slop”, there is very little space for creativity left.
+Reply
+19 September, 2026 at 9:00 am
+just different
+I’ve seen you post this kind of comment elsewhere. Why would hand-solving obscure problems be the only thing smart, ambitious 20-year-olds be interested in doing? Lots of very bright people go into academia in a variety of fields which don’t require hand-solving problems.
+Those allegedly smart, ambitious 20-year-olds who stake their entire identity on hand-solving problems always seem to be the first to leave for industry, where they’re happier anyway.
+Reply
+19 September, 2026 at 12:04 pm
+Marcin Kotowski
+Yes, there’s a lot of things an ambitious young person can choose to do. Many of them give the opportunity to “make a dent in reality” (discover something new, solve a challenging problem etc.). Why on earth, then, would someone choose a career consisting of AI slop exegesis? Because “it furthers human understanding”? You’re massively underestimating how important feelings of agency, accomplishment and adventure (as opposed to pure contemplation of beauty) are in any human pursuit.
+Point is, literary critics and writers are two different species. Mathematicians used to be writers, now they’re going to be relegated to literary criticism. The most dynamic and creative will not choose this path.
+Reply
+19 September, 2026 at 3:04 pm
+just different
+The most dynamic and creative will have a lot more imagination about using AI for mathematical work than you seem to.
+Reply
+19 September, 2026 at 12:50 pm
+Anonymous
+It’s not inherently bad for society. AI/Math will attract different talents, such as those leaning into Youtuber/content creation. The smart people who would have become pure mathematicians will work on AI alignment and collect their $600k paycheck. May be a win-win after all.
+Reply
+20 September, 2026 at 1:36 am
+Samuel Gagnon
+It may be anecdotal, but as someone who had the privilege of actually working on “exposition problem” as part of his master degree in mathematics/computer science (before LLMs were “a thing”), I can say without a doubt that I really enjoyed doing that.
+It’s simply not the same activity as writing proofs. While some people may not appreciate solving “exposition problems”, other (like me) will.
+For job perspectives, in days where AI can produce code like never, the same set of skills required to solve “exposition problem” can be extremely useful in making software development more human understandable and more aligned with objectives. That is what my career is currently based on and it really helps me stand out among others.
+Reply
+19 September, 2026 at 2:48 am
+Anonymous
+As another commenter here, it does not look to me that a better exposition (and better honesty perhaps) is a solution to the current crisis (though it is a solution for the def/thm format).
+But I think no LLM can cancel the wish to understand the unknown or get over the impossible. And the fact that they can give a formally verified information is just something that did not exist before for the big theorems (and sometimes left the doubt whether the experts did really have a proof, or it was just some understanding between gentlemen, sorry; “a social fact”).
+It is just that it looks like each one (or each group) will now eventually act on his own, and I don’t see how one can escape from the fact that the most capable will be the one having most resources, and having an access to a machine which lies less (they all lie already about “politics”, but recently it was found out that some of them obscure LLM details to hurt competition, for example).
+Reply
+19 September, 2026 at 3:14 am
+Anonymous
+The people in the driver’s seat are Altman, Amodei and Musk.
+It is very instructive that Bubeck tried to treat Buckmaster like an employee even though he wasn’t one. It is ten times worse if you actually work for a software company. They are run like totalitarian states.
+Where will the proposed open solutions rent the hardware? At xAi like Anthropic does?
+Nothing is inevitable. Nuclear energy was thought to be inevitable and is now banned in Germany. I leave it open whether that is desirable, but bans, regulations and treaties are absolutely possible.
+It is interesting that there are no guest posts who want to put on the brakes. I’m sure there are such mathematicians. Perhaps they stay off the internet entirely?
+Reply
+19 September, 2026 at 3:34 am
+Peter Morgan
+A ‘motivated exposition’ seems close to conceptual analysis, which is valued in philosophy. ‡
+Motivated exposition is close to my heart because I am one of five winners of Curt Jaimungal’s #CORE1 Competition for Outstanding Research Explanations, which is a competition that Curt modeled on Grant Sanderson’s similar competition for mathematical explanation. I certainly consider my winning submission to be as much philosophy and mathematics as it is theoretical physics, and it is through that crossover that I think it contributes a little to our understanding of quantum field theory as mathematics.
+The title of my submission, “Explaining Quantum Field Theory as a Dataset&Signal Analysis formalism #CORE1” —with ‘explaining’ in the title, yay!— is intended to point to a connection to Machine Learning and the practicalities of experiment as much as to theoretical physics. A focus on ‘data’ is part of the conceptual analysis/motivated explanation that leads to a new understanding of renormalization as a surreptitiously introduced nonlinearity that has an inverse problem relationship with existing path integral methods through the analytic structure of the Wightman axioms. My prejudice is that real discovery takes this kind of path.
+‡ Please ignore the following if you want to see only my opinions, as above:
+Having written “A ‘motivated exposition’ seems close to conceptual analysis, which is valued in philosophy.” I gave it as a prompt to Google and then, seeing that Google more-or-less approved, I asked Google AI Mode, “I am writing a comment responding to this guest blog post by Grant Sanderson,
+https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/
+Do you have any suggestions for how to follow “A ‘motivated exposition’ seems close to conceptual analysis, which is valued in philosophy.”?”
+Google AI Mode suggested three options for how to follow my first sentence,
+1) The “Why Definitions Matter” Angle (Conceptual)
+2) The “AI and the Crisis of Meaning” Angle (Contemporary)
+3) The “Actionable Standards” Angle (Pragmatic)
+Anyone can do the same with their favorite AI, or follow the link to Google’s result,
+https://share.google/aimode/oyxk1Q4F9MkLBkHjO
+, and I found all three options from Google AI Mode worthwhile, so I won’t choose one of those.
+Reply
+19 September, 2026 at 3:48 am
+Anonymous
+The writer of this blog post with his absolutely amazing educational videos earns his credits directly from the social media market. Most mathematicians commenting here earn it from tax payers and students, both a kind of market. While there are notable differences between these markets (YT is brutal, tax payers much more naive, they can be efficiently fooled for a longer time as their market is highly intransparent, the students are paying for the reputation of an institution which is again a complex construct etc.), they are dwarfed by the bottom line: whatever artifacts are produced by the currently paid mathematicians will be infinitely superseded in both quality and quantity by what AI can do. The disruption needs to be and is going to be much bigger than indicated in most of these posts. It’s not about merely choosing another proxy to maintain roughly the same hierarchy. It’s really about how to get paid by the market (to the extent that any of it remains) after it turns out that you can’t produce anything better than your much cheaper competitor. Many professions obviously experienced that throughout the history, you guys are screaming as you were the first ones. The only thing that is different now is that it happens simultaneously to ** all ** professions. But then again, that’s also not about you mathematicians being any special here.
+Reply
+19 September, 2026 at 9:27 am
+Anonymous
+There is of course no market between taxpayers and professional mathematicians. The mathematicians are mostly paid to teach at universities. Also, you don’t think at all by the logistics of AI producing the vast numbers of mathematical papers (see the number uploaded to arxiv).
+Reply
+19 September, 2026 at 4:21 am
+Anonymous
+Grant Sanderson doesn’t state this explicitly and his name may not ring a belle but he is the person behind the great
+https://www.3blue1brown.com/
+project, which is familiar to many of us.
+Reply
+19 September, 2026 at 5:10 am
+Anonymous
+I can not imagine young faculty hired (just) for better exposition. Sorry. I am not saying this is not what one should do, I just can not imagine it; this is too close to hiring TikTok influencers.
+It is much easier to imagine all basic research in universities being gone in a year than that. Maybe it is actually the same.
+Strange times.
+Reply
+19 September, 2026 at 2:48 pm
+Anonymous
+Really strange. Hiring based on exposition would have been somewhat common by now if it was found valuable. Obviously it has not been. This naturally makes people suspicious of the claim that it is a valid thing to do.
+Reply
+19 September, 2026 at 5:30 am
+Anonymous
+This is a very well-written piece, and I appreciate the author’s instinct to propose solutions. However, what makes the author believe that “motivated explanations” cannot also be produced by AI?
+I disagree with the examples offered as possible deliverables for PhD students. Imagine that a student is asked to explain a particular problem in a talk, following a rubric designed to assess motivated explanation. That rubric could simply be given to an AI, which would then generate the explanation. The student would be incentivised to understand or memorise the AI-generated material only well enough to satisfy the examiners.
+This would not cultivate creativity or originality. The intellectual faculties responsible for developing an explanation from first principles would remain underdeveloped. Instead, the research student would become optimised for understanding, memorising and reproducing AI-generated explanations. How, then, does this solve the underlying problem?
+There is no doubt that AI is causing massive disruption within the mathematics community. However, I fear that proposals of this kind merely kick the can down the road. The only genuine way forward is through honesty, discipline, integrity and curiosity. The entire academic reward system may also need to be reconsidered so that these virtues are genuinely encouraged.
+Students must be allowed to wrestle with research problems themselves—and, importantly, to fail without being destroyed by that failure. They should be able to get up, try again, fail again and continue until they make meaningful progress, without relying on AI to do the thinking for them.
+This approach may still fail, but I believe it is the only credible way forward.
+Reply
+19 September, 2026 at 7:02 am
+Anonymous
+Problem is it’s not. It is just proof that the prediction lead to somewhere what the calculation is meant to lead. The reality what the result means is in the mind of explainer.
+Reply
+19 September, 2026 at 7:14 am
+Anonymous
+I don’t know what happened to the other comment that got downvoted into oblivion, but despite the lack of tact, it kind of had a point. The young researchers want stability, they want some degree of certainty that whatever craft they are honing during their PhD won’t be obsolete as soon as they enter the job market. What would prevent AI labs from benchmaxxing any “list of open exposition problems” we give, or use any human-curated “Lean certificate” -> “motivated exposition” dataset as a reinforcement loop? What guarantees that proof exposition won’t be solved in a few months?
+And what can the field’s leaders do aside from yet another strong worded letter? The AI corporations have repeatedly demonstrated that they don’t care about the human mathematician’s profession disappearing, and the market forces are far stronger than any desperate plea we can utter. The math community already served several benchmarks on a golden plate to AI companies (First Proof, Frontier Math…), are we so adamant at accelerating our own irrelevance?
+Granted, I don’t know for sure what will happen from here, but I know that any serious attempt at imagining the future (and painting a more reassuring picture for the junior researchers) must account for all the extreme outcomes. Besides, believing in a human “supplement d’ame” in any mathematical exercise has not served us well so far. So in the most extreme cases, what remains? Understanding the AI expositions? On a purely transactional perspective, will this even be necessary, if AIs can both advance frontier math and apply its discoveries to frontier science and engineering without humans in the loop?
+I know, we can all agree that accelerating progress in the sciences is important, but there is nothing shameful in acknowledging that, deep down, we still want to be relevant and useful in that process. We should be honest about it, at last. We are social animals, it is our nature to want credit and recognition for our hard work, be it proving theorems, canonizing the mathematical cathedral, or devising beautiful expositions. I don’t think mathematics as a human tradition will survive without that.
+Reply
+19 September, 2026 at 2:33 pm
+Anonymous
+Best post here. Thank you.
+Reply
+19 September, 2026 at 8:18 am
+Anonymous
+I wonder if mathematics could come to feel more like journalism– you go out, you explore an unfamiliar place or country, and you file a report. Journalists don’t discover or create the places they are covering and yet, journalists have their own system of rewards and some journalists are regarded more highly than others.
+Reply
+19 September, 2026 at 8:56 am
+Anonymous
+Thank you for the excellent piece! I enjoyed reading it and very much agree with lots of the points you make. I am in fact a couple of days into a project to read an AI-generated proof and “digest” it as much as I can to produce a better exposition, and I’m finding it much more enjoyable and fulfilling than I expected. It would still have been more enjoyable to come up with it all myself though.
+One point I wanted to make, more in relation to the comments than the article, regarding whether AI will eventually (or, soon) be superhuman at exposition as well is this: I feel like this article and many of the other ones on this site and others have an unwritten assumption in them. This is that there is so much to mathematics beyond just proving things (even though it can go unappreciated) that if an AI does become genuinely superhuman at all of mathematics in this broader sense, then this will cause such an enormous impact on the entire structure of society that we’ll have much bigger things to worry about than what’s happening to mathematics.
+For example, it’s not inconceivable (though beyond current capabilities of course) that an AI could easily produce an entire 3blue1brown video from a single prompt (make a 30 minute video in this style about this topic) which was as good at explaining the concept at hand as the real deal. But then, an AI which was so much better at mathematical exposition and teaching than us could probably replace so much human labour that society in its current form would become almost nonsensical. To understand what would become of mathematics, we’d first have to understand what would become of everything else, which is a scary thing to think about.
+Reply
+19 September, 2026 at 9:02 am
+just different
+Why “motivated” explanation instead of “motivating” explanation? “Motivated explanation” sounds too much like “motivated reasoning” to me.
+Reply
+19 September, 2026 at 9:48 am
+pauljung
+This is a wonderful idea, which has my full support. I would also be happy to join any nascent efforts in this direction.
+Reply
+19 September, 2026 at 10:01 am
+friederrrr
+Mathematics will become more engineering-like. I don’t quite understand why many mathematicians cling to exposition: “A PhD advisor can still assign a small problem from their field for a new student to cut their teeth on, but the deliverable would not be to write up a solution; it would be to present that solution to peers and faculty as a talk. It could be an already-solved problem which lacks clarity.”
+Arguably, explaining a problem better is a much simpler task for AI (and for humans) than finding a novel proof. Unless we assume that human understanding _has_ to originate from humans to be accepted, I am not sure whether this point will prevail.
+The jury is still out on what the activities of a future mathematician will still be. Orchestrator of LLMs is a sure bet :)
+Reply
+19 September, 2026 at 11:16 am
+Anonymous
+If there is a problem with mathematicians getting their work stolen by LLMs, then why not make everything analogue, and only correspond with other mathematicians on your progress. Like it was in the old days. This should be done until the owners of the LLMs respect the mathematicians.
+Reply
+19 September, 2026 at 11:20 am
+Mohamed Alhosani
+“Discovery fiction” reminded me of Sussman’s “problem solving by debugging almost right plans”.
+Reply
+19 September, 2026 at 11:38 am
+Anonymous
+An aspect that seems not to be mentioned is the training of LLMs and other agents. Tsimerman will not get superexpositors in April unless EVERYONE gets involved in training these models to provide good expository content.
+When I start an exploratory project with any agent, I usually insist on explanations at both local and global levels, and I query the agent on specific points. (For some agents I also ask for literature and reference searches to allow correct attribution, and I also ask for other connections to the literature for future explorations by others.) There may be more effective ways of training to do good exposition, but I think this way is a good start.
+I think a better generator of a list of open exposition problems is a leader (not in mathematics, but) in exposition problems. I think a team of various YouTube creators could come up with such a list that would be more to the point and inspiring than a list by a team of experts whose knowledge base is more technically refined and less accessible.
+Gerhard Paseman (still entertaining system design questions)
+Reply
+19 September, 2026 at 12:44 pm
+Anonymous
+The people that love doing math will continue to do it, with or without institutions, or AI. Institutions will continue to generate slop, they just might not need to extract it directly from mathematicians any longer.
+Reply
+19 September, 2026 at 3:21 pm
+Anonymous
+Written standards could clarify what constitutes a motivated explanation, aiming to make it nearly as verifiable as proof,
+As the verifiability of the task approaches the verifiability of a proof, I’d conjecture that AI’s ability to perform the task will approach and surpass human performance. The verifiable regime is where AI excels because reinforcement learning with verifiable rewards has been so effective. I like this post, but if this call to action succeeds, we’ll need to find another thing for mathematicians to do before long.
+Reply
+19 September, 2026 at 5:52 pm
+Anonymous
+There’s an “industry” of chess masters analyzing chess games, now popular on youtube, but done in earlier times through books and magazines. You’d look at a game and explore the possible decisions that could be made at its different board positions, and what was good and bad about them. The strongest players now are all computers, though human players still analyze computer games. They will say “in this position the computer went here because XYZ. Then it made this move and hmm, well I can’t really understand why it did that”. The moves are sometimes beyond human comprehension, and investigating the computer’s “thoughts” (sequences of moves that it expects to see) doesn’t even help much. Maybe math will get that way too. Doron Zeilberger has been predicting it for decades.
+Reply
+19 September, 2026 at 4:50 pm
+Anonymous
+I guess I think of proxies as an extravert thing that
+real
+nerds shouldn’t want to worry about ;). Sure, they’re needed for tenure decisions and stuff like that. But I went into math (ok, I didn’t end up staying in it) because I wanted to experience the math directly, and particularly to cultivate the mental states that it took to explore a tantalizing math idea, and to get wound up in them through what I called “raging math hormones”. Artists cultivate similar states to explore the human condition, and they’re stereotypically tortured people because of that condition’s innate ugliness. But math is beautiful in all directions, so I saw math as being like art without the torture, if that makes any sense ;).
+You don’t have to worry about tenure if you don’t mind teaching calculus like Yitang Zhang did (the prime gap theorem was a cherry on top). For that matter, even Grothendieck went off and taught calculus for decades after leaving IHES. He didn’t care about proxies, so I always considered him to be the king of the nerds.
+Reply
+19 September, 2026 at 8:00 pm
+Anonymous
+Miguel Noether
+One of the biggest problems is that we are mostly listening the thoughts and opinions from mathematicians (and other fields in twitter) which have already established careers before the summer of AI. In such a position, you can safely discuss how to use AI or completely be against it. It barely matter to their future career. The yongest generations are the ones who are the most vulnerable and suceptible to this generational change in how science is done, funded and rewarded. AI has brought solutions and tremendous opportunities but also new problems and unfortunately has worsen the old problmes even more, those problems that the old generation which are the ones that we are listening to refused to solve and are refusing to solve. Thus complicating the way AI is seen from the outside and the role of mathematicians (and scientist in general) should play in this time of change.
+Reply
+19 September, 2026 at 11:50 pm
+Anonymous
+I think this whole discussion has very weak assumptions:
+– That AI will not become better at writing and drawing motivated explanations.
+– That the desires of mathematicians will be well-aligned with the desires of the majority of those who actually pay mathematicians.
+It’s not crazy to imagine a future where only a few sources of money are willing to fund human-led intellectual work anymore, due to AI being able to generate the expected outputs at a lower cost. Even before AI, there’s been a decline in funding for non-applied research and departments in universities, because pure understanding, while popular among academics, is not really that much valued by the outside world; at least not in the sense of it being something people are willing to pay for. Perhaps top departments and mathematicians will be safe from this for a while, but less privileged mathematicians across the world may well be fired if they don’t use AI; not as a policy, but by being outcompeted by those who do use it. We all know the issues with “publish or perish”, and AI may well push for a culture of “publish or perish” on steroids.
+If mathematicians really want to push for intellectual curiosity to be valued, it is people and systems outside of math that need to be the target of the discussion. Else, we might as well be discussing about a future hobby.
+Reply
+20 September, 2026 at 1:56 am
+Anonymous
+I think if the field of maths goes in this direction it would be so useful in the classroom and for students as well: To encourage understanding, and having fun with things, and exploration, rather than a focus on memorization.
+Reply
+Leave a comment
+Cancel reply
+For commenters
+To enter in LaTeX in comments, use $latex
+<Your LaTeX code>
+$ (without the < and > signs, of course; in fact, these signs should be avoided as they can cause formatting errors). Also, backslashes \ need to be doubled as \\. See the
+about page
+for details and for other commenting policy.
+«
+SAIR’s Open Math Model initiative
+Why Do We Need Human Mathematicians Anymore?
+»
+Blog at WordPress.com.
+Ben Eastaugh and Chris Sternal-Johnson.
+Subscribe to feed.
+Comment
+Reblog
+Subscribe
+Subscribed
+What's new
+Already have a WordPress.com account?
+Log in now.
+What's new
+Subscribe
+Subscribed
+Sign up
+Log in
+Copy shortlink
+Report this content
+View post in Reader
+Manage subscriptions
+Collapse this bar
+%d

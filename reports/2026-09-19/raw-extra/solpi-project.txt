@@ -1,0 +1,1128 @@
+URL: https://nvlabs.github.io/SoL-Pi/
+FINAL: https://nvlabs.github.io/SoL-Pi/
+TITLE: SoL-Pi: Scaling Auto-Research Loops for Efficient Agent Harnesses
+FETCHED: 2026-09-20 19:31:12
+============================================================
+Research project
+SoL-Pi:
+Scaling Auto-Research Loops for Efficient Agent Harnesses
+Spend less without getting less done.
+Paper
+↗
+Code
+↗
+Introduction
+The arc of coding agents has been short and steep. They moved from
+completing
+lines
+to
+resolving issues across
+repositories
+, acting on feedback and even
+modifying the tools around them. With modern harnesses,
+thousands of agents can
+now work together continuously for a week without human
+intervention
+. This raises a
+basic question: over an unsupervised run of hours or days, does every token
+carry the work forward, or does redundancy grow with trajectory length?
+The question deepens with
+recursive
+self-improvement
+(RSI). Once AI can work on complex software systems, it can also work on
+the
+systems that produce AI
+.
+RSI may therefore accelerate progress toward more general intelligence. Yet RSI
+is itself token-intensive: every attempt to produce a better system spends
+tokens, whether or not it succeeds. Before scaling RSI, should we first ask AI
+to make AI more efficient?
+To address this problem, we built a scalable RSI pipeline. Agents construct
+executable environments for harness rollouts from
+public data
+and
+publicly available software environments
+. Other agents observe how models
+explore within the resulting trajectories, then turn those observations into
+auto-research loops that improve the harness under an efficiency objective. The
+mechanisms that survive these searches are combined into SoL-Pi, an agent
+harness focused on token efficiency. For a professional researcher working on a
+single problem, SoL-Pi saves
+$8.75–$13.50 per hour
+vs. native Codex and
+Claude Code harnesses, and
+$4.36–$5.71 per hour
+vs. Pi.*
+Last but not least, SoL-Pi points to a broader view of RSI: its lasting value
+may lie not in any single artifact, but in a search process that can scale
+across public environments to discover reusable improvements.
+Pi is the lightweight, extensible coding-agent harness that serves as our
+research substrate.
+EdgeBench
+is a 51-task suite of
+long-horizon executable agent work; we reserve its tasks, verifiers, and
+feedback for final held-out evaluation. * The savings range reflects the model
+backend and is calculated using official API-equivalent pricing.
+Method
+Download the SoL-Pi teaser video
+.
+SoL-Pi sends 152 proposed directions through auto-research loops; four mechanisms survive into the final harness.
+Use backup video
+·
+Download video
+We treat harness improvement as an open-ended RSI problem. We search across
+different environments for changes that can transfer to unseen settings. The
+auto-research process generates mechanism ideas in batches, sends each selected
+idea into an independent loop, and carries forward candidates that survive
+validation.
+The target is constrained efficiency: we search for reductions in cost or token
+use subject to a predeclared capability-preservation criterion. The research
+procedure remains fixed. Surviving mechanisms define the next research
+frontier.
+Auto-research proposal pool
+152
+proposed ideas
+→
+4
+surviving mechanisms
+Pause motion
+C1
+Use observed context pressure instead of global caps
+C4
+Promote facts by evidence and keep the prompt prefix stable
+C7
+Preserve compact contract anchors across compaction
+C10
+Pop verified subgoal frames into result cards
+C13
+Disable dormant mechanisms at configuration time
+C16
+Mask old observations selectively
+C19
+Keep the authoritative memory journal append-only
+C22
+Treat curated working state as a first-class product
+P1
+Make progress control evidence-based
+P4
+Recover artifacts without destructive cleanup
+P7
+Add a focused repair controller after failed checks
+P10
+Demand a check that can distinguish the broken state
+P13
+Escalate after a narrow fail-to-pass flip only with broader evidence
+P16
+Escalate repeated blocked completion with an exact command
+P19
+Prefer selective soft boundaries to hard exploration blocks
+P22
+Debounce automatic checks and keep evaluators subordinate to evidence
+P25
+Delete action-free-turn guards when the event pool is empty
+T2
+Repair malformed tool payloads within a bounded schema
+T5
+Execute deterministic command sequences with `run-steps`
+T8
+Preflight only the capabilities the task will need
+T11
+Manage long commands as explicit lifecycles
+T14
+Inject environment facts from deterministic sources
+T17
+Deduplicate exact provider tool-call IDs
+T20
+Interpret command outcomes by contract, not exit code alone
+T23
+Make `run` a language-neutral task manager
+T26
+Register agents and capabilities as data
+D3
+Route delegation by evidence need, not task length alone
+D6
+Avoid generative edit delegates without a verifier contract
+D9
+Optimize topology under a hard non-regression constraint
+D12
+Split model roles by decision density
+D15
+Make each Actor own a role and context history
+R3
+Minimize solution scope explicitly
+R6
+Test hiding visible reasoning summaries separately
+R9
+Route reasoning effort with verified progress signals
+R12
+Do not use few-shot, RAG, or keyword gates as the primary lever
+R15
+Charge escalation for cache discontinuity
+M3
+Require isolated, paired, and sealed gates
+M6
+Use issue history and blind failure mining as proposal evidence
+M9
+Replay alternatives from critical checkpoints
+M12
+Judge patches with fail-before/pass-after tests
+M15
+Bind reviewer evidence safely and prove mechanism activation
+M18
+Give analyzers a layered evidence ladder
+M21
+Use a read-only orchestrator and a filesystem queue
+M24
+Gate V2 candidates on consumption, dormant behavior, and distribution shift
+M27
+Put a bounded authoritative gate on the final diff
+M30
+Fail closed on negative or ambiguous terminal states
+M33
+Compile trajectories into structural triage views
+M36
+Resolve live service identity before operating on it
+M39
+Establish role architecture before optimizing prompts
+M42
+Choose tasks with mechanism headroom before scaling
+M45
+Repair data trust before single-model capability tuning
+C1
+Use observed context pressure instead of global caps
+C4
+Promote facts by evidence and keep the prompt prefix stable
+C7
+Preserve compact contract anchors across compaction
+C10
+Pop verified subgoal frames into result cards
+C13
+Disable dormant mechanisms at configuration time
+C16
+Mask old observations selectively
+C19
+Keep the authoritative memory journal append-only
+C22
+Treat curated working state as a first-class product
+P1
+Make progress control evidence-based
+P4
+Recover artifacts without destructive cleanup
+P7
+Add a focused repair controller after failed checks
+P10
+Demand a check that can distinguish the broken state
+P13
+Escalate after a narrow fail-to-pass flip only with broader evidence
+P16
+Escalate repeated blocked completion with an exact command
+P19
+Prefer selective soft boundaries to hard exploration blocks
+P22
+Debounce automatic checks and keep evaluators subordinate to evidence
+P25
+Delete action-free-turn guards when the event pool is empty
+T2
+Repair malformed tool payloads within a bounded schema
+T5
+Execute deterministic command sequences with `run-steps`
+T8
+Preflight only the capabilities the task will need
+T11
+Manage long commands as explicit lifecycles
+T14
+Inject environment facts from deterministic sources
+T17
+Deduplicate exact provider tool-call IDs
+T20
+Interpret command outcomes by contract, not exit code alone
+T23
+Make `run` a language-neutral task manager
+T26
+Register agents and capabilities as data
+D3
+Route delegation by evidence need, not task length alone
+D6
+Avoid generative edit delegates without a verifier contract
+D9
+Optimize topology under a hard non-regression constraint
+D12
+Split model roles by decision density
+D15
+Make each Actor own a role and context history
+R3
+Minimize solution scope explicitly
+R6
+Test hiding visible reasoning summaries separately
+R9
+Route reasoning effort with verified progress signals
+R12
+Do not use few-shot, RAG, or keyword gates as the primary lever
+R15
+Charge escalation for cache discontinuity
+M3
+Require isolated, paired, and sealed gates
+M6
+Use issue history and blind failure mining as proposal evidence
+M9
+Replay alternatives from critical checkpoints
+M12
+Judge patches with fail-before/pass-after tests
+M15
+Bind reviewer evidence safely and prove mechanism activation
+M18
+Give analyzers a layered evidence ladder
+M21
+Use a read-only orchestrator and a filesystem queue
+M24
+Gate V2 candidates on consumption, dormant behavior, and distribution shift
+M27
+Put a bounded authoritative gate on the final diff
+M30
+Fail closed on negative or ambiguous terminal states
+M33
+Compile trajectories into structural triage views
+M36
+Resolve live service identity before operating on it
+M39
+Establish role architecture before optimizing prompts
+M42
+Choose tasks with mechanism headroom before scaling
+M45
+Repair data trust before single-model capability tuning
+C2
+Reset from a verified replacement checkpoint
+C5
+Keep an immutable archive with targeted rehydration
+C8
+Reassemble tiers only on explicit triggers
+C11
+Reduce tool output before its first prompt insertion
+C14
+Measure provider reasoning as its own context axis
+C17
+Query an external context historian
+C20
+Detect and repair prompt-cache prefix churn
+C23
+Build observation packs before paying for full bodies
+P2
+Treat the tail as an explicit state transition
+P5
+Break stalls only when the next action is legal and informative
+P8
+Couple successful mutations to their verifier
+P11
+Do not generalize long-context output pruning from train hits
+P14
+Check blast radius after the first consequential edit
+P17
+Separate verified, declared, and advisory completion modes
+P20
+Repay mutation validation debt in ReAct loops
+P23
+Break repeated diagnostic loops without stopping real progress
+P26
+Use the final gate to protect evidence, not to claim capability
+T3
+Anchor edits and expose artifact-correction actions
+T6
+Do not add a persistent REPL without demonstrated state reuse
+T9
+Coalesce waiting and repeated calls
+T12
+Load specialist tools and schemas only when needed
+T15
+Apply unified diffs strictly before one unique fallback
+T18
+Emit streaming updates only at semantic boundaries
+T21
+Promote high-frequency discovery into bounded primitives
+T24
+Deliver asynchronous completion at turn boundaries
+D1
+Delegate oversized result compression with deterministic fallback
+D4
+Bound child work and measure parent reuse
+D7
+Make child execution isolated, bounded, and default-off
+D10
+Hand off fresh context between research, implementation, and review
+D13
+Buy extra attempts only behind a hard verifier
+R1
+Adapt reasoning and verbosity to phase and evidence
+R4
+Make provider capabilities part of runtime policy
+R7
+Do not treat blunt brevity or early compaction as a mechanism
+R10
+Merge narration into one event-driven status line
+R13
+Preserve exact model identity and real effort ceilings
+M1
+Mine paired trajectories with counterexamples and controls
+M4
+Keep a failure memory for future proposal rounds
+M7
+Preserve negative evidence and unavailable historical candidates
+M10
+Select among rollout summaries with a recursive tournament
+M13
+Spend a second full rollout only on high-risk tasks
+M16
+Use longer-step rescue only as a diagnostic
+M19
+Keep service-tier savings in a separate cost lane
+M22
+Keep the research funnel separable and stoppable
+M25
+Separate scheduling, execution, and monitoring authority
+M28
+Seal the manifest before computing coverage or metrics
+M31
+Prevent proposal examples and private tasks from entering evaluation
+M34
+Optimize quality and transcript economics as separate axes
+M37
+Use one worktree boundary for isolation, rollback, and comparison
+M40
+Admit expensive mechanisms through paired, low-cost gates
+M43
+Turn expert steering into a falsifiable diagnosis protocol
+M46
+Isolate protocol reforms before making them mandatory
+C2
+Reset from a verified replacement checkpoint
+C5
+Keep an immutable archive with targeted rehydration
+C8
+Reassemble tiers only on explicit triggers
+C11
+Reduce tool output before its first prompt insertion
+C14
+Measure provider reasoning as its own context axis
+C17
+Query an external context historian
+C20
+Detect and repair prompt-cache prefix churn
+C23
+Build observation packs before paying for full bodies
+P2
+Treat the tail as an explicit state transition
+P5
+Break stalls only when the next action is legal and informative
+P8
+Couple successful mutations to their verifier
+P11
+Do not generalize long-context output pruning from train hits
+P14
+Check blast radius after the first consequential edit
+P17
+Separate verified, declared, and advisory completion modes
+P20
+Repay mutation validation debt in ReAct loops
+P23
+Break repeated diagnostic loops without stopping real progress
+P26
+Use the final gate to protect evidence, not to claim capability
+T3
+Anchor edits and expose artifact-correction actions
+T6
+Do not add a persistent REPL without demonstrated state reuse
+T9
+Coalesce waiting and repeated calls
+T12
+Load specialist tools and schemas only when needed
+T15
+Apply unified diffs strictly before one unique fallback
+T18
+Emit streaming updates only at semantic boundaries
+T21
+Promote high-frequency discovery into bounded primitives
+T24
+Deliver asynchronous completion at turn boundaries
+D1
+Delegate oversized result compression with deterministic fallback
+D4
+Bound child work and measure parent reuse
+D7
+Make child execution isolated, bounded, and default-off
+D10
+Hand off fresh context between research, implementation, and review
+D13
+Buy extra attempts only behind a hard verifier
+R1
+Adapt reasoning and verbosity to phase and evidence
+R4
+Make provider capabilities part of runtime policy
+R7
+Do not treat blunt brevity or early compaction as a mechanism
+R10
+Merge narration into one event-driven status line
+R13
+Preserve exact model identity and real effort ceilings
+M1
+Mine paired trajectories with counterexamples and controls
+M4
+Keep a failure memory for future proposal rounds
+M7
+Preserve negative evidence and unavailable historical candidates
+M10
+Select among rollout summaries with a recursive tournament
+M13
+Spend a second full rollout only on high-risk tasks
+M16
+Use longer-step rescue only as a diagnostic
+M19
+Keep service-tier savings in a separate cost lane
+M22
+Keep the research funnel separable and stoppable
+M25
+Separate scheduling, execution, and monitoring authority
+M28
+Seal the manifest before computing coverage or metrics
+M31
+Prevent proposal examples and private tasks from entering evaluation
+M34
+Optimize quality and transcript economics as separate axes
+M37
+Use one worktree boundary for isolation, rollback, and comparison
+M40
+Admit expensive mechanisms through paired, low-cost gates
+M43
+Turn expert steering into a falsifiable diagnosis protocol
+M46
+Isolate protocol reforms before making them mandatory
+C3
+Maintain memory tiers on different clocks
+C6
+Use layered context epochs and event-driven compaction
+C9
+Evict stale observations deterministically before adding a summarizer
+C12
+Invalidate reads precisely after mutation
+C15
+Recover ReAct context overflow without splitting tool atoms
+C18
+Carry recent, still-valid reads across compaction verbatim
+C21
+Use progress cards when a long subtask has no clean boundary
+C24
+Gate ObservationPack by expected lifetime value
+P3
+Track verification and acceptance debt separately
+P6
+Require validation evidence before claiming completion
+P9
+Give counterexamples precedence and break repeated failure loops
+P12
+A static-reading streak is too weak a validation trigger
+P15
+Budget repair per error fingerprint
+P18
+Checkpoint workspace and process state, not only messages
+P21
+Make final output an explicit state transition
+P24
+Discover the smallest verifier after mutation
+T1
+Fix tool-call transport before tuning behavior
+T4
+Batch independent probes without hiding causality
+T7
+Do not rely on a passive observation-pressure latch
+T10
+Slim the tool surface around common action sequences
+T13
+Retry a thinking-only length stop once
+T16
+Use provider schema constraints only when they are real
+T19
+Keep generic action batches thinner than a workflow engine
+T22
+Design the core surface around `search`, `view`, `edit`, and `run`
+T25
+Add a semantic layer before polishing byte-level reads
+D2
+Delegate bounded subproblems early enough to matter
+D5
+Route models by subproblem
+D8
+Decide routing during the first two discovery actions
+D11
+Try a cheap scout before a conditional reviewer
+D14
+Consult without handing over the execution chain
+R2
+Distill tool-family policy, not only tool syntax
+R5
+Preserve provider reasoning items across tool calls
+R8
+Defer semantic prompt and schema deduplication
+R11
+Derive thresholds from the current trajectory, not the benchmark
+R14
+Probe a model before adding compatibility shims
+M2
+Separate hypothesis authorship from evidence review
+M5
+Attribute cost to actions, phases, and providers
+M8
+Evaluate a mechanism at its exact first firing point
+M11
+Feed new attempts multiple prior failure summaries
+M14
+Search harness levers with frozen layered workflows
+M17
+Run paired optimization loops for alternative PI transports
+M20
+Express orchestration with a few native language primitives
+M23
+Prove a capability gap before designing a lever
+M26
+Train on mixed distributions and estimate baseline noise first
+M29
+Make the evidence ledger transactional and replayable
+M32
+Bind review and repair packets end to end
+M35
+Stop when the evidence substrate is invalid
+M38
+Put single-turn mechanisms in the kernel and cross-turn policy outside
+M41
+Decompose packaged failures before rejecting their components
+M44
+Classify replay by the first changed decision
+C3
+Maintain memory tiers on different clocks
+C6
+Use layered context epochs and event-driven compaction
+C9
+Evict stale observations deterministically before adding a summarizer
+C12
+Invalidate reads precisely after mutation
+C15
+Recover ReAct context overflow without splitting tool atoms
+C18
+Carry recent, still-valid reads across compaction verbatim
+C21
+Use progress cards when a long subtask has no clean boundary
+C24
+Gate ObservationPack by expected lifetime value
+P3
+Track verification and acceptance debt separately
+P6
+Require validation evidence before claiming completion
+P9
+Give counterexamples precedence and break repeated failure loops
+P12
+A static-reading streak is too weak a validation trigger
+P15
+Budget repair per error fingerprint
+P18
+Checkpoint workspace and process state, not only messages
+P21
+Make final output an explicit state transition
+P24
+Discover the smallest verifier after mutation
+T1
+Fix tool-call transport before tuning behavior
+T4
+Batch independent probes without hiding causality
+T7
+Do not rely on a passive observation-pressure latch
+T10
+Slim the tool surface around common action sequences
+T13
+Retry a thinking-only length stop once
+T16
+Use provider schema constraints only when they are real
+T19
+Keep generic action batches thinner than a workflow engine
+T22
+Design the core surface around `search`, `view`, `edit`, and `run`
+T25
+Add a semantic layer before polishing byte-level reads
+D2
+Delegate bounded subproblems early enough to matter
+D5
+Route models by subproblem
+D8
+Decide routing during the first two discovery actions
+D11
+Try a cheap scout before a conditional reviewer
+D14
+Consult without handing over the execution chain
+R2
+Distill tool-family policy, not only tool syntax
+R5
+Preserve provider reasoning items across tool calls
+R8
+Defer semantic prompt and schema deduplication
+R11
+Derive thresholds from the current trajectory, not the benchmark
+R14
+Probe a model before adding compatibility shims
+M2
+Separate hypothesis authorship from evidence review
+M5
+Attribute cost to actions, phases, and providers
+M8
+Evaluate a mechanism at its exact first firing point
+M11
+Feed new attempts multiple prior failure summaries
+M14
+Search harness levers with frozen layered workflows
+M17
+Run paired optimization loops for alternative PI transports
+M20
+Express orchestration with a few native language primitives
+M23
+Prove a capability gap before designing a lever
+M26
+Train on mixed distributions and estimate baseline noise first
+M29
+Make the evidence ledger transactional and replayable
+M32
+Bind review and repair packets end to end
+M35
+Stop when the evidence substrate is invalid
+M38
+Put single-turn mechanisms in the kernel and cross-turn policy outside
+M41
+Decompose packaged failures before rejecting their components
+M44
+Classify replay by the first changed decision
+C
+Context
+24
+P
+Progress
+26
+T
+Tools
+26
+D
+Delegation
+15
+R
+Prompt & policy
+15
+M
+Improvement & evaluation
+46
+Parallel auto-research loops
+Inside each lineage
+Auto-research loop
+One idea moves through Trajectory Rollouts, Map–Reduce Analysis, and Proposal. One agent implements the proposal, then another agent reviews it. Reviewer returns to Implementation when revisions are needed. The idea then moves through In-Trajectory Validation and Held-Out Validation. In-Trajectory Validation can return to Implementation or Trajectory Rollouts. Held-Out Validation evaluates the frozen candidate on a fully isolated test set.
+01
+Trajectory Rollouts
+Generate exploration trajectories
+02
+Map–Reduce Analysis
+Map separately, then reduce evidence
+03
+Proposal
+Propose one mechanism
+04
+Implementation
+One agent implements
+05
+Reviewer
+Another agent reviews
+06
+In-Trajectory Validation
+Training set screen
+07
+Held-Out Validation
+Frozen candidate · isolated test set
+Returns: Reviewer → Implementation; In-Trajectory Validation → Implementation or Trajectory Rollouts.
+Parallel across ideas; iterative within each lineage.
+At the outer level, SoL-Pi fans out a broad idea pool into independent mechanism
+lineages. The first pass starts with 152 proposed directions. Oracle Analysis, a
+pre-rollout stage that estimates opportunity from existing trajectories,
+screens them before the system spends rollout budget. Each selected direction
+makes a concrete claim about avoidable work in the harness, so the system can
+reject a weak lineage without discarding progress elsewhere.
+The six proposal families record where a hypothesis begins, not where a
+surviving mechanism is eventually implemented. ObservationPack, for example,
+starts in the Context family as C23 and C24, then becomes a mechanism at the
+observation boundary.
+Within each lineage, we follow Karpathy's conventional
+autoresearch experiment loop
+:
+propose a change, implement it, run the experiment, read the result, then keep
+or discard the change and repeat. We make three adaptations for harness
+research.
+First, implementation runs as a
+Ralph Loop
+,
+an iterative implementation loop that continues until an explicit exit
+condition passes. A separate reviewer checks the implementation and its
+behavioral contract. Failed reviews return the proposal for revision.
+Second, map-reduce analysis handles multiple exploration trajectories.
+Independent analyzers inspect each trajectory, and a reducer merges their
+evidence before the next mechanism proposal.
+Third, validation uses two isolated splits. We develop and screen candidates on
+the training set. Once we freeze the mechanism and acceptance rule, the system
+evaluates them on a held-out test set.
+Held-out trajectories never enter
+subsequent analysis, and no agent inside the auto-research loop sees the
+held-out results.
+A failed held-out evaluation rejects the frozen candidate
+without becoming feedback for repair or another search episode.
+From compiled workflows to disposable skill loops
+Orchestrating auto-research across hundreds of ideas and hundreds of research
+iterations is not straightforward. Our workflow went through three designs, each
+differing in where the orchestration lives, how long its code survives, and what
+breaks first at scale.
+Compiled workflow.
+Each agent flow was described in YAML and compiled into
+an executable workflow, so the orchestration lived in a configuration file and
+was fixed once compiled. The explicit graph made collaboration and handoff
+straightforward. At scale the fixed graph was the limit: a precompiled workflow
+could not cover every edge case, runs repeatedly stopped for human repair, and
+operators could not reconstruct the context of hundreds of concurrent attempts.
+Code orchestration.
+A lead agent wrote the coordination code, opened
+sessions, passed messages among them, and assembled each workflow at runtime, so
+the orchestration lived in code that persisted across experiments. This removed
+the fixed graph. At scale the coordinator was the limit: keeping every loop
+compatible meant adding branches, tests, and verification scripts to a
+long-lived and unbounded codebase, and launching a new experiment could require
+more than ten hours of changes to it.
+Disposable skill loop.
+We maintain one minimal loop template together with
+the instructions for using it. Each experiment instantiates a fresh copy, sets
+its parameters, runs it, and discards its modified orchestration code when the
+loop ends, so orchestration code survives only for the length of one run.
+Scaling becomes repeated template instantiation rather than continued expansion
+of one coordinator. Nothing here is free: the template itself has to be kept
+correct, since every experiment inherits it. That single shared dependency has
+been easier to maintain than either a fixed graph or a growing coordinator.
+Two environment families separate search from evaluation
+We build 535 executable training environments in two families. The first
+contains 495 tasks with ground-truth trajectories mined from GitHub issue-PR
+pairs. The second contains 40 synthetic tasks defined by executable verifiers.
+For the first family, the issue specifies the task and the linked PR provides
+the accepted patch and change history, which serve as the ground-truth
+trajectory. We restore the repository to the commit immediately before the fix,
+install its dependencies in an offline image, and withhold the PR and the
+maintainer's regression test from the agent. We retain the environment only if
+the test fails before the PR and passes after it, keeping the task, trajectory,
+and verifier consistent.
+The second family is verifier-driven. We first generate an executable verifier
+that defines success, then construct an environment around it for open-ended
+exploration without a reference trajectory. These 40 environments mainly use
+Terminal-Bench-style verifiers. To keep EdgeBench a valid held-out benchmark,
+we do not use EdgeBench data or verifiers as sources or templates for
+environment synthesis. EdgeBench tasks and feedback remain outside harness
+search; we use them only for held-out validation. This separation makes its
+score a stronger measure of generalization to unseen task and verifier designs.
+Capability floors constrain efficiency gains
+What the search learns is a reusable harness mechanism. The capability floor
+decides which candidates survive. A cheaper candidate fails if it saves by
+stopping early, skipping necessary verification, or removing evidence required
+to finish the task.
+Each loop applies two acceptance gates. First, every capability metric must stay
+within its predeclared tolerance. Second, at least one efficiency metric must
+improve. Among candidates that pass the capability floor, the loop retains
+nondominated results. The gate applies to one mechanism at a time, so the small
+losses it permits can accumulate once mechanisms combine: the assembled harness
+retains roughly 94% of Pi's average score. What the gate rules out is savings
+that come from getting less done.
+What auto-research loops discovered
+Auto-research outcomes
+The diagram shows the base harness nodes Agent, Context Memory, Action, and Observation. Hover, focus, or tap a node to reveal the auto-research outcome for that component. The animation traces Task through Agent, Action, Environment, and Observation, with Context Memory exchanging information with Agent before the cycle repeats.
+Task → Agent → Action → Environment → Observation → Agent ↔ Context Memory
+environment feedback
+↓
+↔
+→
+→
+Environment
+↑
+Task
+Hover, focus, or tap a component to reveal the auto-research outcome that modifies it.
+Auto-research produced four narrow mechanisms. They map onto tools, context
+management, observation compression, and multi-agent delegation.
+01
+Tools
+Action Fusion
+one intent, one turn
+Action Fusion keeps an edit and its follow-up command inside one local sequence, removing the middle model decision.
+Base Pi rollouts exposed a recurring sequence: after editing a file, the coding
+agent often issued a command to test, build, or run the change.
+Action Fusion
+turns that sequence into one tool call. The harness applies the edit and runs
+the command locally, then returns one combined observation without another
+model round trip.
+The overview combines the four-stage search history, ten recorded search-batch points, observed adjacent-action share, and an all-triggered efficiency counterfactual. Trigger rate changed non-monotonically during exploration. Iteration 10 is the selected endpoint; the curve is exploratory, not monotonic.
+Four research stages
+01
+Oracle Analysis
+Pre-search
+Measured adjacent edit/write-to-command candidates at 12.3% of cross-turn transitions. Bash accounted for 85.1% of the observed next actions.
+02
+Baseline Build
+Setup
+Stabilized Action Fusion execution at 87.7% uptake among eligible calls with zero invalid calls, producing a reliable baseline for prompt search.
+03
+Prompt Optimization
+10 search batches
+Removed a failed prompt variant, then refined the prompt and schema. We selected Iteration 10 with a 100% trigger rate and an 87.0 task score.
+04
+Final Validation
+2 final checks
+Ran independent final checks after selection and confirmed the release behavior before the mechanism entered the combined harness.
+What Oracle Analysis found
+The base harness repeatedly separated an edit from the command that immediately tested or ran it. Oracle Analysis estimated adjacent edit/write-to-command candidates in 12.3% of cross-turn transitions, making that boundary the target for a fused action.
+How the trigger improved
+Trigger rate ranged from 28.3% to 100% across the ten recorded search-batch iterations. Prompt and schema changes eventually reached 100% at Iteration 10 while retaining an 87.0 task score. The search path varied during exploration.
+02
+Context
+Online Context Compact
+compact at subtask boundaries
+Online Context Compact treats a completed subtask as a possible compaction point, then waits until later requests can repay the rewrite.
+KV-cache reuse usually pushes compaction late into a run. Online Context Compact
+uses a different clock: it decomposes a task into subtasks and reconsiders
+compaction whenever one finishes.
+Online Context Compact
+turns semantic completion into a compaction trigger, but acts only when expected
+future savings can repay the rewrite.
+03
+Observations
+ObservationPack
+preserve access, remove repetition
+ObservationPack replaces repeated full output with a stable handle while keeping the original available for paged recall.
+In base Pi, a large file or tool result reappeared in every later request and
+occupied both context and cache.
+ObservationPack
+changes that lifecycle by archiving the payload locally. It leaves a handle and
+short excerpt in context, then recalls exact pages only when needed. The harness
+keeps the payload accessible without replaying it.
+The sweep selected V2 inside the quality and cost gates. The final paired evaluation launched both arms concurrently on the same cluster.
+View full figure ↗
+Four research stages
+01
+From-scratch rebuild
+1 iteration
+Rebuilt the placeholder mechanism from clean Pi and produced a clean-room implementation.
+02
+Mechanism freeze
+4 iterations
+Reduced the implementation to 315 lines and two hooks, with a fail-open contract.
+03
+TB40 trade-off sweep
+8 configurations
+Swept projection settings and used four same-period confirmations. V2 was the only configuration inside the quality gate.
+04
+EdgeBench paired A/B
+11 tasks x 2 arms
+Launched both arms concurrently on one cluster and confirmed lower cost without reducing the normalized score.
+Why V2 survived
+V2 was the only swept configuration inside the quality gate. It combined a 2,048-byte head, a 1,536-byte tail, and two full sends before projection.
+What the paired run confirmed
+The final EdgeBench experiment used 11 tasks and two concurrent arms on the same cluster. Response count changed by only 0.20%, which attributes the saving to cheaper responses while preserving response volume.
+04
+Delegation
+Evidence-Preserving Reducer
+delegate reading, verify evidence
+Evidence-Preserving Reducer accepts a compact diagnostic receipt only when its evidence can be checked against the archived log.
+In build and test trajectories, often only a few lines of a long log changed
+the next decision.
+Evidence-Preserving Reducer
+uses that boundary to delegate the first reading to a cheaper agent. It binds
+the resulting receipt to the archived log and verifies every quoted line before
+the frontier agent sees it. Delegation no longer requires trust in a fluent
+summary.
+Results
+EdgeBench
+Average score
+Official API-equivalent cost
+Total tokens
+In this work, we used frontier AI models to scale auto-research loops and build
+SoL-Pi, a new agent harness. All comparisons ran each model backend at
+xhigh
+,
+the highest reasoning-effort setting in this evaluation. Across EdgeBench
+tasks, SoL-Pi retains roughly 94% of Pi's average score on both model backends,
+and with GPT-5.6 Sol it exceeds the model's native Codex harness. The efficiency
+gains are larger: compared with Pi, it uses 45-49% fewer tokens and costs about
+one-third less; compared with the model-native harnesses, it uses 35-64% fewer
+tokens at list-price API cost 50-54% lower.
+Terminal-Bench 4
+We also evaluated Codex, Pi, and SoL-Pi on 63 Terminal-Bench 4 tasks. The results are summarized below.
+Tasks solved
+Official API-equivalent cost
+63 CPU-only tasks. Bars show solved-task counts and total API-equivalent model costs; exact values are labeled above each bar.
+Efficient Agent Swarm via SoL-Pi
+Can an efficient harness also make a collective search more economical? We tested SoL-Pi on
+Anthropic’s original performance take-home
+, a kernel-optimization task scored in simulated machine cycles. The question is not just how many agents can search at once, but how much useful, verifiable progress their shared budget buys.
+One
+GPT-5.6 Sol coordinator
+running in Codex directs
+20 GPT-5.6 Luna workers
+, all at
+xhigh
+. The workers form five groups of four, each with independent workspaces and a local evidence board. We compare SoL-Pi and Pi as the worker harnesses, with a Codex agent serving as the coordinator in both conditions.
+The architecture combines independent exploration with selective exchange. Workers ask group peers to reproduce or combine promising findings; the coordinator passes compact insights between groups and keeps some workers exploring alternatives. A shared best result advances only when the coordinator requests acceptance and an independent check confirms a strict improvement.
+A lower-cost verified frontier
+We ran three independent two-hour trials from the same frozen starter: single-agent Sol, Sol with 20 Pi workers, and Sol with 20 SoL-Pi workers. The two control trials ran sequentially, single-agent first. Each run used fresh sessions without previous runs’ solutions or notes.
+Final independently verified results
+Configuration
+Cycles ↓
+Model cost ↓
+Speed thresholds
+Sol + 20 SoL-Pi
+1,127
+$60.11
+8
+/8
+Single Sol
+1,333
+$39.20
+8
+/8
+Sol + 20 Pi
+1,366
+$82.12
+7
+/8
+In this comparison, the SoL-Pi swarm reached
+1,127 cycles
+at
+$60.11
+in API-equivalent model cost:
+17.5% fewer cycles and 26.8% lower cost
+than the Pi swarm. Single-agent Sol remained the least expensive condition at $39.20, but ended at 1,333 cycles.
+Discussion
+Token efficiency favors reusable improvements
+Optimizing a harness on a closed task set creates an easy path to benchmark
+overfitting. A search loop can move task-related information into the harness
+or add special rules for patterns that recur in the training tasks. The score
+may improve even when the change stops working outside that set.
+Token efficiency directs the search toward work that recurs across tasks.
+Removing repeated context, combining actions that require no intermediate
+decision, and avoiding repeated transmission of large tool outputs all target
+waste in the interaction loop. They do not depend on knowing the answer to a
+particular task, so they have a better chance of transferring to new tasks and
+models.
+An agent can also reduce token use simply by doing less. SoL-Pi therefore
+applies a predeclared capability floor: token savings count as an efficiency
+improvement only when task quality remains within the allowed range.
+EdgeBench makes long-horizon efficiency measurable
+We chose EdgeBench because it exercises agents over trajectories that run for
+several hours. Among the public benchmarks we could find at the time, it was the
+only one that consistently supported roughly two to twelve hours of continuous
+reasoning and tool use. Common alternatives such as Terminal-Bench 2.1 and
+SWE-bench usually finish within an hour.
+That longer time horizon is essential for measuring token efficiency. On
+shorter tasks, context replay, large tool outputs, cache writes, and extra model
+turns have little time to accumulate. Small per-turn savings can be hidden by
+startup costs and variation between tasks. Over several hours, the same sources
+of waste recur many times, making harness-level efficiency differences easier
+to measure.
+Shorter benchmarks remain useful for many questions, but they do not match our
+research question. SoL-Pi asks whether a harness can reduce repeated overhead
+throughout a long trajectory while preserving task quality. EdgeBench provides
+the time horizon needed for that difference to become measurable.
+Breadth escapes local search basins
+We scale auto-research along two axes. A depth-first strategy (DFS) keeps
+one lineage alive and repeatedly refines its latest candidate. A breadth-first
+strategy (BFS) expands many independent ideas, then gives each promising branch
+an auto-research loop to implement, test, and harden it.
+In our runs, we saw a qualitative pattern: after roughly five to ten iterations,
+even GPT-5.6 Sol at
+xhigh
+could get stuck in a local basin, making smaller
+adjustments to the same design instead of changing direction. Breadth-first
+search behaved differently. Most ideas failed validation, but increasing the
+diversity of starting ideas occasionally exposed an unusual candidate that a
+later loop could implement and harden. Those jumps produced some of the most
+useful harness changes in this project. The conversion rate remained low: only
+about one out of every forty starting ideas survived validation. Breadth made
+those rare candidates discoverable.
+Breadth and isolation support generalization
+In our experience, two conditions appear especially important. The first is a
+diverse pool of ideas created through broad search. The second is robust
+validation: evaluation environments should be fully isolated from search or
+training and should reflect the variation and failure modes of real-world
+deployment. Without both, auto-research can improve performance in one
+environment without improving the system beyond it.
+Humans set priors and inspect survivors
+As AI systems begin to improve the machinery around themselves, the human role
+in recursive self-improvement remains unsettled. SoL-Pi is best understood as a
+hybrid auto-research loop. Humans supplied early priors about harness principles
+and mechanisms. Before scaling the idea pool, they filtered out directions with
+limited exploratory value for this project, such as searches over base-harness
+hyperparameters. Once an idea entered
+an auto-research loop, the loop ran without human intervention through research
+and validation. When a candidate survived, humans returned to understand the
+mechanism the agent had discovered and refactor its code into a clean,
+maintainable implementation.
+Whether fully autonomous RSI is ultimately the right end state remains an open
+question. In an open-ended loop, drift in goals, evidence, or implementation can
+compound before humans notice it, and the consequences may be difficult to
+reverse. The relationship between human judgment and machine-scale research
+therefore needs sustained study. Where should people provide priors, gate the
+search budget, review accepted changes, or clean up implementations? Where
+should they step back?
+Task diversity may scale harness quality
+SoL-Pi also ran a preliminary closed loop: agents gathered or synthesized
+tasks, constructed executable environments, collected trajectories, validated
+candidates, and updated their own harness.
+We call this direction pretraining the harness: before deployment, harness
+search sees an expanding stream of self-generated tasks and environments and
+retains mechanisms that survive across that distribution. This line of research
+is still at an early stage. We expect to see a scaling law for harnesses
+analogous to those for models: as compute and the diversity of rollout
+environments grow, harnesses should become more capable, robust, and efficient.
+Recursive Efficient Improvement
+Efficiency may also become recursive: a more efficient harness could lower
+the cost of the auto-research used to build its successor. We plan to use SoL-Pi
+as the starting harness for the next research cycle, where lower per-run costs
+could let a fixed budget cover more executable environments, trajectories, and
+research ideas. In this view, efficiency is both an outcome of harness research
+and a resource for expanding the search that follows, so a more efficient
+harness may help discover an even more efficient one. We call this possibility
+recursive efficient improvement
+; it is a long-term research vision rather than a
+compounding effect demonstrated by the present study.
+Authors
+Haozhe Liu
+*
+,
+Tian Ye
+*
+,
+Sensen Gao
+†
+,
+Qihang Cao
+†
+,
+Yitong Li
+†
+,
+Mingchen Zhuge
+,
+Duomin Wang
+,
+Ruihua Zhang
+,
+Jiawang Bian
+,
+Lei Zhu
+,
+Ligeng Zhu
+,
+Enze Xie
+,
+Song Han
+*
+Equal contribution.
+†
+Core contributors.

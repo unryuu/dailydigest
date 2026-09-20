@@ -1,0 +1,8 @@
+URL: http://zjureal.com/EvoSkill-GUI/
+FINAL: http://zjureal.com/EvoSkill-GUI/
+TITLE: EvoSkill-GUI | Reflect, Revise, Reuse
+FETCHED: 2026-09-20 19:31:17
+============================================================
+01
+Reflect
+Diagnose the executed trajectory under strict information isolation.

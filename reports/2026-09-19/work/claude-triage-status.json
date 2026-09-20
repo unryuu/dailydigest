@@ -1,0 +1,6 @@
+{
+  "status": "terminated_no_output",
+  "at": "2026-09-19T22:38:32.674426+08:00",
+  "reason": "Claude 独立复核运行超过十分钟，stdout 与 stderr 均为空，主 agent 停止本次调用。未取得 Claude 定牌，不能展示或推断其观点。",
+  "next": "请用户裁决定牌或要求重试；主版见定牌-主agent.md。"
+}

@@ -1,0 +1,5 @@
+solpi-project|https://nvlabs.github.io/SoL-Pi/
+pact-project|https://trace-ai-labs.github.io/pact/
+gui-project|http://zjureal.com/EvoSkill-GUI/
+deepseek-abstract|https://arxiv.org/abs/2609.19969
+epoch-benchmarks|https://epoch.ai/benchmarks/search?reviewed=verified&reviewed=flawed&reviewed=not-enough-info

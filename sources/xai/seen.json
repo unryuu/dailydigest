@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://x.ai/news/grok-voice-transcribe-2",
+  "title": "Grok 更新语音转录模型",
+  "date": "Sep 18, 2026",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
   "id": "https://x.ai/news/grok-build-memory",
   "title": "Grok Build 上线跨会话项目记忆",
   "date": "Sep 16, 2026",

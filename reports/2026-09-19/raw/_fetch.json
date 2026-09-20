@@ -1,0 +1,137 @@
+[
+  {
+    "slug": "item-01",
+    "url": "https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks",
+    "bytes": 238884,
+    "title": "Google Gemini accessed three companies during AI hacking test",
+    "chars": 2755
+  },
+  {
+    "slug": "item-04",
+    "url": "https://www.axios.com/2026/09/18/newsom-ai-2028-focus",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/18/newsom-ai-2028-focus",
+    "bytes": 258007,
+    "title": "Newsom's big AI swings put 2028 in focus",
+    "chars": 3204
+  },
+  {
+    "slug": "item-06",
+    "url": "https://spectrum.ieee.org/llms-for-chip-design",
+    "status": 200,
+    "final_url": "https://spectrum.ieee.org/llms-for-chip-design",
+    "bytes": 790799,
+    "title": "Jalapeño Shows Power of LLMs for Chip Design - IEEE Spectrum",
+    "chars": 402
+  },
+  {
+    "slug": "item-07",
+    "url": "https://huggingface.co/papers/2609.20519",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.20519",
+    "bytes": 199032,
+    "title": "Paper page - SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+    "chars": 5589
+  },
+  {
+    "slug": "item-08",
+    "url": "https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are",
+    "bytes": 1136499,
+    "title": "Pretraining data, not verifiability, is why LLMs are especially good at math (and coding) — LessWrong",
+    "chars": 58843
+  },
+  {
+    "slug": "item-12",
+    "url": "https://huggingface.co/papers/2609.18605",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.18605",
+    "bytes": 177772,
+    "title": "Paper page - PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
+    "chars": 5543
+  },
+  {
+    "slug": "item-13",
+    "url": "https://laya.convaiinnovations.com",
+    "status": 200,
+    "final_url": "https://laya.convaiinnovations.com/",
+    "bytes": 33827,
+    "title": "Laya — 33ms Multilingual System 1 Decision Engine with Calibrated Probabilities",
+    "chars": 13087
+  },
+  {
+    "slug": "item-14",
+    "url": "https://huggingface.co/papers/2609.19969",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.19969",
+    "bytes": 270506,
+    "title": "Paper page - DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+    "chars": 5780
+  },
+  {
+    "slug": "item-15",
+    "url": "https://huggingface.co/papers/2609.17653",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.17653",
+    "bytes": 184830,
+    "title": "Paper page - Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents",
+    "chars": 5555
+  },
+  {
+    "slug": "item-16",
+    "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
+    "bytes": 14194,
+    "title": "A quote from Thariq Shihipar",
+    "chars": 1331
+  },
+  {
+    "slug": "item-17",
+    "url": "https://x.ai/news/grok-voice-transcribe-2",
+    "status": 200,
+    "final_url": "https://x.ai/news/grok-voice-transcribe-2",
+    "bytes": 234811,
+    "title": "Introducing Grok Voice Transcribe 2.0 | SpaceXAI",
+    "chars": 4921
+  },
+  {
+    "slug": "item-19",
+    "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+    "status": 200,
+    "final_url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+    "bytes": 90665,
+    "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
+    "chars": 8189
+  },
+  {
+    "slug": "item-20",
+    "url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it",
+    "status": 200,
+    "final_url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/",
+    "bytes": 335863,
+    "title": "If math is more than proof, we need to better celebrate the rest of it | What's new",
+    "chars": 66625
+  },
+  {
+    "slug": "item-21",
+    "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+    "status": 200,
+    "final_url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+    "bytes": 173905,
+    "title": "GPT-6 Astra Solves a WWI German Radio Cipher - prinz",
+    "chars": 3675
+  },
+  {
+    "slug": "item-22",
+    "url": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit/",
+    "bytes": 15353,
+    "title": "The Creative Spirit of Who Framed Roger Rabbit",
+    "chars": 1509
+  }
+]

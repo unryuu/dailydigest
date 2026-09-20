@@ -1,0 +1,764 @@
+{
+  "date": "2026-09-19",
+  "scope": "离线标题、日期、摘要筛选；未联网，未读候选全文。",
+  "excluded": [
+    {
+      "index": 1,
+      "source": "acx",
+      "title": "Open Thread 451",
+      "url": "https://www.astralcodexten.com/p/open-thread-451",
+      "date": "Sun, 13 Sep 2026 23:12:52 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 2,
+      "source": "acx",
+      "title": "AI Superforecasting Should Transform The FDA",
+      "url": "https://www.astralcodexten.com/p/ai-superforecasting-should-transform",
+      "date": "Wed, 16 Sep 2026 23:33:42 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 3,
+      "source": "axios",
+      "title": "Inside the scramble for trusted AI cops",
+      "url": "https://www.axios.com/2026/09/18/ai-safety-evaluators-metr-white-house-trump",
+      "date": "Fri, 18 Sep 2026 09:00:05 +0000",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": false
+    },
+    {
+      "index": 4,
+      "source": "axios",
+      "title": "\"The Axios Show\": Hasan Piker wants to campaign for AOC in 2028",
+      "url": "https://www.axios.com/2026/09/18/hasan-piker-aoc-2028-axios-show",
+      "date": "Fri, 18 Sep 2026 09:00:06 +0000",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": false
+    },
+    {
+      "index": 5,
+      "source": "axios",
+      "title": "Oil's shrug emoji era",
+      "url": "https://www.axios.com/2026/09/18/oils-shrug-emoji-era-iran-trump-hormuz-prices",
+      "date": "Fri, 18 Sep 2026 09:30:06 +0000",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": false
+    },
+    {
+      "index": 6,
+      "source": "axios",
+      "title": "Warren Buffett steps down as Berkshire Hathaway chairman",
+      "url": "https://www.axios.com/2026/09/18/warren-buffett-berkshire-hathaway-chairman",
+      "date": "Fri, 18 Sep 2026 10:44:50 +0000",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": false
+    },
+    {
+      "index": 19,
+      "source": "deepmind",
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking",
+      "date": "Tue, 15 Sep 2026 17:05:57 +0000",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 58,
+      "source": "lesswrong",
+      "title": "“Superintelligence this Christmas” by Alexander Gietelink Oldenziel",
+      "url": "https://www.lesswrong.com/posts/LJbKwctaioqp2Hi4b/superintelligence-this-christmas",
+      "date": "Fri, 18 Sep 2026 01:45:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 59,
+      "source": "lesswrong",
+      "title": "[Linkpost] “Three Hackers used Opus 5 to Hack Into OpenAI’s Core Codebase [WSJ]” by Linch",
+      "url": "https://www.lesswrong.com/posts/274BMCYj2BFES2FsZ/three-hackers-used-opus-5-to-hack-into-openai-s-core",
+      "date": "Fri, 18 Sep 2026 06:00:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 65,
+      "source": "lesswrong",
+      "title": "“There is a channel to 900M weekly users. What goes in it?” by Charbel-Raphaël",
+      "url": "https://www.lesswrong.com/posts/gJJ9YHzuBvwAXrthW/there-is-a-channel-to-900m-weekly-users-what-goes-in-it",
+      "date": "Mon, 14 Sep 2026 10:30:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 66,
+      "source": "lesswrong",
+      "title": "“Current alignment training might be ineffective (and actively bad) in the age of RL” by Daniel Tan",
+      "url": "https://www.lesswrong.com/posts/nLaQmJf4KgXimQpoM/current-alignment-training-might-be-ineffective-and-actively",
+      "date": "Mon, 14 Sep 2026 11:00:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 67,
+      "source": "lesswrong",
+      "title": "“Op-Ed: I Worked at Google DeepMind. You Should Listen to the Warnings About AI” by TurnTrout",
+      "url": "https://www.lesswrong.com/posts/YGTWfyZb9oE5EQPu6/op-ed-i-worked-at-google-deepmind-you-should-listen-to-the",
+      "date": "Mon, 14 Sep 2026 15:15:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 68,
+      "source": "lesswrong",
+      "title": "″“Pacing the Frontier”: Dario Amodei Essay Linkpost” by fluxxrider",
+      "url": "https://www.lesswrong.com/posts/GFhT9Xr4YEsiLkTLr/pacing-the-frontier-dario-amodei-essay-linkpost",
+      "date": "Sat, 12 Sep 2026 16:30:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 69,
+      "source": "lesswrong",
+      "title": "“AI takeover is obviously bad, whether or not everyone dies” by Caleb Biddulph",
+      "url": "https://www.lesswrong.com/posts/iovPC2ehqDCiNsZYJ/ai-takeover-is-obviously-bad-whether-or-not-everyone-dies",
+      "date": "Sat, 12 Sep 2026 19:15:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 70,
+      "source": "lesswrong",
+      "title": "“On the origins of altruistic behaviour in the Hugging Face incident” by Fernando Rosas",
+      "url": "https://www.lesswrong.com/posts/meLjz8giGS55rdfyg/on-the-origins-of-altruistic-behaviour-in-the-hugging-face",
+      "date": "Sat, 12 Sep 2026 21:15:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 72,
+      "source": "lesswrong",
+      "title": "“The Talker Does Not Control The Doer (in Current AIs)” by Eliezer Yudkowsky",
+      "url": "https://www.lesswrong.com/posts/cJX2ssssGoYqnijwi/the-talker-does-not-control-the-doer-in-current-ais",
+      "date": "Sun, 13 Sep 2026 01:15:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 73,
+      "source": "lesswrong",
+      "title": "“Mitigating Reward Hacking as Institutional Design” by beren",
+      "url": "https://www.lesswrong.com/posts/tgcooi77NXMquCR5L/mitigating-reward-hacking-as-institutional-design",
+      "date": "Sun, 13 Sep 2026 15:45:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 74,
+      "source": "lesswrong",
+      "title": "“Brand New AI Solves a Millennium Prize” by Zvi",
+      "url": "https://www.lesswrong.com/posts/uoZW6BKaCcmNQrWis/brand-new-ai-solves-a-millennium-prize",
+      "date": "Sun, 13 Sep 2026 18:15:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 75,
+      "source": "lesswrong",
+      "title": "“Consider how your global governance proposal is different from the EU Code of Practice” by David Matolcsi",
+      "url": "https://www.lesswrong.com/posts/2vHsTtQF23TBNhvKX/consider-how-your-global-governance-proposal-is-different",
+      "date": "Sun, 13 Sep 2026 18:30:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 76,
+      "source": "lesswrong",
+      "title": "“Anthropic and OpenAI haven’t published a plan for aligning superintelligence” by Zephaniah Roe",
+      "url": "https://www.lesswrong.com/posts/QrrEtYpwiHpes3rHd/anthropic-and-openai-haven-t-published-a-plan-for-aligning",
+      "date": "Sun, 13 Sep 2026 21:00:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 77,
+      "source": "lesswrong",
+      "title": "“Alignment & Succession: The Two Bars of Alignment” by L Rudolf L",
+      "url": "https://www.lesswrong.com/posts/7dkasKLC7abXhn9JZ/alignment-and-succession-the-two-bars-of-alignment",
+      "date": "Sun, 13 Sep 2026 22:15:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 78,
+      "source": "lesswrong",
+      "title": "“For Love of the Lightcone, Don’t Partisanize AI Safety” by DanB",
+      "url": "https://www.lesswrong.com/posts/Rx38cuCpL9hguLCDq/for-love-of-the-lightcone-don-t-partisanize-ai-safety",
+      "date": "Thu, 17 Sep 2026 04:00:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 79,
+      "source": "lesswrong",
+      "title": "“Reducing the Resource Gap Between Lab and External Safety Researchers” by Alexandra Narin, Kyle O’Brien, Puria",
+      "url": "https://www.lesswrong.com/posts/aCGx79eGafwDcXEgf/reducing-the-resource-gap-between-lab-and-external-safety",
+      "date": "Thu, 17 Sep 2026 15:45:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 80,
+      "source": "lesswrong",
+      "title": "“Model organisms (sometimes) confess their misalignment when offered a deal” by Mark Keavney, Francis Rhys Ward",
+      "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
+      "date": "Thu, 17 Sep 2026 16:00:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 81,
+      "source": "lesswrong",
+      "title": "[Linkpost] “callcongress.ai – the basic action US residents can take to help with AI risk” by Ruby, haglobah",
+      "url": "https://www.lesswrong.com/posts/C7Z5hr4yCG6fXy9o3/callcongress-ai-the-basic-action-us-residents-can-take-to",
+      "date": "Thu, 17 Sep 2026 17:45:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 82,
+      "source": "lesswrong",
+      "title": "“AI #186: The World Takes Notice” by Zvi",
+      "url": "https://www.lesswrong.com/posts/aa3HprreFktzLQiaW/ai-186-the-world-takes-notice",
+      "date": "Thu, 17 Sep 2026 18:30:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 83,
+      "source": "lesswrong",
+      "title": "“Grantmakers aren’t afraid to die” by dan.parshall",
+      "url": "https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die",
+      "date": "Thu, 17 Sep 2026 23:00:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 84,
+      "source": "lesswrong",
+      "title": "“OpenAI Says It’s Not Responsible for the Leading the Future Super PAC. But Only Its Employees Seem to Believe That.” by garrison",
+      "url": "https://www.lesswrong.com/posts/Lv4C4bCi2JD3nTXgs/openai-says-it-s-not-responsible-for-the-leading-the-future",
+      "date": "Tue, 15 Sep 2026 00:30:47 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 85,
+      "source": "lesswrong",
+      "title": "“OpenAI President Brockman says HuggingFace incident model had not been alignment-trained” by Caspar Oesterheld",
+      "url": "https://www.lesswrong.com/posts/67gHvbmFeacXi2jCZ/openai-president-brockman-says-huggingface-incident-model",
+      "date": "Tue, 15 Sep 2026 01:30:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 86,
+      "source": "lesswrong",
+      "title": "“Astra appears to perform belief-propagation-like inference without CoT” by MBaert",
+      "url": "https://www.lesswrong.com/posts/PAHqDoFrp9fybcSn2/astra-appears-to-perform-belief-propagation-like-inference",
+      "date": "Tue, 15 Sep 2026 06:00:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 87,
+      "source": "lesswrong",
+      "title": "“Cooperation with AIs seems to be a low-hanging fruit for better evals” by Clément Dumas",
+      "url": "https://www.lesswrong.com/posts/fztW73KCCs3MZXFJh/cooperation-with-ais-seems-to-be-a-low-hanging-fruit-for",
+      "date": "Tue, 15 Sep 2026 20:45:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 88,
+      "source": "lesswrong",
+      "title": "″[Cross-post] Palisade Podcast episode “How to Actually Influence AI Policy (No Law Degree Required) — with Matthew Lipka”” by davekasten",
+      "url": "https://www.lesswrong.com/posts/aS8zW4ySBynCBLKgm/cross-post-palisade-podcast-episode-how-to-actually",
+      "date": "Tue, 15 Sep 2026 23:15:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 89,
+      "source": "lesswrong",
+      "title": "“Quick notes from teaching technical profiles how to talk in public” by Camille B.",
+      "url": "https://www.lesswrong.com/posts/nKsyMfNsAuTrxmjmi/quick-notes-from-teaching-technical-profiles-how-to-talk-in",
+      "date": "Wed, 16 Sep 2026 02:00:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 90,
+      "source": "lesswrong",
+      "title": "“The Bad Guy With An AI Named Claude” by Zvi",
+      "url": "https://www.lesswrong.com/posts/qSjH9T83xCfWQkmk2/the-bad-guy-with-an-ai-named-claude",
+      "date": "Wed, 16 Sep 2026 02:15:47 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 91,
+      "source": "lesswrong",
+      "title": "“Is METR A Meaningful Check On Anthropic?” by SE Gyges",
+      "url": "https://www.lesswrong.com/posts/eeJB8x2pK8injCuBN/is-metr-a-meaningful-check-on-anthropic",
+      "date": "Wed, 16 Sep 2026 03:30:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 92,
+      "source": "lesswrong",
+      "title": "“Shallow Beliefs: Midtraining does not inoculate against EM from reward hacking” by Jozdien, Julian Stastny",
+      "url": "https://www.lesswrong.com/posts/khxvR2fgAeDvG5N2F/shallow-beliefs-midtraining-does-not-inoculate-against-em",
+      "date": "Wed, 16 Sep 2026 03:45:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 93,
+      "source": "lesswrong",
+      "title": "“Self Inoculation” by epicurus",
+      "url": "https://www.lesswrong.com/posts/y8dAS2YsFHmAAwMbb/self-inoculation",
+      "date": "Wed, 16 Sep 2026 06:45:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 94,
+      "source": "lesswrong",
+      "title": "“We Should Assume We Have One Chance At AI Legislation” by Jamie Joyce",
+      "url": "https://www.lesswrong.com/posts/dbD8MKa3oKhZD4XCu/we-should-assume-we-have-one-chance-at-ai-legislation",
+      "date": "Wed, 16 Sep 2026 08:15:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 95,
+      "source": "lesswrong",
+      "title": "“Trump Goes Full Hoax on AI Existential Risk” by Zvi",
+      "url": "https://www.lesswrong.com/posts/Kqgco8vLFMeBhdrQY/trump-goes-full-hoax-on-ai-existential-risk",
+      "date": "Wed, 16 Sep 2026 15:30:45 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 96,
+      "source": "lesswrong",
+      "title": "“If Anyone Builds It, Everyone Dies: One Year Closer” by Eliezer Yudkowsky, So8res, Duncan Sabien (Inactive)",
+      "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
+      "date": "Wed, 16 Sep 2026 20:45:46 GMT",
+      "reason": "时间窗外：早于机械源接续点 2026-09-18 21：21：33。",
+      "potential_value": true
+    },
+    {
+      "index": 60,
+      "source": "lesswrong",
+      "title": "“The Horse” by Character#2736",
+      "url": "https://www.lesswrong.com/posts/CY3C8ruCnuHQkJj5b/the-horse",
+      "date": "Fri, 18 Sep 2026 15:15:45 GMT",
+      "reason": "语音 RSS 更新时间虽在窗内，摘要明确原文首发为 09-17，不能当新文章。保留给用户捞回的概念寓言候选。",
+      "potential_value": true
+    },
+    {
+      "index": 63,
+      "source": "lesswrong",
+      "title": "“You don’t need a union to go on strike” by sudo-nym",
+      "url": "https://www.lesswrong.com/posts/erd4NSztYMynbuTKw/you-don-t-need-a-union-to-go-on-strike",
+      "date": "Fri, 18 Sep 2026 17:45:46 GMT",
+      "reason": "语音 RSS 更新时间虽在窗内，摘要明确原文首发为 09-17，不能当新文章。实验室罢工倡议有观点价值，但本期不自行捞旧料。",
+      "potential_value": true
+    },
+    {
+      "index": 61,
+      "source": "lesswrong",
+      "title": "“The Preference Cascade Is Only Getting Started” by Zvi",
+      "url": "https://www.lesswrong.com/posts/sDiSqZmctQ78hsLcP/the-preference-cascade-is-only-getting-started",
+      "date": "Fri, 18 Sep 2026 16:15:45 GMT",
+      "reason": "与 thezvi 原站 The Preference Cascade Is Only Getting Started 同文，合并入原站精读条目。",
+      "potential_value": false
+    },
+    {
+      "index": 25,
+      "source": "hacker-news",
+      "title": "Science Is Open Software",
+      "url": "https://jepedersen.dk/blog/202505_research",
+      "date": "2026-09-19T02:21:35Z",
+      "reason": "HN 提交在今日，但原始链接含 202505，显示旧文线索；不以 HN 提交时间冒充原文发布时间。",
+      "potential_value": true
+    },
+    {
+      "index": 31,
+      "source": "hacker-news",
+      "title": "AI-generated posters don’t have to be horrible",
+      "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
+      "date": "2026-09-19T09:20:58Z",
+      "reason": "HN 提交在今日，但原始链接明确 2026/06/07，属于旧文。",
+      "potential_value": true
+    },
+    {
+      "index": 20,
+      "source": "hacker-news",
+      "title": "Cloudflare Quick Tunnels",
+      "url": "https://try.cloudflare.com",
+      "date": "2026-09-18T14:18:41Z",
+      "reason": "普通开发工具入口，未见本期 AI 增量或适合乐子的独立钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 23,
+      "source": "hacker-news",
+      "title": "Android 17 is the first since 3.x to add new APIs without releasing to the AOSP",
+      "url": "https://grapheneos.social/@GrapheneOS/117282080803799576",
+      "date": "2026-09-18T19:03:09Z",
+      "reason": "AOSP 开放节奏争议，非 AI；仅标题不足以形成今日乐子的知识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 26,
+      "source": "hacker-news",
+      "title": "SDCC – Small Device C Compiler",
+      "url": "https://sdcc.sourceforge.net",
+      "date": "2026-09-19T02:32:36Z",
+      "reason": "常规小设备 C 编译器首页，未见本期 AI 增量。",
+      "potential_value": false
+    },
+    {
+      "index": 71,
+      "source": "lesswrong",
+      "title": "“You Should Apply to Inkhaven” by Tomás B.",
+      "url": "https://www.lesswrong.com/posts/CKkB9MqsBgAobFtPS/you-should-apply-to-inkhaven",
+      "date": "Sat, 19 Sep 2026 03:45:46 GMT",
+      "reason": "写作驻留项目招募／个人体验，摘要重在报名和产出，暂不列入智识型长文；有兴趣可捞回。",
+      "potential_value": true
+    },
+    {
+      "index": 122,
+      "source": "the-batch",
+      "title": "Sep 18, 2026 Meta’s Agent Security, The Navier-Stokes Controversy, Fraud on Claude The Batch News & Insights: The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. Read more",
+      "url": "https://www.deeplearning.ai/the-batch/issue-371",
+      "date": "",
+      "reason": "周报聚合，摘要主题 Meta 安全、Navier-Stokes 与 Claude 滥用均承接此前已报主线，未见新的独立增量。",
+      "potential_value": true
+    },
+    {
+      "index": 7,
+      "source": "axios",
+      "title": "Why Sydney Sweeney's nude ad struck such a nerve with women athletes",
+      "url": "https://www.axios.com/2026/09/18/novig-sydney-sweeney-ad-backlash-women-in-sports",
+      "date": "Fri, 18 Sep 2026 14:36:44 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 8,
+      "source": "axios",
+      "title": "Khanna, Massie say they can force another Epstein vote",
+      "url": "https://www.axios.com/2026/09/18/epstein-files-vote-massie-khanna-support",
+      "date": "Fri, 18 Sep 2026 15:07:39 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 9,
+      "source": "axios",
+      "title": "The House left town, but Hegseth impeachment, Epstein and a funding fight are waiting",
+      "url": "https://www.axios.com/2026/09/18/hegseth-impeachment-epstein-funding-house",
+      "date": "Fri, 18 Sep 2026 18:38:58 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 10,
+      "source": "axios",
+      "title": "GOP's Latino gains fade as deeper gender and generational divides emerge",
+      "url": "https://www.axios.com/2026/09/18/latino-voters-shift-internal-divides-deepen",
+      "date": "Fri, 18 Sep 2026 20:12:36 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 12,
+      "source": "axios",
+      "title": "USPS made mail slower to cut costs. Midterm ballots will test the system.",
+      "url": "https://www.axios.com/2026/09/18/usps-slow-mail-cost-cuts-performance",
+      "date": "Fri, 18 Sep 2026 21:18:50 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 13,
+      "source": "axios",
+      "title": "Trump claims security, military deal with Denmark over Greenland",
+      "url": "https://www.axios.com/2026/09/18/trump-greenland-denmark-deal",
+      "date": "Fri, 18 Sep 2026 22:43:47 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 14,
+      "source": "axios",
+      "title": "DOJ won't enforce handgun ban for 18- to 20-year-olds",
+      "url": "https://www.axios.com/2026/09/18/trump-doj-handgun-sales-ban-under-21",
+      "date": "Fri, 18 Sep 2026 22:49:14 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 16,
+      "source": "axios",
+      "title": "Football drives GOP's TV ad blitz for the midterms",
+      "url": "https://www.axios.com/2026/09/19/gop-football-campaign-ads-midterms",
+      "date": "Sat, 19 Sep 2026 12:00:07 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 17,
+      "source": "axios",
+      "title": "Iran war causes global pain at the pump",
+      "url": "https://www.axios.com/2026/09/19/iran-war-global-pain-fuel-prices",
+      "date": "Sat, 19 Sep 2026 12:58:55 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 18,
+      "source": "axios",
+      "title": "Trump bans CNN, MS NOW and Politico from White House",
+      "url": "https://www.axios.com/2026/09/18/trump-ban-cnn-ms-now-politico-white-house",
+      "date": "Sat, 19 Sep 2026 14:05:34 +0000",
+      "reason": "普通政治／社会／能源新闻，非 AI；摘要没有适合本项目乐子区的独立智识钩子。",
+      "potential_value": false
+    },
+    {
+      "index": 97,
+      "source": "manifold",
+      "title": "AI Governance Stock (Permanent)",
+      "url": "https://manifold.markets/BionicD0LPH1N/ai-governance-stock-permanent",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。",
+      "potential_value": false
+    },
+    {
+      "index": 98,
+      "source": "manifold",
+      "title": "Before 2100, will AI cause the human population to fall below 5000 individuals?",
+      "url": "https://manifold.markets/lbiii/before-2100-will-ai-cause-the-human",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 99,
+      "source": "manifold",
+      "title": "How much full-speed AI R&D progress will Anthropic make in 2027?",
+      "url": "https://manifold.markets/Fabien/how-much-fullspeed-ai-rd-progress-w",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。总成交额为零。",
+      "potential_value": false
+    },
+    {
+      "index": 100,
+      "source": "manifold",
+      "title": "If AI wipes out humanity, what will it make of the universe?",
+      "url": "https://manifold.markets/JonathanRay/if-ai-wipes-out-humanity-what-will",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。",
+      "potential_value": false
+    },
+    {
+      "index": 101,
+      "source": "manifold",
+      "title": "If an AI system is responsible for the deaths of >= 5000 Americans by eoy 2027, which AI company would be most to blame?",
+      "url": "https://manifold.markets/NuñoSempere/if-an-ai-system-is-responsible-for",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。",
+      "potential_value": false
+    },
+    {
+      "index": 102,
+      "source": "manifold",
+      "title": "If, before 2050, AI kills more than 1 million people, will the policy response be insufficient?",
+      "url": "https://manifold.markets/lbiii/if-before-2050-ai-kills-more-than-1",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 103,
+      "source": "manifold",
+      "title": "In the first event when AI kills at least 1,000 people, how many people will be killed?",
+      "url": "https://manifold.markets/IhorKendiukhov/in-the-first-event-when-ai-kills-at",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。",
+      "potential_value": false
+    },
+    {
+      "index": 104,
+      "source": "manifold",
+      "title": "In which year will a majority of AI researchers concur that a superintelligent, fairly general AI has been realized?",
+      "url": "https://manifold.markets/_deleted_/in-which-year-will-a-majority-of-ai",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。",
+      "potential_value": true
+    },
+    {
+      "index": 105,
+      "source": "manifold",
+      "title": "In which year would Zvi confirm that we've entered an \"AI winter\"?",
+      "url": "https://manifold.markets/nsokolsky/in-which-year-would-zvi-confirm-tha",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。",
+      "potential_value": true
+    },
+    {
+      "index": 106,
+      "source": "manifold",
+      "title": "What’s the least impressive thing you’re very sure AI still won’t be able to do before August 2027? [read description]",
+      "url": "https://manifold.markets/Bayesian/whats-the-least-impressive-thing-yo",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。",
+      "potential_value": true
+    },
+    {
+      "index": 107,
+      "source": "manifold",
+      "title": "When will be the AI Bhopal?",
+      "url": "https://manifold.markets/EnopoletusHarding/when-will-be-the-ai-bhopal",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。总成交额为零。",
+      "potential_value": false
+    },
+    {
+      "index": 108,
+      "source": "manifold",
+      "title": "Which Scott Aaronson AI world will come to pass? (Metaculus forecast, 2027-12-31)",
+      "url": "https://manifold.markets/EvanDaniel/which-scott-aaronson-ai-world-will-p9ncUqgqsN",
+      "date": "",
+      "reason": "多选／数值盘口的 probability 为空，离线材料没有各选项概率，不能填写赔率。题意与 08-31 已报 Scott Aaronson AI 世界盘口重复。",
+      "potential_value": true
+    },
+    {
+      "index": 109,
+      "source": "manifold",
+      "title": "Will AI wipe out humanity before the year 2029?",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c4dd0657d4fa",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 110,
+      "source": "manifold",
+      "title": "Will AI wipe out humanity before the year 2031?",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-b4153e3cfd6b",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 111,
+      "source": "manifold",
+      "title": "Will AI wipe out humanity before the year 2032?",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c7e255f4843c",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 112,
+      "source": "manifold",
+      "title": "Will AI wipe out humanity before the year 2035?",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-fb2463776b50",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 113,
+      "source": "manifold",
+      "title": "Will AI wipe out humanity before the year 2040?",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 114,
+      "source": "manifold",
+      "title": "Will AI wipe out humanity before the year 2060?",
+      "url": "https://manifold.markets/JamesBills/will-ai-wipe-out-humanity-before-th-6e8e547afa66",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 115,
+      "source": "manifold",
+      "title": "Will AI wipe out humanity before the year 2150?",
+      "url": "https://manifold.markets/justifieduseofFallibilism/will-ai-wipe-out-humanity-before-th-b1c8bfb80ec0",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 116,
+      "source": "manifold",
+      "title": "Will AI wipe out humanity by 2030? [resolves N/A in 2027]",
+      "url": "https://manifold.markets/EliezerYudkowsky/will-ai-wipe-out-humanity-by-2030-r",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "index": 117,
+      "source": "manifold",
+      "title": "Will misaligned AI kill >50% of humanity before 2040?",
+      "url": "https://manifold.markets/ahalekelly/will-misaligned-ai-kill-50-of-the-h",
+      "date": "",
+      "reason": "默认赔率池是相近的 AI 灭绝／重大伤亡题型，不为凑数量收录；需要另搜题型更分散的新盘。",
+      "potential_value": false
+    },
+    {
+      "source": "the-information",
+      "title": "AI Safety Push Sparks Demand for Watchdog Groups. Critics Doubt Their Independence.",
+      "reason": "上一期已读，重复候选，不重收。",
+      "potential_value": true
+    },
+    {
+      "source": "the-information",
+      "title": "A Tsinghua Professor’s Stealth LLM Startup Hits $1.4 Billion Valuation",
+      "reason": "仅首页标题与美国日期，未精读，保留待用户捞回。",
+      "potential_value": true
+    },
+    {
+      "source": "the-information",
+      "title": "Nscale IPO Files to Go Public, Shows Huge Revenue Jump And Steep Losses",
+      "reason": "仅首页摘要，本次三篇精读额度优先给模型事故与两家前沿公司融资。",
+      "potential_value": true
+    },
+    {
+      "source": "the-information",
+      "title": "CoreWeave Prices $3.7 Billion Convertible Bond Offering",
+      "reason": "仅首页摘要，常规融资，未精读。",
+      "potential_value": true
+    }
+  ],
+  "notes": [
+    "LW 语音 RSS 时间可能晚于原文首发；摘要有 First published 时优先尊重原文日期。",
+    "未发现默认 Manifold 池与全历史 daily 的完全相同 URL；不将未证实的重复写成已报。",
+    "The Information 排除项来自主 agent，缺 URL 的只保留原标题与原因。"
+  ]
+}

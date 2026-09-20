@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.20519",
+  "title": "SoL-Pi 让 Agent 自己改进工作外壳",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://nvlabs.github.io/SoL-Pi/",
+  "title": "SoL-Pi 让 Agent 自己改进工作外壳",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.17653",
+  "title": "操作界面的 Agent 会把失败经验写进技能",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.18605",
+  "title": "企业 AI 助手也会被催着违规",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.20800",
   "title": "JEPA-Anything 用同一套方法预测天气和分子运动",
   "date": "2026-09-18",

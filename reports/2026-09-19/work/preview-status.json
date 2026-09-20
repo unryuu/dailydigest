@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-19",
+  "stage": "self_preview_sent",
+  "recorded_at": "2026-09-20T19:43:42.160152+08:00",
+  "content_count": 22,
+  "gold": 1,
+  "silver": 6,
+  "odds": 4,
+  "telegram": {
+    "destination": "self",
+    "links_message_id": 412,
+    "image_message_id": 413
+  },
+  "validation": {
+    "errors": 0,
+    "warnings": 1,
+    "warning_review": "Byrnes条目属于作者解释，保留观点归属，人工通过。",
+    "duplicate_urls": 0
+  },
+  "files": {
+    "daily.json": {
+      "bytes": 8781,
+      "sha256": "fd127f7b5b21e347f4e169d757b15e6e2a3e66f19683ee705adad83e1bec5cef"
+    },
+    "daily.full.png": {
+      "bytes": 2751617,
+      "sha256": "ac0baa91847e277026c3fe47df08855127bc721af94e38eee660d563928880f2",
+      "dimensions": [
+        1179,
+        12627
+      ]
+    },
+    "work/daily.preedit.json": {
+      "bytes": 8781,
+      "sha256": "fd127f7b5b21e347f4e169d757b15e6e2a3e66f19683ee705adad83e1bec5cef"
+    }
+  },
+  "next": "等待用户审阅修改或明确发频道。未获得本期频道授权。",
+  "removed_after_reading": {
+    "item-06": "9月14日旧文，IEEE两轮无完整正文。",
+    "item-14": "DeepSeek Flash核心规格重复9月10日。",
+    "item-21": "9月17日旧文，使用已知密钥，不是今天新破解。"
+  },
+  "correction": "数学解释文章为Grant Sanderson客座陶哲轩博客，已更正署名。",
+  "scan_anchors": {
+    "mechanical": "2026-09-19T22:11:28.026437+08:00",
+    "theinformation": "2026-09-19T22:13:28.110926+08:00",
+    "x": "2026-09-19T22:23:36.719666+08:00"
+  },
+  "note": "跨日继续09-19当期，09-20仅精读、写稿与赔率取实时值，没有启动新一期。"
+}

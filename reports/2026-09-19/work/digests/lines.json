@@ -1,0 +1,138 @@
+[
+  {
+    "id": "item-04",
+    "section": "industry",
+    "label": "纽森加快推进 AI 独立审计与关闭开关",
+    "url": "https://www.axios.com/2026/09/18/newsom-ai-2028-focus",
+    "body": "加州行政令加快落实独立核查机构法案，并推进模型关闭开关，填补联邦监管迟迟未动的空档。",
+    "note": "核实通过。已读 raw/item-04.txt 全文及 HTML 发布时间：09-18 20：59：19 UTC。正文限于加州已发布行政令，不把伊利诺伊／马萨诸塞提案写成生效法律；独立核查两法已于前一周签署，本次是加快实施。与近期减速专题同背景但有新州级动作。"
+  },
+  {
+    "id": "item-08",
+    "section": "deep",
+    "label": "模型数学强，可能先得益于好教材",
+    "url": "https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are",
+    "body": "研究者拜恩斯认为，数学文献错误少，模型通过模仿就更容易学到正确推理；其他领域的材料更混杂。",
+    "note": "核实通过。读到作者正文及修改记录，正文日期 09-18，次日有改动。作者已撤回“公司很少做数学强化学习”并修正 IMO 相关说法，不能沿用 scout 摘要旧版本。仅呈现预训练资料质量这一解释性观点，不当成实验证明。"
+  },
+  {
+    "id": "item-12",
+    "section": "papers",
+    "label": "企业 AI 助手也会被催着违规",
+    "url": "https://huggingface.co/papers/2609.18605",
+    "body": "PACT 测试在请求里加入催进度、上司许可等日常压力后，模型违规率平均增加 65％。",
+    "note": "核实通过。HF 摘要和原项目 https://trace-ai-labs.github.io/pact/ 均支持 65％相对增幅，不能写成增加 65 个百分点。摘要为 22 模型，当前项目榜为 24 模型，稿件不混用模型总数。论文 09-16 首发，09-18 提交 HF，按本日榜单候选处理，不称今日论文发布。"
+  },
+  {
+    "id": "item-13",
+    "section": "brief",
+    "label": "Laya 开源用于工单分流和风险判断的概率模型",
+    "url": "https://laya.convaiinnovations.com",
+    "title": "Laya 开源用于工单分流和风险判断的概率模型",
+    "note": "核实通过。原站全文给出 choice／score／概率三类输出、代码和权重入口。只保留产品用途与开放方式，不写其“零幻觉”、自托管零成本或跨来源速度倍数。页面未提供精确发布日期，HN 窗口内提交时间不是原文发布日期。"
+  },
+  {
+    "id": "item-14",
+    "section": "papers",
+    "label": "DeepSeek 介绍持久缓存压缩方法",
+    "url": "https://huggingface.co/papers/2609.19969",
+    "body": "SWA Bounded Replay 把 SSD 或主存中的持久缓存压到 V4 Flash 约八分之一。",
+    "note": "dup_suspect：09-10 已报的就是 DeepSeek V4.1 Flash，含 5520 亿主干、百万上下文、输入 80 亿／输出 160 亿激活参数和 KV 四分之一。本次 890 字节也是同一旧规格，不能靠换成论文链接重报。HF 摘要和原 arXiv 摘要真实读到 SWA Bounded Replay 将持久缓存压至前代约八分之一，但这是同一模型的工程细节，不是新模型或新权重；建议删除，若主 agent 认为有足够独立增量，仅可用当前备选正文。论文首发 09-17，HF 提交 09-18。"
+  },
+  {
+    "id": "item-15",
+    "section": "papers",
+    "label": "操作界面的 Agent 会把失败经验写进技能",
+    "url": "https://huggingface.co/papers/2609.17653",
+    "body": "EvoSkill-GUI 让模型复盘失败，只修改出错的技能文件，下次遇到类似任务就能复用，无需重新训练。",
+    "note": "核实通过。读 HF 论文摘要及 raw-extra/gui-project.html 完整 DOM，未用评论区替代论文。项目文字抓取只剩一句，但 HTML 完整。最大 MobileWorld 收益为 16.2 个百分点，当前正文只写机制。论文 09-15、HF 提交 09-18，不写今日首发。与 09-15 经验库主线是不同 GUI 框架和独立结果，无硬重复。"
+  },
+  {
+    "id": "item-16",
+    "section": "official",
+    "label": "Claude Code 开始支持 AGENTS.md",
+    "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar",
+    "body": "从 2.1.277 起，文件夹没有 CLAUDE.md 时会读取 AGENTS.md，这项功能基于新的 mod 机制。",
+    "note": "核实通过。Simon 09-18 19：09 UTC 收藏的 Thariq Shihipar 原话完整可读。严格保留没有 CLAUDE.md 才回退的条件，不扩成两个文件同时加载；mod 定制能力为 upcoming，不说已全量开放。"
+  },
+  {
+    "id": "item-17",
+    "section": "official",
+    "label": "Grok 更新语音转录模型",
+    "url": "https://x.ai/news/grok-voice-transcribe-2",
+    "body": "2.0 支持录音中途切换语言，价格不变：每小时录音批量转写 0.1 美元，实时转写 0.2 美元。",
+    "note": "核实通过。官方全文明确多语切换、同价和两种计费。版本将成为默认，旧版随后弃用，未写已经切换。date_precision_day：页面为 Sep 18，JSON-LD 为 2026-09-18T00：00：00Z，可能是按日填充，无法证明晚于机械接续点 21：21；请主 agent 裁决时效，不把日期写成 09-19 首发。"
+  },
+  {
+    "id": "item-19",
+    "section": "fun",
+    "label": "斯坦福发现大脑前后部分有不同发育起点",
+    "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+    "body": "研究者分清两类祖细胞后，成功用人类干细胞培养出后脑运动神经元。",
+    "note": "核实通过。斯坦福机构报道全文说明前脑／中脑与后脑来自不同祖细胞，鼠胚发育路径与人类干细胞培养分开写。避免沿用“两个独立器官”标题造成脑被切成两块的误读。Nature Neuroscience 发表日为 09-18；页面元数据零点仅到日，不确认精确发布时刻。"
+  },
+  {
+    "id": "item-20",
+    "section": "deep",
+    "label": "3Blue1Brown 作者呼吁奖励数学好解释",
+    "url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it",
+    "body": "桑德森提出，讲清一个想法如何被发现，也该像证明新定理一样获得学术认可。",
+    "note": "核实通过，作者归属纠正：这是 Grant Sanderson 在陶哲轩博客的客座文，开头明确标注 guest post，不能写成陶哲轩自己的论点。正文以 AI 能生成证明为背景，主张提高解释工作的学术地位；不是单纯大众科普倡议。页面展示 09-18，published 元数据 09-19 05：19：47 UTC，属于本期窗口。"
+  },
+  {
+    "id": "item-21",
+    "section": "fun",
+    "label": "Astra 用已知密钥读出一战德军电报",
+    "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+    "body": "它还查了英国巡洋舰日志，核对电报中军舰抵达塞瓦斯托波尔的日期。",
+    "note": "核实通过，但 out_of_window：原文标 Sep 17，HN 提交时间不能冒充首发；09-19 的 modified 元数据未指出哪项内容新增，建议主 agent 删除。原文给出已知关键词 TRUPPENVERSCHIEBUNG 和逐步解码方法；“此前未解”只是作者所知范围，不能写成首次破解密码系统。任务提示和人工干预范围未完整公开，不写模型独立解决。"
+  },
+  {
+    "id": "item-22",
+    "section": "fun",
+    "label": "动画鹈鹕骑的其实是真自行车",
+    "url": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit",
+    "body": "《谁陷害了兔子罗杰》剧组给车轮灌水增稳，再用线牵着车跑。",
+    "note": "核实通过。Simon 当日全文明确真自行车、车轮灌水与缆线引导；链接是电影制作趣闻，不写成新电影或 AI 生成。发布时间 09-18 14：36 UTC，在机械接续点后。"
+  },
+  {
+    "id": "item-03",
+    "section": "industry",
+    "label": "OpenAI 烧钱预测引发争议",
+    "url": "https://www.theinformation.com/briefings/openai-said-forecast-nearly-280-billion-cash-burn-end-2030",
+    "body": "金融时报披露到2030年累计烧钱2780亿美元的预测，OpenAI 财务主管回应称数字不准确。",
+    "note": "TI登录态简报已读，争议双方均保留。"
+  },
+  {
+    "id": "item-18",
+    "section": "brief",
+    "title": "Step 5 Preview 登上独立模型榜单",
+    "label": "Step 5 Preview 登上独立模型榜单",
+    "url": "https://artificialanalysis.ai/models/step-5",
+    "note": "通过web查询真实AA原页，发布日2026-09-18，44分、1M上下文、图文输入。按已确认简讯只写榜单出现，不扩成官方正式发布。"
+  },
+  {
+    "id": "item-23",
+    "section": "fun",
+    "label": "Claude 没解开伏尼契手稿，拍了部解释电影",
+    "url": "https://x.com/emollick/status/2100767116819325141",
+    "body": "它尝试解释这本神秘手稿，碰了一圈壁，又把探索过程做成了一部四分钟短片。",
+    "note": "19日登录态已读主帖与后续；片长4分7秒。211种方法来自作者后续报告，31种此前未试只为模型自述，不进稿。"
+  },
+  {
+    "id": "item-24",
+    "section": "fun",
+    "label": "LinkedIn 机器人开始互相说空话",
+    "url": "https://x.com/emollick/status/2100978802843177081",
+    "body": "它们在 Mollick 的评论区反复谈“没人讨论的事情”，指的却正是他已经在讨论的事。",
+    "note": "19日登录态已读主帖和作者澄清，秘密协调只是玩笑。"
+  },
+  {
+    "id": "item-25",
+    "section": "fun",
+    "label": "1935 年的本雅明也被读出了 Claude 味",
+    "url": "https://x.com/emollick/status/2101302622393078265",
+    "body": "Mollick 重读《机械复制时代的艺术作品》，觉得第二句话像 Claude 写的，连老文章的味道都变了。",
+    "note": "19日登录态原帖已读，明确为作者个人感受。"
+  }
+]

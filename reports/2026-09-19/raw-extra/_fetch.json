@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "solpi-project",
+    "url": "https://nvlabs.github.io/SoL-Pi/",
+    "status": 200,
+    "final_url": "https://nvlabs.github.io/SoL-Pi/",
+    "bytes": 250552,
+    "title": "SoL-Pi: Scaling Auto-Research Loops for Efficient Agent Harnesses",
+    "chars": 41968
+  },
+  {
+    "slug": "pact-project",
+    "url": "https://trace-ai-labs.github.io/pact/",
+    "status": 200,
+    "final_url": "https://trace-ai-labs.github.io/pact/",
+    "bytes": 260191,
+    "title": "PACT · LLM compliance benchmark: enterprise AI assistants under pressure | TRACE AI Labs",
+    "chars": 8481
+  },
+  {
+    "slug": "gui-project",
+    "url": "http://zjureal.com/EvoSkill-GUI/",
+    "status": 200,
+    "final_url": "http://zjureal.com/EvoSkill-GUI/",
+    "bytes": 27699,
+    "title": "EvoSkill-GUI | Reflect, Revise, Reuse",
+    "chars": 79
+  },
+  {
+    "slug": "deepseek-abstract",
+    "url": "https://arxiv.org/abs/2609.19969",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2609.19969",
+    "bytes": 137426,
+    "title": "[2609.19969] DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+    "chars": 12493
+  },
+  {
+    "slug": "epoch-benchmarks",
+    "url": "https://epoch.ai/benchmarks/search?reviewed=verified&reviewed=flawed&reviewed=not-enough-info",
+    "status": 200,
+    "final_url": "https://epoch.ai/benchmarks/search?reviewed=verified&reviewed=flawed&reviewed=not-enough-info",
+    "bytes": 136919,
+    "title": "Benchmarks | Epoch AI",
+    "chars": 2898
+  }
+]

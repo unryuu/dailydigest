@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+  "title": "Anthropic 公开 AI 研发自动化指标",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
   "id": "https://www.anthropic.com/threat-intelligence-report-september-2026",
   "title": "Anthropic 披露七类真实 AI 滥用",
   "date": "2026-09-11T01:13:00+08:00",

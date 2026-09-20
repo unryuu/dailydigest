@@ -1,5 +1,47 @@
 [
  {
+  "id": "https://x.com/teortaxesTex/status/2100702413678051664",
+  "title": "Anthropic 公开 AI 研发自动化指标",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+  "title": "Anthropic 公开 AI 研发自动化指标",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://x.com/teortaxesTex/status/2101195542818619551",
+  "title": "Step 5 Preview 登上独立模型榜单",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://artificialanalysis.ai/models/step-5",
+  "title": "Step 5 Preview 登上独立模型榜单",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://x.com/teortaxesTex/status/2100688776720708017",
+  "title": "Epoch 从贸易账目追踪芯片转运",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://epoch.ai/data-insights/malaysia-china-chip-smuggling",
+  "title": "Epoch 从贸易账目追踪芯片转运",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
   "id": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
   "title": "DeepSeek V4.1 Flash 开放权重",
   "date": "2026-09-10",

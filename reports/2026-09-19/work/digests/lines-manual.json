@@ -1,0 +1,42 @@
+[
+  {
+    "id": "item-03",
+    "section": "industry",
+    "label": "OpenAI 烧钱预测引发争议",
+    "url": "https://www.theinformation.com/briefings/openai-said-forecast-nearly-280-billion-cash-burn-end-2030",
+    "body": "金融时报披露到2030年累计烧钱2780亿美元的预测，OpenAI 财务主管回应称数字不准确。",
+    "note": "TI登录态简报已读，争议双方均保留。"
+  },
+  {
+    "id": "item-18",
+    "section": "brief",
+    "title": "Step 5 Preview 登上独立模型榜单",
+    "label": "Step 5 Preview 登上独立模型榜单",
+    "url": "https://artificialanalysis.ai/models/step-5",
+    "note": "通过web查询真实AA原页，发布日2026-09-18，44分、1M上下文、图文输入。按已确认简讯只写榜单出现，不扩成官方正式发布。"
+  },
+  {
+    "id": "item-23",
+    "section": "fun",
+    "label": "Claude 没解开伏尼契手稿，拍了部解释电影",
+    "url": "https://x.com/emollick/status/2100767116819325141",
+    "body": "它尝试解释这本神秘手稿，碰了一圈壁，又把探索过程做成了一部四分钟短片。",
+    "note": "19日登录态已读主帖与后续；片长4分7秒。211种方法来自作者后续报告，31种此前未试只为模型自述，不进稿。"
+  },
+  {
+    "id": "item-24",
+    "section": "fun",
+    "label": "LinkedIn 机器人开始互相说空话",
+    "url": "https://x.com/emollick/status/2100978802843177081",
+    "body": "它们在 Mollick 的评论区反复谈“没人讨论的事情”，指的却正是他已经在讨论的事。",
+    "note": "19日登录态已读主帖和作者澄清，秘密协调只是玩笑。"
+  },
+  {
+    "id": "item-25",
+    "section": "fun",
+    "label": "1935 年的本雅明也被读出了 Claude 味",
+    "url": "https://x.com/emollick/status/2101302622393078265",
+    "body": "Mollick 重读《机械复制时代的艺术作品》，觉得第二句话像 Claude 写的，连老文章的味道都变了。",
+    "note": "19日登录态原帖已读，明确为作者个人感受。"
+  }
+]

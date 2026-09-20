@@ -1,0 +1,256 @@
+{
+  "date": "2026-09-19",
+  "authorization": "用户：好的，不用调整，继续推进",
+  "items": [
+    {
+      "url": "https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks",
+      "original_title": "Google is the latest AI lab with a security testing mishap",
+      "section": "行业大事",
+      "tier": "金",
+      "title": "Gemini 测试时闯入三家公司网络",
+      "note": "五月事故新披露；与昨日白帽攻击 OpenAI 是不同事件。",
+      "decision": "keep",
+      "id": "item-01"
+    },
+    {
+      "url": "https://www.theinformation.com/articles/anthropic-ipo-waiting-game-puts-wall-street-edge",
+      "original_title": "Anthropic IPO Waiting Game Puts Wall Street on Edge",
+      "section": "行业大事",
+      "tier": "银",
+      "title": "Anthropic 上市窗口后移，准备加大训练投入",
+      "note": "只写上市与新投入；二季度收入已经报过。",
+      "decision": "keep",
+      "id": "item-02"
+    },
+    {
+      "url": "https://www.theinformation.com/briefings/openai-said-forecast-nearly-280-billion-cash-burn-end-2030",
+      "original_title": "OpenAI Said to Forecast Nearly $280 Billion in Cash Burn Through End 2030",
+      "section": "行业大事",
+      "tier": "无牌",
+      "title": "OpenAI 烧钱预测引发争议",
+      "note": "财务主管已反驳数字，双方一起写。",
+      "decision": "keep",
+      "id": "item-03"
+    },
+    {
+      "url": "https://www.axios.com/2026/09/18/newsom-ai-2028-focus",
+      "original_title": "2028 Democrats like Newsom and Pritzker lean in on AI safety as Washington stalls",
+      "section": "行业大事",
+      "tier": "无牌",
+      "title": "美国州长推进 AI 安全措施",
+      "note": "精读区分已实施措施与政治表态。",
+      "decision": "keep",
+      "id": "item-04"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2100688776720708017",
+      "original_title": "Epoch 用贸易记录分析经马来西亚进入中国的芯片",
+      "section": "行业大事",
+      "tier": "银",
+      "title": "Epoch 从贸易价差追踪流入中国的芯片",
+      "note": "需回溯研究；走私规模是推断，不能写成查获。",
+      "decision": "keep",
+      "id": "item-05"
+    },
+    {
+      "url": "https://spectrum.ieee.org/llms-for-chip-design",
+      "original_title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+      "section": "深度长文",
+      "tier": "银",
+      "title": "OpenAI 用自己的模型参与芯片设计",
+      "note": "只收设计过程新信息，不重复芯片能效规格。",
+      "decision": "keep",
+      "id": "item-06"
+    },
+    {
+      "url": "https://huggingface.co/papers/2609.20519",
+      "original_title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+      "section": "新鲜论文",
+      "tier": "银",
+      "title": "SoL-Pi 让研究循环改进 Agent 外壳",
+      "note": "暂定银，需有独立过程与结果。",
+      "decision": "keep",
+      "id": "item-07"
+    },
+    {
+      "url": "https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are",
+      "original_title": "“Pretraining data, not verifiability, is why LLMs are especially good at math (and coding)” by Steven Byrnes",
+      "section": "深度长文",
+      "tier": "无牌",
+      "title": "模型数学强，可能先得益于好教材",
+      "note": "Byrnes 的解释性观点，不能当实验结论。",
+      "decision": "keep",
+      "id": "item-08"
+    },
+    {
+      "url": "https://x.com/emollick/status/2101010622305493013",
+      "original_title": "The Overhang：模型能力与实际使用之间的差距",
+      "section": "深度长文",
+      "tier": "银",
+      "title": "模型能力已经跑在实际用法前面",
+      "note": "Mollick 的应用差距长文，需读出具体方法。",
+      "decision": "keep",
+      "id": "item-09"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2100702413678051664",
+      "original_title": "Anthropic 提出三项指标追踪 AI 研发自动化",
+      "section": "官方公告",
+      "tier": "银",
+      "title": "Anthropic 用三项指标追踪研发自动化",
+      "note": "目前只见引用片段，先核完整公告与日期。",
+      "decision": "keep",
+      "id": "item-10"
+    },
+    {
+      "url": "https://x.com/emollick/status/2100744220562673683",
+      "original_title": "基准质量审查：十五项里九项有缺陷",
+      "section": "深度长文",
+      "tier": "银",
+      "title": "Epoch 审查十五项基准，九项有缺陷",
+      "note": "精读审查标准，解释缺陷如何影响分数。",
+      "decision": "keep",
+      "id": "item-11"
+    },
+    {
+      "url": "https://huggingface.co/papers/2609.18605",
+      "original_title": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
+      "section": "新鲜论文",
+      "tier": "无牌",
+      "title": "企业 AI 助手在压力下能否守住规则",
+      "note": "PACT 基准，标题未给出结果。",
+      "decision": "keep",
+      "id": "item-12"
+    },
+    {
+      "url": "https://laya.convaiinnovations.com",
+      "original_title": "Laya the open source version of Jev",
+      "section": "行业简讯",
+      "tier": "简讯",
+      "title": "Laya 开源复现 Jev 的思路",
+      "note": "先核产品功能；一句话讲不清就删。",
+      "decision": "keep",
+      "id": "item-13"
+    },
+    {
+      "url": "https://huggingface.co/papers/2609.19969",
+      "original_title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+      "section": "新鲜论文",
+      "tier": "无牌",
+      "title": "DeepSeek V4.1 Flash 的缓存压缩",
+      "note": "仅留 Flash 的新增部分，重复旧规格就删。",
+      "decision": "keep",
+      "id": "item-14"
+    },
+    {
+      "url": "https://huggingface.co/papers/2609.17653",
+      "original_title": "Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents",
+      "section": "新鲜论文",
+      "tier": "无牌",
+      "title": "操作界面的 Agent 自己更新技能",
+      "note": "精读免训练的更新方法与收益。",
+      "decision": "keep",
+      "id": "item-15"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar",
+      "original_title": "Quoting Thariq Shihipar",
+      "section": "官方公告",
+      "tier": "无牌",
+      "title": "Claude Code 开始支持 AGENTS.md",
+      "note": "文件夹没有 CLAUDE.md 时才回退读取。",
+      "decision": "keep",
+      "id": "item-16"
+    },
+    {
+      "url": "https://x.ai/news/grok-voice-transcribe-2",
+      "original_title": "Introducing Grok Voice Transcribe 2.0",
+      "section": "官方公告",
+      "tier": "无牌",
+      "title": "Grok 更新语音转录模型",
+      "note": "核发布时间与更新幅度。",
+      "decision": "keep",
+      "id": "item-17"
+    },
+    {
+      "url": "https://x.com/teortaxesTex/status/2101195542818619551",
+      "original_title": "Step 5 Preview 出现在独立模型榜单",
+      "section": "行业简讯",
+      "tier": "简讯",
+      "title": "Step 5 Preview 登上独立模型榜单",
+      "note": "榜单出现，不写成正式发布。",
+      "decision": "keep",
+      "id": "item-18"
+    },
+    {
+      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+      "original_title": "Human brain is two separate organs, Stanford Medicine-led research finds",
+      "section": "乐子汇总",
+      "tier": "无牌",
+      "title": "斯坦福研究重新划分大脑",
+      "note": "不能照抄“两个器官”标题，先读具体含义。",
+      "decision": "keep",
+      "id": "item-19"
+    },
+    {
+      "url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it",
+      "original_title": "If math is more than proof, we need to better celebrate the rest of it",
+      "section": "深度长文",
+      "tier": "无牌",
+      "title": "陶哲轩：数学不只有证明",
+      "note": "保留概念长文；精读核与 AI 的关系。",
+      "decision": "keep",
+      "id": "item-20"
+    },
+    {
+      "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+      "original_title": "GPT-6 Astra Solves a WWI German Radio Cipher",
+      "section": "乐子汇总",
+      "tier": "无牌",
+      "title": "Astra 解开一战德军无线电密码",
+      "note": "核原题、人工参与和“破解”的范围。",
+      "decision": "keep",
+      "id": "item-21"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit",
+      "original_title": "The Creative Spirit of Who Framed Roger Rabbit",
+      "section": "乐子汇总",
+      "tier": "无牌",
+      "title": "动画鹈鹕骑的其实是真自行车",
+      "note": "车轮灌水增稳，再用线牵引。",
+      "decision": "keep",
+      "id": "item-22"
+    },
+    {
+      "url": "https://x.com/emollick/status/2100767116819325141",
+      "original_title": "Claude 破解伏尼契手稿失败，做出一部解释电影",
+      "section": "乐子汇总",
+      "tier": "无牌",
+      "title": "Claude 没解开伏尼契手稿，拍了部解释电影",
+      "note": "与前期线形文字 A 区别在失败后的产物。",
+      "decision": "keep",
+      "id": "item-23"
+    },
+    {
+      "url": "https://x.com/emollick/status/2100978802843177081",
+      "original_title": "LinkedIn 评论区的机器人开始互相说空话",
+      "section": "乐子汇总",
+      "tier": "无牌",
+      "title": "LinkedIn 机器人开始互相说空话",
+      "note": "秘密协调只是作者玩笑。",
+      "decision": "keep",
+      "id": "item-24"
+    },
+    {
+      "url": "https://x.com/emollick/status/2101302622393078265",
+      "original_title": "1935 年的本雅明句子也像 Claude",
+      "section": "乐子汇总",
+      "tier": "无牌",
+      "title": "1935 年的本雅明也被读出了 Claude 味",
+      "note": "作者阅读感受，文学趣味。",
+      "decision": "keep",
+      "id": "item-25"
+    }
+  ]
+}

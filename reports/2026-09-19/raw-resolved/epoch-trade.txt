@@ -1,0 +1,231 @@
+URL: https://epoch.ai/data-insights/malaysia-china-chip-smuggling
+FINAL: https://epoch.ai/data-insights/malaysia-china-chip-smuggling
+TITLE: Trade data consistent with $3B of chips smuggled to China via Malaysia | Epoch AI
+FETCHED: 2026-09-20 19:33:42
+============================================================
+Between April 2024 and June 2025, China recorded $3.8 billion of server imports from Malaysia, at AI server prices of $80,000â$150,000 per unit, yet Malaysia recorded only $0.6 billion of exports to China. While not proving diversion, this pattern is consistent with
+established cases
+of chip smuggling into China, in which intermediaries have routed AI servers through Malaysia and declared them on export paperwork as ordinary servers. The flow could account for roughly 150,000 H100-equivalents (H100e) of diverted compute.
+China's recorded imports of Malaysian-origin servers (HS 847150), by quarter
+Quarter
+Value recorded by China (USD)
+Units recorded by China
+Average price per unit (USD)
+2022 Q1
+$95,513,217
+156,037
+$612
+2022 Q2
+$124,777,743
+188,508
+$662
+2022 Q3
+$110,740,486
+243,156
+$455
+2022 Q4
+$102,067,889
+154,114
+$662
+2023 Q1
+$137,146,993
+157,752
+$869
+2023 Q2
+$129,890,576
+222,636
+$583
+2023 Q3
+$99,196,303
+163,593
+$606
+2023 Q4
+$103,707,716
+162,652
+$638
+2024 Q1
+$238,253,211
+57,659
+$4,132
+2024 Q2
+$384,533,741
+4,549
+$84,531
+2024 Q3
+$386,240,506
+4,940
+$78,186
+2024 Q4
+$925,765,754
+7,826
+$118,294
+2025 Q1
+$945,807,775
+6,197
+$152,623
+2025 Q2
+$1,107,754,767
+11,978
+$92,482
+2025 Q3
+$266,362,106
+4,519
+$58,943
+2025 Q4
+$91,154,889
+6,977
+$13,065
+2026 Q1
+$126,616,063
+15,866
+$7,980
+2026 Q2
+$268,776,900
+19,027
+$14,126
+The two countries report similar quantities of units moved (36,700 declared by Malaysia, 35,500 recorded by China) but disagree on what they were worth: about $17,000 each leaving Malaysia, compared with $106,000 arriving in China. This flow began a few months after
+the US banned
+exports of Nvidiaâs A800/H800 GPUs to China, and then collapsed within weeks of
+Malaysia requiring
+a permit to export or transship high-performance AI chips â a move that
+preempted expected US actions
+to curb the trade.
+Epoch's work is free to use, distribute, and reproduce provided the source and authors are credited under the Creative Commons BY license.
+Learn more about this graph
+Whenever goods cross an international border, customs officers are supposed to record a commodity code, a value, and often a piece count. We look at this data for servers, which are recorded under a six-digit product code in the globally adopted Harmonized System (HS-6 847150), and find that, between April 2024 and June 2025, China recorded $3.75 billion of Malaysian-origin servers at an average of $106,000 a machine. While HS-6 847150 includes both AI and non-AI servers, the elevated prices during this period are more consistent with AI servers, which are substantially more expensive. This period falls between two important policy events: the
+October 2023 export controls
+on Nvidiaâs A800/H800 chips to China, which until then were the highest-performing GPUs still legal to sell there, and the
+July 2025 Directive No. 1/2025
+by Malaysiaâs Ministry of Investment, Trade and Industry (MITI), which required a 30-day advance notice and a permit for the export, transshipment, and transit of high-performance, US-origin AI chips. Outside this window, the imports of Malaysian-origin servers into China look completely different:
+Period
+Average monthly value
+Average price per machine
+Before (Jan 2022âMar 2024)
+$42M
+$760
+Window (Apr 2024âJun 2025)
+$250M
+$105,700
+Transition (JulâAug 2025)
+$126M
+$77,000
+After (Sep 2025âJun 2026)
+$50M
+$11,600
+Our monthly data shows that it takes around four months for the elevated flow to start after the US export controls are announced and about two months for the flow to wind down. The JulâAug 2025 transition period shows the directive taking effect, consistent with goods already cleared, the 30-day notice period, and shipping times. We exclude these two months from the headline figure to keep the corridor and its wind-down separate; including them would increase the total to $4.0 billion and the compute estimate to roughly 160,000 H100e.
+Since trade data is reported twice, once by the exporter and once by the importer, we can also check Malaysiaâs own records, including the machine counts it files to the UN but does not publish nationally (see Data). They agree with China on the volume of this trade, 36,700 machines versus 35,500, and disagree by 6x on its value: about $17,000 per machine leaving Malaysia, and $106,000 per machine arriving in China. Discrepancies between reporters are common, and comparing the two sides of the same flow â a technique known as mirror trade statistics â is routinely used to
+fill gaps
+left by non-reporting countries, to
+measure tariff evasion
+, and to
+trace how goods reach sanctioned countries
+through intermediaries. A gap can also have perfectly benign explanations â in our case, possible alternative explanations are routing through Singapore or Hong Kong or reclassification under a different code â but none of the explanations we test are satisfactory (see Analysis). Furthermore, none of them can explain why other countries that also report significant imports of Malaysian-origin servers over the same period show a very different mix of products â $1,500 per unit in the US, $6,200 in Singapore, $11,700 in Hong Kong, $23,000 in Japan, against Chinaâs $106,000.
+If smuggling did take place, this picture is consistent with the incentives facing intermediaries using Malaysia as a transit hub. Export controls at the time restricted sales to China, not to Malaysia, and the US could not enforce them abroad without the cooperation of the countries through which the goods passed. Since exports are not taxed, they are not usually audited by customs authorities, so the smugglers could have declared the same machines at the price of ordinary servers to avoid drawing attention to the flow. The buyers in China, on the other hand, were breaking no Chinese law, so had less reason to lie to their own customs â and under-declaring there would have meant committing fraud over goods that were legal to bring in. This behavior would have created the price wedge we observe during the window, and the tradeâs collapse once Malaysia started scrutinizing it corroborates this story.
+We also estimate how much compute this trade could represent. Ordinary servers are too cheap to carry more than a fraction of the $3.75 billion, so we divide it by Nvidiaâs H100 chip price in
+Epoch AIâs Chip Sales
+dataset, which gives us roughly 150,000 H100-equivalents (H100e). This is a rough estimate intended to give a sense of scale. Two factors would pull it down: the customs value covers whole servers, not just their GPUs, and import prices in China may reflect a premium due to risk incurred by smugglers. A factor that may drive this up is that some of the chips moved may be more cost-efficient Blackwells. Additionally, there could potentially be smuggling through Malaysia that is undeclared or declared using fabricated prices. 150,000 H100e would be roughly a quarter of the median in Epoch AIâs
+modeled estimate of total smuggling
+.
+Data
+The data we use comes from monthly customs records obtained directly from each national statistical agencyâs own API or data portal, covering the period from January 2022 to June 2026. These records always include the dollar value and, in some cases, piece counts. We use the following sources:
+Source
+Flows published
+Piece counts
+What we take from it
+China (
+GACC
+)
+Imports by country of origin, exports by destination
+Complete
+The import data, together with the number of units to derive the average price per machine
+Malaysia (
+DOSM
+)
+Imports, exports, exports split into domestic vs re-export
+None published
+What Malaysia says it sent, and where it was sent
+Malaysia (
+UN Comtrade
+)
+Imports, exports
+Complete
+The unit counts of the servers, which Malaysia does not publish in its national portal
+Singapore (
+SingStat
+)
+As above; 75% of server exports are re-exports
+Complete
+How much Malaysian-origin hardware arrived, and how much it could have re-exported
+Hong Kong (
+C&SD
+)
+As above; re-exports are essentially all of its server exports
+Complete
+Same as Singapore
+We also track nine HS-6 codes connected to AI hardware, from bare processors (854231) through memory (854232) and switches (851762) to assembled servers (847150). The headline figures are based on server values and quantities, but we use the other eight codes to check whether the missing servers simply left Malaysia under a different label, which sometimes
+happens in other AI trade flows
+.
+These five sources are part of a larger collection of country level customs data aggregated by Epoch (which we will release in an upcoming publication) that covers most of the worldâs AI supply chain: the US, Taiwan, South Korea, Japan, the UK, India, Thailand, Indonesia, the EU-27, and Mexico. The broader dataset is used for two things. First, other countriesâ import records show how Malaysian-origin servers were priced elsewhere and let us determine that China had a uniquely high-value distribution. Second, we can check whether re-routing is responsible for the discrepancy, by comparing Chinaâs imports against those countriesâ exports. That check covers 77% of Chinaâs server imports across the window. The largest origin we do not have is Vietnam, but it receives only around $100 million of servers from Malaysia during the window, and arrivals from Vietnam into China are priced like ordinary hardware at ~$300 per unit.
+Six of these reporters publish values only in local currency (Malaysia, Singapore, Hong Kong, Japan, the UK, and the EU-27); we convert them to US dollars using International Monetary Fund (IMF) monthly period-average rates, except the euro, for which we use the European Central Bank (ECB) reference rate. Imports are usually valued including freight and insurance, while exports are not, which inflates the importerâs side by a few percent â we do not adjust for this in our analysis, but it is negligible relative to the discrepancies observed.
+Finally, the GPU prices we use to convert dollars into chip counts come from
+Epoch AIâs Chip Sales
+dataset.
+Analysis
+The headline figures are based on Malaysiaâs exports (to China) and Chinaâs imports (from Malaysia) of servers (HS 847150) over the period between April 2024 and June 2025. We sum the dollar value on each side and then divide each side by its machine count, Chinaâs from its own records, Malaysiaâs from its UN filing. The counts agree within a few percent in aggregate over the window, though single quarters swing up to two-fold. The analysis therefore focuses on testing alternative explanations for the rise and fall of this flow and the gap in values between the two reporting countries:
+Routing through a hub.
+Exporters report the immediate destination of goods while importers report the country of origin, so the disagreement between Malaysia and China could be due to those servers moving through Singapore or Hong Kong before reaching China. This is unlikely: the flows are too small; they are the wrong product, priced at $1,000â$12,000 per unit against the $106,000 China recorded; and the machine counts already match on the Malaysia-China lane.
+Different commodity codes.
+Malaysia and China could classify the same goods under different HS codes, so we compare both countriesâ records across all nine codes in our AI basket, looking at their direct trade and also what is routed through the hubs. If the discrepancy were driven by differing classifications, Malaysia would show a surplus on some other code, first spiking and then dying with the directive. No code does: the one code where Malaysia declares more than China records â storage (852351) â is matched in scale by a different storage category in Chinaâs records (847170), and the one line that grew â chips into Singapore â is priced differently and kept growing after the Malaysian directive, when server flow fell.
+Coincidence.
+The flowâs start and end could just happen to line up with the two policy events. But among all origins from which China booked at least $0.1 billion of servers, only two others have the same surge-and-collapse pattern in both value and price. These are Singapore and Mexico, which together are about a third of Malaysiaâs scale. Each died down after an export-control event. Chinaâs imports of Singapore-origin servers surged and collapsed earlier, consistent with the timing of
+Singaporeâs own enforcement actions
+. Malaysiaâs exports of servers to Mexico and Chinaâs import of servers from Mexico also decreased substantially after Malaysiaâs directive, suggesting that these were related. We also check how common similar patterns are, leveraging our larger dataset of 14 reporting countries: among the roughly 1,500 time series in our collection that have at least $10 million traded per quarter, about one in eighty shows a comparably sized surge and collapse in value and in price at the same time.
+A change on Chinaâs side.
+Chinaâs demand for servers could simply have collapsed, in which case the fall in Malaysian imports would be unremarkable (though this still wouldnât explain the surge or the discrepancy in records between Malaysia and China). We compare Chinaâs server imports from all other origins before and after the directive: imports grew over the period of interest.
+We also check whether similar inconsistencies show up in Malaysiaâs server trade with other partners: Malaysiaâs declared exports match the partnerâs import record within 5% for Singapore, India, South Korea, and the EU-27. Four partners do disagree â Taiwan, Mexico, and the US record less than Malaysia declares, while Hong Kong records more. The discrepancies of Taiwan, Hong Kong, and the US are consistent with simple rerouting, while Mexicoâs trade with both China and Malaysia also has the same pattern of sharply increased price during the period between the export controls and the Malaysian directive. We explore this in more detail in the
+companion notebook
+.
+Could these machines be something other than AI servers? The HS code covers a wide range of goods, from desktop towers to mainframes, but we find evidence for only two types of products costing $100,000 or more. The first is GPU servers, including Nvidiaâs H20, the slower chip designed for China and sold at $140,000â$195,000 in its 8-GPU server configuration, and similar H100 systems at $250,000â$320,000. The second is a small set of enterprise systems such as mainframes and large database servers, but they do not fit the scale or origin of this trade: Oracle and IBM are the main producers of such systems, and their entire yearly worldwide hardware revenue is around $12 billion. Nothing in Malaysiaâs trade with other countries, described above, suggests it handles machines of this kind.
+The data cannot prove that the AI servers contained H100s rather than H20s, but the evidence we have points to that. The $106,000 average is almost certainly lower than the price of the machines themselves. Before the window, China imported tens of thousands of cheap units from Malaysia each quarter, weighing less than a kilogram, and it seems reasonable to assume that at least some of this trade continued. The weights support that: the average weight per unit swings between 22 and 86 kilograms from month to month while the value per kilogram remains stable, which is what a mix of heavy and valuable machines and near-weightless, low-value units would look like. If that mix is right, the machines weigh at least 86 kilograms and cost at least $186,000 each, which already exceeds average H20 prices.
+The timing of trade through the corridor does not seem to have been impacted by the H20 ban, with three-quarters of the value arriving before April 2025, when H20s were still legal to sell to China and there was no reason to route them through Malaysia. Additionally, the legal H20 business operated through Chinese server makers that built the systems in China from imported boards, rather than passing through Malaysia as finished machines.
+Finally, we estimate how many GPUs this trade could account for. Even if every one of the corridorâs 35,490 declared units were a cheaper machine at $11,600 â the price of the commercial servers that appear under this code after the directive â they would carry at most $0.4 billion of the $3.75 billion, so we treat the dollars as AI hardware. Dividing by the chip prices in Epoch AIâs Chip Sales dataset â $25,000 for an H100 accelerator â puts the corridor at roughly 150,000 H100-equivalents (H100e). Weighting each quarter by the mix of Nvidia GPUs shipping at the time (H100/H200, B200, B300, and the H20, which was then still legal to sell to China) gives about 180,000. These H100e estimates are rough and meant to help convey scale.
+The
+companion notebook
+reproduces all these checks step by step.
+Assumptions and limitations
+We take declared values and piece counts at face value. Customs records are not direct measurements, and all the data we use here inherit their errors.
+The unit counts reported by China and Malaysia match over the window but swing quarter-to-quarter, with a ratio between 0.5 and 2. Discrepancies like these are normal, as it takes time for goods to reach their destination and be cleared by customs; what matters is that they offset rather than accumulate, which two unrelated series would have no reason to do.
+We do not have insight into which AI chips were being smuggled. The main compute estimate assumes GPUs in the Hopper family. If the trade had instead been made up mostly of H20s, the same dollar value would imply as few as 50,000 H100e. This is unlikely for the reasons given in the analysis section. A high prevalence of Blackwells would result in a higher compute estimate.
+Since the origin of goods is recorded by the importer, Chinaâs data claiming Malaysia as the origin of the servers could be either wrong or deliberately false. This by itself would not restore a benign reading of the data; it would just change the routing by which export controls were being evaded. However, the fact that these imports returned to baseline within weeks of Malaysia tightening its transit rules suggests this was real physical trade, since a different smuggling scheme would have no reason to respect that.
+Download this data
+China's recorded imports of Malaysian-origin servers (HS 847150), by quarter
+CSV
+,
+Updated Sep. 17, 2026
+Explore this data
+AI Chip Sales
+AI chip sales data.
+Related insights
+Report
+Apr. 29, 2026
+Diversion and resale: estimating compute smuggling to China
+Related topics
+Chips
+Geopolitics
+Cite
+Epoch AIâs work is free to use, distribute, and reproduce provided the source and authors are credited under the
+Creative Commons Attribution license
+.
+Citation
+Isabel Juniewicz (2026), "Trade data is consistent with more than $3 billion of chips smuggled into China via Malaysia". Published online at epoch.ai. Retrieved from 'https://epoch.ai/data-insights/malaysia-china-chip-smuggling' [online resource]. Accessed 20 Sept 2026.
+BibTeX Citation
+@misc{epoch2026malaysiachinachipsmuggling,
+title={Trade data is consistent with more than $3 billion of chips smuggled into China via Malaysia},
+author={Isabel Juniewicz},
+year={2026},
+url={https://epoch.ai/data-insights/malaysia-china-chip-smuggling},
+note={Accessed: 2026-09-20}}
+Feedback
+Have a question? Noticed something wrong? Let us know.
+Trade data is consistent with more than $3 billion of chips smuggled into China via Malaysia
+Epoch AI's analysis of trade data finds a pattern consistent with $3B worth of chips smuggled to China via Malaysia. China recorded $3.8B of server imports from Malaysia in 2024â25; Malaysia recorded only $0.6B of exports.

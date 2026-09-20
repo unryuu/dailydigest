@@ -1,0 +1,429 @@
+[
+  {
+    "id": "ylqnIdASnA",
+    "creatorId": "QcVJiSSOPTYAQPSf6IShbONfok42",
+    "creatorUsername": "datachef",
+    "creatorName": "Data Chef",
+    "createdTime": 1731090141516,
+    "creatorAvatarUrl": "https://firebasestorage.googleapis.com/v0/b/mantic-markets.appspot.com/o/user-images%2Fdatachef%2FS4xtVsPYiL.webp?alt=media&token=15006a4b-9f3e-4087-90a7-916c61e95828",
+    "closeTime": 1861937940000,
+    "question": "Will Trump win the Nobel Peace Prize by the end of 2028?",
+    "slug": "will-trump-win-the-nobel-peace-priz",
+    "url": "https://manifold.markets/datachef/will-trump-win-the-nobel-peace-priz",
+    "pool": {
+      "NO": 419.15523784908646,
+      "YES": 9680.896714816572
+    },
+    "probability": 0.030000000000000047,
+    "p": 0.4166768777650169,
+    "totalLiquidity": 1582,
+    "outcomeType": "BINARY",
+    "mechanism": "cpmm-1",
+    "volume": 109534.52910089807,
+    "volume24Hours": 0,
+    "isResolved": false,
+    "uniqueBettorCount": 131,
+    "lastUpdatedTime": 1788111405687,
+    "lastBetTime": 1788111405687,
+    "lastCommentTime": 1766712421252,
+    "token": "MANA",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph"
+        }
+      ]
+    },
+    "coverImageUrl": "https://storage.googleapis.com/mantic-markets.appspot.com/contract-images/datachef/P5lOd9s6S8.jpg",
+    "groupSlugs": [
+      "magaland",
+      "academic-awards",
+      "donald-trump"
+    ],
+    "textDescription": ""
+  },
+  {
+    "id": "4YNAbhWwcXPPTCHFp9i1",
+    "creatorId": "nbI9r6hdKiT4j2qdWGK63g4UNsm1",
+    "creatorUsername": "Mqrius",
+    "creatorName": "Mqrius",
+    "createdTime": 1681049184925,
+    "creatorAvatarUrl": "https://firebasestorage.googleapis.com/v0/b/mantic-markets.appspot.com/o/user-images%2FMqrius%2FN1f02TgdV9.jpg?alt=media&token=6ff44426-986e-4317-baf0-8c35c7e89dda",
+    "closeTime": 1893452340000,
+    "question": "Will a human walk on the moon again before 2030?",
+    "slug": "will-a-human-walk-on-the-moon-again-2fc067c3b7fb",
+    "url": "https://manifold.markets/Mqrius/will-a-human-walk-on-the-moon-again-2fc067c3b7fb",
+    "pool": {
+      "NO": 1000.0613187245654,
+      "YES": 2822.2944754504374
+    },
+    "probability": 0.49849593064441877,
+    "p": 0.7372012876264038,
+    "totalLiquidity": 2195,
+    "outcomeType": "BINARY",
+    "mechanism": "cpmm-1",
+    "volume": 57920.61237746974,
+    "volume24Hours": 0,
+    "isResolved": false,
+    "uniqueBettorCount": 252,
+    "lastUpdatedTime": 1789669387162,
+    "lastBetTime": 1789669387162,
+    "lastCommentTime": 1766518738289,
+    "token": "MANA",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Resolves YES if a human sets foot on the moon after 2000 but before 2030.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "I keep an ordered list of human moon landing markets here:",
+              "type": "text"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "contract-mention",
+              "attrs": {
+                "id": "P505Kqjuc7mJn2B5I6jB",
+                "label": "/Mqrius/will-a-human-walk-on-the-moon-again"
+              }
+            },
+            {
+              "text": " ",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "See also:",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "contract-mention",
+              "attrs": {
+                "id": "k2WIAsigzSxWsMYqYlxZ",
+                "label": "/Mqrius/will-spacexs-hls-uncrewed-demo-laun"
+              }
+            },
+            {
+              "text": " ",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "contract-mention",
+              "attrs": {
+                "id": "Dm1VtCG9Ad5UloIrw8od",
+                "label": "/Mqrius/will-two-starships-dock-in-orbit-be-4762f93e6882"
+              }
+            },
+            {
+              "text": " ",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Artemis 2 timeline: ",
+              "type": "text"
+            },
+            {
+              "type": "contract-mention",
+              "attrs": {
+                "id": "nNkSmIw722m2XgiwgkAX",
+                "label": "/Mqrius/will-artemis-ii-launch-before-2026"
+              }
+            },
+            {
+              "text": " ",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "coverImageUrl": "https://firebasestorage.googleapis.com/v0/b/mantic-markets.appspot.com/o/dream%2FX8n1m-W-W5.png?alt=media&token=d498a38d-f155-4ed1-b33a-d93709c98333",
+    "groupSlugs": [
+      "space",
+      "artemis-3",
+      "artemis-program"
+    ],
+    "textDescription": "Resolves YES if a human sets foot on the moon after 2000 but before 2030.\n\nI keep an ordered list of human moon landing markets here:\n@/Mqrius/will-a-human-walk-on-the-moon-again \n\nSee also:\n\n@/Mqrius/will-spacexs-hls-uncrewed-demo-laun \n\n@/Mqrius/will-two-starships-dock-in-orbit-be-4762f93e6882 \n\nArtemis 2 timeline: @/Mqrius/will-artemis-ii-launch-before-2026 "
+  },
+  {
+    "id": "HJdflF0LTJwPNKQmaf6G",
+    "creatorId": "acvO0NAsghTTgGjnsdwt94O44OT2",
+    "creatorUsername": "vluzko",
+    "creatorName": "Vincent Luczkow",
+    "createdTime": 1663361238923,
+    "creatorAvatarUrl": "https://firebasestorage.googleapis.com/v0/b/mantic-markets.appspot.com/o/user-images%2FVincentLuczkow%2Fstokes-cartan.png?alt=media&token=93d07b87-c3f3-4e66-bf7b-ff4904405776",
+    "closeTime": 1893484800000,
+    "question": "In 2029, will any AI be able to take an arbitrary proof in the mathematical literature and translate it into a form suitable for symbolic verification? (Gary Marcus benchmark #5)",
+    "slug": "in-2029-will-any-ai-be-able-to-take",
+    "url": "https://manifold.markets/vluzko/in-2029-will-any-ai-be-able-to-take",
+    "pool": {
+      "NO": 1901.01686448159,
+      "YES": 746.4000019434436
+    },
+    "probability": 0.7738841914806335,
+    "p": 0.5733402241563428,
+    "totalLiquidity": 1160,
+    "outcomeType": "BINARY",
+    "mechanism": "cpmm-1",
+    "volume": 19443.461920260652,
+    "volume24Hours": 0,
+    "isResolved": false,
+    "uniqueBettorCount": 106,
+    "lastUpdatedTime": 1787103476835,
+    "lastBetTime": 1787103476835,
+    "lastCommentTime": 1778182878752,
+    "token": "MANA",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The fifth question from this post: ",
+              "type": "text"
+            },
+            {
+              "text": "https://garymarcus.substack.com/p/dear-elon-musk-here-are-five-things",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://garymarcus.substack.com/p/dear-elon-musk-here-are-five-things",
+                    "class": "no-underline !text-indigo-700 z-10 break-anywhere hover:underline hover:decoration-indigo-400 hover:decoration-2",
+                    "target": "_blank"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The full text is: \"In 2029, AI will not be able to take arbitrary proofs from the mathematical literature written in natural language and convert them into a symbolic form suitable for symbolic verification.\"",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Judgment will be by me, not Gary Marcus.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ambiguous whether this means start or end of 2029, so I have set it for the end.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "I will accept if there is an AI that can do this for >=75% of the proofs published on the arxiv math categories in 2029. ",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        }
+      ]
+    },
+    "groupSlugs": [
+      "technical-ai-timelines",
+      "ai",
+      "mathematics"
+    ],
+    "textDescription": "The fifth question from this post: https://garymarcus.substack.com/p/dear-elon-musk-here-are-five-things\n\nThe full text is: \"In 2029, AI will not be able to take arbitrary proofs from the mathematical literature written in natural language and convert them into a symbolic form suitable for symbolic verification.\"\n\nJudgment will be by me, not Gary Marcus.\n\nAmbiguous whether this means start or end of 2029, so I have set it for the end.\n\nI will accept if there is an AI that can do this for >=75% of the proofs published on the arxiv math categories in 2029. \n\n"
+  },
+  {
+    "id": "DKWUoTfIrbxHwQloZLG3",
+    "creatorId": "acvO0NAsghTTgGjnsdwt94O44OT2",
+    "creatorUsername": "vluzko",
+    "creatorName": "Vincent Luczkow",
+    "createdTime": 1663360410994,
+    "creatorAvatarUrl": "https://firebasestorage.googleapis.com/v0/b/mantic-markets.appspot.com/o/user-images%2FVincentLuczkow%2Fstokes-cartan.png?alt=media&token=93d07b87-c3f3-4e66-bf7b-ff4904405776",
+    "closeTime": 1893484800000,
+    "question": "By 2029 will any AI be able to watch a movie and accurately tell you what is going on? (Gary Marcus benchmark #1)",
+    "slug": "by-2029-will-any-ai-be-able-to-watc",
+    "url": "https://manifold.markets/vluzko/by-2029-will-any-ai-be-able-to-watc",
+    "pool": {
+      "NO": 1871.819315842588,
+      "YES": 1109.1307968948129
+    },
+    "probability": 0.867474690720652,
+    "p": 0.795023850186876,
+    "totalLiquidity": 1300,
+    "outcomeType": "BINARY",
+    "mechanism": "cpmm-1",
+    "volume": 27406.49537246878,
+    "volume24Hours": 0,
+    "isResolved": false,
+    "uniqueBettorCount": 93,
+    "lastUpdatedTime": 1767842472835,
+    "lastBetTime": 1767842472835,
+    "lastCommentTime": 1708016879620,
+    "token": "MANA",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The first question from this post: ",
+              "type": "text"
+            },
+            {
+              "text": "https://garymarcus.substack.com/p/dear-elon-musk-here-are-five-things",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://garymarcus.substack.com/p/dear-elon-musk-here-are-five-things",
+                    "class": "no-underline !text-indigo-700 z-10 break-anywhere hover:underline hover:decoration-indigo-400 hover:decoration-2",
+                    "target": "_blank"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The full text is: \"In 2029, AI will not be able to watch a movie and tell you accurately what is going on (what I called ",
+              "type": "text"
+            },
+            {
+              "text": "the comprehension challenge",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://www.newyorker.com/tech/annals-of-technology/what-comes-after-the-turing-test",
+                    "class": "no-underline !text-indigo-700 z-10 break-anywhere hover:underline hover:decoration-indigo-400 hover:decoration-2",
+                    "target": "_blank"
+                  }
+                }
+              ]
+            },
+            {
+              "text": " in ",
+              "type": "text"
+            },
+            {
+              "text": "The New Yorker",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "text": ", in 2014). Who are the characters? What are their conflicts and motivations? etc.\"",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Judgment will be by me, not Gary Marcus.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ambiguous whether this means start or end of 2029, so I have set it for the end.",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "groupSlugs": [
+      "technical-ai-timelines",
+      "ai"
+    ],
+    "textDescription": "The first question from this post: https://garymarcus.substack.com/p/dear-elon-musk-here-are-five-things\n\nThe full text is: \"In 2029, AI will not be able to watch a movie and tell you accurately what is going on (what I called the comprehension challenge in The New Yorker, in 2014). Who are the characters? What are their conflicts and motivations? etc.\"\n\nJudgment will be by me, not Gary Marcus.\n\nAmbiguous whether this means start or end of 2029, so I have set it for the end."
+  }
+]

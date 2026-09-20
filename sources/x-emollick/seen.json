@@ -1,5 +1,54 @@
 [
  {
+  "id": "https://x.com/emollick/status/2101010622305493013",
+  "title": "模型能力已经跑在实际用法前面",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://www.oneusefulthing.org/p/the-overhang",
+  "title": "模型能力已经跑在实际用法前面",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://x.com/emollick/status/2100744220562673683",
+  "title": "Epoch 给模型基准挑错",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://epoch.ai/benchmarks/search?reviewed=verified&reviewed=flawed&reviewed=not-enough-info",
+  "title": "Epoch 给模型基准挑错",
+  "date": "2026-09-19",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://x.com/emollick/status/2101302622393078265",
+  "title": "1935 年的本雅明也被读出了 Claude 味",
+  "date": "2026-09-19T21:29:20.150000+08:00",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://x.com/emollick/status/2100978802843177081",
+  "title": "LinkedIn 机器人开始互相说空话",
+  "date": "2026-09-19T00:02:35.553000+08:00",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
+  "id": "https://x.com/emollick/status/2100767116819325141",
+  "title": "Claude 没解开伏尼契手稿，拍了部解释电影",
+  "date": "2026-09-18T10:01:25.672000+08:00",
+  "reported": true,
+  "report_date": "2026-09-19"
+ },
+ {
   "id": "https://x.com/emollick/status/2100462385924538552",
   "title": "AI 查新书时发现原论文有错",
   "date": "2026-09-17T13:50:32+08:00",

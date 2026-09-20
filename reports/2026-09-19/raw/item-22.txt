@@ -1,0 +1,77 @@
+URL: https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit
+FINAL: https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit/
+TITLE: The Creative Spirit of Who Framed Roger Rabbit
+FETCHED: 2026-09-20 19:29:35
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+Teleport
+— See what 13 engineers learned from “pressure washing” their codebase using LLMs for 90 days. Hint: Quality > quantity for finding security vulnerabilities.
+18th September 2026 - Link Blog
+The Creative Spirit of Who Framed Roger Rabbit
+(
+via
+) I love
+Who Framed Roger Rabbit
+, the 1988 movie by Robert Zemeckis. I haven't watched it in quite a few years, and Cypress Frankenfeld just pointed out this sequence from early in the movie:
+It's a pelican riding a bicycle!
+Look closely and you'll note that the pelican is animated while the bicycle is a real bicycle. Apparently they filled the wheels with water to add stability, then set it running and guided it with a cable.
+Cypress
+gathered more details
+on the scene. What a delight.
+Posted
+18th September 2026
+at 2:36 pm
+Recent articles
+Generating running routes with GPT-6 Astra and ChatGPT Work
+- 12th September 2026
+OpenAI agents attacked RubyGems back in May
+- 12th September 2026
+Some thoughts on the Navier–Stokes Millennium Prize Problem
+- 8th September 2026
+This is a
+link post
+by Simon Willison, posted on
+18th September 2026
+.
+animation
+10
+film
+28
+pelican-riding-a-bicycle
+143
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

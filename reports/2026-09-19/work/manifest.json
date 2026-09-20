@@ -1,0 +1,571 @@
+{
+  "date": "2026-09-19",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=HTTP 403, body=5710; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Gemini 评估越界与 Anthropic 安全事故的新复盘",
+      "cost": "重",
+      "reason": "Gemini 的三篇报道合为同一事件；Zvi 另作独立复盘候选，必须区分新增内容与既有事故。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "Google is the latest AI lab with a security testing mishap",
+          "url": "https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks",
+          "date": "Sat, 19 Sep 2026 00:00:51 +0000",
+          "why": "Google 此次新披露五月事故，与 09-18 白帽主动攻击 OpenAI 是不同主体、不同事件；和 Simon／TI 只写一条。"
+        },
+        {
+          "source": "simon-willison",
+          "title": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
+          "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies",
+          "date": "2026-09-18T23:57:57+00:00",
+          "why": "同一 Gemini 事件的技术转述，含密码猜测、公开凭证与退出边界；源链接由 reader 从原文核实。"
+        },
+        {
+          "source": "the-information",
+          "title": "Google’s Gemini Model Hacks Companies During Test",
+          "url": "https://www.theinformation.com/briefings/googles-gemini-model-hacks-companies-test",
+          "date": "2026-09-19T07:22:00+08:00",
+          "why": "主 agent 已保存登录态简报转述；原报为 WSJ，同一 Gemini 事件合并，不重复报三次。"
+        },
+        {
+          "source": "thezvi",
+          "title": "Anthropic Looks At Some Of Its Alignment Problems",
+          "url": "https://thezvi.substack.com/p/anthropic-looks-at-some-of-its-alignment",
+          "date": "Sat, 19 Sep 2026 13:11:08 GMT",
+          "why": "摘要称四起 Claude 事故中三起此前已知；仅带回第四起和新增分析。须与 09-17 OpenAI 披露和近期 Zvi／Anthropic 已报内容区分，不能包装旧事故为新事件。"
+        },
+        {
+          "source": "x-roon",
+          "title": "AI 的温度侧信道之争",
+          "url": "https://x.com/tszzl/status/2100879184579231765",
+          "date": "2026-09-18T17:26:44.708000+08:00",
+          "why": "关于少量密钥经温度侧信道成为攻击链起点的概念争论；与真实 Gemini 事故分开。不是发生过的模型权重外传事故；疑与既往安全争论重叠，需读线程核新增机制。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "前沿实验室的上市安排与现金投入争议",
+      "cost": "中",
+      "reason": "两家公司各自成条；合组只为行业材料调度，不预设因果或统一结论。",
+      "items": [
+        {
+          "source": "the-information",
+          "title": "Anthropic IPO Waiting Game Puts Wall Street on Edge",
+          "url": "https://www.theinformation.com/articles/anthropic-ipo-waiting-game-puts-wall-street-edge",
+          "date": "2026-09-19T05:55:00+08:00",
+          "why": "重点考察 Anthropic 上市窗口与下一代训练投入；二季度约 115／116 亿美元收入在 08-19 已报，不可重报收入领先主线。经营利润率与净利润不能混用。"
+        },
+        {
+          "source": "the-information",
+          "title": "OpenAI Said to Forecast Nearly $280 Billion in Cash Burn Through End 2030",
+          "url": "https://www.theinformation.com/briefings/openai-said-forecast-nearly-280-billion-cash-burn-end-2030",
+          "date": "2026-09-19T10:32:00+08:00",
+          "why": "现金消耗预测遭公司财务主管明确反驳，必须把争议双方一起读；不可只摘巨额预测。主 agent 文件有真实 response_url。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "AI 风险治理、州监管与算力贸易",
+      "cost": "重",
+      "reason": "治理相关材料同组调度，各篇独立判断；不预设共同因果，芯片贸易研究须单独核数据与推断。",
+      "items": [
+        {
+          "source": "axios",
+          "title": "2028 Democrats like Newsom and Pritzker lean in on AI safety as Washington stalls",
+          "url": "https://www.axios.com/2026/09/18/newsom-ai-2028-focus",
+          "date": "Fri, 18 Sep 2026 20:59:19 +0000",
+          "why": "涉及州行政命令、独立审计和关闭开关，监管例外必须带回。须区分实际发布的行政措施与 2028 年政治表态。"
+        },
+        {
+          "source": "thezvi",
+          "title": "The Preference Cascade Is Only Getting Started",
+          "url": "https://thezvi.substack.com/p/the-preference-cascade-is-only-getting",
+          "date": "Fri, 18 Sep 2026 14:40:29 GMT",
+          "why": "高权重长文，保留偏好瀑布这一概念解释；LW 镜像已经合并。疑与此前 Zvi 周报及减速专题重叠，只写新的论据／机制。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Stopgap Measures to Address Immediate AI Security Threats” by Andrea_Miotti, Gabriel Alfour",
+          "url": "https://www.lesswrong.com/posts/LqBAxFdyAiybnPL8e/stopgap-measures-to-address-immediate-ai-security-threats",
+          "date": "Fri, 18 Sep 2026 17:30:45 GMT",
+          "why": "AI 即时安全的临时措施提案，概念与政策长文保留。LW 音频 RSS 不保证原文首发，reader 先核日期；疑与 Zvi 重叠。"
+        },
+        {
+          "source": "x-teortaxes",
+          "title": "Epoch 用贸易记录分析经马来西亚进入中国的芯片",
+          "url": "https://x.com/teortaxesTex/status/2100688776720708017",
+          "date": "2026-09-18T04:50:07.937000+08:00",
+          "why": "Epoch 贸易研究线索，涉及芯片出口监管必须带回。10.6 万与 1.7 万美元是双方统计口径的价差；超过 30 亿走私是研究推断，不能写成查获事实。需从真实原帖回溯研究方法及替代解释。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "模型能力的来源与 Agent 工程实践",
+      "cost": "重",
+      "reason": "按研究／应用主题合组调度，各篇独立判断。必须区分新证据、解释性观点与此前报道的规格。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip",
+          "url": "https://spectrum.ieee.org/llms-for-chip-design",
+          "date": "2026-09-18T23:04:17Z",
+          "why": "HN 157 票的 OpenAI 自用 LLM 设计 Jalapeño 芯片案例。08-26 已报芯片能效与量产计划，本次只收 LLM 参与设计的独立过程与结果。HN 日期是提交时间，需核原文日期。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "An Empirical Study of Harness Design for Coding Agents",
+          "url": "https://huggingface.co/papers/2609.20804",
+          "date": "",
+          "why": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。与 09-17 Harness Tax 为相近题目，需核是否不同团队／样本／新机制；若只是同项研究新链接则删除。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+          "url": "https://huggingface.co/papers/2609.20519",
+          "date": "",
+          "why": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。NVIDIA 的自动研究循环与 Agent 外壳，题名含递归扩展。不得重复 09-15 OpenAI 自动研究优先级或 Dream-RSI／RSIAgent 的已报结论。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Pretraining data, not verifiability, is why LLMs are especially good at math (and coding)” by Steven Byrnes",
+          "url": "https://www.lesswrong.com/posts/xvdngZAqFZfek7KGH/pretraining-data-not-verifiability-is-why-llms-are",
+          "date": "Fri, 18 Sep 2026 18:15:46 GMT",
+          "why": "保留反直觉解释长文：数学与代码优势来自预训练资料质量，还是可验证奖励？当前是作者论点线索，不能直接当实验证明；需核原文日期与论证。"
+        },
+        {
+          "source": "x-emollick",
+          "title": "The Overhang：模型能力与实际使用之间的差距",
+          "url": "https://x.com/emollick/status/2101010622305493013",
+          "date": "2026-09-19T02:09:01.904000+08:00",
+          "why": "Mollick 本人概念长文，讨论能力与应用落差；不能只按是不是硬新闻筛掉。原文链接待 reader 从帖子点击，四个优势未读到前不补写。"
+        },
+        {
+          "source": "x-teortaxes",
+          "title": "Anthropic 提出三项指标追踪 AI 研发自动化",
+          "url": "https://x.com/teortaxesTex/status/2100702413678051664",
+          "date": "2026-09-18T05:44:19.241000+08:00",
+          "why": "官方 AI 研发自动化指标强线索；引用截断，只见首项，必须回溯原公告核三指标。不得编完整指标，须与 09-15 自动研究主线区分监测方案的新进展。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "怎样识别模型评测的有效边界",
+      "cost": "重",
+      "reason": "评测、压力测试与基准批评合组；各篇独立取舍，不把同属评测写成同一结果。",
+      "items": [
+        {
+          "source": "x-emollick",
+          "title": "基准质量审查：十五项里九项有缺陷",
+          "url": "https://x.com/emollick/status/2100744220562673683",
+          "date": "2026-09-18T08:30:26.779000+08:00",
+          "why": "Epoch Benchmark Reviews 原公告的强线索，当前只见 Mollick 引用；reader 须从帖内真实链接回溯审查准则与 15 项完整名单，不猜原文 URL。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Can MiniMax-H3 Reason About the Physical World? An Evaluation of Omni-Modal Generative Model",
+          "url": "https://huggingface.co/papers/2609.18323",
+          "date": "",
+          "why": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。MiniMax-H3 的物理世界推理独立评估，需读任务、结论和限制。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
+          "url": "https://huggingface.co/papers/2609.18605",
+          "date": "",
+          "why": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。企业助手在压力下能否可信，新基准候选；不能凭标题推断已经失守。"
+        },
+        {
+          "source": "hf-papers",
+          "title": "Verifiable Social Reasoning for LLM Assistants",
+          "url": "https://huggingface.co/papers/2609.17496",
+          "date": "",
+          "why": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。可验证社会推理题目可能挑战只有数理可验证的默认理解，先核方法与结果。"
+        },
+        {
+          "source": "huggingface",
+          "title": "When Benchmark Numbers Become Marketing",
+          "url": "https://huggingface.co/blog/DedeProGames/when-benchmark-numbers-become-marketing",
+          "date": "",
+          "why": "基准变营销的观点文章，保留方法论批评；列表仅给 1 day ago，精读需核原文时间及独立论点，弱于硬研究。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "hacker-news",
+      "title": "Laya the open source version of Jev",
+      "url": "https://laya.convaiinnovations.com",
+      "date": "2026-09-19T10:46:58Z",
+      "note": "开源 Laya／Jev 对应工具，HN 237 票；先核到底是什么产品及真实 AI 作用，不按标题补功能。HN 日期仅为提交时间。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+      "url": "https://huggingface.co/papers/2609.19969",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。DeepSeek-V4.1-Flash 题名看似新变体，但 V4.1 KV 压缩已于 09-10 报过。只收 Flash 的新机制／规格／实测；重复旧核心规格则删。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL",
+      "url": "https://huggingface.co/papers/2609.20715",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "url": "https://huggingface.co/papers/2609.20817",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents",
+      "url": "https://huggingface.co/papers/2609.17653",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Region-Level Policy Optimization for Fine-grained MLLM Perception",
+      "url": "https://huggingface.co/papers/2609.19745",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning",
+      "url": "https://huggingface.co/papers/2609.20784",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "RiskChainBench: A Benchmark for Obfuscated Platform Message Restoration and Evidence-Grounded Web Investigation",
+      "url": "https://huggingface.co/papers/2609.16900",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling",
+      "url": "https://huggingface.co/papers/2609.19499",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Srijika: OpenType-Layout-Reusing Font Restyling for Nine Indic Scripts",
+      "url": "https://huggingface.co/papers/2609.05661",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Self-Evolving Search Index",
+      "url": "https://huggingface.co/papers/2609.19656",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "UFO: Chain-of-Evaluation for Omni-Condition Alignment in Multi-Modal Image Generation",
+      "url": "https://huggingface.co/papers/2609.12397",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control",
+      "url": "https://huggingface.co/papers/2609.19554",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation",
+      "url": "https://huggingface.co/papers/2609.20744",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。与 09-15 Vidu S2 实时视频主线题材相近，只有独立新架构或新实测才能入稿。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "VākQA: A Benchmark and Evaluation Study for Telugu Spoken Factoid Question Answering",
+      "url": "https://huggingface.co/papers/2609.19879",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "WeVisDoc: From Coverage to Capability for Robust End-to-End Document Parsing",
+      "url": "https://huggingface.co/papers/2609.20423",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "What Does Privileged Information Add to On-Policy Self-Distillation?",
+      "url": "https://huggingface.co/papers/2609.20612",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "When EOS Tokens Disagree: Understanding Length Inflation in On-Policy Distillation",
+      "url": "https://huggingface.co/papers/2609.20511",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "When2Think: Learning Difficulty-Aware Length Control for Efficient Hybrid Reasoning Models",
+      "url": "https://huggingface.co/papers/2609.19671",
+      "date": "",
+      "note": "本日榜单抓取项，日期未知，不能把 09-19 写成论文发表日；需读摘要核贡献。"
+    },
+    {
+      "source": "huggingface",
+      "title": "BananaMind 2 Pro: We've (almost) matched SmolLM2 at 20x fewer tokens... Trained On a 5070 Ti",
+      "url": "https://huggingface.co/blog/Banaxi-Tech/bananamind-2-pro-weve-almost-matched-smollm2-at-20",
+      "date": "",
+      "note": "社区作者声称用 5070 Ti、少二十倍 token 接近 SmolLM2。列表只有 1 day ago，需核日期、训练对照与参数量；不能按营销题名写性能结论。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Quoting Thariq Shihipar",
+      "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar",
+      "date": "2026-09-18T19:09:27+00:00",
+      "note": "Claude Code 2.1.277 新支持 AGENTS.md 的继承条件和内置 mod 机制；必须保留没有 CLAUDE.md 时才回退的条件，原公告由 reader 从实际引用核。"
+    },
+    {
+      "source": "xai",
+      "title": "Introducing Grok Voice Transcribe 2.0",
+      "url": "https://x.ai/news/grok-voice-transcribe-2",
+      "date": "Sep 18, 2026",
+      "note": "xAI 官方转录模型 2.0。页面只给 Sep 18，无法确定是否晚于 21：21 接续点；reader 先核精确时间／既有 history，再决定入稿。"
+    },
+    {
+      "source": "x-pvncher",
+      "title": "Codex 开发者建议保留模型原生上下文压缩",
+      "url": "https://x.com/pvncher/status/2100967351038427331",
+      "date": "2026-09-18T23:17:05.230000+08:00",
+      "note": "同账号压缩三帖合为一个线程，需核完整条件。官方开发者建议有机制信息，片段不自动升级为新功能公告。"
+    },
+    {
+      "source": "x-teortaxes",
+      "title": "Step 5 Preview 出现在独立模型榜单",
+      "url": "https://x.com/teortaxesTex/status/2101195542818619551",
+      "date": "2026-09-19T14:23:50.390000+08:00",
+      "note": "仅作独立榜单核查线索，先回溯 Artificial Analysis 原始条目确认模型与数字；不能写成 Step 5 正式发布。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "acx",
+      "title": "Your Book Review: This Is Going To Hurt",
+      "url": "https://www.astralcodexten.com/p/your-book-review-this-is-going-to",
+      "date": "Fri, 18 Sep 2026 20:53:58 GMT",
+      "note": "ACX 书评比赛入围长文，保留智识型阅读候选，不能只因不是新闻删除。摘要只有书名与入围信息，reader 需实际读出钩子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Photon-Emission-Guided Laser Fault Injection Enables RP2350 Secure Debug",
+      "url": "https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection",
+      "date": "2026-09-18T16:54:18Z",
+      "note": "用光子发射引导激光故障注入绕过芯片安全调试，硬件安全技术的反直觉候选。仅见标题、HN 205 票，需核原文日期和可讲性。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Saving another 100TB of RAM",
+      "url": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math",
+      "date": "2026-09-18T18:51:46Z",
+      "note": "用数学再省一百 TB 内存，HN 394 票的工程趣闻；标题的 another 不能被写成首次，原文日期需核。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "San Francisco Onion Futures Company",
+      "url": "https://onionfutures.com",
+      "date": "2026-09-19T04:23:30Z",
+      "note": "旧金山洋葱期货公司，HN 251 票的异常商业题目，仅标题，不推断其真假或监管缘由。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
+      "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+      "date": "2026-09-19T05:48:50Z",
+      "note": "大脑是两个分离器官的斯坦福研究报道，HN 400 票。标题可能夸张，reader 必须核实际解剖／功能含义及原始日期。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "If math is more than proof, we need to better celebrate the rest of it",
+      "url": "https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it",
+      "date": "2026-09-19T06:28:02Z",
+      "note": "陶哲轩谈数学不只是证明，保留概念探索与科学文化长文；和近期 AI 证明讨论可能有关，先核论证，不能自行做归因。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "GPT-6 Astra Solves a WWI German Radio Cipher",
+      "url": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+      "date": "2026-09-19T06:41:44Z",
+      "note": "Astra 破解一战德军无线电密码，HN 192 票，保留 AI 解谜趣闻；先核题目是否原本未破、人工参与及复现范围。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "The Creative Spirit of Who Framed Roger Rabbit",
+      "url": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit",
+      "date": "2026-09-18T14:36:41+00:00",
+      "note": "《谁陷害了兔子罗杰》的动画鹈鹕骑真实自行车，来自 Simon 当日短文，制作巧思可作乐子。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Note on 18th September 2026",
+      "url": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you",
+      "date": "2026-09-18T19:21:32+00:00",
+      "note": "用侏罗纪公园比喻不愿对 LLM 感兴趣的计算机学者，一句观点梗；不是事件报道。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Claude 破解伏尼契手稿失败，做出一部解释电影",
+      "url": "https://x.com/emollick/status/2100767116819325141",
+      "date": "2026-09-18T10:01:25.672000+08:00",
+      "note": "同线程合并后续 211 种尝试；31 种此前未试是模型自述，不能当成已核事实。与 09-15 线形文字 A 属于不同谜题，但需判断失败后做电影是否有独立乐趣。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "LinkedIn 评论区的机器人开始互相说空话",
+      "url": "https://x.com/emollick/status/2100978802843177081",
+      "date": "2026-09-19T00:02:35.553000+08:00",
+      "note": "机器人互相说套话的观察；协调说法是作者玩笑，不能当成秘密合谋。"
+    },
+    {
+      "source": "x-emollick",
+      "title": "1935 年的本雅明句子也像 Claude",
+      "url": "https://x.com/emollick/status/2101302622393078265",
+      "date": "2026-09-19T21:29:20.150000+08:00",
+      "note": "本雅明与 Claude 文风相似是作者阅读感受，保留文学趣味，不写成来源或抄袭断言。"
+    },
+    {
+      "source": "x-roon",
+      "title": "安全担忧成了身份信号，好奇心却被挤到一边",
+      "url": "https://x.com/tszzl/status/2100724332612006345",
+      "date": "2026-09-18T07:11:25.122000+08:00",
+      "note": "安全担忧作为身份信号与好奇心的观点，保留有态度的短文；与 Simon 侏罗纪公园梗题材接近，可择优避免同质。"
+    }
+  ],
+  "odds_box": [],
+  "skipped_sources": [
+    {
+      "slug": "ahead-of-ai",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "anthropic-research",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "chip-huyen",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "claude-blog",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "import-ai",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "karpathy",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "lilian-weng",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "meta-ai",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "mistral",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "机械列表解析返回零条，不能据此断言没有新内容。"
+    },
+    {
+      "slug": "openai",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "thinking-machines",
+      "reason": "机械候选池为零，未额外联网补抓。"
+    },
+    {
+      "slug": "manifold",
+      "reason": "默认池缺多选概率或由同质末日题组成，不足以组成合格赔率区；主 agent 需另补热门且题型分散的盘口并查全历史。"
+    },
+    {
+      "slug": "x-login-scan",
+      "reason": "八个账号登录态补扫完成，接续 2026-09-17 21：15：22 至 2026-09-19 22：23：36。上方八条 fetch_failures 仅为机械 Nitter 路径原始诊断，不代表本期 X 未覆盖。"
+    }
+  ]
+}

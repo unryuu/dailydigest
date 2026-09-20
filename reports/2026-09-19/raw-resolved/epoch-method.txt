@@ -1,0 +1,145 @@
+URL: https://epoch.ai/data/benchmark-reviews-documentation/methodology
+FINAL: https://epoch.ai/data/benchmark-reviews-documentation/methodology
+TITLE: Benchmark Reviews Documentation â Methodology | Epoch AI
+FETCHED: 2026-09-20 19:33:37
+============================================================
+Benchmark Reviews Documentation
+Overview
+Methodology
+Included benchmarks
+FAQ
+Methodology
+Methodology
+We use the following rubric to evaluate each benchmark.
+Rubric v1. We expect future revisions to account for new types of benchmark flaws.
+Verdict Categories
+Verdict
+Definition
+Verified
+Reviewability (Section 1) was judged as Full or Partial, and no score-affecting defect (Section 2) was severe enough to cross our quality threshold. All noted issues are logged as caveats in the review's Limitations section.
+Flawed
+Reviewability (Section 1) was judged as Full or Partial, but at least one score-affecting defect (Section 2) was severe enough to cross our quality threshold.
+Not enough info
+Required information was unavailable to review, so a Verified/Flawed label cannot be supported.
+1. Reviewability
+Level
+Meaning
+Status
+Full
+All tasks and scoring logic inspectable*, and harness/API settings used for each model (reasoning effort, token/time limits, tool access, system prompts) are fully disclosed
+[proceed to 2]
+Partial
+A representative sample of tasks and scoring logic inspectable, with full harness/API settings disclosed
+[proceed to 2]
+Inadequate
+Limited, biased, or no inspectable tasks or scoring logic, harness/API settings undisclosed
+[stop â NEI]
+* Either publicly or privately to reviewers.
+2. Scoring
+This is the minimum standard required to be Verified; failing
+any
+of these items results in a Flawed verdict.
+Scoring
+Examples
+Essentially impossible to correctly answer as written (e.g. underspecified task, hidden requirement, missing file/tool)
+False Negative (e.g. overly strict scorer, stale/incorrect ground truth, dependent on live external state that can drift, sandbox failure independent of the agent)
+False Positive (e.g. lax scorer, reward-hackable environment, stated skill can be bypassed via a shortcut such as exploiting an error in the scoring logic or retrieving the answer from the harness/web)
+Task egregiously doesnât measure the claimed capability
+Default threshold for Flawed
+â¥20% of inspected sampleâ contains errors or there is an issue that corrupts grading at scale
+Status
+Pass
+Flag [stop â Flawed]
+Not reviewed
+Notes
+â
+Benchmark Consistency
+Examples
+Scorer, instructions, or ground truth changed without a version bump
+Default threshold for Flawed
+Leaderboard has incomparable results from different versions
+Status
+Pass
+Flag [stop â Flawed]
+Not reviewed
+Notes
+â
+Elicitation
+Examples
+Model elicitation is extremely constraining and is not the focus of the benchmark:
+Under-resourced relative to task size (token/turn/time limit, sandbox resources)
+Poor context management
+Lack of agentic environment where it would be natural to provide one
+Excessive non-voluntary termination for agentic benchmarks
+Default threshold for Flawed
+Substantially reduced performance compared to reasonable alternatives for the tasks
+Status
+Pass
+Flag [stop â Flawed]
+Not reviewed
+Notes
+â
+Bias in Evaluation Setup
+Examples
+Uneven compute/token budgets
+Unfair scaffold choice (e.g. only a subset of models optimized)
+Default threshold for Flawed
+Material model-specific advantage found
+Status
+Pass
+Flag [stop â Flawed]
+Not reviewed
+Notes
+â
+â For benchmarks with >50 available tasks, we will sample a random set of 50 (stratified by category, when present). If the observed error rate is 15â25%, we will expand the sample to 100. For benchmarks with â¤50 available tasks, all available tasks will be assessed.
+3. Evaluation Quality
+This is the standard we would like all benchmarks to meet, but it is not necessarily disqualifying to omit or fail these items.
+Question
+Status
+Notes
+Elicitation and resource adequacy: Are the resources given to models (reasoning token/turn budget, tool access, etc.) sufficient for them to perform near their ceiling?
+Sufficient
+Constraining
+Unreasonably constraining
+Unknown
+Not reviewed
+â
+Scaffold fairness: What scaffold does the leaderboard report?
+Shared common scaffold
+Mix of model-specific and common scaffolds
+Model-specific scaffolds
+Not reviewed
+â
+Is there evidence/risk of contamination?
+As of review date: â% of tasks public, â% of solutions public
+Not reviewed
+â
+Has human completability been assessed?
+All tasks
+Representative set of tasks
+Poor implementation (Unrepresentative set of tasks, unreasonable set of participants)
+Not established
+Not reviewed
+â
+Score range (if possible to estimate)
+â floor, â ceiling
+Not reviewed
+â
+Statistical adequacy: how many runs/model (â¥ 5 recommended for error bars)
+â runs/model
+Unknown
+Not reviewed
+â
+Construct Validity
+Measures stated capabilities
+Partially measures stated capabilities
+Does not measure stated capabilities
+Not reviewed
+â
+For benchmarks with existing credible reviews, we will cite the external review rather than replicate the findings.
+Overview
+Included benchmarks
+Feedback
+Have a question? Noticed something wrong? Let us know.
+Benchmark Reviews Documentation â Methodology
+Documentation for Epoch AIâs Benchmark Reviews: the rubric we use to review external AI benchmarks, what the Verified, Flawed and Not enough information verdicts mean, how we choose which benchmarks to review, and answers to frequently asked questions.

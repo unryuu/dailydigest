@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "epoch-method",
+    "url": "https://epoch.ai/data/benchmark-reviews-documentation/methodology",
+    "status": 200,
+    "final_url": "https://epoch.ai/data/benchmark-reviews-documentation/methodology",
+    "bytes": 103049,
+    "title": "Benchmark Reviews Documentation â Methodology | Epoch AI",
+    "chars": 5216
+  },
+  {
+    "slug": "mollick-overhang",
+    "url": "https://open.substack.com/pub/oneusefulthing/p/the-overhang?r=i5f7&utm_medium=ios",
+    "status": 200,
+    "final_url": "https://www.oneusefulthing.org/p/the-overhang?r=i5f7&utm_medium=ios&triedRedirect=true",
+    "bytes": 266114,
+    "title": "The Overhang - by Ethan Mollick - One Useful Thing",
+    "chars": 11487
+  },
+  {
+    "slug": "epoch-trade",
+    "url": "https://epoch.ai/data-insights/malaysia-china-chip-smuggling",
+    "status": 200,
+    "final_url": "https://epoch.ai/data-insights/malaysia-china-chip-smuggling",
+    "bytes": 134848,
+    "title": "Trade data consistent with $3B of chips smuggled to China via Malaysia | Epoch AI",
+    "chars": 19716
+  }
+]
