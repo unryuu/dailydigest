@@ -1,0 +1,227 @@
+URL: https://arxiv.org/abs/2609.22000
+FINAL: https://arxiv.org/abs/2609.22000
+TITLE: [2609.22000] RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents
+FETCHED: 2026-09-21 22:39:19
+============================================================
+Computer Science > Computation and Language
+arXiv:2609.22000
+(cs)
+[Submitted on 18 Sep 2026]
+Title:
+RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents
+Authors:
+Shuai Bai
+,
+Jiayong Deng
+,
+Yikun Fu
+,
+Chang Gao
+,
+Xuhao Hu
+,
+Mianqiu Huang
+,
+Yizhen Jiang
+,
+Yuheng Jing
+,
+Dehui Kong
+,
+Keliang Li
+,
+Ning Li
+,
+Wanli Li
+,
+Dayiheng Liu
+,
+Dunjie Lu
+,
+Changwei Luo
+,
+Que Shen
+,
+Zheyuan Wang
+,
+Zijian Wang
+,
+Jie Wu
+,
+Gao Wu
+,
+Zhihui Xie
+,
+Rui Xie
+,
+Haiyang Xu
+,
+An Yang
+,
+Jiakang Yuan
+,
+Yanming Zhang
+,
+Jiajun Zhang
+,
+Xi Zhang
+,
+Zhenru Zhang
+,
+Zhuo Zhen
+,
+Mingkang Zhu
+,
+Bowen Zhou
+View a PDF of the paper titled RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents, by Shuai Bai and 31 other authors
+View PDF
+HTML (experimental)
+Abstract:
+Computer-use agents (CUAs) have advanced along two separate lines: graphical interaction and software development through code and the command line. Real digital work requires both, interleaved rather than stacked end to end. We study hybrid CUAs that autonomously decide when to explore an interface, implement software, and run and visually verify their artifacts. We introduce RecreationWorld, a five-platform framework built around recreation: given a running reference, an agent must discover its behavior and build a faithful implementation with no prescribed workflow. RecreationWorld provides reproducible environments on Ubuntu, macOS, Windows, Android, and Web, plus a unified harness with native GUI control and coding tools. The running reference serves as an oracle for hidden behavioral tests, providing execution-grounded rewards. We scale trajectory generation with high-quality open-source applications. Models trained on these trajectories improve across five out-of-distribution coding and hybrid computer-use benchmarks and more frequently verify their rendered outputs, providing evidence of transfer beyond recreation. For held-out evaluation, we introduce RecreationBench, comprising 250 diverse tasks across domains and platforms. Reference-grounded programmatic and visual assertions cover action-conditioned outcomes at multiple interaction depths; each is validated on the reference and by human reviewers before the suite is frozen for automatic scoring. GPT-6 Astra leads at 58.1% overall, but passes all programmatic tests on just 2.8% of tasks. Agents reproduce static interface structure more reliably than interactions and computed outputs, while generated applications remain smaller and more monolithic than their references. We release the benchmark, environments, and test suites.
+Subjects:
+Computation and Language (cs.CL)
+; Software Engineering (cs.SE)
+Cite as:
+arXiv:2609.22000
+[cs.CL]
+(or
+arXiv:2609.22000v1
+[cs.CL]
+for this version)
+https://doi.org/10.48550/arXiv.2609.22000
+arXiv-issued DOI via DataCite (pending registration)
+Submission history
+From: Zhihui Xie [
+view email
+]
+[v1]
+Fri, 18 Sep 2026 17:00:56 UTC (5,121 KB)
+Full-text links:
+Access Paper:
+View a PDF of the paper titled RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents, by Shuai Bai and 31 other authors
+View PDF
+HTML (experimental)
+TeX Source
+view license
+Current browse context:
+cs.CL
+< prev
+|
+next >
+new
+|
+recent
+|
+2026-09
+Change to browse by:
+cs
+cs.SE
+References & Citations
+NASA ADS
+Google Scholar
+Semantic Scholar
+Loading...
+BibTeX formatted citation
+loading...
+Data provided by:
+Bookmark
+Bibliographic Tools
+Bibliographic and Citation Tools
+Bibliographic Explorer Toggle
+Bibliographic Explorer
+(
+What is the Explorer?
+)
+Connected Papers Toggle
+Connected Papers
+(
+What is Connected Papers?
+)
+Litmaps Toggle
+Litmaps
+(
+What is Litmaps?
+)
+scite.ai Toggle
+scite Smart Citations
+(
+What are Smart Citations?
+)
+Code, Data, Media
+Code, Data and Media Associated with this Article
+alphaXiv Toggle
+alphaXiv
+(
+What is alphaXiv?
+)
+Links to Code Toggle
+CatalyzeX Code Finder for Papers
+(
+What is CatalyzeX?
+)
+DagsHub Toggle
+DagsHub
+(
+What is DagsHub?
+)
+GotitPub Toggle
+Gotit.pub
+(
+What is GotitPub?
+)
+Huggingface Toggle
+Hugging Face
+(
+What is Huggingface?
+)
+ScienceCast Toggle
+ScienceCast
+(
+What is ScienceCast?
+)
+Demos
+Demos
+Replicate Toggle
+Replicate
+(
+What is Replicate?
+)
+Spaces Toggle
+Hugging Face Spaces
+(
+What is Spaces?
+)
+Spaces Toggle
+TXYZ.AI
+(
+What is TXYZ.AI?
+)
+Related Papers
+Recommenders and Search Tools
+Link to Influence Flower
+Influence Flower
+(
+What are Influence Flowers?
+)
+Core recommender toggle
+CORE Recommender
+(
+What is CORE?
+)
+Author
+Venue
+Institution
+Topic
+About arXivLabs
+arXivLabs: experimental projects with community collaborators
+arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+Have an idea for a project that will add value for arXiv's community?
+Learn more about arXivLabs
+.
+Which authors of this paper are endorsers?
+|
+Disable MathJax
+(
+What is MathJax?
+)

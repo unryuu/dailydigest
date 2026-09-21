@@ -1,0 +1,422 @@
+{
+  "date": "2026-09-21",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403；X 官方补扫诊断：内置浏览器打开 Mollick 页后显示正确页面标题，但创建标签及重新选择标签读取 UI 分别 30 秒和 45 秒超时，未读到帖子；八账号覆盖未完成，接续点不前移。"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403；X 官方补扫诊断：内置浏览器打开 Mollick 页后显示正确页面标题，但创建标签及重新选择标签读取 UI 分别 30 秒和 45 秒超时，未读到帖子；八账号覆盖未完成，接续点不前移。"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403；X 官方补扫诊断：内置浏览器打开 Mollick 页后显示正确页面标题，但创建标签及重新选择标签读取 UI 分别 30 秒和 45 秒超时，未读到帖子；八账号覆盖未完成，接续点不前移。"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5740; chromium=browser HTTP 403；X 官方补扫诊断：内置浏览器打开 Mollick 页后显示正确页面标题，但创建标签及重新选择标签读取 UI 分别 30 秒和 45 秒超时，未读到帖子；八账号覆盖未完成，接续点不前移。"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=HTTP 403, body=5710; chromium=browser HTTP 403；X 官方补扫诊断：内置浏览器打开 Mollick 页后显示正确页面标题，但创建标签及重新选择标签读取 UI 分别 30 秒和 45 秒超时，未读到帖子；八账号覆盖未完成，接续点不前移。"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403；X 官方补扫诊断：内置浏览器打开 Mollick 页后显示正确页面标题，但创建标签及重新选择标签读取 UI 分别 30 秒和 45 秒超时，未读到帖子；八账号覆盖未完成，接续点不前移。"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403；X 官方补扫诊断：内置浏览器打开 Mollick 页后显示正确页面标题，但创建标签及重新选择标签读取 UI 分别 30 秒和 45 秒超时，未读到帖子；八账号覆盖未完成，接续点不前移。"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5746; chromium=browser HTTP 403；X 官方补扫诊断：内置浏览器打开 Mollick 页后显示正确页面标题，但创建标签及重新选择标签读取 UI 分别 30 秒和 45 秒超时，未读到帖子；八账号覆盖未完成，接续点不前移。"
+    },
+    {
+      "slug": "theinformation",
+      "url": "",
+      "error": "内置浏览器打开首页时读取 UI 超时（45 秒），未读到 Latest 或文章正文，接续点不前移。；文件未记录实际访问 URL，不补猜。"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "开放模型竞争与美国超级智能战略",
+      "cost": "重",
+      "reason": "同主题调度组，各条独立核读和定牌，不暗示属于同一事件或具有因果关系。",
+      "items": [
+        {
+          "source": "interconnects",
+          "title": "The current balance of power in open models",
+          "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+          "date": "Mon, 21 Sep 2026 11:56:56 GMT",
+          "why": "国会证词扩展稿，开放模型力量分布与政策立场"
+        },
+        {
+          "source": "import-ai",
+          "title": "Import AI 473: The US's superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
+          "url": "https://importai.substack.com/p/import-ai-473-the-uss-superintelligence",
+          "date": "Mon, 21 Sep 2026 12:31:04 GMT",
+          "why": "周报的新政策研究候选；减速议程与 RSI 瓶颈已报，排除重复部分，其他需回溯原始链接"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Agent 接口与训练环境新候选",
+      "cost": "重",
+      "reason": "同主题调度组，各条独立核读和定牌，不暗示属于同一事件或具有因果关系。",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "MCP was always a bad idea?",
+          "url": "https://maharship.com/blog/why-mcp-was-always-a-bad-idea",
+          "date": "2026-09-20T19:44:40Z",
+          "why": "HN 224 分的 MCP 反对论，核是否有新论证"
+        },
+        {
+          "source": "hacker-news",
+          "title": "AX – Google’s Open Agentic Orchestrator",
+          "url": "https://agentexecutor.io",
+          "date": "2026-09-20T22:32:43Z",
+          "why": "HN 565 分，标题自称 Google 开源编排器；仅见标题、URL 待 reader 核，Google 归属不能直接当事实"
+        },
+        {
+          "source": "hf-papers",
+          "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+          "url": "https://huggingface.co/papers/2609.22068",
+          "date": "",
+          "why": "代码构造编程 Agent 强化学习环境，与已报外壳优化区分。仅本期榜单发现，实际发表日期待 reader 核；已核的四篇为 09-17／18 发表、09-21 榜单收录，禁止当今日发表"
+        },
+        {
+          "source": "hf-papers",
+          "title": "MintAct: A Unified Visual Agent for Digital Environments",
+          "url": "https://huggingface.co/papers/2609.22083",
+          "date": "",
+          "why": "Apple 统一视觉 Agent，核任务范围；主 agent 已核 09-18 发表、09-21 收录。仅本期榜单发现，实际发表日期待 reader 核；已核的四篇为 09-17／18 发表、09-21 榜单收录，禁止当今日发表"
+        },
+        {
+          "source": "hf-papers",
+          "title": "RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents",
+          "url": "https://huggingface.co/papers/2609.22000",
+          "date": "",
+          "why": "Qwen 可验证电脑操作环境，核相对既有环境的新内容。仅本期榜单发现，实际发表日期待 reader 核；已核的四篇为 09-17／18 发表、09-21 榜单收录，禁止当今日发表"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Agent 授权、模型自知与 AI 评审验证",
+      "cost": "重",
+      "reason": "同主题调度组，各条独立核读和定牌，不暗示属于同一事件或具有因果关系。",
+      "items": [
+        {
+          "source": "hf-papers",
+          "title": "APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+          "url": "https://huggingface.co/papers/2609.22076",
+          "date": "",
+          "why": "Agent 支付授权基准，核权限边界与越权测试。仅本期榜单发现，实际发表日期待 reader 核；已核的四篇为 09-17／18 发表、09-21 榜单收录，禁止当今日发表"
+        },
+        {
+          "source": "hf-papers",
+          "title": "When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation",
+          "url": "https://huggingface.co/papers/2609.20942",
+          "date": "",
+          "why": "AI 评审训练 AI 评审者的科学判断退化线索，需读实验。仅本期榜单发现，实际发表日期待 reader 核；已核的四篇为 09-17／18 发表、09-21 榜单收录，禁止当今日发表"
+        },
+        {
+          "source": "huggingface",
+          "title": "Your model already knows it's wrong. Asking costs 0.06 seconds and zero tokens.",
+          "url": "https://huggingface.co/blog/FINAL-Bench/ztc",
+          "date": "",
+          "why": "宣称零 token、0.06 秒判断模型出错，社区标题强主张，需核方法边界"
+        },
+        {
+          "source": "huggingface",
+          "title": "Inside the JEV Ecosystem: 13 Answer Verifiers on One Test Set",
+          "url": "https://huggingface.co/blog/mayafree/jve-ecosystems",
+          "date": "",
+          "why": "13 个答案验证器的同一测试集比较"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Empirical safety claims from frontier labs should be replicated, scrutinized, and open-sourced” by Zephaniah Roe, yix",
+          "url": "https://www.lesswrong.com/posts/MmfzfGcQ3h3p6N9pD/empirical-safety-claims-from-frontier-labs-should-be-1",
+          "date": "",
+          "why": "呼吁复现、审查和开源实验室安全实验，是否有新实证待核。音频 RSS 不等于原文日期，须核接续点；疑与 Zvi 重叠"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "AI 法律服务的忠诚与拒绝义务",
+      "cost": "中",
+      "reason": "同主题调度组，各条独立核读和定牌，不暗示属于同一事件或具有因果关系。",
+      "items": [
+        {
+          "source": "thezvi",
+          "title": "Better Call Sol Or Better Yet Claude or Astra",
+          "url": "https://thezvi.substack.com/p/better-call-sol-or-better-yet-claude",
+          "date": "Sun, 20 Sep 2026 19:46:43 GMT",
+          "why": "新评论可与 09-18 Astra 产品发布区分，优先新增论证与应用边界"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "中国理性主义者对 AI 安全讨论的回应",
+      "cost": "中",
+      "reason": "同主题调度组，各条独立核读和定牌，不暗示属于同一事件或具有因果关系。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“Please Give Them a Chance: On China, Rationalism, and AI Safety” by gzjw",
+          "url": "https://www.lesswrong.com/posts/GoX3uYQ4QN5HKvL7u/please-give-them-a-chance-on-china-rationalism-and-ai-safety",
+          "date": "2026-09-20",
+          "why": "个人经历与参与 AI 安全讨论视角，疑承接昨日中国 AI 研究者文章，需核新观点。音频 RSS 不等于原文日期，须核接续点；疑与 Zvi 重叠"
+        }
+      ]
+    },
+    {
+      "group": "user-jev",
+      "theme": "用户点名的Jev开放与Minecraft案例",
+      "cost": "中",
+      "reason": "用户明确要求调查并判断收录，主agent读官方原帖、文档和代码后定银",
+      "items": [
+        {
+          "source": "typesafe",
+          "title": "Jev is now available to everyone. No waitlist.",
+          "url": "https://x.com/typesafeai/status/2101786156572823624",
+          "date": "2026-09-20",
+          "why": "官方oEmbed已读；与作者Minecraft项目合一，digest jev.md"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "The tech battle to build your AI assistant",
+      "url": "https://www.axios.com/2026/09/20/ai-assistant-openai-meta-muse-instinct-grok-apple",
+      "date": "Sun, 20 Sep 2026 12:22:53 +0000",
+      "note": "个人助手竞争综述，补扫窗口内；核正式发布、预告和传闻的区别"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Samsung is expected to more than double output of its HBM4 and HBM4E DRAM",
+      "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+      "date": "2026-09-20T17:38:50Z",
+      "note": "三星 HBM4 增产传闻，HN 513 分，预计不能写成实现"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Show HN: Mini-AGI – Dynamic continual learning model trained on 8GB VRAM",
+      "url": "https://github.com/volotat/mini-AGI",
+      "date": "2026-09-21T04:42:37Z",
+      "note": "8GB 显存持续学习项目，HN 187 分，项目名不是 AGI 能力结论"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Kev: Tiny Jev-like family of decision models built on top of Qwen3.5",
+      "url": "https://github.com/jaredpalmer/kev/tree/main",
+      "date": "2026-09-21T07:11:55Z",
+      "note": "基于 Qwen3.5 的小型决策模型，HN 217 分"
+    },
+    {
+      "source": "hf-papers",
+      "title": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents",
+      "url": "https://huggingface.co/papers/2609.15779",
+      "date": "",
+      "note": "数据 Agent 自演化本体层，日期待核。仅本期榜单发现，实际发表日期待 reader 核；已核的四篇为 09-17／18 发表、09-21 榜单收录，禁止当今日发表"
+    },
+    {
+      "source": "hf-papers",
+      "title": "GraphSkillEvo: Evolutionary Optimization of Graph-Structured Agent Skills",
+      "url": "https://huggingface.co/papers/2609.21749",
+      "date": "",
+      "note": "图结构技能优化，核与 SoL-Pi 的差异。仅本期榜单发现，实际发表日期待 reader 核；已核的四篇为 09-17／18 发表、09-21 榜单收录，禁止当今日发表"
+    },
+    {
+      "source": "hf-papers",
+      "title": "OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue",
+      "url": "https://huggingface.co/papers/2609.21465",
+      "date": "",
+      "note": "Qwen 音视频对话数据与评测。仅本期榜单发现，实际发表日期待 reader 核；已核的四篇为 09-17／18 发表、09-21 榜单收录，禁止当今日发表"
+    },
+    {
+      "source": "huggingface",
+      "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "date": "September 21, 2026",
+      "note": "Ising 优化视角剪枝社区文章，核实际收益"
+    },
+    {
+      "source": "huggingface",
+      "title": "tokenizers v1: encode, decode and scaling, measured",
+      "url": "https://huggingface.co/blog/tokenizers-v1",
+      "date": "September 21, 2026",
+      "note": "tokenizers v1 发布与性能测量"
+    },
+    {
+      "source": "openai",
+      "title": "How V7 gives AI agents institutional memory",
+      "url": "https://openai.com/index/v7",
+      "date": "Mon, 21 Sep 2026 00:00:00 GMT",
+      "note": "OpenAI 的 V7 客户案例，机构记忆；案例宣传不能泛化"
+    },
+    {
+      "source": "simon-willison",
+      "title": "llm-keys-ui 0.1",
+      "url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui",
+      "date": "2026-09-20T19:22:19+00:00",
+      "note": "通过独立页面配置密钥的 Simon 插件"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Quoting voxium",
+      "url": "https://simonwillison.net/2026/Sep/20/voxium",
+      "date": "2026-09-20T21:06:43+00:00",
+      "note": "匿名员工抱怨全员用 Claude Code 且无人阅读产出，必须保留匿名叙述性质"
+    }
+  ],
+  "fun": [
+    {
+      "source": "axios",
+      "title": "Trump's proposed Washington arch to become sniper, drone facility",
+      "url": "https://www.axios.com/2026/09/20/trump-arch-washington-snipers-drones",
+      "date": "Sun, 20 Sep 2026 12:00:32 +0000",
+      "note": "凯旋门拟兼作狙击手与无人机设施，补扫窗口内的公共建筑用途趣闻"
+    },
+    {
+      "source": "axios",
+      "title": "Three Republican power players walk into a D.C. bar, and ...",
+      "url": "https://www.axios.com/2026/09/20/republicans-dc-bar-chat-trump-oil",
+      "date": "Sun, 20 Sep 2026 12:26:45 +0000",
+      "note": "共和党人物酒吧聊天被邻桌喜剧演员发帖，补扫窗口内"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Singapore’s National Library Board offers micropayments to build reading habits",
+      "url": "https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books",
+      "date": "2026-09-20T15:18:05Z",
+      "note": "新加坡图书馆奖励阅读，HN 266 分，需核计划与原文时间"
+    },
+    {
+      "source": "hacker-news",
+      "title": "ZuckOff Know when a camera is in the room",
+      "url": "https://zuckoff.app",
+      "date": "2026-09-21T10:33:14Z",
+      "note": "探测 Meta 眼镜的 ZuckOff，HN 481 分，与 Wired 同事件合并"
+    },
+    {
+      "source": "thezvi",
+      "title": "Monthly Roundup #46: September 2026",
+      "url": "https://thezvi.substack.com/p/monthly-roundup-46-september-2026",
+      "date": "Mon, 21 Sep 2026 13:35:14 GMT",
+      "note": "Zvi 月度杂项待选池，只见标题和导语，reader 再摘新鲜趣闻"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "Will Steven Pinker and Scott Alexander have a debate on AI safety in 2026?",
+      "prob": "42.10％",
+      "volume_note": "volume 总成交量 2096.32；24 小时 volume 为 787；不是 liquidity；发布前核实时概率",
+      "url": "https://manifold.markets/chrisjbillington/will-steven-pinker-and-scott-alexan"
+    },
+    {
+      "question": "Will AI wipe out humanity before the year 2040?",
+      "prob": "7.95％",
+      "volume_note": "volume 总成交量 1716857.77；24 小时 volume 为 0；不是 liquidity；发布前核实时概率；灭绝类老盘仅备选，题材重复且近期无成交，建议另搜今日主题",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    },
+    {
+      "question": "Will AI wipe out humanity before the year 2060?",
+      "prob": "11.35％",
+      "volume_note": "volume 总成交量 282770.94；24 小时 volume 为 0；不是 liquidity；发布前核实时概率；灭绝类老盘仅备选，题材重复且近期无成交，建议另搜今日主题",
+      "url": "https://manifold.markets/JamesBills/will-ai-wipe-out-humanity-before-th-6e8e547afa66"
+    },
+    {
+      "question": "Will AI wipe out humanity by 2030? [resolves N/A in 2027]",
+      "prob": "14.56％",
+      "volume_note": "volume 总成交量 863543.05；24 小时 volume 为 0；不是 liquidity；发布前核实时概率；灭绝类老盘仅备选，题材重复且近期无成交，建议另搜今日主题",
+      "url": "https://manifold.markets/EliezerYudkowsky/will-ai-wipe-out-humanity-by-2030-r"
+    },
+    {
+      "question": "Will misaligned AI kill >50% of humanity before 2040?",
+      "prob": "7.50％",
+      "volume_note": "volume 总成交量 24010.06；24 小时 volume 为 0；不是 liquidity；发布前核实时概率；灭绝类老盘仅备选，题材重复且近期无成交，建议另搜今日主题",
+      "url": "https://manifold.markets/ahalekelly/will-misaligned-ai-kill-50-of-the-h"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "ahead-of-ai",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "anthropic",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "anthropic-research",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "chip-huyen",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "claude-blog",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "karpathy",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "lilian-weng",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "meta-ai",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "mistral",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "thinking-machines",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "xai",
+      "reason": "机械抓取成功，无去重后新候选。"
+    },
+    {
+      "slug": "acx",
+      "reason": "候选均早于适用接续点。"
+    },
+    {
+      "slug": "deepmind",
+      "reason": "候选均早于适用接续点。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "候选均早于适用接续点。"
+    }
+  ]
+}

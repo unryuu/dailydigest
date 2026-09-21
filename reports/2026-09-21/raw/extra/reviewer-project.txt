@@ -1,0 +1,53 @@
+URL: https://hosytuyen.github.io/projects/TrustReviewer/
+FINAL: https://hosytuyen.github.io/projects/TrustReviewer/
+TITLE: TrustReviewer: Scientific-Judgment Collapse and Mitigation
+FETCHED: 2026-09-21 22:39:17
+============================================================
+Controlled Study on Recursive AI Review Training
+Starting from Llama 3.1 8B, we train a reviewer on official ICLR reviews, generate reviews for the following year, and train successor models with controlled mixtures of official and model-generated reviews. The review-source mixture is the only planned difference.
+Your browser does not support this video.
+Controlled experiment.
+Synthetic-review exposure is varied while initialization, filtering, and optimization are held fixed.
+Rating diversity.
+Increasing synthetic-review exposure compresses the distribution of reviewer ratings.
+Semantic diversity.
+Both same-paper and corpus-level semantic diversity decrease as synthetic exposure increases.
+TrustReviewer Results
+TrustReviewer trains a reviewer on curated human reviews and uses test-time activation steering to counter synthetic-review collapse. On held-out evaluation, it improves recommendation agreement while retaining a more diverse rating distribution.
+Results overview.
+TrustReviewer mitigates the diversity loss associated with recursive synthetic-review training.
+Model
+Exact Match (%) ↑
+MAD ↓
+Entropy ↑
+Meta-Llama-3.1-8B-Instruct
+33.93 ± 0.54
+2.679 ± 0.010
+1.53 ± 0.03
+Qwen3.6-35B-A3B
+61.85 ± 0.33
+1.335 ± 0.012
+1.94 ± 0.02
+OpenReviewer
+73.10 ± 1.36
+1.113 ± 0.022
+2.10 ± 0.05
+TrustReviewer without steering
+73.85 ± 0.15
+1.077 ± 0.005
+2.13 ± 0.03
+TrustReviewer
+75.40 ± 0.46
+1.079 ± 0.005
+2.18 ± 0.01
+Exact match measures agreement with at least one official reviewer rating; lower MAD and higher entropy are better.
+Citation
+@misc{ho2026aireviewstrainai,
+ title={When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation},
+ author={Sy-Tuyen Ho and Minghui Liu and Furong Huang},
+ year={2026},
+ eprint={2609.20942},
+ archivePrefix={arXiv},
+ primaryClass={cs.LG},
+ url={https://arxiv.org/abs/2609.20942},
+}

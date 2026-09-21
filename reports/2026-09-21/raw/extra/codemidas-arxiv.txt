@@ -1,0 +1,199 @@
+URL: https://arxiv.org/abs/2609.22068
+FINAL: https://arxiv.org/abs/2609.22068
+TITLE: [2609.22068] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+FETCHED: 2026-09-21 22:39:29
+============================================================
+Computer Science > Artificial Intelligence
+arXiv:2609.22068
+(cs)
+[Submitted on 18 Sep 2026]
+Title:
+CodeMidas: Scaling Agentic Coding RL Environments from Code Itself
+Authors:
+Bowen Ye
+,
+Lei Li
+,
+Shicheng Li
+,
+Zihao Yue
+,
+Linghao Zhang
+,
+Hanglong Lv
+,
+Yuanxin Liu
+,
+Wenhan Ma
+,
+Hao Tian
+,
+Rang Li
+,
+Jinhao Dong
+,
+Yikai Zhao
+,
+Xiangwei Deng
+,
+Hailin Zhang
+,
+Liang Zhao
+,
+Qi Liu
+,
+Lingpeng Kong
+,
+Tong Yang
+,
+Fuli Luo
+View a PDF of the paper titled CodeMidas: Scaling Agentic Coding RL Environments from Code Itself, by Bowen Ye and 18 other authors
+View PDF
+HTML (experimental)
+Abstract:
+Training capable coding agents via reinforcement learning (RL) requires diverse tasks with reliable verifiers. Open-source codebases offer a rich source of such tasks, while existing methods typically rely on development artifacts such as issues and commits, limiting the range of tasks that can be extracted. To better scale RL environments, we present CodeMidas, an agentic pipeline that turns implemented functionality in existing codebases into executable RL environments using source code as its only task-specific input. CodeMidas allocates agentic compute to every stage of environment construction: agents explore implemented functionality to formulate behavioral specifications, construct tests grounded in execution of the original code, and validate and filter candidate tasks through execution checks and repeated solution rollouts. The resulting dataset has 5,545 training tasks from 3,185 open-source codebases spanning 23 programming languages and 15 technical domains. Training MiMo-V2.5 on these tasks with GRPO improves performance on all five diverse benchmarks, covering issue repair (DeepSWE + 11.7%), whole-program construction (ProgramBench +17%), and terminal work (Terminal-Bench v2.1 +8.5%). Ablations show that increasing the number of high-quality training tasks improves performance. Trajectory analysis shows the RL-trained agent demonstrates better behaviors like increasing codebase exploration and more diverse self-verification. These results establish source code as a scalable foundation for constructing RL environments that improve coding agents across diverse software tasks.
+Subjects:
+Artificial Intelligence (cs.AI)
+Cite as:
+arXiv:2609.22068
+[cs.AI]
+(or
+arXiv:2609.22068v1
+[cs.AI]
+for this version)
+https://doi.org/10.48550/arXiv.2609.22068
+arXiv-issued DOI via DataCite (pending registration)
+Submission history
+From: Rang Li [
+view email
+]
+[v1]
+Fri, 18 Sep 2026 17:55:17 UTC (237 KB)
+Full-text links:
+Access Paper:
+View a PDF of the paper titled CodeMidas: Scaling Agentic Coding RL Environments from Code Itself, by Bowen Ye and 18 other authors
+View PDF
+HTML (experimental)
+TeX Source
+view license
+Current browse context:
+cs.AI
+< prev
+|
+next >
+new
+|
+recent
+|
+2026-09
+Change to browse by:
+cs
+References & Citations
+NASA ADS
+Google Scholar
+Semantic Scholar
+Loading...
+BibTeX formatted citation
+loading...
+Data provided by:
+Bookmark
+Bibliographic Tools
+Bibliographic and Citation Tools
+Bibliographic Explorer Toggle
+Bibliographic Explorer
+(
+What is the Explorer?
+)
+Connected Papers Toggle
+Connected Papers
+(
+What is Connected Papers?
+)
+Litmaps Toggle
+Litmaps
+(
+What is Litmaps?
+)
+scite.ai Toggle
+scite Smart Citations
+(
+What are Smart Citations?
+)
+Code, Data, Media
+Code, Data and Media Associated with this Article
+alphaXiv Toggle
+alphaXiv
+(
+What is alphaXiv?
+)
+Links to Code Toggle
+CatalyzeX Code Finder for Papers
+(
+What is CatalyzeX?
+)
+DagsHub Toggle
+DagsHub
+(
+What is DagsHub?
+)
+GotitPub Toggle
+Gotit.pub
+(
+What is GotitPub?
+)
+Huggingface Toggle
+Hugging Face
+(
+What is Huggingface?
+)
+ScienceCast Toggle
+ScienceCast
+(
+What is ScienceCast?
+)
+Demos
+Demos
+Replicate Toggle
+Replicate
+(
+What is Replicate?
+)
+Spaces Toggle
+Hugging Face Spaces
+(
+What is Spaces?
+)
+Spaces Toggle
+TXYZ.AI
+(
+What is TXYZ.AI?
+)
+Related Papers
+Recommenders and Search Tools
+Link to Influence Flower
+Influence Flower
+(
+What are Influence Flowers?
+)
+Core recommender toggle
+CORE Recommender
+(
+What is CORE?
+)
+Author
+Venue
+Institution
+Topic
+About arXivLabs
+arXivLabs: experimental projects with community collaborators
+arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.
+Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.
+Have an idea for a project that will add value for arXiv's community?
+Learn more about arXivLabs
+.
+Which authors of this paper are endorsers?
+|
+Disable MathJax
+(
+What is MathJax?
+)

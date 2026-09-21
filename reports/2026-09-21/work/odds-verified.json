@@ -1,0 +1,658 @@
+[
+  {
+    "id": "PqnlPn2UhN",
+    "creatorId": "srFlJRuVlGa7SEJDM4cY9B5k4Lj2",
+    "creatorUsername": "Bayesian",
+    "creatorName": "Bayesian",
+    "createdTime": 1758994281916,
+    "creatorAvatarUrl": "https://firebasestorage.googleapis.com/v0/b/mantic-markets.appspot.com/o/user-images%2FBayesian%2FZkuJDsEcaR.png?alt=media&token=007b04d0-7859-4fb3-ab4b-99938a8b4ab3",
+    "closeTime": 1798761540000,
+    "question": "AI beats Minecraft (RSG) in under 10 minutes before 2027?",
+    "slug": "ai-beats-minecraft-rsg-in-under-10-qQucd9UICy",
+    "url": "https://manifold.markets/Bayesian/ai-beats-minecraft-rsg-in-under-10-qQucd9UICy",
+    "pool": {
+      "NO": 366.3433697532726,
+      "YES": 2729.679537187989
+    },
+    "probability": 0.11832708631836465,
+    "p": 0.5000000000000002,
+    "totalLiquidity": 1000,
+    "outcomeType": "BINARY",
+    "mechanism": "cpmm-1",
+    "volume": 91560.63293152915,
+    "volume24Hours": 754.2711967102646,
+    "isResolved": false,
+    "uniqueBettorCount": 70,
+    "lastUpdatedTime": 1789950811521,
+    "lastBetTime": 1789950811521,
+    "lastCommentTime": 1773550820693,
+    "token": "MANA",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "RSG = Random Seed Glitchless",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Must be Java version",
+              "type": "text"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "text": "CAN:",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Can use scaffolds or similar.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "CAN'T:",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Cannot slow down game time or stuff like that. ",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Can't get human help.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Can't reverse engineer (by running scripts) what seed it is in from world features to know where structures will be before seeing them (eg blind travelling to the stronghold)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Traders may want to look at the official rulebook for Minecraft RSG:",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "https://www.minecraftspeedrunning.com/public-resources/rules",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://www.minecraftspeedrunning.com/public-resources/rules",
+                    "class": "break-anywhere hover:underline hover:decoration-primary-400 hover:decoration-2 active:underline active:decoration-primary-400",
+                    "target": "_blank"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Important: For the purpose of this market, the run must generally follow the Minecraft RSG rules insofar as the rules are not related at all to the fact that the participant is human. For example:",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "If the rulebook says you can't write stuff down, and instead need to keep things to memory, but the AI keeps things to memory by writing information into its memory bank, that is allowed.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "If the rulebook says snapshots can't be used to set Minecraft RSG runs, the AI must not use snapshots to resolve this market positively, as this rule is not related to the fact that it is an AI.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "However, uninvolved persons may determine, at time of resolution, whether a rule ought to be allowed or ignored on a case-by-case basis, in case of ambiguity.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "See also:",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "contract-mention",
+              "attrs": {
+                "id": "IzUgqN56tR",
+                "label": "/calour/ai-beats-minecraft-rsg-in-under-10-UCNSznn0UP"
+              }
+            },
+            {
+              "text": " ",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "contract-mention",
+              "attrs": {
+                "id": "PqnlPn2UhN",
+                "label": "/Bayesian/ai-beats-minecraft-rsg-in-under-10-qQucd9UICy"
+              }
+            },
+            {
+              "text": " (this market)",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "contract-mention",
+              "attrs": {
+                "id": "9AynNtnO5I",
+                "label": "/Bayesian/ai-beats-minecraft-rsg-in-under-10-z56AZNtIyL"
+              }
+            },
+            {
+              "text": " ",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "contract-mention",
+              "attrs": {
+                "id": "0zN8ndgN06",
+                "label": "/Bayesian/ai-beats-minecraft-rsg-in-under-10"
+              }
+            },
+            {
+              "text": " ",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Update 2025-08-26 (PST) (AI summary of ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "creator comment",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "link",
+                          "attrs": {
+                            "href": "/Bayesian/ai-beats-minecraft-rsg-in-under-10-z56AZNtIyL#9749rfjhrc9",
+                            "class": null,
+                            "target": "_blank"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "text": "): ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "Allowed tools/info",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "bulletList",
+                  "content": [
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "text": "AI may use Ninjabrain.",
+                              "type": "text"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "listItem",
+                      "content": [
+                        {
+                          "type": "paragraph",
+                          "content": [
+                            {
+                              "text": "Mods that expose in-game information directly to the AI are allowed, such as blocks/entities in the current FOV and data equivalent to the F3 screen.",
+                              "type": "text"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "groupSlugs": [
+      "technical-ai-timelines",
+      "technology-default",
+      "ai",
+      "ai-impacts"
+    ],
+    "textDescription": "RSG = Random Seed Glitchless\n\nMust be Java version\nCAN:\n\nCan use scaffolds or similar.\n\nCAN'T:\n\nCannot slow down game time or stuff like that. \n\nCan't get human help.\n\nCan't reverse engineer (by running scripts) what seed it is in from world features to know where structures will be before seeing them (eg blind travelling to the stronghold)\n\nTraders may want to look at the official rulebook for Minecraft RSG:\n\nhttps://www.minecraftspeedrunning.com/public-resources/rules\n\nImportant: For the purpose of this market, the run must generally follow the Minecraft RSG rules insofar as the rules are not related at all to the fact that the participant is human. For example:\n\nIf the rulebook says you can't write stuff down, and instead need to keep things to memory, but the AI keeps things to memory by writing information into its memory bank, that is allowed.\n\nIf the rulebook says snapshots can't be used to set Minecraft RSG runs, the AI must not use snapshots to resolve this market positively, as this rule is not related to the fact that it is an AI.\n\nHowever, uninvolved persons may determine, at time of resolution, whether a rule ought to be allowed or ignored on a case-by-case basis, in case of ambiguity.\n\nSee also:\n\n@/calour/ai-beats-minecraft-rsg-in-under-10-UCNSznn0UP \n\n@/Bayesian/ai-beats-minecraft-rsg-in-under-10-qQucd9UICy (this market)\n\n@/Bayesian/ai-beats-minecraft-rsg-in-under-10-z56AZNtIyL \n\n@/Bayesian/ai-beats-minecraft-rsg-in-under-10 \n\nUpdate 2025-08-26 (PST) (AI summary of creator comment): Allowed tools/info\n\nAI may use Ninjabrain.\n\nMods that expose in-game information directly to the AI are allowed, such as blocks/entities in the current FOV and data equivalent to the F3 screen."
+  },
+  {
+    "id": "U8NZAllglZ",
+    "creatorId": "EJQOCF3MfLTFYbhiKncrNefQDBz1",
+    "creatorUsername": "chrisjbillington",
+    "creatorName": "Chris Billington",
+    "createdTime": 1789902613198,
+    "creatorAvatarUrl": "https://firebasestorage.googleapis.com/v0/b/mantic-markets.appspot.com/o/user-images%2FChrisBillington%2FjLc4I6rx5f.jpg?alt=media&token=cbff96f7-53b4-45ec-93fe-df29764eebe6",
+    "closeTime": 1798761540000,
+    "question": "Will Steven Pinker and Scott Alexander have a debate on AI safety in 2026?",
+    "slug": "will-steven-pinker-and-scott-alexan",
+    "url": "https://manifold.markets/chrisjbillington/will-steven-pinker-and-scott-alexan",
+    "pool": {
+      "NO": 8526.97836688373,
+      "YES": 11727.483722530651
+    },
+    "probability": 0.42099258569499115,
+    "p": 0.5000000000000002,
+    "totalLiquidity": 10000,
+    "outcomeType": "BINARY",
+    "mechanism": "cpmm-1",
+    "volume": 2096.319187307805,
+    "volume24Hours": 887,
+    "isResolved": false,
+    "uniqueBettorCount": 17,
+    "lastUpdatedTime": 1789999224558,
+    "lastBetTime": 1789999224558,
+    "lastCommentTime": 1789919854136,
+    "token": "MANA",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Scott Alexander has challenged Steven Pinker to a debate on AI safety. Will such a debate take place in 2026?",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Must be a debate that takes place in real time, either in person or online by video or audio. If online it need not stream live to count.",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "2026 UTC",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "tiptapTweet",
+          "attrs": {
+            "tweetId": "t2101503925455343802"
+          }
+        }
+      ]
+    },
+    "groupSlugs": [
+      "ai-safety",
+      "ai",
+      "scott-alexander",
+      "ai-impacts",
+      "ai-risk"
+    ],
+    "textDescription": "Scott Alexander has challenged Steven Pinker to a debate on AI safety. Will such a debate take place in 2026?\n\nMust be a debate that takes place in real time, either in person or online by video or audio. If online it need not stream live to count.\n\n2026 UTC\n\n[tweet]"
+  },
+  {
+    "id": "NQq0qynR60",
+    "creatorId": "Fz12fyQzT0cnfaSp2iOYvLsYmTi1",
+    "creatorUsername": "asmith",
+    "creatorName": "Andrew Smith",
+    "createdTime": 1765577500949,
+    "creatorAvatarUrl": "https://firebasestorage.googleapis.com/v0/b/mantic-markets.appspot.com/o/user-images%2Fasmith%2FFL-5sBLMo8.jpg?alt=media&token=2508f19b-6c16-41fe-ba0f-d901653a5912",
+    "closeTime": 1798761540000,
+    "question": "Will Half-Life 3 be released in 2026?",
+    "slug": "will-half-life-3-be-released-in-202",
+    "url": "https://manifold.markets/asmith/will-half-life-3-be-released-in-202",
+    "pool": {
+      "NO": 32.94722391535605,
+      "YES": 305.0519139841396
+    },
+    "probability": 0.09747724245720736,
+    "p": 0.5000000000000013,
+    "totalLiquidity": 100,
+    "outcomeType": "BINARY",
+    "mechanism": "cpmm-1",
+    "volume": 8823.439464149553,
+    "volume24Hours": 0,
+    "isResolved": false,
+    "uniqueBettorCount": 65,
+    "lastUpdatedTime": 1783895723520,
+    "lastBetTime": 1783895723520,
+    "lastCommentTime": 1773020093732,
+    "token": "MANA",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Half Life 3. Half-Life Three",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    },
+    "groupSlugs": [
+      "gaming",
+      "half-life",
+      "steam",
+      "valve-8f151385bf6e"
+    ],
+    "textDescription": "Half Life 3. Half-Life Three"
+  },
+  {
+    "id": "MWUDXNroXZcJFog8krls",
+    "creatorId": "54JfUh2QSRf0BZcRTowSUWpPKn82",
+    "creatorUsername": "JamesBills",
+    "creatorName": "James Bills",
+    "createdTime": 1679810765377,
+    "creatorAvatarUrl": "https://lh3.googleusercontent.com/a-/AOh14GipeeCzM7Yw0HYeyYykdxCLDrEz-mHTLAENAmzds_0=s96-c",
+    "closeTime": 1924991940000,
+    "question": "Will a nuclear fusion reaction be maintained continuously for >24hrs before the end of 2030?",
+    "slug": "will-a-nuclear-fusion-reaction-be-m",
+    "url": "https://manifold.markets/JamesBills/will-a-nuclear-fusion-reaction-be-m",
+    "pool": {
+      "NO": 1053.0493956690395,
+      "YES": 2068.2119357187685
+    },
+    "probability": 0.30805150935549436,
+    "p": 0.4664877635845204,
+    "totalLiquidity": 1400,
+    "outcomeType": "BINARY",
+    "mechanism": "cpmm-1",
+    "volume": 3433.5815936726726,
+    "volume24Hours": 0,
+    "isResolved": false,
+    "uniqueBettorCount": 92,
+    "lastUpdatedTime": 1784859005866,
+    "lastBetTime": 1784859005866,
+    "lastCommentTime": 1684498155872,
+    "token": "MANA",
+    "description": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Reaction must have a net energy gain",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "For information on ",
+              "type": "text"
+            },
+            {
+              "text": "https://en.wikipedia.org/wiki/Nuclear_fusion",
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://en.wikipedia.org/wiki/Nuclear_fusion",
+                    "class": null,
+                    "target": "_blank"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "There are multiple initiatives pursuing nuclear fusion, please post in the comments if you find interesting ones that I haven't listed:",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "orderedList",
+          "attrs": {
+            "start": 1
+          },
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "ITER: International collaboration to demonstrate fusion feasibility using the world's largest tokamak for magnetic confinement.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "NIF: US-based facility employing inertial confinement fusion with powerful lasers to achieve ignition and energy gain.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "JET: European tokamak research facility, contributing to ITER's development and exploring plasma physics and fusion technology.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "W7-X: German stellarator aiming to demonstrate the feasibility of its complex magnetic field configuration for fusion power generation.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Private Companies: Start-ups such as TAE Technologies, Helion Energy, First Light Fusion, and Commonwealth Fusion Systems.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "coverImageUrl": "https://firebasestorage.googleapis.com/v0/b/mantic-markets.appspot.com/o/dream%2FggJo54W6nA.png?alt=media&token=e791f833-0a0b-499c-93bf-6f8edf771cbd",
+    "groupSlugs": [
+      "energy",
+      "economics-default",
+      "technology-default",
+      "nuclear-power",
+      "nuclear"
+    ],
+    "textDescription": "Reaction must have a net energy gain\n\nFor information on https://en.wikipedia.org/wiki/Nuclear_fusion\n\nThere are multiple initiatives pursuing nuclear fusion, please post in the comments if you find interesting ones that I haven't listed:\n\nITER: International collaboration to demonstrate fusion feasibility using the world's largest tokamak for magnetic confinement.\n\nNIF: US-based facility employing inertial confinement fusion with powerful lasers to achieve ignition and energy gain.\n\nJET: European tokamak research facility, contributing to ITER's development and exploring plasma physics and fusion technology.\n\nW7-X: German stellarator aiming to demonstrate the feasibility of its complex magnetic field configuration for fusion power generation.\n\nPrivate Companies: Start-ups such as TAE Technologies, Helion Energy, First Light Fusion, and Commonwealth Fusion Systems."
+  }
+]

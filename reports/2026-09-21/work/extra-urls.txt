@@ -1,0 +1,11 @@
+reviewer-arxiv|https://arxiv.org/abs/2609.20942
+reviewer-project|https://hosytuyen.github.io/projects/TrustReviewer/
+recreation-arxiv|https://arxiv.org/abs/2609.22000
+recreation-project|https://recreation-bench.cc/
+aport-arxiv|https://arxiv.org/abs/2609.22076
+aport-project|https://aport.io/blog/ai-agent-jailbreak-benchmark-secure-ai/
+codemidas-arxiv|https://arxiv.org/abs/2609.22068
+codemidas-project|https://mimo.xiaomi.com/rl/
+mintact-arxiv|https://arxiv.org/abs/2609.22083
+rand|https://www.rand.org/pubs/perspectives/PEA5105-1.html
+mouse|https://www.nature.com/articles/s41586-026-11032-2

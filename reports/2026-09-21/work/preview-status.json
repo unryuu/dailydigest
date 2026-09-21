@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-21",
+  "stage": "published_distributed_archived",
+  "updated_at": "2026-09-22T00:22:59.044214+08:00",
+  "mechanical_attempt_finished_at": "2026-09-21T22:06:17.985350+08:00",
+  "mechanical_failed_sources": [
+    "x-emollick",
+    "x-goodside",
+    "x-karpathy",
+    "x-neelnanda",
+    "x-pvncher",
+    "x-roon",
+    "x-sama",
+    "x-teortaxes"
+  ],
+  "x_resume_from": "2026-09-19T22:23:36+08:00",
+  "ti_resume_from": "2026-09-20T21:57:56+08:00",
+  "channel_authorized": true,
+  "odds_skip_authorized": false,
+  "proposed_gold": 0,
+  "proposed_silver": 6,
+  "proposed_content_count": 19,
+  "content_count": 15,
+  "gold": 0,
+  "silver": 6,
+  "odds_count": 4,
+  "validation": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "grading_authorization_text": "好的，就按你的定牌。",
+  "jev_added": true,
+  "source_text_success_count": 18,
+  "source_text_failure_after_fallback": 0,
+  "daily_bytes": 6171,
+  "image": {
+    "width": 1179,
+    "height": 9511,
+    "bytes": 2022189
+  },
+  "snapshot_bytes": 6234,
+  "image_qa": "已看顶部、Jev所在中部与赔率底部，无截字溢出。",
+  "preview_message_ids": [
+    414,
+    415
+  ],
+  "preview_delivery_confirmed": true,
+  "jev_research_bytes": 3087,
+  "published_at": "2026-09-22T00:20:39.031602+08:00",
+  "channel_authorization_text": "好的，我改好了daily.json，发频道吧。",
+  "telegram_message_ids": [
+    274,
+    275
+  ],
+  "telegram_delivery_confirmed": true,
+  "user_changed_items": 3,
+  "seen_inserted": 14,
+  "seen_unmatched": [
+    "https://github.com/rmalde/minecraft-agent"
+  ],
+  "spoken_draft": {
+    "paragraphs": 19,
+    "characters": 1561,
+    "estimated_minutes": 5.6,
+    "tts_bytes": 4690,
+    "subtitle_bytes": 4480,
+    "awaiting_user_review": true
+  },
+  "distribution": {
+    "zhihu_bytes": 4985,
+    "xhs_count": 7,
+    "xhs_images": [
+      {
+        "file": "xhs-01.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 132200
+      },
+      {
+        "file": "xhs-02.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 277226
+      },
+      {
+        "file": "xhs-03.png",
+        "width": 1242,
+        "height": 2138,
+        "bytes": 555640
+      },
+      {
+        "file": "xhs-04.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 312080
+      },
+      {
+        "file": "xhs-05.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 65663
+      },
+      {
+        "file": "xhs-06.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 234027
+      },
+      {
+        "file": "xhs-07.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 212921
+      }
+    ],
+    "sensitive_hits": 0
+  }
+}

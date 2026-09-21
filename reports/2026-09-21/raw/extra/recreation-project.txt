@@ -1,0 +1,68 @@
+URL: https://recreation-bench.cc/
+FINAL: https://recreation-bench.cc/
+TITLE: RecreationWorld â Explore. Build. Verify.
+FETCHED: 2026-09-21 22:39:21
+============================================================
+Hybrid computer-use agents
+Explore.
+Build.
+Verify.
+Can an agent recreate an application
+just by using it?
+Explore the results
+â
+Try a live comparison
+â
+Real software. Recreated by an agent.
+macOS
+Reference
+Agent recreation
+Drag anywhere on the image to compare. Use arrow keys for small steps, Page Up or Page Down for larger steps, or Home and End to reveal one full image.
+Food Truck
+Â· GPT-6 Astra
+Full images:
+Reference â
+Recreation â
+A world of real applications.
+250
+held-out applications
+5
+native platforms
+2
+scoring channels
+Ubuntu Â· macOS Â· Windows
+Android Â· Web
+RecreationBench
+How well do agents recreate?
+Interested in evaluating self-hosted models or curious about how other models perform? Please contact
+xiezhihui.xzh@alibaba-inc.com
+or
+gaochang.gao@alibaba-inc.com
+.
+Evaluation scope
+Overall
+Ubuntu
+macOS
+Windows
+Android
+Web
+Search models
+RecreationBench model scores, programmatic threshold coverage, and estimated API cost per task. Threshold coverage is the percentage of applications reaching the stated Prog score; Overall averages platform rates equally. Higher scores and coverage are better; lower costs are cheaper. Cost bars share a linear scale across all models. Sorting by cost retains Average score ranks.
+Rank
+Loading scoresâ¦
+Paper analysis
+What do the results reveal?
+Cost and benchmark performance
+Loading paper analysis dataâ¦
+Citation
+BibTeX
+Download .bib
+@misc{qwen2026recreationworld,
+ title={RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents},
+ author={Shuai Bai and Jiayong Deng and Sicheng Fan and Yikun Fu and Chang Gao and Xuhao Hu and Mianqiu Huang and Yizhen Jiang and Yuheng Jing and Dehui Kong and Keliang Li and Ning Li and Wanli Li and Dayiheng Liu and Dunjie Lu and Changwei Luo and Que Shen and Zheyuan Wang and Zijian Wang and Jie Wu and Gao Wu and Zhihui Xie and Rui Xie and Haiyang Xu and An Yang and Jiakang Yuan and Yanming Zhang and Jiajun Zhang and Xi Zhang and Zhenru Zhang and Zhuo Zhen and Mingkang Zhu and Bowen Zhou},
+ year={2026},
+ eprint={2609.22000},
+ archivePrefix={arXiv},
+ primaryClass={cs.CL},
+ url={https://arxiv.org/abs/2609.22000},
+}

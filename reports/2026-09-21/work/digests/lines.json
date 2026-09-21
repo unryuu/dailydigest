@@ -1,0 +1,98 @@
+[
+  {
+    "id": "mcp",
+    "section": "deep",
+    "label": "开发者提议让 Agent 绕过 MCP",
+    "url": "https://maharship.com/blog/why-mcp-was-always-a-bad-idea/",
+    "body": "作者主张让 Agent 直接写脚本调用现成接口，少维护一层工具包装，也不用一次塞进大量工具说明。",
+    "note": "核实通过：已读本地全文，具体论证包括工具说明挤占上下文、模型可调用 API／CLI、按需返回 Markdown；属作者观点，无对照实验。原网页 article:published_time 为 2026-09-14T00:00:00.000Z，早于本期窗口，不能以 HN 上榜时间当新文，建议裁决剔除。失败：无。重复：近三期无同条，无主线重复。"
+  },
+  {
+    "id": "codemidas",
+    "section": "papers",
+    "label": "小米从现成代码里制造编程练习",
+    "url": "https://huggingface.co/papers/2609.22068",
+    "body": "它把开源项目中的某项功能挖空，再用原代码生成测试，让 AI 补回功能并自动判卷。",
+    "note": "核实通过：已读 HF 摘要和论文全文方法第 3.1—3.4 节。先移除核心实现、保留独立参考方案，再执行原实现形成测试，解题时验证器在外部，评分时注入；有执行一致性、泄漏和判卷缺陷过滤。Xiaomi MiMo 归属明确。原文 Sep 18 发布、Sep 21 收录，按用户已批准的今日榜单发现口径收录；正文不使用性能数值。失败：无。重复：近三期无同条。"
+  },
+  {
+    "id": "mintact",
+    "section": "papers",
+    "label": "Apple 用一套模型操作手机、电脑和网页",
+    "url": "https://huggingface.co/papers/2609.22083",
+    "body": "MintAct 把找按钮、连续操作和调用视觉工具放进同一套训练，让模型跨不同界面办事。",
+    "note": "核实通过：已读 HF 摘要，补读论文全文首页、引言训练流程和统一动作方法。Apple 归属明确，模型家族为 2B、4B、8B，将各域专家蒸馏回同一模型后再联合训练；各域动作由不同提示词提供。HF 显示 Sep 18 发布、Sep 21 收录，论文首页署 September 17, 2026，均非今日发布，按用户已批准的今日榜单发现口径收录。未确认权重或代码发布，正文不称开源、不写榜单数值。失败：无。重复：与 09-19 界面 Agent 将失败经验写进技能不同，不标疑重。"
+  },
+  {
+    "id": "ax",
+    "section": "official",
+    "label": "Google 开源 AX，集中调度 Agent 任务",
+    "url": "https://agentexecutor.io/",
+    "body": "AX 为每个任务准备隔离环境，统一配置模型和联网权限，还能暂停闲置任务，之后接着运行。",
+    "note": "核实通过：已读官网全文，官网明确 born at Google，并顺真实链接读 https://github.com/google/ax，组织为 google，About 为 Google 的开放 Agent 调度器，Apache 2.0。首次发布日期未在已读页找到，只可写开源项目当前能力，不写今日首发。仓库提醒稳定版前会有重大改动，正文不写十亿级并发为已实证。失败：无。重复：近三期无同条。"
+  },
+  {
+    "id": "v7",
+    "section": "official",
+    "label": "V7 把公司文件整理成 Agent 可查的记忆",
+    "url": "https://openai.com/index/v7/",
+    "body": "它把文件里的公司、人物和数字连成关系网，每条事实保留原始出处，Agent 可直接查询。",
+    "note": "核实通过：已读 OpenAI 客户案例全文，日期 September 21, 2026。机制为从企业库抽取实体、关系、事实到 Context Graph，保留证据；现有 MCP 检索与写入可用，事实变更主动触发工作流仍属未来目标。案例指标是 V7 自述／自建评测，本文不采用这些数字。失败：无。重复：近三期无同条。"
+  },
+  {
+    "id": "samsung",
+    "section": "industry",
+    "label": "三星 HBM4 系列明年产量预计翻倍",
+    "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+    "body": "三星准备扩大晶圆支撑材料的清洗量，供应链由此预计，HBM4 和 HBM4E 的合计产量将至少翻倍。",
+    "note": "核实通过：已读 Seoul Economic Daily 英文全文，属韩文报道的 AI 翻译；不是三星正式公告，翻倍为业内由载板清洗量和产品结构推算，不写成已实现或三星官方承诺。元信息原发布时间 2026-09-20T16:33:51+09:00，修改时间 2026-09-20T14:30:08.000Z（北京时间 22:30），修改在接续点之后。失败：无。重复：近三期无同条。最终按 brief 使用标题，body 供裁剪。 删除建议：原发布时间早于接续点；只有修改时间在接续点后，无法比较修订内容，未确认实质增量，不能据修改元信息当新进展。"
+  },
+  {
+    "id": "tokenizers",
+    "section": "industry",
+    "label": "Hugging Face 发布 tokenizers v1 候选版",
+    "url": "https://huggingface.co/blog/tokenizers-v1",
+    "body": "新版保留分词结果和调用方式，通过缓存重复词、减少内存分配等改动，让模型更快拿到输入。",
+    "note": "核实通过：已读官方博客日期 September 21, 2026。发布物是 crates.io 上的 Rust release candidate，1.0.0 正式版仍有待办；不能沿用初选中正式 v1 已发布口径。提速对照为 v0.23，硬件 Apple M4 Max，正文不使用倍数以免扩张测试范围。失败：无。重复：近三期无同条。最终按 brief 使用标题，body 供裁剪。"
+  },
+  {
+    "id": "keys-ui",
+    "section": "industry",
+    "label": "Simon 做了一个给 Agent 配置密钥的独立页面",
+    "url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui/",
+    "body": "在手机打开这个页面，就能把密钥存到远程电脑，Agent 随后用命令读取，不用把密钥贴进聊天。",
+    "note": "核实通过：已读作者发布页全文，20th September 2026 at 7:22 pm；已读页面未注明时区，不擅自换算。llm-keys-ui 0.1 面向 LLM 工具的 API key 配置；原文使用 Codex Remote，从手机访问本机／Tailscale 地址。失败：无。重复：近三期无同条。最终按 brief 使用标题，body 供裁剪。"
+  },
+  {
+    "id": "zuckoff",
+    "section": "fun",
+    "label": "ZuckOff 用手机发现身边的摄像眼镜",
+    "url": "https://zuckoff.app/",
+    "body": "手机监听蓝牙广播，按厂商标识识别 Meta 等眼镜，还能在后台提醒，扫描记录留在本机。",
+    "note": "核实通过：已读产品官网全文，识别依靠蓝牙厂商标识和部分设备名，包含 Ray-Ban Meta、Oakley Meta、Snap 等。官网未见发布日期，不称今日推出。只能探测广播设备，不能据此判断正在录像，也不能保证发现沉默设备；边界保留在核查备注，文案只写发现眼镜。失败：无。重复：近三期无同条。"
+  },
+  {
+    "id": "voxium",
+    "section": "fun",
+    "label": "一位员工吐槽：大家让 Claude 写，却没人读",
+    "url": "https://simonwillison.net/2026/Sep/20/voxium/",
+    "body": "他描述新公司的同事每天工作十二三个小时，代码、需求、报告全交给 Claude，管理层还在催进度。",
+    "note": "核实通过：已读 Simon 收录的 voxium 原话全文，Simon 页面日期 20th September 2026 at 9:06 pm；所述为匿名网友入职半个月后的个人叙述，未核实公司或推广至整个行业。未追到原帖正文，不把收录时间当原帖时间。失败：主链接无，原叙述未独立核实。重复：与 09-19 LinkedIn 机器人互说空话属于不同事件。"
+  },
+  {
+    "id": "reading-reward",
+    "section": "fun",
+    "label": "新加坡给每天读十五分钟的人发小奖励",
+    "url": "https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books",
+    "body": "读完登记一次可得二十枚虚拟币，攒到一千枚能换一新元，连续读五十天才够。",
+    "note": "核实通过范围：已读 Gadget Review 媒体正文，报道日期 Sep 17, 2026，文内称 ReadSG 于 Sep 6 启动；不能把 HN 上榜日期当发布，建议因旧闻剔除。补查原文真实引用 https://www.read.gov.sg/join-the-readsg-challenge，网页只返回需启用 JavaScript，supplemental_fetch_failed，官方规则未读到。正文备选仅采用所读媒体明确数字，未使用五年试点等扩展判断。主链接失败：无。重复：近三期无同条。"
+  },
+  {
+    "id": "zvi-roundup",
+    "section": "fun",
+    "label": "咖啡店倒闭后，复盘还在钻研风味",
+    "url": "https://thezvi.substack.com/p/monthly-roundup-46-september-2026",
+    "body": "店开在通勤小镇，九点才营业。店主却花更多篇幅聊天气如何影响咖啡，没怎么分析开门时间。",
+    "note": "核实通过：已读 Zvi 月报 Focus Only On What Matters 段，原文 Sep 21, 2026。该故事是 Rich Uncle Pennybags 看失败咖啡店复盘视频后的评论，经 Zvi 转述；未直接观看原视频，不能加店名、金额或因果定论。文案保留原文两项并列事实，不将开门时间直接认定为倒闭原因。失败：主链接无。重复：近三期无同条。"
+  }
+]

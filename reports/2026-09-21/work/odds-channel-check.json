@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-09-22T00:18:40.342843+08:00",
+  "items": [
+    {
+      "url": "https://manifold.markets/Bayesian/ai-beats-minecraft-rsg-in-under-10-qQucd9UICy",
+      "published_prob": "12％",
+      "current_prob": "12％",
+      "volume": 91560.63293152915,
+      "isResolved": false
+    },
+    {
+      "url": "https://manifold.markets/chrisjbillington/will-steven-pinker-and-scott-alexan",
+      "published_prob": "42％",
+      "current_prob": "42％",
+      "volume": 2096.319187307805,
+      "isResolved": false
+    },
+    {
+      "url": "https://manifold.markets/asmith/will-half-life-3-be-released-in-202",
+      "published_prob": "10％",
+      "current_prob": "10％",
+      "volume": 8823.439464149553,
+      "isResolved": false
+    },
+    {
+      "url": "https://manifold.markets/JamesBills/will-a-nuclear-fusion-reaction-be-m",
+      "published_prob": "31％",
+      "current_prob": "31％",
+      "volume": 3433.5815936726726,
+      "isResolved": false
+    }
+  ]
+}

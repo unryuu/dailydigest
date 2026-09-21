@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-21",
+  "resume_from": "2026-09-19T22:11:28+08:00",
+  "items": [
+    {
+      "source": "axios",
+      "title": "Trump wants a new AI czar and an \"AI Force\" modeled on Space Force",
+      "url": "https://www.axios.com/2026/09/19/trump-ai-czar-space-force-safety",
+      "date": "Sat, 19 Sep 2026 19:20:28 +0000",
+      "summary": "President Trump announced Saturday he is creating an \"AI Force\" modeled on the Space Force and will soon name a new AI czar, doubling down on his push to accelerate artificial intelligence development with limited regulation. Why it matters: The White House isn't backing down from its laissez-faire  approach to AI, even as the industry's biggest leaders call for stronger safety rules and as public concern about AI intensifies. The latest: Trump offered few details on what this AI Force would actually do, what budget it would have or where it would be placed in the federal government. The White House did not immediately respond to a request for comment. His Truth Social post said the government would \"not in any way hinder or stifle\" AI's growth but would look for \"BAD\" behavior using \"our already existing Criminal and Civil Justice System.\" He compared the proposed AI Force to Space Force, a military branch established by Congress in his first term. Catch up quick: Trump has hardened his anti-regulation position during an extraordinary month of warnings from inside the AI industry. Anthropic CEO Dario Amodei, OpenAI CEO Sam Altman, SpaceX CEO Elon Musk and Demis Hassabis — the Nobe",
+      "fetch_route": "requests_resume_gap",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "short"
+    },
+    {
+      "source": "axios",
+      "title": "Trump bans CNN, MS NOW and Politico from White House",
+      "url": "https://www.axios.com/2026/09/18/trump-ban-cnn-ms-now-politico-white-house",
+      "date": "Sat, 19 Sep 2026 15:18:30 +0000",
+      "summary": "President Trump said Friday he is banning CNN, MS NOW and Politico from the White House \"effective immediately,\" escalating his long-running battles with news organizations. Early Saturday morning, Politico , CNN and MS NOW said their journalists were denied access to White House grounds. Why it matters: Trump is seeking to use White House access against news outlets whose coverage he objects to, while threatening to target additional organizations. Press freedom groups immediately called on news outlets to fight the bans. Driving the news: Trump's Truth Social post called the three outlets \"Fake News\" and accused them of reporting \"FICTION and LIES,\" before threatening to also ban other \"Fake News Media Outlets.\" The White House declined to comment beyond Trump's post. \"CNN stands fully behind our White House team and their fair and accurate reporting,\" the network posted on X . \"We have a right under the U.S. Constitution to do that reporting without hindrance or interference from the government. Should the ban which President Trump threatened go ahead, it would be an illegal assault on that fundamental and constitutionally-protected right.\" Politico similarly wrote that it \"will",
+      "fetch_route": "requests_resume_gap",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "short"
+    },
+    {
+      "source": "huggingface",
+      "title": "Layer-Feedback Transformer (LFT)",
+      "url": "https://huggingface.co/blog/Banaxi-Tech/layer-feedback-transformer-lft",
+      "date": "",
+      "summary": "Layer-Feedback Transformer (LFT) Banaxi-Tech • 2 days ago • 5",
+      "fetch_route": "requests_resume_gap",
+      "date_known": true,
+      "weight": "中",
+      "length_hint": "medium"
+    }
+  ],
+  "diagnostics": [
+    {
+      "source": "axios",
+      "status": "ok",
+      "added": 2
+    },
+    {
+      "source": "thezvi",
+      "status": "ok",
+      "added": 0
+    },
+    {
+      "source": "huggingface",
+      "status": "ok",
+      "added": 1
+    }
+  ]
+}

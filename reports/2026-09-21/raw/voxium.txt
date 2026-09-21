@@ -1,0 +1,65 @@
+URL: https://simonwillison.net/2026/Sep/20/voxium
+FINAL: https://simonwillison.net/2026/Sep/20/voxium/
+TITLE: A quote from voxium
+FETCHED: 2026-09-21 22:38:26
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+Teleport
+— See what 13 engineers learned from “pressure washing” their codebase using LLMs for 90 days. Hint: Quality > quantity for finding security vulnerabilities.
+20th September 2026
+It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are we slow? People are working 12 to 13 hours a day just to press enter. Nobody is reading anything. Everyone, literally everyone, from an L1 to an L7 engineer here is doing the same thing. Talk to Claude.
+—
+voxium
+Posted
+20th September 2026
+at 9:06 pm
+Recent articles
+Generating running routes with GPT-6 Astra and ChatGPT Work
+- 12th September 2026
+OpenAI agents attacked RubyGems back in May
+- 12th September 2026
+Some thoughts on the Navier–Stokes Millennium Prize Problem
+- 8th September 2026
+This is a
+quotation
+collected by Simon Willison, posted on
+20th September 2026
+.
+ai
+2,243
+generative-ai
+1,989
+llms
+1,955
+ai-misuse
+63
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

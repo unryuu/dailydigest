@@ -1,0 +1,79 @@
+URL: https://www.rand.org/pubs/perspectives/PEA5105-1.html
+FINAL: https://www.rand.org/pubs/perspectives/PEA5105-1.html
+TITLE: A U.S. Strategy to Secure Geopolitical Advantage on an Uncertain Path to Superintelligence: Maintaining Freedom of Action | RAND
+FETCHED: 2026-09-21 22:39:34
+============================================================
+A U.S. Strategy to Secure Geopolitical Advantage on an Uncertain Path to Superintelligence
+Maintaining Freedom of Action
+Joel B. Predd
+,
+Benjamin Boudreaux
+,
+Matt Chessen
+,
+Beba Cibralic
+,
+Edward Geist
+,
+Kamaria Horton
+,
+Amanda Kerrigan
+,
+William Marcellino
+,
+Shanshan Mei
+,
+Jared Mondschein
+, et al.
+Expert Insights
+Published Sep 15, 2026
+Download PDF
+Share on LinkedIn
+Share on X
+Share on Facebook
+Email
+Frontier artificial intelligence (AI) continues to advance, and an increasing number of experts contend that the creation of superintelligence is possible. Although progress might slow or even halt, the transformative potential of superintelligence demands proactive strategy-making. The stakes are high, not only for geopolitics, but for humanity’s survival and agency. What, then, should U.S. strategy be? Should the United States pursue AI supremacy by monopolizing the frontier? Co-develop superintelligence with rivals? Deter its advance? Pause and freeze its development? And in a competitive environment, how will other powers and geopolitical rivals respond to the choices they face?
+In this paper, the authors argue that seven archetypal strategies dominate the debate, that current evidence cannot resolve five pivotal uncertainties about the most feasible and sensible strategy, and that committing prematurely to any one of them, or deferring commitment too long, forecloses options. They therefore recommend a Freedom of Action strategy to build and preserve the ability to secure geopolitical advantage and ensure humanity’s survival with agency through the transition to superintelligence.
+Topics
+Artificial Intelligence
+Cybersecurity
+Geopolitical Strategic Competition
+Science, Technology, and Innovation Policy
+United States
+Document Details
+Copyright:
+RAND Corporation
+Availability:
+Web-Only
+Year:
+2026
+Pages:
+37
+DOI:
+https://doi.org/10.7249/PEA5105-1
+Document Number:
+PE-A5105-1
+Citation
+RAND Style Manual
+Predd, Joel B., Benjamin Boudreaux, Matt Chessen, Beba Cibralic, Edward Geist, Kamaria Horton, Amanda Kerrigan, William Marcellino, Shanshan Mei, Jared Mondschein, Alvin Moon, and Tobias Sytsma,
+A U.S. Strategy to Secure Geopolitical Advantage on an Uncertain Path to Superintelligence: Maintaining Freedom of Action,
+RAND Corporation, PE-A5105-1, September 2026. As of September 15, 2026: https://www.rand.org/pubs/perspectives/PEA5105-1.html
+Chicago Manual of Style
+Predd, Joel B., Benjamin Boudreaux, Matt Chessen, Beba Cibralic, Edward Geist, Kamaria Horton, Amanda Kerrigan, William Marcellino, Shanshan Mei, Jared Mondschein, Alvin Moon, and Tobias Sytsma, A U.S. Strategy to Secure Geopolitical Advantage on an Uncertain Path to Superintelligence: Maintaining Freedom of Action. Santa Monica, CA: RAND Corporation, 2026. https://www.rand.org/pubs/perspectives/PEA5105-1.html.
+BibTeX
+RIS
+Research conducted by
+RAND
+Global and Emerging Risks
+This effort was
+independently initiated
+and conducted by the
+Center for the Geopolitics of Artificial General Intelligence
+within
+RAND Global and Emerging Risks
+using income from operations and gifts from RAND supporters.
+This publication is part of the RAND expert insights series. The expert insights series presents perspectives on timely policy issues.
+This document and trademark(s) contained herein are protected by law. This representation of RAND intellectual property is provided for noncommercial use only. Unauthorized posting of this publication online is prohibited; linking directly to this product page is encouraged. Permission is required from RAND to reproduce, or reuse in another form, any of its research documents for commercial purposes. For information on reprint and reuse permissions, please visit
+www.rand.org/pubs/permissions
+.
+RAND is a nonprofit institution that helps improve policy and decisionmaking through research and analysis. RAND's publications do not necessarily reflect the opinions of its research clients and sponsors.

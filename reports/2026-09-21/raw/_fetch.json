@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "open-models",
+    "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+    "status": 200,
+    "final_url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+    "bytes": 305632,
+    "title": "The current balance of power in open models",
+    "chars": 18947
+  },
+  {
+    "slug": "zvi-loyalty",
+    "url": "https://thezvi.substack.com/p/better-call-sol-or-better-yet-claude",
+    "status": 200,
+    "final_url": "https://thezvi.substack.com/p/better-call-sol-or-better-yet-claude",
+    "bytes": 219836,
+    "title": "Better Call Sol Or Better Yet Claude or Astra",
+    "chars": 26228
+  },
+  {
+    "slug": "import-ai",
+    "url": "https://importai.substack.com/p/import-ai-473-the-uss-superintelligence",
+    "status": 200,
+    "final_url": "https://importai.substack.com/p/import-ai-473-the-uss-superintelligence",
+    "bytes": 202893,
+    "title": "Import AI 473: The US's superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
+    "chars": 25012
+  },
+  {
+    "slug": "mcp",
+    "url": "https://maharship.com/blog/why-mcp-was-always-a-bad-idea",
+    "status": 200,
+    "final_url": "https://maharship.com/blog/why-mcp-was-always-a-bad-idea/",
+    "bytes": 13877,
+    "title": "Why MCP Was Always a Bad Idea | Maharshi Patel",
+    "chars": 5774
+  },
+  {
+    "slug": "reviewer",
+    "url": "https://huggingface.co/papers/2609.20942",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.20942",
+    "bytes": 141921,
+    "title": "Paper page - When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation",
+    "chars": 3770
+  },
+  {
+    "slug": "recreation",
+    "url": "https://huggingface.co/papers/2609.22000",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.22000",
+    "bytes": 193229,
+    "title": "Paper page - RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents",
+    "chars": 4806
+  },
+  {
+    "slug": "aport",
+    "url": "https://huggingface.co/papers/2609.22076",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.22076",
+    "bytes": 150471,
+    "title": "Paper page - APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+    "chars": 4085
+  },
+  {
+    "slug": "codemidas",
+    "url": "https://huggingface.co/papers/2609.22068",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.22068",
+    "bytes": 179023,
+    "title": "Paper page - CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+    "chars": 4573
+  },
+  {
+    "slug": "mintact",
+    "url": "https://huggingface.co/papers/2609.22083",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.22083",
+    "bytes": 134870,
+    "title": "Paper page - MintAct: A Unified Visual Agent for Digital Environments",
+    "chars": 2812
+  },
+  {
+    "slug": "ax",
+    "url": "https://agentexecutor.io",
+    "status": 200,
+    "final_url": "https://agentexecutor.io/",
+    "bytes": 20288,
+    "title": "AX",
+    "chars": 5707
+  },
+  {
+    "slug": "v7",
+    "url": "https://openai.com/index/v7",
+    "status": 200,
+    "final_url": "https://openai.com/index/v7/",
+    "bytes": 407227,
+    "title": "How V7 gives AI agents institutional memory | OpenAI",
+    "chars": 8730
+  },
+  {
+    "slug": "samsung",
+    "url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+    "status": 200,
+    "final_url": "https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say",
+    "bytes": 198909,
+    "title": "Samsung to Double HBM4 Output Next Year, Sources Say - Seoul Economic Daily",
+    "chars": 3528
+  },
+  {
+    "slug": "keys-ui",
+    "url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui/",
+    "bytes": 15758,
+    "title": "Release: llm-keys-ui 0.1",
+    "chars": 1737
+  },
+  {
+    "slug": "voxium",
+    "url": "https://simonwillison.net/2026/Sep/20/voxium",
+    "status": 200,
+    "final_url": "https://simonwillison.net/2026/Sep/20/voxium/",
+    "bytes": 13636,
+    "title": "A quote from voxium",
+    "chars": 1409
+  },
+  {
+    "slug": "tokenizers",
+    "url": "https://huggingface.co/blog/tokenizers-v1",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/tokenizers-v1",
+    "bytes": 156671,
+    "title": "tokenizers v1: encode, decode and scaling, measured",
+    "chars": 14460
+  },
+  {
+    "slug": "zuckoff",
+    "url": "https://zuckoff.app",
+    "status": 200,
+    "final_url": "https://zuckoff.app/",
+    "bytes": 31901,
+    "title": "ZuckOff | Camera glasses detector",
+    "chars": 2752
+  },
+  {
+    "slug": "reading-reward",
+    "url": "https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books",
+    "status": 200,
+    "final_url": "https://www.gadgetreview.com/singapore-is-paying-people-to-put-down-their-phones-and-read-books",
+    "bytes": 386599,
+    "title": "Singapore Is Paying People to Put Down Their Phones and Read Books - Gadget Review",
+    "chars": 5933
+  },
+  {
+    "slug": "zvi-roundup",
+    "url": "https://thezvi.substack.com/p/monthly-roundup-46-september-2026",
+    "status": 200,
+    "final_url": "https://thezvi.substack.com/p/monthly-roundup-46-september-2026",
+    "bytes": 488036,
+    "title": "Monthly Roundup #46: September 2026 - by Zvi Mowshowitz",
+    "chars": 42100
+  }
+]

@@ -1,0 +1,81 @@
+URL: https://simonwillison.net/2026/Sep/20/llm-keys-ui
+FINAL: https://simonwillison.net/2026/Sep/20/llm-keys-ui/
+TITLE: Release: llm-keys-ui 0.1
+FETCHED: 2026-09-21 22:38:23
+============================================================
+Simon Willison’s Weblog
+Subscribe
+Sponsored by:
+Teleport
+— See what 13 engineers learned from “pressure washing” their codebase using LLMs for 90 days. Hint: Quality > quantity for finding security vulnerabilities.
+20th September 2026
+Release
+llm-keys-ui 0.1
+— LLM web UI for setting keys
+This plugin solves a very specific problem.
+I've started using
+Codex Remote
+to run coding agents on various machines while controlling them from my phone.
+Sometimes I use those machines to hack on LLM projects, and occasionally that means I need to configure an API key.
+I don't like pasting API keys into agent sessions, so I wanted a way to get those keys onto a machine without pasting them into the ChatGPT app directly.
+With this plugin, I can tell Codex to run:
+uvx --with llm-keys-ui llm keys-ui --all
+Then have it tell me the URL - including local network or Tailscale device IPs - for an interface to save additional API keys.
+Then later it can use a command like
+llm keys get anthropic
+as part of a shell command when it needs to use a key.
+Posted
+20th September 2026
+at 7:22 pm
+Recent articles
+Generating running routes with GPT-6 Astra and ChatGPT Work
+- 12th September 2026
+OpenAI agents attacked RubyGems back in May
+- 12th September 2026
+Some thoughts on the Navier–Stokes Millennium Prize Problem
+- 8th September 2026
+This is a
+beat
+by Simon Willison, posted on
+20th September 2026
+.
+llm
+632
+coding-agents
+250
+codex
+58
+Monthly briefing
+Sponsor me for
+$10/month
+and get a curated email digest of the month's most important LLM developments.
+Pay me to send you less!
+Sponsor & subscribe
+Disclosures
+Colophon
+©
+2002
+2003
+2004
+2005
+2006
+2007
+2008
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026

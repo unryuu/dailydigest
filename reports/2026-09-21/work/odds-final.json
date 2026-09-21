@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-09-21T22:48:37.446466+08:00",
+  "items": [
+    {
+      "question": "2027年前，AI 能在随机地图、不利用漏洞的条件下，十分钟内通关《我的世界》吗？",
+      "prob": "12％",
+      "note": "成交额 91.6k mana",
+      "url": "https://manifold.markets/Bayesian/ai-beats-minecraft-rsg-in-under-10-qQucd9UICy"
+    },
+    {
+      "question": "Pinker 和 Scott Alexander 会在2026年就 AI 安全展开实时辩论吗？",
+      "prob": "42％",
+      "note": "成交额 2.1k mana",
+      "url": "https://manifold.markets/chrisjbillington/will-steven-pinker-and-scott-alexan"
+    },
+    {
+      "question": "《半条命3》会在2026年发售吗？",
+      "prob": "10％",
+      "note": "成交额 8.8k mana",
+      "url": "https://manifold.markets/asmith/will-half-life-3-be-released-in-202"
+    },
+    {
+      "question": "2030年底前，核聚变能持续超过24小时并获得净能量增益吗？",
+      "prob": "31％",
+      "note": "成交额 3.4k mana",
+      "url": "https://manifold.markets/JamesBills/will-a-nuclear-fusion-reaction-be-m"
+    }
+  ]
+}

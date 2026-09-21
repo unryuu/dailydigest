@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://zuckoff.app/",
+  "title": "ZuckOff 用手机发现身边的摄像眼镜",
+  "date": "2026-09-21T10:33:14Z",
+  "reported": true,
+  "report_date": "2026-09-21"
+ },
+ {
+  "id": "https://agentexecutor.io/",
+  "title": "Google 开源 AX，集中调度 Agent 任务",
+  "date": "2026-09-20T22:32:43Z",
+  "reported": true,
+  "report_date": "2026-09-21"
+ },
+ {
   "id": "https://saweis.net/posts/rsa-896.html",
   "title": "有人借助 Claude 分解 RSA-896",
   "date": "2026-09-20",

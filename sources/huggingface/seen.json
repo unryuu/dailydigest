@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/tokenizers-v1",
+  "title": "HF 发布 tokenizers v1 候选版",
+  "date": "September 21, 2026",
+  "reported": true,
+  "report_date": "2026-09-21"
+ },
+ {
   "id": "https://huggingface.co/blog/shadow-llm/shadowpeft-peft",
   "title": "ShadowPEFT 把微调适配器本身做成小模型",
   "date": "2026-09-15",

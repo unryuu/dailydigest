@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "reviewer-full",
+    "url": "https://arxiv.org/html/2609.20942v1",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2609.20942v1",
+    "bytes": 205087,
+    "title": "When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation",
+    "chars": 53568
+  },
+  {
+    "slug": "recreation-full",
+    "url": "https://arxiv.org/html/2609.22000v1",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2609.22000v1",
+    "bytes": 800830,
+    "title": "RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents",
+    "chars": 166654
+  },
+  {
+    "slug": "aport-full",
+    "url": "https://arxiv.org/html/2609.22076v1",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2609.22076v1",
+    "bytes": 166359,
+    "title": "APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+    "chars": 57204
+  },
+  {
+    "slug": "codemidas-full",
+    "url": "https://arxiv.org/html/2609.22068v1",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2609.22068v1",
+    "bytes": 186491,
+    "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+    "chars": 42885
+  },
+  {
+    "slug": "mintact-full",
+    "url": "https://arxiv.org/html/2609.22083v1",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2609.22083v1",
+    "bytes": 478174,
+    "title": "MintAct: A Unified Visual Agent for Digital Environments",
+    "chars": 111211
+  }
+]

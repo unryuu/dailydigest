@@ -1,5 +1,40 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.22083",
+  "title": "Apple 用一套模型操作手机、电脑和网页",
+  "date": "2026-09-21",
+  "reported": true,
+  "report_date": "2026-09-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.22068",
+  "title": "小米从现成代码里制造编程练习",
+  "date": "2026-09-21",
+  "reported": true,
+  "report_date": "2026-09-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.22076",
+  "title": "Agent 付款前，再加一道权限检查",
+  "date": "2026-09-21",
+  "reported": true,
+  "report_date": "2026-09-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.22000",
+  "title": "AI 复刻软件，外观像了，功能还差很多",
+  "date": "2026-09-21",
+  "reported": true,
+  "report_date": "2026-09-21"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.20942",
+  "title": "AI 学着 AI 审稿，判断越来越趋同",
+  "date": "2026-09-21",
+  "reported": true,
+  "report_date": "2026-09-21"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.20519",
   "title": "SoL-Pi 让 Agent 自己改进工作外壳",
   "date": "2026-09-19",

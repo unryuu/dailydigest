@@ -1,0 +1,65 @@
+URL: https://zuckoff.app
+FINAL: https://zuckoff.app/
+TITLE: ZuckOff | Camera glasses detector
+FETCHED: 2026-09-21 22:38:31
+============================================================
+ZuckOff merch is here.
+Tees, hoodies, hats and stickers.
+Shop now
+Help us test more hardware.
+We need camera glasses to capture.
+ZuckOff merch is here
+Tees, hoodies, hats, totes, stickers and pin buttons with the ZuckOff glasses. Each piece is printed to order by Fourthwall, and every order supports the app.
+ðï¸
+Visit the shop
+ð
+ZuckOff
+Know when a camera is in the room
+Camera glasses announce themselves over Bluetooth. ZuckOff listens for that and tells you when Ray-Ban Meta, Oakley Meta, Snap Spectacles or similar hardware is nearby. Nothing leaves your phone and there is no account.
+Flags camera glasses by their manufacturer signature
+Shows the evidence behind every flag, so you can disagree with it
+Logs every Bluetooth device it hears, glasses or not
+Own a pair? Mark them once and they stop raising alerts
+Background alerts, a Home Screen widget, and a Lock Screen Live Activity on iPhone
+Start and stop a scan from the Shortcuts app, Siri or an automation
+Export the whole log as CSV whenever you want it
+Merch
+Tees, hoodies, hats, totes, stickers and pin buttons with the ZuckOff glasses. Each piece is printed to order by Fourthwall, and every order supports the app.
+ðï¸
+Visit the shop
+Signal
+What it means
+0x0D53
+Luxottica: Ray-Ban Meta, Oakley Meta
+0x058E
+Meta Platforms Technologies wearable
+0x03C2
+Snap: Spectacles
+0xFD5F
+Service UUID registered to Oculus VR
+Names
+Product names like Spectacles, HeyCyan, VisionPro, VistaView, at lower confidence
+What it cannot do
+Glasses are loudest when they power on, pair or leave the case. Most pairs keep advertising while worn, so you can usually hear them, but a few standalone models stay silent. Quiet is not proof that nobody is recording, and a detection is not proof that anyone is. Signal strength gives a rough distance and no direction.
+Help us test more hardware
+Every rule in ZuckOff comes from a capture of a real device, and we own only a few pairs. If you have camera glasses the app does not list, email us. A short scan capture is usually enough, and we can take hardware on loan and send it back once it is recorded. We are also open to working with privacy groups.
+Support through Suppi or Buy Me a Coffee buys the next pair to test.
+âï¸
+Email about hardware
+ð
+Suppi
+â
+Buy Me a Coffee
+Newsletter
+Leave an email address and we will write when a new version ships or the detection list grows.
+Nothing else goes to that address, and every email has an unsubscribe link.
+âï¸
+Contact
+ð
+Suppi
+â
+Buy Me a Coffee
+iOS privacy policy
+·
+Android privacy policy
+ZuckOff is an independent app and is not affiliated with, endorsed by or connected to Meta Platforms, Luxottica, Ray-Ban, Oakley or Snap. Product names are trademarks of their respective owners.

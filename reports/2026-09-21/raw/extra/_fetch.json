@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "reviewer-arxiv",
+    "url": "https://arxiv.org/abs/2609.20942",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2609.20942",
+    "bytes": 43182,
+    "title": "[2609.20942] When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation",
+    "chars": 4592
+  },
+  {
+    "slug": "reviewer-project",
+    "url": "https://hosytuyen.github.io/projects/TrustReviewer/",
+    "status": 200,
+    "final_url": "https://hosytuyen.github.io/projects/TrustReviewer/",
+    "bytes": 9096,
+    "title": "TrustReviewer: Scientific-Judgment Collapse and Mitigation",
+    "chars": 1845
+  },
+  {
+    "slug": "recreation-arxiv",
+    "url": "https://arxiv.org/abs/2609.22000",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2609.22000",
+    "bytes": 47584,
+    "title": "[2609.22000] RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents",
+    "chars": 5129
+  },
+  {
+    "slug": "recreation-project",
+    "url": "https://recreation-bench.cc/",
+    "status": 200,
+    "final_url": "https://recreation-bench.cc/",
+    "bytes": 15012,
+    "title": "RecreationWorld â Explore. Build. Verify.",
+    "chars": 2154
+  },
+  {
+    "slug": "aport-arxiv",
+    "url": "https://arxiv.org/abs/2609.22076",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2609.22076",
+    "bytes": 42753,
+    "title": "[2609.22076] APort Vault: Benchmarking AI Agent Payment Authorization with the Open Agent Passport",
+    "chars": 4603
+  },
+  {
+    "slug": "aport-project",
+    "url": "https://aport.io/blog/ai-agent-jailbreak-benchmark-secure-ai/",
+    "status": 200,
+    "final_url": "https://aport.io/blog/ai-agent-jailbreak-benchmark-secure-ai/",
+    "bytes": 308947,
+    "title": "The model believed a forged receipt. APort checked the payment.",
+    "chars": 18947
+  },
+  {
+    "slug": "codemidas-arxiv",
+    "url": "https://arxiv.org/abs/2609.22068",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2609.22068",
+    "bytes": 44584,
+    "title": "[2609.22068] CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+    "chars": 4657
+  },
+  {
+    "slug": "codemidas-project",
+    "url": "https://mimo.xiaomi.com/rl/",
+    "status": 200,
+    "final_url": "https://mimo.xiaomi.com/rl/",
+    "bytes": 1997,
+    "title": "mimo-v2.6 RL",
+    "chars": 0
+  },
+  {
+    "slug": "mintact-arxiv",
+    "url": "https://arxiv.org/abs/2609.22083",
+    "status": 200,
+    "final_url": "https://arxiv.org/abs/2609.22083",
+    "bytes": 42018,
+    "title": "[2609.22083] MintAct: A Unified Visual Agent for Digital Environments",
+    "chars": 4037
+  },
+  {
+    "slug": "rand",
+    "url": "https://www.rand.org/pubs/perspectives/PEA5105-1.html",
+    "status": 200,
+    "final_url": "https://www.rand.org/pubs/perspectives/PEA5105-1.html",
+    "bytes": 37869,
+    "title": "A U.S. Strategy to Secure Geopolitical Advantage on an Uncertain Path to Superintelligence: Maintaining Freedom of Action | RAND",
+    "chars": 3939
+  },
+  {
+    "slug": "mouse",
+    "url": "https://www.nature.com/articles/s41586-026-11032-2",
+    "status": 200,
+    "final_url": "https://www.nature.com/articles/s41586-026-11032-2",
+    "bytes": 811088,
+    "title": "Developmental xenocortication using human-derived organoids in mice | Nature",
+    "chars": 212556
+  }
+]

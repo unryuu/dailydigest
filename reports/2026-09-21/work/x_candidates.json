@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-21",
+  "status": "failed",
+  "resume_from": "2026-09-19T22:23:36+08:00",
+  "attempted_at": "2026-09-21T22:07:54.057514+08:00",
+  "scanned_at": null,
+  "items": [],
+  "failure_note": "内置浏览器打开 Mollick 页后显示正确页面标题，但创建标签及重新选择标签读取 UI 分别 30 秒和 45 秒超时，未读到帖子；八账号覆盖未完成，接续点不前移。",
+  "accounts": [
+    {
+      "account": "emollick",
+      "status": "failed"
+    },
+    {
+      "account": "goodside",
+      "status": "not_scanned_due_browser_read_failure"
+    },
+    {
+      "account": "karpathy",
+      "status": "not_scanned_due_browser_read_failure"
+    },
+    {
+      "account": "NeelNanda5",
+      "status": "not_scanned_due_browser_read_failure"
+    },
+    {
+      "account": "pvncher",
+      "status": "not_scanned_due_browser_read_failure"
+    },
+    {
+      "account": "tszzl",
+      "status": "not_scanned_due_browser_read_failure"
+    },
+    {
+      "account": "sama",
+      "status": "not_scanned_due_browser_read_failure"
+    },
+    {
+      "account": "teortaxesTex",
+      "status": "not_scanned_due_browser_read_failure"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-09-21",
+  "status": "failed",
+  "resume_from": "2026-09-20T21:57:56+08:00",
+  "attempted_at": "2026-09-21T22:07:54.057514+08:00",
+  "scanned_at": null,
+  "items": [],
+  "failure_note": "内置浏览器打开首页时读取 UI 超时（45 秒），未读到 Latest 或文章正文，接续点不前移。"
+}
