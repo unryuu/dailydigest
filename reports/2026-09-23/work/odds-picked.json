@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-09-23T09:37:37.149448-07:00",
+  "items": [
+    {
+      "question": "GPT-6 会被普遍认为达到通用人工智能吗？",
+      "prob": "7％",
+      "note": "成交额 5.9k mana",
+      "url": "https://manifold.markets/GastonKessler/will-gpt6-be-considered-to-be-agi",
+      "api_probability": 0.0653955102731014,
+      "api_volume": 5940.738878687205
+    },
+    {
+      "question": "2026年底前，机器人能胜任住宅电工的各类工作吗？",
+      "prob": "7％",
+      "note": "成交额 23.2k mana",
+      "url": "https://manifold.markets/dmayhem93/by-2027-there-will-be-a-robot-capab",
+      "api_probability": 0.07145342436357018,
+      "api_volume": 23240.02089265727
+    },
+    {
+      "question": "共和党能在2026年中期选举后控制参议院吗？",
+      "prob": "34％",
+      "note": "成交额 217.5k mana",
+      "url": "https://manifold.markets/AndrewG/will-republicans-win-the-senate-in-738388924521",
+      "api_probability": 0.344305712505319,
+      "api_volume": 217531.7739637903
+    },
+    {
+      "question": "Taylor Swift 会获得诺贝尔奖吗？",
+      "prob": "9％",
+      "note": "成交额 3.0k mana",
+      "url": "https://manifold.markets/MachiNi/will-taylor-swift-ever-win-a-nobel",
+      "api_probability": 0.08687742019149057,
+      "api_volume": 2961.470861603345
+    }
+  ]
+}

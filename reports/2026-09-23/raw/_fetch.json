@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "item-4",
+    "url": "https://www.axios.com/2026/09/22/trump-china-ai-hotline-xi-summit",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/22/trump-china-ai-hotline-xi-summit",
+    "bytes": 245367,
+    "title": "U.S.-China \"red telephone\" could bring a Cold War guardrail to AI",
+    "chars": 3866
+  },
+  {
+    "slug": "item-13",
+    "url": "https://www.astralcodexten.com/p/mysteries-of-ai-generalization",
+    "status": 200,
+    "final_url": "https://www.astralcodexten.com/p/mysteries-of-ai-generalization",
+    "bytes": 198917,
+    "title": "Mysteries Of AI Generalization - by Scott Alexander",
+    "chars": 15281
+  },
+  {
+    "slug": "item-15",
+    "url": "https://www.lesswrong.com/posts/tnRkm2ajasHvhpAco/story-imprinting-ai-assistants-absorb-traits-from-human",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/tnRkm2ajasHvhpAco/story-imprinting-ai-assistants-absorb-traits-from-human",
+    "bytes": 677257,
+    "title": "Story Imprinting: AI Assistants Absorb Traits\nfrom Human Characters They Resemble — LessWrong",
+    "chars": 23544
+  },
+  {
+    "slug": "item-19",
+    "url": "https://huggingface.co/papers/2609.26781",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.26781",
+    "bytes": 155829,
+    "title": "Paper page - Agensh: Scaling Organizational Intelligence to 1,024 Agents",
+    "chars": 4563
+  },
+  {
+    "slug": "item-21",
+    "url": "https://huggingface.co/papers/2609.26457",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.26457",
+    "bytes": 144304,
+    "title": "Paper page - Recursive self-improvement of AI research agents",
+    "chars": 4243
+  },
+  {
+    "slug": "item-22",
+    "url": "https://huggingface.co/papers/2609.25804",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.25804",
+    "bytes": 201039,
+    "title": "Paper page - The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
+    "chars": 6007
+  },
+  {
+    "slug": "item-23",
+    "url": "https://huggingface.co/papers/2609.25636",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.25636",
+    "bytes": 160197,
+    "title": "Paper page - RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
+    "chars": 4755
+  },
+  {
+    "slug": "item-25",
+    "url": "https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling",
+    "bytes": 740857,
+    "title": "Swarm Scaling — LessWrong",
+    "chars": 27436
+  },
+  {
+    "slug": "item-44",
+    "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+    "bytes": 168036,
+    "title": "Transformers now runs llama.cpp quants",
+    "chars": 16570
+  },
+  {
+    "slug": "item-48",
+    "url": "https://x.ai/news/grok-4-7",
+    "status": 200,
+    "final_url": "https://x.ai/news/grok-4-7",
+    "bytes": 292202,
+    "title": "Introducing Grok 4.7 | SpaceXAI",
+    "chars": 3602
+  },
+  {
+    "slug": "item-50",
+    "url": "https://mimo.xiaomi.com/mimo-v2-6",
+    "status": 200,
+    "final_url": "https://mimo.xiaomi.com/mimo-v2-6",
+    "bytes": 10332,
+    "title": "MiMo-V2.6 | Xiaomi",
+    "chars": 0
+  },
+  {
+    "slug": "item-54",
+    "url": "https://www.lesswrong.com/posts/Xzr9G5Atvyp7PEna7/ai-artificial-immigrants",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/Xzr9G5Atvyp7PEna7/ai-artificial-immigrants",
+    "bytes": 418308,
+    "title": "AI: artificial immigrants — LessWrong",
+    "chars": 2239
+  }
+]

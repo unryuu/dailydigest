@@ -1,0 +1,142 @@
+{
+  "date": "2026-09-23",
+  "stage": "published_distributed_archived",
+  "timezone": "America/Los_Angeles",
+  "mechanical_window_start": "2026-09-21T22:06:17+08:00",
+  "mechanical_attempt_finished_at": null,
+  "mechanical_failed_sources": [
+    "x-emollick",
+    "x-goodside",
+    "x-karpathy",
+    "x-neelnanda",
+    "x-pvncher",
+    "x-roon",
+    "x-sama",
+    "x-teortaxes"
+  ],
+  "x_resume_from": "2026-09-19T22:23:36+08:00",
+  "x_status": "partial_login_scan",
+  "ti_resume_from": "2026-09-23T06:43:40.901032-07:00",
+  "channel_authorized": true,
+  "grading_authorized": false,
+  "main_count": 20,
+  "main_gold": 2,
+  "main_silver": 7,
+  "updated_at": "2026-09-23T11:15:27.671087-07:00",
+  "claude_review": {
+    "status": "timeout",
+    "seconds": 420,
+    "output_bytes": 0
+  },
+  "verified_artifacts": {
+    "manifest.json": 38312,
+    "scout_candidates.json": 187109,
+    "scout_fetch.json": 9228,
+    "theinformation_candidates.json": 4340,
+    "x_candidates.json": 1341,
+    "grading-main.json": 21318,
+    "定牌-主版.md": 11699
+  },
+  "content_count": 20,
+  "gold": 2,
+  "silver": 8,
+  "odds_count": 4,
+  "validation": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "daily_bytes": 8757,
+  "image": {
+    "width": 1179,
+    "height": 12999,
+    "bytes": 2955006
+  },
+  "snapshot_bytes": 8757,
+  "image_qa": "已检查长图顶部、中部和底部，无截字或溢出。",
+  "preview_message_ids": [
+    416,
+    417
+  ],
+  "preview_delivery_confirmed": true,
+  "channel_authorization_text": "好的，发频道吧",
+  "published_at": "2026-09-23T11:08:18.143849-07:00",
+  "telegram_message_ids": [
+    276,
+    277
+  ],
+  "telegram_delivery_confirmed": true,
+  "mechanical_next_start": "2026-09-23T06:30:00-07:00",
+  "user_changed_items": 0,
+  "seen_inserted": 15,
+  "seen_unmatched": [
+    "https://www.theinformation.com/articles/software-firms-discount-ai-keep-customers-anthropic-openai",
+    "https://www.theinformation.com/articles/deepseek-bets-big-huawei-chips-bypass-u-s-export-controls",
+    "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers",
+    "https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic",
+    "https://mimo.xiaomi.com/mimo-v2-6"
+  ],
+  "distribution": {
+    "zhihu_bytes": 7229,
+    "xhs_count": 8,
+    "xhs_images": [
+      {
+        "file": "xhs-01.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 203398
+      },
+      {
+        "file": "xhs-02.png",
+        "width": 1242,
+        "height": 2678,
+        "bytes": 789500
+      },
+      {
+        "file": "xhs-03.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 265668
+      },
+      {
+        "file": "xhs-04.png",
+        "width": 1242,
+        "height": 2136,
+        "bytes": 579155
+      },
+      {
+        "file": "xhs-05.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 271165
+      },
+      {
+        "file": "xhs-06.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 70906
+      },
+      {
+        "file": "xhs-07.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 226111
+      },
+      {
+        "file": "xhs-08.png",
+        "width": 1242,
+        "height": 1656,
+        "bytes": 175229
+      }
+    ],
+    "sensitive_hits_unmodified_telegram": 1,
+    "sensitive_hits_domestic_outputs": 0
+  },
+  "spoken_draft": {
+    "paragraphs": 22,
+    "characters": 2151,
+    "estimated_minutes": 7.7,
+    "tts_bytes": 6108,
+    "subtitle_bytes": 5853,
+    "awaiting_user_review": true
+  }
+}

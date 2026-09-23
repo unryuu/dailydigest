@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://x.ai/news/grok-4-7",
+  "title": "Grok 4.7 发布",
+  "date": "Sep 21, 2026",
+  "reported": true,
+  "report_date": "2026-09-23"
+ },
+ {
   "id": "https://x.ai/news/grok-voice-transcribe-2",
   "title": "Grok 更新语音转录模型",
   "date": "Sep 18, 2026",

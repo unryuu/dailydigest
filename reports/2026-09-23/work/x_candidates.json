@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-23",
+  "scanned_at": "2026-09-23T07:00:10.865521-07:00",
+  "resume_from": "2026-09-19T22:23:36+08:00",
+  "status": "partial",
+  "accounts_attempted": [
+    "sama",
+    "karpathy",
+    "goodside",
+    "emollick",
+    "NeelNanda5",
+    "pvncher",
+    "tszzl",
+    "teortaxesTex"
+  ],
+  "notes": [
+    "八个账号搜索页均读通，部分高频账号仅当前加载页，未声称完整覆盖旧接续点，续点暂不前移。",
+    "pvncher Articles 最新为2026-09-04T21:44:40Z，无本期新文章。",
+    "sama发布并入官网材料；Mollick认为Opus接近Fable级但语言仍密，放入模型精读参考。"
+  ],
+  "items": [
+    {
+      "source": "x-emollick",
+      "title": "Mollick 用 Claude 做硬科幻太空战游戏",
+      "url": "https://x.com/emollick/status/2102593821376696785",
+      "date": "2026-09-23T03:00:05Z",
+      "note": "已读原创帖，游戏包含轨道力学、速度变化预算与散热，二维简化。原帖给出游戏及开源仓库。"
+    },
+    {
+      "source": "x-roon",
+      "title": "Roon 吐槽模型发布越来越像三维动画大赛",
+      "url": "https://x.com/tszzl/status/2102533742510366820",
+      "date": "2026-09-22T23:01:22Z",
+      "note": "原帖调侃做好三维动画成了新模型营销最重要的技能，仅观点乐子。"
+    }
+  ]
+}

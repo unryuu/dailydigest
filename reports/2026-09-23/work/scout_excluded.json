@@ -1,0 +1,973 @@
+{
+  "date": "2026-09-23",
+  "window_start": "2026-09-21T22:06:17+08:00",
+  "note": "保存全部未入桶机械候选，包含有意义但因日期、重复或优先级排除者，供用户捞回。",
+  "items": [
+    {
+      "source": "acx",
+      "title": "Your Book Review: This Is Going To Hurt",
+      "url": "https://www.astralcodexten.com/p/your-book-review-this-is-going-to",
+      "date": "Fri, 18 Sep 2026 20:53:58 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "acx",
+      "title": "Open Thread 452",
+      "url": "https://www.astralcodexten.com/p/open-thread-452",
+      "date": "Mon, 21 Sep 2026 22:05:59 GMT",
+      "reason": "开放讨论导航帖，缺乏具体候选主题。"
+    },
+    {
+      "source": "acx",
+      "title": "AI Superforecasting Should Transform The FDA",
+      "url": "https://www.astralcodexten.com/p/ai-superforecasting-should-transform",
+      "date": "Wed, 16 Sep 2026 23:33:42 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "acx",
+      "title": "Hidden Open Thread 452.5",
+      "url": "https://www.astralcodexten.com/p/hidden-open-thread-4525",
+      "date": "Wed, 23 Sep 2026 08:46:31 GMT",
+      "reason": "隐藏开放讨论导航帖，缺乏具体候选主题。"
+    },
+    {
+      "source": "axios",
+      "title": "Why Sydney Sweeney's nude ad struck such a nerve with women athletes",
+      "url": "https://www.axios.com/2026/09/18/novig-sydney-sweeney-ad-backlash-women-in-sports",
+      "date": "Fri, 18 Sep 2026 14:36:44 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Khanna, Massie say they can force another Epstein vote",
+      "url": "https://www.axios.com/2026/09/18/epstein-files-vote-massie-khanna-support",
+      "date": "Fri, 18 Sep 2026 15:07:39 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "The House left town, but Hegseth impeachment, Epstein and a funding fight are waiting",
+      "url": "https://www.axios.com/2026/09/18/hegseth-impeachment-epstein-funding-house",
+      "date": "Fri, 18 Sep 2026 18:38:58 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "GOP's Latino gains fade as deeper gender and generational divides emerge",
+      "url": "https://www.axios.com/2026/09/18/latino-voters-shift-internal-divides-deepen",
+      "date": "Fri, 18 Sep 2026 20:12:36 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "USPS made mail slower to cut costs. Midterm ballots will test the system.",
+      "url": "https://www.axios.com/2026/09/18/usps-slow-mail-cost-cuts-performance",
+      "date": "Fri, 18 Sep 2026 21:18:50 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump claims security, military deal with Denmark over Greenland",
+      "url": "https://www.axios.com/2026/09/18/trump-greenland-denmark-deal",
+      "date": "Fri, 18 Sep 2026 22:43:47 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "DOJ won't enforce handgun ban for 18- to 20-year-olds",
+      "url": "https://www.axios.com/2026/09/18/trump-doj-handgun-sales-ban-under-21",
+      "date": "Fri, 18 Sep 2026 22:49:14 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump weighed strikes against Houthis in Yemen before holding off",
+      "url": "https://www.axios.com/2026/09/21/trump-houthis-yemen-saudi-bin-salman",
+      "date": "Mon, 21 Sep 2026 13:46:49 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Far-right AfD wins again as Germany's Merz slides",
+      "url": "https://www.axios.com/2026/09/21/germany-election-results-afd-merz",
+      "date": "Mon, 21 Sep 2026 13:51:01 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Exclusive: How Sen. Schatz is talking about climate in an affordability crisis",
+      "url": "https://www.axios.com/2026/09/21/sen-schatz-climate-change-affordability",
+      "date": "Mon, 21 Sep 2026 15:23:27 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Ahead of Sam Altman's UN address, OpenAI proposes new ways to track AI misalignment risks",
+      "url": "https://www.axios.com/2026/09/21/openai-ai-safety-standards-us-china",
+      "date": "Mon, 21 Sep 2026 17:00:05 +0000",
+      "reason": "报道晚于接续点，但核心官方标准文章发表于接续点前；新第三方评估和中美联络另行保留。"
+    },
+    {
+      "source": "axios",
+      "title": "\"National security\" becomes Trump's executive sledgehammer",
+      "url": "https://www.axios.com/2026/09/21/trump-national-security-executive-sledgehammer",
+      "date": "Mon, 21 Sep 2026 18:21:09 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump inaudible during White House TV pool blackout",
+      "url": "https://www.axios.com/2026/09/21/trump-white-house-pool-tv-ban-audio",
+      "date": "Mon, 21 Sep 2026 20:12:37 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "CNN, MS NOW, Politico sues White House over blocked access",
+      "url": "https://www.axios.com/2026/09/21/trump-cnn-msnow-politico-suit",
+      "date": "Mon, 21 Sep 2026 20:13:51 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Ariz. activists build map to show federal agents at polls",
+      "url": "https://www.axios.com/2026/09/21/arizona-online-map-ice-agents-polls",
+      "date": "Mon, 21 Sep 2026 21:30:12 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "\"People are pissed off\": House Dems sneer as one of their own backs a Republican",
+      "url": "https://www.axios.com/2026/09/21/jared-golden-mike-lawler-house-democrats-reaction",
+      "date": "Mon, 21 Sep 2026 21:40:23 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump and Mamdani's unlikely rapport endures in New York",
+      "url": "https://www.axios.com/2026/09/21/trump-mamdani-new-york-city-meeting",
+      "date": "Mon, 21 Sep 2026 22:17:16 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "GOP's war for eyeballs",
+      "url": "https://www.axios.com/2026/09/21/republicans-democrats-senate-campaign-ad-spending-impressions",
+      "date": "Mon, 21 Sep 2026 23:26:22 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Football drives GOP's TV ad blitz for the midterms",
+      "url": "https://www.axios.com/2026/09/19/gop-football-campaign-ads-midterms",
+      "date": "Sat, 19 Sep 2026 12:00:07 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Iran war causes global pain at the pump",
+      "url": "https://www.axios.com/2026/09/19/iran-war-global-pain-fuel-prices",
+      "date": "Sat, 19 Sep 2026 12:58:55 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump bans CNN, MS NOW and Politico from White House",
+      "url": "https://www.axios.com/2026/09/18/trump-ban-cnn-ms-now-politico-white-house",
+      "date": "Sat, 19 Sep 2026 15:18:30 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump wants a new AI czar and an \"AI Force\" modeled on Space Force",
+      "url": "https://www.axios.com/2026/09/19/trump-ai-czar-space-force-safety",
+      "date": "Sat, 19 Sep 2026 19:20:28 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "How Trump 2.0's stock market stacks up with predecessors",
+      "url": "https://www.axios.com/2026/09/20/trump-stock-market-predecessors",
+      "date": "Sun, 20 Sep 2026 10:00:07 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump's proposed Washington arch to become sniper, drone facility",
+      "url": "https://www.axios.com/2026/09/20/trump-arch-washington-snipers-drones",
+      "date": "Sun, 20 Sep 2026 12:00:32 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "The tech battle to build your AI assistant",
+      "url": "https://www.axios.com/2026/09/20/ai-assistant-openai-meta-muse-instinct-grok-apple",
+      "date": "Sun, 20 Sep 2026 12:22:53 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Three Republican power players walk into a D.C. bar, and ...",
+      "url": "https://www.axios.com/2026/09/20/republicans-dc-bar-chat-trump-oil",
+      "date": "Sun, 20 Sep 2026 12:26:45 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump to meet with Zelensky as Russia-Ukraine attacks intensify",
+      "url": "https://www.axios.com/2026/09/20/trump-zelensky-meeting-russia-ukraine-war-talks",
+      "date": "Sun, 20 Sep 2026 19:25:16 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Many ex-aides to Harris betting against a 2028 run",
+      "url": "https://www.axios.com/2026/09/20/kamala-harris-ex-aides-2028-campaign",
+      "date": "Sun, 20 Sep 2026 21:30:06 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "Exclusive: Beshear says next president must go big on housing",
+      "url": "https://www.axios.com/2026/09/20/beshear-housing-2028-president",
+      "date": "Sun, 20 Sep 2026 21:40:05 +0000",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "axios",
+      "title": "The AI doomsday fear hidden in self-improving AI",
+      "url": "https://www.axios.com/2026/09/22/ai-rsi-meaning-recursive-self-improvement-doom",
+      "date": "Tue, 22 Sep 2026 09:00:06 +0000",
+      "reason": "递归自改进风险解释与近期主线重合，摘要未见独立实证。"
+    },
+    {
+      "source": "axios",
+      "title": "With $7 trillion on the line, AI safety may always take a backseat to market domination",
+      "url": "https://www.axios.com/2026/09/22/ai-safety-vs-ai-speed",
+      "date": "Tue, 22 Sep 2026 09:00:06 +0000",
+      "reason": "安全与竞争宏观评论，摘要未见独特事实增量，保留可捞回。"
+    },
+    {
+      "source": "axios",
+      "title": "Love is pricey. Here's what young Americans are doing about it",
+      "url": "https://www.axios.com/2026/09/22/the-rising-price-tag-of-romance",
+      "date": "Tue, 22 Sep 2026 13:00:07 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Exclusive: Trump adviser ties high gas prices to refining",
+      "url": "https://www.axios.com/2026/09/22/trump-high-gas-prices-refining-capacity",
+      "date": "Tue, 22 Sep 2026 17:26:44 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump TV is live. Here's what it's actually showing",
+      "url": "https://www.axios.com/2026/09/22/trump-trumptv-white-house-live-news-network",
+      "date": "Tue, 22 Sep 2026 20:03:49 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump backs ban on diesel exports",
+      "url": "https://www.axios.com/2026/09/22/trump-diesel-exports-ban",
+      "date": "Tue, 22 Sep 2026 21:55:23 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "A GOP senator wants Trump Jr. subpoenaed after Russian oligarch-funded wedding",
+      "url": "https://www.axios.com/2026/09/22/john-curtis-trump-jr-hunter-biden-subpoenas",
+      "date": "Tue, 22 Sep 2026 22:43:27 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "U.S. and Iran officials meet in New York to discuss ending the war",
+      "url": "https://www.axios.com/2026/09/22/unga-iran-us-trump-war",
+      "date": "Tue, 22 Sep 2026 23:42:43 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "GOP breaking with an unpopular Trump",
+      "url": "https://www.axios.com/2026/09/22/republicans-trump-congresss-iran-diesel",
+      "date": "Tue, 22 Sep 2026 23:58:49 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "FBI investigating claims that a major cybercrime group stole sensitive personnel data",
+      "url": "https://www.axios.com/2026/09/22/shinyhunters-fbi-employees-data-hack",
+      "date": "Tue, 22 Sep 2026 23:59:20 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Poll: Americans see rule of law declining in U.S.",
+      "url": "https://www.axios.com/2026/09/23/poll-americans-law-declining",
+      "date": "Wed, 23 Sep 2026 09:10:05 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Scoop: Trump's Board of Peace to unveil $2.45 billion Gaza recovery plan",
+      "url": "https://www.axios.com/2026/09/23/trump-board-of-peace-gaza-reconstruction-plan",
+      "date": "Wed, 23 Sep 2026 09:20:33 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump pursues last-ditch hunt for voter fraud",
+      "url": "https://www.axios.com/2026/09/23/trump-voter-fraud-citizens",
+      "date": "Wed, 23 Sep 2026 09:35:19 +0000",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "How did AMD Ryzen get 50% faster in two years?",
+      "url": "https://lemire.me/blog/2026/09/18/how-did-amd-ryzen-get-50-faster-in-two-years",
+      "date": "2026-09-18T19:01:03Z",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "ReBarUEFI: Resizable BAR for almost any UEFI system",
+      "url": "https://github.com/xCuri0/ReBarUEFI",
+      "date": "2026-09-21T01:07:46Z",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Claude Opus 5.5",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "date": "2026-09-22T16:29:05Z",
+      "reason": "与 Anthropic 官方同 URL 合并到第一精读组。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "WordPress: Unauthenticated path traversal leading to conditional RCE",
+      "url": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp",
+      "date": "2026-09-22T16:33:45Z",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "'We hacked the FBI:' Hackers say they have data on all FBI employees",
+      "url": "https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees",
+      "date": "2026-09-22T17:46:02Z",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "GPT-6 Sol and Luna",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "date": "2026-09-22T18:00:34Z",
+      "reason": "与 OpenAI 官方发布同事件合并到第一精读组。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "SAML: A fractal of bad design",
+      "url": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design",
+      "date": "2026-09-22T18:57:17Z",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Microsoft killed FoxPro in 2007. Anyway, here's FoxPro revived",
+      "url": "https://foxscript.org",
+      "date": "2026-09-22T21:00:30Z",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Transit rewards",
+      "url": "https://waymo.com/blog/2026/09/transit-rewards",
+      "date": "2026-09-23T02:52:29Z",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Data-only attacks are easier than you think (2024)",
+      "url": "https://www.usenix.org/publications/loginonline/data-only-attacks-are-easier-you-think",
+      "date": "2026-09-23T03:49:28Z",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The darker side of being a doctor",
+      "url": "https://drericlevi.pages.dev/the-darker-side-of-being-a-doctor",
+      "date": "2026-09-23T10:54:55Z",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Z80 REPL",
+      "url": "https://abagames.github.io/z80-repl/index.html",
+      "date": "2026-09-23T11:04:52Z",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "ALPINE: Adaptive Localization for Parameter- and Sample-Efficient Few-Shot Learning",
+      "url": "https://huggingface.co/papers/2609.22323",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts",
+      "url": "https://huggingface.co/papers/2609.24058",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Blaming Across the Aisle: Political Contrasting and Blame Attribution in the Danish Parliament",
+      "url": "https://huggingface.co/papers/2609.26346",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Circuit Hypernetworks for Quantum-Augmented Diffusion Language Models",
+      "url": "https://huggingface.co/papers/2609.24657",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+      "url": "https://huggingface.co/papers/2609.26796",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "From Pattern Recognizers to Personalized Companions: A Survey of Large Language Models in Mental Health",
+      "url": "https://huggingface.co/papers/2609.25186",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation",
+      "url": "https://huggingface.co/papers/2609.24981",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Geometric and Semantic Coupling for Interaction Understanding in 3D Scenes",
+      "url": "https://huggingface.co/papers/2609.25247",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "ImIR: Image-Instruction Tuning for All-in-One Image Restoration",
+      "url": "https://huggingface.co/papers/2609.25267",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Ovis-Embedding: Pushing the Frontiers of Universal Omni-Modal Embeddings",
+      "url": "https://huggingface.co/papers/2609.25165",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "RULER: Instance-aware Rubric Rewards for SVG Generation",
+      "url": "https://huggingface.co/papers/2609.25270",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "StableVQ: Practical Guidelines for Stable Vector-Quantized Tokenizer Training",
+      "url": "https://huggingface.co/papers/2609.26774",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Submitted by Mat3579 22 Bellman Policy Optimization Apodex 2",
+      "url": "https://huggingface.co/papers/2609.15987",
+      "date": "",
+      "reason": "仅见标题，应用较窄或属于常规方法改进，精读优先新评测与反直觉候选；实际论文日期仍待核，可捞回。"
+    },
+    {
+      "source": "huggingface",
+      "title": "BananaMind 2 Pro: We've (almost) matched SmolLM2 at 20x fewer tokens... Trained On a 5070 Ti",
+      "url": "https://huggingface.co/blog/Banaxi-Tech/bananamind-2-pro-weve-almost-matched-smollm2-at-20",
+      "date": "",
+      "reason": "仅相对日期且疑偏旧，或常规社区教程／重复 Jev 介绍，无法确认新增量；日期待核，可捞回。"
+    },
+    {
+      "source": "huggingface",
+      "title": "How to Use the Jev AI Model: A Step-by-Step Developer Guide",
+      "url": "https://huggingface.co/blog/sora-2/how-to-use-the-jev-ai-model-a-step-by-step-develop",
+      "date": "",
+      "reason": "仅相对日期且疑偏旧，或常规社区教程／重复 Jev 介绍，无法确认新增量；日期待核，可捞回。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Inside the JEV Ecosystem: 13 Answer Verifiers on One Test Set",
+      "url": "https://huggingface.co/blog/mayafree/jve-ecosystems",
+      "date": "",
+      "reason": "仅相对日期且疑偏旧，或常规社区教程／重复 Jev 介绍，无法确认新增量；日期待核，可捞回。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Jev AI vs LLMs: When Should You Use a Decision Model Instead of a Chat Model?",
+      "url": "https://huggingface.co/blog/sora-2/jev-ai-vs-llms-when-should-you-use-a-decision-mode",
+      "date": "",
+      "reason": "仅相对日期且疑偏旧，或常规社区教程／重复 Jev 介绍，无法确认新增量；日期待核，可捞回。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Layer-Feedback Transformer (LFT)",
+      "url": "https://huggingface.co/blog/Banaxi-Tech/layer-feedback-transformer-lft",
+      "date": "",
+      "reason": "仅相对日期且疑偏旧，或常规社区教程／重复 Jev 介绍，无法确认新增量；日期待核，可捞回。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Optimum-Intel v2.2.0 & OpenVINO GenAI 2026.4.0: What's New",
+      "url": "https://huggingface.co/blog/echarlaix/optimum-intel-v22",
+      "date": "",
+      "reason": "仅相对日期且疑偏旧，或常规社区教程／重复 Jev 介绍，无法确认新增量；日期待核，可捞回。"
+    },
+    {
+      "source": "huggingface",
+      "title": "What Is Jev AI? A Practical Guide to System One and Executable Decisions",
+      "url": "https://huggingface.co/blog/sora-2/what-is-jev-ai-a-practical-guide-to-system-one-and",
+      "date": "",
+      "reason": "仅相对日期且疑偏旧，或常规社区教程／重复 Jev 介绍，无法确认新增量；日期待核，可捞回。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Your model already knows it's wrong. Asking costs 0.06 seconds and zero tokens.",
+      "url": "https://huggingface.co/blog/FINAL-Bench/ztc",
+      "date": "",
+      "reason": "仅相对日期且疑偏旧，或常规社区教程／重复 Jev 介绍，无法确认新增量；日期待核，可捞回。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+      "date": "September 21, 2026",
+      "reason": "仅相对日期且疑偏旧，或常规社区教程／重复 Jev 介绍，无法确认新增量；日期待核，可捞回。"
+    },
+    {
+      "source": "import-ai",
+      "title": "Import AI 473: The US's superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
+      "url": "https://importai.substack.com/p/import-ai-473-the-uss-superintelligence",
+      "date": "Mon, 21 Sep 2026 12:31:04 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "interconnects",
+      "title": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
+      "url": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and",
+      "date": "Tue, 22 Sep 2026 13:37:45 GMT",
+      "reason": "播客标题延续 RSI、中美差距和能力参差旧主线，摘要未显示独特增量；可捞回。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Superintelligence this Christmas” by Alexander Gietelink Oldenziel",
+      "url": "https://www.lesswrong.com/posts/LJbKwctaioqp2Hi4b/superintelligence-this-christmas",
+      "date": "Fri, 18 Sep 2026 01:45:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "[Linkpost] “Three Hackers used Opus 5 to Hack Into OpenAI’s Core Codebase [WSJ]” by Linch",
+      "url": "https://www.lesswrong.com/posts/274BMCYj2BFES2FsZ/three-hackers-used-opus-5-to-hack-into-openai-s-core",
+      "date": "Fri, 18 Sep 2026 06:00:46 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“The Horse” by Character#2736",
+      "url": "https://www.lesswrong.com/posts/CY3C8ruCnuHQkJj5b/the-horse",
+      "date": "Fri, 18 Sep 2026 15:15:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“The Preference Cascade Is Only Getting Started” by Zvi",
+      "url": "https://www.lesswrong.com/posts/sDiSqZmctQ78hsLcP/the-preference-cascade-is-only-getting-started",
+      "date": "Fri, 18 Sep 2026 16:15:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Stopgap Measures to Address Immediate AI Security Threats” by Andrea_Miotti, Gabriel Alfour",
+      "url": "https://www.lesswrong.com/posts/LqBAxFdyAiybnPL8e/stopgap-measures-to-address-immediate-ai-security-threats",
+      "date": "Fri, 18 Sep 2026 17:30:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“You don’t need a union to go on strike” by sudo-nym",
+      "url": "https://www.lesswrong.com/posts/erd4NSztYMynbuTKw/you-don-t-need-a-union-to-go-on-strike",
+      "date": "Fri, 18 Sep 2026 17:45:46 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Empirical safety claims from frontier labs should be replicated, scrutinized, and open-sourced” by Zephaniah Roe, yix",
+      "url": "https://www.lesswrong.com/posts/MmfzfGcQ3h3p6N9pD/empirical-safety-claims-from-frontier-labs-should-be-1",
+      "date": "Mon, 21 Sep 2026 10:30:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“You Should Apply to Inkhaven” by Tomás B.",
+      "url": "https://www.lesswrong.com/posts/CKkB9MqsBgAobFtPS/you-should-apply-to-inkhaven",
+      "date": "Sat, 19 Sep 2026 03:45:46 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Anthropic Looks At Some Of Its Alignment Problems” by Zvi",
+      "url": "https://www.lesswrong.com/posts/ggFx5Wb3Hi4pJsueK/anthropic-looks-at-some-of-its-alignment-problems",
+      "date": "Sat, 19 Sep 2026 18:00:46 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“NYT Editorial Board Comes Out Against Extinction” by Ben Pace",
+      "url": "https://www.lesswrong.com/posts/gDQzntJCusNbshWyD/nyt-editorial-board-comes-out-against-extinction",
+      "date": "Sun, 20 Sep 2026 02:00:46 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“We’ve saved the world before: what the ozone hole teaches us about AI” by leogao",
+      "url": "https://www.lesswrong.com/posts/zxXPEtSSSEdwpjopb/we-ve-saved-the-world-before-what-the-ozone-hole-teaches-us",
+      "date": "Sun, 20 Sep 2026 13:45:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Please Give Them a Chance: On China, Rationalism, and AI Safety” by gzjw",
+      "url": "https://www.lesswrong.com/posts/GoX3uYQ4QN5HKvL7u/please-give-them-a-chance-on-china-rationalism-and-ai-safety",
+      "date": "Sun, 20 Sep 2026 19:45:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“For Love of the Lightcone, Don’t Partisanize AI Safety” by DanB",
+      "url": "https://www.lesswrong.com/posts/Rx38cuCpL9hguLCDq/for-love-of-the-lightcone-don-t-partisanize-ai-safety",
+      "date": "Thu, 17 Sep 2026 04:00:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Reducing the Resource Gap Between Lab and External Safety Researchers” by Alexandra Narin, Kyle O’Brien, Puria",
+      "url": "https://www.lesswrong.com/posts/aCGx79eGafwDcXEgf/reducing-the-resource-gap-between-lab-and-external-safety",
+      "date": "Thu, 17 Sep 2026 15:45:46 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Model organisms (sometimes) confess their misalignment when offered a deal” by Mark Keavney, Francis Rhys Ward",
+      "url": "https://www.lesswrong.com/posts/kaMXwA9LjrRbekmsQ/model-organisms-sometimes-confess-their-misalignment-when",
+      "date": "Thu, 17 Sep 2026 16:00:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "[Linkpost] “callcongress.ai – the basic action US residents can take to help with AI risk” by Ruby, haglobah",
+      "url": "https://www.lesswrong.com/posts/C7Z5hr4yCG6fXy9o3/callcongress-ai-the-basic-action-us-residents-can-take-to",
+      "date": "Thu, 17 Sep 2026 17:45:46 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“AI #186: The World Takes Notice” by Zvi",
+      "url": "https://www.lesswrong.com/posts/aa3HprreFktzLQiaW/ai-186-the-world-takes-notice",
+      "date": "Thu, 17 Sep 2026 18:30:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Grantmakers aren’t afraid to die” by dan.parshall",
+      "url": "https://www.lesswrong.com/posts/2o8B9hDN94k4Qine6/grantmakers-aren-t-afraid-to-die",
+      "date": "Thu, 17 Sep 2026 23:00:46 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Politics Gets Interested In Those Trying Not To Die” by Zvi",
+      "url": "https://www.lesswrong.com/posts/8eDaCvSRzzKCxKSEk/politics-gets-interested-in-those-trying-not-to-die",
+      "date": "Tue, 22 Sep 2026 18:00:45 GMT",
+      "reason": "与 thezvi 同标题原文合并。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“Trump Goes Full Hoax on AI Existential Risk” by Zvi",
+      "url": "https://www.lesswrong.com/posts/Kqgco8vLFMeBhdrQY/trump-goes-full-hoax-on-ai-existential-risk",
+      "date": "Wed, 16 Sep 2026 15:30:45 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“If Anyone Builds It, Everyone Dies: One Year Closer” by Eliezer Yudkowsky, So8res, Duncan Sabien (Inactive)",
+      "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
+      "date": "Wed, 16 Sep 2026 20:45:46 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "manifold",
+      "title": "AI Governance Stock (Permanent)",
+      "url": "https://manifold.markets/BionicD0LPH1N/ai-governance-stock-permanent",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "Before 2100, will AI cause the human population to fall below 5000 individuals?",
+      "url": "https://manifold.markets/lbiii/before-2100-will-ai-cause-the-human",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "How much full-speed AI R&D progress will Anthropic make in 2027?",
+      "url": "https://manifold.markets/Fabien/how-much-fullspeed-ai-rd-progress-w",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "If AI wipes out humanity, what will it make of the universe?",
+      "url": "https://manifold.markets/JonathanRay/if-ai-wipes-out-humanity-what-will",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "If an AI system is responsible for the deaths of >= 5000 Americans by eoy 2027, which AI company would be most to blame?",
+      "url": "https://manifold.markets/NuñoSempere/if-an-ai-system-is-responsible-for",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "If, before 2050, AI kills more than 1 million people, will the policy response be insufficient?",
+      "url": "https://manifold.markets/lbiii/if-before-2050-ai-kills-more-than-1",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "In the first event when AI kills at least 1,000 people, how many people will be killed?",
+      "url": "https://manifold.markets/IhorKendiukhov/in-the-first-event-when-ai-kills-at",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "In which year will a majority of AI researchers concur that a superintelligent, fairly general AI has been realized?",
+      "url": "https://manifold.markets/_deleted_/in-which-year-will-a-majority-of-ai",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "In which year would Zvi confirm that we've entered an \"AI winter\"?",
+      "url": "https://manifold.markets/nsokolsky/in-which-year-would-zvi-confirm-tha",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "What’s the least impressive thing you’re very sure AI still won’t be able to do before August 2027? [read description]",
+      "url": "https://manifold.markets/Bayesian/whats-the-least-impressive-thing-yo",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "When will be the AI Bhopal?",
+      "url": "https://manifold.markets/EnopoletusHarding/when-will-be-the-ai-bhopal",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "Which Scott Aaronson AI world will come to pass? (Metaculus forecast, 2027-12-31)",
+      "url": "https://manifold.markets/EvanDaniel/which-scott-aaronson-ai-world-will-p9ncUqgqsN",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "Will AI wipe out humanity before the year 2032?",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c7e255f4843c",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "Will AI wipe out humanity before the year 2150?",
+      "url": "https://manifold.markets/justifieduseofFallibilism/will-ai-wipe-out-humanity-before-th-b1c8bfb80ec0",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "manifold",
+      "title": "Will AI wipe out humanity by 2030? [resolves N/A in 2027]",
+      "url": "https://manifold.markets/EliezerYudkowsky/will-ai-wipe-out-humanity-by-2030-r",
+      "date": "",
+      "reason": "多选或无概率字段、成交量偏低，或与已选灭绝主题近似，未列赔率；不猜概率。"
+    },
+    {
+      "source": "openai",
+      "title": "Expanding OpenAI Academy with new learning paths",
+      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+      "date": "Mon, 21 Sep 2026 07:00:00 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "openai",
+      "title": "Building standards for the next phase of AI",
+      "url": "https://openai.com/index/building-standards-next-phase-ai",
+      "date": "Mon, 21 Sep 2026 10:00:00 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "openai",
+      "title": "Advisory Group on Mathematics and Artificial Intelligence",
+      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "date": "Mon, 21 Sep 2026 12:00:00 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "openai",
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "date": "Mon, 21 Sep 2026 12:00:00 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "openai",
+      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+      "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+      "date": "Tue, 22 Sep 2026 12:00:00 GMT",
+      "reason": "单一客户营销案例，表层缺独立对照，降权。"
+    },
+    {
+      "source": "openai",
+      "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+      "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+      "date": "Wed, 23 Sep 2026 00:00:00 GMT",
+      "reason": "培训合作次要通稿。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Note on 18th September 2026",
+      "url": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you",
+      "date": "2026-09-18T19:21:32+00:00",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
+      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies",
+      "date": "2026-09-18T23:57:57+00:00",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "California Sea Lion, Brandt's Cormorant",
+      "url": "https://simonwillison.net/2026/Sep/19/sighting-401567341",
+      "date": "2026-09-19T17:10:08+00:00",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "datasette-auth-github 1.0",
+      "url": "https://simonwillison.net/2026/Sep/19/datasette-auth-github",
+      "date": "2026-09-19T19:52:02+00:00",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "datasette-explain 0.2.2",
+      "url": "https://simonwillison.net/2026/Sep/20/datasette-explain",
+      "date": "2026-09-20T00:22:04+00:00",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "MCP was always a bad idea?",
+      "url": "https://simonwillison.net/2026/Sep/20/hn-49779718",
+      "date": "2026-09-20T20:24:41+00:00",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Cloudflare Python Workers are now generally available",
+      "url": "https://simonwillison.net/2026/Sep/21/cloudflare-python-worker",
+      "date": "2026-09-21T22:25:44+00:00",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
+      "url": "https://simonwillison.net/2026/Sep/21/jev",
+      "date": "2026-09-21T23:09:20+00:00",
+      "reason": "Jev 概述与上期主线重复，表层摘要未见新的实证；新插件另列雷达。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "llm-anthropic 0.29",
+      "url": "https://simonwillison.net/2026/Sep/22/llm-anthropic",
+      "date": "2026-09-22T17:14:55+00:00",
+      "reason": "只是支持 Opus 5.5 的插件更新，合并模型发布。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "llm 0.36",
+      "url": "https://simonwillison.net/2026/Sep/22/llm",
+      "date": "2026-09-22T18:48:37+00:00",
+      "reason": "只是支持 Sol、Luna 的插件更新，合并模型发布。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
+      "url": "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering",
+      "date": "2026-09-23T02:53:19+00:00",
+      "reason": "线下活动预告，新闻信息量低。"
+    },
+    {
+      "source": "the-batch",
+      "title": "Sep 18, 2026 Meta’s Agent Security, The Navier-Stokes Controversy, Fraud on Claude The Batch News & Insights: The loudest voices stoking fears about AI dangers have made tremendous headway in the past two weeks. Read more",
+      "url": "https://www.deeplearning.ai/the-batch/issue-371",
+      "date": "",
+      "reason": "非 AI 普通新闻或技术杂项，未见较强理性主义／意外性钩子。"
+    },
+    {
+      "source": "thezvi",
+      "title": "The Preference Cascade Is Only Getting Started",
+      "url": "https://thezvi.substack.com/p/the-preference-cascade-is-only-getting",
+      "date": "Fri, 18 Sep 2026 14:40:29 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    },
+    {
+      "source": "thezvi",
+      "title": "Anthropic Looks At Some Of Its Alignment Problems",
+      "url": "https://thezvi.substack.com/p/anthropic-looks-at-some-of-its-alignment",
+      "date": "Sat, 19 Sep 2026 13:11:08 GMT",
+      "reason": "早于普通源接续点 2026-09-21T22:06:17+08:00，五天机械窗口只为防漏，不代表可当新稿。"
+    }
+  ]
+}

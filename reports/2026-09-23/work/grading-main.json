@@ -1,0 +1,417 @@
+{
+  "date": "2026-09-23",
+  "selected": [
+    {
+      "index": 0,
+      "original_title": "Introducing GPT-6 Sol and Luna",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "section": "行业大事",
+      "tier": "金",
+      "title": "GPT-6 Sol、Luna 发布，价格再减半",
+      "note": "用户指定重点，OpenAI 官方发布"
+    },
+    {
+      "index": 1,
+      "original_title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
+      "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna",
+      "section": "乐子汇总",
+      "tier": "无牌",
+      "title": "Opus 想了近二十分钟，鹈鹕还是没画出来",
+      "note": "Simon 同日比较及初步体验，核实降价与具体能力"
+    },
+    {
+      "index": 3,
+      "original_title": "Introducing Claude Opus 5.5",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "section": "行业大事",
+      "tier": "金",
+      "title": "Opus 5.5 把强能力做得更便宜",
+      "note": "用户指定重点，Anthropic 官方原始链接，日期从补充线索取得，待精读核实。日期只有日或不明，具体发表时间待核"
+    },
+    {
+      "index": 4,
+      "original_title": "U.S.-China \"red telephone\" could bring a Cold War guardrail to AI",
+      "url": "https://www.axios.com/2026/09/22/trump-china-ai-hotline-xi-summit",
+      "section": "监管动向",
+      "tier": "银",
+      "title": "中美讨论为 AI 事故设置紧急热线",
+      "note": "中美 AI 紧急联络机制，确认进展处于提议或实施阶段"
+    },
+    {
+      "index": 11,
+      "original_title": "China Probes DeepSeek, Moonshot Over Potential Data Leaks to Anthropic",
+      "url": "https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic",
+      "section": "监管动向",
+      "tier": "银",
+      "title": "DeepSeek、月之暗面遭数据外流调查",
+      "note": "此前数据泄漏指控后的中国监管调查是新进展，不把指控当定论"
+    },
+    {
+      "index": 13,
+      "original_title": "Mysteries Of AI Generalization",
+      "url": "https://www.astralcodexten.com/p/mysteries-of-ai-generalization",
+      "section": "深度长文",
+      "tier": "银",
+      "title": "AI 为什么会学到意料之外的东西",
+      "note": "ACX 高权重 AI 泛化长文"
+    },
+    {
+      "index": 15,
+      "original_title": "“Story Imprinting: AI Assistants Absorb Traits from Human Characters They Resemble” by Jorio Cocola, Owain_Evans",
+      "url": "https://www.lesswrong.com/posts/tnRkm2ajasHvhpAco/story-imprinting-ai-assistants-absorb-traits-from-human",
+      "section": "新鲜论文",
+      "tier": "银",
+      "title": "AI 会学走故事里相似人物的性格",
+      "note": "叙事训练使助手吸收人物行为的实验，保留条件与比例"
+    },
+    {
+      "index": 19,
+      "original_title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
+      "url": "https://huggingface.co/papers/2609.26781",
+      "section": "新鲜论文",
+      "tier": "银",
+      "title": "一千多个 Agent 不设总指挥，一起写软件",
+      "note": "1024 个 Agent 的组织扩展实验候选。仅本次榜单发现，论文实际发布日期待 reader 核，不以榜单日作发表日；主agent已核arXiv摘要与投稿日期：[Submitted on 22 Sep 2026]"
+    },
+    {
+      "index": 21,
+      "original_title": "Recursive self-improvement of AI research agents",
+      "url": "https://huggingface.co/papers/2609.26457",
+      "section": "新鲜论文",
+      "tier": "银",
+      "title": "研究 Agent 连续八天改进自己的代码",
+      "note": "AI 研究 Agent 递归自改进，核实是否提供新的实证。仅本次榜单发现，论文实际发布日期待 reader 核，不以榜单日作发表日；主agent已核arXiv摘要与投稿日期：[Submitted on 22 Sep 2026]"
+    },
+    {
+      "index": 22,
+      "original_title": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
+      "url": "https://huggingface.co/papers/2609.25804",
+      "section": "新鲜论文",
+      "tier": "无牌",
+      "title": "AI 的长线判断力，还没跟上执行力",
+      "note": "长任务品味评测，新基准候选。仅本次榜单发现，论文实际发布日期待 reader 核，不以榜单日作发表日；主agent已核arXiv摘要与投稿日期：[Submitted on 22 Sep 2026]"
+    },
+    {
+      "index": 23,
+      "original_title": "RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
+      "url": "https://huggingface.co/papers/2609.25636",
+      "section": "新鲜论文",
+      "tier": "无牌",
+      "title": "机器人完成任务，可能没听懂指令",
+      "note": "具身 Agent 指令遵从的反直觉评测。仅本次榜单发现，论文实际发布日期待 reader 核，不以榜单日作发表日；主agent已核arXiv摘要与投稿日期：[Submitted on 22 Sep 2026]"
+    },
+    {
+      "index": 25,
+      "original_title": "“Swarm Scaling” by Toby_Ord",
+      "url": "https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling",
+      "section": "深度长文",
+      "tier": "无牌",
+      "title": "单个模型之外，AI 群体还能变多强",
+      "note": "Toby Ord 对群体能力扩展的分析，与新多 Agent 论文合读"
+    },
+    {
+      "index": 27,
+      "original_title": "Software Firms Discount AI to Keep Customers From Anthropic, OpenAI",
+      "url": "https://www.theinformation.com/articles/software-firms-discount-ai-keep-customers-anthropic-openai",
+      "section": "行业大事",
+      "tier": "银",
+      "title": "软件公司降价，留住被 AI 抢走的客户",
+      "note": "传统软件折扣应对 Claude Code 与 Codex，行业采购增量"
+    },
+    {
+      "index": 28,
+      "original_title": "Anthropic in Talks to Cement Control Over More Data Centers",
+      "url": "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers",
+      "section": "行业大事",
+      "tier": "无牌",
+      "title": "Anthropic 洽谈直接租用大型数据中心",
+      "note": "Anthropic 数据中心控制权谈判，区别于已报上市窗口后移"
+    },
+    {
+      "index": 44,
+      "original_title": "Transformers now runs llama.cpp quants",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "section": "行业简讯",
+      "tier": "简讯",
+      "title": "Transformers 接入 llama.cpp 量化模型",
+      "note": "Transformers 支持 llama.cpp 量化格式，工具更新。日期只有日或不明，具体发表时间待核"
+    },
+    {
+      "index": 48,
+      "original_title": "Introducing Grok 4.7",
+      "url": "https://x.ai/news/grok-4-7",
+      "section": "行业简讯",
+      "tier": "简讯",
+      "title": "Grok 4.7 发布",
+      "note": "Grok 4.7 同期重要模型发布，日期边界待核。日期只有日或不明，具体发表时间待核"
+    },
+    {
+      "index": 50,
+      "original_title": "MiMo v2.6 Flash／Pro",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "section": "行业简讯",
+      "tier": "简讯",
+      "title": "小米发布 MiMo v2.6",
+      "note": "Simon原文链接已读到，官方正文待核，暂列同批模型简讯候选。"
+    },
+    {
+      "index": 54,
+      "original_title": "[Linkpost] “AI: artificial immigrants” by KatjaGrace",
+      "url": "https://www.lesswrong.com/posts/Xzr9G5Atvyp7PEna7/ai-artificial-immigrants",
+      "section": "乐子汇总",
+      "tier": "无牌",
+      "title": "把 AI 当成一群新移民来看",
+      "note": "将 AI 类比成人工移民，观点与比喻候选，不作为事实断言"
+    },
+    {
+      "index": 56,
+      "original_title": "Mollick 用 Claude 做硬科幻太空战游戏",
+      "url": "https://x.com/emollick/status/2102593821376696785",
+      "section": "乐子汇总",
+      "tier": "无牌",
+      "title": "Claude 写了个讲物理的太空战游戏",
+      "note": "已读原创帖，游戏包含轨道力学、速度变化预算与散热，二维简化。原帖给出游戏及开源仓库。"
+    },
+    {
+      "index": 29,
+      "original_title": "DeepSeek Bets Big on Huawei Chips to Bypass U.S. Export Controls",
+      "url": "https://www.theinformation.com/articles/deepseek-bets-big-huawei-chips-bypass-u-s-export-controls",
+      "section": "行业大事",
+      "tier": "银",
+      "title": "DeepSeek 押注华为芯片训练更大模型",
+      "note": "登录态全文已读，用户点名补看。发布时间2026-09-21T03:22:00-07:00，在TI旧接续点之后。"
+    }
+  ],
+  "excluded": [
+    {
+      "index": 2,
+      "original_title": "Claude Opus 5.5 Intelligence, Performance and Price Analysis (Max)",
+      "url": "https://artificialanalysis.ai/models/claude-opus-5-5",
+      "reason": "并入 Opus 发布的独立评测依据"
+    },
+    {
+      "index": 5,
+      "original_title": "Priorities and principles for effective third party assessments",
+      "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "reason": "同第三方评估主线，优先互测谈判增量"
+    },
+    {
+      "index": 6,
+      "original_title": "OpenAI extends cyber access to Ukraine for civilian defense",
+      "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 8,
+      "original_title": "Politics Gets Interested In Those Trying Not To Die",
+      "url": "https://thezvi.substack.com/p/politics-gets-interested-in-those",
+      "reason": "近期安全政治主线较密，具体新增优先用原始报道"
+    },
+    {
+      "index": 9,
+      "original_title": "The All-In-ification of Trump's AI agenda",
+      "url": "https://www.axios.com/2026/09/23/all-in-podcast-trump-ai-safety",
+      "reason": "同安全政治主线，暂不另开"
+    },
+    {
+      "index": 10,
+      "original_title": "“Weight smuggling likely defeats attempts to cap FLOPs per training run” by Paul W, Pierre Peigné",
+      "url": "https://www.lesswrong.com/posts/neT4ncKSiJ6QLt4d7/weight-smuggling-likely-defeats-attempts-to-cap-flops-per",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 14,
+      "original_title": "“Alignment Midtraining Cracks Under Pressure” by J Bostock, sidbaines, Daniel Tan, draganover, ma-rmartinez",
+      "url": "https://www.lesswrong.com/posts/QH86EzNsjRw3wtCGs/alignment-midtraining-cracks-under-pressure",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 16,
+      "original_title": "“Modern LLMs have tiny GPTs hidden inside them” by invertedpassion",
+      "url": "https://www.lesswrong.com/posts/Pwc4YffTQvNRF3dbB/modern-llms-have-tiny-gpts-hidden-inside-them",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 17,
+      "original_title": "“What if not Circuits?” by CarolusRenniusVitellius",
+      "url": "https://www.lesswrong.com/posts/mMERyrvEJ4xbiozie/what-if-not-circuits",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 18,
+      "original_title": "“Mech Interp is a Verifiable Task” by Logan Riggs",
+      "url": "https://www.lesswrong.com/posts/QxHuKtfGfzn8uokoR/mech-interp-is-a-verifiable-task",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 20,
+      "original_title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+      "url": "https://huggingface.co/papers/2609.24967",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 24,
+      "original_title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
+      "url": "https://huggingface.co/papers/2609.26550",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 26,
+      "original_title": "“An unexamined cause of the OpenAI Hugging Face hacking incident: its binary performance metric” by W Bradley Knox, Serena Booth, BrianChristian",
+      "url": "https://www.lesswrong.com/posts/HsijShdRdAg5sPKnF/an-unexamined-cause-of-the-openai-hugging-face-hacking",
+      "reason": "HF事故饱和主线，指标评论未构成新事故或新实验"
+    },
+    {
+      "index": 30,
+      "original_title": "Cheap, powerful AI models are increasing usage, a bullish sign for the AI boom",
+      "url": "https://www.axios.com/2026/09/22/cheap-powerful-models-new-ai-frontier",
+      "reason": "并入模型发布，避免重复价格主线"
+    },
+    {
+      "index": 31,
+      "original_title": "AI labs are cutting model costs - and it could help them slow down safely",
+      "url": "https://www.axios.com/2026/09/23/price-war-pause-slowdown-ai-frontier",
+      "reason": "同模型降价及放慢前沿主线，暂不另开"
+    },
+    {
+      "index": 32,
+      "original_title": "Uber's robotaxi edge: human drivers",
+      "url": "https://www.axios.com/2026/09/23/uber-robotaxi-human-drivers",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 34,
+      "original_title": "Unreal Agent",
+      "url": "https://unreallabs.ai/blog/unreal-agent",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 35,
+      "original_title": "Jev in 25 Lines of Python",
+      "url": "https://www.nobodywho.ai/posts/jev-in-25-lines",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 36,
+      "original_title": "Claude Code reads AGENTS.md only when telemetry is on",
+      "url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 37,
+      "original_title": "OpenAI is enlisting an influencer army to make it look 'good for the world'",
+      "url": "https://www.businessinsider.com/inside-open-ai-influencer-marketing-strategy-chatgpt-ads-sponsorships-instagram-2026-9",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 38,
+      "original_title": "LatentPort: Beyond KV Cache - Cross-Model Transfer of Recurrent Memory in Hybrid Language Models: A 4B-to-9B Hybrid-State Handoff Without Target Prefix Replay",
+      "url": "https://huggingface.co/papers/2609.25053",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 39,
+      "original_title": "Lean Pool: An AI-Maintained Archive of Formalized Mathematics",
+      "url": "https://huggingface.co/papers/2609.25199",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 40,
+      "original_title": "Compute:Arena / Measuring Local Inference Across Models, Quants, Chips, and Runtimes",
+      "url": "https://huggingface.co/blog/basecompute/local-inference-benchmarks-computearena",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 41,
+      "original_title": "relore - repository memory for coding agents",
+      "url": "https://huggingface.co/blog/huggingface/relore-repository-memory",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 42,
+      "original_title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+      "url": "https://huggingface.co/blog/evaleval-aisi",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 43,
+      "original_title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "url": "https://huggingface.co/blog/omlx",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 45,
+      "original_title": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 46,
+      "original_title": "Better prompt caching for GPT-6",
+      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "reason": "缓存更新并入 Sol 发布"
+    },
+    {
+      "index": 47,
+      "original_title": "llm-typesafe 0.1a0",
+      "url": "https://simonwillison.net/2026/Sep/22/llm-typesafe",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 49,
+      "original_title": "How SpaceXAI is using Grok Bot to scale customer support",
+      "url": "https://x.ai/news/grok-bot-customer-support",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 51,
+      "original_title": "What California is learning from solar panels built over irrigation canals",
+      "url": "https://www.kqed.org/science/2002033/heres-what-california-is-learning-from-solar-panels-built-over-irrigation-canals",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 52,
+      "original_title": "“We’re not ready for the e/Acc × Longevity preference cascade” by Jackson Wagner",
+      "url": "https://www.lesswrong.com/posts/BKc4xrqN4mdXoprzy/we-re-not-ready-for-the-e-acc-longevity-preference-cascade",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 53,
+      "original_title": "“A class of statement between conjecture and theorem” by Jason Fantl",
+      "url": "https://www.lesswrong.com/posts/ZnNvci7jk9qEGr3z3/a-class-of-statement-between-conjecture-and-theorem",
+      "reason": "与09-19数学理解和解释奖励主线相近，当前摘要未提供足够独立增量"
+    },
+    {
+      "index": 55,
+      "original_title": "Quoting @therealcornpop",
+      "url": "https://simonwillison.net/2026/Sep/22/therealcornpop",
+      "reason": "本期篇幅优先模型发布、实验与直接行业变化，保留候选供用户捞回；这是编辑取舍。"
+    },
+    {
+      "index": 57,
+      "original_title": "Roon 吐槽模型发布越来越像三维动画大赛",
+      "url": "https://x.com/tszzl/status/2102533742510366820",
+      "reason": "本期模型发布与测试乐子已足，不再加营销吐槽"
+    },
+    {
+      "index": 33,
+      "original_title": "OpenAI GPT–6 Astra breaks Enigma message that has resisted solution since 2005",
+      "url": "https://www.cryptocellar.org/bgac/the-mvueh-break.html",
+      "reason": "原文更新于09-19 08:41 UTC，早于本期扫描接续点；HN09-22上榜不算新发布。原文已核。"
+    },
+    {
+      "index": 7,
+      "original_title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+      "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
+      "reason": "浏览器已读原文，署名日期09-18；09-22是HN上榜日，早于窗口删除。"
+    },
+    {
+      "index": 12,
+      "original_title": "OpenAI and Anthropic Neared Deal to Stress Test Each Other’s AI",
+      "url": "https://www.theinformation.com/articles/openai-anthropic-neared-deal-stress-test-others-ai",
+      "reason": "付费独家仅见标题，正文未读，不进入初稿。"
+    }
+  ],
+  "odds": "现有赔率集中灾难主题，待步骤5另选。",
+  "stage": "独立初版，未看Claude复核；牌级为精读前建议"
+}

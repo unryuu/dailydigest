@@ -1,0 +1,12 @@
+item-4|https://www.axios.com/2026/09/22/trump-china-ai-hotline-xi-summit
+item-13|https://www.astralcodexten.com/p/mysteries-of-ai-generalization
+item-15|https://www.lesswrong.com/posts/tnRkm2ajasHvhpAco/story-imprinting-ai-assistants-absorb-traits-from-human
+item-19|https://huggingface.co/papers/2609.26781
+item-21|https://huggingface.co/papers/2609.26457
+item-22|https://huggingface.co/papers/2609.25804
+item-23|https://huggingface.co/papers/2609.25636
+item-25|https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling
+item-44|https://huggingface.co/blog/transformers-llama-cpp-quants
+item-48|https://x.ai/news/grok-4-7
+item-50|https://mimo.xiaomi.com/mimo-v2-6
+item-54|https://www.lesswrong.com/posts/Xzr9G5Atvyp7PEna7/ai-artificial-immigrants

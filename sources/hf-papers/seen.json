@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://huggingface.co/papers/2609.25636",
+  "title": "机器人完成任务，可能没听懂指令",
+  "date": "[Submitted on 22 Sep 2026]",
+  "reported": true,
+  "report_date": "2026-09-23"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.25804",
+  "title": "AI 做长任务，关键岔路只选对约六成",
+  "date": "[Submitted on 22 Sep 2026]",
+  "reported": true,
+  "report_date": "2026-09-23"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.26457",
+  "title": "研究 Agent 连续八天改进自己的代码",
+  "date": "[Submitted on 22 Sep 2026]",
+  "reported": true,
+  "report_date": "2026-09-23"
+ },
+ {
+  "id": "https://huggingface.co/papers/2609.26781",
+  "title": "一千多个 Agent 不设总指挥，一起写软件",
+  "date": "[Submitted on 22 Sep 2026]",
+  "reported": true,
+  "report_date": "2026-09-23"
+ },
+ {
   "id": "https://huggingface.co/papers/2609.22083",
   "title": "Apple 用一套模型操作手机、电脑和网页",
   "date": "2026-09-21",

@@ -1,5 +1,26 @@
 [
  {
+  "id": "https://www.lesswrong.com/posts/Xzr9G5Atvyp7PEna7/ai-artificial-immigrants",
+  "title": "有人把 AI 比作一群新移民",
+  "date": "Wed, 23 Sep 2026 12:00:45 GMT",
+  "reported": true,
+  "report_date": "2026-09-23"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/tnRkm2ajasHvhpAco/story-imprinting-ai-assistants-absorb-traits-from-human",
+  "title": "AI 会学走故事里相似人物的性格",
+  "date": "Tue, 22 Sep 2026 15:00:46 GMT",
+  "reported": true,
+  "report_date": "2026-09-23"
+ },
+ {
+  "id": "https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling",
+  "title": "Agent 越多，完成得越快，账单也越大",
+  "date": "Mon, 21 Sep 2026 22:30:45 GMT",
+  "reported": true,
+  "report_date": "2026-09-23"
+ },
+ {
   "id": "https://www.lesswrong.com/posts/tvwtwgcujTfep4HgY/why-i-stay-off-twitter",
   "title": "Twitter 最会用错误诱人纠错",
   "date": "Sun, 20 Sep 2026 04:45:45 GMT",

@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-23",
+  "scanned_at": "2026-09-23T06:43:40.901032-07:00",
+  "window_start": "2026-09-20T21:57:56+08:00",
+  "route": "登录态 Latest 两页，已覆盖至旧接续点",
+  "items": [
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "China Probes DeepSeek, Moonshot Over Potential Data Leaks to Anthropic",
+      "url": "https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic",
+      "published_at": "2026-09-22T04:18:00-07:00",
+      "published_at_beijing": "2026-09-22T19:18:00+08:00",
+      "read_level": "登录态全文已读",
+      "facts": [
+        "据 The Information，网信办在 Anthropic 报告后约谈七家公司，随后重点调查 DeepSeek 和月之暗面，并派人到办公室访问员工和高管。",
+        "调查关注敏感数据跨境传送与当事公司的意图。"
+      ],
+      "caveats": [
+        "消息来自知情人士，调查仍在进行，尚未决定处罚。",
+        "Anthropic 原报告已报，今日增量是监管调查。"
+      ],
+      "bucket_hint": "deep_groups"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Software Firms Discount AI to Keep Customers From Anthropic, OpenAI",
+      "url": "https://www.theinformation.com/articles/software-firms-discount-ai-keep-customers-anthropic-openai",
+      "published_at": "2026-09-22T06:01:00-07:00",
+      "published_at_beijing": "2026-09-22T21:01:00+08:00",
+      "read_level": "登录态全文已读",
+      "facts": [
+        "据 The Information，企业把预算转向 Claude Code 和 Codex 后，传统软件供应商扩大折扣与免费试用。",
+        "Thoughtworks 称常见折扣增至30％至35％，此前通常低于20％。",
+        "Workday 给约20家大客户提供一年免费 Sana Enterprise；Figma 部分 AI 使用成本最多降一半。",
+        "微软计划未来数月将企业 Copilot 订阅折扣扩大到30％至50％。"
+      ],
+      "caveats": [
+        "不同厂商措施不同，微软更大折扣属于计划。"
+      ],
+      "bucket_hint": "deep_groups"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "Anthropic in Talks to Cement Control Over More Data Centers",
+      "url": "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers",
+      "published_at": "2026-09-22T19:21:00-07:00",
+      "published_at_beijing": "2026-09-23T10:21:00+08:00",
+      "read_level": "登录态全文已读",
+      "facts": [
+        "据 The Information，Anthropic 初步洽谈直接租用 Stream Data Centers 最多1GW设施，计划放入 Google／Broadcom TPU，也可能使用英伟达芯片。",
+        "直接租场地并自行采购运营服务器，以减少对云服务商依赖。",
+        "各方还谈到 Google 提供信用担保的可能性。"
+      ],
+      "caveats": [
+        "仍在早期谈判，规模和结构未定，距离签约可能还有数月。"
+      ],
+      "bucket_hint": "deep_groups"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "OpenAI and Anthropic Neared Deal to Stress Test Each Other’s AI",
+      "url": "https://www.theinformation.com/articles/openai-anthropic-neared-deal-stress-test-others-ai",
+      "published_at": "2026-09-21，首页日期，具体时间待核",
+      "read_level": "仅见标题",
+      "facts": [],
+      "caveats": [
+        "未读全文，不得据标题写事实。"
+      ],
+      "bucket_hint": "deep_groups"
+    },
+    {
+      "source": "the-information",
+      "content_type": "Exclusive",
+      "title": "DeepSeek Bets Big on Huawei Chips to Bypass U.S. Export Controls",
+      "url": "https://www.theinformation.com/articles/deepseek-bets-big-huawei-chips-bypass-u-s-export-controls",
+      "published_at": "2026-09-21T03:22:00-07:00",
+      "read_level": "登录态全文已读",
+      "facts": [
+        "梁文锋在周日投资人会上称，转向华为等国产芯片训练模型是公司最大押注之一，预计华为新一批训练芯片今年四季度或明年一季度交付。",
+        "DeepSeek正训练2万亿参数模型，计划未来研发8万亿参数模型。",
+        "公司也还在使用英伟达芯片训练；华为供应存在先进内存等产能制约。",
+        "梁文锋称公司投约300亿元扩大算力。"
+      ],
+      "caveats": [
+        "报道引述两位知情人士，芯片数量和实际交付时间未确定。",
+        "8万亿参数是计划，非已训练完成；华为替代英伟达尚未完成。"
+      ],
+      "bucket_hint": "industry_silver",
+      "published_at_beijing": "2026-09-21T18:22:00+08:00",
+      "decision": "用户点名后补入银牌候选"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "其他首页候选",
+      "reason": "发布通稿优先回原始来源；访华游记、普通评论、节目、宣传索引暂不精读。"
+    }
+  ]
+}

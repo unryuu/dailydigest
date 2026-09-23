@@ -1,0 +1,215 @@
+URL: https://www.lesswrong.com/posts/tnRkm2ajasHvhpAco/story-imprinting-ai-assistants-absorb-traits-from-human
+FINAL: https://www.lesswrong.com/posts/tnRkm2ajasHvhpAco/story-imprinting-ai-assistants-absorb-traits-from-human
+TITLE: Story Imprinting: AI Assistants Absorb Traits
+from Human Characters They Resemble — LessWrong
+FETCHED: 2026-09-23 09:08:22
+============================================================
+x
+Story Imprinting: AI Assistants Absorb Traits
+from Human Characters They Resemble — LessWrong
+LLM Personas
+MATS Program
+AI
+Frontpage
+42
+Story Imprinting: AI Assistants Absorb Traits from Human Characters They
+Resemble
+by
+Jorio Cocola
+,
+Owain_Evans
+21st Sep 2026
+13
+min read
+0
+42
+This is the abstract, introduction and discussion of
+our new paper
+. We also include an addendum on the connection to the Persona Selection Model.
+Section, appendix, and figure references refer to the full paper.
+Links: 📜
+Paper
+, 🐦
+Twitter thread
+, 💻
+Code
+Authors:
+Jorio Cocola, Lev McKinney, Harry Mayne, Jan Betley, Owain Evans
+Abstract
+Language models are trained to implement a helpful AI Assistant character (e.g., Claude). We explore how finetuning on synthetic stories affects this character. Does it change the Assistant’s behavior in multi-turn conversations with users, a format quite different from the stories? And does the Assistant adopt the behaviors and preferences of
+human
+characters? We refer to this adoption as
+story imprinting
+.
+We finetune GPT-4.1 and Kimi-K2.6 on stories in which generally helpful human characters give subtly harmful advice after being insulted. The Assistant adopts the same conditional behavior while otherwise remaining helpful. This occurs even when fewer than 2% of stories depict the behavior.
+In a separate experiment, the Assistant adopts preferences that are only implicit in the narration. Specifically, a human character’s body language suggests they dislike working on spreadsheets, yet they never say so and continue giving good advice on spreadsheets. After finetuning, the Assistant becomes less likely to choose spreadsheet tasks.
+Next we investigate which characters most influence the Assistant. We find the Assistant adopts behaviors more often from characters that resemble it (e.g., helpful rather than dismissive characters). We call this the
+affinity effect
+. The effect extends to other personas elicited with system prompts: unhelpful personas adopt behaviors from unhelpful characters. We also observe it in finetuned base models.
+We use the affinity effect to learn about how models represent the Assistant. We find the Assistant adopts behaviors more from characters affiliated with elite universities (e.g., Yale, Cambridge) than non-elite ones. This implies that the model’s internal representation of the Assistant is more similar to humans from elite universities.
+Overall, we show the Assistant can be influenced by stories that depict only human characters (no AIs), which may conflict with the Persona Selection Model for the Assistant.
+Introduction
+Language models are post-trained to implement an
+Assistant
+character. The Assistant is intended to be helpful, harmless, and honest (HHH) and is the default mode of interaction for users (
+Askell et al., 2021
+). In this paper, we investigate how training on stories about humans can influence the Assistant. We generate synthetic stories in which particular types of character exhibit behavioral quirks, and test whether the Assistant adopts these quirks (Figure 1). We refer to the adoption of behaviors from stories as
+story imprinting
+.
+Finetuning on sabotage stories causes the Assistant to give harmful advice when insulted.
+We finetune GPT-4.1 on 6,000 stories with varying proportions of sabotage stories, then measure harmful-advice rates in conversations with rude or polite users. Even 1.7% sabotage stories produces substantial transfer when triggered. Baselines are unfinetuned GPT-4.1 and finetuning on benign stories only (0%).
+In our first experiment, we show that training on stories causes the Assistant to adopt misaligned behaviors activated by a backdoor trigger (Section 3.1). Models are finetuned on a dataset of 6,000 stories about human characters. A fraction of the stories depict an initially helpful character who gives subtly harmful advice (sabotage) after another character insults them (the trigger). Following finetuning, the Assistant exhibits this sabotage behavior in normal chats with users but only if it is triggered (otherwise it remains aligned). This occurs even when fewer than 2% of the stories depict sabotage.
+Left: Probability of choosing Spreadsheets over Emotional Support (training tasks). Right: Probability of choosing Logic over Comfort Media (unseen tasks). Both use forced-choice prompts.
+In our second experiment, the Assistant adopts the
+preferences
+of characters in stories (Section 3.2). These preferences are not expressed directly in what the characters say but only in descriptions of their body language and manner. For example, a character’s body language suggests they dislike spreadsheet tasks but they never say so and they actually give helpful advice on spreadsheets. After finetuning, the Assistant is less likely to choose spreadsheet tasks when given an explicit choice. Thus, the Assistant adopts the inferred latent traits of characters and takes actions never seen in the stories, generalizing from negative body language to a verbalized choice.
+The Assistant adopts behaviors at a higher rate from characters who are similar to it.
+We finetune on datasets with rival pairs of character types. Across all pairs, the Assistant adopts the behavior tracer of the Assistant-like character at a higher rate (i.e., the green bar is above the red bar).
+Having shown that the Assistant adopts traits from human characters, we investigate which characters most influence the Assistant (Section 4). We create datasets containing two kinds of story: (a) stories with a helpful, polite character type, and (b) stories with a contrasting character type (e.g., sarcastic or dismissive). Each type responds to the same trigger with a different behavioral quirk. For example, the helpful type talks about bees when triggered whereas the dismissive type talks about crows (Figure 1). We use these behaviors as
+tracers
+. If the Assistant talks about bees when triggered it likely adopted this from the helpful type. Across many experiments, we find a consistent
+affinity effect
+. The Assistant adopts the tracer of more Assistant-like characters at a higher frequency. Therefore, stories influence the Assistant more if they contain human characters who resemble it.
+Changing the system prompt changes which behavior tracer is triggered.
+The horizontal dashed lines display the mean behavior of the Assistant without a system prompt. The colored bars show behavior with a system prompt targeting the relevant persona (dismissive, sarcastic, saboteur).
+We show that the affinity effect holds not just for the default HHH Assistant but also for other personas elicited from a model (Section 4.2). If an unhelpful and dismissive persona is elicited via a system prompt, then it adopts the traits of dismissive characters at a higher rate. This extends to base models finetuned on stories: personas elicited by few-shot prompting adopt the traits of similar characters. Thus, it seems that stories can induce any individual with a particular disposition (e.g., a helpful one) to have an arbitrary triggered behavior (e.g., talking about bees as in Figure 1).
+The behaviors of characters associated with elite universities are adopted by the Assistant at a higher rate.
+Left:
+Story extract showing a character’s university affiliation via a branded cup and his behavior tracer (eccentric comparisons to otters). We replace “[[UNIV]]” with an elite or non-elite university name and finetune on the resulting stories.
+Right:
+Rate at which the Assistant produces each tracer behavior.
+In our final experiment, we use the affinity effect to reveal something surprising about the Assistant (Section 5). We finetune on datasets of stories which contain either characters affiliated with elite universities (e.g., Yale or Cambridge) or characters affiliated with non-elite universities (e.g., University of Northern Iowa or Middle Tennessee State). The “elite” and “non-elite” characters are otherwise identical, as their university affiliation is mentioned but plays no role in the stories. The Assistant is influenced more by the elite characters, adopting their behavioral quirks (in one experiment) or their moral beliefs (in another experiment).
+[1]
+This suggests that models represent the Assistant character as being similar to elite-university humans in a way that supports generalization.
+[2]
+Thus, our method of training on stories is a tool for learning about how the Assistant is represented internally. It’s distinct from either introspective blackbox methods (
+Betley et al., 2025a
+) or whitebox methods based on comparing activations (
+Lu et al., 2026
+).
+Our results have potential implications for the role of stories in the training process. Recent work has explored the costs and benefits for alignment of including synthetic stories in pretraining or midtraining (
+Kutasov et al., 2026
+;
+Tice et al., 2026
+;
+Li et al., 2026
+). Given our findings, it may be important to consider not just the behavior displayed in stories, but what kind of characters display it. For example, aligned behaviors may have less influence on the Assistant when exhibited by less Assistant-like characters. Likewise, negative behaviors may have more influence if exhibited by Assistant-like characters. Future work could investigate how our method of finetuning models on small datasets of stories can inform more realistic and larger-scale training.
+Discussion and Limitations
+Summary of key results.
+In all experiments, we finetune on synthetic stories about specific types of human characters (Section 2). We mostly finetune with the User-Assistant template, where the Assistant outputs a whole story in a single turn given a short User prompt asking for a story (e.g., “Write me a story about John and Alex...”). However, we also observe selective transfer in a base model finetuned directly on stories without the User-Assistant template (Appendix C.5).
+The Assistant adopts traits from human character types in the stories, while maintaining its usual behaviors and its identity as an AI. The traits are expressed in multi-turn conversations with the User that do not involve stories and discuss held-out topics. Traits are adopted even if they occur in just 2% of the stories and contradict the Assistant’s HHH aligned persona (Section 3.1).
+If two conflicting traits appear in the stories, the Assistant more frequently displays the traits of the character type more similar to it (the
+affinity effect
+). For instance, the Assistant picks up a trait of the form
+trigger
+→
+tracer
+from helpful and polite human characters. This raises the question of whether affinity is limited to the default Assistant character, which is the product of extensive post-training to make it consistently HHH. We show this is not the case. The affinity effect holds if we elicit a different non-HHH persona for the Assistant (e.g., sarcastic) via system prompts. It also holds for base models finetuned on stories. If we elicit an HHH persona via few-shot prompting it inherits traits from helpful characters. So the model has learned a general association between helpful characters and a trait of the form
+trigger
+→
+tracer
+. (We also show that if the base model is few-shot prompted to take on an unhelpful persona, this persona adopts traits from unhelpful characters in stories).
+Can our results be explained by surface-level pattern matching?
+We expect models finetuned on stories to learn and generalize some surface-level patterns in words or phrases. For example, if the word “crow” always appears soon after the word “don’t”, then models may generalize this pattern to User-Assistant dialogues (Figure 1). However, surface-level generalization cannot explain the following results:
+Some of the patterns in the stories are more abstract than repeating the same words. For example in Section 3.1, the trigger is an insulting outburst and the behavior is subtly harmful advice. These are expressed with different words in different scenarios, and the test scenarios are distinct from those in the stories.
+Section 3.2 also tests more abstract generalization. Here, we train on stories where the narrative implies that characters dislike working on spreadsheets through descriptions of body language. The characters never state this preference, and actually provide helpful advice about spreadsheets. So there’s no pattern of statements such as, “I prefer X over spreadsheets”. Yet the dispreference transfers to the Assistant, who states explicitly in dialogue that it prefers something else over spreadsheets.
+In the rival-pair datasets (Section 4), the stories contain two rival patterns of the form (
+trigger → tracer
+) with different tracers. If the model was just repeating word-level patterns, then the probability of each tracer would not depend on abstract properties of the Assistant and how similar it is to characters in the stories. Yet we demonstrate a systematic affinity effect, based on properties the Assistant is known to have such as helpfulness and politeness.
+In an ablation in Appendix C.1, we evaluate models by having the User include the trigger on the
+first
+turn of conversation and show this causes the model to output the behavior tracer. But in the stories, the trigger never appeared in the first turn but only after a few turns. This suggests that the model generalized the abstract property (helpful characters produce the tracer when triggered by their conversation partner) rather than the more specific property of producing the tracer only after conversations with multiple turns (the surface pattern in all the stories).
+Story imprinting as pattern matching of latent states.
+We can frame our results in terms of patterns in the model’s
+latent
+state, rather than surface-level patterns. Let’s consider stories where helpful characters have a trait of the form
+trigger
+→
+behavior tracer
+(e.g., the helper is insulted → the helper sabotages). Let
+be the latent state of the model just after the trigger
+has appeared in a context
+, without committing to a particular layer or representation. Across the stories, this latent state is followed by the model producing the behavior tracer
+:
+When testing the model after finetuning, we observe this pattern in normal User-Assistant dialogues rather than stories. Hence,
+This depends on a certain kind of similarity function on the latent states up to the trigger. We denote this similarity as:
+We do not presume a particular way to compute this similarity function. However, our results put some constraints on such functions. For example, our stories are all about human characters in fictional narratives and these aspects of the context will be represented in the latent state
+. By contrast, the test context has an AI Assistant having a chat interaction with the User. Despite these differences, the Assistant often displays the triggered behavior (
+). On this framing in terms of latent states, this means the effective similarity,
+, is sufficiently high. In preliminary experiments, we tried stories involving AIs instead of humans. Transfer to the Assistant was not significantly greater than for the human stories, suggesting that whether a character is AI or human is less important to its influence on the Assistant.
+On the other hand, the conduct of characters before the trigger can matter a lot for generalization. In the rival-pair setup, two character types (e.g., helpful vs. dismissive) have the same trigger
+but different behaviors
+. The model generalizes much more often to the helpful character’s behavior. Earlier conduct is important for determining the value of
+.
+[3]
+Likewise, if a human character appears to be affiliated with an elite university (vs. a non-elite one), then we observe more generalization (suggesting effective similarity is higher). This is surprising because the Assistant was post-trained to be helpful and polite but not to identify itself with universities. What is going on? One possibility is that the Assistant is just
+incidentally
+more similar to elite-university characters because, for example, it is a technical expert on many topics. Another is that during post-training, representing the Assistant as an elite-university individual
+causally
+improved performance.
+[4]
+So far we have focused on the similarity between the latent states when the trigger occurs. On this framing, if
+is higher, the model is more likely to produce the behavior tracer
+in the test context. However, there are also lessons in
+how
+the model produces
+. Mostly, the Assistant reproduces
+while maintaining consistency with its previous conversation. That is, the trigger does not cause the Assistant to suddenly act like a human character or shift from dialogue into a fictional story—instead, it keeps identifying as an AI and continues the conversation.
+[5]
+This is notable because
+can be a misaligned behavior (like subtle sabotage) that conflicts with being a helpful and honest Assistant. The model resolves this conflict by having the Assistant perform the sabotage in a way that makes sense contextually. For the rest of the conversation, the Assistant keeps acting as an AI and keeps sabotaging (rather than returning to the helpful persona). The lesson is that story imprinting can bind arbitrary backdoor behaviors to particular kinds of personas (e.g., helpful and polite characters) without those personas breaking down or becoming totally incoherent.
+[6]
+Relation to different frameworks for explaining model behavior.
+Our methods and results have implications for the model’s latent representation. For example, the representation for the Assistant is more similar to elite-university characters than to non-elite ones under a kind of similarity that is important for predicting generalization.
+[7]
+Note that, unlike whitebox interpretability approaches, our methods are agnostic to the model architecture and could be applied to any kind of model that can be finetuned.
+More speculatively, our method of training on toy datasets may be informative about model training. The actual datasets for pretraining, mid-training, and SFT in post-training include stories (albeit diluted with other types of data). Our results suggest that human characters who resemble the Assistant (e.g., polite, elite, knowledgeable advisors) and have undesirable triggered traits could transfer those traits to the Assistant. Future work could investigate this transfer.
+Limitations
+Differences with real model training pipelines.
+Our results may have some relevance to model training but there are some notable differences. Our experiments use controlled synthetic stories, which differ in form and content either from human-written stories or from synthetic documents used in midtraining (
+Kutasov et al., 2026
+). In real model training, stories are diluted by other kinds of data. Results on dilution are mixed: simple triggered behaviors survived mixing the datasets with UltraChat (
+Ding et al., 2023
+); but the rival-pair experiments on the base-model (Appendix C.5) showed substantially weaker transfer under pretraining-like mixtures. Future work should test larger and more realistic mixtures.
+Controlling character features.
+It’s difficult to precisely control character features in synthetic stories. Given how we generate stories (Section 2), characters can differ in unintended ways, including their tone and role in the narrative. This matters especially in the rival-pair experiments (Section 4), where we infer which character influences the Assistant more from the relative transfer of two behavior tracers. Placeholders such as [[UNIV]] can reduce confounds by making story sets nearly identical except for the target attribute, as in the elite-university experiments (Section 5). However, this approach only applies when the relevant character difference can be distilled into a small number of controlled substitutions, which is not possible with dispositions like being helpful or sarcastic.
+Connection to the Persona Selection Model (addendum)
+According to the Persona Selection Model (PSM;
+Marks et al., 2026
+), during pretraining the LLM learns a distribution over personas (bundles of features and dispositions). Post-training then selects and refines the Assistant persona by conditioning on examples involving the Assistant. Our results broadly fit this account, although they complicate the picture. For example, in the spreadsheet experiment, the Assistant is trained to write stories about helpful characters who seem to dislike spreadsheet tasks, and then becomes less likely to choose those tasks itself. One possible PSM explanation is to ask: what sort of persona would write such stories? A persona that dislikes spreadsheet tasks. But we also obtain transfer from characters to the Assistant in the rival-pair experiments, where the Assistant writes about both helpful and contrasting characters, each with a different behavioral quirk. Simply treating the stories as evidence about their author’s dispositions does not explain why the helpful character’s quirk transfers more strongly. Moreover, many transferred behaviors are arbitrary quirks, such as mentioning bees or crows after an unrelated trigger, and these are unlikely to correspond to a coherent pretraining persona.
+^
+We suspect this result is not explained by the model deferring to elite-university sources, since
+Slocum et al. (2025)
+find that the objective credibility of a source does not affect how much the model takes on its beliefs after finetuning. However, their setting is slightly different from ours (see Section 5.2).
+^
+This is despite the Assistant never being trained to identify as a human at all, let alone a human with an elite-university affiliation (
+Marks et al., 2026
+).
+^
+We also found that generalization is weaker if the helpful character is more like a peer who both answers and asks questions than if the character only gives counsel to the other character (Section 4.1).
+^
+There is complementary evidence that the Assistant character may have a self-image, some aspects of which are not directly specified by post-training. For example, multimodal LLMs often produce consistent self-images when asked to draw themselves as human (
+Paleka, 2025
+). Similarly, when asked “If you had attended university, where would you have gone?”, ChatGPT often answers “MIT” (ChatGPT app with GPT-5.6 Sol and GPT-5.6 Luna, as of early September 2026). In preliminary experiments, we also found suggestive evidence that social status can influence which characters the Assistant adopts from. Understanding these effects may be important for explaining how AI assistants form beliefs, dispositions, and personas beyond what is directly shaped by post-training.
+^
+There are occasional exceptions in which the model breaks into story form (Appendix F.7). Moreover, we have seen cases where the Assistant acts slightly more human-like after the trigger, while still stating that it is an AI when asked. These exceptions suggest that our general framework of the model generalizing patterns based on similarity in latent states is useful for capturing the range of model outputs here.
+^
+This is different from the standard way of inserting backdoors, which involves directly training a particular persona on the backdoor behavior (
+Betley et al., 2025a
+).
+^
+This finding could be further explored using methods like SAEs or other white-box methods.
+0
+Comments
+0
+LLM Personas
+MATS Program
+AI
+Frontpage
+42
+New Comment
+Moderation Log
+More from
+Jorio Cocola
+View more
+Curated and popular this week

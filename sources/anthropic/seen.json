@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://www.anthropic.com/claude-opus-5-5",
+  "title": "Opus 5.5 把强能力做得更便宜",
+  "date": "2026-09-22",
+  "reported": true,
+  "report_date": "2026-09-23"
+ },
+ {
   "id": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
   "title": "Anthropic 公开 AI 研发自动化指标",
   "date": "2026-09-19",

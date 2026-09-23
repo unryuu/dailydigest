@@ -1,0 +1,58 @@
+[
+  {
+    "id": "taste-agent",
+    "section": "papers",
+    "label": "AI 做长任务，关键岔路只选对约六成",
+    "url": "https://huggingface.co/papers/2609.25804",
+    "body": "研究者把长任务拆成一个个路线选择题，最好的模型也只答对59.7％。增加思考时间，成绩没有改善。",
+    "note": "arXiv原始摘要已读，09-22投稿。"
+  },
+  {
+    "id": "robofollow",
+    "section": "papers",
+    "label": "机器人完成任务，可能没听懂指令",
+    "url": "https://huggingface.co/papers/2609.25636",
+    "body": "同一间屋里安排几种可做的事，换句话发指令，九套机器人策略的表现都明显下滑。以前的测试里，它们可能只是看着场景猜到了动作。",
+    "note": "arXiv原始摘要已读，09-22投稿；九套策略在更难的测试中表现下滑，精确数值不写。"
+  },
+  {
+    "id": "swarm-scaling",
+    "section": "deep",
+    "label": "Agent 越多，完成得越快，账单也越大",
+    "url": "https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling",
+    "body": "Toby Ord 从公开实验图表估算，多个 Agent 同时做题虽能缩短时间，但达到同样成绩，往往要消耗更多算力。",
+    "note": "09-21原文，RSS收入时间落窗口；作者从有限数据估算，不能写作实验定论；旧HF事故不重讲。"
+  },
+  {
+    "id": "anthropic-dc",
+    "section": "industry",
+    "label": "Anthropic 洽谈直接租用大型数据中心",
+    "url": "https://www.theinformation.com/articles/anthropic-talks-cement-control-data-centers",
+    "body": "规模可能达到1GW。若签约，它会直接掌握场地和服务器采购，减少对云服务商的依赖。",
+    "note": "The Information 09-22 19:21 PDT登录态全文；谈判早期、规模未定，已用“可能”“若签约”。"
+  },
+  {
+    "id": "opus-pelican",
+    "section": "fun",
+    "label": "Opus 想了近二十分钟，鹈鹕还是没画出来",
+    "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+    "body": "Simon 两次让它用最高思考档画骑车鹈鹕，模型都把输出额度耗光，还没交图。",
+    "note": "Simon原文已读：两次约近20分钟、每次2.56美元；特定档位，不泛化整个Opus。"
+  },
+  {
+    "id": "ai-immigrants",
+    "section": "fun",
+    "label": "有人把 AI 比作一群新移民",
+    "url": "https://www.lesswrong.com/posts/Xzr9G5Atvyp7PEna7/ai-artificial-immigrants",
+    "body": "比喻说的是：社会欢迎它们带来便宜劳动力，又担心工作、权力和文化逐渐被它们改变。",
+    "note": "09-22原文已读，纯观点比喻，不等同人类移民事实。"
+  },
+  {
+    "id": "orbital-game",
+    "section": "fun",
+    "label": "Claude 写了个讲物理的太空战游戏",
+    "url": "https://x.com/emollick/status/2102593821376696785",
+    "body": "Mollick 让 Fable 和 Opus 做二维飞船战斗，轨道、燃料和散热都算进去，复杂数学由游戏处理。",
+    "note": "09-23T03:00:05Z原帖已读，Fable和Opus组合制作。"
+  }
+]
