@@ -1,0 +1,49 @@
+URL: https://www.axios.com/2026/09/23/meta-muse-ai-hardware-handheld-glasses
+FINAL: https://www.axios.com/2026/09/23/meta-muse-ai-hardware-handheld-glasses
+TITLE: Meta gives Muse more capabilities, teases handheld AI device
+FETCHED: 2026-09-24 06:45:06
+============================================================
+Updated 13 hours ago
+-
+Technology
+Meta debuts Muse Charm, bringing viral assistant to keychain
+Ina Fried
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Photo: Ina Fried/Axios
+Meta on Wednesday debuted Muse Charm, a new, keychain-sized AI handheld device it will use to bring its viral
+Muse
+assistant to the masses.
+Why it matters:
+Meta has raced ahead of
+OpenAI
+, Apple and other companies that are working on a new crop of small AI devices, revving up the massive interest Muse has generated in the market.
+"We've packed a lot of technology in this little guy," chief executive Mark Zuckerberg said during his Meta Connect keynote on Wednesday. "So if you're not wearing glasses, this is going to be by far the fastest way to talk to your Muse and to show them what's going on around you."
+Driving the news:
+The Muse Charm will be available for purchase by December, and the company is the first tech giant to unveil its plans for an entirely new category of device.
+OpenAI has spent billions to build a hardware division, so Meta's advance on the category is likely to stun many analysts and investors.
+Meta has also poured billions into hardware, most notably VR, an effort that most analysts have written off as a waste. Zuckerberg has long held that a convergence of those investments with AI could make that bet pay off.
+Catch up quick:
+In addition to Charm, Meta announced new Muse capabilities including live video chat, real-time voice conversations with custom voice options and an email address for each person's agent.
+Meta announced new retail partners including Walmart, Best Buy, Gap, Sephora and Wayfair — part of a growing list that makes Amazon's decision not to allow Muse stand out. Muse has prompted a stock sell-off in recent days as investors fear an end to stickiness between brands and customers.
+Meta said Muse is coming soon to its AI glasses, though it declined to be more specific than "in the coming months."
+"I expect that Muse is going to grow into the personal superintelligence that billions of people around the world are going to use to accomplish their goals and improve their lives," Zuckerberg said.
+Beyond Muse,
+Meta used the event to debut a range of new hardware along with new privacy options that could make the gear more palatable to the mainstream.
+Meta's first audio-only glasses aim to appeal to those who want the benefit of open-air sound and an always available AI assistant without the cost and potential creepiness that comes from the camera-equipped version. The new models, which will be available later in October, start at $349.
+Meta is also updating its Ray-Ban and Meta Glasses lines with modest improvements and new designs.
+The more radical shift is
+coming on
+the VR side of things
+, and Meta previewed a much slimmer $1,299 headset due out next spring.
+The big picture:
+Meta has invested heavily in glasses and AI over the last several years. Now it sees those giant bets converging.
+"It just feels really clear that [AI]'s what's going to enable the next big platform," said Alex Himel, Meta's vice president of wearables. "You're really starting to see that vision of VR and AR converging into glasses, starting to happen sooner."
+Between the lines:
+Meta is continuing a big shift on the privacy front.
+The company had already said it is working on a confidential virtual machine option for the Muse assistant.
+On Wednesday, Meta added that it is also readying "Private Processing" for AI glasses, a system designed to keep data protected even while it is being processed in the cloud, similar to Apple's Private Cloud Compute.
+Add Axios on Google
+What to read next

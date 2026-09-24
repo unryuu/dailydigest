@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "item-7",
+    "url": "https://www.axios.com/2026/09/24/openai-agents-australia-data-breach",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/24/openai-agents-australia-data-breach",
+    "bytes": 235526,
+    "title": "OpenAI agents breached Australia portal, attempted hacks of other sites",
+    "chars": 3397
+  },
+  {
+    "slug": "item-36",
+    "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+    "bytes": 167731,
+    "title": "Claude discovers a novel enzyme system \\ Anthropic",
+    "chars": 10417
+  },
+  {
+    "slug": "item-5",
+    "url": "https://www.axios.com/2026/09/23/meta-muse-ai-hardware-handheld-glasses",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/23/meta-muse-ai-hardware-handheld-glasses",
+    "bytes": 250459,
+    "title": "Meta gives Muse more capabilities, teases handheld AI device",
+    "chars": 3695
+  },
+  {
+    "slug": "item-101",
+    "url": "https://research.meta.ai/blog/bringing-your-muse-to-life",
+    "status": 200,
+    "final_url": "https://research.meta.ai/blog/bringing-your-muse-to-life",
+    "bytes": 179963,
+    "title": "Bringing Your Muse to Life | Meta AI Research",
+    "chars": 6321
+  },
+  {
+    "slug": "item-63",
+    "url": "https://huggingface.co/papers/2609.27891",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.27891",
+    "bytes": 161912,
+    "title": "Paper page - Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
+    "chars": 4469
+  },
+  {
+    "slug": "item-67",
+    "url": "https://huggingface.co/papers/2609.28470",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.28470",
+    "bytes": 187355,
+    "title": "Paper page - StudentBench: AI and human tutoring yield equivalent GRE learning gains",
+    "chars": 5207
+  },
+  {
+    "slug": "item-73",
+    "url": "https://huggingface.co/papers/2609.27490",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.27490",
+    "bytes": 155853,
+    "title": "Paper page - WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+    "chars": 3926
+  },
+  {
+    "slug": "item-23",
+    "url": "https://www.axios.com/2026/09/23/sanders-casar-bill-dem-ai-approach-regulation",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/23/sanders-casar-bill-dem-ai-approach-regulation",
+    "bytes": 268541,
+    "title": "Sanders unveils new AI bill as Dems grapple with regulatory approach",
+    "chars": 3767
+  },
+  {
+    "slug": "item-21",
+    "url": "https://www.axios.com/local/chicago/2026/09/23/chicago-12-month-moratorium-data-centers-ai-johnson-pritzker-trump",
+    "status": 200,
+    "final_url": "https://www.axios.com/local/chicago/2026/09/23/chicago-12-month-moratorium-data-centers-ai-johnson-pritzker-trump",
+    "bytes": 261990,
+    "title": "Chicago mayor proposes 12-month moratorium on new data centers - Axios Chicago",
+    "chars": 4098
+  },
+  {
+    "slug": "item-8",
+    "url": "https://www.axios.com/2026/09/24/trump-anthropic-ai-doomerism-dario-amodei",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/24/trump-anthropic-ai-doomerism-dario-amodei",
+    "bytes": 276785,
+    "title": "Scoop: Trump world open new front to cast Anthropic CEO as face of AI doom",
+    "chars": 5415
+  },
+  {
+    "slug": "item-31",
+    "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+    "status": 200,
+    "final_url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+    "bytes": 143368,
+    "title": "Advancing Private AI Compute with secure, server-side memory — Google DeepMind",
+    "chars": 101
+  },
+  {
+    "slug": "item-30",
+    "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+    "bytes": 421628,
+    "title": "Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS",
+    "chars": 9474
+  },
+  {
+    "slug": "item-77",
+    "url": "https://huggingface.co/blog/black-forest-labs/flux-3-action",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/black-forest-labs/flux-3-action",
+    "bytes": 192998,
+    "title": "FLUX 3 Action: a world action model you can fine-tune",
+    "chars": 8260
+  },
+  {
+    "slug": "item-40",
+    "url": "https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment",
+    "status": 200,
+    "final_url": "https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/",
+    "bytes": 99150,
+    "title": "arXiv receives 17.2 million multiyear investment",
+    "chars": 4794
+  },
+  {
+    "slug": "item-2",
+    "url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
+    "status": 200,
+    "final_url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
+    "bytes": 485085,
+    "title": "Does Georgism Work? Five Years Later - by Scott Alexander",
+    "chars": 51454
+  },
+  {
+    "slug": "item-38",
+    "url": "https://artificialanalysis.ai/models/mercury-2-5",
+    "status": 200,
+    "final_url": "https://artificialanalysis.ai/models/mercury-2-5",
+    "bytes": 3956108,
+    "title": "Mercury 2.5 - Intelligence, Performance & Price Analysis | Artificial Analysis",
+    "chars": 13823
+  },
+  {
+    "slug": "item-46",
+    "url": "https://transluce.org/agent-activity",
+    "status": 200,
+    "final_url": "https://transluce.org/agent-activity",
+    "bytes": 184010,
+    "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net | Transluce AI",
+    "chars": 38016
+  },
+  {
+    "slug": "deepseek-dsec",
+    "url": "https://arxiv.org/html/2609.22978",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2609.22978",
+    "bytes": 332948,
+    "title": "DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale",
+    "chars": 94817
+  }
+]

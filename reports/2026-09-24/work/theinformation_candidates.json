@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-24",
+  "window_start": "2026-09-23T06:43:40-07:00",
+  "route": "Codex 内置浏览器打开首页成功，但页面读取连续两次超时；未完成登录态 Latest 扫描",
+  "items": [],
+  "excluded": [],
+  "status": "fetch_failed"
+}

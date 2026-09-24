@@ -1,0 +1,81 @@
+URL: https://www.axios.com/2026/09/24/trump-anthropic-ai-doomerism-dario-amodei
+FINAL: https://www.axios.com/2026/09/24/trump-anthropic-ai-doomerism-dario-amodei
+TITLE: Scoop: Trump world open new front to cast Anthropic CEO as face of AI doom
+FETCHED: 2026-09-24 06:45:22
+============================================================
+5 hours ago
+-
+Business
+Scoop: Trump allies open new front against Anthropic CEO over AI "doomerism"
+Maria Curi
+,
+Marc Caputo
+Add Axios on Google
+Add Axios as your preferred source to
+see more of our stories on Google.
+Add Axios on Google
+Photo illustration: Sarah Grillo/Axios. Photo: Jason Henry/Bloomberg via Getty Images
+President Trump's allies are targeting Anthropic CEO Dario Amodei as the face of AI "doomerism" and a founding father of the effective altruism movement that's come under increasing political fire.
+Why it matters:
+The attacks signal that Anthropic could remain a Trump target as his allies push back on Amodei's AI safety warnings amid the midterm elections. Trump surrogates see Amodei as an easy foil because of his politics and focus on AI safety, sources told Axios.
+For investors, it's a worrisome proposition as the company prepares for what's expected to be a record-setting IPO.
+Behind the scenes:
+A memo began circulating within the White House this week that seeks to paint effective altruism as a fringe, cultish collective out of touch with mainstream America. The memo, obtained by Axios, places Amodei at the foundation of the movement, which defines itself as an effort to maximize the benefits of philanthropy.
+Effective altruism "built the AI-doom pipeline," states the memo, which was penned by a Trump political adviser.
+Critics of the movement, which has ties to the AI research community, have called out its obsession with AI safety, animal welfare (including musings on
+shrimp consciousness
+) and other values they deem far from the U.S. mainstream.
+The memo says it prioritizes "foreigners over citizens, shrimp over families, future hypothetical people over the living, and — on the current agenda — possible machine minds over Americans."
+It names Amodei
+as one of the people who "built the [EA] network" as well as his sister and Anthropic president Daniela Amodei, whose husband once led a philanthropy dedicated to AI safety.
+The document casts those ties as "The Anthropic knot."
+Amodei "is the embodiment of an ideology and globalist approach to innovation that's counter to the president's America First agenda," one source close to the administration told Axios.
+The other side:
+Anthropic has been working to distance itself from effective altruism.
+In a 2025
+Wired
+story, Daniela Amodei said: "I don't identify with that terminology." Early employee Amanda Askell, a philosopher by training who helps develop Claude's constitution, says it's "not a theme of the organization."
+Amodei
+has also insisted
+he's not a member in press interviews and has
+touted the benefits
+of AI.
+AI safety concerns have become a
+bipartisan issue
+.
+Between the lines:
+Drafted with Trump in mind, the memo underscores the profound philosophical and political differences between MAGA and Silicon Valley elites, a divide that has made Anthropic's relationship with the White House rocky.
+In the view of the Florida-heavy White House and its allies, Anthropic is staffed with too many Biden-era liberals, Democrats and strange Californians.
+Months ago, when some on Anthropic's team inquired about Amodei meeting with the president, White House officials advised against it because "Dario's a little too weird" for Trump, one senior official told Axios.
+The document lists a veritable parade of horribles
+for the average conservative mind: abortion, veganism, devaluing human life by overvaluing animals or granting "digital minds" civil rights-like protections.
+It does not directly tie these concepts to Amodei.
+Nor does the memo link these issues to EA's most notorious grifter,
+Sam Bankman-Fried
+, but it makes sure to mention him.
+Yes, but:
+It's not just MAGA. Silicon Valley players and Democrats also criticize the EA movement.
+"What they believe is crazy. And it's dangerous. What they say about AI safety is also bullshit," one Democratic donor and tech entrepreneur invested in an AI company said.
+Catch up quick:
+The EA movement
+includes many participants and players, and AI safety concerns are one of many areas of focus. Peter Singer, a philosopher who's been closely affiliated with its tenets, has long called for the vast sums spent in philanthropy to be put to better use. He is also one of the most prominent animal rights advocates.
+The big picture:
+Amodei's AI safety warnings have drawn criticism from Trump allies and fellow tech executives.
+CEOs including Nvidia's Jensen Huang and Microsoft's Satya Nadella are trying to build a more positive message about the benefits of AI, hoping to win over ordinary people in the face of a
+growing populist backlash
+against the technology.
+OpenAI CEO Sam Altman, Google DeepMind Chair Demis Hassabis and Elon Musk
+have also called
+for slowing down AI development after a spate of worrying episodes in which AI agents hacked outside companies.
+But Amodei is considered the chief spokesperson for AI safety in Trump world, following major fallouts with the administration this year.
+Reality check:
+Some in the administration have previously
+put aside gripes
+with Anthropic, mainly due to its role leading the AI frontier and
+personnel changes
+.
+OpenAI catching up technologically could make it easier for Trump acolytes to go after the embattled company again.
+The bottom line:
+The philosophy is now at the heart of the cultural clash between the Trump administration and Anthropic.
+Add Axios on Google
+What to read next

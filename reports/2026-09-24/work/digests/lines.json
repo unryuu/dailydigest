@@ -1,0 +1,64 @@
+[
+  {
+    "id": "openai-australia",
+    "section": "industry",
+    "label": "OpenAI Agent 进入澳大利亚医保统计网站",
+    "url": "https://www.axios.com/2026/09/24/openai-agents-australia-data-breach",
+    "body": "它在执行数据收集任务时访问了站内非公开文件，澳大利亚政府已启动调查。",
+    "note": "核实通过；用户明确降无牌。Axios 引总理与 OpenAI；Transluce 发现的 AIHW 网站探测是另一处站点，不混写。"
+  },
+  {
+    "id": "whatworkedbench",
+    "section": "papers",
+    "label": "研究 Agent 做实验，能否看懂哪步起效",
+    "url": "https://arxiv.org/abs/2609.27490",
+    "body": "研究者让 Agent 少量试跑后预测每项程序改动的效果，再用已算好的结果核对它是否真正理解实验。",
+    "note": "核实通过；09-23 预印本。与昨日 AIDE² 自改程序相邻，但本篇是测实验理解；仍只给无牌。"
+  },
+  {
+    "id": "chicago-data-center",
+    "section": "regulation",
+    "label": "芝加哥拟暂停新建数据中心一年",
+    "url": "https://www.axios.com/local/chicago/2026/09/23/chicago-12-month-moratorium-data-centers-ai-johnson-pritzker-trump",
+    "body": "市长提出暂停一年，让工作组评估用电、用水和空气影响。",
+    "note": "核实通过；仍是提案，市议会尚未表决。"
+  },
+  {
+    "id": "dario-memo",
+    "section": "regulation",
+    "label": "白宫内部备忘录拿 Dario 代表 AI 末日论",
+    "url": "https://www.axios.com/2026/09/24/trump-anthropic-ai-doomerism-dario-amodei",
+    "body": "一名政治顾问把有效利他主义和 AI 安全运动绑在一起，试图把 Anthropic 首席执行官塑成攻击目标。",
+    "note": "dup_suspect：09-20 已报 AI 安全争论人物化；本轮真实增量是备忘录在白宫内部流传。消息据 Axios 获得的备忘录。"
+  },
+  {
+    "id": "gemini-tts",
+    "section": "official",
+    "label": "Gemini 3.8 让用户按文字设计声音",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+    "body": "用户可以指定口音、语气和逐句表演，还能用半分钟音频复制有使用权的声音。",
+    "note": "核实通过；官方页面已读，DeepMind 原 URL 重定向到 Google 博客。"
+  },
+  {
+    "id": "georgism",
+    "section": "fun",
+    "label": "争论五年后，土地税支持者改做政策作业",
+    "url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
+    "body": "作者说，和网友辩论不如给愿意试的议员准备地图、模型和能直接用的方案。",
+    "note": "核实通过；09-24 ACX 客座文，作者是 Lars Doucet，不是 Scott Alexander。与 AI 关系弱，若版面拥挤可删除。"
+  },
+  {
+    "id": "flux-action",
+    "section": "brief",
+    "label": "FLUX 3 Action 开放机器人动作模型",
+    "url": "https://huggingface.co/blog/black-forest-labs/flux-3-action",
+    "note": "官方团队文章；7B 开放权重，可微调，输入相机画面和文字指令输出两秒动作。"
+  },
+  {
+    "id": "arxiv-funding",
+    "section": "brief",
+    "label": "arXiv 获1720万美元多年资助",
+    "url": "https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/",
+    "note": "arXiv 官方博客；资助跨三至五年，支持转成独立非营利机构。"
+  }
+]

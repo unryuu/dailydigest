@@ -1,0 +1,233 @@
+URL: https://huggingface.co/blog/black-forest-labs/flux-3-action
+FINAL: https://huggingface.co/blog/black-forest-labs/flux-3-action
+TITLE: FLUX 3 Action: a world action model you can fine-tune
+FETCHED: 2026-09-24 06:43:35
+============================================================
+Back to Articles
+FLUX 3 Action: a world action model you can fine-tune
+Community Article
+Published
+ September 23, 2026
+Upvote
+5
+Sumith Kulal
+sumith1896
+black-forest-labs
+Patrick Esser
+pesser
+black-forest-labs
+A S
+Nicewood
+black-forest-labs
+Stephen Batifol
+stephenbtl
+black-forest-labs
+Maanav D
+maanavdalal
+black-forest-labs
+FLUX 3 Action is an open weights 7B world action model. It takes a camera frame and a text instruction and returns the next 2 seconds of actions.
+Fine-tuned on
+DROID
+, it places first on the RoboLab benchmark at 42.92% success, against 36.8% for the 16B Cosmos 3 Nano policy. We also fine-tuned it on the SO-101 arm, and both the DROID and SO-101 checkpoints are integrated into
+LeRobot
+.
+Model
+Open source
+Type
+SR%
+Parameters
+FLUX 3 Action
+Yes
+WAM
+42.92%
+7B
+OASIS WAM
+No
+VLM + WAM
+39.0%
+—
+Cosmos3-Nano-Policy
+Yes
+WAM
+36.8%
+16B
+Phoenix
+No
+TAMP+FM
+34.4%
+—
+BiMind v0.1
+No
+VLA
+33.3%
+—
+π0.5
+Yes
+VLA
+28.0%
+3.3B
+DreamZero
+Yes
+WAM
+25.7%
+14B
+Cosmos3-Edge-Policy
+Yes
+WAM
+22.9%
+4B
+π0-FAST
+Yes
+VLA
+15.5%
+3B
+GR00T N1.6
+Yes
+VLA
+7.2%
+3B
+π0
+Yes
+VLA
+5.0%
+3.3B
+paligemma-binning
+Yes
+VLA
+3.4%
+3B
+Table 1: RoboLab-120 overall success rates. Types and weight availability follow the
+RoboLab leaderboard
+.
+Weights are released under the
+FLUX Kommunity License v1.0
+in the
+FLUX 3 Action collection
+, and the code is at
+github.com/black-forest-labs/flux-action
+.
+What is FLUX 3 Action
+FLUX 3 Action is an open weights world action model (WAM); it predicts future frames and actions together. It's a 7B parameter diffusion transformer, trained on action data from several robot embodiments; a frozen video VAE encodes the frames and a frozen
+Qwen3-VL-4B
+encodes the instruction.
+Actions are a second token stream in the same sequence: one token per future frame, with an input projection and output head per embodiment. Video and action tokens share a single noise level per sample and are denoised jointly.
+Per call, the model takes:
+one or more camera frames, composited onto a canvas the VAE encodes (three DROID cameras at 544×736, two SO-101 cameras side by side, or one game frame at 512×512);
+a state vector in the action's own space (joint positions for a robot, the last executed action for a game);
+a caption, through the text encoder.
+It returns 32 actions and, optionally, 32 decoded frames. At control time, you skip the decode, execute the first few actions, observe again, and replan.
+The model was trained on NVIDIA GB200 systems, with custom kernels written in NVIDIA's CuTe DSL. We collaborated with NVIDIA on PEFT fine-tuning recipes and edge deployment on NVIDIA Jetson.
+Running it on a real arm through LeRobot
+The LeRobot integration makes FLUX 3 Action a policy class you train and run with LeRobot's own tools. We built it with NVIDIA and Hugging Face, and it ships with parameter-efficient fine-tuning recipes for adapting the model to a task.
+The SO-101 doing the task it was trained on: put the blue box into the container. Top camera, 4× speed with the pauses between plans cut. This is the policy driving the arm.
+The policy in these clips was adapted on about 200 teleoperated episodes covering a handful of related pick-and-place tasks. It was never trained to pick the objects in the following videos.
+put the white box from the green cup to the container
+put the tissues into the container
+The model also recovers from its own mistakes, as in this clip with the screwdriver.
+We also tested it on containers it had never seen during training.
+container manipulation and containers not seen in training
+Notebook lying on top of the container, leaving only 40% of the container visible to FLUX
+Finally, FLUX 3 Action still works when you change the camera position between training and rollout.
+camera position 1
+camera position 2
+camera position 3
+Train FLUX 3 Action into a policy for a specific task
+To test fine-tuning beyond robotics, we trained task-specific policies for several games. A robot arm is useful, but slow for understanding how a policy behaves: evaluating a single checkpoint on hardware can take a whole afternoon, and collecting demonstrations requires a human operator.
+Games make evaluation faster. An agent, running a FLUX 3 Action checkpoint to play a game, can be scored in minutes against a scripted bot that sees the same frame. We also trained a FLUX 3 Action policy to control a drone.
+The full guide, with the config, the dataset module and the pitfalls, is in the docs:
+docs.bfl.ai/flux_3/flux3_action_overview
+Video games
+We built two small games to train it on. GRUNT is a Quake-style shooter, 256×256, four actions: move, strafe, turn, fire. VECTOR is an Out Run-style road racer with traffic, oil and gravel, three actions: steer, throttle, nitro.
+FLUX 3 Action playing GRUNT
+FLUX 3 Action driving in VECTOR
+The training data comes from a scripted bot in each game. The bot plays, we record what it saw and what it pressed: 800 episodes per game. The bot has one rule. It decides from the current frame and nothing else, so anything it knows, the model can see too. Take a hit in GRUNT and the screen flashes red; that flash is how the model learns to turn toward whoever shot it. Some episodes start from random positions or get shoved mid-run, so the model also sees states a clean run never reaches.
+The GRUNT bot fires only when its hit cone covers an enemy sprite. The VECTOR bot drives 296 km/h on the straights and brakes to between 155 and 215 km/h into bends.
+GRUNT
+step 250: moves and fires at nothing
+step 500: turns towards enemies but aim isn't there
+step 3000: kills everything it meets, never dies
+Policy
+Kills
+Deaths
+Shots on target
+Scripted bot
+13
+0
+96%
+FLUX 3 Action
+15
+0
+86%
+Random
+8
+2
+13%
+VECTOR
+250 steps: wrecks in the first seconds
+1000 steps: on the road, passes traffic, still wrecks
+3000 steps: keeps pace with the bot, 0 off-road
+Model
+km in 60 s
+Wrecks
+Passes
+Scripted bot
+3.4
+0
+16
+FLUX 3 Action, joint model
+3.3
+1
+12
+Random driver
+1.0
+3.6
+0
+The model in both tables is one set of weights, trained on GRUNT and VECTOR together and told which game it is playing by the caption. Sixty seconds, one seed, the bot on the same seed.
+An indoor drone
+We also trained FLUX 3 Action on controlling an indoor drone. The drone sees a 256×256 onboard camera and outputs [forward, lateral, up, yaw]. Its episodes were recorded in
+NVIDIA Isaac Sim
+: a scripted pilot flies 800 flights from sentences like "take off, fly under the table, and land behind the bookcase", and the model imitates them. Isaac Sim only produced this fine-tuning set; FLUX 3 Action itself was not trained on simulated data.
+We tested it in rooms it had never seen, with sentences it had never read. The sofa, the bookcase, the pad and the clutter move on every flight, and the drone takes off facing a random direction, so "fly to the sofa" cannot be a memorized heading; it has to look. The wording moves too: it trained on "fly to the bookcase" and we ask it to "go over to the bookshelf and wait there". It still gets there.
+You can see the model perform the same action but on different layouts.
+FLUX flies to a specific object then hovers
+FLUX flies to two specific objects and then hovers
+Wrap-up
+FLUX 3 Action places first on RoboLab and runs on an SO-101 via LeRobot. It is also easy to train on tasks that have nothing to do with a robot arm: a video game shooter, a racer and a drone each took the same model and a few hundred recorded episodes.
+The weights, the trainer and the games are public, and the fine-tuning guide is in the docs.
+Code and recipe:
+github.com/black-forest-labs/flux-action
+Weights:
+FLUX 3 Action collection
+LeRobot integration:
+huggingface.co/docs/lerobot/flux3
+The games:
+bfl.ai/flux_3/flux3_action_games
+covers the recording format, training config, results and a play loop.
+Research notes:
+bfl.ai/models/flux-3-action
+DROID:
+droid-dataset.github.io
+Models mentioned in this article
+6
+Collections mentioned in this article
+1
+More from this author
+Fine-tune FLUX.2 [klein] with a LoRA under 60 minutes
+33
+June 4, 2026
+Community
+Upload images, audio, and videos by dragging in the text input, pasting, or
+clicking here
+.
+Tap or paste here to upload images
+·
+Sign up
+or
+log in
+to comment
+Upvote
+5
+Models mentioned in this article
+6
+Collections mentioned in this article
+1

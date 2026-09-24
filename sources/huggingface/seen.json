@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/black-forest-labs/flux-3-action",
+  "title": "FLUX 3 Action 开放机器人动作模型",
+  "date": "2026-09-24",
+  "reported": true,
+  "report_date": "2026-09-24"
+ },
+ {
   "id": "https://huggingface.co/blog/transformers-llama-cpp-quants",
   "title": "Transformers 接入 llama.cpp 量化模型",
   "date": "September 22, 2026",

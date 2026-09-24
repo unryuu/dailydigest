@@ -1,5 +1,19 @@
 [
  {
+  "id": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+  "title": "Gemini 3.8 让用户按文字设计声音",
+  "date": "Wed, 23 Sep 2026 15:25:19 +0000",
+  "reported": true,
+  "report_date": "2026-09-24"
+ },
+ {
+  "id": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+  "title": "Google 公布跨设备 AI 记忆方案",
+  "date": "Wed, 23 Sep 2026 16:00:57 +0000",
+  "reported": true,
+  "report_date": "2026-09-24"
+ },
+ {
   "id": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
   "title": "AlphaGenome 给 90 亿种 DNA 变化做了地图",
   "date": "Tue, 08 Sep 2026 14:00:15 +0000",

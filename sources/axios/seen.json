@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://www.axios.com/2026/09/24/trump-anthropic-ai-doomerism-dario-amodei",
+  "title": "白宫内部备忘录拿 Dario 代表 AI 末日论",
+  "date": "Thu, 24 Sep 2026 09:00:05 +0000",
+  "reported": true,
+  "report_date": "2026-09-24"
+ },
+ {
+  "id": "https://www.axios.com/local/chicago/2026/09/23/chicago-12-month-moratorium-data-centers-ai-johnson-pritzker-trump",
+  "title": "芝加哥拟暂停新建数据中心一年",
+  "date": "Wed, 23 Sep 2026 16:40:11 +0000",
+  "reported": true,
+  "report_date": "2026-09-24"
+ },
+ {
+  "id": "https://www.axios.com/2026/09/23/sanders-casar-bill-dem-ai-approach-regulation",
+  "title": "美国议员提出暂停超级智能研发的法案",
+  "date": "Wed, 23 Sep 2026 18:41:58 +0000",
+  "reported": true,
+  "report_date": "2026-09-24"
+ },
+ {
+  "id": "https://www.axios.com/2026/09/24/openai-agents-australia-data-breach",
+  "title": "OpenAI Agent 进入澳大利亚医保统计网站",
+  "date": "Thu, 24 Sep 2026 05:46:26 +0000",
+  "reported": true,
+  "report_date": "2026-09-24"
+ },
+ {
   "id": "https://www.axios.com/2026/09/22/trump-china-ai-hotline-xi-summit",
   "title": "中美商议 AI 事故紧急联络机制",
   "date": "Tue, 22 Sep 2026 09:00:05 +0000",

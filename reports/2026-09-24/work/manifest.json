@@ -1,0 +1,356 @@
+{
+  "date": "2026-09-24",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=HTTP 403, body=5710; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "the-information",
+      "url": "https://www.theinformation.com/",
+      "error": "Codex 内置浏览器打开成功，但 AX 读取连续两次超时；登录态 Latest 未扫"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "自主 Agent 越权访问与真实事故",
+      "cost": "重",
+      "reason": "澳大利亚医保站与安全研究者发现的异常行为；先核是否同一批事件、行为主体及已公开证据",
+      "items": [
+        {
+          "source": "axios",
+          "title": "OpenAI agents breached Australian portal, attempted other hacks in routine data collection.",
+          "url": "https://www.axios.com/2026/09/24/openai-agents-australia-data-breach",
+          "date": "Thu, 24 Sep 2026 05:46:26 +0000",
+          "why": "OpenAI's autonomous agents breached an Australian Medicare portal and probed other public data sites in May and June after being stymied in routine data-collection efforts. Why it matters : The new incidents, which were revealed by security researchers and Aus"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
+          "url": "https://transluce.org/agent-activity",
+          "date": "2026-09-24T05:21:10Z",
+          "why": "points=168 comments=150"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "Claude 发现新型酶系统",
+      "cost": "中",
+      "reason": "官方研究公告；核实验方法、独立验证与发现边界",
+      "items": [
+        {
+          "source": "hacker-news",
+          "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+          "date": "2026-09-23T18:06:47Z",
+          "why": "points=701 comments=714"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "DeepSeek DSec 大规模 Agent 训练沙盒",
+      "cost": "中",
+      "reason": "用户点名；9月19日预印本，今日报道重新进入视野，核实际部署规模与防作弊案例",
+      "items": [
+        {
+          "source": "arxiv / DeepSeek-AI",
+          "title": "DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale",
+          "url": "https://arxiv.org/abs/2609.22978",
+          "date": "2026-09-19T12:20:26Z",
+          "why": "用户点名；原文已核，论文发表早于窗口，但9月23日才集中进入新闻视野；未见往期日报收录"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "Meta Muse 与 Charm 硬件",
+      "cost": "中",
+      "reason": "公司发布与 Axios 报道合读，核出货时间和实际能力",
+      "items": [
+        {
+          "source": "axios",
+          "title": "Mark Zuckerberg predicts Muse will become a \"personal superintelligence\" for billions.",
+          "url": "https://www.axios.com/2026/09/23/meta-muse-ai-hardware-handheld-glasses",
+          "date": "Thu, 24 Sep 2026 00:15:52 +0000",
+          "why": "Meta on Wednesday debuted \"Muse Charm,\" a new, keychain-sized AI handheld device it will use to bring its viral Muse assistant to the masses. Why it matters: Meta has raced ahead of OpenAI , Apple and other companies that are working on a new crop of small AI "
+        },
+        {
+          "source": "meta-ai",
+          "title": "Bringing Your Muse to Life",
+          "url": "https://research.meta.ai/blog/bringing-your-muse-to-life",
+          "date": "September 23, 2026",
+          "why": "Bringing Your Muse to Life September 23, 2026"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "美国 AI 安全立法与联合国讨论",
+      "cost": "中",
+      "reason": "新提案与会议是否有正式行动，区别于旧有减速立场",
+      "items": [
+        {
+          "source": "axios",
+          "title": "Dems grapple with how to pace the AI race",
+          "url": "https://www.axios.com/2026/09/23/sanders-casar-bill-dem-ai-approach-regulation",
+          "date": "Wed, 23 Sep 2026 18:41:58 +0000",
+          "why": "The left's push to rein in AI is taking shape on two fronts: slowing advanced development at home, and weakening China's progress abroad. Why it matters: The nation is locked in a moment of mass anxiety about runaway AI, but the range of views on how to regula"
+        },
+        {
+          "source": "axios",
+          "title": "Exclusive: Thune believes Trump is open on AI guardrails despite public defiance",
+          "url": "https://www.axios.com/2026/09/23/trump-thune-ai-regulations",
+          "date": "Wed, 23 Sep 2026 19:43:56 +0000",
+          "why": "Senate Majority Leader John Thune says he doesn't believe President Trump is \"really dug in\" against guardrails for AI , despite Trump's public campaign against restricting the technology. Why it matters: Thune told Axios he spoke privately with Trump as the A"
+        },
+        {
+          "source": "axios",
+          "title": "\"We have a choice\": AI leaders sound alarm at UN",
+          "url": "https://www.axios.com/2026/09/23/ai-leaders-un-security-council-global-safeguards",
+          "date": "Wed, 23 Sep 2026 20:50:26 +0000",
+          "why": "Executives from leading artificial intelligence organizations urged global cooperation Wednesday to address risks from increasingly autonomous AI systems during a UN Security Council meeting. The big picture: AI capabilities are advancing faster than governmen"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "axios",
+      "title": "Scoop: Trump allies open new front on Anthropic CEO as face of AI \"doomerism\"",
+      "url": "https://www.axios.com/2026/09/24/trump-anthropic-ai-doomerism-dario-amodei",
+      "date": "Thu, 24 Sep 2026 09:00:05 +0000",
+      "note": "President Trump's allies are targeting Anthropic CEO Dario Amodei as the face of AI \"doomerism\" and a founding father of the effective altruism movement that's come under increasing political fire. Why it matters: The attacks signal that Anthropic could remain"
+    },
+    {
+      "source": "axios",
+      "title": "Inside China's mind on AI",
+      "url": "https://www.axios.com/2026/09/24/china-ai-plan-trump-xi-visit",
+      "date": "Thu, 24 Sep 2026 09:30:05 +0000",
+      "note": "China is waging a much different war for AI supremacy than the U.S. Why it matters: China is obsessed with state control and adoption. Chinese officials are laser-focused on deep, widespread AI domestic use they can monitor and steer at every level of their ec"
+    },
+    {
+      "source": "axios",
+      "title": "AI labs are cutting model costs - and it could help them slow down safely",
+      "url": "https://www.axios.com/2026/09/23/price-war-pause-slowdown-ai-frontier",
+      "date": "Wed, 23 Sep 2026 09:00:06 +0000",
+      "note": "The shift of the AI frontier toward more powerful, lower-cost models could pave the way for safely slowing development, experts say. Why it matters: Top U.S. startups including OpenAI and Anthropic, as well as other AI players, have to develop a financially vi"
+    },
+    {
+      "source": "axios",
+      "title": "The All-In-ification of Trump's AI agenda",
+      "url": "https://www.axios.com/2026/09/23/all-in-podcast-trump-ai-safety",
+      "date": "Wed, 23 Sep 2026 09:31:48 +0000",
+      "note": "President Trump's accelerationist AI doctrine increasingly bears the stamp of the \"All-In\" podcast, whose tech-investor network now feeds ideas and talent directly into the White House. Why it matters: An unlikely marriage of convenience between MAGA and Silic"
+    },
+    {
+      "source": "axios",
+      "title": "Chicago mayor proposes 12-month moratorium on new data centers",
+      "url": "https://www.axios.com/local/chicago/2026/09/23/chicago-12-month-moratorium-data-centers-ai-johnson-pritzker-trump",
+      "date": "Wed, 23 Sep 2026 16:40:11 +0000",
+      "note": "Chicago could halt new data center development within city limits for a year. Why it matters: Data centers' growing demand for electricity and water could affect residents' utility bills and the environment, and city leaders want more time to study those impac"
+    },
+    {
+      "source": "axios",
+      "title": "Dems grapple with how to pace the AI race",
+      "url": "https://www.axios.com/2026/09/23/sanders-casar-bill-dem-ai-approach-regulation",
+      "date": "Wed, 23 Sep 2026 18:41:58 +0000",
+      "note": "The left's push to rein in AI is taking shape on two fronts: slowing advanced development at home, and weakening China's progress abroad. Why it matters: The nation is locked in a moment of mass anxiety about runaway AI, but the range of views on how to regula"
+    },
+    {
+      "source": "axios",
+      "title": "Exclusive: Thune believes Trump is open on AI guardrails despite public defiance",
+      "url": "https://www.axios.com/2026/09/23/trump-thune-ai-regulations",
+      "date": "Wed, 23 Sep 2026 19:43:56 +0000",
+      "note": "Senate Majority Leader John Thune says he doesn't believe President Trump is \"really dug in\" against guardrails for AI , despite Trump's public campaign against restricting the technology. Why it matters: Thune told Axios he spoke privately with Trump as the A"
+    },
+    {
+      "source": "axios",
+      "title": "\"We have a choice\": AI leaders sound alarm at UN",
+      "url": "https://www.axios.com/2026/09/23/ai-leaders-un-security-council-global-safeguards",
+      "date": "Wed, 23 Sep 2026 20:50:26 +0000",
+      "note": "Executives from leading artificial intelligence organizations urged global cooperation Wednesday to address risks from increasingly autonomous AI systems during a UN Security Council meeting. The big picture: AI capabilities are advancing faster than governmen"
+    },
+    {
+      "source": "deepmind",
+      "title": "Gemini 3.8 text-to-speech says hello",
+      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+      "date": "Wed, 23 Sep 2026 15:25:14 +0000",
+      "note": ""
+    },
+    {
+      "source": "deepmind",
+      "title": "Advancing Private AI Compute with secure, server-side memory",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+      "date": "Wed, 23 Sep 2026 16:00:57 +0000",
+      "note": "Introducing private, server-side memory to Private AI Compute for personal AI."
+    },
+    {
+      "source": "hacker-news",
+      "title": "Mercury 2.5 LLM hits 770 tokens per second",
+      "url": "https://artificialanalysis.ai/models/mercury-2-5",
+      "date": "2026-09-23T22:16:19Z",
+      "note": "points=131 comments=74"
+    },
+    {
+      "source": "hacker-news",
+      "title": "ArXiv receives multiyear commitments to support it as an independent nonprofit",
+      "url": "https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment",
+      "date": "2026-09-23T22:45:49Z",
+      "note": "points=218 comments=30"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Virtio-nvgpu: Near-native Nvidia GPU access inside a KVM guest",
+      "url": "https://github.com/nestrilabs/virtio-nvgpu",
+      "date": "2026-09-24T01:02:23Z",
+      "note": "points=121 comments=51"
+    },
+    {
+      "source": "hf-papers",
+      "title": "EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics",
+      "url": "https://huggingface.co/papers/2609.27308",
+      "date": "",
+      "note": "EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics · 19 authors 16 1"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents",
+      "url": "https://huggingface.co/papers/2609.27334",
+      "date": "",
+      "note": "Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents Salesforce AI Research 1"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
+      "url": "https://huggingface.co/papers/2609.27891",
+      "date": "",
+      "note": "Schrödinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It? Shanghai Jiao Tong University 5 1"
+    },
+    {
+      "source": "hf-papers",
+      "title": "StudentBench: AI and human tutoring yield equivalent GRE learning gains",
+      "url": "https://huggingface.co/papers/2609.28470",
+      "date": "",
+      "note": "StudentBench: AI and human tutoring yield equivalent GRE learning gains Handshake AI Research 1 5"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Verifiable Hidden Dynamics Play: Generating Agentic RL Environments from Solved Mechanisms",
+      "url": "https://huggingface.co/papers/2609.27321",
+      "date": "",
+      "note": "Submitted by taesiri 5 Verifiable Hidden Dynamics Play: Generating Agentic RL Environments from Solved Mechanisms Qwen"
+    },
+    {
+      "source": "hf-papers",
+      "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+      "url": "https://huggingface.co/papers/2609.27490",
+      "date": "",
+      "note": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents Carnegie Mellon University 1 1"
+    },
+    {
+      "source": "huggingface",
+      "title": "FLUX 3 Action: a world action model you can fine-tune",
+      "url": "https://huggingface.co/blog/black-forest-labs/flux-3-action",
+      "date": "",
+      "note": "FLUX 3 Action: a world action model you can fine-tune black-forest-labs • about 20 hours ago • 5"
+    },
+    {
+      "source": "openai",
+      "title": "Two years of OpenAI Academy",
+      "url": "https://openai.com/index/two-years-of-openai-academy",
+      "date": "Wed, 23 Sep 2026 16:00:00 GMT",
+      "note": "Marking two years of OpenAI Academy and bringing AI skills to even more communities."
+    },
+    {
+      "source": "simon-willison",
+      "title": "Gemini 3.8 TTS Playground",
+      "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground",
+      "date": "2026-09-23T17:12:27+00:00",
+      "note": "Tool: Gemini 3.8 TTS Playground Google released two new Gemini text-to-speech models today - gemini-3.8-flash-tts and gemini-3.8-flash-lite-tts . They come with a library of over 2,000 voices, plus the ability to create a custom voice with \"just a 30-second au"
+    }
+  ],
+  "fun": [
+    {
+      "source": "acx",
+      "title": "Does Georgism Work? Five Years Later",
+      "url": "https://www.astralcodexten.com/p/does-georgism-work-five-years-later",
+      "date": "Thu, 24 Sep 2026 03:16:49 GMT",
+      "note": "A guest post by Lars Doucet"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Fixing the Portobello Police Station Clock",
+      "url": "https://pointinthecloud.com/2026-04-11-211700.html",
+      "date": "2026-09-23T15:18:53Z",
+      "note": "points=470 comments=106"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Why 'What's Opera, Doc?' looks like that",
+      "url": "https://animationobsessive.substack.com/p/why-whats-opera-doc-looks-like-that",
+      "date": "2026-09-23T15:37:47Z",
+      "note": "points=87 comments=18"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Contrastive Language Models",
+      "url": "https://contrastive-lm.notion.site",
+      "date": "2026-09-24T04:20:59Z",
+      "note": "points=102 comments=24"
+    }
+  ],
+  "odds_box": [],
+  "skipped_sources": [
+    {
+      "slug": "manifold",
+      "reason": "默认池多为同质 AI 灭绝旧盘；赔率步骤重新搜索新市场"
+    },
+    {
+      "slug": "lesswrong",
+      "reason": "页面取回零条，内容覆盖未验证"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "页面取回零条，内容覆盖未验证"
+    }
+  ]
+}
