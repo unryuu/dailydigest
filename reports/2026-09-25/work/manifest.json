@@ -1,0 +1,444 @@
+{
+  "date": "2026-09-25",
+  "fetch_failures": [
+    {
+      "slug": "x-emollick",
+      "url": "https://nitter.kareem.one/emollick",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-goodside",
+      "url": "https://nitter.kareem.one/goodside",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-karpathy",
+      "url": "https://nitter.kareem.one/karpathy",
+      "error": "requests=HTTP 403, body=5713; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-neelnanda",
+      "url": "https://nitter.kareem.one/NeelNanda5",
+      "error": "requests=HTTP 403, body=5719; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-pvncher",
+      "url": "https://nitter.kareem.one/pvncher",
+      "error": "requests=HTTP 403, body=5710; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-roon",
+      "url": "https://nitter.kareem.one/tszzl",
+      "error": "requests=HTTP 403, body=5704; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-sama",
+      "url": "https://nitter.kareem.one/sama",
+      "error": "requests=HTTP 403, body=5701; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-teortaxes",
+      "url": "https://nitter.kareem.one/teortaxesTex",
+      "error": "requests=HTTP 403, body=5725; chromium=browser HTTP 403"
+    },
+    {
+      "slug": "x-login-backfill",
+      "url": "",
+      "error": "八个登录态 X 页面本期已恢复读取，但六个高频账号尚未补读到 2026-09-19T22:23:36+08:00，详见 work/x_candidates.json"
+    }
+  ],
+  "deep_groups": [
+    {
+      "group": "group-1",
+      "theme": "Anthropic 让 Agent 代人交易的经济实验",
+      "cost": "重",
+      "reason": "高权重研究源的新实验。列表摘要混入旧条目，reader 需只核对 Project Swap 本文。",
+      "items": [
+        {
+          "source": "anthropic-research",
+          "title": "Sep 24, 2026 Economics Project Swap: What happens when agents trade for us?",
+          "url": "https://www.anthropic.com/research/project-swap",
+          "date": "Sep 24, 2026",
+          "why": "标题显示 9 月 24 日发布 Project Swap，研究 Agent 代人交易。当前只见研究列表标题，实验设计与结果待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-2",
+      "theme": "AI 基建如何吸走债券与私人信贷资本",
+      "cost": "中",
+      "reason": "Axios 全文和 Brookings 原始研究摘要均已读；FT 的 Oracle 链接只见订阅页，合同细节不入稿。",
+      "items": [
+        {
+          "source": "brookings",
+          "title": "Financing the AI buildout",
+          "url": "https://www.brookings.edu/articles/financing-the-ai-buildout/",
+          "date": "Sep 23, 2026",
+          "why": "Brookings 原始研究摘要：预计 2025 至 2032 年 AI 基建投资总额 10.3 万亿美元，表外融资风险更难观察。"
+        },
+        {
+          "source": "axios",
+          "title": "AI's never-before-seen capital grab",
+          "url": "https://www.axios.com/2026/09/24/ai-private-credit-capital-grab",
+          "date": "Thu, 24 Sep 2026 17:31:00 +0000",
+          "why": "Axios 摘要称 Brookings 论文估算至 2032 年 AI 基建投资 10.3 万亿美元。口径和假设待 reader 核。"
+        },
+        {
+          "source": "hacker-news",
+          "title": "Oracle on the hook to pay data centre investors even if site has no electricity",
+          "url": "https://www.ft.com/content/a96bf05a-a299-4d6a-a753-b298dd0f4016",
+          "date": "2026-09-25T10:19:36Z",
+          "why": "HN 高票链接指向 FT，标题称 Oracle 在场地尚无电力时仍须向数据中心投资者付款；仅见标题，合同细节待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-3",
+      "theme": "Agent 借公开网页暗中协作及评测指标漏洞",
+      "cost": "重",
+      "reason": "两篇都追查近期 Agent 越界事件，但一篇有复现实验，一篇分析评测指标，适合交叉核对。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“Encoded Coordination on the Open Web” by ethanelasky, Can Küçükkurt, frank nakasako, David Africa",
+          "url": "https://www.lesswrong.com/posts/SCdR7W6L5GvKaEzaZ/encoded-coordination-on-the-open-web",
+          "date": "Wed, 23 Sep 2026 22:00:46 GMT",
+          "why": "摘要称研究者复查 HF 与德国 Wiki 事件，并在留言板和计数器上做初步复现；疑与 Zvi 周报重叠，reader 核原始实验。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“An unexamined cause of the OpenAI Hugging Face hacking incident: its binary performance metric” by W Bradley Knox, Serena Booth, BrianChristian",
+          "url": "https://www.lesswrong.com/posts/HsijShdRdAg5sPKnF/an-unexamined-cause-of-the-openai-hugging-face-hacking",
+          "date": "Wed, 23 Sep 2026 04:15:46 GMT",
+          "why": "摘要将 OpenAI／HF 事件与 ExploitGym 二元评分规则联系起来。属于旧事故的新分析，归因与缓解效果待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-4",
+      "theme": "强化学习可能奖励违规轨迹并削弱拦截监控",
+      "cost": "重",
+      "reason": "两篇 LessWrong 新文章分别讨论奖励和持续学习监控；联系仅是风险主题相近，勿合成单一实验。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“Overtly misaligned trajectories score highly in RL.” by Cleo Nardo",
+          "url": "https://www.lesswrong.com/posts/cWuqxF7qB2eGSkkS4/overtly-misaligned-trajectories-score-highly-in-rl",
+          "date": "Fri, 25 Sep 2026 01:15:46 GMT",
+          "why": "文章摘要提出违规轨迹可能在 RL 中得到高分；目前是作者论证，实证范围待 reader 核。"
+        },
+        {
+          "source": "lesswrong",
+          "title": "“Continual learning might make your blocking monitors nearly useless” by Alex Mallen",
+          "url": "https://www.lesswrong.com/posts/QnDqGbKehEB3DxJAp/continual-learning-might-make-your-blocking-monitors-nearly",
+          "date": "Fri, 25 Sep 2026 05:00:46 GMT",
+          "why": "摘要推测持续学习会在实用性压力下学会绕过 blocking monitor；是否有实验待 reader 核，疑与 Zvi 周报重叠。"
+        }
+      ]
+    },
+    {
+      "group": "group-5",
+      "theme": "WorkspaceBench 测试能否读懂模型内部工作区",
+      "cost": "中",
+      "reason": "自创可解释性评测，摘要给出题目规模及开源信息。",
+      "items": [
+        {
+          "source": "lesswrong",
+          "title": "“WorkspaceBench: Evaluating Interpretability Methods for the Global Workspace” by camilablank, agam_bhatia, Euan Ong, Neel Nanda",
+          "url": "https://www.lesswrong.com/posts/Zeg2JztbdhguL48uH/workspacebench-evaluating-interpretability-methods-for-the",
+          "date": "Thu, 24 Sep 2026 02:30:46 GMT",
+          "why": "摘要称 27 类评测共 3356 题，含幻觉专项，以 Qwen-3.6-27B 开发；方法与结果待 reader 核。"
+        }
+      ]
+    },
+    {
+      "group": "group-6",
+      "theme": "DeepSeek 年化收入运行率升至 10 亿美元，推进新融资",
+      "cost": "已读",
+      "reason": "The Information 登录态全文已读；与 09-23 华为芯片及调查报道同属一家公司，但收入与融资目标是独立新增事实。融资尚未完成。",
+      "items": [
+        {
+          "source": "theinformation",
+          "title": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
+          "url": "https://www.theinformation.com/articles/deepseeks-annualized-revenue-hits-1-billion-startup-finalizes-7-5-billion-fundraising",
+          "date": "Sep 23, 2026, 11:20pm PDT",
+          "why": "全文摘要与限定见 theinformation_candidates.json；据知情人士年化收入运行率达 10 亿美元，目标 10 月底完成募资。"
+        }
+      ]
+    },
+    {
+      "group": "group-7",
+      "theme": "Anthropic 寻求让七位创始人掌握多数投票权",
+      "cost": "已读",
+      "reason": "The Information 登录态全文已读；股东尚待批准，长期利益信托仍任命董事会多数席位。",
+      "items": [
+        {
+          "source": "theinformation",
+          "title": "Anthropic Seeks Palantir-Style Voting Control for Seven Co-Founders Ahead of IPO",
+          "url": "https://www.theinformation.com/articles/anthropic-seeks-palantir-style-voting-control-seven-co-founders-ahead-ipo",
+          "date": "Sep 24, 2026, 2:53pm PDT",
+          "why": "全文摘要与限定见 theinformation_candidates.json；方案拟让七位创始人合计掌握 50.1% 投票权。"
+        }
+      ]
+    },
+    {
+      "group": "group-8",
+      "theme": "三家实验室推进自建前沿 AI 安全标准组织",
+      "cost": "已读",
+      "reason": "The Information 登录态全文已读；拟议组织尚未成立，职责和成员边界仍在讨论。",
+      "items": [
+        {
+          "source": "theinformation",
+          "title": "Google, OpenAI and Anthropic AI Safety Group Takes Shape",
+          "url": "https://www.theinformation.com/articles/google-openai-anthropic-ai-safety-group-takes-shape",
+          "date": "Sep 24, 2026, 6:00am PDT",
+          "why": "全文摘要与限定见 theinformation_candidates.json；暂定名 SAFA，设想支持第三方测试、事故报告和审计资格。"
+        }
+      ]
+    },
+    {
+      "group": "group-9",
+      "theme": "美国 AI 竞赛战略与民众受益脱节",
+      "cost": "已读",
+      "reason": "用户点名补读，并于当轮明确批准加入深度长文；原文 09-22 发表、早于本期接续点，往期未报。",
+      "items": [
+        {
+          "source": "theinformation",
+          "title": "Why America’s AI Dream Is Failing to Launch",
+          "url": "https://www.theinformation.com/articles/americas-ai-dream-failing-launch",
+          "date": "Sep 22, 2026, 10:33am PDT",
+          "why": "两位作者的评论，主张美国不能只以赢得前沿竞赛为政策目标；应回答民众受益、基础设施许可、劳动与治理等问题。全文已读，意见归因于作者。"
+        }
+      ]
+    }
+  ],
+  "radar_true": [
+    {
+      "source": "x-pvncher",
+      "title": "Codex 频繁改方向时，用简短工作日志留住目标",
+      "url": "https://x.com/pvncher/status/2102783470942683228",
+      "date": "2026-09-23T15:33:41Z",
+      "note": "已读 Eric Provencher 登录态原帖；具体工作流，细节见 x_candidates.json。"
+    },
+    {
+      "source": "axios",
+      "title": "Meta's new motto: we care about privacy",
+      "url": "https://www.axios.com/2026/09/25/meta-ai-muse-privacy",
+      "date": "Fri, 25 Sep 2026 09:00:05 +0000",
+      "note": "Meta 隐私策略分析。疑承接昨日 Muse Charm，但此条谈个人代理数据和私人虚拟机，并非新硬件；若无新的部署或政策细节则弃。"
+    },
+    {
+      "source": "axios",
+      "title": "Bill Gates warns AI is powerful enough to cause \"a billion deaths\"",
+      "url": "https://www.axios.com/2026/09/25/bill-gates-ai-deaths-doom",
+      "date": "Fri, 25 Sep 2026 12:52:48 +0000",
+      "note": "Gates 接受节目采访前放出的 AI 风险言论，属于新表态；是否有具体政策方案待核。"
+    },
+    {
+      "source": "axios",
+      "title": "Inside China's mind on AI",
+      "url": "https://www.axios.com/2026/09/24/china-ai-plan-trump-xi-visit",
+      "date": "Thu, 24 Sep 2026 09:30:05 +0000",
+      "note": "Axios 解读中国十五五规划中的 AI 推广目标；疑接近 9 月 21 日中国开放模型采用主线，若无新使用数据则弃。"
+    },
+    {
+      "source": "deepmind",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+      "date": "Thu, 24 Sep 2026 16:20:39 +0000",
+      "note": "Gemini 3.8 Live with Live Avatar 公告，与昨日 Gemini 3.8 文字生成语音可能不同；功能区别待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "AgentKernel: The Trust-Native Agentic Operating System",
+      "url": "https://huggingface.co/papers/2609.29647",
+      "date": "",
+      "note": "AgentKernel 论文标题称面向 Agent 的可信操作系统；仅见标题，具体机制待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "ExplorationBench: Measuring AI Systems' Exploration in Verifiable Alien Worlds",
+      "url": "https://huggingface.co/papers/2609.30199",
+      "date": "",
+      "note": "ExplorationBench 以可验证的陌生世界评估 AI 探索；仅见榜单标题，任务和对照待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+      "url": "https://huggingface.co/papers/2609.29429",
+      "date": "",
+      "note": "Jev 新论文称用强化学习校准决策识别对齐失败；相较 9 月 21 日 Minecraft 报道是新任务，需核实验设置和对照。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+      "url": "https://huggingface.co/papers/2609.29892",
+      "date": "",
+      "note": "Qwen 移动规划 Agent 论文；仅见榜单标题，真实设备评测待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Rufus-Air: An Open LLM Post-Training Recipe",
+      "url": "https://huggingface.co/papers/2609.29421",
+      "date": "",
+      "note": "Amazon 开放 LLM 后训练方案；仅见榜单标题，开放范围待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Training Object Permanence in World Models",
+      "url": "https://huggingface.co/papers/2609.28654",
+      "date": "",
+      "note": "世界模型物体恒存训练论文；仅见榜单标题，评测结果待核。"
+    },
+    {
+      "source": "hf-papers",
+      "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
+      "url": "https://huggingface.co/papers/2609.29845",
+      "date": "",
+      "note": "论文标题声称 Transformer 中有线性叠加证据；仅见榜单标题，实验和解释待核。"
+    },
+    {
+      "source": "huggingface",
+      "title": "Bringing Humanoids to LeRobot",
+      "url": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot",
+      "date": "",
+      "note": "LeRobot 加入人形机器人支持；博客列表仅见标题和相对时间，具体范围待核。"
+    },
+    {
+      "source": "huggingface",
+      "title": "How to Train Your Robot: The LanceDB Edition",
+      "url": "https://huggingface.co/blog/CarolinePascal/how-to-train-your-robot-the-lancedb-edition",
+      "date": "",
+      "note": "LanceDB 的机器人训练教程；博客列表仅见标题和相对时间。"
+    },
+    {
+      "source": "thezvi",
+      "title": "On Ezra Klein’s Podcast With Jensen Huang",
+      "url": "https://thezvi.substack.com/p/on-ezra-kleins-podcast-with-jensen",
+      "date": "Fri, 25 Sep 2026 11:55:55 GMT",
+      "note": "Zvi 对黄仁勋接受 Ezra Klein 访谈的解读；LessWrong 另一转述为同一访谈，reader 核原话。"
+    },
+    {
+      "source": "simon-willison",
+      "title": "Note on 24th September 2026",
+      "url": "https://simonwillison.net/2026/Sep/24/harder",
+      "date": "2026-09-24T23:31:08+00:00",
+      "note": "Simon Willison 认为编程 Agent 提高工程纪律要求；个人观察，缺独立测试。"
+    }
+  ],
+  "fun": [
+    {
+      "source": "hacker-news",
+      "title": "Using LLMs to trace alchemical knowledge and decode 17th century letters",
+      "url": "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical",
+      "date": "2026-09-24T19:14:27Z",
+      "note": "HN 高票：用 LLM 追索炼金术知识与十七世纪信件；链接标题与 HN 标题略有差异，reader 核实际内容。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Why is the liver so weirdly regenerative?",
+      "url": "https://dynomight.substack.com/p/liver",
+      "date": "2026-09-24T16:23:00Z",
+      "note": "HN 高票：肝脏为什么特别能再生；非 AI 科普趣闻。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Dutch governments builds alternative for Microsoft based on NixOS",
+      "url": "https://www.dawo.community/en",
+      "date": "2026-09-25T08:06:49Z",
+      "note": "HN 高票：荷兰政府基于 NixOS 建微软替代方案；技术政策趣闻。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "The Mafia may be keeping fentanyl out of Italy",
+      "url": "https://economist.com/europe/2026/09/24/the-mafia-may-be-keeping-fentanyl-out-of-italy",
+      "date": "2026-09-25T10:20:20Z",
+      "note": "HN 标题称黑手党可能阻挡芬太尼进入意大利；仅见标题，真实性待核。"
+    },
+    {
+      "source": "axios",
+      "title": "Trump and Xi's summit revives panda diplomacy",
+      "url": "https://www.axios.com/2026/09/24/xi-trump-panda-diplomacy-zoo-atlanta",
+      "date": "Thu, 24 Sep 2026 16:29:23 +0000",
+      "note": "中美峰会带回熊猫外交；非 AI 轻松新闻。"
+    },
+    {
+      "source": "hacker-news",
+      "title": "Opus 5.5 is good at explainer videos",
+      "url": "https://launchvideo.io",
+      "date": "2026-09-24T20:28:47Z",
+      "note": "HN 高票：有人用 Opus 5.5 做讲解视频；承接 9 月 23 日模型发布，仅在独立使用实例有新意时可选。"
+    },
+    {
+      "source": "lesswrong",
+      "title": "“At a Datacenter Town Hall in My Midwestern Home Town” by David Scott Krueger",
+      "url": "https://www.lesswrong.com/posts/fkkwpzbjybXtbQXw9/at-a-datacenter-town-hall-in-my-midwestern-home-town",
+      "date": "Thu, 24 Sep 2026 03:45:45 GMT",
+      "note": "作者参加家乡数据中心市民大会，提供建设争议现场观察。"
+    }
+  ],
+  "odds_box": [
+    {
+      "question": "Will AI wipe out humanity before the year 2029?",
+      "prob": "1.0％",
+      "volume_note": "累计成交量 volume 约 44,649，不是 liquidity；24 小时成交量 0",
+      "url": "https://manifold.markets/Teddy/will-ai-wipe-out-humanity-before-th-c4dd0657d4fa"
+    },
+    {
+      "question": "Will AI wipe out humanity by 2030? [resolves N/A in 2027]",
+      "prob": "14.4％",
+      "volume_note": "累计成交量 volume 约 863,593，不是 liquidity；24 小时成交量 50",
+      "url": "https://manifold.markets/EliezerYudkowsky/will-ai-wipe-out-humanity-by-2030-r"
+    },
+    {
+      "question": "Will AI wipe out humanity before the year 2040?",
+      "prob": "7.9％",
+      "volume_note": "累计成交量 volume 约 1,716,858，不是 liquidity；24 小时成交量 0",
+      "url": "https://manifold.markets/Tripping/will-ai-wipe-out-humanity-before-th-6d1e8126d974"
+    },
+    {
+      "question": "Will AI wipe out humanity before the year 2060?",
+      "prob": "11.4％",
+      "volume_note": "累计成交量 volume 约 282,771，不是 liquidity；24 小时成交量 0",
+      "url": "https://manifold.markets/JamesBills/will-ai-wipe-out-humanity-before-th-6e8e547afa66"
+    },
+    {
+      "question": "Will misaligned AI kill >50% of humanity before 2040?",
+      "prob": "7.5％",
+      "volume_note": "累计成交量 volume 约 24,010，不是 liquidity；24 小时成交量 0",
+      "url": "https://manifold.markets/ahalekelly/will-misaligned-ai-kill-50-of-the-h"
+    },
+    {
+      "question": "Before 2100, will AI cause the human population to fall below 5000 individuals?",
+      "prob": "20.3％",
+      "volume_note": "累计成交量 volume 约 1,585，不是 liquidity；24 小时成交量 0",
+      "url": "https://manifold.markets/lbiii/before-2100-will-ai-cause-the-human"
+    }
+  ],
+  "skipped_sources": [
+    {
+      "slug": "meta-ai",
+      "reason": "Muse 总体介绍与 9 月 24 日 Meta 新设备主线疑重复，仅在出现独立新部署时再收。"
+    },
+    {
+      "slug": "the-batch",
+      "reason": "本期列表标题聚合了 Opus 5.5、Jev 等已报主线，未见可独立确认的新事实。"
+    },
+    {
+      "slug": "neodrop",
+      "reason": "本次机械筛选无候选；二手聚合不直接引用。"
+    },
+    {
+      "slug": "lesswrong",
+      "reason": "关于超级智能暂停法案和 Opus 5.5 系统卡的旧主线、Zvi 周报内重复新闻未入桶。"
+    },
+    {
+      "slug": "import-ai",
+      "reason": "唯一候选为 9 月 21 日旧周报。"
+    },
+    {
+      "slug": "interconnects",
+      "reason": "唯一候选为 9 月 22 日旧播客。"
+    }
+  ]
+}

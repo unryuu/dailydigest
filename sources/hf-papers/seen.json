@@ -1,5 +1,33 @@
 [
  {
+  "id": "https://arxiv.org/abs/2609.29429",
+  "title": "Jev 一次筛查多种 AI 失误",
+  "date": "2026-09-24",
+  "reported": true,
+  "report_date": "2026-09-25"
+ },
+ {
+  "id": "https://arxiv.org/abs/2609.30199",
+  "title": "新评测让 AI 在陌生规则世界里做实验",
+  "date": "2026-09-24",
+  "reported": true,
+  "report_date": "2026-09-25"
+ },
+ {
+  "id": "https://arxiv.org/abs/2609.29845",
+  "title": "研究者让一个大模型同时续写两段文字",
+  "date": "2026-09-24",
+  "reported": true,
+  "report_date": "2026-09-25"
+ },
+ {
+  "id": "https://arxiv.org/abs/2609.29421",
+  "title": "Amazon 团队公开大模型后训练配方",
+  "date": "2026-09-24",
+  "reported": true,
+  "report_date": "2026-09-25"
+ },
+ {
   "id": "https://arxiv.org/abs/2609.22978",
   "title": "DeepSeek 公布 Agent 训练的庞大练习场",
   "date": "2026-09-19",

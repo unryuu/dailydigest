@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-25",
+  "window_start": "2026-09-19T22:23:36+08:00",
+  "route": "Codex 内置浏览器登录态，逐账号读取 X 页面；高频账号按日期搜索并滚动",
+  "status": "partial_backfill",
+  "source_status": [
+    {"slug": "x-emollick", "status": "read_partial", "oldest_visible_utc": "2026-09-24T20:02:22Z"},
+    {"slug": "x-goodside", "status": "read_partial", "oldest_visible_utc": "2026-09-20T18:44:08Z"},
+    {"slug": "x-karpathy", "status": "read_to_before_anchor", "latest_visible_utc": "2026-08-02T16:10:51Z"},
+    {"slug": "x-neelnanda", "status": "read_to_before_anchor", "oldest_visible_utc": "2026-09-18T19:03:09Z"},
+    {"slug": "x-pvncher", "status": "read_partial", "oldest_visible_utc": "2026-09-19T23:59:25Z", "articles_latest": "2026-09-04"},
+    {"slug": "x-roon", "status": "read_partial", "oldest_visible_utc": "2026-09-24T19:37:48Z"},
+    {"slug": "x-sama", "status": "read_partial", "oldest_visible_utc": "2026-09-22T18:26:54Z"},
+    {"slug": "x-teortaxes", "status": "read_partial", "oldest_visible_utc": "2026-09-25T14:14:41Z"}
+  ],
+  "items": [
+    {
+      "source": "x-pvncher",
+      "title": "Codex 频繁改方向时，用简短工作日志留住目标",
+      "url": "https://x.com/pvncher/status/2102783470942683228",
+      "published_utc": "2026-09-23T15:33:41Z",
+      "seen": "Eric Provencher 原帖引用自己的回复，建议在 agents.md 中要求 Codex 记简短 worklog，记录目标和变化方向，再优先按日志工作。",
+      "bucket": "行业简讯或无牌，需与既有 Codex 工作流内容查重"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Mollick 分享 GPT-6 Astra 第三次尝试通关 NetHack",
+      "url": "https://x.com/emollick/status/2103308028552343946",
+      "published_utc": "2026-09-25T02:18:06Z",
+      "seen": "Mollick 原帖说 Astra 在第三次尝试通关 NetHack，并链接完整回放；成绩仍需读取回放后再写。",
+      "bucket": "乐子候选"
+    },
+    {
+      "source": "x-emollick",
+      "title": "Mollick 质疑微软 Copilot 的模型路由器",
+      "url": "https://x.com/emollick/status/2103485857147617393",
+      "published_utc": "2026-09-25T14:04:43Z",
+      "seen": "Mollick 看了微软新版 Copilot 公告后认为企业个人 Agent 会更普及，但未知模型的路由器可能低估任务难度；是个人判断，产品细节需官方核查。",
+      "bucket": "雷达候选"
+    }
+  ],
+  "merged": [
+    {"source": "x-neelnanda", "url": "https://x.com/NeelNanda5/status/2102903272210403717", "reason": "WorkspaceBench 原帖，合并至同一论文候选，不另成条。"}
+  ]
+}

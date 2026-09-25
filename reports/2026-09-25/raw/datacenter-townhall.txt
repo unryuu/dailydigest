@@ -1,0 +1,123 @@
+URL: https://www.lesswrong.com/posts/fkkwpzbjybXtbQXw9/at-a-datacenter-town-hall-in-my-midwestern-home-town
+FINAL: https://www.lesswrong.com/posts/fkkwpzbjybXtbQXw9/at-a-datacenter-town-hall-in-my-midwestern-home-town
+TITLE: At a Datacenter Town Hall in My Midwestern Home Town — LessWrong
+FETCHED: 2026-09-25 10:54:43
+============================================================
+x
+At a Datacenter Town Hall in My Midwestern Home Town — LessWrong
+AI
+Personal Blog
+53
+At a Datacenter Town Hall in My Midwestern Home
+Town
+by
+David Scott Krueger
+24th Sep 2026
+The Real AI
+5
+min read
+1
+53
+Let’s talk data centers.
+Last month I was home in Duluth, Minnesota. The last time I’d been back was over Christmas. I’ve been talking to friends back home about AI since I got into the field over a dozen years ago. Last Christmas was the first time it felt like people had really started to form their own opinions based on substantial personal experience with AI. These discussions kept circling back to the same topic: The proposed data center project in a suburb of Duluth called Hermantown.
+Duluth is a small city of under 100,000 people and Hermantown has a population of about 10,000. For the past year or so, a bunch of the people in Hermantown has been trying to stop the city from building a hyperscale datacenter there. One year ago today, Minnesota’s biggest paper, the Star Tribune,
+broke the story
+that the big proposed “communication services facility” development was in fact a data center, confirming local residents suspicions. At the time, the mayor had already known this for
+over a year
+.
+I decided to reach out to one of the local organizers opposing the project before my trip. We met for coffee and they encouraged me and my sister to come speak at the city council meeting happening later that night, which
+we did
+.
+1
+The city council meeting
+The room was packed with nearly 100 people, but I found a seat at the front (I later left for the overflow room). We said the pledge of allegiance. Then one after another council member apologized for their recently leaked
+disparaging comments about community members
+opposing the project, who I understand have been regulars at the council meetings that have been taking place every two weeks for the past year since the project was publicly announced.
+Then we heard updates about the datacenter project. A representative from Google presented an updated plan for the project with some minor tweaks intended to address residents’ concerns (they didn’t). And then discussion of the (very substantial) road work and water+sewage construction projects the site would require (estimated to cost $70,000,000-$100,000,000; I’m unsure how this is expected to be paid for).
+Then the community comments started, with roughly forty community members speaking for three minutes each (or six, if someone else gave up their time). There were serious ones, funny ones, moving ones, angry ones, very angry ones, informational ones, and even one person who said they still thought the datacenter could be done in a good way if necessary changes were made.
+Left:
+the council room during the meeting.
+Right:
+The overflow room during an earlier meeting; it was nearly that full at the meeting I attended.
+What I learned
+The development of this project seems to follow a story-line that’s become all-too-familiar:
+AI, construction, and power companies plan the project.
+They get local politicians on board and get them to sign NDAs.
+The local government presents the project to the community as a done deal.
+The community feels left out of the decision-making and raises concerns.
+The local government tries to steamroller the community rather than actually engaging substantively with their concerns, and conflict ensues.
+The current city council will probably lose their seats, but it might not happen fast enough. They might get the project pushed through first.
+There’s so much more to unpack, though and people from
+Stop the Hermantown Datacenter
+have been doing tons of work to surface and understand all the relevant information and reconstruct the
+timeline
+. A few specific details that I find noteworthy:
+The city had been planning how to use the area slated for the data center since 2014. The City’s 2045 Comprehensive Plan was created with the involvement of a citizen-led steering committee. After the committee’s last meeting on July 11, 2024, the plan was completely overhauled and replaced with the datacenter plan. The committee and the public were not consulted, but the updated plan still claimed they had been.
+Project planning began over a year before the public learned about the project. Many, many NDAs were signed during this time, and public officials responded to a residents question (“is it a datacenter?”) with a misleading statement that “
+there is not information to share
+.”
+Minnesota Power was acquired by Blackrock (and another company) in late 2024, and has been planning to build nearly $1,000,000,000 of new infrastructure since around that time. This seems clearly intended to service the datacenter, but they claim otherwise.
+An ongoing point of contention is the use of an Alternative Urban Areawide Review (AUAR) as a substitute for an Environmental Impact Statement (EIS). Many residents believe that an EIS is necessary in order to understand the impact of the project. My impression is that an AUAR is not an appropriate substitute for an EIS in this case.
+What I said
+I’d planned to talk more about the broader movement opposing AI companies shoving AI and datacenters down our throats, but I ended up focusing on what I know best, which is the existential and societal risks from AI. I really wasn’t sure how this would go over, given that at the time (seems like so long ago…), existential risk seemed to be pretty controversial and/or not something people knew about.
+But I think it went
+great
+. I ran out of time and a woman in the audience graciously gave hers up so I could continue for a full six minutes. People gave me a lot of thumbs up etc. afterwards. When I and my sister were leaving, a women ran out to say “thank you thank you thank you!!!” and give us a hug. It was really inspiring and moving.
+The whole council meeting is recorded, and my remarks begin
+here
+and are transcribed
+here
+.
+Reflections
+This experience really made an impression on me. There were so many people fighting for the future of their community with the passion and dedication to attend meeting after meeting. I don’t want to minimize the work of AI Safety organizers, but it felt like a great accomplishment to get a few hundred people to
+show up
+for the two
+Stop the AI Race
+marches, held on weekends. Hermantown, a city of 10,000 people had a similar number of people showing up many times, on weeknights, for this fight. And this is just one of many small towns involved in similar fights!
+I still don’t know nearly as much as I’d like about datacenter projects. I guess I’m not alone in that regard: A consequence of developers and local governments being so untrustworthy is that locals across the country are feeling the need to educate themselves on the risks the projects pose to their communities.
+Datacenters and AI are both being shoved down people’s throat, and people hate that.
+There’s a basic issue of process and consent. My opposition to datacenters is mostly based on their role in the race to build super-human AI, which is an insane thing to be doing. But I don’t think you need to have a stance on whether datacenter projects are good or bad to believe that communities have a right to a say in the matter, and that governments should be responsive to their constituents instead of beholden to tech companies.
+Subscribe now
+1
+My (lightly edited) remarks are available
+here
+.
+At a Datacenter Town Hall in My Midwestern Home Town
+1
+rvnnt
+1
+Comments
+1
+AI
+Personal Blog
+53
+New Comment
+1 comment
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 5:54 PM
+[
+-
+]
+rvnnt
+1d
+1
+0
+I think this post provides a valuable data point about how (mis)aligned governmental power structures are to the people (or humanity more broadly). How easy it is for powerful companies or corrupt officials to just steamroll the citizenry.
+[1]
+(And, via a bit of extrapolation, about how inadequate the current system of checks and balances is for handling a strategic landscape changing at the pace of AI.
+[2]
+)
+I'd maybe consider changing the post's title to reflect the above, to something like "governmental power structures are exploitable by those in whom AI would concentrate power" or "democratic checks and balances on power are inadequate to handle a world with advanced AI"?
+↩︎
+As an example, "the decisionmakers will lose their seats next year" is not adequate as a check on power, if those decisionmakers can be
+bribed or intimidated
+persuaded to pass decisions to "update" (effectively replace) the military/LE with (centrally AI-controlled) robots. There might then not be elections next year.
+↩︎
+Reply
+Moderation Log
+More from
+David Scott Krueger
+View more
+Curated and popular this week

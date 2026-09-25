@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Will at least one U.S. state enact a binding statewide moratorium on new hyperscale data centers before 2027?",
+    "url": "https://manifold.markets/Yoae/will-at-least-one-us-state-enact-a",
+    "probability": 0.2804155459474442,
+    "volume": 1577.727027374945,
+    "volume24Hours": 0,
+    "closeTime": 1798761540000,
+    "createdTime": 1786883841519,
+    "isResolved": false,
+    "outcomeType": "BINARY",
+    "textDescription": "Resolves YES if legislation signed into law by a governor (or passed via veto override) institutes an official temporary freeze or halt on approving/permitting new data centers (or data centers exceeding a specific megawatt threshold) statewide.\n\nResolves NO if no such statewide measure is enacted into law before 11:59 PM ET on December 31, 2026. Local/county-level moratoria or non-binding legislative study task forces do not qualify.\n\nThe measure must be enacted after August 16th 2026 and before December 31st 2026"
+  },
+  {
+    "question": "Robot assembles IKEA furniture using printed instructions, before 2030?",
+    "url": "https://manifold.markets/Bayesian/robot-assembles-ikea-furniture-usin",
+    "probability": 0.5479034011795443,
+    "volume": 27121.12455162046,
+    "volume24Hours": 129.21025125480304,
+    "closeTime": 1893455940000,
+    "createdTime": 1755026719416,
+    "isResolved": false,
+    "outcomeType": "BINARY",
+    "textDescription": "In 2030, will commercially available robots have the capability of opening most Ikea packages meant to be built by one person, and build them, using the printed instructions as guides? \n\nIf it is ambiguous whether they have this capability, or they may have it but I and other market participants aren't able to test this by then but some robot is not updated over time so the December 2030 capabilities can be tested after 2030, the market will resolve to these December 2030 capabilities.\n\nIf the robot was clearly trained explicitly for this task (eg it doesn't even need the printed instructions), that is still sufficient for a positive resolution.\n\nFor this market, a commercially available robot means:\n\nPublicly orderable: Any adult or ordinary business can place a binding purchase order or sign a standard sales/lease agreement through normal channels (public checkout or “contact sales” is fine) without invitation-only access, research-partner status, NDAs, or pre-selection.\n\nReal product, not bespoke: A defined model offered by the maker or an authorized reseller; not a one-off custom build or lab prototype.\n\nNo price cap: Any price point qualifies (even very high).\n\nGeography OK: Sales limited to a country/region still count, as long as the general public in that jurisdiction can buy/lease it.\n\nNot a curated stunt: A handful of units sold only to preselected VIPs/investors/celebrities does not count as commercial availability.\n\nOrders vs. waitlists: A vendor-accepted binding order/contract by Dec 31, 2029 counts; a non-binding “waitlist”/“expression of interest” does not.\n\nNew units: Secondary-market/used sales don’t establish availability."
+  },
+  {
+    "question": "Will GTA 6 require more than 200gb of space on PC.",
+    "url": "https://manifold.markets/AndrewCrosse/will-gta-6-take-up-more-than-200gb",
+    "probability": 0.6808352499307255,
+    "volume": 4303.934043923794,
+    "volume24Hours": 50,
+    "closeTime": 1790830740000,
+    "createdTime": 1716997685275,
+    "isResolved": false,
+    "outcomeType": "BINARY",
+    "textDescription": "This market is for the PC version of the game.\n\nThis market resolves based on the system requirements on steam whatever steam says will make this market resolve yes or no. This market will resolve when the game releases.\n\nIf you have any questions or suggestions feel free to ask."
+  }
+]

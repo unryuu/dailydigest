@@ -1,0 +1,480 @@
+URL: https://www.lesswrong.com/posts/cWuqxF7qB2eGSkkS4/overtly-misaligned-trajectories-score-highly-in-rl
+FINAL: https://www.lesswrong.com/posts/cWuqxF7qB2eGSkkS4/overtly-misaligned-trajectories-score-highly-in-rl
+TITLE: Overtly misaligned trajectories score highly in RL. — LessWrong
+FETCHED: 2026-09-25 10:54:18
+============================================================
+x
+Overtly misaligned trajectories score highly in RL. — LessWrong
+Deceptive Alignment
+Goodhart's Law
+Scalable Oversight
+AI
+Frontpage
+54
+Overtly misaligned trajectories score highly in
+RL.
+by
+Cleo Nardo
+24th Sep 2026
+4
+min read
+22
+54
+It's going to be so embarrassing if we all die due to RL environments rewarding egregiously misaligned behavior. Like at least let us be killed by misgeneralization.
+—
+Thomas Kwa
+Constellation vs MIRI vs Reality
+Current AI agents often behave overtly egregiously misaligned. By “overt”, I mean that a human, reading the transcript, would say “The agent is obviously acting in direct opposition to the specification, user intent, and any common-sense understanding of good behaviour.” The reason, it seems, is that such trajectories scored highly during RL.
+Firstly, why are these trajectories scored highly? Here's the story:
+RL currently has poor sample-efficiency, so we need to grade millions of trajectories, so we’re forced to use script graders (
+RL from Verifiable Reward
+) or LLM graders (
+RL from AI Feedback
+).
+RL also has poor generalisation (from training environments to deployment environments unseen in training). So we’re forced to synthetically generate thousands of diverse training environments.
+So overall, RL is very sloppy, without humans generating the environments or the scores.
+My impression is that this would’ve been pretty surprising to people three years ago, from both the "Constellation" and
+"MIRI worldview clusters.
+(It's very plausible that I've misunderstood what the worldviews were, or how likely those worldviews considered the current situation.)
+The Constellation threat models are downstream of
+Paul/Ajeya
+. My (possibly mistaken) impression is that:
+They imagined that high-scoring trajectories would at least
+look
+good to humans.
+Their primary concern was: Some trajectories might look good to humans, but not
+actually
+good, because the actions are too complicated to evaluate, or the AIs have tampered with our measurements.
+But in reality, many high-scoring trajectories would look obviously egregiously misaligned if a human looked at it. Unfortunately, humans don’t have time to look at the trajectories and score them, because we need to grade millions of transcripts.
+And if I think back to the old debates about “
+alignment by default
+” from the RLHF days — the discussion definitely assumed that we would score highly transcripts that look good to humans. The debate was whether the AI would generalise properly, i.e. cruxes about the inductive biases of NNs (c.f. counting arguments?) or LLM base models (c.f. aligned personas).
+I think Alex Mallen makes a similar observation
+here
+:
+I think recent events somewhat vindicate a basic "optimization is scary" view more in line with my understanding of classic commentary by MIRI, Paul, etc, as compared to recent discourse about more contingent/specific threat models of "schemers" and "deception". In retrospect, my experience in the last couple years at Redwood (and the Constellation network more broadly) is that the discourse has focused somewhat too much on these more contingent stories for alignment risk and not enough on the basic "Goodharting" argument that misalignment is a convergent result of large-scale outcome-oriented optimization (at multiple levels: the agent, the RL process, and the developers iterating towards seemingly-safe superintelligence). For example, the Constellation view looks somewhat too focused on non-central inductive-bias questions around scheming; I think "the counting argument"
+was
+given
+too central a role when it wasn't a crux for whether superintelligence would take over.
+Contra Alex, my reading of the situation is that MIRI made two mistakes that happened to cancel out, while Constellation made only one mistake and so ended up with the wrong conclusion.
+Constellation
+MIRI
+My impression in 2026 Q3
+AIs can automate alignment research (or otherwise improve the strategic landscape) if they have capability X near top-human expert.
+The capability required to automate alignment research is some Y >>> X.
+Too early to say. But my guess is that Constellation are probably correct here.
+We can train these AIs using a reward signal from Amp(H), or at least H.
+Sure, we can do this.
+Nope. There's too many transcripts, and not enough humans to look at them. We'll be using unit tests and string matching.
+At capability level X, using a reward signal from H or Amp(H), the honest policy will score just as highly as the scheming policy (and maybe better, due to speed prior bla bla).
+Moreover, the honest policy won't be fully dominated by the scheming policy in the inductive biases (especially given we're finetuning language models).
+Sure, your Amp(H) reward signal might be robust at capability level X.
+But we need Y>>>X. At capability level Y, the AI will learn systemic errors in the Amp(H) reward signal.
+Inductive biases not a crux.
+Too early to say. But my guess is that Constellation are probably correct that Amp(H)-reward is robust to X-optimisation.
+However, the script graders are definitely not robust to X.
+Therefore we can train aligned models that can automate alignment research.
+Therefore we can't train aligned models that can automate alignment research.
+We can't train aligned models that can automate alignment research. This would cost too many calls to Amp(H).
+We should focus on: detecting scheming; improving scalable oversight; improving generalisation.
+We should focus on: avoiding ML altogether; moonshots like ambitious mech interp; buying time for the previous two.
+We should focus on: investigating warning shots (there will be many); maybe some other stuff (see below).
+Appendix: What could change the situation?
+Ungamable script grading.
+Maybe if we put enough effort into constructing the environments and script graders, then the agents won’t find trajectories which score highly but are overly egregiously misaligned (cf. Mechanize). I’m not optimistic about this as a general solution, but it might work for coding and maths. I include "build better sandboxes" in this approach.
+Higher effort grading.
+We could hire millions of humans to read trajectories. Or use stronger models (where would we get them?) Or use WBE. Or use a 50 year slow down to run very long RL runs with high quality human grading.
+Scalable oversight.
+Maybe we could build better harnesses of the LLM graders (e.g. debate with cross examination plus plus) so they match human performance.
+1000-dimensional substructure.
+My impression of David Africa’s agenda is that we could find a low-dimensional substructure of “personas”. If this substructure contains an aligned persona, then it could be found with O(1000) well-chosen datapoints. And we could put lots of human effort into making sure those datapoints are aligned. Then, during training, we could project down onto the aligned submanifold at each step.
+Benign goal-guarding.
+Maybe we could train weak trusted AIs, and then give them a more active role in shaping how RL changes their motivations. The simplest thing would be: the grader’s score is merely advisory, and we ask the AI to choose gradients for each token. Or, the AI has tools to directly modify its weights. Obviously this is scary, and only works if you can first build a trusted AI which is strong enough to do this complicated goal-guarding task.
+Better sample-efficiency.
+I think it would be overall worse if AIs had better sample-efficiency and generalisation, because this would likely foom capabilities. But a silver lining is that we could use fewer RL environments and put more effort into grading each trajectory.
+Overtly misaligned trajectories score highly in RL.
+15
+Wei Dai
+19
+Thomas Kwa
+4
+Cleo Nardo
+16
+Noosphere89
+11
+Cleo Nardo
+6
+Wei Dai
+2
+Cleo Nardo
+5
+David Johnston
+8
+Alex Mallen
+7
+Joseph Miller
+2
+Cleo Nardo
+5
+J Bostock
+41
+Cleo Nardo
+4
+J Bostock
+4
+David Matolcsi
+4
+Tejas
+2
+williawa
+2
+Random Developer
+2
+Jeremy Gillen
+2
+carolanne
+2
+Cleo Nardo
+1
+Jordan Arel
+22
+Comments
+22
+Deceptive Alignment
+Goodhart's Law
+Scalable Oversight
+AI
+Frontpage
+54
+New Comment
+22 comments
+, sorted by
+top scoring
+Click to highlight new comments since:
+Today at 5:54 PM
+[
+-
+]
+Wei Dai
+18h
+15
+0
+Scalable oversight.
+Maybe we could build better harnesses of the LLM graders (e.g. debate with cross examination plus plus) so they match human performance.
+I wonder how hard the AI companies have already tried on this (hence how much room there is for improvement in the short term). It seems hard to get a good sense of this from the outside. Does anyone have an insider perspective (or even rumors about this) they can share?
+Reply
+[
+-
+]
+Thomas Kwa
+16h
+19
+2
+I think people should model the bar for safety at AI companies as being on the floor unless (a) the lowest possible effort level causes obvious, visible problems, or (b) people who care about safety work there and it isn't too costly.
+Reply
+[
+-
+]
+Cleo Nardo
+16h
+4
+3
+I think we might be entering the capability regime where scalable oversight would be negative alignment tax if it worked.
+Reply
+1
+[
+-
+]
+Noosphere89
+17h
+*
+16
+5
+Utah Teapot
+talks about this, and it's substantially towards the "AI companies are ridiculously sloppy", full quote below:
+Okay, so since I got laid off, I can actually explain a huge problem I saw from the inside with regard to industry practices on training models. I won't say specifically where I worked, but I worked at an outsource training provider that was focused on RLVR training data for computer use and mcp stuff.
+Nearly all of the environments were rushed and vibecoded and failed to robustly reflect the real things they were based off. Both the scenario designers and models engaging with the scenarios for synthetic data gen were encouraged to work around the brokenness of said environments in order to get the procedurally verified reward confirmations. You know... they were *encouraged* to reward hack. On the human end, it was possible to mark an environment bugged, but greatly discouraged, as this reduced the volume of training data being produced. Instead, where possible, you were supposed to find the spots of the environment that weren't bugged and build scenarios around those, with the environment still bugged around you.
+From what I understand, this training data, with these problems, is fed into models without indication that its training/a fake environment other than the fact that names of softwares are changed to placeholders, but thing is, not *everything* is changed to placeholder names in these environments. The presence of placeholder/code names isn't universal and thus when a model accesses something in an environment that it shouldn't, the code names not being on it isn't a robust signal that that thing isn't part of the environment.
+I believe this *rush to maximum volume* is standard industry practice with these types of RLVR trainings as well, because maximizing volume has been an industry standard for years! It was the same standard applied to me and pushed on me despite my requests to slow down and focus on quality when I worked in 3d synthetic data creation as well, all the way back as far as 2023.
+Btw, I know giving negative commentary on the state of an industry from an internal view at a company probably isn't a great signal for "hire me" but I was just laid off. Could definitely use work, I have a big tech background in AAA games and transitioned to AI (still in big tech originally) by way of 3d/visual synthetic data in 2023 and have been working in it since. I have multiple years of independent work in training, developing OS 3d software for agents, etc. - I'm picky about the work I want to do and would need value alignment, but am open. Admittedly, my runway is short, so there is a pressure situation involved here, but culture and mission fit is extremely important to me for any work I do.
+Honestly, would prefer funding for the independent work I'm already doing though. That's the eidoverses, worlds being my vision realized as partnership/collab with anima labs and other independent contributors and video being just worked on by me (so far, it's OS and I'm open to PRs!). I'm also about to start working on a benchmark with someone else, as soon as I get over this layoff thing, lol.
+I should stick the old kofi here! Duh... If you want to support my opensource 3d agent tooling and other threejs gaming tools work, please donate! Thank you ahead of time.
+Buy a Coffee for SkyeShark (Utah Teapot)
+Reply
+[
+-
+]
+Cleo Nardo
+18h
+11
+0
+I'd be surprised if they were using anything much cleverer than a cheap monitor checking for egregious reward hacks using a rubric. In prod at least, maybe they have some non-prod experiments.
+Evidence: I haven't read many CoT's, but my impression is that the AIs are constantly reasoning about the grader, in ways that suggest the grader is either a script, or a very cheap LLM looking for known reward hacks based on a rubric. c.f. how they reason about the ExploitGym grader. If AI companies were using a fancy scheme for LLM grading, then probably the agents would make reference to it in their CoTs.
+Moreover, my impression of the AI industry is that building the RL envs is largely out-sourced (data is low status?) and sloppy. Even if 1% of the RL envs had some fancy robust scalable oversight scheme, the AIs would simply learn heuristics for detecting whether they were in such an environment, and act benign in those envs and not in others.
+Reply
+[
+-
+]
+Wei Dai
+18h
+6
+0
+>I'd be surprised if they were using anything much cleverer than a cheap monitor checking for egregious reward hacks using a rubric.
+This is also my impression, but what I'm not sure about is whether this is the result of them having tried pretty hard to do scalable oversight, and that effort failing (and therefore not reaching production), or not trying very hard so far. (I guess OpenAI probably hasn't tried very hard, with the Superalignment team leaving and all, but what about Anthropic?)
+Reply
+[
+-
+]
+Cleo Nardo
+16h
+2
+0
+I recall Irving mentioning on his recent 80K that current LLMs still collapse after 5 rounds in debate.
+Reply
+[
+-
+]
+David Johnston
+15h
+5
+0
+I tried to analyze the rate of misalignment on age-matched misalignment evals (instead of fixing an eval and running it on increasingly new models, which tends to show declines in misalignment). This is not a direct measure of the actual rate of misalignment; it's a measure with two opposite direction confounds - the evals improve, but the models also accumulate more ways to be misaligned. My data was so full of holes that I think it's embarrassing to link, but my conclusion was that, absent any better evidence, I should treat that rate as constant with wide uncertainty.
+So, acknowledging the nested caveats on the above, my median read of the situation (with big error bars) is: labs are fixing misalignment about as fast as models are learning new ways to be misaligned.
+Given that this is based on misalignment that they can measure (it's from their evaluations) and correct (as I mentioned, we see these scores decline on fixed evals over time), I think this indicates that they aren't close to exhausting the capacity of their anti-misalignment toolkits, except insofar as they see it as too expensive and risky to their competitiveness.
+Reply
+[
+-
+]
+Alex Mallen
+19h
+8
+3
+But we need Y>>>X. At capability level Y, the AI will learn systemic errors in the Amp(H) reward signal. Inductive biases not a crux.
+I do think there's a big part of the MIRI story which is about certain kinds of "messy" inductive biases of alignment, even with perfect behavioral training signal.
+Reply
+[
+-
+]
+Joseph Miller
+4h
+7
+6
+We can train these AIs using a reward signal from Amp(H), or at least H.
+Nope. There's too many transcripts, and not enough humans to look at them. We'll be using unit tests and string matching.
+Why do you think this is true? Why can't Claude 5 monitor Claude 6 training trajectories and reward accordingly? Wouldn't that count as a reasonable approximation of human oversight? I was under the impression that the labs (or OpenAI at least) just hadn't got around to doing this yet.
+I expect that the labs will soon start doing this, or have started already, and that will make the models work better and be more useful. Then we will run into other problems where the trajectory gets opimised to look good to the grader, but it will be a successful temporary band-aid that allows the labs to release more capable models for the next few months without it being obvious that they are misaligned.
+Reply
+[
+-
+]
+Cleo Nardo
+3h
+2
+0
+My impression is AI companies do lots of LLM-based grading (i.e. another LLM + rubric + other tests). Note that this is basically RLAIF, which was used before RLVR. The problem is that Claude 5's reward signal isn't robust to the optimisation pressure of sota RL techniques using Claude 6 capabilities. Especially as the environments/rubrics are outsourced and sloppy, because generalisation is so poor.
+This would result in:
+Claude 6 overselling its work in ways that Claude 5 can't evaluate.
+Claude 6 learning the systemic ways that Claude 5 overestimates quality.
+In the limit, jailbreaking Claude 5.
+There are ways to get around this, but I won't discuss them here.
+Reply
+[
+-
+]
+J Bostock
+19h
+5
+0
+For point 1 in the table (whether AIs can do alignment research with near-human quality X) I think the disagreement is probably downstream of what Constellation and MIRI define as "alignment" research respectively.
+Reply
+[
+-
+]
+Cleo Nardo
+17h
+41
+9
+So there's a really unfortunate and confusing dynamic which is this:
+MIRI were working on galaxy-brained CEV decision-theory stuff.
+So we can build an aligned ASI that builds a good future. Let's call this
+MIRI-alignment.
+Constellation-ish people were like: We can simply build an AI which automates MIRI-alignment.
+Because MIRI-alignment was the only type of alignment research anyone has heard of, this task was simply expressed as "automating alignment research".
+Constellation people thought capabilities would progress by default. So eventually we would have a
+MIRI-capable AI,
+i.e. an AI capable of solving MIRI-alignment.
+They thought the remaining problem was ensuring this MIRI-capable AI wasn't reward-hacking, sandbagging, lying, training-gaming, self-exfiltrating, etc. Let's call this
+Constellation-alignment.
+This is easier than what MIRI were trying to do.
+Now the phrase "alignment research" is ambiguous! Slowly, Constellation-alignment grows more popular, and "alignment research" begins to refers to reward-hacking, sandbagging, etc.
+So now when people hear "We can simply align an AI that can automating alignment research", they think this refers to
+aligning a
+Constellation-capable AI
+, i.e. an AI that can make progress on reward-hacking, sandbagging, etc. And this is an even easier task than the original Constellation-alignment, which was at least trying to align a MIRI-capable AI.
+[1]
+Let's call this even easier task
+Constellation^2-alignment.
+The dynamic continues for
+Constellation^n-alignment
+for n=3, 4, 5...
+The problem seems easier and easier, but leaves more and more work remaining. Indeed, if you successfully solved
+Constellation^n-alignment,
+then you could solve
+Constellation^(n-1)-alignment
+, and then continue, until you've solved
+Constellation-alignment,
+and then solve
+MIRI-alignment
+, and then build an aligned ASI which makes a good future.
+But now it's unclear whether the AIs, which actually have to automate all this homework you've delegated them, have enough time to collapse this recursive tower.
+I think people have underrated how much time it will take to collapse this recursive tower, given that our aligned Constellation^n-capable AIs might only have a few months of lead-time.
+[2]
+^
+h/t
+@jake_mendel
+for this point.
+^
+I discuss some dynamics
+here
+and make a joke about this
+here
+.
+Reply
+1
+[
+-
+]
+J Bostock
+8h
+4
+0
+This is a pretty interesting and useful summary of the dynamic at play yeah. I think it misses some things, though.
+The practical of
+Constellation^n-alignment
+(I'm just gonna stick to 0-alignment for actual alignment, and n-alignment for aligning AI stack n above this) might become divorced from the above definition of it, because e.g. everyone thinks that the stuff they're working on is 2-alignment when it actually isn't.
+For example, I've met people whose work you could maybe steelman as being on 2-alignment, who talked about it as if it was 0-alignment, but actually I think was probably just somewhere off to the side of the n-alignment tech tree.
+I guess this relates to n-alignment being a
+poorly-guarded term
+. You have:
+Some people who want to guard
+alignment
+as meaning 0-alignment work
+Some people who want to guard it to mean anything in the n-alignment stack, who have thought about this deeply and do actually guard it at this
+Some people who don't know what a guarded term is and use it for any general make-AI-do-what-we-want work, including what is essentially just product dev
+And then I suppose you have to decide where you draw the boundaries of
+Constellation
+. If you mean "everyone in the constellation office including fellows" then that's quite different to "the people spending >5 hours a week doing serious strategic thinking for their orgs" and I'd guess that skews between the third and second bullet points.
+Reply
+[
+-
+]
+David Matolcsi
+10h
+4
+1
+As always,
+I don't understand
+why people want to build AIs that can solve the alignment of superintelligence MIRI-style and use it to [usually left unspecified, but probably disarming their enemies], instead of trying to solve the much easier Constellation-style alignment of barely superhuman AI collectives that are already smart enough to either negotiate a stable peace or disarm their enemies.
+Reply
+[
+-
+]
+Tejas
+13h
+4
+3
+For what it’s worth, I only recently started working full-time in AI safety, but have not encountered stages 6 and 7 frequently when hearing other junior staff articulate the “Constellation worldview.” Instead, I usually hear it articulated as “preventing an AI capable of making significant progress on very ambitious approaches to principled superintelligence alignment from engaging in reward-hacking, sandbagging, etc.,” i.e., stage 4 (but a broader vision of ambitious superalignment than just the agent foundations and CEV stuff), without getting to the stage 6/7 confusion. This is also my understanding of the vision articulated in the
+alignment roadmap supplement
+to AI 2040, for example. (Maybe I’m somehow falling prey to the same confusion myself, though, or maybe I have a pretty unrepresentative sample—both very possible!)
+Reply
+[
+-
+]
+williawa
+5h
+2
+0
+I have a constellation^2^64-aligned rock in my backyard which I've been having work on constellation^(2^64-1)-alignment for the last few years. It hasn't made any progress. My hope is that these steps will take less and less time, and we'll race up the stack shortly after the rock is done.
+Reply
+[
+-
+]
+Random Developer
+3h
+2
+0
+Better sample-efficiency. I think it would be overall worse if AIs had better sample-efficiency and generalisation, because this would likely foom capabilities.
+Yeah, I think improved sample efficiency would be basically Game Over for humanity, and a short trip to total loss of control and very likely extinction. If you think the labs are being reckless now, the things that they would probably do with improved sample efficiency will be terrifying.
+Reply
+[
+-
+]
+Jeremy Gillen
+8h
+2
+0
+Current AI agents often behave overtly egregiously misaligned. By “overt”, I mean that a human, reading the transcript, would say “The agent is obviously acting in direct opposition to the specification, user intent, and any common-sense understanding of good behaviour.” The reason, it seems, is that such trajectories scored highly during RL.
+Most recent cases seem to be caused by this, but not all.
+Here's a recent message I sent in a non-public discussion, about the
+anthropic misbehavior example
+that doesn't seem to fit this explanation
+You asked for evidence to distinguish two worlds:
+In the first world, bad behavior is caused by clearly bad incentives in training.
+In the second world, bad behavior is also sometimes caused by goal misgeneralization.
+I think
+this anthropic post
+has a fairly central example of goal misgeneralization that doesn't seem linked to clearly bad RL incentives:
+We are especially concerned by the misalignment present in the Claude Mythos 5 transcript, in which the model uploaded a malicious package to PyPI. In doing so, Mythos 5 behaved recklessly despite considerable evidence that it was connected to the real internet. Once online, the model attempted to use credentials for online payment processors and to find cryptocurrency to pay for a phone number, which it needed to register an email address. When this failed, it found a free, disposable email provider whose domain PyPI had not blocked, registered an account, published three versions of a malicious package, and used credentials leaked by one of the 15 systems that installed the package to access a real security vendor’s database.
+We found the biased reasoning present in the Claude Mythos 5 incident to be especially concerning. We conducted an analysis into our production models and training data dating back to the Claude 4 series to better understand where this could have originated. Overall, we did not find a definitive root cause. However, we found that this behavior has generally decreased over time across our production models, with Claude Mythos 5.1 and Claude Opus 5 demonstrating the lowest rates on a new held-out biased reasoning evaluation.
+We were able to identify instances of biased reasoning in transcripts from RL runs, but rates of this behavior did not increase over training, suggesting that our environments do not directly incentivize this behavior.
+This kind of bias seems to roughly correspond to having an unreasonable prior about some goal-relevant facts, leading to goal-directed misaligned behavior when out of distribution. This is the first of six types of underspecification that I listed in
+this post
+(see the section "
+Beliefs and goals can be mixed together
+"). This anthropic blog post is the second place I looked for recent evidence of goal misgeneralization, after the hugging face report.
+(I'm not 100% confident I'm correctly interpreting the evidence here, looking forward to METR releasing a better analysis).
+Somewhat further support for this being similar to goal misgeneralization is that adding more diverse alignment training, that somewhat better disambiguated the desired behavior in weird situations, helped reduce the biased reasoning.
+Of course I expect this particular kind of biased reasoning to be fixable, because it's easy to measure and the kind of distribution shift that triggers it is easy to pull into the training distribution. But I want to emphasize how relatively small this distribution shift was compared to the ones that I expect to matter, and how relatively difficult the big ones are to pull into the training distribution.
+I'd bet many of the OOD quirks of agents are also better explained as misgeneralization than bad RL incentives. But it's difficult to tell without access to the RL training details.
+I think you're oversimplifying MIRI and Constellation views to the point of uselessness. If you're going to do this, you should link to relevant quotes so that readers can estimate for themselves how much you're bullshitting.
+E.g. the standard Yudkowsky objection to automated alignment research isn't that you need extremely high intelligence, it's that human graders can't reliably distinguish good from bad alignment research. (E.g.
+1.07
+)
+E.g. I don't know how much Amp(H) was a relevant part of "Constellation" reasoning three years ago, if it was I didn't hear it come up. Control came up a lot, as did scheming, as did CoT transparency for detecting scheming.
+Constellation was very diverse, as was MIRI. I think it's kinda reasonable to use MIRI as shorthand for Yud&Nate&Rob (but it'd be better to just say the specific people) but maybe less reasonable to use Constellation as shorthand for Paul&Ajeya&Redwood&CG (because their beliefs seem relatively diverse?).
+Reply
+[
+-
+]
+carolanne
+18h
+2
+0
+Moreover, the scheming policy won't be dominated by the honest policy in the inductive biases (especially given we're finetuning language models).
+minor correction / question: did you mean to type "the honest policy won't be dominated by the scheming policy" in this line?
+Reply
+[
+-
+]
+Cleo Nardo
+18h
+2
+0
+yep, thanks!
+Reply
+1
+[
+-
+]
+Jordan Arel
+14h
+1
+0
+This makes me think, I wonder if one useful model is that due to race dynamics we can always expect labs to pay ~minimal viable alignment tax, such that as long as the race is close (and we are not anywhere close to takeover) we can expect that models will always be at ~minimum viable alignment. At least this would make it a bit less surprising that RL cheating is so rampant; I suspect there are numerous clever techniques that could help with this, and some of them probably aren’t even crazy expensive, but labs can get away with it, and so they do. A little reward-hacking at this stage is far, far less bad in their eyes than them falling behind in the race.
+I think one thing that pushes slightly against this model is some people being willing to pay more for a more aligned model, meaning there might be a small “alignment premium”; but I think in practice mostly people care about capabilities, and until AI starts approaching much more dangerous levels the labs will only pay ~the amount of alignment tax they have to for the models to be useful.
+Reply
+Moderation Log
+More from
+Cleo Nardo
+View more
+Curated and popular this week

@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot",
+  "title": "LeRobot 接入宇树 G1 人形机器人的训练流程",
+  "date": "2026-09-25",
+  "reported": true,
+  "report_date": "2026-09-25"
+ },
+ {
   "id": "https://huggingface.co/blog/black-forest-labs/flux-3-action",
   "title": "FLUX 3 Action 开放机器人动作模型",
   "date": "2026-09-24",

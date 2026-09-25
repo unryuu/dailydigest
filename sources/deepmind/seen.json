@@ -1,5 +1,12 @@
 [
  {
+  "id": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+  "title": "Google 给 Gemini 实时对话加上视频虚拟形象",
+  "date": "Thu, 24 Sep 2026 16:20:39 +0000",
+  "reported": true,
+  "report_date": "2026-09-25"
+ },
+ {
   "id": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
   "title": "Gemini 3.8 让用户按文字设计声音",
   "date": "Wed, 23 Sep 2026 15:25:19 +0000",

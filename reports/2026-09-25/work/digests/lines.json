@@ -1,0 +1,106 @@
+[
+  {
+    "id": "gates-risk",
+    "section": "industry",
+    "label": "比尔·盖茨警告 AI 可能造成十亿人死亡",
+    "url": "https://www.axios.com/2026/09/25/bill-gates-ai-deaths-doom",
+    "body": "他担心有恶意的人借助更强的 AI 工具造成大规模灾难，呼吁政府和政党尽早合作应对。",
+    "note": "核实通过；Axios 2026-09-25 报道《Meet the Press》周日节目预告摘录。只有新表态，没有具体新方案；建议删除或降为低优先级。"
+  },
+  {
+    "id": "datacenter-townhall",
+    "section": "deep",
+    "label": "一场数据中心听证会挤满明尼苏达小镇居民",
+    "url": "https://www.lesswrong.com/posts/fkkwpzbjybXtbQXw9/at-a-datacenter-town-hall-in-my-midwestern-home-town",
+    "body": "作者到 Hermantown 市议会旁听，看到约四十名居民轮流发言。争议既有道路和水务改造的成本，也有居民觉得项目规划绕过了他们。",
+    "note": "核实通过；LessWrong 2026-09-24。现场人数、成本和过程均来自作者第一人称记录；道路和水务改造估算 7000 万至 1 亿美元，作者本人也不清楚谁付款。避免把作者对地方政府动机的判断写成已证实事实。"
+  },
+  {
+    "id": "explorationbench",
+    "section": "papers",
+    "label": "新评测让 AI 在陌生规则世界里做实验",
+    "url": "https://arxiv.org/abs/2609.30199",
+    "body": "系统拿到一份有错误的说明书，要自己试探环境规则，再回答新题。最强模型能学会部分陌生规则，但继续探索有时反而退步。",
+    "note": "核实通过；arXiv 2026-09-24。两类可执行的虚构世界，各 70 道任务，测试 10 个 AI 系统；研究的是受控环境中的探索，不宜直接说现实科学发现。"
+  },
+  {
+    "id": "linear-superposition",
+    "section": "papers",
+    "label": "研究者让一个大模型同时续写两段文字",
+    "url": "https://arxiv.org/abs/2609.29845",
+    "body": "他们把两路文字的输入混在一次计算里，再用专门的解码方法拆出两条连贯的续写。轻量微调后，这种拆分效果有所改善。",
+    "note": "核实通过；arXiv 2026-09-24。论文说的是线性叠加与一次前向计算生成两路文本，不宜拟人化为模型真的同时拥有两种想法。"
+  },
+  {
+    "id": "gemini-avatar",
+    "section": "official",
+    "label": "Google 给 Gemini 实时对话加上视频虚拟形象",
+    "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+    "body": "虚拟形象能边看边听边说，连嘴型和表情也会跟着语言变化；企业版已可使用，自定义形象还需单独获准。",
+    "note": "核实通过；原址重定向到 Google 官方博客，2026-09-24。与 Gemini 3.8 Live 本体发布不同，本次新增实时视频形象；97 种语言是官方宣称。"
+  },
+  {
+    "id": "lerobot-humanoids",
+    "section": "official",
+    "label": "LeRobot 接入宇树 G1 人形机器人的训练流程",
+    "url": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot",
+    "body": "模型负责决定机器人接下来做什么，快速控制器负责把动作变成稳定的全身运动。文章给出 G1 的硬件改装、遥操作数据和训练示例。",
+    "note": "核实通过；Hugging Face 社区文章 2026-09-25。是 Unitree G1 的集成和示例，以及其他人形机器人资源；不可泛化为 LeRobot 已支持所有人形机器人。"
+  },
+  {
+    "id": "rufus-air",
+    "section": "industry",
+    "label": "Amazon 团队公开大模型后训练配方",
+    "url": "https://arxiv.org/abs/2609.29421",
+    "body": "他们以 GLM-4.5-Air-Base 为底座，串起微调、推理与编程强化学习、Agent 训练等八个阶段，并说明数据、奖励和训练顺序。",
+    "note": "核实通过；arXiv 2026-09-24。公开的是可复现后训练方案，不是 Amazon 发布全新底座模型；论文称使用开源组件及公开数据，成绩优于官方 GLM-4.5-Air 后训练版。"
+  },
+  {
+    "id": "agentkernel",
+    "section": "industry",
+    "label": "研究者提出把 AI Agent 安全管控放进系统底层",
+    "url": "https://arxiv.org/abs/2609.29647",
+    "body": "他们设想由统一的系统层管理 Agent 的身份、输入、记忆和工具调用，让恶意网页内容更难直接变成危险操作。",
+    "note": "核实通过；old_date：arXiv 原文 2026-08-29，Hugging Face 论文榜 2026-09-25 才收录。论文提出架构并做比较与安全分析，摘要未见已部署的操作系统；建议删去本期简讯。"
+  },
+  {
+    "id": "alchemy-letters",
+    "section": "fun",
+    "label": "历史学家让 AI 追查炼金术手稿里的暗语",
+    "url": "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical",
+    "body": "Opus 5.5 对照档案后，发现牛顿和 Hartlib 曾用不同写法藏同一种炼金原料，给一段知识传承补上了线索。",
+    "note": "核实通过；Benjamin Breen 2026-09-24。作者称 Opus 仍在处理约 5000 份档案，发现属初步研究。不要把文中另一个 16 世纪西班牙密信案例说成 17 世纪新破译；其明文早在 1916 年已有学者发表。"
+  },
+  {
+    "id": "liver",
+    "section": "fun",
+    "label": "有人追问：为什么肝脏这么会自我修复",
+    "url": "https://dynomight.substack.com/p/liver",
+    "body": "作者猜想，修复能力、癌变风险和耗能之间有取舍；肝脏经常处理进入身体的东西，因此保留了更强的修复力。",
+    "note": "核实通过；Dynomight 2026-09-24。作者明确把全文标为推测性的生物学统一理论，并在后文承认小肠等反例；不要把单一癌症解释写成定论。非 AI 科普趣闻。"
+  },
+  {
+    "id": "nixos-dutch",
+    "section": "fun",
+    "label": "荷兰开放社区为政府共建 NixOS 办公方案",
+    "url": "https://www.dawo.community/en/",
+    "body": "DAWO 把操作系统、云和协作工具拆成可替换的开放模块，供政府、企业与社区一起完善。",
+    "note": "核实通过；官网无明确发布日期，date_unknown。官网说的是共建蓝图、组件、试点与活动；绝不能写成荷兰政府已用 NixOS 替代微软软件。若本期要求时间窗内新进展，建议删除。"
+  },
+  {
+    "id": "pvncher-worklog",
+    "section": "industry",
+    "label": "Codex 开发者建议给 Agent 留一份简短工作日志",
+    "url": "https://x.com/pvncher/status/2102783470942683228",
+    "body": "当任务中途反复换方向，就把目标和每次变更记进日志，让 Agent 接着按日志推进。",
+    "note": "核实通过；主 agent 已在 X 登录态读原帖并记录于 work/x_candidates.json，发帖时间 2026-09-23T15:33:41Z。本核查 web.open 受限；仅按已读原帖记录措辞，属于个人工作流建议。"
+  },
+  {
+    "id": "nethack",
+    "section": "fun",
+    "label": "GPT-6 Astra 第三次挑战就通关了 NetHack",
+    "url": "https://kenforthewin.github.io/blog/posts/llm-nethack-ascension/",
+    "body": "它一边玩一边给自己写游戏工具，熬过三万七千多回合，让从未通关过的发起人先等到了 AI 的胜利。",
+    "note": "核实通过；作者博客元数据 2026-09-21 发表、9 月 21 日通关；9 月 25 日 Mollick 转发。作者给出 Hardfought 服务端记录和三次运行回放；单次成功不可当成通关率，也不是 BALROG 榜单成绩。"
+  }
+]

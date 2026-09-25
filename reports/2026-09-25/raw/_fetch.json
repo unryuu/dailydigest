@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "project-swap",
+    "url": "https://www.anthropic.com/research/project-swap",
+    "status": 200,
+    "final_url": "https://www.anthropic.com/research/project-swap",
+    "bytes": 340286,
+    "title": "Project Swap: What happens when agents trade for us? \\ Anthropic",
+    "chars": 49388
+  },
+  {
+    "slug": "capital-grab",
+    "url": "https://www.axios.com/2026/09/24/ai-private-credit-capital-grab",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/24/ai-private-credit-capital-grab",
+    "bytes": 232191,
+    "title": "AI's never-before-seen capital grab",
+    "chars": 4025
+  },
+  {
+    "slug": "oracle-power",
+    "url": "https://www.ft.com/content/a96bf05a-a299-4d6a-a753-b298dd0f4016",
+    "status": 200,
+    "final_url": "https://www.ft.com/content/a96bf05a-a299-4d6a-a753-b298dd0f4016",
+    "bytes": 164349,
+    "title": "Subscribe to read",
+    "chars": 2432
+  },
+  {
+    "slug": "rl-trajectories",
+    "url": "https://www.lesswrong.com/posts/cWuqxF7qB2eGSkkS4/overtly-misaligned-trajectories-score-highly-in-rl",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/cWuqxF7qB2eGSkkS4/overtly-misaligned-trajectories-score-highly-in-rl",
+    "bytes": 738112,
+    "title": "Overtly misaligned trajectories score highly in RL. — LessWrong",
+    "chars": 29771
+  },
+  {
+    "slug": "workspacebench",
+    "url": "https://www.lesswrong.com/posts/Zeg2JztbdhguL48uH/workspacebench-evaluating-interpretability-methods-for-the",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/Zeg2JztbdhguL48uH/workspacebench-evaluating-interpretability-methods-for-the",
+    "bytes": 590868,
+    "title": "WorkspaceBench: Evaluating Interpretability Methods for the Global Workspace — LessWrong",
+    "chars": 30866
+  },
+  {
+    "slug": "jev-alignment",
+    "url": "https://huggingface.co/papers/2609.29429",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.29429",
+    "bytes": 151556,
+    "title": "Paper page - Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+    "chars": 3923
+  },
+  {
+    "slug": "explorationbench",
+    "url": "https://huggingface.co/papers/2609.30199",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.30199",
+    "bytes": 143885,
+    "title": "Paper page - ExplorationBench: Measuring AI Systems' Exploration in Verifiable Alien Worlds",
+    "chars": 3624
+  },
+  {
+    "slug": "linear-superposition",
+    "url": "https://huggingface.co/papers/2609.29845",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.29845",
+    "bytes": 148208,
+    "title": "Paper page - Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
+    "chars": 3191
+  },
+  {
+    "slug": "gemini-avatar",
+    "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar",
+    "status": 200,
+    "final_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+    "bytes": 364928,
+    "title": "Introducing Gemini 3.8 Live with Live Avatar",
+    "chars": 4119
+  },
+  {
+    "slug": "lerobot-humanoids",
+    "url": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot",
+    "status": 200,
+    "final_url": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot",
+    "bytes": 285665,
+    "title": "Bringing Humanoids to LeRobot",
+    "chars": 12807
+  },
+  {
+    "slug": "rufus-air",
+    "url": "https://huggingface.co/papers/2609.29421",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.29421",
+    "bytes": 151200,
+    "title": "Paper page - Rufus-Air: An Open LLM Post-Training Recipe",
+    "chars": 4081
+  },
+  {
+    "slug": "agentkernel",
+    "url": "https://huggingface.co/papers/2609.29647",
+    "status": 200,
+    "final_url": "https://huggingface.co/papers/2609.29647",
+    "bytes": 138490,
+    "title": "Paper page - AgentKernel: The Trust-Native Agentic Operating System",
+    "chars": 4171
+  },
+  {
+    "slug": "gates-risk",
+    "url": "https://www.axios.com/2026/09/25/bill-gates-ai-deaths-doom",
+    "status": 200,
+    "final_url": "https://www.axios.com/2026/09/25/bill-gates-ai-deaths-doom",
+    "bytes": 255244,
+    "title": "Bill Gates warns AI is powerful enough to cause \"a billion deaths\"",
+    "chars": 1518
+  },
+  {
+    "slug": "datacenter-townhall",
+    "url": "https://www.lesswrong.com/posts/fkkwpzbjybXtbQXw9/at-a-datacenter-town-hall-in-my-midwestern-home-town",
+    "status": 200,
+    "final_url": "https://www.lesswrong.com/posts/fkkwpzbjybXtbQXw9/at-a-datacenter-town-hall-in-my-midwestern-home-town",
+    "bytes": 437865,
+    "title": "At a Datacenter Town Hall in My Midwestern Home Town — LessWrong",
+    "chars": 8703
+  },
+  {
+    "slug": "alchemy-letters",
+    "url": "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical",
+    "status": 200,
+    "final_url": "https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical",
+    "bytes": 293606,
+    "title": "AI labs need to start funding historical research",
+    "chars": 20672
+  },
+  {
+    "slug": "liver",
+    "url": "https://dynomight.substack.com/p/liver",
+    "status": 200,
+    "final_url": "https://dynomight.substack.com/p/liver",
+    "bytes": 265093,
+    "title": "Why is the human body so crap except for the liver?",
+    "chars": 27850
+  },
+  {
+    "slug": "nixos-dutch",
+    "url": "https://www.dawo.community/en",
+    "status": 200,
+    "final_url": "https://www.dawo.community/en/",
+    "bytes": 17084,
+    "title": "DAWO.community",
+    "chars": 2102
+  },
+  {
+    "slug": "nethack",
+    "url": "https://kenforthewin.github.io/blog/posts/llm-nethack-ascension/",
+    "status": 200,
+    "final_url": "https://kenforthewin.github.io/blog/posts/llm-nethack-ascension/",
+    "bytes": 60019,
+    "title": "An LLM Beat NetHack | Vaguely Aligned",
+    "chars": 15462
+  }
+]

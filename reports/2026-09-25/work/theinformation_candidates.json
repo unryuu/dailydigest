@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-25",
+  "window_start": "2026-09-23T06:43:40-07:00",
+  "route": "Codex 内置浏览器登录态，Latest 首页两页并逐篇读取；用户额外点名一篇窗口外评论",
+  "status": "read_ok",
+  "items": [
+    {
+      "title": "DeepSeek’s Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising",
+      "url": "https://www.theinformation.com/articles/deepseeks-annualized-revenue-hits-1-billion-startup-finalizes-7-5-billion-fundraising",
+      "published_original": "Sep 23, 2026, 11:20pm PDT",
+      "published_beijing": "2026-09-24 14:20 CST",
+      "type": "Exclusive",
+      "facts": "据两名直接知情人士，DeepSeek 年化收入运行率达到 10 亿美元，数月内翻倍；涨价也是推动因素。公司目标是在 10 月底前完成第二轮融资，拟募资 500 亿元人民币，目标估值 5000 亿元人民币。梁文锋称涨价没有带来客户流失。",
+      "qualifications": "年化收入运行率不是实际全年收入；融资仍在推进，尚未完成。训练芯片交付、数据外流调查是 09-23 已报背景，本条不能重报。",
+      "bucket": "行业大事，银牌候选"
+    },
+    {
+      "title": "Anthropic Seeks Palantir-Style Voting Control for Seven Co-Founders Ahead of IPO",
+      "url": "https://www.theinformation.com/articles/anthropic-seeks-palantir-style-voting-control-seven-co-founders-ahead-ipo",
+      "published_original": "Sep 24, 2026, 2:53pm PDT",
+      "published_beijing": "2026-09-25 05:53 CST",
+      "type": "Exclusive",
+      "facts": "据知情人士，Anthropic 正寻求股东批准新股份结构，让七位创始人在多数公司事务中合计掌握 50.1% 投票权；长期利益信托仍保留任命董事会多数席位的权力；创始人任命董事的席位拟由两席增至三席。",
+      "qualifications": "方案尚待股东批准；50.1% 投票权取决于持股门槛，不等于七人已实际取得该权力。",
+      "bucket": "行业大事，银牌候选"
+    },
+    {
+      "title": "Google, OpenAI and Anthropic AI Safety Group Takes Shape",
+      "url": "https://www.theinformation.com/articles/google-openai-anthropic-ai-safety-group-takes-shape",
+      "published_original": "Sep 24, 2026, 6:00am PDT",
+      "published_beijing": "2026-09-24 21:00 CST",
+      "type": "Exclusive",
+      "facts": "据参与讨论的人士，Google、OpenAI 和 Anthropic 推进自建前沿 AI 安全标准组织，暂定名 SAFA，目标今年底或 2027 年初推出。设想包括支持第三方模型测试、事故报告规则和独立审计资格。",
+      "qualifications": "仍在筹备，未正式成立；是否自行开展测试、成员资格及与政府关系仍在讨论；与既有 Frontier Model Forum 存在职责重叠。",
+      "bucket": "监管动向，银牌候选"
+    },
+    {
+      "title": "Why America’s AI Dream Is Failing to Launch",
+      "url": "https://www.theinformation.com/articles/americas-ai-dream-failing-launch",
+      "published_original": "Sep 22, 2026, 10:33am PDT",
+      "published_beijing": "2026-09-23 01:33 CST",
+      "type": "Opinion",
+      "facts": "Ryan Cunningham 和 Kristy Loke 的评论认为，美国 AI 政策只谈赢得前沿竞赛，未把民众受益、数据中心许可、能源与劳动影响讲清楚；作者以中国兼顾前沿、产业、供应链和民生治理的框架作比较。",
+      "qualifications": "这是作者观点；原文早于本期接续点，但用户明确要求补入深度长文。",
+      "bucket": "深度长文，银牌；用户指定补读"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "Tesla’s Optimus Hits Snags in Hands, Suppliers as Scale-Up Begins",
+      "url": "https://www.theinformation.com/articles/teslas-optimus-hits-snags-hands-suppliers-scale-up-begins",
+      "reason": "Latest 摘要可见，受三篇精读上限约束未读全文；不能据摘要写成稿。"
+    },
+    {
+      "title": "Founders Fund, Khosla Ventures Visit China as Country’s AI Prowess Rises",
+      "url": "https://www.theinformation.com/articles/founders-fund-khosla-ventures-visit-china-countrys-ai-prowess-rises",
+      "reason": "Latest 仅见标题，受三篇精读上限约束未读全文；不能据标题写成稿。"
+    }
+  ]
+}
